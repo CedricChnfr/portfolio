@@ -1,0 +1,86 @@
+---
+layout: default
+title:  "My CV!"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)
+
+**Téléphone** : +(33) 679 791 782  
+**Adresse** : 4 rue du libre-échange, 31500 Toulouse  
+**Email** : chanfreau@insa-toulouse.fr  
+
+---
+
+## À propos de moi
+
+I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.
+
+---
+
+## Formation
+
+**2022-2025** - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse  
+- Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design  
+- Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets  
+- Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing  
+- **Projet** : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team
+
+**2020-2022** - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse  
+- Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation  
+- Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States  
+- **Projet** : Designed and coded a game in C
+
+**2018-2020** - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse  
+- Equivalent to High School Diploma in Science and Engineering Science  
+
+---
+
+## Compétences
+
+### Programmation / Logiciels
+- Language in digital electronics: VHDL (Quartus)  
+- Microprocessor language: C, C++, Assembly (Keil)  
+- Programming language: Java, Python, Git (Eclipse, VS Code)  
+- PLC language: Ladder, ST, FBD (TIA Portals)  
+- Computer-aided design: SolidWorks, Proteus, Altium  
+- Computer science: MS Office  
+
+### Techniques
+- Design and assembly of electronic cards  
+- Debugging tools and software security testing  
+- Familiarity with the concept of microcontroller memory  
+
+### Langues
+- **Français** : Langue maternelle  
+- **Anglais** : Niveau intermédiaire  
+- **Espagnol** : Niveau intermédiaire  
+
+---
+
+## Expérience professionnelle
+
+**International Engineering Mobility – Vitesco Technologies** (Juillet 2024 - Septembre 2024)  
+- Studied and implemented solutions for Flash memory management on a new microcontroller  
+- Tested and validated Flash functionalities to ensure reliability of the new platform  
+- Created the environment to automate and optimize tests, using Python and CMM scripts  
+
+**Embedded Software Engineer apprenticeship - Vitesco Technologies** (Septembre 2022 - Août 2025)  
+- Developed generic embedded solutions for ECUs reprogramming  
+- Tested and debugged code to ensure proper operation and problem resolution  
+- Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software  
+- Presented regular project reviews to team members in English  
+
+**Electronic method technician internship - Siemens Mobility** (Avril - Juillet 2022)  
+- Studied the VAL208NG brake rack system and developed a test solution  
+- Conducted functional tests on the brake rack cards to ensure optimal performance  
+
+---
+
+## Activités extrascolaires
+
+- Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship  
+- Practiced swimming for 6 years in a club  
+- Independent travel in Europe (Italy, Ireland, Holland, Egypt)  
+- Assessor of a polling station for the regional and departmental elections  
