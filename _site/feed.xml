@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-02T13:40:08+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">My Profile!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My CV!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+
+<p><strong>Téléphone</strong> : +(33) 679 791 782<br />
+<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
+<strong>Email</strong> : chanfreau@insa-toulouse.fr</p>
+
+<hr />
+
+<h2 id="à-propos-de-moi">À propos de moi</h2>
+
+<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
+
+<hr />
+
+<h2 id="formation">Formation</h2>
+
+<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
+<ul>
+  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
+  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
+  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
+  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
+</ul>
+
+<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
+<ul>
+  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
+  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
+  <li><strong>Projet</strong> : Designed and coded a game in C</li>
+</ul>
+
+<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
+<ul>
+  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
+</ul>
+
+<hr />
+
+<h2 id="compétences">Compétences</h2>
+
+<h3 id="programmation--logiciels">Programmation / Logiciels</h3>
+<ul>
+  <li>Language in digital electronics: VHDL (Quartus)</li>
+  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
+  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
+  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
+  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
+  <li>Computer science: MS Office</li>
+</ul>
+
+<h3 id="techniques">Techniques</h3>
+<ul>
+  <li>Design and assembly of electronic cards</li>
+  <li>Debugging tools and software security testing</li>
+  <li>Familiarity with the concept of microcontroller memory</li>
+</ul>
+
+<h3 id="langues">Langues</h3>
+<ul>
+  <li><strong>Français</strong> : Langue maternelle</li>
+  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
+  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
+</ul>
+
+<hr />
+
+<h2 id="expérience-professionnelle">Expérience professionnelle</h2>
+
+<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
+<ul>
+  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
+  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
+  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
+</ul>
+
+<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
+<ul>
+  <li>Developed generic embedded solutions for ECUs reprogramming</li>
+  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
+  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
+  <li>Presented regular project reviews to team members in English</li>
+</ul>
+
+<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
+<ul>
+  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
+  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
+</ul>
+
+<hr />
+
+<h2 id="activités-extrascolaires">Activités extrascolaires</h2>
+
+<ul>
+  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
+  <li>Practiced swimming for 6 years in a club</li>
+  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
+  <li>Assessor of a polling station for the regional and departmental elections</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-10-02T01:29:03+02:00</published><updated>2024-10-02T01:29:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>

@@ -8,7 +8,7 @@ categories: jekyll update
 # Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)
 
 **Téléphone** : +(33) 679 791 782  
-**Adresse** : 4 rue du libre-échange, 31500 Toulouse  
+**Adresse** : Rue du libre-échange, 31500 Toulouse  
 **Email** : chanfreau@insa-toulouse.fr  
 
 ---
