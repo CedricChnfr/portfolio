@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-02T13:40:55+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">My Profile!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My CV!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-04T15:41:12+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">My Projects!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
+<h2 id="gamelle-connectée-insa"><a href="./gamelle-connectee.html">Gamelle Connectée INSA</a></h2>
+<h2 id="be-trotinette"><a href="./be-trotinette.html">BE Trotinette</a></h2>
+
+<hr />
+<h2 id="2023">2023</h2>
+
+<hr />
+<h2 id="2022">2022</h2>
+
+<hr />
+<h2 id="2021">2021</h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My Profile!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My CV!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Téléphone</strong> : +(33) 679 791 782<br />
 <strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
@@ -96,7 +109,303 @@
   <li>Practiced swimming for 6 years in a club</li>
   <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
   <li>Assessor of a polling station for the regional and departmental elections</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-10-02T01:29:03+02:00</published><updated>2024-10-02T01:29:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">BE Trotinette!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" rel="alternate" type="text/html" title="BE Trotinette!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-trotinette</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+<p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
+The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
+
+<h1 id="project-development">Project Development</h1>
+
+<h2 id="system-modeling">System Modeling</h2>
+<p>The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet.</p>
+
+<p><img src="/img/BE_Trotinette/Chaine_Acq.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<p>The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response.</p>
+
+<h2 id="simulation-and-implementation">Simulation and Implementation</h2>
+<p>Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings.</p>
+
+<h3 id="free-regim">Free Regim</h3>
+<p><img src="/img/BE_Trotinette/Graphe_sat.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
+In green the instruction to apply, in yellow the current in the motor.
+Two phases:
+Phase one:
+The system is in the control loop, it is in saturation.
+Phase two:
+The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio.</p>
+
+<h3 id="step-response">Step Response</h3>
+<p><img src="/img/BE_Trotinette/Graphe_response.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
+This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations.</p>
+
+<h2 id="pi-corrector-design">PI Corrector Design</h2>
+<p>The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met.</p>
+
+<h2 id="bilinear-transform">Bilinear Transform</h2>
+<p>We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment.</p>
+
+<p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.]]></summary></entry><entry><title type="html">Gamelle Connectée!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html" rel="alternate" type="text/html" title="Gamelle Connectée!" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+<p>During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Gamelle/Gamelle.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="project-objectives">Project objectives</h1>
+<h2 id="the-connected-bowl-system-allows">The Connected Bowl system allows:</h2>
+
+<p>To control two servomotors via a web interface to choose the food to distribute.
+To add a pressure sensor to monitor the amount of food in the tanks.
+To integrate LEDs and a buzzer to signal to the user the proper functioning or absence of food.
+System description
+The project combines C++ programming on an ESP8266 microcontroller, the use of sensors and the creation of a web interface. Here are the main features:</p>
+
+<h1 id="web-interface">Web interface</h1>
+
+<p>The web interface allows to control the distribution of food by selecting two different compartments.
+Two buttons are available: one for Food 1 and one for Food 2.
+Food distribution</p>
+
+<p>Choice 1: By selecting “Food 1”, the corresponding servomotor is activated to open the hatch of compartment 1.</p>
+
+<p>Choice 2: By selecting “Food 2”, the associated servomotor opens the hatch of compartment 2.
+Food detection</p>
+
+<p>If food is present in the compartment, the hatch opens normally.
+If the pressure sensor detects an absence of food:
+A buzzer emits an audible alert.
+A red LED lights up to indicate the absence of food.
+Class diagram
+The object-oriented architecture of the Connected Bowl has been designed to modulate the interactions between the components (sensors, servomotors, web interface) via well-defined classes. Here is a visual representation of the class diagram used in this project:</p>
+
+<p><img src="/img/BE_Gamelle/Class_Diag.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h1 id="connecting-to-the-server">Connecting to the server</h1>
+<p>Before accessing the web interface, it is necessary to ensure that the ESP8266 is connected to the WiFi network. You can obtain the IP address of the microcontroller via the serial monitor or a network scanning tool. Then, the web interface becomes accessible via this IP address in a browser.</p>
+
+<p><img src="/img/BE_Gamelle/Serveur.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The Connected Bowl project allowed us to practice several skills:</p>
+
+<p>Embedded programming with the ESP8266 in C++.
+Development of an interactive web interface for remote control.
+Integration of sensors and actuators to automate food distribution and provide visual and audio feedback.
+This project confronted us with various technical challenges, including managing WiFi connections, manipulating servomotors, and communicating between the ESP8266 and the web interface. It illustrates the combination of skills in IoT, electronics and web development, resulting in an innovative and practical solution for managing animal meals.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">BE Robot INSA</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" rel="alternate" type="text/html" title="BE Robot INSA" /><published>2024-10-02T10:52:03+02:00</published><updated>2024-10-02T10:52:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+<p>In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Maquette.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+    <img src="/img/BE_Robot_Project/Schema.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="projet">Projet</h1>
+<p>The project involved developing several functionalities for a robot, including camera management, arena detection, and task synchronization. We used FreeRTOS to manage real-time tasks and ensure safe concurrent execution.</p>
+
+<h2 id="fonctionnalités-du-projet">Fonctionnalités du Projet</h2>
+
+<style>
+table {
+    font-size: 0.8em;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom de la fonction</th>
+      <th>Description du comportement</th>
+      <th>Entrées</th>
+      <th>Sorties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Démarrer serveur</td>
+      <td>Lancer serveur. Si échec, afficher un message et stopper le programme, sinon produire “serveur démarré”.</td>
+      <td>Évènement : Start<br /> Données : inputStream</td>
+      <td>Évènement : Serveur démarré</td>
+    </tr>
+    <tr>
+      <td>Connecter au moniteur</td>
+      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si ok, produire “connexion établie”.</td>
+      <td>Évènement : Serveur démarré</td>
+      <td>Évènement : connexion établie</td>
+    </tr>
+    <tr>
+      <td>Traiter message du moniteur</td>
+      <td>Attendre “connexion établie”. Tant que : Attendre message inputStream (Read). Si message = ouvrir com robot -&gt; ouvrir comRobot. Si message = ouvrir camera -&gt; ouvrir camera. Si message = fermer camera -&gt; fermer camera.</td>
+      <td>Évènement : connexion établie<br /> Données : Mouvement</td>
+      <td>Évènement : Ouvrir comRobot<br />Ouvrir camera<br />Fermer camera<br />Start robot<br />start recherche arène<br />start recherche robot</td>
+    </tr>
+    <tr>
+      <td>Etablissement de la connexion</td>
+      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si oui, connexion établie.</td>
+      <td>Évènement : ouvrirSocket<br />serveurDemarre</td>
+      <td>Évènement : connexionMonitor</td>
+    </tr>
+    <tr>
+      <td>Mettre en place la communication</td>
+      <td>Attendre “ouvrir comRobot”. Mettre en place la communication avec le robot. Si la communication est ok, poster “messageTomonACK”, sinon poster “messageToMonNAC”. Mettre à jour le statut de la com robot.</td>
+      <td>Évènement : ouvrir comRobot<br /> Données : statut com robot<br />Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Démarrer Robot</td>
+      <td>Attendre “Start robot”. Si “Statut com robot” est actif, envoyer ordre de démarrage et mettre à jour “robot démarré”.</td>
+      <td>Évènement : ouvrir comRobot<br /> Donnée : Statut com robot</td>
+      <td>Donnée : robot démarré</td>
+    </tr>
+    <tr>
+      <td>Déplacer robot</td>
+      <td>Toutes les 100ms, si “robot démarré” est vrai, lire “mouvement” et envoyer ordre, sinon rien.</td>
+      <td>Donnée : robot démarré</td>
+      <td>Ordre</td>
+    </tr>
+    <tr>
+      <td>Envoyer message au moniteur</td>
+      <td>Attendre “connexion établie”. Tant que : Attendre messageToMon, envoyer le message au superviseur. Fin tant que.</td>
+      <td>Évènement : connexion établie<br /> Données : Outputstream</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Lire niveau batterie</td>
+      <td>Toutes les 500ms, si “robot démarré” est vrai, demander niveau de batterie au robot et le poster pour le moniteur. Sinon, rien.</td>
+      <td>Donnée : robot démarré<br /> Donnée : Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ouvrir/fermer la camera</td>
+      <td>Attendre “ouvrir camera” ou “fermer camera”. Ouvrir ou fermer la camera, envoyer un message au moniteur, mettre à jour “camera ouvert”.</td>
+      <td>Ouvrir camera<br /> Fermer camera<br /> Évènement : Afficher image<br /> Donnée : “Camera ouvert”</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Afficher Image</td>
+      <td>Attendre “Afficher image”. Toutes les 50ms, si “camera ouvert” est vrai, prendre une image du flux de la camera. Si “afficher arène” = vrai alors dessiner arène sur l’image. Poster l’image pour le moniteur.</td>
+      <td>Évènement : Afficher image<br /> Donnée : “Camera ouvert”<br /> Donnée : Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chercher Arène</td>
+      <td>Attendre “start recherche arène”. Si “camera ouvert” est vrai : “camera ouvert = faux”. Prendre une image du flux de la camera, analyser l’image et dessiner l’arène dessus. La poster pour le moniteur.</td>
+      <td>Évènement : start recherche arène<br /> Donnée : Message Poster<br />afficher arène</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chercher Position</td>
+      <td>Attendre “start recherche robot”. Si “camera ouvert” est vrai : Prendre une image du flux de la camera, analyser l’image et dessiner le robot. Mettre à jour “dessin robot”.</td>
+      <td>Évènement : start recherche robot<br /> Donnée : “camera ouvert”<br /> Donnée : Dessin robot</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/img/BE_Robot_Project/Graphe_Projet_Robot.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h2 id="existing-functionalities">Existing Functionalities</h2>
+<p>Before diving into the new functionalities we implemented, it is important to note that several key functionalities were already established:</p>
+
+<h3 id="server-functionality">Server Functionality</h3>
+<p>The server functionality is responsible for handling communication between the robot and external systems. This includes receiving commands and sending status updates.</p>
+
+<h3 id="monitor-connection">Monitor Connection</h3>
+<p>The connection with the monitor is established, enabling the robot to send real-time data and receive instructions from the monitoring system.</p>
+
+<h3 id="robot-movement">Robot Movement</h3>
+<p>The functionality to move the robot is already in place, allowing the robot to navigate its environment based on the commands received.</p>
+
+<h2 id="battery-level-reading">Battery Level Reading</h2>
+<p>Battery level reading involves monitoring the robot’s battery status to ensure it has sufficient power to perform its tasks.
+This ensures that the robot has sufficient power to perform its tasks and can alert the system if the battery level is low. By keeping track of the battery level, we can prevent unexpected shutdowns and ensure the robot operates efficiently.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Get_Battery_func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h2 id="camera-management">Camera Management</h2>
+<p>Camera management involved several operations, such as opening, closing, and capturing images. We used mutexes to protect access to shared resources, such as the camera state and the camera object itself. Here is a code snippet illustrating the use of mutexes.</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/img/BE_Robot_Project/Start_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Screen_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Stop_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+</div>
+
+<h2 id="arena-detection">Arena Detection</h2>
+<p>For arena detection, we created a function that is called when the user presses a specific button. This function uses semaphores to synchronize execution and ensure that tasks are executed in the correct order.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>This project allowed us to apply advanced real-time programming concepts, such as using mutexes and semaphores for task synchronization. We successfully implemented the required functionalities for the robot while ensuring safe concurrent execution. The challenges we encountered helped us better understand the importance of synchronization and resource management in multithreaded programming.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01" />
+</div>
+<!-- JavaScript -->
+<script>
+function openModal(src) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+</script>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-10-02T01:29:03+02:00</published><updated>2024-10-02T01:29:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 

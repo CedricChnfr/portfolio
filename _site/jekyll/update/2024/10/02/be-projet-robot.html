@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>BE Robot INSA | My Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="BE Robot INSA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented." />
+<meta property="og:description" content="Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" />
+<meta property="og:site_name" content="My Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:52:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="BE Robot INSA" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:52:03+02:00","datePublished":"2024-10-02T10:52:03+02:00","description":"Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.","headline":"BE Robot INSA","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">My Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="introduction">Introduction</h1>
+<p>In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Maquette.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+    <img src="/img/BE_Robot_Project/Schema.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="projet">Projet</h1>
+<p>The project involved developing several functionalities for a robot, including camera management, arena detection, and task synchronization. We used FreeRTOS to manage real-time tasks and ensure safe concurrent execution.</p>
+
+<h2 id="fonctionnalités-du-projet">Fonctionnalités du Projet</h2>
+
+<style>
+table {
+    font-size: 0.8em;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom de la fonction</th>
+      <th>Description du comportement</th>
+      <th>Entrées</th>
+      <th>Sorties</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Démarrer serveur</td>
+      <td>Lancer serveur. Si échec, afficher un message et stopper le programme, sinon produire “serveur démarré”.</td>
+      <td>Évènement : Start<br /> Données : inputStream</td>
+      <td>Évènement : Serveur démarré</td>
+    </tr>
+    <tr>
+      <td>Connecter au moniteur</td>
+      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si ok, produire “connexion établie”.</td>
+      <td>Évènement : Serveur démarré</td>
+      <td>Évènement : connexion établie</td>
+    </tr>
+    <tr>
+      <td>Traiter message du moniteur</td>
+      <td>Attendre “connexion établie”. Tant que : Attendre message inputStream (Read). Si message = ouvrir com robot -&gt; ouvrir comRobot. Si message = ouvrir camera -&gt; ouvrir camera. Si message = fermer camera -&gt; fermer camera.</td>
+      <td>Évènement : connexion établie<br /> Données : Mouvement</td>
+      <td>Évènement : Ouvrir comRobot<br />Ouvrir camera<br />Fermer camera<br />Start robot<br />start recherche arène<br />start recherche robot</td>
+    </tr>
+    <tr>
+      <td>Etablissement de la connexion</td>
+      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si oui, connexion établie.</td>
+      <td>Évènement : ouvrirSocket<br />serveurDemarre</td>
+      <td>Évènement : connexionMonitor</td>
+    </tr>
+    <tr>
+      <td>Mettre en place la communication</td>
+      <td>Attendre “ouvrir comRobot”. Mettre en place la communication avec le robot. Si la communication est ok, poster “messageTomonACK”, sinon poster “messageToMonNAC”. Mettre à jour le statut de la com robot.</td>
+      <td>Évènement : ouvrir comRobot<br /> Données : statut com robot<br />Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Démarrer Robot</td>
+      <td>Attendre “Start robot”. Si “Statut com robot” est actif, envoyer ordre de démarrage et mettre à jour “robot démarré”.</td>
+      <td>Évènement : ouvrir comRobot<br /> Donnée : Statut com robot</td>
+      <td>Donnée : robot démarré</td>
+    </tr>
+    <tr>
+      <td>Déplacer robot</td>
+      <td>Toutes les 100ms, si “robot démarré” est vrai, lire “mouvement” et envoyer ordre, sinon rien.</td>
+      <td>Donnée : robot démarré</td>
+      <td>Ordre</td>
+    </tr>
+    <tr>
+      <td>Envoyer message au moniteur</td>
+      <td>Attendre “connexion établie”. Tant que : Attendre messageToMon, envoyer le message au superviseur. Fin tant que.</td>
+      <td>Évènement : connexion établie<br /> Données : Outputstream</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Lire niveau batterie</td>
+      <td>Toutes les 500ms, si “robot démarré” est vrai, demander niveau de batterie au robot et le poster pour le moniteur. Sinon, rien.</td>
+      <td>Donnée : robot démarré<br /> Donnée : Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ouvrir/fermer la camera</td>
+      <td>Attendre “ouvrir camera” ou “fermer camera”. Ouvrir ou fermer la camera, envoyer un message au moniteur, mettre à jour “camera ouvert”.</td>
+      <td>Ouvrir camera<br /> Fermer camera<br /> Évènement : Afficher image<br /> Donnée : “Camera ouvert”</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Afficher Image</td>
+      <td>Attendre “Afficher image”. Toutes les 50ms, si “camera ouvert” est vrai, prendre une image du flux de la camera. Si “afficher arène” = vrai alors dessiner arène sur l’image. Poster l’image pour le moniteur.</td>
+      <td>Évènement : Afficher image<br /> Donnée : “Camera ouvert”<br /> Donnée : Message Poster</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chercher Arène</td>
+      <td>Attendre “start recherche arène”. Si “camera ouvert” est vrai : “camera ouvert = faux”. Prendre une image du flux de la camera, analyser l’image et dessiner l’arène dessus. La poster pour le moniteur.</td>
+      <td>Évènement : start recherche arène<br /> Donnée : Message Poster<br />afficher arène</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chercher Position</td>
+      <td>Attendre “start recherche robot”. Si “camera ouvert” est vrai : Prendre une image du flux de la camera, analyser l’image et dessiner le robot. Mettre à jour “dessin robot”.</td>
+      <td>Évènement : start recherche robot<br /> Donnée : “camera ouvert”<br /> Donnée : Dessin robot</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/img/BE_Robot_Project/Graphe_Projet_Robot.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h2 id="existing-functionalities">Existing Functionalities</h2>
+<p>Before diving into the new functionalities we implemented, it is important to note that several key functionalities were already established:</p>
+
+<h3 id="server-functionality">Server Functionality</h3>
+<p>The server functionality is responsible for handling communication between the robot and external systems. This includes receiving commands and sending status updates.</p>
+
+<h3 id="monitor-connection">Monitor Connection</h3>
+<p>The connection with the monitor is established, enabling the robot to send real-time data and receive instructions from the monitoring system.</p>
+
+<h3 id="robot-movement">Robot Movement</h3>
+<p>The functionality to move the robot is already in place, allowing the robot to navigate its environment based on the commands received.</p>
+
+<h2 id="battery-level-reading">Battery Level Reading</h2>
+<p>Battery level reading involves monitoring the robot’s battery status to ensure it has sufficient power to perform its tasks.
+This ensures that the robot has sufficient power to perform its tasks and can alert the system if the battery level is low. By keeping track of the battery level, we can prevent unexpected shutdowns and ensure the robot operates efficiently.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Get_Battery_func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h2 id="camera-management">Camera Management</h2>
+<p>Camera management involved several operations, such as opening, closing, and capturing images. We used mutexes to protect access to shared resources, such as the camera state and the camera object itself. Here is a code snippet illustrating the use of mutexes.</p>
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="/img/BE_Robot_Project/Start_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Screen_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Stop_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+</div>
+
+<h2 id="arena-detection">Arena Detection</h2>
+<p>For arena detection, we created a function that is called when the user presses a specific button. This function uses semaphores to synchronize execution and ensure that tasks are executed in the correct order.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>This project allowed us to apply advanced real-time programming concepts, such as using mutexes and semaphores for task synchronization. We successfully implemented the required functionalities for the robot while ensuring safe concurrent execution. The challenges we encountered helped us better understand the importance of synchronization and resource management in multithreaded programming.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01" />
+</div>
+<!-- JavaScript -->
+<script>
+function openModal(src) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+</script>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Portfolio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">My Portfolio</li><li><a class="u-email" href="mailto:chanfreau@insa-toulouse.fr">chanfreau@insa-toulouse.fr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/CedricChnfr"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">CedricChnfr</span></a></li><li><a href="https://www.linkedin.com/in/C%C3%A9dric+Chanfreau"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Cédric Chanfreau</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

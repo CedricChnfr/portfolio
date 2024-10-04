@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>BE Trotinette! | My Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="BE Trotinette!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop." />
+<meta property="og:description" content="Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" />
+<meta property="og:site_name" content="My Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="BE Trotinette!" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.","headline":"BE Trotinette!","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">My Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="introduction">Introduction</h1>
+<p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
+The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
+
+<h1 id="project-development">Project Development</h1>
+
+<h2 id="system-modeling">System Modeling</h2>
+<p>The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet.</p>
+
+<p><img src="/img/BE_Trotinette/Chaine_Acq.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<p>The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response.</p>
+
+<h2 id="simulation-and-implementation">Simulation and Implementation</h2>
+<p>Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings.</p>
+
+<h3 id="free-regim">Free Regim</h3>
+<p><img src="/img/BE_Trotinette/Graphe_sat.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
+In green the instruction to apply, in yellow the current in the motor.
+Two phases:
+Phase one:
+The system is in the control loop, it is in saturation.
+Phase two:
+The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio.</p>
+
+<h3 id="step-response">Step Response</h3>
+<p><img src="/img/BE_Trotinette/Graphe_response.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
+This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations.</p>
+
+<h2 id="pi-corrector-design">PI Corrector Design</h2>
+<p>The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met.</p>
+
+<h2 id="bilinear-transform">Bilinear Transform</h2>
+<p>We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment.</p>
+
+<p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Portfolio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">My Portfolio</li><li><a class="u-email" href="mailto:chanfreau@insa-toulouse.fr">chanfreau@insa-toulouse.fr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/CedricChnfr"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">CedricChnfr</span></a></li><li><a href="https://www.linkedin.com/in/C%C3%A9dric+Chanfreau"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Cédric Chanfreau</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

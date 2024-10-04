@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Gamelle Connectée! | My Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Gamelle Connectée!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience." />
+<meta property="og:description" content="Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html" />
+<meta property="og:site_name" content="My Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Gamelle Connectée!" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.","headline":"Gamelle Connectée!","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">My Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="introduction">Introduction</h1>
+<p>During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Gamelle/Gamelle.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+</div>
+
+<h1 id="project-objectives">Project objectives</h1>
+<h2 id="the-connected-bowl-system-allows">The Connected Bowl system allows:</h2>
+
+<p>To control two servomotors via a web interface to choose the food to distribute.
+To add a pressure sensor to monitor the amount of food in the tanks.
+To integrate LEDs and a buzzer to signal to the user the proper functioning or absence of food.
+System description
+The project combines C++ programming on an ESP8266 microcontroller, the use of sensors and the creation of a web interface. Here are the main features:</p>
+
+<h1 id="web-interface">Web interface</h1>
+
+<p>The web interface allows to control the distribution of food by selecting two different compartments.
+Two buttons are available: one for Food 1 and one for Food 2.
+Food distribution</p>
+
+<p>Choice 1: By selecting “Food 1”, the corresponding servomotor is activated to open the hatch of compartment 1.</p>
+
+<p>Choice 2: By selecting “Food 2”, the associated servomotor opens the hatch of compartment 2.
+Food detection</p>
+
+<p>If food is present in the compartment, the hatch opens normally.
+If the pressure sensor detects an absence of food:
+A buzzer emits an audible alert.
+A red LED lights up to indicate the absence of food.
+Class diagram
+The object-oriented architecture of the Connected Bowl has been designed to modulate the interactions between the components (sensors, servomotors, web interface) via well-defined classes. Here is a visual representation of the class diagram used in this project:</p>
+
+<p><img src="/img/BE_Gamelle/Class_Diag.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h1 id="connecting-to-the-server">Connecting to the server</h1>
+<p>Before accessing the web interface, it is necessary to ensure that the ESP8266 is connected to the WiFi network. You can obtain the IP address of the microcontroller via the serial monitor or a network scanning tool. Then, the web interface becomes accessible via this IP address in a browser.</p>
+
+<p><img src="/img/BE_Gamelle/Serveur.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The Connected Bowl project allowed us to practice several skills:</p>
+
+<p>Embedded programming with the ESP8266 in C++.
+Development of an interactive web interface for remote control.
+Integration of sensors and actuators to automate food distribution and provide visual and audio feedback.
+This project confronted us with various technical challenges, including managing WiFi connections, manipulating servomotors, and communicating between the ESP8266 and the web interface. It illustrates the combination of skills in IoT, electronics and web development, resulting in an innovative and practical solution for managing animal meals.</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Portfolio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">My Portfolio</li><li><a class="u-email" href="mailto:chanfreau@insa-toulouse.fr">chanfreau@insa-toulouse.fr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/CedricChnfr"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">CedricChnfr</span></a></li><li><a href="https://www.linkedin.com/in/C%C3%A9dric+Chanfreau"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Cédric Chanfreau</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
