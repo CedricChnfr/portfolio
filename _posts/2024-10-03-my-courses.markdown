@@ -7,3 +7,4 @@ categories: jekyll update
 
 # 2024
 
+## [Cloud Edge Computing](./cloud-edge.html)

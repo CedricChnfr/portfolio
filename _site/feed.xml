@@ -1,17 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-05T00:35:17+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-05T22:06:08+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
+<p>This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.</p>
 
-<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
-<h2 id="gamelle-connectée-insa"><a href="./gamelle-connectee.html">Gamelle Connectée INSA</a></h2>
-<h2 id="be-trotinette"><a href="./be-trotinette.html">BE Trotinette</a></h2>
+<h2 id="2-virtualization-type-1-and-type-2-hypervisors">2. Virtualization: Type 1 and Type 2 Hypervisors</h2>
+<p>The first part of the project concerned hypervisors:</p>
 
-<hr />
-<h2 id="2023">2023</h2>
+<ul>
+  <li>
+    <p>Type 1: Also called “bare-metal” hypervisors, they run directly on the physical hardware without an intermediate operating system. They offer better isolation and performance because they have direct access to hardware resources.</p>
+  </li>
+  <li>
+    <p>Type 2: These hypervisors run on top of a host operating system. They are easier to manage but are less performant because they have to negotiate resources with the operating system.</p>
+  </li>
+</ul>
 
-<hr />
-<h2 id="2022">2022</h2>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/Hyperviseur1.png" alt="Schéma du Projet Robot" style="width: 50%;" />
+    <img src="/img/BE_Cloud_Computing/Hyperviseur2.png" alt="Schéma du Projet Robot" style="width: 50%;" />
+</div>
 
-<hr />
-<h2 id="2021">2021</h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<h2 id="3-virtual-machines-vs-containers">3. Virtual Machines vs. Containers</h2>
+<p>The next step was to compare virtual machines (VMs) with containers (CTs):</p>
+
+<ul>
+  <li>Virtual Machine: Virtual machines (VMs) or guests are instances of an operating system that are co-located on a physical machine using a hypervisor. Each VM has its own operating system, memory, and other resources, which are isolated from other VMs on the same physical computer. This allows multiple operating systems to run on the same physical components without interfering with each other.
+Each VM runs its own operating system, including a kernel. They are isolated from other VMs and the host operating system.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/VM.png" alt="Schéma du Projet Robot" style="width: 30%;" />
+</div>
+
+<ul>
+  <li>Containers: Containers are lightweight, portable, self-contained executable images that contain software applications and their dependencies. They enable applications to be deployed and run consistently across different environments.
+They share the same host kernel but are isolated at the process and file level. They encapsulate applications with their dependencies.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/Cont.png" alt="Schéma du Projet Robot" style="width: 30%;" />
+</div>
+
+<h2 id="4-network-configurations-nat-and-bridge-mode">4. Network configurations: NAT and Bridge mode</h2>
+<p>Two network connection modes were used for VMs and containers:</p>
+
+<ul>
+  <li>
+    <p>NAT mode: This mode allows VMs/CTs to access the Internet via a private IP address, but they cannot be reached from the outside without additional configuration (port forwarding).</p>
+  </li>
+  <li>
+    <p>Bridge mode: In this mode, VMs/CTs have an IP address visible on the local network, allowing them to interact directly with other machines on the network.</p>
+  </li>
+</ul>
+
+<h2 id="5-practical-implementation-virtualbox-and-docker">5. Practical implementation: VirtualBox and Docker</h2>
+<p>In the practical part of the project, the following steps were performed:</p>
+
+<p>VM creation in VirtualBox: Configuration and connectivity test in NAT mode to allow bidirectional communication with the Internet and other machines.
+Docker installation: Docker was installed on the VM to provision containers. Connectivity tests showed that containers could communicate with each other, with VMs and with the outside world.</p>
+<h2 id="6-docker-container-provisioning-and-management">6. Docker: Container provisioning and management</h2>
+<p>The provisioning of Docker containers was carried out in several steps:</p>
+
+<p>Downloading the Ubuntu image and running a container instance.
+Testing the connectivity between containers and VMs, with conclusive results in terms of bidirectional communication.
+Cloning and snapshot: Snapshots of the containers were taken to preserve their state, thus facilitating recovery and subsequent deployment.</p>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2 id="courses"><a href="./course-cloud-edge.html">Courses</a></h2>
+<h2 id="project"><a href="./project-cloud-edge.html">Project</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Courses Project]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Téléphone</strong> : +(33) 679 791 782<br />
 <strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
@@ -193,7 +246,58 @@ The object-oriented architecture of the Connected Bowl has been designed to modu
 <p>Embedded programming with the ESP8266 in C++.
 Development of an interactive web interface for remote control.
 Integration of sensors and actuators to automate food distribution and provide visual and audio feedback.
-This project confronted us with various technical challenges, including managing WiFi connections, manipulating servomotors, and communicating between the ESP8266 and the web interface. It illustrates the combination of skills in IoT, electronics and web development, resulting in an innovative and practical solution for managing animal meals.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">BE Robot INSA</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" rel="alternate" type="text/html" title="BE Robot INSA" /><published>2024-10-02T10:52:03+02:00</published><updated>2024-10-02T10:52:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+This project confronted us with various technical challenges, including managing WiFi connections, manipulating servomotors, and communicating between the ESP8266 and the web interface. It illustrates the combination of skills in IoT, electronics and web development, resulting in an innovative and practical solution for managing animal meals.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
+<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
+
+<h2 id="2-virtualization">2. Virtualization</h2>
+<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
+
+<ul>
+  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
+  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
+Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
+</ul>
+
+<h2 id="3-cloud-computing">3. Cloud Computing</h2>
+<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
+
+<p>Scalability: Resources can be dynamically adjusted according to demand.
+Pay-as-you-go model: Users pay only for what they consume.
+Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
+The main service models are:</p>
+
+<ul>
+  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
+  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
+  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
+</ul>
+
+<h2 id="4-edge-computing">4. Edge Computing</h2>
+<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
+
+<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
+<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
+
+<h2 id="6-fog-computing">6. Fog Computing</h2>
+<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
+
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
+<h2 id="gamelle-connectée-insa"><a href="./gamelle-connectee.html">Gamelle Connectée INSA</a></h2>
+<h2 id="be-trotinette"><a href="./be-trotinette.html">BE Trotinette</a></h2>
+
+<hr />
+<h2 id="2023">2023</h2>
+
+<hr />
+<h2 id="2022">2022</h2>
+
+<hr />
+<h2 id="2021">2021</h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">BE Robot INSA</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" rel="alternate" type="text/html" title="BE Robot INSA" /><published>2024-10-02T10:52:03+02:00</published><updated>2024-10-02T10:52:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"><![CDATA[<h1 id="introduction">Introduction</h1>
 <p>In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.</p>
 
 <div style="display: flex; justify-content: center;">
@@ -405,20 +509,4 @@ function closeModal() {
   var modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
-</script>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-10-02T01:29:03+02:00</published><updated>2024-10-02T01:29:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+</script>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.]]></summary></entry></feed>
