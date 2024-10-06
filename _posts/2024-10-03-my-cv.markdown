@@ -7,13 +7,13 @@ categories: jekyll update
 
 # Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)
 
-**Téléphone** : +(33) 679 791 782  
+**Phone** : +(33) 679 791 782  
 **Adresse** : Rue du libre-échange, 31500 Toulouse  
-**Email** : chanfreau@insa-toulouse.fr  
+**Mail** : chanfreau@insa-toulouse.fr  
 
 ---
 
-## À propos de moi
+## About me
 
 I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.
 
@@ -37,9 +37,9 @@ I am a highly motivated master’s student in apprenticeship studying Automation
 
 ---
 
-## Compétences
+## Skills
 
-### Programmation / Logiciels
+### Programming / Software
 - Language in digital electronics: VHDL (Quartus)  
 - Microprocessor language: C, C++, Assembly (Keil)  
 - Programming language: Java, Python, Git (Eclipse, VS Code)  
@@ -52,14 +52,14 @@ I am a highly motivated master’s student in apprenticeship studying Automation
 - Debugging tools and software security testing  
 - Familiarity with the concept of microcontroller memory  
 
-### Langues
+### Languages
 - **Français** : Langue maternelle  
 - **Anglais** : Niveau intermédiaire  
 - **Espagnol** : Niveau intermédiaire  
 
 ---
 
-## Expérience professionnelle
+## Professional Experience
 
 **International Engineering Mobility – Vitesco Technologies** (Juillet 2024 - Septembre 2024)  
 - Studied and implemented solutions for Flash memory management on a new microcontroller  
@@ -78,7 +78,7 @@ I am a highly motivated master’s student in apprenticeship studying Automation
 
 ---
 
-## Activités extrascolaires
+## Extracurricular Activities
 
 - Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship  
 - Practiced swimming for 6 years in a club  

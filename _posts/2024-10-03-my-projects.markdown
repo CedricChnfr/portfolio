@@ -8,14 +8,20 @@ categories: jekyll update
 # 2024
 
 ## [BE Robot INSA](./be-projet-robot.html)
-## [Gamelle Connectée INSA](./gamelle-connectee.html)
-## [BE Trotinette](./be-trotinette.html)
+## [Connected Bowl INSA](./connected-bowl.html)
+## [BE Trotinette INSA](./be-trotinette.html)
 
 ---
-## 2023
+# 2023
+
+## [Object-Oriented Programming INSA](./object-oriented-programming.html)
+## [RISC Type Microprocessor INSA](./vhdl-risc-pipeline.html)
 
 ---
-## 2022
+# 2022
+
+## [C and Network Project INSA](./network-project-C.html)
+
 
 ---
-## 2021
+# 2021

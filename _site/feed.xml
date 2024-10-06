@@ -1,4 +1,523 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-06T00:47:44+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-06T11:47:56+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
+We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
+Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
+
+<h1 id="risc-microprocessor-architecture"><strong>RISC Microprocessor Architecture</strong></h1>
+<h1 id="microprocessor-component">Microprocessor Component</h1>
+<p>In this part we will look at the architecture of a RISC microprocessor, however we will not go into details. Indeed there is a lot of documentation on this subject, which is clear and synthetic, they do not need a copy (which would be approximate). We will therefore present in a functional way the 5 elements present in our microprocessor the ALU, the data memory, the instruction memory and the register bank.</p>
+
+<ul>
+  <li>
+    <h2 id="arithmetic-and-logic-unit">Arithmetic and Logic Unit</h2>
+  </li>
+</ul>
+
+<h3 id="functional-description">Functional Description</h3>
+
+<p>The Arithmetic Logic Unit (ALU) is the central component that allows the execution of arithmetic and logic operations of the microprocessor. The functional diagram of the ALU is given below in figure 1. The Control Bus (Ctrl_ALU) determines the type of operation to be performed. The ALU takes two inputs A and B of 8 bits, which will be the operands and S the result of the operation also on 8 bits. We also have 4 flags at the output, Negative, Carry, Zero and Overflow.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALU.png" style="width: 30%;" />
+</div>
+
+<h3 id="functional-simulation">Functional Simulation</h3>
+<p>Below in Figure 2 is one of the functional simulations of our ALU. This simulation does not depend on time and implementation and only allows us to verify the logical operation of the circuit.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALU_simu.png" style="width: 90%;" />
+</div>
+<p>Below you will find table No. 1 allowing the link to be made between the control bus and the arithmetic and logical operations carried out.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALU_tab.png" style="width: 90%;" />
+</div>
+<p>The result of each operation is stored in the S output. Additionally, the component outputs information about the result in the form of flags in the Flag output, indicating whether an operation generated a carry, whether the result is negative, whether it is zero, or whether there was an overflow.</p>
+
+<ul>
+  <li>
+    <h2 id="register-bench">Register Bench</h2>
+  </li>
+</ul>
+
+<h3 id="functional-description-1">Functional Description</h3>
+<p>The Register Bank, integrated in our architecture, represents a fundamental element for temporary data storage during instruction execution. It consists of 16 8-bit registers, providing significant storage capacity for ongoing operations. This configuration allows simultaneous read access operations via ports QA and QB, as well as write operations via port W_in.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Register_bench.png" style="width: 30%;" />
+</div>
+
+<h3 id="functional-simulation-1">Functional Simulation</h3>
+<p>A simulation was performed to evaluate the reading, writing, and general behavior of the register bank. The values ​​were manipulated to ensure proper data handling based on the clock. This includes scenarios such as simultaneous reading and writing to an output (bypass), or simply reading a register via the write port.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Register_bench_simu.png" style="width: 90%;" />
+    <img src="/img/BE_Pipeline/Register_bench_tab.png" style="width: 90%;" />
+</div>
+
+<p>*Bypassing is a technique for reading and writing to a register at the same time. It is used in processors to improve efficiency by redirecting the calculated results directly to the next instructions that need them, without waiting for the register to be written.</p>
+
+<ul>
+  <li>
+    <h2 id="data-memory">Data Memory</h2>
+  </li>
+</ul>
+
+<h3 id="functional-description-2">Functional Description</h3>
+<p>Data memory is used to store temporary information needed for a program to operate. Operations on data memory include reading values ​​stored at specific addresses and writing new values ​​to those addresses.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Data_Memory.png" style="width: 30%;" />
+</div>
+<p>@(7:0) : Adresse à laquelle les opérations de lecture ou écriture doivent être effec-tuées.
+IN(7:0) : Entrée de données à écrire dans la mémoire à l’adresse spécifiée.
+RW : Mode d’opération de la mémoire (0 pour lecture, 1 pour écriture).
+RST : Entrée de réinitialisation de la mémoire.
+CLK : Entrée de l’horloge servant à déclencher les opérations de la mémoire.
+OUT(7:0) : Sortie renvoyant les données lues à partir de l’adresse spécifiée.</p>
+
+<h3 id="functional-simulation-2">Functional Simulation</h3>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Data_Memory_simu.png" style="width: 90%;" />
+    <img src="/img/BE_Pipeline/Data_Memory_tab.png" style="width: 90%;" />
+</div>
+
+<p>At each rising edge of the clock (CLK), the memory reacts according to the control (RW) and reset (RST) signals. In the event of a reset (RST at 1), the memory is reset to zero. In write mode (RW at 1), the input data (data) are written to the specified address. In read mode (RW at 0), the data located at the specified address are returned via the output (OUT).</p>
+
+<ul>
+  <li>
+    <h2 id="instruction-memory">Instruction Memory</h2>
+  </li>
+</ul>
+
+<h3 id="functional-description-3">Functional Description</h3>
+<p>Instruction memory stores the list of machine instructions that make up the program executed by the processor. Each instruction is associated with a specific memory address. Each instruction is represented on 32 bits and is accessible at a specific address in memory.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Instruction_Memory.png" style="width: 30%;" />
+</div>
+<p>A [7 :0] : Entrée représentant l’adresse à laquelle les opérations de lecture doivent être effectuées.
+S [31 :0] : Sortie renvoyant l’instruction de 32 bits lue à partir de l’adresse spécifiée</p>
+
+<h3 id="functional-simulation-3">Functional Simulation</h3>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Instruction_Memory_simu.png" style="width: 30%;" />
+    <img src="/img/BE_Pipeline/Instruction_Memory_tab.png" style="width: 30%;" />
+</div>
+<p>At each rising edge of the clock (clk), the memory reacts by returning the instruction located at the specified address via output S.</p>
+
+<h1 id="alea-management">ALEA Management</h1>
+
+<h3 id="functional-description-4">Functional Description</h3>
+<p>We distinguish between data ALEA events and branch ALEA events. We will focus on data ALEA events. A data ALEA event is an event, this event is triggered by at least two instructions executing consecutively and in an incompatible manner. A first instruction modifies the value of a data item in a memory area, the second uses this memory area while the value has not been updated. To address this issue we have created a new component in our data path, which you can see below</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA.png" style="width: 100%;" />
+</div>
+<p>If the component detects that the instruction sent by the instruction memory causes a ALEA with one of the instructions already present in the data path, then it blocks the instruction memory and sends NOPs in the data path. Once the ALEA is removed, it sends the blocked instruction and unlocks the instruction memory. It can be emphasized that the ALEA detection will only be done on the first 3 stages, in fact the register bank contains a bypass that allows reading and writing at the same time.</p>
+
+<h3 id="detection-condition">Detection Condition</h3>
+<p>We want to have the most general conditions possible to detect our ALEA events, this will avoid any kind of ambiguity and will allow us to simply manage all possible cases. We can start with the ALEA events caused by the MUL, SOU and ADD instructions.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA_tab.png" style="width: 60%;" />
+</div>
+<p>If the incoming instruction is ADD, MUL or SOU then zone B and C must be different from zone A of the 3 instructions currently being executed. We do not trigger any ALEA on the instructions currently being executed that would be STORE.
+We can now continue with the ALEA caused by the COP and STORE instructions.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA_tab2.png" style="width: 60%;" />
+</div>
+<p>If the incoming instruction is COP or STORE, the B zone must be different from the A zones of the 3 instructions currently being executed.
+It can be emphasized that an incoming instruction of type AFC or LOAD cannot cause a ALEA event, and will only have an influence if they are already present in the data path. A ALEA event must also be detected only on instructions, so the opcode must be checked to avoid triggering a ALEA event on a NOP.</p>
+
+<h3 id="functional-simulation-4">Functional Simulation</h3>
+<p>One point to emphasize is the NOP instruction, in fact a NOP must not do anything and by this we mean that it must not modify a register or a memory space, it can however enter the aluminum, cause a reading of the register bank or memory. From an external point of view, these interactions do not cause undesirable behavior on the part of the microprocessor, that being it causes unnecessary consumption.</p>
+
+<ul>
+  <li>Simple ALEA</li>
+</ul>
+
+<p>A first simple ALEA to perceive is a succession of two 2 AFCs followed by an addition of the two registers, this situation is simulated in the timeline below.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA_simu_simple.png" style="width: 100%;" />
+</div>
+<p>We send a first instruction “06001200” = R0&lt;= 12</p>
+
+<p>We send a second instruction “06001200” = R1&lt;= 12</p>
+
+<p>We send a third instruction “01020100” = R2&lt;= R1+R0</p>
+
+<p>Obviously the registers R0 and R1 are not up to date at the time of the addition so a “bubble” (here in yellow) is inserted, this bubble has a duration of 3 NOP.</p>
+
+<ul>
+  <li>Complex ALEA</li>
+</ul>
+
+<p>A second example of ALEA is ALEA caused by two non-successive instructions, this situation is simulated in the timing diagram below.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA_simu_complex.png" style="width: 100%;" />
+</div>
+<p>We send a first instruction “01030000” = R3&lt;= R0+R0</p>
+
+<p>We send a second instruction “05040000” = R4&lt;= R5</p>
+
+<p>We send a third instruction “05040300” = R4&lt;= R3</p>
+
+<p>Here the ALEA number is between the third and the first instruction, the bubble (here in yellow) is equivalent to 2 NOPs. We see through this situation that the number of NOPs adapts according to the distance separating the ALEA numbers.</p>
+
+<ul>
+  <li>Complementary ALEA</li>
+</ul>
+
+<p>Finally, we can observe a last example of ALEA, it is a ALEA caused by two non-successive instructions, this situation is simulated in the timing diagram below.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/ALEA_simu_complem.png" style="width: 100%;" />
+</div>
+<p>We send a first instruction “05050100” = R5&lt;= R1</p>
+
+<p>We send a second instruction “06001200” = R0&lt;= 12</p>
+
+<p>We send a third instruction “06001200” = R0&lt;= 12</p>
+
+<p>We send a fourth instruction “08020500” = @02 &lt;=R5</p>
+
+<p>Here the ALEA number is between the fourth and first instructions the bubble (here in yellow) is equivalent to 1 NOP. We see through this situation that the number of NOPs adapts according to the distance separating the ALEA numbers and that we have treated all possible cases.</p>
+
+<h1 id="risc-microprocessor-implementation">RISC Microprocessor Implementation</h1>
+
+<h2 id="implementation-choices">Implementation Choices</h2>
+<p>We could have implemented our components and made them work in different ways. For the components we simply designed them according to the indications of the subject. For the data path we decided to implement the 4 MUX delimiting the pipeline stages in the form of components. The discrete LC and simple MUX components were implemented concurrently directly in the data path. We believe that despite the loss of readability, this increases the performance of our microprocessor.</p>
+
+<h2 id="analysis-upgrate-choices">Analysis Upgrate Choices</h2>
+
+<h3 id="amelioration-axes">Amelioration Axes</h3>
+
+<p>At the end of the project, several possibilities are available to us, we can improve our processor.
+For this, different opportunities present themselves to us, the first is to complete our instruction set in particular by adding functions such as logical OR, logical AND, etc. These functions are already integrated into our ALU, so we would have to modify our data path and our randomness management.
+Another area of ​​improvement is the addition of jump and conditional jump type instructions. This area is interesting because it allows us to create more complex algorithms.
+A fourth area of ​​improvement is to reduce the consumption of our microprocessor and its surface area as much as possible.
+Finally, a last possible area is the optimization of the system to increase its operating frequency. This is the choice we have decided to make, it is purely arbitrary.</p>
+
+<h3 id="frequential-analysis-and-critical-path">Frequential Analysis and Critical Path</h3>
+
+<p>Our first Timing report indicates a MAX frequency of 65MHz, this result obviously does not satisfy us.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Pipeline_data.png" style="width: 80%;" />
+</div>
+<p>One might think that managing the falling edge randomness decreases our max frequency, however the critical path tells us that we should look at our memories.
+After optimizing our memory path, we have a clearer implementation schematic:</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Pipeline_path.png" style="width: 100%;" />
+</div>
+<p>However our frequency is not higher, so we look again at our critical path:</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Pipeline_data2.png" style="width: 100%;" />
+</div>
+<p>Despite our efforts we have not managed to reduce the propagation times through this path.</p>
+
+<h2 id="performance">Performance</h2>
+
+<h3 id="energetic-consumption">Energetic Consumption</h3>
+<p>Although our modifications did not increase the frequency, the energy consumption has decreased significantly. The decrease is of the order of 175%. Below you will find the summary power report.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Energy.png" style="width: 80%;" />
+</div>
+
+<h3 id="component">Component</h3>
+<p>Our consumption is intrinsically linked to our frequency and number of components. Below you will find extracts from the report indicating the different components used for our project and in what proportions.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Pipeline/Consumption.png" style="width: 80%;" />
+</div>
+
+<h1 id="conclusion"><strong>Conclusion</strong></h1>
+<p>The project was very interesting to carry out, the discovery of the Vivado software was instructive for us who had only worked on Qartus. This project also allowed us to apply in a concrete way the different notions seen during the modeling of digital components and architectures.
+We encountered many difficulties, particularly when trying to optimize critical paths, and we ultimately did not achieve our goals. Despite this failure, we are satisfied with our management of hazards. In addition, the approach allowed us to go further in the use of the different tools offered by Vivado, and on Vhdl design in general.
+Knowledge and understanding of the architecture of a microprocessor are also useful to us, we can describe this knowledge as transversal skills.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
+<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
+
+<h2 id="2-virtualization">2. Virtualization</h2>
+<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
+
+<ul>
+  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
+  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
+Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
+</ul>
+
+<h2 id="3-cloud-computing">3. Cloud Computing</h2>
+<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
+
+<p>Scalability: Resources can be dynamically adjusted according to demand.
+Pay-as-you-go model: Users pay only for what they consume.
+Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
+The main service models are:</p>
+
+<ul>
+  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
+  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
+  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
+</ul>
+
+<h2 id="4-edge-computing">4. Edge Computing</h2>
+<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
+
+<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
+<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
+
+<h2 id="6-fog-computing">6. Fog Computing</h2>
+<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
+
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+
+<p><strong>Phone</strong> : +(33) 679 791 782<br />
+<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
+<strong>Mail</strong> : chanfreau@insa-toulouse.fr</p>
+
+<hr />
+
+<h2 id="about-me">About me</h2>
+
+<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
+
+<hr />
+
+<h2 id="formation">Formation</h2>
+
+<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
+<ul>
+  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
+  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
+  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
+  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
+</ul>
+
+<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
+<ul>
+  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
+  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
+  <li><strong>Projet</strong> : Designed and coded a game in C</li>
+</ul>
+
+<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
+<ul>
+  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
+</ul>
+
+<hr />
+
+<h2 id="skills">Skills</h2>
+
+<h3 id="programming--software">Programming / Software</h3>
+<ul>
+  <li>Language in digital electronics: VHDL (Quartus)</li>
+  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
+  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
+  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
+  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
+  <li>Computer science: MS Office</li>
+</ul>
+
+<h3 id="techniques">Techniques</h3>
+<ul>
+  <li>Design and assembly of electronic cards</li>
+  <li>Debugging tools and software security testing</li>
+  <li>Familiarity with the concept of microcontroller memory</li>
+</ul>
+
+<h3 id="languages">Languages</h3>
+<ul>
+  <li><strong>Français</strong> : Langue maternelle</li>
+  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
+  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
+</ul>
+
+<hr />
+
+<h2 id="professional-experience">Professional Experience</h2>
+
+<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
+<ul>
+  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
+  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
+  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
+</ul>
+
+<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
+<ul>
+  <li>Developed generic embedded solutions for ECUs reprogramming</li>
+  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
+  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
+  <li>Presented regular project reviews to team members in English</li>
+</ul>
+
+<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
+<ul>
+  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
+  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
+</ul>
+
+<hr />
+
+<h2 id="extracurricular-activities">Extracurricular Activities</h2>
+
+<ul>
+  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
+  <li>Practiced swimming for 6 years in a club</li>
+  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
+  <li>Assessor of a polling station for the regional and departmental elections</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
+<h2 id="connected-bowl-insa"><a href="./connected-bowl.html">Connected Bowl INSA</a></h2>
+<h2 id="be-trotinette-insa"><a href="./be-trotinette.html">BE Trotinette INSA</a></h2>
+
+<hr />
+<h1 id="2023">2023</h1>
+
+<h2 id="object-oriented-programming-insa"><a href="./object-oriented-programming.html">Object-Oriented Programming INSA</a></h2>
+<h2 id="risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">RISC Type Microprocessor INSA</a></h2>
+
+<hr />
+<h1 id="2022">2022</h1>
+
+<h2 id="c-and-network-project-insa"><a href="./network-project-C.html">C and Network Project INSA</a></h2>
+
+<hr />
+<h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
+<h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
+
+<style>
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 50%;
+        width: 500px;
+        height: 200px;
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Object Oriented Programming</title><link href="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html" rel="alternate" type="text/html" title="Object Oriented Programming" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.</p>
+
+<h2 id="steps"><strong>Steps</strong></h2>
+<p>The files Step_1.cpp, Step_2.cpp, Step_3.cpp, Step_4.cpp, and Step_5.cpp, Step_6.cpp illustrate the manipulation of points in 2D and 3D. 
+All these steps were mainly to understand how C++ works.</p>
+
+<p align="center">
+    <a href="/code/cpp/Etape_1.cpp" target="_blank">Step 1</a> -
+    <a href="/code/cpp/Etape_2.cpp" target="_blank">Step 2</a> -
+    <a href="/code/cpp/Etape_3.cpp" target="_blank">Step 3</a> -
+    <a href="/code/cpp/Etape_4.cpp" target="_blank">Step 4</a> -
+    <a href="/code/cpp/Etape_5.cpp" target="_blank">Step 5</a> - 
+    <a href="/code/cpp/Etape_6.cpp" target="_blank">Step 6</a>
+</p>
+
+<p>Features include:</p>
+<ul>
+  <li>
+    <p>Input and Display: Points can be input and displayed.</p>
+  </li>
+  <li>
+    <p>Mathematical Operations: Points can be added and multiplied by scalars.</p>
+  </li>
+</ul>
+
+<h2 id="tds"><strong>TDs</strong></h2>
+<p>Vector Manipulation
+The files TD1.cpp, TD2.cpp, TD4.cpp, and TD5.cpp contain implementations of the vector class. This class allows you to create and manipulate vectors of different dimensions. Here are some key features:</p>
+
+<p align="center">
+    <a href="/code/cpp/TD1.cpp" target="_blank">TD1</a> -
+    <a href="/code/cpp/TD2.cpp" target="_blank">TD2</a> -
+    <a href="/code/cpp/TD4.cpp" target="_blank">TD4</a> -
+    <a href="/code/cpp/TD5.cpp" target="_blank">TD5</a>
+</p>
+
+<ul>
+  <li>
+    <p>Constructors and Destructors: The vector class has several constructors to initialize vectors with specific dimensions and values. The destructor ensures the freeing of dynamically allocated memory.</p>
+  </li>
+  <li>
+    <p>Input and Display: The input and display methods allow you to input vector values ​​and display them respectively.</p>
+  </li>
+  <li>
+    <p>Overloaded Operators: The class overloads several operators, including the indexing operator [], the assignment operator =, and the addition operator +.</p>
+  </li>
+</ul>
+
+<h2 id="tps"><strong>TPs</strong></h2>
+
+<p>In this part, you will find two key C++ projects focused on geometric figure management and the use of the <strong>Standard Template Library (STL)</strong>.</p>
+
+<p align="center">
+    <a href="/code/cpp/TP_figure.cpp" target="_blank">TP Figure</a> -
+    <a href="/code/cpp/TP_stl.cpp" target="_blank">TP STL</a>
+</p>
+
+<h3 id="tp-1-geometric-figure-management">TP 1: Geometric Figure Management</h3>
+
+<p>This project revolves around the management of <strong>geometric figures</strong> such as squares, circles, equilateral triangles, and rectangles using advanced object-oriented programming concepts like <strong>abstract classes</strong>, <strong>inheritance</strong>, and <strong>polymorphism</strong>.</p>
+
+<ul>
+  <li>
+    <p><strong>Dynamic Creation and Display</strong>: Figures are created dynamically using polymorphism. Each figure (square, circle, triangle, rectangle) has unique characteristics that are displayed using virtual functions.</p>
+  </li>
+  <li>
+    <p><strong>Perimeter Calculation</strong>: Each figure calculates and displays its perimeter, achieved by redefining the virtual function <code class="language-plaintext highlighter-rouge">perimetre()</code> in derived classes.</p>
+  </li>
+  <li>
+    <p><strong>Polymorphism and Dynamic Binding</strong>: The program leverages polymorphism by iterating through a list of figures and calling appropriate methods for each figure type dynamically.</p>
+  </li>
+  <li>
+    <p><strong>List Management with Iterators</strong>: Figures are stored in a list, and standard operations like insertion and deletion are performed using iterators.</p>
+  </li>
+  <li>
+    <p><strong>Color Management (Multiple Inheritance)</strong>: Circles also inherit from a <code class="language-plaintext highlighter-rouge">Coloriable</code> class, allowing them to store and display a color. This showcases <strong>multiple inheritance</strong> in C++.</p>
+  </li>
+  <li>
+    <p><strong>Queue Operations</strong>: Figures are stored in a queue, enabling insertion and deletion while preserving the order of entry. The project also demonstrates linked structures and queue management for figure manipulation.</p>
+  </li>
+</ul>
+
+<h3 id="tp-2-standard-template-library-stl-in-c">TP 2: Standard Template Library (STL) in C++</h3>
+
+<p>The <strong>STL</strong> is a powerful C++ library that provides pre-built data structures and algorithms. This project explores how to effectively use containers, iterators, and algorithms provided by the STL.</p>
+
+<ul>
+  <li>
+    <p><strong>Containers</strong>: The project introduces both <strong>sequential containers</strong> like <code class="language-plaintext highlighter-rouge">vector</code>, <code class="language-plaintext highlighter-rouge">list</code>, and <code class="language-plaintext highlighter-rouge">deque</code>, as well as <strong>associative containers</strong> such as <code class="language-plaintext highlighter-rouge">set</code> and <code class="language-plaintext highlighter-rouge">map</code>. These containers are used to store data and efficiently manage access to the elements.</p>
+  </li>
+  <li>
+    <p><strong>Iterators</strong>: Iterators allow for easy traversal of the containers, functioning similarly to pointers in arrays. The project highlights how to iterate through containers using <strong><code class="language-plaintext highlighter-rouge">begin()</code></strong> and <strong><code class="language-plaintext highlighter-rouge">end()</code></strong> methods and perform operations on each element.</p>
+  </li>
+  <li>
+    <p><strong>STL Algorithms</strong>: The project demonstrates the use of algorithms such as <strong><code class="language-plaintext highlighter-rouge">reverse()</code></strong>, <strong><code class="language-plaintext highlighter-rouge">sort()</code></strong>, and <strong><code class="language-plaintext highlighter-rouge">find()</code></strong>, which work on iterators to manipulate the contents of containers without altering the container structure itself.</p>
+  </li>
+  <li>
+    <p><strong>Vector and List Operations</strong>: Practical examples include creating vectors and lists, adding and removing elements dynamically, and performing operations such as sorting and searching.</p>
+  </li>
+  <li><strong>Advanced Exercises</strong>:
+    <ul>
+      <li>Creating a vector of 10 float values, modifying the second half of the vector.</li>
+      <li>Managing lists of alphabet characters and inserting or deleting elements efficiently.</li>
+    </ul>
+  </li>
+  <li><strong>Set and Map Operations</strong>: The use of <code class="language-plaintext highlighter-rouge">set</code> ensures uniqueness of elements, while <code class="language-plaintext highlighter-rouge">map</code> provides a key-value store for efficient lookups. The project also demonstrates complex operations like finding and removing elements based on conditions.</li>
+</ul>
+
+<p>By combining geometric figure management and the use of STL, these two projects illustrate the powerful capabilities of C++ in handling both <strong>object-oriented design</strong> and <strong>template programming</strong>.</p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>This project demonstrates a thorough understanding of basic and advanced C++ programming concepts. The various steps and tutorials demonstrate how to manipulate vectors, manage geometric figures, and perform operations on 2D and 3D points. This project is an excellent example of the practical application of object-oriented programming principles in C++.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
 <p>This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.</p>
 
 <h2 id="2-virtualization-type-1-and-type-2-hypervisors">2. Virtualization: Type 1 and Type 2 Hypervisors</h2>
@@ -63,117 +582,7 @@ Docker installation: Docker was installed on the VM to provision containers. Con
 Testing the connectivity between containers and VMs, with conclusive results in terms of bidirectional communication.
 Cloning and snapshot: Snapshots of the containers were taken to preserve their state, thus facilitating recovery and subsequent deployment.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
-<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
-<h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
-
-<style>
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        border-radius: 50%;
-        width: 500px;
-        height: 200px;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
-
-<p><strong>Téléphone</strong> : +(33) 679 791 782<br />
-<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
-<strong>Email</strong> : chanfreau@insa-toulouse.fr</p>
-
-<hr />
-
-<h2 id="à-propos-de-moi">À propos de moi</h2>
-
-<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
-
-<hr />
-
-<h2 id="formation">Formation</h2>
-
-<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
-<ul>
-  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
-  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
-  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
-  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
-</ul>
-
-<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
-<ul>
-  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
-  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
-  <li><strong>Projet</strong> : Designed and coded a game in C</li>
-</ul>
-
-<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
-<ul>
-  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
-</ul>
-
-<hr />
-
-<h2 id="compétences">Compétences</h2>
-
-<h3 id="programmation--logiciels">Programmation / Logiciels</h3>
-<ul>
-  <li>Language in digital electronics: VHDL (Quartus)</li>
-  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
-  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
-  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
-  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
-  <li>Computer science: MS Office</li>
-</ul>
-
-<h3 id="techniques">Techniques</h3>
-<ul>
-  <li>Design and assembly of electronic cards</li>
-  <li>Debugging tools and software security testing</li>
-  <li>Familiarity with the concept of microcontroller memory</li>
-</ul>
-
-<h3 id="langues">Langues</h3>
-<ul>
-  <li><strong>Français</strong> : Langue maternelle</li>
-  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
-  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
-</ul>
-
-<hr />
-
-<h2 id="expérience-professionnelle">Expérience professionnelle</h2>
-
-<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
-<ul>
-  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
-  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
-  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
-</ul>
-
-<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
-<ul>
-  <li>Developed generic embedded solutions for ECUs reprogramming</li>
-  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
-  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
-  <li>Presented regular project reviews to team members in English</li>
-</ul>
-
-<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
-<ul>
-  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
-  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
-</ul>
-
-<hr />
-
-<h2 id="activités-extrascolaires">Activités extrascolaires</h2>
-
-<ul>
-  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
-  <li>Practiced swimming for 6 years in a club</li>
-  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
-  <li>Assessor of a polling station for the regional and departmental elections</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">BE Trotinette</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" rel="alternate" type="text/html" title="BE Trotinette" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-trotinette</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">BE Trotinette</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" rel="alternate" type="text/html" title="BE Trotinette" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-trotinette</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"><![CDATA[<h1 id="introduction">Introduction</h1>
 <p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
 The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
 
@@ -211,313 +620,4 @@ This gives a rise time of approximately 1.3ms, which is consistent with the Simu
 <h1 id="conclusion">Conclusion</h1>
 <p>The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment.</p>
 
-<p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.]]></summary></entry><entry><title type="html">Gamelle Connectée</title><link href="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html" rel="alternate" type="text/html" title="Gamelle Connectée" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/gamelle-connectee.html"><![CDATA[<h1 id="introduction">Introduction</h1>
-<p>During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.</p>
-<div style="text-align: center;">
-    <img src="/img/BE_Gamelle/Gamelle.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-</div>
-
-<h1 id="project-objectives">Project objectives</h1>
-<h2 id="the-connected-bowl-system-allows">The Connected Bowl system allows:</h2>
-
-<p>To control two servomotors via a web interface to choose the food to distribute.
-To add a pressure sensor to monitor the amount of food in the tanks.
-To integrate LEDs and a buzzer to signal to the user the proper functioning or absence of food.
-System description
-The project combines C++ programming on an ESP8266 microcontroller, the use of sensors and the creation of a web interface. Here are the main features:</p>
-
-<h1 id="web-interface">Web interface</h1>
-
-<p>The web interface allows to control the distribution of food by selecting two different compartments.
-Two buttons are available: one for Food 1 and one for Food 2.
-Food distribution</p>
-
-<p>Choice 1: By selecting “Food 1”, the corresponding servomotor is activated to open the hatch of compartment 1.</p>
-
-<p>Choice 2: By selecting “Food 2”, the associated servomotor opens the hatch of compartment 2.
-Food detection</p>
-
-<p>If food is present in the compartment, the hatch opens normally.
-If the pressure sensor detects an absence of food:
-A buzzer emits an audible alert.
-A red LED lights up to indicate the absence of food.
-Class diagram
-The object-oriented architecture of the Connected Bowl has been designed to modulate the interactions between the components (sensors, servomotors, web interface) via well-defined classes. Here is a visual representation of the class diagram used in this project:</p>
-
-<p><img src="/img/BE_Gamelle/Class_Diag.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
-
-<h1 id="connecting-to-the-server">Connecting to the server</h1>
-<p>Before accessing the web interface, it is necessary to ensure that the ESP8266 is connected to the WiFi network. You can obtain the IP address of the microcontroller via the serial monitor or a network scanning tool. Then, the web interface becomes accessible via this IP address in a browser.</p>
-
-<p><img src="/img/BE_Gamelle/Serveur.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>The Connected Bowl project allowed us to practice several skills:</p>
-
-<p>Embedded programming with the ESP8266 in C++.
-Development of an interactive web interface for remote control.
-Integration of sensors and actuators to automate food distribution and provide visual and audio feedback.
-This project confronted us with various technical challenges, including managing WiFi connections, manipulating servomotors, and communicating between the ESP8266 and the web interface. It illustrates the combination of skills in IoT, electronics and web development, resulting in an innovative and practical solution for managing animal meals.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
-
-<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
-<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
-
-<h2 id="2-virtualization">2. Virtualization</h2>
-<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
-
-<ul>
-  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
-  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
-Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
-</ul>
-
-<h2 id="3-cloud-computing">3. Cloud Computing</h2>
-<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
-
-<p>Scalability: Resources can be dynamically adjusted according to demand.
-Pay-as-you-go model: Users pay only for what they consume.
-Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
-The main service models are:</p>
-
-<ul>
-  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
-  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
-  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
-</ul>
-
-<h2 id="4-edge-computing">4. Edge Computing</h2>
-<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
-
-<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
-<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
-
-<h2 id="6-fog-computing">6. Fog Computing</h2>
-<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
-
-<h2 id="7-conclusion">7. Conclusion</h2>
-<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
-
-<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
-<h2 id="gamelle-connectée-insa"><a href="./gamelle-connectee.html">Gamelle Connectée INSA</a></h2>
-<h2 id="be-trotinette"><a href="./be-trotinette.html">BE Trotinette</a></h2>
-
-<hr />
-<h2 id="2023">2023</h2>
-
-<hr />
-<h2 id="2022">2022</h2>
-
-<hr />
-<h2 id="2021">2021</h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">BE Robot INSA</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html" rel="alternate" type="text/html" title="BE Robot INSA" /><published>2024-10-02T10:52:03+02:00</published><updated>2024-10-02T10:52:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-projet-robot.html"><![CDATA[<h1 id="introduction">Introduction</h1>
-<p>In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.</p>
-
-<div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Maquette.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
-    <img src="/img/BE_Robot_Project/Schema.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
-</div>
-
-<h1 id="projet">Projet</h1>
-<p>The project involved developing several functionalities for a robot, including camera management, arena detection, and task synchronization. We used FreeRTOS to manage real-time tasks and ensure safe concurrent execution.</p>
-
-<h2 id="fonctionnalités-du-projet">Fonctionnalités du Projet</h2>
-
-<style>
-table {
-    font-size: 0.8em;
-}
-</style>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nom de la fonction</th>
-      <th>Description du comportement</th>
-      <th>Entrées</th>
-      <th>Sorties</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Démarrer serveur</td>
-      <td>Lancer serveur. Si échec, afficher un message et stopper le programme, sinon produire “serveur démarré”.</td>
-      <td>Évènement : Start<br /> Données : inputStream</td>
-      <td>Évènement : Serveur démarré</td>
-    </tr>
-    <tr>
-      <td>Connecter au moniteur</td>
-      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si ok, produire “connexion établie”.</td>
-      <td>Évènement : Serveur démarré</td>
-      <td>Évènement : connexion établie</td>
-    </tr>
-    <tr>
-      <td>Traiter message du moniteur</td>
-      <td>Attendre “connexion établie”. Tant que : Attendre message inputStream (Read). Si message = ouvrir com robot -&gt; ouvrir comRobot. Si message = ouvrir camera -&gt; ouvrir camera. Si message = fermer camera -&gt; fermer camera.</td>
-      <td>Évènement : connexion établie<br /> Données : Mouvement</td>
-      <td>Évènement : Ouvrir comRobot<br />Ouvrir camera<br />Fermer camera<br />Start robot<br />start recherche arène<br />start recherche robot</td>
-    </tr>
-    <tr>
-      <td>Etablissement de la connexion</td>
-      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si oui, connexion établie.</td>
-      <td>Évènement : ouvrirSocket<br />serveurDemarre</td>
-      <td>Évènement : connexionMonitor</td>
-    </tr>
-    <tr>
-      <td>Mettre en place la communication</td>
-      <td>Attendre “ouvrir comRobot”. Mettre en place la communication avec le robot. Si la communication est ok, poster “messageTomonACK”, sinon poster “messageToMonNAC”. Mettre à jour le statut de la com robot.</td>
-      <td>Évènement : ouvrir comRobot<br /> Données : statut com robot<br />Message Poster</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Démarrer Robot</td>
-      <td>Attendre “Start robot”. Si “Statut com robot” est actif, envoyer ordre de démarrage et mettre à jour “robot démarré”.</td>
-      <td>Évènement : ouvrir comRobot<br /> Donnée : Statut com robot</td>
-      <td>Donnée : robot démarré</td>
-    </tr>
-    <tr>
-      <td>Déplacer robot</td>
-      <td>Toutes les 100ms, si “robot démarré” est vrai, lire “mouvement” et envoyer ordre, sinon rien.</td>
-      <td>Donnée : robot démarré</td>
-      <td>Ordre</td>
-    </tr>
-    <tr>
-      <td>Envoyer message au moniteur</td>
-      <td>Attendre “connexion établie”. Tant que : Attendre messageToMon, envoyer le message au superviseur. Fin tant que.</td>
-      <td>Évènement : connexion établie<br /> Données : Outputstream</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Lire niveau batterie</td>
-      <td>Toutes les 500ms, si “robot démarré” est vrai, demander niveau de batterie au robot et le poster pour le moniteur. Sinon, rien.</td>
-      <td>Donnée : robot démarré<br /> Donnée : Message Poster</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Ouvrir/fermer la camera</td>
-      <td>Attendre “ouvrir camera” ou “fermer camera”. Ouvrir ou fermer la camera, envoyer un message au moniteur, mettre à jour “camera ouvert”.</td>
-      <td>Ouvrir camera<br /> Fermer camera<br /> Évènement : Afficher image<br /> Donnée : “Camera ouvert”</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Afficher Image</td>
-      <td>Attendre “Afficher image”. Toutes les 50ms, si “camera ouvert” est vrai, prendre une image du flux de la camera. Si “afficher arène” = vrai alors dessiner arène sur l’image. Poster l’image pour le moniteur.</td>
-      <td>Évènement : Afficher image<br /> Donnée : “Camera ouvert”<br /> Donnée : Message Poster</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Chercher Arène</td>
-      <td>Attendre “start recherche arène”. Si “camera ouvert” est vrai : “camera ouvert = faux”. Prendre une image du flux de la camera, analyser l’image et dessiner l’arène dessus. La poster pour le moniteur.</td>
-      <td>Évènement : start recherche arène<br /> Donnée : Message Poster<br />afficher arène</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Chercher Position</td>
-      <td>Attendre “start recherche robot”. Si “camera ouvert” est vrai : Prendre une image du flux de la camera, analyser l’image et dessiner le robot. Mettre à jour “dessin robot”.</td>
-      <td>Évènement : start recherche robot<br /> Donnée : “camera ouvert”<br /> Donnée : Dessin robot</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img src="/img/BE_Robot_Project/Graphe_Projet_Robot.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
-
-<h2 id="existing-functionalities">Existing Functionalities</h2>
-<p>Before diving into the new functionalities we implemented, it is important to note that several key functionalities were already established:</p>
-
-<h3 id="server-functionality">Server Functionality</h3>
-<p>The server functionality is responsible for handling communication between the robot and external systems. This includes receiving commands and sending status updates.</p>
-
-<h3 id="monitor-connection">Monitor Connection</h3>
-<p>The connection with the monitor is established, enabling the robot to send real-time data and receive instructions from the monitoring system.</p>
-
-<h3 id="robot-movement">Robot Movement</h3>
-<p>The functionality to move the robot is already in place, allowing the robot to navigate its environment based on the commands received.</p>
-
-<h2 id="battery-level-reading">Battery Level Reading</h2>
-<p>Battery level reading involves monitoring the robot’s battery status to ensure it has sufficient power to perform its tasks.
-This ensures that the robot has sufficient power to perform its tasks and can alert the system if the battery level is low. By keeping track of the battery level, we can prevent unexpected shutdowns and ensure the robot operates efficiently.</p>
-
-<div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Get_Battery_func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
-</div>
-
-<h2 id="camera-management">Camera Management</h2>
-<p>Camera management involved several operations, such as opening, closing, and capturing images. We used mutexes to protect access to shared resources, such as the camera state and the camera object itself. Here is a code snippet illustrating the use of mutexes.</p>
-
-<div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/img/BE_Robot_Project/Start_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Robot_Project/Screen_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Robot_Project/Stop_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-</div>
-
-<h2 id="arena-detection">Arena Detection</h2>
-<p>For arena detection, we created a function that is called when the user presses a specific button. This function uses semaphores to synchronize execution and ensure that tasks are executed in the correct order.</p>
-
-<div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
-</div>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>This project allowed us to apply advanced real-time programming concepts, such as using mutexes and semaphores for task synchronization. We successfully implemented the required functionalities for the robot while ensuring safe concurrent execution. The challenges we encountered helped us better understand the importance of synchronization and resource management in multithreaded programming.</p>
-
-<style>
-p {
-    text-align: justify;
-}
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="img01" />
-</div>
-<!-- JavaScript -->
-<script>
-function openModal(src) {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("img01");
-  modal.style.display = "block";
-  modalImg.src = src;
-}
-
-function closeModal() {
-  var modal = document.getElementById("myModal");
-  modal.style.display = "none";
-}
-</script>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.]]></summary></entry></feed>
+<p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.]]></summary></entry></feed>

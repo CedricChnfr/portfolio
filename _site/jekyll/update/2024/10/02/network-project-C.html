@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>C and Network Project | My Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="C and Network Project" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling." />
+<meta property="og:description" content="Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling." />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html" />
+<meta property="og:site_name" content="My Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="C and Network Project" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling.","headline":"C and Network Project","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">My Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="introduction">Introduction</h1>
+<p>This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling.</p>
+
+<p>In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment.</p>
+
+<h2 id="part-1-comparing-udp-and-tcp"><strong>Part 1: Comparing UDP and TCP</strong></h2>
+
+<h3 id="udp-transmission">UDP Transmission:</h3>
+
+<ul>
+  <li>
+    <p>Setup:</p>
+
+    <ul>
+      <li>
+        <p>On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -p -u -t 10 9025</code></p>
+
+        <p><code class="language-plaintext highlighter-rouge">-p</code>: Specifies the sink mode.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-u</code>: Uses the UDP protocol.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-t</code> 10: Sets the application buffer size to 10 bytes.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number created to listen (&gt;9000)</p>
+
+        <div style="text-align: center;">
+      <img src="/img/BE_Reseau/UDP_cmd.png" style="width: 90%;" />
+  </div>
+      </li>
+      <li>
+        <p>On Terminal 2 (acting as the client or source), we sent 20 messages to the server using:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -s -u -n 20 insa-20661 9025</code></p>
+
+        <p><code class="language-plaintext highlighter-rouge">-s</code>: Specifies the source mode.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-n 20</code>: Number of messages to send.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">insa-20661</code>: Destination machine identifier.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number where we send (&gt;9000)</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>Out of 20 messages sent, only 13 were received.</p>
+      </li>
+      <li>
+        <p>The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+          <img src="/img/BE_Reseau/UDP_send.png" style="width: 90%;" />
+  </div>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+    <ul>
+      <li>
+        <p>UDP is a connectionless protocol without mechanisms for flow control or error correction.</p>
+      </li>
+      <li>
+        <p>Packet loss occurred due to buffer overflow at the application level.</p>
+      </li>
+      <li>
+        <p>UDP does not guarantee message delivery, order, or integrity.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="tcp-transmission">TCP Transmission:</h3>
+
+<ul>
+  <li>
+    <p>Setup:</p>
+
+    <ul>
+      <li>
+        <p>On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -p -t 20 9025</code></p>
+
+        <ul>
+          <li>Omitting <code class="language-plaintext highlighter-rouge">-u</code> defaults to TCP.</li>
+        </ul>
+
+        <div style="text-align: center;">
+          <img src="/img/BE_Reseau/TCP_cmd.png" style="width: 90%;" />
+  </div>
+      </li>
+      <li>
+        <p>On Terminal 2, we sent 20 messages to the server:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -s -n 20 insa-20661 9025</code></p>
+
+        <div style="text-align: center;">
+          <img src="/img/BE_Reseau/TCP_send.png" style="width: 90%;" />
+  </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>All 20 messages were successfully transmitted and received.</p>
+      </li>
+      <li>
+        <p>No packet loss occurred, and messages arrived in order.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+
+    <ul>
+      <li>
+        <p>TCP is a connection-oriented protocol that establishes a connection before data transfer.</p>
+      </li>
+      <li>
+        <p>It provides reliability through acknowledgments, retransmissions, and flow control.</p>
+      </li>
+      <li>
+        <p>TCP ensures data integrity and ordered delivery.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="part-2-testing-protocol-behavior-without-open-ports"><strong>Part 2: Testing Protocol Behavior Without Open Ports</strong></h2>
+
+<h3 id="tcp-connection-refusal">TCP Connection Refusal:</h3>
+
+<ul>
+  <li>
+    <p>Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error.</p>
+  </li>
+  <li>
+    <p>This confirms that TCP requires an active listener to establish a connection.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_beh.png" style="width: 90%;" />
+</div>
+
+<h3 id="udp-message-handling">UDP Message Handling:</h3>
+
+<ul>
+  <li>
+    <p>Sending messages to a closed UDP port did not produce errors on the sender’s side.</p>
+  </li>
+  <li>
+    <p>The messages were sent into the network, but the receiver did not process them.</p>
+  </li>
+  <li>
+    <p>UDP does not check for active listeners before sending data.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_beh.png" style="width: 90%;" />
+</div>
+
+<p><br /></p>
+
+<h2 id="part-3-capturing-and-analyzing-network-traffic"><strong>Part 3: Capturing and Analyzing Network Traffic</strong></h2>
+
+<p>Using <code class="language-plaintext highlighter-rouge">tcpdump</code> to Monitor Traffic:</p>
+
+<ul>
+  <li>Connected to a monitoring machine using:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">ssh tcpdump@insa-20673</code></p>
+
+<ul>
+  <li>Started packet capture on port 9025:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">sudo tcpdump 9025</code></p>
+
+<h3 id="observations-with-udp">Observations with UDP:</h3>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_dump.png" style="width: 90%;" />
+</div>
+<p><br /></p>
+<ul>
+  <li>
+    <p>Messages were visible in the capture, showing source and destination IP addresses and ports.</p>
+  </li>
+  <li>
+    <p>No connection establishment phase was observed.</p>
+  </li>
+  <li>
+    <p>Packets contained the data payload but lacked reliability mechanisms.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_dump2.png" style="width: 90%;" />
+</div>
+
+<h3 id="observations-with-tcp">Observations with TCP:</h3>
+
+<ul>
+  <li>
+    <p>Three-Way Handshake:</p>
+
+    <ul>
+      <li>
+        <p><strong>SYN</strong> packet sent from client to server initiating the connection.</p>
+      </li>
+      <li>
+        <p><strong>SYN-ACK</strong> packet sent from server to client acknowledging the SYN.</p>
+      </li>
+      <li>
+        <p><strong>ACK</strong> packet sent from client to server completing the handshake.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Data Transfer:</p>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/TCP_dump.png" style="width: 90%;" />
+  </div>
+
+    <ul>
+      <li>
+        <p>Data packets were sent with acknowledgment packets confirming receipt.</p>
+      </li>
+      <li>
+        <p>Flags such as <code class="language-plaintext highlighter-rouge">[P.]</code>, <code class="language-plaintext highlighter-rouge">[FP.]</code>, and <code class="language-plaintext highlighter-rouge">[F.]</code> indicated different stages of data transfer and connection termination.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/TCP_dump2.png" style="width: 90%;" />
+  </div>
+  </li>
+  <li>
+    <p>Connection Termination:</p>
+
+    <ul>
+      <li>Graceful shutdown observed with final ACKs exchanged between client and server.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="part-4-capturing-and-analyzing-network-traffic"><strong>Part 4: Capturing and Analyzing Network Traffic</strong></h2>
+
+<p>Captured raw Ethernet frames using: <code class="language-plaintext highlighter-rouge">sudo tcpdump -xx 9025</code></p>
+
+<ul>
+  <li>
+    <p>Frame Structure:</p>
+
+    <ul>
+      <li>
+        <p>Destination MAC Address: First 6 bytes.</p>
+      </li>
+      <li>
+        <p>Source MAC Address: Next 6 bytes.</p>
+      </li>
+      <li>
+        <p>EtherType: Following 2 bytes indicating the protocol (e.g., IPv4).</p>
+      </li>
+    </ul>
+  </li>
+  <li>IP Packet Details:
+    <ul>
+      <li>
+        <p>Protocol Field (9th Byte): Indicates the transport layer protocol:</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">06</code> for TCP.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">17</code> for UDP.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Source and Destination IP Addresses: Each 4 bytes in length.</p>
+
+    <ul>
+      <li>Source Port Number: 2 bytes.</li>
+    </ul>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/eth_trafic.png" style="width: 90%;" />
+</div>
+
+<ul>
+  <li>
+    <p>Utility Commands:</p>
+
+    <ul>
+      <li>Used <code class="language-plaintext highlighter-rouge">ifconfig</code> to determine the machine’s IP address for analysis.</li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/ifconfig.png" style="width: 70%;" />
+  </div>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="part-5-exploring-broadcast-traffic"><strong>Part 5: Exploring Broadcast Traffic</strong></h2>
+
+<p>Captured broadcast messages with: <code class="language-plaintext highlighter-rouge">tcpdump -xx broadcast</code></p>
+
+<ul>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>Destination IP address was 169.254.255.255, representing the broadcast address.</p>
+      </li>
+      <li>
+        <p>Messages sent to this address are received by all machines on the local network.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/broadcast.png" style="width: 70%;" />
+  </div>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+
+    <ul>
+      <li>
+        <p>Broadcast allows communication with all nodes simultaneously.</p>
+      </li>
+      <li>
+        <p>Useful for services like network discovery and announcements.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">My Portfolio</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Email</li><li><a class="u-email" href="mailto:chanfreau@insa-toulouse.fr">chanfreau@insa-toulouse.fr</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/CedricChnfr"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">CedricChnfr</span></a></li><li><a href="https://www.linkedin.com/in/C%C3%A9dric+Chanfreau"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">Cédric Chanfreau</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Je suis un apprenti ingénieur en 5ème année d&#39;école d&#39;ingénieur à l&#39;INSA. Ce site permet d&#39;avoir une vue sur mon travail et mon avancée durant ma scolarité.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -11,7 +11,7 @@ layout: default
         
         <div class="description-container">
             <h2>Cédric Chanfreau</h2>
-            <p>Je suis un étudiant motivé en apprentissage dans le domaine de l'automatisation et de l'ingénierie électrique. Passionné par le développement de logiciels et les systèmes embarqués, je recherche des opportunités pour appliquer et approfondir mes compétences techniques et pratiques.</p>
+            <p style="text-align: justify">Je suis un étudiant motivé en apprentissage dans le domaine de l'automatisation et de l'ingénierie électrique. Passionné par le développement de logiciels et les systèmes embarqués, je recherche des opportunités pour appliquer et approfondir mes compétences techniques et pratiques.</p>
         </div>
     </div>
     
@@ -73,13 +73,13 @@ layout: default
 
 /* Style des liens */
 .nav-link {
-    font-size: 18px;
+    font-size: 22px; /* Augmente la taille de la police */
     font-weight: bold;
     text-decoration: none;
     color: #007bff;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Augmente la taille du bouton avec plus de padding */
     border: 2px solid #007bff;
-    border-radius: 25px;
+    border-radius: 30px; /* Ajuste le rayon pour des coins plus arrondis */
     transition: all 0.3s ease;
 }
 
