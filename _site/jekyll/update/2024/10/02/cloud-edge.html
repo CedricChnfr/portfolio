@@ -40,6 +40,21 @@
         <h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
 <h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const badges = document.querySelectorAll('img');
+        badges.forEach((badge, index) => {
+            badge.style.transition = "transform 0.5s";
+            badge.addEventListener("mouseover", function() {
+                badge.style.transform = "scale(1.1)";
+            });
+            badge.addEventListener("mouseout", function() {
+                badge.style.transform = "scale(1)";
+            });
+        });
+    });
+</script>
+
 <style>
     img {
         display: block;
