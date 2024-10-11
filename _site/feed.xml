@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-08T16:15:42+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-11T10:26:25+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -233,45 +233,38 @@ Knowledge and understanding of the architecture of a microprocessor are also use
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
-<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Service Oriented Architecture MOOC</title><link href="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture MOOC" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"><![CDATA[<h2><a href="./course-service-oriented-architecture.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
+<h2 id="-1"><a href="./project-service-oriented-architecture.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
 
-<h2 id="2-virtualization">2. Virtualization</h2>
-<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const badges = document.querySelectorAll('img');
+        badges.forEach((badge, index) => {
+            badge.style.transition = "transform 0.5s";
+            badge.addEventListener("mouseover", function() {
+                badge.style.transform = "scale(1.1)";
+            });
+            badge.addEventListener("mouseout", function() {
+                badge.style.transform = "scale(1)";
+            });
+        });
+    });
+</script>
 
-<ul>
-  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
-  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
-Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
-</ul>
+<style>
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 50%;
+        width: 500px;
+        height: 200px;
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
 
-<h2 id="3-cloud-computing">3. Cloud Computing</h2>
-<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
-
-<p>Scalability: Resources can be dynamically adjusted according to demand.
-Pay-as-you-go model: Users pay only for what they consume.
-Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
-The main service models are:</p>
-
-<ul>
-  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
-  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
-  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
-</ul>
-
-<h2 id="4-edge-computing">4. Edge Computing</h2>
-<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
-
-<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
-<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
-
-<h2 id="6-fog-computing">6. Fog Computing</h2>
-<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
-
-<h2 id="7-conclusion">7. Conclusion</h2>
-<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
-
-<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>
+<h2 id="service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">Service Oriented Architecture MOOC</a></h2>
+<h2 id="master-reoc"><a href="./master-reoc.html">Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
 <strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
@@ -371,21 +364,23 @@ The main service models are:</p>
   <li>Assessor of a polling station for the regional and departmental elections</li>
 </ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
 
-<h2 id="be-robot-insa"><a href="./be-projet-robot.html">BE Robot INSA</a></h2>
-<h2 id="connected-bowl-insa"><a href="./connected-bowl.html">Connected Bowl INSA</a></h2>
-<h2 id="be-trotinette-insa"><a href="./be-trotinette.html">BE Trotinette INSA</a></h2>
+<h2 id="-be-robot-insa"><a href="./be-projet-robot.html">🤖 BE Robot INSA</a></h2>
+<h2 id="-connected-bowl-insa"><a href="./connected-bowl.html">🏠 Connected Bowl INSA</a></h2>
+<h2 id="-be-trotinette-insa"><a href="./be-trotinette.html">🛴 BE Trotinette INSA</a></h2>
 
 <hr />
 <h1 id="2023">2023</h1>
 
-<h2 id="object-oriented-programming-insa"><a href="./object-oriented-programming.html">Object-Oriented Programming INSA</a></h2>
-<h2 id="risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">RISC Type Microprocessor INSA</a></h2>
+<h2 id="-object-oriented-programming-insa"><a href="./object-oriented-programming.html">💻 Object-Oriented Programming INSA</a></h2>
+<h2 id="-risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">🔧 RISC Type Microprocessor INSA</a></h2>
+
+<h2 id="-led-insa-60-ans"><a href="./led-insa-60-ans.html">💡 LED INSA 60 ANS</a></h2>
 
 <hr />
 <h1 id="2022">2022</h1>
 
-<h2 id="c-and-network-project-insa"><a href="./network-project-C.html">C and Network Project INSA</a></h2>
-<h2 id="control-systems-project-insa"><a href="./control-system-project.html">Control Systems Project INSA</a></h2>
+<h2 id="-c-and-network-project-insa"><a href="./network-project-C.html">🌐 C and Network Project INSA</a></h2>
+<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>
 
 <hr />
 <h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
@@ -415,125 +410,43 @@ The main service models are:</p>
         width: 500px;
         height: 200px;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Object Oriented Programming</title><link href="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html" rel="alternate" type="text/html" title="Object Oriented Programming" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
-<p>This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.</p>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
+<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
 
-<h2 id="steps"><strong>Steps</strong></h2>
-<p>The files Step_1.cpp, Step_2.cpp, Step_3.cpp, Step_4.cpp, and Step_5.cpp, Step_6.cpp illustrate the manipulation of points in 2D and 3D. 
-All these steps were mainly to understand how C++ works.</p>
-
-<p align="center">
-    <a href="/code/cpp/Etape_1.cpp" target="_blank">Step 1</a> -
-    <a href="/code/cpp/Etape_2.cpp" target="_blank">Step 2</a> -
-    <a href="/code/cpp/Etape_3.cpp" target="_blank">Step 3</a> -
-    <a href="/code/cpp/Etape_4.cpp" target="_blank">Step 4</a> -
-    <a href="/code/cpp/Etape_5.cpp" target="_blank">Step 5</a> - 
-    <a href="/code/cpp/Etape_6.cpp" target="_blank">Step 6</a>
-</p>
-
-<p>Features include:</p>
-<ul>
-  <li>
-    <p>Input and Display: Points can be input and displayed.</p>
-  </li>
-  <li>
-    <p>Mathematical Operations: Points can be added and multiplied by scalars.</p>
-  </li>
-</ul>
-
-<h2 id="tds"><strong>TDs</strong></h2>
-<p>Vector Manipulation
-The files TD1.cpp, TD2.cpp, TD4.cpp, and TD5.cpp contain implementations of the vector class. This class allows you to create and manipulate vectors of different dimensions. Here are some key features:</p>
-
-<p align="center">
-    <a href="/code/cpp/TD1.cpp" target="_blank">TD1</a> -
-    <a href="/code/cpp/TD2.cpp" target="_blank">TD2</a> -
-    <a href="/code/cpp/TD4.cpp" target="_blank">TD4</a> -
-    <a href="/code/cpp/TD5.cpp" target="_blank">TD5</a>
-</p>
+<h2 id="2-virtualization">2. Virtualization</h2>
+<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
 
 <ul>
-  <li>
-    <p>Constructors and Destructors: The vector class has several constructors to initialize vectors with specific dimensions and values. The destructor ensures the freeing of dynamically allocated memory.</p>
-  </li>
-  <li>
-    <p>Input and Display: The input and display methods allow you to input vector values ​​and display them respectively.</p>
-  </li>
-  <li>
-    <p>Overloaded Operators: The class overloads several operators, including the indexing operator [], the assignment operator =, and the addition operator +.</p>
-  </li>
+  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
+  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
+Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
 </ul>
 
-<h2 id="tps"><strong>TPs</strong></h2>
+<h2 id="3-cloud-computing">3. Cloud Computing</h2>
+<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
 
-<p>In this part, you will find two key C++ projects focused on geometric figure management and the use of the <strong>Standard Template Library (STL)</strong>.</p>
-
-<p align="center">
-    <a href="/code/cpp/TP_figure.cpp" target="_blank">TP Figure</a> -
-    <a href="/code/cpp/TP_stl.cpp" target="_blank">TP STL</a>
-</p>
-
-<h3 id="tp-1-geometric-figure-management">TP 1: Geometric Figure Management</h3>
-
-<p>This project revolves around the management of <strong>geometric figures</strong> such as squares, circles, equilateral triangles, and rectangles using advanced object-oriented programming concepts like <strong>abstract classes</strong>, <strong>inheritance</strong>, and <strong>polymorphism</strong>.</p>
+<p>Scalability: Resources can be dynamically adjusted according to demand.
+Pay-as-you-go model: Users pay only for what they consume.
+Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
+The main service models are:</p>
 
 <ul>
-  <li>
-    <p><strong>Dynamic Creation and Display</strong>: Figures are created dynamically using polymorphism. Each figure (square, circle, triangle, rectangle) has unique characteristics that are displayed using virtual functions.</p>
-  </li>
-  <li>
-    <p><strong>Perimeter Calculation</strong>: Each figure calculates and displays its perimeter, achieved by redefining the virtual function <code class="language-plaintext highlighter-rouge">perimetre()</code> in derived classes.</p>
-  </li>
-  <li>
-    <p><strong>Polymorphism and Dynamic Binding</strong>: The program leverages polymorphism by iterating through a list of figures and calling appropriate methods for each figure type dynamically.</p>
-  </li>
-  <li>
-    <p><strong>List Management with Iterators</strong>: Figures are stored in a list, and standard operations like insertion and deletion are performed using iterators.</p>
-  </li>
-  <li>
-    <p><strong>Color Management (Multiple Inheritance)</strong>: Circles also inherit from a <code class="language-plaintext highlighter-rouge">Coloriable</code> class, allowing them to store and display a color. This showcases <strong>multiple inheritance</strong> in C++.</p>
-  </li>
-  <li>
-    <p><strong>Queue Operations</strong>: Figures are stored in a queue, enabling insertion and deletion while preserving the order of entry. The project also demonstrates linked structures and queue management for figure manipulation.</p>
-  </li>
+  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
+  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
+  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
 </ul>
 
-<h3 id="tp-2-standard-template-library-stl-in-c">TP 2: Standard Template Library (STL) in C++</h3>
+<h2 id="4-edge-computing">4. Edge Computing</h2>
+<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
 
-<p>The <strong>STL</strong> is a powerful C++ library that provides pre-built data structures and algorithms. This project explores how to effectively use containers, iterators, and algorithms provided by the STL.</p>
+<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
+<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
 
-<ul>
-  <li>
-    <p><strong>Containers</strong>: The project introduces both <strong>sequential containers</strong> like <code class="language-plaintext highlighter-rouge">vector</code>, <code class="language-plaintext highlighter-rouge">list</code>, and <code class="language-plaintext highlighter-rouge">deque</code>, as well as <strong>associative containers</strong> such as <code class="language-plaintext highlighter-rouge">set</code> and <code class="language-plaintext highlighter-rouge">map</code>. These containers are used to store data and efficiently manage access to the elements.</p>
-  </li>
-  <li>
-    <p><strong>Iterators</strong>: Iterators allow for easy traversal of the containers, functioning similarly to pointers in arrays. The project highlights how to iterate through containers using <strong><code class="language-plaintext highlighter-rouge">begin()</code></strong> and <strong><code class="language-plaintext highlighter-rouge">end()</code></strong> methods and perform operations on each element.</p>
-  </li>
-  <li>
-    <p><strong>STL Algorithms</strong>: The project demonstrates the use of algorithms such as <strong><code class="language-plaintext highlighter-rouge">reverse()</code></strong>, <strong><code class="language-plaintext highlighter-rouge">sort()</code></strong>, and <strong><code class="language-plaintext highlighter-rouge">find()</code></strong>, which work on iterators to manipulate the contents of containers without altering the container structure itself.</p>
-  </li>
-  <li>
-    <p><strong>Vector and List Operations</strong>: Practical examples include creating vectors and lists, adding and removing elements dynamically, and performing operations such as sorting and searching.</p>
-  </li>
-  <li><strong>Advanced Exercises</strong>:
-    <ul>
-      <li>Creating a vector of 10 float values, modifying the second half of the vector.</li>
-      <li>Managing lists of alphabet characters and inserting or deleting elements efficiently.</li>
-    </ul>
-  </li>
-  <li><strong>Set and Map Operations</strong>: The use of <code class="language-plaintext highlighter-rouge">set</code> ensures uniqueness of elements, while <code class="language-plaintext highlighter-rouge">map</code> provides a key-value store for efficient lookups. The project also demonstrates complex operations like finding and removing elements based on conditions.</li>
-</ul>
+<h2 id="6-fog-computing">6. Fog Computing</h2>
+<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
 
-<p>By combining geometric figure management and the use of STL, these two projects illustrate the powerful capabilities of C++ in handling both <strong>object-oriented design</strong> and <strong>template programming</strong>.</p>
-
-<h2 id="conclusion"><strong>Conclusion</strong></h2>
-<p>This project demonstrates a thorough understanding of basic and advanced C++ programming concepts. The various steps and tutorials demonstrate how to manipulate vectors, manage geometric figures, and perform operations on 2D and 3D points. This project is an excellent example of the practical application of object-oriented programming principles in C++.</p>
-
-<style>
-p {
-    text-align: justify;
-}
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
 <p>This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.</p>
 
 <h2 id="2-virtualization-type-1-and-type-2-hypervisors">2. Virtualization: Type 1 and Type 2 Hypervisors</h2>
@@ -598,42 +511,110 @@ Docker installation: Docker was installed on the VM to provision containers. Con
 Testing the connectivity between containers and VMs, with conclusive results in terms of bidirectional communication.
 Cloning and snapshot: Snapshots of the containers were taken to preserve their state, thus facilitating recovery and subsequent deployment.</p>
 <h2 id="7-conclusion">7. Conclusion</h2>
-<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">BE Trotinette</title><link href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" rel="alternate" type="text/html" title="BE Trotinette" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/be-trotinette</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"><![CDATA[<h1 id="introduction">Introduction</h1>
-<p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
-The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
+<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">Service Oriented Architecture Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented%20-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"><![CDATA[<h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
 
-<h1 id="project-development">Project Development</h1>
+<p>Service-Oriented Architecture (SOA) is a design model that allows structuring software applications as a collection of independent and interconnected services. Each service is encapsulated, meaning it exposes functionalities through a well-defined interface, enabling smooth integration and efficient reuse of services in different applications.</p>
 
-<h2 id="system-modeling">System Modeling</h2>
-<p>The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet.</p>
+<h2 id="application-evolution">Application Evolution</h2>
 
-<p><img src="/img/BE_Trotinette/Chaine_Acq.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+<p>Applications evolve in response to growing customer needs. Initially, an application may satisfy a basic need, but over time it must integrate new features to meet complex requirements.</p>
 
-<p>The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response.</p>
+<ul>
+  <li>Example of evolution:
+    <ul>
+      <li>
+        <p>Application1 starts with functionalities A and B.</p>
+      </li>
+      <li>
+        <p>Then, it evolves to include C and D, allowing reuse of existing components.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="simulation-and-implementation">Simulation and Implementation</h2>
-<p>Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings.</p>
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/App_evolution.png" style="width: 60%;" />
+</div>
 
-<h3 id="free-regim">Free Regim</h3>
-<p><img src="/img/BE_Trotinette/Graphe_sat.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
-In green the instruction to apply, in yellow the current in the motor.
-Two phases:
-Phase one:
-The system is in the control loop, it is in saturation.
-Phase two:
-The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio.</p>
+<p>This ability to evolve and reuse applications is essential in modern development.</p>
 
-<h3 id="step-response">Step Response</h3>
-<p><img src="/img/BE_Trotinette/Graphe_response.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
-This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations.</p>
+<h2 id="distributed-applications">Distributed Applications</h2>
 
-<h2 id="pi-corrector-design">PI Corrector Design</h2>
-<p>The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met.</p>
+<p>Client needs often become complex, requiring inter-organizational collaboration. This leads to the integration of distributed applications.</p>
 
-<h2 id="bilinear-transform">Bilinear Transform</h2>
-<p>We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version.</p>
+<ul>
+  <li>Application Integration: Applications can be heterogeneous, written in different programming languages, and running on various platforms. This diversity poses integration challenges that SOA aims to solve.</li>
+</ul>
 
-<h1 id="conclusion">Conclusion</h1>
-<p>The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment.</p>
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Distr_App.png" style="width: 60%;" />
+</div>
 
-<p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.]]></summary></entry></feed>
+<h2 id="soa-principles">SOA Principles</h2>
+
+<ul>
+  <li>Encapsulation of business applications: SOA allows encapsulating business applications as services, thus providing functionalities accessible by other applications.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/SOA.png" style="width: 60%;" />
+</div>
+
+<ul>
+  <li>
+    <p>Service reuse: Services can be reused in different applications, facilitating the evolution and integration of systems.</p>
+
+    <ul>
+      <li>
+        <p>Without SOA: Applications are often monolithic and difficult to maintain.</p>
+      </li>
+      <li>
+        <p>With SOA: Applications are made up of individual services, as illustrated below:</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Service_reuse.png" style="width: 70%;" />
+</div>
+
+<ul>
+  <li>Decoupling of platforms and languages: Web services allow the separation of services from the platform and the underlying programming language, facilitating integration.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Web.png" style="width: 20%;" />
+</div>
+
+<h1 id="web-services">Web Services</h1>
+
+<p>Web services are software accessible via standard web protocols and provide an interface that offers data and services. They enable decoupling of platforms and programming languages.</p>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Web_service.png" style="width: 80%;" />
+</div>
+
+<h2 id="web-services-properties">Web Services Properties</h2>
+
+<ul>
+  <li>Web Services Discovery: Clients can discover and use available Web services, which improves the flexibility and maintainability of applications.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Web_dec.png" style="width: 50%;" />
+</div>
+
+<ul>
+  <li>Web Services Composition: Composition allows the creation of new value-added services by combining several existing Web services, thus facilitating the creation of complex applications from simple components.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/Web_comp.png" style="width: 60%;" />
+</div>
+
+<style>
+p {
+    text-align: justify;
+}
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service-Oriented Architecture]]></summary></entry></feed>
