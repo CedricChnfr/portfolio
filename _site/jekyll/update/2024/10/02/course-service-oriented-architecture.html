@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Service Oriented Architecture Course" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Service-Oriented Architecture" />
-<meta property="og:description" content="Service-Oriented Architecture" />
+<meta name="description" content="Service Architecture/Software Engineering" />
+<meta property="og:description" content="Service Architecture/Software Engineering" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" />
 <meta property="og:site_name" content="My Portfolio" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Service Oriented Architecture Course" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Service-Oriented Architecture","headline":"Service Oriented Architecture Course","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Service Architecture/Software Engineering","headline":"Service Oriented Architecture Course","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
 <body><header class="site-header" role="banner">
@@ -37,80 +37,48 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
+        <h1 id="service-architecturesoftware-engineering"><strong>Service Architecture/Software Engineering</strong></h1>
+
+<h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
 
 <p>Service-Oriented Architecture (SOA) is a design model that allows structuring software applications as a collection of independent and interconnected services. Each service is encapsulated, meaning it exposes functionalities through a well-defined interface, enabling smooth integration and efficient reuse of services in different applications.</p>
 
-<h2 id="application-evolution">Application Evolution</h2>
+<h2 id="soa-objectives">SOA Objectives</h2>
 
-<p>Applications evolve in response to growing customer needs. Initially, an application may satisfy a basic need, but over time it must integrate new features to meet complex requirements.</p>
+<p>The objectives of Service-Oriented Architecture are:</p>
 
 <ul>
-  <li>Example of evolution:
-    <ul>
-      <li>
-        <p>Application1 starts with functionalities A and B.</p>
-      </li>
-      <li>
-        <p>Then, it evolves to include C and D, allowing reuse of existing components.</p>
-      </li>
-    </ul>
+  <li>
+    <p><strong>Encapsulation of business applications into services</strong>: A service exposes a specific functionality in a standardized manner.</p>
   </li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/App_evolution.png" style="width: 60%;" />
-</div>
-
-<p>This ability to evolve and reuse applications is essential in modern development.</p>
-
-<h2 id="distributed-applications">Distributed Applications</h2>
-
-<p>Client needs often become complex, requiring inter-organizational collaboration. This leads to the integration of distributed applications.</p>
-
-<ul>
-  <li>Application Integration: Applications can be heterogeneous, written in different programming languages, and running on various platforms. This diversity poses integration challenges that SOA aims to solve.</li>
+  <li>
+    <p><strong>Interoperability</strong>: Services are independent of programming languages and platforms, allowing for inter-system integration.</p>
+  </li>
+  <li>
+    <p><strong>Application evolution</strong>: SOA enables systems to evolve while reusing existing services.</p>
+  </li>
+  <li>
+    <p><strong>Service reuse</strong>: A service can be used by multiple applications.</p>
+  </li>
 </ul>
 
 <div style="text-align: center;">
     <img src="/img/Cours_SOA/Distr_App.png" style="width: 60%;" />
 </div>
 
-<h2 id="soa-principles">SOA Principles</h2>
-
-<ul>
-  <li>Encapsulation of business applications: SOA allows encapsulating business applications as services, thus providing functionalities accessible by other applications.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/SOA.png" style="width: 60%;" />
-</div>
+<h2 id="example-of-applications-with-and-without-soa">Example of Applications with and without SOA</h2>
 
 <ul>
   <li>
-    <p>Service reuse: Services can be reused in different applications, facilitating the evolution and integration of systems.</p>
-
-    <ul>
-      <li>
-        <p>Without SOA: Applications are often monolithic and difficult to maintain.</p>
-      </li>
-      <li>
-        <p>With SOA: Applications are made up of individual services, as illustrated below:</p>
-      </li>
-    </ul>
+    <p><strong>Without SOA</strong>: Applications are often monolithic, difficult to maintain, and evolve.</p>
+  </li>
+  <li>
+    <p><strong>With SOA</strong>: Applications are composed of reusable services. For example, an ApplicationA offers functionalities via services (Service1, Service2…), and an ApplicationB can reuse these same services without code duplication.</p>
   </li>
 </ul>
 
 <div style="text-align: center;">
     <img src="/img/Cours_SOA/Service_reuse.png" style="width: 70%;" />
-</div>
-
-<ul>
-  <li>Decoupling of platforms and languages: Web services allow the separation of services from the platform and the underlying programming language, facilitating integration.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web.png" style="width: 20%;" />
 </div>
 
 <h1 id="web-services">Web Services</h1>
@@ -121,23 +89,114 @@
     <img src="/img/Cours_SOA/Web_service.png" style="width: 80%;" />
 </div>
 
-<h2 id="web-services-properties">Web Services Properties</h2>
+<p>Service-Oriented Architecture (SOA) relies on XML standards to facilitate integration, interoperability, and communication between services. The main standards are:</p>
+
+<h2 id="web-services-description-language-wsdl">Web Services Description Language (WSDL)</h2>
+
+<p>WSDL is an XML language that allows describing web services in a standardized manner. It provides crucial information about the services, such as:</p>
 
 <ul>
-  <li>Web Services Discovery: Clients can discover and use available Web services, which improves the flexibility and maintainability of applications.</li>
+  <li>
+    <p><strong>Offered operations</strong>: Actions that the service can perform (e.g., data transmission, computation).</p>
+  </li>
+  <li>
+    <p><strong>Data types</strong>: Definitions of the data structures exchanged (e.g., XML Schema).</p>
+  </li>
+  <li>
+    <p><strong>Transport protocols</strong>: Protocols used for exchanges (HTTP, SOAP, etc.).</p>
+  </li>
+  <li>
+    <p><strong>Service location</strong>: The URL where the service is accessible.</p>
+  </li>
 </ul>
 
+<p><strong>Structure of a WSDL Document</strong></p>
+
+<p>A WSDL document is structured into several elements:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;definitions&gt;</code>: Root element listing namespaces and organizing the document.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;types&gt;</code>: Defines the data types exchanged between the client and the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;message&gt;</code>: Describes the input and output messages used by the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;portType&gt;</code>: Defines the operations offered by the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;binding&gt;</code>: Specifies the transport protocol (e.g., SOAP over HTTP).</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;service&gt;</code>: Defines the service entry points via network addresses (ports).</p>
+
 <div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web_dec.png" style="width: 50%;" />
+    <img src="/img/Cours_SOA/wsdl.png" style="width: 30%;" />
 </div>
+
+<h2 id="universal-descrition-discovery-and-integration-uddi">Universal Descrition Discovery and Integration (UDDI)</h2>
+
+<p>UDDI (Universal Description, Discovery, and Integration) is a directory that allows discovering and integrating web services. It enables businesses to publish their services in a registry, facilitating their discovery by other entities.</p>
+
+<p>The integration process with UDDI involves several steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Publication</strong>: The service is described in WSDL and published in the UDDI directory.</p>
+  </li>
+  <li>
+    <p><strong>Discovery</strong>: Clients search for services that meet their needs in the directory.</p>
+  </li>
+  <li>
+    <p><strong>Invocation</strong>: Once the service is found, it is invoked via a transport protocol like SOAP.</p>
+  </li>
+</ol>
+
+<h2 id="simple-object-access-protocol-soap">Simple Object Access Protocol (SOAP)</h2>
+
+<p>SOAP is an XML-based protocol that allows exchanging structured messages between a client and a web service. It is designed to be extensible and works over different transport protocols like HTTP, SMTP, or even network-specific protocols.</p>
+
+<h2 id="structure-of-a-soap-message">Structure of a SOAP Message</h2>
+<p>A SOAP message consists of three parts:</p>
+
+<ol>
+  <li>
+    <p>Envelope: Root element that contains the entire message.</p>
+  </li>
+  <li>
+    <p>Header (optional): Adds additional information such as security or routing.</p>
+  </li>
+  <li>
+    <p>Body: Contains the exchanged data (e.g., invoked method and its parameters).</p>
+  </li>
+</ol>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/soap.png" style="width: 80%;" />
+</div>
+
+<h2 id="examples-of-soap-operations">Examples of SOAP Operations</h2>
 
 <ul>
-  <li>Web Services Composition: Composition allows the creation of new value-added services by combining several existing Web services, thus facilitating the creation of complex applications from simple components.</li>
+  <li>
+    <p>One-way: The service receives a request without sending a response.</p>
+  </li>
+  <li>
+    <p>Request/Response: The service receives a request and sends back a response.</p>
+  </li>
+  <li>
+    <p>Notification: The service sends a notification to the client without waiting for a response.</p>
+  </li>
+  <li>
+    <p>Solicit-Response: The service solicits a response from the client after sending a message.</p>
+  </li>
 </ul>
 
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web_comp.png" style="width: 60%;" />
-</div>
+<h2 id="web-service-interactions-example">Web Service Interactions Example</h2>
+
+<p>The complete interaction process between a client and a web service via SOA and SOAP can be summarized in these steps:</p>
+
+<ol>
+  <li>The client sends a SOAP request to the address defined in the service’s WSDL.</li>
+  <li>The web service receives and processes the request, then returns a SOAP response.</li>
+  <li>The client receives the SOAP response with the requested results or data.</li>
+</ol>
 
 <style>
 p {

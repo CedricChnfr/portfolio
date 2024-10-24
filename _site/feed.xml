@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-11T10:26:25+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-25T00:06:11+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -446,7 +446,11 @@ The main service models are:</p>
 <p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
 
 <h2 id="7-conclusion">7. Conclusion</h2>
-<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
+<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<h1 id="lab-1-introduction-to-cloud-hypervisors"><strong>Lab 1: Introduction to Cloud Hypervisors</strong></h1>
+
+<h1 id="theoretical-part">Theoretical Part</h1>
+
+<h2 id="1-introduction-to-the-project">1. Introduction to the project</h2>
 <p>This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.</p>
 
 <h2 id="2-virtualization-type-1-and-type-2-hypervisors">2. Virtualization: Type 1 and Type 2 Hypervisors</h2>
@@ -462,9 +466,34 @@ The main service models are:</p>
 </ul>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Cloud_Computing/Hyperviseur1.png" alt="Schéma du Projet Robot" style="width: 50%;" />
-    <img src="/img/BE_Cloud_Computing/Hyperviseur2.png" alt="Schéma du Projet Robot" style="width: 50%;" />
+    <img src="/img/BE_Cloud_Computing/Hyperviseur1.png" style="width: 50%;" />
+    <img src="/img/BE_Cloud_Computing/Hyperviseur2.png" style="width: 50%;" />
 </div>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Architecture</th>
+      <th>Performance</th>
+      <th>Use cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Type 1 (OpenStack)</strong></td>
+      <td>It operates directly on the physical host machine’s bare-metal hardware without the need for an underlying OS.</td>
+      <td>It usually provides better performance by directly accessing hardware resources, eliminating the overhead of an operating system layer.</td>
+      <td>It is commonly used in enterprise data centers and cloud environments where performance, scalability, and resource isolation are critical.</td>
+    </tr>
+    <tr>
+      <td><strong>Type 2 (VirtualBox)</strong></td>
+      <td>It runs on top of an existing OS and operates as applications or processes within that traditional OS.</td>
+      <td>It generally has more overhead than Type 1 hypervisors because it depends on the host OS to manage hardware resources.</td>
+      <td>It is commonly used in desktop or developer environments where performance is less critical.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="3-virtual-machines-vs-containers">3. Virtual Machines vs. Containers</h2>
 <p>The next step was to compare virtual machines (VMs) with containers (CTs):</p>
@@ -475,7 +504,7 @@ Each VM runs its own operating system, including a kernel. They are isolated fro
 </ul>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Cloud_Computing/VM.png" alt="Schéma du Projet Robot" style="width: 30%;" />
+    <img src="/img/BE_Cloud_Computing/VM.png" style="width: 30%;" />
 </div>
 
 <ul>
@@ -484,10 +513,139 @@ They share the same host kernel but are isolated at the process and file level. 
 </ul>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Cloud_Computing/Cont.png" alt="Schéma du Projet Robot" style="width: 30%;" />
+    <img src="/img/BE_Cloud_Computing/Cont.png" style="width: 30%;" />
 </div>
 
-<h2 id="4-network-configurations-nat-and-bridge-mode">4. Network configurations: NAT and Bridge mode</h2>
+<h2 id="31-comparison-from-different-perspectives">3.1 Comparison from Different Perspectives</h2>
+
+<p>We will compare VMs and containers from two perspectives: application developers and infrastructure administrators.</p>
+
+<h3 id="from-an-application-developers-perspective">From an Application Developer’s Perspective:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Virtual Machine</th>
+      <th>Container</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Virtualization Cost</strong></td>
+      <td>Requires more memory and is more expensive due to the full OS emulation.</td>
+      <td>Requires less memory and is cheaper as it doesn’t duplicate the OS.</td>
+    </tr>
+    <tr>
+      <td><strong>CPU, Memory, and Network Usage</strong></td>
+      <td>Higher CPU overhead due to hardware emulation and multiple OS instances.</td>
+      <td>Lower CPU overhead as they run as lightweight processes.</td>
+    </tr>
+    <tr>
+      <td><strong>Application Security</strong></td>
+      <td>More secure with strong isolation (each VM has its own OS).</td>
+      <td>Less secure as containers share the same kernel and libraries.</td>
+    </tr>
+    <tr>
+      <td><strong>Performance (Response Time)</strong></td>
+      <td>Higher response time due to environment regeneration for each operation.</td>
+      <td>Lower response time, starts up in milliseconds.</td>
+    </tr>
+    <tr>
+      <td><strong>Continuous Integration Tooling</strong></td>
+      <td>Limited development tools.</td>
+      <td>Comes with development kits.</td>
+    </tr>
+    <tr>
+      <td><strong>Flexibility and Dynamicity</strong></td>
+      <td>Harder to modify resources and transfer programs.</td>
+      <td>Easy to adjust resources and deploy applications.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="from-an-infrastructure-administrators-perspective">From an Infrastructure Administrator’s Perspective:</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Virtual Machine</th>
+      <th>Container</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Developer Point of View</strong></td>
+      <td>Useful for full machine emulation and network control but costly and resource-intensive.</td>
+      <td>Offers portability, flexibility, and quick startup, ideal for testing and deployment.</td>
+    </tr>
+    <tr>
+      <td><strong>System Administrator Point of View</strong></td>
+      <td>Valued for complete isolation and unique OS tools, despite being resource-intensive.</td>
+      <td>Challenging due to security risks, limited hardware control, and restricted network configurations.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="4-similarities-and-differences-between-existing-container-technologies">4. Similarities and Differences Between Existing Container Technologies</h2>
+
+<p>Different container technologies are available in the market, such as LXC/LXD, Docker, Rocket, OpenVZ, runC, and systemd-nspawn. Their respective positioning is not always obvious, but comparative analyses are available online. Here, we define the criteria used to compare these container technologies (CT):</p>
+
+<ul>
+  <li><strong>Application Isolation and Resources (Multi-tenancy):</strong> Refers to the architecture of the server hosting containers, where a single instance of the host OS supports multiple tenants (containers).</li>
+  <li><strong>Containerization Level (e.g., Operating System, Application):</strong> Containerization packages software and its dependencies, enabling it to run anywhere.</li>
+  <li><strong>Tooling (e.g., API, Continuous Integration, Service Composition):</strong> Refers to the tools offered with the container service, such as development kits, migration tools, and custom settings.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Technology</th>
+      <th>Application Isolation</th>
+      <th>Containerization Level</th>
+      <th>Tooling</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>LXC</strong></td>
+      <td>Light Isolation: Although containers share the core, they remain isolated from each other, ensuring adequate security and stability.</td>
+      <td>OS level containers, allowing kernel sharing with the host.</td>
+      <td>LXC offers a CLI for container management and supports APIs.</td>
+    </tr>
+    <tr>
+      <td><strong>Docker</strong></td>
+      <td>Enhanced Container Isolation provides an additional layer of security to prevent malicious workloads running in containers from compromising Docker Desktop or the host.</td>
+      <td>Operating system level containers, allowing kernel sharing with the host.</td>
+      <td>Docker is well-known for its user-friendly CLI and API. It has strong CI/CD support with Docker Compose and Kubernetes integration. Docker Compose is useful for service composition.</td>
+    </tr>
+    <tr>
+      <td><strong>Rocket (RKT)</strong></td>
+      <td>RKT provides application isolation using proven mechanisms such as Control Groups (Cgroups) and SELinux, ensuring that containers run in protected environments and limit their access to system resources.</td>
+      <td>Application-level containers, with a layered architecture allowing for flexibility.</td>
+      <td>It features a CLI for pod-based deployments and integrates seamlessly with systemd for service management.</td>
+    </tr>
+    <tr>
+      <td><strong>OpenVZ</strong></td>
+      <td>Good isolation even if containers share the kernel.</td>
+      <td>Application level</td>
+      <td>It offers a variety of management tools.</td>
+    </tr>
+    <tr>
+      <td><strong>runC</strong></td>
+      <td>runC is a CLI tool for spawning and running containers on Linux according to the OCI specification.</td>
+      <td>Application-level containers, integrated in larger systems.</td>
+      <td>It operates with a command-line interface and adheres to OCI specifications for managing container lifecycles.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/CT_types.png" style="width: 90%;" />
+</div>
+
+<h2 id="5-network-configurations-nat-and-bridge-mode">5. Network configurations: NAT and Bridge mode</h2>
 <p>Two network connection modes were used for VMs and containers:</p>
 
 <ul>
@@ -499,92 +657,381 @@ They share the same host kernel but are isolated at the process and file level. 
   </li>
 </ul>
 
-<h2 id="5-practical-implementation-virtualbox-and-docker">5. Practical implementation: VirtualBox and Docker</h2>
-<p>In the practical part of the project, the following steps were performed:</p>
+<h1 id="pratical-part">Pratical Part</h1>
 
-<p>VM creation in VirtualBox: Configuration and connectivity test in NAT mode to allow bidirectional communication with the Internet and other machines.
-Docker installation: Docker was installed on the VM to provision containers. Connectivity tests showed that containers could communicate with each other, with VMs and with the outside world.</p>
-<h2 id="6-docker-container-provisioning-and-management">6. Docker: Container provisioning and management</h2>
-<p>The provisioning of Docker containers was carried out in several steps:</p>
+<h2 id="practical-implementation-virtualbox-and-docker">Practical Implementation: VirtualBox and Docker</h2>
 
-<p>Downloading the Ubuntu image and running a container instance.
-Testing the connectivity between containers and VMs, with conclusive results in terms of bidirectional communication.
-Cloning and snapshot: Snapshots of the containers were taken to preserve their state, thus facilitating recovery and subsequent deployment.</p>
-<h2 id="7-conclusion">7. Conclusion</h2>
-<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to the project This project aimed to familiarize oneself with Cloud hypervisors and virtualization, by implementing different techniques such as virtual machine (VM) and Docker container management. The work included exploring type 1 and type 2 virtualization, as well as network configuration and setting up Docker containers to illustrate the differences between VMs and containers in terms of performance, isolation, and resource management.]]></summary></entry><entry><title type="html">Service Oriented Architecture Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented%20-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"><![CDATA[<h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
+<h3 id="1-setting-up-virtualbox-vm-in-nat-mode">1. Setting Up VirtualBox VM in NAT Mode</h3>
 
-<p>Service-Oriented Architecture (SOA) is a design model that allows structuring software applications as a collection of independent and interconnected services. Each service is encapsulated, meaning it exposes functionalities through a well-defined interface, enabling smooth integration and efficient reuse of services in different applications.</p>
+<h4 id="creating-and-configuring-a-vm">Creating and Configuring a VM</h4>
+<ol>
+  <li>Open VirtualBox.</li>
+  <li>Unzip the provided archive.</li>
+  <li>Create and configure a new VM.</li>
+  <li>Launch the VM.</li>
+</ol>
 
-<h2 id="application-evolution">Application Evolution</h2>
+<h3 id="2-testing-vm-connectivity">2. Testing VM Connectivity</h3>
 
-<p>Applications evolve in response to growing customer needs. Initially, an application may satisfy a basic need, but over time it must integrate new features to meet complex requirements.</p>
+<h4 id="a-vm-connection">a) VM Connection</h4>
+<p>Once logged in, use the <code class="language-plaintext highlighter-rouge">ifconfig</code> command in the VM terminal to identify the assigned IP addresses:</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ifconfig.png" style="width: 70%;" />
+</div>
 
 <ul>
-  <li>Example of evolution:
+  <li>NAT Address: <code class="language-plaintext highlighter-rouge">172.17.0.1</code></li>
+  <li>Virtual Machine Address: <code class="language-plaintext highlighter-rouge">10.0.2.15</code></li>
+  <li>Loopback Address: <code class="language-plaintext highlighter-rouge">127.0.0.1</code></li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ifconfig_host.png" style="width: 70%;" />
+</div>
+
+<ul>
+  <li>Host Machine (VirtualBox Host-Only Network): <code class="language-plaintext highlighter-rouge">192.168.56.1</code></li>
+  <li>Host Ethernet Interface: <code class="language-plaintext highlighter-rouge">10.1.5.89</code></li>
+</ul>
+
+<h4 id="b-connectivity-verification">b) Connectivity Verification</h4>
+<p>Test the connectivity between each component:</p>
+<ul>
+  <li>VM ↔ Host Machine: Ping successful.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping.png" style="width: 70%;" />
+</div>
+
+<ul>
+  <li>Host Machine ↔ NAT / VM: Ping failed.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping2.png" style="width: 70%;" />
+</div>
+
+<p>To resolve the ping failure from the host machine to the VM, configure a port forwarding rule in VirtualBox to redirect requests from the host to a specific port inside the VM.</p>
+
+<h3 id="3-setting-up-missing-connectivity">3. Setting Up Missing Connectivity</h3>
+
+<p>To enable communication between the host machine and the VM in NAT mode:
+<br />
+1- Configure port forwarding in VirtualBox to forward data arriving on the host machine at port <code class="language-plaintext highlighter-rouge">1234</code> to VM port <code class="language-plaintext highlighter-rouge">22</code>.</p>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/port.png" style="width: 70%;" />
+</div>
+
+<p>2- Install <code class="language-plaintext highlighter-rouge">openssh</code> on the VM.</p>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ssh.png" style="width: 70%;" />
+</div>
+
+<p>3- Use PuTTY to test the connection.</p>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping3.png" style="width: 70%;" />
+</div>
+
+<h3 id="4-vm-duplication">4. VM Duplication</h3>
+
+<p>To create a new clone with the same disk file, use the following command:</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/duplication.png" style="width: 100%;" />
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/duplication2.png" style="width: 100%;" />
+</div>
+
+<h3 id="5-docker-containers-setup">5. Docker Containers Setup</h3>
+
+<ol>
+  <li>
+    <p>Update the existing list of packages:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/update.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Install prerequisite packages:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/install.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Add the GPG key for the official Docker repository + Docker repository to APT source:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/dw_docker.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Update the package list again:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/update2.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Install Docker + Check it is running:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/inst_docker.png" style="width: 70%;" />
+ </div>
+  </li>
+</ol>
+
+<h3 id="6-docker-containers-provisioning">6. Docker Containers Provisioning</h3>
+
+<p>We can now provision Docker nodes.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/nodes.png" style="width: 70%;" />
+</div>
+
+<ol>
+  <li>
+    <p>Pull an Ubuntu image:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/pull.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Execute an Ubuntu instance (CT1):</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/instance.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>
+    <p>Install required connectivity testing tools:</p>
+
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/connect.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Check the connectivity:
     <ul>
-      <li>
-        <p>Application1 starts with functionalities A and B.</p>
-      </li>
-      <li>
-        <p>Then, it evolves to include C and D, allowing reuse of existing components.</p>
-      </li>
+      <li>Use <code class="language-plaintext highlighter-rouge">ifconfig</code> to get the IP address (<code class="language-plaintext highlighter-rouge">172.17.0.2</code>).</li>
+    </ul>
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/instance.png" style="width: 70%;" />
+ </div>
+    <ul>
+      <li>Ping an internet resource from Docker: Success.</li>
+    </ul>
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/ping_g.png" style="width: 70%;" />
+ </div>
+    <ul>
+      <li>Ping the VM from Docker: Success.</li>
+    </ul>
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/ping_vm.png" style="width: 70%;" />
+ </div>
+    <ul>
+      <li>Ping Docker from the VM: Success.</li>
+    </ul>
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/ping_dc.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Execute a new instance (CT2) of the Ubuntu Docker:
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/inst2.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Snapshot of CT2:
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/snapshot.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Stop and terminate CT2:
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/stop.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>List available Docker images:
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/image.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Execute a new instance (CT3) from the previous snapshot:
+    <div style="display: flex; justify-content: center;">
+     <img src="/img/BE_Cloud_Computing/inst3.png" style="width: 70%;" />
+ </div>
+  </li>
+  <li>Create a Dockerfile for a custom image:
+    <div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ubuntu.png" style="width: 30%;" />
+</div>
+    <div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/build.png" style="width: 70%;" />
+</div>
+    <div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/image2.png" style="width: 70%;" />
+</div>
+  </li>
+</ol>
+
+<h2 id="openstack">OpenStack</h2>
+
+<h3 id="1-ct-creation-and-configuration-openstack">1. CT creation and configuration OpenStack</h3>
+
+<h3 id="first-part-ct-creation-and-configuration-openstack">First Part: CT creation and configuration OpenStack</h3>
+
+<ul>
+  <li>OpenStack Connection/Authentification</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/openstack.png" style="width: 70%;" />
+</div>
+
+<ul>
+  <li>Creation of a VM / private network and gateway</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/VM_create.png" style="width: 70%;" />
+</div>
+
+<p>A VM cannot be created from a public network for different reasons, so we created a private network:</p>
+
+<ul>
+  <li><strong>Network Separation:</strong> The private network allows isolating VMs from other networks. This means that VMs can communicate with each other without being directly exposed to external threats or unauthorized traffic from the Internet.</li>
+  <li><strong>Traffic Control:</strong> We can better manage incoming and outgoing traffic. The router plays an important role because it controls the flow between the private and public networks.</li>
+</ul>
+
+<p>To allow ICMP traffic (ping) and SSH, we added three new security rules:</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/traffic.png" style="width: 90%;" />
+</div>
+
+<h3 id="second-part-connectivity-test">Second Part: Connectivity Test</h3>
+<p>First, we associated a floating IP for the VM to access the VM from the outside via SSH.</p>
+
+<ul>
+  <li><strong>IP Address from VM:</strong> The IP address displayed on the dashboard:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">192.168.37.28</code>: Public address useful to access the VM from outside.</li>
+      <li><code class="language-plaintext highlighter-rouge">12.7.5.176</code>: Private address to communicate with another machine on the private network.</li>
     </ul>
   </li>
 </ul>
 
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/App_evolution.png" style="width: 60%;" />
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/floating.png" style="width: 70%;" />
 </div>
 
-<p>This ability to evolve and reuse applications is essential in modern development.</p>
+<p>Here, the router is important because it allows us to link the private network where the VM is connected and the public network.</p>
 
-<h2 id="distributed-applications">Distributed Applications</h2>
+<h3 id="connectivity-test">Connectivity Test:</h3>
+<ul>
+  <li><strong>Ping Google from the VM:</strong> Indicates that the network configuration is properly set up, allowing the VM to communicate with external tools.</li>
+</ul>
 
-<p>Client needs often become complex, requiring inter-organizational collaboration. This leads to the integration of distributed applications.</p>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping_google.png" style="width: 70%;" />
+</div>
 
 <ul>
-  <li>Application Integration: Applications can be heterogeneous, written in different programming languages, and running on various platforms. This diversity poses integration challenges that SOA aims to solve.</li>
+  <li><strong>Pinging the VM from the Desktop:</strong> Verifies that incoming connections to the VM are working as intended. This indicates that the VM’s firewall and security group settings are appropriately configured to allow traffic from the desktop.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping_vm2.png" style="width: 70%;" />
+</div>
+
+<ul>
+  <li><strong>Ping the Desktop from the VM:</strong> Confirms that the internal network configuration is functioning correctly. This ensures that the VM can communicate with other devices on the same network.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/ping_desk.png" style="width: 70%;" />
+</div>
+
+<h3 id="third-part-snapshot-restore-and-resize-a-vm">Third Part: Snapshot, Restore, and Resize a VM</h3>
+<ul>
+  <li><strong>Resize a Running and a Shutdown VM:</strong> Resizing was not possible, and an error occurred due to access rights.
+    <ul>
+      <li>The limitation highlighted that to resize a VM, some administrative rights are necessary. A solution could be to give user roles allowing some operations of resource management. This will allow more users to benefit from the flexibility of virtualization without compromising security.</li>
+    </ul>
+  </li>
+</ul>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/danger.png" style="width: 60%;" />
+</div>
+
+<ul>
+  <li><strong>Creating a Snapshot of the VM:</strong> We captured the current state of the system, including all files, configurations, and software installed at that time.
+    <ul>
+      <li>If changes are made to the VM after the snapshot is created, those changes will not be present in the snapshot, which could be useful for reverting to a previous state in case of a problem.</li>
+      <li><strong>Restoring the VM from the Latest Snapshot:</strong> We were able to find the exact state of the machine at the time the snapshot was created and also select a new size for the VM. This allowed us to quickly recover a working system after unwanted changes or crashes.</li>
+    </ul>
+  </li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/snapshot2.png" style="width: 80%;" />
+</div>
+
+<!-- ## Full PDF Report
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf">
+</div> -->
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This project allowed us to understand the fundamental differences between type 1 and 2 hypervisors, as well as Docker VMs and containers. In addition, NAT and Bridge network configurations were explored to ensure connectivity between different virtual machines and containers. Docker implementation demonstrated the effectiveness of containers for rapid deployments and resource management, while VMs provide stronger isolation for use cases requiring better security.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Lab 1: Introduction to Cloud Hypervisors]]></summary></entry><entry><title type="html">Service Oriented Architecture Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented%20-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"><![CDATA[<h1 id="service-architecturesoftware-engineering"><strong>Service Architecture/Software Engineering</strong></h1>
+
+<h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
+
+<p>Service-Oriented Architecture (SOA) is a design model that allows structuring software applications as a collection of independent and interconnected services. Each service is encapsulated, meaning it exposes functionalities through a well-defined interface, enabling smooth integration and efficient reuse of services in different applications.</p>
+
+<h2 id="soa-objectives">SOA Objectives</h2>
+
+<p>The objectives of Service-Oriented Architecture are:</p>
+
+<ul>
+  <li>
+    <p><strong>Encapsulation of business applications into services</strong>: A service exposes a specific functionality in a standardized manner.</p>
+  </li>
+  <li>
+    <p><strong>Interoperability</strong>: Services are independent of programming languages and platforms, allowing for inter-system integration.</p>
+  </li>
+  <li>
+    <p><strong>Application evolution</strong>: SOA enables systems to evolve while reusing existing services.</p>
+  </li>
+  <li>
+    <p><strong>Service reuse</strong>: A service can be used by multiple applications.</p>
+  </li>
 </ul>
 
 <div style="text-align: center;">
     <img src="/img/Cours_SOA/Distr_App.png" style="width: 60%;" />
 </div>
 
-<h2 id="soa-principles">SOA Principles</h2>
-
-<ul>
-  <li>Encapsulation of business applications: SOA allows encapsulating business applications as services, thus providing functionalities accessible by other applications.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/SOA.png" style="width: 60%;" />
-</div>
+<h2 id="example-of-applications-with-and-without-soa">Example of Applications with and without SOA</h2>
 
 <ul>
   <li>
-    <p>Service reuse: Services can be reused in different applications, facilitating the evolution and integration of systems.</p>
-
-    <ul>
-      <li>
-        <p>Without SOA: Applications are often monolithic and difficult to maintain.</p>
-      </li>
-      <li>
-        <p>With SOA: Applications are made up of individual services, as illustrated below:</p>
-      </li>
-    </ul>
+    <p><strong>Without SOA</strong>: Applications are often monolithic, difficult to maintain, and evolve.</p>
+  </li>
+  <li>
+    <p><strong>With SOA</strong>: Applications are composed of reusable services. For example, an ApplicationA offers functionalities via services (Service1, Service2…), and an ApplicationB can reuse these same services without code duplication.</p>
   </li>
 </ul>
 
 <div style="text-align: center;">
     <img src="/img/Cours_SOA/Service_reuse.png" style="width: 70%;" />
-</div>
-
-<ul>
-  <li>Decoupling of platforms and languages: Web services allow the separation of services from the platform and the underlying programming language, facilitating integration.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web.png" style="width: 20%;" />
 </div>
 
 <h1 id="web-services">Web Services</h1>
@@ -595,26 +1042,117 @@ Cloning and snapshot: Snapshots of the containers were taken to preserve their s
     <img src="/img/Cours_SOA/Web_service.png" style="width: 80%;" />
 </div>
 
-<h2 id="web-services-properties">Web Services Properties</h2>
+<p>Service-Oriented Architecture (SOA) relies on XML standards to facilitate integration, interoperability, and communication between services. The main standards are:</p>
+
+<h2 id="web-services-description-language-wsdl">Web Services Description Language (WSDL)</h2>
+
+<p>WSDL is an XML language that allows describing web services in a standardized manner. It provides crucial information about the services, such as:</p>
 
 <ul>
-  <li>Web Services Discovery: Clients can discover and use available Web services, which improves the flexibility and maintainability of applications.</li>
+  <li>
+    <p><strong>Offered operations</strong>: Actions that the service can perform (e.g., data transmission, computation).</p>
+  </li>
+  <li>
+    <p><strong>Data types</strong>: Definitions of the data structures exchanged (e.g., XML Schema).</p>
+  </li>
+  <li>
+    <p><strong>Transport protocols</strong>: Protocols used for exchanges (HTTP, SOAP, etc.).</p>
+  </li>
+  <li>
+    <p><strong>Service location</strong>: The URL where the service is accessible.</p>
+  </li>
 </ul>
 
+<p><strong>Structure of a WSDL Document</strong></p>
+
+<p>A WSDL document is structured into several elements:</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;definitions&gt;</code>: Root element listing namespaces and organizing the document.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;types&gt;</code>: Defines the data types exchanged between the client and the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;message&gt;</code>: Describes the input and output messages used by the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;portType&gt;</code>: Defines the operations offered by the service.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;binding&gt;</code>: Specifies the transport protocol (e.g., SOAP over HTTP).</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;service&gt;</code>: Defines the service entry points via network addresses (ports).</p>
+
 <div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web_dec.png" style="width: 50%;" />
+    <img src="/img/Cours_SOA/wsdl.png" style="width: 30%;" />
 </div>
+
+<h2 id="universal-descrition-discovery-and-integration-uddi">Universal Descrition Discovery and Integration (UDDI)</h2>
+
+<p>UDDI (Universal Description, Discovery, and Integration) is a directory that allows discovering and integrating web services. It enables businesses to publish their services in a registry, facilitating their discovery by other entities.</p>
+
+<p>The integration process with UDDI involves several steps:</p>
+
+<ol>
+  <li>
+    <p><strong>Publication</strong>: The service is described in WSDL and published in the UDDI directory.</p>
+  </li>
+  <li>
+    <p><strong>Discovery</strong>: Clients search for services that meet their needs in the directory.</p>
+  </li>
+  <li>
+    <p><strong>Invocation</strong>: Once the service is found, it is invoked via a transport protocol like SOAP.</p>
+  </li>
+</ol>
+
+<h2 id="simple-object-access-protocol-soap">Simple Object Access Protocol (SOAP)</h2>
+
+<p>SOAP is an XML-based protocol that allows exchanging structured messages between a client and a web service. It is designed to be extensible and works over different transport protocols like HTTP, SMTP, or even network-specific protocols.</p>
+
+<h2 id="structure-of-a-soap-message">Structure of a SOAP Message</h2>
+<p>A SOAP message consists of three parts:</p>
+
+<ol>
+  <li>
+    <p>Envelope: Root element that contains the entire message.</p>
+  </li>
+  <li>
+    <p>Header (optional): Adds additional information such as security or routing.</p>
+  </li>
+  <li>
+    <p>Body: Contains the exchanged data (e.g., invoked method and its parameters).</p>
+  </li>
+</ol>
+
+<div style="text-align: center;">
+    <img src="/img/Cours_SOA/soap.png" style="width: 80%;" />
+</div>
+
+<h2 id="examples-of-soap-operations">Examples of SOAP Operations</h2>
 
 <ul>
-  <li>Web Services Composition: Composition allows the creation of new value-added services by combining several existing Web services, thus facilitating the creation of complex applications from simple components.</li>
+  <li>
+    <p>One-way: The service receives a request without sending a response.</p>
+  </li>
+  <li>
+    <p>Request/Response: The service receives a request and sends back a response.</p>
+  </li>
+  <li>
+    <p>Notification: The service sends a notification to the client without waiting for a response.</p>
+  </li>
+  <li>
+    <p>Solicit-Response: The service solicits a response from the client after sending a message.</p>
+  </li>
 </ul>
 
-<div style="text-align: center;">
-    <img src="/img/Cours_SOA/Web_comp.png" style="width: 60%;" />
-</div>
+<h2 id="web-service-interactions-example">Web Service Interactions Example</h2>
+
+<p>The complete interaction process between a client and a web service via SOA and SOAP can be summarized in these steps:</p>
+
+<ol>
+  <li>The client sends a SOAP request to the address defined in the service’s WSDL.</li>
+  <li>The web service receives and processes the request, then returns a SOAP response.</li>
+  <li>The client receives the SOAP response with the requested results or data.</li>
+</ol>
 
 <style>
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service-Oriented Architecture]]></summary></entry></feed>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service Architecture/Software Engineering]]></summary></entry></feed>
