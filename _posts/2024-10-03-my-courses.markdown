@@ -8,5 +8,6 @@ categories: jekyll update
 # 2024
 
 ## [Cloud Edge Computing](./cloud-edge.html)
+## [Energy for Connected Object ](./energy-connected-object.html)
 ## [Service Oriented Architecture MOOC](./service-oriented-architecture.html)
 ## [Master REOC](./master-reoc.html)

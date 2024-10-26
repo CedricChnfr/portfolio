@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-25T00:08:44+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-26T22:54:46+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -233,222 +233,7 @@ Knowledge and understanding of the architecture of a microprocessor are also use
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Service Oriented Architecture MOOC</title><link href="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture MOOC" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"><![CDATA[<h2><a href="./course-service-oriented-architecture.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
-<h2 id="-1"><a href="./project-service-oriented-architecture.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const badges = document.querySelectorAll('img');
-        badges.forEach((badge, index) => {
-            badge.style.transition = "transform 0.5s";
-            badge.addEventListener("mouseover", function() {
-                badge.style.transform = "scale(1.1)";
-            });
-            badge.addEventListener("mouseout", function() {
-                badge.style.transform = "scale(1)";
-            });
-        });
-    });
-</script>
-
-<style>
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        border-radius: 50%;
-        width: 500px;
-        height: 200px;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
-
-<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>
-<h2 id="service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">Service Oriented Architecture MOOC</a></h2>
-<h2 id="master-reoc"><a href="./master-reoc.html">Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
-
-<p><strong>Phone</strong> : +(33) 679 791 782<br />
-<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
-<strong>Mail</strong> : chanfreau@insa-toulouse.fr</p>
-
-<hr />
-
-<h2 id="about-me">About me</h2>
-
-<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
-
-<hr />
-
-<h2 id="formation">Formation</h2>
-
-<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
-<ul>
-  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
-  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
-  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
-  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
-</ul>
-
-<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
-<ul>
-  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
-  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
-  <li><strong>Projet</strong> : Designed and coded a game in C</li>
-</ul>
-
-<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
-<ul>
-  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
-</ul>
-
-<hr />
-
-<h2 id="skills">Skills</h2>
-
-<h3 id="programming--software">Programming / Software</h3>
-<ul>
-  <li>Language in digital electronics: VHDL (Quartus)</li>
-  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
-  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
-  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
-  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
-  <li>Computer science: MS Office</li>
-</ul>
-
-<h3 id="techniques">Techniques</h3>
-<ul>
-  <li>Design and assembly of electronic cards</li>
-  <li>Debugging tools and software security testing</li>
-  <li>Familiarity with the concept of microcontroller memory</li>
-</ul>
-
-<h3 id="languages">Languages</h3>
-<ul>
-  <li><strong>Français</strong> : Langue maternelle</li>
-  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
-  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
-</ul>
-
-<hr />
-
-<h2 id="professional-experience">Professional Experience</h2>
-
-<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
-<ul>
-  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
-  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
-  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
-</ul>
-
-<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
-<ul>
-  <li>Developed generic embedded solutions for ECUs reprogramming</li>
-  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
-  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
-  <li>Presented regular project reviews to team members in English</li>
-</ul>
-
-<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
-<ul>
-  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
-  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
-</ul>
-
-<hr />
-
-<h2 id="extracurricular-activities">Extracurricular Activities</h2>
-
-<ul>
-  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
-  <li>Practiced swimming for 6 years in a club</li>
-  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
-  <li>Assessor of a polling station for the regional and departmental elections</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
-
-<h2 id="-be-robot-insa"><a href="./be-projet-robot.html">🤖 BE Robot INSA</a></h2>
-<h2 id="-connected-bowl-insa"><a href="./connected-bowl.html">🏠 Connected Bowl INSA</a></h2>
-<h2 id="-be-trotinette-insa"><a href="./be-trotinette.html">🛴 BE Trotinette INSA</a></h2>
-
-<hr />
-<h1 id="2023">2023</h1>
-
-<h2 id="-object-oriented-programming-insa"><a href="./object-oriented-programming.html">💻 Object-Oriented Programming INSA</a></h2>
-<h2 id="-risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">🔧 RISC Type Microprocessor INSA</a></h2>
-
-<h2 id="-led-insa-60-ans"><a href="./led-insa-60-ans.html">💡 LED INSA 60 ANS</a></h2>
-
-<hr />
-<h1 id="2022">2022</h1>
-
-<h2 id="-c-and-network-project-insa"><a href="./network-project-C.html">🌐 C and Network Project INSA</a></h2>
-<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>
-
-<hr />
-<h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
-<h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const badges = document.querySelectorAll('img');
-        badges.forEach((badge, index) => {
-            badge.style.transition = "transform 0.5s";
-            badge.addEventListener("mouseover", function() {
-                badge.style.transform = "scale(1.1)";
-            });
-            badge.addEventListener("mouseout", function() {
-                badge.style.transform = "scale(1)";
-            });
-        });
-    });
-</script>
-
-<style>
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        border-radius: 50%;
-        width: 500px;
-        height: 200px;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h2 id="1-introduction-to-related-concepts">1. Introduction to Related Concepts</h2>
-<p>Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.</p>
-
-<h2 id="2-virtualization">2. Virtualization</h2>
-<p>Virtualization is a key technology in Cloud Computing. It allows multiple operating systems to be run on a single physical host by sharing the underlying hardware resources. This isolation of environments is achieved through hypervisors, which are classified into two types:</p>
-
-<ul>
-  <li>Type 1 hypervisor (bare-metal), which runs directly on the hardware.</li>
-  <li>Type 2 hypervisor (hosted), which runs on top of a host operating system.
-Containers are another form of virtualization, where processes are isolated but share the same operating system kernel, reducing overhead compared to traditional virtual machines.</li>
-</ul>
-
-<h2 id="3-cloud-computing">3. Cloud Computing</h2>
-<p>Cloud Computing allows on-demand access to a set of configurable resources (networks, servers, storage, etc.). Its main characteristics include:</p>
-
-<p>Scalability: Resources can be dynamically adjusted according to demand.
-Pay-as-you-go model: Users pay only for what they consume.
-Remote services: The Cloud is accessible via the Internet, eliminating the need for complex local infrastructure.
-The main service models are:</p>
-
-<ul>
-  <li>IaaS (Infrastructure as a Service): Provision of computing infrastructure.</li>
-  <li>PaaS (Platform as a Service): Provision of platforms for application development.</li>
-  <li>SaaS (Software as a Service): Provision of software directly accessible via the Internet.</li>
-</ul>
-
-<h2 id="4-edge-computing">4. Edge Computing</h2>
-<p>Edge Computing brings computing closer to users and data sources, particularly for IoT (Internet of Things) systems. It allows data to be processed locally, thus reducing latency, particularly for critical applications such as Industry 4.0 or autonomous vehicle management. Edge Computing often works in addition to the Cloud for real-time processing needs.</p>
-
-<h2 id="5-cloud-federation-and-cooperation">5. Cloud Federation and Cooperation</h2>
-<p>Cloud federation allows the interconnection of multiple Cloud environments to manage dynamic workloads and provide increased resilience. This model is particularly used to distribute services and manage load peaks between different Cloud providers, thus ensuring continuous availability.</p>
-
-<h2 id="6-fog-computing">6. Fog Computing</h2>
-<p>Fog Computing extends the principles of Edge Computing by integrating cloud and compute capabilities closer to end users. This architecture reduces the amount of data sent to the centralized cloud, enabling real-time processing with minimal latency, while maintaining interoperability with IoT systems.</p>
-
-<h2 id="7-conclusion">7. Conclusion</h2>
-<p>The course explores modern distributed computing architectures that combine cloud and edge computing to meet growing data processing requirements. Integrating cloud systems with virtualization, automation, and resource management technologies provides powerful and scalable solutions for businesses and users. The future of these technologies lies in their ability to adapt to the needs of critical applications in real time, while ensuring data security and efficiency.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[1. Introduction to Related Concepts Cloud and Edge Computing are based on distributed computing models, where multiple remote components work together to achieve a common goal. Edge Computing brings services closer to end users, while Cloud Computing enables access to shared resources at scale.]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<div style="display: flex; justify-content: center;">
-    <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" style="overflow: auto;" />
-</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Service Oriented Architecture Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented%20-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"><![CDATA[<h1 id="service-architecturesoftware-engineering"><strong>Service Architecture/Software Engineering</strong></h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Service Oriented Architecture Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented%20-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-service-oriented-architecture.html"><![CDATA[<h1 id="service-architecturesoftware-engineering"><strong>Service Architecture/Software Engineering</strong></h1>
 
 <h1 id="service-oriented-architecture">Service-Oriented Architecture</h1>
 
@@ -613,4 +398,157 @@ The main service models are:</p>
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service Architecture/Software Engineering]]></summary></entry></feed>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service Architecture/Software Engineering]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>
+<h2 id="energy-for-connected-object-"><a href="./energy-connected-object.html">Energy for Connected Object </a></h2>
+<h2 id="service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">Service Oriented Architecture MOOC</a></h2>
+<h2 id="master-reoc"><a href="./master-reoc.html">Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+
+<p><strong>Phone</strong> : +(33) 679 791 782<br />
+<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
+<strong>Mail</strong> : chanfreau@insa-toulouse.fr</p>
+
+<hr />
+
+<h2 id="about-me">About me</h2>
+
+<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
+
+<hr />
+
+<h2 id="formation">Formation</h2>
+
+<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
+<ul>
+  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
+  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
+  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
+  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
+</ul>
+
+<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
+<ul>
+  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
+  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
+  <li><strong>Projet</strong> : Designed and coded a game in C</li>
+</ul>
+
+<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
+<ul>
+  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
+</ul>
+
+<hr />
+
+<h2 id="skills">Skills</h2>
+
+<h3 id="programming--software">Programming / Software</h3>
+<ul>
+  <li>Language in digital electronics: VHDL (Quartus)</li>
+  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
+  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
+  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
+  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
+  <li>Computer science: MS Office</li>
+</ul>
+
+<h3 id="techniques">Techniques</h3>
+<ul>
+  <li>Design and assembly of electronic cards</li>
+  <li>Debugging tools and software security testing</li>
+  <li>Familiarity with the concept of microcontroller memory</li>
+</ul>
+
+<h3 id="languages">Languages</h3>
+<ul>
+  <li><strong>Français</strong> : Langue maternelle</li>
+  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
+  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
+</ul>
+
+<hr />
+
+<h2 id="professional-experience">Professional Experience</h2>
+
+<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
+<ul>
+  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
+  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
+  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
+</ul>
+
+<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
+<ul>
+  <li>Developed generic embedded solutions for ECUs reprogramming</li>
+  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
+  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
+  <li>Presented regular project reviews to team members in English</li>
+</ul>
+
+<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
+<ul>
+  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
+  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
+</ul>
+
+<hr />
+
+<h2 id="extracurricular-activities">Extracurricular Activities</h2>
+
+<ul>
+  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
+  <li>Practiced swimming for 6 years in a club</li>
+  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
+  <li>Assessor of a polling station for the regional and departmental elections</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+
+<h2 id="-be-robot-insa"><a href="./be-projet-robot.html">🤖 BE Robot INSA</a></h2>
+<h2 id="-connected-bowl-insa"><a href="./connected-bowl.html">🏠 Connected Bowl INSA</a></h2>
+<h2 id="-be-trotinette-insa"><a href="./be-trotinette.html">🛴 BE Trotinette INSA</a></h2>
+
+<hr />
+<h1 id="2023">2023</h1>
+
+<h2 id="-object-oriented-programming-insa"><a href="./object-oriented-programming.html">💻 Object-Oriented Programming INSA</a></h2>
+<h2 id="-risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">🔧 RISC Type Microprocessor INSA</a></h2>
+
+<h2 id="-led-insa-60-ans"><a href="./led-insa-60-ans.html">💡 LED INSA 60 ANS</a></h2>
+
+<hr />
+<h1 id="2022">2022</h1>
+
+<h2 id="-c-and-network-project-insa"><a href="./network-project-C.html">🌐 C and Network Project INSA</a></h2>
+<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>
+
+<hr />
+<h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
+<h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const badges = document.querySelectorAll('img');
+        badges.forEach((badge, index) => {
+            badge.style.transition = "transform 0.5s";
+            badge.addEventListener("mouseover", function() {
+                badge.style.transform = "scale(1.1)";
+            });
+            badge.addEventListener("mouseout", function() {
+                badge.style.transform = "scale(1)";
+            });
+        });
+    });
+</script>
+
+<style>
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 50%;
+        width: 500px;
+        height: 200px;
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" style="overflow: auto;" />
+</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Energy Connected Object Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-energy-connected-object.html" rel="alternate" type="text/html" title="Energy Connected Object Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-energy-connected-object</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-energy-connected-object.html"><![CDATA[]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry></feed>
