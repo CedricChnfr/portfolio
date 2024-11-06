@@ -53,26 +53,26 @@ I am a highly motivated master’s student in apprenticeship studying Automation
 - Familiarity with the concept of microcontroller memory  
 
 ### Languages
-- **Français** : Langue maternelle  
-- **Anglais** : Niveau intermédiaire  
-- **Espagnol** : Niveau intermédiaire  
+- **French**: Native language  
+- **English**: Intermediate level  
+- **Spanish**: Intermediate level  
 
 ---
 
 ## Professional Experience
 
-**International Engineering Mobility – Vitesco Technologies** (Juillet 2024 - Septembre 2024)  
+**International Engineering Mobility – Vitesco Technologies** (July 2024 - September 2024)  
 - Studied and implemented solutions for Flash memory management on a new microcontroller  
 - Tested and validated Flash functionalities to ensure reliability of the new platform  
 - Created the environment to automate and optimize tests, using Python and CMM scripts  
 
-**Embedded Software Engineer apprenticeship - Vitesco Technologies** (Septembre 2022 - Août 2025)  
+**Embedded Software Engineer apprenticeship - Vitesco Technologies** (September 2022 - August 2025)  
 - Developed generic embedded solutions for ECUs reprogramming  
 - Tested and debugged code to ensure proper operation and problem resolution  
 - Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software  
 - Presented regular project reviews to team members in English  
 
-**Electronic method technician internship - Siemens Mobility** (Avril - Juillet 2022)  
+**Electronic method technician internship - Siemens Mobility** (April - July 2022)  
 - Studied the VAL208NG brake rack system and developed a test solution  
 - Conducted functional tests on the brake rack cards to ensure optimal performance  
 

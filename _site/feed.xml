@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-26T22:54:46+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>Je suis un apprenti ingénieur en 5ème année d&apos;école d&apos;ingénieur à l&apos;INSA. Ce site permet d&apos;avoir une vue sur mon travail et mon avancée durant ma scolarité.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-06T09:43:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -462,23 +462,23 @@ p {
 
 <h3 id="languages">Languages</h3>
 <ul>
-  <li><strong>Français</strong> : Langue maternelle</li>
-  <li><strong>Anglais</strong> : Niveau intermédiaire</li>
-  <li><strong>Espagnol</strong> : Niveau intermédiaire</li>
+  <li><strong>French</strong>: Native language</li>
+  <li><strong>English</strong>: Intermediate level</li>
+  <li><strong>Spanish</strong>: Intermediate level</li>
 </ul>
 
 <hr />
 
 <h2 id="professional-experience">Professional Experience</h2>
 
-<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (Juillet 2024 - Septembre 2024)</p>
+<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (July 2024 - September 2024)</p>
 <ul>
   <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
   <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
   <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
 </ul>
 
-<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (Septembre 2022 - Août 2025)</p>
+<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (September 2022 - August 2025)</p>
 <ul>
   <li>Developed generic embedded solutions for ECUs reprogramming</li>
   <li>Tested and debugged code to ensure proper operation and problem resolution</li>
@@ -486,7 +486,7 @@ p {
   <li>Presented regular project reviews to team members in English</li>
 </ul>
 
-<p><strong>Electronic method technician internship - Siemens Mobility</strong> (Avril - Juillet 2022)</p>
+<p><strong>Electronic method technician internship - Siemens Mobility</strong> (April - July 2022)</p>
 <ul>
   <li>Studied the VAL208NG brake rack system and developed a test solution</li>
   <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
@@ -501,7 +501,9 @@ p {
   <li>Practiced swimming for 6 years in a club</li>
   <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
   <li>Assessor of a polling station for the regional and departmental elections</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2025">2025</h1>
+
+<h1 id="2024">2024</h1>
 
 <h2 id="-be-robot-insa"><a href="./be-projet-robot.html">🤖 BE Robot INSA</a></h2>
 <h2 id="-connected-bowl-insa"><a href="./connected-bowl.html">🏠 Connected Bowl INSA</a></h2>
@@ -512,7 +514,6 @@ p {
 
 <h2 id="-object-oriented-programming-insa"><a href="./object-oriented-programming.html">💻 Object-Oriented Programming INSA</a></h2>
 <h2 id="-risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">🔧 RISC Type Microprocessor INSA</a></h2>
-
 <h2 id="-led-insa-60-ans"><a href="./led-insa-60-ans.html">💡 LED INSA 60 ANS</a></h2>
 
 <hr />
@@ -522,7 +523,7 @@ p {
 <h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>
 
 <hr />
-<h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
+<h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2025]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h2><a href="./course-cloud-edge.html"><img src="https://img.shields.io/badge/Courses-blue?style=for-the-badge" alt="Courses" /></a></h2>
 <h2 id="-1"><a href="./project-cloud-edge.html"><img src="https://img.shields.io/badge/Project-green?style=for-the-badge" alt="Project" /></a></h2>
 
 <script>
