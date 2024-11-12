@@ -7,7 +7,7 @@ categories: jekyll update
 
 
 ## [![Courses](https://img.shields.io/badge/Courses-blue?style=for-the-badge)](./course-master-reoc.html)  
-## [![Project](https://img.shields.io/badge/Project-green?style=for-the-badge)](./project-master-reoc.html)
+## [![Pratical Work](https://img.shields.io/badge/Project-green?style=for-the-badge)](./project-master-reoc.html)
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

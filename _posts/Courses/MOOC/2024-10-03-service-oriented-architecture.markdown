@@ -7,7 +7,7 @@ categories: jekyll update
 
 
 ## [![Courses](https://img.shields.io/badge/Courses-blue?style=for-the-badge)](./course-service-oriented-architecture.html)  
-## [![Project](https://img.shields.io/badge/Project-green?style=for-the-badge)](./project-service-oriented-architecture.html)
+## [![Pratical Work](https://img.shields.io/badge/Project-green?style=for-the-badge)](./project-service-oriented-architecture.html)
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

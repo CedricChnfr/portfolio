@@ -11,6 +11,8 @@ categories: jekyll update
 **Adresse** : Rue du libre-échange, 31500 Toulouse  
 **Mail** : chanfreau@insa-toulouse.fr  
 
+[Open my CV (PDF)](/file/my-cv.pdf){:target="_blank"}
+
 ---
 
 ## About me
