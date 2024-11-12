@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-06T10:49:00+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-12T09:54:33+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -400,10 +400,10 @@ p {
 }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Service Architecture/Software Engineering]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
 
-<h2 id="cloud-edge-computing"><a href="./cloud-edge.html">Cloud Edge Computing</a></h2>
-<h2 id="energy-for-connected-object-"><a href="./energy-connected-object.html">Energy for Connected Object </a></h2>
-<h2 id="service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">Service Oriented Architecture MOOC</a></h2>
-<h2 id="master-reoc"><a href="./master-reoc.html">Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<h2 id="️-cloud-edge-computing"><a href="./cloud-edge.html">☁️ Cloud Edge Computing</a></h2>
+<h2 id="-energy-for-connected-object"><a href="./energy-connected-object.html">🔋 Energy for Connected Object</a></h2>
+<h2 id="-service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">📚 Service Oriented Architecture MOOC</a></h2>
+<h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
 <strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
@@ -550,7 +550,122 @@ p {
         width: 500px;
         height: 200px;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<div style="display: flex; justify-content: center;">
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Cloud Edge Course</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Course" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-cloud-edge.html"><![CDATA[<h1 id="cloud-and-edge-computing">Cloud and Edge Computing</h1>
+
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This course explores the fundamental concepts of cloud computing and edge computing. The goal is to illustrate how virtualization and distributed computing models provide large-scale services tailored to specific needs such as low latency, flexibility, and efficient resource management.</p>
+
+<h2 id="2-relevant-and-related-concepts">2. Relevant and Related Concepts</h2>
+<ul>
+  <li><strong>Distributed Computing</strong>: A model where multiple remote components interact and coordinate their actions to achieve a common goal.</li>
+  <li><strong>Pervasive Computing</strong>: Allows computations to be performed on any device, anywhere, and at any time.</li>
+  <li><strong>Utility Computing</strong>: An economic model where computing resources are available on demand, with sophisticated billing systems based on consumption.</li>
+  <li><strong>Service-Oriented Computing (SOC)</strong>: A paradigm that uses services as fundamental elements for application development.</li>
+</ul>
+
+<h2 id="3-virtualization">3. Virtualization</h2>
+<p>Virtualization allows multiple operating systems to run on a single physical system, ensuring resource isolation.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/No_Virt.png" style="width: 40%;" />
+    <img src="/img/BE_Cloud_Computing/Virt.png" style="width: 40%;" />
+</div>
+
+<ul>
+  <li><strong>Hypervisor</strong>:</li>
+</ul>
+
+<p>A hardware virtualization technique that allows multiple OS to run on a single host system at the same time. A hypervisor enables the guest OS to share the hardware of the host, such that each OS appears to have its own processor, memory, and other hardware resources. A hypervisor is also a software (a.k.a Virtual Machine Manager) that allows creating, managing, and/or terminating Virtual Machines (VM).</p>
+
+<ul>
+  <li><strong>Type 1</strong>: Run directly on physical hardware (bare-metal) for optimized performance.</li>
+</ul>
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/H_Type1.png" style="width: 50%;" />
+</div>
+<ul>
+  <li><strong>Type 2</strong>: Run at the operating system level, easier to manage but with a slight performance drop.</li>
+</ul>
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/H_Type2.png" style="width: 50%;" />
+</div>
+
+<ul>
+  <li><strong>Paravirtualization</strong>: The guest OS interacts with the hardware via an API provided by the hypervisor.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/Paravirtualization.png" style="width: 50%;" />
+</div>
+
+<ul>
+  <li><strong>Containers</strong>: An OS-level virtualization method allowing isolated processes to run under a single kernel instance, promoting lightness and efficiency.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/Containers.png" style="width: 50%;" />
+</div>
+
+<h2 id="4-cloud-computing">4. Cloud Computing</h2>
+<p>Cloud computing is a model offering on-demand access to a shared pool of configurable resources without the need for initial commitment. It is characterized by:</p>
+<ul>
+  <li><strong>Characteristics</strong>:</li>
+</ul>
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/Characteristics.png" style="width: 50%;" />
+</div>
+
+<h3 id="service-models">Service Models</h3>
+<ul>
+  <li><strong>IaaS (Infrastructure as a Service)</strong>: Provides basic infrastructure (e.g., AWS EC2).</li>
+  <li><strong>PaaS (Platform as a Service)</strong>: Provides a development platform (e.g., Google App Engine).</li>
+  <li><strong>SaaS (Software as a Service)</strong>: Applications accessible via the internet (e.g., Google Workspace).</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/SDM.png" style="width: 70%;" />
+</div>
+
+<h3 id="deployment-models">Deployment Models</h3>
+<ul>
+  <li><strong>Public Cloud</strong>: Infrastructure owned by a cloud provider, accessible to the general public.</li>
+  <li><strong>Private Cloud</strong>: Infrastructure dedicated to a specific organization.</li>
+  <li><strong>Hybrid Cloud</strong>: Combines multiple clouds (public and private) for increased flexibility.</li>
+</ul>
+
+<h2 id="5-edge-computing-and-fog-computing">5. Edge Computing and Fog Computing</h2>
+<p>Edge Computing brings cloud resources closer to end users and data sources, enabling faster processing and real-time control, especially for latency-sensitive IoT applications.</p>
+
+<h3 id="characteristics-and-advantages">Characteristics and Advantages</h3>
+<ul>
+  <li><strong>Scalability</strong>: Adapts to an increasing number of distributed resources.</li>
+  <li><strong>Autonomy</strong>: Reduces the volume of data transmitted, allowing local processing.</li>
+  <li><strong>Data Sovereignty</strong>: Keeps data close to its source, securing it before transmission.</li>
+</ul>
+
+<h3 id="challenges-and-research-directions">Challenges and Research Directions</h3>
+<ul>
+  <li><strong>Quality of Service (QoS) Management</strong>: Requires consideration of latency and availability constraints.</li>
+  <li><strong>Security</strong>: Needs rigorous device management to protect against cyberattacks.</li>
+</ul>
+
+<h2 id="6-openstack-open-source-cloud-platform">6. OpenStack: Open Source Cloud Platform</h2>
+<p>OpenStack is an open-source solution for managing private and public clouds, offering capabilities for provisioning virtual machines, network management, and storage.</p>
+
+<h3 id="key-components">Key Components</h3>
+<ul>
+  <li><strong>Nova</strong>: Manages compute resources.</li>
+  <li><strong>Swift</strong>: Provides object storage.</li>
+  <li><strong>Glance</strong>: Catalogs and manages server images.</li>
+  <li><strong>Quantum (or Neutron)</strong>: Provides network as a service.</li>
+</ul>
+
+<h2 id="7-autonomic-computing">7. Autonomic Computing</h2>
+<p>Inspired by the human autonomic nervous system, autonomic computing aims to reduce the complexity of managing distributed systems through MAPE (Monitor, Analyze, Plan, Execute) feedback loops.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/Automatic.png" style="width: 70%;" />
+</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud and Edge Computing]]></summary></entry><entry><title type="html">Cloud Edge Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-cloud-edge.html"><![CDATA[<div style="display: flex; justify-content: center;">
     <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" />
 </div>
 

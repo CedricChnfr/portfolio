@@ -40,25 +40,25 @@ layout: default
 /* Image stylée et centrée */
 .image-container img {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 200px; /* Augmente la taille de l'image */
+    height: 200px; /* Augmente la taille de l'image */
     object-fit: cover;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style pour la description */
 .description-container {
-    max-width: 400px;
+    max-width: 500px; /* Augmente la largeur maximale de la description */
     text-align: left;
 }
 
 .description-container h2 {
-    font-size: 24px;
+    font-size: 28px; /* Augmente la taille de la police du titre */
     margin-bottom: 10px;
 }
 
 .description-container p {
-    font-size: 16px;
+    font-size: 18px; /* Augmente la taille de la police du texte */
     color: #555;
 }
 
@@ -72,11 +72,11 @@ layout: default
 
 /* Style des liens */
 .nav-link {
-    font-size: 22px; /* Augmente la taille de la police */
+    font-size: 24px; /* Augmente la taille de la police */
     font-weight: bold;
     text-decoration: none;
     color: #007bff;
-    padding: 15px 30px; /* Augmente la taille du bouton avec plus de padding */
+    padding: 20px 35px; /* Augmente la taille du bouton avec plus de padding */
     border: 2px solid #007bff;
     border-radius: 30px; /* Ajuste le rayon pour des coins plus arrondis */
     transition: all 0.3s ease;
@@ -88,4 +88,3 @@ layout: default
     color: white;
     box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
 }
-</style>
