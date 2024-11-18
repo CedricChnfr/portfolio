@@ -5,7 +5,7 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Cloud and Edge Computing
+# PARTIE B : DESCRIPTIVE PART
 
 ## 1. Introduction
 This course explores the fundamental concepts of cloud computing and edge computing. The goal is to illustrate how virtualization and distributed computing models provide large-scale services tailored to specific needs such as low latency, flexibility, and efficient resource management.
@@ -98,3 +98,10 @@ Inspired by the human autonomic nervous system, autonomic computing aims to redu
 <div style="text-align: center;">
     <img src="/img/BE_Cloud_Computing/Automatic.png" style="width: 70%;"/>
 </div>
+
+### Core Features
+
+- **Self-Healing**: Detects and resolves disruptions autonomously.
+- **Self-Configuration**: Adjusts system configurations based on policies.
+- **Self-Protection**: Defends against unauthorized access and attacks.
+- **Self-Optimization**: Maximizes resource utilization efficiently.

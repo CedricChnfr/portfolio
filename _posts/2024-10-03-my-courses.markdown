@@ -11,3 +11,4 @@ categories: jekyll update
 ## [🔋 Energy for Connected Object](./energy-connected-object.html)
 ## [📚 Service Oriented Architecture MOOC](./service-oriented-architecture.html)
 ## [🎓 Master REOC](./master-reoc.html)
+## [📶 5G Technologies](./5g-technologies.html)
