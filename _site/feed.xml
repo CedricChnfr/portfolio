@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-11-18T22:09:27+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-27T00:06:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -233,41 +233,115 @@ Knowledge and understanding of the architecture of a microprocessor are also use
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Energy Connected Object</title><link href="http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object.html" rel="alternate" type="text/html" title="Energy Connected Object" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object.html"><![CDATA[<h2 id="course-energy-connected-object">Course: Energy Connected Object</h2>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Service Oriented Architecture</title><link href="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" rel="alternate" type="text/html" title="Service Oriented Architecture" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"><![CDATA[<h2 id="course-service-oriented-architecture">Course: Service Oriented Architecture</h2>
 
-<h3 id="part-a-generalities">PART A: GENERALITIES</h3>
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
-<p>The course “Energy for Connected Objects” aims to train engineers capable of designing and managing energy-autonomous connected systems. In a context where connected objects are multiplying, energy efficiency becomes a key issue, both for sustainability and for reducing operational costs.</p>
+<h3 id="presentation">Presentation</h3>
+<p>The “Service Oriented Architecture” course, taught by Nawal Guermouche, aims to explore legacy and modern architectures for software engineering. The theoretical part is delivered through a MOOC (Massive Open Online Course) with various videos on different topics. This course is particularly interesting for students with a computer science background as it covers different standard architectures that are likely to be encountered in the field.</p>
 
-<p>This course explores innovative solutions to:</p>
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
+<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
+
+<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
+
+<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<p>The practical part of this course is divided into two segments. The first segment introduces three different architectures: SOAP, REST, and microservices. The second segment involves a project that delves deeper into the most recent type of software architecture, microservices.</p>
+
+<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<p>During the practical sessions, I engaged in hands-on activities that involved implementing and configuring these architectures. The project work required collaboration and problem-solving to design and deploy a microservice architecture.</p>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+
+<h4 id="context">Context</h4>
+<p>This lab report explores the implementation and configuration of different service-oriented architectures, focusing on SOAP, REST, and microservices. The goal is to understand their functionalities, advantages, and limitations.</p>
+
+<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+
+<h4 id="what">What</h4>
+<p>We explored three main architectures:</p>
+<ol>
+  <li><strong>SOAP (Simple Object Access Protocol)</strong>: A legacy architecture that uses WSDL (Web Service Description Language) for defining services.</li>
+  <li><strong>REST (Representational State Transfer)</strong>: An architecture that uses HTTP protocols for creating, reading, updating, and deleting resources.</li>
+  <li><strong>Microservices</strong>: A modern architecture that divides a service into independent microservices, each handling a specific functionality.</li>
+</ol>
+
+<h4 id="how">How</h4>
+<ol>
+  <li><strong>SOAP</strong>:
+    <ul>
+      <li>Implemented a web service using SOAP.</li>
+      <li>Created and consumed WSDL documents.</li>
+      <li>Developed services such as User Management, Volunteer Management, and Request Management.</li>
+    </ul>
+  </li>
+  <li><strong>REST</strong>:
+    <ul>
+      <li>Developed RESTful APIs using HTTP methods (POST, GET, PUT, DELETE).</li>
+      <li>Implemented services like User Management, User Request Service, Volunteer Management, and Feedback Service.</li>
+      <li>Tested the APIs using tools like Postman.</li>
+    </ul>
+  </li>
+  <li><strong>Microservices</strong>:
+    <ul>
+      <li>Designed a microservice architecture using Spring Boot.</li>
+      <li>Implemented communication between microservices using REST interfaces.</li>
+      <li>Deployed the microservices using containerization tools like Docker.</li>
+      <li>Automated deployment using Microsoft Azure and GitHub Actions.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="why">Why</h4>
+<p>To gain a comprehensive understanding of different service-oriented architectures and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable software systems.</p>
+
+<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
 <ul>
-  <li>Power connected devices: via batteries, wireless energy transfer methods, or using ambient energy sources.</li>
-  <li>Optimize energy consumption: to extend the lifespan of devices and reduce their environmental impact.</li>
-  <li>Design autonomous objects: that efficiently harvest, store, and manage energy.</li>
+  <li>Understanding of service-oriented architecture concepts and features.</li>
+  <li>Development of distributed architectures using web services.</li>
+  <li>Deployment and configuration of SOA using SOAP and REST.</li>
+  <li>Design, development, and deployment of microservice architectures.</li>
+  <li>Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.</li>
 </ul>
 
-<h3 id="some-recommendations">Some Recommendations</h3>
+<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<p>The course provided a thorough understanding of service-oriented architectures. The practical sessions were particularly beneficial in illustrating the concepts. However, the focus on legacy architectures like SOAP could be reduced in favor of more emphasis on modern architectures like REST and microservices.</p>
 
-<p>The key concepts covered in this course apply directly to engineering projects, particularly in the following areas:</p>
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
+<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
 <ul>
-  <li>Connected health: wearable devices such as smartwatches or biomedical sensors.</li>
-  <li>Smart cities: traffic sensors, autonomous streetlights, or surveillance systems.</li>
-  <li>Industry 4.0: connected objects for industrial automation or predictive maintenance.</li>
+  <li><strong>Theoretical Knowledge</strong>: Gained insights into different service-oriented architectures and their applications.</li>
+  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring SOAP, REST, and microservice architectures.</li>
+  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different architectures based on project requirements.</li>
 </ul>
 
-<footer>
-    <div class="footer-section">
-        <a href="./course-energy-connected-object.html" class="styled-button">Descriptive Part</a>
-    </div>
-    <div class="footer-section">
-        <a href="./project-energy-connected-object.html" class="styled-button">Technical Part</a>
-    </div>
-    <div class="footer-section">
-        <a href="./analysis-energy-connected-object.html" class="styled-button">Analytical Part</a>
-    </div>
-</footer>
+<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
+<ul>
+  <li><strong>Acquired Skills</strong>: Mastered the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.</li>
+  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
+</ul>
+
+<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+
+<h4 id="highlights">Highlights</h4>
+<p>The course was highly relevant to my professional career, providing practical experience in modern software architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+
+<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+<p>To further enhance the learning experience, integrating more interactive approaches and focusing on modern architectures would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the course.</p>
+
+<h2 id="project-report">Project Report</h2>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_service_architecture.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_service_architecture.pdf" target="_blank">Download Complete Report</a>
+</p>
 
 <style>
     body {
@@ -304,13 +378,18 @@ p {
         background-color: #3399FF;
         transform: scale(1.05);
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Energy Connected Object]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Service Oriented Architecture]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
 
 <h2 id="️-cloud-edge-computing"><a href="./cloud-edge.html">☁️ Cloud Edge Computing</a></h2>
 <h2 id="-energy-for-connected-object"><a href="./energy-connected-object.html">🔋 Energy for Connected Object</a></h2>
 <h2 id="-service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">📚 Service Oriented Architecture MOOC</a></h2>
-<h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>
-<h2 id="-5g-technologies"><a href="./5g-technologies.html">📶 5G Technologies</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<h2 id="-5g-technologies"><a href="./5g-technologies.html">📶 5G Technologies</a></h2>
+<h2 id="-protocole-objet-connecté-wsnl"><a href="./WSNL.html">🔗 Protocole Objet Connecté (WSNL)</a></h2>
+<h2 id="-réseau-emergent"><a href="./reseau-emergent.html">🌐 Réseau Emergent</a></h2>
+<h2 id="-sécurity-connected-object"><a href="./security-object.html">🔒 Sécurity Connected Object</a></h2>
+<h2 id="-embedded-ia-for-iot"><a href="./embedded-ia-iot.html">🧠 Embedded IA for IOT</a></h2>
+<h2 id="-aime---sensors"><a href="./aime.html">🤖 AIME - Sensors</a></h2>
+<h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
 <strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
@@ -333,14 +412,14 @@ p {
   <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
   <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
   <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
-  <li><strong>Projet</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
+  <li><strong>Project</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
 </ul>
 
 <p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
 <ul>
   <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
   <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
-  <li><strong>Projet</strong> : Designed and coded a game in C</li>
+  <li><strong>Project</strong> : Designed and coded a game in C</li>
 </ul>
 
 <p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
@@ -434,22 +513,260 @@ p {
 <hr />
 <h1 id="2021">2021</h1>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2025]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html"><![CDATA[<h2 id="course-5g-technologies">Course: 5G Technologies</h2>
 
-<h3 id="part-a-generalities">PART A: GENERALITIES</h3>
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The course “5G Technologies” is taught by Etienne Sicard. The main objective of this course is to explore various contemporary topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
+
+<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
+
+<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
+
+<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<p>In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<h3 id="ci1-presentation">C.I.1 Presentation</h3>
 
 <h4 id="context">Context</h4>
-<p>The course of 5G technologies is taught by Etienne Sicard. The main objective of this course is to discover a lot of actual topics regarding cellular networks. This course was taught using reverse pedagogy, which means that the content of the course was mainly composed of presentations done by students. As the industry of cellular networks evolves at a fast pace, it was really interesting to discuss such a recent and emerging topic. Indeed, 5G is a big change in cellular networks as it is the first generation to introduce software-defined radio (SDR) and microservices. This totally changed the architecture of cellular networks.</p>
+<p>This section explores the technical aspects of 6G technologies, focusing on core technologies, applications, and the challenges in developing 6G. The goal is to understand the functionalities, advantages, and limitations of these technologies.</p>
 
-<footer>
-    <div class="footer-section">
-        <a href="./course-5G-Technologies.html" class="styled-button">Descriptive Part</a>
-    </div>
-    <div class="footer-section">
-        <a href="./project-5G-Technologies.html" class="styled-button">Technical Part</a>
-    </div>
-    <div class="footer-section">
-        <a href="./analysis-5G-Technologies.html" class="styled-button">Analytical Part</a>
-    </div>
-</footer>
+<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+
+<h4 id="what">What</h4>
+<p>We examined core 6G technologies, applications and opportunities, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
+
+<h4 id="how">How</h4>
+<ol>
+  <li><strong>Core 6G Technologies</strong>:
+    <ul>
+      <li>Presented the different core technologies in 6G.</li>
+      <li>Discussed the flexibility and advancements offered by these technologies.</li>
+    </ul>
+  </li>
+  <li><strong>6G Applications &amp; Opportunities</strong>:
+    <ul>
+      <li>Explored potential applications and opportunities provided by 6G.</li>
+      <li>Discussed the societal and industrial benefits of 6G.</li>
+    </ul>
+  </li>
+  <li><strong>Challenges Developing 6G</strong>:
+    <ul>
+      <li>Identified the key challenges in developing 6G technologies.</li>
+      <li>Discussed potential solutions and ongoing research efforts.</li>
+    </ul>
+  </li>
+  <li><strong>Development Timeline and Global Efforts</strong>:
+    <ul>
+      <li>Reviewed the development timeline for 6G.</li>
+      <li>Highlighted global efforts and collaborations in 6G development.</li>
+    </ul>
+  </li>
+  <li><strong>6G’s Impact on Society</strong>:
+    <ul>
+      <li>Analyzed the potential impact of 6G on society.</li>
+      <li>Discussed the transformative effects of 6G on various sectors.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="why">Why</h4>
+<p>To gain a comprehensive understanding of 6G technologies and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable cellular networks.</p>
+
+<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<ul>
+  <li>Understanding and mastering new mobile network technologies.</li>
+  <li>Developing and deploying core 6G technologies.</li>
+  <li>Analyzing the impact of 6G on society and various sectors.</li>
+</ul>
+
+<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<p>The course provided a thorough understanding of 6G technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
+<ul>
+  <li><strong>Theoretical Knowledge</strong>: Gained insights into the 5G core architecture, microservices, and network slicing.</li>
+  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring 5G technologies.</li>
+  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different 5G technologies based on network requirements.</li>
+  <li><strong>Impact Understanding</strong>: Understood the impact of new mobile technology on various industries and applications.</li>
+  <li><strong>Development Phases</strong>: Understood the major development phases for mobile communications and the development of the associated technology.</li>
+</ul>
+
+<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
+<ul>
+  <li><strong>Acquired Skills</strong>: Mastered the 5G architecture with its microservices. However, more focus on 5G hardware and SDR would be beneficial.</li>
+  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
+</ul>
+
+<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+
+<h4 id="highlights">Highlights</h4>
+<p>The course was highly relevant to my professional career, providing practical experience in modern cellular network technologies. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+
+<h4 id="project-report">Project Report</h4>
+
+<div style="display: flex; justify-content: center;">
+     <iframe src="/img/BE_6G/6G.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+     <a href="/img/BE_6G/6G.pdf" target="_blank">Download Complete Report</a>
+</p>
+
+<style>
+     body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f9;
+          color: #333;
+          line-height: 1.6;
+     }
+     h2, h3, h4 {
+          color: #007BFF;
+     }
+     footer {
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+     }
+     .footer-section {
+          flex: 1;
+          text-align: center;
+     }
+     .styled-button {
+          display: inline-block;
+          width: 100px;
+          margin: 10px;
+          padding: 15px 30px;
+          font-size: 16px;
+          color: white;
+          background-color: #66B2FF;
+          text-decoration: none;
+          border-radius: 25px;
+          transition: background-color 0.3s, transform 0.3s;
+     }
+     .styled-button:hover {
+          background-color: #3399FF;
+          transform: scale(1.05);
+     }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: 5G Technologies]]></summary></entry><entry><title type="html">WSNL</title><link href="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html" rel="alternate" type="text/html" title="WSNL" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/WSNL</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html"><![CDATA[<h2 id="course-wireless-sensor-networks-and-localization">Course: Wireless Sensor Networks and Localization</h2>
+
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The course “Wireless Sensor Networks and Localization” (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. The second segment employs reverse pedagogy, where each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.</p>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
+
+<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
+
+<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<p>After the theoretical part, we had another individual presentation on different kinds of MAC layers for WSN. The final part of the course was a project where we had to define and implement a protocol for given specifications from the physical to the MAC layer. I worked on this project with Bapthiste Henriet, Brian Biendou, Marie Brunetto, Samia Boukouiss, Yann Jobard and Timothé Bigot.</p>
+
+<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<p>In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python with a ZMQ library (similar to MQTT) for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.</p>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+
+<h4 id="context">Context</h4>
+<p>This section explores the technical aspects of WSN technologies, focusing on the specifications of existing protocols like Zigbee and Bluetooth, and the implementation of a custom protocol for a medical application.</p>
+
+<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+
+<h4 id="what">What</h4>
+<p>We examined the specific needs of WSN protocols, such as low power consumption and efficient MAC layers. We also implemented a custom protocol for a medical application involving a falling sensor and a gas sensor.</p>
+
+<h4 id="how">How</h4>
+<ol>
+  <li><strong>WSN Protocols</strong>:
+    <ul>
+      <li>Studied existing protocols like Zigbee and Bluetooth.</li>
+      <li>Analyzed their specific needs, such as low power consumption and efficient communication.</li>
+    </ul>
+  </li>
+  <li><strong>MAC Layers</strong>:
+    <ul>
+      <li>Explored different types of MAC layers: contention-based (CSMA/CA), scheduled-based (TDMA), and hybrid (Zigbee).</li>
+    </ul>
+  </li>
+  <li><strong>Project Implementation</strong>:
+    <ul>
+      <li>Developed a custom protocol using Python and ZMQ for communication.</li>
+      <li>Implemented the MAC layer and integrated it with the physical layer.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="why">Why</h4>
+<p>To gain a comprehensive understanding of WSN technologies and their applications in real-world scenarios. This knowledge is crucial for designing efficient and reliable WSNs.</p>
+
+<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<ul>
+  <li>Analyzing and evaluating protocols dedicated to WSN/IoT.</li>
+  <li>Suggesting optimal technological solutions for IoT networks.</li>
+  <li>Optimizing communication protocols for IoT with respect to energy limitations and security concerns.</li>
+  <li>Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver.</li>
+</ul>
+
+<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<p>The course provided a thorough understanding of WSN technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
+<ul>
+  <li><strong>Theoretical Knowledge</strong>: Gained insights into WSN protocols and their specific needs.</li>
+  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring WSN technologies.</li>
+  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different WSN technologies based on network requirements.</li>
+  <li><strong>Impact Understanding</strong>: Understood the impact of new mobile technology on various industries and applications.</li>
+  <li><strong>Development Phases</strong>: Understood the major development phases for mobile communications and the development of the associated technology.</li>
+</ul>
+
+<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
+<ul>
+  <li><strong>Acquired Skills</strong>: Mastered the analysis and evaluation of WSN protocols and the optimization of communication protocols for IoT.</li>
+  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
+</ul>
+
+<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+
+<h4 id="highlights">Highlights</h4>
+<p>The course was highly relevant to my professional career, providing practical experience in modern WSN technologies. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+
+<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+
+<h4 id="project-report">Project Report</h4>
+
+<p>Report on my analysis of the MAC layer for WSN :</p>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_WSNL/Chanfreau_MAC_Layer.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_WSNL/Chanfreau_MAC_Layer.pdf" target="_blank">Download Complete Report</a>
+</p>
+
+<p>Report on Zigbee, a WPAN for WSN :</p>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_WSNL/Zigbee.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_WSNL/Zigbee.pdf" target="_blank">Download Complete Report</a>
+</p>
 
 <style>
     body {
@@ -486,112 +803,399 @@ p {
         background-color: #3399FF;
         transform: scale(1.05);
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: 5G Technologies]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/analysis-5G-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/analysis-5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/analysis-5G-Technologies.html"><![CDATA[<h3 id="partie-d--partie-analytique">PARTIE D : PARTIE ANALYTIQUE</h3>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Wireless Sensor Networks and Localization]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="course-cloud-and-edge-computing">Course: Cloud and Edge Computing</h1>
 
-<p><strong>Skill Matrix:</strong></p>
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The Cloud and Edge Computing course provides a comprehensive understanding of hybrid architectures that optimize data processing and resource utilization. It bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges.</p>
+
+<p>Taught by  Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
+
+<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. Students gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.</p>
+
+<p>The course also addresses advanced topics, including energy-efficient protocols, security challenges, and real-time data analysis at the edge, equipping learners to deliver impactful solutions in sectors such as smart cities, healthcare, and Industry 4.0.</p>
+
+<p>By combining theory and practical projects, this course fosters not only technical expertise but also an appreciation for ethical and sustainable innovation, ensuring that engineers are well-prepared for the demands of a rapidly evolving digital landscape.</p>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
+
+<p>During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions.</p>
+
+<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
+
+<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+
+<p>The Cloud and Edge Computing course was taught by Sami Yangui, emphasizing the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
+
+<p>The course included:</p>
 
 <ul>
-  <li>Understand and master the new mobile networks technologies.</li>
+  <li><strong>Theoretical Classes</strong>: Focused on cloud architecture, virtualization methods, and deployment models.</li>
+  <li><strong>Practical Labs</strong>: Hands-on sessions using tools like OpenStack for infrastructure development and edge computing implementations.</li>
 </ul>
 
-<p>For this course, I believe I have mastered the 5G architecture with its microservices. However, I feel that we did not spend enough time discussing 5G hardware, especially Software Defined Radio (SDR), so I cannot say that I have mastered these aspects of 5G technologies.</p>
+<h4 id="bii2-your-function">B.II.2. Your Function</h4>
 
-<p><strong>Analysis:</strong></p>
-
-<p>This course was really interesting as it was linked to current topics. However, I do not particularly appreciate courses in reverse pedagogy as I think that we are more focused on our own work, which can make the comprehension of others’ presentations harder as we are focused on improving our own presentations. I think that a better balance between lectures by the teacher and presentations would be better. In the end, I only have high-level knowledge on subjects presented by others, while if the teacher had given lectures on them, we could have delved more deeply into these subjects.</p>
-
-<p>I also thought that for a course called 5G Technologies, we did not focus enough on the 5G and 6G standards, which are the present and future of cellular networks. It would be really interesting to focus on these standards, especially as they diverge significantly from previous generations of cellular networks.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[PARTIE D : PARTIE ANALYTIQUE]]></summary></entry><entry><title type="html">Course 5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/course-5G-Technologies.html" rel="alternate" type="text/html" title="Course 5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/course-5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/course-5G-Technologies.html"><![CDATA[<h1 id="partie-b--descriptive-part">PARTIE B : DESCRIPTIVE PART</h1>
-
-<h2 id="1-introduction">1. Introduction</h2>
-<p>The “From 3G to 6G” course provides an overview of the evolution of mobile communication networks. The focus is on the technological advancements, societal impact, and emerging applications that have shaped the progression from 1G to 6G. This course, taught by Professor Etienne Sicard, integrates theory with real-world scenarios, equipping students with the knowledge to understand and contribute to the future of connectivity.</p>
-
-<h2 id="2-historical-context-of-mobile-communications">2. Historical Context of Mobile Communications</h2>
-<p>The evolution of mobile networks highlights how innovation has responded to growing communication needs:</p>
+<p>Role in Labs and Projects:</p>
 
 <ul>
-  <li><strong>1G (1980s)</strong>: Analog voice communication with basic functionalities. Limited by poor quality and no data support.</li>
-  <li><strong>2G (1990s)</strong>: Introduction of digital communication, allowing SMS, better voice quality, and minimal data capabilities.</li>
-  <li><strong>3G (2000s)</strong>: Enabling mobile internet, video calling, and higher data rates (up to 42 Mbps with HSPA+).</li>
-  <li><strong>4G (2010s)</strong>: Revolutionary speeds (up to 1 Gbps), supporting HD video streaming, online gaming, and app-based ecosystems.</li>
-  <li><strong>5G (2020s)</strong>: Ultra-reliable low-latency communication, massive IoT connections, and enhanced mobile broadband.</li>
-  <li><strong>6G (2030s)</strong>: Focus on extreme performance with zero-latency systems, AI-driven connectivity, and high-frequency communication.</li>
+  <li>Designed and implemented virtualized environments using OpenStack.</li>
+  <li>Developed an edge computing solution leveraging proximity-based data processing to minimize latency.</li>
+  <li>Created and managed virtual machines (VMs) to simulate real-world cloud scenarios.</li>
+  <li>Addressed the challenges of infrastructure deployment through Python-based automation.</li>
 </ul>
 
-<p><strong>Insights:</strong></p>
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
+<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+
+<p>During our labs, I had the opportunity to use OpenStack, an open-source software that creates and manages different virtual machines (VMs). One of the projects required me to implement an infrastructure with a calculator service accessible from the public internet and four VMs on a private network performing arithmetic operations (addition, multiplication, subtraction, and division). The main calculator service had to call the sub-services to get the results. This project was particularly interesting as it introduced me to both cloud infrastructure and microservices architecture.</p>
+
+<h4 id="context">Context</h4>
 <ul>
-  <li>The transitions between generations are driven by a mix of technological breakthroughs and user demand.</li>
-  <li>Key goals for 6G include global coverage, sustainability, and leveraging AI for network automation.</li>
+  <li><strong>Field of Responsibilities</strong>: Implementing a cloud infrastructure using OpenStack.</li>
+  <li><strong>Objectives</strong>: Create a calculator service with public access and four VMs on a private network for arithmetic operations.</li>
+  <li><strong>Resources and Constraints</strong>: Limited documentation on the OpenStack Python client, time constraints, and the need to ensure secure and efficient communication between services.</li>
+  <li><strong>Duration and Dates</strong>: The project spanned over two weeks during the lab sessions.</li>
 </ul>
 
-<h2 id="3-technological-advancements">3. Technological Advancements</h2>
-<h3 id="frequency-spectrum-evolution">Frequency Spectrum Evolution</h3>
+<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
 
+<h4 id="what">What</h4>
+<p>The solution involved setting up an OpenStack environment with one public-facing VM for the calculator service and four private VMs for the arithmetic operations. Each VM was configured to handle specific arithmetic tasks and communicate with the main calculator service.</p>
+
+<h4 id="how">How</h4>
+<ol>
+  <li><strong>Setup OpenStack Environment</strong>: Installed and configured OpenStack on the host machine.</li>
+  <li><strong>Create VMs</strong>: Created one public VM and four private VMs using the OpenStack dashboard.</li>
+  <li><strong>Configure Networking</strong>: Set up networking to allow the public VM to communicate with the private VMs.</li>
+  <li><strong>Deploy Services</strong>: Deployed the calculator service on the public VM and the arithmetic services on the private VMs.</li>
+</ol>
+
+<h4 id="why">Why</h4>
+<p>The chosen solution provided a scalable and efficient way to manage the calculator service and its sub-services. Using OpenStack allowed me to leverage cloud infrastructure capabilities, and the microservices architecture ensured modularity and ease of maintenance.</p>
+
+<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+
+<p>To solve this problem, I had to mobilize and develop several new skills:</p>
 <ul>
-  <li><strong>1G/2G</strong>: Operated in low-frequency bands below 1 GHz.</li>
-  <li><strong>3G/4G</strong>: Expanded to higher frequencies (up to 2.6 GHz).</li>
-  <li><strong>5G</strong>: Utilizes millimeter-wave (mmWave) frequencies above 24 GHz.</li>
-  <li><strong>6G</strong>: Expected to use sub-THz and THz frequencies (100 GHz - 1 THz), enabling ultra-fast data transmission and extreme localization.</li>
+  <li><strong>Cloud Infrastructure</strong>: Gained hands-on experience with OpenStack, understanding its components and functionalities.</li>
+  <li><strong>Networking</strong>: Learned how to configure networking in a cloud environment to enable secure communication between VMs.</li>
+  <li><strong>Microservices Architecture</strong>: Understood the principles of microservices and how to implement them in a cloud environment.</li>
+  <li><strong>REST APIs</strong>: Developed skills in creating and consuming REST APIs for inter-service communication.</li>
 </ul>
 
-<h3 id="hardware-and-semiconductor-scaling">Hardware and Semiconductor Scaling</h3>
+<p>These skills were acquired through a combination of reading documentation, attending lectures, and collaborating with peers during lab sessions.</p>
+
+<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+
+<p>This experience taught me valuable lessons in cloud infrastructure and microservices architecture. I learned the importance of thorough documentation and the challenges of working with open-source software. With hindsight, I realize that additional training in Kubernetes would have been beneficial, as it is a critical technology for container orchestration in cloud environments.</p>
+
+<p>Overall, the project was a great learning experience that provided practical insights into cloud computing and the implementation of microservices.</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
+
+<p>I have presented the significant experiences related to the training. I also presented several problem situations where I explained the acquired knowledge and the skills mobilized to solve these problems. In this last part, it is for me to make an exhaustive analysis of all the knowledge and skills acquired during these different experiences.</p>
+
+<p>In the table below, for each activity, I specify my level of execution corresponding to the appropriate figure using the following criteria:</p>
 
 <ul>
-  <li>The evolution of processors and memory in mobile devices: From single-core CPUs in early 3G devices to AI-driven octa-core processors in 5G/6G devices.</li>
-  <li>Introduction of advanced semiconductor technologies like FinFETs and nanosheet transistors for energy efficiency.</li>
+  <li><strong>AP</strong> - level of application: follow-up of instructions or procedures</li>
+  <li><strong>AN</strong> - level of analysis: improvement or optimization of solutions or proposals</li>
+  <li><strong>M</strong> - level of proficiency: program design or specification definitions</li>
+  <li><strong>EX</strong> - level of expertise: definition of orientations or strategies</li>
 </ul>
 
-<h3 id="beamforming-and-mimo-massive-input-massive-output">Beamforming and MIMO (Massive Input-Massive Output)</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Activities</th>
+      <th>Acquired experience in terms of</th>
+      <th>Modes</th>
+      <th>Level (AP to EX)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Understanding Cloud Computing concepts and architectures</td>
+      <td>Theoretical, technological knowledge</td>
+      <td>AN</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Using IaaS services and deploying platforms with OpenStack</td>
+      <td>Operational know-how</td>
+      <td>AP</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Designing autonomic microservices systems for efficient resource allocation</td>
+      <td>Theoretical, technological knowledge</td>
+      <td>AN</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Comprehending the interplay between Cloud and Edge solutions in IoT ecosystems</td>
+      <td>Theoretical, technological knowledge</td>
+      <td>AN</td>
+      <td>M</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 
 <ul>
-  <li>Critical in 5G and 6G for directional signal focus, improving reliability and speed.</li>
+  <li><strong>Summary of Skills</strong>: The course provided a solid foundation in cloud computing principles, including the design and deployment of cloud infrastructures. Practical labs with OpenStack allowed me to gain hands-on experience in creating and managing virtual machines, as well as understanding microservices architecture. The final lab on edge computing highlighted the importance of reducing latency and enhancing real-time services, particularly in 5G networks.</li>
+  <li><strong>Skills to Improve</strong>: While the course was comprehensive, it lacked sufficient training in Kubernetes, a critical technology for container orchestration. Enhanced exposure to Kubernetes would bridge this gap and better prepare me for real-world cloud environments.</li>
 </ul>
 
-<h2 id="4-emerging-applications-and-use-cases">4. Emerging Applications and Use Cases</h2>
-<p>The advancement of mobile networks opens up diverse possibilities:</p>
+<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+
+<p>The Cloud and Edge Computing course has been instrumental in my professional growth, offering both theoretical knowledge and practical tools relevant to modern cloud engineering. Working with OpenStack provided valuable insight into open-source technologies, aligning with engineering values of collaboration and innovation.</p>
+
+<h4 id="highlights">Highlights</h4>
 
 <ul>
-  <li><strong>Internet of Things (IoT)</strong>: Integration of sensors, smart devices, and real-time monitoring systems for cities, healthcare, and industries.</li>
-  <li><strong>Autonomous Systems</strong>: Support for self-driving cars with low-latency communication.</li>
-  <li><strong>Satellite Communication</strong>: Projects like Starlink are enhancing global internet connectivity.</li>
-  <li><strong>Immersive Technologies</strong>: AR, VR, and the metaverse are becoming feasible with high-speed, low-latency networks.</li>
+  <li><strong>Microservices and Edge Computing</strong>: The emphasis on microservices and edge computing highlighted their transformative role in IoT and real-time applications.</li>
+  <li><strong>Virtualization Techniques</strong>: The introduction to virtualization techniques and their applications in cloud infrastructures was particularly valuable.</li>
 </ul>
 
-<h3 id="6g-specific-applications">6G-Specific Applications</h3>
+<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
 
 <ul>
-  <li><strong>Holographic Communications</strong>: Real-time holographic calls for collaboration.</li>
-  <li><strong>Tactile Internet</strong>: Real-time control of remote devices, essential for robotic surgery and remote manufacturing.</li>
+  <li><strong>Additional Elements</strong>: The course was a great introduction to virtualization and cloud computing, providing hands-on experience with open-source technologies. However, to fully prepare students for the industry, it is essential to include comprehensive training on Kubernetes. Additionally, more emphasis on practical applications in the field of IoT would enhance the relevance of the course content.</li>
 </ul>
 
-<h2 id="5-challenges-and-ethical-considerations">5. Challenges and Ethical Considerations</h2>
-<ul>
-  <li><strong>Environmental Concerns</strong>: Addressing the high energy consumption of mobile networks, especially 5G and 6G.</li>
-  <li><strong>Digital Divide</strong>: Bridging the gap in network access for rural and underserved areas.</li>
-  <li><strong>Health Impacts</strong>: Addressing concerns about electromagnetic wave exposure.</li>
-  <li><strong>Data Privacy</strong>: Ensuring robust cybersecurity measures for future networks.</li>
-</ul>
-
-<h2 id="6-real-world-applications-and-research-directions">6. Real-World Applications and Research Directions</h2>
-<ul>
-  <li><strong>Network Slicing in 5G/6G</strong>: Allocating specific portions of a network for different use cases, ensuring optimized performance.</li>
-  <li><strong>AI and Machine Learning in Networks</strong>: Enhancing autonomous decision-making and predictive maintenance for infrastructure.</li>
-  <li><strong>Energy-Efficient Protocols</strong>: Development of zero-energy devices and sustainable designs.</li>
-</ul>
-
-<h2 id="7-open-questions-and-future-outlook">7. Open Questions and Future Outlook</h2>
-<p>The course concluded with a discussion on open challenges:</p>
-
-<ul>
-  <li>How can networks achieve zero latency for critical applications?</li>
-  <li>What standards will govern the use of THz communication in 6G?</li>
-  <li>How can we achieve global connectivity sustainably?</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[PARTIE B : DESCRIPTIVE PART]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/project-5G-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/project-5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/project-5G-Technologies.html"><![CDATA[<h1 id="partie-c--technical-part">PARTIE C : TECHNICAL PART</h1>
+<h2 id="project-report">Project Report</h2>
 
 <div style="display: flex; justify-content: center;">
-    <embed src="/img/BE_6G/6G.pdf" width="100%" height="800px" type="application/pdf" />
+    <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" />
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_6G/6G.pdf" target="_blank">Download Complete Report</a>
-</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[PARTIE C : TECHNICAL PART]]></summary></entry></feed>
+    <a href="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" target="_blank">Download Complete Report</a>
+</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Cloud and Edge Computing]]></summary></entry><entry><title type="html">Energy Connected Object</title><link href="http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object.html" rel="alternate" type="text/html" title="Energy Connected Object" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/energy-connected-object.html"><![CDATA[<h1 id="course-energy-connected-object">Course: Energy Connected Object</h1>
+
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The course “Energy for Connected Objects” aims to train engineers capable of designing and managing energy-autonomous connected systems. In a context where connected objects are multiplying, energy efficiency becomes a key issue, both for sustainability and for reducing operational costs.</p>
+
+<p>This course explores innovative solutions to:</p>
+
+<ul>
+  <li>Power connected devices: via batteries, wireless energy transfer methods, or using ambient energy sources.</li>
+  <li>Optimize energy consumption: to extend the lifespan of devices and reduce their environmental impact.</li>
+  <li>Design autonomous objects: that efficiently harvest, store, and manage energy.</li>
+</ul>
+
+<h3 id="some-recommendations">Some Recommendations</h3>
+<p>The key concepts covered in this course apply directly to engineering projects, particularly in the following areas:</p>
+
+<ul>
+  <li>Connected health: wearable devices such as smartwatches or biomedical sensors.</li>
+  <li>Smart cities: traffic sensors, autonomous streetlights, or surveillance systems.</li>
+  <li>Industry 4.0: connected objects for industrial automation or predictive maintenance.</li>
+</ul>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
+
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
+<p>The “Energy for Connected Objects” course focuses on powering IoT devices efficiently, sustainably, and autonomously. Taught by Gaël Loubet, the course provides an in-depth exploration of electricity storage, ambient energy harvesting, and wireless power transfer technologies. The primary objective is to design energy-efficient connected objects that operate without reliance on traditional batteries or wired power.</p>
+
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
+<p>The practical work presented some challenges. The manipulations, although very formative, were sometimes hindered by technical problems related to the equipment used. These problems, understandable for a first year of PCB use, nevertheless illustrated real engineering situations where unforeseen events must be managed rigorously.</p>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+
+<h4 id="context">Context</h4>
+<p>This lab report explores methods for powering connected devices by harvesting energy from electromagnetic fields and transmitting power wirelessly. The goal is to develop self-powered devices, enhancing charging efficiency, sensing capabilities, and secure data transmission.</p>
+
+<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+
+<h4 id="what">What</h4>
+<p>We investigated the power requirements of a small red light, tested approaches for direct energy usage and storage, and experimented with various technologies for energy management and conversion.</p>
+
+<h4 id="how">How</h4>
+<ol>
+  <li><strong>Study of the Load and Design</strong>:
+    <ul>
+      <li>Calculated the DC power required by the LED SML-D12U1WT8 for different usage scenarios.</li>
+      <li>Determined the energy required to light the LED for 1 second.</li>
+      <li>Configured capacitance and activation/deactivation voltage thresholds for optimal performance.</li>
+    </ul>
+  </li>
+  <li><strong>Rectifier Characterization</strong>:
+    <ul>
+      <li>Tested the rectifier at different frequencies (868 MHz and 2.45 GHz) to determine optimal performance.</li>
+      <li>Measured voltage across the potentiometer during frequency and RF power sweeps.</li>
+    </ul>
+  </li>
+  <li><strong>Antenna Choice</strong>:
+    <ul>
+      <li>Selected the most appropriate antenna for our application based on radiation pattern and distance efficiency.</li>
+    </ul>
+  </li>
+  <li><strong>Ambient Electromagnetic Energy Harvesting</strong>:
+    <ul>
+      <li>Proposed tests to measure power available at the rectifier input for the targeted frequency using a spectrum analyzer.</li>
+    </ul>
+  </li>
+  <li><strong>Radiative Electromagnetic Wireless Power Transfer</strong>:
+    <ul>
+      <li>Estimated the maximum reachable distance between a power source and the rectenna.</li>
+      <li>Suggested optimization strategies for antenna gain and frequency adjustment.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="why">Why</h4>
+<p>To develop efficient, self-powered wireless sensor networks (WSNs) that can significantly enhance energy management and operational capabilities in diverse fields, including healthcare, smart homes, and industrial applications.</p>
+
+<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<ul>
+  <li><strong>Theoretical Knowledge</strong>: Understanding of energy harvesting, storage, and wireless power transfer technologies.</li>
+  <li><strong>Operational Skills</strong>: Implementing energy harvesting and storage solutions, using tools to design autonomous systems, and analyzing system performance.</li>
+  <li><strong>Analytical Skills</strong>: Assessing specific energy needs and identifying suitable solutions based on system constraints.</li>
+</ul>
+
+<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<p>The lab provided a comprehensive understanding of powering connected devices through energy harvesting and wireless power transfer. The practical work, although challenging, was formative and illustrated real engineering situations where unforeseen events must be managed rigorously. The findings highlight the potential for developing efficient, self-powered WSNs, enhancing energy management and operational capabilities in various applications.</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="di-skills-analysis">D.I. Skills Analysis</h3>
+
+<h4 id="theoretical-knowledge">Theoretical Knowledge:</h4>
+<p>The course allowed me to discover the fundamental concepts related to energy for connected objects. I acquired knowledge on:</p>
+
+<ul>
+  <li>The different methods of powering embedded systems, such as the use of batteries, wireless energy transfer, and ambient energy harvesting.</li>
+  <li>The physical and technological principles behind energy sources like solar, mechanical, thermal, and electromagnetic energy.</li>
+  <li>The trade-offs to consider between autonomy, complexity, and energy performance of IoT systems.</li>
+</ul>
+
+<h4 id="operational-skills">Operational Skills:</h4>
+<p>Thanks to the practical work, I developed practical skills such as:</p>
+
+<ul>
+  <li>Implementing energy harvesting and storage solutions.</li>
+  <li>Using tools to design an autonomous system capable of optimizing its energy resource usage.</li>
+  <li>Analyzing the performance of connected systems in terms of energy efficiency.</li>
+  <li>Mastering the architecture of an energy management system.</li>
+  <li>Sizing the storage element according to the specifications.</li>
+</ul>
+
+<h4 id="analytical-skills">Analytical Skills:</h4>
+<p>I learned to assess the specific energy needs of a connected object and to identify the most suitable solutions based on system constraints.</p>
+
+<h3 id="dii-self-assessment">D.II. Self-Assessment</h3>
+
+<h4 id="acquired-skills">Acquired Skills:</h4>
+<p>This course allowed me to understand how to efficiently manage the energy of connected objects and design robust and autonomous systems. I also learned to optimize energy consumption based on usage scenarios.</p>
+
+<h4 id="skills-to-develop">Skills to Develop:</h4>
+<p>Despite the knowledge acquired, I feel the need to deepen certain technical aspects such as the physical modeling of complex energy systems and integrating these models into simulation tools.</p>
+
+<h3 id="diii-review">D.III. Review</h3>
+<p>At the beginning of the course, I did not expect to find this field so relevant to my professional career. However, the clarity of the explanations and the well-defined structure of the course changed my perspective. I particularly appreciated how complex concepts were presented in an accessible manner, even for someone with little background in electronics or physics.</p>
+
+<p>Nevertheless, the practical work presented some challenges. The manipulations, although very formative, were sometimes hindered by technical problems related to the equipment used. These problems, understandable for a first year of PCB use, nevertheless illustrated real engineering situations where unforeseen events must be managed rigorously.</p>
+
+<h3 id="div-additional-elements">D.IV. Additional Elements</h3>
+<p>To go further, it could be interesting to integrate a more interactive approach, such as the collaborative design of a real energy system, or to delve deeper into use cases in specific fields like healthcare or smart cities.</p>
+
+<h2 id="project-report">Project Report</h2>
+<p>To go further, it could be interesting to integrate a more interactive approach, such as the collaborative design of a real energy system, or to delve deeper into use cases in specific fields like healthcare or smart cities.</p>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_Energy_Connected_Object/Report_Energy_Boukouiss_Chanfreau.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Energy_Connected_Object/Report_Energy_Boukouiss_Chanfreau.pdf" target="_blank">Download Complete Report</a>
+</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Energy Connected Object]]></summary></entry></feed>

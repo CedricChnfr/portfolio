@@ -27,12 +27,12 @@ I am a highly motivated master’s student in apprenticeship studying Automation
 - Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design  
 - Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets  
 - Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing  
-- **Projet** : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team
+- **Project** : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team
 
 **2020-2022** - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse  
 - Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation  
 - Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States  
-- **Projet** : Designed and coded a game in C
+- **Project** : Designed and coded a game in C
 
 **2018-2020** - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse  
 - Equivalent to High School Diploma in Science and Engineering Science  
