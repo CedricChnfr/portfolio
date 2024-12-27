@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Master REOC | My Portfolio</title>
+<title>Emerging Network Technologies | My Portfolio</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Master REOC" />
+<meta property="og:title" content="Emerging Network Technologies" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Course: Master REOC" />
-<meta property="og:description" content="Course: Master REOC" />
-<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/master-reoc.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/master-reoc.html" />
+<meta name="description" content="Course: Emerging Network Technologies" />
+<meta property="og:description" content="Course: Emerging Network Technologies" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/emerging-network.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/emerging-network.html" />
 <meta property="og:site_name" content="My Portfolio" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Master REOC" />
+<meta property="twitter:title" content="Emerging Network Technologies" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Course: Master REOC","headline":"Master REOC","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/master-reoc.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/master-reoc.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Course: Emerging Network Technologies","headline":"Emerging Network Technologies","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/emerging-network.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/emerging-network.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="My Portfolio" /></head>
 <body><header class="site-header" role="banner">
@@ -37,82 +37,79 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h2 id="course-master-reoc">Course: Master REOC</h2>
+        <h2 id="course-emerging-network-technologies">Course: Emerging Network Technologies</h2>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>In parallel with my last semester at INSA, I decided to pursue a Master of Network and Telecommunication in partnership between INSA and ENSEEIHT. This Master included additional courses on Thursday afternoons, either at INSA or ENSEEIHT. It comprised theoretical courses, practical sessions, and a small project on the INSA side. The program concluded with an exam summarizing all the courses we attended.</p>
+<p>Emerging Networks is a course taught by Slim Abdelatif. It is a short course of only a few hours about new paradigms for networks. We discovered these paradigms during the theoretical class and had the opportunity to manipulate Software Defined Network (SDN) during practical courses. Unfortunately, as all the labs are placed after the deadline of the portfolio report, I will not be able to talk about them in this part, which shortens the content of this section.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
 <h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-
-<p>During the Master REOC program, I had the opportunity to engage in various hands-on projects and collaborative activities. One notable experience was a group project where we designed and implemented a network monitoring tool using SDN principles. This tool allowed us to visualize network traffic in real-time and identify potential bottlenecks or security threats.</p>
+<p>During the course adn pratical work, we engaged in various hands-on activities and projects that allowed us to apply the theoretical knowledge gained in class to real-world scenarios, enhancing our understanding of emerging network technologies.</p>
 
 <h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
 
 <h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
-<p>During this Master, we had various courses on different subjects. One particularly interesting course was taught at INSA by Samir Medjiah, focusing on SDN (Software Defined Network) and MANO (Management and Orchestration). SDN centralizes network intelligence in a single point, the network controller, allowing flexible management of network devices. MANO standardizes the deployment and orchestration of network functions, enabling dynamic and automatic adjustments based on network needs.</p>
+<p>In this course, we studied new network paradigms. The first one that we studied in detail is SDN. In this paradigm, we remove all intelligence from the network devices (switches and routers) and centralize it in a single point, which is the network controller. This allows network administrators to take decisions and pilot the network by interacting with the network controller using classical programming. It also allows handling packets more precisely and implementing network behavior on demand, independent of the functionalities proposed by the device manufacturer.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
-<p>In the practical sessions, I developed an application to redirect traffic from one server to another transparently for the client. This involved modifying packet destination addresses and source addresses of server responses. Additionally, I explored the deployment and orchestration of network functions using MANO, such as dynamically deploying firewalls and load balancers based on network traffic.</p>
+<p>The other paradigm that we saw is the Locator/Identifier Separation Protocol (LISP). It consists of attributing two IP addresses to a device: one used for localization and the other to identify the device uniquely. This allows the mobility of nodes as only one address changes and not the other. To contact another node, we use the identifier node that never changes, and a protocol similar to DNS is run to find the localization address to reach the node. However, this is only possible if the edge router of the network is compatible with the LISP protocol, as it is this router that will execute the translation.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
 <h3 id="ci1-presentation">C.I.1 Presentation</h3>
 
 <h4 id="context">Context</h4>
-<p>This section explores the technical aspects of SDN and MANO, focusing on their applications in network management and orchestration.</p>
+<p>This section explores the technical aspects of SDN and LISP, focusing on their applications in network management and mobility.</p>
 
 <h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
-<p>We examined SDN and MANO technologies, their architectures, and their applications in network management. We developed practical applications to illustrate their use.</p>
+<p>We examined SDN and LISP technologies, their architectures, and their applications in network management and mobility.</p>
 
 <h4 id="how">How</h4>
 <ol>
   <li><strong>SDN</strong>:
     <ul>
       <li>Centralized network intelligence in a network controller.</li>
-      <li>Developed an application to redirect traffic transparently.</li>
+      <li>Enabled precise packet handling and on-demand network behavior implementation.</li>
     </ul>
   </li>
-  <li><strong>MANO</strong>:
+  <li><strong>LISP</strong>:
     <ul>
-      <li>Standardized deployment and orchestration of network functions.</li>
-      <li>Dynamically deployed firewalls and load balancers based on network traffic.</li>
+      <li>Attributed two IP addresses to devices for localization and identification.</li>
+      <li>Enabled node mobility by changing only the localization address.</li>
     </ul>
   </li>
 </ol>
 
 <h4 id="why">Why</h4>
-<p>To gain a comprehensive understanding of SDN and MANO technologies and their applications in real-world scenarios. This knowledge is crucial for designing flexible, efficient, and maintainable network systems.</p>
+<p>To gain a comprehensive understanding of SDN and LISP technologies and their applications in real-world scenarios. This knowledge is crucial for designing flexible, efficient, and maintainable network systems.</p>
 
 <h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
 <ul>
-  <li>Understanding SDN architecture and its applications.</li>
+  <li>Understanding and mastering the fundamentals of emerging network paradigms applied to IoT.</li>
   <li>Developing applications for traffic management using SDN.</li>
-  <li>Understanding MANO and its role in network function virtualization.</li>
-  <li>Deploying and orchestrating network functions dynamically.</li>
-  <li>Integrating SDN and MANO for enhanced network management.</li>
+  <li>Understanding LISP and its role in enabling node mobility.</li>
+  <li>Integrating SDN and LISP for enhanced network management and mobility.</li>
 </ul>
 
 <h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
-<p>The course provided a thorough understanding of SDN and MANO technologies. The combination of theoretical classes and practical labs was particularly beneficial in illustrating the concepts. However, scheduling conflicts between INSA and ENSEEIHT students resulted in missed courses on interesting subjects like LoRa network modeling and the P4 protocol.</p>
+<p>The course provided a thorough understanding of SDN and LISP technologies. The combination of theoretical classes and practical labs (though not yet completed) was particularly beneficial in illustrating the concepts. However, the relevance of SDN to IoT networks was questioned, as SDN is more suited for core networks.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
 <ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into SDN and MANO technologies and their applications.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring SDN and MANO solutions.</li>
+  <li><strong>Theoretical Knowledge</strong>: Gained insights into SDN and LISP technologies and their applications.</li>
+  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring SDN and LISP solutions.</li>
   <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different network management techniques based on network requirements.</li>
 </ul>
 
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
-  <li><strong>Acquired Skills</strong>: Developed a solid understanding of SDN and MANO concepts and their practical applications. However, more focus on advanced topics like LoRa network modeling would be beneficial.</li>
+  <li><strong>Acquired Skills</strong>: Developed a solid understanding of SDN and LISP concepts and their practical applications. However, more focus on advanced topics would be beneficial.</li>
   <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for network management.</li>
 </ul>
 
@@ -120,6 +117,10 @@
 
 <h4 id="highlights">Highlights</h4>
 <p>The course was highly relevant to my professional career, providing practical experience in modern network management solutions. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+
+<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+
+<h4 id="project-report">Project Report</h4>
 
 <style>
     body {
