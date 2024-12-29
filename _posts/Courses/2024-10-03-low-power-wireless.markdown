@@ -115,4 +115,7 @@ To further enhance the learning experience, integrating more interactive approac
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

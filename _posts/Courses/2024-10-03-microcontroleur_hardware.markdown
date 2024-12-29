@@ -124,4 +124,7 @@ You can find the complete project report on [GitHub_Microcontroller_Project](htt
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

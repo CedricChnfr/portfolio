@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-27T01:38:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-30T00:15:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -65,12 +65,12 @@ Finally, we will analyze the synthesis results highlighting the optimizations ma
 <div style="text-align: center;">
     <img src="/img/BE_Pipeline/Data_Memory.png" style="width: 30%;" />
 </div>
-<p>@(7:0) : Adresse à laquelle les opérations de lecture ou écriture doivent être effec-tuées.
-IN(7:0) : Entrée de données à écrire dans la mémoire à l’adresse spécifiée.
-RW : Mode d’opération de la mémoire (0 pour lecture, 1 pour écriture).
-RST : Entrée de réinitialisation de la mémoire.
-CLK : Entrée de l’horloge servant à déclencher les opérations de la mémoire.
-OUT(7:0) : Sortie renvoyant les données lues à partir de l’adresse spécifiée.</p>
+<p>@(7:0) : Address at which read or write operations must be performed.
+IN(7:0) : Data input to be written to memory at the specified address.
+RW : Memory operation mode (0 for read, 1 for write).
+RST : Memory reset input.
+CLK : Clock input used to trigger memory operations.
+OUT(7:0) : Output returning the data read from the specified address.</p>
 
 <h3 id="functional-simulation-2">Functional Simulation</h3>
 
@@ -92,8 +92,8 @@ OUT(7:0) : Sortie renvoyant les données lues à partir de l’adresse spécifi�
 <div style="text-align: center;">
     <img src="/img/BE_Pipeline/Instruction_Memory.png" style="width: 30%;" />
 </div>
-<p>A [7 :0] : Entrée représentant l’adresse à laquelle les opérations de lecture doivent être effectuées.
-S [31 :0] : Sortie renvoyant l’instruction de 32 bits lue à partir de l’adresse spécifiée</p>
+<p>A [7 :0] : Input representing the address at which read operations must be performed.
+S [31 :0] : Output returning the 32-bit instruction read from the specified address</p>
 
 <h3 id="functional-simulation-3">Functional Simulation</h3>
 <div style="text-align: center;">
@@ -376,6 +376,9 @@ p {
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Innovative Project]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
 
 <h2 id="️-cloud-edge-computing"><a href="./cloud-edge.html">☁️ Cloud Edge Computing</a></h2>
@@ -394,92 +397,62 @@ p {
 <h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
-<strong>Adresse</strong> : Rue du libre-échange, 31500 Toulouse<br />
-<strong>Mail</strong> : chanfreau@insa-toulouse.fr</p>
+<strong>Address</strong> : Rue du libre-échange, 31500 Toulouse, France<br />
+<strong>Email</strong> : cedric.chanfreau@gmail.com</p>
 
-<p><a href="/file/my-cv.pdf" target="_blank">Open my CV (PDF)</a></p>
-
-<hr />
-
-<h2 id="about-me">About me</h2>
-
-<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>
+<h2 id="open-my-cv-pdf"><a href="/file/my-cv.pdf" target="_blank">Open my CV (PDF)</a></h2>
 
 <hr />
 
-<h2 id="formation">Formation</h2>
+<h2 id="about-me">About Me</h2>
 
-<p><strong>2022-2025</strong> - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse</p>
-<ul>
-  <li>Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design</li>
-  <li>Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets</li>
-  <li>Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing</li>
-  <li><strong>Project</strong> : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team</li>
-</ul>
+<p>I am a highly motivated recent graduate with a master’s degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, and software development, with hands-on experience in international environments. Actively seeking opportunities in the United States to leverage my technical expertise and teamwork skills in innovative projects.</p>
 
-<p><strong>2020-2022</strong> - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse</p>
-<ul>
-  <li>Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation</li>
-  <li>Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States</li>
-  <li><strong>Project</strong> : Designed and coded a game in C</li>
-</ul>
+<hr />
 
-<p><strong>2018-2020</strong> - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse</p>
+<h2 id="technical-skills">Technical Skills</h2>
+
 <ul>
-  <li>Equivalent to High School Diploma in Science and Engineering Science</li>
+  <li><strong>Programming &amp; Embedded Systems</strong>: C, Python, Java, C++, Assembly, VHDL, PLC (Ladder, ST, FBD)</li>
+  <li><strong>Software &amp; Tools</strong>: Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git</li>
+  <li><strong>Communication &amp; APIs</strong>: RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C</li>
+  <li><strong>Frontend &amp; Visualization</strong>: HTML, CSS, JavaScript, Node-RED, React Native</li>
+  <li><strong>Languages</strong>: French (native), English (advanced), Spanish (intermediate)</li>
 </ul>
 
 <hr />
 
-<h2 id="skills">Skills</h2>
+<h2 id="education">Education</h2>
 
-<h3 id="programming--software">Programming / Software</h3>
+<p><strong>2024 - 2025</strong>: Master 2 (M2) in Embedded Networks and Connected Objects (REOC), ENSEEIHT, Toulouse</p>
 <ul>
-  <li>Language in digital electronics: VHDL (Quartus)</li>
-  <li>Microprocessor language: C, C++, Assembly (Keil)</li>
-  <li>Programming language: Java, Python, Git (Eclipse, VS Code)</li>
-  <li>PLC language: Ladder, ST, FBD (TIA Portals)</li>
-  <li>Computer-aided design: SolidWorks, Proteus, Altium</li>
-  <li>Computer science: MS Office</li>
+  <li>Specialized in IoT systems: communication technologies, data processing, and network security.</li>
+  <li>Developed a software-defined communication infrastructure (SDCI) for managing and controlling network traffic using Docker and REST APIs.</li>
 </ul>
 
-<h3 id="techniques">Techniques</h3>
+<p><strong>2022 - 2025</strong>: Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences (INSA), Toulouse</p>
 <ul>
-  <li>Design and assembly of electronic cards</li>
-  <li>Debugging tools and software security testing</li>
-  <li>Familiarity with the concept of microcontroller memory</li>
-</ul>
-
-<h3 id="languages">Languages</h3>
-<ul>
-  <li><strong>French</strong>: Native language</li>
-  <li><strong>English</strong>: Intermediate level</li>
-  <li><strong>Spanish</strong>: Intermediate level</li>
+  <li>Key areas: Embedded Systems, Machine Learning, Computer Security, and Electronic Circuit Design.</li>
+  <li>Designed and developed a gas sensor: component creation, electronic board design and programming, mobile app and website development, MQTT integration, Node-RED dashboard, and datasheet creation.</li>
 </ul>
 
 <hr />
 
 <h2 id="professional-experience">Professional Experience</h2>
 
-<p><strong>International Engineering Mobility – Vitesco Technologies</strong> (July 2024 - September 2024)</p>
+<p><strong>International Engineering Mobility - Vitesco Technologies, Romania</strong><br />
+<em>Jul 2024 - Sep 2024</em></p>
 <ul>
-  <li>Studied and implemented solutions for Flash memory management on a new microcontroller</li>
-  <li>Tested and validated Flash functionalities to ensure reliability of the new platform</li>
-  <li>Created the environment to automate and optimize tests, using Python and CMM scripts</li>
+  <li>Studied and implemented Flash memory management solutions on new microcontrollers.</li>
+  <li>Created the environment to automate and optimize tests, using Python and CMM scripts.</li>
 </ul>
 
-<p><strong>Embedded Software Engineer apprenticeship - Vitesco Technologies</strong> (September 2022 - August 2025)</p>
+<p><strong>Embedded Software Engineer Apprenticeship - Vitesco Technologies, France</strong><br />
+<em>Sep 2022 - Sep 2025</em></p>
 <ul>
-  <li>Developed generic embedded solutions for ECUs reprogramming</li>
-  <li>Tested and debugged code to ensure proper operation and problem resolution</li>
-  <li>Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software</li>
-  <li>Presented regular project reviews to team members in English</li>
-</ul>
-
-<p><strong>Electronic method technician internship - Siemens Mobility</strong> (April - July 2022)</p>
-<ul>
-  <li>Studied the VAL208NG brake rack system and developed a test solution</li>
-  <li>Conducted functional tests on the brake rack cards to ensure optimal performance</li>
+  <li>Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT).</li>
+  <li>Tested and debugged code to ensure proper operation and problem resolution.</li>
+  <li>Presented regular project reviews to team members in English.</li>
 </ul>
 
 <hr />
@@ -487,11 +460,49 @@ p {
 <h2 id="extracurricular-activities">Extracurricular Activities</h2>
 
 <ul>
-  <li>Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship</li>
-  <li>Practiced swimming for 6 years in a club</li>
-  <li>Independent travel in Europe (Italy, Ireland, Holland, Egypt)</li>
-  <li>Assessor of a polling station for the regional and departmental elections</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2025">2025</h1>
+  <li><strong>Rugby Player</strong>: Scrum-half since 2007 at Federal 1 level. Achieved 3rd place in French championships.</li>
+  <li><strong>Volunteering</strong>: Assessor of a polling station for the regional and departmental elections.</li>
+  <li><strong>Independent Travel</strong>: Explored destinations across Europe (Italy, England, Spain, etc.) and beyond, gaining diverse cultural insights.</li>
+</ul>
+
+<hr />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2025">2025</h1>
 
 <h1 id="2024">2024</h1>
 
@@ -658,6 +669,9 @@ p {
           background-color: #3399FF;
           transform: scale(1.05);
      }
+     p {
+    text-align: justify;
+     }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: 5G Technologies]]></summary></entry><entry><title type="html">WSNL</title><link href="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html" rel="alternate" type="text/html" title="WSNL" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/WSNL</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html"><![CDATA[<h2 id="course-wireless-sensor-networks-and-localization">Course: Wireless Sensor Networks and Localization</h2>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
@@ -805,6 +819,9 @@ p {
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Wireless Sensor Networks and Localization]]></summary></entry><entry><title type="html">AIME</title><link href="http://localhost:4000/jekyll/update/2024/10/02/aime.html" rel="alternate" type="text/html" title="AIME" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/aime</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/aime.html"><![CDATA[<h2 id="course-lab-at-aime">Course: Lab at AIME</h2>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
@@ -929,6 +946,9 @@ p {
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Lab at AIME]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="course-cloud-and-edge-computing">Course: Cloud and Edge Computing</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
@@ -954,7 +974,7 @@ p {
 
 <h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
 
-<p>The Cloud and Edge Computing course was taught by Sami Yangui, emphasizing the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
+<p>The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
 
 <p>The course included:</p>
 
@@ -1142,5 +1162,8 @@ p {
     .styled-button:hover {
         background-color: #3399FF;
         transform: scale(1.05);
+    }
+    p {
+    text-align: justify;
     }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Cloud and Edge Computing]]></summary></entry></feed>

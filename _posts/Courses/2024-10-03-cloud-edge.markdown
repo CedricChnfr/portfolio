@@ -30,7 +30,7 @@ During the Cloud and Edge Computing course, I explored both theoretical and prac
 
 #### B.II.1. Environment and Context
 
-The Cloud and Edge Computing course was taught by Sami Yangui, emphasizing the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.
+The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.
 
 The course included:
 
@@ -174,5 +174,8 @@ The Cloud and Edge Computing course has been instrumental in my professional gro
     .styled-button:hover {
         background-color: #3399FF;
         transform: scale(1.05);
+    }
+    p {
+    text-align: justify;
     }
 </style>

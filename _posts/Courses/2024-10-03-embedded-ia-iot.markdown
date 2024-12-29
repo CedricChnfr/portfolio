@@ -125,4 +125,7 @@ You can find the complete project report on [GitHub_Embedded_AI](https://github.
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

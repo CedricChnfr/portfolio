@@ -41,113 +41,113 @@
 <p>In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot’s different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.</p>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Maquette.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
-    <img src="/img/BE_Robot_Project/Schema.png" alt="Schéma du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Maquette.png" alt="Robot Project Diagram" style="width: 50%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Schema.png" alt="Robot Project Diagram" style="width: 50%;" onclick="openModal(this.src)" />
 </div>
 
-<h1 id="projet">Projet</h1>
+<h1 id="project">Project</h1>
 <p>The project involved developing several functionalities for a robot, including camera management, arena detection, and task synchronization. We used FreeRTOS to manage real-time tasks and ensure safe concurrent execution.</p>
 
-<h2 id="fonctionnalités-du-projet">Fonctionnalités du Projet</h2>
+<h2 id="project-functionalities">Project Functionalities</h2>
 
 <style>
 table {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 </style>
 
 <table>
   <thead>
     <tr>
-      <th>Nom de la fonction</th>
-      <th>Description du comportement</th>
-      <th>Entrées</th>
-      <th>Sorties</th>
+      <th>Function Name</th>
+      <th>Behavior Description</th>
+      <th>Inputs</th>
+      <th>Outputs</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Démarrer serveur</td>
-      <td>Lancer serveur. Si échec, afficher un message et stopper le programme, sinon produire “serveur démarré”.</td>
-      <td>Évènement : Start<br /> Données : inputStream</td>
-      <td>Évènement : Serveur démarré</td>
+      <td>Start server</td>
+      <td>Launch server. If it fails, display a message and stop the program, otherwise produce “server started”.</td>
+      <td>Event: Start<br /> Data: inputStream</td>
+      <td>Event: Server started</td>
     </tr>
     <tr>
-      <td>Connecter au moniteur</td>
-      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si ok, produire “connexion établie”.</td>
-      <td>Évènement : Serveur démarré</td>
-      <td>Évènement : connexion établie</td>
+      <td>Connect to monitor</td>
+      <td>Wait for “server started”, call AcceptClient and wait for “open socket”. If ok, produce “connection established”.</td>
+      <td>Event: Server started</td>
+      <td>Event: connection established</td>
     </tr>
     <tr>
-      <td>Traiter message du moniteur</td>
-      <td>Attendre “connexion établie”. Tant que : Attendre message inputStream (Read). Si message = ouvrir com robot -&gt; ouvrir comRobot. Si message = ouvrir camera -&gt; ouvrir camera. Si message = fermer camera -&gt; fermer camera.</td>
-      <td>Évènement : connexion établie<br /> Données : Mouvement</td>
-      <td>Évènement : Ouvrir comRobot<br />Ouvrir camera<br />Fermer camera<br />Start robot<br />start recherche arène<br />start recherche robot</td>
+      <td>Process monitor message</td>
+      <td>Wait for “connection established”. While: Wait for message inputStream (Read). If message = open com robot -&gt; open comRobot. If message = open camera -&gt; open camera. If message = close camera -&gt; close camera.</td>
+      <td>Event: connection established<br /> Data: Movement</td>
+      <td>Event: Open comRobot<br />Open camera<br />Close camera<br />Start robot<br />start arena search<br />start robot search</td>
     </tr>
     <tr>
-      <td>Etablissement de la connexion</td>
-      <td>Attendre “serveur démarré”, appeler AcceptClient et attendre “ouvrir socket”. Si oui, connexion établie.</td>
-      <td>Évènement : ouvrirSocket<br />serveurDemarre</td>
-      <td>Évènement : connexionMonitor</td>
+      <td>Establish connection</td>
+      <td>Wait for “server started”, call AcceptClient and wait for “open socket”. If yes, connection established.</td>
+      <td>Event: openSocket<br />serverStarted</td>
+      <td>Event: connectionMonitor</td>
     </tr>
     <tr>
-      <td>Mettre en place la communication</td>
-      <td>Attendre “ouvrir comRobot”. Mettre en place la communication avec le robot. Si la communication est ok, poster “messageTomonACK”, sinon poster “messageToMonNAC”. Mettre à jour le statut de la com robot.</td>
-      <td>Évènement : ouvrir comRobot<br /> Données : statut com robot<br />Message Poster</td>
+      <td>Set up communication</td>
+      <td>Wait for “open comRobot”. Set up communication with the robot. If communication is ok, post “messageToMonACK”, otherwise post “messageToMonNAC”. Update the robot com status.</td>
+      <td>Event: open comRobot<br /> Data: robot com status<br />Message Post</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Démarrer Robot</td>
-      <td>Attendre “Start robot”. Si “Statut com robot” est actif, envoyer ordre de démarrage et mettre à jour “robot démarré”.</td>
-      <td>Évènement : ouvrir comRobot<br /> Donnée : Statut com robot</td>
-      <td>Donnée : robot démarré</td>
+      <td>Start Robot</td>
+      <td>Wait for “Start robot”. If “robot com status” is active, send start order and update “robot started”.</td>
+      <td>Event: open comRobot<br /> Data: robot com status</td>
+      <td>Data: robot started</td>
     </tr>
     <tr>
-      <td>Déplacer robot</td>
-      <td>Toutes les 100ms, si “robot démarré” est vrai, lire “mouvement” et envoyer ordre, sinon rien.</td>
-      <td>Donnée : robot démarré</td>
-      <td>Ordre</td>
+      <td>Move robot</td>
+      <td>Every 100ms, if “robot started” is true, read “movement” and send order, otherwise nothing.</td>
+      <td>Data: robot started</td>
+      <td>Order</td>
     </tr>
     <tr>
-      <td>Envoyer message au moniteur</td>
-      <td>Attendre “connexion établie”. Tant que : Attendre messageToMon, envoyer le message au superviseur. Fin tant que.</td>
-      <td>Évènement : connexion établie<br /> Données : Outputstream</td>
+      <td>Send message to monitor</td>
+      <td>Wait for “connection established”. While: Wait for messageToMon, send the message to the supervisor. End while.</td>
+      <td>Event: connection established<br /> Data: Outputstream</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Lire niveau batterie</td>
-      <td>Toutes les 500ms, si “robot démarré” est vrai, demander niveau de batterie au robot et le poster pour le moniteur. Sinon, rien.</td>
-      <td>Donnée : robot démarré<br /> Donnée : Message Poster</td>
+      <td>Read battery level</td>
+      <td>Every 500ms, if “robot started” is true, ask for battery level from the robot and post it for the monitor. Otherwise, nothing.</td>
+      <td>Data: robot started<br /> Data: Message Post</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Ouvrir/fermer la camera</td>
-      <td>Attendre “ouvrir camera” ou “fermer camera”. Ouvrir ou fermer la camera, envoyer un message au moniteur, mettre à jour “camera ouvert”.</td>
-      <td>Ouvrir camera<br /> Fermer camera<br /> Évènement : Afficher image<br /> Donnée : “Camera ouvert”</td>
+      <td>Open/close camera</td>
+      <td>Wait for “open camera” or “close camera”. Open or close the camera, send a message to the monitor, update “camera open”.</td>
+      <td>Open camera<br /> Close camera<br /> Event: Display image<br /> Data: “Camera open”</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Afficher Image</td>
-      <td>Attendre “Afficher image”. Toutes les 50ms, si “camera ouvert” est vrai, prendre une image du flux de la camera. Si “afficher arène” = vrai alors dessiner arène sur l’image. Poster l’image pour le moniteur.</td>
-      <td>Évènement : Afficher image<br /> Donnée : “Camera ouvert”<br /> Donnée : Message Poster</td>
+      <td>Display Image</td>
+      <td>Wait for “Display image”. Every 50ms, if “camera open” is true, take an image from the camera stream. If “display arena” = true then draw arena on the image. Post the image for the monitor.</td>
+      <td>Event: Display image<br /> Data: “Camera open”<br /> Data: Message Post</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Chercher Arène</td>
-      <td>Attendre “start recherche arène”. Si “camera ouvert” est vrai : “camera ouvert = faux”. Prendre une image du flux de la camera, analyser l’image et dessiner l’arène dessus. La poster pour le moniteur.</td>
-      <td>Évènement : start recherche arène<br /> Donnée : Message Poster<br />afficher arène</td>
+      <td>Search Arena</td>
+      <td>Wait for “start arena search”. If “camera open” is true: “camera open = false”. Take an image from the camera stream, analyze the image and draw the arena on it. Post it for the monitor.</td>
+      <td>Event: start arena search<br /> Data: Message Post<br />display arena</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Chercher Position</td>
-      <td>Attendre “start recherche robot”. Si “camera ouvert” est vrai : Prendre une image du flux de la camera, analyser l’image et dessiner le robot. Mettre à jour “dessin robot”.</td>
-      <td>Évènement : start recherche robot<br /> Donnée : “camera ouvert”<br /> Donnée : Dessin robot</td>
+      <td>Search Position</td>
+      <td>Wait for “start robot search”. If “camera open” is true: Take an image from the camera stream, analyze the image and draw the robot. Update “robot drawing”.</td>
+      <td>Event: start robot search<br /> Data: “camera open”<br /> Data: Robot drawing</td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
-<p><img src="/img/BE_Robot_Project/Graphe_Projet_Robot.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+<p><img src="/img/BE_Robot_Project/Graphe_Projet_Robot.png" alt="Robot Project Graph" style="width: 100%;" onclick="openModal(this.src)" /></p>
 
 <h2 id="existing-functionalities">Existing Functionalities</h2>
 <p>Before diving into the new functionalities we implemented, it is important to note that several key functionalities were already established:</p>
@@ -166,23 +166,23 @@ table {
 This ensures that the robot has sufficient power to perform its tasks and can alert the system if the battery level is low. By keeping track of the battery level, we can prevent unexpected shutdowns and ensure the robot operates efficiently.</p>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Get_Battery_func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Get_Battery_func.png" alt="Robot Project Graph" style="width: 50%;" onclick="openModal(this.src)" />
 </div>
 
 <h2 id="camera-management">Camera Management</h2>
 <p>Camera management involved several operations, such as opening, closing, and capturing images. We used mutexes to protect access to shared resources, such as the camera state and the camera object itself. Here is a code snippet illustrating the use of mutexes.</p>
 
 <div style="display: flex; justify-content: center; gap: 10px;">
-  <img src="/img/BE_Robot_Project/Start_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Robot_Project/Screen_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Robot_Project/Stop_Camera_Func.png" alt="Graphe du Projet Robot" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Start_Camera_Func.png" alt="Robot Project Graph" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Screen_Camera_Func.png" alt="Robot Project Graph" style="width: 30%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Stop_Camera_Func.png" alt="Robot Project Graph" style="width: 30%;" onclick="openModal(this.src)" />
 </div>
 
 <h2 id="arena-detection">Arena Detection</h2>
 <p>For arena detection, we created a function that is called when the user presses a specific button. This function uses semaphores to synchronize execution and ensure that tasks are executed in the correct order.</p>
 
 <div style="display: flex; justify-content: center;">
-    <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Graphe du Projet Robot" style="width: 50%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Robot Project Graph" style="width: 50%;" onclick="openModal(this.src)" />
 </div>
 
 <h1 id="conclusion">Conclusion</h1>
@@ -190,7 +190,7 @@ This ensures that the robot has sufficient power to perform its tasks and can al
 
 <style>
 p {
-    text-align: justify;
+  text-align: justify;
 }
 .modal {
   display: none; 

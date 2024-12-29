@@ -68,9 +68,22 @@ The partnership with ENSEEIHT provides access to state-of-the-art resources and 
 
 # After INSA Toulouse
 
-Upon completing my engineering degree, I plan to pursue a specialized master's degree in cybersecurity, specifically the TLS-SEC program. This master's in cybersecurity will enable me to develop expertise in a critical field in today’s digital world. With the rise of interconnected systems, cybersecurity is a priority for companies, and I aim to contribute to the protection of critical infrastructures against threats.
+Upon completing my engineering degree, I have three potential paths to consider:
+
+#### Pursue a Master's in Cybersecurity
+
+I plan to pursue a specialized master's degree in cybersecurity, specifically the TLS-SEC program. This master's in cybersecurity will enable me to develop expertise in a critical field in today’s digital world. With the rise of interconnected systems, cybersecurity is a priority for companies, and I aim to contribute to the protection of critical infrastructures against threats.
 
 This master's degree will complement my background in embedded systems and equip me with the tools needed to work on securing intelligent systems, while also enhancing my versatility in advanced technologies. INSA Toulouse, with its focus on innovation and cutting-edge technological challenges, has provided me with a solid foundation to pursue this goal.
+
+#### Start Working in Toulouse
+
+Another option is to start working in Toulouse to gain some professional experience. Toulouse is a hub for technology and engineering, offering numerous opportunities in the field of embedded systems. By working locally, I can build a strong professional network and apply my skills in a dynamic and innovative environment.
+
+#### Go Abroad to the United States
+
+I am also considering going abroad to the United States to gain unique experience and discover new opportunities. The US is known for its advanced technological landscape and innovation-driven culture. Working there would allow me to broaden my horizons, learn from leading experts in the field, and contribute to cutting-edge projects in embedded systems and cybersecurity.
+
 
 ---
 

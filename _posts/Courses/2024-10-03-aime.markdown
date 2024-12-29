@@ -112,4 +112,7 @@ You can find the complete project report on [GitHub_Gas_Sensor](https://github.c
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

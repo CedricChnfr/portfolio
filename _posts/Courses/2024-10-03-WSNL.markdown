@@ -135,4 +135,7 @@ Report on Zigbee, a WPAN for WSN :
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

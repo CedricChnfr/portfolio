@@ -164,4 +164,7 @@ To go further, it could be interesting to integrate a more interactive approach,
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

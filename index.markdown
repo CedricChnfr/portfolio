@@ -11,7 +11,9 @@ layout: default
         
         <div class="description-container">
             <h2>Cédric Chanfreau</h2>
-            <p style="text-align: justify">I am a motivated student in training in the field of automation and electrical engineering. Passionate about software development and embedded systems, I am looking for opportunities to apply and deepen my technical and practical skills.</p>    </div>
+            <p style="text-align: justify">I am a motivated student in training in the field of automation and electrical engineering. Passionate about software development and embedded systems, I am looking for opportunities to apply and deepen my technical and practical skills.</p>    
+            <p style="text-align: justify">Here is my portfolio where you can find information about my courses, projects, and CV.</p>
+        </div>
     </div>
     
     <div class="nav-container">

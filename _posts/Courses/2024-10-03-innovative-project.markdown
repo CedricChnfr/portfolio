@@ -129,4 +129,7 @@ You can find the complete project report on [GitHub_Innovative_Project](https://
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>

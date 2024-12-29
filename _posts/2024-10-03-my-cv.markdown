@@ -8,81 +8,97 @@ categories: jekyll update
 # Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)
 
 **Phone** : +(33) 679 791 782  
-**Adresse** : Rue du libre-échange, 31500 Toulouse  
-**Mail** : chanfreau@insa-toulouse.fr  
+**Address** : Rue du libre-échange, 31500 Toulouse, France  
+**Email** : cedric.chanfreau@gmail.com  
 
-[Open my CV (PDF)](/file/my-cv.pdf){:target="_blank"}
-
----
-
-## About me
-
-I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-oriented manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.
+## [Open my CV (PDF)](/file/my-cv.pdf){:target="_blank"}
 
 ---
 
-## Formation
+## About Me
 
-**2022-2025** - Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences, Toulouse  
-- Computer Science and Security: Embedded Systems Architectures, Computer Security, Object-Oriented Design  
-- Automation: Multivariable Systems, Optimal Control, Machine Learning and Petri Nets  
-- Electronic Circuit Design: Digital Acquisition, Control Chains and Signal Processing  
-- **Project** : Designed, programmed and created an electronic board for the 60th anniversary of INSA in a team
-
-**2020-2022** - University Diploma in Electrical Engineering and Industrial Computing, University Institute of Technology, Toulouse  
-- Electrical Engineering: Hyper-frequencies, Telecommunication, Propagation  
-- Fundamentals of Electricity: Electromagnetism, Linear Circuits in Periodic and Transient States  
-- **Project** : Designed and coded a game in C
-
-**2018-2020** - Scientific baccalaureate (option Engineering Science), Stephane Hessel Lycée, Toulouse  
-- Equivalent to High School Diploma in Science and Engineering Science  
+I am a highly motivated recent graduate with a master's degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, and software development, with hands-on experience in international environments. Actively seeking opportunities in the United States to leverage my technical expertise and teamwork skills in innovative projects.
 
 ---
 
-## Skills
+## Technical Skills
 
-### Programming / Software
-- Language in digital electronics: VHDL (Quartus)  
-- Microprocessor language: C, C++, Assembly (Keil)  
-- Programming language: Java, Python, Git (Eclipse, VS Code)  
-- PLC language: Ladder, ST, FBD (TIA Portals)  
-- Computer-aided design: SolidWorks, Proteus, Altium  
-- Computer science: MS Office  
+- **Programming & Embedded Systems**: C, Python, Java, C++, Assembly, VHDL, PLC (Ladder, ST, FBD)
+- **Software & Tools**: Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git
+- **Communication & APIs**: RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C
+- **Frontend & Visualization**: HTML, CSS, JavaScript, Node-RED, React Native
+- **Languages**: French (native), English (advanced), Spanish (intermediate)
 
-### Techniques
-- Design and assembly of electronic cards  
-- Debugging tools and software security testing  
-- Familiarity with the concept of microcontroller memory  
+---
 
-### Languages
-- **French**: Native language  
-- **English**: Intermediate level  
-- **Spanish**: Intermediate level  
+## Education
+
+**2024 - 2025**: Master 2 (M2) in Embedded Networks and Connected Objects (REOC), ENSEEIHT, Toulouse  
+- Specialized in IoT systems: communication technologies, data processing, and network security.
+- Developed a software-defined communication infrastructure (SDCI) for managing and controlling network traffic using Docker and REST APIs.
+
+**2022 - 2025**: Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences (INSA), Toulouse  
+- Key areas: Embedded Systems, Machine Learning, Computer Security, and Electronic Circuit Design.
+- Designed and developed a gas sensor: component creation, electronic board design and programming, mobile app and website development, MQTT integration, Node-RED dashboard, and datasheet creation.
 
 ---
 
 ## Professional Experience
 
-**International Engineering Mobility – Vitesco Technologies** (July 2024 - September 2024)  
-- Studied and implemented solutions for Flash memory management on a new microcontroller  
-- Tested and validated Flash functionalities to ensure reliability of the new platform  
-- Created the environment to automate and optimize tests, using Python and CMM scripts  
+**International Engineering Mobility - Vitesco Technologies, Romania**  
+*Jul 2024 - Sep 2024*  
+- Studied and implemented Flash memory management solutions on new microcontrollers.
+- Created the environment to automate and optimize tests, using Python and CMM scripts.
 
-**Embedded Software Engineer apprenticeship - Vitesco Technologies** (September 2022 - August 2025)  
-- Developed generic embedded solutions for ECUs reprogramming  
-- Tested and debugged code to ensure proper operation and problem resolution  
-- Corrected the code according to MISRA and CERT standards to ensure the security and quality of the software  
-- Presented regular project reviews to team members in English  
-
-**Electronic method technician internship - Siemens Mobility** (April - July 2022)  
-- Studied the VAL208NG brake rack system and developed a test solution  
-- Conducted functional tests on the brake rack cards to ensure optimal performance  
+**Embedded Software Engineer Apprenticeship - Vitesco Technologies, France**  
+*Sep 2022 - Sep 2025*  
+- Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT).
+- Tested and debugged code to ensure proper operation and problem resolution.
+- Presented regular project reviews to team members in English.
 
 ---
 
 ## Extracurricular Activities
 
-- Played rugby since 2007 as a scrum half / winger at a high competitive level (Federal 1 league), achieving a 3rd place in the French championship  
-- Practiced swimming for 6 years in a club  
-- Independent travel in Europe (Italy, Ireland, Holland, Egypt)  
-- Assessor of a polling station for the regional and departmental elections  
+- **Rugby Player**: Scrum-half since 2007 at Federal 1 level. Achieved 3rd place in French championships.
+- **Volunteering**: Assessor of a polling station for the regional and departmental elections.
+- **Independent Travel**: Explored destinations across Europe (Italy, England, Spain, etc.) and beyond, gaining diverse cultural insights.
+
+---
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+</style>

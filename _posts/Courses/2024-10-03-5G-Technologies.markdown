@@ -128,4 +128,7 @@ The course was highly relevant to my professional career, providing practical ex
           background-color: #3399FF;
           transform: scale(1.05);
      }
+     p {
+    text-align: justify;
+     }
 </style>
