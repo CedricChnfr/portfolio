@@ -73,7 +73,7 @@ The course provided a thorough understanding of service-oriented architectures. 
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Mastered the design, implementation, and deployment of service-oriented architectures.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.
+- **Skills to Develop**: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.
 
 ### D.III. Balance Sheet
 
@@ -81,7 +81,7 @@ The course provided a thorough understanding of service-oriented architectures. 
 The course was highly relevant to my professional career, providing practical experience in modern software architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
 
 ### D.IV. Complementary Elements
-To further enhance the learning experience, integrating more interactive approaches and focusing on modern architectures would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the course.
+To further enhance the learning experience, integrating more interactive approaches and focusing on modern architectures would be beneficial.
 
 
 ## Project Report

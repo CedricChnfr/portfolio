@@ -74,7 +74,7 @@ The course provided a thorough understanding of integrating sensors with microco
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a basic understanding of the concepts and processes involved in integrating sensors with microcontrollers and developing IoT applications. However, more focus on practical applications would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for IoT development.
+- **Skills to Develop**: Need to enhance proficiency in advanced data visualization techniques for IoT applications.
 
 ### D.III. Balance Sheet
 
@@ -84,8 +84,6 @@ The course was highly relevant to my professional career, providing practical ex
 ### D.IV. Complementary Elements
 
 #### Project Report
-To further enhance the learning experience, integrating more interactive approaches and focusing on practical applications of sensor integration and IoT development would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the course.
-
 You can find the complete project report on [GitHub_Microcontroller_Project](https://github.com/Cyril-vsr/Capteur_Gaz).
 
 <style>

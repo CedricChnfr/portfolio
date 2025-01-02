@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T03:55:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T11:44:30+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -323,7 +323,7 @@ p {
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
   <li><strong>Acquired Skills</strong>: Developed a solid understanding of the process of developing innovative solutions to real-life problems. However, more focus on advanced topics would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for project development.</li>
+  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in advanced machine learning techniques for better data analysis and prediction.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
@@ -334,8 +334,6 @@ p {
 <h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
 
 <h4 id="project-report">Project Report</h4>
-<p>To further enhance the learning experience, integrating more interactive approaches and focusing on advanced topics would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the project.</p>
-
 <p>You can find the complete project report on <a href="https://github.com/what-a-leak">GitHub_Innovative_Project</a>.</p>
 
 <style>
@@ -663,7 +661,7 @@ p {
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
   <li><strong>Acquired Skills</strong>: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
+  <li><strong>Skills to Develop</strong>: Need to enhance understanding of network security and encryption techniques.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
@@ -794,7 +792,7 @@ p {
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
   <li><strong>Acquired Skills</strong>: Mastered the analysis and evaluation of WSN protocols and the optimization of communication protocols for IoT.</li>
-  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
+  <li><strong>Skills to Develop</strong>: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
@@ -936,7 +934,7 @@ p {
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
   <li><strong>Acquired Skills</strong>: Developed a basic understanding of the concepts and processes involved in sensor manufacturing. However, more focus on practical applications would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for sensor manufacturing.</li>
+  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in advanced data analysis techniques for sensor data interpretation.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
@@ -1077,7 +1075,7 @@ p {
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
   <li><strong>Acquired Skills</strong>: Developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, more focus on advanced topics would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for cloud and edge computing.</li>
+  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in implementing security measures and protocols for cloud and edge computing environments.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>

@@ -62,7 +62,7 @@ The course provided a thorough understanding of the sensor manufacturing process
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a basic understanding of the concepts and processes involved in sensor manufacturing. However, more focus on practical applications would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for sensor manufacturing.
+- **Skills to Develop**: Need to enhance proficiency in advanced data analysis techniques for sensor data interpretation.
 
 ### D.III. Balance Sheet
 

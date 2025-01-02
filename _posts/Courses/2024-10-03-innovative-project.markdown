@@ -78,7 +78,7 @@ The project provided a thorough understanding of the process of developing innov
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a solid understanding of the process of developing innovative solutions to real-life problems. However, more focus on advanced topics would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for project development.
+- **Skills to Develop**: Need to enhance proficiency in advanced machine learning techniques for better data analysis and prediction.
 
 ### D.III. Balance Sheet
 
@@ -88,8 +88,6 @@ The project was highly relevant to my professional career, providing practical e
 ### D.IV. Complementary Elements
 
 #### Project Report
-To further enhance the learning experience, integrating more interactive approaches and focusing on advanced topics would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the project.
-
 You can find the complete project report on [GitHub_Innovative_Project](https://github.com/what-a-leak).
 
 <style>

@@ -66,7 +66,7 @@ The course provided a thorough understanding of SDN and MANO technologies. The c
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a solid understanding of SDN and MANO concepts and their practical applications. However, more focus on advanced topics like LoRa network modeling would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for network management.
+- **Skills to Develop**: Need to understand advanced network security protocols and their implementation.
 
 ### D.III. Balance Sheet
 

@@ -75,7 +75,7 @@ The course provided a thorough understanding of AI in an IoT context. The combin
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a solid understanding of AI and its application in IoT. However, more focus on advanced optimization techniques would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for AI development.
+- **Skills to Develop**: Need to enhance understanding of advanced model optimization techniques for embedded AI applications.
 
 ### D.III. Balance Sheet
 
@@ -85,8 +85,6 @@ The course was highly relevant to my professional career, providing practical ex
 ### D.IV. Complementary Elements
 
 #### Project Report
-To further enhance the learning experience, integrating more interactive approaches and focusing on advanced optimization techniques would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the course.
-
 You can find the complete project report on [GitHub_Embedded_AI](https://github.com/Cyril-vsr/Embedded_AI).
 
 <style>

@@ -64,7 +64,7 @@ The course provided a thorough understanding of WSN technologies. The reverse pe
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Mastered the analysis and evaluation of WSN protocols and the optimization of communication protocols for IoT.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.
+- **Skills to Develop**: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.
 
 ### D.III. Balance Sheet
 

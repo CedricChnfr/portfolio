@@ -40,7 +40,6 @@ We examined the MQTT and OneM2M protocols, their architectures, and their applic
    - Configured and tested the Mosquitto broker.
 2. **OneM2M Protocol**:
    - Explored the OneM2M standard for interoperability between IoT architectures.
-   - Developed applications using the ACME stack to simulate device behavior.
 3. **Node-RED**:
    - Used Node-RED for fast application prototyping.
    - Integrated MQTT and OneM2M nodes in Node-RED.
@@ -52,7 +51,6 @@ To gain a comprehensive understanding of middleware solutions for IoT and their 
 ### C.I.3 The Knowledge and Skills Mobilized
 - Understanding the main standards for the Internet of Things.
 - Deploying and configuring IoT architectures using MQTT and OneM2M.
-- Interacting with different resources using REST services.
 - Integrating new technologies into deployed architectures.
 - Analyzing and evaluating optimal wireless network technologies.
 - Suggesting optimal technological solutions for IoT networks.
@@ -73,7 +71,7 @@ The course provided a thorough understanding of middleware solutions for IoT. Th
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Mastered the fundamentals of middleware solutions for IoT and the implementation of communication protocols. However, more focus on the practical application of OneM2M would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for IoT middleware.
+- **Skills to Develop**: Need to deepen knowledge in edge computing and its integration with IoT middleware.
 
 ### D.III. Balance Sheet
 
@@ -83,7 +81,6 @@ The course was highly relevant to my professional career, providing practical ex
 ### D.IV. Complementary Elements
 
 #### Project Report
-To further enhance the learning experience, integrating more interactive approaches and focusing on practical applications of OneM2M would be beneficial. Additionally, providing dedicated resources for CI/CD practices would improve the practical aspects of the course.
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>

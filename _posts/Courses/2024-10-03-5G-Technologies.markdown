@@ -71,7 +71,7 @@ The course provided a thorough understanding of 6G technologies. The reverse ped
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.
+- **Skills to Develop**: Need to enhance understanding of network security and encryption techniques.
 
 ### D.III. Balance Sheet
 

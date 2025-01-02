@@ -64,7 +64,7 @@ The course provided a thorough understanding of SDN and LISP technologies. The c
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a solid understanding of SDN and LISP concepts and their practical applications. However, more focus on advanced topics would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for network management.
+- **Skills to Develop**: Understanding of network automation and orchestration tools.
 
 ### D.III. Balance Sheet
 

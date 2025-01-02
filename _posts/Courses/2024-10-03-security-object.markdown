@@ -76,7 +76,7 @@ The course provided a thorough understanding of security for connected objects. 
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Mastered the fundamentals of security and the design of secure communication protocols. However, more focus on identifying security weaknesses in IoT architectures would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for security.
+- **Skills to Develop**: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.
 
 ### D.III. Balance Sheet
 

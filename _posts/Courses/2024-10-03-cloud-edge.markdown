@@ -77,7 +77,7 @@ The course provided a thorough understanding of the design, deployment, and mana
 
 ### D.II. Self Evaluation
 - **Acquired Skills**: Developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, more focus on advanced topics would be beneficial.
-- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for cloud and edge computing.
+- **Skills to Develop**: Need to enhance proficiency in implementing security measures and protocols for cloud and edge computing environments.
 
 ### D.III. Balance Sheet
 
