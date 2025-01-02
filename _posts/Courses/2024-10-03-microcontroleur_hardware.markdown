@@ -56,7 +56,6 @@ To gain a comprehensive understanding of integrating sensors with microcontrolle
 - Understanding microcontroller architecture and how to use them.
 - Designing data acquisition systems (sensor, conditioner, microcontroller) with respect to the application.
 - Designing the electronic circuit of a sensor’s signal conditioner (design + simulation).
-- Designing a shield to accommodate the gas sensor.
 - Designing the software to use the gas sensor and its HMI.
 - Combining all of the above-mentioned components into a smart device.
 - Understanding basic notions of sensors, data acquisition: physics, electronics, and metrology point of view.

@@ -85,7 +85,6 @@ The course was highly relevant to my professional career, providing practical ex
 ### D.IV. Complementary Elements
 
 #### Project Report
-You can find the complete project report on [GitHub_Embedded_AI](https://github.com/Cyril-vsr/Embedded_AI).
 
 <style>
     body {
