@@ -14,16 +14,14 @@ In parallel with my last semester at INSA, I decided to pursue a Master of Netwo
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 
-During the Master REOC program, I had the opportunity to engage in various hands-on projects and collaborative activities. One notable experience was a group project where we designed and implemented a network monitoring tool using SDN principles. This tool allowed us to visualize network traffic in real-time and identify potential bottlenecks or security threats. 
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 During this Master, we had various courses on different subjects. One particularly interesting course was taught at INSA by Samir Medjiah, focusing on SDN (Software Defined Network) and MANO (Management and Orchestration). SDN centralizes network intelligence in a single point, the network controller, allowing flexible management of network devices. MANO standardizes the deployment and orchestration of network functions, enabling dynamic and automatic adjustments based on network needs.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 In the practical sessions, I developed an application to redirect traffic from one server to another transparently for the client. This involved modifying packet destination addresses and source addresses of server responses. Additionally, I explored the deployment and orchestration of network functions using MANO, such as dynamically deploying firewalls and load balancers based on network traffic.
 
 ## PART C: TECHNICAL PART

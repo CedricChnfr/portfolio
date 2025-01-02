@@ -18,7 +18,6 @@ The "Service Oriented Architecture" course, taught by Nawal Guermouche, aims to 
 
 #### B.I.1. Environment and Context
 The practical part of this course is divided into two segments. The first segment introduces three different architectures: SOAP, REST, and microservices. The second segment involves a project that delves deeper into the most recent type of software architecture, microservices.
-
 #### B.I.2. Your Function
 During the practical sessions, I engaged in hands-on activities that involved implementing and configuring these architectures. The project work required collaboration and problem-solving to design and deploy a microservice architecture.
 

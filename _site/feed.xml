@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-01T17:17:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T03:55:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -242,15 +242,12 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-<p>During the training, I gained hands-on experience in embedded systems, mobile application development, and 3D modeling, which were directly applicable to the project tasks.</p>
+<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
 
-<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
-
-<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
 <p>In this project, I was responsible for:</p>
 <ul>
   <li>Developing the embedded software to retrieve data from the accelerometer for leak detection.</li>
@@ -588,11 +585,8 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-
 <h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
-
 <h4 id="bi2-your-function">B.I.2. Your Function</h4>
 <p>In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
 
@@ -736,7 +730,6 @@ p {
 
 <h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>After the theoretical part, we had another individual presentation on different kinds of MAC layers for WSN. The final part of the course was a project where we had to define and implement a protocol for given specifications from the physical to the MAC layer. I worked on this project with Bapthiste Henriet, Brian Biendou, Marie Brunetto, Samia Boukouiss, Yann Jobard and Timothé Bigot.</p>
-
 <h4 id="bi2-your-function">B.I.2. Your Function</h4>
 <p>In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.</p>
 
@@ -880,15 +873,12 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-<p>During the training, we engaged in various hands-on activities that complemented our theoretical knowledge. We were introduced to advanced techniques in micro-nano electronics, which included the synthesis of nanoparticles and their application in sensor technology. The practical sessions were designed to bridge the gap between theory and real-world applications, providing us with a comprehensive understanding of the intricacies involved in sensor manufacturing.</p>
+<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
 
-<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
-
-<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>The labs at AIME were an introduction to the creation of sensors. We worked on both the chemical solution containing nanoparticles that detect gas and the wafer on which we applied the solution. This process involved dielectrophoresis to place the nanoparticles on the wafer, creating a functional gas sensor.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
 <p>During the labs, I participated in the chemical synthesis of the nanoparticles and the assembly of the sensor. This included applying the chemical solution to the wafer and performing dielectrophoresis to position the nanoparticles correctly.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
@@ -1013,17 +1003,15 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-
 <p>During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions.</p>
 
-<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
+<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
 
-<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 
 <p>The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
 
 <p>In this course, I was responsible for:</p>
 <ul>

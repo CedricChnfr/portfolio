@@ -20,17 +20,16 @@ By combining theory and practical projects, this course fosters not only technic
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 
 During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions.
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 
 The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 
 In this course, I was responsible for:
 - Learning and practicing virtualization techniques such as VMs and containers.

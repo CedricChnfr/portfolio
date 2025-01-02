@@ -14,15 +14,13 @@ The Innovative Project was a collaborative effort aimed at developing a solution
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
-During the training, I gained hands-on experience in embedded systems, mobile application development, and 3D modeling, which were directly applicable to the project tasks.
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 In this project, I was responsible for:
 - Developing the embedded software to retrieve data from the accelerometer for leak detection.
 - Creating a mobile application using React Native to monitor and control the system.

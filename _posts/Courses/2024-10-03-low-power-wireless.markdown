@@ -14,15 +14,13 @@ Low Power Wireless Personal Area Network (LP-WPAN) is taught by Slim Abdelatif. 
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
-During the course, we engaged in various activities that provided hands-on experience with the TCP/IP protocol stack for LP-WPAN, including practical exercises and case studies to reinforce theoretical knowledge.
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 As this course is very short, we did not have a lot of time to see a wide range of different technical skills. In addition to that, a first part of this course was dedicated to explaining basic concepts about network and telecommunication like the concept of a scrambled network (interference). During this course, we saw an example of a TCP/IP protocol stack for LP-WPAN. This stack used the 802.15.4 norm, which is a norm for MAC and physical layer. It is notably used in protocols like Zigbee. Over this layer, we use IPv6 with an intermediate layer to reduce the size of a packet, which is 6LoWPAN.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 During the course, I focused on understanding the theoretical aspects of the TCP/IP protocol stack for LP-WPAN. This included learning about the 802.15.4 norm, IPv6, and 6LoWPAN. I also analyzed the benefits and drawbacks of using standard protocols based on IP for low power use cases.
 
 ## PART C: TECHNICAL PART

@@ -14,11 +14,9 @@ The course "5G Technologies" is taught by Etienne Sicard. The main objective of 
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 
 #### B.I.1. Environment and Context
 During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
-
 #### B.I.2. Your Function
 In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.
 

@@ -31,7 +31,6 @@ The key concepts covered in this course apply directly to engineering projects, 
 
 #### B.I.1. Environment and Context
 The "Energy for Connected Objects" course focuses on powering IoT devices efficiently, sustainably, and autonomously. Taught by Gaël Loubet, the course provides an in-depth exploration of electricity storage, ambient energy harvesting, and wireless power transfer technologies. The primary objective is to design energy-efficient connected objects that operate without reliance on traditional batteries or wired power.
-
 #### B.I.2. Your Function
 The practical work presented some challenges. The manipulations, although very formative, were sometimes hindered by technical problems related to the equipment used. These problems, understandable for a first year of PCB use, nevertheless illustrated real engineering situations where unforeseen events must be managed rigorously.
 

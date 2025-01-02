@@ -14,14 +14,13 @@ After the week of labs at AIME to create a gas sensor, we had another course wit
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The course focused on integrating the gas sensor created at AIME into a larger system using microcontrollers. We aimed to connect the sensor to a LoRa network and visualize the data on a dashboard. This involved both hardware and software components, including the creation of a PCB and circuit for the sensor, programming the microcontroller, and developing applications for data visualization.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 As I come from a network and computer science background, I focused on the high-level aspects of the course, such as creating the application and programming the microcontroller. I did not delve deeply into the hardware part, which involved creating a PCB and circuit for the integration of the gas sensor.
 
 ## PART C: TECHNICAL PART

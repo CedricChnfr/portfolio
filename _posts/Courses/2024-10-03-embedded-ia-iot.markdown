@@ -14,15 +14,14 @@ Embedded AI for IoT is a course taught by Philippe Leleux. In this course, we ap
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 Throughout the course, we explored various theoretical concepts of AI applications in IoT. However, the practical exercises were limited, which left us wanting more hands-on experience in this interesting field.
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The course involved both theoretical and practical sessions. We learned about the fundamental concepts of AI, particularly focusing on Machine Learning with Neural Networks (NN). The practical sessions involved implementing an AI model to detect falls using an embedded device with limited computational power.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 In this course, I was responsible for:
 - Understanding the theoretical concepts of AI and Machine Learning.
 - Implementing and training a Neural Network for fall detection.

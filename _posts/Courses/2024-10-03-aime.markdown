@@ -14,15 +14,13 @@ As ISS focuses on IoT, we use a variety of sensors to make smart devices capable
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
-During the training, we engaged in various hands-on activities that complemented our theoretical knowledge. We were introduced to advanced techniques in micro-nano electronics, which included the synthesis of nanoparticles and their application in sensor technology. The practical sessions were designed to bridge the gap between theory and real-world applications, providing us with a comprehensive understanding of the intricacies involved in sensor manufacturing.
 
-### B.II. EXPERIENCE DETAILS
+### B.I. EXPERIENCE DETAILS
 
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The labs at AIME were an introduction to the creation of sensors. We worked on both the chemical solution containing nanoparticles that detect gas and the wafer on which we applied the solution. This process involved dielectrophoresis to place the nanoparticles on the wafer, creating a functional gas sensor.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 During the labs, I participated in the chemical synthesis of the nanoparticles and the assembly of the sensor. This included applying the chemical solution to the wafer and performing dielectrophoresis to position the nanoparticles correctly.
 
 ## PART C: TECHNICAL PART

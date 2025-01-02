@@ -14,14 +14,12 @@ The course "Security for Connected Objects" is taught by Eric Alata and Vincent 
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
+### B.I. EXPERIENCE DETAILS
 
-### B.II. EXPERIENCE DETAILS
-
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 Security is often overlooked in IoT devices due to the focus on efficiency and low power consumption. However, these devices are prime targets for hackers, and vulnerabilities can lead to severe consequences. In this context, the course aimed to provide a comprehensive understanding of security measures for IoT devices.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 During the course, I participated in various labs and presentations. We studied vulnerabilities in communication protocols, mechanisms for securing web pages, and the behavior of microprocessor pipelines. Additionally, we explored basic cryptography concepts and the certification process for securing communications.
 
 ## PART C: TECHNICAL PART

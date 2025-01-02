@@ -14,14 +14,11 @@ The course "Middleware for IoT" is taught by Thierry Monteil. The objective is t
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
+### B.I. EXPERIENCE DETAILS
 
-### B.II. EXPERIENCE DETAILS
-
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The IoT market is vast, and there is no standard solution for communication between IoT devices. Middleware serves as a software layer that interconnects different applications. During this course, we explored various communication protocols used for IoT, such as MQTT and OneM2M.
-
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 In the practical sessions, I engaged in setting up and testing different middleware solutions. This involved installing necessary software, configuring MQTT brokers, and developing applications using NodeMCU boards and Node-RED.
 
 ## PART C: TECHNICAL PART
