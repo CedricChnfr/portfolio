@@ -1,18 +1,16 @@
 ---
 layout: default
-title:  "Cloud Edge"
+title:  "Cloud Edge Computing"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Course: Cloud and Edge Computing
+# Cloud Edge Computing
 
 ## PART A: GENERALITIES
 
 ### Presentation
-The Cloud and Edge Computing course provides a comprehensive understanding of hybrid architectures that optimize data processing and resource utilization. It bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges.
-
-Taught by  Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
+The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
 
 This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. Students gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.
 
@@ -32,102 +30,62 @@ During the Cloud and Edge Computing course, I explored both theoretical and prac
 
 The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.
 
-The course included:
-
-- **Theoretical Classes**: Focused on cloud architecture, virtualization methods, and deployment models.
-- **Practical Labs**: Hands-on sessions using tools like OpenStack for infrastructure development and edge computing implementations.
-
 #### B.II.2. Your Function
 
-Role in Labs and Projects:
-
-- Designed and implemented virtualized environments using OpenStack.
-- Developed an edge computing solution leveraging proximity-based data processing to minimize latency.
-- Created and managed virtual machines (VMs) to simulate real-world cloud scenarios.
-- Addressed the challenges of infrastructure deployment through Python-based automation.
-
+In this course, I was responsible for:
+- Learning and practicing virtualization techniques such as VMs and containers.
+- Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.
+- Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.
 
 ## PART C: TECHNICAL PART
 
-
 ### C.I.1 Presentation
 
-During our labs, I had the opportunity to use OpenStack, an open-source software that creates and manages different virtual machines (VMs). One of the projects required me to implement an infrastructure with a calculator service accessible from the public internet and four VMs on a private network performing arithmetic operations (addition, multiplication, subtraction, and division). The main calculator service had to call the sub-services to get the results. This project was particularly interesting as it introduced me to both cloud infrastructure and microservices architecture.
-
 #### Context
-- **Field of Responsibilities**: Implementing a cloud infrastructure using OpenStack.
-- **Objectives**: Create a calculator service with public access and four VMs on a private network for arithmetic operations.
-- **Resources and Constraints**: Limited documentation on the OpenStack Python client, time constraints, and the need to ensure secure and efficient communication between services.
-- **Duration and Dates**: The project spanned over two weeks during the lab sessions.
+This section explores the technical aspects of the Cloud Edge Computing course, focusing on the problem analysis, solution design, and implementation of hybrid architectures.
 
 ### C.I.2 Resolution of Problem
 
 #### What
-The solution involved setting up an OpenStack environment with one public-facing VM for the calculator service and four private VMs for the arithmetic operations. Each VM was configured to handle specific arithmetic tasks and communicate with the main calculator service.
+We aimed to design, deploy, and manage hybrid architectures that combine the low-latency benefits of edge computing with the scalability of cloud environments.
 
 #### How
-1. **Setup OpenStack Environment**: Installed and configured OpenStack on the host machine.
-2. **Create VMs**: Created one public VM and four private VMs using the OpenStack dashboard.
-3. **Configure Networking**: Set up networking to allow the public VM to communicate with the private VMs.
-4. **Deploy Services**: Deployed the calculator service on the public VM and the arithmetic services on the private VMs.
+1. **Problem Analysis**:
+   - Conducted a thorough analysis of the requirements for scalable, efficient, and low-latency services.
+2. **Solution Design**:
+   - Designed hybrid architectures that leverage both cloud and edge computing.
+3. **Implementation**:
+   - Deployed and managed these architectures using tools like Kubernetes, Docker, AWS, and Azure.
 
 #### Why
-The chosen solution provided a scalable and efficient way to manage the calculator service and its sub-services. Using OpenStack allowed me to leverage cloud infrastructure capabilities, and the microservices architecture ensured modularity and ease of maintenance.
+To gain practical experience in designing and managing hybrid architectures that meet the demands of modern computing environments. This knowledge is crucial for developing efficient and scalable solutions in fields such as IoT, real-time systems, and 5G networks.
 
 ### C.I.3 The Knowledge and Skills Mobilized
-
-To solve this problem, I had to mobilize and develop several new skills:
-- **Cloud Infrastructure**: Gained hands-on experience with OpenStack, understanding its components and functionalities.
-- **Networking**: Learned how to configure networking in a cloud environment to enable secure communication between VMs.
-- **Microservices Architecture**: Understood the principles of microservices and how to implement them in a cloud environment.
-- **REST APIs**: Developed skills in creating and consuming REST APIs for inter-service communication.
-
-These skills were acquired through a combination of reading documentation, attending lectures, and collaborating with peers during lab sessions.
+- Understanding virtualization technologies and their role in modern cloud infrastructures.
+- Designing and managing hybrid architectures that combine cloud and edge computing.
+- Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.
+- Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.
 
 ### C.I.4 Summary and Review
-
-This experience taught me valuable lessons in cloud infrastructure and microservices architecture. I learned the importance of thorough documentation and the challenges of working with open-source software. With hindsight, I realize that additional training in Kubernetes would have been beneficial, as it is a critical technology for container orchestration in cloud environments.
-
-Overall, the project was a great learning experience that provided practical insights into cloud computing and the implementation of microservices.
-
+The course provided a thorough understanding of the design, deployment, and management of hybrid architectures that combine cloud and edge computing. The combination of theoretical classes and practical projects was particularly beneficial in illustrating the concepts. The emphasis on ethical and sustainable innovation helped in developing a holistic approach to modern computing challenges.
 
 ## PART D: ANALYTICAL PART
 
 ### D.I. Analysis of Skills
-
-I have presented the significant experiences related to the training. I also presented several problem situations where I explained the acquired knowledge and the skills mobilized to solve these problems. In this last part, it is for me to make an exhaustive analysis of all the knowledge and skills acquired during these different experiences.
-
-In the table below, for each activity, I specify my level of execution corresponding to the appropriate figure using the following criteria:
-
-- **AP** - level of application: follow-up of instructions or procedures
-- **AN** - level of analysis: improvement or optimization of solutions or proposals
-- **M** - level of proficiency: program design or specification definitions
-- **EX** - level of expertise: definition of orientations or strategies
-
-| Activities | Acquired experience in terms of | Modes | Level (AP to EX) |
-|------------|---------------------------------|-------|------------------|
-| Understanding Cloud Computing concepts and architectures | Theoretical, technological knowledge | AN | M |
-| Using IaaS services and deploying platforms with OpenStack | Operational know-how | AP | M |
-| Designing autonomic microservices systems for efficient resource allocation | Theoretical, technological knowledge | AN | M |
-| Comprehending the interplay between Cloud and Edge solutions in IoT ecosystems | Theoretical, technological knowledge | AN | M |
+- **Theoretical Knowledge**: Gained insights into virtualization technologies, cloud services, and edge infrastructures.
+- **Operational Skills**: Developed skills in designing, deploying, and managing hybrid architectures.
+- **Analytical Skills**: Learned to assess the feasibility and effectiveness of hybrid architectures in various fields.
 
 ### D.II. Self Evaluation
-
-- **Summary of Skills**: The course provided a solid foundation in cloud computing principles, including the design and deployment of cloud infrastructures. Practical labs with OpenStack allowed me to gain hands-on experience in creating and managing virtual machines, as well as understanding microservices architecture. The final lab on edge computing highlighted the importance of reducing latency and enhancing real-time services, particularly in 5G networks.
-- **Skills to Improve**: While the course was comprehensive, it lacked sufficient training in Kubernetes, a critical technology for container orchestration. Enhanced exposure to Kubernetes would bridge this gap and better prepare me for real-world cloud environments.
+- **Acquired Skills**: Developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, more focus on advanced topics would be beneficial.
+- **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for cloud and edge computing.
 
 ### D.III. Balance Sheet
 
-The Cloud and Edge Computing course has been instrumental in my professional growth, offering both theoretical knowledge and practical tools relevant to modern cloud engineering. Working with OpenStack provided valuable insight into open-source technologies, aligning with engineering values of collaboration and innovation.
-
 #### Highlights
-
-- **Microservices and Edge Computing**: The emphasis on microservices and edge computing highlighted their transformative role in IoT and real-time applications.
-- **Virtualization Techniques**: The introduction to virtualization techniques and their applications in cloud infrastructures was particularly valuable.
+The course was highly relevant to my professional career, providing practical experience in designing and managing hybrid architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
 
 ### D.IV. Complementary Elements
-
-- **Additional Elements**: The course was a great introduction to virtualization and cloud computing, providing hands-on experience with open-source technologies. However, to fully prepare students for the industry, it is essential to include comprehensive training on Kubernetes. Additionally, more emphasis on practical applications in the field of IoT would enhance the relevance of the course content.
 
 ## Project Report
 
@@ -138,7 +96,6 @@ The Cloud and Edge Computing course has been instrumental in my professional gro
 <p style="text-align: center;">
     <a href="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" target="_blank">Download Complete Report</a>
 </p>
-
 
 <style>
     body {

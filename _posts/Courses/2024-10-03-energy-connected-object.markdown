@@ -112,14 +112,11 @@ Despite the knowledge acquired, I feel the need to deepen certain technical aspe
 ### D.III. Review
 At the beginning of the course, I did not expect to find this field so relevant to my professional career. However, the clarity of the explanations and the well-defined structure of the course changed my perspective. I particularly appreciated how complex concepts were presented in an accessible manner, even for someone with little background in electronics or physics.
 
-Nevertheless, the practical work presented some challenges. The manipulations, although very formative, were sometimes hindered by technical problems related to the equipment used. These problems, understandable for a first year of PCB use, nevertheless illustrated real engineering situations where unforeseen events must be managed rigorously.
-
 ### D.IV. Additional Elements
 To go further, it could be interesting to integrate a more interactive approach, such as the collaborative design of a real energy system, or to delve deeper into use cases in specific fields like healthcare or smart cities.
 
 
 ## Project Report
-To go further, it could be interesting to integrate a more interactive approach, such as the collaborative design of a real energy system, or to delve deeper into use cases in specific fields like healthcare or smart cities.
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Energy_Connected_Object/Report_Energy_Boukouiss_Chanfreau.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>

@@ -10,19 +10,15 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The course "Wireless Sensor Networks and Localization" (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. The second segment employs reverse pedagogy, where each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.
+The course "Wireless Sensor Networks and Localization" (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. In the second each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
-
-### B.II. EXPERIENCE DETAILS
-
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 After the theoretical part, we had another individual presentation on different kinds of MAC layers for WSN. The final part of the course was a project where we had to define and implement a protocol for given specifications from the physical to the MAC layer. I worked on this project with Bapthiste Henriet, Brian Biendou, Marie Brunetto, Samia Boukouiss, Yann Jobard and Timothé Bigot.
 
-#### B.II.2. Your Function
-In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python with a ZMQ library (similar to MQTT) for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.
+#### B.I.2. Your Function
+In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.
 
 ## PART C: TECHNICAL PART
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-12-30T00:15:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-01T17:17:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -379,22 +379,77 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Innovative Project]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024">2024</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Innovative Project]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024-2025">2024-2025</h1>
 
 <h2 id="️-cloud-edge-computing"><a href="./cloud-edge.html">☁️ Cloud Edge Computing</a></h2>
+<p><strong>Duration</strong>: 16.25 hours<br />
+<strong>Dates</strong>: 30/09/2024 - 14/10/2024<br />
+<strong>Content</strong>: Learn and practice about virtualization techniques such as VMs and containers.</p>
+
 <h2 id="-energy-for-connected-object"><a href="./energy-connected-object.html">🔋 Energy for Connected Object</a></h2>
+<p><strong>Duration</strong>: 10.5 hours<br />
+<strong>Dates</strong>: 07/10/2024 - 15/10/2024<br />
+<strong>Content</strong>: Introduction to the different methods to power Energy for Connected Objects.</p>
+
 <h2 id="-service-oriented-architecture-mooc"><a href="./service-oriented-architecture.html">📚 Service Oriented Architecture MOOC</a></h2>
+<p><strong>Duration</strong>: 31 hours<br />
+<strong>Dates</strong>: 04/10/2024 - 14/01/2025<br />
+<strong>Content</strong>: Learn about legacy and actual architectures service oriented for software engineering.</p>
+
 <h2 id="-5g-technologies"><a href="./5g-technologies.html">📶 5G Technologies</a></h2>
+<p><strong>Duration</strong>: 7.5 hours<br />
+<strong>Dates</strong>: 30/09/2024 - 21/11/2024<br />
+<strong>Content</strong>: Learn about 5G and more generally topics related to cellular networks.</p>
+
 <h2 id="-protocole-objet-connecté-wsnl"><a href="./WSNL.html">🔗 Protocole Objet Connecté (WSNL)</a></h2>
+<p><strong>Duration</strong>: 33.25 hours<br />
+<strong>Dates</strong>: 07/10/2024 - 20/12/2024<br />
+<strong>Content</strong>: Learn about wireless sensor networks technologies.</p>
+
 <h2 id="-middleware-for-iot"><a href="./middleware-iot.html">📡 Middleware for IoT</a></h2>
+<p><strong>Duration</strong>: 14.75 hours<br />
+<strong>Dates</strong>: 15/11/2024 - 20/12/2024<br />
+<strong>Content</strong>: Discover communication protocols for IoT.</p>
+
 <h2 id="-emerging-network"><a href="./emerging-network.html">🌐 Emerging Network</a></h2>
+<p><strong>Duration</strong>: 10.5 hours<br />
+<strong>Dates</strong>: 08/01/2025 - 24/01/2025<br />
+<strong>Content</strong>: Discovery of emerging network paradigms.</p>
+
 <h2 id="-low-power-wireless-personal-area-network"><a href="./low-power-wireless.html">📡 Low Power Wireless Personal Area Network</a></h2>
+<p><strong>Duration</strong>: 7.5 hours<br />
+<strong>Dates</strong>: 04/12/2024 - 07/01/2025<br />
+<strong>Content</strong>: Definition of a TCP/IP protocol stack for a LP-WPAN network.</p>
+
 <h2 id="-sécurity-connected-object"><a href="./security-object.html">🔒 Sécurity Connected Object</a></h2>
+<p><strong>Duration</strong>: 13 hours<br />
+<strong>Dates</strong>: 15/10/2024 - 22/01/2025<br />
+<strong>Content</strong>: Discussion about the need and how to secure protocols for IoT.</p>
+
 <h2 id="-embedded-ia-for-iot"><a href="./embedded-ia-iot.html">🧠 Embedded IA for IOT</a></h2>
+<p><strong>Duration</strong>: 15.75 hours<br />
+<strong>Dates</strong>: 04/12/2024 - 24/01/2025<br />
+<strong>Content</strong>: Introduction to the concepts of AI applied to an IoT context.</p>
+
 <h2 id="-aime---sensors"><a href="./aime.html">🤖 AIME - Sensors</a></h2>
+<p><strong>Duration</strong>: 13.75 hours<br />
+<strong>Dates</strong>: 04/11/2024 - 08/11/2024<br />
+<strong>Content</strong>: Discover the creation of a sensor.</p>
+
 <h2 id="-microcontroller-open-source-hardware-and-sensors"><a href="./microcontroleur_hardware.html">🔌 Microcontroller Open Source Hardware and Sensors</a></h2>
+<p><strong>Duration</strong>: 39 hours<br />
+<strong>Dates</strong>: 28/11/2024 - 18/12/2024<br />
+<strong>Content</strong>: Introduction to microcontrollers programming and implementation of our sensor in a complex circuit.</p>
+
 <h2 id="-innovative-project-water-leak-detection"><a href="./innovative-project.html">💧 Innovative Project: Water Leak Detection</a></h2>
-<h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<p><strong>Duration</strong>: 76.75 hours<br />
+<strong>Dates</strong>: 30/09/2024 - 29/01/2025<br />
+<strong>Content</strong>: The guideline industrial project of our year.</p>
+
+<h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>
+<p><strong>Duration</strong>: 370.5 hours<br />
+<strong>Dates</strong>: 07/11/2024 - 29/01/2025<br />
+<strong>Content</strong>: Comprehensive study of embedded networks and connected objects.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024-2025]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
 <strong>Address</strong> : Rue du libre-échange, 31500 Toulouse, France<br />
@@ -529,18 +584,16 @@ p {
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The course “5G Technologies” is taught by Etienne Sicard. The main objective of this course is to explore various contemporary topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
+<p>The course “5G Technologies” is taught by Etienne Sicard. The main objective of this course is to explore various topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
 <h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
 
-<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
-
-<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
 <p>In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
@@ -615,7 +668,7 @@ p {
 
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
 <ul>
-  <li><strong>Acquired Skills</strong>: Mastered the 5G architecture with its microservices. However, more focus on 5G hardware and SDR would be beneficial.</li>
+  <li><strong>Acquired Skills</strong>: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.</li>
   <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.</li>
 </ul>
 
@@ -677,19 +730,15 @@ p {
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The course “Wireless Sensor Networks and Localization” (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. The second segment employs reverse pedagogy, where each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.</p>
+<p>The course “Wireless Sensor Networks and Localization” (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. In the second each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-presentation-of-experiences-linked-to-the-training">B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING</h3>
-
-<h3 id="bii-experience-details">B.II. EXPERIENCE DETAILS</h3>
-
-<h4 id="bii1-environment-and-context">B.II.1. Environment and Context</h4>
+<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
 <p>After the theoretical part, we had another individual presentation on different kinds of MAC layers for WSN. The final part of the course was a project where we had to define and implement a protocol for given specifications from the physical to the MAC layer. I worked on this project with Bapthiste Henriet, Brian Biendou, Marie Brunetto, Samia Boukouiss, Yann Jobard and Timothé Bigot.</p>
 
-<h4 id="bii2-your-function">B.II.2. Your Function</h4>
-<p>In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python with a ZMQ library (similar to MQTT) for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.</p>
+<h4 id="bi2-your-function">B.I.2. Your Function</h4>
+<p>In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
@@ -949,14 +998,12 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Lab at AIME]]></summary></entry><entry><title type="html">Cloud Edge</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="course-cloud-and-edge-computing">Course: Cloud and Edge Computing</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Lab at AIME]]></summary></entry><entry><title type="html">Cloud Edge Computing</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Computing" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="cloud-edge-computing">Cloud Edge Computing</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The Cloud and Edge Computing course provides a comprehensive understanding of hybrid architectures that optimize data processing and resource utilization. It bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges.</p>
-
-<p>Taught by  Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
+<p>The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
 
 <p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. Students gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.</p>
 
@@ -976,147 +1023,81 @@ p {
 
 <p>The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
 
-<p>The course included:</p>
-
-<ul>
-  <li><strong>Theoretical Classes</strong>: Focused on cloud architecture, virtualization methods, and deployment models.</li>
-  <li><strong>Practical Labs</strong>: Hands-on sessions using tools like OpenStack for infrastructure development and edge computing implementations.</li>
-</ul>
-
 <h4 id="bii2-your-function">B.II.2. Your Function</h4>
 
-<p>Role in Labs and Projects:</p>
-
+<p>In this course, I was responsible for:</p>
 <ul>
-  <li>Designed and implemented virtualized environments using OpenStack.</li>
-  <li>Developed an edge computing solution leveraging proximity-based data processing to minimize latency.</li>
-  <li>Created and managed virtual machines (VMs) to simulate real-world cloud scenarios.</li>
-  <li>Addressed the challenges of infrastructure deployment through Python-based automation.</li>
+  <li>Learning and practicing virtualization techniques such as VMs and containers.</li>
+  <li>Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.</li>
+  <li>Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.</li>
 </ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
 <h3 id="ci1-presentation">C.I.1 Presentation</h3>
 
-<p>During our labs, I had the opportunity to use OpenStack, an open-source software that creates and manages different virtual machines (VMs). One of the projects required me to implement an infrastructure with a calculator service accessible from the public internet and four VMs on a private network performing arithmetic operations (addition, multiplication, subtraction, and division). The main calculator service had to call the sub-services to get the results. This project was particularly interesting as it introduced me to both cloud infrastructure and microservices architecture.</p>
-
 <h4 id="context">Context</h4>
-<ul>
-  <li><strong>Field of Responsibilities</strong>: Implementing a cloud infrastructure using OpenStack.</li>
-  <li><strong>Objectives</strong>: Create a calculator service with public access and four VMs on a private network for arithmetic operations.</li>
-  <li><strong>Resources and Constraints</strong>: Limited documentation on the OpenStack Python client, time constraints, and the need to ensure secure and efficient communication between services.</li>
-  <li><strong>Duration and Dates</strong>: The project spanned over two weeks during the lab sessions.</li>
-</ul>
+<p>This section explores the technical aspects of the Cloud Edge Computing course, focusing on the problem analysis, solution design, and implementation of hybrid architectures.</p>
 
 <h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
-<p>The solution involved setting up an OpenStack environment with one public-facing VM for the calculator service and four private VMs for the arithmetic operations. Each VM was configured to handle specific arithmetic tasks and communicate with the main calculator service.</p>
+<p>We aimed to design, deploy, and manage hybrid architectures that combine the low-latency benefits of edge computing with the scalability of cloud environments.</p>
 
 <h4 id="how">How</h4>
 <ol>
-  <li><strong>Setup OpenStack Environment</strong>: Installed and configured OpenStack on the host machine.</li>
-  <li><strong>Create VMs</strong>: Created one public VM and four private VMs using the OpenStack dashboard.</li>
-  <li><strong>Configure Networking</strong>: Set up networking to allow the public VM to communicate with the private VMs.</li>
-  <li><strong>Deploy Services</strong>: Deployed the calculator service on the public VM and the arithmetic services on the private VMs.</li>
+  <li><strong>Problem Analysis</strong>:
+    <ul>
+      <li>Conducted a thorough analysis of the requirements for scalable, efficient, and low-latency services.</li>
+    </ul>
+  </li>
+  <li><strong>Solution Design</strong>:
+    <ul>
+      <li>Designed hybrid architectures that leverage both cloud and edge computing.</li>
+    </ul>
+  </li>
+  <li><strong>Implementation</strong>:
+    <ul>
+      <li>Deployed and managed these architectures using tools like Kubernetes, Docker, AWS, and Azure.</li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="why">Why</h4>
-<p>The chosen solution provided a scalable and efficient way to manage the calculator service and its sub-services. Using OpenStack allowed me to leverage cloud infrastructure capabilities, and the microservices architecture ensured modularity and ease of maintenance.</p>
+<p>To gain practical experience in designing and managing hybrid architectures that meet the demands of modern computing environments. This knowledge is crucial for developing efficient and scalable solutions in fields such as IoT, real-time systems, and 5G networks.</p>
 
 <h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
-
-<p>To solve this problem, I had to mobilize and develop several new skills:</p>
 <ul>
-  <li><strong>Cloud Infrastructure</strong>: Gained hands-on experience with OpenStack, understanding its components and functionalities.</li>
-  <li><strong>Networking</strong>: Learned how to configure networking in a cloud environment to enable secure communication between VMs.</li>
-  <li><strong>Microservices Architecture</strong>: Understood the principles of microservices and how to implement them in a cloud environment.</li>
-  <li><strong>REST APIs</strong>: Developed skills in creating and consuming REST APIs for inter-service communication.</li>
+  <li>Understanding virtualization technologies and their role in modern cloud infrastructures.</li>
+  <li>Designing and managing hybrid architectures that combine cloud and edge computing.</li>
+  <li>Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.</li>
+  <li>Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.</li>
 </ul>
 
-<p>These skills were acquired through a combination of reading documentation, attending lectures, and collaborating with peers during lab sessions.</p>
-
 <h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
-
-<p>This experience taught me valuable lessons in cloud infrastructure and microservices architecture. I learned the importance of thorough documentation and the challenges of working with open-source software. With hindsight, I realize that additional training in Kubernetes would have been beneficial, as it is a critical technology for container orchestration in cloud environments.</p>
-
-<p>Overall, the project was a great learning experience that provided practical insights into cloud computing and the implementation of microservices.</p>
+<p>The course provided a thorough understanding of the design, deployment, and management of hybrid architectures that combine cloud and edge computing. The combination of theoretical classes and practical projects was particularly beneficial in illustrating the concepts. The emphasis on ethical and sustainable innovation helped in developing a holistic approach to modern computing challenges.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-
-<p>I have presented the significant experiences related to the training. I also presented several problem situations where I explained the acquired knowledge and the skills mobilized to solve these problems. In this last part, it is for me to make an exhaustive analysis of all the knowledge and skills acquired during these different experiences.</p>
-
-<p>In the table below, for each activity, I specify my level of execution corresponding to the appropriate figure using the following criteria:</p>
-
 <ul>
-  <li><strong>AP</strong> - level of application: follow-up of instructions or procedures</li>
-  <li><strong>AN</strong> - level of analysis: improvement or optimization of solutions or proposals</li>
-  <li><strong>M</strong> - level of proficiency: program design or specification definitions</li>
-  <li><strong>EX</strong> - level of expertise: definition of orientations or strategies</li>
+  <li><strong>Theoretical Knowledge</strong>: Gained insights into virtualization technologies, cloud services, and edge infrastructures.</li>
+  <li><strong>Operational Skills</strong>: Developed skills in designing, deploying, and managing hybrid architectures.</li>
+  <li><strong>Analytical Skills</strong>: Learned to assess the feasibility and effectiveness of hybrid architectures in various fields.</li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Activities</th>
-      <th>Acquired experience in terms of</th>
-      <th>Modes</th>
-      <th>Level (AP to EX)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Understanding Cloud Computing concepts and architectures</td>
-      <td>Theoretical, technological knowledge</td>
-      <td>AN</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td>Using IaaS services and deploying platforms with OpenStack</td>
-      <td>Operational know-how</td>
-      <td>AP</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td>Designing autonomic microservices systems for efficient resource allocation</td>
-      <td>Theoretical, technological knowledge</td>
-      <td>AN</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td>Comprehending the interplay between Cloud and Edge solutions in IoT ecosystems</td>
-      <td>Theoretical, technological knowledge</td>
-      <td>AN</td>
-      <td>M</td>
-    </tr>
-  </tbody>
-</table>
-
 <h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-
 <ul>
-  <li><strong>Summary of Skills</strong>: The course provided a solid foundation in cloud computing principles, including the design and deployment of cloud infrastructures. Practical labs with OpenStack allowed me to gain hands-on experience in creating and managing virtual machines, as well as understanding microservices architecture. The final lab on edge computing highlighted the importance of reducing latency and enhancing real-time services, particularly in 5G networks.</li>
-  <li><strong>Skills to Improve</strong>: While the course was comprehensive, it lacked sufficient training in Kubernetes, a critical technology for container orchestration. Enhanced exposure to Kubernetes would bridge this gap and better prepare me for real-world cloud environments.</li>
+  <li><strong>Acquired Skills</strong>: Developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, more focus on advanced topics would be beneficial.</li>
+  <li><strong>Skills to Develop</strong>: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices for cloud and edge computing.</li>
 </ul>
 
 <h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
 
-<p>The Cloud and Edge Computing course has been instrumental in my professional growth, offering both theoretical knowledge and practical tools relevant to modern cloud engineering. Working with OpenStack provided valuable insight into open-source technologies, aligning with engineering values of collaboration and innovation.</p>
-
 <h4 id="highlights">Highlights</h4>
-
-<ul>
-  <li><strong>Microservices and Edge Computing</strong>: The emphasis on microservices and edge computing highlighted their transformative role in IoT and real-time applications.</li>
-  <li><strong>Virtualization Techniques</strong>: The introduction to virtualization techniques and their applications in cloud infrastructures was particularly valuable.</li>
-</ul>
+<p>The course was highly relevant to my professional career, providing practical experience in designing and managing hybrid architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
 
 <h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
-
-<ul>
-  <li><strong>Additional Elements</strong>: The course was a great introduction to virtualization and cloud computing, providing hands-on experience with open-source technologies. However, to fully prepare students for the industry, it is essential to include comprehensive training on Kubernetes. Additionally, more emphasis on practical applications in the field of IoT would enhance the relevance of the course content.</li>
-</ul>
 
 <h2 id="project-report">Project Report</h2>
 
@@ -1166,4 +1147,4 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Cloud and Edge Computing]]></summary></entry></feed>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud Edge Computing]]></summary></entry></feed>

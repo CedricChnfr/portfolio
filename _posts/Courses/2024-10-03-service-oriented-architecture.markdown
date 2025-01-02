@@ -14,14 +14,12 @@ The "Service Oriented Architecture" course, taught by Nawal Guermouche, aims to 
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
+### B.I. EXPERIENCE DETAILS
 
-### B.II. EXPERIENCE DETAILS
-
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 The practical part of this course is divided into two segments. The first segment introduces three different architectures: SOAP, REST, and microservices. The second segment involves a project that delves deeper into the most recent type of software architecture, microservices.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 During the practical sessions, I engaged in hands-on activities that involved implementing and configuring these architectures. The project work required collaboration and problem-solving to design and deploy a microservice architecture.
 
 ## PART C: TECHNICAL PART
@@ -75,7 +73,7 @@ The course provided a thorough understanding of service-oriented architectures. 
 - **Analytical Skills**: Learned to assess the suitability of different architectures based on project requirements.
 
 ### D.II. Self Evaluation
-- **Acquired Skills**: Mastered the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.
+- **Acquired Skills**: Mastered the design, implementation, and deployment of service-oriented architectures.
 - **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.
 
 ### D.III. Balance Sheet

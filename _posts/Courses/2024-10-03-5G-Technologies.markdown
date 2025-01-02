@@ -10,18 +10,16 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The course "5G Technologies" is taught by Etienne Sicard. The main objective of this course is to explore various contemporary topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
+The course "5G Technologies" is taught by Etienne Sicard. The main objective of this course is to explore various topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
 
 ## PART B: DESCRIPTIVE PART
 
 ### B.I. PRESENTATION OF EXPERIENCES LINKED TO THE TRAINING
 
-### B.II. EXPERIENCE DETAILS
-
-#### B.II.1. Environment and Context
+#### B.I.1. Environment and Context
 During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
 
-#### B.II.2. Your Function
+#### B.I.2. Your Function
 In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.
 
 ## PART C: TECHNICAL PART
@@ -74,7 +72,7 @@ The course provided a thorough understanding of 6G technologies. The reverse ped
 - **Development Phases**: Understood the major development phases for mobile communications and the development of the associated technology.
 
 ### D.II. Self Evaluation
-- **Acquired Skills**: Mastered the 5G architecture with its microservices. However, more focus on 5G hardware and SDR would be beneficial.
+- **Acquired Skills**: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.
 - **Skills to Develop**: Need to deepen knowledge in continuous integration and continuous deployment (CI/CD) practices.
 
 ### D.III. Balance Sheet
