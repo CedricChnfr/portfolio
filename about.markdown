@@ -26,7 +26,7 @@ During my apprenticeship at Vitesco Technologies, I had the opportunity to work 
 
 - **Development of generic embedded solutions for ECU reprogramming**: I participated in the design and implementation of solutions for reprogramming electronic control units (ECUs), which are essential for the proper functioning of embedded systems.
 
-- **Code testing and debugging**: I performed rigorous tests and debugged the code to ensure the proper functioning of the systems and resolve the problems encountered. This step is crucial to ensure the reliability and performance of the developed solutions.
+- **Code testing and debugging**: I performed rigorous tests and debugged the code to ensure the proper functioning of the systems and resolve the problems encountered. This step is necessary to ensure the reliability and performance of the developed solutions.
 
 - **Creation of automated test environments**: I created environments to automate and optimize tests using Python and Jenkins scripts. This automation has increased efficiency and reduced human errors.
 
@@ -42,7 +42,7 @@ I had the opportunity to do an internship abroad at Vitesco Technologies in Iaș
 
 - **Study and implementation of solutions for Flash memory management on a new microcontroller**: I participated in the analysis and implementation of solutions to optimize Flash memory management, essential for the proper functioning of embedded systems.
 
-- **Testing and validation of Flash features**: I performed rigorous tests and validated Flash memory features to ensure the reliability and performance of the new platform. This step is crucial to ensure the quality and robustness of the developed systems.
+- **Testing and validation of Flash features**: I performed rigorous tests and validated Flash memory features to ensure the reliability and performance of the new platform. This step is to ensure the quality and robustness of the developed systems.
 
 This internship abroad allowed me to develop advanced technical skills and adapt to an international work environment, thus enriching my professional career.
 
@@ -89,10 +89,10 @@ I am also considering going abroad to the United States to gain unique experienc
 
 # Conclusion
 
-My journey at INSA Toulouse has been a key stepping stone in fulfilling my passion for electronics and smart systems. The ISS specialization in my final year is a crucial step toward gaining advanced skills, and pursuing a Master's in cybersecurity (TLS-SEC) is the logical culmination of my professional goals. I am eager to continue learning and contributing to innovative projects in the fields of embedded systems and cybersecurity.
+My journey at INSA Toulouse has been a key stepping stone in fulfilling my passion for electronics and smart systems. The ISS specialization in my final year is an important step toward gaining advanced skills, and pursuing a Master's in cybersecurity (TLS-SEC) is the logical culmination of my professional goals. I am eager to continue learning and contributing to innovative projects in the fields of embedded systems and cybersecurity.
 
 
-# Summary of my year in ISS
+#### Summary of my year in ISS
 
 During my year in the ISS specialization, I learned a lot of new concepts that are useful for my professional aspirations of becoming an engineer. While many of the courses were designed to be accessible to everyone, I found that I had already covered most of the content related to computer science or networking. The ISS specialization provided me with a broader understanding of the creation of sensors and the concept of IoT in general.
 
