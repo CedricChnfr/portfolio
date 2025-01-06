@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: Cédric Chanfreau
+linkedin_username: cedricchanfreau
 github_username:  CedricChnfr
 
 # Build settings
