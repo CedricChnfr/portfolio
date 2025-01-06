@@ -73,6 +73,6 @@ categories: jekyll update
 **Content**: The guideline industrial project of our year.
 
 ## [🎓 Master REOC](./master-reoc.html)
-**Duration**: 37.5 hours  
+**Duration**: 60 hours  
 **Dates**: 07/11/2024 - 29/01/2025  
 **Content**: Comprehensive study of embedded networks and connected objects.
