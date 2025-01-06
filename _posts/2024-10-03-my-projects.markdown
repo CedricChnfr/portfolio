@@ -23,6 +23,3 @@ categories: jekyll update
 
 ## [🌐 C and Network Project INSA](./network-project-C.html)
 ## [⚙️ Control Systems Project INSA](./control-system-project.html)
-
----
-# 2021
