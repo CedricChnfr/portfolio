@@ -101,4 +101,7 @@ I am a highly motivated recent graduate with a master's degree in Automation and
         background-color: #3399FF;
         transform: scale(1.05);
     }
+    p {
+    text-align: justify;
+    }
 </style>
