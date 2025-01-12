@@ -1,0 +1,125 @@
+---
+layout: default
+title:  "English"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# English
+
+## PART A: GENERALITIES
+
+### Presentation
+The English course was designed to enhance our communication skills, particularly in a professional and technical context. The course included sessions focused on preparing and delivering presentations, as well as writing reports in English. Additionally, we had sessions dedicated to preparing for the TOEIC exam, which is a requirement for obtaining the engineering diploma.
+
+## PART B: DESCRIPTIVE PART
+
+### B.I. EXPERIENCE DETAILS
+
+#### B.I.1. Environment and Context
+The English course provided a comprehensive approach to improving our English language skills. We had sessions dedicated to working on presentations for our innovative project "What a Leak" and writing the corresponding report. These sessions were crucial for developing our ability to present and debate technical choices in English and produce detailed reports for our projects.
+
+#### B.I.2. Your Function
+In this course, I was responsible for:
+- Presenting and debating the technical choices made for the "What a Leak" project in English.
+- Producing a detailed report in English for the developed project.
+- Preparing for the TOEIC exam through dedicated sessions.
+
+## PART C: TECHNICAL PART
+
+### C.I.1 Presentation
+
+#### Context
+This section explores the technical aspects of the English course, focusing on the preparation and delivery of presentations, report writing, and TOEIC exam preparation.
+
+### C.I.2 Resolution of Problem
+
+#### What
+We aimed to improve our English communication skills, particularly in presenting technical projects and writing detailed reports. Additionally, we prepared for the TOEIC exam to meet the requirements for obtaining the engineering diploma.
+
+#### How
+1. **Presentation and Debate**:
+   - Worked on presenting and debating the technical choices made for the "What a Leak" project.
+2. **Report Writing**:
+   - Produced a detailed report in English for the developed project.
+3. **TOEIC Preparation**:
+   - Attended sessions focused on preparing for the TOEIC exam, which included practice tests and strategies for improving our scores.
+
+#### Why
+To enhance our English communication skills, which are essential for professional and technical contexts. Additionally, passing the TOEIC exam with a good score is a requirement for obtaining the engineering diploma.
+
+### C.I.3 The Knowledge and Skills Mobilized
+- Presenting and debating technical choices in English.
+- Producing detailed reports in English for technical projects.
+- Preparing for and successfully passing the TOEIC exam.
+
+### C.I.4 Summary and Review
+The course provided a thorough understanding of how to effectively communicate in English in a professional and technical context. The combination of presentation practice, report writing, and TOEIC preparation was particularly beneficial in enhancing our language skills. The course was instrumental in helping me achieve a TOEIC score of 890, which is well above the required 815 for the engineering diploma.
+
+## PART D: ANALYTICAL PART
+
+### D.I. Analysis of Skills
+- **Theoretical Knowledge**: Gained insights into effective communication strategies in English.
+- **Operational Skills**: Developed skills in presenting and debating technical projects, and writing detailed reports in English.
+- **Analytical Skills**: Learned to assess and improve my English language proficiency through TOEIC preparation.
+
+### D.II. Self Evaluation
+- **Acquired Skills**: Developed a solid understanding of how to communicate effectively in English in a professional and technical context. Successfully passed the TOEIC exam with a score of 890.
+- **Skills to Develop**: Need to continue practicing English communication skills to maintain and further improve proficiency.
+
+### D.III. Balance Sheet
+
+#### Highlights
+The course was highly relevant to my professional career, providing practical experience in presenting and debating technical projects, and writing detailed reports in English. The TOEIC preparation sessions were particularly valuable in helping me achieve a high score on the exam.
+
+### D.IV. Complementary Elements
+
+#### TOEIC Results
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/TOEIC.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/TOEIC.pdf" target="_blank">Download Complete Report</a>
+</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+    p {
+    text-align: justify;
+    }
+</style>

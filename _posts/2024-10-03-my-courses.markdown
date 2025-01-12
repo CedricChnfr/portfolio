@@ -7,6 +7,11 @@ categories: jekyll update
 
 # 2024-2025
 
+## [📁 Portfolio](./portfolio.html)
+**Duration**: Ongoing  
+**Dates**: 01/10/2024 - 30/01/2025  
+**Content**: Compilation of projects and assignments completed throughout the course.
+
 ## [☁️ Cloud Edge Computing](./cloud-edge.html)
 **Duration**: 16.25 hours  
 **Dates**: 30/09/2024 - 14/10/2024  
@@ -66,6 +71,11 @@ categories: jekyll update
 **Duration**: 39 hours  
 **Dates**: 28/11/2024 - 18/12/2024  
 **Content**: Introduction to microcontrollers programming and implementation of our sensor in a complex circuit.
+
+## [🇬🇧 English](./english.html)
+**Duration**: 30 hours  
+**Dates**: 01/10/2024 - 30/01/2025  
+**Content**: Improve English language skills with a focus on technical and professional communication.
 
 ## [💧 Innovative Project: Water Leak Detection](./innovative-project.html)
 **Duration**: 76.75 hours  
