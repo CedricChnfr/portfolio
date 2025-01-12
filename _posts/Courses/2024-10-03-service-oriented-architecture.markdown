@@ -5,30 +5,36 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Service Oriented Architecture
+# Service Oriented Architecture
 
 ## PART A: GENERALITIES
 
 ### Presentation
-The "Service Oriented Architecture" course, taught by Nawal Guermouche, aims to explore legacy and modern architectures for software engineering. The theoretical part is delivered through a MOOC (Massive Open Online Course) with various videos on different topics. This course is particularly interesting for students with a computer science background as it covers different standard architectures that are likely to be encountered in the field.
+The Service Oriented Architecture (SOA) course was a deep dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures, focusing on how to create scalable, maintainable, and efficient systems.
 
 ## PART B: DESCRIPTIVE PART
 
-### B.I. EXPERIENCE DETAILS
+### Experience Details
 
-#### B.I.1. Environment and Context
-The practical part of this course is divided into two segments. The first segment introduces three different architectures: SOAP, REST, and microservices. The second segment involves a project that delves deeper into the most recent type of software architecture, microservices.
-#### B.I.2. Your Function
-During the practical sessions, I engaged in hands-on activities that involved implementing and configuring these architectures. The project work required collaboration and problem-solving to design and deploy a microservice architecture.
+#### Environment and Context
+
+During this course, I explored both theoretical and practical aspects of SOA. The increasing demand for scalable and maintainable systems in the industry highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was incredibly beneficial.
+
+#### My Function
+
+In this course, I was responsible for:
+- Understanding the principles of service-oriented architectures.
+- Designing and implementing service-oriented systems.
+- Conducting experiments to test the efficiency and scalability of various service architectures.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This lab report explores the implementation and configuration of different service-oriented architectures, focusing on SOAP, REST, and microservices. The goal is to understand their functionalities, advantages, and limitations.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We explored three main architectures:
@@ -54,34 +60,30 @@ We explored three main architectures:
 #### Why
 To gain a comprehensive understanding of different service-oriented architectures and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable software systems.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### Knowledge and Skills Mobilized
 - Understanding of service-oriented architecture concepts and features.
 - Development of distributed architectures using web services.
 - Deployment and configuration of SOA using SOAP and REST.
 - Design, development, and deployment of microservice architectures.
 - Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of service-oriented architectures. The practical sessions were particularly beneficial in illustrating the concepts. However, the focus on legacy architectures like SOAP could be reduced in favor of more emphasis on modern architectures like REST and microservices.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into different service-oriented architectures and their applications.
-- **Operational Skills**: Developed skills in implementing and configuring SOAP, REST, and microservice architectures.
-- **Analytical Skills**: Learned to assess the suitability of different architectures based on project requirements.
+### Analysis of Skills
+Through this course, I gained insights into service-oriented architectures. I developed skills in designing and implementing service-oriented systems and learned to assess their efficiency and scalability through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Mastered the design, implementation, and deployment of service-oriented architectures.
-- **Skills to Develop**: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.
+### Self Evaluation
+I developed a solid understanding of service-oriented architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in understanding the complexity of web applications and their practical applications in the real world.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The course was highly relevant to my professional career, providing practical experience in modern software architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in designing and managing service-oriented systems. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
-To further enhance the learning experience, integrating more interactive approaches and focusing on modern architectures would be beneficial.
+### Complementary Elements
 
 
 ## Project Report

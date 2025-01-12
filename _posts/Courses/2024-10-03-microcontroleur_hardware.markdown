@@ -5,7 +5,7 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Microcontroller Open Source Hardware and Sensors
+# Microcontroller and Open-Source Hardware
 
 ## PART A: GENERALITIES
 
@@ -14,23 +14,22 @@ After the week of labs at AIME to create a gas sensor, we had another course wit
 
 ## PART B: DESCRIPTIVE PART
 
+### Experience Details
 
-### B.I. EXPERIENCE DETAILS
+#### Environment and Context
+During this course, I had the opportunity to work on both theoretical and practical aspects of microcontroller technology. The relevance of microcontrollers in modern technology, especially in IoT applications, was evident throughout the course. The hands-on sessions were particularly beneficial, allowing me to apply the concepts learned in class to real-world scenarios.
 
-#### B.I.1. Environment and Context
-The course focused on integrating the gas sensor created at AIME into a larger system using microcontrollers. We aimed to connect the sensor to a LoRa network and visualize the data on a dashboard. This involved both hardware and software components, including the creation of a PCB and circuit for the sensor, programming the microcontroller, and developing applications for data visualization.
-
-#### B.I.2. Your Function
-As I come from a network and computer science background, I focused on the high-level aspects of the course, such as creating the application and programming the microcontroller. I did not delve deeply into the hardware part, which involved creating a PCB and circuit for the integration of the gas sensor.
+#### My Function
+As I come from a electronic and computer science background, I focused on the high-level aspects of the course, such as creating the application and programming the microcontroller. I did not delve deeply into the hardware part, which involved creating a PCB and circuit for the integration of the gas sensor.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of integrating the gas sensor with a microcontroller and developing applications for data collection and visualization.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We connected an Arduino to the LoRa network using an RN2483 chip, programmed the Arduino to read data from the gas sensor, and developed applications to visualize the data using Node-RED and MQTT. Additionally, we created a mobile application using MIT App Inventor to control the system and view sensor data in real-time.
@@ -52,7 +51,7 @@ We connected an Arduino to the LoRa network using an RN2483 chip, programmed the
 #### Why
 To gain a comprehensive understanding of integrating sensors with microcontrollers and developing IoT applications. This knowledge is crucial for designing and implementing smart devices that can collect, process, and visualize data efficiently.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### The Knowledge and Skills Mobilized
 - Understanding microcontroller architecture and how to use them.
 - Designing data acquisition systems (sensor, conditioner, microcontroller) with respect to the application.
 - Designing the electronic circuit of a sensor’s signal conditioner (design + simulation).
@@ -61,26 +60,23 @@ To gain a comprehensive understanding of integrating sensors with microcontrolle
 - Understanding basic notions of sensors, data acquisition: physics, electronics, and metrology point of view.
 - Designing the datasheet of the sensor manufactured.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of integrating sensors with microcontrollers and developing IoT applications. It was a good introduction to these concepts, especially for someone without a strong background in electronics or physics. However, the condensed schedule of the labs made it challenging to fully grasp all the concepts.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into microcontroller architecture and sensor integration.
-- **Operational Skills**: Developed skills in programming microcontrollers and designing data acquisition systems.
-- **Analytical Skills**: Learned to assess the suitability of different integration techniques for IoT applications.
+### Analysis of Skills
+Through this course, I gained insights into the principles and applications of microcontroller technologies. I developed skills in designing and integrating microcontroller-based systems and learned to assess their functionality and efficiency through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Developed a basic understanding of the concepts and processes involved in integrating sensors with microcontrollers and developing IoT applications. However, more focus on practical applications would be beneficial.
-- **Skills to Develop**: Need to enhance proficiency in advanced data visualization techniques for IoT applications.
+### Self Evaluation
+I developed a solid understanding of microcontroller technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced microcontroller programming techniques and their practical applications.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The course was highly relevant to my professional career, providing practical experience in integrating sensors with microcontrollers and developing IoT applications. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in designing and managing microcontroller-based systems. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
+### Complementary Elements
 
 #### Project Report
 You can find the complete project report on [GitHub_Microcontroller_Project](https://github.com/Cyril-vsr/Capteur_Gaz).

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-12T01:03:29+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-12T02:03:31+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -233,7 +233,7 @@ Knowledge and understanding of the architecture of a microprocessor are also use
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Innovative Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/innovative-project.html" rel="alternate" type="text/html" title="Innovative Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/innovative-project</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/innovative-project.html"><![CDATA[<h2 id="course-innovative-project">Course: Innovative Project</h2>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Innovative Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/innovative-project.html" rel="alternate" type="text/html" title="Innovative Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/innovative-project</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/innovative-project.html"><![CDATA[<h1 id="innovative-project">Innovative Project</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
@@ -242,9 +242,9 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
+<h3 id="experience-details">Experience Details</h3>
 
-<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
+<h4 id="environment-and-context">Environment and Context</h4>
 <p>The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.</p>
 
 <h4 id="bi2-your-function">B.I.2. Your Function</h4>
@@ -257,12 +257,12 @@ p {
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+<h3 id="presentation-1">Presentation</h3>
 
 <h4 id="context">Context</h4>
 <p>This section explores the technical aspects of the innovative project, focusing on the problem analysis, solution design, and prototype implementation.</p>
 
-<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+<h3 id="resolution-of-problem">Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
 <p>We identified a real-life problem related to water leak detection and developed a technological solution to address it. The project involved designing and implementing a prototype to demonstrate the solution’s feasibility.</p>
@@ -296,7 +296,7 @@ p {
 <h4 id="why">Why</h4>
 <p>To gain practical experience in solving real-life problems using technological solutions. This knowledge is crucial for developing innovative and effective solutions in a professional setting.</p>
 
-<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
 <ul>
   <li>Analyzing real-life problems.</li>
   <li>Suggesting technological solutions to problems.</li>
@@ -308,30 +308,23 @@ p {
   <li>Producing comprehensive reports in English for developed projects.</li>
 </ul>
 
-<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<h3 id="summary-and-review">Summary and Review</h3>
 <p>The project provided a thorough understanding of the process of developing innovative solutions to real-life problems. The combination of problem analysis, solution design, and prototype implementation was particularly beneficial in illustrating the concepts. The emphasis on presenting and debating technical choices, as well as producing detailed reports, helped in developing communication and documentation skills.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-<ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into the process of analyzing problems and developing technological solutions.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in designing and implementing prototypes, embedded software, and mobile applications.</li>
-  <li><strong>Analytical Skills</strong>: Learned to assess the feasibility and effectiveness of different solutions.</li>
-</ul>
+<h3 id="analysis-of-skills">Analysis of Skills</h3>
+<p>Through this course, I gained insights into the principles and applications of innovative project development. I developed skills in designing and implementing solutions and learned to assess their functionality and efficiency through experiments.</p>
 
-<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-<ul>
-  <li><strong>Acquired Skills</strong>: Developed a solid understanding of the process of developing innovative solutions to real-life problems. However, more focus on advanced topics would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in advanced machine learning techniques for better data analysis and prediction.</li>
-</ul>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I developed a solid understanding of innovative project development and its applications in various fields. However, I realized that I need to enhance my proficiency in advanced project management techniques and their practical applications.</p>
 
-<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+<h3 id="balance-sheet">Balance Sheet</h3>
 
 <h4 id="highlights">Highlights</h4>
-<p>The project was highly relevant to my professional career, providing practical experience in developing innovative solutions to real-life problems. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<p>The course was highly relevant to my professional career, providing practical experience in developing innovative solutions. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
 
-<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+<h3 id="complementary-elements">Complementary Elements</h3>
 
 <h4 id="project-report">Project Report</h4>
 <p>You can find the complete project report on <a href="https://github.com/what-a-leak">GitHub_Innovative_Project</a>.</p>
@@ -374,7 +367,7 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Innovative Project]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024-2025">2024-2025</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Innovative Project]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024-2025">2024-2025</h1>
 
 <h2 id="-portfolio"><a href="./portfolio.html">📁 Portfolio</a></h2>
 <p><strong>Duration</strong>: Ongoing<br />
@@ -582,28 +575,31 @@ p {
 <h1 id="2022">2022</h1>
 
 <h2 id="-c-and-network-project-insa"><a href="./network-project-C.html">🌐 C and Network Project INSA</a></h2>
-<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html"><![CDATA[<h2 id="course-5g-technologies">Course: 5G Technologies</h2>
+<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/5g-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/5g-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/5g-Technologies.html"><![CDATA[<h1 id="5g-technologies">5G Technologies</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The course “5G Technologies” is taught by Etienne Sicard. The main objective of this course is to explore various topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
+<p>The “5G Technologies” course, taught by Etienne Sicard, was an eye-opening experience. The main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology. The course employed reverse pedagogy, meaning that we, the students, were responsible for delivering much of the content through presentations. This approach was highly engaging and allowed us to dive deep into the rapidly evolving cellular network industry. 5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
-<p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
-<h4 id="bi2-your-function">B.I.2. Your Function</h4>
-<p>In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
+<h3 id="experience-details">Experience Details</h3>
+
+<h4 id="environment-and-context">Environment and Context</h4>
+<p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
+
+<h4 id="my-function">My Function</h4>
+<p>In the practical sessions, I was responsible for preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+<h3 id="presentation-1">Presentation</h3>
 
 <h4 id="context">Context</h4>
 <p>This section explores the technical aspects of 6G technologies, focusing on core technologies, applications, and the challenges in developing 6G. The goal is to understand the functionalities, advantages, and limitations of these technologies.</p>
 
-<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+<h3 id="resolution-of-problem">Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
 <p>We examined core 6G technologies, applications and opportunities, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
@@ -645,38 +641,30 @@ p {
 <h4 id="why">Why</h4>
 <p>To gain a comprehensive understanding of 6G technologies and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable cellular networks.</p>
 
-<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
 <ul>
   <li>Understanding and mastering new mobile network technologies.</li>
   <li>Developing and deploying core 6G technologies.</li>
   <li>Analyzing the impact of 6G on society and various sectors.</li>
 </ul>
 
-<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<h3 id="summary-and-review">Summary and Review</h3>
 <p>The course provided a thorough understanding of 6G technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-<ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into the 5G core architecture, microservices, and network slicing.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring 5G technologies.</li>
-  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different 5G technologies based on network requirements.</li>
-  <li><strong>Impact Understanding</strong>: Understood the impact of new mobile technology on various industries and applications.</li>
-  <li><strong>Development Phases</strong>: Understood the major development phases for mobile communications and the development of the associated technology.</li>
-</ul>
+<h3 id="analysis-of-skills">Analysis of Skills</h3>
+<p>Through this course, I gained insights into the principles and challenges of 5G and 6G technologies. I developed skills in researching, presenting, and discussing technical topics, which are essential for my future career.</p>
 
-<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-<ul>
-  <li><strong>Acquired Skills</strong>: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to enhance understanding of network security and encryption techniques.</li>
-</ul>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I developed a solid understanding of 5G and 6G technologies and their applications. However, I realized that I need to enhance my proficiency in network security and encryption techniques to fully grasp the complexities of these technologies.</p>
 
-<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+<h3 id="balance-sheet">Balance Sheet</h3>
 
 <h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in modern cellular network technologies. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<p>The course was highly relevant to my professional career, providing practical experience in researching and presenting emerging technologies. The collaborative aspect of the course was particularly valuable in reinforcing the theoretical concepts.</p>
 
+<h3 id="complementary-elements">Complementary Elements</h3>
 <h4 id="project-report">Project Report</h4>
 
 <div style="display: flex; justify-content: center;">
@@ -725,28 +713,36 @@ p {
      p {
     text-align: justify;
      }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: 5G Technologies]]></summary></entry><entry><title type="html">WSNL</title><link href="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html" rel="alternate" type="text/html" title="WSNL" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/WSNL</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html"><![CDATA[<h2 id="course-wireless-sensor-networks-and-localization">Course: Wireless Sensor Networks and Localization</h2>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[5G Technologies]]></summary></entry><entry><title type="html">WSNL</title><link href="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html" rel="alternate" type="text/html" title="WSNL" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/WSNL</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/WSNL.html"><![CDATA[<h1 id="wireless-sensor-networks-and-localization">Wireless Sensor Networks and Localization</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The course “Wireless Sensor Networks and Localization” (WSNL) is taught by Daniela Dragomirescu. The objective is to explore various solutions for wireless sensor networks (WSN). The theoretical part of this course is divided into two segments. The first segment introduces telecommunications and defines the specific needs for WSN. In the second each group of students presents an existing WSN technology from the physical layer to the MAC layer. My group, consisting of Léa Beghin, Nathan Brugiere, Maxime Valentin, and myself, presented Zigbee, a WPAN for WSN.</p>
+<p>The “Wireless Sensor Networks and Localization” course was an enlightening experience. Taught by S. Abdellatif, D. Dragomirescu, and E. Sicard, the course covered the principles and applications of wireless sensor networks (WSNs) and localization techniques. The focus was on understanding how WSNs operate, their architecture, and the various localization methods used in different scenarios.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
-<p>After the theoretical part, we had another individual presentation on different kinds of MAC layers for WSN. The final part of the course was a project where we had to define and implement a protocol for given specifications from the physical to the MAC layer. I worked on this project with Bapthiste Henriet, Brian Biendou, Marie Brunetto, Samia Boukouiss, Yann Jobard and Timothé Bigot.</p>
-<h4 id="bi2-your-function">B.I.2. Your Function</h4>
-<p>In the project, I collaborated with my collegues on the implementation of the MAC layer. We used Python for communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.</p>
+<h3 id="experience-details">Experience Details</h3>
+
+<h4 id="environment-and-context">Environment and Context</h4>
+<p>During this course, I delved into the theoretical and practical aspects of WSNs and localization. The increasing importance of WSNs in various fields, such as environmental monitoring, healthcare, and smart cities, highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was incredibly beneficial.</p>
+
+<h4 id="my-function">My Function</h4>
+<p>In this course, I was responsible for:</p>
+<ul>
+  <li>Understanding the principles and architecture of wireless sensor networks.</li>
+  <li>Exploring various localization techniques and their applications.</li>
+  <li>Conducting experiments to test the efficiency and accuracy of different WSN and localization solutions.</li>
+</ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+<h3 id="presentation-1">Presentation</h3>
 
 <h4 id="context">Context</h4>
 <p>This section explores the technical aspects of WSN technologies, focusing on the specifications of existing protocols like Zigbee and Bluetooth, and the implementation of a custom protocol for a medical application.</p>
 
-<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+<h3 id="resolution-of-problem">Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
 <p>We examined the specific needs of WSN protocols, such as low power consumption and efficient MAC layers. We also implemented a custom protocol for a medical application involving a falling sensor and a gas sensor.</p>
@@ -775,7 +771,7 @@ p {
 <h4 id="why">Why</h4>
 <p>To gain a comprehensive understanding of WSN technologies and their applications in real-world scenarios. This knowledge is crucial for designing efficient and reliable WSNs.</p>
 
-<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
 <ul>
   <li>Analyzing and evaluating protocols dedicated to WSN/IoT.</li>
   <li>Suggesting optimal technological solutions for IoT networks.</li>
@@ -783,32 +779,23 @@ p {
   <li>Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver.</li>
 </ul>
 
-<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<h3 id="summary-and-review">Summary and Review</h3>
 <p>The course provided a thorough understanding of WSN technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-<ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into WSN protocols and their specific needs.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in implementing and configuring WSN technologies.</li>
-  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different WSN technologies based on network requirements.</li>
-  <li><strong>Impact Understanding</strong>: Understood the impact of new mobile technology on various industries and applications.</li>
-  <li><strong>Development Phases</strong>: Understood the major development phases for mobile communications and the development of the associated technology.</li>
-</ul>
+<h3 id="analysis-of-skills">Analysis of Skills</h3>
+<p>Through this course, I gained insights into the principles and applications of WSNs and localization techniques. I developed skills in designing and implementing WSN and localization systems and learned to assess their efficiency and accuracy through experiments.</p>
 
-<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-<ul>
-  <li><strong>Acquired Skills</strong>: Mastered the analysis and evaluation of WSN protocols and the optimization of communication protocols for IoT.</li>
-  <li><strong>Skills to Develop</strong>: Need to enhance understanding of advanced cryptographic techniques and their practical applications in IoT security.</li>
-</ul>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I developed a solid understanding of WSNs and localization techniques and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced localization algorithms and their practical applications.</p>
 
-<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+<h3 id="balance-sheet">Balance Sheet</h3>
 
 <h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in modern WSN technologies. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<p>The course was highly relevant to my professional career, providing practical experience in designing and managing WSN and localization systems. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.</p>
 
-<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+<h3 id="complementary-elements">Complementary Elements</h3>
 
 <h4 id="project-report">Project Report</h4>
 
@@ -870,31 +857,31 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Wireless Sensor Networks and Localization]]></summary></entry><entry><title type="html">AIME</title><link href="http://localhost:4000/jekyll/update/2024/10/02/aime.html" rel="alternate" type="text/html" title="AIME" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/aime</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/aime.html"><![CDATA[<h2 id="course-lab-at-aime">Course: Lab at AIME</h2>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Wireless Sensor Networks and Localization]]></summary></entry><entry><title type="html">AIME</title><link href="http://localhost:4000/jekyll/update/2024/10/02/aime.html" rel="alternate" type="text/html" title="AIME" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/aime</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/aime.html"><![CDATA[<h1 id="aime---sensors">AIME - Sensors</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>As ISS focuses on IoT, we use a variety of sensors to make smart devices capable of analyzing their environment and making decisions. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Électronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.</p>
+<p>The “AIME - Sensors” course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
+<h3 id="experience-details">Experience Details</h3>
 
-<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
-<p>The labs at AIME were an introduction to the creation of sensors. We worked on both the chemical solution containing nanoparticles that detect gas and the wafer on which we applied the solution. This process involved dielectrophoresis to place the nanoparticles on the wafer, creating a functional gas sensor.</p>
+<h4 id="environment-and-context">Environment and Context</h4>
+<p>During this course, I had the opportunity to work on both theoretical and practical aspects of sensor technology. The relevance of sensors in modern technology, especially in IoT applications, was evident throughout the course. The hands-on sessions were particularly beneficial, allowing me to apply the concepts learned in class to real-world scenarios.</p>
 
-<h4 id="bi2-your-function">B.I.2. Your Function</h4>
+<h4 id="my-function">My Function</h4>
 <p>During the labs, I participated in the chemical synthesis of the nanoparticles and the assembly of the sensor. This included applying the chemical solution to the wafer and performing dielectrophoresis to position the nanoparticles correctly.</p>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+<h3 id="presentation-1">Presentation</h3>
 
 <h4 id="context">Context</h4>
 <p>This section explores the technical aspects of creating a gas sensor, focusing on the chemical and physical processes involved.</p>
 
-<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+<h3 id="resolution-of-problem">Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
 <p>We created a gas sensor by synthesizing nanoparticles, applying them to a wafer, and using dielectrophoresis to position the nanoparticles.</p>
@@ -921,36 +908,29 @@ p {
 <h4 id="why">Why</h4>
 <p>To gain a comprehensive understanding of the sensor manufacturing process and the underlying chemistry and physics. This knowledge is crucial for designing and implementing IoT devices that rely on accurate environmental sensing.</p>
 
-<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
 <ul>
   <li>Manufacturing a nanoparticle sensor using micro-electronics tools: chemical synthesis, assembly, and testing.</li>
   <li>Understanding the process of dielectrophoresis and its application in sensor creation.</li>
 </ul>
 
-<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<h3 id="summary-and-review">Summary and Review</h3>
 <p>The course provided a thorough understanding of the sensor manufacturing process. The instructions were clear and beginner-friendly, making the labs a good introduction to the world of physics and chemistry.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-<ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into the chemical and physical processes involved in sensor manufacturing.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in synthesizing nanoparticles and assembling sensors.</li>
-  <li><strong>Analytical Skills</strong>: Learned to assess the suitability of different manufacturing techniques for sensor creation.</li>
-</ul>
+<h3 id="analysis-of-skills">Analysis of Skills</h3>
+<p>Through this course, I gained insights into the principles and applications of sensor technologies. I developed skills in designing and integrating sensors and learned to assess their functionality and efficiency through experiments.</p>
 
-<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-<ul>
-  <li><strong>Acquired Skills</strong>: Developed a basic understanding of the concepts and processes involved in sensor manufacturing. However, more focus on practical applications would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in advanced data analysis techniques for sensor data interpretation.</li>
-</ul>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I developed a solid understanding of sensor technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced sensor integration techniques and their practical applications.</p>
 
-<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+<h3 id="balance-sheet">Balance Sheet</h3>
 
 <h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in sensor manufacturing. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<p>The course was highly relevant to my professional career, providing practical experience in designing and managing sensor technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.</p>
 
-<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+<h3 id="complementary-elements">Complementary Elements</h3>
 
 <h4 id="project-link">Project Link</h4>
 
@@ -994,7 +974,7 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Course: Lab at AIME]]></summary></entry><entry><title type="html">Cloud Edge Computing</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Computing" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="cloud-edge-computing">Cloud Edge Computing</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[AIME - Sensors]]></summary></entry><entry><title type="html">Cloud Edge Computing</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Computing" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="cloud-edge-computing">Cloud Edge Computing</h1>
 
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
@@ -1009,15 +989,13 @@ p {
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
-<p>During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions.</p>
+<h3 id="experience-details">Experience Details</h3>
 
-<h3 id="bi-experience-details">B.I. EXPERIENCE DETAILS</h3>
+<h4 id="environment-and-context">Environment and Context</h4>
 
-<h4 id="bi1-environment-and-context">B.I.1. Environment and Context</h4>
+<p>During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
 
-<p>The Cloud and Edge Computing course emphasized the importance of virtualization technologies in modern cloud infrastructures. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
-
-<h4 id="bi2-your-function">B.I.2. Your Function</h4>
+<h4 id="my-function">My Function</h4>
 
 <p>In this course, I was responsible for:</p>
 <ul>
@@ -1028,12 +1006,12 @@ p {
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="ci1-presentation">C.I.1 Presentation</h3>
+<h3 id="presentation-1">Presentation</h3>
 
 <h4 id="context">Context</h4>
 <p>This section explores the technical aspects of the Cloud Edge Computing course, focusing on the problem analysis, solution design, and implementation of hybrid architectures.</p>
 
-<h3 id="ci2-resolution-of-problem">C.I.2 Resolution of Problem</h3>
+<h3 id="resolution-of-problem">Resolution of Problem</h3>
 
 <h4 id="what">What</h4>
 <p>We aimed to design, deploy, and manage hybrid architectures that combine the low-latency benefits of edge computing with the scalability of cloud environments.</p>
@@ -1060,7 +1038,7 @@ p {
 <h4 id="why">Why</h4>
 <p>To gain practical experience in designing and managing hybrid architectures that meet the demands of modern computing environments. This knowledge is crucial for developing efficient and scalable solutions in fields such as IoT, real-time systems, and 5G networks.</p>
 
-<h3 id="ci3-the-knowledge-and-skills-mobilized">C.I.3 The Knowledge and Skills Mobilized</h3>
+<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
 <ul>
   <li>Understanding virtualization technologies and their role in modern cloud infrastructures.</li>
   <li>Designing and managing hybrid architectures that combine cloud and edge computing.</li>
@@ -1068,39 +1046,32 @@ p {
   <li>Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.</li>
 </ul>
 
-<h3 id="ci4-summary-and-review">C.I.4 Summary and Review</h3>
+<h3 id="summary-and-review">Summary and Review</h3>
 <p>The course provided a thorough understanding of the design, deployment, and management of hybrid architectures that combine cloud and edge computing. The combination of theoretical classes and practical projects was particularly beneficial in illustrating the concepts. The emphasis on ethical and sustainable innovation helped in developing a holistic approach to modern computing challenges.</p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="di-analysis-of-skills">D.I. Analysis of Skills</h3>
-<ul>
-  <li><strong>Theoretical Knowledge</strong>: Gained insights into virtualization technologies, cloud services, and edge infrastructures.</li>
-  <li><strong>Operational Skills</strong>: Developed skills in designing, deploying, and managing hybrid architectures.</li>
-  <li><strong>Analytical Skills</strong>: Learned to assess the feasibility and effectiveness of hybrid architectures in various fields.</li>
-</ul>
+<h3 id="analysis-of-skills">Analysis of Skills</h3>
+<p>Through this course, I gained insights into virtualization technologies, cloud services, and edge infrastructures. I developed skills in designing, deploying, and managing hybrid architectures. I also learned to assess the feasibility and effectiveness of hybrid architectures in various fields.</p>
 
-<h3 id="dii-self-evaluation">D.II. Self Evaluation</h3>
-<ul>
-  <li><strong>Acquired Skills</strong>: Developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, more focus on advanced topics would be beneficial.</li>
-  <li><strong>Skills to Develop</strong>: Need to enhance proficiency in implementing security measures and protocols for cloud and edge computing environments.</li>
-</ul>
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing security measures and protocols for cloud and edge computing environments.</p>
 
-<h3 id="diii-balance-sheet">D.III. Balance Sheet</h3>
+<h3 id="balance-sheet">Balance Sheet</h3>
 
 <h4 id="highlights">Highlights</h4>
 <p>The course was highly relevant to my professional career, providing practical experience in designing and managing hybrid architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
 
-<h3 id="div-complementary-elements">D.IV. Complementary Elements</h3>
+<h3 id="complementary-elements">Complementary Elements</h3>
 
-<h2 id="project-report">Project Report</h2>
+<h4 id="project-report">Project Report</h4>
 
 <div style="display: flex; justify-content: center;">
     <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" />
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" target="_blank">Download Complete Report</a>
+    <a href="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf">Download the full report</a>
 </p>
 
 <style>
@@ -1137,8 +1108,5 @@ p {
     .styled-button:hover {
         background-color: #3399FF;
         transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
     }
 </style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud Edge Computing]]></summary></entry></feed>

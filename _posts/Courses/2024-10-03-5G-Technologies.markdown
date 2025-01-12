@@ -5,29 +5,31 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: 5G Technologies
+# 5G Technologies
 
 ## PART A: GENERALITIES
 
 ### Presentation
-The course "5G Technologies" is taught by Etienne Sicard. The main objective of this course is to explore various topics related to cellular networks. The course employs reverse pedagogy, meaning that the content is primarily delivered through student presentations. Given the rapid evolution of the cellular network industry, discussing such a recent and emerging topic was highly engaging. 5G represents a significant shift in cellular networks as it introduces software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
+The "5G Technologies" course, taught by Etienne Sicard, was an eye-opening experience. The main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology. The course employed reverse pedagogy, meaning that we, the students, were responsible for delivering much of the content through presentations. This approach was highly engaging and allowed us to dive deep into the rapidly evolving cellular network industry. 5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
 
 ## PART B: DESCRIPTIVE PART
 
+### Experience Details
 
-#### B.I.1. Environment and Context
-During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss, another student in ISS, on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
-#### B.I.2. Your Function
-In the practical sessions, I engaged in preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.
+#### Environment and Context
+During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
+
+#### My Function
+In the practical sessions, I was responsible for preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of 6G technologies, focusing on core technologies, applications, and the challenges in developing 6G. The goal is to understand the functionalities, advantages, and limitations of these technologies.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We examined core 6G technologies, applications and opportunities, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
@@ -52,32 +54,28 @@ We examined core 6G technologies, applications and opportunities, challenges in 
 #### Why
 To gain a comprehensive understanding of 6G technologies and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable cellular networks.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### Knowledge and Skills Mobilized
 - Understanding and mastering new mobile network technologies.
 - Developing and deploying core 6G technologies.
 - Analyzing the impact of 6G on society and various sectors.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of 6G technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into the 5G core architecture, microservices, and network slicing.
-- **Operational Skills**: Developed skills in implementing and configuring 5G technologies.
-- **Analytical Skills**: Learned to assess the suitability of different 5G technologies based on network requirements.
-- **Impact Understanding**: Understood the impact of new mobile technology on various industries and applications.
-- **Development Phases**: Understood the major development phases for mobile communications and the development of the associated technology.
+### Analysis of Skills
+Through this course, I gained insights into the principles and challenges of 5G and 6G technologies. I developed skills in researching, presenting, and discussing technical topics, which are essential for my future career.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Mastered the 5G architecture. However, more focus on 5G hardware would be beneficial.
-- **Skills to Develop**: Need to enhance understanding of network security and encryption techniques.
+### Self Evaluation
+I developed a solid understanding of 5G and 6G technologies and their applications. However, I realized that I need to enhance my proficiency in network security and encryption techniques to fully grasp the complexities of these technologies.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The course was highly relevant to my professional career, providing practical experience in modern cellular network technologies. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in researching and presenting emerging technologies. The collaborative aspect of the course was particularly valuable in reinforcing the theoretical concepts.
 
+### Complementary Elements
 #### Project Report
 
 

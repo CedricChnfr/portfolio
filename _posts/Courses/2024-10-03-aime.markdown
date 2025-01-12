@@ -5,32 +5,31 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Lab at AIME
+# AIME - Sensors
 
 ## PART A: GENERALITIES
 
 ### Presentation
-As ISS focuses on IoT, we use a variety of sensors to make smart devices capable of analyzing their environment and making decisions. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Électronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.
+The "AIME - Sensors" course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.
 
 ## PART B: DESCRIPTIVE PART
 
+### Experience Details
 
-### B.I. EXPERIENCE DETAILS
+#### Environment and Context
+During this course, I had the opportunity to work on both theoretical and practical aspects of sensor technology. The relevance of sensors in modern technology, especially in IoT applications, was evident throughout the course. The hands-on sessions were particularly beneficial, allowing me to apply the concepts learned in class to real-world scenarios.
 
-#### B.I.1. Environment and Context
-The labs at AIME were an introduction to the creation of sensors. We worked on both the chemical solution containing nanoparticles that detect gas and the wafer on which we applied the solution. This process involved dielectrophoresis to place the nanoparticles on the wafer, creating a functional gas sensor.
-
-#### B.I.2. Your Function
+#### My Function
 During the labs, I participated in the chemical synthesis of the nanoparticles and the assembly of the sensor. This included applying the chemical solution to the wafer and performing dielectrophoresis to position the nanoparticles correctly.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of creating a gas sensor, focusing on the chemical and physical processes involved.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We created a gas sensor by synthesizing nanoparticles, applying them to a wafer, and using dielectrophoresis to position the nanoparticles.
@@ -46,30 +45,27 @@ We created a gas sensor by synthesizing nanoparticles, applying them to a wafer,
 #### Why
 To gain a comprehensive understanding of the sensor manufacturing process and the underlying chemistry and physics. This knowledge is crucial for designing and implementing IoT devices that rely on accurate environmental sensing.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### The Knowledge and Skills Mobilized
 - Manufacturing a nanoparticle sensor using micro-electronics tools: chemical synthesis, assembly, and testing.
 - Understanding the process of dielectrophoresis and its application in sensor creation.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of the sensor manufacturing process. The instructions were clear and beginner-friendly, making the labs a good introduction to the world of physics and chemistry.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into the chemical and physical processes involved in sensor manufacturing.
-- **Operational Skills**: Developed skills in synthesizing nanoparticles and assembling sensors.
-- **Analytical Skills**: Learned to assess the suitability of different manufacturing techniques for sensor creation.
+### Analysis of Skills
+Through this course, I gained insights into the principles and applications of sensor technologies. I developed skills in designing and integrating sensors and learned to assess their functionality and efficiency through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Developed a basic understanding of the concepts and processes involved in sensor manufacturing. However, more focus on practical applications would be beneficial.
-- **Skills to Develop**: Need to enhance proficiency in advanced data analysis techniques for sensor data interpretation.
+### Self Evaluation
+I developed a solid understanding of sensor technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced sensor integration techniques and their practical applications.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The course was highly relevant to my professional career, providing practical experience in sensor manufacturing. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in designing and managing sensor technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
+### Complementary Elements
 
 #### Project Link
 

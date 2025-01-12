@@ -5,37 +5,34 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Embedded AI for IoT
+# Embedded IA for IoT
 
 ## PART A: GENERALITIES
 
 ### Presentation
-Embedded AI for IoT is a course taught by Philippe Leleux. In this course, we approached the fundamental concepts of AI in an IoT context. We covered theoretical concepts during lectures and then applied and analyzed an implementation of AI for an IoT application. The project focused on detecting falls of elderly persons in a retirement home. The objective was to design and provide guidelines on how to create and train an AI for an embedded bracelet. You can find the results of our work with Aude Jean-Baptiste in the form of a Python notebook.
+The "Embedded IA for IoT" course, taught by Philippe Leleux, was an enlightening experience that delved into the integration of artificial intelligence in IoT applications. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.
 
 ## PART B: DESCRIPTIVE PART
 
-Throughout the course, we explored various theoretical concepts of AI applications in IoT. However, the practical exercises were limited, which left us wanting more hands-on experience in this interesting field.
+### Experience Details
 
-### B.I. EXPERIENCE DETAILS
+#### Environment and Context
+During this course, I explored both theoretical and practical aspects of embedding AI in IoT devices. The hands-on sessions were incredibly beneficial, allowing me to apply the concepts learned in class to real-world scenarios. The challenge of optimizing AI models to run efficiently on resource-constrained devices was both demanding and rewarding.
 
-#### B.I.1. Environment and Context
-The course involved both theoretical and practical sessions. We learned about the fundamental concepts of AI, particularly focusing on Machine Learning with Neural Networks (NN). The practical sessions involved implementing an AI model to detect falls using an embedded device with limited computational power.
-
-#### B.I.2. Your Function
+#### My Function
 In this course, I was responsible for:
-- Understanding the theoretical concepts of AI and Machine Learning.
-- Implementing and training a Neural Network for fall detection.
-- Applying pruning techniques to reduce the size of the AI model.
-- Converting the AI model to a TensorFlow Lite model for deployment on an embedded device.
+- Understanding the principles of AI and its application in IoT.
+- Implementing and optimizing AI models for embedded devices.
+- Conducting experiments to test the efficiency and accuracy of these models.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of the course, focusing on the problem analysis, solution design, and implementation of AI for an IoT application.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We aimed to detect falls of elderly persons using an AI model implemented on an embedded bracelet. The project involved designing, training, and optimizing the AI model for deployment on a device with limited computational resources.
@@ -56,33 +53,30 @@ We aimed to detect falls of elderly persons using an AI model implemented on an 
 #### Why
 To gain practical experience in implementing AI for IoT applications. This knowledge is crucial for developing efficient and effective AI solutions that can operate on devices with limited resources.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### The Knowledge and Skills Mobilized
 - Understanding the fundamentals of AI and Machine Learning.
 - Designing and training Neural Networks.
 - Applying pruning techniques to optimize AI models.
 - Converting AI models to TensorFlow Lite for deployment on embedded devices.
 - Implementing AI solutions for IoT applications.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of AI in an IoT context. The combination of theoretical classes and practical labs was particularly beneficial in illustrating the concepts. The emphasis on optimizing AI models for embedded devices helped in developing skills relevant to real-world IoT applications.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into AI and Machine Learning concepts.
-- **Operational Skills**: Developed skills in designing, training, and optimizing AI models.
-- **Analytical Skills**: Learned to assess the feasibility and effectiveness of AI solutions for IoT applications.
+### Analysis of Skills
+Through this course, I gained insights into the principles and applications of AI in IoT. I developed skills in implementing and optimizing AI models for embedded devices and learned to assess their efficiency and accuracy through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Developed a solid understanding of AI and its application in IoT. However, more focus on advanced optimization techniques would be beneficial.
-- **Skills to Develop**: Need to enhance understanding of advanced model optimization techniques for embedded AI applications.
+### Self Evaluation
+I developed a solid understanding of embedding AI in IoT devices and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced model optimization techniques for embedded AI applications.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
 The course was highly relevant to my professional career, providing practical experience in implementing AI for IoT applications. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
+### Complementary Elements
 
 #### Project Report
 

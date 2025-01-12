@@ -5,7 +5,7 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Innovative Project
+# Innovative Project
 
 ## PART A: GENERALITIES
 
@@ -14,10 +14,9 @@ The Innovative Project was a collaborative effort aimed at developing a solution
 
 ## PART B: DESCRIPTIVE PART
 
+### Experience Details
 
-### B.I. EXPERIENCE DETAILS
-
-#### B.I.1. Environment and Context
+#### Environment and Context
 The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.
 
 #### B.I.2. Your Function
@@ -28,12 +27,12 @@ In this project, I was responsible for:
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of the innovative project, focusing on the problem analysis, solution design, and prototype implementation.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We identified a real-life problem related to water leak detection and developed a technological solution to address it. The project involved designing and implementing a prototype to demonstrate the solution's feasibility.
@@ -56,7 +55,7 @@ We identified a real-life problem related to water leak detection and developed 
 #### Why
 To gain practical experience in solving real-life problems using technological solutions. This knowledge is crucial for developing innovative and effective solutions in a professional setting.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### The Knowledge and Skills Mobilized
 - Analyzing real-life problems.
 - Suggesting technological solutions to problems.
 - Implementing prototypes to solve problems.
@@ -66,26 +65,23 @@ To gain practical experience in solving real-life problems using technological s
 - Presenting and debating technical choices in English.
 - Producing comprehensive reports in English for developed projects.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The project provided a thorough understanding of the process of developing innovative solutions to real-life problems. The combination of problem analysis, solution design, and prototype implementation was particularly beneficial in illustrating the concepts. The emphasis on presenting and debating technical choices, as well as producing detailed reports, helped in developing communication and documentation skills.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into the process of analyzing problems and developing technological solutions.
-- **Operational Skills**: Developed skills in designing and implementing prototypes, embedded software, and mobile applications.
-- **Analytical Skills**: Learned to assess the feasibility and effectiveness of different solutions.
+### Analysis of Skills
+Through this course, I gained insights into the principles and applications of innovative project development. I developed skills in designing and implementing solutions and learned to assess their functionality and efficiency through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Developed a solid understanding of the process of developing innovative solutions to real-life problems. However, more focus on advanced topics would be beneficial.
-- **Skills to Develop**: Need to enhance proficiency in advanced machine learning techniques for better data analysis and prediction.
+### Self Evaluation
+I developed a solid understanding of innovative project development and its applications in various fields. However, I realized that I need to enhance my proficiency in advanced project management techniques and their practical applications.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The project was highly relevant to my professional career, providing practical experience in developing innovative solutions to real-life problems. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in developing innovative solutions. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
+### Complementary Elements
 
 #### Project Report
 You can find the complete project report on [GitHub_Innovative_Project](https://github.com/what-a-leak).

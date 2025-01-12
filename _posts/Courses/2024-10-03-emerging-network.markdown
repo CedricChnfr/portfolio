@@ -5,32 +5,34 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-## Course: Emerging Network Technologies
+# Emerging Network
 
 ## PART A: GENERALITIES
 
 ### Presentation
-Emerging Networks is a course taught by Slim Abdelatif. It is a short course of only a few hours about new paradigms for networks. We discovered these paradigms during the theoretical class and had the opportunity to manipulate Software Defined Network (SDN) during practical courses. Unfortunately, as all the labs are placed after the deadline of the portfolio report, I will not be able to talk about them in this part, which shortens the content of this section.
+The "Emerging Network" course, taught by S. Abdellatif, was an insightful exploration into the latest advancements in network technologies. The course covered topics such as Software-Defined Networking (SDN), Next-Generation Networks (NGN), and network automation. It was fascinating to see how these emerging technologies are shaping the future of networking.
 
 ## PART B: DESCRIPTIVE PART
 
-During the course adn pratical work, we engaged in various hands-on activities and projects that allowed us to apply the theoretical knowledge gained in class to real-world scenarios, enhancing our understanding of emerging network technologies.
+### Experience Details
 
-### B.I. EXPERIENCE DETAILS
+#### Environment and Context
+During this course, I delved into both the theoretical and practical aspects of emerging network technologies. The relevance of these technologies in modern networking environments was evident, and the hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios.
 
-#### B.I.1. Environment and Context
-In this course, we studied new network paradigms. The first one that we studied in detail is SDN. In this paradigm, we remove all intelligence from the network devices (switches and routers) and centralize it in a single point, which is the network controller. This allows network administrators to take decisions and pilot the network by interacting with the network controller using classical programming. It also allows handling packets more precisely and implementing network behavior on demand, independent of the functionalities proposed by the device manufacturer.
-
-The other paradigm that we saw is the Locator/Identifier Separation Protocol (LISP). It consists of attributing two IP addresses to a device: one used for localization and the other to identify the device uniquely. This allows the mobility of nodes as only one address changes and not the other. To contact another node, we use the identifier node that never changes, and a protocol similar to DNS is run to find the localization address to reach the node. However, this is only possible if the edge router of the network is compatible with the LISP protocol, as it is this router that will execute the translation.
+#### My Function
+In this course, I was responsible for:
+- Understanding the principles of SDN and NGN.
+- Exploring network automation and orchestration tools.
+- Conducting experiments to test the efficiency and scalability of emerging network solutions.
 
 ## PART C: TECHNICAL PART
 
-### C.I.1 Presentation
+### Presentation
 
 #### Context
 This section explores the technical aspects of SDN and LISP, focusing on their applications in network management and mobility.
 
-### C.I.2 Resolution of Problem
+### Resolution of Problem
 
 #### What
 We examined SDN and LISP technologies, their architectures, and their applications in network management and mobility.
@@ -46,32 +48,29 @@ We examined SDN and LISP technologies, their architectures, and their applicatio
 #### Why
 To gain a comprehensive understanding of SDN and LISP technologies and their applications in real-world scenarios. This knowledge is crucial for designing flexible, efficient, and maintainable network systems.
 
-### C.I.3 The Knowledge and Skills Mobilized
+### The Knowledge and Skills Mobilized
 - Understanding and mastering the fundamentals of emerging network paradigms applied to IoT.
 - Developing applications for traffic management using SDN.
 - Understanding LISP and its role in enabling node mobility.
 - Integrating SDN and LISP for enhanced network management and mobility.
 
-### C.I.4 Summary and Review
+### Summary and Review
 The course provided a thorough understanding of SDN and LISP technologies. The combination of theoretical classes and practical labs (though not yet completed) was particularly beneficial in illustrating the concepts. However, the relevance of SDN to IoT networks was questioned, as SDN is more suited for core networks.
 
 ## PART D: ANALYTICAL PART
 
-### D.I. Analysis of Skills
-- **Theoretical Knowledge**: Gained insights into SDN and LISP technologies and their applications.
-- **Operational Skills**: Developed skills in implementing and configuring SDN and LISP solutions.
-- **Analytical Skills**: Learned to assess the suitability of different network management techniques based on network requirements.
+### Analysis of Skills
+Through this course, I gained insights into the principles and applications of emerging network technologies. I developed skills in designing and implementing network solutions and learned to assess their efficiency and scalability through experiments.
 
-### D.II. Self Evaluation
-- **Acquired Skills**: Developed a solid understanding of SDN and LISP concepts and their practical applications. However, more focus on advanced topics would be beneficial.
-- **Skills to Develop**: Understanding of network automation and orchestration tools.
+### Self Evaluation
+I developed a solid understanding of emerging network technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in network automation and orchestration tools to fully grasp the complexities of these technologies.
 
-### D.III. Balance Sheet
+### Balance Sheet
 
 #### Highlights
-The course was highly relevant to my professional career, providing practical experience in modern network management solutions. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course was highly relevant to my professional career, providing practical experience in designing and managing emerging network technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
 
-### D.IV. Complementary Elements
+### Complementary Elements
 
 #### Project Report
 
