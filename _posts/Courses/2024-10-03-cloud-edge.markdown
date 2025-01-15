@@ -10,9 +10,9 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing engineers to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
+The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing us to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
 
-This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. Students gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.
+This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. In this course, we gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.
 
 The course also addresses advanced topics, including energy-efficient protocols, security challenges, and real-time data analysis at the edge, equipping learners to deliver impactful solutions in sectors such as smart cities, healthcare, and Industry 4.0.
 
@@ -124,5 +124,8 @@ The course was highly relevant to my professional career, providing practical ex
     .styled-button:hover {
         background-color: #3399FF;
         transform: scale(1.05);
+    }
+    p {
+        text-align: justify;
     }
 </style>

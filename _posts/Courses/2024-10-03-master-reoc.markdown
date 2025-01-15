@@ -68,6 +68,19 @@ I developed a solid understanding of embedded networks and IoT technologies and 
 #### Highlights
 The program was highly relevant to my professional career, providing practical experience in designing and managing embedded network and IoT systems. The hands-on projects were particularly valuable in reinforcing the theoretical concepts.
 
+### Complementary Elements
+
+#### Project Report
+You can find the complete project report on [GitHub_SDCI_REOC](https://github.com/CedricChnfr/sdci-reoc).
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_REOC/CHANFREAU_BOUJON_SDCI.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_REOC/CHANFREAU_BOUJON_SDCI.pdf" target="_blank">Download Complete Report</a>
+</p>
+
 
 
 <style>
