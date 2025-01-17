@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-15T09:19:40+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-17T22:13:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -979,13 +979,9 @@ p {
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing us to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
+<p>The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
 
-<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. In this course, we gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.</p>
-
-<p>The course also addresses advanced topics, including energy-efficient protocols, security challenges, and real-time data analysis at the edge, equipping learners to deliver impactful solutions in sectors such as smart cities, healthcare, and Industry 4.0.</p>
-
-<p>By combining theory and practical projects, this course fosters not only technical expertise but also an appreciation for ethical and sustainable innovation, ensuring that engineers are well-prepared for the demands of a rapidly evolving digital landscape.</p>
+<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling me to create efficient systems.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -1001,42 +997,51 @@ p {
 <ul>
   <li>Learning and practicing virtualization techniques such as VMs and containers.</li>
   <li>Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.</li>
-  <li>Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.</li>
+  <li>Gaining skill with tools like Kubernetes, Docker, AWS, and Azure.</li>
 </ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
+<p>This section explores the technical aspects of the Cloud Edge Computing course,  mainly learnt during technical labs.</p>
 
-<h4 id="context">Context</h4>
-<p>This section explores the technical aspects of the Cloud Edge Computing course, focusing on the problem analysis, solution design, and implementation of hybrid architectures.</p>
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h4 id="1-type-1-and-type-2-hypervisors">1. Type 1 and Type 2 Hypervisors</h4>
+<p>Another key concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.</p>
 
-<h4 id="what">What</h4>
-<p>We aimed to design, deploy, and manage hybrid architectures that combine the low-latency benefits of edge computing with the scalability of cloud environments.</p>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/H_type1.png" style="width: 40%; margin-right: 10px;" />
+    <img src="/img/BE_Cloud_Computing/H_type2.png" style="width: 40%;" />
+</div>
+<p><br /></p>
 
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>Problem Analysis</strong>:
-    <ul>
-      <li>Conducted a thorough analysis of the requirements for scalable, efficient, and low-latency services.</li>
-    </ul>
-  </li>
-  <li><strong>Solution Design</strong>:
-    <ul>
-      <li>Designed hybrid architectures that leverage both cloud and edge computing.</li>
-    </ul>
-  </li>
-  <li><strong>Implementation</strong>:
-    <ul>
-      <li>Deployed and managed these architectures using tools like Kubernetes, Docker, AWS, and Azure.</li>
-    </ul>
-  </li>
-</ol>
+<h4 id="2-virtualization-with-docker">2. Virtualization with Docker</h4>
+<p>Through practical work, I learned to use Docker to create, deploy, and manage containers. Docker allows for the virtualization of applications in isolated environments, making their deployment and management easier. I discovered the advantages of containers over virtual machines, particularly in terms of virtualization cost, CPU and memory resource usage, and flexibility.</p>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/Docker.png" style="width: 30%;" />
+</div>
+<p><br /></p>
 
-<h4 id="why">Why</h4>
-<p>To gain practical experience in designing and managing hybrid architectures that meet the demands of modern computing environments. This knowledge is crucial for developing efficient and scalable solutions in fields such as IoT, real-time systems, and 5G networks.</p>
+<h4 id="3-openstack-for-cloud-management">3. OpenStack for Cloud Management</h4>
+<p>In addition to Docker, I gained experience with OpenStack, an open-source platform for cloud computing. OpenStack allows for the management of large pools of compute, storage, and networking resources, all managed through a dashboard or via the OpenStack API. I learned to deploy and configure OpenStack services, create and manage virtual machines, and set up networking and storage solutions within an OpenStack environment.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/sch_OpenStack.png" style="width: 40%;" />
+</div>
+<p><br /></p>
+
+<h4 id="4-network-configuration-with-virtualbox">4. Network Configuration with VirtualBox</h4>
+<p>The practical work also allowed me to configure networks using VirtualBox. I learned to create and configure virtual machines, test their connectivity, and set up port forwarding rules to enable communication between virtual machines and the host. I also configured private networks and routers to allow communication between different virtual machines.</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/VirtualBox.png" style="width: 40%;" />
+</div>
+<p><br /></p>
+
+<h4 id="5-container-orchestration-with-kubernetes">5. Container Orchestration with Kubernetes</h4>
+<p>I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
+<br /></p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
 <ul>
@@ -1046,25 +1051,19 @@ p {
   <li>Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.</li>
 </ul>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The course provided a thorough understanding of the design, deployment, and management of hybrid architectures that combine cloud and edge computing. The combination of theoretical classes and practical projects was particularly beneficial in illustrating the concepts. The emphasis on ethical and sustainable innovation helped in developing a holistic approach to modern computing challenges.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into virtualization technologies, cloud services, and edge infrastructures. I developed skills in designing, deploying, and managing hybrid architectures. I also learned to assess the feasibility and effectiveness of hybrid architectures in various fields.</p>
-
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing security measures and protocols for cloud and edge computing environments.</p>
+<p>I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing virtualization measures and protocols for cloud and edge computing environments.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
+<h3 id="my-opinion">My Opinion</h3>
+<p>It was interesting; I had the chance to learn a lot of concepts we hear about in everyday life for our job. This course will be really useful for my professional path where these concepts could be applied.</p>
 
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in designing and managing hybrid architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<p>The course content was well-structured, starting from the basics of virtualization and gradually moving towards more complex topics. This progression helped me for a better understanding and then expand my knowledge to more advanced concepts.</p>
 
-<h3 id="complementary-elements">Complementary Elements</h3>
+<p>I now feel more confident in designing, deploying, and managing scalable and efficient cloud-edge solutions.</p>
 
-<h4 id="project-report">Project Report</h4>
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 <div style="display: flex; justify-content: center;">
     <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" />

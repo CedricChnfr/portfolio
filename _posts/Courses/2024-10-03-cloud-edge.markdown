@@ -10,13 +10,9 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing us to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
+The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
 
-This training is particularly relevant in today’s context, where the rise of IoT, real-time applications, and 5G networks necessitates expertise in these fields. In this course, we gain hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling them to create robust, efficient systems.
-
-The course also addresses advanced topics, including energy-efficient protocols, security challenges, and real-time data analysis at the edge, equipping learners to deliver impactful solutions in sectors such as smart cities, healthcare, and Industry 4.0.
-
-By combining theory and practical projects, this course fosters not only technical expertise but also an appreciation for ethical and sustainable innovation, ensuring that engineers are well-prepared for the demands of a rapidly evolving digital landscape.
+This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling me to create efficient systems.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -31,30 +27,53 @@ During the Cloud and Edge Computing course, I explored both theoretical and prac
 In this course, I was responsible for:
 - Learning and practicing virtualization techniques such as VMs and containers.
 - Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.
-- Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.
+- Gaining skill with tools like Kubernetes, Docker, AWS, and Azure.
 
 ## PART C: TECHNICAL PART
 
-### Presentation
 
-#### Context
-This section explores the technical aspects of the Cloud Edge Computing course, focusing on the problem analysis, solution design, and implementation of hybrid architectures.
+This section explores the technical aspects of the Cloud Edge Computing course,  mainly learnt during technical labs.
 
-### Resolution of Problem
+### Technical Concepts Learned
 
-#### What
-We aimed to design, deploy, and manage hybrid architectures that combine the low-latency benefits of edge computing with the scalability of cloud environments.
+#### 1. Type 1 and Type 2 Hypervisors
+Another key concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.
 
-#### How
-1. **Problem Analysis**:
-   - Conducted a thorough analysis of the requirements for scalable, efficient, and low-latency services.
-2. **Solution Design**:
-   - Designed hybrid architectures that leverage both cloud and edge computing.
-3. **Implementation**:
-   - Deployed and managed these architectures using tools like Kubernetes, Docker, AWS, and Azure.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/H_type1.png" style="width: 40%; margin-right: 10px;"/>
+    <img src="/img/BE_Cloud_Computing/H_type2.png" style="width: 40%;"/>
+</div>
+<br>
 
-#### Why
-To gain practical experience in designing and managing hybrid architectures that meet the demands of modern computing environments. This knowledge is crucial for developing efficient and scalable solutions in fields such as IoT, real-time systems, and 5G networks.
+#### 2. Virtualization with Docker
+Through practical work, I learned to use Docker to create, deploy, and manage containers. Docker allows for the virtualization of applications in isolated environments, making their deployment and management easier. I discovered the advantages of containers over virtual machines, particularly in terms of virtualization cost, CPU and memory resource usage, and flexibility.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Cloud_Computing/Docker.png" style="width: 30%;"/>
+</div>
+<br>
+
+#### 3. OpenStack for Cloud Management
+In addition to Docker, I gained experience with OpenStack, an open-source platform for cloud computing. OpenStack allows for the management of large pools of compute, storage, and networking resources, all managed through a dashboard or via the OpenStack API. I learned to deploy and configure OpenStack services, create and manage virtual machines, and set up networking and storage solutions within an OpenStack environment.
+
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/sch_OpenStack.png" style="width: 40%;"/>
+</div>
+<br>
+
+
+#### 4. Network Configuration with VirtualBox
+The practical work also allowed me to configure networks using VirtualBox. I learned to create and configure virtual machines, test their connectivity, and set up port forwarding rules to enable communication between virtual machines and the host. I also configured private networks and routers to allow communication between different virtual machines.
+<div style="text-align: center;">
+    <img src="/img/BE_Cloud_Computing/VirtualBox.png" style="width: 40%;"/>
+</div>
+<br>
+
+#### 5. Container Orchestration with Kubernetes
+I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
+<br>
+
+
+## PART D: ANALYTICAL PART
 
 ### Knowledge and Skills Mobilized
 - Understanding virtualization technologies and their role in modern cloud infrastructures.
@@ -62,25 +81,19 @@ To gain practical experience in designing and managing hybrid architectures that
 - Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.
 - Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.
 
-### Summary and Review
-The course provided a thorough understanding of the design, deployment, and management of hybrid architectures that combine cloud and edge computing. The combination of theoretical classes and practical projects was particularly beneficial in illustrating the concepts. The emphasis on ethical and sustainable innovation helped in developing a holistic approach to modern computing challenges.
-
-## PART D: ANALYTICAL PART
-
-### Analysis of Skills
-Through this course, I gained insights into virtualization technologies, cloud services, and edge infrastructures. I developed skills in designing, deploying, and managing hybrid architectures. I also learned to assess the feasibility and effectiveness of hybrid architectures in various fields.
-
 ### Self Evaluation
-I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing security measures and protocols for cloud and edge computing environments.
+I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing virtualization measures and protocols for cloud and edge computing environments. 
 
-### Balance Sheet
+### My Opinion
+It was interesting; I had the chance to learn a lot of concepts we hear about in everyday life for our job. This course will be really useful for my professional path where these concepts could be applied.
 
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in designing and managing hybrid architectures. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+The course content was well-structured, starting from the basics of virtualization and gradually moving towards more complex topics. This progression helped me for a better understanding and then expand my knowledge to more advanced concepts.
 
-### Complementary Elements
+I now feel more confident in designing, deploying, and managing scalable and efficient cloud-edge solutions.
 
-#### Project Report
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 <div style="display: flex; justify-content: center;">
     <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf">
