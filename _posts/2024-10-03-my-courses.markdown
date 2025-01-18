@@ -32,7 +32,7 @@ categories: jekyll update
 **Dates**: 30/09/2024 - 21/11/2024  
 **Content**: Learn about 5G and more generally topics related to cellular networks.
 
-## [🔗 Wireless Sensor Networks and Localization (WSNL)](./WSNL.html)
+## [🔗 Wireless Sensor Networks and Localization (WSNL)](./wsnl.html)
 **Duration**: 33.25 hours  
 **Dates**: 07/10/2024 - 20/12/2024  
 **Content**: Learn about wireless sensor networks technologies.
