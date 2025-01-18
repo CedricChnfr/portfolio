@@ -10,7 +10,11 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The "5G Technologies" course, taught by Etienne Sicard, was an eye-opening experience. The main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology. The course employed reverse pedagogy, meaning that we, the students, were responsible for delivering much of the content through presentations. This approach was highly engaging and allowed us to dive deep into the rapidly evolving cellular network industry. 5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
+During the "5G Technologies" course, taught by Etienne Sicard, the main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology.
+
+The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G and its impact on society.
+
+5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -20,63 +24,63 @@ The "5G Technologies" course, taught by Etienne Sicard, was an eye-opening exper
 During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
 
 #### My Function
-In the practical sessions, I was responsible for preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.
+In the practical sessions, I was responsible for:
+- Researching and presenting on 6G technologies.
+- Collaborating with peers to explore the implications of 5G and future 6G technologies.
+- Participating in discussions and practical labs to understand the technical aspects of 5G.
 
 ## PART C: TECHNICAL PART
 
-### Presentation
+This section explores the technical aspects of 5G technologies, focusing on core technologies, applications, and the challenges in developing 6G. 
+Thanks to the presentations of my colleagues and myself, I was able to learn:
 
-#### Context
-This section explores the technical aspects of 6G technologies, focusing on core technologies, applications, and the challenges in developing 6G. The goal is to understand the functionalities, advantages, and limitations of these technologies.
+### Technical Concepts Learned
 
-### Resolution of Problem
+#### 1. 5G and 6G Modulations
+I learned about the different modulation techniques used in 5G and the advancements expected in 6G:
 
-#### What
-We examined core 6G technologies, applications and opportunities, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
+- 5G utilizes principaly Orthogonal Frequency-Division Multiplexing (OFDM) to improve spectral efficiency, support higher data rates, and enhance communication robustness by dividing the bandwidth into multiple orthogonal subcarriers, reducing interference and handling multipath propagation effectively.
 
-#### How
-1. **Core 6G Technologies**:
-    - Presented the different core technologies in 6G.
-    - Discussed the flexibility and advancements offered by these technologies.
-2. **6G Applications & Opportunities**:
-    - Explored potential applications and opportunities provided by 6G.
-    - Discussed the societal and industrial benefits of 6G.
-3. **Challenges Developing 6G**:
-    - Identified the key challenges in developing 6G technologies.
-    - Discussed potential solutions and ongoing research efforts.
-4. **Development Timeline and Global Efforts**:
-    - Reviewed the development timeline for 6G.
-    - Highlighted global efforts and collaborations in 6G development.
-5. **6G’s Impact on Society**:
-    - Analyzed the potential impact of 6G on society.
-    - Discussed the transformative effects of 6G on various sectors.
+<div style="text-align: center; display: flex; justify-content: center;">
+     <img src="/img/BE_6G/5G_graphe.png" style="width: 60%;"/>
+     <img src="/img/BE_6G/5G_canal.png" style="width: 40%;"/>
+</div>
+<br>
+However, OFDMA cannot support a large number of mobile devices for 6G generations, other modulation techniquesare expected:
 
-#### Why
-To gain a comprehensive understanding of 6G technologies and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable cellular networks.
+- 6G is expected to leverage advanced modulation techniques such as Orbital Angular Momentum (OAM) multiplexing, which can increase the capacity of wireless communication systems by using the spatial domain to transmit multiple data streams simultaneously. 
+
+#### 2. Technologies for 6G
+The presentation on technologies for 6G provided insights into the core technologies that will drive the next generation of cellular networks. 
+
+- **Terahertz (THz) Communication**: Ultra-high data rates and low latency. Applications include VR, AR, and autonomous vehicles. 
+- **AI and Machine Learning for 6G**: Optimizing network performance and managing data congestion. Applications include smart routing and predictive data demand.
+- **Quantum Communication and Advanced Security**: Enhanced security with quantum-based communication. Uses quantum cryptography to protect data and secure communication resistant to cyber-attacks.
+- **Visible Light Communication (VLC)**: Utilizes the visible light spectrum to transmit data. Applications include underwater communication and indoor navigation.
+- **Ultra-massive MIMO (Multiple Input, Multiple Output)**: Uses large antenna arrays to boost network capacity. Applications include high-density urban areas.
+
+## PART D: ANALYTICAL PART
 
 ### Knowledge and Skills Mobilized
 - Understanding and mastering new mobile network technologies.
 - Developing and deploying core 6G technologies.
 - Analyzing the impact of 6G on society and various sectors.
 
-### Summary and Review
-The course provided a thorough understanding of 6G technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.
-
-## PART D: ANALYTICAL PART
-
-### Analysis of Skills
-Through this course, I gained insights into the principles and challenges of 5G and 6G technologies. I developed skills in researching, presenting, and discussing technical topics, which are essential for my future career.
 
 ### Self Evaluation
-I developed a solid understanding of 5G and 6G technologies and their applications. However, I realized that I need to enhance my proficiency in network security and encryption techniques to fully grasp the complexities of these technologies.
+Through this course, I was able to focus on a specific topic, study it in depth, and present my findings. This process allowed me to develop skills in researching, presenting, and discussing technical topics that is required in the professional world.
 
-### Balance Sheet
+Also, I only attended my peers' presentations and took notes, which allowed me to stay informed about the technologies without becoming a complete expert on the subject wich is a bit frustrating.
 
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in researching and presenting emerging technologies. The collaborative aspect of the course was particularly valuable in reinforcing the theoretical concepts.
+### My Opinion
+This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future; after studying 6G, I have a rough idea of what the next generation of networks might look like.
 
-### Complementary Elements
-#### Project Report
+The presentations were a great way to learn a lot in a short amount of time. By preparing and listening to them, we covered many topics in depth, which really helped us understand 5G and 6G technologies better.
+
+
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 
 <div style="display: flex; justify-content: center;">

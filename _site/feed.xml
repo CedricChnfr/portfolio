@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-18T21:23:10+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-18T23:32:08+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -564,7 +564,11 @@ p {
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The “5G Technologies” course, taught by Etienne Sicard, was an eye-opening experience. The main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology. The course employed reverse pedagogy, meaning that we, the students, were responsible for delivering much of the content through presentations. This approach was highly engaging and allowed us to dive deep into the rapidly evolving cellular network industry. 5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
+<p>During the “5G Technologies” course, taught by Etienne Sicard, the main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology.</p>
+
+<p>The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G and its impact on society.</p>
+
+<p>5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -574,56 +578,50 @@ p {
 <p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
 
 <h4 id="my-function">My Function</h4>
-<p>In the practical sessions, I was responsible for preparing and delivering presentations on 6G technologies. This involved researching 6G applications and opportunities, understanding core 6G technologies, discussing the challenges in developing 6G, and exploring the development timeline and global efforts. Additionally, I participated in discussions on 6G’s impact on society.</p>
+<p>In the practical sessions, I was responsible for:</p>
+<ul>
+  <li>Researching and presenting on 6G technologies.</li>
+  <li>Collaborating with peers to explore the implications of 5G and future 6G technologies.</li>
+  <li>Participating in discussions and practical labs to understand the technical aspects of 5G.</li>
+</ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
+<p>This section explores the technical aspects of 5G technologies, focusing on core technologies, applications, and the challenges in developing 6G. 
+Thanks to the presentations of my colleagues and myself, I was able to learn:</p>
 
-<h4 id="context">Context</h4>
-<p>This section explores the technical aspects of 6G technologies, focusing on core technologies, applications, and the challenges in developing 6G. The goal is to understand the functionalities, advantages, and limitations of these technologies.</p>
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h4 id="1-5g-and-6g-modulations">1. 5G and 6G Modulations</h4>
+<p>I learned about the different modulation techniques used in 5G and the advancements expected in 6G:</p>
 
-<h4 id="what">What</h4>
-<p>We examined core 6G technologies, applications and opportunities, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
+<ul>
+  <li>5G utilizes principaly Orthogonal Frequency-Division Multiplexing (OFDM) to improve spectral efficiency, support higher data rates, and enhance communication robustness by dividing the bandwidth into multiple orthogonal subcarriers, reducing interference and handling multipath propagation effectively.</li>
+</ul>
 
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>Core 6G Technologies</strong>:
-    <ul>
-      <li>Presented the different core technologies in 6G.</li>
-      <li>Discussed the flexibility and advancements offered by these technologies.</li>
-    </ul>
-  </li>
-  <li><strong>6G Applications &amp; Opportunities</strong>:
-    <ul>
-      <li>Explored potential applications and opportunities provided by 6G.</li>
-      <li>Discussed the societal and industrial benefits of 6G.</li>
-    </ul>
-  </li>
-  <li><strong>Challenges Developing 6G</strong>:
-    <ul>
-      <li>Identified the key challenges in developing 6G technologies.</li>
-      <li>Discussed potential solutions and ongoing research efforts.</li>
-    </ul>
-  </li>
-  <li><strong>Development Timeline and Global Efforts</strong>:
-    <ul>
-      <li>Reviewed the development timeline for 6G.</li>
-      <li>Highlighted global efforts and collaborations in 6G development.</li>
-    </ul>
-  </li>
-  <li><strong>6G’s Impact on Society</strong>:
-    <ul>
-      <li>Analyzed the potential impact of 6G on society.</li>
-      <li>Discussed the transformative effects of 6G on various sectors.</li>
-    </ul>
-  </li>
-</ol>
+<div style="text-align: center; display: flex; justify-content: center;">
+     <img src="/img/BE_6G/5G_graphe.png" style="width: 60%;" />
+     <img src="/img/BE_6G/5G_canal.png" style="width: 40%;" />
+</div>
+<p><br />
+However, OFDMA cannot support a large number of mobile devices for 6G generations, other modulation techniquesare expected:</p>
 
-<h4 id="why">Why</h4>
-<p>To gain a comprehensive understanding of 6G technologies and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable cellular networks.</p>
+<ul>
+  <li>6G is expected to leverage advanced modulation techniques such as Orbital Angular Momentum (OAM) multiplexing, which can increase the capacity of wireless communication systems by using the spatial domain to transmit multiple data streams simultaneously.</li>
+</ul>
+
+<h4 id="2-technologies-for-6g">2. Technologies for 6G</h4>
+<p>The presentation on technologies for 6G provided insights into the core technologies that will drive the next generation of cellular networks.</p>
+
+<ul>
+  <li><strong>Terahertz (THz) Communication</strong>: Ultra-high data rates and low latency. Applications include VR, AR, and autonomous vehicles.</li>
+  <li><strong>AI and Machine Learning for 6G</strong>: Optimizing network performance and managing data congestion. Applications include smart routing and predictive data demand.</li>
+  <li><strong>Quantum Communication and Advanced Security</strong>: Enhanced security with quantum-based communication. Uses quantum cryptography to protect data and secure communication resistant to cyber-attacks.</li>
+  <li><strong>Visible Light Communication (VLC)</strong>: Utilizes the visible light spectrum to transmit data. Applications include underwater communication and indoor navigation.</li>
+  <li><strong>Ultra-massive MIMO (Multiple Input, Multiple Output)</strong>: Uses large antenna arrays to boost network capacity. Applications include high-density urban areas.</li>
+</ul>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
 <ul>
@@ -632,24 +630,19 @@ p {
   <li>Analyzing the impact of 6G on society and various sectors.</li>
 </ul>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The course provided a thorough understanding of 6G technologies. The reverse pedagogy approach allowed for in-depth discussions on various topics, although a better balance between student presentations and teacher lectures would have been beneficial. The practical sessions were particularly valuable in illustrating the concepts.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into the principles and challenges of 5G and 6G technologies. I developed skills in researching, presenting, and discussing technical topics, which are essential for my future career.</p>
-
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of 5G and 6G technologies and their applications. However, I realized that I need to enhance my proficiency in network security and encryption techniques to fully grasp the complexities of these technologies.</p>
+<p>Through this course, I was able to focus on a specific topic, study it in depth, and present my findings. This process allowed me to develop skills in researching, presenting, and discussing technical topics that is required in the professional world.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
+<p>Also, I only attended my peers’ presentations and took notes, which allowed me to stay informed about the technologies without becoming a complete expert on the subject wich is a bit frustrating.</p>
 
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in researching and presenting emerging technologies. The collaborative aspect of the course was particularly valuable in reinforcing the theoretical concepts.</p>
+<h3 id="my-opinion">My Opinion</h3>
+<p>This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future; after studying 6G, I have a rough idea of what the next generation of networks might look like.</p>
 
-<h3 id="complementary-elements">Complementary Elements</h3>
-<h4 id="project-report">Project Report</h4>
+<p>The presentations were a great way to learn a lot in a short amount of time. By preparing and listening to them, we covered many topics in depth, which really helped us understand 5G and 6G technologies better.</p>
+
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 <div style="display: flex; justify-content: center;">
      <iframe src="/img/BE_6G/6G.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
