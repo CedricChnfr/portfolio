@@ -42,7 +42,7 @@
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The Service Oriented Architecture (SOA) course was a deep dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures, focusing on how to create scalable, maintainable, and efficient systems.</p>
+<p>The Service Oriented Architecture (SOA) course was a deep dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -50,7 +50,7 @@
 
 <h4 id="environment-and-context">Environment and Context</h4>
 
-<p>During this course, I explored both theoretical and practical aspects of SOA. The increasing demand for scalable and maintainable systems in the industry highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was incredibly beneficial.</p>
+<p>This course was really useful as the increasing demand for scalable and maintainable systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies.</p>
 
 <h4 id="my-function">My Function</h4>
 
@@ -63,49 +63,93 @@
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
+<p>This section explores the technical aspects of the Service Architecture course mainly learnt during technical labs focusing on SOAP, REST and microservices.</p>
 
-<h4 id="context">Context</h4>
-<p>This lab report explores the implementation and configuration of different service-oriented architectures, focusing on SOAP, REST, and microservices. The goal is to understand their functionalities, advantages, and limitations.</p>
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h4 id="1-soap-architecture">1. SOAP Architecture</h4>
+<p>I learned about the SOAP (Simple Object Access Protocol) architecture which is a protocol for exchanging structured information in web services. SOAP uses XML for message formatting and relies on other application layer protocols, such as HTTP or SMTP, for message negotiation and transmission.</p>
 
-<h4 id="what">What</h4>
-<p>We explored three main architectures:</p>
 <ol>
-  <li><strong>SOAP (Simple Object Access Protocol)</strong>: A legacy architecture that uses WSDL (Web Service Description Language) for defining services.</li>
-  <li><strong>REST (Representational State Transfer)</strong>: An architecture that uses HTTP protocols for creating, reading, updating, and deleting resources.</li>
-  <li><strong>Microservices</strong>: A modern architecture that divides a service into independent microservices, each handling a specific functionality.</li>
-</ol>
-
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>SOAP</strong>:
-    <ul>
-      <li>Implemented a web service using SOAP.</li>
-      <li>Created and consumed WSDL documents.</li>
-      <li>Developed services such as User Management, Volunteer Management, and Request Management.</li>
-    </ul>
+  <li><strong>SOAP Request Envelope</strong>: The request envelope contains the SOAP message that is sent to the web service. For example, if the chain is “cedric”, the SOAP request envelope would look like this:
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span> <span class="na">xmlns:web=</span><span class="s">"http://example.com/webservice"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;soapenv:Header/&gt;</span>
+     <span class="nt">&lt;soapenv:Body&gt;</span>
+         <span class="nt">&lt;web:MyRequest&gt;</span>
+             <span class="nt">&lt;web:chain&gt;</span>cedric<span class="nt">&lt;/web:chain&gt;</span>
+         <span class="nt">&lt;/web:MyRequest&gt;</span>
+     <span class="nt">&lt;/soapenv:Body&gt;</span>
+ <span class="nt">&lt;/soapenv:Envelope&gt;</span>
+</code></pre></div>    </div>
   </li>
-  <li><strong>REST</strong>:
-    <ul>
-      <li>Developed RESTful APIs using HTTP methods (POST, GET, PUT, DELETE).</li>
-      <li>Implemented services like User Management, User Request Service, Volunteer Management, and Feedback Service.</li>
-      <li>Tested the APIs using tools like Postman.</li>
-    </ul>
-  </li>
-  <li><strong>Microservices</strong>:
-    <ul>
-      <li>Designed a microservice architecture using Spring Boot.</li>
-      <li>Implemented communication between microservices using REST interfaces.</li>
-      <li>Deployed the microservices using containerization tools like Docker.</li>
-      <li>Automated deployment using Microsoft Azure and GitHub Actions.</li>
-    </ul>
+  <li><strong>SOAP Response</strong>: The response is returned by the web service after processing the request. For example, if the response returns 6, the SOAP response would look like this:
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span> <span class="na">xmlns:web=</span><span class="s">"http://example.com/webservice"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;soapenv:Header/&gt;</span>
+     <span class="nt">&lt;soapenv:Body&gt;</span>
+         <span class="nt">&lt;web:MyResponse&gt;</span>
+             <span class="nt">&lt;web:result&gt;</span>6<span class="nt">&lt;/web:result&gt;</span>
+         <span class="nt">&lt;/web:MyResponse&gt;</span>
+     <span class="nt">&lt;/soapenv:Body&gt;</span>
+ <span class="nt">&lt;/soapenv:Envelope&gt;</span>
+</code></pre></div>    </div>
   </li>
 </ol>
 
-<h4 id="why">Why</h4>
-<p>To gain a comprehensive understanding of different service-oriented architectures and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable software systems.</p>
+<h4 id="2-rest-architecture">2. REST Architecture</h4>
+<p>I also learned about REST (Representational State Transfer), an architectural style that uses standard HTTP methods (POST, GET, PUT, DELETE) to interact with resources.</p>
+
+<ul>
+  <li><strong>POST</strong>: Creates a new resource, e.g., <code class="language-plaintext highlighter-rouge">POST /users</code> creates a new user.</li>
+  <li><strong>GET</strong>: Retrieves a resource, e.g., <code class="language-plaintext highlighter-rouge">GET /users/1</code> retrieves user with ID 1.</li>
+  <li><strong>PUT</strong>: Updates a resource, e.g., <code class="language-plaintext highlighter-rouge">PUT /users/1</code> updates user with ID 1.</li>
+  <li><strong>DELETE</strong>: Deletes a resource, e.g., <code class="language-plaintext highlighter-rouge">DELETE /users/1</code> deletes user with ID 1.</li>
+</ul>
+
+<p>I developed RESTful services for managing user requests using JSON for data interchange and tools like Postman for testing.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@RestController</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/api/users"</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserController</span> <span class="o">{</span>
+
+    <span class="nd">@Autowired</span>
+    <span class="kd">private</span> <span class="nc">UserService</span> <span class="n">userService</span><span class="o">;</span>
+
+    <span class="c1">// Get all users</span>
+    <span class="nd">@GetMapping</span>
+    <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">getAllUsers</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">getAllUsers</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Get a user by ID</span>
+    <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">User</span> <span class="nf">getUserById</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">getUserById</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Create a new user</span>
+    <span class="nd">@PostMapping</span>
+    <span class="kd">public</span> <span class="nc">User</span> <span class="nf">createUser</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="nc">User</span> <span class="n">user</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">createUser</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Update an existing user</span>
+    <span class="nd">@PutMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">User</span> <span class="nf">updateUser</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">,</span> <span class="nd">@RequestBody</span> <span class="nc">User</span> <span class="n">userDetails</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">updateUser</span><span class="o">(</span><span class="n">id</span><span class="o">,</span> <span class="n">userDetails</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Delete a user by ID</span>
+    <span class="nd">@DeleteMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">deleteUser</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">userService</span><span class="o">.</span><span class="na">deleteUser</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="3-microservices-development">3. Microservices Development</h4>
+<p>Microservices are an architectural style that structures an application as a collection of coupled services. Each service is independently deployable and scalable. I used Spring Boot to create microservices for user management, volunteer management, request management, and feedback management (refer to <a href="#project-report">Project Report</a>) .</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
 <ul>
@@ -116,23 +160,15 @@
   <li>Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.</li>
 </ul>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The course provided a thorough understanding of service-oriented architectures. The practical sessions were particularly beneficial in illustrating the concepts. However, the focus on legacy architectures like SOAP could be reduced in favor of more emphasis on modern architectures like REST and microservices.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into service-oriented architectures. I developed skills in designing and implementing service-oriented systems and learned to assess their efficiency and scalability through experiments.</p>
-
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of service-oriented architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in understanding the complexity of web applications and their practical applications in the real world.</p>
+<p>Using all the new concepts learned during the course was at first a bit complicated but fortunately the tutorials were well-structured allowing me to learn step by step. Also, there was a large number of practical sessions to practice and understand all the concepts. As I am not used to Java, I had to relearn the basics of this language which was a bit challenging.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
+<p>I didn’t participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints.</p>
 
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in designing and managing service-oriented systems. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.</p>
+<h3 id="my-opinion">My Opinion</h3>
+<p>Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them.</p>
 
-<h3 id="complementary-elements">Complementary Elements</h3>
+<p>Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I’d prefer to code in C for my professional future, I can now apply for Java positions if needed.</p>
 
 <h2 id="project-report">Project Report</h2>
 
