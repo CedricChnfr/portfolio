@@ -82,7 +82,7 @@ I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes ma
 - Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.
 
 ### Self Evaluation
-I developed a solid understanding of hybrid architectures and their applications in modern computing environments. However, I realized that I need to enhance my proficiency in implementing virtualization measures and protocols for cloud and edge computing environments. 
+I developed new skills in hybrid architectures and their applications in modern computing environments. I was able to comprehend and utilize all the concepts learned. However, I realized that I need to practice using all these tools in the future to avoid forgetting them, as I currently do not have the opportunity to work with them in my apprenticeship company.
 
 ### My Opinion
 It was interesting; I had the chance to learn a lot of concepts we hear about in everyday life for our job. This course will be really useful for my professional path where these concepts could be applied.
