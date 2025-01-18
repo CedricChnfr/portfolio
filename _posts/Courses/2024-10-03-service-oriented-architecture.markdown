@@ -134,7 +134,9 @@ Before taking this course, I had only heard about some of the concepts related t
 
 Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I'd prefer to code in C for my professional future, I can now apply for Java positions if needed.
 
-## Project Report
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_service_architecture.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
