@@ -125,7 +125,11 @@ This was one of my favorite courses as it combined both hardware and software as
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" target="_blank">Download Complete Report</a>
+    <a href="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" target="_blank">Open Complete Report</a>
+</p>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Middleware_IOT/Lab_Subject_middleware.pdf" target="_blank">Open Lab Subject</a>
 </p>
 
 <style>

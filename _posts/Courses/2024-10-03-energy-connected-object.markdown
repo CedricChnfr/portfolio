@@ -78,9 +78,12 @@ This course allowed me to understand things I didn't know about connected object
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Energy_Connected_Object/Report_Energy_Boukouiss_Chanfreau.pdf">Download the full report</a>
+    <a href="/img/BE_Energy_Connected_Object/Report_Energy_Boukouiss_Chanfreau.pdf">Open the full report</a>
 </p>
 
+<p style="text-align: center;">
+    <a href="/img/BE_Energy_Connected_Object/Lab_Subject_energy.pdf">Open Lab Subject</a>
+</p>
 <style>
     body {
         font-family: Arial, sans-serif;
