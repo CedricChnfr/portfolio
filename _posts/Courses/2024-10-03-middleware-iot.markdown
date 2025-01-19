@@ -10,14 +10,14 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The "Middleware for IoT" course, taught by T. Monteil, was a fascinating journey into the world of communication protocols and middleware solutions for IoT. The course covered various middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems.
+The "Middleware for IoT" course, taught by T. Monteil, provided an in-depth look into communication protocols and middleware solutions for IoT. The course covered middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems.
 
 ## PART B: DESCRIPTIVE PART
 
 ### Experience Details
 
 #### Environment and Context
-During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was incredibly beneficial.
+During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial.
 
 #### My Function
 In this course, I was responsible for:
@@ -27,30 +27,75 @@ In this course, I was responsible for:
 
 ## PART C: TECHNICAL PART
 
-### Presentation
+This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT, OneM2M and Node-RED and their applications in real-world scenarios.
 
-#### Context
-This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT and OneM2M, and their applications in real-world scenarios.
+### Technical Concepts Learned
 
-### Resolution of Problem
+#### 1. MQTT Protocol
+I learned about the MQTT protocol, which is a lightweight messaging protocol designed for small sensors and mobile devices. MQTT uses a publish/subscribe model, making it efficient for IoT applications with limited bandwidth and resources. Key features include:
+- **Architecture**: Devices (IoT nodes) publish and subscribe to topics via an MQTT broker.
+- **IP Protocol**: MQTT operates over TCP/IP, ensuring reliable communication with minimal bandwidth usage.
+- **Security**: MQTT supports username/password authentication and TLS encryption for secure communication.
 
-#### What
-We examined the MQTT and OneM2M protocols, their architectures, and their applications in IoT. We also developed practical applications to illustrate their use.
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt.png" style="width: 50%;"/>
+</div>
+<br>
 
-#### How
-1. **MQTT Protocol**:
-   - Studied the architecture of MQTT, including publishers, subscribers, and brokers.
-   - Implemented a simple IoT application using NodeMCU boards and MQTT.
-   - Configured and tested the Mosquitto broker.
-2. **OneM2M Protocol**:
-   - Explored the OneM2M standard for interoperability between IoT architectures.
-3. **Node-RED**:
-   - Used Node-RED for fast application prototyping.
-   - Integrated MQTT and OneM2M nodes in Node-RED.
-   - Developed a comprehensive IoT application with real and simulated devices.
+#### 2. Installing and Testing the MQTT Broker
+I installed the Mosquitto broker, an open-source implementation of the MQTT protocol. Using commands like `mosquitto_pub` and `mosquitto_sub`, I tested the communication between the client and the broker, validating the setup.
 
-#### Why
-To gain a comprehensive understanding of middleware solutions for IoT and their applications in real-world scenarios. This knowledge is crucial for designing scalable, efficient, and maintainable IoT systems.
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt_start.png" style="width: 60%;"/>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt_sub_pub.png" style="width: 60%;"/>
+</div>
+<br>
+
+#### 3. NodeMCU and MQTT Communication
+I used the ESP8266 to create an IoT device that communicates via MQTT. The NodeMCU supports Wi-Fi and can be programmed using the Arduino IDE. I configured the board to publish and subscribe to MQTT topics, enabling real-time communication with other devices.
+
+I utilized the ArduinoMqttClient library to program the board. The objective was to update the button status on the `button/state` topic each time the button was pressed. Additionally, each button press triggered the extraction of luminosity data, which was then published on the `light/state` topic.
+
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodemcu_app.png" style="width: 70%;"/>
+</div>
+<br>
+
+#### 4. Fast Application Prototyping with Node-RED
+Node-RED is a visual programming tool that simplifies IoT application development. I used Node-RED to integrate real and simulated devices, accelerating development and providing clear visualization. I implemented the following features to manage sensor data and control actuators:
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered.png" style="width: 70%;"/>
+</div>
+
+#### a. Check MQTT Connectivity
+We added an MQTT receiver block on Node-RED subscribed to the `insa/luminosity` topic. The debugger confirmed correct value reception.
+
+#### b. Sensors and Actuators
+This flow simulates a light sensor sending values. A Switch node checks if luminosity exceeds 50, toggling LED ON or OFF:
+- Light > 50 ⇒ LED ON
+- Light ≤ 50 ⇒ LED OFF
+
+#### c. Dashboard
+Using `node-red-dashboard`, we created a GUI to visualize sensor data and control devices in real-time. Graphs display sensor data, and buttons control actuators.
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered_dashboard.png" style="width: 30%;"/>
+</div>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered_led.png" style="width: 60%;"/>
+</div>
+<br>
+
+#### d. Email and Notification
+Implemented with `node-red-node-email`, this feature sends automatic alerts when switch state or luminosity changes, ensuring proactive monitoring and quick reactions to anomalies.
+
+
+## PART D: ANALYTICAL PART
 
 ### The Knowledge and Skills Mobilized
 - Understanding the main standards for the Internet of Things.
@@ -61,25 +106,19 @@ To gain a comprehensive understanding of middleware solutions for IoT and their 
 - Optimizing communication protocols for IoT with respect to energy limitations and security concerns.
 - Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver.
 
-### Summary and Review
-The course provided a thorough understanding of middleware solutions for IoT. The combination of theoretical classes and practical labs was particularly beneficial in illustrating the concepts. However, the course faced some issues, such as the use of synthetic voice in the MOOC and the need for better lab resources.
+### Self-Evaluation
 
-## PART D: ANALYTICAL PART
+This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices.
 
-### Analysis of Skills
-Through this course, I gained insights into middleware architectures and their applications in IoT. I developed skills in designing and implementing middleware solutions and learned to assess their efficiency and scalability through experiments.
 
-### Self Evaluation
-I developed a solid understanding of middleware solutions for IoT and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced middleware architectures and their practical applications.
+### My Opinion
+This was one of my favorite courses as it combined both hardware and software aspects. I aspire to work as an embedded software engineer, and this course provided a perfect blend of both domains. The labs showed a clear progression in our work on the project. We started with simple MQTT communication, moved on to using the Arduino library for MQTT, and finally integrated everything with Node-RED. This step-by-step approach made the learning process both enjoyable and highly educational.
 
-### Balance Sheet
 
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in designing and managing middleware solutions for IoT systems. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
 
-### Complementary Elements
-
-#### Project Report
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
