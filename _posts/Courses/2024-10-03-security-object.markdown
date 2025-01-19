@@ -54,7 +54,7 @@ I learned about Man-in-the-Middle (MITM) attacks, where an attacker intercepts a
 </div>
 <br>
 
-For example, in the attacker file we implemented a simple MITM attack where the attacker intercepts and modifies messages between Alice and Bob. The attacker reads the message from Bob, alters it, and then sends the modified message to Alice. This demonstrates how an attacker can manipulate the communication between two parties, highlighting the importance of securing communications to prevent such attacks.
+For example, in the attacker file we implemented a simple MITM attack using the mbedTLS library where the attacker intercepts and modifies messages between Alice and Bob. The attacker reads the message from Bob, alters it, and then sends the modified message to Alice. This demonstrates how an attacker can manipulate the communication between two parties, highlighting the importance of securing communications to prevent such attacks.
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_Secu/lab3_terminal.png" style="width: 100%;"/>
