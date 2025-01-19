@@ -42,53 +42,63 @@
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The “Emerging Network” course, taught by S. Abdellatif, was an insightful exploration into the latest advancements in network technologies. The course covered topics such as Software-Defined Networking (SDN), Next-Generation Networks (NGN), and network automation. It was fascinating to see how these emerging technologies are shaping the future of networking.</p>
+<p>The “Emerging Network” course taught by S. Abdellatif was an exploration into the latest advancements in network technologies. The course covered topics such as Software-Defined Networking (SDN), OpenFlow, and Ryu. It was interesting to see how these emerging technologies are shaping the future of networking.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
 <h3 id="experience-details">Experience Details</h3>
 
 <h4 id="environment-and-context">Environment and Context</h4>
-<p>During this course, I delved into both the theoretical and practical aspects of emerging network technologies. The relevance of these technologies in modern networking environments was evident, and the hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios.</p>
+<p>During this course, I delved into both the theoretical and practical aspects of emerging network technologies. The relevance of these technologies in modern networking environments was evident and the hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios.</p>
 
 <h4 id="my-function">My Function</h4>
 <p>In this course, I was responsible for:</p>
 <ul>
-  <li>Understanding the principles of SDN and NGN.</li>
+  <li>Understanding the principles of SDN and OpenFlow.</li>
   <li>Exploring network automation and orchestration tools.</li>
   <li>Conducting experiments to test the efficiency and scalability of emerging network solutions.</li>
 </ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
+<p>This section explores the technical aspects of SDN and OpenFlow, focusing on their applications in network management.</p>
 
-<h4 id="context">Context</h4>
-<p>This section explores the technical aspects of SDN and LISP, focusing on their applications in network management and mobility.</p>
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
+<h4 id="1-sdn-and-openflow-architecture">1. SDN and OpenFlow Architecture</h4>
+<p>I learned about the architecture of Software-Defined Networking (SDN) and the role of OpenFlow in enabling SDN. SDN separates the control plane from the data plane allowing centralized control of the network through a controller. OpenFlow is a protocol that facilitates communication between the controller and the network devices, enabling dynamic management of network traffic.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Setting the controller by specifying IP address and port</span>
+admin@picOS-OVS<span class="nv">$ </span>ovs-vsctl set-controller br0 tcp:192.168.0.42:6633
+</code></pre></div></div>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h4 id="2-open-vswitch-ovs">2. Open vSwitch (OVS)</h4>
+<p>Open vSwitch (OVS) is a multilayer virtual switch designed to enable network automation through programmatic extensions. I learned how to configure OVS, create logical bridges, and attach physical ports. This involved using commands to set up and manage OVS instances ensuring proper connectivity and flow management.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Adding a bridge and setting its datapath type</span>
+admin@picOS-OVS<span class="nv">$ </span>ovs-vsctl add-br br0 <span class="nt">--</span> <span class="nb">set </span>bridge br0 <span class="nv">datapath_type</span><span class="o">=</span>pica8
+</code></pre></div></div>
 
-<h4 id="what">What</h4>
-<p>We examined SDN and LISP technologies, their architectures, and their applications in network management and mobility.</p>
+<h4 id="3-manual-installation-of-openflow-rules">3. Manual Installation of OpenFlow Rules</h4>
+<p>I gained hands-on experience in manually installing OpenFlow rules on switches. This involved adding and deleting flow entries to control the forwarding behavior of network packets. Understanding how to manipulate flow tables allowed me to implement specific network policies and manage traffic efficiently.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Adding a flow entry to forward packets from port 10 to ports 13 and 16</span>
+admin@picOS-OVS<span class="nv">$ </span>ovs-ofctl add-flow br0 <span class="nv">in_port</span><span class="o">=</span>10,actions<span class="o">=</span>output:13,16
+</code></pre></div></div>
 
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>SDN</strong>:
-    <ul>
-      <li>Centralized network intelligence in a network controller.</li>
-      <li>Enabled precise packet handling and on-demand network behavior implementation.</li>
-    </ul>
-  </li>
-  <li><strong>LISP</strong>:
-    <ul>
-      <li>Attributed two IP addresses to devices for localization and identification.</li>
-      <li>Enabled node mobility by changing only the localization address.</li>
-    </ul>
-  </li>
-</ol>
+<h4 id="4-controller-attachment-and-network-control">4. Controller Attachment and Network Control</h4>
+<p>I explored the process of attaching an OpenFlow controller (Ryu) to the network and using it to manage network devices. This included setting the controller for OVS bridges and launching the controller in verbose mode to monitor interactions. The controller’s role in dynamically updating flow tables based on network events was a key learning point.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Launching the Ryu controller in verbose mode</span>
+controleur# ryu-manager <span class="nt">--verbose</span>
+</code></pre></div></div>
 
-<h4 id="why">Why</h4>
-<p>To gain a comprehensive understanding of SDN and LISP technologies and their applications in real-world scenarios. This knowledge is crucial for designing flexible, efficient, and maintainable network systems.</p>
+<h4 id="5-reactive-and-proactive-network-programming">5. Reactive and Proactive Network Programming</h4>
+<p>I learned about reactive and proactive approaches to network programming. Reactive programming involves the controller responding to network events in real-time, while proactive programming involves pre-configuring flow entries to handle expected traffic patterns. Both approaches have their advantages and use cases in network management.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>admin@picOS-OVS<span class="nv">$ </span>ovs-ofctl add-flow br0 <span class="nv">in_port</span><span class="o">=</span>16,ip,nw_dst<span class="o">=</span>128.0.0.4,actions<span class="o">=</span>output:13
+</code></pre></div></div>
+
+<h4 id="6-network-topology-and-loop-prevention">6. Network Topology and Loop Prevention</h4>
+<p>In the final exercise, I deployed a mesh topology with multiple switches and explored the challenges of loop prevention in network design. Understanding how to manage loops and ensure efficient routing in complex topologies was crucial for maintaining network stability and performance.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>admin@picOS-OVS<span class="nv">$ </span>ovs-ofctl add-flow br0 <span class="nv">in_port</span><span class="o">=</span>16,tcp,tp_dst<span class="o">=</span>22,actions<span class="o">=</span>output:13
+</code></pre></div></div>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
 <ul>
@@ -98,25 +108,27 @@
   <li>Integrating SDN and LISP for enhanced network management and mobility.</li>
 </ul>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The course provided a thorough understanding of SDN and LISP technologies. The combination of theoretical classes and practical labs (though not yet completed) was particularly beneficial in illustrating the concepts. However, the relevance of SDN to IoT networks was questioned, as SDN is more suited for core networks.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into the principles and applications of emerging network technologies. I developed skills in designing and implementing network solutions and learned to assess their efficiency and scalability through experiments.</p>
-
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of emerging network technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in network automation and orchestration tools to fully grasp the complexities of these technologies.</p>
+<p>I found the “Emerging Network” course to be highly engaging and informative, although it was a bit complicated for me as a student specializing in Automatic Electronics compared to those in the Network option. Despite this, I was actively involved in simulating topologies and testing various aspects which provided a practical understanding of how these technologies are transforming network management.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
+<h3 id="my-opinion">My Opinion</h3>
+<p>As I am following the <a href="./master-reoc.html">Master REOC</a>, I had already worked on SDN and Ryu. It was enriching to solidify my skills. Also, the course felt more academic because we had lab sessions that we had to follow step by step to understand the concepts. In REOC, we had to work on a project with our own research which provided a more hands-on and exploratory experience.</p>
 
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in designing and managing emerging network technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.</p>
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
-<h3 id="complementary-elements">Complementary Elements</h3>
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_Emerging_Network/README.md" width="100%" height="800px" style="border:none;"></iframe>
+</div>
 
-<h4 id="project-report">Project Report</h4>
+<p style="text-align: center;">
+    <a href="/img/BE_Emerging_Network/README.md">Open the README file</a>
+</p>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Emerging_Network/Lab_Subject_emerging.pdf">Open the Lab Subject</a>
+</p>
 
 <style>
     body {
