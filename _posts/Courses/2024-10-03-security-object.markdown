@@ -10,74 +10,78 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The "Security for Connected Objects" course, taught by E. Alata, was an essential part of my learning journey. It provided a comprehensive understanding of the security measures required for IoT devices. The course covered various security protocols, cryptographic techniques, and the impact of security vulnerabilities on IoT systems.
+The "Security for Connected Objects" course taught by E. Alata and V. Migliore was an essential part of my learning journey as I am interested in the security field. It provided a comprehensive understanding of the security measures required for IoT devices. The course covered various security protocols, cryptographic techniques, and the impact of security vulnerabilities on IoT systems.
+
 
 ## PART B: DESCRIPTIVE PART
 
 ### Experience Details
 
 #### Environment and Context
-During this course, I delved into both theoretical and practical aspects of IoT security. The relevance of securing IoT devices in today's interconnected world was evident, and the hands-on labs allowed me to apply the concepts learned in class to real-world scenarios.
+During this course, I delved into both theoretical and practical aspects of IoT security. The relevance of securing IoT devices in today's interconnected world was evident and the hands-on labs allowed me to apply the concepts learned in class to real-world scenarios.
 
 #### My Function
-During the course, I participated in various labs and presentations. We studied vulnerabilities in communication protocols, mechanisms for securing web pages, and the behavior of microprocessor pipelines. Additionally, we explored basic cryptography concepts and the certification process for securing communications.
+In this course, I was responsible for:
+- Understanding various security protocols and cryptographic techniques.
+- Implementing security measures for IoT devices.
+- Conducting experiments to identify and mitigate security vulnerabilities in IoT systems.
+- Analyzing and preventing Man-in-the-Middle (MITM) attacks on IoT communication protocols.
 
 ## PART C: TECHNICAL PART
 
-### Presentation
+This section explores the technical aspects of IoT security, focusing on the implementation and verification of security protocols.
 
-#### Context
-This section explores the technical aspects of security for connected objects, focusing on communication protocols, web security, microprocessor behavior, and cryptography.
+### Technical Concepts Learned
 
-### Resolution of Problem
+#### 1. SQL Injection
+I learned about SQL injection attacks and how they can be used to extract information from a database. For example, by entering `admin' OR 1=1 OR '1'='1` in the authentication field and any arbitrary password like `vhjvg`, an attacker can bypass the authentication mechanism. This is because the SQL query becomes always true, allowing unauthorized access to sensitive data. Understanding this vulnerability helped me to implement measures to prevent such attacks in IoT systems.
 
-#### What
-We examined vulnerabilities in communication protocols, mechanisms for securing web pages, microprocessor behavior, and cryptography concepts.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/SQL_injection.png" style="width: 60%;"/>
+</div>
+<br>
 
-#### How
-1. **Communication Protocols**:
-   - Used ProVerif to detect vulnerabilities in communication protocols.
-   - Designed secure communication protocols.
-2. **Web Security**:
-   - Studied SQL injection attacks and methods to prevent them.
-   - Explored cookie theft and countermeasures.
-3. **Microprocessor Behavior**:
-   - Analyzed microprocessor pipelines to understand their properties.
-   - Used prefetching to determine cache sizes.
-4. **Cryptography**:
-   - Studied AES, symmetrical and asymmetrical cryptography.
-   - Implemented the certification process with public and private keys.
+#### 2. Cross-Site Scripting (XSS)
+We explored XSS attacks, which involve injecting malicious scripts into web pages viewed by other users. This can lead to data theft, session hijacking, and other malicious activities. We practiced identifying and mitigating XSS vulnerabilities in web applications.
 
-#### Why
-To gain a comprehensive understanding of security measures for IoT devices and their applications in real-world scenarios. This knowledge is crucial for designing secure and reliable IoT systems.
+For example, we executed JavaScript code in the username field by entering `<script>alert('Bonjour');</script>` or `<script>document.write("<img src='xxxx'/>");</script>`. This demonstrated how an attacker could inject scripts to manipulate the web page or steal information. The repercussions of such attacks can be severe, including unauthorized access to user data and the spread of malware.
 
-### The Knowledge and Skills Mobilized
+#### 3 Man-in-the-Middle (MITM) Attacks
+I learned about Man-in-the-Middle (MITM) attacks, where an attacker intercepts and potentially alters the communication between two parties without their knowledge. This type of attack can lead to data breaches and unauthorized access to sensitive information.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/Man_Middle.png" style="width: 60%;"/>
+</div>
+<br>
+
+For example, in the attacker file we implemented a simple MITM attack where the attacker intercepts and modifies messages between Alice and Bob. The attacker reads the message from Bob, alters it, and then sends the modified message to Alice. This demonstrates how an attacker can manipulate the communication between two parties, highlighting the importance of securing communications to prevent such attacks.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/lab3_terminal.png" style="width: 100%;"/>
+</div>
+<br>
+
+During the lab3, we worked on a scenario where Alice sends a certificate to Bob. Bob receives the certificate and verifies it. At the same time, a hacker intercepts and prints the key. Bob then sends a message back to Alice, but the hacker intercepts the message, alters it, and sends the modified message to Alice.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/lab3_terminal2.png" style="width: 100%;"/>
+</div>
+<br>
+
+## PART D: ANALYTICAL PART
+
+### Knowledge and Skills Mobilized
 - Understanding the fundamentals of security.
 - Identifying security weaknesses in an IoT architecture.
 - Assessing the impact of exploiting a security vulnerability in an IoT architecture.
 - Proposing adequate security counter-measures.
 - Designing secure communication protocols for IoT.
-- Analyzing and evaluating optimal wireless network technologies.
-- Suggesting optimal technological solutions for IoT networks.
-- Optimizing communication protocols for IoT with respect to energy limitations and security concerns.
-- Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver.
-
-### Summary and Review
-The course provided a thorough understanding of security for connected objects. The combination of theoretical classes and practical labs was particularly beneficial in illustrating the concepts. However, the course could have focused more on security specific to IoT devices.
-
-
-## PART D: ANALYTICAL PART
-
-### Analysis of Skills
-Through this course, I gained insights into security measures for IoT devices. I developed skills in implementing and configuring security protocols and learned to assess their effectiveness through experiments.
 
 ### Self Evaluation
-I developed a solid understanding of security for IoT devices and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced cryptographic techniques and their practical applications.
+I already had a first overview of all these concepts, but this course provided a more advanced and technical perspective. We delved into coding using C and tried SQL injection attacks. It was a bit challenging for me since I had never used SQL before, so I had to learn quickly to be efficient. Additionally, working alone during lab sessions pushed me to work harder to understand all the concepts thoroughly.
 
-### Balance Sheet
-
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in modern security measures for IoT devices. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.
+### My Opinion
+This course was very interesting and challenging. I learned a lot about security vulnerabilities and how to prevent them. In my future career, I am interested in working in the security field that mean I have to stay informed about the latest security threats. I really appreciated the practical labs that allowed me to apply the concepts learned in class and I am a bit disappointed that we did not have more time to explore other security concepts
 
 
 <style>
