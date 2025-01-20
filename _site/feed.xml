@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-19T20:39:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-20T11:34:26+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -730,7 +730,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The “AIME - Sensors” course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.</p>
+<p>The “AIME - Sensors” course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique) we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -744,61 +744,108 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
+<p>This section explores the fabrication steps of creating a gas sensor, focusing on the chemical and physical processes involved.</p>
 
-<h4 id="context">Context</h4>
-<p>This section explores the technical aspects of creating a gas sensor, focusing on the chemical and physical processes involved.</p>
+<h3 id="fabrication-steps">Fabrication Steps</h3>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h4 id="a-masking-oxidation">A. Masking Oxidation</h4>
+<p>Chemical oxidation: H2SO4 + H2O2 - This step involves chemically oxidizing the wafer surface to create a protective mask.</p>
 
-<h4 id="what">What</h4>
-<p>We created a gas sensor by synthesizing nanoparticles, applying them to a wafer, and using dielectrophoresis to position the nanoparticles.</p>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/oxidation.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
 
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>Chemical Synthesis</strong>:
-    <ul>
-      <li>Prepared a chemical solution containing nanoparticles.</li>
-    </ul>
-  </li>
-  <li><strong>Wafer Preparation</strong>:
-    <ul>
-      <li>Applied the chemical solution to the wafer.</li>
-    </ul>
-  </li>
-  <li><strong>Dielectrophoresis</strong>:
-    <ul>
-      <li>Used an electrical field to position the nanoparticles on the wafer, creating the sensor.</li>
-    </ul>
-  </li>
-</ol>
+<h4 id="b-poly-silicon-deposition">B. Poly-Silicon Deposition</h4>
+<p>LPCVD furnace - Depositing a layer of polycrystalline silicon using Low-Pressure Chemical Vapor Deposition (LPCVD).</p>
 
-<h4 id="why">Why</h4>
-<p>To gain a comprehensive understanding of the sensor manufacturing process and the underlying chemistry and physics. This knowledge is crucial for designing and implementing IoT devices that rely on accurate environmental sensing.</p>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/deposit.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
 
-<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
-<ul>
-  <li>Manufacturing a nanoparticle sensor using micro-electronics tools: chemical synthesis, assembly, and testing.</li>
-  <li>Understanding the process of dielectrophoresis and its application in sensor creation.</li>
-</ul>
+<h4 id="c-polysilicon-doping-n-type">C. Polysilicon Doping (n-type)</h4>
+<p>Phosphorus impurity diffusion - Doping the polysilicon layer with phosphorus impurities to modify its electrical properties.</p>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The course provided a thorough understanding of the sensor manufacturing process. The instructions were clear and beginner-friendly, making the labs a good introduction to the world of physics and chemistry.</p>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/doping.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="d-photolithography-no-1-polysilicon-etching">D. Photolithography No. 1: “Polysilicon Etching”</h4>
+<p>Etching the polysilicon layer to create the desired patterns using photolithography.</p>
+
+<h4 id="e-organic-decontamination">E. Organic Decontamination</h4>
+<p>Removing organic contaminants from the wafer surface to ensure clean processing.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/look.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="f-dry-oxidation">F. Dry Oxidation</h4>
+<p>Performing dry oxidation to grow a thin oxide layer on the wafer surface.</p>
+
+<h4 id="g-photolithography-no-2-contact-openings">G. Photolithography No. 2: “Contact Openings”</h4>
+<p>Etching openings in the oxide layer to create contact points for electrical connections.</p>
+
+<h4 id="h-metallization">H. Metallization</h4>
+<p>Depositing a metal layer on the wafer to form electrical contacts and interconnections.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/silicon.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="i-photolithography-no-3-metal-etching">I. Photolithography No. 3: “Metal Etching”</h4>
+<p>Etching the metal layer to define the metal contacts and interconnections.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/sensor_micro.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="j-metal-annealing">J. Metal Annealing</h4>
+<p>Annealing the metal layer to improve its electrical properties and adhesion.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/annealing.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="l-sensor-assembly">L. Sensor Assembly</h4>
+<p>The final step involved assembling the sensor, connecting the wafer to electronic components, and testing its functionality. Detailed information can be found in the <a href="./microcontroleur_hardware.html">Microcontroller Hardware Section</a>.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/test.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="m-measures-under-controlled-atmosphere">M. Measures under Controlled Atmosphere</h4>
+<p>We conducted measurements under controlled atmosphere conditions to evaluate the gas sensors by exposing them to ammonia (NH3) and ethanol (C2H6O) at a concentration of 0.1% in dry air. The sensor’s resistance variation was recorded using Labview with a bias voltage of 20V.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/atmosphere.jpg" style="width: 30%;" />
+</div>
+<p><br /></p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into the principles and applications of sensor technologies. I developed skills in designing and integrating sensors and learned to assess their functionality and efficiency through experiments.</p>
+<h3 id="knowledge-and-skills-acquired">Knowledge and Skills Acquired</h3>
+<ul>
+  <li>Understanding the fundamentals of sensor technologies.</li>
+  <li>Designing and integrating sensors.</li>
+  <li>Applying chemical synthesis techniques for nanoparticle creation.</li>
+  <li>Assembling sensors and connecting them to electronic components.</li>
+  <li>Conducting experiments to assess sensor functionality and efficiency.</li>
+  <li>Recording and analyzing data from sensor experiments.</li>
+</ul>
 
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of sensor technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced sensor integration techniques and their practical applications.</p>
+<p>This course was a total discovery for me as I had no prior skills in this area. Understanding the chemical concepts was greatly facilitated by the teachers, who explained and guided each step thoroughly. I was attentive enough to grasp and practice everything, so I didn’t encounter any issues.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
-
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in designing and managing sensor technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.</p>
-
-<h3 id="complementary-elements">Complementary Elements</h3>
+<h3 id="my-opinion">My Opinion</h3>
+<p>Before this course, I didn’t know exactly how sensors were made. Thanks to this course, it was an interesting first experience that gave me new skills, not exactly in my predilection area, but in understanding how sensors we use every day are made. We started the labs directly with the silicon already engraved, but it would also be interesting to start from scratch and engrave sensors directly on silicon.</p>
 
 <h4 id="project-link">Project Link</h4>
 

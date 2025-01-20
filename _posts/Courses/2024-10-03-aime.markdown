@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The "AIME - Sensors" course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique), we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.
+The "AIME - Sensors" course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique) we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -24,48 +24,107 @@ During the labs, I participated in the chemical synthesis of the nanoparticles a
 
 ## PART C: TECHNICAL PART
 
-### Presentation
+This section explores the fabrication steps of creating a gas sensor, focusing on the chemical and physical processes involved.
 
-#### Context
-This section explores the technical aspects of creating a gas sensor, focusing on the chemical and physical processes involved.
+### Fabrication Steps
 
-### Resolution of Problem
+#### A. Masking Oxidation
+Chemical oxidation: H2SO4 + H2O2 - This step involves chemically oxidizing the wafer surface to create a protective mask.
 
-#### What
-We created a gas sensor by synthesizing nanoparticles, applying them to a wafer, and using dielectrophoresis to position the nanoparticles.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/oxidation.jpg" style="width: 30%;"/>
+</div>
+<br>
 
-#### How
-1. **Chemical Synthesis**:
-   - Prepared a chemical solution containing nanoparticles.
-2. **Wafer Preparation**:
-   - Applied the chemical solution to the wafer.
-3. **Dielectrophoresis**:
-   - Used an electrical field to position the nanoparticles on the wafer, creating the sensor.
+#### B. Poly-Silicon Deposition
+LPCVD furnace - Depositing a layer of polycrystalline silicon using Low-Pressure Chemical Vapor Deposition (LPCVD).
 
-#### Why
-To gain a comprehensive understanding of the sensor manufacturing process and the underlying chemistry and physics. This knowledge is crucial for designing and implementing IoT devices that rely on accurate environmental sensing.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/deposit.jpg" style="width: 30%;"/>
+</div>
+<br>
 
-### The Knowledge and Skills Mobilized
-- Manufacturing a nanoparticle sensor using micro-electronics tools: chemical synthesis, assembly, and testing.
-- Understanding the process of dielectrophoresis and its application in sensor creation.
+#### C. Polysilicon Doping (n-type)
+Phosphorus impurity diffusion - Doping the polysilicon layer with phosphorus impurities to modify its electrical properties.
 
-### Summary and Review
-The course provided a thorough understanding of the sensor manufacturing process. The instructions were clear and beginner-friendly, making the labs a good introduction to the world of physics and chemistry.
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/doping.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### D. Photolithography No. 1: "Polysilicon Etching"
+Etching the polysilicon layer to create the desired patterns using photolithography.
+
+#### E. Organic Decontamination
+Removing organic contaminants from the wafer surface to ensure clean processing.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/look.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### F. Dry Oxidation
+Performing dry oxidation to grow a thin oxide layer on the wafer surface.
+
+#### G. Photolithography No. 2: "Contact Openings"
+Etching openings in the oxide layer to create contact points for electrical connections.
+
+#### H. Metallization
+Depositing a metal layer on the wafer to form electrical contacts and interconnections.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/silicon.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### I. Photolithography No. 3: "Metal Etching"
+Etching the metal layer to define the metal contacts and interconnections.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/sensor_micro.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### J. Metal Annealing
+Annealing the metal layer to improve its electrical properties and adhesion.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/annealing.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### L. Sensor Assembly
+The final step involved assembling the sensor, connecting the wafer to electronic components, and testing its functionality. Detailed information can be found in the [Microcontroller Hardware Section](./microcontroleur_hardware.html).
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/test.jpg" style="width: 30%;"/>
+</div>
+<br>
+
+#### M. Measures under Controlled Atmosphere
+We conducted measurements under controlled atmosphere conditions to evaluate the gas sensors by exposing them to ammonia (NH3) and ethanol (C2H6O) at a concentration of 0.1% in dry air. The sensor's resistance variation was recorded using Labview with a bias voltage of 20V.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_AIME/atmosphere.jpg" style="width: 30%;"/>
+</div>
+<br>
 
 ## PART D: ANALYTICAL PART
 
-### Analysis of Skills
-Through this course, I gained insights into the principles and applications of sensor technologies. I developed skills in designing and integrating sensors and learned to assess their functionality and efficiency through experiments.
+### Knowledge and Skills Acquired
+- Understanding the fundamentals of sensor technologies.
+- Designing and integrating sensors.
+- Applying chemical synthesis techniques for nanoparticle creation.
+- Assembling sensors and connecting them to electronic components.
+- Conducting experiments to assess sensor functionality and efficiency.
+- Recording and analyzing data from sensor experiments.
+
 
 ### Self Evaluation
-I developed a solid understanding of sensor technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced sensor integration techniques and their practical applications.
+This course was a total discovery for me as I had no prior skills in this area. Understanding the chemical concepts was greatly facilitated by the teachers, who explained and guided each step thoroughly. I was attentive enough to grasp and practice everything, so I didn't encounter any issues.
 
-### Balance Sheet
-
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in designing and managing sensor technologies. The hands-on experiments were particularly valuable in reinforcing the theoretical concepts.
-
-### Complementary Elements
+### My Opinion
+Before this course, I didn't know exactly how sensors were made. Thanks to this course, it was an interesting first experience that gave me new skills, not exactly in my predilection area, but in understanding how sensors we use every day are made. We started the labs directly with the silicon already engraved, but it would also be interesting to start from scratch and engrave sensors directly on silicon.
 
 #### Project Link
 
