@@ -14,7 +14,15 @@ Driven by a passion for electronics, computer science, and embedded systems, I d
 
 INSA Toulouse is a school that offers a wide range of courses in the fields of electronics, computer science, and embedded systems. The school's reputation and the quality of the courses offered are the main reasons why I chose to study there.
 
-During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge—an invaluable asset for an engineering career.
+During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge an invaluable asset for an engineering career.
+
+Joining INSA has allowed me to explore the role of an engineer in a professional environment. It has provided a deeper understanding of the industry and helped me enhance both my technical expertise and confidence in decision-making. The balance between academic studies and real-life project applications is the ideal framework to develop my engineering skills.
+
+# Why INSA Toulouse
+
+INSA Toulouse offers a wide range of courses in electronics, computer science, and embedded systems. The school's reputation and the quality of the courses were the main reasons I chose to study here.
+
+During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge. This combination is an invaluable asset for an engineering career.
 
 Joining INSA has allowed me to explore the role of an engineer in a professional environment. It has provided a deeper understanding of the industry and helped me enhance both my technical expertise and confidence in decision-making. The balance between academic studies and real-life project applications is the ideal framework to develop my engineering skills.
 
@@ -38,7 +46,7 @@ This work-study experience allowed me to put my theoretical knowledge into pract
 
 # My Internship Abroad
 
-I had the opportunity to do an internship abroad at Vitesco Technologies in Iași, Romania, where I worked on exciting projects in the field of embedded systems. Here is an overview of my main activities:
+I had the opportunity to do an internship abroad at Vitesco Technologies in Iași, Romania, where I worked on new projects in the field of embedded systems. Here is an overview of my main activities:
 
 - **Study and implementation of solutions for Flash memory management on a new microcontroller**: I participated in the analysis and implementation of solutions to optimize Flash memory management, essential for the proper functioning of embedded systems.
 
@@ -96,7 +104,7 @@ My journey at INSA Toulouse has been a key stepping stone in fulfilling my passi
 
 During my year in the ISS specialization, I learned a lot of new concepts that are useful for my professional aspirations of becoming an engineer. While many of the courses were designed to be accessible to everyone, I found that I had already covered most of the content related to computer science or networking. The ISS specialization provided me with a broader understanding of the creation of sensors and the concept of IoT in general.
 
-One significant positive aspect of the ISS specialization is that it gave me the opportunity to pursue an additional master's degree specialized in Networking and Telecommunications. This additional qualification is highly valuable for my CV and has helped me deepen my knowledge of networks.
+One significant positive aspect of the ISS specialization is that it gave me the opportunity to pursue an additional master's degree specialized in Embedded Network and Connected Object. This additional qualification is highly valuable for my CV and has helped me deepen my knowledge of networks.
 
 Looking ahead, I have many questions about my future, but I am determined to move forward and make the most of the opportunities that come my way.
 
