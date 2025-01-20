@@ -20,57 +20,159 @@ The Master REOC program was an intensive and comprehensive journey into the worl
 Throughout the Master REOC program, I was immersed in both theoretical and practical aspects of embedded networks and connected objects. The relevance of these technologies in today's interconnected world was evident, and the hands-on projects allowed me to apply the concepts learned in class to real-world scenarios.
 
 #### My Function
-In the practical sessions, I developed an application to redirect traffic from one server to another transparently for the client. This involved modifying packet destination addresses and source addresses of server responses. Additionally, I explored the deployment and orchestration of network functions using MANO, such as dynamically deploying firewalls and load balancers based on network traffic.
+In this program, I was responsible for:
+- Developing the network architecture and implementing the communication protocols.
+- Creating Docker instances and simulating the network topology using Containernet.
+- Implementing monitoring and adaptation mechanisms for network management.
+- Ensuring the security and integrity of the network data.
 
 ## PART C: TECHNICAL PART
 
-### Presentation
-
-#### Context
 This section explores the technical aspects of SDN and MANO, focusing on their applications in network management and orchestration.
+#### 1. Network Architecture
+We designed a network topology composed of multiple switches and hosts to simulate a complex network environment. The topology included components such as switches (S1, S2, S3), hosts (Z1, Z2, Z3), an intermediary gateway (GI), and a server. This setup allowed us to test data filtering and connectivity between network components.
 
-### Resolution of Problem
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_REOC/topology.png" style="width: 30%;"/>
+</div>
 
-#### What
-We examined SDN and MANO technologies, their architectures, and their applications in network management. We developed practical applications to illustrate their use.
+```python
+def setup_topology():
+    net = DCNetwork(monitor=False, enable_learning=True)
 
-#### How
-1. **SDN**:
-   - Centralized network intelligence in a network controller.
-   - Developed an application to redirect traffic transparently.
-2. **MANO**:
-   - Standardized deployment and orchestration of network functions.
-   - Dynamically deployed firewalls and load balancers based on network traffic.
+    # Adding switches
+    s1 = net.addSwitch('s1')
+    s2 = net.addSwitch('s2')
+    s3 = net.addSwitch('s3')
 
-#### Why
-To gain a comprehensive understanding of SDN and MANO technologies and their applications in real-world scenarios. This knowledge is crucial for designing flexible, efficient, and maintainable network systems.
+    # Adding Docker containers as network hosts
+    z1 = net.addDocker('z1', ip='10.0.0.1', dimage="reoc:device")
+    z2 = net.addDocker('z2', ip='10.0.0.2', dimage="reoc:device")
+    z3 = net.addDocker('z3', ip='10.0.0.3', dimage="reoc:device")
+    
+    ordonnanceur = net.addDocker('ordon', ip='10.0.0.100', dimage="reoc:test")
+    gateway_inter = net.addDocker('gi', ip='10.0.0.254', dimage="reoc:gateway")
+    serveur = net.addDocker('serveur', ip='10.0.0.200', dimage="reoc:server")
+
+    # Creating links between switches and hosts
+    net.addLink(s1, z1)
+    net.addLink(s1, z2)
+    net.addLink(s1, z3)
+    net.addLink(s2, s1, intfName1='s2-s1', intfName2='s1-s2')
+    net.addLink(s2, ordonnanceur)
+    net.addLink(s2, gateway_inter)
+    net.addLink(s3, s2, intfName1='s3-s2', intfName2='s2-s3')
+    net.addLink(s3, serveur)
+
+    # Adding datacenter and API endpoints
+    dc1 = net.addDatacenter("dc1")
+    api1 = OpenstackApiEndpoint("0.0.0.0", 6001)
+    api1.connect_datacenter(dc1)
+    api1.start()
+    api1.connect_dc_network(net)
+
+    rapi1 = RestApiEndpoint("0.0.0.0", 5001)
+    rapi1.connectDCNetwork(net)
+    rapi1.connectDatacenter(dc1)
+    rapi1.start()
+
+    # Starting the network
+    net.start()
+    net.CLI()
+    net.stop()
+
+if __name__ == '__main__':
+    setup_topology()
+```
+
+#### 2. Docker Instances
+We used Docker to create instances for each network component. A script was developed to build Docker images and generate instances efficiently. This setup facilitated the testing of connectivity and data transmission between different zones.
+
+```bash
+#!/bin/bash
+SCRIPT_PATH=$(realpath "$0")
+SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
+cd "$SCRIPT_DIR" || exit 1
+for dockerfile in "$SCRIPT_DIR"/*.dockerfile; do
+    image_tag="reoc:$(basename "$dockerfile" .dockerfile)"
+    echo "Building image: $image_tag from $dockerfile"
+    docker build -t "$image_tag" -f "$dockerfile" .
+done
+```
+#### 3. Simulation with Containernet
+I used Containernet, a fork of Mininet, to simulate the network topology. This involved creating and managing network links, and ensuring the connectivity between Docker instances. I developed a script to reset the simulation environment and remove any residual connections.
+
+Once the `topology_sdn.py` script is launched I tested the connectivity between different hosts in the topology, I used the following ping commands:
+Test connectivity from each instances to other hosts:
+```bash
+containernet> z1 ping -c 1 z2
+containernet> z1 ping -c 1 serveur
+```
+
+Test connectivity from `z2` to other hosts:
+```bash
+containernet> z2 ping -c 1 z1
+containernet> z2 ping -c 1 gi
+```
+
+Test connectivity from `ordon` (scheduler) to other hosts:
+```bash
+containernet> ordon ping -c 1 z3
+containernet> ordon ping -c 1 serveur
+```
+
+#### 4. Application 'Moniteur'
+
+##### 4.1 Monitoring
+The monitoring interface, developed with npyscreen allows users to select and execute various scripts based on the tests they wish to perform. For instance, to monitor the data sent by each zone, we focus on switch S1. By calling the Ryu API, we can observe metrics such as incoming and outgoing traffic, packet size, and total bytes in real-time.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_REOC/monitor.png" style="width: 60%;"/>
+</div>
+
+##### 4.2 Adaptation
+Adaptation scenarios include blocking frames from Z2 and Z3 or reducing their bandwidth while prioritizing Z1. This is achieved using POST requests to the Ryu API to apply rules such as:
+
+```json
+{
+    "dpid": 1,
+    "table_id": 0,
+    "priority": 1,
+    "match": {
+        "in_port": 2
+    },
+    "instructions": [
+        {
+            "type": "APPLY_ACTIONS",
+            "actions": [
+                {
+                    "type": "DROP"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
+## PART D: ANALYTICAL PART
 
 ### The Knowledge and Skills Mobilized
 - Understanding SDN architecture and its applications.
 - Developing applications for traffic management using SDN.
-- Understanding MANO and its role in network function virtualization.
 - Deploying and orchestrating network functions dynamically.
-- Integrating SDN and MANO for enhanced network management.
-
-### Summary and Review
-The course provided a thorough understanding of SDN and MANO technologies. The combination of theoretical classes and practical labs was particularly beneficial in illustrating the concepts. However, scheduling conflicts between INSA and ENSEEIHT students resulted in missed courses on interesting subjects like LoRa network modeling and the P4 protocol.
-
-## PART D: ANALYTICAL PART
-
-### Analysis of Skills
-Through this program, I gained insights into the principles and applications of embedded networks and IoT technologies. I developed skills in designing and implementing solutions and learned to assess their functionality and efficiency through experiments.
 
 ### Self Evaluation
-I developed a solid understanding of embedded networks and IoT technologies and their applications in various fields. However, I realized that I need to enhance my proficiency in advanced network security protocols and their implementation.
+The Master REOC program was intensive, especially since we had INSA courses in parallel. However, it was a valuable experience as I learned new concepts that I could implement after careful analysis of libraries and understanding how SDN works. Thanks to my partner, Yohan Boujon, we were efficient as we knew each other well and developed almost everything that was required in a short time during the labs.
 
-### Balance Sheet
+### My Opinion
+If I had to choose again, I would undoubtedly enroll in the Master REOC program. The curriculum allowed me to extend my vision of networks in embedded systems and gain valuable experience. The teachers provided a solid foundation to understand all the concepts in the professional world. The skills I acquired will be useful for my career. This program has significantly contributed to my professional growth and prepared me for future challenges in the field of networked systems.
 
-#### Highlights
-The program was highly relevant to my professional career, providing practical experience in designing and managing embedded network and IoT systems. The hands-on projects were particularly valuable in reinforcing the theoretical concepts.
 
-### Complementary Elements
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
-#### Project Report
 You can find the complete project report on [GitHub_SDCI_REOC](https://github.com/CedricChnfr/sdci-reoc).
 
 <div style="display: flex; justify-content: center;">
@@ -78,9 +180,12 @@ You can find the complete project report on [GitHub_SDCI_REOC](https://github.co
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_REOC/CHANFREAU_BOUJON_SDCI.pdf" target="_blank">Download Complete Report</a>
+    <a href="/img/BE_REOC/CHANFREAU_BOUJON_SDCI.pdf" target="_blank">Open Complete Report</a>
 </p>
 
+<p style="text-align: center;">
+    <a href="https://docs.google.com/presentation/d/1N_HovdFQlvxd32VUzZlEpD46pnBx_45RN4CnxDaeWEs/edit">Open Lab Subject</a>
+</p>
 
 
 <style>
