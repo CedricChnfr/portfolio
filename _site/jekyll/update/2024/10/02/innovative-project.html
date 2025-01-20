@@ -49,56 +49,90 @@
 <h3 id="experience-details">Experience Details</h3>
 
 <h4 id="environment-and-context">Environment and Context</h4>
-<p>The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.</p>
+<p>The project was carried out in a collaborative environment, with team members working together to brainstorm ideas, design prototypes, and implement solutions. This project is part of a multidisciplinary innovative initiative within the ISS curriculum. The objective is to develop a system that accurately detects water leaks in networks using a non-intrusive method. Initially, the focus was on detecting household water leaks. However, as the project progressed, the scope expanded to a distributed approach for public water network infrastructures. The project provided a platform to apply theoretical knowledge to practical scenarios, fostering innovation and creativity.</p>
 
-<h4 id="bi2-your-function">B.I.2. Your Function</h4>
-<p>In this project, I was responsible for:</p>
+<h4 id="my-function">My Function</h4>
+<p>Our team consists of five members. In this project, I was responsible for:</p>
 <ul>
   <li>Developing the embedded software to retrieve data from the accelerometer for leak detection.</li>
   <li>Creating a mobile application using React Native to monitor and control the system.</li>
   <li>Designing 3D models (CAD) for the hardware components.</li>
+  <li>Implementing security measures using AES (Advanced Encryption Standard) to ensure data integrity and confidentiality during transmission.</li>
 </ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
 
-<h3 id="presentation-1">Presentation</h3>
-
-<h4 id="context">Context</h4>
 <p>This section explores the technical aspects of the innovative project, focusing on the problem analysis, solution design, and prototype implementation.</p>
 
-<h3 id="resolution-of-problem">Resolution of Problem</h3>
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
 
-<h4 id="what">What</h4>
-<p>We identified a real-life problem related to water leak detection and developed a technological solution to address it. The project involved designing and implementing a prototype to demonstrate the solution’s feasibility.</p>
+<h4 id="1-mobile-application-development">1. Mobile Application Development</h4>
+<p>We chose React Native and Expo for developing our mobile application due to their efficiency in cross-platform development. React Native allows us to write JavaScript code that compiles into native code for both iOS and Android, reducing development time and maintenance efforts. Expo simplifies the setup process and provides access to native APIs, streamlining development.</p>
 
-<h4 id="how">How</h4>
-<ol>
-  <li><strong>Problem Analysis</strong>:
-    <ul>
-      <li>Conducted a thorough analysis of the problem to understand its root causes and impact.</li>
-      <li>Identified that traditional water leak detection methods are expensive, intrusive, and not suitable for low power IoT applications.</li>
-    </ul>
-  </li>
-  <li><strong>Solution Design</strong>:
-    <ul>
-      <li>Brainstormed and evaluated different technological solutions.</li>
-      <li>Selected a vibration-based approach leveraging external vibrations from water flow in the pipe to detect leaks with precision, using advanced signal processing.</li>
-      <li>Decided to use an IMU (Inertial Measurement Unit) and ESP32 for the prototype.</li>
-    </ul>
-  </li>
-  <li><strong>Prototype Implementation</strong>:
-    <ul>
-      <li>Designed and developed a prototype node architecture including IMU, ESP32, LoRa transceiver, and power management components.</li>
-      <li>Implemented signal processing and machine learning algorithms for leak detection.</li>
-      <li>Developed a mobile application using React Native to monitor and control the system.</li>
-      <li>Created 3D models (CAD) for the hardware components.</li>
-      <li>Tested the prototype to ensure it met the project requirements.</li>
-    </ul>
-  </li>
-</ol>
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Innovative_Project/app_workspace.png" style="width: 20%;" />
+</div>
 
-<h4 id="why">Why</h4>
-<p>To gain practical experience in solving real-life problems using technological solutions. This knowledge is crucial for developing innovative and effective solutions in a professional setting.</p>
+<p>The application architecture includes:</p>
+<ul>
+  <li><strong>assets</strong>: Static resources like images and icons.</li>
+  <li><strong>Config</strong>: Manages node data including battery, vibration, sound levels, and leak status.</li>
+  <li><strong>Screen</strong>: Main screens such as Dashboard, Profile, Leak Detection, and Statistics.</li>
+  <li><strong>App.js</strong>: Entry point managing navigation.</li>
+  <li><strong>app.json</strong>: App configuration metadata.</li>
+</ul>
+
+<p>Key screens and features:</p>
+<ul>
+  <li><strong>WelcomeScreen</strong>: Displays a welcome message and app logo.</li>
+  <li><strong>HomeScreen</strong>: Main entry point with login options.</li>
+  <li><strong>DashboardScreen</strong>: Overview of nodes, battery levels, and leak status.</li>
+  <li><strong>HistoricScreen</strong>: History of node activities and positions on a map.</li>
+  <li><strong>LeakScreen</strong>: History of detected leaks with details and contact options.</li>
+  <li><strong>StatisticsScreen</strong>: Detailed water consumption statistics.</li>
+</ul>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Innovative_Project/HomeScreen.png" style="width: 20%;" />
+    <img src="/img/BE_Innovative_Project/DashboardScreen.png" style="width: 20%;" />
+    <img src="/img/BE_Innovative_Project/HistoricScreen.png" style="width: 20%;" />
+    <img src="/img/BE_Innovative_Project/LeakScreen.png" style="width: 20%;" />
+    <img src="/img/BE_Innovative_Project/StatisticsScreen.png" style="width: 20%;" />
+</div>
+<p><br /></p>
+
+<p>The app reads data from a JSON file in the Config directory, synchronized with the server for real-time updates. Future plans include enhanced data processing, real-time notifications, user authentication, and advanced analytics for better water usage insights.</p>
+
+<h4 id="2-3d-modeling-cad">2. 3D Modeling (CAD)</h4>
+<p>We used SolidWorks for designing the mechanical model due to its robust features and user-friendly interface. The sensor case was designed to house the electronic board, considering size, shape, and material. It includes openings for sensor connections and mounting points. A dedicated space for the sound sensor ensures direct contact with the pipeline, essential for accurate leak detection. Screw holes secure the housing and electronic board, preventing false vibration readings.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 60px;">
+    <img src="/img/BE_Innovative_Project/Assembly.png" style="width: 30%;" />
+    <img src="/img/BE_Innovative_Project/3D_Model.png" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<p>Simulation and testing were conducted to ensure the model meets specifications, with iterative 3D printing and stress analysis to refine the design.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 60px;">
+    <img src="/img/BE_Innovative_Project/simulation.png" style="width: 30%;" />
+</div>
+<p><br /></p>
+
+<h4 id="3-security-features">3. Security Features</h4>
+
+<h5 id="security-concern">Security Concern</h5>
+<p>Our project involves detecting water leaks using a distributed network of sensors (ESP32 and LoRa module). These sensors transmit metrics and preliminary analysis results. Without security, the system is vulnerable to attacks like replay, data tampering, and eavesdropping.</p>
+
+<h5 id="solution">Solution</h5>
+<p>We implemented a lightweight security mechanism using AES-128 encryption using TinyAES library (https://github.com/kokke/tiny-AES-c) with pre-shared symmetric keys. Each sensor encrypts data in Cipher Block Chaining (CBC) mode with a unique Initialization Vector (IV) for each message. To reduce overhead, we transmit only two randomly generated bytes of the IV, while the rest is static. This approach balances security and efficiency, leveraging the randomness in FFT data to mitigate replay attacks.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Innovative_Project/aes_encrypt.png" style="width: 90%;" />
+</div>
+<p><br /></p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
 
 <h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
 <ul>
@@ -112,25 +146,16 @@
   <li>Producing comprehensive reports in English for developed projects.</li>
 </ul>
 
-<h3 id="summary-and-review">Summary and Review</h3>
-<p>The project provided a thorough understanding of the process of developing innovative solutions to real-life problems. The combination of problem analysis, solution design, and prototype implementation was particularly beneficial in illustrating the concepts. The emphasis on presenting and debating technical choices, as well as producing detailed reports, helped in developing communication and documentation skills.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="analysis-of-skills">Analysis of Skills</h3>
-<p>Through this course, I gained insights into the principles and applications of innovative project development. I developed skills in designing and implementing solutions and learned to assess their functionality and efficiency through experiments.</p>
-
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed a solid understanding of innovative project development and its applications in various fields. However, I realized that I need to enhance my proficiency in advanced project management techniques and their practical applications.</p>
+<p>This project was one of the most advanced projects of my life. Carrying a project from zero to completion, involving hardware, software, data storage, data transmission, modeling, server, AI, and application interface, it was a comprehensive project prototype ready for commercialization. Due to the project’s scale, I couldn’t work on all aspects, but I collaborated closely with my colleagues to stay informed. I am proud of my contributions, and it is functional. Being part of a dedicated team where everyone was eager to learn new things was a rewarding experience.</p>
 
-<h3 id="balance-sheet">Balance Sheet</h3>
+<h3 id="my-opinion">My Opinion</h3>
+<p>This project was a good opportunity to explore various fields and conduct our own research on how to handle the project. In my opinion, the current session organization was great for delivering a prototype but not sufficient for delivering a fully functional final product with all the desired features. I discovered how to integrate many concepts learned during the year into a real project, similar to what we might be asked to do in a company. This project was a great experience, and I am proud of the results we achieved.</p>
 
-<h4 id="highlights">Highlights</h4>
-<p>The course was highly relevant to my professional career, providing practical experience in developing innovative solutions. The hands-on project work was particularly valuable in reinforcing the theoretical concepts.</p>
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
 
-<h3 id="complementary-elements">Complementary Elements</h3>
-
-<h4 id="project-report">Project Report</h4>
 <p>You can find the complete project report on <a href="https://github.com/what-a-leak">GitHub_Innovative_Project</a>.</p>
 
 <style>
