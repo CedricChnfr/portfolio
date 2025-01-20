@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The English course, taught by J. Shea, was designed to enhance our communication skills, particularly in a professional and technical context. The course included sessions focused on preparing and delivering presentations, as well as writing reports in English. Additionally, we had sessions dedicated to preparing for the TOEIC exam, which is a requirement for obtaining the engineering diploma.
+The English course taught by J. Shea, was designed to enhance our communication skills, particularly in a professional and technical context. The course included sessions focused on preparing and delivering presentations, as well as writing reports in English. Additionally, we had sessions dedicated to preparing for the TOEIC exam, which is a requirement for obtaining the engineering diploma.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -21,58 +21,40 @@ During this course, I worked on improving my English communication skills throug
 
 #### My Function
 In this course, I was responsible for:
-- Presenting and debating the technical choices made for the "What a Leak" project in English.
+- Presenting and debating the technical choices made for the [Innovative project (What a Leak)](./innovative-project.html) project in English.
 - Producing a detailed report in English for the developed project.
 - Preparing for the TOEIC exam through dedicated sessions.
 
 ## PART C: TECHNICAL PART
 
-### Presentation
+In this section I present the technical aspects of the English course, focusing on the preparation and delivery of presentations, report writing, and TOEIC exam preparation.
 
-#### Context
-This section explores the technical aspects of the English course, focusing on the preparation and delivery of presentations, report writing, and TOEIC exam preparation.
+### Technical Concepts Learned
+#### 1. Presentation Skills
+We learned how to make and give good presentations in English. This included organizing the presentation, using visual aids, and practicing speaking in front of others. The goal was to clearly explain technical information and keep the audience interested. Additionally, we focused on body language, such as maintaining eye contact, using gestures effectively, and ensuring confident posture for presentations.
 
-### Resolution of Problem
+#### 2. Report Writing
+We practiced writing detailed technical reports in English. This involved organizing the content, using the right technical words, and making sure everything was clear and easy to understand. The reports were about our innovative project "What a Leak," and we got feedback to help us improve our writing.
 
-#### What
-We aimed to improve our English communication skills, particularly in presenting technical projects and writing detailed reports. Additionally, we prepared for the TOEIC exam to meet the requirements for obtaining the engineering diploma.
+#### 3. TOEIC Exam Preparation
+We had special sessions to get ready for the TOEIC exam. Including listening, reading, and grammar exercises. We also took practice exams to get used to the format and timing of the test.
 
-#### How
-1. **Presentation and Debate**:
-   - Worked on presenting and debating the technical choices made for the "What a Leak" project.
-2. **Report Writing**:
-   - Produced a detailed report in English for the developed project.
-3. **TOEIC Preparation**:
-   - Attended sessions focused on preparing for the TOEIC exam, which included practice tests and strategies for improving our scores.
-
-#### Why
-To enhance our English communication skills, which are essential for professional and technical contexts. Additionally, passing the TOEIC exam with a good score is a requirement for obtaining the engineering diploma.
+## PART D: ANALYTICAL PART
 
 ### The Knowledge and Skills Mobilized
 - Presenting and debating technical choices in English.
 - Producing detailed reports in English for technical projects.
 - Preparing for and successfully passing the TOEIC exam.
 
-### Summary and Review
-The course provided a thorough understanding of how to effectively communicate in English in a professional and technical context. The combination of presentation practice, report writing, and TOEIC preparation was particularly beneficial in enhancing our language skills. The course was instrumental in helping me achieve a TOEIC score of 890, which is well above the required 815 for the engineering diploma.
-
-## PART D: ANALYTICAL PART
-
-### Analysis of Skills
-Through this course, I gained insights into effective communication strategies in English. I developed skills in presenting and debating technical projects, and writing detailed reports in English. I also learned to assess and improve my English language proficiency through TOEIC preparation.
-
 ### Self Evaluation
-I developed a solid understanding of how to communicate effectively in English in a professional and technical context. Successfully passing the TOEIC exam with a score of 890 was a significant achievement. However, I realized that I need to continue practicing English communication skills to maintain and further improve proficiency.
+At the beginning of the school year, I was not very confident in my oral presentation skills, as it had been more than six months since my last presentation. However, with regular project presentations, I improved my presentation and writing skills through practice. Additionally, the internship abroad in Romania significantly enhanced my comprehension and oral skills, which was a major factor in my success in the TOEIC exam that I get with a score of 890 was a significant achievement. However, I realized that I need to continue practicing English communication skills to maintain and further improve proficiency.
 
-### Balance Sheet
+### My Opinion
+I found the English course to be very beneficial for improving my communication skills in a professional and technical context. The focus on presentations, report writing, and TOEIC exam preparation provided a well-rounded approach to enhancing English proficiency. The hands-on practice and feedback from the instructor were particularly helpful in identifying areas for improvement and building confidence in English communication.
 
-#### Highlights
-The course was highly relevant to my professional career, providing practical experience in presenting and debating technical projects, and writing detailed reports in English. The TOEIC preparation sessions were particularly valuable in helping me achieve a high score on the exam.
-
-### Complementary Elements
-
-#### TOEIC Results
-
+<div style="text-align: center;">
+    <h1>TOEIC Result</h1>
+</div>
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/TOEIC.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
 </div>
