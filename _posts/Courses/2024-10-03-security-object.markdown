@@ -146,6 +146,12 @@ The complete 32-bit data frame for "A" would be: `0x8D72454E`.
 
 After completing the classical test using `/dev/tty1CM0`, we proceeded with the quantum test on `/dev/ttyACM1`. Initially, we performed a calibration by setting the angle to 0, scan resolution to 1, offset to 0, and polarization to 0. We then converted the luminosity signal into voltage by scanning and measuring the intensity after the linear polarizer as it rotated through a full 360 degrees. Following the calibration, we executed a Python script to automate key distribution and generate a 32 kbit key. 
 
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/cute.png" style="width: 25%;"/>
+    <img src="/img/BE_Secu/hdva.png" style="width: 40%;"/>
+    <img src="/img/BE_Secu/key.png" style="width: 40%;"/>
+</div>
+<br>
 
 Additionally, we introduced a prism to the setup, allowing the light signals from Bob, Alice, and Eve to pass through. This was done to facilitate the sharing of the key with another user. The prism helped in splitting the light signals, ensuring that the key distribution could be securely shared with the new user without compromising the integrity of the original communication.
 
