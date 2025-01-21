@@ -68,6 +68,81 @@ During the lab3, we worked on a scenario where Alice sends a certificate to Bob.
 </div>
 <br>
 
+#### 4. Symmetric and Asymmetric Keys
+We studied the differences between symmetric and asymmetric key encryption. Symmetric key encryption uses the same key for both encryption and decryption, making it faster but requiring secure key distribution. Asymmetric key encryption uses a pair of keys (public and private) for encryption and decryption, enhancing security but at the cost of performance.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/asymetric.png" style="width: 70%;"/>
+</div>
+<br>
+
+#### 5. Caesar Cipher
+We learned about the Caesar cipher, a simple encryption technique where each letter in the plaintext is shifted a certain number of places down the alphabet. Although it is not secure by modern standards, it helped us understand the basics of encryption and decryption.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/cypher.png" style="width: 40%;"/>
+</div>
+<br>
+
+#### 6. Hash Functions
+We studied hash functions, which take an input and produce a fixed-size string of bytes. Hash functions are used for data integrity verification, password storage, and digital signatures. We explored various hash functions like MD5, SHA-1, and SHA-256. Additionally, we learned about lightweight hash functions specified in ISO/IEC 29192-5:2016, including:
+
+- **PHOTON**: a lightweight hash-function with permutation sizes of 100, 144, 196, 256, and 288 bits, computing hash-codes of length 80, 128, 160, 224, and 256 bits, respectively.
+- **SPONGENT**: a lightweight hash-function with permutation sizes of 88, 136, 176, 240, and 272 bits, computing hash-codes of length 88, 128, 160, 224, and 256 bits, respectively.
+- **Lesamnta-LW**: a lightweight hash-function with permutation size 384 bits, computing a hash-code of length 256 bits.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/hash.png" style="width: 60%;"/>
+</div>
+<br>
+
+#### 7. AES (Advanced Encryption Standard)
+We learned about AES, a symmetric key encryption standard used worldwide. AES encrypts data in fixed-size blocks using keys of 128, 192, or 256 bits. 
+
+The AES algorithm consists of several rounds of processing, each involving four main steps: AddRoundKey, SubBytes, ShiftRows, and MixColumns.
+
+1. **AddRoundKey**: In this step, each byte of the state is combined with a block of the round key using bitwise XOR. This step is crucial for the security of AES as it introduces the key into the encryption process.
+
+2. **SubBytes**: This is a non-linear substitution step where each byte in the state is replaced with another byte using an S-box (substitution box). The S-box is designed to provide resistance against linear and differential cryptanalysis.
+
+3. **ShiftRows**: In this step, the rows of the state are shifted cyclically to the left. The amount of shift depends on the row index. This step helps in the diffusion of the plaintext.
+
+4. **MixColumns**: This is a mixing operation that operates on the columns of the state, combining the four bytes in each column. This step ensures that the columns of the state are mixed, providing further diffusion.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/aes.png" style="width: 90%;"/>
+</div>
+<br>
+
+In our [Innovative project (What a Leak)](./innovative-project.html#3-security-features), we implemented the AES algorithm with other concepts such as initialization vector, padding, and PKCS#7.
+#### 8. NEC Protocol
+We established communication between two boards using the NEC protocol, commonly used in remote controls. The transmitter encoded messages into NEC format and sent them via infrared pulses. The receiver decoded these signals back into the original message.
+
+**Example:**
+- **Transmitter:** Encodes "A" into NEC format and sends it.
+- **Receiver:** Decodes the infrared signal back to "A".
+
+This exercise demonstrated the importance of precise timing and reliability in infrared communication.
+
+**Signal Data for "A":**
+- **NEC Format:** The NEC protocol uses a 32-bit data frame. For the character "A", the signal data would be encoded as follows:
+    - **Address:** 0x8D
+    - **Address Inverse:** 0x72
+    - **Command:** 0x45 (ASCII code for "A")
+    - **Command Inverse:** 0x4E
+
+The complete 32-bit data frame for "A" would be: `0x8D72454E`.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/nec.png" style="width: 90%;"/>
+</div>
+<br>
+
+
+#### 9. Confidentiality, Integrity, and Authenticity
+We studied the principles of confidentiality, integrity, and authenticity in information security. Confidentiality ensures that information is accessible only to those authorized to access it. Integrity ensures that the information is accurate and has not been tampered with. Authenticity verifies the identity of the parties involved in communication.
+
+
 ## PART D: ANALYTICAL PART
 
 ### Knowledge and Skills Mobilized
@@ -78,7 +153,9 @@ During the lab3, we worked on a scenario where Alice sends a certificate to Bob.
 - Designing secure communication protocols for IoT.
 
 ### Self Evaluation
-I already had a first overview of all these concepts, but this course provided a more advanced and technical perspective. We delved into coding using C and tried SQL injection attacks. It was a bit challenging for me since I had never used SQL before, so I had to learn quickly to be efficient. Additionally, working alone during lab sessions pushed me to work harder to understand all the concepts thoroughly.
+I already had a first overview of almost all these concepts, but this course provided a more advanced and technical perspective. We delved into coding using C and tried SQL injection attacks. It was a bit challenging for me since I had never used SQL before, so I had to learn quickly to be efficient.
+Moreover, there were a lot of concepts explained in class that we didn't practice. I have the feeling of not being fully up to date everywhere as it was just theory. The elements explained by the teacher during the courses were a plus for me as they were clear, and I wanted to be effective on the concepts.
+Additionally, working alone during lab sessions pushed me to work harder to understand all the concepts thoroughly.
 
 ### My Opinion
 This course was very interesting and challenging. I learned a lot about security vulnerabilities and how to prevent them. In my future career, I am interested in working in the security field that mean I have to stay informed about the latest security threats. I really appreciated the practical labs that allowed me to apply the concepts learned in class and I am a bit disappointed that we did not have more time to explore other security concepts

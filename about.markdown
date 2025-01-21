@@ -18,14 +18,6 @@ During the open house days at INSA, I was particularly impressed by the quality 
 
 Joining INSA has allowed me to explore the role of an engineer in a professional environment. It has provided a deeper understanding of the industry and helped me enhance both my technical expertise and confidence in decision-making. The balance between academic studies and real-life project applications is the ideal framework to develop my engineering skills.
 
-# Why INSA Toulouse
-
-INSA Toulouse offers a wide range of courses in electronics, computer science, and embedded systems. The school's reputation and the quality of the courses were the main reasons I chose to study here.
-
-During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge. This combination is an invaluable asset for an engineering career.
-
-Joining INSA has allowed me to explore the role of an engineer in a professional environment. It has provided a deeper understanding of the industry and helped me enhance both my technical expertise and confidence in decision-making. The balance between academic studies and real-life project applications is the ideal framework to develop my engineering skills.
-
 ---
 
 # My Apprenticeship
