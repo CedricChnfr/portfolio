@@ -157,7 +157,11 @@
 <p><br /></p>
 
 <p>In our <a href="./innovative-project.html#3-security-features">Innovative project (What a Leak)</a>, we implemented the AES algorithm with other concepts such as initialization vector, padding, and PKCS#7.</p>
-<h4 id="8-nec-protocol">8. NEC Protocol</h4>
+
+<h4 id="8-quantum-lab">8. Quantum Lab</h4>
+
+<h5 id="nec-protocol"><strong>NEC Protocol</strong></h5>
+
 <p>We established communication between two boards using the NEC protocol, commonly used in remote controls. The transmitter encoded messages into NEC format and sent them via infrared pulses. The receiver decoded these signals back into the original message.</p>
 
 <p><strong>Example:</strong></p>
@@ -184,6 +188,17 @@
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_Secu/nec.png" style="width: 90%;" />
+</div>
+<p><br /></p>
+
+<h5 id="quantum-keymessage-distribution-qkd"><strong>Quantum Key/Message Distribution (QKD)</strong></h5>
+
+<p>After completing the classical test using <code class="language-plaintext highlighter-rouge">/dev/tty1CM0</code>, we proceeded with the quantum test on <code class="language-plaintext highlighter-rouge">/dev/ttyACM1</code>. Initially, we performed a calibration by setting the angle to 0, scan resolution to 1, offset to 0, and polarization to 0. We then converted the luminosity signal into voltage by scanning and measuring the intensity after the linear polarizer as it rotated through a full 360 degrees. Following the calibration, we executed a Python script to automate key distribution and generate a 32 kbit key.</p>
+
+<p>Additionally, we introduced a prism to the setup, allowing the light signals from Bob, Alice, and Eve to pass through. This was done to facilitate the sharing of the key with another user. The prism helped in splitting the light signals, ensuring that the key distribution could be securely shared with the new user without compromising the integrity of the original communication.</p>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/prisme.png" style="width: 90%;" />
 </div>
 <p><br /></p>
 

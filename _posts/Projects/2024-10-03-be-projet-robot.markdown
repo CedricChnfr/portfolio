@@ -75,7 +75,7 @@ Camera management involved several operations, such as opening, closing, and cap
 For arena detection, we created a function that is called when the user presses a specific button. This function uses semaphores to synchronize execution and ensure that tasks are executed in the correct order.
 
 <div style="display: flex; justify-content: center;">
-  <img src="/img/BE_Robot_Project/Get_Arena_Func.png" alt="Robot Project Graph" style="width: 50%;" onclick="openModal(this.src)"/>
+  <img src="/img/BE_Robot_Project/Get_Arena_func.png" alt="Robot Project Graph" style="width: 50%;" onclick="openModal(this.src)"/>
 </div>
 
 # Conclusion

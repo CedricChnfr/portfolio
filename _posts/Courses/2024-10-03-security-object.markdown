@@ -115,7 +115,11 @@ The AES algorithm consists of several rounds of processing, each involving four 
 <br>
 
 In our [Innovative project (What a Leak)](./innovative-project.html#3-security-features), we implemented the AES algorithm with other concepts such as initialization vector, padding, and PKCS#7.
-#### 8. NEC Protocol
+
+#### 8. Quantum Lab
+
+##### **NEC Protocol**
+
 We established communication between two boards using the NEC protocol, commonly used in remote controls. The transmitter encoded messages into NEC format and sent them via infrared pulses. The receiver decoded these signals back into the original message.
 
 **Example:**
@@ -138,6 +142,17 @@ The complete 32-bit data frame for "A" would be: `0x8D72454E`.
 </div>
 <br>
 
+##### **Quantum Key/Message Distribution (QKD)**
+
+After completing the classical test using `/dev/tty1CM0`, we proceeded with the quantum test on `/dev/ttyACM1`. Initially, we performed a calibration by setting the angle to 0, scan resolution to 1, offset to 0, and polarization to 0. We then converted the luminosity signal into voltage by scanning and measuring the intensity after the linear polarizer as it rotated through a full 360 degrees. Following the calibration, we executed a Python script to automate key distribution and generate a 32 kbit key. 
+
+
+Additionally, we introduced a prism to the setup, allowing the light signals from Bob, Alice, and Eve to pass through. This was done to facilitate the sharing of the key with another user. The prism helped in splitting the light signals, ensuring that the key distribution could be securely shared with the new user without compromising the integrity of the original communication.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/prisme.png" style="width: 90%;"/>
+</div>
+<br>
 
 #### 9. Confidentiality, Integrity, and Authenticity
 We studied the principles of confidentiality, integrity, and authenticity in information security. Confidentiality ensures that information is accessible only to those authorized to access it. Integrity ensures that the information is accurate and has not been tampered with. Authenticity verifies the identity of the parties involved in communication.
