@@ -178,8 +178,10 @@ I already had a first overview of almost all these concepts, but this course pro
 Moreover, there were a lot of concepts explained in class that we didn't practice. I have the feeling of not being fully up to date everywhere as it was just theory. The elements explained by the teacher during the courses were a plus for me as they were clear, and I wanted to be effective on the concepts.
 Additionally, working alone during lab sessions pushed me to work harder to understand all the concepts thoroughly.
 
+
 ### My Opinion
-This course was very interesting and challenging. I learned a lot about security vulnerabilities and how to prevent them. In my future career, I am interested in working in the security field that mean I have to stay informed about the latest security threats. I really appreciated the practical labs that allowed me to apply the concepts learned in class and I am a bit disappointed that we did not have more time to explore other security concepts
+This course was very interesting and challenging. I learned a lot about security vulnerabilities and how to prevent them. In my future career, I am interested in working in the security field that mean I have to stay informed about the latest security threats. I really appreciated the practical labs that allowed me to apply the concepts learned in class and I am a bit disappointed that we did not have more time to explore other security concepts.
+At the end of the semester, we had a quantum lab that was really interesting. Unfortunately, we were the "test class" because no one had done it before. Even though we encountered some problems finalizing it, working in partnership with the teachers was a great experience. I hope to discover more about quantum in the future as it is an interesting field.
 
 
 <style>
