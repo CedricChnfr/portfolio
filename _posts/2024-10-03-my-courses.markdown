@@ -52,7 +52,7 @@ categories: jekyll update
 **Dates**: 04/12/2024 - 07/01/2025  
 **Content**: Definition of a TCP/IP protocol stack for a LP-WPAN network.
 
-## [🔒 Sécurity Connected Object](./security-object.html)
+## [🔒 Security Connected Object](./security-object.html)
 **Duration**: 13 hours  
 **Dates**: 15/10/2024 - 22/01/2025  
 **Content**: Discussion about the need and how to secure protocols for IoT.
