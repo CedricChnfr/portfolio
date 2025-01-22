@@ -72,7 +72,7 @@ We used SolidWorks for designing the mechanical model due to its robust features
 
 <div style="text-align: center; display: flex; justify-content: center; gap: 60px;">
     <img src="/img/BE_Innovative_Project/Assembly.png" style="width: 30%;"/>
-    <img src="/img/BE_Innovative_Project/3D_Model.png" style="width: 30%;"/>
+    <img src="/img/BE_Innovative_Project/3D_Model.png" style="width: 40%;"/>
 </div>
 <br>
 
@@ -132,6 +132,15 @@ This project was a good opportunity to explore various fields and conduct our ow
 </div>
 
 You can find the complete project report on [GitHub_Innovative_Project](https://github.com/what-a-leak).
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Innovative_Project/Prez_final.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Innovative_Project/Prez_final.pdf">Open the pptx presentaiton</a>
+</p>
+
 
 <style>
     body {

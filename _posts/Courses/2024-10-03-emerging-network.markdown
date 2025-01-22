@@ -90,6 +90,14 @@ As I am following the [Master REOC](./master-reoc.html), I had already worked on
 
 
 <div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Reseau/SDN_NFV_Report.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Reseau/SDN_NFV_Report.pdf">Open the full report</a>
+</p>
+
+<div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Emerging_Network/README.md" width="100%" height="800px" style="border:none;"></iframe>
 </div>
 

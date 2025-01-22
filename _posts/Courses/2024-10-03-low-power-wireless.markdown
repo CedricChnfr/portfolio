@@ -113,13 +113,17 @@ I found the LP-WPAN course to be a valuable introduction to low power wireless n
 It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies.
 
 
-
-
-
-
 <div style="text-align: center;">
     <h1>Project Report</h1>
 </div>
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Low_Power/IPV6_Report.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Low_Power/IPV6_Report.pdf">Open the full report</a>
+</p>
 
 <style>
     body {

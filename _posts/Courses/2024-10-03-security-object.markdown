@@ -68,6 +68,19 @@ During the lab3, we worked on a scenario where Alice sends a certificate to Bob.
 </div>
 <br>
 
+Correction:
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/lab3_terminal3.png" style="width: 100%;"/>
+</div>
+<br>
+
+##### Common Name from Verify Function
+In the context of verifying certificates, the Common Name (CN) is an important attribute. It is part of the certificate's Subject field and typically represents the domain name or identity of the certificate holder. During the verification process, the CN is checked against the hostname or identity to ensure that the certificate is valid for the intended recipient.
+
+For example, if a certificate is issued to `www.alice.com`, the CN should match `www.alice.com`. If there is a mismatch, the verification process will fail, indicating a potential security issue. This check helps prevent Man-in-the-Middle (MITM) attacks by ensuring that the certificate presented by a server matches the expected identity.
+
+
 #### 4. Symmetric and Asymmetric Keys
 We studied the differences between symmetric and asymmetric key encryption. Symmetric key encryption uses the same key for both encryption and decryption, making it faster but requiring secure key distribution. Asymmetric key encryption uses a pair of keys (public and private) for encryption and decryption, enhancing security but at the cost of performance.
 
@@ -160,7 +173,50 @@ Additionally, we introduced a prism to the setup, allowing the light signals fro
 </div>
 <br>
 
-#### 9. Confidentiality, Integrity, and Authenticity
+#### 9. Cryptographic Lab
+In this lab, we explored various cryptographic concepts and techniques, enhancing our understanding of how to secure data and communications.
+
+##### AES Encryption
+We studied AES (Advanced Encryption Standard), a symmetric key encryption standard used worldwide. AES encrypts data in fixed-size blocks using keys of 128, 192, or 256 bits. The algorithm consists of several rounds of processing, each involving steps like AddRoundKey, SubBytes, ShiftRows, and MixColumns.
+
+In the `1/source.py` file, we implemented AES encryption and decryption using the pycryptodome library.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/flag3.png" style="width: 30%;"/>
+    <img src="/img/BE_Secu/flag1.png" style="width: 50%;"/>
+</div>
+<br>
+
+1. Keyword Selection
+The script reads a list of words from a file named `words` and randomly selects one as the keyword.
+
+2. Key Generation
+The selected keyword is hashed using the MD5 algorithm to generate a 128-bit key for AES encryption.
+
+3. Flag Encryption
+The predefined flag is padded to a multiple of the AES block size (16 bytes) and encrypted using the generated key in ECB mode.
+
+4. Flag Decryption
+The encrypted flag is decrypted using the same key to ensure the encryption and decryption processes are correct.
+
+
+##### RSA Encryption
+We learned about RSA encryption, an asymmetric cryptographic algorithm that uses a pair of keys (public and private) for encryption and decryption. The security of RSA relies on the difficulty of factoring large prime numbers.
+
+In the `2/source.py` file, RSA encryption and decryption was implemented. The script generates two large prime numbers, computes their product (`n`), and uses it along with the public exponent (`e`) to encrypt a plaintext message. The private exponent (`d`) is used to decrypt the ciphertext back to the original plaintext.
+
+##### Cube Root Attack
+We also explored a cube root attack on RSA when the public exponent (`e`) is small (e.g., `e = 3`). If the ciphertext (`c`) is small enough, we can compute the plaintext by taking the integer cube root of `c`.
+
+In the `2/attack.py` file, we implemented this attack to recover the plaintext from the ciphertext.
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/BE_Secu/flag4.png" style="width: 30%;"/>
+    <img src="/img/BE_Secu/flag1.png" style="width: 50%;"/>
+</div>
+<br>
+
+#### 10. Confidentiality, Integrity, and Authenticity
 We studied the principles of confidentiality, integrity, and authenticity in information security. Confidentiality ensures that information is accessible only to those authorized to access it. Integrity ensures that the information is accurate and has not been tampered with. Authenticity verifies the identity of the parties involved in communication.
 
 
