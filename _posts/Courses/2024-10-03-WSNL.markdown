@@ -17,7 +17,7 @@ The "Wireless Sensor Networks and Localization" course was an enlightening exper
 ### Experience Details
 
 #### Environment and Context
-During this course, I delved into the theoretical and practical aspects of WSNs and localization. The increasing importance of WSNs in various fields, such as environmental monitoring, healthcare, and smart cities, highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was incredibly beneficial.
+During this course, I delved into the theoretical and practical aspects of WSNs and localization. The increasing importance of WSNs in various fields, such as environmental monitoring, healthcare, and smart cities, highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial.
 
 #### My Function
 In this course, I was responsible for:
@@ -96,7 +96,7 @@ The Zigbee MAC layer provides several key features:
 - **Security Mechanisms**: Includes robust security features to ensure data integrity and confidentiality:
     - **AES-128 Encryption**: Provides strong encryption for data transmitted over the network.
 
-In summary, the Zigbee PHY and MAC layers are critical components of the Zigbee protocol, providing efficient, reliable, and secure communication for wireless sensor networks.
+In summary, the Zigbee PHY and MAC layers are not negligible components of the Zigbee protocol, providing efficient, reliable, and secure communication for wireless sensor networks.
 
 ## PART D: ANALYTICAL PART
 
@@ -110,6 +110,10 @@ In summary, the Zigbee PHY and MAC layers are critical components of the Zigbee 
 I found the course on Wireless Sensor Networks and Localization to be extremely informative and engaging. The practical sessions and experiments helped me gain a deeper understanding of WSN technologies and localization methods. I feel now confident in my ability to analyze and optimize communication protocols for IoT applications.
 
 However, I am conscious that the protocols are numerous, which means that I am not totally proficient in all of them. With the experience I will be able to learn a lot more in the field.
+
+During the lab sessions, I developed a MAC layer in Python. This hands-on project allowed me to gain skilland see how data packets are managed and transmitted within a network.
+
+Although I did not work on the physical layer directly, with the tool GNU Radio and I did not have specific sessions dedicated to using GNU Radio, so my practical experience with the physical layer remains limited.
 
 ### My Opinion
 In my opinion, the first work that consisted of studying different protocols like LoRa, Zigbee, and Sigfox was enriching as it provided me an overview of how they operate and the main protocols they use.

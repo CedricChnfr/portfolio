@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Service Oriented Architecture (SOA) course was a deep dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems.
+The Service Oriented Architecture (SOA) course was a guided dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -18,7 +18,7 @@ The Service Oriented Architecture (SOA) course was a deep dive into the principl
 
 #### Environment and Context
 
-This course was really useful as the increasing demand for scalable and maintainable systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies.
+This course was really useful as the increasing demand for systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies.
 
 #### My Function
 
@@ -130,13 +130,15 @@ Using all the new concepts learned during the course was at first a bit complica
 I didn't participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints.
 
 ### My Opinion
-Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. 
+Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. For example, just by looking into a website network and understanding all the requests in the background.
 
 Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I'd prefer to code in C for my professional future, I can now apply for Java positions if needed.
 
 <div style="text-align: center;">
     <h1>Project Report</h1>
 </div>
+
+### Project Report
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Service_Archi/BE_service_architecture.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>

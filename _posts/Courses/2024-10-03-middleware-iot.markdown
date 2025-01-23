@@ -109,6 +109,7 @@ Implemented with `node-red-node-email`, this feature sends automatic alerts when
 ### Self-Evaluation
 
 This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices.
+Also I understood the utility of these concepts which lead to an utilization of few of them in our innovative project for a better functioning.
 
 
 ### My Opinion

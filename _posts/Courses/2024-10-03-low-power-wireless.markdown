@@ -21,8 +21,7 @@ The "Low Power Wireless Networks" course provided an in-depth look into the prin
 Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size.
 
 #### New Concepts Learned
-6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs. This technology is essential for the Internet of Things (IoT), where numerous devices need to be interconnected efficiently and reliably.
-
+6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs.
 #### My Function
 In this course, I was responsible for:
 - Understanding the principles and architecture of 6LoWPAN.
@@ -108,6 +107,8 @@ We explored the RPL routing protocol, which is designed for low power and lossy 
 
 ### Self Evaluation
 I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts.
+
+Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively.
 
 ### My Opinion
 It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies.

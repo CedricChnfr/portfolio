@@ -10,9 +10,9 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
+The Cloud Edge Computing course shows centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.
 
-This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling me to create efficient systems.
+This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and VirtualBox, enabling me to create efficient systems.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -27,7 +27,7 @@ During the Cloud and Edge Computing course, I explored both theoretical and prac
 In this course, I was responsible for:
 - Learning and practicing virtualization techniques such as VMs and containers.
 - Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.
-- Gaining skill with tools like Kubernetes, Docker, AWS, and Azure.
+- Gaining skill with tools like Kubernetes, Docker and VirtualBox.
 
 ## PART C: TECHNICAL PART
 
@@ -37,7 +37,7 @@ This section explores the technical aspects of the Cloud Edge Computing course, 
 ### Technical Concepts Learned
 
 #### 1. Type 1 and Type 2 Hypervisors
-Another key concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.
+One of the first concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_Cloud_Computing/H_type1.png" style="width: 40%; margin-right: 10px;"/>
@@ -69,7 +69,7 @@ The practical work also allowed me to configure networks using VirtualBox. I lea
 <br>
 
 #### 5. Container Orchestration with Kubernetes
-I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
+Finally I learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
 <br>
 
 
@@ -83,13 +83,14 @@ I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes ma
 
 ### Self Evaluation
 I developed new skills in hybrid architectures and their applications in modern computing environments. I was able to comprehend and utilize all the concepts learned. However, I realized that I need to practice using all these tools in the future to avoid forgetting them, as I currently do not have the opportunity to work with them in my apprenticeship company.
+As the session on Kubernetes was done quickly with my binom, we had to pass quickly and just launch commands. Thanks to the report we did, it was simpler to understand but in a second time.
 
 ### My Opinion
-It was interesting; I had the chance to learn a lot of concepts we hear about in everyday life for our job. This course will be really useful for my professional path where these concepts could be applied.
+It was interesting, I had the chance to learn a lot of concepts I heard about in everyday life for some jobs. This course will be really useful for my professional path where these concepts could be applied.
 
 The course content was well-structured, starting from the basics of virtualization and gradually moving towards more complex topics. This progression helped me for a better understanding and then expand my knowledge to more advanced concepts.
 
-I now feel more confident in designing, deploying, and managing scalable and efficient cloud-edge solutions.
+I now feel more confident in designing, deploying, and managing scalable cloud-edge solutions.
 
 <div style="text-align: center;">
     <h1>Project Report</h1>

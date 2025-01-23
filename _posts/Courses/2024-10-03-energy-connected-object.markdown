@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Energy for Connected Objects course was an eye-opener for me. Taught by G. Loubet, it delved into the various methods of powering connected objects, which is crucial in the context of IoT. The course covered energy harvesting, energy transfer, and efficient energy management techniques, providing a comprehensive understanding of how to sustain IoT devices.
+The Energy for Connected Objects course was an eye-opener for me. Taught by G. Loubet, it delved into the various methods of powering connected objects, which is important in the context of IoT. The course covered energy harvesting, energy transfer, and efficient energy management techniques, providing a good understanding of how to sustain IoT devices.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -45,7 +45,7 @@ I explored the principles of wireless power transfer (WPT) and its applications 
 </div>
 
 #### 3. Antenna Selection
-Choosing the right antenna is critical for efficient energy harvesting and wireless power transfer. I compared patch antennas and whip antennas, evaluating their advantages and limitations. Patch antennas offer high gain and are suitable for fixed installations, while whip antennas provide omnidirectional reception and are ideal for dynamic environments.
+Choosing the right antenna is really important for efficient energy harvesting and wireless power transfer. I compared patch antennas and whip antennas, evaluating their advantages and limitations. Patch antennas offer high gain and are suitable for fixed installations, while whip antennas provide omnidirectional reception and are ideal for dynamic environments.
 
 <div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
     <img src="/img/BE_Energy_Connected_Object/Antenna1.png" style="width: 40%;"/>
@@ -62,7 +62,7 @@ Choosing the right antenna is critical for efficient energy harvesting and wirel
 - Conducting experiments to test the efficiency of these solutions.
 
 ### Self-Evaluation
-Even though I learned many new concepts and techniques, it would have been more interesting to apply all these concepts to a project. Unfortunately, while the innovative project aimed to achieve this, the environment did not allow us to gain energy from the surroundings effectively. This limitation hindered our ability to fully implement and test the energy harvesting and management techniques we studied.
+Even though I learned many new concepts and techniques, it would have been interesting to apply all these concepts to a project. Unfortunately, while the innovative project aimed to achieve this, the environment did not allow us to gain energy from the surroundings effectively. This limitation hindered our ability to fully implement and test the energy harvesting and management techniques we studied.
 
 However, I was able to practice during the lab sessions. We investigated the power requirements of a small red light, tested approaches for direct energy usage and storage.
 

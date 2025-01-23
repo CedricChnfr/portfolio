@@ -12,16 +12,27 @@ categories: jekyll update
 ### Presentation
 During the "5G Technologies" course, taught by Etienne Sicard, the main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology.
 
-The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G and its impact on society.
-
-5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.
+The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G, its impact on society and many other subject
 
 ## PART B: DESCRIPTIVE PART
 
 ### Experience Details
-
 #### Environment and Context
 During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.
+
+I also participated in the presentations of my classmates, including:
+- Starlink, Kuiper
+- LTE-M for IoT
+- Samsung & 6G
+- Drone-trains
+- Orange and 6G
+- Environmental impacts
+- 5G: Vehicle to Everything (V2X)
+- Cancer & EM waves
+- ...
+
+Through these presentations, I learned a lot of new things.
+
 
 #### My Function
 In the practical sessions, I was responsible for:
@@ -58,6 +69,7 @@ The presentation on technologies for 6G provided insights into the core technolo
 - **Quantum Communication and Advanced Security**: Enhanced security with quantum-based communication. Uses quantum cryptography to protect data and secure communication resistant to cyber-attacks.
 - **Visible Light Communication (VLC)**: Utilizes the visible light spectrum to transmit data. Applications include underwater communication and indoor navigation.
 - **Ultra-massive MIMO (Multiple Input, Multiple Output)**: Uses large antenna arrays to boost network capacity. Applications include high-density urban areas.
+- ...
 
 ## PART D: ANALYTICAL PART
 
@@ -72,8 +84,10 @@ Through this course, I was able to focus on a specific topic, study it in depth,
 
 Also, I only attended my peers' presentations and took notes, which allowed me to stay informed about the technologies without becoming a complete expert on the subject wich is a bit frustrating.
 
+It was formative to listen to a series of presentations even if it was just information. I think that adding some practical aspects could have been interesting if it is really possible.
+
 ### My Opinion
-This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future; after studying 6G, I have a rough idea of what the next generation of networks might look like.
+This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future, after studying 6G, I have a rough idea of what the next generation of networks might look like.
 
 The presentations were a great way to learn a lot in a short amount of time. By preparing and listening to them, we covered many topics in depth, which really helped us understand 5G and 6G technologies better.
 

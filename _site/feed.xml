@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-23T10:45:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-24T00:08:42+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -248,8 +248,7 @@ p {
 <p>Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size.</p>
 
 <h4 id="new-concepts-learned">New Concepts Learned</h4>
-<p>6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs. This technology is essential for the Internet of Things (IoT), where numerous devices need to be interconnected efficiently and reliably.</p>
-
+<p>6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs.</p>
 <h4 id="my-function">My Function</h4>
 <p>In this course, I was responsible for:</p>
 <ul>
@@ -340,6 +339,8 @@ p {
 
 <h3 id="self-evaluation">Self Evaluation</h3>
 <p>I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts.</p>
+
+<p>Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively.</p>
 
 <h3 id="my-opinion">My Opinion</h3>
 <p>It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies.</p>
@@ -609,16 +610,28 @@ p {
 <h3 id="presentation">Presentation</h3>
 <p>During the “5G Technologies” course, taught by Etienne Sicard, the main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology.</p>
 
-<p>The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G and its impact on society.</p>
-
-<p>5G represents a significant shift in cellular networks, introducing software-defined radio (SDR) and microservices, fundamentally changing the architecture of cellular networks.</p>
+<p>The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G, its impact on society and many other subject</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
 <h3 id="experience-details">Experience Details</h3>
-
 <h4 id="environment-and-context">Environment and Context</h4>
 <p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
+
+<p>I also participated in the presentations of my classmates, including:</p>
+<ul>
+  <li>Starlink, Kuiper</li>
+  <li>LTE-M for IoT</li>
+  <li>Samsung &amp; 6G</li>
+  <li>Drone-trains</li>
+  <li>Orange and 6G</li>
+  <li>Environmental impacts</li>
+  <li>5G: Vehicle to Everything (V2X)</li>
+  <li>Cancer &amp; EM waves</li>
+  <li>…</li>
+</ul>
+
+<p>Through these presentations, I learned a lot of new things.</p>
 
 <h4 id="my-function">My Function</h4>
 <p>In the practical sessions, I was responsible for:</p>
@@ -662,6 +675,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
   <li><strong>Quantum Communication and Advanced Security</strong>: Enhanced security with quantum-based communication. Uses quantum cryptography to protect data and secure communication resistant to cyber-attacks.</li>
   <li><strong>Visible Light Communication (VLC)</strong>: Utilizes the visible light spectrum to transmit data. Applications include underwater communication and indoor navigation.</li>
   <li><strong>Ultra-massive MIMO (Multiple Input, Multiple Output)</strong>: Uses large antenna arrays to boost network capacity. Applications include high-density urban areas.</li>
+  <li>…</li>
 </ul>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
@@ -678,8 +692,10 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 
 <p>Also, I only attended my peers’ presentations and took notes, which allowed me to stay informed about the technologies without becoming a complete expert on the subject wich is a bit frustrating.</p>
 
+<p>It was formative to listen to a series of presentations even if it was just information. I think that adding some practical aspects could have been interesting if it is really possible.</p>
+
 <h3 id="my-opinion">My Opinion</h3>
-<p>This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future; after studying 6G, I have a rough idea of what the next generation of networks might look like.</p>
+<p>This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future, after studying 6G, I have a rough idea of what the next generation of networks might look like.</p>
 
 <p>The presentations were a great way to learn a lot in a short amount of time. By preparing and listening to them, we covered many topics in depth, which really helped us understand 5G and 6G technologies better.</p>
 
@@ -902,9 +918,9 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The Cloud Edge Computing course bridges the gap between centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
+<p>The Cloud Edge Computing course shows centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
 
-<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and cloud platforms like AWS and Azure, enabling me to create efficient systems.</p>
+<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and VirtualBox, enabling me to create efficient systems.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -920,7 +936,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <ul>
   <li>Learning and practicing virtualization techniques such as VMs and containers.</li>
   <li>Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.</li>
-  <li>Gaining skill with tools like Kubernetes, Docker, AWS, and Azure.</li>
+  <li>Gaining skill with tools like Kubernetes, Docker and VirtualBox.</li>
 </ul>
 
 <h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
@@ -930,7 +946,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
 
 <h4 id="1-type-1-and-type-2-hypervisors">1. Type 1 and Type 2 Hypervisors</h4>
-<p>Another key concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.</p>
+<p>One of the first concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.</p>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_Cloud_Computing/H_type1.png" style="width: 40%; margin-right: 10px;" />
@@ -961,7 +977,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <p><br /></p>
 
 <h4 id="5-container-orchestration-with-kubernetes">5. Container Orchestration with Kubernetes</h4>
-<p>I also learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
+<p>Finally I learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
 <br /></p>
 
 <h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
@@ -975,14 +991,15 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 </ul>
 
 <h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed new skills in hybrid architectures and their applications in modern computing environments. I was able to comprehend and utilize all the concepts learned. However, I realized that I need to practice using all these tools in the future to avoid forgetting them, as I currently do not have the opportunity to work with them in my apprenticeship company.</p>
+<p>I developed new skills in hybrid architectures and their applications in modern computing environments. I was able to comprehend and utilize all the concepts learned. However, I realized that I need to practice using all these tools in the future to avoid forgetting them, as I currently do not have the opportunity to work with them in my apprenticeship company.
+As the session on Kubernetes was done quickly with my binom, we had to pass quickly and just launch commands. Thanks to the report we did, it was simpler to understand but in a second time.</p>
 
 <h3 id="my-opinion">My Opinion</h3>
-<p>It was interesting; I had the chance to learn a lot of concepts we hear about in everyday life for our job. This course will be really useful for my professional path where these concepts could be applied.</p>
+<p>It was interesting, I had the chance to learn a lot of concepts I heard about in everyday life for some jobs. This course will be really useful for my professional path where these concepts could be applied.</p>
 
 <p>The course content was well-structured, starting from the basics of virtualization and gradually moving towards more complex topics. This progression helped me for a better understanding and then expand my knowledge to more advanced concepts.</p>
 
-<p>I now feel more confident in designing, deploying, and managing scalable and efficient cloud-edge solutions.</p>
+<p>I now feel more confident in designing, deploying, and managing scalable cloud-edge solutions.</p>
 
 <div style="text-align: center;">
     <h1>Project Report</h1>
@@ -1042,7 +1059,7 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <h2 id="part-a-generalities">PART A: GENERALITIES</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The “Embedded IA for IoT” course, taught by Philippe Leleux, was an enlightening experience that delved into the integration of artificial intelligence in IoT applications. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.</p>
+<p>The “Embedded IA for IoT” course, taught by Philippe Leleux, was an interesting experience that on the integration of artificial intelligence nowadays. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.</p>
 
 <h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
 
@@ -1205,8 +1222,12 @@ However, OFDMA cannot support a large number of mobile devices for 6G generation
 <h3 id="self-evaluation">Self Evaluation</h3>
 <p>I understood better AI deployment and how it works. However, the labs were a bit long, and I didn’t have the time to finish everything. Also I didn’t code in Python for a long time, so I had to relearn some basics.</p>
 
+<p>It was a new practical experience for me as I hadn’t worked much with machine learning libraries before. I was able to code for the different concepts and even reuse them in the innovative project. However, I faced a few difficulties for understanding concepts as it is a recent area for me. But thanks to my interest in the subject, I know that I just need more time to involve myself in the different aspects.</p>
+
 <h3 id="my-opinion">My Opinion</h3>
 <p>I learned a lot of new concepts that are key in today’s deployments. Even though I am very interested in this field, I am unsure if I will work in this area later as it is not my specialty. However, I will have some basic skills to understand AI.</p>
+
+<p>In the future, I hope to encounter AI in my professional career as it is a current and evolving area. I am eager to discover more about this subject, possibly through personal projects. This will allow me to deepen my understanding and stay updated with the latest advancements in AI and IoT.</p>
 
 <div style="text-align: center;">
     <h1>Project Report</h1>

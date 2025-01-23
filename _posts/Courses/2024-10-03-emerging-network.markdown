@@ -75,8 +75,8 @@ admin@picOS-OVS$ ovs-ofctl add-flow br0 in_port=16,tcp,tp_dst=22,actions=output:
 ### The Knowledge and Skills Mobilized
 - Understanding and mastering the fundamentals of emerging network paradigms applied to IoT.
 - Developing applications for traffic management using SDN.
-- Understanding LISP and its role in enabling node mobility.
-- Integrating SDN and LISP for enhanced network management and mobility.
+- Analyzing the impact of emerging network technologies on modern networking environments.
+- Collaborating with peers to simulate network topologies and troubleshoot issues.
 
 ### Self Evaluation
 I found the "Emerging Network" course to be highly engaging and informative, although it was a bit complicated for me as a student specializing in Automatic Electronics compared to those in the Network option. Despite this, I was actively involved in simulating topologies and testing various aspects which provided a practical understanding of how these technologies are transforming network management.

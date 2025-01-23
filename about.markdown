@@ -98,6 +98,8 @@ During my year in the ISS specialization, I learned a lot of new concepts that a
 
 One significant positive aspect of the ISS specialization is that it gave me the opportunity to pursue an additional master's degree specialized in Embedded Network and Connected Object. This additional qualification is highly valuable for my CV and has helped me deepen my knowledge of networks.
 
+Moreover, during this year and the two previous ones, I learned many concepts which made my mind a bit disorganized. However, thanks to my perseverance, I know that I can manage every project successfully through my dedication and application.
+
 Looking ahead, I have many questions about my future, but I am determined to move forward and make the most of the opportunities that come my way.
 
 

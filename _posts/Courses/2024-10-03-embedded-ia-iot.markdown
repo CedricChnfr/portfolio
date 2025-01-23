@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The "Embedded IA for IoT" course, taught by Philippe Leleux, was an enlightening experience that delved into the integration of artificial intelligence in IoT applications. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.
+The "Embedded IA for IoT" course, taught by Philippe Leleux, was an interesting experience that on the integration of artificial intelligence nowadays. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.
 
 ## PART B: DESCRIPTIVE PART
 
@@ -179,8 +179,12 @@ The code above defines and trains a Convolutional Neural Network (CNN) using Ten
 ### Self Evaluation
 I understood better AI deployment and how it works. However, the labs were a bit long, and I didn't have the time to finish everything. Also I didn't code in Python for a long time, so I had to relearn some basics.
 
+It was a new practical experience for me as I hadn't worked much with machine learning libraries before. I was able to code for the different concepts and even reuse them in the innovative project. However, I faced a few difficulties for understanding concepts as it is a recent area for me. But thanks to my interest in the subject, I know that I just need more time to involve myself in the different aspects.
+
 ### My Opinion
 I learned a lot of new concepts that are key in today's deployments. Even though I am very interested in this field, I am unsure if I will work in this area later as it is not my specialty. However, I will have some basic skills to understand AI.
+
+In the future, I hope to encounter AI in my professional career as it is a current and evolving area. I am eager to discover more about this subject, possibly through personal projects. This will allow me to deepen my understanding and stay updated with the latest advancements in AI and IoT.
 
 
 <div style="text-align: center;">
