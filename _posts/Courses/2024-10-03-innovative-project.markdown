@@ -10,7 +10,7 @@ categories: jekyll update
 ## PART A: GENERALITIES
 
 ### Presentation
-The Innovative Project was a collaborative effort aimed at developing a solution for detecting water leaks in a house. The project involved splitting the tasks among team members, with each person focusing on different aspects such as hardware, embedded software, mobile application, website, protocol, machine learning, server, and 3D modeling (CAD). My responsibilities included embedded software development, data retrieval from the accelerometer for leak detection, mobile application development using React Native, and 3D modeling (CAD).
+The Innovative Project was a collaborative effort aimed at developing a solution for detecting water leaks in a house. The project involved splitting the tasks among team members, with each person focusing on different aspects such as hardware, embedded software, mobile application, website, protocol, machine learning, server, and 3D modeling (CAD). My responsibilities included embedded software development, security, data retrieval from the accelerometer for leak detection, mobile application development using React Native, and 3D modeling (CAD).
 
 ## PART B: DESCRIPTIVE PART
 
