@@ -78,7 +78,7 @@ The Zigbee PHY layer is responsible for the modulation and demodulation of data,
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_WSNL/Zigbee_schema.png" style="width: 50%;"/>
-    <img src="/img/BE_WSNL/Zigbee_graph.png" style="width: 50%;"/>
+    <img src="/img/BE_WSNL/Zigbee_Graph.png" style="width: 50%;"/>
 </div>
 <br>
 
