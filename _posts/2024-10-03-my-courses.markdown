@@ -27,7 +27,7 @@ categories: jekyll update
 **Dates**: 04/10/2024 - 14/01/2025  
 **Content**: Learn about legacy and actual architectures service oriented for software engineering.
 
-## [📶 5G Technologies](./5g-technologies.html)
+## [📶 5G Technologies](./5G-Technologies.html)
 **Duration**: 7.5 hours  
 **Dates**: 30/09/2024 - 21/11/2024  
 **Content**: Learn about 5G and more generally topics related to cellular networks.
