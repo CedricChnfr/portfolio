@@ -102,10 +102,6 @@ As I am following the [Master REOC](./master-reoc.html), I had already worked on
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Emerging_Network/README.md">Open the README file</a>
-</p>
-
-<p style="text-align: center;">
     <a href="/img/BE_Emerging_Network/Lab_Subject_emerging.pdf">Open the Lab Subject</a>
 </p>
 
