@@ -145,7 +145,7 @@ Report on Zigbee, a WPAN for WSN :
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_WSNL/Zigbee.pdf" target="_blank">Download Complete Report</a>
+    <a href="/img/BE_WSNL/ZigBee.pdf" target="_blank">Download Complete Report</a>
 </p>
 
 <style>
