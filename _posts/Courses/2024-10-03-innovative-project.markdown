@@ -134,11 +134,19 @@ This project was a good opportunity to explore various fields and conduct our ow
 You can find the complete project report on [GitHub_Innovative_Project](https://github.com/what-a-leak).
 
 <div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Innovative_Project/Rapport_Projet_ISS.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Innovative_Project/Rapport_Projet_ISS.pdf">Open the report</a>
+</p>
+
+<div style="display: flex; justify-content: center;">
     <embed src="/img/BE_Innovative_Project/Prez_final.pdf" width="100%" height="800px" type="application/pdf">
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Innovative_Project/Prez_final.pdf">Open the pptx presentaiton</a>
+    <a href="/img/BE_Innovative_Project/Prez_final.pdf">Open the pptx presentation</a>
 </p>
 
 
