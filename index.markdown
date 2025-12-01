@@ -18,7 +18,8 @@ layout: default
     
     <div class="nav-container">
         <a href="./jekyll/update/2024/10/02/my-courses.html" class="nav-link">Courses</a>
-        <a href="./jekyll/update/2024/10/02/my-projects.html" class="nav-link">Projects</a>
+        <a href="./jekyll/update/2024/10/02/my-projects.html" class="nav-link">Academic Projects</a>
+        <a href="./jekyll/update/2024/10/02/my-perso-projects.html" class="nav-link">Personal Projects</a>
         <a href="./jekyll/update/2024/10/02/my-cv.html" class="nav-link">CV</a>
     </div>
 </div>

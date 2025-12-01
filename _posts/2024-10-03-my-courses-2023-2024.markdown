@@ -1,0 +1,157 @@
+---
+layout: default
+title:  "My Courses 2025-2026"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses.html">2024-2025</a>
+  <a href="./my-courses-2023-2024.html" class="active">2023-2024</a>
+  <a href="./my-courses-2022-2023.html">2022-2023</a>
+</div>
+
+# My Courses - 2023-2024
+
+---
+
+## Semester 7 (S7)
+
+### [📊 Analyse des Systèmes Non Linéaires](./analyse-systemes-non-lineaires.html)
+**Content**: Study of non-linear systems analysis and control methods.
+
+### [🇬🇧 Anglais](./anglais-s7.html)
+**Content**: English language development with technical and professional focus.
+
+### [📡 Architectures Analogiques Transmission Information](./architectures-analogiques-transmission.html)
+**Content**: Analog architectures for information transmission systems.
+
+### [🔌 Architectures Analogiques Systèmes Embarqués](./architectures-analogiques-embarques.html)
+**Content**: Analog architectures for embedded systems.
+
+### [💻 Architectures Numériques Avancées VHDL](./architectures-numeriques-vhdl.html)
+**Content**: Advanced digital architectures and VHDL programming.
+
+### [🎨 Conception Orientée Objet UML](./conception-uml.html)
+**Content**: Object-oriented design principles and UML modeling.
+
+### [🏢 Entreprise](./entreprise-s7.html)
+**Content**: Business and entrepreneurship fundamentals.
+
+### [⚡ Étude et Modélisation des Composants Actifs](./etude-composants-actifs.html)
+**Content**: Study and modeling of active electronic components.
+
+### [🔊 Filtrage Actif et Modélisation Sources Bruit](./filtrage-actif-bruit.html)
+**Content**: Active filtering and noise source modeling.
+
+### [💰 Finance](./finance.html)
+**Content**: Financial principles and management for engineers.
+
+### [🌍 Implication Citoyenne](./implication-citoyenne.html)
+**Content**: Civic engagement and social responsibility.
+
+### [🖥️ Programmation Orientée Objets C++](./poo-cpp.html)
+**Content**: Object-oriented programming with C++.
+
+### [☕ Programmation Orientée Objets Java](./poo-java.html)
+**Content**: Object-oriented programming with Java.
+
+### [🔐 Sécurité Matérielle](./securite-materielle.html)
+**Content**: Hardware security principles and implementations.
+
+### [🌐 Stage Étranger](./stage-etranger.html)
+**Content**: International internship experience.
+
+### [🎛️ Systèmes Multivariables](./systemes-multivariables.html)
+**Content**: Multivariable control systems analysis and design.
+
+---
+
+## Semester 8 (S8)
+
+### [🔗 Chaînes Électroniques d'Acquisition de l'Information](./chaines-acquisition.html)
+**Content**: Electronic chains for information acquisition systems.
+
+### [🎮 Commande Numérique](./commande-numerique.html)
+**Content**: Digital control systems and algorithms.
+
+### [⚖️ Droit](./droit.html)
+**Content**: Legal fundamentals for engineers and business.
+
+### [📈 Graphes et Programmation Linéaire](./graphes-programmation-lineaire.html)
+**Content**: Graph theory and linear programming methods.
+
+### [🌐 Interconnexion Réseau](./interconnexion-reseau.html)
+**Content**: Network interconnection protocols and technologies.
+
+### [🤖 Machine Learning](./machine-learning-s8.html)
+**Content**: Introduction to machine learning algorithms and applications.
+
+### [📊 Processus Stochastiques et Files d'Attentes](./processus-stochastiques.html)
+**Content**: Stochastic processes and queuing theory.
+
+### [📝 Rapport VT](./rapport-vt.html)
+**Content**: Technical visit report and analysis.
+
+### [🔷 Réseaux de Pétri](./reseaux-petri.html)
+**Content**: Petri nets modeling and analysis for discrete event systems.
+
+### [⏱️ Temps Réel](./temps-reel.html)
+**Content**: Real-time systems design and implementation.

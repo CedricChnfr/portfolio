@@ -1,0 +1,170 @@
+---
+layout: default
+title:  "My Courses 2025-2026"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses.html">2024-2025</a>
+  <a href="./my-courses-2023-2024.html">2023-2024</a>
+  <a href="./my-courses-2022-2023.html" class="active">2022-2023</a>
+</div>
+
+# My Courses - 2022-2023
+
+---
+
+## Semester 5 (S5)
+
+### [🇬🇧 Anglais](./anglais-s5.html)
+**Content**: English language development for technical and professional communication.
+
+### [💻 Architecture Informatique Matérielle](./architecture-informatique-materielle.html)
+**Content**: Computer hardware architecture fundamentals and design.
+
+### [🔌 Circuits et Filtres Analogiques](./circuits-filtres-analogiques.html)
+**Content**: Analog circuits design and filter theory.
+
+### [⚡ Composants et Notions de Puissance](./composants-puissance.html)
+**Content**: Power components and power electronics fundamentals.
+
+### [🏢 Entreprise](./entreprise-s5.html)
+**Content**: Business fundamentals and professional skills.
+
+### [📟 Fondements Électronique Numérique](./fondements-electronique-numerique.html)
+**Content**: Digital electronics fundamentals and logic design.
+
+### [🖥️ Langage C](./langage-c.html)
+**Content**: C programming language and system programming.
+
+### [🔄 Logique Séquentielle](./logique-sequentielle.html)
+**Content**: Sequential logic circuits and finite state machines.
+
+### [📊 Modélisation et Analyse des Systèmes Linéaires et Représentation d'État](./modelisation-systemes-lineaires.html)
+**Content**: Linear systems modeling and state-space representation.
+
+### [🎮 Modélisation et Commande des Systèmes à Événements Discrets](./systemes-evenements-discrets.html)
+**Content**: Discrete event systems modeling and control.
+
+### [🎛️ Modélisation et Commande des Systèmes Linéaires Continus](./systemes-lineaires-continus.html)
+**Content**: Continuous linear systems modeling and control.
+
+### [🔬 PPI](./ppi-s5.html)
+**Content**: Integrated practical project.
+
+### [🌐 Réseau](./reseau-s5.html)
+**Content**: Computer networks fundamentals and protocols.
+
+### [💾 Réseau - Projet C](./reseau-projet-c.html)
+**Content**: Network programming project in C.
+
+### [📡 Signal](./signal.html)
+**Content**: Signal processing and analysis fundamentals.
+
+### [🐧 Système Unix](./systeme-unix.html)
+**Content**: Unix/Linux system administration and shell programming.
+
+### [🔁 Systèmes Bouclés](./systemes-boucles.html)
+**Content**: Feedback control systems and closed-loop analysis.
+
+### [⚙️ Systèmes d'Exploitation](./systemes-exploitation.html)
+**Content**: Operating systems principles and implementation.
+
+---
+
+## Semester 6 (S6)
+
+### [🇬🇧 Anglais](./anglais-s6.html)
+**Content**: Advanced English for technical and professional contexts.
+
+### [🖥️ Architecture Matérielle](./architecture-materielle.html)
+**Content**: Advanced computer hardware architecture concepts.
+
+### [🔊 Électronique Fonctions Analogiques](./electronique-fonctions-analogiques.html)
+**Content**: Analog electronic functions and applications.
+
+### [💾 Électronique Fonctions Numériques](./electronique-fonctions-numeriques.html)
+**Content**: Digital electronic functions and design.
+
+### [📊 Filtrage Numérique](./filtrage-numerique.html)
+**Content**: Digital signal processing and filtering techniques.
+
+### [💼 Gestion](./gestion.html)
+**Content**: Management principles and project management.
+
+### [⚙️ Langage d'Assemblage ARM CORTEX](./assemblage-arm-cortex.html)
+**Content**: ARM CORTEX assembly language programming.
+
+### [🔌 Microcontrôleur](./microcontroleur.html)
+**Content**: Microcontroller programming and embedded systems.
+
+### [🔬 PPI](./ppi-s6.html)
+**Content**: Integrated practical project (semester 6).
+
+### [🔧 Projet PCB](./projet-pcb.html)
+**Content**: Printed circuit board design project.
+
+### [🌍 Qualité Sécurité Environnement](./qualite-securite-environnement.html)
+**Content**: Quality, safety, and environmental management.
+
+### [📈 Signaux Aléatoires](./signaux-aleatoires.html)
+**Content**: Random signals and stochastic processes.
+

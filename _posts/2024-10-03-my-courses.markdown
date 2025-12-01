@@ -5,7 +5,72 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# 2024-2025
+<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses.html" class="active">2024-2025</a>
+  <a href="./my-courses-2023-2024.html">2023-2024</a>
+  <a href="./my-courses-2022-2023.html">2022-2023</a>
+</div>
+
+# My Courses - 2024-2025
+
+---
 
 ## [📁 Portfolio](./portfolio.html)
 **Duration**: Ongoing  
