@@ -1,4 +1,32 @@
+# Jekyll
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-vendor
+_site/
+.jekyll-cache/
+vendor/
+
+# Node.js (serveur chatbot non utilisé)
+node_modules/
+package-lock.json
+package.json
+node.js
+
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backups
+*.backup
+*.old
+*~
+
+# Fichiers temporaires
+*.swp
+*.swo
+*.log
