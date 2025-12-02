@@ -50,3 +50,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# N'excluez PAS search.json
+# exclude:
+#   - search.json  # <-- NE PAS faire ça
+
+# Ou explicitement l'inclure
+include:
+  - search.json

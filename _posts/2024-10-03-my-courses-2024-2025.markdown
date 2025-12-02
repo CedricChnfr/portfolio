@@ -73,7 +73,7 @@ categories: jekyll update
 ---
 
 ## [📁 Portfolio](./portfolio.html)
-**Duration**: Ongoing  
+**Duration**: 30 hours  
 **Dates**: 01/10/2024 - 30/01/2025  
 **Content**: Compilation of projects and assignments completed throughout the course.
 

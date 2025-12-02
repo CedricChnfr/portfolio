@@ -324,6 +324,54 @@ layout: default
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
 }
 
+.experience-hidden {
+    display: none !important;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.experience-hidden.show {
+    display: flex !important;
+    opacity: 1;
+    max-height: 1000px;
+    animation: fadeInLeft 0.8s ease-out both;
+}
+
+.show-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto 0 auto;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.show-more-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+.show-more-btn .arrow {
+    transition: transform 0.3s ease;
+    font-size: 0.9em;
+}
+
+.show-more-btn.expanded .arrow {
+    transform: rotate(180deg);
+}
+
 /* Formation Section */
 .formation-section {
     max-width: 1200px;
@@ -622,6 +670,176 @@ layout: default
     from { width: 0 !important; }
 }
 
+/* Search Bar Styles */
+.search-container {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.search-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6);
+}
+
+.search-button svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.search-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.search-modal.active {
+    display: flex;
+}
+
+.search-box {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.search-input-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 18px 50px 18px 20px;
+    font-size: 1.1em;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.search-clear {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #a0aec0;
+    cursor: pointer;
+    display: none;
+}
+
+.search-clear.visible {
+    display: block;
+}
+
+.search-results {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.search-result-item {
+    padding: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.search-result-item:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    transform: translateX(5px);
+}
+
+.search-result-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.search-result-excerpt {
+    color: #718096;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.search-result-highlight {
+    background: #fef3c7;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.search-no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: #718096;
+}
+
+.search-no-results-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.search-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #a0aec0;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+.search-close:hover {
+    color: #667eea;
+    transform: rotate(90deg);
+}
+
 /* Responsive Design */
 @media (max-width: 900px) {
     .hero-content {
@@ -720,6 +938,175 @@ layout: default
     }
 }
 </style>
+
+<!-- Search Button -->
+<div class="search-container">
+    <button class="search-button" onclick="openSearch()" title="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+    </button>
+</div>
+
+<!-- Search Modal -->
+<div class="search-modal" id="searchModal" onclick="closeSearchOnOutsideClick(event)">
+    <div class="search-box" onclick="event.stopPropagation()">
+        <button class="search-close" onclick="closeSearch()">&times;</button>
+        <div class="search-input-wrapper">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="searchInput" 
+                placeholder="Search courses, projects, topics..."
+                autocomplete="off"
+            >
+            <button class="search-clear" id="searchClear" onclick="clearSearch()">&times;</button>
+        </div>
+        <div class="search-results" id="searchResults">
+            <div class="search-no-results">
+                <div class="search-no-results-icon">🔍</div>
+                <p>Start typing to search through all courses and content...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let searchData = [];
+
+// Load search data
+fetch('{{ "/search.json" | relative_url }}')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Search data not found');
+        }
+        return response.json();
+    })
+    .then(data => {
+        searchData = data;
+        console.log('Search data loaded:', searchData.length, 'posts'); // Pour déboguer
+    })
+    .catch(error => {
+        console.error('Error loading search data:', error);
+        alert('Search functionality is not available. Please check the console for errors.');
+    });
+
+function openSearch() {
+    document.getElementById('searchModal').classList.add('active');
+    document.getElementById('searchInput').focus();
+}
+
+function closeSearch() {
+    document.getElementById('searchModal').classList.remove('active');
+    clearSearch();
+}
+
+function closeSearchOnOutsideClick(event) {
+    if (event.target === document.getElementById('searchModal')) {
+        closeSearch();
+    }
+}
+
+function clearSearch() {
+    const input = document.getElementById('searchInput');
+    input.value = '';
+    document.getElementById('searchClear').classList.remove('visible');
+    document.getElementById('searchResults').innerHTML = `
+        <div class="search-no-results">
+            <div class="search-no-results-icon">🔍</div>
+            <p>Start typing to search through all courses and content...</p>
+        </div>
+    `;
+}
+
+// Search functionality
+document.getElementById('searchInput').addEventListener('input', function(e) {
+    const query = e.target.value.trim().toLowerCase();
+    const clearBtn = document.getElementById('searchClear');
+    
+    if (query.length > 0) {
+        clearBtn.classList.add('visible');
+    } else {
+        clearBtn.classList.remove('visible');
+        clearSearch();
+        return;
+    }
+    
+    if (query.length < 2) return;
+    
+    const results = searchData.filter(item => {
+        return item.title.toLowerCase().includes(query) || 
+               item.content.toLowerCase().includes(query);
+    });
+    
+    displayResults(results, query);
+});
+
+function displayResults(results, query) {
+    const resultsContainer = document.getElementById('searchResults');
+    
+    if (results.length === 0) {
+        resultsContainer.innerHTML = `
+            <div class="search-no-results">
+                <div class="search-no-results-icon">😕</div>
+                <p>No results found for "<strong>${escapeHtml(query)}</strong>"</p>
+            </div>
+        `;
+        return;
+    }
+    
+    resultsContainer.innerHTML = results.map(result => {
+        const excerpt = getExcerpt(result.content, query);
+        const highlightedTitle = highlightText(result.title, query);
+        const highlightedExcerpt = highlightText(excerpt, query);
+        
+        return `
+            <div class="search-result-item" onclick="window.location.href='${result.url}'">
+                <div class="search-result-title">${highlightedTitle}</div>
+                <div class="search-result-excerpt">${highlightedExcerpt}</div>
+            </div>
+        `;
+    }).join('');
+}
+
+function getExcerpt(content, query) {
+    const lowerContent = content.toLowerCase();
+    const lowerQuery = query.toLowerCase();
+    const index = lowerContent.indexOf(lowerQuery);
+    
+    if (index === -1) {
+        return content.substring(0, 200) + '...';
+    }
+    
+    const start = Math.max(0, index - 100);
+    const end = Math.min(content.length, index + query.length + 100);
+    const excerpt = content.substring(start, end);
+    
+    return (start > 0 ? '...' : '') + excerpt + (end < content.length ? '...' : '');
+}
+
+function highlightText(text, query) {
+    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    return escapeHtml(text).replace(regex, '<span class="search-result-highlight">$1</span>');
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('searchModal').classList.contains('active')) {
+        closeSearch();
+    }
+});
+</script>
 
 <div class="hero-section">
     <div class="hero-background"></div>
@@ -847,7 +1234,27 @@ layout: default
                     </div>
                 </div>
             </div>
+            
+            <div class="experience-item experience-hidden" style="--delay: 0.45s">
+                <div class="experience-icon">⚙️</div>
+                <div class="experience-content">
+                    <h3>Technicien Méthodes Électroniques</h3>
+                    <h4><a href="https://www.siemens.com/fr/fr.html" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Siemens</a> • Avr. - Juil. 2022 • Stage</h4>
+                    <p>Analyse complète du système de rack frein VAL208NG. Réalisation de tests fonctionnels sur les cartes électroniques pour garantir des performances optimales. Développement d'un banc de tests pour la carte entrées-sorties, assurant des évaluations complètes.</p>
+                    <div class="experience-tags">
+                        <span class="tag">Tests Électroniques</span>
+                        <span class="tag">Cartes PCB</span>
+                        <span class="tag">Banc de Tests</span>
+                        <span class="tag">VAL208NG</span>
+                    </div>
+                </div>
+            </div>
         </div>
+        
+        <button class="show-more-btn" onclick="toggleExperiences()" id="experienceToggle">
+            <span id="experienceToggleText">Voir plus</span>
+            <span class="arrow">▼</span>
+        </button>
     </div>
 
     <div class="formation-section" style="margin: 0;">
@@ -880,6 +1287,21 @@ layout: default
                         <span class="tag">5G</span>
                         <span class="tag">Edge Computing</span>
                         <span class="tag">SOA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formation-item" style="--delay: 0.4s">
+                <div class="formation-icon">🔌</div>
+                <div class="formation-content">
+                    <h3><a href="https://iut.univ-tlse3.fr/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">DUT GEII - Génie Électrique et Informatique Industrielle</a></h3>
+                    <h4>IUT Paul Sabatier - Toulouse, Auch, Castres • 2020 - 2022</h4>
+                    <p>Formation technique approfondie en génie électrique et électronique. Acquisition de compétences pratiques en électronique, automatisme, informatique industrielle et systèmes embarqués. Projets concrets en électronique de puissance, traitement du signal et automatique.</p>
+                    <div class="formation-tags">
+                        <span class="tag">Électronique</span>
+                        <span class="tag">Automatisme</span>
+                        <span class="tag">Informatique Industrielle</span>
+                        <span class="tag">Électrotechnique</span>
                     </div>
                 </div>
             </div>
@@ -931,9 +1353,9 @@ layout: default
             </div>
         </div>
         <div class="skill-card" style="--delay: 0.4s">
-            <div class="skill-icon">🚗</div>
-            <h4>Smart Mobility</h4>
-            <p>V2X, Systèmes autonomes, Capteurs véhiculaires</p>
+            <div class="skill-icon">🔐</div>
+            <h4>Cybersécurité Embarquée</h4>
+            <p>Sécurité ECU, AUTOSAR, Secure Logger, Standards ISO 21434</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 82%"></div>
             </div>
@@ -948,3 +1370,26 @@ layout: default
         </div>
     </div>
 </div>
+
+<script>
+function toggleExperiences() {
+    const hiddenItems = document.querySelectorAll('.experience-hidden');
+    const button = document.getElementById('experienceToggle');
+    const buttonText = document.getElementById('experienceToggleText');
+    const isExpanded = button.classList.contains('expanded');
+    
+    if (isExpanded) {
+        hiddenItems.forEach(item => {
+            item.classList.remove('show');
+        });
+        button.classList.remove('expanded');
+        buttonText.textContent = 'Voir plus';
+    } else {
+        hiddenItems.forEach(item => {
+            item.classList.add('show');
+        });
+        button.classList.add('expanded');
+        buttonText.textContent = 'Voir moins';
+    }
+}
+</script>
