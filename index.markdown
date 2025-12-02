@@ -365,7 +365,6 @@ layout: default
 
 .show-more-btn .arrow {
     transition: transform 0.3s ease;
-    font-size: 0.9em;
 }
 
 .show-more-btn.expanded .arrow {
@@ -1392,4 +1391,248 @@ function toggleExperiences() {
         buttonText.textContent = 'Voir moins';
     }
 }
+</script>
+
+<div id="ai-chat-widget">
+    <button id="chat-toggle" class="chat-toggle-btn">
+        <span class="chat-icon">🤖</span>
+    </button>
+    
+    <div id="chat-window" class="chat-window hidden">
+        <div class="chat-header">
+            <h3>Assistant IA - Cédric</h3>
+            <button id="chat-close" class="chat-close-btn">✕</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Posez votre question..." />
+            <button id="chat-send" class="chat-send-btn">Envoyer</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.chat-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+.chat-icon {
+    font-size: 28px;
+}
+
+.chat-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 380px;
+    height: 500px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.chat-window.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f8f9fa;
+}
+
+.message {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background: #667eea;
+    color: white;
+    margin-left: auto;
+    text-align: right;
+}
+
+.message.ai {
+    background: white;
+    border: 1px solid #e0e0e0;
+}
+
+.chat-input-container {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background: white;
+    border-radius: 0 0 15px 15px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.chat-send-btn {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.chat-send-btn:hover {
+    background: #5568d3;
+}
+
+.loading {
+    padding: 10px;
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .chat-window {
+        width: calc(100% - 40px);
+        height: 450px;
+        right: 20px;
+    }
+}
+</style>
+
+<script>
+const API_URL = 'http://localhost:3000/api/chat'; // Changez cette URL en production
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('chat-toggle');
+    const chatWindow = document.getElementById('chat-window');
+    const closeBtn = document.getElementById('chat-close');
+    const sendBtn = document.getElementById('chat-send');
+    const input = document.getElementById('chat-input');
+    const messagesContainer = document.getElementById('chat-messages');
+
+    toggleBtn.addEventListener('click', () => {
+        chatWindow.classList.toggle('hidden');
+        if (!chatWindow.classList.contains('hidden')) {
+            input.focus();
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        chatWindow.classList.add('hidden');
+    });
+
+    function addMessage(text, isUser) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${isUser ? 'user' : 'ai'}`;
+        messageDiv.textContent = text;
+        messagesContainer.appendChild(messageDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'loading';
+        loadingDiv.textContent = 'En train de réfléchir...';
+        loadingDiv.id = 'loading';
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+
+    function removeLoading() {
+        const loadingDiv = document.getElementById('loading');
+        if (loadingDiv) loadingDiv.remove();
+    }
+
+    async function sendMessage() {
+        const message = input.value.trim();
+        if (!message) return;
+
+        addMessage(message, true);
+        input.value = '';
+        showLoading();
+
+        try {
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message })
+            });
+
+            const data = await response.json();
+            removeLoading();
+            
+            if (data.response) {
+                addMessage(data.response, false);
+            } else {
+                addMessage('Désolé, je n\'ai pas pu traiter votre demande.', false);
+            }
+        } catch (error) {
+            removeLoading();
+            addMessage('Erreur de connexion. Veuillez réessayer.', false);
+            console.error('Erreur:', error);
+        }
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    // Message de bienvenue
+    addMessage('Bonjour ! Je suis l\'assistant IA de Cédric. Posez-moi des questions sur son parcours, ses compétences ou ses projets !', false);
+});
 </script>
