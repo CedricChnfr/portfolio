@@ -1,0 +1,1288 @@
+---
+layout: default
+title: "⚖️ Droit - Semestre 8"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.back-nav {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.back-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-nav a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+# ⚖️ Droit - Semestre 8
+
+**Année académique** : 2023-2024  
+**ECTS** : 2  
+**Catégorie** : Sciences Humaines et Sociales - Juridique
+
+---
+
+## PART A - Présentation Générale du Module
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+Ce cours introduit les notions juridiques fondamentales pour l'ingénieur dans sa vie professionnelle. Il couvre le droit des contrats, le droit du travail, la propriété intellectuelle, et le droit des sociétés. L'objectif est de permettre aux futurs ingénieurs de comprendre l'environnement juridique, protéger leurs innovations, négocier des contrats, et connaître leurs droits et obligations.
+
+**Objectifs pédagogiques** :
+- Comprendre les principes du droit français et la hiérarchie des normes
+- Maîtriser les bases du droit des contrats
+- Connaître ses droits et obligations en droit du travail
+- Comprendre la propriété intellectuelle (brevets, droits d'auteur, marques)
+- Appréhender les structures juridiques d'entreprises
+- Identifier les responsabilités de l'ingénieur
+- Comprendre le RGPD et la protection des données
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+Ce module apporte une dimension juridique complémentaire :
+- **Gestion (S8)** : stratégie d'entreprise, management
+- **Finance (S7)** : valorisation, levée de fonds
+- **Entreprise (S5, S7)** : fonctionnement des organisations
+
+Il prépare à :
+- **Entrepreneuriat** : création d'entreprise, protection de l'innovation
+- **Carrière en entreprise** : négociation de contrats, gestion de projets
+- **R&D** : protection de la propriété intellectuelle
+- **Management** : gestion d'équipes dans le respect du droit du travail
+
+---
+
+## PART B - Expérience Personnelle et Contexte d'Apprentissage
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+Le module était dispensé par des juristes et avocats praticiens :
+
+**Cours magistraux (18h)** :
+- Hiérarchie des normes et sources du droit
+- Droit des contrats (formation, exécution, résolution)
+- Droit du travail (contrat, temps de travail, rupture)
+- Propriété intellectuelle (brevets, droits d'auteur, marques)
+- Droit des sociétés (SARL, SAS, SA)
+- Responsabilités de l'ingénieur
+- Protection des données (RGPD)
+
+**Cas pratiques (9 cas)** :
+- Thème 1 : Droit des contrats
+- Thème 2 : Vices du consentement
+- Thème 3 : Contrat de travail
+- Thème 4 : Rupture du contrat de travail
+- Thème 5 : Brevets d'invention
+- Thème 6 : Droits d'auteur
+- Thème 7 : Marques
+- Thème 8 : Droit des sociétés
+- Thème 9 : Responsabilités et RGPD
+
+**Ressources** :
+- Code Civil (articles pertinents fournis)
+- Code du Travail (extraits)
+- Code de la Propriété Intellectuelle
+- Annales : QCM et cas pratiques
+- Documentation INPI (Institut National de la Propriété Industrielle)
+
+<h3 class="section-title">Méthodologie d'étude</h3>
+
+**Phase 1 : Assimiler les concepts généraux** :
+Comprendre la logique du droit français, la hiérarchie des normes, les grands principes.
+
+**Phase 2 : Étudier chaque domaine** :
+Approfondir contrats, travail, propriété intellectuelle, sociétés avec leurs spécificités.
+
+**Phase 3 : Résoudre des cas pratiques** :
+Appliquer les connaissances à des situations concrètes (les 9 cas pratiques).
+
+**Phase 4 : Mémoriser les articles clés** :
+Quelques articles du Code Civil et du Code du Travail sont fondamentaux (ex : 1103, 1128, L1221-1).
+
+**Phase 5 : Développer le réflexe juridique** :
+Identifier dans toute situation professionnelle les enjeux juridiques et savoir quand consulter un expert.
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+**Vocabulaire technique** :
+Le droit a son jargon (délictuel, subsidiaire, CMRR, INPI, etc.). Nécessite de se familiariser avec les termes.
+
+**Logique différente** :
+Le raisonnement juridique diffère du raisonnement technique. Il faut s'adapter à la pensée juridique (qualification, subsomption).
+
+**Complexité des textes** :
+Les articles de loi sont denses et précis. Lecture attentive nécessaire.
+
+**Multitude de cas particuliers** :
+Le droit prévoit de nombreuses exceptions et cas spécifiques. Difficile de tout retenir.
+
+---
+
+## PART C - Aspects Techniques Détaillés
+
+<h3 class="section-title">1. Hiérarchie des normes juridiques</h3>
+
+**Pyramide de Kelsen** :
+
+Le droit français s'organise en hiérarchie. Une norme inférieure doit respecter les normes supérieures.
+
+**Ordre hiérarchique** :
+
+1. **Constitution** (sommet) : loi fondamentale, droits et libertés fondamentaux
+2. **Traités internationaux** : conventions européennes, accords internationaux (supériorité aux lois)
+3. **Lois** : votées par le Parlement
+4. **Règlements** : décrets, arrêtés (pouvoir exécutif)
+5. **Contrats** : "la loi des parties" (mais ne peut contredire les normes supérieures)
+
+**Principe de légalité** :
+
+Toute norme inférieure doit être conforme aux normes supérieures. Une loi contraire à la Constitution peut être censurée par le Conseil Constitutionnel.
+
+<h3 class="section-title">2. Droit des contrats</h3>
+
+**Définition** :
+
+Un contrat est un accord de volontés créant des obligations juridiques entre les parties.
+
+**Conditions de validité (article 1128 Code Civil)** :
+
+Pour qu'un contrat soit valide, il faut :
+1. **Consentement libre et éclairé** des parties
+2. **Capacité juridique** de contracter (majeur, sain d'esprit)
+3. **Contenu licite et certain** (objet et cause légaux)
+
+**Formation du contrat** :
+
+**Offre** : proposition précise, ferme, et complète.
+
+**Acceptation** : accord pur et simple sans réserve.
+
+**Rencontre des volontés** : dès que l'acceptation rencontre l'offre, le contrat est formé (consensualisme).
+
+**Force obligatoire (article 1103)** :
+
+"Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits."
+
+Les parties doivent respecter leurs engagements. Le non-respect entraîne responsabilité contractuelle.
+
+**Vices du consentement** :
+
+Le consentement doit être libre et éclairé. S'il est vicié, le contrat peut être annulé.
+
+| Vice | Description | Exemple |
+|------|-------------|---------|
+| Erreur | Croyance erronée sur élément essentiel | Acheter un faux tableau croyant qu'il est authentique |
+| Dol | Manœuvres frauduleuses pour tromper | Masquer un défaut lors de vente |
+| Violence | Contrainte physique ou morale | Signer sous menace |
+
+**Exécution du contrat** :
+
+Les obligations doivent être exécutées de bonne foi. En cas d'inexécution, sanctions possibles : exécution forcée, dommages-intérêts, résolution.
+
+**Fin du contrat** :
+
+- **Exécution complète** : obligations remplies
+- **Résolution** : fin pour inexécution grave
+- **Résiliation** : fin pour l'avenir (contrats à exécution successive)
+- **Accord mutuel** : les parties décident ensemble de mettre fin
+
+<h3 class="section-title">3. Contrat de travail</h3>
+
+**Définition** :
+
+Lien de subordination juridique contre rémunération. Le salarié travaille sous l'autorité de l'employeur.
+
+**Critères du lien de subordination** :
+- Directives de l'employeur
+- Contrôle de l'exécution
+- Pouvoir de sanction
+
+**Types de contrats** :
+
+| Type | Durée | Utilisation |
+|------|-------|-------------|
+| CDI | Indéterminée | Forme normale et générale |
+| CDD | Déterminée | Cas limitatifs (remplacement, surcroît d'activité) |
+| Intérim | Mission temporaire | Via agence d'intérim |
+
+**Contenu obligatoire d'un contrat de travail** :
+- Identification des parties
+- Qualification (poste, statut)
+- Rémunération (salaire brut)
+- Durée et horaires de travail
+- Lieu de travail
+- Convention collective applicable
+
+**Période d'essai** :
+
+Période permettant à chaque partie d'évaluer l'autre et de rompre facilement.
+
+Durée maximale selon statut :
+- Ouvriers/employés : 2 mois
+- Agents de maîtrise/techniciens : 3 mois
+- Cadres : 4 mois
+
+Renouvellement possible si prévu par convention collective.
+
+**Modification du contrat** :
+
+Les éléments essentiels (rémunération, qualification, lieu si précisé) nécessitent l'accord du salarié.
+
+Refus du salarié : employeur ne peut pas imposer, doit maintenir situation ou licencier (motif économique si applicable).
+
+**Rupture du CDI** :
+
+| Type | Initiative | Conditions |
+|------|-----------|------------|
+| Démission | Salarié | Volonté claire et non équivoque |
+| Licenciement | Employeur | Cause réelle et sérieuse (faute, insuffisance, économique) |
+| Rupture conventionnelle | Mutuelle | Accord commun, homologation |
+| Prise d'acte | Salarié | Manquements graves employeur (requalification en licenciement si justifié) |
+
+**Indemnités de licenciement** :
+
+Si licenciement (hors faute grave/lourde) et ancienneté ≥ 8 mois : indemnité légale minimum (1/4 de mois par année d'ancienneté).
+
+<h3 class="section-title">4. Temps de travail et rémunération</h3>
+
+**Durée légale** :
+
+35 heures par semaine (ou 151,67 heures par mois).
+
+Au-delà : heures supplémentaires majorées.
+
+**Heures supplémentaires** :
+
+Majoration :
+- 25% pour les 8 premières heures (36e à 43e heure)
+- 50% au-delà
+
+Possibilité de repos compensateur équivalent.
+
+**Forfait jours (cadres autonomes)** :
+
+Pas de décompte horaire, mais nombre de jours travaillés par an (218 jours maximum).
+
+**Repos obligatoires** :
+
+- **Repos quotidien** : 11 heures consécutives
+- **Repos hebdomadaire** : 24 heures (généralement dimanche + 11h quotidiennes = 35h)
+- **Congés payés** : 2,5 jours ouvrables par mois travaillé (30 jours par an)
+
+**SMIC** :
+
+Salaire Minimum Interprofessionnel de Croissance. Montant horaire fixé par décret, réévalué régulièrement.
+
+**Bulletin de paie** :
+
+- **Salaire brut** : avant déductions
+- **Cotisations sociales** : salariales (retenues sur salaire) + patronales (payées par employeur)
+- **Salaire net** : perçu par le salarié
+
+<h3 class="section-title">5. Propriété intellectuelle - Vue d'ensemble</h3>
+
+**Trois piliers** :
+
+**1. Propriété industrielle** :
+- Brevets d'invention
+- Marques
+- Dessins et modèles
+
+**2. Propriété littéraire et artistique** :
+- Droit d'auteur (œuvres de l'esprit)
+- Droits voisins (artistes-interprètes, producteurs)
+
+**3. Autres** :
+- Obtentions végétales
+- Topographies de semi-conducteurs
+
+<h3 class="section-title">6. Brevets d'invention</h3>
+
+**Principe** :
+
+Le brevet protège une invention technique en accordant un monopole d'exploitation pour une durée limitée.
+
+**Conditions de brevetabilité** :
+
+Pour être brevetable, l'invention doit remplir trois critères :
+
+1. **Nouveauté** : non divulguée publiquement avant le dépôt (pas de publication, pas de vente)
+2. **Activité inventive** : non évidente pour un homme du métier (apport créatif)
+3. **Application industrielle** : fabricable ou utilisable dans l'industrie
+
+**Exclusions** :
+
+Ne sont pas brevetables :
+- Découvertes scientifiques (lois de la nature)
+- Théories mathématiques
+- Créations esthétiques (protégées par droit d'auteur)
+- Logiciels "en tant que tels" (mais effets techniques brevetables)
+- Méthodes de traitement médical du corps humain
+
+**Procédure de dépôt** :
+
+**En France** : dépôt à l'INPI (Institut National de la Propriété Industrielle).
+
+**En Europe** : dépôt à l'OEB (Office Européen des Brevets) couvrant plusieurs pays.
+
+**À l'international** : dépôt PCT (Patent Cooperation Treaty) facilitant dépôts multiples.
+
+**Coût** : plusieurs milliers d'euros (dépôt + annuités + traductions pour Europe/international).
+
+**Durée de protection** :
+
+20 ans à compter du dépôt, sous réserve de payer les annuités (taxes de maintien).
+
+**Droits conférés** :
+
+Monopole d'exploitation : seul le titulaire peut fabriquer, utiliser, vendre, importer l'invention.
+
+Interdire à autrui d'exploiter sans licence.
+
+**Obligations** :
+
+- **Divulgation** : description complète de l'invention (publication 18 mois après dépôt)
+- **Annuités** : taxes annuelles pour maintenir le brevet en vigueur
+
+**Inventions de salariés** :
+
+Trois catégories selon article L611-7 CPI :
+
+| Type | Définition | Propriété | Compensation |
+|------|------------|-----------|--------------|
+| Mission | Dans cadre des fonctions, mission inventive explicite | Employeur | Prime raisonnable possible |
+| Hors mission attribuable | Hors mission mais liée à activité entreprise ou moyens utilisés | Employeur (droit d'attribution) | Juste prix obligatoire |
+| Hors mission non attribuable | Totalement hors activité et moyens entreprise | Salarié | - |
+
+<h3 class="section-title">7. Droit d'auteur</h3>
+
+**Principe** :
+
+Le droit d'auteur protège les œuvres de l'esprit originales dès leur création, sans formalité.
+
+**Objets protégés** :
+
+Toute création intellectuelle originale :
+- Œuvres littéraires (livres, articles)
+- Œuvres musicales
+- Œuvres audiovisuelles
+- Logiciels
+- Bases de données
+- Arts visuels (peinture, photographie, sculpture)
+
+**Conditions** :
+
+1. **Originalité** : empreinte de la personnalité de l'auteur (choix créatifs)
+2. **Mise en forme** : l'idée seule n'est pas protégeable, seulement son expression
+
+**Aucune formalité** :
+
+Protection automatique dès création. Pas besoin d'enregistrement (contrairement au brevet).
+
+Dépôt possible pour preuve d'antériorité (enveloppe Soleau à l'INPI, huissier, etc.).
+
+**Deux types de droits** :
+
+**Droits moraux** (perpétuels, inaliénables, imprescriptibles) :
+- **Droit de divulgation** : décider si et comment publier
+- **Droit au respect de l'œuvre** : s'opposer aux modifications
+- **Droit de paternité** : être reconnu comme auteur
+- **Droit de retrait/repentir** : retirer l'œuvre (rare, indemnisation)
+
+**Droits patrimoniaux** (cessibles, limités dans le temps) :
+- **Droit de reproduction** : copie, impression, enregistrement
+- **Droit de représentation** : diffusion publique, exécution
+- **Droit d'adaptation** : traduction, transformation
+
+**Durée de protection** :
+
+Vie de l'auteur + 70 ans.
+
+Après, l'œuvre tombe dans le domaine public (libre utilisation).
+
+**Exceptions** :
+
+Utilisations autorisées sans autorisation :
+- Citation courte (avec source)
+- Copie privée (usage personnel)
+- Parodie
+- Enseignement et recherche (limité)
+
+**Logiciels** :
+
+Protégés par le droit d'auteur (pas le brevet en principe, sauf effet technique).
+
+En entreprise, droits souvent cédés automatiquement à l'employeur (sauf disposition contraire).
+
+<h3 class="section-title">8. Marques</h3>
+
+**Définition** :
+
+Signe distinctif permettant d'identifier les produits ou services d'une entreprise.
+
+**Types de marques** :
+
+- **Nominale** : mot, nom (ex : Coca-Cola)
+- **Figurative** : logo, dessin
+- **Mixte** : combinaison mot + logo
+- **Sonore** : jingle (ex : SNCF)
+- **Tridimensionnelle** : forme du produit (ex : bouteille Coca)
+
+**Conditions de validité** :
+
+1. **Distinctive** : pas générique ou descriptive (ex : "ordinateur" pour un ordinateur)
+2. **Licite** : pas contraire ordre public, pas trompeuse
+3. **Disponible** : pas de droits antérieurs (marques, noms commerciaux similaires)
+
+**Dépôt** :
+
+À l'INPI pour la France.
+
+Choisir les classes de produits/services (classification de Nice, 45 classes).
+
+**Coût** : quelques centaines d'euros selon nombre de classes.
+
+**Durée de protection** :
+
+10 ans, renouvelable indéfiniment (tant que taxes payées).
+
+**Déchéance pour non-usage** : si non utilisée pendant 5 ans consécutifs.
+
+**Droits conférés** :
+
+Monopole d'utilisation pour les produits/services enregistrés.
+
+Interdire aux tiers d'utiliser marque identique ou similaire créant confusion.
+
+**Contrefaçon** :
+
+Utilisation non autorisée d'une marque protégée.
+
+Sanctions civiles (dommages-intérêts, saisie contrefaçons) et pénales (amende, emprisonnement).
+
+<h3 class="section-title">9. Droit des sociétés</h3>
+
+**Entreprise individuelle vs Société** :
+
+**Entreprise individuelle** :
+- Pas de personnalité morale distincte (entrepreneur = entreprise)
+- Responsabilité illimitée (patrimoine personnel engagé)
+- Simplicité administrative
+- Imposition sur revenus personnels
+
+**Société** :
+- Personnalité morale (entité juridique distincte)
+- Responsabilité limitée aux apports (généralement)
+- Formalités de création (statuts, immatriculation RCS)
+- Imposition société + éventuelle imposition associés
+
+**Principales formes de sociétés** :
+
+**SARL (Société à Responsabilité Limitée)** :
+
+| Caractéristique | Description |
+|-----------------|-------------|
+| Associés | 1 à 100 (EURL si seul) |
+| Capital | Libre (1€ symbolique possible) |
+| Responsabilité | Limitée aux apports |
+| Direction | Gérant(s) |
+| Décisions | Assemblées générales |
+| Régime social gérant | Majoritaire : TNS, minoritaire : assimilé salarié |
+
+**SAS (Société par Actions Simplifiée)** :
+
+| Caractéristique | Description |
+|-----------------|-------------|
+| Associés | Minimum 1 (SASU si seul) |
+| Capital | Libre |
+| Responsabilité | Limitée aux apports |
+| Direction | Président (liberté statutaire pour autres organes) |
+| Souplesse | Grande liberté d'organisation dans statuts |
+| Régime social président | Assimilé salarié |
+
+**SA (Société Anonyme)** :
+
+| Caractéristique | Description |
+|-----------------|-------------|
+| Actionnaires | Minimum 2 (7 si cotée en bourse) |
+| Capital | Minimum 37 000 € |
+| Responsabilité | Limitée aux apports |
+| Direction | Conseil d'administration + DG, ou Directoire + Conseil de surveillance |
+| Formalisme | Important (adapté aux grandes structures) |
+
+**Choix de structure** :
+
+Critères de décision :
+- Nombre d'associés
+- Montant des investissements
+- Fiscalité (IS ou IR)
+- Protection patrimoine personnel
+- Souplesse de gestion
+- Levée de fonds (SAS préférée par investisseurs)
+
+<h3 class="section-title">10. Responsabilités de l'ingénieur</h3>
+
+**Responsabilité contractuelle** :
+
+Vis-à-vis du client ou employeur.
+
+Inexécution ou mauvaise exécution des obligations contractuelles → dommages-intérêts.
+
+Obligation de résultat (atteindre objectif) ou de moyens (mettre en œuvre moyens appropriés) selon contrat.
+
+**Responsabilité délictuelle (ou extracontractuelle)** :
+
+Dommage causé à un tiers (hors contrat).
+
+Trois conditions :
+1. **Faute** : négligence, imprudence, manquement à obligation
+2. **Préjudice** : dommage subi par la victime
+3. **Lien de causalité** : la faute a causé le préjudice
+
+**Responsabilité pénale** :
+
+Infractions pouvant engager l'ingénieur :
+- **Mise en danger d'autrui** : exposer autrui à risque immédiat de mort ou blessures graves
+- **Homicide ou blessures involontaires** : par maladresse, imprudence, négligence
+- **Atteinte à l'environnement** : pollution, déchets dangereux
+- **Non-respect normes de sécurité**
+
+Sanctions : amendes, emprisonnement, interdiction d'exercer.
+
+**Responsabilité décennale (construction)** :
+
+Garantie de 10 ans sur solidité de l'ouvrage et éléments indissociables.
+
+Concerne architectes, ingénieurs, entrepreneurs du bâtiment.
+
+Assurance obligatoire.
+
+**Devoir de conseil** :
+
+L'ingénieur, en tant qu'expert, doit alerter sur les risques et proposer des solutions adaptées.
+
+Défaut de conseil peut engager responsabilité.
+
+<h3 class="section-title">11. Clauses contractuelles importantes</h3>
+
+**Clause de confidentialité (NDA - Non-Disclosure Agreement)** :
+
+Protège les informations sensibles échangées entre parties.
+
+Préciser :
+- Informations concernées
+- Durée de confidentialité
+- Exceptions (informations déjà publiques, obligation légale)
+- Sanctions en cas de violation
+
+**Clause de non-concurrence** :
+
+Interdit au salarié d'exercer activité concurrente après fin du contrat.
+
+**Conditions de validité** :
+- Limitée dans le temps (généralement 1-2 ans)
+- Limitée géographiquement
+- Limitée à un secteur d'activité précis
+- Indemnité compensatrice (sinon nulle)
+- Nécessaire à protection intérêts légitimes de l'entreprise
+
+**Clause de propriété intellectuelle** :
+
+Définit qui détient les droits sur créations réalisées dans le cadre de la collaboration.
+
+Important de clarifier dès début : brevets, logiciels, designs, etc.
+
+**Clause pénale** :
+
+Fixe à l'avance montant des dommages-intérêts en cas d'inexécution.
+
+Évite contentieux sur évaluation du préjudice.
+
+Peut être révisée par juge si manifestement excessive ou dérisoire.
+
+**Clause de juridiction** :
+
+Désigne le tribunal compétent en cas de litige.
+
+**Clause compromissoire** :
+
+Soumet les litiges à arbitrage plutôt qu'aux tribunaux judiciaires.
+
+Plus rapide et confidentiel, mais coûteux.
+
+<h3 class="section-title">12. Protection des données personnelles - RGPD</h3>
+
+**Règlement Général sur la Protection des Données** :
+
+Règlement européen applicable depuis mai 2018.
+
+Vise à protéger les données personnelles des citoyens européens.
+
+**Donnée personnelle** :
+
+Toute information relative à personne physique identifiée ou identifiable (nom, email, adresse IP, etc.).
+
+**Principes fondamentaux** :
+
+- **Licéité, loyauté, transparence** : traitement légal et informé
+- **Limitation des finalités** : collecte pour objectifs précis
+- **Minimisation** : collecter seulement données nécessaires
+- **Exactitude** : maintenir données à jour
+- **Limitation de conservation** : ne pas garder indéfiniment
+- **Intégrité et confidentialité** : sécuriser les données
+
+**Droits des personnes** :
+
+| Droit | Description |
+|-------|-------------|
+| Accès | Obtenir copie de ses données |
+| Rectification | Corriger données inexactes |
+| Effacement ("droit à l'oubli") | Demander suppression |
+| Portabilité | Récupérer données dans format réutilisable |
+| Opposition | S'opposer au traitement |
+| Limitation | Limiter le traitement |
+
+**Obligations du responsable de traitement** :
+
+- Tenir un registre des traitements
+- Réaliser analyse d'impact (si traitement à risque)
+- Désigner DPO (Data Protection Officer) si nécessaire
+- Notifier violations de données à CNIL (72h) et aux personnes concernées
+- Obtenir consentement clair (case à cocher, pas pré-cochée)
+
+**Sanctions** :
+
+Amendes jusqu'à 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial (le plus élevé).
+
+Nombreuses sanctions déjà prononcées (Google, Amazon, etc.).
+
+---
+
+## PART D - Analyse Réflexive et Perspectives
+
+<h3 class="section-title">Compétences acquises</h3>
+
+**Culture juridique générale** :
+Compréhension des principes du droit français, hiérarchie des normes, raisonnement juridique.
+
+**Lecture de contrats** :
+Capacité à lire et analyser un contrat, identifier les clauses importantes et les risques.
+
+**Connaissance droits et obligations** :
+En tant que salarié : droits (rémunération, repos, protection) et obligations (loyauté, subordination).
+
+**Protection de l'innovation** :
+Comprendre comment protéger ses créations (brevets, droits d'auteur, marques) et éviter contrefaçon.
+
+**Vision entrepreneuriale** :
+Bases pour créer une entreprise (choix structure, statuts, propriété intellectuelle).
+
+**Conscience des responsabilités** :
+Identifier les situations engageant la responsabilité de l'ingénieur et agir en conséquence.
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+**1. Le droit encadre toute activité professionnelle** :
+Ignorer le droit par méconnaissance n'exonère pas de responsabilité. Se former est essentiel.
+
+**2. Tout contrat doit être lu attentivement** :
+Un contrat engage juridiquement. Les clauses défavorables (non-concurrence abusive, cession tous droits IP) peuvent avoir conséquences lourdes.
+
+**3. Protéger ses innovations rapidement** :
+La nouveauté d'un brevet se perd dès divulgation publique. Déposer avant de publier ou présenter.
+
+**4. Propriété intellectuelle ≠ automatiquement à l'employeur** :
+Les inventions de mission appartiennent à l'employeur, mais hors mission attribuable : juste prix. Hors mission non attribuable : au salarié.
+
+**5. RGPD incontournable** :
+Tout traitement de données personnelles doit respecter RGPD. Sanctions très élevées. Intégrer la conformité dès conception.
+
+<h3 class="section-title">Retour d'expérience</h3>
+
+**Prise de conscience** :
+Avant ce cours, le droit semblait abstrait. J'ai réalisé qu'il est omniprésent : signature d'un stage, utilisation d'un logiciel, création d'un site web (mentions légales, cookies).
+
+**Complexité et nuances** :
+Le droit est rarement binaire. Beaucoup de zones grises, d'interprétations, de jurisprudence. D'où l'importance de consulter des experts en cas de doute.
+
+**Valorisation du conseil juridique** :
+Un juriste n'est pas un coût mais un investissement. Il évite litiges coûteux, protège innovations, sécurise contrats.
+
+**Aspect pratique** :
+Les cas pratiques ont rendu le cours concret. Analyser des situations réelles (litige salarial, contrefaçon de marque) aide à ancrer les connaissances.
+
+<h3 class="section-title">Applications pratiques</h3>
+
+**Pour ingénieur salarié** :
+- Négocier contrat de travail (clause IP, non-concurrence, rémunération)
+- Comprendre bulletin de paie
+- Connaître ses droits (congés, heures sup, protection licenciement)
+- Protéger ses inventions hors mission
+
+**Pour ingénieur en R&D** :
+- Protéger innovations (brevets)
+- Vérifier liberté d'exploitation (freedom to operate)
+- Gérer confidentialité (NDA avec partenaires)
+- Respecter propriété intellectuelle de tiers
+
+**Pour entrepreneur** :
+- Choisir structure juridique adaptée (SARL, SAS)
+- Rédiger statuts et pacte d'associés
+- Protéger marque et nom commercial
+- Rédiger contrats clients et fournisseurs
+- Conformité RGPD
+
+**Pour manager** :
+- Respecter droit du travail (horaires, repos, licenciement)
+- Gérer contrats de l'équipe
+- Former équipe sur confidentialité et RGPD
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+**Limites du module** :
+- Survol nécessairement superficiel (droit très vaste)
+- Peu d'approfondissement sur droit international
+- Aspects fiscaux peu abordés
+- Peu de pratique rédactionnelle (rédiger contrat)
+
+**Ouvertures vers** :
+- **Droit des affaires** : fusions-acquisitions, levée de fonds
+- **Droit du numérique** : e-commerce, protection données, cybercriminalité
+- **Droit de la concurrence** : ententes, abus position dominante
+- **Droit européen et international** : contrats internationaux, brevets mondiaux
+
+<h3 class="section-title">Évolutions récentes</h3>
+
+**RGPD (2018)** :
+
+Impact majeur sur traitement données. Toutes entreprises concernées. Conformité obligatoire.
+
+**Réglementation Intelligence Artificielle** :
+
+L'UE travaille sur réglementation IA (AI Act) : IA à risque, transparence, responsabilité.
+
+**Propriété intellectuelle du logiciel** :
+
+Débats sur brevetabilité des algorithmes, IA, blockchain.
+
+**Droit à la déconnexion** :
+
+Respect vie privée salariés, limitation emails hors horaires (droit français depuis 2017).
+
+**Télétravail** :
+
+Cadre juridique renforcé post-COVID (accord, équipement, assurance).
+
+<h3 class="section-title">Conseils pour réussir</h3>
+
+**1. Ne pas négliger le droit** :
+Ce n'est pas qu'un cours théorique. C'est un outil pratique qui protège et structure l'activité professionnelle.
+
+**2. Lire attentivement tout contrat** :
+Stage, emploi, prestation. Identifier clauses importantes (IP, non-concurrence, confidentialité). Ne pas hésiter à négocier.
+
+**3. Protéger ses créations** :
+Si invention ou création originale, se renseigner sur protection (brevet, droit d'auteur, marque). Agir vite (nouveauté).
+
+**4. Consulter un expert en cas de doute** :
+Avocat, juriste, conseil en PI. Investissement rentable pour éviter erreurs coûteuses.
+
+**5. Se tenir informé** :
+Le droit évolue (RGPD, IA, télétravail). Suivre actualités juridiques pertinentes pour son secteur.
+
+**6. Développer le réflexe juridique** :
+Dans toute décision professionnelle, se poser question : quels sont enjeux juridiques, risques, protections nécessaires ?
+
+<h3 class="section-title">Conclusion</h3>
+
+Ce module est essentiel pour tout ingénieur, qu'il soit salarié, chercheur, ou entrepreneur. Le droit n'est pas un obstacle mais un cadre protecteur et structurant.
+
+**Compétences transférables** :
+- Lecture critique de documents juridiques
+- Identification des risques juridiques
+- Protection de l'innovation
+- Négociation éclairée de contrats
+- Vision globale entreprise (juridique, technique, financière)
+
+**Pertinence professionnelle** :
+Tout ingénieur sera confronté au droit : signature contrat travail, création produit (protection IP), gestion projet (contrats clients/fournisseurs), création startup (statuts, levée fonds).
+
+**Message principal** :
+Le droit n'est pas réservé aux juristes. Tout professionnel doit en maîtriser les bases pour protéger ses intérêts, respecter ses obligations, et évoluer sereinement.
+
+**Recommandations** :
+- Approfondir domaines pertinents pour son secteur (brevets pour R&D, RGPD pour IT, etc.)
+- Consulter ressources INPI, CNIL, Code du Travail en ligne
+- Participer à formations continues (propriété intellectuelle, RGPD)
+- Développer réseau avec juristes spécialisés
+- Lire blogs juridiques, newsletter (Dalloz Actualité, Village Justice)
+
+**Liens avec les autres cours** :
+- [Gestion - S8](./gestion.html) : stratégie, management
+- [Finance - S7](./finance.html) : valorisation entreprise, levée fonds
+- [Entreprise - S5/S7](./entreprise.html) : fonctionnement organisations
+- [Éthique - S9](./ethique.html) : responsabilité sociale ingénieur
+
+---
+
+*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+#### 2. Droit des Contrats
+
+**Définition**:
+Accord de volontés créant des obligations juridiques entre parties.
+
+**Conditions de validité** (art. 1128 Code Civil):
+1. **Consentement** libre et éclairé des parties
+2. **Capacité** juridique de contracter
+3. **Contenu licite** et certain
+
+**Formation du contrat**:
+- **Offre**: proposition précise et ferme
+- **Acceptation**: accord sans réserve
+- **Rencontre** des volontés → contrat formé
+
+**Force obligatoire** (art. 1103):
+"Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits."
+
+**Vices du consentement**:
+- **Erreur**: sur substance, sur personne
+- **Dol**: manœuvres frauduleuses
+- **Violence**: contrainte physique ou morale
+
+**Exécution**:
+- Obligations doivent être exécutées de bonne foi
+- Inexécution → responsabilité contractuelle
+
+**Résolution/Résiliation**:
+Fin du contrat pour inexécution ou accord mutuel.
+
+#### 3. Contrat de Travail
+
+**Définition**:
+Lien de subordination juridique contre rémunération.
+
+**Critères**:
+- Lien de subordination (directives, contrôle, sanctions)
+- Rémunération
+- Prestation de travail
+
+**Types**:
+- **CDI** (Contrat à Durée Indéterminée): forme normale
+- **CDD** (Durée Déterminée): cas limitatifs (remplacement, surcroît d'activité)
+- **Intérim**: mission temporaire via agence
+
+**Contenu obligatoire**:
+- Identification parties
+- Qualification (poste, statut)
+- Rémunération
+- Durée de travail
+- Lieu de travail
+- Convention collective applicable
+
+**Période d'essai**:
+Permet à chaque partie de rompre facilement.
+Durée max selon statut (cadres: 4 mois).
+
+**Modification du contrat**:
+Éléments essentiels nécessitent accord du salarié.
+
+**Rupture du CDI**:
+- **Démission**: initiative salarié
+- **Licenciement**: initiative employeur (cause réelle et sérieuse)
+  - Motif personnel (faute, insuffisance)
+  - Motif économique
+- **Rupture conventionnelle**: accord mutuel
+- **Prise d'acte** / **Résiliation judiciaire**: manquements graves
+
+**Indemnités**:
+Selon ancienneté et type de rupture.
+
+#### 4. Temps de Travail et Rémunération
+
+**Durée légale**:
+35h/semaine (ou 151.67h/mois).
+
+**Heures supplémentaires**:
+Au-delà 35h, majorées (25% ou 50%).
+
+**Forfait jours** (cadres):
+Nombre de jours/an (218 max), pas décompte horaire.
+
+**Repos**:
+- Repos quotidien: 11h consécutives
+- Repos hebdomadaire: 24h (généralement dimanche)
+- Congés payés: 2.5 jours ouvrables/mois (30 jours/an)
+
+**SMIC**:
+Salaire Minimum Interprofessionnel de Croissance.
+Montant horaire minimum légal.
+
+**Bulletin de paie**:
+- Salaire brut
+- Cotisations sociales (part salarié + employeur)
+- Salaire net
+
+#### 5. Propriété Intellectuelle
+
+**Trois piliers**:
+
+**1. Propriété industrielle**:
+- Brevets d'invention
+- Marques
+- Dessins et modèles
+
+**2. Propriété littéraire et artistique**:
+- Droit d'auteur (œuvres originales)
+- Droits voisins (interprètes, producteurs)
+
+**3. Obtentions végétales et topographies**:
+Secteurs spécifiques.
+
+#### 6. Brevets d'Invention
+
+**Conditions de brevetabilité**:
+1. **Nouveauté**: non divulgué publiquement avant dépôt
+2. **Activité inventive**: non évident pour l'homme du métier
+3. **Application industrielle**: fabricable ou utilisable
+
+**Exclusions**:
+- Découvertes scientifiques (vs inventions)
+- Méthodes mathématiques
+- Logiciels "en tant que tels"
+- Méthodes thérapeutiques
+
+**Dépôt**:
+- **INPI** (France)
+- **OEB** (Office Européen des Brevets)
+- **PCT** (Patent Cooperation Treaty): international
+
+**Durée**:
+20 ans à compter du dépôt.
+
+**Droits conférés**:
+Monopole d'exploitation (fabrication, vente, importation).
+
+**Obligations**:
+- Divulgation de l'invention (publication 18 mois après dépôt)
+- Annuités (maintien en vigueur)
+
+**Invention de salarié**:
+- **Mission**: appartient à l'employeur, prime possible
+- **Hors mission attribuable**: négociation, juste prix
+- **Hors mission non attribuable**: appartient au salarié
+
+#### 7. Droit d'Auteur
+
+**Objet**:
+Œuvres de l'esprit originales (littérature, musique, logiciels, etc.).
+
+**Conditions**:
+- **Originalité**: empreinte de la personnalité de l'auteur
+- **Mise en forme**: idées non protégeables, seule l'expression l'est
+
+**Aucune formalité**:
+Protection automatique dès création.
+
+**Droits moraux** (inaliénables):
+- Droit de divulgation
+- Droit au respect de l'œuvre
+- Droit de retrait/repentir
+- Droit à la paternité (nom de l'auteur)
+
+**Droits patrimoniaux** (cessibles):
+- Droit de reproduction
+- Droit de représentation
+- Droit d'adaptation
+
+**Durée**:
+Vie de l'auteur + 70 ans.
+
+**Exceptions**:
+- Citation courte
+- Copie privée
+- Parodie
+
+**Logiciels**:
+Protégés par droit d'auteur (pas le brevet en principe).
+Droits souvent cédés à l'employeur.
+
+#### 8. Marques
+
+**Fonction**:
+Signe distinctif identifiant produits/services.
+
+**Types**:
+- Nominale (mot)
+- Figurative (logo)
+- Sonore
+- Tridimensionnelle
+
+**Conditions**:
+- **Distinctive**: pas générique ou descriptive
+- **Licite**: pas trompeuse, contraire ordre public
+- **Disponible**: pas antériorités
+
+**Dépôt INPI**:
+Classes de produits/services (classification de Nice).
+
+**Durée**:
+10 ans, renouvelable indéfiniment.
+
+**Contrefaçon**:
+Utilisation non autorisée de marque protégée.
+Sanctions civiles et pénales.
+
+#### 9. Droit des Sociétés
+
+**Société vs Entreprise individuelle**:
+
+**Entreprise individuelle**:
+- Pas de personnalité morale distincte
+- Responsabilité illimitée (patrimoine personnel engagé)
+- Simplicité administrative
+
+**Société**:
+- Personnalité morale (personne juridique distincte)
+- Responsabilité limitée (généralement)
+- Formalités de création (statuts, immatriculation)
+
+**Principales formes**:
+
+**SARL** (Société à Responsabilité Limitée):
+- 1 à 100 associés
+- Capital libre (1€ symbolique possible)
+- Responsabilité limitée aux apports
+- Gérant(s)
+- Assemblées générales
+
+**SAS** (Société par Actions Simplifiée):
+- ≥1 associé (SASU si seul)
+- Grande liberté statutaire
+- Président (+ autres organes si voulu)
+- Responsabilité limitée
+
+**SA** (Société Anonyme)**:
+- ≥2 actionnaires (7 si cotée)
+- Capital min 37k€
+- Conseil d'administration ou directoire+conseil de surveillance
+- Actionnaires
+
+**EURL/SASU**:
+Versions unipersonnelles de SARL/SAS.
+
+**Choix de structure**:
+Selon projet, nombre d'associés, besoins de financement, fiscalité.
+
+#### 10. Responsabilités de l'Ingénieur
+
+**Responsabilité contractuelle**:
+Vis-à-vis du client/employeur.
+Inexécution obligations → dommages-intérêts.
+
+**Responsabilité délictuelle**:
+Dommage causé à un tiers.
+- Faute
+- Préjudice
+- Lien de causalité
+
+**Responsabilité pénale**:
+Infractions:
+- Mise en danger d'autrui
+- Homicide/blessures involontaires (négligence, imprudence)
+- Atteinte environnement
+
+**Responsabilité décennale** (construction):
+Garantie 10 ans sur solidité ouvrage.
+
+**Devoir de conseil**:
+L'ingénieur doit alerter sur risques, proposer solutions.
+
+#### 11. Clauses Contractuelles Importantes
+
+**Clause de confidentialité (NDA)**:
+Protège informations sensibles échangées.
+Définir: informations concernées, durée, sanctions.
+
+**Clause de non-concurrence**:
+Limite activité après fin contrat.
+Conditions de validité:
+- Limitée dans temps, espace, activité
+- Indemnité compensatrice
+- Nécessaire à protection intérêts légitimes
+
+**Clause de propriété intellectuelle**:
+Définit titularité des créations (brevets, logiciels, etc.).
+Important: clarifier droits dès début de collaboration.
+
+**Clause pénale**:
+Fixe à l'avance montant indemnités en cas d'inexécution.
+
+**Clause de résolution**:
+Conditions de fin anticipée du contrat.
+
+**Clause de juridiction/compétence**:
+Quel tribunal en cas de litige.
+
+**Clause compromissoire**:
+Recours à arbitrage plutôt que tribunaux.
+
+#### 12. Protection des Données Personnelles (RGPD)
+
+**Règlement Général sur la Protection des Données**:
+Applicable depuis 2018.
+
+**Principes**:
+- Licéité, loyauté, transparence
+- Limitation des finalités
+- Minimisation des données
+- Exactitude
+- Limitation de conservation
+- Intégrité et confidentialité
+
+**Droits des personnes**:
+- Droit d'accès
+- Droit de rectification
+- Droit à l'effacement
+- Droit à la portabilité
+- Droit d'opposition
+
+**Obligations responsable de traitement**:
+- Registre des traitements
+- Analyse d'impact (si risque élevé)
+- Notification CNIL en cas de violation
+- DPO (Data Protection Officer) si nécessaire
+
+**Sanctions**:
+Jusqu'à 20M€ ou 4% CA mondial.
+
+## PART D: ANALYTICAL PART
+
+### Knowledge and Skills Mobilized
+
+- Compréhension des bases du droit français
+- Lecture et analyse de contrats
+- Identification de clauses importantes et risques
+- Connaissance des droits et obligations en tant que salarié
+- Compréhension de la propriété intellectuelle (brevets, droit d'auteur, marques)
+- Bases du droit des sociétés
+- Identification des responsabilités de l'ingénieur
+- Conscience des enjeux juridiques dans l'innovation et l'entreprise
+
+### Self Evaluation
+
+Ce cours de droit, bien que dense, a été révélateur. En tant qu'ingénieur, j'avais tendance à me concentrer uniquement sur les aspects techniques, négligeant la dimension juridique. Pourtant, elle est omniprésente dans la vie professionnelle.
+
+Le droit des contrats est fondamental. Tout accord, écrit ou oral, a des implications juridiques. Savoir lire un contrat, identifier les clauses défavorables, et négocier est une compétence précieuse. J'ai réalisé qu'un contrat mal compris peut avoir des conséquences lourdes (non-concurrence abusive, cession de tous droits IP, etc.).
+
+La propriété intellectuelle est particulièrement importante pour l'ingénieur innovant. Comprendre la différence entre brevet et droit d'auteur, savoir quand et comment protéger une invention, est crucial. Le statut des inventions de salarié est complexe: toutes ne vont pas automatiquement à l'employeur.
+
+Le droit du travail m'a éclairé sur mes droits et obligations. La distinction entre modification du contrat (nécessite accord) et simple changement des conditions de travail (pouvoir de direction de l'employeur) est subtile mais importante.
+
+Le droit des sociétés, même abordé superficiellement, est utile pour comprendre les structures d'entreprise et envisager éventuellement l'entrepreneuriat. Le choix entre SARL, SAS, etc. a des implications fiscales, juridiques, et organisationnelles.
+
+Les responsabilités de l'ingénieur (contractuelle, délictuelle, pénale) sont lourdes. En tant qu'expert technique, on peut être tenu responsable de négligences ayant causé dommages ou mise en danger. Le devoir de conseil est une obligation forte.
+
+Le RGPD est incontournable à l'ère du numérique. Tout système traitant des données personnelles doit le respecter. Les sanctions peuvent être colossales.
+
+### My Opinion
+
+Ce cours devrait être renforcé et mieux intégré au cursus. Le droit n'est pas qu'un "cours de culture générale" mais un outil pratique indispensable.
+
+Points forts:
+- Intervention de praticiens (juristes, avocats)
+- Cas concrets et études de cas réels
+- Couverture large des sujets pertinents pour ingénieurs
+- Prise de conscience des enjeux juridiques
+
+Points à améliorer:
+- Plus de temps sur propriété intellectuelle (crucial pour innovateurs)
+- Ateliers pratiques (rédaction contrat, analyse cas complexes)
+- Lien avec entrepreneuriat (création startup)
+- Aspects internationaux (contrats internationaux, brevets internationaux)
+
+Réflexions personnelles:
+
+Le droit est souvent perçu comme complexe et ennuyeux par les ingénieurs. Pourtant, il protège et structure nos activités. Ignorer le droit par méconnaissance peut coûter très cher: perte de droits sur ses créations, litiges, sanctions.
+
+Un ingénieur n'a pas besoin d'être juriste, mais il doit:
+- Savoir quand consulter un expert juridique
+- Comprendre les enjeux lors de signature de contrats
+- Protéger ses innovations
+- Connaître ses droits et respecter ses obligations
+
+L'entrepreneuriat technologique nécessite autant de compétences juridiques que techniques. Protéger son idée (brevet, secret), structurer son entreprise (statuts, pacte d'associés), lever des fonds (term sheet, dilution), recruter (contrats) sont des étapes clés.
+
+Le contexte juridique évolue rapidement, surtout dans le numérique: RGPD, régulation IA, responsabilité des algorithmes, cybersécurité. Se tenir informé est important.
+
+Dans ma carrière future:
+
+- **En entreprise**: négocier contrat de travail, comprendre clauses IP, faire valoir mes droits
+- **En R&D**: protéger innovations (brevets), respecter propriété intellectuelle existante (freedom to operate)
+- **En entrepreneuriat**: choisir structure juridique, rédiger contrats (clients, prestataires), protéger ma marque et mes créations
+- **Management**: respecter droit du travail, gérer équipes en conformité
+
+Collaborer avec juristes sera fréquent. Parler un langage commun, comprendre leurs conseils, et poser les bonnes questions est un atout professionnel.
+
+En conclusion, ce cours m'a donné les fondamentaux pour naviguer dans l'environnement juridique de l'ingénieur. C'est un début; la formation continue et la consultation d'experts seront nécessaires. Mais au moins, je ne signerai plus un contrat sans le lire attentivement!
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    p {
+        text-align: justify;
+    }
+</style>

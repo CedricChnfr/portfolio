@@ -2,92 +2,949 @@
 layout: default
 ---
 
-<div class="container">
-    <!-- Conteneur flex pour l'image et la description -->
-    <div class="flex-container">
-        <div class="image-container">
-            <img src="/img/Photo.jpg" alt="Schéma du Projet Robot">
+<style>
+/* Forcer la page d'accueil à prendre toute la largeur */
+.page-content {
+    padding: 0 !important;
+}
+
+.page-content .wrapper {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Hero Section Moderne */
+.hero-section {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    margin: 0;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    animation: moveBackground 20s ease-in-out infinite;
+}
+
+@keyframes moveBackground {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.1); }
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-25px) rotate(2deg); }
+}
+
+.image-ring, .image-ring-2 {
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.image-ring {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.image-ring-2 {
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    animation: pulse 3s ease-in-out infinite 1.5s;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.08); opacity: 0.8; }
+}
+
+.hero-text {
+    color: white;
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    background: linear-gradient(to right, #fff, #f0f0f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideInRight 1s ease-out;
+    letter-spacing: -2px;
+}
+
+.hero-subtitle {
+    font-size: 1.6em;
+    margin: 0 0 25px 0;
+    opacity: 0.95;
+    font-weight: 400;
+    animation: slideInRight 1s ease-out 0.2s both;
+}
+
+.hero-description {
+    font-size: 1.25em;
+    line-height: 1.7;
+    margin: 0 0 40px 0;
+    opacity: 0.95;
+    animation: slideInRight 1s ease-out 0.4s both;
+    max-width: 600px;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    animation: slideInRight 1s ease-out 0.6s both;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.95em;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+/* Navigation Cards Améliorées */
+.navigation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin: 80px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.nav-card {
+    background: white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.nav-card:hover .card-background {
+    opacity: 1;
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    padding: 45px 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.nav-card:hover .card-content {
+    color: white;
+}
+
+.nav-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.nav-card:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(102, 126, 234, 0.3);
+}
+
+.card-icon {
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    display: inline-block;
+    animation: bounce 2s ease infinite;
+    transition: all 0.3s ease;
+}
+
+.nav-card:hover .card-icon {
+    transform: scale(1.2) rotate(5deg);
+    animation: none;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.nav-card h3 {
+    font-size: 1.9em;
+    margin: 0 0 18px 0;
+    color: #2d3748;
+    font-weight: 800;
+    transition: color 0.5s ease;
+}
+
+.nav-card:hover h3 {
+    color: white;
+}
+
+.nav-card p {
+    color: #718096;
+    line-height: 1.7;
+    margin: 0 0 25px 0;
+    flex: 1;
+    font-size: 1.05em;
+    transition: color 0.5s ease;
+}
+
+.nav-card:hover p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.card-arrow {
+    font-size: 1.8em;
+    color: #667eea;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.nav-card:hover .card-arrow {
+    color: white;
+    transform: translateX(15px);
+}
+
+/* Experience Section */
+.experience-section {
+    max-width: 1200px;
+    margin: 80px auto 60px auto;
+    padding: 80px 40px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Formation Section */
+.formation-section {
+    max-width: 1200px;
+    margin: 60px auto 80px auto;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    border-radius: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.formation-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.formation-item {
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    animation: fadeInLeft 0.8s ease-out var(--delay) both;
+    border-left: 5px solid transparent;
+}
+
+.formation-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 35px rgba(240, 147, 251, 0.15);
+    border-left-color: #f093fb;
+}
+
+.formation-icon {
+    font-size: 3em;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f093fb, #764ba2);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(240, 147, 251, 0.3);
+}
+
+.formation-content {
+    flex: 1;
+}
+
+.formation-content h3 {
+    font-size: 1.6em;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.formation-content h4 {
+    font-size: 1.1em;
+    color: #f093fb;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.formation-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+    font-size: 1.05em;
+}
+
+.formation-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.formation-tags .tag {
+    background: linear-gradient(135deg, rgba(240, 147, 251, 0.1), rgba(118, 75, 162, 0.1));
+    color: #f093fb;
+    border: 1px solid rgba(240, 147, 251, 0.2);
+}
+
+.formation-tags .tag:hover {
+    background: linear-gradient(135deg, #f093fb, #764ba2);
+    color: white;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.experience-item {
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    animation: fadeInLeft 0.8s ease-out var(--delay) both;
+    border-left: 5px solid transparent;
+}
+
+.experience-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15);
+    border-left-color: #667eea;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.experience-icon {
+    font-size: 3em;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-content h3 {
+    font-size: 1.6em;
+    color: #2d3748;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.experience-content h4 {
+    font-size: 1.1em;
+    color: #667eea;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.experience-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+    font-size: 1.05em;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    color: #667eea;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Skills Section Moderne */
+.skills-section {
+    max-width: 1200px;
+    margin: 100px auto 80px auto;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e3e7ed 100%);
+    border-radius: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 60px;
+    color: #2d3748;
+    position: relative;
+    padding-bottom: 25px;
+    font-weight: 800;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    border-radius: 3px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.skill-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.6s ease-out var(--delay) both;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-icon {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.skill-card h4 {
+    font-size: 1.4em;
+    margin: 20px 0 15px 0;
+    color: #2d3748;
+    font-weight: 700;
+}
+
+.skill-card p {
+    color: #718096;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    font-size: 1.05em;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 10px;
+    animation: fillBar 2s ease-out 1s both;
+}
+
+@keyframes fillBar {
+    from { width: 0 !important; }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-title {
+        font-size: 3em;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.3em;
+    }
+    
+    .hero-description {
+        max-width: 100%;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .navigation-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-section {
+        padding: 60px 20px;
+        margin: 60px 20px;
+    }
+    
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+    
+    .experience-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .experience-icon {
+        margin: 0 auto;
+    }
+    
+    .formation-section {
+        padding: 60px 20px;
+        margin: 60px 20px;
+    }
+    
+    .formation-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+    
+    .formation-item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .formation-icon {
+        margin: 0 auto;
+    }
+    
+    .skills-section {
+        padding: 60px 20px;
+        margin: 60px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2em;
+    }
+    
+    .hero-section {
+        min-height: 60vh;
+        padding: 60px 15px;
+    }
+    
+    .stat-item {
+        padding: 10px 15px;
+    }
+    
+    .stat-number {
+        font-size: 2.2em;
+    }
+}
+</style>
+
+<div class="hero-section">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <div class="profile-image-wrapper">
+            <div class="image-ring"></div>
+            <div class="image-ring-2"></div>
+            <img src="/img/Photo.jpg" alt="Cédric Chanfreau" class="profile-image">
         </div>
         
-        <div class="description-container">
-            <h2>Cédric Chanfreau</h2>
-            <p style="text-align: justify">I am a motivated student in training in the field of automation and electrical engineering. Passionate about software development and embedded systems, I am looking for opportunities to apply and deepen my technical and practical skills.</p>    
-            <p style="text-align: justify">Here is my portfolio where you can find information about my courses, projects, and CV.</p>
+        <div class="hero-text">
+            <h1 class="hero-title">Cédric Chanfreau</h1>
+            <p class="hero-subtitle">Ingénieur Diplômé INSA Toulouse • Automatique & Électronique</p>
+            <p class="hero-description">
+                            Diplômé 2025 d'un Diplôme d'Ingénieur INSA Toulouse et d'un Master 2 ENSEEIHT, 
+                            spécialisé en développement logiciel et systèmes embarqués. 
+                            Passionné par la réalisation de projets innovants, je suis actuellement ouvert aux opportunités professionnelles.
+                        </p>
+                        
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Ans d'études ingénieur</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Projets techniques</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Ans d'alternance</span>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="navigation-cards" style="grid-template-columns: repeat(4, 1fr);">
+    <a href="./jekyll/update/2024/10/02/my-courses-2024-2025.html" class="nav-card courses-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+            <div class="card-icon">📚</div>
+            <h3>Mes Cours</h3>
+            <p>Découvrez mon parcours académique complet et les compétences techniques acquises</p>
+            <span class="card-arrow">→</span>
+        </div>
+    </a>
     
-    <div class="nav-container">
-        <a href="./jekyll/update/2024/10/02/my-courses.html" class="nav-link">Courses</a>
-        <a href="./jekyll/update/2024/10/02/my-projects.html" class="nav-link">Academic Projects</a>
-        <a href="./jekyll/update/2024/10/02/my-perso-projects.html" class="nav-link">Personal Projects</a>
-        <a href="./jekyll/update/2024/10/02/my-cv.html" class="nav-link">CV</a>
+    <a href="./jekyll/update/2024/10/02/my-projects.html" class="nav-card projects-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+            <div class="card-icon">🎓</div>
+            <h3>Projets Académiques</h3>
+            <p>Explorez mes réalisations techniques et projets d'études</p>
+            <span class="card-arrow">→</span>
+        </div>
+    </a>
+    
+    <a href="./jekyll/update/2024/10/02/my-perso-projects.html" class="nav-card perso-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+            <div class="card-icon">💡</div>
+            <h3>Projets Personnels</h3>
+            <p>Découvrez mes créations personnelles et expérimentations</p>
+            <span class="card-arrow">→</span>
+        </div>
+    </a>
+    
+    <a href="./jekyll/update/2024/10/02/my-cv.html" class="nav-card cv-card">
+        <div class="card-background"></div>
+        <div class="card-content">
+            <div class="card-icon">📄</div>
+            <h3>Mon CV</h3>
+            <p>Consultez mon parcours professionnel et mes compétences</p>
+            <span class="card-arrow">→</span>
+        </div>
+    </a>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1400px; margin: 80px auto; padding: 0 20px;">
+    <div class="experience-section" style="margin: 0;">
+        <h2 class="section-title">Parcours Professionnel</h2>
+        <div class="experience-timeline">
+            <div class="experience-item" style="--delay: 0s">
+                <div class="experience-icon">🔒</div>
+                <div class="experience-content">
+                    <h3>Ingénieur Logiciel Embarqué - Cybersécurité</h3>
+                    <h4><a href="https://www.schaeffler.fr/fr/" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Schaeffler</a> • Oct. 2024 - Sept. 2025</h4>
+                    <p>Développement du Secure Logger, un composant logiciel embarqué générique pour l'enregistrement et la gestion des événements de sécurité dans les calculateurs automobiles (ECUs). Revue de code et développement de logiciels critiques.</p>
+                    <div class="experience-tags">
+                        <span class="tag">Cybersécurité</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">ECU</span>
+                        <span class="tag">Automotive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-item" style="--delay: 0.15s">
+                <div class="experience-icon">🌍</div>
+                <div class="experience-content">
+                    <h3>Stage Mobilité Internationale Ingénierie</h3>
+                    <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • Juil. - Sept. 2024 • Iasi, Roumanie</h4>
+                    <p>Étude et implémentation de solutions pour la gestion de la mémoire Flash sur un nouveau microcontrôleur. Test et validation des fonctionnalités pour garantir la fiabilité et la performance de la nouvelle plateforme.</p>
+                    <div class="experience-tags">
+                        <span class="tag">Microcontrôleurs</span>
+                        <span class="tag">Flash Memory</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Testing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-item" style="--delay: 0.3s">
+                <div class="experience-icon">🚀</div>
+                <div class="experience-content">
+                    <h3>Ingénieur Logiciel Embarqué</h3>
+                    <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • Sept. 2022 - Sept. 2024</h4>
+                    <p>Développement de solutions génériques embarquées pour la reprogrammation des ECUs. Création d'environnements d'automatisation des tests avec Python et Jenkins. Correction de code conforme aux standards MISRA et CERT pour garantir la sécurité et la qualité.</p>
+                    <div class="experience-tags">
+                        <span class="tag">C/C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">MISRA/CERT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="formation-section" style="margin: 0;">
+        <h2 class="section-title">Formation</h2>
+        <div class="formation-timeline">
+            <div class="formation-item" style="--delay: 0s">
+                <div class="formation-icon">🎓</div>
+                <div class="formation-content">
+                    <h3><a href="https://formations.enseeiht.fr/enseeiht/fr/index/master-lmd-XB/master-reseaux-embarques-et-objets-connectes-M3XKUK0T.html" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">Master 2 Réseaux Embarqués et Objets Connectés (REOC)</a></h3>
+                    <h4>ENSEEIHT • Sept. 2024 - Sept. 2025</h4>
+                    <p>Formation spécialisée en systèmes embarqués et objets connectés avec un focus sur l'intégration des technologies de communication, le traitement des données et l'interconnexion des dispositifs. Développement de compétences avancées en IoT, protocoles de communication et sécurité des réseaux.</p>
+                    <div class="formation-tags">
+                        <span class="tag">IoT</span>
+                        <span class="tag">QoS</span>
+                        <span class="tag">Réseaux Embarqués</span>
+                        <span class="tag">Communication</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formation-item" style="--delay: 0.2s">
+                <div class="formation-icon">🏛️</div>
+                <div class="formation-content">
+                    <h3><a href="https://www.insa-toulouse.fr/formation/ingenieur-specialite-automatique-electronique/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">Diplôme d'Ingénieur - Automatique Électronique</a></h3>
+                    <h4>INSA Toulouse • Sept. 2022 - Sept. 2025</h4>
+                    <p>Formation d'ingénieur experts en technologies intelligentes pour les systèmes connectés. Compétences en conception de dispositifs intelligents (microcontrôleurs, IA embarquée, capteurs), sécurité des systèmes, réseaux de capteurs sans fil, 5G, architectures middleware et cloud/edge computing.</p>
+                    <div class="formation-tags">
+                        <span class="tag">Systèmes Embarqués</span>
+                        <span class="tag">IA Embarquée</span>
+                        <span class="tag">5G</span>
+                        <span class="tag">Edge Computing</span>
+                        <span class="tag">SOA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
-/* Container global */
-.container {
-    margin-top: 50px;
-    text-align: center;
+@media (max-width: 1200px) {
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
 }
+</style>
 
-/* Flex container pour aligner l'image et la description */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px; /* Espace entre l'image et la description */
-    margin-bottom: 30px;
-}
-
-/* Image stylée et centrée */
-.image-container img {
-    border-radius: 50%;
-    width: 200px; /* Augmente la taille de l'image */
-    height: 200px; /* Augmente la taille de l'image */
-    object-fit: cover;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style pour la description */
-.description-container {
-    max-width: 500px; /* Augmente la largeur maximale de la description */
-    text-align: left;
-}
-
-.description-container h2 {
-    font-size: 28px; /* Augmente la taille de la police du titre */
-    margin-bottom: 10px;
-}
-
-.description-container p {
-    font-size: 18px; /* Augmente la taille de la police du texte */
-    color: #555;
-}
-
-/* Conteneur des liens de navigation */
-.nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px; /* Espacement entre les liens */
-    margin-top: 20px;
-}
-
-/* Style des liens */
-.nav-link {
-    font-size: 24px; /* Augmente la taille de la police */
-    font-weight: bold;
-    text-decoration: none;
-    color: #007bff;
-    padding: 20px 35px; /* Augmente la taille du bouton avec plus de padding */
-    border: 2px solid #007bff;
-    border-radius: 30px; /* Ajuste le rayon pour des coins plus arrondis */
-    transition: all 0.3s ease;
-}
-
-/* Effet au survol des liens */
-.nav-link:hover {
-    background-color: #007bff;
-    color: white;
-    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
-}
+<div class="skills-section">
+    <h2 class="section-title">Domaines d'Expertise</h2>
+    <div class="skills-grid">
+        <div class="skill-card" style="--delay: 0s">
+            <div class="skill-icon">💻</div>
+            <h4>Développement Logiciel</h4>
+            <p>C/C++, Python, Java, JavaScript, MATLAB, SQL</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+            </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.1s">
+            <div class="skill-icon">🤖</div>
+            <h4>Intelligence Artificielle</h4>
+            <p>Machine Learning, Deep Learning, TensorFlow, PyTorch</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+            </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.2s">
+            <div class="skill-icon">🌐</div>
+            <h4>IoT & Edge Computing</h4>
+            <p>5G, LoRa, MQTT, Cloud Computing, Architectures distribuées</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+            </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.3s">
+            <div class="skill-icon">🔧</div>
+            <h4>Systèmes Embarqués</h4>
+            <p>STM32, Arduino, VHDL, PCB Design, Temps Réel</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 87%"></div>
+            </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.4s">
+            <div class="skill-icon">🚗</div>
+            <h4>Smart Mobility</h4>
+            <p>V2X, Systèmes autonomes, Capteurs véhiculaires</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 82%"></div>
+            </div>
+        </div>
+        <div class="skill-card" style="--delay: 0.5s">
+            <div class="skill-icon">⚡</div>
+            <h4>Automatique & Contrôle</h4>
+            <p>Systèmes linéaires/non-linéaires, Robotique, Modélisation</p>
+            <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+            </div>
+        </div>
+    </div>
+</div>

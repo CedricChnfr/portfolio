@@ -4,6 +4,9 @@ title:  "BE Trotinette"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 # Introduction
 This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
 The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.

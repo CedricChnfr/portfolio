@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Modélisation et Analyse des Systèmes Linéaires et Représentation d’État - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Modélisation et Analyse des Systèmes Linéaires et Représentation d’État - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/modelisation-systemes-lineaires.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/modelisation-systemes-lineaires.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Modélisation et Analyse des Systèmes Linéaires et Représentation d’État - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Modélisation et Analyse des Systèmes Linéaires et Représentation d’État - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/modelisation-systemes-lineaires.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/modelisation-systemes-lineaires.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-modélisation-et-analyse-des-systèmes-linéaires-et-représentation-détat---s5">📊 Modélisation et Analyse des Systèmes Linéaires et Représentation d’État - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Automatique et Systèmes<br />
+<strong>Enseignant</strong>: Subias</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Ce cours constitue une formation avancée en théorie des systèmes linéaires et en représentation d’état, piliers de l’automatique moderne. L’objectif est de maîtriser les techniques de modélisation mathématique, l’analyse de comportement des systèmes dynamiques, et les méthodes de commande par retour d’état.</p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Maîtriser les techniques de modélisation des systèmes dynamiques linéaires</li>
+  <li>Analyser la stabilité et les performances des systèmes en boucle ouverte et fermée</li>
+  <li>Concevoir des lois de commande par retour d’état avec placement de pôles</li>
+  <li>Dimensionner des observateurs d’état pour estimer les variables non mesurables</li>
+  <li>Utiliser MATLAB/Simulink pour l’analyse et la simulation de systèmes automatiques</li>
+  <li>Appliquer les critères de commandabilité et observabilité</li>
+  <li>Interpréter les réponses fréquentielles (Bode, Nyquist, marges de stabilité)</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: Cours magistraux, TD et TP MATLAB/Simulink</li>
+  <li><strong>Évaluation</strong>: Examen écrit, TPs notés, Projet sur robot auto-équilibré</li>
+  <li><strong>Outils</strong>: MATLAB Control System Toolbox, Simulink</li>
+  <li><strong>Prérequis</strong>: Transformée de Laplace, équations différentielles, algèbre linéaire</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<p>Le cours s’articule autour de trois axes principaux: la modélisation des systèmes, l’analyse de stabilité et performances, et la synthèse de lois de commande.</p>
+
+<h3 id="1-modélisation-des-systèmes-linéaires">1. Modélisation des systèmes linéaires</h3>
+
+<h4 id="représentation-par-fonction-de-transfert">Représentation par fonction de transfert</h4>
+
+<p>La fonction de transfert relie l’entrée U(s) à la sortie Y(s) en transformée de Laplace :</p>
+
+<p>H(s) = Y(s) / U(s) = N(s) / D(s)</p>
+
+<p>Exemple de système du second ordre (moteur DC) :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>H(s) = Km / (Tm*s + 1)
+</code></pre></div></div>
+
+<p>Avec Km = gain statique, Tm = constante de temps.</p>
+
+<h4 id="représentation-détat">Représentation d’état</h4>
+
+<p>Forme générale pour un système SISO :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dx/dt = A*x + B*u  (équation d'état)
+y = C*x + D*u      (équation de sortie)
+</code></pre></div></div>
+
+<p>Matrices d’état :</p>
+<ul>
+  <li>A (n×n) : matrice dynamique</li>
+  <li>B (n×1) : matrice de commande</li>
+  <li>C (1×n) : matrice d’observation</li>
+  <li>D : action directe (souvent 0)</li>
+</ul>
+
+<p>Exemple concret d’un système d’ordre 2 :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span><span class="p">;</span> <span class="o">-</span><span class="mi">10</span> <span class="o">-</span><span class="mf">6.316</span><span class="p">]</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">;</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">/</span><span class="mf">0.1001</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<h3 id="2-stabilité-des-systèmes">2. Stabilité des systèmes</h3>
+
+<h4 id="critère-de-routh-hurwitz">Critère de Routh-Hurwitz</h4>
+
+<p>Pour le polynôme caractéristique D(s) = an<em>s^n + … + a1</em>s + a0, on construit le tableau de Routh :</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>s^n</td>
+      <td>an</td>
+      <td>an-2</td>
+      <td>an-4</td>
+    </tr>
+    <tr>
+      <td>s^n-1</td>
+      <td>an-1</td>
+      <td>an-3</td>
+      <td>an-5</td>
+    </tr>
+    <tr>
+      <td>s^n-2</td>
+      <td>b1</td>
+      <td>b2</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+      <td>…</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Avec b1 = (an-1<em>an-2 - an</em>an-3) / an-1</p>
+
+<p><strong>Condition de stabilité</strong> : tous les éléments de la première colonne doivent être strictement positifs.</p>
+
+<p>Implémentation MATLAB disponible avec la fonction <code class="language-plaintext highlighter-rouge">routh.m</code> :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span> <span class="n">RA</span><span class="o">=</span><span class="n">routh</span><span class="p">(</span><span class="n">poli</span><span class="p">,</span><span class="n">epsilon</span><span class="p">)</span>
+<span class="c1">% Calcule le tableau de Routh pour un polynôme</span>
+<span class="c1">% Gère les cas particuliers (première colonne nulle, ligne de zéros)</span>
+</code></pre></div></div>
+
+<h4 id="analyse-par-les-pôles">Analyse par les pôles</h4>
+
+<p>Un système est stable si tous les pôles (racines de D(s)) ont une partie réelle négative :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Re(pi) &lt; 0 pour tout i
+</code></pre></div></div>
+
+<p>Classification :</p>
+<ul>
+  <li><strong>Stable asymptotiquement</strong> : tous les pôles à partie réelle strictement négative</li>
+  <li><strong>Marginalement stable</strong> : pôles sur l’axe imaginaire (non répétés)</li>
+  <li><strong>Instable</strong> : au moins un pôle à partie réelle positive</li>
+</ul>
+
+<h3 id="3-analyse-fréquentielle">3. Analyse fréquentielle</h3>
+
+<h4 id="diagrammes-de-bode">Diagrammes de Bode</h4>
+
+<p>Représentation du gain (en dB) et de la phase (en degrés) en fonction de la fréquence :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Gain(dB) = 20*log10(|H(jω)|)
+Phase(°) = arg(H(jω)) * 180/π
+</code></pre></div></div>
+
+<p>Exemple de TP1 avec fonction de transfert H(s) = 0.717 / (0.0033*s + 1) :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">H</span> <span class="o">=</span> <span class="n">tf</span><span class="p">([</span><span class="mf">0.717</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.0033</span> <span class="mi">1</span><span class="p">]);</span>
+<span class="n">bode</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Mesures expérimentales effectuées :</p>
+<ul>
+  <li>Fréquences : 0.05 à 10 Hz</li>
+  <li>Gains mesurés : de 0.669 à 0.061 (de -3.5dB à -24dB)</li>
+  <li>Déphasages : de -2.2° à -90°</li>
+</ul>
+
+<h4 id="marges-de-stabilité">Marges de stabilité</h4>
+
+<p><strong>Marge de gain (Gm)</strong> : gain additionnel avant instabilité à la fréquence de coupure de phase -180°</p>
+
+<p><strong>Marge de phase (Pm)</strong> : phase additionnelle avant instabilité à la fréquence de coupure de gain 0dB</p>
+
+<p>Commande MATLAB :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">Gm</span><span class="p">,</span> <span class="n">Pm</span><span class="p">,</span> <span class="n">Wcg</span><span class="p">,</span> <span class="n">Wcp</span><span class="p">]</span> <span class="o">=</span> <span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Critères de robustesse :</p>
+<ul>
+  <li>Pm &gt; 45° (bonne robustesse)</li>
+  <li>Gm &gt; 6dB (bonne robustesse)</li>
+</ul>
+
+<h3 id="4-commande-par-retour-détat">4. Commande par retour d’état</h3>
+
+<h4 id="placement-de-pôles">Placement de pôles</h4>
+
+<p>Pour un système commandable, on peut imposer les pôles en boucle fermée avec un retour d’état u = -K*x + r.</p>
+
+<p>La matrice de gain K est calculée pour placer les pôles désirés :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">poles_desired</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Exemple du TP3 avec pôles complexes conjugués :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="n">i</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Les pôles choisis déterminent les performances :</p>
+<ul>
+  <li>Partie réelle : rapidité (plus négatif = plus rapide)</li>
+  <li>Partie imaginaire : oscillations (plus grand = plus d’oscillations)</li>
+</ul>
+
+<h4 id="commandabilité">Commandabilité</h4>
+
+<p>Un système est commandable si on peut amener l’état de n’importe quelle condition initiale à n’importe quel état désiré en temps fini.</p>
+
+<p><strong>Critère de Kalman</strong> : rang de la matrice de commandabilité = n</p>
+
+<p>Matrice de commandabilité :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mc = [B | A*B | A^2*B | ... | A^(n-1)*B]
+</code></pre></div></div>
+
+<p>Test MATLAB :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mc</span> <span class="o">=</span> <span class="n">ctrb</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">);</span>
+<span class="n">rank_Mc</span> <span class="o">=</span> <span class="nb">rank</span><span class="p">(</span><span class="n">Mc</span><span class="p">);</span>
+<span class="c1">% Système commandable si rank_Mc == n</span>
+</code></pre></div></div>
+
+<h3 id="5-observateurs-détat">5. Observateurs d’état</h3>
+
+<h4 id="principe">Principe</h4>
+
+<p>Lorsque tous les états ne sont pas mesurables, on utilise un observateur pour reconstruire l’état complet à partir de la sortie mesurée y.</p>
+
+<p>Équation de l’observateur de Luenberger :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dx_hat/dt = A*x_hat + B*u + L*(y - y_hat)
+y_hat = C*x_hat
+</code></pre></div></div>
+
+<p>Avec L : gain de l’observateur.</p>
+
+<h4 id="observabilité">Observabilité</h4>
+
+<p>Un système est observable si on peut déterminer l’état initial x(0) à partir de la connaissance de u(t) et y(t) sur un intervalle fini.</p>
+
+<p><strong>Critère de Kalman</strong> : rang de la matrice d’observabilité = n</p>
+
+<p>Matrice d’observabilité :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mo = [C; C*A; C*A^2; ...; C*A^(n-1)]
+</code></pre></div></div>
+
+<p>Test MATLAB :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mo</span> <span class="o">=</span> <span class="n">obsv</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">);</span>
+<span class="n">rank_Mo</span> <span class="o">=</span> <span class="nb">rank</span><span class="p">(</span><span class="n">Mo</span><span class="p">);</span>
+<span class="c1">% Système observable si rank_Mo == n</span>
+</code></pre></div></div>
+
+<h4 id="placement-des-pôles-de-lobservateur">Placement des pôles de l’observateur</h4>
+
+<p>Les pôles de l’observateur sont choisis plus rapides (2 à 5 fois) que ceux de la commande pour garantir une convergence rapide de l’estimation.</p>
+
+<p>Exemples du TD :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">L1</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.365</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.78</span><span class="p">]</span>   <span class="c1">% Pôles lents</span>
+<span class="n">L2</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.59</span><span class="p">,</span> <span class="mf">0.32</span><span class="p">]</span>      <span class="c1">% Pôles rapides</span>
+</code></pre></div></div>
+
+<h3 id="6-analyse-modale-et-formes-canoniques">6. Analyse modale et formes canoniques</h3>
+
+<h4 id="décomposition-modale">Décomposition modale</h4>
+
+<p>Si A est diagonalisable, on peut écrire :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A = P * Λ * P^(-1)
+</code></pre></div></div>
+
+<p>Avec Λ matrice diagonale des valeurs propres et P matrice des vecteurs propres.</p>
+
+<p>Changement de variable z = P^(-1)*x :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dz/dt = Λ*z + P^(-1)*B*u
+y = C*P*z
+</code></pre></div></div>
+
+<p>Chaque mode évolue indépendamment selon zi(t) = exp(λi*t).</p>
+
+<h4 id="formes-canoniques">Formes canoniques</h4>
+
+<p><strong>Forme commandable</strong> : matrices A et B ont une structure particulière facilitant le placement de pôles.</p>
+
+<p><strong>Forme observable</strong> : matrices A et C ont une structure facilitant la conception d’observateurs.</p>
+
+<hr />
+
+<h2 id="c-aspects-techniques-et-pratiques">C. Aspects techniques et pratiques</h2>
+
+<h3 id="1-travaux-pratiques-matlab">1. Travaux Pratiques MATLAB</h3>
+
+<h4 id="tp1--identification-expérimentale">TP1 : Identification expérimentale</h4>
+
+<p>Manipulation d’un système réel (moteur ou servomoteur) pour mesurer sa réponse fréquentielle.</p>
+
+<p>Code de traitement des données :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Données expérimentales</span>
+<span class="n">Vg</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.93</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.39</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.17</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.44</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.37</span><span class="p">,</span> <span class="k">...</span><span class="c">];</span>
+<span class="n">O</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">292</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">/</span><span class="mi">60</span><span class="p">)</span><span class="o">*</span><span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">179</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="nb">pi</span><span class="p">/</span><span class="mi">60</span><span class="p">)</span><span class="o">*</span><span class="mi">9</span><span class="p">,</span> <span class="k">...</span><span class="c">]; % Vitesse en rad/s</span>
+
+<span class="c1">% Tracé caractéristique statique</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">Vg</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'Vitesse angulaire (rad/s)'</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'Tension (V)'</span><span class="p">);</span>
+
+<span class="c1">% Analyse fréquentielle</span>
+<span class="n">G</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.669</span><span class="p">,</span> <span class="mf">0.659</span><span class="p">,</span> <span class="mf">0.609</span><span class="p">,</span> <span class="mf">0.528</span><span class="p">,</span> <span class="k">...</span><span class="c">];</span>
+<span class="n">G_dB</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="nb">log10</span><span class="p">(</span><span class="n">G</span><span class="p">);</span>
+<span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mi">10</span><span class="p">];</span>
+
+<span class="nb">semilogx</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">G_dB</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'Fréquence (Hz)'</span><span class="p">);</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'Gain (dB)'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Modèle identifié : H(s) = 0.717 / (0.0033*s + 1)</p>
+<ul>
+  <li>Gain statique : K = 0.717</li>
+  <li>Constante de temps : T = 3.3 ms</li>
+</ul>
+
+<h4 id="tp2--analyse-de-stabilité-en-boucle-fermée">TP2 : Analyse de stabilité en boucle fermée</h4>
+
+<p>Système avec capteur, moteur et retour :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Ks</span> <span class="o">=</span> <span class="mf">1.55</span><span class="p">;</span>   <span class="c1">% Gain capteur</span>
+<span class="n">Km</span> <span class="o">=</span> <span class="mf">47.8</span><span class="p">;</span>   <span class="c1">% Gain moteur</span>
+<span class="n">Kg</span> <span class="o">=</span> <span class="mf">0.015</span><span class="p">;</span>  <span class="c1">% Gain réducteur</span>
+<span class="n">Tm</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">;</span>    <span class="c1">% Constante de temps moteur</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mf">0.887</span><span class="p">;</span>   <span class="c1">% Gain global</span>
+
+<span class="c1">% Fonction de transfert en boucle fermée</span>
+<span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="n">Km</span><span class="o">*</span><span class="n">K</span><span class="p">/</span><span class="mi">9</span><span class="p">];</span>
+<span class="n">den</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tm</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Km</span><span class="o">*</span><span class="n">K</span><span class="o">*</span><span class="n">Ks</span><span class="p">/</span><span class="mi">9</span><span class="p">];</span>
+<span class="n">sys</span> <span class="o">=</span> <span class="n">tf</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">);</span>
+
+<span class="c1">% Analyse de stabilité</span>
+<span class="p">[</span><span class="n">Gm</span><span class="p">,</span> <span class="n">Pm</span><span class="p">,</span> <span class="n">Wcg</span><span class="p">,</span> <span class="n">Wcp</span><span class="p">]</span> <span class="o">=</span> <span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
+<span class="nb">disp</span><span class="p">([</span><span class="s1">'Marge de gain : '</span><span class="p">,</span> <span class="nb">num2str</span><span class="p">(</span><span class="n">Gm</span><span class="p">),</span> <span class="s1">' ('</span><span class="p">,</span> <span class="nb">num2str</span><span class="p">(</span><span class="mi">20</span><span class="o">*</span><span class="nb">log10</span><span class="p">(</span><span class="n">Gm</span><span class="p">)),</span> <span class="s1">' dB)'</span><span class="p">]);</span>
+<span class="nb">disp</span><span class="p">([</span><span class="s1">'Marge de phase : '</span><span class="p">,</span> <span class="nb">num2str</span><span class="p">(</span><span class="n">Pm</span><span class="p">),</span> <span class="s1">'°'</span><span class="p">]);</span>
+
+<span class="c1">% Calcul des pôles</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">pole</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
+<span class="nb">disp</span><span class="p">(</span><span class="s1">'Pôles du système :'</span><span class="p">);</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">P</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Résultats typiques :</p>
+<ul>
+  <li>Pm ≈ 60° → Système bien amorti</li>
+  <li>Pôles à partie réelle négative → Système stable</li>
+</ul>
+
+<h4 id="tp3--commande-par-retour-détat">TP3 : Commande par retour d’état</h4>
+
+<p>Système d’ordre 2 avec placement de pôles :</p>
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">k</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span><span class="p">;</span> <span class="o">-</span><span class="mi">10</span> <span class="o">-</span><span class="mf">6.316</span><span class="p">];</span>
+<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">;</span> <span class="mi">1</span><span class="p">];</span>
+<span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">/</span><span class="mf">0.1001</span> <span class="mi">0</span><span class="p">];</span>
+
+<span class="c1">% Création du modèle d'état</span>
+<span class="n">sys</span> <span class="o">=</span> <span class="n">ss</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">% Placement de pôles en -2±2j</span>
+<span class="n">poles_desired</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="n">i</span><span class="p">];</span>
+<span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">poles_desired</span><span class="p">);</span>
+
+<span class="nb">disp</span><span class="p">(</span><span class="s1">'Gain de retour d</span><span class="se">''</span><span class="s1">état K :'</span><span class="p">);</span>
+<span class="nb">disp</span><span class="p">(</span><span class="n">K</span><span class="p">);</span>
+
+<span class="c1">% Système en boucle fermée</span>
+<span class="n">A_cl</span> <span class="o">=</span> <span class="n">A</span> <span class="o">-</span> <span class="n">B</span><span class="o">*</span><span class="n">K</span><span class="p">;</span>
+<span class="n">sys_cl</span> <span class="o">=</span> <span class="n">ss</span><span class="p">(</span><span class="n">A_cl</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">% Réponse indicielle</span>
+<span class="nb">step</span><span class="p">(</span><span class="n">sys_cl</span><span class="p">);</span>
+<span class="nb">title</span><span class="p">(</span><span class="s1">'Réponse en boucle fermée avec retour d</span><span class="se">''</span><span class="s1">état'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="2-projet--robot-auto-équilibré-nxt-way">2. Projet : Robot auto-équilibré (NXT Way)</h3>
+
+<h4 id="modélisation-du-robot-lego-mindstorms-ev3">Modélisation du robot Lego Mindstorms EV3</h4>
+
+<p>Paramètres physiques du fichier <code class="language-plaintext highlighter-rouge">NXP_robot_parameters.m</code> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Valeur</th>
+      <th>Unité</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>m</td>
+      <td>0.03</td>
+      <td>kg</td>
+      <td>Masse d’une roue</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>0.042</td>
+      <td>m</td>
+      <td>Rayon des roues</td>
+    </tr>
+    <tr>
+      <td>Jw</td>
+      <td>m*R²/2</td>
+      <td>kg·m²</td>
+      <td>Inertie d’une roue</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>0.67</td>
+      <td>kg</td>
+      <td>Masse du corps</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>0.152</td>
+      <td>m</td>
+      <td>Hauteur du corps</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>H/2</td>
+      <td>m</td>
+      <td>Distance centre de masse / axe roues</td>
+    </tr>
+    <tr>
+      <td>Jpsi</td>
+      <td>M*L²/3</td>
+      <td>kg·m²</td>
+      <td>Inertie en tangage</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>9.81</td>
+      <td>m/s²</td>
+      <td>Accélération de la gravité</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Moteur DC :</p>
+<ul>
+  <li>Jm = 1e-5 kg·m² (inertie moteur)</li>
+  <li>Rm = 6.83 Ω (résistance)</li>
+  <li>Kb = 0.468 V·s/rad (constante de force contre-électromotrice)</li>
+  <li>Kt = 0.3047 N·m/A (constante de couple)</li>
+</ul>
+
+<h4 id="simulation-simulink">Simulation Simulink</h4>
+
+<p>Le projet utilise <code class="language-plaintext highlighter-rouge">NXTwaySim.slx</code> pour simuler le comportement du robot avec :</p>
+<ul>
+  <li>Modèle non-linéaire du pendule inversé</li>
+  <li>Commande par retour d’état</li>
+  <li>Observateur d’état pour estimer l’angle et la vitesse angulaire</li>
+  <li>Animation 3D du robot avec <code class="language-plaintext highlighter-rouge">PlayAnimation.m</code></li>
+</ul>
+
+<p>Objectif : stabiliser le robot en position verticale (θ = 0°) malgré les perturbations.</p>
+
+<h3 id="3-outils-matlab-essentiels">3. Outils MATLAB essentiels</h3>
+
+<h4 id="fonctions-de-base">Fonctions de base</h4>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Création de modèle</span>
+<span class="n">sys</span> <span class="o">=</span> <span class="n">tf</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">);</span>              <span class="c1">% Fonction de transfert</span>
+<span class="n">sys</span> <span class="o">=</span> <span class="n">ss</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">);</span>            <span class="c1">% Représentation d'état</span>
+
+<span class="c1">% Conversion</span>
+<span class="p">[</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">]</span> <span class="o">=</span> <span class="n">tf2ss</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">);</span>  <span class="c1">% TF → État</span>
+<span class="p">[</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">]</span> <span class="o">=</span> <span class="nb">ss2tf</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">);</span>  <span class="c1">% État → TF</span>
+
+<span class="c1">% Analyse</span>
+<span class="n">pole</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                       <span class="c1">% Calcul des pôles</span>
+<span class="n">zero</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                       <span class="c1">% Calcul des zéros</span>
+<span class="nb">eig</span><span class="p">(</span><span class="n">A</span><span class="p">);</span>                          <span class="c1">% Valeurs propres de A</span>
+<span class="nb">rank</span><span class="p">(</span><span class="n">ctrb</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">));</span>               <span class="c1">% Test de commandabilité</span>
+<span class="nb">rank</span><span class="p">(</span><span class="n">obsv</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">C</span><span class="p">));</span>               <span class="c1">% Test d'observabilité</span>
+
+<span class="c1">% Réponses temporelles</span>
+<span class="nb">step</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                       <span class="c1">% Réponse indicielle</span>
+<span class="n">impulse</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                    <span class="c1">% Réponse impulsionnelle</span>
+<span class="n">lsim</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">t</span><span class="p">);</span>                <span class="c1">% Réponse à une entrée quelconque</span>
+
+<span class="c1">% Analyse fréquentielle</span>
+<span class="n">bode</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                       <span class="c1">% Diagrammes de Bode</span>
+<span class="n">nyquist</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                    <span class="c1">% Diagramme de Nyquist</span>
+<span class="n">nichols</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                    <span class="c1">% Diagramme de Black-Nichols</span>
+<span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                     <span class="c1">% Marges de stabilité</span>
+
+<span class="c1">% Synthèse</span>
+<span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">poles</span><span class="p">);</span>          <span class="c1">% Placement de pôles</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="s1">', C'</span><span class="p">,</span> <span class="n">poles</span><span class="p">)</span><span class="o">'</span><span class="p">;</span>       <span class="c1">% Observateur (dualité)</span>
+</code></pre></div></div>
+
+<h3 id="4-méthodes-de-conception">4. Méthodes de conception</h3>
+
+<h4 id="choix-des-pôles-en-boucle-fermée">Choix des pôles en boucle fermée</h4>
+
+<p>Pour un système d’ordre 2, forme canonique :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>H(s) = ωn² / (s² + 2ζωn*s + ωn²)
+</code></pre></div></div>
+
+<p>Paramètres de performance :</p>
+<ul>
+  <li>ωn : pulsation naturelle (rapidité)</li>
+  <li>ζ : coefficient d’amortissement (dépassement)</li>
+</ul>
+
+<p>Relation avec les pôles :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p1,2 = -ζωn ± jωn*sqrt(1-ζ²)
+</code></pre></div></div>
+
+<p>Recommandations :</p>
+<ul>
+  <li>ζ = 0.7 : bon compromis (dépassement ≈ 5%)</li>
+  <li>Temps de réponse à 5% : tr ≈ 3 / (ζωn)</li>
+</ul>
+
+<h4 id="séparation-des-dynamiques">Séparation des dynamiques</h4>
+
+<p><strong>Principe de séparation</strong> : on peut concevoir indépendamment le retour d’état K et l’observateur L, puis les combiner.</p>
+
+<p>Règle pratique : placer les pôles de l’observateur 2 à 5 fois plus rapides que ceux de la commande.</p>
+
+<p>Exemple :</p>
+<ul>
+  <li>Pôles commande : -2±2j</li>
+  <li>Pôles observateur : -10, -12 (5 fois plus rapides)</li>
+</ul>
+
+<hr />
+
+<h2 id="d-analyse-et-perspectives">D. Analyse et perspectives</h2>
+
+<h3 id="1-applications-industrielles">1. Applications industrielles</h3>
+
+<h4 id="systèmes-de-régulation">Systèmes de régulation</h4>
+
+<ul>
+  <li><strong>Procédés industriels</strong> : régulation de température, pression, débit</li>
+  <li><strong>Robotique mobile</strong> : stabilisation de robots à roues, drones</li>
+  <li><strong>Aérospatial</strong> : pilotage automatique d’avions, fusées</li>
+  <li><strong>Automobile</strong> : régulation de vitesse (cruise control), ESP, suspension active</li>
+</ul>
+
+<h4 id="exemples-concrets">Exemples concrets</h4>
+
+<p><strong>Segway / robots auto-équilibrés</strong> : application directe du projet NXT Way avec pendule inversé et commande par retour d’état.</p>
+
+<p><strong>Quadrirotors</strong> : modèle d’état avec 12 états (position, vitesse, angles, vitesses angulaires), commande hiérarchique avec boucles imbriquées.</p>
+
+<h3 id="2-liens-avec-dautres-cours">2. Liens avec d’autres cours</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cours</th>
+      <th>Semestre</th>
+      <th>Lien avec Modélisation Systèmes Linéaires</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Circuits et Filtres Analogiques</td>
+      <td>S5</td>
+      <td>Analyse fréquentielle, Bode, systèmes du 1er et 2e ordre</td>
+    </tr>
+    <tr>
+      <td>Fondements Électronique Numérique</td>
+      <td>S5</td>
+      <td>Échantillonnage pour commande numérique</td>
+    </tr>
+    <tr>
+      <td>Systèmes Bouclés</td>
+      <td>S5</td>
+      <td>Asservissements, correcteurs PID</td>
+    </tr>
+    <tr>
+      <td>Commande Numérique</td>
+      <td>S8</td>
+      <td>Discrétisation, commande échantillonnée</td>
+    </tr>
+    <tr>
+      <td>Temps Réel</td>
+      <td>S8</td>
+      <td>Implémentation de lois de commande</td>
+    </tr>
+    <tr>
+      <td>Processus Stochastiques</td>
+      <td>S8</td>
+      <td>Filtre de Kalman (extension de l’observateur)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3-extensions-et-sujets-avancés">3. Extensions et sujets avancés</h3>
+
+<h4 id="commande-optimale">Commande optimale</h4>
+
+<p>Minimisation d’un critère de performance (LQR - Linear Quadratic Regulator) :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>J = ∫[x'Qx + u'Ru] dt
+</code></pre></div></div>
+
+<p>Conduit à un gain optimal K calculé via équation de Riccati.</p>
+
+<h4 id="systèmes-non-linéaires">Systèmes non-linéaires</h4>
+
+<p>Pour les systèmes non-linéaires, linéarisation autour d’un point d’équilibre :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dx/dt = f(x, u) ≈ f(x0, u0) + ∂f/∂x|(x0,u0) * (x-x0) + ∂f/∂u|(x0,u0) * (u-u0)
+</code></pre></div></div>
+
+<p>Obtention d’un modèle linéaire tangent exploitable avec les techniques du cours.</p>
+
+<h4 id="systèmes-multivariables-mimo">Systèmes multivariables (MIMO)</h4>
+
+<p>Extension à plusieurs entrées et sorties :</p>
+<ul>
+  <li>Matrices B (n×m), C (p×n), D (p×m)</li>
+  <li>Analyse de couplage entre canaux</li>
+  <li>Commande découplante</li>
+</ul>
+
+<h3 id="4-compétences-professionnelles-développées">4. Compétences professionnelles développées</h3>
+
+<p>Ce cours a permis de développer des compétences clés en automatique moderne, essentielles pour la carrière d’ingénieur en systèmes embarqués, robotique, ou automatisation industrielle.</p>
+
+<p><strong>Modélisation</strong>:</p>
+<ul>
+  <li>Mise en équations d’un système physique à partir des lois fondamentales</li>
+  <li>Identification expérimentale de paramètres par analyse fréquentielle</li>
+  <li>Validation de modèles par comparaison simulation/réel</li>
+  <li>Choix pertinent des variables d’état</li>
+</ul>
+
+<p><strong>Analyse</strong>:</p>
+<ul>
+  <li>Détermination de stabilité par méthodes algébriques (Routh) et graphiques (lieu des pôles)</li>
+  <li>Évaluation de performances (rapidité, dépassement, erreur statique)</li>
+  <li>Robustesse aux variations de paramètres et perturbations</li>
+  <li>Interprétation des diagrammes de Bode et marges de stabilité</li>
+</ul>
+
+<p><strong>Synthèse</strong>:</p>
+<ul>
+  <li>Conception de lois de commande par placement de pôles selon cahier des charges</li>
+  <li>Dimensionnement d’observateurs d’état pour estimation des variables non mesurables</li>
+  <li>Optimisation de critères de performance (temps de réponse, dépassement)</li>
+  <li>Application du principe de séparation</li>
+</ul>
+
+<p><strong>Outils informatiques</strong>:</p>
+<ul>
+  <li>Maîtrise de MATLAB/Simulink pour l’automatique (Control System Toolbox)</li>
+  <li>Programmation de fonctions d’analyse (Routh, identification, placement de pôles)</li>
+  <li>Simulation de systèmes complexes avec Simulink</li>
+  <li>Visualisation et interprétation de résultats</li>
+</ul>
+
+<h3 id="5-méthodologie-de-résolution-de-problèmes">5. Méthodologie de résolution de problèmes</h3>
+
+<h4 id="démarche-type-pour-un-problème-dautomatique">Démarche type pour un problème d’automatique</h4>
+
+<ol>
+  <li><strong>Modélisation</strong> : établir les équations différentielles ou fonction de transfert</li>
+  <li><strong>Mise sous forme d’état</strong> : définir les variables d’état pertinentes</li>
+  <li><strong>Analyse du système en boucle ouverte</strong> :
+    <ul>
+      <li>Stabilité (Routh, pôles)</li>
+      <li>Commandabilité et observabilité</li>
+      <li>Performances (réponse indicielle)</li>
+    </ul>
+  </li>
+  <li><strong>Conception de la commande</strong> :
+    <ul>
+      <li>Choix des pôles désirés selon cahier des charges</li>
+      <li>Calcul du gain K par placement de pôles</li>
+      <li>Vérification des performances</li>
+    </ul>
+  </li>
+  <li><strong>Conception de l’observateur</strong> (si nécessaire) :
+    <ul>
+      <li>Choix des pôles de l’observateur (plus rapides)</li>
+      <li>Calcul du gain L</li>
+    </ul>
+  </li>
+  <li><strong>Simulation et validation</strong> :
+    <ul>
+      <li>Test avec Simulink</li>
+      <li>Analyse de robustesse</li>
+      <li>Ajustements si nécessaire</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="6-pièges-à-éviter">6. Pièges à éviter</h3>
+
+<p>L’expérience des TDs et du projet a permis d’identifier plusieurs erreurs courantes en automatique.</p>
+
+<p><strong>Pièges théoriques</strong>:</p>
+<ul>
+  <li><strong>Système non commandable/observable</strong>: toujours vérifier les critères de Kalman avant de tenter un placement de pôles ou de concevoir un observateur</li>
+  <li><strong>Pôles de l’observateur trop rapides</strong>: risque d’amplification du bruit de mesure et d’instabilité numérique</li>
+  <li><strong>Confusion entre pôles et zéros</strong>: les pôles déterminent la stabilité, les zéros affectent la forme de la réponse</li>
+  <li><strong>Oubli des conditions initiales</strong>: la réponse complète = réponse libre + réponse forcée</li>
+</ul>
+
+<p><strong>Pièges pratiques</strong>:</p>
+<ul>
+  <li><strong>Unités incohérentes</strong>: attention aux conversions rad/s ↔ tr/min, degrés ↔ radians</li>
+  <li><strong>Saturation des actionneurs</strong>: prendre en compte les limites physiques (commande limitée en amplitude et vitesse)</li>
+  <li><strong>Modèle linéaire hors zone de validité</strong>: linéarisation valable uniquement autour du point d’équilibre</li>
+  <li><strong>Échantillonnage insuffisant</strong>: respect du critère de Shannon pour l’implémentation numérique</li>
+</ul>
+
+<p><strong>Pièges MATLAB</strong>:</p>
+<ul>
+  <li><strong>Confusion entre systèmes SISO et MIMO</strong>: attention aux dimensions des matrices</li>
+  <li><strong>Mauvais choix de solveur dans Simulink</strong>: peut entraîner des erreurs numériques</li>
+  <li><strong>Oubli de la normalisation</strong>: certaines fonctions MATLAB attendent des paramètres normalisés</li>
+</ul>
+
+<h3 id="7-ressources-et-approfondissements">7. Ressources et approfondissements</h3>
+
+<h4 id="documentation-matlab">Documentation MATLAB</h4>
+
+<ul>
+  <li><strong>Control System Toolbox User’s Guide</strong>: documentation complète des fonctions</li>
+  <li><strong>Simulink Control Design</strong>: conception et analyse de systèmes de commande</li>
+  <li><strong>Exemples intégrés</strong>: <code class="language-plaintext highlighter-rouge">help control</code>, <code class="language-plaintext highlighter-rouge">demo control</code> dans MATLAB</li>
+  <li><strong>MATLAB Central</strong>: communauté avec exemples et scripts partagés</li>
+</ul>
+
+<h4 id="ouvrages-de-référence">Ouvrages de référence</h4>
+
+<ul>
+  <li><strong>“Modern Control Engineering”</strong> - Ogata: référence classique, approche pédagogique</li>
+  <li><strong>“Linear System Theory and Design”</strong> - Chen: approche mathématique rigoureuse</li>
+  <li><strong>“Feedback Control of Dynamic Systems”</strong> - Franklin, Powell, Emami-Naeini: excellent pour les applications</li>
+  <li><strong>“Automatique: Systèmes linéaires”</strong> - Duc, Théron: en français, adapté au cursus français</li>
+</ul>
+
+<h4 id="logiciels-alternatifs">Logiciels alternatifs</h4>
+
+<ul>
+  <li><strong>Python</strong>: bibliothèques <code class="language-plaintext highlighter-rouge">control</code>, <code class="language-plaintext highlighter-rouge">scipy.signal</code> pour calculs scientifiques</li>
+  <li><strong>Scilab</strong>: alternative open-source à MATLAB avec Xcos (équivalent Simulink)</li>
+  <li><strong>Octave</strong>: compatible MATLAB, gratuit</li>
+  <li><strong>LabVIEW</strong>: pour applications industrielles et acquisition de données</li>
+</ul>
+
+<h3 id="mon-opinion">Mon opinion</h3>
+
+<p>Ce cours représente un pilier fondamental de l’automatique moderne et s’avère indispensable pour tout ingénieur travaillant dans les domaines des systèmes embarqués, de la robotique, ou de l’automatisation industrielle.</p>
+
+<p><strong>Pourquoi ce cours est essentiel</strong>:</p>
+
+<ol>
+  <li><strong>Approche moderne</strong>: la représentation d’état est la base de l’automatique contemporaine (vs approche classique par fonction de transfert)</li>
+  <li><strong>Systèmes multivariables</strong>: traitement naturel des systèmes MIMO (Multiple Input Multiple Output)</li>
+  <li><strong>Connexion avec l’informatique</strong>: structure matricielle facilite l’implémentation numérique</li>
+  <li><strong>Base pour sujets avancés</strong>: commande optimale (LQR/LQG), commande robuste (H∞), commande prédictive (MPC)</li>
+</ol>
+
+<p><strong>Apports du projet robot NXT Way</strong>:</p>
+
+<p>Le projet de robot auto-équilibré a été particulièrement formateur:</p>
+<ul>
+  <li><strong>Application concrète</strong>: pendule inversé = problème classique d’automatique</li>
+  <li><strong>Système instable</strong>: nécessité absolue d’une commande performante</li>
+  <li><strong>Multidisciplinarité</strong>: mécanique + électronique + automatique</li>
+  <li><strong>Défi technique</strong>: équilibrage en temps réel avec contraintes matérielles</li>
+</ul>
+
+<p><strong>Connexions avec autres cours</strong>:</p>
+
+<p>L’automatique est une discipline transversale qui s’appuie sur de nombreux autres cours:</p>
+<ul>
+  <li><strong>Circuits et Filtres Analogiques</strong> (S5): analyse fréquentielle, diagrammes de Bode</li>
+  <li><strong>Fondements Électronique Numérique</strong> (S5): échantillonnage pour commande numérique</li>
+  <li><strong>Systèmes Bouclés</strong> (S5): asservissements, correcteurs PID (approche complémentaire)</li>
+  <li><strong>Commande Numérique</strong> (S8): discrétisation, commande échantillonnée, microcontrôleurs</li>
+  <li><strong>Temps Réel</strong> (S8): implémentation de lois de commande avec contraintes temporelles</li>
+  <li><strong>Processus Stochastiques</strong> (S8): filtre de Kalman (extension stochastique de l’observateur)</li>
+</ul>
+
+<p><strong>Évolution technologique</strong>:</p>
+
+<p>L’automatique évolue rapidement avec les nouvelles technologies:</p>
+
+<p><strong>Tendances actuelles</strong>:</p>
+<ul>
+  <li><strong>Apprentissage automatique</strong>: hybridation commande classique + IA (Deep Reinforcement Learning)</li>
+  <li><strong>Commande prédictive</strong>: MPC (Model Predictive Control) dans l’automobile et l’industrie</li>
+  <li><strong>Systèmes distribués</strong>: commande multi-agents, essaims de drones</li>
+  <li><strong>Optimisation en temps réel</strong>: calcul embarqué performant (DSP, FPGA)</li>
+</ul>
+
+<p><strong>Applications émergentes</strong>:</p>
+<ul>
+  <li><strong>Véhicules autonomes</strong>: contrôle longitudinal/latéral, planification de trajectoire</li>
+  <li><strong>Drones</strong>: stabilisation, suivi de trajectoire, vol en formation</li>
+  <li><strong>Exosquelettes</strong>: assistance robotique, rééducation</li>
+  <li><strong>Industrie 4.0</strong>: cobotique (robots collaboratifs), maintenance prédictive</li>
+</ul>
+
+<p><strong>Recommandations pour réussir</strong>:</p>
+
+<ol>
+  <li><strong>Comprendre avant de calculer</strong>: visualiser le comportement physique du système</li>
+  <li><strong>Maîtriser MATLAB</strong>: indispensable pour l’automatique (industrie + recherche)</li>
+  <li><strong>Penser “états”</strong>: raisonner en variables d’état plutôt qu’en entrées/sorties</li>
+  <li><strong>Simuler systématiquement</strong>: valider les calculs avant implémentation réelle</li>
+  <li><strong>Tenir compte des limitations</strong>: saturation, bruit, échantillonnage</li>
+</ol>
+
+<p><strong>Applications professionnelles</strong>:</p>
+
+<p>Ces compétences sont très recherchées dans de nombreux secteurs:</p>
+
+<p><strong>Automobile</strong>:</p>
+<ul>
+  <li>Systèmes ADAS (Advanced Driver Assistance Systems): ESP, ABS, régulateur adaptatif</li>
+  <li>Véhicules autonomes: contrôle de trajectoire, fusion de capteurs</li>
+  <li>Motorisation hybride/électrique: gestion d’énergie, contrôle de traction</li>
+</ul>
+
+<p><strong>Aéronautique/Spatial</strong>:</p>
+<ul>
+  <li>Pilotage automatique d’avions, drones, fusées</li>
+  <li>Stabilisation de satellites, contrôle d’attitude</li>
+  <li>Lanceurs: guidage, navigation, contrôle</li>
+</ul>
+
+<p><strong>Robotique</strong>:</p>
+<ul>
+  <li>Robots mobiles: navigation, évitement d’obstacles</li>
+  <li>Robots manipulateurs: contrôle de trajectoire, force</li>
+  <li>Robots humanoïdes: équilibrage, marche dynamique</li>
+</ul>
+
+<p><strong>Industrie</strong>:</p>
+<ul>
+  <li>Automatisation de procédés: chimie, pétrochimie, agroalimentaire</li>
+  <li>Machines-outils: positionnement précis, usinage</li>
+  <li>Énergies renouvelables: MPPT pour PV, contrôle d’éoliennes</li>
+</ul>
+
+<p><strong>Perspectives de carrière</strong>:</p>
+<ul>
+  <li>Ingénieur automaticien: conception de systèmes de commande</li>
+  <li>Ingénieur système embarqué: implémentation temps réel</li>
+  <li>Ingénieur R&amp;D: algorithmes de commande avancée</li>
+  <li>Consultant: expertise en automatique pour divers secteurs</li>
+</ul>
+
+<hr />
+
+<p><strong>Bilan personnel</strong>: Ce cours a fourni les outils mathématiques et pratiques pour analyser et commander des systèmes dynamiques linéaires. L’approche état constitue une méthodologie puissante pour les systèmes multivariables et la commande moderne. Les TPs MATLAB et le projet robot ont permis de concrétiser ces concepts théoriques sur des applications réelles d’automatique. C’est un cours exigeant mais absolument fondamental pour une carrière en automatique, robotique, ou systèmes embarqués.</p>
+
+<hr />
+
+<style>
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+        }
+        h2, h3, h4, h5 {
+                color: #2a7ae2;
+        }
+        p {
+                text-align: justify;
+        }
+        code {
+                background-color: #f5f5f5;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+        }
+        pre {
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-x: auto;
+        }
+        table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 20px 0;
+        }
+        th, td {
+                border: 1px solid #ddd;
+                padding: 12px;
+                text-align: left;
+        }
+        th {
+                background-color: #2a7ae2;
+                color: white;
+        }
+        tr:nth-child(even) {
+                background-color: #f9f9f9;
+        }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

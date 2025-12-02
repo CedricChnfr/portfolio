@@ -1,4 +1,626 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-28T18:00:52+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Portfolio</title><subtitle>I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.</subtitle><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<h1 id="introduction"><strong>Introduction</strong></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-02T01:28:21+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cédric Chanfreau - Portfolio</title><entry><title type="html">LED 60 ans INSA</title><link href="http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html" rel="alternate" type="text/html" title="LED 60 ans INSA" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
+
+<h1 id="altium-project-led-60-years-insa">Altium Project: LED 60 Years INSA</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>As part of our curriculum at INSA Toulouse in the <strong>Automatic and Electronic</strong> specialty, we completed a comprehensive electronic design project using <strong>Altium Designer</strong>. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring <strong>RGB LEDs</strong> controlled via an <strong>STM32</strong> microcontroller.</p>
+
+<p>This project covered many technical aspects, from <strong>PCB routing</strong> to <strong>mechanical and software design</strong>, allowing us to practice key skills in electronic engineering and embedded systems.</p>
+
+<h2 id="project-objectives">Project Objectives</h2>
+
+<p>The objectives of this project were multiple:</p>
+<ol>
+  <li><strong>Design an electronic circuit</strong> capable of controlling RGB LEDs following a specific functional diagram.</li>
+  <li><strong>Create a PCB with Altium Designer</strong> that meets electrical and mechanical constraints while optimizing routing.</li>
+  <li><strong>Design a 3D enclosure</strong> to house the printed circuit board and electronic components using <strong>Fusion 360</strong>.</li>
+  <li><strong>Program an STM32 microcontroller</strong> to control the RGB LEDs via an SPI bus.</li>
+  <li><strong>Ensure the integration of the whole system</strong> into a robust, functional, and aesthetically pleasing system.</li>
+</ol>
+
+<h2 id="design-and-routing-with-altium-designer">Design and Routing with Altium Designer</h2>
+
+<h3 id="component-selection">Component Selection</h3>
+<p>The first step of the project was to select the appropriate components for the design. We chose:</p>
+<ul>
+  <li><strong>WS2812B LEDs</strong>: Addressable RGB LEDs that can be individually controlled via an SPI bus.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/LEDs.png" style="width: 100%;" />
+</div>
+
+<ul>
+  <li><strong>STM32F103C8T6</strong>: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/STM32.png" style="width: 80%;" />
+</div>
+
+<ul>
+  <li>Power supply components, including <strong>voltage regulators</strong> and <strong>DC-DC converters</strong> to manage different power supplies (USB and batteries).</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/USB.png" style="width: 80%;" />
+</div>
+
+<h3 id="circuit-schematic">Circuit Schematic</h3>
+<p>The next step was to create the electronic schematics in <strong>Altium Designer</strong>. The main subsystems of the circuit include:</p>
+<ul>
+  <li><strong>Power supply</strong>: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller.</li>
+  <li><strong>LED control</strong>: Using the SPI bus to send data to the LEDs to manage their color and intensity.</li>
+  <li><strong>Programming management</strong>: Integrating an interface to program the STM32 via a <strong>USB bootloader</strong>.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Schéma_Block.png" style="width: 80%;" />
+</div>
+
+<h3 id="routing-and-optimization">Routing and Optimization</h3>
+<p>After designing the schematics, we routed the PCB in <strong>Altium Designer</strong>, considering component placement and track constraints. Key steps in the routing process include:</p>
+<ol>
+  <li><strong>Strategic component placement</strong>: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections.</li>
+  <li><strong>Minimizing interference</strong>: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks.</li>
+  <li><strong>Meeting mechanical constraints</strong>: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure.</li>
+</ol>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Composants.png" style="width: 80%;" />
+</div>
+
+<h3 id="routing-results">Routing Results</h3>
+<p>The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs.</p>
+
+<h2 id="mechanical-design-with-fusion-360">Mechanical Design with Fusion 360</h2>
+
+<h3 id="enclosure-modeling">Enclosure Modeling</h3>
+<p>The enclosure, designed with <strong>Fusion 360</strong>, was intended to protect and showcase the electronics. Key features include:</p>
+<ul>
+  <li><strong>Main body</strong>: Supports the PCB and provides space for batteries and USB power.</li>
+  <li><strong>Transparent cover</strong>: A plexiglass panel to expose the LEDs while protecting them from external elements.</li>
+  <li><strong>Battery compartment</strong>: A removable section for easy access to the batteries.</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Fusion.png" style="width: 80%;" />
+</div>
+
+<p>We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly.</p>
+
+<h3 id="system-assembly">System Assembly</h3>
+<p>Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32.</p>
+
+<h2 id="stm32-microcontroller-programming">STM32 Microcontroller Programming</h2>
+
+<h3 id="using-the-spi-bus-to-control-the-leds">Using the SPI Bus to Control the LEDs</h3>
+<p>The <strong>STM32F103</strong> was programmed to control the <strong>WS2812B LEDs</strong> via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity.</p>
+
+<p>The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting.</p>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Code.png" style="width: 100%;" />
+</div>
+
+<h3 id="added-features">Added Features</h3>
+<p>In addition to basic LED control, we added several display modes:</p>
+<ul>
+  <li><strong>Color gradient mode</strong>: LEDs gradually change color.</li>
+  <li><strong>Blinking mode</strong>: LEDs turn on and off rhythmically.</li>
+  <li><strong>Interaction mode</strong>: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press).</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/LED.png" style="width: 40%;" />
+</div>
+
+<h2 id="results-and-analysis">Results and Analysis</h2>
+
+<p>The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a <strong>robust electronic system</strong>, fully controlled by an <strong>STM32 microcontroller</strong> and showcased in a custom-designed enclosure. Using <strong>Altium Designer</strong> allowed us to produce a <strong>functional and optimized PCB</strong>, while <strong>microcontroller programming</strong> provided a wide range of features for the RGB LEDs.</p>
+
+<h3 id="future-improvements">Future Improvements</h3>
+<p>Some areas for improvement could be explored:</p>
+<ul>
+  <li><strong>Routing optimization</strong>: Reducing the length of SPI tracks for faster communication.</li>
+  <li><strong>Adding sensors</strong>: Including light sensors to adjust LED intensity based on the environment.</li>
+  <li><strong>Software updates</strong>: Developing additional display modes and improving interrupt management efficiency.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This project allowed us to develop essential skills in PCB design with <strong>Altium Designer</strong>, 3D modeling with <strong>Fusion 360</strong>, and <strong>embedded programming</strong> with the <strong>STM32</strong>. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[← Back to Academic Project Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Results and Analysis The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse.]]></summary></entry><entry><title type="html">C and Network Project</title><link href="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html" rel="alternate" type="text/html" title="C and Network Project" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/network-project-C</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
+
+<h1 id="introduction">Introduction</h1>
+<p>This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling.</p>
+
+<p>In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment.</p>
+
+<h2 id="part-1-comparing-udp-and-tcp"><strong>Part 1: Comparing UDP and TCP</strong></h2>
+
+<h3 id="udp-transmission">UDP Transmission:</h3>
+
+<ul>
+  <li>
+    <p>Setup:</p>
+
+    <ul>
+      <li>
+        <p>On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -p -u -t 10 9025</code></p>
+
+        <p><code class="language-plaintext highlighter-rouge">-p</code>: Specifies the sink mode.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-u</code>: Uses the UDP protocol.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-t</code> 10: Sets the application buffer size to 10 bytes.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number created to listen (&gt;9000)</p>
+
+        <div style="text-align: center;">
+      <img src="/img/BE_Reseau/UDP_cmd.png" style="width: 90%;" />
+  </div>
+      </li>
+      <li>
+        <p>On Terminal 2 (acting as the client or source), we sent 20 messages to the server using:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -s -u -n 20 insa-20661 9025</code></p>
+
+        <p><code class="language-plaintext highlighter-rouge">-s</code>: Specifies the source mode.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">-n 20</code>: Number of messages to send.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">insa-20661</code>: Destination machine identifier.</p>
+
+        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number where we send (&gt;9000)</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>Out of 20 messages sent, only 13 were received.</p>
+      </li>
+      <li>
+        <p>The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+          <img src="/img/BE_Reseau/UDP_send.png" style="width: 90%;" />
+  </div>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+    <ul>
+      <li>
+        <p>UDP is a connectionless protocol without mechanisms for flow control or error correction.</p>
+      </li>
+      <li>
+        <p>Packet loss occurred due to buffer overflow at the application level.</p>
+      </li>
+      <li>
+        <p>UDP does not guarantee message delivery, order, or integrity.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="tcp-transmission">TCP Transmission:</h3>
+
+<ul>
+  <li>
+    <p>Setup:</p>
+
+    <ul>
+      <li>
+        <p>On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -p -t 20 9025</code></p>
+
+        <ul>
+          <li>Omitting <code class="language-plaintext highlighter-rouge">-u</code> defaults to TCP.</li>
+        </ul>
+
+        <div style="text-align: center;">
+          <img src="/img/BE_Reseau/TCP_cmd.png" style="width: 90%;" />
+  </div>
+      </li>
+      <li>
+        <p>On Terminal 2, we sent 20 messages to the server:</p>
+
+        <p><code class="language-plaintext highlighter-rouge">tsock -s -n 20 insa-20661 9025</code></p>
+
+        <div style="text-align: center;">
+          <img src="/img/BE_Reseau/TCP_send.png" style="width: 90%;" />
+  </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>All 20 messages were successfully transmitted and received.</p>
+      </li>
+      <li>
+        <p>No packet loss occurred, and messages arrived in order.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+
+    <ul>
+      <li>
+        <p>TCP is a connection-oriented protocol that establishes a connection before data transfer.</p>
+      </li>
+      <li>
+        <p>It provides reliability through acknowledgments, retransmissions, and flow control.</p>
+      </li>
+      <li>
+        <p>TCP ensures data integrity and ordered delivery.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="part-2-testing-protocol-behavior-without-open-ports"><strong>Part 2: Testing Protocol Behavior Without Open Ports</strong></h2>
+
+<h3 id="tcp-connection-refusal">TCP Connection Refusal:</h3>
+
+<ul>
+  <li>
+    <p>Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error.</p>
+  </li>
+  <li>
+    <p>This confirms that TCP requires an active listener to establish a connection.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_beh.png" style="width: 90%;" />
+</div>
+
+<h3 id="udp-message-handling">UDP Message Handling:</h3>
+
+<ul>
+  <li>
+    <p>Sending messages to a closed UDP port did not produce errors on the sender’s side.</p>
+  </li>
+  <li>
+    <p>The messages were sent into the network, but the receiver did not process them.</p>
+  </li>
+  <li>
+    <p>UDP does not check for active listeners before sending data.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_beh.png" style="width: 90%;" />
+</div>
+
+<p><br /></p>
+
+<h2 id="part-3-capturing-and-analyzing-network-traffic"><strong>Part 3: Capturing and Analyzing Network Traffic</strong></h2>
+
+<p>Using <code class="language-plaintext highlighter-rouge">tcpdump</code> to Monitor Traffic:</p>
+
+<ul>
+  <li>Connected to a monitoring machine using:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">ssh tcpdump@insa-20673</code></p>
+
+<ul>
+  <li>Started packet capture on port 9025:</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">sudo tcpdump 9025</code></p>
+
+<h3 id="observations-with-udp">Observations with UDP:</h3>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_dump.png" style="width: 90%;" />
+</div>
+<p><br /></p>
+<ul>
+  <li>
+    <p>Messages were visible in the capture, showing source and destination IP addresses and ports.</p>
+  </li>
+  <li>
+    <p>No connection establishment phase was observed.</p>
+  </li>
+  <li>
+    <p>Packets contained the data payload but lacked reliability mechanisms.</p>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_dump2.png" style="width: 90%;" />
+</div>
+
+<h3 id="observations-with-tcp">Observations with TCP:</h3>
+
+<ul>
+  <li>
+    <p>Three-Way Handshake:</p>
+
+    <ul>
+      <li>
+        <p><strong>SYN</strong> packet sent from client to server initiating the connection.</p>
+      </li>
+      <li>
+        <p><strong>SYN-ACK</strong> packet sent from server to client acknowledging the SYN.</p>
+      </li>
+      <li>
+        <p><strong>ACK</strong> packet sent from client to server completing the handshake.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Data Transfer:</p>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/TCP_dump.png" style="width: 90%;" />
+  </div>
+
+    <ul>
+      <li>
+        <p>Data packets were sent with acknowledgment packets confirming receipt.</p>
+      </li>
+      <li>
+        <p>Flags such as <code class="language-plaintext highlighter-rouge">[P.]</code>, <code class="language-plaintext highlighter-rouge">[FP.]</code>, and <code class="language-plaintext highlighter-rouge">[F.]</code> indicated different stages of data transfer and connection termination.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/TCP_dump2.png" style="width: 90%;" />
+  </div>
+  </li>
+  <li>
+    <p>Connection Termination:</p>
+
+    <ul>
+      <li>Graceful shutdown observed with final ACKs exchanged between client and server.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="part-4-capturing-and-analyzing-network-traffic"><strong>Part 4: Capturing and Analyzing Network Traffic</strong></h2>
+
+<p>Captured raw Ethernet frames using: <code class="language-plaintext highlighter-rouge">sudo tcpdump -xx 9025</code></p>
+
+<ul>
+  <li>
+    <p>Frame Structure:</p>
+
+    <ul>
+      <li>
+        <p>Destination MAC Address: First 6 bytes.</p>
+      </li>
+      <li>
+        <p>Source MAC Address: Next 6 bytes.</p>
+      </li>
+      <li>
+        <p>EtherType: Following 2 bytes indicating the protocol (e.g., IPv4).</p>
+      </li>
+    </ul>
+  </li>
+  <li>IP Packet Details:
+    <ul>
+      <li>
+        <p>Protocol Field (9th Byte): Indicates the transport layer protocol:</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">06</code> for TCP.</p>
+      </li>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">17</code> for UDP.</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Source and Destination IP Addresses: Each 4 bytes in length.</p>
+
+    <ul>
+      <li>Source Port Number: 2 bytes.</li>
+    </ul>
+  </li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/eth_trafic.png" style="width: 90%;" />
+</div>
+
+<ul>
+  <li>
+    <p>Utility Commands:</p>
+
+    <ul>
+      <li>Used <code class="language-plaintext highlighter-rouge">ifconfig</code> to determine the machine’s IP address for analysis.</li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/ifconfig.png" style="width: 70%;" />
+  </div>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="part-5-exploring-broadcast-traffic"><strong>Part 5: Exploring Broadcast Traffic</strong></h2>
+
+<p>Captured broadcast messages with: <code class="language-plaintext highlighter-rouge">tcpdump -xx broadcast</code></p>
+
+<ul>
+  <li>
+    <p>Observation:</p>
+
+    <ul>
+      <li>
+        <p>Destination IP address was 169.254.255.255, representing the broadcast address.</p>
+      </li>
+      <li>
+        <p>Messages sent to this address are received by all machines on the local network.</p>
+      </li>
+    </ul>
+
+    <div style="text-align: center;">
+      <img src="/img/BE_Reseau/broadcast.png" style="width: 70%;" />
+  </div>
+  </li>
+  <li>
+    <p>Conclusion:</p>
+
+    <ul>
+      <li>
+        <p>Broadcast allows communication with all nodes simultaneously.</p>
+      </li>
+      <li>
+        <p>Useful for services like network discovery and announcements.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[← Back to Academic Project Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 -p: Specifies the sink mode. -u: Uses the UDP protocol. -t 10: Sets the application buffer size to 10 bytes. 9025: port number created to listen (&gt;9000) On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 -s: Specifies the source mode. -n 20: Number of messages to send. insa-20661: Destination machine identifier. 9025: port number where we send (&gt;9000) Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived. Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Omitting -u defaults to TCP. On Terminal 2, we sent 20 messages to the server: tsock -s -n 20 insa-20661 9025 Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error. This confirms that TCP requires an active listener to establish a connection. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender’s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic: Connected to a monitoring machine using: ssh tcpdump@insa-20673 Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address: First 6 bytes. Source MAC Address: Next 6 bytes. EtherType: Following 2 bytes indicating the protocol (e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): Indicates the transport layer protocol: 06 for TCP. 17 for UDP. Source and Destination IP Addresses: Each 4 bytes in length. Source Port Number: 2 bytes. Utility Commands: Used ifconfig to determine the machine’s IP address for analysis. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.]]></summary></entry><entry><title type="html">Object Oriented Programming</title><link href="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html" rel="alternate" type="text/html" title="Object Oriented Programming" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/object-oriented-programming.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
+
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.</p>
+
+<h2 id="steps"><strong>Steps</strong></h2>
+<p>The files Step_1.cpp, Step_2.cpp, Step_3.cpp, Step_4.cpp, and Step_5.cpp, Step_6.cpp illustrate the manipulation of points in 2D and 3D. 
+All these steps were mainly to understand how C++ works.</p>
+
+<p align="center">
+    <a href="/code/cpp/Etape_1.cpp" target="_blank">Step 1</a> -
+    <a href="/code/cpp/Etape_2.cpp" target="_blank">Step 2</a> -
+    <a href="/code/cpp/Etape_3.cpp" target="_blank">Step 3</a> -
+    <a href="/code/cpp/Etape_4.cpp" target="_blank">Step 4</a> -
+    <a href="/code/cpp/Etape_5.cpp" target="_blank">Step 5</a> - 
+    <a href="/code/cpp/Etape_6.cpp" target="_blank">Step 6</a>
+</p>
+
+<p>Features include:</p>
+<ul>
+  <li>
+    <p>Input and Display: Points can be input and displayed.</p>
+  </li>
+  <li>
+    <p>Mathematical Operations: Points can be added and multiplied by scalars.</p>
+  </li>
+</ul>
+
+<h2 id="tds"><strong>TDs</strong></h2>
+<p>Vector Manipulation
+The files TD1.cpp, TD2.cpp, TD4.cpp, and TD5.cpp contain implementations of the vector class. This class allows you to create and manipulate vectors of different dimensions. Here are some key features:</p>
+
+<p align="center">
+    <a href="/code/cpp/TD1.cpp" target="_blank">TD1</a> -
+    <a href="/code/cpp/TD2.cpp" target="_blank">TD2</a> -
+    <a href="/code/cpp/TD4.cpp" target="_blank">TD4</a> -
+    <a href="/code/cpp/TD5.cpp" target="_blank">TD5</a>
+</p>
+
+<ul>
+  <li>
+    <p>Constructors and Destructors: The vector class has several constructors to initialize vectors with specific dimensions and values. The destructor ensures the freeing of dynamically allocated memory.</p>
+  </li>
+  <li>
+    <p>Input and Display: The input and display methods allow you to input vector values ​​and display them respectively.</p>
+  </li>
+  <li>
+    <p>Overloaded Operators: The class overloads several operators, including the indexing operator [], the assignment operator =, and the addition operator +.</p>
+  </li>
+</ul>
+
+<h2 id="tps"><strong>TPs</strong></h2>
+
+<p>In this part, you will find two key C++ projects focused on geometric figure management and the use of the <strong>Standard Template Library (STL)</strong>.</p>
+
+<p align="center">
+    <a href="/code/cpp/TP_figure.cpp" target="_blank">TP Figure</a> -
+    <a href="/code/cpp/TP_stl.cpp" target="_blank">TP STL</a>
+</p>
+
+<h3 id="tp-1-geometric-figure-management">TP 1: Geometric Figure Management</h3>
+
+<p>This project revolves around the management of <strong>geometric figures</strong> such as squares, circles, equilateral triangles, and rectangles using advanced object-oriented programming concepts like <strong>abstract classes</strong>, <strong>inheritance</strong>, and <strong>polymorphism</strong>.</p>
+
+<ul>
+  <li>
+    <p><strong>Dynamic Creation and Display</strong>: Figures are created dynamically using polymorphism. Each figure (square, circle, triangle, rectangle) has unique characteristics that are displayed using virtual functions.</p>
+  </li>
+  <li>
+    <p><strong>Perimeter Calculation</strong>: Each figure calculates and displays its perimeter, achieved by redefining the virtual function <code class="language-plaintext highlighter-rouge">perimetre()</code> in derived classes.</p>
+  </li>
+  <li>
+    <p><strong>Polymorphism and Dynamic Binding</strong>: The program leverages polymorphism by iterating through a list of figures and calling appropriate methods for each figure type dynamically.</p>
+  </li>
+  <li>
+    <p><strong>List Management with Iterators</strong>: Figures are stored in a list, and standard operations like insertion and deletion are performed using iterators.</p>
+  </li>
+  <li>
+    <p><strong>Color Management (Multiple Inheritance)</strong>: Circles also inherit from a <code class="language-plaintext highlighter-rouge">Coloriable</code> class, allowing them to store and display a color. This showcases <strong>multiple inheritance</strong> in C++.</p>
+  </li>
+  <li>
+    <p><strong>Queue Operations</strong>: Figures are stored in a queue, enabling insertion and deletion while preserving the order of entry. The project also demonstrates linked structures and queue management for figure manipulation.</p>
+  </li>
+</ul>
+
+<h3 id="tp-2-standard-template-library-stl-in-c">TP 2: Standard Template Library (STL) in C++</h3>
+
+<p>The <strong>STL</strong> is a powerful C++ library that provides pre-built data structures and algorithms. This project explores how to effectively use containers, iterators, and algorithms provided by the STL.</p>
+
+<ul>
+  <li>
+    <p><strong>Containers</strong>: The project introduces both <strong>sequential containers</strong> like <code class="language-plaintext highlighter-rouge">vector</code>, <code class="language-plaintext highlighter-rouge">list</code>, and <code class="language-plaintext highlighter-rouge">deque</code>, as well as <strong>associative containers</strong> such as <code class="language-plaintext highlighter-rouge">set</code> and <code class="language-plaintext highlighter-rouge">map</code>. These containers are used to store data and efficiently manage access to the elements.</p>
+  </li>
+  <li>
+    <p><strong>Iterators</strong>: Iterators allow for easy traversal of the containers, functioning similarly to pointers in arrays. The project highlights how to iterate through containers using <strong><code class="language-plaintext highlighter-rouge">begin()</code></strong> and <strong><code class="language-plaintext highlighter-rouge">end()</code></strong> methods and perform operations on each element.</p>
+  </li>
+  <li>
+    <p><strong>STL Algorithms</strong>: The project demonstrates the use of algorithms such as <strong><code class="language-plaintext highlighter-rouge">reverse()</code></strong>, <strong><code class="language-plaintext highlighter-rouge">sort()</code></strong>, and <strong><code class="language-plaintext highlighter-rouge">find()</code></strong>, which work on iterators to manipulate the contents of containers without altering the container structure itself.</p>
+  </li>
+  <li>
+    <p><strong>Vector and List Operations</strong>: Practical examples include creating vectors and lists, adding and removing elements dynamically, and performing operations such as sorting and searching.</p>
+  </li>
+  <li><strong>Advanced Exercises</strong>:
+    <ul>
+      <li>Creating a vector of 10 float values, modifying the second half of the vector.</li>
+      <li>Managing lists of alphabet characters and inserting or deleting elements efficiently.</li>
+    </ul>
+  </li>
+  <li><strong>Set and Map Operations</strong>: The use of <code class="language-plaintext highlighter-rouge">set</code> ensures uniqueness of elements, while <code class="language-plaintext highlighter-rouge">map</code> provides a key-value store for efficient lookups. The project also demonstrates complex operations like finding and removing elements based on conditions.</li>
+</ul>
+
+<p>By combining geometric figure management and the use of STL, these two projects illustrate the powerful capabilities of C++ in handling both <strong>object-oriented design</strong> and <strong>template programming</strong>.</p>
+
+<h2 id="conclusion"><strong>Conclusion</strong></h2>
+<p>This project demonstrates a thorough understanding of basic and advanced C++ programming concepts. The various steps and tutorials demonstrate how to manipulate vectors, manage geometric figures, and perform operations on 2D and 3D points. This project is an excellent example of the practical application of object-oriented programming principles in C++.</p>
+
+<style>
+p {
+    text-align: justify;
+}
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[← Back to Academic Project Introduction This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming. Steps The files Step_1.cpp, Step_2.cpp, Step_3.cpp, Step_4.cpp, and Step_5.cpp, Step_6.cpp illustrate the manipulation of points in 2D and 3D. All these steps were mainly to understand how C++ works. Step 1 - Step 2 - Step 3 - Step 4 - Step 5 - Step 6 Features include: Input and Display: Points can be input and displayed. Mathematical Operations: Points can be added and multiplied by scalars. TDs Vector Manipulation The files TD1.cpp, TD2.cpp, TD4.cpp, and TD5.cpp contain implementations of the vector class. This class allows you to create and manipulate vectors of different dimensions. Here are some key features: TD1 - TD2 - TD4 - TD5 Constructors and Destructors: The vector class has several constructors to initialize vectors with specific dimensions and values. The destructor ensures the freeing of dynamically allocated memory. Input and Display: The input and display methods allow you to input vector values ​​and display them respectively. Overloaded Operators: The class overloads several operators, including the indexing operator [], the assignment operator =, and the addition operator +. TPs In this part, you will find two key C++ projects focused on geometric figure management and the use of the Standard Template Library (STL). TP Figure - TP STL TP 1: Geometric Figure Management This project revolves around the management of geometric figures such as squares, circles, equilateral triangles, and rectangles using advanced object-oriented programming concepts like abstract classes, inheritance, and polymorphism. Dynamic Creation and Display: Figures are created dynamically using polymorphism. Each figure (square, circle, triangle, rectangle) has unique characteristics that are displayed using virtual functions. Perimeter Calculation: Each figure calculates and displays its perimeter, achieved by redefining the virtual function perimetre() in derived classes. Polymorphism and Dynamic Binding: The program leverages polymorphism by iterating through a list of figures and calling appropriate methods for each figure type dynamically. List Management with Iterators: Figures are stored in a list, and standard operations like insertion and deletion are performed using iterators. Color Management (Multiple Inheritance): Circles also inherit from a Coloriable class, allowing them to store and display a color. This showcases multiple inheritance in C++. Queue Operations: Figures are stored in a queue, enabling insertion and deletion while preserving the order of entry. The project also demonstrates linked structures and queue management for figure manipulation. TP 2: Standard Template Library (STL) in C++ The STL is a powerful C++ library that provides pre-built data structures and algorithms. This project explores how to effectively use containers, iterators, and algorithms provided by the STL. Containers: The project introduces both sequential containers like vector, list, and deque, as well as associative containers such as set and map. These containers are used to store data and efficiently manage access to the elements. Iterators: Iterators allow for easy traversal of the containers, functioning similarly to pointers in arrays. The project highlights how to iterate through containers using begin() and end() methods and perform operations on each element. STL Algorithms: The project demonstrates the use of algorithms such as reverse(), sort(), and find(), which work on iterators to manipulate the contents of containers without altering the container structure itself. Vector and List Operations: Practical examples include creating vectors and lists, adding and removing elements dynamically, and performing operations such as sorting and searching. Advanced Exercises: Creating a vector of 10 float values, modifying the second half of the vector. Managing lists of alphabet characters and inserting or deleting elements efficiently. Set and Map Operations: The use of set ensures uniqueness of elements, while map provides a key-value store for efficient lookups. The project also demonstrates complex operations like finding and removing elements based on conditions. By combining geometric figure management and the use of STL, these two projects illustrate the powerful capabilities of C++ in handling both object-oriented design and template programming. Conclusion This project demonstrates a thorough understanding of basic and advanced C++ programming concepts. The various steps and tutorials demonstrate how to manipulate vectors, manage geometric figures, and perform operations on 2D and 3D points. This project is an excellent example of the practical application of object-oriented programming principles in C++.]]></summary></entry><entry><title type="html">Design of a RISC type microprocessor</title><link href="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html" rel="alternate" type="text/html" title="Design of a RISC type microprocessor" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/vhdl-risc-pipeline.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
+
+<h1 id="introduction"><strong>Introduction</strong></h1>
 <p>Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.
 Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.</p>
@@ -233,169 +855,346 @@ Knowledge and understanding of the architecture of a microprocessor are also use
 p {
     text-align: justify;
 }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption.]]></summary></entry><entry><title type="html">Low Power Wireless Personal Area Network (LP-WPAN)</title><link href="http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html" rel="alternate" type="text/html" title="Low Power Wireless Personal Area Network (LP-WPAN)" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html"><![CDATA[<h1 id="low-power-wireless-personal-area-network">Low Power Wireless Personal Area Network</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[← Back to Academic Project Introduction Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project. We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design. Finally, we will analyze the synthesis results highlighting the optimizations made to increase the operating frequency as well as the reduction of its energy consumption. RISC Microprocessor Architecture Microprocessor Component In this part we will look at the architecture of a RISC microprocessor, however we will not go into details. Indeed there is a lot of documentation on this subject, which is clear and synthetic, they do not need a copy (which would be approximate). We will therefore present in a functional way the 5 elements present in our microprocessor the ALU, the data memory, the instruction memory and the register bank. Arithmetic and Logic Unit Functional Description The Arithmetic Logic Unit (ALU) is the central component that allows the execution of arithmetic and logic operations of the microprocessor. The functional diagram of the ALU is given below in figure 1. The Control Bus (Ctrl_ALU) determines the type of operation to be performed. The ALU takes two inputs A and B of 8 bits, which will be the operands and S the result of the operation also on 8 bits. We also have 4 flags at the output, Negative, Carry, Zero and Overflow. Functional Simulation Below in Figure 2 is one of the functional simulations of our ALU. This simulation does not depend on time and implementation and only allows us to verify the logical operation of the circuit. Below you will find table No. 1 allowing the link to be made between the control bus and the arithmetic and logical operations carried out. The result of each operation is stored in the S output. Additionally, the component outputs information about the result in the form of flags in the Flag output, indicating whether an operation generated a carry, whether the result is negative, whether it is zero, or whether there was an overflow. Register Bench Functional Description The Register Bank, integrated in our architecture, represents a fundamental element for temporary data storage during instruction execution. It consists of 16 8-bit registers, providing significant storage capacity for ongoing operations. This configuration allows simultaneous read access operations via ports QA and QB, as well as write operations via port W_in. Functional Simulation A simulation was performed to evaluate the reading, writing, and general behavior of the register bank. The values ​​were manipulated to ensure proper data handling based on the clock. This includes scenarios such as simultaneous reading and writing to an output (bypass), or simply reading a register via the write port. *Bypassing is a technique for reading and writing to a register at the same time. It is used in processors to improve efficiency by redirecting the calculated results directly to the next instructions that need them, without waiting for the register to be written. Data Memory Functional Description Data memory is used to store temporary information needed for a program to operate. Operations on data memory include reading values ​​stored at specific addresses and writing new values ​​to those addresses. @(7:0) : Address at which read or write operations must be performed. IN(7:0) : Data input to be written to memory at the specified address. RW : Memory operation mode (0 for read, 1 for write). RST : Memory reset input. CLK : Clock input used to trigger memory operations. OUT(7:0) : Output returning the data read from the specified address. Functional Simulation At each rising edge of the clock (CLK), the memory reacts according to the control (RW) and reset (RST) signals. In the event of a reset (RST at 1), the memory is reset to zero. In write mode (RW at 1), the input data (data) are written to the specified address. In read mode (RW at 0), the data located at the specified address are returned via the output (OUT). Instruction Memory Functional Description Instruction memory stores the list of machine instructions that make up the program executed by the processor. Each instruction is associated with a specific memory address. Each instruction is represented on 32 bits and is accessible at a specific address in memory. A [7 :0] : Input representing the address at which read operations must be performed. S [31 :0] : Output returning the 32-bit instruction read from the specified address Functional Simulation At each rising edge of the clock (clk), the memory reacts by returning the instruction located at the specified address via output S. ALEA Management Functional Description We distinguish between data ALEA events and branch ALEA events. We will focus on data ALEA events. A data ALEA event is an event, this event is triggered by at least two instructions executing consecutively and in an incompatible manner. A first instruction modifies the value of a data item in a memory area, the second uses this memory area while the value has not been updated. To address this issue we have created a new component in our data path, which you can see below If the component detects that the instruction sent by the instruction memory causes a ALEA with one of the instructions already present in the data path, then it blocks the instruction memory and sends NOPs in the data path. Once the ALEA is removed, it sends the blocked instruction and unlocks the instruction memory. It can be emphasized that the ALEA detection will only be done on the first 3 stages, in fact the register bank contains a bypass that allows reading and writing at the same time. Detection Condition We want to have the most general conditions possible to detect our ALEA events, this will avoid any kind of ambiguity and will allow us to simply manage all possible cases. We can start with the ALEA events caused by the MUL, SOU and ADD instructions. If the incoming instruction is ADD, MUL or SOU then zone B and C must be different from zone A of the 3 instructions currently being executed. We do not trigger any ALEA on the instructions currently being executed that would be STORE. We can now continue with the ALEA caused by the COP and STORE instructions. If the incoming instruction is COP or STORE, the B zone must be different from the A zones of the 3 instructions currently being executed. It can be emphasized that an incoming instruction of type AFC or LOAD cannot cause a ALEA event, and will only have an influence if they are already present in the data path. A ALEA event must also be detected only on instructions, so the opcode must be checked to avoid triggering a ALEA event on a NOP. Functional Simulation One point to emphasize is the NOP instruction, in fact a NOP must not do anything and by this we mean that it must not modify a register or a memory space, it can however enter the aluminum, cause a reading of the register bank or memory. From an external point of view, these interactions do not cause undesirable behavior on the part of the microprocessor, that being it causes unnecessary consumption. Simple ALEA A first simple ALEA to perceive is a succession of two 2 AFCs followed by an addition of the two registers, this situation is simulated in the timeline below. We send a first instruction “06001200” = R0&lt;= 12 We send a second instruction “06001200” = R1&lt;= 12 We send a third instruction “01020100” = R2&lt;= R1+R0 Obviously the registers R0 and R1 are not up to date at the time of the addition so a “bubble” (here in yellow) is inserted, this bubble has a duration of 3 NOP. Complex ALEA A second example of ALEA is ALEA caused by two non-successive instructions, this situation is simulated in the timing diagram below. We send a first instruction “01030000” = R3&lt;= R0+R0 We send a second instruction “05040000” = R4&lt;= R5 We send a third instruction “05040300” = R4&lt;= R3 Here the ALEA number is between the third and the first instruction, the bubble (here in yellow) is equivalent to 2 NOPs. We see through this situation that the number of NOPs adapts according to the distance separating the ALEA numbers. Complementary ALEA Finally, we can observe a last example of ALEA, it is a ALEA caused by two non-successive instructions, this situation is simulated in the timing diagram below. We send a first instruction “05050100” = R5&lt;= R1 We send a second instruction “06001200” = R0&lt;= 12 We send a third instruction “06001200” = R0&lt;= 12 We send a fourth instruction “08020500” = @02 &lt;=R5 Here the ALEA number is between the fourth and first instructions the bubble (here in yellow) is equivalent to 1 NOP. We see through this situation that the number of NOPs adapts according to the distance separating the ALEA numbers and that we have treated all possible cases. RISC Microprocessor Implementation Implementation Choices We could have implemented our components and made them work in different ways. For the components we simply designed them according to the indications of the subject. For the data path we decided to implement the 4 MUX delimiting the pipeline stages in the form of components. The discrete LC and simple MUX components were implemented concurrently directly in the data path. We believe that despite the loss of readability, this increases the performance of our microprocessor. Analysis Upgrate Choices Amelioration Axes At the end of the project, several possibilities are available to us, we can improve our processor. For this, different opportunities present themselves to us, the first is to complete our instruction set in particular by adding functions such as logical OR, logical AND, etc. These functions are already integrated into our ALU, so we would have to modify our data path and our randomness management. Another area of ​​improvement is the addition of jump and conditional jump type instructions. This area is interesting because it allows us to create more complex algorithms. A fourth area of ​​improvement is to reduce the consumption of our microprocessor and its surface area as much as possible. Finally, a last possible area is the optimization of the system to increase its operating frequency. This is the choice we have decided to make, it is purely arbitrary. Frequential Analysis and Critical Path Our first Timing report indicates a MAX frequency of 65MHz, this result obviously does not satisfy us. One might think that managing the falling edge randomness decreases our max frequency, however the critical path tells us that we should look at our memories. After optimizing our memory path, we have a clearer implementation schematic: However our frequency is not higher, so we look again at our critical path: Despite our efforts we have not managed to reduce the propagation times through this path. Performance Energetic Consumption Although our modifications did not increase the frequency, the energy consumption has decreased significantly. The decrease is of the order of 175%. Below you will find the summary power report. Component Our consumption is intrinsically linked to our frequency and number of components. Below you will find extracts from the report indicating the different components used for our project and in what proportions. Conclusion The project was very interesting to carry out, the discovery of the Vivado software was instructive for us who had only worked on Qartus. This project also allowed us to apply in a concrete way the different notions seen during the modeling of digital components and architectures. We encountered many difficulties, particularly when trying to optimize critical paths, and we ultimately did not achieve our goals. Despite this failure, we are satisfied with our management of hazards. In addition, the approach allowed us to go further in the use of the different tools offered by Vivado, and on Vhdl design in general. Knowledge and understanding of the architecture of a microprocessor are also useful to us, we can describe this knowledge as transversal skills.]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Courses 2025-2026</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2022-2023.html" rel="alternate" type="text/html" title="My Courses 2025-2026" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses-2022-2023</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2022-2023.html"><![CDATA[<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
 
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>The “Low Power Wireless Networks” course provided an in-depth look into the principles and applications of low power wireless personal area networks (LP-WPAN). The course covered various protocols and technologies used in LP-WPAN, focusing on their efficiency and scalability in IoT contexts.</p>
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-<p>Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size.</p>
-
-<h4 id="new-concepts-learned">New Concepts Learned</h4>
-<p>6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs.</p>
-<h4 id="my-function">My Function</h4>
-<p>In this course, I was responsible for:</p>
-<ul>
-  <li>Understanding the principles and architecture of 6LoWPAN.</li>
-  <li>Exploring various protocols and their applications in low power wireless networks.</li>
-  <li>Conducting experiments to test the efficiency and scalability of different LP-WPAN solutions.</li>
-</ul>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of the TCP/IP protocol stack for LP-WPAN, focusing on the 802.15.4 norm, IPv6, and 6LoWPAN.</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h4 id="1-ipv6-basics-for-iot">1. IPv6 Basics for IoT</h4>
-<p>I learned about the basics of IPv6, including auto-configuration, router advertisements, multicasting, and routing. These concepts are necessary for understanding how IPv6 can be used in IoT networks to provide efficient and scalable communication.</p>
-
-<h4 id="2-auto-configuration-of-link-local-addresses">2. Auto-configuration of Link-local Addresses</h4>
-<p>We practiced auto-configuring link-local IPv6 addresses on network interfaces. This involved bringing up the network interface and observing the assignment of IPv6 addresses. We also analyzed the Duplicate Address Detection (DAD) procedures using tools like tcpdump and wireshark.</p>
-
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/BE_Low_Power/auto_conf.png" style="width: 70%;" />
-</div>
-<p><br /></p>
-
-<p>We executed the command <code class="language-plaintext highlighter-rouge">ifconfig eth0 up</code> to bring up the network interface <code class="language-plaintext highlighter-rouge">eth0</code>. Following this, we used <code class="language-plaintext highlighter-rouge">ip -6 addr show dev eth0</code> to display the IPv6 addresses assigned to the interface. The output showed an address in the format <code class="language-plaintext highlighter-rouge">inet6 fe80::527c:6fff:fe56:e8b0</code>.</p>
-
-<p>This address is a link-local IPv6 address, which is automatically configured on all IPv6-enabled interfaces. Link-local addresses are used for communication within a single network segment and are not routable beyond that segment.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">fe80::/10</code> prefix indicates that it is a link-local address. The remaining part of the address (<code class="language-plaintext highlighter-rouge">527c:6fff:fe56:e8b0</code>) is derived from the interface’s MAC address using the Modified EUI-64 format.</p>
-
-<p>Understanding link-local addresses is crucial for configuring and troubleshooting IPv6 networks, as they are fundamental for neighbor discovery and other local network operations.</p>
-
-<h4 id="3-auto-configuration-of-unicast-global-addresses">3. Auto-configuration of Unicast Global Addresses</h4>
-<p>We explored the process of auto-configuring unicast global IPv6 addresses using router advertisements. This involved configuring the router to send advertisements and observing how end-hosts derive their network configuration from these advertisements.</p>
-
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/BE_Low_Power/dump.png" style="width:80%;" />
-</div>
-<p><br /></p>
-
-<p>We used tool tcpdump to capture and analyze the ICMPv6 messages exchanged between the router and the end-hosts. These messages indicate the neighbor solicitation and router solicitation processes, for the auto-configuration of unicast global IPv6 addresses.</p>
-
-<p>The neighbor solicitation message is used to discover the link-layer address of a neighbor or to verify that a neighbor is still reachable.</p>
-
-<p>The router solicitation message is sent by an end-host to request a router advertisement from a local router, which contains the necessary information for the end-host to configure its global IPv6 address.</p>
-
-<h4 id="4-end-to-end-ipv6-connectivity-and-mqtt">4. End-to-end IPv6 Connectivity and MQTT</h4>
-<p>We established end-to-end IPv6 connectivity with an application server and set up MQTT for data distribution. This involved configuring the MQTT broker and using tools like mosquitto_sub and mosquitto_pub to distribute data between topic publishers and consumers.</p>
-
-<h4 id="5-6lowpan-header-compression">5. 6LoWPAN Header Compression</h4>
-<p>We practiced some aspects of 6LoWPAN, focusing on its header compression mechanism. This involved analyzing the encapsulation of IPv6 packets in 6LoWPAN frames and identifying the modes used for compressing different fields of the IPv6 header.</p>
-
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/BE_Low_Power/header.png" style="width: 70%;" />
-</div>
-<p><br /></p>
-
-<p>We used Wireshark to capture and analyze ICMPv6 packets. By examining the ICMPv6 section, we could see the IP Header Compression (IPHC) header, which provides information about the compressed IPv6 header fields. This analysis helped us understand how 6LoWPAN reduces the overhead of IPv6 headers, making it suitable for low power and lossy networks.</p>
-
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/BE_Low_Power/compression.png" style="width: 70%;" />
-</div>
-<p><br /></p>
-
-<h4 id="6-rpl-routing-protocol">6. RPL Routing Protocol</h4>
-<p>We explored the RPL routing protocol, which is designed for low power and lossy networks. This involved configuring a network topology with RPL enabled and analyzing the routing tables and traffic generated by the protocol.</p>
-
-<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/BE_Low_Power/node.png" style="width: 90%;" />
+<div class="year-nav">
+  <a href="./my-courses-2024-2025.html">2024-2025</a>
+  <a href="./my-courses-2023-2024.html">2023-2024</a>
+  <a href="./my-courses-2022-2023.html" class="active">2022-2023</a>
 </div>
 
-<ul>
-  <li><strong>Multipoint-to-point traffic</strong>: Traffic from multiple nodes converging to a single root node, typically used for data collection in sensor networks.</li>
-  <li><strong>Point-to-multipoint traffic</strong>: Traffic from a single root node disseminating information to multiple nodes, often used for control messages or updates.</li>
-  <li><strong>Point-to-point traffic</strong>: Direct communication between two nodes within the network, used for peer-to-peer data exchange.</li>
-</ul>
+<h1 id="my-courses---2022-2023">My Courses - 2022-2023</h1>
 
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+<hr />
 
-<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
-<ul>
-  <li>Understanding the fundamentals of LP-WPAN and its TCP/IP protocol stack.</li>
-  <li>Analyzing the benefits and drawbacks of using standard protocols based on IP.</li>
-  <li>Integrating IPv6 in low power use cases with 6LoWPAN.</li>
-  <li>Understanding the 802.15.4 norm and its applications in protocols like Zigbee.</li>
-</ul>
+<h2 id="semester-5-s5">Semester 5 (S5)</h2>
 
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts.</p>
+<h3 id="-architecture-informatique-matérielle"><a href="./architecture-informatique-materielle.html">💻 Architecture Informatique Matérielle</a></h3>
+<p><strong>Content</strong>: Computer hardware architecture fundamentals and design.</p>
 
-<p>Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively.</p>
+<h3 id="-circuits-et-filtres-analogiques"><a href="./circuits-filtres-analogiques.html">🔌 Circuits et Filtres Analogiques</a></h3>
+<p><strong>Content</strong>: Analog circuits design and filter theory.</p>
 
-<h3 id="my-opinion">My Opinion</h3>
-<p>It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies.</p>
+<h3 id="-composants-et-notions-de-puissance"><a href="./composants-puissance.html">⚡ Composants et Notions de Puissance</a></h3>
+<p><strong>Content</strong>: Power components and power electronics fundamentals.</p>
 
-<div style="text-align: center;">
-    <h1>Project Report</h1>
+<h3 id="-fondements-électronique-numérique"><a href="./fondements-electronique-numerique.html">📟 Fondements Électronique Numérique</a></h3>
+<p><strong>Content</strong>: Digital electronics fundamentals and logic design.</p>
+
+<h3 id="️-langage-c"><a href="./langage-c.html">🖥️ Langage C</a></h3>
+<p><strong>Content</strong>: C programming language and system programming.</p>
+
+<h3 id="-logique-séquentielle"><a href="./logique-sequentielle.html">🔄 Logique Séquentielle</a></h3>
+<p><strong>Content</strong>: Sequential logic circuits and finite state machines.</p>
+
+<h3 id="-modélisation-et-analyse-des-systèmes-linéaires-et-représentation-détat"><a href="./modelisation-systemes-lineaires.html">📊 Modélisation et Analyse des Systèmes Linéaires et Représentation d’État</a></h3>
+<p><strong>Content</strong>: Linear systems modeling and state-space representation.</p>
+
+<h3 id="-modélisation-et-commande-des-systèmes-à-événements-discrets"><a href="./systemes-evenements-discrets.html">🎮 Modélisation et Commande des Systèmes à Événements Discrets</a></h3>
+<p><strong>Content</strong>: Discrete event systems modeling and control.</p>
+
+<h3 id="️-modélisation-et-commande-des-systèmes-linéaires-continus"><a href="./systemes-lineaires-continus.html">🎛️ Modélisation et Commande des Systèmes Linéaires Continus</a></h3>
+<p><strong>Content</strong>: Continuous linear systems modeling and control.</p>
+
+<h3 id="-réseau"><a href="./reseau-s5.html">🌐 Réseau</a></h3>
+<p><strong>Content</strong>: Computer networks fundamentals and protocols.</p>
+
+<h3 id="-signal"><a href="./signal.html">📡 Signal</a></h3>
+<p><strong>Content</strong>: Signal processing and analysis fundamentals.</p>
+
+<h3 id="-système-unix"><a href="./systeme-unix.html">🐧 Système Unix</a></h3>
+<p><strong>Content</strong>: Unix/Linux system administration and shell programming.</p>
+
+<h3 id="-systèmes-bouclés"><a href="./systemes-boucles.html">🔁 Systèmes Bouclés</a></h3>
+<p><strong>Content</strong>: Feedback control systems and closed-loop analysis.</p>
+
+<h3 id="️-systèmes-dexploitation"><a href="./systemes-exploitation.html">⚙️ Systèmes d’Exploitation</a></h3>
+<p><strong>Content</strong>: Operating systems principles and implementation.</p>
+
+<hr />
+
+<h2 id="semester-6-s6">Semester 6 (S6)</h2>
+
+<h3 id="️-architecture-matérielle"><a href="./architecture-materielle.html">🖥️ Architecture Matérielle</a></h3>
+<p><strong>Content</strong>: Advanced computer hardware architecture concepts.</p>
+
+<h3 id="-électronique-fonctions-analogiques"><a href="./electronique-fonctions-analogiques.html">🔊 Électronique Fonctions Analogiques</a></h3>
+<p><strong>Content</strong>: Analog electronic functions and applications.</p>
+
+<h3 id="-électronique-fonctions-numériques"><a href="./electronique-fonctions-numeriques.html">💾 Électronique Fonctions Numériques</a></h3>
+<p><strong>Content</strong>: Digital electronic functions and design.</p>
+
+<h3 id="-filtrage-numérique"><a href="./filtrage-numerique.html">📊 Filtrage Numérique</a></h3>
+<p><strong>Content</strong>: Digital signal processing and filtering techniques.</p>
+
+<h3 id="-gestion"><a href="./gestion.html">💼 Gestion</a></h3>
+<p><strong>Content</strong>: Management principles and project management.</p>
+
+<h3 id="️-langage-dassemblage-arm-cortex"><a href="./assemblage-arm-cortex.html">⚙️ Langage d’Assemblage ARM CORTEX</a></h3>
+<p><strong>Content</strong>: ARM CORTEX assembly language programming.</p>
+
+<h3 id="-microcontrôleur"><a href="./microcontroleur.html">🔌 Microcontrôleur</a></h3>
+<p><strong>Content</strong>: Microcontroller programming and embedded systems.</p>
+
+<h3 id="-qualité-sécurité-environnement"><a href="./qualite-securite-environnement.html">🌍 Qualité Sécurité Environnement</a></h3>
+<p><strong>Content</strong>: Quality, safety, and environmental management.</p>
+
+<h3 id="-signaux-aléatoires"><a href="./signaux-aleatoires.html">📈 Signaux Aléatoires</a></h3>
+<p><strong>Content</strong>: Random signals and stochastic processes.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My Courses 2025-2026</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2023-2024.html" rel="alternate" type="text/html" title="My Courses 2025-2026" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses-2023-2024</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2023-2024.html"><![CDATA[<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses-2024-2025.html">2024-2025</a>
+  <a href="./my-courses-2023-2024.html" class="active">2023-2024</a>
+  <a href="./my-courses-2022-2023.html">2022-2023</a>
 </div>
 
-<div style="display: flex; justify-content: center;">
-    <embed src="/img/BE_Low_Power/IPV6_Report.pdf" width="100%" height="800px" type="application/pdf" />
+<h1 id="my-courses---2023-2024">My Courses - 2023-2024</h1>
+
+<hr />
+
+<h2 id="semester-7-s7">Semester 7 (S7)</h2>
+
+<h3 id="-analyse-des-systèmes-non-linéaires"><a href="./analyse-systemes-non-lineaires.html">📊 Analyse des Systèmes Non Linéaires</a></h3>
+<p><strong>Content</strong>: Study of non-linear systems analysis and control methods.</p>
+
+<h3 id="-architectures-analogiques-transmission-information"><a href="./architectures-analogiques-transmission.html">📡 Architectures Analogiques Transmission Information</a></h3>
+<p><strong>Content</strong>: Analog architectures for information transmission systems.</p>
+
+<h3 id="-architectures-analogiques-systèmes-embarqués"><a href="./architectures-analogiques-embarques.html">🔌 Architectures Analogiques Systèmes Embarqués</a></h3>
+<p><strong>Content</strong>: Analog architectures for embedded systems.</p>
+
+<h3 id="-architectures-numériques-avancées-vhdl"><a href="./architectures-numeriques-vhdl.html">💻 Architectures Numériques Avancées VHDL</a></h3>
+<p><strong>Content</strong>: Advanced digital architectures and VHDL programming.</p>
+
+<h3 id="-conception-orientée-objet-uml"><a href="./conception-uml.html">🎨 Conception Orientée Objet UML</a></h3>
+<p><strong>Content</strong>: Object-oriented design principles and UML modeling.</p>
+
+<h3 id="-étude-et-modélisation-des-composants-actifs"><a href="./etude-composants-actifs.html">⚡ Étude et Modélisation des Composants Actifs</a></h3>
+<p><strong>Content</strong>: Study and modeling of active electronic components.</p>
+
+<h3 id="-filtrage-actif-et-modélisation-sources-bruit"><a href="./filtrage-actif-bruit.html">🔊 Filtrage Actif et Modélisation Sources Bruit</a></h3>
+<p><strong>Content</strong>: Active filtering and noise source modeling.</p>
+
+<h3 id="-finance"><a href="./finance.html">💰 Finance</a></h3>
+<p><strong>Content</strong>: Financial principles and management for engineers.</p>
+
+<h3 id="️-programmation-orientée-objets-c"><a href="./poo-cpp.html">🖥️ Programmation Orientée Objets C++</a></h3>
+<p><strong>Content</strong>: Object-oriented programming with C++.</p>
+
+<h3 id="-programmation-orientée-objets-java"><a href="./poo-java.html">☕ Programmation Orientée Objets Java</a></h3>
+<p><strong>Content</strong>: Object-oriented programming with Java.</p>
+
+<h3 id="-sécurité-matérielle"><a href="./securite-materielle.html">🔐 Sécurité Matérielle</a></h3>
+<p><strong>Content</strong>: Hardware security principles and implementations.</p>
+
+<h3 id="️-systèmes-multivariables"><a href="./systemes-multivariables.html">🎛️ Systèmes Multivariables</a></h3>
+<p><strong>Content</strong>: Multivariable control systems analysis and design.</p>
+
+<hr />
+
+<h2 id="semester-8-s8">Semester 8 (S8)</h2>
+
+<h3 id="-chaînes-électroniques-dacquisition-de-linformation"><a href="./chaines-acquisition.html">🔗 Chaînes Électroniques d’Acquisition de l’Information</a></h3>
+<p><strong>Content</strong>: Electronic chains for information acquisition systems.</p>
+
+<h3 id="-commande-numérique"><a href="./commande-numerique.html">🎮 Commande Numérique</a></h3>
+<p><strong>Content</strong>: Digital control systems and algorithms.</p>
+
+<h3 id="️-droit"><a href="./droit.html">⚖️ Droit</a></h3>
+<p><strong>Content</strong>: Legal fundamentals for engineers and business.</p>
+
+<h3 id="-graphes-et-programmation-linéaire"><a href="./graphes-programmation-lineaire.html">📈 Graphes et Programmation Linéaire</a></h3>
+<p><strong>Content</strong>: Graph theory and linear programming methods.</p>
+
+<h3 id="-interconnexion-réseau"><a href="./interconnexion-reseau.html">🌐 Interconnexion Réseau</a></h3>
+<p><strong>Content</strong>: Network interconnection protocols and technologies.</p>
+
+<h3 id="-machine-learning"><a href="./machine-learning-s8.html">🤖 Machine Learning</a></h3>
+<p><strong>Content</strong>: Introduction to machine learning algorithms and applications.</p>
+
+<h3 id="-processus-stochastiques-et-files-dattentes"><a href="./processus-stochastiques.html">📊 Processus Stochastiques et Files d’Attentes</a></h3>
+<p><strong>Content</strong>: Stochastic processes and queuing theory.</p>
+
+<h3 id="-réseaux-de-pétri"><a href="./reseaux-petri.html">🔷 Réseaux de Pétri</a></h3>
+<p><strong>Content</strong>: Petri nets modeling and analysis for discrete event systems.</p>
+
+<h3 id="️-temps-réel"><a href="./temps-reel.html">⏱️ Temps Réel</a></h3>
+<p><strong>Content</strong>: Real-time systems design and implementation.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2024-2025.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses-2024-2025</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses-2024-2025.html"><![CDATA[<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses-2024-2025.html" class="active">2024-2025</a>
+  <a href="./my-courses-2023-2024.html">2023-2024</a>
+  <a href="./my-courses-2022-2023.html">2022-2023</a>
 </div>
 
-<p style="text-align: center;">
-    <a href="/img/BE_Low_Power/IPV6_Report.pdf">Open the full report</a>
-</p>
+<h1 id="my-courses---2024-2025">My Courses - 2024-2025</h1>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Low Power Wireless Personal Area Network]]></summary></entry><entry><title type="html">My Courses</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html" rel="alternate" type="text/html" title="My Courses" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-courses</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-courses.html"><![CDATA[<h1 id="2024-2025">2024-2025</h1>
+<hr />
 
 <h2 id="-portfolio"><a href="./portfolio.html">📁 Portfolio</a></h2>
 <p><strong>Duration</strong>: Ongoing<br />
@@ -475,13 +1274,14 @@ p {
 <h2 id="-master-reoc"><a href="./master-reoc.html">🎓 Master REOC</a></h2>
 <p><strong>Duration</strong>: 60 hours<br />
 <strong>Dates</strong>: 07/11/2024 - 29/01/2025<br />
-<strong>Content</strong>: Comprehensive study of embedded networks and connected objects.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024-2025]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
+<strong>Content</strong>: Comprehensive study of embedded networks and connected objects.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024-2025 2023-2024 2022-2023 My Courses - 2024-2025 📁 Portfolio Duration: Ongoing Dates: 01/10/2024 - 30/01/2025 Content: Compilation of projects and assignments completed throughout the course. ☁️ Cloud Edge Computing Duration: 16.25 hours Dates: 30/09/2024 - 14/10/2024 Content: Learn and practice about virtualization techniques such as VMs and containers. 🔋 Energy for Connected Object Duration: 10.5 hours Dates: 07/10/2024 - 15/10/2024 Content: Introduction to the different methods to power Energy for Connected Objects. 📚 Service Oriented Architecture MOOC Duration: 31 hours Dates: 04/10/2024 - 14/01/2025 Content: Learn about legacy and actual architectures service oriented for software engineering. 📶 5G Technologies Duration: 7.5 hours Dates: 30/09/2024 - 21/11/2024 Content: Learn about 5G and more generally topics related to cellular networks. 🔗 Wireless Sensor Networks and Localization (WSNL) Duration: 33.25 hours Dates: 07/10/2024 - 20/12/2024 Content: Learn about wireless sensor networks technologies. 📡 Middleware for IoT Duration: 14.75 hours Dates: 15/11/2024 - 20/12/2024 Content: Discover communication protocols for IoT. 🌐 Emerging Network Duration: 10.5 hours Dates: 08/01/2025 - 24/01/2025 Content: Discovery of emerging network paradigms. 📡 Low Power Wireless Personal Area Network Duration: 7.5 hours Dates: 04/12/2024 - 07/01/2025 Content: Definition of a TCP/IP protocol stack for a LP-WPAN network. 🔒 Security Connected Object Duration: 13 hours Dates: 15/10/2024 - 22/01/2025 Content: Discussion about the need and how to secure protocols for IoT. 🧠 Embedded IA for IOT Duration: 15.75 hours Dates: 04/12/2024 - 24/01/2025 Content: Introduction to the concepts of AI applied to an IoT context. 🤖 AIME - Sensors Duration: 13.75 hours Dates: 04/11/2024 - 08/11/2024 Content: Discover the creation of a sensor. 🔌 Microcontroller Open Source Hardware and Sensors Duration: 39 hours Dates: 28/11/2024 - 18/12/2024 Content: Introduction to microcontrollers programming and implementation of our sensor in a complex circuit. 🇬🇧 English Duration: 30 hours Dates: 01/10/2024 - 30/01/2025 Content: Improve English language skills with a focus on technical and professional communication. 💧 Innovative Project: Water Leak Detection Duration: 76.75 hours Dates: 30/09/2024 - 29/01/2025 Content: The guideline industrial project of our year. 🎓 Master REOC Duration: 60 hours Dates: 07/11/2024 - 29/01/2025 Content: Comprehensive study of embedded networks and connected objects.]]></summary></entry><entry><title type="html">My CV</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html" rel="alternate" type="text/html" title="My CV" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-cv</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-cv.html"><![CDATA[<h1 id="cédric-chanfreau-">Cédric Chanfreau <a href="https://www.linkedin.com/in/cedricchanfreau"><img src="https://img.icons8.com/?size=32&amp;id=13930&amp;format=png" alt="LinkedIn" /></a></h1>
 
 <p><strong>Phone</strong> : +(33) 679 791 782<br />
 <strong>Address</strong> : Rue du libre-échange, 31500 Toulouse, France<br />
 <strong>Email</strong> : cedric.chanfreau@gmail.com</p>
 
-<h2 id="open-my-cv-pdf"><a href="/file/my-cv.pdf" target="_blank">Open my CV (PDF)</a></h2>
+<h2 id="open-my-french-cv-pdf"><a href="/file/CV_Cédric_Chanfreau_FR.pdf" target="_blank">Open my French CV (PDF)</a></h2>
+<h2 id="open-my-english-cv-pdf"><a href="/file/CV_Cedric_Chanfreau_USA.pdf" target="_blank">Open my English CV (PDF)</a></h2>
 
 <hr />
 
@@ -586,689 +1386,31 @@ p {
     p {
     text-align: justify;
     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau]]></summary></entry><entry><title type="html">My Profile</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html" rel="alternate" type="text/html" title="My Profile" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-profile</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-profile.html"><![CDATA[<p>I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I am a highly motivated master’s student in apprenticeship studying Automation and Electrical Engineering looking for a permanent contract in the field of software development. I have great teamwork skills and work in a goal-orientated manner. I have acquired much practical and technical knowledge on programming and electronic systems that I would like to apply and develop in your company.]]></summary></entry><entry><title type="html">My Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html" rel="alternate" type="text/html" title="My Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-projects.html"><![CDATA[<h1 id="2024">2024</h1>
+</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cédric Chanfreau Phone : +(33) 679 791 782 Address : Rue du libre-échange, 31500 Toulouse, France Email : cedric.chanfreau@gmail.com Open my French CV (PDF) Open my English CV (PDF) About Me I am a highly motivated recent graduate with a master’s degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, and software development, with hands-on experience in international environments. Actively seeking opportunities in the United States to leverage my technical expertise and teamwork skills in innovative projects. Technical Skills Programming &amp; Embedded Systems: C, Python, Java, C++, Assembly, VHDL, PLC (Ladder, ST, FBD) Software &amp; Tools: Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git Communication &amp; APIs: RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C Frontend &amp; Visualization: HTML, CSS, JavaScript, Node-RED, React Native Languages: French (native), English (advanced), Spanish (intermediate) Education 2024 - 2025: Master 2 (M2) in Embedded Networks and Connected Objects (REOC), ENSEEIHT, Toulouse Specialized in IoT systems: communication technologies, data processing, and network security. Developed a software-defined communication infrastructure (SDCI) for managing and controlling network traffic using Docker and REST APIs. 2022 - 2025: Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences (INSA), Toulouse Key areas: Embedded Systems, Machine Learning, Computer Security, and Electronic Circuit Design. Designed and developed a gas sensor: component creation, electronic board design and programming, mobile app and website development, MQTT integration, Node-RED dashboard, and datasheet creation. Professional Experience International Engineering Mobility - Vitesco Technologies, Romania Jul 2024 - Sep 2024 Studied and implemented Flash memory management solutions on new microcontrollers. Created the environment to automate and optimize tests, using Python and CMM scripts. Embedded Software Engineer Apprenticeship - Vitesco Technologies, France Sep 2022 - Sep 2025 Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT). Tested and debugged code to ensure proper operation and problem resolution. Presented regular project reviews to team members in English. Extracurricular Activities Rugby Player: Scrum-half since 2007 at Federal 1 level. Achieved 3rd place in French championships. Volunteering: Assessor of a polling station for the regional and departmental elections. Independent Travel: Explored destinations across Europe (Italy, England, Spain, etc.) and beyond, gaining diverse cultural insights.]]></summary></entry><entry><title type="html">My Personal Projects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/my-perso-projects.html" rel="alternate" type="text/html" title="My Personal Projects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/my-perso-projects</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/my-perso-projects.html"><![CDATA[<h1 id="personal-projects">Personal Projects</h1>
 
-<h2 id="-be-robot-insa"><a href="./be-projet-robot.html">🤖 BE Robot INSA</a></h2>
-<h2 id="-connected-bowl-insa"><a href="./connected-bowl.html">🏠 Connected Bowl INSA</a></h2>
-<h2 id="-be-trotinette-insa"><a href="./be-trotinette.html">🛴 BE Trotinette INSA</a></h2>
+<h1 id="2025">2025</h1>
 
-<hr />
+<ul>
+  <li>
+    <h2 id="-ia-automation"><a href="./IA-Automation.html">🤖 IA Automation</a></h2>
+  </li>
+</ul>
+
+<h1 id="2024">2024</h1>
+
+<ul>
+  <li>
+    <h2 id="-toulouse-sport"><a href="./Toulouse-Sport.html">🏉 Toulouse Sport</a></h2>
+  </li>
+  <li>
+    <h2 id="-website"><a href="./Website.html">🌐 Website</a></h2>
+  </li>
+</ul>
+
 <h1 id="2023">2023</h1>
 
-<h2 id="-object-oriented-programming-insa"><a href="./object-oriented-programming.html">💻 Object-Oriented Programming INSA</a></h2>
-<h2 id="-risc-type-microprocessor-insa"><a href="./vhdl-risc-pipeline.html">🔧 RISC Type Microprocessor INSA</a></h2>
-<h2 id="-led-insa-60-ans"><a href="./led-insa-60-ans.html">💡 LED INSA 60 ANS</a></h2>
-
-<hr />
-<h1 id="2022">2022</h1>
-
-<h2 id="-c-and-network-project-insa"><a href="./network-project-C.html">🌐 C and Network Project INSA</a></h2>
-<h2 id="️-control-systems-project-insa"><a href="./control-system-project.html">⚙️ Control Systems Project INSA</a></h2>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[2024]]></summary></entry><entry><title type="html">5G Technologies</title><link href="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html" rel="alternate" type="text/html" title="5G Technologies" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/5G-Technologies.html"><![CDATA[<h1 id="5g-technologies">5G Technologies</h1>
-
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>During the “5G Technologies” course, taught by Etienne Sicard, the main objective was to explore various topics related to cellular networks, with a focus on the emerging 5G technology.</p>
-
-<p>The course employed reverse pedagogy, meaning that we were responsible for delivering presentations to learn. Thanks to deep research on different subjects, we understood the core technologies of 5G, its impact on society and many other subject</p>
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-<h4 id="environment-and-context">Environment and Context</h4>
-<p>During this course, we discussed a wide range of subjects. I had the opportunity to collaborate with Samia Boukouiss on a presentation about technologies for 6G. We covered various aspects such as 6G applications and opportunities, core 6G technologies, challenges in developing 6G, development timeline and global efforts, and 6G’s impact on society.</p>
-
-<p>I also participated in the presentations of my classmates, including:</p>
 <ul>
-  <li>Starlink, Kuiper</li>
-  <li>LTE-M for IoT</li>
-  <li>Samsung &amp; 6G</li>
-  <li>Drone-trains</li>
-  <li>Orange and 6G</li>
-  <li>Environmental impacts</li>
-  <li>5G: Vehicle to Everything (V2X)</li>
-  <li>Cancer &amp; EM waves</li>
-  <li>…</li>
-</ul>
-
-<p>Through these presentations, I learned a lot of new things.</p>
-
-<h4 id="my-function">My Function</h4>
-<p>In the practical sessions, I was responsible for:</p>
-<ul>
-  <li>Researching and presenting on 6G technologies.</li>
-  <li>Collaborating with peers to explore the implications of 5G and future 6G technologies.</li>
-  <li>Participating in discussions and practical labs to understand the technical aspects of 5G.</li>
-</ul>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of 5G technologies, focusing on core technologies, applications, and the challenges in developing 6G. 
-Thanks to the presentations of my colleagues and myself, I was able to learn:</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h4 id="1-5g-and-6g-modulations">1. 5G and 6G Modulations</h4>
-<p>I learned about the different modulation techniques used in 5G and the advancements expected in 6G:</p>
-
-<ul>
-  <li>5G utilizes principaly Orthogonal Frequency-Division Multiplexing (OFDM) to improve spectral efficiency, support higher data rates, and enhance communication robustness by dividing the bandwidth into multiple orthogonal subcarriers, reducing interference and handling multipath propagation effectively.</li>
-</ul>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-     <img src="/img/BE_6G/5G_graphe.png" style="width: 60%;" />
-     <img src="/img/BE_6G/5G_canal.png" style="width: 40%;" />
-</div>
-<p><br />
-However, OFDMA cannot support a large number of mobile devices for 6G generations, other modulation techniquesare expected:</p>
-
-<ul>
-  <li>6G is expected to leverage advanced modulation techniques such as Orbital Angular Momentum (OAM) multiplexing, which can increase the capacity of wireless communication systems by using the spatial domain to transmit multiple data streams simultaneously.</li>
-</ul>
-
-<h4 id="2-technologies-for-6g">2. Technologies for 6G</h4>
-<p>The presentation on technologies for 6G provided insights into the core technologies that will drive the next generation of cellular networks.</p>
-
-<ul>
-  <li><strong>Terahertz (THz) Communication</strong>: Ultra-high data rates and low latency. Applications include VR, AR, and autonomous vehicles.</li>
-  <li><strong>AI and Machine Learning for 6G</strong>: Optimizing network performance and managing data congestion. Applications include smart routing and predictive data demand.</li>
-  <li><strong>Quantum Communication and Advanced Security</strong>: Enhanced security with quantum-based communication. Uses quantum cryptography to protect data and secure communication resistant to cyber-attacks.</li>
-  <li><strong>Visible Light Communication (VLC)</strong>: Utilizes the visible light spectrum to transmit data. Applications include underwater communication and indoor navigation.</li>
-  <li><strong>Ultra-massive MIMO (Multiple Input, Multiple Output)</strong>: Uses large antenna arrays to boost network capacity. Applications include high-density urban areas.</li>
-  <li>…</li>
-</ul>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
-<ul>
-  <li>Understanding and mastering new mobile network technologies.</li>
-  <li>Developing and deploying core 6G technologies.</li>
-  <li>Analyzing the impact of 6G on society and various sectors.</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>Through this course, I was able to focus on a specific topic, study it in depth, and present my findings. This process allowed me to develop skills in researching, presenting, and discussing technical topics that is required in the professional world.</p>
-
-<p>Also, I only attended my peers’ presentations and took notes, which allowed me to stay informed about the technologies without becoming a complete expert on the subject wich is a bit frustrating.</p>
-
-<p>It was formative to listen to a series of presentations even if it was just information. I think that adding some practical aspects could have been interesting if it is really possible.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-<p>This course allowed me to delve into everyday technologies that I had not previously considered studying, revealing their complexity and functionality. It also enabled me to envision the future, after studying 6G, I have a rough idea of what the next generation of networks might look like.</p>
-
-<p>The presentations were a great way to learn a lot in a short amount of time. By preparing and listening to them, we covered many topics in depth, which really helped us understand 5G and 6G technologies better.</p>
-
-<div style="text-align: center;">
-    <h1>Project Report</h1>
-</div>
-
-<div style="display: flex; justify-content: center;">
-     <iframe src="/img/BE_6G/6G.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
-</div>
-
-<p style="text-align: center;">
-     <a href="/img/BE_6G/6G.pdf" target="_blank">Download Complete Report</a>
-</p>
-
-<style>
-     body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f9;
-          color: #333;
-          line-height: 1.6;
-     }
-     h2, h3, h4 {
-          color: #007BFF;
-     }
-     footer {
-          display: flex;
-          justify-content: space-around;
-          margin-top: 20px;
-     }
-     .footer-section {
-          flex: 1;
-          text-align: center;
-     }
-     .styled-button {
-          display: inline-block;
-          width: 100px;
-          margin: 10px;
-          padding: 15px 30px;
-          font-size: 16px;
-          color: white;
-          background-color: #66B2FF;
-          text-decoration: none;
-          border-radius: 25px;
-          transition: background-color 0.3s, transform 0.3s;
-     }
-     .styled-button:hover {
-          background-color: #3399FF;
-          transform: scale(1.05);
-     }
-     p {
-    text-align: justify;
-     }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[5G Technologies]]></summary></entry><entry><title type="html">AIME</title><link href="http://localhost:4000/jekyll/update/2024/10/02/aime.html" rel="alternate" type="text/html" title="AIME" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/aime</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/aime.html"><![CDATA[<h1 id="aime---sensors">AIME - Sensors</h1>
-
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>The “AIME - Sensors” course, was an engaging and hands-on experience that focused on the creation and integration of nano-technology sensors. During a week at the AIME (Atelier Interuniversitaire de Micro-nano Electronique) we had the opportunity to create a gas sensor from a simple half-made wafer. This experience provided insight into the manufacturing process and the costs associated with creating a single sensor.</p>
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-<p>During this course, I had the opportunity to work on both theoretical and practical aspects of sensor technology. The relevance of sensors in modern technology, especially in IoT applications, was evident throughout the course. The hands-on sessions were particularly beneficial, allowing me to apply the concepts learned in class to real-world scenarios.</p>
-
-<h4 id="my-function">My Function</h4>
-<p>During the labs, I participated in the chemical synthesis of the nanoparticles and the assembly of the sensor. This included applying the chemical solution to the wafer and performing dielectrophoresis to position the nanoparticles correctly.</p>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the fabrication steps of creating a gas sensor, focusing on the chemical and physical processes involved.</p>
-
-<h3 id="fabrication-steps">Fabrication Steps</h3>
-
-<h4 id="a-masking-oxidation">A. Masking Oxidation</h4>
-<p>Chemical oxidation: H2SO4 + H2O2 - This step involves chemically oxidizing the wafer surface to create a protective mask.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/oxidation.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="b-poly-silicon-deposition">B. Poly-Silicon Deposition</h4>
-<p>LPCVD furnace - Depositing a layer of polycrystalline silicon using Low-Pressure Chemical Vapor Deposition (LPCVD).</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/deposit.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="c-polysilicon-doping-n-type">C. Polysilicon Doping (n-type)</h4>
-<p>Phosphorus impurity diffusion - Doping the polysilicon layer with phosphorus impurities to modify its electrical properties.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/doping.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="d-photolithography-no-1-polysilicon-etching">D. Photolithography No. 1: “Polysilicon Etching”</h4>
-<p>Etching the polysilicon layer to create the desired patterns using photolithography.</p>
-
-<h4 id="e-organic-decontamination">E. Organic Decontamination</h4>
-<p>Removing organic contaminants from the wafer surface to ensure clean processing.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/look.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="f-dry-oxidation">F. Dry Oxidation</h4>
-<p>Performing dry oxidation to grow a thin oxide layer on the wafer surface.</p>
-
-<h4 id="g-photolithography-no-2-contact-openings">G. Photolithography No. 2: “Contact Openings”</h4>
-<p>Etching openings in the oxide layer to create contact points for electrical connections.</p>
-
-<h4 id="h-metallization">H. Metallization</h4>
-<p>Depositing a metal layer on the wafer to form electrical contacts and interconnections.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/silicon.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="i-photolithography-no-3-metal-etching">I. Photolithography No. 3: “Metal Etching”</h4>
-<p>Etching the metal layer to define the metal contacts and interconnections.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/sensor_micro.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="j-metal-annealing">J. Metal Annealing</h4>
-<p>Annealing the metal layer to improve its electrical properties and adhesion.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/annealing.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="l-sensor-assembly">L. Sensor Assembly</h4>
-<p>The final step involved assembling the sensor, connecting the wafer to electronic components, and testing its functionality. Detailed information can be found in the <a href="./microcontroleur_hardware.html">Microcontroller Hardware Section</a>.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/test.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="m-measures-under-controlled-atmosphere">M. Measures under Controlled Atmosphere</h4>
-<p>We conducted measurements under controlled atmosphere conditions to evaluate the gas sensors by exposing them to ammonia (NH3) and ethanol (C2H6O) at a concentration of 0.1% in dry air. The sensor’s resistance variation was recorded using Labview with a bias voltage of 20V.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_AIME/atmosphere.jpg" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="knowledge-and-skills-acquired">Knowledge and Skills Acquired</h3>
-<ul>
-  <li>Understanding the fundamentals of sensor technologies.</li>
-  <li>Designing and integrating sensors.</li>
-  <li>Applying chemical synthesis techniques for nanoparticle creation.</li>
-  <li>Assembling sensors and connecting them to electronic components.</li>
-  <li>Conducting experiments to assess sensor functionality and efficiency.</li>
-  <li>Recording and analyzing data from sensor experiments.</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>This course was a total discovery for me as I had no prior skills in this area. Understanding the chemical concepts was greatly facilitated by the teachers, who explained and guided each step thoroughly. I was attentive enough to grasp and practice everything, so I didn’t encounter any issues.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-<p>Before this course, I didn’t know exactly how sensors were made. Thanks to this course, it was an interesting first experience that gave me new skills, not exactly in my predilection area, but in understanding how sensors we use every day are made. We started the labs directly with the silicon already engraved, but it would also be interesting to start from scratch and engrave sensors directly on silicon.</p>
-
-<h4 id="project-link">Project Link</h4>
-
-<p>You can find the complete project report on <a href="https://github.com/Cyril-vsr/Capteur_Gaz">GitHub_Gas_Sensor</a>.</p>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[AIME - Sensors]]></summary></entry><entry><title type="html">Cloud Edge Computing</title><link href="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html" rel="alternate" type="text/html" title="Cloud Edge Computing" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/cloud-edge</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/cloud-edge.html"><![CDATA[<h1 id="cloud-edge-computing">Cloud Edge Computing</h1>
-
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>The Cloud Edge Computing course shows centralized cloud systems and decentralized edge solutions, preparing me to address modern technological challenges. Taught by Sami Yangui, the course delves into virtualization technologies, cloud services, and edge infrastructures. It emphasizes the design, deployment, and management of architectures that blend the low-latency benefits of edge computing with the scalability of cloud environments.</p>
-
-<p>This training is particularly relevant in today’s context, where the rise of IoT, real-time applications and networks necessitates expertise in these fields. In this course, I gained hands-on experience with tools such as Kubernetes, Docker, and VirtualBox, enabling me to create efficient systems.</p>
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-
-<p>During the Cloud and Edge Computing course, I explored both theoretical and practical aspects of hybrid architectures for modern computing environments. This course provided hands-on experience with virtualization techniques, cloud services, and edge computing solutions. The increasing demand for scalable, efficient, and low-latency services highlights the relevance of this subject in fields such as IoT, real-time systems, and 5G networks.</p>
-
-<h4 id="my-function">My Function</h4>
-
-<p>In this course, I was responsible for:</p>
-<ul>
-  <li>Learning and practicing virtualization techniques such as VMs and containers.</li>
-  <li>Designing, deploying, and managing hybrid architectures that combine cloud and edge computing.</li>
-  <li>Gaining skill with tools like Kubernetes, Docker and VirtualBox.</li>
-</ul>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of the Cloud Edge Computing course,  mainly learnt during technical labs.</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h4 id="1-type-1-and-type-2-hypervisors">1. Type 1 and Type 2 Hypervisors</h4>
-<p>One of the first concept I learned is the difference between Type 1 (bare metal) and Type 2 (hosted) hypervisors. Type 1 hypervisors run directly on the host hardware, offering better performance and increased security, while Type 2 hypervisors run as a software layer on an existing operating system, making them easier to use in desktop or development environments.</p>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_Cloud_Computing/H_type1.png" style="width: 40%; margin-right: 10px;" />
-    <img src="/img/BE_Cloud_Computing/H_type2.png" style="width: 40%;" />
-</div>
-<p><br /></p>
-
-<h4 id="2-virtualization-with-docker">2. Virtualization with Docker</h4>
-<p>Through practical work, I learned to use Docker to create, deploy, and manage containers. Docker allows for the virtualization of applications in isolated environments, making their deployment and management easier. I discovered the advantages of containers over virtual machines, particularly in terms of virtualization cost, CPU and memory resource usage, and flexibility.</p>
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/BE_Cloud_Computing/Docker.png" style="width: 30%;" />
-</div>
-<p><br /></p>
-
-<h4 id="3-openstack-for-cloud-management">3. OpenStack for Cloud Management</h4>
-<p>In addition to Docker, I gained experience with OpenStack, an open-source platform for cloud computing. OpenStack allows for the management of large pools of compute, storage, and networking resources, all managed through a dashboard or via the OpenStack API. I learned to deploy and configure OpenStack services, create and manage virtual machines, and set up networking and storage solutions within an OpenStack environment.</p>
-
-<div style="text-align: center;">
-    <img src="/img/BE_Cloud_Computing/sch_OpenStack.png" style="width: 40%;" />
-</div>
-<p><br /></p>
-
-<h4 id="4-network-configuration-with-virtualbox">4. Network Configuration with VirtualBox</h4>
-<p>The practical work also allowed me to configure networks using VirtualBox. I learned to create and configure virtual machines, test their connectivity, and set up port forwarding rules to enable communication between virtual machines and the host. I also configured private networks and routers to allow communication between different virtual machines.</p>
-<div style="text-align: center;">
-    <img src="/img/BE_Cloud_Computing/VirtualBox.png" style="width: 40%;" />
-</div>
-<p><br /></p>
-
-<h4 id="5-container-orchestration-with-kubernetes">5. Container Orchestration with Kubernetes</h4>
-<p>Finally I learned to use Kubernetes to orchestrate Docker containers. Kubernetes manages clusters of containers, automating their deployment, scaling, and management, which is essential for cloud-native applications. I configured a Kubernetes cluster and deployed services using YAML configuration files.
-<br /></p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
-<ul>
-  <li>Understanding virtualization technologies and their role in modern cloud infrastructures.</li>
-  <li>Designing and managing hybrid architectures that combine cloud and edge computing.</li>
-  <li>Gaining hands-on experience with tools like Kubernetes, Docker, AWS, and Azure.</li>
-  <li>Addressing advanced topics such as energy-efficient protocols, security challenges, and real-time data analysis at the edge.</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>I developed new skills in hybrid architectures and their applications in modern computing environments. I was able to comprehend and utilize all the concepts learned. However, I realized that I need to practice using all these tools in the future to avoid forgetting them, as I currently do not have the opportunity to work with them in my apprenticeship company.
-As the session on Kubernetes was done quickly with my binom, we had to pass quickly and just launch commands. Thanks to the report we did, it was simpler to understand but in a second time.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-<p>It was interesting, I had the chance to learn a lot of concepts I heard about in everyday life for some jobs. This course will be really useful for my professional path where these concepts could be applied.</p>
-
-<p>The course content was well-structured, starting from the basics of virtualization and gradually moving towards more complex topics. This progression helped me for a better understanding and then expand my knowledge to more advanced concepts.</p>
-
-<p>I now feel more confident in designing, deploying, and managing scalable cloud-edge solutions.</p>
-
-<div style="text-align: center;">
-    <h1>Project Report</h1>
-</div>
-
-<div style="display: flex; justify-content: center;">
-    <embed src="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf" />
-</div>
-
-<p style="text-align: center;">
-    <a href="/img/BE_Cloud_Computing/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf">Open the full report</a>
-</p>
-<p style="text-align: center;">
-    <a href="/img/BE_Cloud_Computing/Lab_Subject_cloud.pdf">Open Lab Subject</a>
-</p>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-        text-align: justify;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Cloud Edge Computing]]></summary></entry><entry><title type="html">Embedded AI for IoT</title><link href="http://localhost:4000/jekyll/update/2024/10/02/embedded-ia-iot.html" rel="alternate" type="text/html" title="Embedded AI for IoT" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/embedded-ia-iot</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/embedded-ia-iot.html"><![CDATA[<h1 id="embedded-ia-for-iot">Embedded IA for IoT</h1>
-
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>The “Embedded IA for IoT” course, taught by Philippe Leleux, was an interesting experience that on the integration of artificial intelligence nowadays. The primary focus was on understanding and implementing AI models on embedded devices with limited computational resources. This course was particularly relevant given the growing importance of AI in enhancing the functionality of IoT systems.</p>
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-<p>During this course, I explored both theoretical and practical aspects of embedding AI in IoT devices. The hands-on sessions were beneficial, allowing me to apply the concepts learned in class to real-world scenarios. The challenge of optimizing AI models to run efficiently on resource-constrained devices was both demanding and rewarding.</p>
-
-<h4 id="my-function">My Function</h4>
-<p>In this course, I was responsible for:</p>
-<ul>
-  <li>Understanding the principles of AI and its application in IoT.</li>
-  <li>Implementing and optimizing AI models for embedded devices.</li>
-  <li>Conducting experiments to test the efficiency and accuracy of these models.</li>
-</ul>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of the course, focusing on the problem analysis, solution design, and implementation of AI for an IoT application.</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h3 id="1-dynamic-time-warping-dtw">1. Dynamic Time Warping (DTW)</h3>
-<p>Dynamic Time Warping (DTW) is an algorithm used to measure the similarity between two temporal sequences that may vary in speed. It is particularly useful in time series analysis where the sequences may be out of phase. In the lab, we implemented DTW to align sequences of sensor data for human activity recognition. By calculating the optimal alignment between sequences, DTW helps in identifying similar patterns despite temporal distortions.</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define the DTW algorithm
-</span><span class="k">def</span> <span class="nf">dtw</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">gamma</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
-    <span class="n">N</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-    <span class="n">M</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-    <span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">full</span><span class="p">((</span><span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">M</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">np</span><span class="p">.</span><span class="n">inf</span><span class="p">)</span>
-    <span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">M</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-            <span class="k">if</span> <span class="nf">abs</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">gamma</span><span class="p">:</span>
-                <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">inf</span>
-                <span class="k">continue</span>
-            <span class="n">locald</span> <span class="o">=</span> <span class="nf">distance</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">b</span><span class="p">[</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span>
-            <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nf">min</span><span class="p">(</span>
-                <span class="n">g</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">locald</span><span class="p">,</span>
-                <span class="n">g</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">locald</span><span class="p">,</span>
-                <span class="n">g</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">w</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">locald</span>
-            <span class="p">)</span>
-
-    <span class="n">S</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">N</span><span class="p">,</span> <span class="n">M</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="n">M</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">S</span>
-</code></pre></div></div>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example 1: Numerical sequences
-</span><span class="n">a1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">b1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c1"># Calculate the DTW score using the absolute difference as the distance metric
-</span><span class="n">result1</span> <span class="o">=</span> <span class="nf">dtw</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nf">abs</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">y</span><span class="p">),</span> <span class="n">w</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">gamma</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">DTW score for example 1: </span><span class="si">{</span><span class="n">result1</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div></div>
-<p>In example 1, the DTW algorithm calculates the similarity between two numerical sequences (4, 6, 1) and (5, 1). The resulting score S=0.4 indicates the average cost of aligning the sequences, considering the absolute difference as the local distance metric, with local constraints (1, 1, 1) and a global constraint of 2.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example 2: Character sequences
-</span><span class="n">a2</span> <span class="o">=</span> <span class="p">(</span><span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">T</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">T</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">C</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">T</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">C</span><span class="sh">'</span><span class="p">)</span>
-<span class="n">b2</span> <span class="o">=</span> <span class="p">(</span><span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">T</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">G</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">C</span><span class="sh">'</span><span class="p">)</span>
-
-<span class="c1"># Define a custom distance function for characters
-</span><span class="k">def</span> <span class="nf">char_distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span> <span class="k">else</span> <span class="mi">1</span>
-
-<span class="c1"># Calculate the DTW score using the custom character distance function
-</span><span class="n">result2</span> <span class="o">=</span> <span class="nf">dtw</span><span class="p">(</span><span class="n">a2</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">char_distance</span><span class="p">,</span> <span class="n">w</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">gamma</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">DTW score for example 2: </span><span class="si">{</span><span class="n">result2</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div></div>
-<p>In example 2, the DTW algorithm calculates the similarity between two character sequences “ATGGTACGTC” and “AAGTAGGC”. The resulting score S=1/6 indicates the average cost of aligning the sequences, using a custom distance function where the distance is 0 if the characters are equal and 1 otherwise. The algorithm uses local constraints (1, 1, 1) and a global constraint of 4 to determine the optimal alignment.</p>
-
-<h3 id="2-principal-component-analysis-pca">2. Principal Component Analysis (PCA)</h3>
-<p>Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a lower-dimensional form while preserving as much variance as possible. In the lab, we used PCA to reduce the number of features in our sensor data before applying machine learning algorithms. By retaining only the most significant components, PCA helps in simplifying the model, reducing computational cost, and mitigating the curse of dimensionality.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-
-<span class="c1"># Apply PCA to reduce dimensionality
-</span><span class="n">pca</span> <span class="o">=</span> <span class="nc">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">)</span>
-<span class="n">pca</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
-
-<span class="c1"># Transform the training and test data
-</span><span class="n">X_train_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
-<span class="n">X_test_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="p">.</span><span class="nf">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Training set size after PCA: </span><span class="si">{</span><span class="n">X_train_pca</span><span class="p">.</span><span class="n">shape</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Test set size after PCA: </span><span class="si">{</span><span class="n">X_test_pca</span><span class="p">.</span><span class="n">shape</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>The code above demonstrates using Principal Component Analysis (PCA) to reduce the dimensionality of datasets. By specifying <code class="language-plaintext highlighter-rouge">n_components</code>, PCA transforms high-dimensional data into a lower-dimensional form, retaining significant features. The <code class="language-plaintext highlighter-rouge">fit</code> method computes principal components from the training data, and <code class="language-plaintext highlighter-rouge">transform</code> applies this to both training and test datasets. The resulting shapes of <code class="language-plaintext highlighter-rouge">X_train_pca</code> and <code class="language-plaintext highlighter-rouge">X_test_pca</code> indicate reduced dimensions, simplifying the model and reducing computational cost.</p>
-
-<h3 id="3-k-nearest-neighbors-k-nn">3. k-Nearest Neighbors (k-NN)</h3>
-<p>k-Nearest Neighbors (k-NN) is a straightforward, non-parametric classification algorithm that assigns a class to a sample based on the majority class of its k nearest neighbors. During the lab sessions, we combined k-NN with DTW to classify human activities from sensor data. By leveraging the distance metric provided by DTW, k-NN effectively identified the most similar activity patterns.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-
-<span class="c1"># Train k-NN classifier
-</span><span class="n">knn</span> <span class="o">=</span> <span class="nc">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="n">dtw</span><span class="p">)</span>
-<span class="n">knn</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>The code snippet above demonstrates training a k-Nearest Neighbors (k-NN) classifier using the <code class="language-plaintext highlighter-rouge">KNeighborsClassifier</code> class from scikit-learn. By specifying the number of neighbors <code class="language-plaintext highlighter-rouge">n_neighbors</code> and the distance metric <code class="language-plaintext highlighter-rouge">metric</code>, we can customize the k-NN algorithm. In this case, we use the DTW function as the distance metric to calculate the similarity between samples. The <code class="language-plaintext highlighter-rouge">fit</code> method trains the k-NN model on the training data, enabling it to classify new samples based on their nearest neighbors.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create and train the k-NN model
-</span><span class="n">k_values</span> <span class="o">=</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
-<span class="n">scores</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">k_values</span><span class="p">:</span>
-    <span class="n">clf</span> <span class="o">=</span> <span class="nc">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
-    <span class="n">clf</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-    <span class="n">score</span> <span class="o">=</span> <span class="n">clf</span><span class="p">.</span><span class="nf">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-    <span class="n">scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">k=</span><span class="si">{</span><span class="n">k</span><span class="si">}</span><span class="s">, Score=</span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="4-multi-layer-perceptron-mlp">4. Multi-Layer Perceptron (MLP)</h3>
-<p>Multi-Layer Perceptron (MLP) is a type of artificial neural network consisting of multiple layers of neurons, including input, hidden, and output layers. In the lab, we used MLP for classification tasks after reducing the dimensionality of our data with PCA. MLPs are capable of learning complex, non-linear relationships in data through backpropagation and gradient descent. This makes them powerful tools for tasks such as image recognition, natural language processing, and predictive analytics.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPClassifier</span>
-
-<span class="c1"># Train MLP classifier
-</span><span class="n">mlp</span> <span class="o">=</span> <span class="nc">MLPClassifier</span><span class="p">(</span><span class="n">hidden_layer_sizes</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,),</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="sh">'</span><span class="s">adam</span><span class="sh">'</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">mlp</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_pca</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="5-convolutional-neural-networks-cnn">5. Convolutional Neural Networks (CNN)</h3>
-<p>Convolutional Neural Networks (CNNs) are deep learning models designed for image data. They use convolutional layers to detect patterns and features in images. In the lab, we used CNNs to create a model for fall detection. CNNs are effective for tasks like image recognition and object detection because they can automatically learn important features from raw data.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define the CNN architecture
-</span><span class="n">model</span> <span class="o">=</span> <span class="nc">Sequential</span><span class="p">([</span>
-    <span class="nc">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="sh">'</span><span class="s">relu</span><span class="sh">'</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span>
-    <span class="nc">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-    <span class="nc">BatchNormalization</span><span class="p">(),</span>
-    <span class="nc">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="sh">'</span><span class="s">relu</span><span class="sh">'</span><span class="p">),</span>
-    <span class="nc">MaxPooling2D</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
-    <span class="nc">BatchNormalization</span><span class="p">(),</span>
-    <span class="nc">Flatten</span><span class="p">(),</span>
-    <span class="nc">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="sh">'</span><span class="s">relu</span><span class="sh">'</span><span class="p">),</span>
-    <span class="nc">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="sh">'</span><span class="s">softmax</span><span class="sh">'</span><span class="p">)</span>
-<span class="p">])</span>
-
-<span class="c1"># Compile the model
-</span><span class="n">model</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="sh">'</span><span class="s">adam</span><span class="sh">'</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="sh">'</span><span class="s">categorical_crossentropy</span><span class="sh">'</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="sh">'</span><span class="s">accuracy</span><span class="sh">'</span><span class="p">])</span>
-
-<span class="c1"># Train the model
-</span><span class="n">model</span><span class="p">.</span><span class="nf">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>The code above defines and trains a Convolutional Neural Network (CNN) using TensorFlow’s Keras API. The model includes convolutional layers, max-pooling, batch normalization, and fully connected layers. It is compiled with the Adam optimizer and categorical cross-entropy loss, and trained with a validation split. This architecture is effective for image classification tasks, learning spatial patterns in the data.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
-<ul>
-  <li>Understanding the fundamentals of AI and Machine Learning.</li>
-  <li>Designing and training Neural Networks.</li>
-  <li>Applying pruning techniques to optimize AI models.</li>
-  <li>Converting AI models to TensorFlow Lite for deployment on embedded devices.</li>
-  <li>Implementing AI solutions for IoT applications.</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>I understood better AI deployment and how it works. However, the labs were a bit long, and I didn’t have the time to finish everything. Also I didn’t code in Python for a long time, so I had to relearn some basics.</p>
-
-<p>It was a new practical experience for me as I hadn’t worked much with machine learning libraries before. I was able to code for the different concepts and even reuse them in the innovative project. However, I faced a few difficulties for understanding concepts as it is a recent area for me. But thanks to my interest in the subject, I know that I just need more time to involve myself in the different aspects.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-<p>I learned a lot of new concepts that are key in today’s deployments. Even though I am very interested in this field, I am unsure if I will work in this area later as it is not my specialty. However, I will have some basic skills to understand AI.</p>
-
-<p>In the future, I hope to encounter AI in my professional career as it is a current and evolving area. I am eager to discover more about this subject, possibly through personal projects. This will allow me to deepen my understanding and stay updated with the latest advancements in AI and IoT.</p>
-
-<div style="text-align: center;">
-    <h1>Project Report</h1>
-</div>
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
-    }
-</style>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Embedded IA for IoT]]></summary></entry></feed>
+  <li>
+    <h2 id="-3d-modeling"><a href="./3D-modeling.html">🎨 3D Modeling</a></h2>
+  </li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Personal Projects 2025 🤖 IA Automation 2024 🏉 Toulouse Sport 🌐 Website 2023 🎨 3D Modeling]]></summary></entry></feed>

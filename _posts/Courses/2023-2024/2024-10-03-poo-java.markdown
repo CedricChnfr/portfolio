@@ -1,0 +1,657 @@
+---
+layout: default
+title: "Programmation Orientée Objets Java - S7"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+[← Back to My Courses 2023-2024](./my-courses-2023-2024.html)
+
+# Programmation Orientée Objets Java
+
+## PART A: GENERALITIES
+
+### Presentation
+The "Programmation Orientée Objets Java" course provided comprehensive training in object-oriented programming using Java. As one of the most popular programming languages for enterprise applications, web services, and Android development, Java's platform independence and extensive ecosystem make it essential for modern software development.
+
+**Academic Year**: 2023-2024  
+**Semester**: 7  
+**Category**: Programming
+
+---
+
+## PART B: DESCRIPTIVE PART
+
+### Experience Details
+
+#### Environment and Context
+The course covered Java fundamentals through advanced topics including object-oriented principles, exception handling, collections framework, multithreading, and GUI development. We used industry-standard IDEs like Eclipse and IntelliJ IDEA for development and practiced Test-Driven Development (TDD) principles.
+
+#### My Function
+In this course, I was responsible for:
+- Understanding Java syntax and object-oriented concepts
+- Implementing classes, interfaces, and inheritance hierarchies
+- Using Java Collections Framework effectively
+- Developing multithreaded applications
+- Creating graphical user interfaces with Swing/JavaFX
+- Handling exceptions and managing resources
+- Writing unit tests with JUnit
+- Working with Java I/O and networking APIs
+
+## PART C: TECHNICAL PART
+
+This section explores the technical aspects of Java programming and object-oriented development.
+
+### Technical Concepts Learned
+
+#### 1. Java Fundamentals and OOP Basics
+
+**Class Structure**:
+```java
+public class BankAccount {
+    // Instance variables (private for encapsulation)
+    private String accountNumber;
+    private double balance;
+    private String owner;
+    
+    // Constructor
+    public BankAccount(String accountNumber, String owner) {
+        this.accountNumber = accountNumber;
+        this.owner = owner;
+        this.balance = 0.0;
+    }
+    
+    // Methods
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        }
+    }
+    
+    public boolean withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+    
+    // Getters
+    public double getBalance() {
+        return balance;
+    }
+    
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+}
+```
+
+**Key OOP Principles**:
+- **Encapsulation**: Data hiding using private fields and public methods
+- **Inheritance**: Code reuse through class hierarchies
+- **Polymorphism**: Dynamic method dispatch
+- **Abstraction**: Hiding implementation details
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/S7/java_oop.png" style="width: 65%;"/>
+</div>
+<br>
+
+#### 2. Inheritance and Interfaces
+
+**Inheritance Example**:
+```java
+public abstract class Animal {
+    protected String name;
+    protected int age;
+    
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Abstract method (must be implemented by subclasses)
+    public abstract void makeSound();
+    
+    // Concrete method
+    public void sleep() {
+        System.out.println(name + " is sleeping");
+    }
+}
+
+public class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    @Override
+    public void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+    
+    public void fetch() {
+        System.out.println(name + " is fetching");
+    }
+}
+```
+
+**Interfaces**:
+```java
+public interface Drawable {
+    void draw();
+    default void display() {  // Default method (Java 8+)
+        System.out.println("Displaying drawable object");
+    }
+}
+
+public interface Resizable {
+    void resize(double factor);
+}
+
+public class Circle implements Drawable, Resizable {
+    private double radius;
+    
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+    
+    @Override
+    public void resize(double factor) {
+        radius *= factor;
+    }
+}
+```
+
+**Interface vs Abstract Class**:
+- Interfaces: Multiple inheritance, contract definition
+- Abstract classes: Partial implementation, shared state
+
+#### 3. Exception Handling
+
+Robust error management in Java:
+
+```java
+public class FileProcessor {
+    public String readFile(String filename) throws IOException {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            StringBuilder content = new StringBuilder();
+            String line;
+            
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+            
+            return content.toString();
+            
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found: " + filename);
+            throw e;
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+            throw e;
+        } finally {
+            // Always executed, even if exception occurs
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    System.err.println("Error closing file");
+                }
+            }
+        }
+    }
+    
+    // Try-with-resources (Java 7+)
+    public String readFileModern(String filename) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            StringBuilder content = new StringBuilder();
+            String line;
+            
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+            
+            return content.toString();
+        }
+        // reader.close() called automatically
+    }
+}
+
+// Custom exception
+public class InsufficientFundsException extends Exception {
+    private double amount;
+    
+    public InsufficientFundsException(double amount) {
+        super("Insufficient funds: " + amount);
+        this.amount = amount;
+    }
+    
+    public double getAmount() {
+        return amount;
+    }
+}
+```
+
+#### 4. Collections Framework
+
+Powerful data structures and algorithms:
+
+```java
+import java.util.*;
+
+public class CollectionsDemo {
+    public void demonstrateCollections() {
+        // List (ordered, allows duplicates)
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Apple");  // Duplicate allowed
+        
+        List<String> linkedList = new LinkedList<>();
+        
+        // Set (no duplicates)
+        Set<String> hashSet = new HashSet<>();
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Apple");  // Ignored
+        // Size will be 2
+        
+        Set<String> treeSet = new TreeSet<>();  // Sorted
+        
+        // Map (key-value pairs)
+        Map<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("Alice", 25);
+        hashMap.put("Bob", 30);
+        hashMap.put("Charlie", 28);
+        
+        // Iteration
+        for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+        
+        // Queue
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("First");
+        queue.offer("Second");
+        String first = queue.poll();  // Removes and returns "First"
+        
+        // Priority Queue
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.offer(5);
+        pq.offer(2);
+        pq.offer(8);
+        System.out.println(pq.poll());  // Returns 2 (smallest)
+    }
+}
+```
+
+**Comparators and Sorting**:
+```java
+public class Student {
+    private String name;
+    private double gpa;
+    
+    // Constructor, getters, setters...
+}
+
+// Sorting with Comparator
+List<Student> students = new ArrayList<>();
+// Add students...
+
+// Sort by GPA (descending)
+students.sort((s1, s2) -> Double.compare(s2.getGpa(), s1.getGpa()));
+
+// Or using Comparator
+students.sort(Comparator.comparingDouble(Student::getGpa).reversed());
+```
+
+#### 5. Generics
+
+Type-safe programming:
+
+```java
+public class Box<T> {
+    private T content;
+    
+    public void set(T content) {
+        this.content = content;
+    }
+    
+    public T get() {
+        return content;
+    }
+}
+
+// Usage
+Box<String> stringBox = new Box<>();
+stringBox.set("Hello");
+String value = stringBox.get();  // No casting needed
+
+// Generic method
+public <T> void printArray(T[] array) {
+    for (T element : array) {
+        System.out.print(element + " ");
+    }
+    System.out.println();
+}
+
+// Bounded type parameters
+public <T extends Comparable<T>> T findMax(T[] array) {
+    T max = array[0];
+    for (T element : array) {
+        if (element.compareTo(max) > 0) {
+            max = element;
+        }
+    }
+    return max;
+}
+```
+
+#### 6. Multithreading
+
+Concurrent programming in Java:
+
+```java
+// Extending Thread class
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+// Implementing Runnable interface
+public class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // Task code
+    }
+}
+
+// Using ExecutorService
+ExecutorService executor = Executors.newFixedThreadPool(5);
+for (int i = 0; i < 10; i++) {
+    executor.submit(new MyRunnable());
+}
+executor.shutdown();
+```
+
+**Synchronization**:
+```java
+public class Counter {
+    private int count = 0;
+    
+    // Synchronized method
+    public synchronized void increment() {
+        count++;
+    }
+    
+    // Synchronized block
+    public void incrementBlock() {
+        synchronized(this) {
+            count++;
+        }
+    }
+    
+    public int getCount() {
+        return count;
+    }
+}
+```
+
+#### 7. Lambda Expressions and Streams (Java 8+)
+
+Functional programming features:
+
+```java
+// Lambda expressions
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+
+// Old way
+for (String name : names) {
+    System.out.println(name);
+}
+
+// With lambda
+names.forEach(name -> System.out.println(name));
+// Or method reference
+names.forEach(System.out::println);
+
+// Streams
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// Filter, map, and collect
+List<Integer> evenSquares = numbers.stream()
+    .filter(n -> n % 2 == 0)
+    .map(n -> n * n)
+    .collect(Collectors.toList());
+// Result: [4, 16, 36, 64, 100]
+
+// Sum with reduce
+int sum = numbers.stream()
+    .reduce(0, (a, b) -> a + b);
+
+// Group by
+Map<Integer, List<String>> groupedByLength = names.stream()
+    .collect(Collectors.groupingBy(String::length));
+```
+
+#### 8. File I/O and Serialization
+
+Working with files and data persistence:
+
+```java
+import java.io.*;
+import java.nio.file.*;
+
+// Reading from file
+public List<String> readLines(String filename) throws IOException {
+    return Files.readAllLines(Paths.get(filename));
+}
+
+// Writing to file
+public void writeLines(String filename, List<String> lines) throws IOException {
+    Files.write(Paths.get(filename), lines);
+}
+
+// Serialization
+public class Person implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String name;
+    private int age;
+    
+    // Constructor, getters, setters...
+}
+
+// Save object
+public void saveObject(Person person, String filename) throws IOException {
+    try (ObjectOutputStream oos = new ObjectOutputStream(
+            new FileOutputStream(filename))) {
+        oos.writeObject(person);
+    }
+}
+
+// Load object
+public Person loadObject(String filename) throws IOException, ClassNotFoundException {
+    try (ObjectInputStream ois = new ObjectInputStream(
+            new FileInputStream(filename))) {
+        return (Person) ois.readObject();
+    }
+}
+```
+
+#### 9. GUI Development with Swing
+
+Creating graphical user interfaces:
+
+```java
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class SimpleCalculator extends JFrame {
+    private JTextField display;
+    private double result = 0;
+    private String operator = "=";
+    private boolean startNewNumber = true;
+    
+    public SimpleCalculator() {
+        setTitle("Calculator");
+        setSize(300, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        // Create display
+        display = new JTextField("0");
+        display.setEditable(false);
+        display.setHorizontalAlignment(JTextField.RIGHT);
+        add(display, BorderLayout.NORTH);
+        
+        // Create button panel
+        JPanel buttonPanel = new JPanel(new GridLayout(4, 4));
+        String[] buttons = {
+            "7", "8", "9", "/",
+            "4", "5", "6", "*",
+            "1", "2", "3", "-",
+            "0", ".", "=", "+"
+        };
+        
+        for (String text : buttons) {
+            JButton button = new JButton(text);
+            button.addActionListener(new ButtonClickListener());
+            buttonPanel.add(button);
+        }
+        
+        add(buttonPanel, BorderLayout.CENTER);
+    }
+    
+    private class ButtonClickListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String command = e.getActionCommand();
+            // Handle button click logic...
+        }
+    }
+    
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            SimpleCalculator calc = new SimpleCalculator();
+            calc.setVisible(true);
+        });
+    }
+}
+```
+
+#### 10. Unit Testing with JUnit
+
+Test-driven development:
+
+```java
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+    private Calculator calculator;
+    
+    @BeforeEach
+    public void setUp() {
+        calculator = new Calculator();
+    }
+    
+    @Test
+    public void testAddition() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(-1, calculator.add(2, -3));
+    }
+    
+    @Test
+    public void testDivision() {
+        assertEquals(2.0, calculator.divide(6, 3), 0.001);
+    }
+    
+    @Test
+    public void testDivisionByZero() {
+        assertThrows(ArithmeticException.class, () -> {
+            calculator.divide(5, 0);
+        });
+    }
+    
+    @AfterEach
+    public void tearDown() {
+        calculator = null;
+    }
+}
+```
+
+## PART D: ANALYTICAL PART
+
+### Knowledge and Skills Mobilized
+
+- Understanding Java syntax and OOP principles
+- Implementing class hierarchies and interfaces
+- Using Collections Framework effectively
+- Writing exception-safe code
+- Developing multithreaded applications
+- Creating graphical user interfaces
+- Applying functional programming with lambdas and streams
+- Writing unit tests
+- Working with file I/O and serialization
+- Using Java development tools (IDE, debugger, profiler)
+
+### Self Evaluation
+
+Learning Java after C and C++ was relatively smooth, as many concepts were familiar. However, Java's automatic memory management (garbage collection) was a significant paradigm shift. Not having to manually manage memory was liberating but also meant less control over performance.
+
+The Collections Framework is one of Java's strongest features. Learning when to use ArrayList vs LinkedList, HashMap vs TreeMap, etc., required understanding time complexity trade-offs. The Stream API and lambda expressions made code more concise and readable.
+
+Multithreading in Java was challenging. Understanding thread synchronization, deadlocks, and race conditions required careful thinking. The java.util.concurrent package provided powerful tools but had a steep learning curve.
+
+GUI development with Swing was interesting but felt somewhat dated compared to modern UI frameworks. Event-driven programming required a different mindset. Building responsive UIs while avoiding freezing the main thread was a valuable lesson.
+
+### My Opinion
+
+Java is an excellent language for learning OOP and building enterprise applications. Its "write once, run anywhere" philosophy is powerful, though in practice, platform differences can still cause issues. The extensive standard library and ecosystem of third-party libraries make Java very productive.
+
+The course provided solid foundations in Java development. What I particularly appreciated:
+- Strong type system preventing many runtime errors
+- Comprehensive documentation and large community
+- Excellent tooling (IDEs, profilers, debuggers)
+- Platform independence
+
+Areas for improvement:
+- More coverage of modern Java features (Java 11+)
+- Design patterns and architectural principles
+- Build tools (Maven, Gradle)
+- Spring Framework introduction
+- Android development basics
+
+Java's verbosity compared to modern languages can be tedious (lots of boilerplate), but this is improving with newer Java versions. Overall, Java remains relevant and valuable for professional software development, particularly in enterprise and Android development.
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    p {
+        text-align: justify;
+    }
+</style>

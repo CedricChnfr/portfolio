@@ -4,6 +4,9 @@ title:  "Control Systems Project"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 # Introduction
 The objective of this project was to use Matlab and Simulink to model, simulate, and control a two-wheeled robot based on the Lego Mindstorms EV3 system. The project allowed us to explore several control techniques, including proportional control, proportional-integral control, and state feedback control to stabilize the system.
 

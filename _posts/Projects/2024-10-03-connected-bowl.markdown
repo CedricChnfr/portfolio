@@ -4,6 +4,9 @@ title:  "Connected Bowl"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 # Introduction
 During the week of object-oriented programming design office, our team developed a Connected Bowl. This project aimed to create a system to control the distribution of animal food using a web interface, while integrating sensors and indicators to improve the user experience.
 <div style="text-align: center;">

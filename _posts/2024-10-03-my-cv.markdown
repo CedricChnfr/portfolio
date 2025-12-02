@@ -11,7 +11,8 @@ categories: jekyll update
 **Address** : Rue du libre-échange, 31500 Toulouse, France  
 **Email** : cedric.chanfreau@gmail.com  
 
-## [Open my CV (PDF)](/file/my-cv.pdf){:target="_blank"}
+## [Open my French CV (PDF)](/file/CV_Cédric_Chanfreau_FR.pdf){:target="_blank"}
+## [Open my English CV (PDF)](/file/CV_Cedric_Chanfreau_USA.pdf){:target="_blank"}
 
 ---
 

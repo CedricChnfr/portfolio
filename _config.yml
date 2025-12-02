@@ -18,17 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My Portfolio
-email: chanfreau@insa-toulouse.fr
-description: >- # this means to ignore newlines until "baseurl:"
-  I am a fifth-year engineering student at INSA. This site provides an overview of my work and progress during my studies.
+title: Cédric Chanfreau - Portfolio
+email: cedric.chanfreau@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: cedricchanfreau
-github_username:  CedricChnfr
+github_username: CedricChnfr
 
 # Build settings
 theme: minima
+markdown: kramdown
 plugins:
   - jekyll-feed
 

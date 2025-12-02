@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Microcontrôleur - S6 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Microcontrôleur - S6" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/microcontroleur.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/microcontroleur.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Microcontrôleur - S6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Microcontrôleur - S6","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/microcontroleur.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/microcontroleur.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+</div>
+
+<h1 id="-microcontrôleur---semestre-6">🔌 Microcontrôleur - Semestre 6</h1>
+
+<p><strong>Année Universitaire</strong> : 2022-2023<br />
+<strong>Semestre</strong> : 6<br />
+<strong>Crédits</strong> : 4 ECTS<br />
+<strong>Spécialité</strong> : Systèmes Embarqués</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Ce cours approfondit la programmation de microcontrôleurs avec focus sur les STM32 (ARM Cortex-M3). Il couvre la configuration des périphériques (GPIO, timers, ADC, UART), le développement de drivers, et la gestion des interruptions. Le point culminant est le projet Voilier, un système embarqué autonome intégrant capteurs et actionneurs.</p>
+
+<p><strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Maîtriser la programmation en C embarqué pour STM32</li>
+  <li>Configurer les périphériques via registres (GPIO, timers, ADC, UART)</li>
+  <li>Développer des drivers réutilisables avec HAL (Hardware Abstraction Layer)</li>
+  <li>Gérer les interruptions et le temps réel</li>
+  <li>Concevoir un système embarqué complet (projet Voilier)</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce cours s’appuie sur :</p>
+<ul>
+  <li><strong>Langage C (S5)</strong> : bases de la programmation C</li>
+  <li><strong>Architecture Informatique (S5)</strong> : fonctionnement processeur et mémoire</li>
+  <li><strong>Langage Assemblage ARM (S6)</strong> : compréhension bas niveau</li>
+</ul>
+
+<p>Il prépare aux applications :</p>
+<ul>
+  <li><strong>Systèmes embarqués temps réel</strong> : contraintes temporelles</li>
+  <li><strong>IoT et objets connectés</strong> : capteurs, communication</li>
+  <li><strong>Robotique et automatisation</strong> : contrôle moteurs, asservissement</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était structuré en deux parties complémentaires :</p>
+
+<p><strong>1. Cours et TDs</strong> :</p>
+<ul>
+  <li>Architecture STM32F103 (Cortex-M3, 72 MHz, 128 KB Flash, 20 KB RAM)</li>
+  <li>Programmation des périphériques via registres</li>
+  <li>Développement de drivers</li>
+  <li>Gestion des interruptions et timers</li>
+</ul>
+
+<p><strong>2. Projet Voilier</strong> :
+Conception d’un voilier autonome radiocommandé avec :</p>
+<ul>
+  <li>Capteurs : girouette (anémomètre), boussole, GPS</li>
+  <li>Actionneurs : servo-moteurs (gouvernail, voile)</li>
+  <li>Communication : liaison série, télémétrie</li>
+  <li>Contrôle : régulation automatique de cap</li>
+</ul>
+
+<p><strong>Environnement de développement</strong> :</p>
+<ul>
+  <li><strong>IDE</strong> : Keil µVision</li>
+  <li><strong>Carte</strong> : STM32F103RB (Nucleo-64 ou carte custom)</li>
+  <li><strong>Programmation</strong> : ST-Link (SWD)</li>
+  <li><strong>Débogage</strong> : breakpoints, watch, mémoire</li>
+</ul>
+
+<h3 class="section-title">Déroulement du projet Voilier</h3>
+
+<p><strong>Architecture du système</strong> :</p>
+
+<p>Le voilier autonome intègre plusieurs sous-systèmes :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sous-système</th>
+      <th>Composants</th>
+      <th>Fonction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Navigation</td>
+      <td>Girouette, boussole, GPS</td>
+      <td>Déterminer position et orientation</td>
+    </tr>
+    <tr>
+      <td>Contrôle</td>
+      <td>Servo-moteurs</td>
+      <td>Ajuster gouvernail et voile</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td>UART, radio</td>
+      <td>Télémétrie et commandes</td>
+    </tr>
+    <tr>
+      <td>Alimentation</td>
+      <td>Batterie, régulateur</td>
+      <td>Autonomie énergétique</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Capteurs implémentés</strong> :</p>
+
+<p><strong>Girouette (anémomètre)</strong> :</p>
+<ul>
+  <li>Mesure de la direction du vent</li>
+  <li>Interface : potentiomètre rotatif → ADC</li>
+  <li>Résolution : 12 bits (0-4095) → 0-360°</li>
+  <li>Calibration nécessaire</li>
+</ul>
+
+<p><strong>Boussole électronique</strong> :</p>
+<ul>
+  <li>Mesure du cap (orientation)</li>
+  <li>Interface : I2C ou SPI</li>
+  <li>Données : azimut magnétique</li>
+</ul>
+
+<p><strong>Étapes de développement</strong> :</p>
+
+<p><strong>Étape 1 : Drivers de base</strong></p>
+
+<p>Développement de drivers modulaires pour chaque périphérique.</p>
+
+<p><strong>Driver GPIO</strong> :</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="n">GPIO_TypeDef</span> <span class="o">*</span> <span class="n">GPIO</span><span class="p">;</span>      <span class="c1">// Port (GPIOA, GPIOB, GPIOC...)</span>
+    <span class="kt">char</span> <span class="n">GPIO_Pin</span><span class="p">;</span>            <span class="c1">// Numéro broche 0-15</span>
+    <span class="kt">char</span> <span class="n">GPIO_Conf</span><span class="p">;</span>           <span class="c1">// Configuration</span>
+<span class="p">}</span> <span class="n">MyGPIO_Struct_TypeDef</span><span class="p">;</span>
+
+<span class="c1">// Modes de configuration</span>
+<span class="cp">#define In_Floating  0x4
+#define In_PullUp    0x8
+#define In_PullDown  0x8
+#define Out_Ppull    0x2      // Push-pull
+#define Out_OD       0x6      // Open-drain
+#define AltOut_Ppull 0xA      // Fonction alternative
+</span>
+<span class="c1">// Initialisation GPIO</span>
+<span class="kt">void</span> <span class="nf">MyGPIO_Init</span><span class="p">(</span><span class="n">MyGPIO_Struct_TypeDef</span> <span class="o">*</span> <span class="n">GPIOStructPtr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Activation horloge du port</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO</span> <span class="o">==</span> <span class="n">GPIOA</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB2ENR</span> <span class="o">|=</span> <span class="n">RCC_APB2ENR_IOPAEN</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Configuration de la broche</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Pin</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">CRL</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="p">(</span><span class="mh">0xF</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Pin</span><span class="p">));</span>
+        <span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">CRL</span> <span class="o">|=</span> <span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Conf</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Pin</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">CRH</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="p">(</span><span class="mh">0xF</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Pin</span> <span class="o">%</span> <span class="mi">8</span><span class="p">)));</span>
+        <span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">CRH</span> <span class="o">|=</span> <span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Conf</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="p">(</span><span class="n">GPIOStructPtr</span><span class="o">-&gt;</span><span class="n">GPIO_Pin</span> <span class="o">%</span> <span class="mi">8</span><span class="p">)));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Lecture d'une entrée</span>
+<span class="kt">int</span> <span class="nf">MyGPIO_Read</span><span class="p">(</span><span class="n">GPIO_TypeDef</span> <span class="o">*</span> <span class="n">GPIO</span><span class="p">,</span> <span class="kt">char</span> <span class="n">GPIO_Pin</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">IDR</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">GPIO_Pin</span><span class="p">))</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">?</span> <span class="mi">1</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Mise à 1</span>
+<span class="kt">void</span> <span class="nf">MyGPIO_Set</span><span class="p">(</span><span class="n">GPIO_TypeDef</span> <span class="o">*</span> <span class="n">GPIO</span><span class="p">,</span> <span class="kt">char</span> <span class="n">GPIO_Pin</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">BSRR</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">GPIO_Pin</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Mise à 0</span>
+<span class="kt">void</span> <span class="nf">MyGPIO_Reset</span><span class="p">(</span><span class="n">GPIO_TypeDef</span> <span class="o">*</span> <span class="n">GPIO</span><span class="p">,</span> <span class="kt">char</span> <span class="n">GPIO_Pin</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">BRR</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">GPIO_Pin</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Basculement</span>
+<span class="kt">void</span> <span class="nf">MyGPIO_Toggle</span><span class="p">(</span><span class="n">GPIO_TypeDef</span> <span class="o">*</span> <span class="n">GPIO</span><span class="p">,</span> <span class="kt">char</span> <span class="n">GPIO_Pin</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">GPIO</span><span class="o">-&gt;</span><span class="n">ODR</span> <span class="o">^=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">GPIO_Pin</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Étape 2 : Timers et PWM</strong></p>
+
+<p>Configuration des timers pour génération PWM (contrôle servo-moteurs).</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Initialisation Timer en mode PWM</span>
+<span class="kt">void</span> <span class="nf">MyTimer_PWM_Init</span><span class="p">(</span><span class="n">TIM_TypeDef</span> <span class="o">*</span> <span class="n">Timer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">frequence</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Activation horloge timer</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Timer</span> <span class="o">==</span> <span class="n">TIM2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB1ENR</span> <span class="o">|=</span> <span class="n">RCC_APB1ENR_TIM2EN</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Configuration prescaler et période</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">PSC</span> <span class="o">=</span> <span class="mi">72</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>              <span class="c1">// Prescaler (72 MHz / 72 = 1 MHz)</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">ARR</span> <span class="o">=</span> <span class="mi">20000</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>           <span class="c1">// Période 20 ms (50 Hz pour servo)</span>
+    
+    <span class="c1">// Mode PWM sur canal 1</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">CCMR1</span> <span class="o">|=</span> <span class="n">TIM_CCMR1_OC1M_1</span> <span class="o">|</span> <span class="n">TIM_CCMR1_OC1M_2</span><span class="p">;</span>  <span class="c1">// PWM mode 1</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">CCMR1</span> <span class="o">|=</span> <span class="n">TIM_CCMR1_OC1PE</span><span class="p">;</span>  <span class="c1">// Preload enable</span>
+    
+    <span class="c1">// Activation sortie</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">CCER</span> <span class="o">|=</span> <span class="n">TIM_CCER_CC1E</span><span class="p">;</span>
+    
+    <span class="c1">// Démarrage timer</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">CR1</span> <span class="o">|=</span> <span class="n">TIM_CR1_CEN</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Réglage rapport cyclique (duty cycle)</span>
+<span class="kt">void</span> <span class="nf">MyTimer_SetDutyCycle</span><span class="p">(</span><span class="n">TIM_TypeDef</span> <span class="o">*</span> <span class="n">Timer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">channel</span><span class="p">,</span> <span class="kt">int</span> <span class="n">duty</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">channel</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">CCR1</span> <span class="o">=</span> <span class="n">duty</span><span class="p">;</span>  <span class="c1">// Valeur de 1000 à 2000 µs pour servo</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Commande de servo-moteur</strong> :</p>
+<ul>
+  <li>Position neutre : 1500 µs</li>
+  <li>Gauche max : 1000 µs</li>
+  <li>Droite max : 2000 µs</li>
+</ul>
+
+<p><strong>Étape 3 : ADC pour girouette</strong></p>
+
+<p>Lecture analogique de la position de la girouette.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Initialisation ADC</span>
+<span class="kt">void</span> <span class="nf">MyADC_Init</span><span class="p">(</span><span class="n">ADC_TypeDef</span> <span class="o">*</span> <span class="n">ADC</span><span class="p">,</span> <span class="kt">char</span> <span class="n">channel</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Activation horloge ADC</span>
+    <span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB2ENR</span> <span class="o">|=</span> <span class="n">RCC_APB2ENR_ADC1EN</span><span class="p">;</span>
+    
+    <span class="c1">// Configuration ADC</span>
+    <span class="n">ADC</span><span class="o">-&gt;</span><span class="n">CR2</span> <span class="o">|=</span> <span class="n">ADC_CR2_ADON</span><span class="p">;</span>         <span class="c1">// Activation ADC</span>
+    <span class="n">ADC</span><span class="o">-&gt;</span><span class="n">SQR3</span> <span class="o">=</span> <span class="n">channel</span><span class="p">;</span>              <span class="c1">// Sélection canal</span>
+    <span class="n">ADC</span><span class="o">-&gt;</span><span class="n">SMPR2</span> <span class="o">=</span> <span class="mh">0x7</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">channel</span><span class="p">);</span>  <span class="c1">// Temps échantillonnage 239,5 cycles</span>
+<span class="p">}</span>
+
+<span class="c1">// Lecture ADC (bloquante)</span>
+<span class="kt">int</span> <span class="nf">MyADC_Read</span><span class="p">(</span><span class="n">ADC_TypeDef</span> <span class="o">*</span> <span class="n">ADC</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ADC</span><span class="o">-&gt;</span><span class="n">CR2</span> <span class="o">|=</span> <span class="n">ADC_CR2_ADON</span><span class="p">;</span>         <span class="c1">// Démarrage conversion</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">ADC</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;</span> <span class="n">ADC_SR_EOC</span><span class="p">));</span>  <span class="c1">// Attente fin conversion</span>
+    <span class="k">return</span> <span class="n">ADC</span><span class="o">-&gt;</span><span class="n">DR</span><span class="p">;</span>                   <span class="c1">// Lecture résultat</span>
+<span class="p">}</span>
+
+<span class="c1">// Conversion ADC → angle</span>
+<span class="kt">int</span> <span class="nf">Girouette_GetAngle</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">raw</span> <span class="o">=</span> <span class="n">MyADC_Read</span><span class="p">(</span><span class="n">ADC1</span><span class="p">);</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">raw</span> <span class="o">*</span> <span class="mi">360</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4096</span><span class="p">;</span>  <span class="c1">// 12 bits → 0-360°</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Étape 4 : UART pour télémétrie</strong></p>
+
+<p>Communication série pour envoyer données et recevoir commandes.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Initialisation UART</span>
+<span class="kt">void</span> <span class="nf">MyUART_Init</span><span class="p">(</span><span class="n">USART_TypeDef</span> <span class="o">*</span> <span class="n">UART</span><span class="p">,</span> <span class="kt">int</span> <span class="n">baudrate</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Activation horloge</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">UART</span> <span class="o">==</span> <span class="n">USART1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB2ENR</span> <span class="o">|=</span> <span class="n">RCC_APB2ENR_USART1EN</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="c1">// Configuration GPIO (TX/RX)</span>
+    <span class="c1">// PA9 = TX (fonction alternative), PA10 = RX (input)</span>
+    
+    <span class="c1">// Configuration baudrate</span>
+    <span class="n">UART</span><span class="o">-&gt;</span><span class="n">BRR</span> <span class="o">=</span> <span class="mi">72000000</span> <span class="o">/</span> <span class="n">baudrate</span><span class="p">;</span>  <span class="c1">// 72 MHz / 9600 bps</span>
+    
+    <span class="c1">// Activation TX et RX</span>
+    <span class="n">UART</span><span class="o">-&gt;</span><span class="n">CR1</span> <span class="o">|=</span> <span class="n">USART_CR1_TE</span> <span class="o">|</span> <span class="n">USART_CR1_RE</span> <span class="o">|</span> <span class="n">USART_CR1_UE</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Envoi d'un caractère</span>
+<span class="kt">void</span> <span class="nf">MyUART_SendChar</span><span class="p">(</span><span class="n">USART_TypeDef</span> <span class="o">*</span> <span class="n">UART</span><span class="p">,</span> <span class="kt">char</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">UART</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;</span> <span class="n">USART_SR_TXE</span><span class="p">));</span>  <span class="c1">// Attente buffer vide</span>
+    <span class="n">UART</span><span class="o">-&gt;</span><span class="n">DR</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Réception d'un caractère</span>
+<span class="kt">char</span> <span class="nf">MyUART_ReceiveChar</span><span class="p">(</span><span class="n">USART_TypeDef</span> <span class="o">*</span> <span class="n">UART</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">UART</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;</span> <span class="n">USART_SR_RXNE</span><span class="p">));</span>  <span class="c1">// Attente données disponibles</span>
+    <span class="k">return</span> <span class="n">UART</span><span class="o">-&gt;</span><span class="n">DR</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Envoi d'une chaîne</span>
+<span class="kt">void</span> <span class="nf">MyUART_SendString</span><span class="p">(</span><span class="n">USART_TypeDef</span> <span class="o">*</span> <span class="n">UART</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">MyUART_SendChar</span><span class="p">(</span><span class="n">UART</span><span class="p">,</span> <span class="o">*</span><span class="n">str</span><span class="o">++</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Étape 5 : Régulation de cap</strong></p>
+
+<p>Algorithme de contrôle pour maintenir un cap.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Structure de contrôle</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">cap_consigne</span><span class="p">;</span>      <span class="c1">// Cap désiré</span>
+    <span class="kt">int</span> <span class="n">cap_actuel</span><span class="p">;</span>        <span class="c1">// Cap mesuré (boussole)</span>
+    <span class="kt">int</span> <span class="n">angle_vent</span><span class="p">;</span>        <span class="c1">// Direction du vent (girouette)</span>
+    <span class="kt">int</span> <span class="n">position_gouvernail</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">position_voile</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">VoilierControl_TypeDef</span><span class="p">;</span>
+
+<span class="c1">// Régulation simple (proportionnelle)</span>
+<span class="kt">void</span> <span class="nf">Voilier_Regulate</span><span class="p">(</span><span class="n">VoilierControl_TypeDef</span> <span class="o">*</span> <span class="n">voilier</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Calcul erreur de cap</span>
+    <span class="kt">int</span> <span class="n">erreur</span> <span class="o">=</span> <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">cap_consigne</span> <span class="o">-</span> <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">cap_actuel</span><span class="p">;</span>
+    
+    <span class="c1">// Normalisation erreur (-180° à +180°)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">erreur</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">)</span> <span class="n">erreur</span> <span class="o">-=</span> <span class="mi">360</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">erreur</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">180</span><span class="p">)</span> <span class="n">erreur</span> <span class="o">+=</span> <span class="mi">360</span><span class="p">;</span>
+    
+    <span class="c1">// Correction proportionnelle</span>
+    <span class="kt">int</span> <span class="n">correction</span> <span class="o">=</span> <span class="n">erreur</span> <span class="o">*</span> <span class="mi">5</span><span class="p">;</span>  <span class="c1">// Gain proportionnel</span>
+    
+    <span class="c1">// Limites</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">correction</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">)</span> <span class="n">correction</span> <span class="o">=</span> <span class="mi">500</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">correction</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">500</span><span class="p">)</span> <span class="n">correction</span> <span class="o">=</span> <span class="o">-</span><span class="mi">500</span><span class="p">;</span>
+    
+    <span class="c1">// Application au gouvernail</span>
+    <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">position_gouvernail</span> <span class="o">=</span> <span class="mi">1500</span> <span class="o">+</span> <span class="n">correction</span><span class="p">;</span>
+    <span class="n">MyTimer_SetDutyCycle</span><span class="p">(</span><span class="n">TIM2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">position_gouvernail</span><span class="p">);</span>
+    
+    <span class="c1">// Ajustement voile selon vent</span>
+    <span class="kt">int</span> <span class="n">angle_voile</span> <span class="o">=</span> <span class="n">abs</span><span class="p">(</span><span class="n">voilier</span><span class="o">-&gt;</span><span class="n">angle_vent</span> <span class="o">-</span> <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">cap_actuel</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">angle_voile</span> <span class="o">&gt;</span> <span class="mi">180</span><span class="p">)</span> <span class="n">angle_voile</span> <span class="o">=</span> <span class="mi">360</span> <span class="o">-</span> <span class="n">angle_voile</span><span class="p">;</span>
+    <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">position_voile</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">+</span> <span class="p">(</span><span class="n">angle_voile</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">/</span> <span class="mi">180</span><span class="p">;</span>
+    <span class="n">MyTimer_SetDutyCycle</span><span class="p">(</span><span class="n">TIM3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">voilier</span><span class="o">-&gt;</span><span class="n">position_voile</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Étape 6 : Interruptions</strong></p>
+
+<p>Gestion d’événements asynchrones (réception UART, timers).</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Configuration interruption UART</span>
+<span class="kt">void</span> <span class="nf">MyUART_EnableIT</span><span class="p">(</span><span class="n">USART_TypeDef</span> <span class="o">*</span> <span class="n">UART</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">UART</span><span class="o">-&gt;</span><span class="n">CR1</span> <span class="o">|=</span> <span class="n">USART_CR1_RXNEIE</span><span class="p">;</span>  <span class="c1">// Interruption réception</span>
+    <span class="n">NVIC_EnableIRQ</span><span class="p">(</span><span class="n">USART1_IRQn</span><span class="p">);</span>
+    <span class="n">NVIC_SetPriority</span><span class="p">(</span><span class="n">USART1_IRQn</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Handler interruption UART</span>
+<span class="kt">void</span> <span class="nf">USART1_IRQHandler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">USART1</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;</span> <span class="n">USART_SR_RXNE</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">char</span> <span class="n">received</span> <span class="o">=</span> <span class="n">USART1</span><span class="o">-&gt;</span><span class="n">DR</span><span class="p">;</span>
+        <span class="c1">// Traitement commande</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">received</span> <span class="o">==</span> <span class="sc">'L'</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Virer à gauche</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">received</span> <span class="o">==</span> <span class="sc">'R'</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Virer à droite</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Configuration interruption timer</span>
+<span class="kt">void</span> <span class="nf">MyTimer_EnableIT</span><span class="p">(</span><span class="n">TIM_TypeDef</span> <span class="o">*</span> <span class="n">Timer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">periode_ms</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Timer</span><span class="o">-&gt;</span><span class="n">DIER</span> <span class="o">|=</span> <span class="n">TIM_DIER_UIE</span><span class="p">;</span>  <span class="c1">// Interruption update</span>
+    <span class="n">NVIC_EnableIRQ</span><span class="p">(</span><span class="n">TIM2_IRQn</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Handler interruption timer (tâche périodique)</span>
+<span class="kt">void</span> <span class="nf">TIM2_IRQHandler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">TIM2</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;</span> <span class="n">TIM_SR_UIF</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">TIM2</span><span class="o">-&gt;</span><span class="n">SR</span> <span class="o">&amp;=</span> <span class="o">~</span><span class="n">TIM_SR_UIF</span><span class="p">;</span>  <span class="c1">// Clear flag</span>
+        
+        <span class="c1">// Tâche périodique (ex: lecture capteurs, régulation)</span>
+        <span class="n">Voilier_Regulate</span><span class="p">(</span><span class="o">&amp;</span><span class="n">voilier</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<p><strong>Configuration des registres</strong> :
+Les datasheets STM32 sont volumineuses (&gt;1000 pages). Il faut comprendre chaque bit des registres de configuration. Erreur fréquente : oublier d’activer l’horloge du périphérique (RCC).</p>
+
+<p><strong>Timing et interruptions</strong> :
+Conflits entre tâches : une interruption trop longue bloque les autres. Nécessité de priorités bien réglées et de handlers courts.</p>
+
+<p><strong>Calibration des capteurs</strong> :
+La girouette nécessite une calibration (offset, linéarité). La boussole doit être compensée en perturbations magnétiques.</p>
+
+<p><strong>Débogage matériel</strong> :
+Problèmes parfois difficiles à diagnostiquer : câblage, alimentation, interférences. Oscilloscope et analyseur logique indispensables.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Architecture STM32F103</h3>
+
+<p><strong>Caractéristiques principales</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Composant</th>
+      <th>Spécification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPU</td>
+      <td>ARM Cortex-M3, 32 bits, 72 MHz</td>
+    </tr>
+    <tr>
+      <td>Flash</td>
+      <td>128 KB (programme)</td>
+    </tr>
+    <tr>
+      <td>RAM</td>
+      <td>20 KB (données)</td>
+    </tr>
+    <tr>
+      <td>GPIO</td>
+      <td>51 broches I/O</td>
+    </tr>
+    <tr>
+      <td>Timers</td>
+      <td>4 timers 16 bits avancés</td>
+    </tr>
+    <tr>
+      <td>ADC</td>
+      <td>2 ADC 12 bits, 16 canaux</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td>3 USART, 2 SPI, 2 I2C, USB, CAN</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Organisation mémoire</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Zone</th>
+      <th>Adresses</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flash</td>
+      <td>0x08000000 - 0x0801FFFF</td>
+      <td>Code programme</td>
+    </tr>
+    <tr>
+      <td>SRAM</td>
+      <td>0x20000000 - 0x20004FFF</td>
+      <td>Variables, pile</td>
+    </tr>
+    <tr>
+      <td>Périphériques</td>
+      <td>0x40000000 - 0x5FFFFFFF</td>
+      <td>Registres memory-mapped</td>
+    </tr>
+    <tr>
+      <td>Système</td>
+      <td>0xE0000000 - 0xE00FFFFF</td>
+      <td>NVIC, SysTick</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="section-title">2. GPIO (General Purpose Input/Output)</h3>
+
+<p><strong>Registres GPIO</strong> :</p>
+
+<p>Chaque port (A, B, C, D) dispose de registres de configuration et de contrôle.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registre</th>
+      <th>Fonction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GPIOx_CRL</td>
+      <td>Configuration broches 0-7 (4 bits par broche)</td>
+    </tr>
+    <tr>
+      <td>GPIOx_CRH</td>
+      <td>Configuration broches 8-15</td>
+    </tr>
+    <tr>
+      <td>GPIOx_IDR</td>
+      <td>Input Data Register (lecture)</td>
+    </tr>
+    <tr>
+      <td>GPIOx_ODR</td>
+      <td>Output Data Register (écriture)</td>
+    </tr>
+    <tr>
+      <td>GPIOx_BSRR</td>
+      <td>Bit Set/Reset Register (atomique)</td>
+    </tr>
+    <tr>
+      <td>GPIOx_BRR</td>
+      <td>Bit Reset Register</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Configuration d’une broche</strong> :</p>
+
+<p>Chaque broche nécessite 4 bits de configuration : MODE (2 bits) + CNF (2 bits).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>MODE</th>
+      <th>CNF</th>
+      <th>Configuration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>00</td>
+      <td>01</td>
+      <td>Input floating</td>
+    </tr>
+    <tr>
+      <td>00</td>
+      <td>10</td>
+      <td>Input pull-down/up</td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>00</td>
+      <td>Output push-pull 10 MHz</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>00</td>
+      <td>Output push-pull 2 MHz</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>00</td>
+      <td>Output push-pull 50 MHz</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>10</td>
+      <td>Alternate function push-pull</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="section-title">3. Timers</h3>
+
+<p><strong>Modes de fonctionnement</strong> :</p>
+
+<p>Les timers STM32 sont polyvalents :</p>
+
+<p><strong>Mode compteur simple</strong> :</p>
+<ul>
+  <li>Compte de 0 à ARR (Auto-Reload Register)</li>
+  <li>Génère interruption à débordement</li>
+  <li>Utilisé pour délais, tâches périodiques</li>
+</ul>
+
+<p><strong>Mode PWM</strong> :</p>
+<ul>
+  <li>Compare compteur (CNT) avec valeur de comparaison (CCR)</li>
+  <li>Sortie HIGH si CNT &lt; CCR, LOW sinon</li>
+  <li>Rapport cyclique = CCR / ARR</li>
+</ul>
+
+<p><strong>Mode capture</strong> :</p>
+<ul>
+  <li>Capture valeur CNT sur événement externe</li>
+  <li>Mesure de fréquence, durée d’impulsion</li>
+</ul>
+
+<p><strong>Registres principaux</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registre</th>
+      <th>Fonction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TIMx_CR1</td>
+      <td>Control Register (activation, mode comptage)</td>
+    </tr>
+    <tr>
+      <td>TIMx_PSC</td>
+      <td>Prescaler (diviseur fréquence)</td>
+    </tr>
+    <tr>
+      <td>TIMx_ARR</td>
+      <td>Auto-Reload (période)</td>
+    </tr>
+    <tr>
+      <td>TIMx_CNT</td>
+      <td>Compteur actuel</td>
+    </tr>
+    <tr>
+      <td>TIMx_CCR1-4</td>
+      <td>Capture/Compare (PWM duty cycle)</td>
+    </tr>
+    <tr>
+      <td>TIMx_CCMR1-2</td>
+      <td>Configuration canaux (PWM mode)</td>
+    </tr>
+    <tr>
+      <td>TIMx_CCER</td>
+      <td>Activation sorties</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Calcul de fréquence PWM</strong> :</p>
+
+<p>Fréquence PWM = Horloge / (PSC + 1) / (ARR + 1)</p>
+
+<p>Exemple : 72 MHz / 72 / 20000 = 50 Hz (servo-moteur)</p>
+
+<h3 class="section-title">4. ADC (Convertisseur Analogique-Numérique)</h3>
+
+<p><strong>Caractéristiques ADC STM32</strong> :</p>
+<ul>
+  <li>Résolution : 12 bits (0-4095)</li>
+  <li>Temps de conversion : quelques µs</li>
+  <li>Modes : simple, continu, scan (multicanaux)</li>
+  <li>Déclenchement : logiciel, timer, externe</li>
+</ul>
+
+<p><strong>Configuration</strong> :</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Séquence de conversion</span>
+<span class="n">ADC1</span><span class="o">-&gt;</span><span class="n">SQR1</span> <span class="o">=</span> <span class="p">(</span><span class="n">nombre_conversions</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="mi">20</span><span class="p">;</span>  <span class="c1">// Longueur séquence</span>
+<span class="n">ADC1</span><span class="o">-&gt;</span><span class="n">SQR3</span> <span class="o">=</span> <span class="n">canal</span><span class="p">;</span>                            <span class="c1">// Premier canal</span>
+
+<span class="c1">// Temps d'échantillonnage</span>
+<span class="n">ADC1</span><span class="o">-&gt;</span><span class="n">SMPR2</span> <span class="o">=</span> <span class="mh">0x7</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">canal</span><span class="p">);</span>  <span class="c1">// 239,5 cycles (max précision)</span>
+
+<span class="c1">// Démarrage conversion</span>
+<span class="n">ADC1</span><span class="o">-&gt;</span><span class="n">CR2</span> <span class="o">|=</span> <span class="n">ADC_CR2_ADON</span><span class="p">;</span>  <span class="c1">// Activation + start</span>
+</code></pre></div></div>
+
+<p><strong>Modes d’acquisition</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mode</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Simple</td>
+      <td>Une conversion sur commande</td>
+    </tr>
+    <tr>
+      <td>Continu</td>
+      <td>Conversions en boucle</td>
+    </tr>
+    <tr>
+      <td>Scan</td>
+      <td>Plusieurs canaux en séquence</td>
+    </tr>
+    <tr>
+      <td>Discontinu</td>
+      <td>Sous-groupes de canaux</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="section-title">5. UART/USART</h3>
+
+<p><strong>Paramètres de communication</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Valeur typique</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baudrate</td>
+      <td>9600, 115200 bps</td>
+    </tr>
+    <tr>
+      <td>Bits de données</td>
+      <td>8 bits</td>
+    </tr>
+    <tr>
+      <td>Bit de parité</td>
+      <td>Aucun</td>
+    </tr>
+    <tr>
+      <td>Bits de stop</td>
+      <td>1 bit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Calcul du registre BRR</strong> :</p>
+
+<p>BRR = Horloge_périphérique / Baudrate</p>
+
+<p>Exemple : 72 MHz / 115200 = 625</p>
+
+<p><strong>Gestion du buffer</strong> :</p>
+
+<p>Pour éviter la perte de données, utiliser :</p>
+<ul>
+  <li>Buffer circulaire logiciel</li>
+  <li>Interruptions sur réception</li>
+  <li>Contrôle de flux matériel (RTS/CTS)</li>
+</ul>
+
+<h3 class="section-title">6. Interruptions (NVIC)</h3>
+
+<p><strong>Nested Vectored Interrupt Controller</strong> :</p>
+
+<p>Le NVIC gère jusqu’à 68 interruptions avec 16 niveaux de priorité.</p>
+
+<p><strong>Configuration</strong> :</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Activation interruption</span>
+<span class="n">NVIC_EnableIRQ</span><span class="p">(</span><span class="n">USART1_IRQn</span><span class="p">);</span>
+
+<span class="c1">// Priorité (0 = plus haute)</span>
+<span class="n">NVIC_SetPriority</span><span class="p">(</span><span class="n">USART1_IRQn</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+
+<span class="c1">// Désactivation</span>
+<span class="n">NVIC_DisableIRQ</span><span class="p">(</span><span class="n">USART1_IRQn</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Priorités</strong> :</p>
+
+<p>Plus le numéro est faible, plus la priorité est haute. Une interruption de priorité plus haute peut préempter une interruption en cours.</p>
+
+<p><strong>Bonnes pratiques</strong> :</p>
+<ul>
+  <li>Handlers courts et rapides</li>
+  <li>Pas de printf ou délais dans ISR</li>
+  <li>Utiliser des flags pour communication avec main</li>
+  <li>Protéger variables partagées (volatile)</li>
+</ul>
+
+<h3 class="section-title">7. Horloge et RCC</h3>
+
+<p><strong>Reset and Clock Control</strong> :</p>
+
+<p>Le RCC configure les horloges et active les périphériques.</p>
+
+<p><strong>Sources d’horloge</strong> :</p>
+<ul>
+  <li>HSI : oscillateur interne 8 MHz (précision ±1%)</li>
+  <li>HSE : quartz externe 8 MHz (précision ±50 ppm)</li>
+  <li>PLL : multiplieur pour atteindre 72 MHz</li>
+</ul>
+
+<p><strong>Configuration typique</strong> :</p>
+
+<p>HSE 8 MHz → PLL ×9 → SYSCLK 72 MHz</p>
+
+<p><strong>Activation périphériques</strong> :</p>
+
+<p>Chaque périphérique doit être activé via RCC avant utilisation :</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB2ENR</span> <span class="o">|=</span> <span class="n">RCC_APB2ENR_IOPAEN</span><span class="p">;</span>    <span class="c1">// GPIO A</span>
+<span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB2ENR</span> <span class="o">|=</span> <span class="n">RCC_APB2ENR_USART1EN</span><span class="p">;</span>  <span class="c1">// USART1</span>
+<span class="n">RCC</span><span class="o">-&gt;</span><span class="n">APB1ENR</span> <span class="o">|=</span> <span class="n">RCC_APB1ENR_TIM2EN</span><span class="p">;</span>    <span class="c1">// Timer 2</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Programmation embarquée</strong> :
+Maîtrise de la programmation bas niveau en C, manipulation directe des registres, compréhension du fonctionnement matériel. Capacité à lire et interpréter des datasheets complexes.</p>
+
+<p><strong>Développement de drivers</strong> :
+Conception de couches d’abstraction matérielle (HAL) réutilisables. Structure modulaire du code, séparation interface/implémentation.</p>
+
+<p><strong>Intégration système</strong> :
+Le projet Voilier a développé la capacité à intégrer plusieurs sous-systèmes (capteurs, actionneurs, communication) dans une application cohérente et fonctionnelle.</p>
+
+<p><strong>Débogage matériel/logiciel</strong> :
+Utilisation d’outils professionnels (oscilloscope, analyseur logique, debugger). Méthodologie de diagnostic des problèmes.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. Toujours activer l’horloge</strong> :
+Erreur n°1 : oublier RCC-&gt;APBxENR. Le périphérique ne fonctionne pas sans son horloge.</p>
+
+<p><strong>2. Configuration complète</strong> :
+GPIO, timers, ADC nécessitent une configuration précise de nombreux bits. Bien lire la datasheet.</p>
+
+<p><strong>3. Volatile pour registres</strong> :
+Les registres matériels doivent être déclarés volatile pour éviter l’optimisation du compilateur.</p>
+
+<p><strong>4. Interruptions = handlers courts</strong> :
+Traitement minimal dans ISR, report du travail dans la boucle principale via flags.</p>
+
+<p><strong>5. Débogage méthodique</strong> :
+Commencer simple (LED blinking), ajouter progressivement la complexité. Tester chaque module séparément avant intégration.</p>
+
+<h3 class="section-title">Retour d'expérience projet Voilier</h3>
+
+<p><strong>Aspects positifs</strong> :</p>
+<ul>
+  <li>Projet concret et motivant (système réel)</li>
+  <li>Liberté de conception et d’implémentation</li>
+  <li>Travail en équipe avec répartition des tâches</li>
+  <li>Application directe de tous les concepts du cours</li>
+</ul>
+
+<p><strong>Défis techniques</strong> :</p>
+<ul>
+  <li>Calibration des capteurs (girouette non linéaire)</li>
+  <li>Gestion du timing (régulation 50 Hz + télémétrie)</li>
+  <li>Interférences électromagnétiques (moteurs → capteurs)</li>
+  <li>Optimisation consommation (autonomie batterie)</li>
+</ul>
+
+<p><strong>Leçons apprises</strong> :</p>
+<ul>
+  <li>Importance de la modularité (drivers réutilisables)</li>
+  <li>Tests unitaires avant intégration globale</li>
+  <li>Documentation du code (compréhension équipe)</li>
+  <li>Version control (Git) pour travail collaboratif</li>
+</ul>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Domotique</strong> :
+Contrôle d’éclairage, chauffage, volets roulants. Communication sans fil (Zigbee, LoRa).</p>
+
+<p><strong>Robotique</strong> :
+Contrôle de moteurs, lecture de capteurs (ultrason, infrarouge), navigation autonome.</p>
+
+<p><strong>IoT (Internet of Things)</strong> :
+Objets connectés : thermostats, trackers, stations météo. Communication WiFi, Bluetooth.</p>
+
+<p><strong>Automobile</strong> :
+ECU (Electronic Control Unit), capteurs ABS, airbags, injection moteur.</p>
+
+<p><strong>Médical</strong> :
+Dispositifs portables (glucomètres, tensiomètres), pompes à perfusion, stimulateurs cardiaques.</p>
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+<p><strong>Limites du cours</strong> :</p>
+<ul>
+  <li>Peu de communication sans fil (WiFi, Bluetooth)</li>
+  <li>Pas de RTOS (Real-Time Operating System)</li>
+  <li>Peu de traitement du signal (filtrage, FFT)</li>
+  <li>Pas de sécurité (chiffrement, authentification)</li>
+</ul>
+
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+  <li><strong>RTOS</strong> : FreeRTOS, gestion multitâches, synchronisation</li>
+  <li><strong>Communication IoT</strong> : MQTT, CoAP, LoRaWAN</li>
+  <li><strong>Traitement signal</strong> : filtrage numérique, FFT sur MCU</li>
+  <li><strong>Bas niveau avancé</strong> : DMA, low power modes, bootloaders</li>
+  <li><strong>Machine Learning</strong> : TensorFlow Lite Micro pour MCU</li>
+</ul>
+
+<h3 class="section-title">Évolution technologique</h3>
+
+<p><strong>Tendances actuelles</strong> :</p>
+<ul>
+  <li><strong>MCU 32 bits omniprésents</strong> : Cortex-M4, M7, RISC-V</li>
+  <li><strong>Connectivité intégrée</strong> : WiFi, BLE, LoRa sur puce</li>
+  <li><strong>IA embarquée</strong> : accélérateurs ML (Cortex-M55, NPU)</li>
+  <li><strong>Sécurité renforcée</strong> : TrustZone, secure boot, crypto matériel</li>
+  <li><strong>Ultra-basse consommation</strong> : nW pour IoT batterie 10 ans</li>
+</ul>
+
+<p><strong>Outils modernes</strong> :</p>
+<ul>
+  <li><strong>STM32CubeMX</strong> : génération automatique code initialisation</li>
+  <li><strong>PlatformIO</strong> : IDE multiplateforme (VS Code)</li>
+  <li><strong>Mbed OS</strong> : système d’exploitation pour ARM</li>
+  <li><strong>Zephyr RTOS</strong> : RTOS open-source pour IoT</li>
+</ul>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>Le cours Microcontrôleur est fondamental pour tout ingénieur en systèmes embarqués. La maîtrise de la programmation bas niveau et de l’interfaçage matériel est essentielle dans un monde où les objets connectés sont omniprésents.</p>
+
+<p>Le projet Voilier est l’expérience marquante du semestre : conception complète d’un système autonome intégrant capteurs, actionneurs et contrôle temps réel. Les compétences acquises (drivers, interruptions, périphériques) sont directement transférables à l’industrie.</p>
+
+<p><strong>Évolution des compétences</strong> :
+De la simple LED clignotante au voilier autonome, le parcours montre la progression : GPIO → timers → ADC → UART → intégration système complet. Chaque brique s’ajoute pour construire des systèmes de plus en plus complexes.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+  <li>Pratiquer régulièrement (petits projets personnels)</li>
+  <li>Lire les datasheets en profondeur (indispensable)</li>
+  <li>Utiliser oscilloscope et analyseur logique (débogage)</li>
+  <li>Développer des drivers réutilisables (portfolio)</li>
+  <li>Participer à des compétitions (Coupe de Robotique, hackathons)</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./assemblage-arm-cortex.html">Langage Assemblage ARM - S6</a> : compréhension bas niveau</li>
+  <li><a href="./electronique-fonctions-numeriques.html">Électronique Fonctions Numériques - S6</a> : bus I2C/SPI</li>
+  <li><a href="./architecture-materielle.html">Architecture Matérielle - S6</a> : pipeline, cache</li>
+  <li><a href="./temps-reel.html">Temps Réel - S8</a> : RTOS, ordonnancement</li>
+  <li><a href="./embedded-ia-iot.html">Embedded IA for IoT - S9</a> : ML embarqué</li>
+</ul>
+
+<hr />
+
+<p><em>Cours enseigné en 2022-2023 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

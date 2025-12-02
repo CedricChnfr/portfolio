@@ -1,0 +1,765 @@
+---
+layout: default
+title: "Langage C - S5"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+# 💻 Langage C - S5
+
+**Année**: 2022-2023 (Semestre 5)  
+**Crédits**: 3 ECTS  
+**Type**: Programmation Système
+
+---
+
+## PART A: PRÉSENTATION GÉNÉRALE
+
+### Objectifs du cours
+
+Le cours de Langage C fournit une formation complète à la programmation système en C, langage fondamental pour le développement de systèmes embarqués, systèmes d'exploitation et applications nécessitant des performances optimales. Le cours couvre les concepts fondamentaux (pointeurs, tableaux, structures) ainsi que les aspects avancés (allocation dynamique, manipulation de bits, structures de données complexes).
+
+### Compétences visées
+
+- Maîtriser la syntaxe C et les types de données
+- Comprendre les pointeurs et l'arithmétique des pointeurs
+- Gérer la mémoire dynamique (malloc, free)
+- Manipuler les structures de données (listes chaînées, arbres)
+- Réaliser des opérations bit à bit pour le bas niveau
+- Créer des programmes modulaires avec fichiers multiples
+- Déboguer et optimiser du code C
+
+### Organisation
+
+- **Volume horaire**: 48h (CM: 24h, TD/TP: 24h)
+- **Évaluation**: Examens écrits (60%) + TPs et projets (40%)
+- **Semestre**: 5 (2022-2023)
+- **Prérequis**: Algorithmique de base, notions de programmation
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Contenu pédagogique
+
+#### 1. Fondamentaux du C
+
+**Types de données et opérateurs**:
+
+Le C propose des types primitifs de tailles fixes:
+- `char`: 1 octet (8 bits)
+- `int`: 4 octets sur systèmes 32/64 bits
+- `float`: 4 octets (simple précision)
+- `double`: 8 octets (double précision)
+
+**Modificateurs**: `signed`, `unsigned`, `short`, `long`
+
+Exemple de déclarations:
+```c
+int nombre = 42;
+unsigned int positif = 100;
+char lettre = 'A';
+float pi = 3.14f;
+```
+
+**Opérateurs bit à bit**:
+
+Essentiels pour la manipulation bas niveau:
+- `&` (AND), `|` (OR), `^` (XOR), `~` (NOT)
+- `<<` (décalage gauche), `>>` (décalage droite)
+
+**Application TD1**: Compter les bits à 1 dans un entier:
+
+```c
+int bitcount(int n) {
+    int count = 0;
+    while (n) {
+        count += n & 1;  // Teste le bit de poids faible
+        n >>= 1;         // Décale d'un bit à droite
+    }
+    return count;
+}
+```
+
+Pour `0xF0000F00`, résultat: 8 bits à 1.
+
+**Structures de contrôle**:
+
+Boucles et conditionnelles standard:
+```c
+// Tri à bulles (TD1)
+for (int j = 0; j < TAILLE-1; j++) {
+    for (int i = 0; i < TAILLE-j-1; i++) {
+        if (tab[i+1] < tab[i]) {
+            int temp = tab[i];
+            tab[i] = tab[i+1];
+            tab[i+1] = temp;
+        }
+    }
+}
+```
+
+#### 2. Pointeurs et Gestion Mémoire
+
+**Les pointeurs**:
+
+Concept fondamental du C: variable contenant une adresse mémoire.
+
+Déclaration et utilisation:
+```c
+int x = 10;
+int *ptr = &x;  // ptr pointe vers x
+*ptr = 20;      // Modifie x via le pointeur
+```
+
+**Arithmétique des pointeurs**:
+
+```c
+int tab[5] = {1, 2, 3, 4, 5};
+int *p = tab;  // Pointe vers tab[0]
+p++;           // Pointe vers tab[1]
+*p = 100;      // tab[1] = 100
+```
+
+**Permutation par pointeurs (TD2)**:
+
+```c
+int Permute(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    return 0;
+}
+```
+
+**Allocation dynamique**:
+
+Fonctions essentielles:
+- `malloc(size)`: alloue size octets
+- `calloc(n, size)`: alloue et initialise à 0
+- `free(ptr)`: libère la mémoire
+
+Exemple TD2:
+```c
+char* chaine = calloc(10, sizeof(char));
+int* tab = calloc(10, sizeof(int));
+
+// Utilisation...
+
+free(chaine);
+free(tab);
+```
+
+**Risques**:
+- Fuite mémoire si oubli de `free`
+- Double free (libérer deux fois)
+- Accès après free (use-after-free)
+- Dépassement de buffer
+
+#### 3. Structures et Types Composés
+
+**Définition de structures (TD3)**:
+
+```c
+struct Etudiant {
+    char nom[50];
+    int naissance;
+    int notes[10];
+    int nb_notes;
+};
+```
+
+**Utilisation**:
+
+```c
+struct Etudiant cedric;
+strcpy(cedric.nom, "Chanfreau");
+cedric.naissance = 2000;
+cedric.notes[0] = 15;
+```
+
+**Pointeurs vers structures**:
+
+```c
+struct Etudiant *ptr = &cedric;
+ptr->naissance = 2001;  // Équivalent à (*ptr).naissance
+```
+
+**Copie de structures**:
+
+Attention aux pointeurs dans les structures:
+
+```c
+struct S1 {
+    int a;
+    char* ch;  // Pointeur
+};
+
+struct S1 v1, v2;
+v1.ch = calloc(10, sizeof(char));
+strcpy(v1.ch, "Test");
+
+v2 = v1;  // Copie superficielle: v2.ch pointe vers la même zone!
+```
+
+Solution: copie profonde manuelle ou allocation séparée.
+
+#### 4. Structures de Données Dynamiques
+
+**Listes chaînées (TP principal)**:
+
+Structure d'un élément:
+```c
+struct element {
+    struct Coureur* coureur;
+    struct element* suiv;
+};
+
+struct liste {
+    struct element* premier;
+    struct element* dernier;
+    struct element* courant;
+};
+```
+
+**Initialisation**:
+```c
+int init_liste(struct liste* liste) {
+    liste->premier = NULL;
+    liste->dernier = NULL;
+    return 0;
+}
+```
+
+**Ajout en queue (file)**:
+```c
+int ajout_file(struct liste* der, struct Coureur* coureur) {
+    if (der->dernier == NULL) {
+        // Liste vide
+        der->dernier = malloc(sizeof(struct element));
+        der->dernier->coureur = coureur;
+        der->premier = der->dernier;
+        der->dernier->suiv = NULL;
+    } else {
+        // Ajout en fin
+        der->dernier->suiv = malloc(sizeof(struct element));
+        der->dernier = der->dernier->suiv;
+        der->dernier->coureur = coureur;
+        der->dernier->suiv = NULL;
+    }
+    return 0;
+}
+```
+
+**Parcours de liste**:
+```c
+int Aller_Debut(struct liste* liste) {
+    liste->courant = liste->premier;
+    return 0;
+}
+
+int Avancer(struct liste* liste) {
+    liste->courant = liste->courant->suiv;
+    return 0;
+}
+
+int Fin(struct liste liste) {
+    return (liste.courant == NULL);
+}
+```
+
+**Comptage d'éléments**:
+```c
+int nbElement(struct liste liste) {
+    int count = 0;
+    while (!Fin(liste)) {
+        Avancer(&liste);
+        count++;
+    }
+    return count;
+}
+```
+
+#### 5. Fichiers et Arguments
+
+**Arguments de ligne de commande (TD2)**:
+
+```c
+int main(int argc, char* argv[]) {
+    printf("Nombre d'arguments: %d\n", argc);
+    if (argc == 3) {
+        printf("Programme: %s\n", argv[0]);
+        printf("Arg1: %s\n", argv[1]);
+        printf("Arg2: %s\n", argv[2]);
+    }
+    return 0;
+}
+```
+
+Exécution: `./programme arg1 arg2`
+
+**Manipulation de fichiers**:
+
+Ouverture et lecture:
+```c
+FILE* fichier = fopen("data.txt", "r");
+if (fichier == NULL) {
+    perror("Erreur ouverture");
+    return -1;
+}
+
+char buffer[256];
+while (fgets(buffer, 256, fichier) != NULL) {
+    printf("%s", buffer);
+}
+
+fclose(fichier);
+```
+
+Modes d'ouverture: `"r"` (lecture), `"w"` (écriture), `"a"` (ajout), `"rb"` (binaire)
+
+#### 6. Programmation Modulaire
+
+**Projet TP: Structure modulaire**
+
+Fichier `coureur.h`:
+```c
+#ifndef _COUREUR_H
+#define _COUREUR_H
+
+struct Coureur {
+    char* nom;
+    char* prenom;
+    int num_dossard;
+    char* nom_equipe;
+    int temps_etapes;
+};
+
+struct Coureur* Creer_Coureur(char nom[], char prenom[], 
+                               int dossard, char equipe[], int temps);
+int Ajouter_Temps(struct Coureur* coureur, int temps_jour);
+int Afficher_Coureur(struct Coureur* coureur);
+
+#endif
+```
+
+**Guards d'inclusion**: `#ifndef`, `#define`, `#endif` évitent les inclusions multiples.
+
+**Compilation modulaire**:
+```bash
+gcc -Wall -c coureur.c -o coureur.o
+gcc -Wall -c liste.c -o liste.o
+gcc -Wall -c test_coureur.c -o test_coureur.o
+gcc coureur.o liste.o test_coureur.o -o programme
+```
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Exercices de TD
+
+**TD1: Manipulation de tableaux et bits**
+
+Objectifs:
+- Tri à bulles d'un tableau
+- Multiplication sans opérateur *
+- Opérations bit à bit (masquage, comptage)
+
+**TD2: Pointeurs et allocation dynamique**
+
+Exercices:
+- Fonction Permute avec pointeurs
+- Allocation dynamique avec calloc
+- Arguments de ligne de commande
+
+**TD3: Structures et copie**
+
+Problématiques:
+- Structures avec pointeurs vs tableaux
+- Copie superficielle vs profonde
+- Gestion mémoire dans structures
+
+**TD4-TD5: Fichiers et structures avancées**
+
+Applications pratiques de manipulation de données.
+
+### Travaux Pratiques
+
+**TP: Gestion de liste de coureurs**
+
+Application complète avec:
+- Structure `Coureur` avec allocation dynamique de chaînes
+- Liste chaînée pour gérer plusieurs coureurs
+- Opérations: création, ajout, parcours, suppression
+- Affichage et calcul de statistiques
+
+**Fonctionnalités implémentées**:
+- Création de coureurs avec malloc pour les strings
+- Ajout en file (FIFO)
+- Parcours avec pointeur courant
+- Suppression d'élément à position donnée
+- Comptage d'éléments
+- Libération mémoire complète
+
+**TP_bis: Extensions**
+
+Versions avancées avec:
+- Tri de listes
+- Recherche par critères
+- Fusion de listes
+- Optimisations mémoire
+
+### Outils de Développement
+
+**GCC (GNU Compiler Collection)**:
+
+Compilation de base:
+```bash
+gcc -Wall -o programme source.c
+```
+
+Options utiles:
+- `-Wall`: affiche tous les warnings
+- `-g`: ajoute symboles de debug
+- `-O2`: optimisation niveau 2
+- `-std=c99`: standard C99
+
+**GDB (GNU Debugger)**:
+
+```bash
+gcc -g -o programme source.c
+gdb ./programme
+```
+
+Commandes GDB:
+- `break main`: point d'arrêt
+- `run`: exécution
+- `next`: ligne suivante
+- `print var`: afficher variable
+- `backtrace`: pile d'appels
+
+**Valgrind (détection fuites mémoire)**:
+
+```bash
+valgrind --leak-check=full ./programme
+```
+
+Détecte:
+- Fuites mémoire (malloc sans free)
+- Accès mémoire invalides
+- Utilisation de mémoire non initialisée
+
+### Bonnes Pratiques
+
+**Gestion mémoire**:
+- Toujours libérer ce qui est alloué
+- Vérifier le retour de malloc
+- Mettre les pointeurs à NULL après free
+
+**Code sûr**:
+```c
+char* str = malloc(100);
+if (str == NULL) {
+    fprintf(stderr, "Erreur allocation\n");
+    return -1;
+}
+
+// Utilisation...
+
+free(str);
+str = NULL;  // Évite double free
+```
+
+**Organisation code**:
+- Fichiers .h pour déclarations
+- Fichiers .c pour implémentations
+- Guards d'inclusion systématiques
+- Commentaires pour fonctions complexes
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Compétences acquises
+
+**Techniques**:
+- Maîtrise des pointeurs et gestion mémoire
+- Implémentation de structures de données complexes
+- Débogage avec GDB et Valgrind
+- Compilation modulaire et organisation projet
+- Manipulation bit à bit pour le bas niveau
+
+**Méthodologiques**:
+- Rigueur dans la gestion mémoire
+- Tests systématiques des allocations
+- Documentation et organisation du code
+- Résolution méthodique des bugs
+
+### Auto-évaluation
+
+**Points forts**:
+- Compréhension solide des pointeurs
+- Capacité à créer structures de données dynamiques
+- Bonne pratique de la compilation modulaire
+- Maîtrise des outils (GCC, GDB)
+
+**Défis**:
+- Complexité initiale des pointeurs de pointeurs
+- Gestion rigoureuse de la mémoire (fuites)
+- Debugging de segmentation faults
+- Compréhension fine des copies de structures
+
+### Applications pratiques
+
+Le C est utilisé dans:
+- **Systèmes embarqués**: microcontrôleurs (Arduino, STM32)
+- **Systèmes d'exploitation**: Linux kernel, drivers
+- **Temps réel**: applications critiques
+- **Performances**: calcul scientifique, traitement signal
+- **Réseaux**: protocoles, serveurs
+- **Bases de données**: PostgreSQL, SQLite
+
+### Connexions avec autres cours
+
+- **Microcontrôleurs** (S6): programmation STM32 en C
+- **Systèmes d'exploitation** (S6): appels système en C
+- **Temps Réel** (S8): FreeRTOS programmé en C
+- **Réseaux** (S6): sockets et protocoles en C
+- **Architecture** (S5): compréhension assembleur depuis C
+
+### Perspectives
+
+**Évolution du langage**:
+- C11, C17, C23: standards modernes
+- Outils statiques: Clang, sanitizers
+- Intégration IDE: VS Code, CLion
+
+**Alternatives modernes**:
+- Rust: sécurité mémoire garantie
+- C++: orienté objet avec compatibilité C
+- Zig: modernisation du C
+
+Mais le C reste incontournable pour:
+- Systèmes embarqués contraints
+- Interfaces hardware
+- Performance maximale
+- Legacy code (Linux, UNIX)
+
+### Recommandations
+
+1. **Pratiquer régulièrement**: coder chaque jour
+2. **Lire du code**: projets open source (Git, SQLite)
+3. **Utiliser Valgrind**: systématiquement
+4. **Tester rigoureusement**: cas limites, gestion erreurs
+5. **Documenter**: fonctions et algorithmes complexes
+
+**Ressources**:
+- K&R: "The C Programming Language" (référence)
+- Beej's Guide: tutoriels réseau et sockets
+- Linux kernel source: exemples réels
+- Stack Overflow: résolution problèmes
+
+En conclusion, le C reste le langage fondamental pour comprendre le fonctionnement bas niveau des ordinateurs et programmer efficacement les systèmes embarqués. La rigueur acquise en C est bénéfique pour tous les autres langages.
+
+---
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4, h5 {
+        color: #2a7ae2;
+    }
+    p {
+        text-align: justify;
+    }
+    code {
+        background-color: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+### Environnement de développement
+
+**Outils utilisés**:
+- **GCC** (GNU Compiler Collection): Compilateur principal
+- **GDB** (GNU Debugger): Débogueur en ligne de commande
+- **Make et Makefiles**: Automatisation de compilation
+- **Valgrind**: Débogage et détection de fuites mémoire
+- **Éditeurs**: VS Code, Vim, Emacs
+
+### Organisation mémoire
+
+**Layout mémoire**:
+- Stack (pile) vs Heap (tas)
+- Segments mémoire (text, data, BSS)
+- Stack frames et call stack
+- Alignement mémoire
+- Gestion automatique vs manuelle
+
+### Processus de compilation
+
+1. **Préprocessing**: Traitement des directives #
+2. **Compilation**: Traduction en assembleur
+3. **Assembly**: Génération du code machine
+4. **Linking**: Édition de liens
+5. **Exécutable**: Fichier final
+
+### Structures de données implémentées
+
+- Listes chaînées (simples, doubles, circulaires)
+- Piles et files
+- Arbres binaires
+- Tables de hachage
+- Graphes
+
+### Bonnes pratiques enseignées
+
+- Organisation et structure du code
+- Conventions de nommage
+- Commentaires et documentation
+- Stratégies de gestion d'erreurs
+- Sécurité mémoire
+- Portabilité du code
+- Optimisation des performances
+
+### Concepts de programmation système
+
+- Appels système
+- Gestion de processus
+- Communication inter-processus
+- Signaux
+- Threads (introduction)
+- Programmation réseau (sockets)
+
+---
+
+## PART D: COMPÉTENCES ACQUISES, AUTO-ÉVALUATION, AVIS
+
+### Compétences développées
+
+**Compétences techniques**:
+- Maîtrise solide de la programmation C
+- Débogage systématique et tests
+- Gestion efficace de la mémoire
+- Compétences en programmation bas niveau
+- Pensée algorithmique en C
+
+**Compétences transversales**:
+- Rigueur et précision dans le code
+- Résolution méthodique de problèmes
+- Analyse et optimisation de performances
+- Lecture et compréhension de code existant
+- Documentation technique
+
+### Auto-évaluation
+
+**Points forts**:
+- Compréhension approfondie des pointeurs et de la mémoire
+- Capacité à écrire du code C efficace et optimisé
+- Maîtrise des outils de développement (GCC, GDB, Make)
+- Solide fondation pour la programmation système
+- Expérience pratique avec projets réels
+
+**Défis rencontrés**:
+- Complexité initiale des pointeurs et de l'arithmétique pointeurs
+- Gestion des fuites mémoire et bugs subtils
+- Débogage de problèmes de segmentation fault
+- Compréhension fine du cycle de compilation
+- Optimisation mémoire et performances
+
+### Apports pour le parcours
+
+Ce cours a été fondamental pour:
+- **Systèmes embarqués**: Base essentielle pour la programmation microcontrôleurs
+- **Systèmes d'exploitation**: Compréhension des mécanismes bas niveau
+- **Performance**: Capacité à écrire du code efficace
+- **Projets techniques**: Langage utilisé dans de nombreux projets d'école
+- **Employabilité**: Compétence très recherchée en industrie
+
+### Applications pratiques
+
+Les compétences acquises sont directement utilisées dans:
+- Développement de systèmes d'exploitation
+- Programmation de systèmes embarqués
+- Développement de drivers et pilotes
+- Utilitaires système
+- Calcul haute performance
+- Systèmes temps réel
+- Programmation réseau
+
+### Projets marquants
+
+**Gestion de structures de données**:
+- Implémentation complète de listes chaînées avec gestion mémoire
+- Création de structures de données réutilisables
+
+**Manipulation de fichiers**:
+- Développement d'utilitaires de traitement de fichiers
+- Gestion d'erreurs robuste
+
+**Programmation système**:
+- Simulateurs de bas niveau
+- Interfaces avec le système
+
+### Ressources et documentation
+
+- Notes de cours complètes
+- Exercices TD avec solutions détaillées
+- Supports TP laboratoire
+- Exercices complémentaires (TP_bis)
+- Manuels de référence C
+- Documentation en ligne (GNU, C standard)
+
+### Évolution des compétences
+
+- **Début**: Syntaxe de base, types simples
+- **Milieu**: Pointeurs, structures, allocation dynamique
+- **Fin**: Programmation système, optimisation, projets complexes
+
+**Recommandation**: Le langage C est fondamental en ingénierie électronique et informatique embarquée. Ce cours établit des bases solides pour tous les cours de systèmes embarqués, microcontrôleurs et systèmes d'exploitation à venir. La pratique régulière et la lecture de code source sont essentielles pour consolider ces compétences.
+
+---
+
+[← Back to My Courses 2022-2023](./my-courses-2022-2023.html)

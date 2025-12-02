@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Architecture Informatique Matérielle - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Architecture Informatique Matérielle - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/architecture-informatique-materielle.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/architecture-informatique-materielle.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Architecture Informatique Matérielle - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Architecture Informatique Matérielle - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/architecture-informatique-materielle.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/architecture-informatique-materielle.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-architecture-informatique-matérielle---s5">💻 Architecture Informatique Matérielle - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Informatique / Architecture des Systèmes</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Le cours “Architecture Informatique Matérielle” fournit une compréhension approfondie de l’organisation et du fonctionnement des systèmes informatiques au niveau matériel. Il couvre l’ensemble de la hiérarchie mémoire, de l’architecture des processeurs, et des mécanismes d’optimisation des performances. Ce cours est fondamental pour comprendre comment le matériel influence les performances logicielles et pour concevoir des systèmes embarqués efficaces.</p>
+
+<div style="text-align: center;">
+    <img src="/img/Courses/S5/Architecture-Informatique-Matérielle/archi-info-mat-vue.png" style="width: 70%;" />
+</div>
+<p><br /></p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Maîtriser les concepts d’architecture des processeurs (RISC, pipeline, unités fonctionnelles)</li>
+  <li>Comprendre la hiérarchie mémoire (mémoire physique, virtuelle, caches)</li>
+  <li>Analyser les performances des systèmes informatiques</li>
+  <li>Programmer en assembleur MIPS pour le bas niveau</li>
+  <li>Optimiser le code en fonction de l’architecture matérielle</li>
+  <li>Comprendre les mécanismes de pagination et de gestion mémoire</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: 30h (CM: 18h, TD: 12h)</li>
+  <li><strong>Évaluation</strong>: Examen écrit + TDs notés + TP assembleur</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Logique séquentielle, systèmes numériques</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<h4 id="1-introduction-générale-aux-architectures">1. Introduction Générale aux Architectures</h4>
+
+<p><strong>Concepts fondamentaux</strong>:</p>
+<ul>
+  <li>Architecture de Von Neumann vs Harvard</li>
+  <li>Modèle de Von Neumann: mémoire unique pour données et instructions</li>
+</ul>
+
+<div style="text-align: center;">
+    <img src="/img/Courses/S5/Architecture-Informatique-Matérielle/von-neumann.png" style="width: 30%;" />
+</div>
+
+<ul>
+  <li>Architecture Harvard: séparation physique instructions/données</li>
+</ul>
+<div style="text-align: center;">
+    <img src="/img/Courses/S5/Architecture-Informatique-Matérielle/harvard.png" style="width: 60%;" />
+</div>
+<ul>
+  <li>Bus système: adresses, données, contrôle</li>
+  <li>Cycle d’exécution: Fetch-Decode-Execute</li>
+</ul>
+
+<p><strong>Évolution historique</strong>:</p>
+<ul>
+  <li>Des premiers ordinateurs aux architectures modernes</li>
+  <li>Loi de Moore et ses limites actuelles</li>
+  <li>Passage du monoprocesseur au multiprocesseur</li>
+  <li>Architectures RISC (Reduced Instruction Set Computer) vs CISC (Complex)</li>
+</ul>
+
+<p><strong>Mesure de performances</strong>:</p>
+<ul>
+  <li>CPI (Cycles Per Instruction)</li>
+  <li>MIPS (Millions d’Instructions Per Second)</li>
+  <li>Temps d’exécution CPU</li>
+  <li>Benchmark et profiling</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Architecture-Informatique-Matérielle/1-Introduction_generale_architectures.pdf">Introduction générale aux architectures</a> (PDF)</p>
+
+<h4 id="2-mémoire-physique">2. Mémoire Physique</h4>
+
+<p><strong>Organisation mémoire</strong>:</p>
+<ul>
+  <li>Hiérarchie mémoire: registres → cache → RAM → disque</li>
+  <li>Technologies mémoire: SRAM, DRAM, ROM, Flash</li>
+</ul>
+<div style="text-align: center;">
+    <img src="/img/Courses/S5/Architecture-Informatique-Matérielle/memoire.png" style="width: 60%;" />
+</div>
+<ul>
+  <li>Temps d’accès et bande passante</li>
+  <li>Principe de localité (temporelle et spatiale)</li>
+</ul>
+
+<p><strong>Adressage mémoire</strong>:</p>
+<ul>
+  <li>Espace d’adressage linéaire</li>
+  <li>Adressage par mot vs par octet (byte-addressable)</li>
+  <li>Alignement mémoire et padding</li>
+  <li>Endianness (big-endian vs little-endian)</li>
+</ul>
+
+<p><strong>Organisation des données</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exemple d'organisation mémoire 32 bits:
+Adresse    |  Contenu (hex)
+-----------|-----------------
+0x00000000 |  0xAABBCCDD
+0x00000004 |  0x11223344
+0x00000008 |  0xFFFF0000
+</code></pre></div></div>
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Architecture-Informatique-Matérielle/2-Memoire_physique.pdf">Mémoire physique</a> (PDF)</p>
+
+<h4 id="3-mémoire-virtuelle">3. Mémoire Virtuelle</h4>
+
+<p><strong>Concepts de virtualisation</strong>:</p>
+<ul>
+  <li>Séparation adresse virtuelle / adresse physique</li>
+  <li>Espace d’adressage par processus</li>
+  <li>Protection mémoire et isolation</li>
+  <li>Partage de mémoire entre processus</li>
+</ul>
+
+<p><strong>Mécanisme de pagination</strong>:</p>
+<ul>
+  <li>Pages virtuelles et cadres physiques (frames)</li>
+  <li>Taille de page typique: 4 KB, 2 MB (large pages)</li>
+  <li>Table des pages (page table)</li>
+  <li>TLB (Translation Lookaside Buffer): cache pour traductions</li>
+</ul>
+
+<p><strong>Formules de traduction</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Adresse virtuelle = Numéro de page virtuelle + Offset
+Adresse physique = Numéro de cadre physique + Offset
+
+Exemple avec pages de 4 KB (2^12 octets):
+Adresse virtuelle: 32 bits
+  - 20 bits: numéro de page (2^20 pages)
+  - 12 bits: offset dans la page (4096 octets)
+</code></pre></div></div>
+
+<p><strong>Gestion des défauts de page</strong>:</p>
+<ul>
+  <li>Page fault (défaut de page)</li>
+  <li>Algorithmes de remplacement: LRU, FIFO, Clock</li>
+  <li>Swapping et pagination à la demande</li>
+  <li>Working set et thrashing</li>
+</ul>
+
+<p><strong>Table des pages multi-niveaux</strong>:</p>
+<ul>
+  <li>Table des pages sur 2 niveaux (x86)</li>
+  <li>Table des pages sur 3/4 niveaux (x86-64)</li>
+  <li>Réduction de l’espace mémoire pour les tables</li>
+  <li>Pagination inverse</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Architecture-Informatique-Matérielle/3-Memoire-virtuelle.pdf">Mémoire virtuelle</a> (PDF)</p>
+
+<h4 id="4-mémoires-caches">4. Mémoires Caches</h4>
+
+<p><strong>Principe du cache</strong>:</p>
+<ul>
+  <li>Cache situé entre CPU et RAM</li>
+  <li>Exploite la localité spatiale et temporelle</li>
+  <li>Réduction du temps d’accès moyen</li>
+  <li>Hiérarchie: L1 (le plus rapide), L2, L3</li>
+</ul>
+
+<p><strong>Organisation du cache</strong>:</p>
+
+<p><strong>Cache à correspondance directe (direct-mapped)</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Adresse mémoire décomposée en:
+  Tag | Index | Offset
+  
+Exemple: cache 16 KB, lignes de 64 octets
+  Offset: 6 bits (64 = 2^6)
+  Index: 8 bits (256 lignes)
+  Tag: 18 bits (pour adresse 32 bits)
+</code></pre></div></div>
+
+<p><strong>Cache associatif par ensemble (set-associative)</strong>:</p>
+<ul>
+  <li>N-way set-associative (2-way, 4-way, 8-way)</li>
+  <li>Compromis entre direct-mapped et fully associative</li>
+  <li>Politique de remplacement: LRU, Random, FIFO</li>
+</ul>
+
+<p><strong>Formules de performances</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Temps d'accès moyen = Hit_time + Miss_rate × Miss_penalty
+
+Taux de hit (hit rate) = Nombre de hits / Nombre total d'accès
+Taux de miss (miss rate) = 1 - Hit rate
+
+Exemple:
+  Hit time = 1 cycle
+  Miss penalty = 100 cycles
+  Miss rate = 2%
+  
+  Temps moyen = 1 + 0.02 × 100 = 3 cycles
+</code></pre></div></div>
+
+<p><strong>Types de miss</strong>:</p>
+<ul>
+  <li><strong>Compulsory miss</strong> (cold miss): premier accès</li>
+  <li><strong>Capacity miss</strong>: cache trop petit</li>
+  <li><strong>Conflict miss</strong>: collision dans direct-mapped</li>
+</ul>
+
+<p><strong>Cohérence de cache</strong>:</p>
+<ul>
+  <li>Problème en multiprocesseur</li>
+  <li>Protocoles MESI, MOESI</li>
+  <li>Write-through vs write-back</li>
+  <li>Invalidation vs mise à jour</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Architecture-Informatique-Matérielle/4-les_caches.pdf">Les caches</a> (PDF)</p>
+
+<h4 id="5-architecture-du-processeur">5. Architecture du Processeur</h4>
+
+<p><strong>Processeur RISC (MIPS)</strong>:</p>
+<ul>
+  <li>Jeu d’instructions réduit et régulier</li>
+  <li>Instructions de taille fixe (32 bits)</li>
+  <li>Load/Store architecture</li>
+  <li>Pipeline efficace</li>
+</ul>
+
+<p><strong>Registres MIPS</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$zero ($0): toujours 0
+$at ($1): réservé assembleur
+$v0-$v1 ($2-$3): valeurs de retour
+$a0-$a3 ($4-$7): arguments de fonction
+$t0-$t9 ($8-$15, $24-$25): temporaires
+$s0-$s7 ($16-$23): sauvegardés
+$k0-$k1 ($26-$27): réservés OS
+$gp ($28): pointeur global
+$sp ($29): pointeur de pile
+$fp ($30): pointeur de cadre
+$ra ($31): adresse de retour
+</code></pre></div></div>
+
+<p><strong>Formats d’instructions</strong>:</p>
+
+<p><strong>Format R</strong> (Register): opérations arithmétiques/logiques</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| op (6) | rs (5) | rt (5) | rd (5) | shamt (5) | funct (6) |
+Exemple: add $13, $11, $12
+</code></pre></div></div>
+
+<p><strong>Format I</strong> (Immediate): load/store, branches, constantes</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| op (6) | rs (5) | rt (5) | immediate (16) |
+Exemple: addi $10, $zero, 53
+</code></pre></div></div>
+
+<p><strong>Format J</strong> (Jump): sauts inconditionnels</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| op (6) | address (26) |
+Exemple: j add_32bits
+</code></pre></div></div>
+
+<p><strong>Pipeline du processeur</strong>:</p>
+<ul>
+  <li><strong>IF</strong> (Instruction Fetch): chargement instruction</li>
+  <li><strong>ID</strong> (Instruction Decode): décodage et lecture registres</li>
+  <li><strong>EX</strong> (Execute): exécution ALU</li>
+  <li><strong>MEM</strong> (Memory): accès mémoire (load/store)</li>
+  <li><strong>WB</strong> (Write Back): écriture résultat dans registre</li>
+</ul>
+
+<p><strong>Aléas de pipeline</strong> (hazards):</p>
+<ul>
+  <li><strong>Aléas de données</strong>: RAW (Read After Write), WAR, WAW</li>
+  <li><strong>Aléas de contrôle</strong>: branches et sauts</li>
+  <li><strong>Aléas structurels</strong>: conflits de ressources</li>
+</ul>
+
+<p><strong>Solutions aux aléas</strong>:</p>
+<ul>
+  <li>Forwarding (court-circuit)</li>
+  <li>Stall (bulles dans le pipeline)</li>
+  <li>Branch prediction (prédiction de branchement)</li>
+  <li>Delayed branch</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Architecture-Informatique-Matérielle/5-Processeur.pdf">Architecture du processeur</a> (PDF)
+—</p>
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<p>Cette section présente les éléments techniques appris à travers les TPs et exercices pratiques.</p>
+
+<h3 id="programmation-assembleur-mips">Programmation Assembleur MIPS</h3>
+
+<h4 id="tp1-addition-32-bits-et-conversion-de-temps">TP1: Addition 32 bits et Conversion de Temps</h4>
+
+<p><strong>Code assembleur réalisé</strong>:</p>
+
+<pre><code class="language-mips"># Initialisation des variables
+addi $10, $zero, 53      # Secondes = 53
+addi $1, $zero, 27       # Minutes = 27  
+addi $2, $zero, 3        # Heures = 3
+j add_32bits             # Saut vers fonction addition
+
+# Conversion temps en secondes totales
+conv_secondes:  
+    addi $4, $zero, 3600     # $4 = 3600 (secondes/heure)
+    addi $5, $zero, 60       # $5 = 60 (secondes/minute)
+    mul $6, $2, $4           # $6 = heures × 3600
+    mul $7, $1, $5           # $7 = minutes × 60
+    add $8, $7, $6           # $8 = (heures×3600) + (minutes×60)
+    add $9, $8, $10          # $9 = total + secondes
+
+# Addition 32 bits avec détection de dépassement
+add_32bits:
+    lw $11, var              # Charger variable a
+    lw $12, var              # Charger variable b
+    
+    addu $13, $12, $11       # c = a + b (addition non signée)
+    and $14, $11, $12        # e = a AND b (retenue entrante)
+    xor $15, $11, $12        # x = a XOR b (somme sans retenue)
+    
+    not $18, $13             # Inversion de c
+    and $16, $18, $15        # x AND (NOT c)
+    or $17, $16, $14         # Calcul du bit de retenue sortante
+    srl $21, $17, 31         # Décalage pour extraire bit de poids fort
+                             # $21 contient le flag de dépassement (overflow)
+
+var: .word 0xFFFF0000        # Variable de test 32 bits
+</code></pre>
+
+<p><strong>Concepts appliqués</strong>:</p>
+
+<ol>
+  <li><strong>Instructions arithmétiques</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">addi</code>: addition immédiate (avec constante)</li>
+      <li><code class="language-plaintext highlighter-rouge">add</code> / <code class="language-plaintext highlighter-rouge">addu</code>: addition signée / non signée</li>
+      <li><code class="language-plaintext highlighter-rouge">mul</code>: multiplication</li>
+    </ul>
+  </li>
+  <li><strong>Instructions logiques</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">and</code>: ET bit à bit</li>
+      <li><code class="language-plaintext highlighter-rouge">or</code>: OU bit à bit</li>
+      <li><code class="language-plaintext highlighter-rouge">xor</code>: OU exclusif bit à bit</li>
+      <li><code class="language-plaintext highlighter-rouge">not</code>: inversion (complément à 1)</li>
+    </ul>
+  </li>
+  <li><strong>Instructions mémoire</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">lw</code> (load word): chargement 32 bits depuis mémoire</li>
+      <li>Directive <code class="language-plaintext highlighter-rouge">.word</code>: déclaration de donnée 32 bits</li>
+    </ul>
+  </li>
+  <li><strong>Instructions de contrôle</strong>:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">j</code> (jump): saut inconditionnel</li>
+      <li>Étiquettes pour les adresses</li>
+    </ul>
+  </li>
+  <li><strong>Gestion du dépassement</strong>:
+    <ul>
+      <li>Détection de l’overflow sur addition</li>
+      <li>Utilisation de la logique booléenne pour calculer la retenue</li>
+      <li>Formule: <code class="language-plaintext highlighter-rouge">Overflow = Cout XOR Cin</code> (retenue sortante XOR entrante)</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="analyse-de-lalgorithme-de-détection-de-dépassement">Analyse de l’algorithme de détection de dépassement</h4>
+
+<p><strong>Principe mathématique</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pour détecter un dépassement (overflow) sur addition:
+  c = a + b
+  e = a AND b  (positions où a=1 et b=1, retenue garantie)
+  x = a XOR b  (somme sans retenue)
+  
+  Retenue sortante = (x AND NOT(c)) OR e
+  
+  Si le bit de poids fort de la retenue = 1 → overflow
+</code></pre></div></div>
+
+<p><strong>Exemple numérique</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = 0xFFFF0000 (grand nombre négatif en complément à 2)
+b = 0xFFFF0000
+c = 0xFFFE0000 (résultat)
+
+Analyse bit par bit du MSB (bit 31):
+  a[31] = 1, b[31] = 1
+  c[31] = 1
+  
+  Overflow détecté si signe change incorrectement
+</code></pre></div></div>
+
+<h3 id="exercices-de-calcul-de-performances">Exercices de Calcul de Performances</h3>
+
+<h4 id="calcul-du-temps-dexécution">Calcul du temps d’exécution</h4>
+
+<p><strong>Formule fondamentale</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Temps_CPU = Nombre_instructions × CPI × Période_horloge
+
+Où:
+  CPI = Cycles Per Instruction
+  Période = 1 / Fréquence
+</code></pre></div></div>
+
+<p><strong>Exemple d’exercice</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Programme: 1 million d'instructions
+CPI moyen: 2.5
+Fréquence CPU: 2 GHz
+
+Temps_CPU = 10^6 × 2.5 × (1 / 2×10^9)
+          = 2.5×10^6 / 2×10^9
+          = 1.25 ms
+</code></pre></div></div>
+
+<h4 id="performances-du-cache">Performances du cache</h4>
+
+<p><strong>Exercice type</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cache L1: 32 KB, 4-way associative, ligne 64 octets
+  Hit time: 1 cycle
+  Hit rate: 95%
+
+RAM: 
+  Latence: 100 cycles
+
+Calcul temps d'accès moyen:
+  T_moy = 0.95 × 1 + 0.05 × 100
+        = 0.95 + 5
+        = 5.95 cycles
+
+Amélioration par rapport à sans cache:
+  Speedup = 100 / 5.95 = 16.8×
+</code></pre></div></div>
+
+<h4 id="calcul-de-pagination">Calcul de pagination</h4>
+
+<p><strong>Exercice de traduction d’adresse</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Configuration:
+  - Pages de 4 KB (4096 octets = 2^12)
+  - Adresses virtuelles 32 bits
+  - Adresse physique 30 bits
+
+Adresse virtuelle: 0x12345678
+
+Décomposition:
+  Bits 31-12: numéro page virtuelle = 0x12345
+  Bits 11-0:  offset = 0x678
+
+Si table des pages indique: VPN 0x12345 → PFN 0x00ABC
+
+Adresse physique:
+  = (0x00ABC &lt;&lt; 12) | 0x678
+  = 0x00ABC678
+</code></pre></div></div>
+
+<h3 id="optimisation-du-code">Optimisation du Code</h3>
+
+<h4 id="exploitation-du-cache">Exploitation du cache</h4>
+
+<p><strong>Mauvaise utilisation</strong> (cache miss fréquents):</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Parcours colonne par colonne (mauvaise localité spatiale)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>  <span class="c1">// Accès non contigus</span>
+</code></pre></div></div>
+
+<p><strong>Bonne utilisation</strong> (cache friendly):</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Parcours ligne par ligne (bonne localité spatiale)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>  <span class="c1">// Accès contigus</span>
+</code></pre></div></div>
+
+<p><strong>Explication</strong>:</p>
+<ul>
+  <li>Les matrices en C sont stockées ligne par ligne (row-major order)</li>
+  <li>Lignes de cache: 64 octets = 16 entiers (4 octets chacun)</li>
+  <li>Parcours ligne → tous les éléments d’une ligne chargés ensemble</li>
+  <li>Parcours colonne → chaque accès charge une nouvelle ligne de cache</li>
+</ul>
+
+<h4 id="blockingtiling-pour-matrices">Blocking/Tiling pour matrices</h4>
+
+<p><strong>Technique de blocking</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Multiplication matricielle avec blocking</span>
+<span class="cp">#define BLOCK_SIZE 32
+</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">ii</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">ii</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">ii</span> <span class="o">+=</span> <span class="n">BLOCK_SIZE</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">jj</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">jj</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">jj</span> <span class="o">+=</span> <span class="n">BLOCK_SIZE</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">kk</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">kk</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">kk</span> <span class="o">+=</span> <span class="n">BLOCK_SIZE</span><span class="p">)</span>
+            <span class="c1">// Bloc de BLOCK_SIZE × BLOCK_SIZE</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">ii</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">min</span><span class="p">(</span><span class="n">ii</span><span class="o">+</span><span class="n">BLOCK_SIZE</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">jj</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">min</span><span class="p">(</span><span class="n">jj</span><span class="o">+</span><span class="n">BLOCK_SIZE</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="n">kk</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">min</span><span class="p">(</span><span class="n">kk</span><span class="o">+</span><span class="n">BLOCK_SIZE</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
+                        <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p><strong>Avantage</strong>: réutilisation des données en cache L1 avant éviction</p>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="connaissances-et-compétences-mobilisées">Connaissances et compétences mobilisées</h3>
+
+<ul>
+  <li><strong>Architecture des systèmes</strong>: compréhension profonde du fonctionnement matériel</li>
+  <li><strong>Programmation bas niveau</strong>: maîtrise de l’assembleur MIPS</li>
+  <li><strong>Optimisation</strong>: capacité à écrire du code efficace tenant compte du matériel</li>
+  <li><strong>Analyse de performances</strong>: calcul et optimisation des performances système</li>
+  <li><strong>Gestion mémoire</strong>: compréhension des mécanismes de pagination et cache</li>
+</ul>
+
+<h3 id="auto-évaluation">Auto-évaluation</h3>
+
+<p>Ce cours a été fondamental pour ma compréhension des systèmes informatiques. J’ai particulièrement apprécié:</p>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li><strong>Lien théorie/pratique</strong>: les TPs en assembleur MIPS ont rendu concrets les concepts abstraits</li>
+  <li><strong>Compréhension du matériel</strong>: vision claire de ce qui se passe “sous le capot”</li>
+  <li><strong>Optimisation</strong>: capacité à comprendre pourquoi certains codes sont plus rapides</li>
+  <li><strong>Débogage</strong>: meilleure compréhension des erreurs (segfault, cache miss, etc.)</li>
+</ul>
+
+<p><strong>Difficultés rencontrées</strong>:</p>
+<ul>
+  <li><strong>Assembleur MIPS</strong>: syntaxe et conventions différentes du C</li>
+  <li><strong>Pipeline et hazards</strong>: concepts abstraits nécessitant de la visualisation</li>
+  <li><strong>Calculs de cache</strong>: nombreuses formules et cas particuliers</li>
+</ul>
+
+<p><strong>Applications pratiques</strong>:</p>
+<ul>
+  <li>Optimisation de code pour systèmes embarqués</li>
+  <li>Compréhension des contraintes temps réel</li>
+  <li>Choix d’algorithmes adaptés à l’architecture</li>
+</ul>
+
+<h3 id="mon-opinion">Mon opinion</h3>
+
+<p>Ce cours est indispensable pour tout ingénieur en informatique ou systèmes embarqués. Même à l’ère des langages de haut niveau, comprendre l’architecture matérielle permet:</p>
+
+<ol>
+  <li><strong>Meilleure performance</strong>: code optimisé pour le cache et le pipeline</li>
+  <li><strong>Debugging efficace</strong>: comprendre les erreurs mémoire, les ralentissements</li>
+  <li><strong>Choix techniques</strong>: sélectionner le bon processeur pour une application</li>
+  <li><strong>Embarqué</strong>: conception de systèmes avec contraintes strictes</li>
+</ol>
+
+<p><strong>Connexions avec autres cours</strong>:</p>
+<ul>
+  <li><strong>Systèmes d’exploitation</strong> (S5): gestion mémoire virtuelle, ordonnancement</li>
+  <li><strong>Microcontrôleur</strong> (S6): application pratique sur STM32</li>
+  <li><strong>Temps Réel</strong> (S8): contraintes de timing liées au matériel</li>
+  <li><strong>Systèmes embarqués</strong> (S7): optimisation pour ressources limitées</li>
+</ul>
+
+<p><strong>Évolution des architectures</strong>:</p>
+
+<p>Aujourd’hui, les défis ont évolué:</p>
+<ul>
+  <li><strong>Multiprocesseur</strong>: parallélisme, cohérence cache complexe</li>
+  <li><strong>Hétérogène</strong>: CPU + GPU + accélérateurs (TPU, NPU)</li>
+  <li><strong>Mémoire non-volatile</strong>: nouvelles technologies (3D XPoint, ReRAM)</li>
+  <li><strong>Sécurité</strong>: Spectre, Meltdown → compromis performance/sécurité</li>
+</ul>
+
+<p>La <strong>loi de Moore</strong> ralentit, mais l’innovation continue:</p>
+<ul>
+  <li>Architecture 3D (empilement)</li>
+  <li>Mémoires proches du calcul (in-memory computing)</li>
+  <li>Architectures neuromorphiques</li>
+  <li>Calcul quantique (futur)</li>
+</ul>
+
+<p><strong>Recommandations pour bien réussir</strong>:</p>
+
+<ol>
+  <li><strong>Pratiquer l’assembleur</strong>: écrire du code MIPS, analyser le désassemblage C</li>
+  <li><strong>Visualiser</strong>: dessiner les pipelines, les caches, les tables de pages</li>
+  <li><strong>Calculer</strong>: faire et refaire les exercices de performances</li>
+  <li><strong>Lire les spécifications</strong>: datasheets de processeurs (ARM, x86)</li>
+  <li><strong>Profiler</strong>: utiliser des outils (perf, valgrind) pour observer le cache</li>
+</ol>
+
+<p><strong>Applications professionnelles</strong>:</p>
+
+<p>Ces connaissances sont utilisées dans:</p>
+<ul>
+  <li><strong>Développement de compilateurs</strong>: optimisations machine-spécifiques</li>
+  <li><strong>Systèmes d’exploitation</strong>: schedulers, gestionnaires mémoire</li>
+  <li><strong>Jeux vidéo</strong>: optimisations poussées pour FPS élevés</li>
+  <li><strong>HPC</strong> (High Performance Computing): supercalculateurs</li>
+  <li><strong>IoT</strong>: microcontrôleurs à ressources limitées</li>
+  <li><strong>Automobile</strong>: ECU temps réel critiques</li>
+  <li><strong>Sécurité</strong>: analyse de vulnérabilités hardware</li>
+</ul>
+
+<p>En conclusion, ce cours fournit les bases essentielles pour comprendre comment le logiciel interagit avec le matériel. C’est un investissement qui porte ses fruits tout au long de la carrière, car les principes fondamentaux (hiérarchie mémoire, pipeline, cache) restent valables même si les technologies évoluent.</p>
+
+<hr />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #2a7ae2;
+    }
+    p {
+        text-align: justify;
+    }
+    code {
+        background-color: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

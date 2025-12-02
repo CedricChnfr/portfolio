@@ -1,0 +1,521 @@
+---
+layout: default
+title: "Programmation Orientée Objets C++ - S7"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+[← Back to My Courses 2023-2024](./my-courses-2023-2024.html)
+
+# Programmation Orientée Objets C++
+
+## PART A: GENERALITIES
+
+### Presentation
+The "Programmation Orientée Objets C++" course provided a comprehensive introduction to object-oriented programming using C++. This course was essential for developing modern software applications with emphasis on code reusability, maintainability, and efficient memory management. C++ combines the power of low-level programming with high-level object-oriented features.
+
+**Academic Year**: 2023-2024  
+**Semester**: 7  
+**Category**: Programming
+
+---
+
+## PART B: DESCRIPTIVE PART
+
+**Supports de cours**:
+
+[Partie 1](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_1.pdf) (PDF) | [Partie 2](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_2.pdf) (PDF) | [Partie 3](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_3.pdf) (PDF) | [Partie 4](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_4.pdf) (PDF) | [Partie 5](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_5.pdf) (PDF) | [Partie 6](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_6.pdf) (PDF) | [Partie 7](/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_7.pdf) (PDF)
+
+
+### Experience Details
+
+#### Environment and Context
+The course covered both theoretical concepts and practical implementation of object-oriented programming in C++. We used modern C++ development environments and worked on progressively complex projects that demonstrated the power and flexibility of OOP principles in C++.
+
+#### My Function
+In this course, I was responsible for:
+- Understanding core OOP concepts (encapsulation, inheritance, polymorphism)
+- Implementing classes and objects in C++
+- Managing memory allocation and deallocation
+- Using templates and the Standard Template Library (STL)
+- Applying design patterns in C++ applications
+- Debugging and optimizing C++ code
+
+## PART C: TECHNICAL PART
+
+This section explores the technical aspects of object-oriented programming in C++.
+
+### Technical Concepts Learned
+
+#### 1. Classes and Objects
+
+The foundation of OOP in C++:
+
+**Class Definition**:
+```cpp
+class Rectangle {
+private:
+    double width;
+    double height;
+    
+public:
+    // Constructor
+    Rectangle(double w, double h) : width(w), height(h) {}
+    
+    // Member functions
+    double area() const {
+        return width * height;
+    }
+    
+    double perimeter() const {
+        return 2 * (width + height);
+    }
+    
+    // Getters and setters
+    void setWidth(double w) { width = w; }
+    double getWidth() const { return width; }
+};
+```
+
+**Key Concepts**:
+- **Encapsulation**: Data hiding using private/protected/public access specifiers
+- **Constructor/Destructor**: Object initialization and cleanup
+- **Member Functions**: Methods that operate on object data
+- **Const Correctness**: Using const for read-only operations
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/S7/cpp_class.png" style="width: 60%;"/>
+</div>
+<br>
+
+#### 2. Constructors and Destructors
+
+Special member functions for object lifecycle management:
+
+```cpp
+class DynamicArray {
+private:
+    int* data;
+    size_t size;
+    
+public:
+    // Default constructor
+    DynamicArray() : data(nullptr), size(0) {}
+    
+    // Parameterized constructor
+    DynamicArray(size_t n) : size(n) {
+        data = new int[size];
+    }
+    
+    // Copy constructor
+    DynamicArray(const DynamicArray& other) : size(other.size) {
+        data = new int[size];
+        std::copy(other.data, other.data + size, data);
+    }
+    
+    // Move constructor (C++11)
+    DynamicArray(DynamicArray&& other) noexcept 
+        : data(other.data), size(other.size) {
+        other.data = nullptr;
+        other.size = 0;
+    }
+    
+    // Destructor
+    ~DynamicArray() {
+        delete[] data;
+    }
+    
+    // Copy assignment operator
+    DynamicArray& operator=(const DynamicArray& other) {
+        if (this != &other) {
+            delete[] data;
+            size = other.size;
+            data = new int[size];
+            std::copy(other.data, other.data + size, data);
+        }
+        return *this;
+    }
+};
+```
+
+**Rule of Three/Five**: If you need to define a custom destructor, copy constructor, or copy assignment operator, you likely need all three (or five with move semantics).
+
+#### 3. Inheritance
+
+Code reuse through class hierarchies:
+
+```cpp
+class Shape {
+protected:
+    std::string color;
+    
+public:
+    Shape(const std::string& c) : color(c) {}
+    virtual ~Shape() {}  // Virtual destructor
+    
+    virtual double area() const = 0;  // Pure virtual function
+    virtual void draw() const {
+        std::cout << "Drawing a " << color << " shape\n";
+    }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+    
+public:
+    Circle(const std::string& c, double r) 
+        : Shape(c), radius(r) {}
+    
+    double area() const override {
+        return M_PI * radius * radius;
+    }
+    
+    void draw() const override {
+        std::cout << "Drawing a " << color << " circle\n";
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    double width, height;
+    
+public:
+    Rectangle(const std::string& c, double w, double h)
+        : Shape(c), width(w), height(h) {}
+    
+    double area() const override {
+        return width * height;
+    }
+};
+```
+
+**Inheritance Types**:
+- **Public Inheritance**: Is-a relationship
+- **Protected Inheritance**: Implementation inheritance
+- **Private Inheritance**: Not commonly used
+
+#### 4. Polymorphism
+
+Dynamic dispatch through virtual functions:
+
+```cpp
+void printArea(const Shape& shape) {
+    std::cout << "Area: " << shape.area() << std::endl;
+    shape.draw();
+}
+
+int main() {
+    Circle circle("red", 5.0);
+    Rectangle rect("blue", 4.0, 6.0);
+    
+    printArea(circle);     // Calls Circle::area()
+    printArea(rect);       // Calls Rectangle::area()
+    
+    // Polymorphic container
+    std::vector<std::unique_ptr<Shape>> shapes;
+    shapes.push_back(std::make_unique<Circle>("green", 3.0));
+    shapes.push_back(std::make_unique<Rectangle>("yellow", 2.0, 5.0));
+    
+    for (const auto& shape : shapes) {
+        shape->draw();
+    }
+}
+```
+
+**Key Concepts**:
+- **Virtual Functions**: Enable runtime polymorphism
+- **Virtual Destructor**: Essential for base classes
+- **Pure Virtual Functions**: Define abstract interfaces
+- **Override Keyword**: Explicit override declaration (C++11)
+
+#### 5. Operator Overloading
+
+Defining custom behavior for operators:
+
+```cpp
+class Complex {
+private:
+    double real, imag;
+    
+public:
+    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
+    
+    // Arithmetic operators
+    Complex operator+(const Complex& other) const {
+        return Complex(real + other.real, imag + other.imag);
+    }
+    
+    Complex operator*(const Complex& other) const {
+        return Complex(
+            real * other.real - imag * other.imag,
+            real * other.imag + imag * other.real
+        );
+    }
+    
+    // Comparison operator
+    bool operator==(const Complex& other) const {
+        return real == other.real && imag == other.imag;
+    }
+    
+    // Stream operators (as friend functions)
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c) {
+        os << c.real << " + " << c.imag << "i";
+        return os;
+    }
+    
+    friend std::istream& operator>>(std::istream& is, Complex& c) {
+        is >> c.real >> c.imag;
+        return is;
+    }
+};
+```
+
+#### 6. Templates
+
+Generic programming for code reusability:
+
+```cpp
+// Function template
+template<typename T>
+T max(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+// Class template
+template<typename T>
+class Stack {
+private:
+    std::vector<T> elements;
+    
+public:
+    void push(const T& element) {
+        elements.push_back(element);
+    }
+    
+    T pop() {
+        if (elements.empty()) {
+            throw std::runtime_error("Stack is empty");
+        }
+        T value = elements.back();
+        elements.pop_back();
+        return value;
+    }
+    
+    bool empty() const {
+        return elements.empty();
+    }
+    
+    size_t size() const {
+        return elements.size();
+    }
+};
+
+// Template specialization
+template<>
+class Stack<bool> {
+    // Specialized implementation for bool
+};
+```
+
+#### 7. Standard Template Library (STL)
+
+Powerful collection of generic containers and algorithms:
+
+**Containers**:
+```cpp
+// Sequential containers
+std::vector<int> vec = {1, 2, 3, 4, 5};
+std::list<std::string> lst;
+std::deque<double> deq;
+
+// Associative containers
+std::map<std::string, int> ages;
+ages["Alice"] = 25;
+ages["Bob"] = 30;
+
+std::set<int> unique_numbers = {1, 2, 3, 3, 4};  // {1, 2, 3, 4}
+
+// Container adapters
+std::stack<int> stack;
+std::queue<int> queue;
+std::priority_queue<int> pq;
+```
+
+**Algorithms**:
+```cpp
+#include <algorithm>
+
+std::vector<int> numbers = {5, 2, 8, 1, 9};
+
+// Sorting
+std::sort(numbers.begin(), numbers.end());
+
+// Finding
+auto it = std::find(numbers.begin(), numbers.end(), 8);
+
+// Transforming
+std::transform(numbers.begin(), numbers.end(), numbers.begin(),
+               [](int n) { return n * 2; });
+
+// Accumulating
+int sum = std::accumulate(numbers.begin(), numbers.end(), 0);
+```
+
+#### 8. Smart Pointers (C++11)
+
+Automatic memory management:
+
+```cpp
+#include <memory>
+
+// Unique pointer (exclusive ownership)
+std::unique_ptr<int> ptr1 = std::make_unique<int>(42);
+
+// Shared pointer (shared ownership)
+std::shared_ptr<int> ptr2 = std::make_shared<int>(100);
+std::shared_ptr<int> ptr3 = ptr2;  // Reference count = 2
+
+// Weak pointer (non-owning reference)
+std::weak_ptr<int> weak = ptr2;
+
+// Example with classes
+class MyClass {
+public:
+    MyClass() { std::cout << "Constructor\n"; }
+    ~MyClass() { std::cout << "Destructor\n"; }
+    void doSomething() { std::cout << "Doing something\n"; }
+};
+
+std::unique_ptr<MyClass> obj = std::make_unique<MyClass>();
+obj->doSomething();
+// Destructor called automatically when obj goes out of scope
+```
+
+#### 9. Exception Handling
+
+Robust error management:
+
+```cpp
+class FileNotFoundException : public std::exception {
+private:
+    std::string message;
+    
+public:
+    FileNotFoundException(const std::string& filename)
+        : message("File not found: " + filename) {}
+    
+    const char* what() const noexcept override {
+        return message.c_str();
+    }
+};
+
+void readFile(const std::string& filename) {
+    try {
+        std::ifstream file(filename);
+        if (!file.is_open()) {
+            throw FileNotFoundException(filename);
+        }
+        // Read file...
+    } catch (const FileNotFoundException& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+        throw;  // Re-throw
+    } catch (const std::exception& e) {
+        std::cerr << "Unexpected error: " << e.what() << std::endl;
+    }
+}
+```
+
+#### 10. Design Patterns
+
+Common software design solutions:
+
+**Singleton Pattern**:
+```cpp
+class Database {
+private:
+    static Database* instance;
+    Database() {}  // Private constructor
+    
+public:
+    static Database* getInstance() {
+        if (instance == nullptr) {
+            instance = new Database();
+        }
+        return instance;
+    }
+    
+    void connect() {
+        std::cout << "Connecting to database...\n";
+    }
+};
+```
+
+**Factory Pattern**:
+```cpp
+class ShapeFactory {
+public:
+    static std::unique_ptr<Shape> createShape(const std::string& type) {
+        if (type == "circle") {
+            return std::make_unique<Circle>("red", 5.0);
+        } else if (type == "rectangle") {
+            return std::make_unique<Rectangle>("blue", 4.0, 6.0);
+        }
+        return nullptr;
+    }
+};
+```
+
+## PART D: ANALYTICAL PART
+
+### Knowledge and Skills Mobilized
+
+- Understanding object-oriented programming principles
+- Implementing classes with proper encapsulation
+- Using inheritance and polymorphism effectively
+- Managing memory with RAII and smart pointers
+- Applying templates for generic programming
+- Utilizing STL containers and algorithms
+- Handling exceptions properly
+- Implementing design patterns
+- Debugging complex C++ programs
+
+### Self Evaluation
+
+This course was challenging but rewarding. Coming from C programming, the shift to object-oriented thinking required significant mental adjustment. The concept of classes and objects was initially abstract, but through practical projects, I gained solid understanding.
+
+Memory management in C++ (especially with pointers and dynamic allocation) was tricky. However, learning about RAII and smart pointers made memory management much more manageable and safer. The introduction of C++11 features like move semantics and lambda functions was particularly interesting.
+
+Templates and the STL initially seemed overwhelming due to their complexity, but I came to appreciate their power for writing generic, reusable code. The error messages from template compilation errors were often cryptic and difficult to debug.
+
+I found polymorphism and virtual functions fascinating, especially how they enable flexible and extensible software design. Implementing design patterns helped me understand professional software architecture.
+
+### My Opinion
+
+C++ is a powerful but complex language. This course provided a solid foundation in OOP with C++, though mastering the language requires continuous practice. The course balanced theory with practical implementation well.
+
+I particularly appreciated learning about modern C++ features (C++11/14/17). These features make C++ more user-friendly while maintaining its performance advantages. Understanding the relationship between C and C++ helped me appreciate when to use C++'s features versus C-style programming.
+
+Areas I would have liked to explore more:
+- Multithreading and concurrency in C++
+- Template metaprogramming
+- More complex design patterns
+- Performance optimization techniques
+- Build systems and project organization
+
+The projects helped solidify concepts, though more real-world applications (like embedded systems programming or game development) would have been valuable. Overall, this course equipped me with essential skills for modern software development.
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    p {
+        text-align: justify;
+    }
+</style>

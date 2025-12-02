@@ -1,0 +1,548 @@
+---
+layout: default
+title: "Gestion - S6"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+</div>
+
+# 💼 Gestion - Semestre 6
+
+**Année Universitaire** : 2022-2023  
+**Semestre** : 6  
+**Crédits** : 2 ECTS  
+**Spécialité** : Management et Gestion d'Entreprise
+
+---
+
+## PART A - Présentation Générale du Cours
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+Ce cours introduit les bases de la gestion d'entreprise pour ingénieurs, avec un focus sur la gestion financière, la comptabilité et la prise de décision managériale. Le point fort du cours est le jeu SIMGEST, une simulation de gestion d'entreprise où les étudiants gèrent une société virtuelle en équipe pendant plusieurs périodes.
+
+**Objectifs pédagogiques** :
+- Comprendre les documents comptables (bilan, compte de résultat)
+- Maîtriser les indicateurs financiers (seuil de rentabilité, CAF, ratios)
+- Analyser la performance d'une entreprise
+- Prendre des décisions managériales stratégiques
+- Simuler la gestion réelle d'une entreprise avec SIMGEST
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+Ce cours complète et approfondit :
+- **Entreprise (S5)** : notions de base sur l'entreprise et son environnement
+- **Finance (S7)** : approfondissement des aspects financiers et investissement
+
+Il prépare aux compétences transversales :
+- **Gestion de projets** : budgets, planification, ressources
+- **Stage et vie professionnelle** : compréhension des enjeux business
+- **Entrepreneuriat** : outils pour créer et gérer une entreprise
+
+---
+
+## PART B - Expérience Personnelle et Contexte d'Apprentissage
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+Le module était structuré en trois volets :
+
+**1. Cours magistraux** :
+- Comptabilité générale et documents de synthèse
+- Calculs de coûts et seuil de rentabilité
+- Gestion de trésorerie et financement
+- Ratios financiers et analyse de performance
+
+**2. Travaux dirigés** :
+- Exercices de comptabilité (bilan, compte de résultat)
+- Calculs de coûts de revient et marges
+- Études de cas d'entreprises réelles
+- Analyse d'états financiers
+
+**3. Jeu SIMGEST** :
+- Simulation de gestion d'entreprise en équipe (4-5 personnes)
+- Prise de décisions sur 6-8 périodes (trimestres)
+- Compétition entre équipes sur un même marché
+- Analyse des résultats et stratégies
+
+<h3 class="section-title">Le jeu SIMGEST</h3>
+
+**Principe** :
+
+SIMGEST est une simulation où chaque équipe gère une entreprise de production et vente de produits. À chaque période (trimestre), l'équipe doit prendre des décisions dans plusieurs domaines :
+
+**Décisions à prendre** :
+
+| Domaine | Décisions |
+|---------|-----------|
+| Production | Quantités à produire, embauches/licenciements, heures supplémentaires |
+| Commercial | Prix de vente, budget publicité, force de vente |
+| Investissement | Achat de machines, extension capacité de production |
+| Financier | Emprunts, remboursements, dividendes |
+| Stocks | Gestion matières premières et produits finis |
+
+**Déroulement typique d'une période** :
+
+1. **Analyse de la période précédente** :
+   - Résultats commerciaux (ventes réalisées vs prévues)
+   - État financier (trésorerie, rentabilité)
+   - Position par rapport aux concurrents
+
+2. **Prévisions** :
+   - Estimation de la demande du marché
+   - Anticipation des actions des concurrents
+   - Calcul du seuil de rentabilité
+
+3. **Prise de décision** :
+   - Ajustement des prix
+   - Budget marketing et commercial
+   - Plan de production
+   - Investissements éventuels
+
+4. **Saisie des décisions** :
+   - Formulaire de décision à remplir
+   - Cohérence entre production, ventes et finance
+
+5. **Simulation et résultats** :
+   - Le logiciel calcule les résultats du trimestre
+   - Réception du bilan, compte de résultat, tableaux de bord
+
+**Indicateurs de performance** :
+
+- **Part de marché** : pourcentage des ventes totales
+- **Rentabilité** : résultat net / chiffre d'affaires
+- **Trésorerie** : disponibilités en banque
+- **Cours de l'action** : valorisation de l'entreprise (critère de classement)
+
+**Stratégies observées** :
+
+Différentes approches étaient possibles :
+
+**Stratégie de domination par les coûts** :
+- Prix bas pour conquérir des parts de marché
+- Production en grandes séries
+- Limitation des coûts marketing
+- Risque : guerre des prix, marges faibles
+
+**Stratégie de différenciation** :
+- Prix élevés, qualité perçue supérieure
+- Investissement fort en publicité
+- Marges importantes
+- Risque : volume de ventes limité
+
+**Stratégie d'équilibre** :
+- Prix moyens, marketing modéré
+- Production flexible
+- Recherche d'efficacité opérationnelle
+
+<h3 class="section-title">Difficultés et apprentissages</h3>
+
+**Gestion de la trésorerie** :
+Problème majeur pour beaucoup d'équipes : rupture de trésorerie due à des investissements trop lourds ou à des stocks excessifs. Il faut équilibrer croissance et santé financière.
+
+**Prévision de la demande** :
+Difficile d'anticiper les ventes, surtout avec la concurrence. Surproduction = stocks coûteux, sous-production = ventes manquées.
+
+**Coordination d'équipe** :
+Les décisions dans un domaine impactent les autres (ex : publicité augmente les ventes, donc besoin de plus de production). Communication essentielle.
+
+**Pression du temps** :
+Décisions à prendre en temps limité, nécessité de s'organiser et de déléguer.
+
+---
+
+## PART C - Aspects Techniques Détaillés
+
+<h3 class="section-title">1. Documents Comptables Fondamentaux</h3>
+
+**Le Bilan** :
+
+Photo du patrimoine de l'entreprise à un instant T.
+
+Structure :
+
+**ACTIF** (emplois, ce que possède l'entreprise) :
+- Actif immobilisé : terrains, bâtiments, machines, brevets
+- Actif circulant : stocks, créances clients, disponibilités (banque, caisse)
+
+**PASSIF** (ressources, origine des financements) :
+- Capitaux propres : capital social, réserves, résultat de l'exercice
+- Dettes : emprunts bancaires, dettes fournisseurs, dettes fiscales
+
+**Principe de base** : Actif = Passif (équilibre comptable)
+
+**Exemple simplifié de bilan** :
+
+| ACTIF | Montant | PASSIF | Montant |
+|-------|---------|--------|---------|
+| Immobilisations | 500 000 € | Capital social | 300 000 € |
+| Stocks | 150 000 € | Réserves | 100 000 € |
+| Créances clients | 80 000 € | Résultat | 50 000 € |
+| Banque | 70 000 € | Emprunts | 250 000 € |
+| | | Dettes fournisseurs | 100 000 € |
+| **Total** | **800 000 €** | **Total** | **800 000 €** |
+
+**Le Compte de Résultat** :
+
+Film de l'activité sur une période (exercice comptable, généralement un an).
+
+Structure :
+
+**CHARGES** (dépenses) :
+- Achats de matières premières
+- Charges de personnel (salaires + charges sociales)
+- Charges externes (loyers, assurances, publicité)
+- Dotations aux amortissements (usure des équipements)
+- Charges financières (intérêts d'emprunts)
+
+**PRODUITS** (recettes) :
+- Ventes de marchandises ou produits finis
+- Production stockée (variation de stocks)
+- Produits financiers (intérêts perçus)
+
+**Résultat** = Produits - Charges
+
+Si positif : bénéfice, si négatif : perte
+
+**Exemple simplifié de compte de résultat** :
+
+| Charges | Montant | Produits | Montant |
+|---------|---------|----------|---------|
+| Achats matières | 200 000 € | Ventes | 500 000 € |
+| Salaires | 150 000 € | | |
+| Loyers | 30 000 € | | |
+| Publicité | 40 000 € | | |
+| Amortissements | 25 000 € | | |
+| Intérêts emprunts | 15 000 € | | |
+| **Total charges** | **460 000 €** | **Total produits** | **500 000 €** |
+| | | **Résultat (bénéfice)** | **40 000 €** |
+
+<h3 class="section-title">2. Calculs de Coûts et Seuil de Rentabilité</h3>
+
+**Coût de revient** :
+
+Somme de tous les coûts pour produire et vendre un produit.
+
+Coût de revient = Coût d'achat des matières + Coût de production + Coût de distribution
+
+**Marge** :
+
+Marge unitaire = Prix de vente - Coût de revient unitaire
+
+Taux de marge = Marge / Prix de vente × 100
+
+**Seuil de rentabilité (point mort)** :
+
+Niveau de chiffre d'affaires à partir duquel l'entreprise ne fait ni bénéfice ni perte.
+
+**Charges fixes** : charges qui ne varient pas avec le volume de production (loyers, amortissements, salaires fixes).
+
+**Charges variables** : charges proportionnelles au volume (matières premières, énergie).
+
+Calcul simplifié :
+
+Seuil de rentabilité = Charges fixes / Taux de marge sur coût variable
+
+où Taux de marge sur coût variable = (CA - Charges variables) / CA
+
+**Exemple** :
+
+Entreprise avec :
+- Charges fixes : 100 000 €/an
+- Prix de vente unitaire : 50 €
+- Coût variable unitaire : 30 €
+
+Marge unitaire = 50 - 30 = 20 €
+
+Quantité seuil = Charges fixes / Marge unitaire = 100 000 / 20 = 5 000 unités
+
+CA seuil = 5 000 × 50 = 250 000 €
+
+Au-delà de 5 000 unités vendues, l'entreprise est bénéficiaire.
+
+<h3 class="section-title">3. Gestion de Trésorerie</h3>
+
+**Trésorerie** = Disponibilités (banque + caisse)
+
+**Flux de trésorerie** :
+
+**Encaissements** (entrées) :
+- Paiements clients
+- Emprunts obtenus
+- Apports en capital
+
+**Décaissements** (sorties) :
+- Paiements fournisseurs
+- Salaires et charges sociales
+- Investissements
+- Remboursements d'emprunts
+- Impôts et taxes
+
+**Principe** : Trésorerie fin de période = Trésorerie début + Encaissements - Décaissements
+
+**Problèmes de trésorerie** :
+
+Rupture de trésorerie = trésorerie négative, impossibilité de payer les fournisseurs ou salaires.
+
+Causes fréquentes :
+- Décalage entre ventes (à crédit) et achats (à payer)
+- Investissements trop lourds
+- Stocks excessifs qui immobilisent de l'argent
+- Prévisions de ventes trop optimistes
+
+**Solutions** :
+- Négocier des délais de paiement avec fournisseurs
+- Réduire les délais de paiement clients
+- Obtenir un emprunt ou découvert bancaire
+- Diminuer les stocks
+- Reporter des investissements
+
+**Capacité d'autofinancement (CAF)** :
+
+Mesure des ressources générées par l'activité.
+
+CAF = Résultat net + Dotations aux amortissements
+
+Les amortissements ne sont pas des sorties de trésorerie (dépense passée lors de l'achat), donc on les rajoute.
+
+<h3 class="section-title">4. Ratios Financiers</h3>
+
+Les ratios permettent d'analyser rapidement la santé financière d'une entreprise.
+
+**Ratios de rentabilité** :
+
+Taux de marge nette = Résultat net / CA × 100
+
+Rentabilité des capitaux propres (ROE) = Résultat net / Capitaux propres × 100
+
+Rentabilité économique (ROA) = Résultat d'exploitation / Actif total × 100
+
+**Ratios de liquidité** :
+
+Ratio de liquidité générale = Actif circulant / Dettes à court terme
+
+Mesure la capacité à payer les dettes à court terme. Idéalement > 1.
+
+**Ratios d'endettement** :
+
+Taux d'endettement = Dettes financières / Capitaux propres × 100
+
+Mesure le niveau de dépendance aux emprunts. Trop élevé = risque financier.
+
+**Ratios de rotation** :
+
+Rotation des stocks = CA / Stock moyen
+
+Nombre de fois où le stock est renouvelé dans l'année. Élevé = bonne gestion des stocks.
+
+Délai moyen de paiement clients = (Créances clients / CA TTC) × 360 jours
+
+Temps moyen avant encaissement des ventes.
+
+<h3 class="section-title">5. Décisions d'Investissement</h3>
+
+**Investissement** : dépense immédiate pour obtenir des bénéfices futurs.
+
+**Amortissement** :
+
+Mécanisme comptable qui répartit le coût d'un investissement sur sa durée d'utilisation.
+
+Exemple : machine achetée 100 000 €, durée de vie 5 ans.
+
+Amortissement linéaire : 100 000 / 5 = 20 000 €/an
+
+Chaque année, on constate une charge de 20 000 € (qui réduit le résultat) sans sortie de trésorerie.
+
+**Valeur nette comptable (VNC)** :
+
+VNC = Valeur d'origine - Amortissements cumulés
+
+Après 3 ans : VNC = 100 000 - (3 × 20 000) = 40 000 €
+
+**Évaluation d'un investissement** :
+
+Critères de décision :
+
+**Valeur actuelle nette (VAN)** :
+Somme des flux de trésorerie futurs actualisés - Investissement initial.
+Si VAN > 0 : investissement rentable.
+
+**Délai de récupération** :
+Temps nécessaire pour récupérer l'investissement initial par les flux générés.
+
+**Taux de rentabilité interne (TRI)** :
+Taux d'actualisation qui annule la VAN. Plus il est élevé, meilleur est l'investissement.
+
+<h3 class="section-title">6. Stratégie et Analyse Concurrentielle</h3>
+
+**Analyse SWOT** :
+
+Outil d'analyse stratégique.
+
+| Interne | Externe |
+|---------|---------|
+| **Strengths (Forces)** : atouts internes (technologie, compétences, marque) | **Opportunities (Opportunités)** : facteurs externes favorables (marché croissant, nouvelle technologie) |
+| **Weaknesses (Faiblesses)** : limites internes (manque de ressources, image) | **Threats (Menaces)** : facteurs externes défavorables (concurrence, réglementation) |
+
+**Stratégies génériques de Porter** :
+
+1. **Domination par les coûts** : être le moins cher
+2. **Différenciation** : offrir un produit unique justifiant un prix élevé
+3. **Focalisation** : se concentrer sur un segment de marché spécifique
+
+**Positionnement prix-qualité** :
+
+Matrice permettant de situer son offre par rapport aux concurrents selon deux axes : prix et qualité perçue.
+
+---
+
+## PART D - Analyse Réflexive et Perspectives
+
+<h3 class="section-title">Compétences acquises</h3>
+
+**Lecture et compréhension des documents financiers** :
+Capacité à analyser un bilan et un compte de résultat, identifier les points forts et faibles d'une entreprise, détecter des problèmes de trésorerie ou d'endettement.
+
+**Prise de décision managériale** :
+Le jeu SIMGEST a développé la capacité à prendre des décisions sous contraintes (temps, informations limitées, incertitude), à arbitrer entre objectifs contradictoires (croissance vs rentabilité).
+
+**Travail en équipe** :
+Coordination, délégation, communication, gestion de désaccords. Essentiel dans tout environnement professionnel.
+
+**Vision globale de l'entreprise** :
+Compréhension des interactions entre fonctions (production, commercial, finance). Une décision dans un domaine impacte les autres.
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+**1. La trésorerie est reine** :
+Une entreprise peut être rentable sur le papier mais faire faillite par manque de liquidités. Surveiller constamment les flux de trésorerie.
+
+**2. Bénéfice ≠ Trésorerie** :
+Le résultat comptable ne reflète pas les mouvements d'argent réels. Tenir compte des délais de paiement, stocks, investissements.
+
+**3. Équilibre croissance-rentabilité** :
+Croître trop vite peut tuer une entreprise (besoins de financement, stocks, recrutements). Privilégier une croissance maîtrisée.
+
+**4. Importance de la prévision** :
+Anticiper les ventes, les coûts, les besoins de trésorerie. Construire des scénarios (optimiste, pessimiste, réaliste).
+
+**5. Analyse avant action** :
+Toujours analyser les résultats passés avant de décider. Comprendre pourquoi les objectifs n'ont pas été atteints.
+
+<h3 class="section-title">Applications pratiques</h3>
+
+**Projets étudiants** :
+Les compétences en gestion de budget et planification sont utiles pour tous les projets d'école (PPI, projets techniques). Savoir estimer les coûts, gérer un budget.
+
+**Stage et entreprise** :
+Compréhension du langage et des enjeux business. Capacité à dialoguer avec les services financiers, marketing, production. Justifier des investissements techniques.
+
+**Entrepreneuriat** :
+Outils essentiels pour créer une entreprise : business plan, prévisions financières, seuil de rentabilité, gestion de trésorerie.
+
+**Gestion de carrière** :
+Comprendre comment fonctionne l'entreprise qui vous emploie. Évaluer sa santé financière. Négocier salaires et budgets.
+
+<h3 class="section-title">Retour d'expérience SIMGEST</h3>
+
+**Apprentissages concrets** :
+
+Le jeu SIMGEST a permis de vivre les conséquences de nos décisions :
+- Une guerre des prix mal gérée a détruit nos marges
+- Un investissement massif sans financement adapté a créé une crise de trésorerie
+- L'importance de se différencier plutôt que de copier les concurrents
+
+**Aspects ludiques et pédagogiques** :
+La compétition entre équipes crée une émulation. On apprend beaucoup des erreurs (les siennes et celles des autres). Le débriefing après chaque période est crucial pour comprendre.
+
+**Limites du jeu** :
+Simplification de la réalité (pas de problèmes RH, qualité produit fixe, pas d'innovation). Mais l'essentiel de la logique de gestion est là.
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+**Limites du cours** :
+- Peu de comptabilité analytique (calculs de coûts détaillés)
+- Peu de marketing opérationnel
+- Pas de gestion des ressources humaines en profondeur
+- Peu d'aspects juridiques et fiscaux
+
+**Ouvertures vers** :
+- **Finance d'entreprise** : évaluation, investissement, marchés financiers
+- **Contrôle de gestion** : tableaux de bord, indicateurs de performance
+- **Gestion de projet** : méthodes agiles, planning, ressources
+- **Marketing stratégique** : études de marché, positionnement
+- **Entrepreneuriat** : création de startup, levée de fonds, pitch
+
+<h3 class="section-title">Conclusion</h3>
+
+Le cours de Gestion apporte des compétences complémentaires indispensables à la formation d'ingénieur. Trop souvent, les ingénieurs se concentrent sur les aspects techniques et négligent les dimensions économiques et managériales.
+
+Ce cours donne les clés pour comprendre le langage de l'entreprise, analyser sa santé financière, et prendre des décisions éclairées. Le jeu SIMGEST est une expérience marquante qui simule la complexité de la gestion réelle.
+
+**Évolution des compétences requises** :
+Dans un environnement de plus en plus contraint (budgets, délais, concurrence), l'ingénieur doit justifier économiquement ses choix techniques. Comprendre les enjeux financiers devient un atout majeur.
+
+**Recommandations** :
+- Participer activement au jeu SIMGEST (maximum d'apprentissage)
+- Analyser les états financiers d'entreprises réelles (rapports annuels)
+- Lire la presse économique pour comprendre les enjeux business
+- Appliquer les outils de gestion dans les projets étudiants
+
+**Liens avec les autres cours** :
+- [Entreprise - S5](./entreprise.html) : fondamentaux de l'entreprise
+- [Finance - S7](./finance.html) : approfondissement financier
+- [Droit - S8](./droit.html) : aspects juridiques de l'entreprise
+- [Gestion de projet (PPI)](./ppi.html) : application pratique
+
+---
+
+*Cours enseigné en 2022-2023 à l'INSA Toulouse, formation Génie Électrique et Informatique.*

@@ -4,6 +4,9 @@ title:  "Design of a RISC type microprocessor"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 # **Introduction**
 Our project is to design a RISC type microprocessor, designated in VHDL on the Vivado development, simulation and implementation tool. This architecture promises faster program execution thanks to its 5 pipeline levels. This report will be structured to cover the different phases of the project.
 We will start by presenting the microprocessor architecture with the different key components such as the Arithmetic Logic Unit (ALU), the Register Bank, the Instruction Memory, the Data Memory, and other essential elements that will guide the design of our microprocessor. We will also address ALEA management, a crucial aspect of the design.

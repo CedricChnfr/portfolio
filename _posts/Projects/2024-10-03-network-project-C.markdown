@@ -4,6 +4,9 @@ title:  "C and Network Project"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 # Introduction
 This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling.
 

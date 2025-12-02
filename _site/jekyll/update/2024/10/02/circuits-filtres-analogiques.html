@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Circuits et Filtres Analogiques - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Circuits et Filtres Analogiques - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/circuits-filtres-analogiques.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/circuits-filtres-analogiques.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Circuits et Filtres Analogiques - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Circuits et Filtres Analogiques - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/circuits-filtres-analogiques.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/circuits-filtres-analogiques.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-circuits-et-filtres-analogiques---s5">🔌 Circuits et Filtres Analogiques - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Électronique Analogique</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Le cours “Circuits et Filtres Analogiques” fournit une compréhension approfondie de l’analyse et de la conception de circuits électroniques analogiques, avec un accent particulier sur la théorie des filtres. Il couvre l’utilisation des amplificateurs opérationnels, l’analyse fréquentielle via les diagrammes de Bode, et l’analyse temporelle via la transformée de Laplace. Ce cours est fondamental pour la conception de chaînes d’acquisition de signaux, le conditionnement de capteurs, et le traitement analogique du signal.</p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Maîtriser l’analyse fréquentielle des circuits (diagrammes de Bode, fonction de transfert)</li>
+  <li>Concevoir des filtres actifs et passifs (passe-bas, passe-haut, passe-bande)</li>
+  <li>Utiliser les amplificateurs opérationnels dans diverses configurations</li>
+  <li>Appliquer la transformée de Laplace pour l’analyse temporelle</li>
+  <li>Dimensionner des circuits analogiques pour des applications spécifiques</li>
+  <li>Simuler et valider des circuits avec LTspice</li>
+  <li>Analyser les systèmes du 1er et 2ème ordre</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: 36h (CM: 20h, TD: 8h, TP: 8h)</li>
+  <li><strong>Évaluation</strong>: Examen écrit (60%) + TDs/TPs (30%) + Contrôle continu (10%)</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Électronique fondamentale, mathématiques (nombres complexes, dérivées, intégrales)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<p>Le cours s’articule autour de trois grandes parties couvrant les aspects théoriques et pratiques de l’électronique analogique.</p>
+
+<h4 id="1-amplificateurs-opérationnels-et-montages-de-base">1. Amplificateurs Opérationnels et Montages de Base</h4>
+
+<p><strong>Amplificateur Opérationnel Idéal</strong>:</p>
+
+<p>L’amplificateur opérationnel (AO ou op-amp) est le composant fondamental de l’électronique analogique moderne.</p>
+
+<p><strong>Caractéristiques de l’AO idéal</strong>:</p>
+<ul>
+  <li>Gain en tension différentiel infini: Ad = ∞</li>
+  <li>Impédance d’entrée infinie: Zin = ∞ (courants d’entrée nuls)</li>
+  <li>Impédance de sortie nulle: Zout = 0</li>
+  <li>Bande passante infinie</li>
+  <li>Tension de décalage (offset) nulle</li>
+  <li>Rejet du mode commun infini (CMRR = ∞)</li>
+</ul>
+
+<p><strong>Règles de l’AO idéal en régime linéaire</strong> (contre-réaction négative):</p>
+<ol>
+  <li>V+ = V- (égalité des tensions d’entrée)</li>
+  <li>I+ = I- = 0 (courants d’entrée nuls)</li>
+</ol>
+
+<p><strong>Montages fondamentaux</strong>:</p>
+
+<p><strong>Amplificateur inverseur</strong>:</p>
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+  <img src="/img/Courses/S5/Circuits-Filtres-Analogiques/inverseur.png" style="width: 45%;" />
+  <img src="/img/Courses/S5/Circuits-Filtres-Analogiques/inverseur2.png" style="width: 45%;" />
+</div>
+<p><br /></p>
+
+<p><strong>Amplificateur non-inverseur</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         R2
+     ----/\/\/----
+     |           |
+     +-[AO+]-----+---- Vs
+     |  |  -|
+Ve --+  |   |
+        R1  |
+         \  |
+          \ |
+           GND
+</code></pre></div></div>
+
+<p>Fonction de transfert:
+H = Vs/Ve = 1 + (R2/R1)</p>
+
+<p>Impédance d’entrée: Zin = ∞ (très élevée)</p>
+
+<p><strong>Suiveur (buffer)</strong>:
+Configuration non-inverseuse avec R2 = 0 et R1 = ∞</p>
+
+<p>H = 1</p>
+
+<p>Utilisé pour adapter les impédances (isolation).</p>
+
+<p><strong>Sommateur inverseur</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ve1 -R1-\
+Ve2 -R2--+-[AO-]---- Vs
+Ve3 -R3-/  |   +|
+           R4  |--- GND
+</code></pre></div></div>
+
+<p>Vs = -R4 × (Ve1/R1 + Ve2/R2 + Ve3/R3)</p>
+
+<p>Si R1 = R2 = R3 = R4 = R:
+Vs = -(Ve1 + Ve2 + Ve3)</p>
+
+<p><strong>Soustracteur (amplificateur différentiel)</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ve1 -R1--[AO-]---R2--- Vs
+         |  +|
+Ve2 -R3--+   |
+         R4  |
+          \  |
+           GND
+</code></pre></div></div>
+
+<p>Si R1 = R2 et R3 = R4:
+Vs = (R2/R1) × (Ve2 - Ve1)</p>
+
+<p><strong>Intégrateur</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        C
+    ----||----
+    |        |
+Ve -R1-[AO-]-+---- Vs
+       |   +|
+       |    |--- GND
+</code></pre></div></div>
+
+<p>Vs(t) = -(1/(R×C)) × ∫Ve(t)dt + Vs(0)</p>
+
+<p>En fréquentiel:
+H(jω) = -1/(jRCω)</p>
+
+<p><strong>Dérivateur</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        R2
+    ----/\/\/----
+    |           |
+Ve -C1-[AO-]----+---- Vs
+       |   +|
+       |    |--- GND
+</code></pre></div></div>
+
+<p>Vs(t) = -RC × dVe(t)/dt</p>
+
+<p>En fréquentiel:
+H(jω) = -jRCω</p>
+
+<p><strong>Supports de cours</strong>:</p>
+<ul>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Montages_AOs.pdf">Montage à base d’AOs</a></li>
+</ul>
+
+<h4 id="2-fonctions-de-transfert-et-analyse-fréquentielle">2. Fonctions de Transfert et Analyse Fréquentielle</h4>
+
+<p><strong>Fonction de transfert</strong>:</p>
+
+<p>La fonction de transfert H(jω) d’un système linéaire relie la sortie à l’entrée en régime harmonique:</p>
+
+<p>H(jω) = Vs(jω)/Ve(jω)</p>
+
+<p>où j = √(-1) et ω = 2πf (pulsation en rad/s)</p>
+
+<p><strong>Module et phase</strong>:
+H(jω) = |H(jω)| × exp(jφ(ω))</p>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td><strong>Module</strong> (gain):</td>
+          <td>H(jω)</td>
+          <td>, souvent exprimé en décibels (dB)</td>
+        </tr>
+        <tr>
+          <td>GdB = 20 × log10(</td>
+          <td>H(jω)</td>
+          <td>)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><strong>Phase</strong>: φ(ω) = arg(H(jω)), exprimée en degrés ou radians</li>
+</ul>
+
+<p><strong>Diagramme de Bode</strong>:</p>
+
+<p>Représentation graphique de la fonction de transfert:</p>
+<ul>
+  <li><strong>Diagramme de gain</strong>: GdB en fonction de log(f)</li>
+  <li><strong>Diagramme de phase</strong>: φ en fonction de log(f)</li>
+</ul>
+
+<p><strong>Filtres du 1er ordre</strong>:</p>
+
+<p><strong>Filtre passe-bas RC passif</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ve ---R---+--- Vs
+          |
+          C
+          |
+         GND
+</code></pre></div></div>
+
+<p>Fonction de transfert:
+H(jω) = 1/(1 + jRCω) = 1/(1 + j(ω/ω0))</p>
+
+<p>où ω0 = 1/(RC) est la pulsation de coupure.</p>
+
+<p>Fréquence de coupure à -3dB:
+f0 = 1/(2πRC)</p>
+
+<p><strong>Comportement asymptotique</strong>:</p>
+<ul>
+  <li>Basses fréquences (ω « ω0): H ≈ 1 → 0 dB</li>
+  <li>Hautes fréquences (ω » ω0): H ≈ ω0/ω → pente -20 dB/décade</li>
+</ul>
+
+<p><strong>Phase</strong>:
+φ(ω) = -arctan(ω/ω0)</p>
+
+<p>À la fréquence de coupure: φ(ω0) = -45°</p>
+
+<p><strong>Filtre passe-haut CR passif</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ve ---C---+--- Vs
+          |
+          R
+          |
+         GND
+</code></pre></div></div>
+
+<p>Fonction de transfert:
+H(jω) = (jRCω)/(1 + jRCω) = j(ω/ω0)/(1 + j(ω/ω0))</p>
+
+<p><strong>Filtres du 2ème ordre</strong>:</p>
+
+<p>Forme canonique:
+H(p) = (H0 × ω0²)/(p² + (ω0/Q)×p + ω0²)</p>
+
+<p>où:</p>
+<ul>
+  <li>p = jω (variable de Laplace en régime harmonique)</li>
+  <li>ω0: pulsation propre (ou pulsation de résonance)</li>
+  <li>Q: facteur de qualité</li>
+  <li>H0: gain statique</li>
+</ul>
+
+<p><strong>Facteur de qualité Q</strong> (ou coefficient d’amortissement ξ = 1/(2Q)):</p>
+<ul>
+  <li>Q &lt; 0.5 (ξ &gt; 1): système suramort (pas de dépassement)</li>
+  <li>Q = 0.5 (ξ = 1): amortissement critique</li>
+  <li>Q = 0.707 (ξ = 0.707): réponse de Butterworth (maximalement plate)</li>
+  <li>Q &gt; 0.707: système sous-amorti (dépassement, résonance)</li>
+</ul>
+
+<p><strong>Filtre passe-bas du 2ème ordre (Sallen-Key)</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ve -R1--+--R2--+-----[AO+]---- Vs
+        |      |      |  -|
+        C1     C2     +---+
+        |      |          |
+       GND    GND        R3
+                          |
+                         R4
+                          |
+                         GND
+</code></pre></div></div>
+
+<p>Pour un filtre de Butterworth (Q = 0.707), configuration unitaire:</p>
+
+<p>H(jω) = 1/(1 + √2 × j(ω/ω0) - (ω/ω0)²)</p>
+
+<p><strong>Pente de coupure</strong>: -40 dB/décade (2 × 20 dB/décade)</p>
+
+<p><strong>Quadripôles</strong>:</p>
+
+<p>Un quadripôle est un système à 2 ports (entrée et sortie) caractérisé par des matrices de transfert.</p>
+
+<p><strong>Matrice impédance [Z]</strong>:
+[V1]   [Z11  Z12] [I1]
+[V2] = [Z21  Z22] [I2]</p>
+
+<p><strong>Matrice admittance [Y] = [Z]⁻¹</strong></p>
+
+<p><strong>Matrice de transmission (ABCD)</strong>:
+[V1]   [A  B] [V2 ]
+[I1] = [C  D] [-I2]</p>
+
+<p>Avantage: pour des quadripôles en cascade, on multiplie les matrices ABCD.</p>
+
+<p><strong>Supports de cours</strong>:</p>
+<ul>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/TransfertBode.pdf">Fonction de Transfert et Bode</a></li>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Ordre-deux-frequentiel.pdf">Ordre 2 fréquentiel</a></li>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Quadripole.pdf">Quadripôles et fonctions de transfert</a></li>
+</ul>
+
+<h4 id="3-transformée-de-laplace-et-analyse-temporelle">3. Transformée de Laplace et Analyse Temporelle</h4>
+
+<p><strong>Transformée de Laplace</strong>:</p>
+
+<p>Outil mathématique permettant de transformer les équations différentielles en équations algébriques.</p>
+
+<p>L{f(t)} = F(p) = ∫[0 à ∞] f(t) × exp(-pt) dt</p>
+
+<p>où p = σ + jω est la variable complexe de Laplace.</p>
+
+<p><strong>Transformées usuelles</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Signal temporel f(t)</th>
+      <th>Transformée F(p)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Échelon u(t)</td>
+      <td>1/p</td>
+    </tr>
+    <tr>
+      <td>Impulsion δ(t)</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Rampe t×u(t)</td>
+      <td>1/p²</td>
+    </tr>
+    <tr>
+      <td>Exponentielle exp(-at)×u(t)</td>
+      <td>1/(p+a)</td>
+    </tr>
+    <tr>
+      <td>Sinus sin(ωt)×u(t)</td>
+      <td>ω/(p² + ω²)</td>
+    </tr>
+    <tr>
+      <td>Cosinus cos(ωt)×u(t)</td>
+      <td>p/(p² + ω²)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Propriétés de la transformée</strong>:</p>
+
+<ul>
+  <li><strong>Linéarité</strong>: L{a×f(t) + b×g(t)} = a×F(p) + b×G(p)</li>
+  <li><strong>Dérivation</strong>: L{df/dt} = p×F(p) - f(0⁻)</li>
+  <li><strong>Intégration</strong>: L{∫[0 à t] f(τ)dτ} = F(p)/p</li>
+  <li><strong>Théorème du retard</strong>: L{f(t-τ)×u(t-τ)} = exp(-pτ)×F(p)</li>
+  <li><strong>Théorème de la valeur initiale</strong>: f(0⁺) = lim[p→∞] p×F(p)</li>
+  <li><strong>Théorème de la valeur finale</strong>: f(∞) = lim[p→0] p×F(p)</li>
+</ul>
+
+<p><strong>Application aux circuits</strong>:</p>
+
+<p>En transformée de Laplace, les éléments deviennent:</p>
+<ul>
+  <li><strong>Résistance</strong>: R (inchangée)</li>
+  <li><strong>Condensateur</strong>: impédance 1/(pC)</li>
+  <li><strong>Inductance</strong>: impédance pL</li>
+</ul>
+
+<p><strong>Exemple - Circuit RC</strong>:</p>
+
+<p>Équation temporelle:
+RC × dVs/dt + Vs = Ve</p>
+
+<p>En Laplace (conditions initiales nulles):
+RC × p×Vs(p) + Vs(p) = Ve(p)</p>
+
+<p>Fonction de transfert:
+H(p) = Vs(p)/Ve(p) = 1/(1 + RCp)</p>
+
+<p><strong>Réponse temporelle d’un système du 2ème ordre</strong>:</p>
+
+<p>Pour un système du 2ème ordre:
+H(p) = ω0²/(p² + 2ξω0×p + ω0²)</p>
+
+<p><strong>Réponse indicielle</strong> (entrée échelon):</p>
+
+<ul>
+  <li>
+    <p><strong>Cas suramort</strong> (ξ &gt; 1): deux pôles réels distincts, pas de dépassement</p>
+  </li>
+  <li>
+    <p><strong>Cas critique</strong> (ξ = 1): pôle réel double, réponse la plus rapide sans dépassement</p>
+  </li>
+  <li>
+    <p><strong>Cas sous-amorti</strong> (0 &lt; ξ &lt; 1): pôles complexes conjugués, oscillations amorties</p>
+  </li>
+</ul>
+
+<p>Vs(t) = V0 × [1 - (exp(-ξω0×t)/√(1-ξ²)) × sin(ωd×t + φ)]</p>
+
+<p>où ωd = ω0×√(1-ξ²) (pseudo-pulsation)</p>
+
+<p><strong>Dépassement</strong> (overshoot):
+D% = 100 × exp(-πξ/√(1-ξ²))</p>
+
+<p>Pour Q = 0.707 (ξ = 0.707): D ≈ 4.3%</p>
+
+<p><strong>Temps de montée</strong> tm (10% à 90%):
+tm ≈ 2.2/ω0</p>
+
+<p><strong>Temps de réponse</strong> tr (à 5%):
+tr ≈ 3/(ξω0)</p>
+
+<p><strong>Circuits RLC</strong>:</p>
+
+<p><strong>Circuit RLC série</strong>:</p>
+
+<p>Équation différentielle:
+L × d²i/dt² + R × di/dt + (1/C)×i = dVe/dt</p>
+
+<p>En Laplace:
+H(p) = I(p)/Ve(p) = pC/(LCp² + RCp + 1)</p>
+
+<p><strong>Pulsation propre</strong>: ω0 = 1/√(LC)</p>
+
+<p><strong>Facteur de qualité</strong>: Q = (1/R)×√(L/C) = (ω0×L)/R</p>
+
+<p><strong>Analyse des signaux</strong>:</p>
+
+<ul>
+  <li><strong>Fonction de transfert harmonique</strong>: réponse en régime sinusoïdal permanent</li>
+  <li><strong>Réponse impulsionnelle</strong>: h(t) = L⁻¹{H(p)}</li>
+  <li><strong>Réponse indicielle</strong>: s(t) = L⁻¹{H(p)/p}</li>
+  <li><strong>Convolution</strong>: y(t) = h(t) * x(t) = ∫[-∞ à ∞] h(τ)×x(t-τ) dτ</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:</p>
+<ul>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Laplace.pdf">Transformée de Laplace</a></li>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Ordre-deux-temporel.pdf">Ordre 2 temporel</a></li>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Laplace-RLC.pdf">Laplace et circuits RLC</a></li>
+  <li><a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Laplace-Signaux.pdf">Laplace et signaux</a></li>
+</ul>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<p>Cette section présente les travaux pratiques et exercices réalisés.</p>
+
+<h3 id="travaux-pratiques-avec-ltspice">Travaux Pratiques avec LTspice</h3>
+
+<h4 id="tp1-cellules-cr-et-rc">TP1: Cellules CR et RC</h4>
+
+<p><strong>Objectif</strong>: Étude des filtres passifs du 1er ordre et validation par simulation.</p>
+
+<p><strong>Cellule RC (Passe-Bas)</strong>:</p>
+
+<p>Schéma simulé dans LTspice:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Circuit RC passe-bas:
+V1 (AC source) --- R1 (1kΩ) ---+--- Vout
+                                |
+                               C1 (100nF)
+                                |
+                               GND
+</code></pre></div></div>
+
+<p><strong>Calcul théorique</strong>:
+f0 = 1/(2π×RC) = 1/(2π × 1000 × 100×10⁻⁹) = 1.59 kHz</p>
+
+<p><strong>Simulation</strong>:</p>
+<ul>
+  <li>Analyse AC de 10 Hz à 100 kHz</li>
+  <li>Tracé du diagramme de Bode (gain et phase)</li>
+  <li>Vérification de la fréquence de coupure à -3 dB</li>
+  <li>Pente de -20 dB/décade après f0</li>
+</ul>
+
+<p><strong>Cellule CR (Passe-Haut)</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Circuit CR passe-haut:
+V1 (AC source) --- C1 (100nF) ---+--- Vout
+                                 |
+                                R1 (1kΩ)
+                                 |
+                                GND
+</code></pre></div></div>
+
+<p>Même fréquence de coupure: f0 = 1.59 kHz</p>
+
+<p><strong>Comportement</strong>:</p>
+<ul>
+  <li>Atténuation des basses fréquences</li>
+  <li>Gain unitaire (0 dB) aux hautes fréquences</li>
+  <li>Pente de +20 dB/décade avant f0</li>
+  <li>Déphasage de 0° à +90°</li>
+</ul>
+
+<p><strong>Mesures effectuées</strong>:</p>
+<ul>
+  <li>Gain à différentes fréquences (tableau de valeurs)</li>
+  <li>Phase à différentes fréquences</li>
+  <li>Comparaison mesures/théorie</li>
+  <li>Impact des composants réels (tolérances)</li>
+</ul>
+
+<p><strong>Supports de cours</strong>:
+<a href="/cours-pdf/S5/Circuits-Filtres-Analogiques/Compte_rendu_Chanfreau_Jumin.pdf">Compte rendu TP</a></p>
+
+<h4 id="tp1-filtre-sallen-key">TP1: Filtre Sallen-Key</h4>
+
+<p><strong>Objectif</strong>: Réalisation d’un filtre actif passe-bas du 2ème ordre.</p>
+
+<p><strong>Topologie Sallen-Key unitaire</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Circuit Sallen-Key (gain unitaire):
+           R1        R2
+Ve ----/\/\/\--+-/\/\/\--+-----[AO+]---- Vs
+               |         |      |  -|
+               C1       C2      +---+
+               |         |
+              GND       GND
+</code></pre></div></div>
+
+<p><strong>Dimensionnement pour Butterworth</strong>:</p>
+
+<p>Pour f0 = 1 kHz et Q = 0.707:</p>
+
+<p>Choix: C1 = C2 = C = 100 nF</p>
+
+<p>R = 1/(2π×f0×C) = 1/(2π × 1000 × 100×10⁻⁹) = 1.59 kΩ</p>
+
+<p>On prend R1 = R2 = 1.6 kΩ (valeur normalisée E24)</p>
+
+<p><strong>Simulation LTspice</strong>:</p>
+<ul>
+  <li>Analyse AC: diagramme de Bode</li>
+  <li>Vérification f0, Q, et pente -40 dB/décade</li>
+  <li>Analyse temporelle (réponse indicielle): mesure du dépassement (~4.3% attendu)</li>
+  <li>Analyse transitoire avec signal carré: observation de la réponse</li>
+</ul>
+
+<p><strong>Comparaison 1er ordre vs 2ème ordre</strong>:</p>
+<ul>
+  <li>Sélectivité supérieure du 2ème ordre</li>
+  <li>Pente de coupure doublée</li>
+  <li>Possibilité de résonance si Q &gt; 0.707</li>
+</ul>
+
+<h3 id="exercices-de-td">Exercices de TD</h3>
+
+<h4 id="td1-analyse-de-filtres-passifs">TD1: Analyse de filtres passifs</h4>
+
+<p><strong>Exercice type</strong>: Déterminer la fonction de transfert d’un filtre RC série puis parallèle.</p>
+
+<p><strong>Calcul d’impédances complexes</strong>:</p>
+
+<p>Pour un condensateur: Zc = 1/(jCω)</p>
+
+<p>Diviseur de tension:
+H(jω) = Z2/(Z1 + Z2)</p>
+
+<p><strong>Application numérique</strong>: calculer gain et phase pour plusieurs fréquences.</p>
+
+<h4 id="td2-amplificateurs-opérationnels">TD2: Amplificateurs opérationnels</h4>
+
+<p><strong>Exercice</strong>: Dimensionner un amplificateur non-inverseur de gain 10.</p>
+
+<p>H = 1 + (R2/R1) = 10</p>
+
+<p>Donc: R2/R1 = 9</p>
+
+<p>Choix: R1 = 10 kΩ, R2 = 90 kΩ</p>
+
+<p><strong>Vérification de la bande passante</strong>:</p>
+
+<p>Pour un AO réel (ex: TL081):</p>
+<ul>
+  <li>GBP (Gain-Bandwidth Product) = 3 MHz</li>
+  <li>Bande passante à gain 10: fBP = (3×10⁶)/10 = 300 kHz</li>
+</ul>
+
+<h4 id="td3-filtres-du-2ème-ordre">TD3: Filtres du 2ème ordre</h4>
+
+<p><strong>Exercice</strong>: Déterminer les valeurs de R et C pour un filtre passe-bas Sallen-Key avec:</p>
+<ul>
+  <li>f0 = 10 kHz</li>
+  <li>Q = 1 (Bessel)</li>
+</ul>
+
+<p><strong>Méthode</strong>:</p>
+<ol>
+  <li>Fixer C (ex: 10 nF)</li>
+  <li>Calculer R avec ω0 = 1/(RC)</li>
+  <li>Ajuster pour obtenir le Q désiré (ratios de résistances/capacités)</li>
+</ol>
+
+<h4 id="td4-transformée-de-laplace">TD4: Transformée de Laplace</h4>
+
+<p><strong>Exercice</strong>: Calculer la réponse temporelle d’un circuit RC à un échelon de tension.</p>
+
+<p><strong>Entrée</strong>: Ve(t) = E × u(t) où u(t) est l’échelon unité</p>
+
+<p>En Laplace: Ve(p) = E/p</p>
+
+<p>Fonction de transfert: H(p) = 1/(1 + RCp)</p>
+
+<p>Vs(p) = H(p) × Ve(p) = E/(p×(1 + RCp)) = E/p - (ERC)/(1 + RCp)</p>
+
+<p>Transformée inverse:
+Vs(t) = E × (1 - exp(-t/(RC))) × u(t)</p>
+
+<p><strong>Constante de temps</strong>: τ = RC</p>
+
+<p>À t = τ: Vs(τ) = 0.63E (63% de la valeur finale)</p>
+
+<h3 id="applications-pratiques">Applications Pratiques</h3>
+
+<p><strong>Conditionnement de signaux capteurs</strong>:</p>
+<ul>
+  <li>Amplification (thermocouples, micros)</li>
+  <li>Filtrage anti-repliement avant numérisation (CAN)</li>
+  <li>Élimination du bruit 50 Hz (filtre coupe-bande)</li>
+</ul>
+
+<p><strong>Audio</strong>:</p>
+<ul>
+  <li>Égaliseurs (filtres passe-bande multiples)</li>
+  <li>Crossovers pour haut-parleurs (filtres passe-bas/passe-haut)</li>
+  <li>Effets (filtres résonants)</li>
+</ul>
+
+<p><strong>Instrumentation</strong>:</p>
+<ul>
+  <li>Amplificateurs d’instrumentation (gain précis, CMRR élevé)</li>
+  <li>Intégrateurs pour capteurs de courant</li>
+  <li>Dérivateurs pour capteurs de vitesse</li>
+</ul>
+
+<p><strong>Alimentation</strong>:</p>
+<ul>
+  <li>Filtrage de l’ondulation résiduelle</li>
+  <li>Régulation linéaire avec AO</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="connaissances-et-compétences-mobilisées">Connaissances et compétences mobilisées</h3>
+
+<ul>
+  <li><strong>Analyse fréquentielle</strong>: maîtrise des diagrammes de Bode et de la représentation complexe</li>
+  <li><strong>Analyse temporelle</strong>: utilisation de la transformée de Laplace pour les réponses transitoires</li>
+  <li><strong>Conception de filtres</strong>: dimensionnement de filtres actifs et passifs</li>
+  <li><strong>Simulation</strong>: utilisation de LTspice pour la validation de circuits</li>
+  <li><strong>Mesures</strong>: utilisation d’oscilloscopes et analyseurs de spectre</li>
+  <li><strong>Mathématiques appliquées</strong>: nombres complexes, équations différentielles, transformées</li>
+</ul>
+
+<h3 id="auto-évaluation">Auto-évaluation</h3>
+
+<p>Ce cours a été l’un des plus importants de ma formation en électronique analogique.</p>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li><strong>Lien théorie/pratique</strong>: les TPs avec LTspice ont permis de valider les calculs théoriques</li>
+  <li><strong>Outils mathématiques</strong>: la transformée de Laplace est un outil puissant pour l’analyse</li>
+  <li><strong>Polyvalence</strong>: applications dans de nombreux domaines (audio, instrumentation, télécoms)</li>
+  <li><strong>Amplificateurs opérationnels</strong>: composant universel permettant une grande variété de fonctions</li>
+</ul>
+
+<p><strong>Difficultés rencontrées</strong>:</p>
+<ul>
+  <li><strong>Mathématiques</strong>: manipulations complexes avec les nombres complexes et Laplace</li>
+  <li><strong>Dimensionnement</strong>: choix des composants (compromis performance/coût/disponibilité)</li>
+  <li><strong>Filtres d’ordre supérieur</strong>: complexité croissante, difficile à intuiter</li>
+</ul>
+
+<p><strong>Applications pratiques</strong>:</p>
+<ul>
+  <li>Conception de chaînes d’acquisition de données</li>
+  <li>Filtrage de signaux pour systèmes embarqués</li>
+  <li>Conditionnement de capteurs analogiques</li>
+</ul>
+
+<h3 id="mon-opinion">Mon opinion</h3>
+
+<p>Ce cours est fondamental pour tout ingénieur en électronique et systèmes embarqués.</p>
+
+<p><strong>Pourquoi ce cours est essentiel</strong>:</p>
+
+<ol>
+  <li><strong>Base de l’électronique analogique</strong>: même à l’ère du numérique, l’interface avec le monde réel reste analogique</li>
+  <li><strong>Filtrage indispensable</strong>: anti-repliement avant CAN, élimination du bruit</li>
+  <li><strong>Conditionnement de signaux</strong>: amplification, adaptation d’impédance</li>
+  <li><strong>Outils réutilisables</strong>: Laplace, Bode utilisés dans d’autres cours (automatique, télécoms)</li>
+</ol>
+
+<p><strong>Connexions avec autres cours</strong>:</p>
+<ul>
+  <li><strong>Filtrage Numérique</strong> (S6): équivalent numérique, transformation bilinéaire</li>
+  <li><strong>Traitement du Signal</strong> (S5): complément théorique (FFT, convolution)</li>
+  <li><strong>Chaînes d’Acquisition</strong> (S8): application directe pour le conditionnement</li>
+  <li><strong>Automatique</strong> (S6-S8): même formalisme (Laplace, fonctions de transfert)</li>
+</ul>
+
+<p><strong>Évolution moderne</strong>:</p>
+
+<p>Aujourd’hui, les défis sont:</p>
+<ul>
+  <li><strong>Mixte analogique-numérique</strong>: filtres à capacités commutées, filtres actifs programmables</li>
+  <li><strong>Faible consommation</strong>: importance pour IoT et objets connectés</li>
+  <li><strong>Haute fréquence</strong>: défis pour les RF (radio-fréquence)</li>
+  <li><strong>Intégration</strong>: ASIC, filtres intégrés dans les puces</li>
+</ul>
+
+<p><strong>Outils modernes</strong>:</p>
+<ul>
+  <li><strong>Filtres numériques</strong>: remplacent souvent les filtres analogiques (flexibilité)</li>
+  <li><strong>DSP</strong> (Digital Signal Processor): traitement tout-numérique</li>
+  <li>Mais: <strong>filtres analogiques toujours nécessaires</strong> en amont du CAN!</li>
+</ul>
+
+<p><strong>Recommandations pour réussir</strong>:</p>
+
+<ol>
+  <li><strong>Maîtriser les bases</strong>: nombres complexes, équations différentielles</li>
+  <li><strong>Pratiquer régulièrement</strong>: refaire les TDs, varier les paramètres</li>
+  <li><strong>Simuler</strong>: LTspice gratuit, expérimenter sans matériel</li>
+  <li><strong>Visualiser</strong>: tracer les Bode, observer les réponses temporelles</li>
+  <li><strong>Comprendre physiquement</strong>: ne pas se limiter aux formules</li>
+</ol>
+
+<p><strong>Applications professionnelles</strong>:</p>
+
+<p>Ces compétences sont utilisées dans:</p>
+<ul>
+  <li><strong>Conception de cartes électroniques</strong>: conditionnement de signaux</li>
+  <li><strong>Instrumentation</strong>: oscilloscopes, multimètres, analyseurs</li>
+  <li><strong>Audio professionnel</strong>: consoles de mixage, égaliseurs</li>
+  <li><strong>Télécommunications</strong>: filtrage RF, modulation</li>
+  <li><strong>Automobile</strong>: capteurs ABS, airbag (critiques)</li>
+  <li><strong>Médical</strong>: ECG, EEG (amplification de signaux faibles)</li>
+  <li><strong>Aéronautique</strong>: systèmes critiques, certification</li>
+</ul>
+
+<p><strong>Aspects pratiques importants</strong>:</p>
+
+<ul>
+  <li><strong>Choix de l’AO</strong>: compromis GBP, slew rate, bruit, offset, coût</li>
+  <li><strong>Composants réels</strong>: tolérances (±5%, ±10%), dérive en température</li>
+  <li><strong>Stabilité</strong>: éviter les oscillations (marge de phase, compensation)</li>
+  <li><strong>Layout PCB</strong>: routage critique (masse, découplage, chemins de retour)</li>
+</ul>
+
+<p>En conclusion, ce cours fournit des bases solides en électronique analogique qui restent pertinentes malgré la montée du numérique. La compréhension des filtres et de l’analyse fréquentielle/temporelle est indispensable pour concevoir des systèmes électroniques complets et performants.</p>
+
+<hr />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #2a7ae2;
+    }
+    p {
+        text-align: justify;
+    }
+    code {
+        background-color: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,592 @@
+---
+---
+
+@import "minima";
+
+// Variables personnalisées
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$accent-color: #f093fb;
+$text-color: #2d3748;
+
+// Fix pour les icônes sociales (GitHub, LinkedIn) rognées - TOUT SUR UNE LIGNE
+.social-media-list {
+    display: flex !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin-left: 0 !important;
+    flex-wrap: nowrap !important;
+    
+    li {
+        display: inline-flex !important;
+        align-items: center !important;
+        margin-right: 15px !important;
+        margin-bottom: 0 !important;
+        white-space: nowrap !important;
+    }
+    
+    a {
+        display: inline-flex !important;
+        align-items: center !important;
+        text-decoration: none !important;
+        color: $grey-color !important;
+        
+        &:hover {
+            color: $text-color !important;
+        }
+    }
+    
+    .svg-icon {
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0 !important;
+        margin: 0 5px 0 0 !important;
+        vertical-align: middle !important;
+    }
+    
+    svg {
+        overflow: visible !important;
+        max-width: 20px !important;
+        max-height: 20px !important;
+        fill: currentColor !important;
+    }
+}
+
+// Correction spécifique pour le header
+.site-header .social-media-list .svg-icon {
+    width: 18px !important;
+    height: 18px !important;
+}
+
+// Correction pour le footer - une seule ligne
+.footer-col-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px 0;
+    
+    .footer-col-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .footer-col {
+        margin-bottom: 0 !important;
+    }
+    
+    .footer-emails .contact-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        li {
+            margin: 0 !important;
+        }
+        
+        a {
+            color: white !important;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+    
+    .social-media-list {
+        display: flex !important;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li {
+            margin: 0 !important;
+        }
+        
+        a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white !important;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        
+        .svg-icon {
+            width: 20px !important;
+            height: 20px !important;
+            fill: white !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer .footer-col-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+$light-bg: #f7fafc;
+$dark-bg: #1a202c;
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+// Styles globaux améliorés
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: $text-color;
+    line-height: 1.7;
+    background-color: $light-bg;
+    overflow-x: hidden;
+}
+
+// En-tête amélioré avec effet glassmorphism
+.site-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, $primary-color, $secondary-color, $accent-color);
+    border-image-slice: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.site-title {
+    font-weight: 800 !important;
+    font-size: 1.6em !important;
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 50%, $accent-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        text-decoration: none;
+        transform: scale(1.02);
+        filter: brightness(1.2);
+    }
+}
+
+// Navigation améliorée
+.site-nav {
+    .page-link {
+        color: $text-color;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, $primary-color, $secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        &:hover {
+            color: $primary-color;
+            
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Container avec animations
+.page-content {
+    animation: fadeInUp 0.8s ease-out;
+    padding: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Boutons stylisés avec gradient animé
+.styled-button, .nav-link {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-size: 1.1em;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+        transition: left 0.5s ease;
+    }
+    
+    &:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+        
+        &:before {
+            left: 100%;
+        }
+    }
+    
+    &:active {
+        transform: translateY(-1px) scale(1.02);
+    }
+}
+
+// Footer amélioré avec gradient
+.site-footer {
+    background: linear-gradient(135deg, $dark-bg 0%, darken($dark-bg, 5%) 100%);
+    color: white;
+    padding: 60px 0 30px 0;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, $primary-color, $secondary-color, $accent-color);
+    }
+    
+    .footer-heading {
+        color: white;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: white;
+            transform: translateX(5px);
+            display: inline-block;
+        }
+    }
+    
+    .social-media-list {
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateX(0) scale(1.05);
+            }
+        }
+    }
+}
+
+// Amélioration des articles et contenus
+article {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        transform: translateY(-5px);
+    }
+}
+
+// Typographie améliorée
+h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8em;
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    font-size: 2.2em;
+    padding-bottom: 15px;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(90deg, $primary-color, $secondary-color);
+    border-image-slice: 1;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: $accent-color;
+        transition: width 0.5s ease;
+    }
+    
+    &:hover:after {
+        width: 100%;
+    }
+}
+
+h3 {
+    font-size: 1.8em;
+    color: $primary-color;
+}
+
+// Code blocks avec style moderne
+pre, code {
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+pre {
+    padding: 20px;
+    overflow-x: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    
+    code {
+        background: transparent;
+        border: none;
+    }
+}
+
+code {
+    padding: 3px 8px;
+    font-size: 0.9em;
+    color: $primary-color;
+}
+
+// Images responsives avec effet
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Tables stylisées
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    
+    th {
+        background: linear-gradient(135deg, $primary-color, $secondary-color);
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-weight: 700;
+    }
+    
+    td {
+        padding: 15px;
+        border-bottom: 1px solid #e2e8f0;
+        background: white;
+    }
+    
+    tr:last-child td {
+        border-bottom: none;
+    }
+    
+    tr:hover td {
+        background: #f7fafc;
+    }
+}
+
+// Liens avec effet
+a {
+    color: $primary-color;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+// Blockquotes stylisés
+blockquote {
+    border-left: 5px solid $primary-color;
+    padding-left: 25px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #4a5568;
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.05), transparent);
+    padding: 20px 25px;
+    border-radius: 0 12px 12px 0;
+}
+
+// Listes stylisées
+ul, ol {
+    margin: 20px 0;
+    padding-left: 30px;
+    
+    li {
+        margin: 10px 0;
+        line-height: 1.8;
+        
+        &:before {
+            font-weight: bold;
+        }
+    }
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    
+    &:before {
+        content: '▸';
+        position: absolute;
+        left: -20px;
+        color: $primary-color;
+    }
+}
+
+// Scrollbar personnalisée
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    border-radius: 6px;
+    
+    &:hover {
+        background: linear-gradient(135deg, $secondary-color, $accent-color);
+    }
+}
+
+// Responsive design amélioré
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 1.3em !important;
+    }
+    
+    article {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    .styled-button, .nav-link {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+// Animations supplémentaires
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-slide-in {
+    animation: slideIn 0.6s ease-out;
+}

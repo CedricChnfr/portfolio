@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Langage C - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Langage C - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/langage-c.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/langage-c.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Langage C - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Langage C - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/langage-c.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/langage-c.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-langage-c---s5">💻 Langage C - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Programmation Système</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Le cours de Langage C fournit une formation complète à la programmation système en C, langage fondamental pour le développement de systèmes embarqués, systèmes d’exploitation et applications nécessitant des performances optimales. Le cours couvre les concepts fondamentaux (pointeurs, tableaux, structures) ainsi que les aspects avancés (allocation dynamique, manipulation de bits, structures de données complexes).</p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Maîtriser la syntaxe C et les types de données</li>
+  <li>Comprendre les pointeurs et l’arithmétique des pointeurs</li>
+  <li>Gérer la mémoire dynamique (malloc, free)</li>
+  <li>Manipuler les structures de données (listes chaînées, arbres)</li>
+  <li>Réaliser des opérations bit à bit pour le bas niveau</li>
+  <li>Créer des programmes modulaires avec fichiers multiples</li>
+  <li>Déboguer et optimiser du code C</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: 48h (CM: 24h, TD/TP: 24h)</li>
+  <li><strong>Évaluation</strong>: Examens écrits (60%) + TPs et projets (40%)</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Algorithmique de base, notions de programmation</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<h4 id="1-fondamentaux-du-c">1. Fondamentaux du C</h4>
+
+<p><strong>Types de données et opérateurs</strong>:</p>
+
+<p>Le C propose des types primitifs de tailles fixes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">char</code>: 1 octet (8 bits)</li>
+  <li><code class="language-plaintext highlighter-rouge">int</code>: 4 octets sur systèmes 32/64 bits</li>
+  <li><code class="language-plaintext highlighter-rouge">float</code>: 4 octets (simple précision)</li>
+  <li><code class="language-plaintext highlighter-rouge">double</code>: 8 octets (double précision)</li>
+</ul>
+
+<p><strong>Modificateurs</strong>: <code class="language-plaintext highlighter-rouge">signed</code>, <code class="language-plaintext highlighter-rouge">unsigned</code>, <code class="language-plaintext highlighter-rouge">short</code>, <code class="language-plaintext highlighter-rouge">long</code></p>
+
+<p>Exemple de déclarations:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">nombre</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">positif</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">lettre</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">pi</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">14</span><span class="n">f</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Opérateurs bit à bit</strong>:</p>
+
+<p>Essentiels pour la manipulation bas niveau:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&amp;</code> (AND), <code class="language-plaintext highlighter-rouge">|</code> (OR), <code class="language-plaintext highlighter-rouge">^</code> (XOR), <code class="language-plaintext highlighter-rouge">~</code> (NOT)</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;&lt;</code> (décalage gauche), <code class="language-plaintext highlighter-rouge">&gt;&gt;</code> (décalage droite)</li>
+</ul>
+
+<p><strong>Application TD1</strong>: Compter les bits à 1 dans un entier:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">bitcount</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// Teste le bit de poids faible</span>
+        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>         <span class="c1">// Décale d'un bit à droite</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Pour <code class="language-plaintext highlighter-rouge">0xF0000F00</code>, résultat: 8 bits à 1.</p>
+
+<p><strong>Structures de contrôle</strong>:</p>
+
+<p>Boucles et conditionnelles standard:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Tri à bulles (TD1)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">TAILLE</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">TAILLE</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+            <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="2-pointeurs-et-gestion-mémoire">2. Pointeurs et Gestion Mémoire</h4>
+
+<p><strong>Les pointeurs</strong>:</p>
+
+<p>Concept fondamental du C: variable contenant une adresse mémoire.</p>
+
+<p>Déclaration et utilisation:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>  <span class="c1">// ptr pointe vers x</span>
+<span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>      <span class="c1">// Modifie x via le pointeur</span>
+</code></pre></div></div>
+
+<p><strong>Arithmétique des pointeurs</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">tab</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">tab</span><span class="p">;</span>  <span class="c1">// Pointe vers tab[0]</span>
+<span class="n">p</span><span class="o">++</span><span class="p">;</span>           <span class="c1">// Pointe vers tab[1]</span>
+<span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>      <span class="c1">// tab[1] = 100</span>
+</code></pre></div></div>
+
+<p><strong>Permutation par pointeurs (TD2)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">Permute</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">*</span><span class="n">a</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">a</span> <span class="o">=</span> <span class="o">*</span><span class="n">b</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Allocation dynamique</strong>:</p>
+
+<p>Fonctions essentielles:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">malloc(size)</code>: alloue size octets</li>
+  <li><code class="language-plaintext highlighter-rouge">calloc(n, size)</code>: alloue et initialise à 0</li>
+  <li><code class="language-plaintext highlighter-rouge">free(ptr)</code>: libère la mémoire</li>
+</ul>
+
+<p>Exemple TD2:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">chaine</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+<span class="kt">int</span><span class="o">*</span> <span class="n">tab</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+
+<span class="c1">// Utilisation...</span>
+
+<span class="n">free</span><span class="p">(</span><span class="n">chaine</span><span class="p">);</span>
+<span class="n">free</span><span class="p">(</span><span class="n">tab</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Risques</strong>:</p>
+<ul>
+  <li>Fuite mémoire si oubli de <code class="language-plaintext highlighter-rouge">free</code></li>
+  <li>Double free (libérer deux fois)</li>
+  <li>Accès après free (use-after-free)</li>
+  <li>Dépassement de buffer</li>
+</ul>
+
+<h4 id="3-structures-et-types-composés">3. Structures et Types Composés</h4>
+
+<p><strong>Définition de structures (TD3)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">nom</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">naissance</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">notes</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">nb_notes</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p><strong>Utilisation</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="n">cedric</span><span class="p">;</span>
+<span class="n">strcpy</span><span class="p">(</span><span class="n">cedric</span><span class="p">.</span><span class="n">nom</span><span class="p">,</span> <span class="s">"Chanfreau"</span><span class="p">);</span>
+<span class="n">cedric</span><span class="p">.</span><span class="n">naissance</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">;</span>
+<span class="n">cedric</span><span class="p">.</span><span class="n">notes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Pointeurs vers structures</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">cedric</span><span class="p">;</span>
+<span class="n">ptr</span><span class="o">-&gt;</span><span class="n">naissance</span> <span class="o">=</span> <span class="mi">2001</span><span class="p">;</span>  <span class="c1">// Équivalent à (*ptr).naissance</span>
+</code></pre></div></div>
+
+<p><strong>Copie de structures</strong>:</p>
+
+<p>Attention aux pointeurs dans les structures:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">S1</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">ch</span><span class="p">;</span>  <span class="c1">// Pointeur</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">S1</span> <span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">;</span>
+<span class="n">v1</span><span class="p">.</span><span class="n">ch</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+<span class="n">strcpy</span><span class="p">(</span><span class="n">v1</span><span class="p">.</span><span class="n">ch</span><span class="p">,</span> <span class="s">"Test"</span><span class="p">);</span>
+
+<span class="n">v2</span> <span class="o">=</span> <span class="n">v1</span><span class="p">;</span>  <span class="c1">// Copie superficielle: v2.ch pointe vers la même zone!</span>
+</code></pre></div></div>
+
+<p>Solution: copie profonde manuelle ou allocation séparée.</p>
+
+<h4 id="4-structures-de-données-dynamiques">4. Structures de Données Dynamiques</h4>
+
+<p><strong>Listes chaînées (TP principal)</strong>:</p>
+
+<p>Structure d’un élément:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">element</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">suiv</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">liste</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">premier</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">dernier</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">courant</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p><strong>Initialisation</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">init_liste</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">premier</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Ajout en queue (file)</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">ajout_file</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">der</span><span class="p">,</span> <span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Liste vide</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">element</span><span class="p">));</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">coureur</span> <span class="o">=</span> <span class="n">coureur</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">premier</span> <span class="o">=</span> <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Ajout en fin</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">element</span><span class="p">));</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">coureur</span> <span class="o">=</span> <span class="n">coureur</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Parcours de liste</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">Aller_Debut</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span> <span class="o">=</span> <span class="n">liste</span><span class="o">-&gt;</span><span class="n">premier</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">Avancer</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span> <span class="o">=</span> <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span><span class="o">-&gt;</span><span class="n">suiv</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">Fin</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">liste</span><span class="p">.</span><span class="n">courant</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Comptage d’éléments</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">nbElement</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Fin</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Avancer</span><span class="p">(</span><span class="o">&amp;</span><span class="n">liste</span><span class="p">);</span>
+        <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="5-fichiers-et-arguments">5. Fichiers et Arguments</h4>
+
+<p><strong>Arguments de ligne de commande (TD2)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Nombre d'arguments: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argc</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Programme: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Arg1: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Arg2: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Exécution: <code class="language-plaintext highlighter-rouge">./programme arg1 arg2</code></p>
+
+<p><strong>Manipulation de fichiers</strong>:</p>
+
+<p>Ouverture et lecture:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">FILE</span><span class="o">*</span> <span class="n">fichier</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">"data.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">fichier</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"Erreur ouverture"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">fichier</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">fclose</span><span class="p">(</span><span class="n">fichier</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Modes d’ouverture: <code class="language-plaintext highlighter-rouge">"r"</code> (lecture), <code class="language-plaintext highlighter-rouge">"w"</code> (écriture), <code class="language-plaintext highlighter-rouge">"a"</code> (ajout), <code class="language-plaintext highlighter-rouge">"rb"</code> (binaire)</p>
+
+<h4 id="6-programmation-modulaire">6. Programmation Modulaire</h4>
+
+<p><strong>Projet TP: Structure modulaire</strong></p>
+
+<p>Fichier <code class="language-plaintext highlighter-rouge">coureur.h</code>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef _COUREUR_H
+#define _COUREUR_H
+</span>
+<span class="k">struct</span> <span class="n">Coureur</span> <span class="p">{</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">nom</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">prenom</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">num_dossard</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">nom_equipe</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">temps_etapes</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="nf">Creer_Coureur</span><span class="p">(</span><span class="kt">char</span> <span class="n">nom</span><span class="p">[],</span> <span class="kt">char</span> <span class="n">prenom</span><span class="p">[],</span> 
+                               <span class="kt">int</span> <span class="n">dossard</span><span class="p">,</span> <span class="kt">char</span> <span class="n">equipe</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">temps</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">Ajouter_Temps</span><span class="p">(</span><span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">,</span> <span class="kt">int</span> <span class="n">temps_jour</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">Afficher_Coureur</span><span class="p">(</span><span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div></div>
+
+<p><strong>Guards d’inclusion</strong>: <code class="language-plaintext highlighter-rouge">#ifndef</code>, <code class="language-plaintext highlighter-rouge">#define</code>, <code class="language-plaintext highlighter-rouge">#endif</code> évitent les inclusions multiples.</p>
+
+<p><strong>Compilation modulaire</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-c</span> coureur.c <span class="nt">-o</span> coureur.o
+gcc <span class="nt">-Wall</span> <span class="nt">-c</span> liste.c <span class="nt">-o</span> liste.o
+gcc <span class="nt">-Wall</span> <span class="nt">-c</span> test_coureur.c <span class="nt">-o</span> test_coureur.o
+gcc coureur.o liste.o test_coureur.o <span class="nt">-o</span> programme
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="exercices-de-td">Exercices de TD</h3>
+
+<p><strong>TD1: Manipulation de tableaux et bits</strong></p>
+
+<p>Objectifs:</p>
+<ul>
+  <li>Tri à bulles d’un tableau</li>
+  <li>Multiplication sans opérateur *</li>
+  <li>Opérations bit à bit (masquage, comptage)</li>
+</ul>
+
+<p><strong>TD2: Pointeurs et allocation dynamique</strong></p>
+
+<p>Exercices:</p>
+<ul>
+  <li>Fonction Permute avec pointeurs</li>
+  <li>Allocation dynamique avec calloc</li>
+  <li>Arguments de ligne de commande</li>
+</ul>
+
+<p><strong>TD3: Structures et copie</strong></p>
+
+<p>Problématiques:</p>
+<ul>
+  <li>Structures avec pointeurs vs tableaux</li>
+  <li>Copie superficielle vs profonde</li>
+  <li>Gestion mémoire dans structures</li>
+</ul>
+
+<p><strong>TD4-TD5: Fichiers et structures avancées</strong></p>
+
+<p>Applications pratiques de manipulation de données.</p>
+
+<h3 id="travaux-pratiques">Travaux Pratiques</h3>
+
+<p><strong>TP: Gestion de liste de coureurs</strong></p>
+
+<p>Application complète avec:</p>
+<ul>
+  <li>Structure <code class="language-plaintext highlighter-rouge">Coureur</code> avec allocation dynamique de chaînes</li>
+  <li>Liste chaînée pour gérer plusieurs coureurs</li>
+  <li>Opérations: création, ajout, parcours, suppression</li>
+  <li>Affichage et calcul de statistiques</li>
+</ul>
+
+<p><strong>Fonctionnalités implémentées</strong>:</p>
+<ul>
+  <li>Création de coureurs avec malloc pour les strings</li>
+  <li>Ajout en file (FIFO)</li>
+  <li>Parcours avec pointeur courant</li>
+  <li>Suppression d’élément à position donnée</li>
+  <li>Comptage d’éléments</li>
+  <li>Libération mémoire complète</li>
+</ul>
+
+<p><strong>TP_bis: Extensions</strong></p>
+
+<p>Versions avancées avec:</p>
+<ul>
+  <li>Tri de listes</li>
+  <li>Recherche par critères</li>
+  <li>Fusion de listes</li>
+  <li>Optimisations mémoire</li>
+</ul>
+
+<h3 id="outils-de-développement">Outils de Développement</h3>
+
+<p><strong>GCC (GNU Compiler Collection)</strong>:</p>
+
+<p>Compilation de base:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-o</span> programme source.c
+</code></pre></div></div>
+
+<p>Options utiles:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-Wall</code>: affiche tous les warnings</li>
+  <li><code class="language-plaintext highlighter-rouge">-g</code>: ajoute symboles de debug</li>
+  <li><code class="language-plaintext highlighter-rouge">-O2</code>: optimisation niveau 2</li>
+  <li><code class="language-plaintext highlighter-rouge">-std=c99</code>: standard C99</li>
+</ul>
+
+<p><strong>GDB (GNU Debugger)</strong>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-g</span> <span class="nt">-o</span> programme source.c
+gdb ./programme
+</code></pre></div></div>
+
+<p>Commandes GDB:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">break main</code>: point d’arrêt</li>
+  <li><code class="language-plaintext highlighter-rouge">run</code>: exécution</li>
+  <li><code class="language-plaintext highlighter-rouge">next</code>: ligne suivante</li>
+  <li><code class="language-plaintext highlighter-rouge">print var</code>: afficher variable</li>
+  <li><code class="language-plaintext highlighter-rouge">backtrace</code>: pile d’appels</li>
+</ul>
+
+<p><strong>Valgrind (détection fuites mémoire)</strong>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>valgrind <span class="nt">--leak-check</span><span class="o">=</span>full ./programme
+</code></pre></div></div>
+
+<p>Détecte:</p>
+<ul>
+  <li>Fuites mémoire (malloc sans free)</li>
+  <li>Accès mémoire invalides</li>
+  <li>Utilisation de mémoire non initialisée</li>
+</ul>
+
+<h3 id="bonnes-pratiques">Bonnes Pratiques</h3>
+
+<p><strong>Gestion mémoire</strong>:</p>
+<ul>
+  <li>Toujours libérer ce qui est alloué</li>
+  <li>Vérifier le retour de malloc</li>
+  <li>Mettre les pointeurs à NULL après free</li>
+</ul>
+
+<p><strong>Code sûr</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">str</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Erreur allocation</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Utilisation...</span>
+
+<span class="n">free</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+<span class="n">str</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>  <span class="c1">// Évite double free</span>
+</code></pre></div></div>
+
+<p><strong>Organisation code</strong>:</p>
+<ul>
+  <li>Fichiers .h pour déclarations</li>
+  <li>Fichiers .c pour implémentations</li>
+  <li>Guards d’inclusion systématiques</li>
+  <li>Commentaires pour fonctions complexes</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+
+<p><strong>Techniques</strong>:</p>
+<ul>
+  <li>Maîtrise des pointeurs et gestion mémoire</li>
+  <li>Implémentation de structures de données complexes</li>
+  <li>Débogage avec GDB et Valgrind</li>
+  <li>Compilation modulaire et organisation projet</li>
+  <li>Manipulation bit à bit pour le bas niveau</li>
+</ul>
+
+<p><strong>Méthodologiques</strong>:</p>
+<ul>
+  <li>Rigueur dans la gestion mémoire</li>
+  <li>Tests systématiques des allocations</li>
+  <li>Documentation et organisation du code</li>
+  <li>Résolution méthodique des bugs</li>
+</ul>
+
+<h3 id="auto-évaluation">Auto-évaluation</h3>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Compréhension solide des pointeurs</li>
+  <li>Capacité à créer structures de données dynamiques</li>
+  <li>Bonne pratique de la compilation modulaire</li>
+  <li>Maîtrise des outils (GCC, GDB)</li>
+</ul>
+
+<p><strong>Défis</strong>:</p>
+<ul>
+  <li>Complexité initiale des pointeurs de pointeurs</li>
+  <li>Gestion rigoureuse de la mémoire (fuites)</li>
+  <li>Debugging de segmentation faults</li>
+  <li>Compréhension fine des copies de structures</li>
+</ul>
+
+<h3 id="applications-pratiques">Applications pratiques</h3>
+
+<p>Le C est utilisé dans:</p>
+<ul>
+  <li><strong>Systèmes embarqués</strong>: microcontrôleurs (Arduino, STM32)</li>
+  <li><strong>Systèmes d’exploitation</strong>: Linux kernel, drivers</li>
+  <li><strong>Temps réel</strong>: applications critiques</li>
+  <li><strong>Performances</strong>: calcul scientifique, traitement signal</li>
+  <li><strong>Réseaux</strong>: protocoles, serveurs</li>
+  <li><strong>Bases de données</strong>: PostgreSQL, SQLite</li>
+</ul>
+
+<h3 id="connexions-avec-autres-cours">Connexions avec autres cours</h3>
+
+<ul>
+  <li><strong>Microcontrôleurs</strong> (S6): programmation STM32 en C</li>
+  <li><strong>Systèmes d’exploitation</strong> (S6): appels système en C</li>
+  <li><strong>Temps Réel</strong> (S8): FreeRTOS programmé en C</li>
+  <li><strong>Réseaux</strong> (S6): sockets et protocoles en C</li>
+  <li><strong>Architecture</strong> (S5): compréhension assembleur depuis C</li>
+</ul>
+
+<h3 id="perspectives">Perspectives</h3>
+
+<p><strong>Évolution du langage</strong>:</p>
+<ul>
+  <li>C11, C17, C23: standards modernes</li>
+  <li>Outils statiques: Clang, sanitizers</li>
+  <li>Intégration IDE: VS Code, CLion</li>
+</ul>
+
+<p><strong>Alternatives modernes</strong>:</p>
+<ul>
+  <li>Rust: sécurité mémoire garantie</li>
+  <li>C++: orienté objet avec compatibilité C</li>
+  <li>Zig: modernisation du C</li>
+</ul>
+
+<p>Mais le C reste incontournable pour:</p>
+<ul>
+  <li>Systèmes embarqués contraints</li>
+  <li>Interfaces hardware</li>
+  <li>Performance maximale</li>
+  <li>Legacy code (Linux, UNIX)</li>
+</ul>
+
+<h3 id="recommandations">Recommandations</h3>
+
+<ol>
+  <li><strong>Pratiquer régulièrement</strong>: coder chaque jour</li>
+  <li><strong>Lire du code</strong>: projets open source (Git, SQLite)</li>
+  <li><strong>Utiliser Valgrind</strong>: systématiquement</li>
+  <li><strong>Tester rigoureusement</strong>: cas limites, gestion erreurs</li>
+  <li><strong>Documenter</strong>: fonctions et algorithmes complexes</li>
+</ol>
+
+<p><strong>Ressources</strong>:</p>
+<ul>
+  <li>K&amp;R: “The C Programming Language” (référence)</li>
+  <li>Beej’s Guide: tutoriels réseau et sockets</li>
+  <li>Linux kernel source: exemples réels</li>
+  <li>Stack Overflow: résolution problèmes</li>
+</ul>
+
+<p>En conclusion, le C reste le langage fondamental pour comprendre le fonctionnement bas niveau des ordinateurs et programmer efficacement les systèmes embarqués. La rigueur acquise en C est bénéfique pour tous les autres langages.</p>
+
+<hr />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4, h5 {
+        color: #2a7ae2;
+    }
+    p {
+        text-align: justify;
+    }
+    code {
+        background-color: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h3 id="environnement-de-développement">Environnement de développement</h3>
+
+<p><strong>Outils utilisés</strong>:</p>
+<ul>
+  <li><strong>GCC</strong> (GNU Compiler Collection): Compilateur principal</li>
+  <li><strong>GDB</strong> (GNU Debugger): Débogueur en ligne de commande</li>
+  <li><strong>Make et Makefiles</strong>: Automatisation de compilation</li>
+  <li><strong>Valgrind</strong>: Débogage et détection de fuites mémoire</li>
+  <li><strong>Éditeurs</strong>: VS Code, Vim, Emacs</li>
+</ul>
+
+<h3 id="organisation-mémoire">Organisation mémoire</h3>
+
+<p><strong>Layout mémoire</strong>:</p>
+<ul>
+  <li>Stack (pile) vs Heap (tas)</li>
+  <li>Segments mémoire (text, data, BSS)</li>
+  <li>Stack frames et call stack</li>
+  <li>Alignement mémoire</li>
+  <li>Gestion automatique vs manuelle</li>
+</ul>
+
+<h3 id="processus-de-compilation">Processus de compilation</h3>
+
+<ol>
+  <li><strong>Préprocessing</strong>: Traitement des directives #</li>
+  <li><strong>Compilation</strong>: Traduction en assembleur</li>
+  <li><strong>Assembly</strong>: Génération du code machine</li>
+  <li><strong>Linking</strong>: Édition de liens</li>
+  <li><strong>Exécutable</strong>: Fichier final</li>
+</ol>
+
+<h3 id="structures-de-données-implémentées">Structures de données implémentées</h3>
+
+<ul>
+  <li>Listes chaînées (simples, doubles, circulaires)</li>
+  <li>Piles et files</li>
+  <li>Arbres binaires</li>
+  <li>Tables de hachage</li>
+  <li>Graphes</li>
+</ul>
+
+<h3 id="bonnes-pratiques-enseignées">Bonnes pratiques enseignées</h3>
+
+<ul>
+  <li>Organisation et structure du code</li>
+  <li>Conventions de nommage</li>
+  <li>Commentaires et documentation</li>
+  <li>Stratégies de gestion d’erreurs</li>
+  <li>Sécurité mémoire</li>
+  <li>Portabilité du code</li>
+  <li>Optimisation des performances</li>
+</ul>
+
+<h3 id="concepts-de-programmation-système">Concepts de programmation système</h3>
+
+<ul>
+  <li>Appels système</li>
+  <li>Gestion de processus</li>
+  <li>Communication inter-processus</li>
+  <li>Signaux</li>
+  <li>Threads (introduction)</li>
+  <li>Programmation réseau (sockets)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-compétences-acquises-auto-évaluation-avis">PART D: COMPÉTENCES ACQUISES, AUTO-ÉVALUATION, AVIS</h2>
+
+<h3 id="compétences-développées">Compétences développées</h3>
+
+<p><strong>Compétences techniques</strong>:</p>
+<ul>
+  <li>Maîtrise solide de la programmation C</li>
+  <li>Débogage systématique et tests</li>
+  <li>Gestion efficace de la mémoire</li>
+  <li>Compétences en programmation bas niveau</li>
+  <li>Pensée algorithmique en C</li>
+</ul>
+
+<p><strong>Compétences transversales</strong>:</p>
+<ul>
+  <li>Rigueur et précision dans le code</li>
+  <li>Résolution méthodique de problèmes</li>
+  <li>Analyse et optimisation de performances</li>
+  <li>Lecture et compréhension de code existant</li>
+  <li>Documentation technique</li>
+</ul>
+
+<h3 id="auto-évaluation-1">Auto-évaluation</h3>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Compréhension approfondie des pointeurs et de la mémoire</li>
+  <li>Capacité à écrire du code C efficace et optimisé</li>
+  <li>Maîtrise des outils de développement (GCC, GDB, Make)</li>
+  <li>Solide fondation pour la programmation système</li>
+  <li>Expérience pratique avec projets réels</li>
+</ul>
+
+<p><strong>Défis rencontrés</strong>:</p>
+<ul>
+  <li>Complexité initiale des pointeurs et de l’arithmétique pointeurs</li>
+  <li>Gestion des fuites mémoire et bugs subtils</li>
+  <li>Débogage de problèmes de segmentation fault</li>
+  <li>Compréhension fine du cycle de compilation</li>
+  <li>Optimisation mémoire et performances</li>
+</ul>
+
+<h3 id="apports-pour-le-parcours">Apports pour le parcours</h3>
+
+<p>Ce cours a été fondamental pour:</p>
+<ul>
+  <li><strong>Systèmes embarqués</strong>: Base essentielle pour la programmation microcontrôleurs</li>
+  <li><strong>Systèmes d’exploitation</strong>: Compréhension des mécanismes bas niveau</li>
+  <li><strong>Performance</strong>: Capacité à écrire du code efficace</li>
+  <li><strong>Projets techniques</strong>: Langage utilisé dans de nombreux projets d’école</li>
+  <li><strong>Employabilité</strong>: Compétence très recherchée en industrie</li>
+</ul>
+
+<h3 id="applications-pratiques-1">Applications pratiques</h3>
+
+<p>Les compétences acquises sont directement utilisées dans:</p>
+<ul>
+  <li>Développement de systèmes d’exploitation</li>
+  <li>Programmation de systèmes embarqués</li>
+  <li>Développement de drivers et pilotes</li>
+  <li>Utilitaires système</li>
+  <li>Calcul haute performance</li>
+  <li>Systèmes temps réel</li>
+  <li>Programmation réseau</li>
+</ul>
+
+<h3 id="projets-marquants">Projets marquants</h3>
+
+<p><strong>Gestion de structures de données</strong>:</p>
+<ul>
+  <li>Implémentation complète de listes chaînées avec gestion mémoire</li>
+  <li>Création de structures de données réutilisables</li>
+</ul>
+
+<p><strong>Manipulation de fichiers</strong>:</p>
+<ul>
+  <li>Développement d’utilitaires de traitement de fichiers</li>
+  <li>Gestion d’erreurs robuste</li>
+</ul>
+
+<p><strong>Programmation système</strong>:</p>
+<ul>
+  <li>Simulateurs de bas niveau</li>
+  <li>Interfaces avec le système</li>
+</ul>
+
+<h3 id="ressources-et-documentation">Ressources et documentation</h3>
+
+<ul>
+  <li>Notes de cours complètes</li>
+  <li>Exercices TD avec solutions détaillées</li>
+  <li>Supports TP laboratoire</li>
+  <li>Exercices complémentaires (TP_bis)</li>
+  <li>Manuels de référence C</li>
+  <li>Documentation en ligne (GNU, C standard)</li>
+</ul>
+
+<h3 id="évolution-des-compétences">Évolution des compétences</h3>
+
+<ul>
+  <li><strong>Début</strong>: Syntaxe de base, types simples</li>
+  <li><strong>Milieu</strong>: Pointeurs, structures, allocation dynamique</li>
+  <li><strong>Fin</strong>: Programmation système, optimisation, projets complexes</li>
+</ul>
+
+<p><strong>Recommandation</strong>: Le langage C est fondamental en ingénierie électronique et informatique embarquée. Ce cours établit des bases solides pour tous les cours de systèmes embarqués, microcontrôleurs et systèmes d’exploitation à venir. La pratique régulière et la lecture de code source sont essentielles pour consolider ces compétences.</p>
+
+<hr />
+
+<p><a href="./my-courses-2022-2023.html">← Back to My Courses 2022-2023</a></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

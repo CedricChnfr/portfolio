@@ -1,0 +1,637 @@
+---
+layout: default
+title: "Signal - S5"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #2a7ae2;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+# 📡 Signal - S5
+
+**Année**: 2022-2023 (Semestre 5)  
+**Crédits**: 3 ECTS  
+**Type**: Traitement du Signal
+
+---
+
+## PART A: PRÉSENTATION GÉNÉRALE
+
+### Objectifs du cours
+
+Ce cours introduit les bases du traitement du signal, couvrant l'analyse temporelle et fréquentielle des signaux, les transformations mathématiques essentielles, et les méthodes de traitement numérique. L'accent est mis sur les techniques permettant d'extraire l'information utile des signaux et de les filtrer.
+
+### Compétences visées
+
+- Maîtriser la représentation temporelle et fréquentielle des signaux
+- Appliquer les transformées de Fourier, Laplace et Z
+- Analyser les systèmes linéaires invariants dans le temps (LTI)
+- Comprendre l'échantillonnage et la numérisation des signaux
+- Concevoir et analyser des filtres numériques
+- Utiliser MATLAB pour le traitement du signal
+- Interpréter les spectres fréquentiels
+
+### Organisation
+
+- **Volume horaire**: Cours magistraux, TD et TP MATLAB
+- **Évaluation**: Examen écrit + TPs notés
+- **Semestre**: 5 (2022-2023)
+- **Prérequis**: Mathématiques (intégrales, nombres complexes), programmation de base
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Contenu pédagogique
+
+Le cours s'articule autour de l'analyse des signaux et des systèmes.
+
+#### 1. Introduction aux signaux
+
+**Classification des signaux**:
+
+| Type | Description | Exemples |
+|------|-------------|----------|
+| Continu | Variable continue dans le temps | Tension électrique, température |
+| Discret | Échantillonné à intervalles réguliers | Signal numérique, données capteur |
+| Périodique | Se répète identiquement | Sinusoïde, signal carré |
+| Apériodique | Non répétitif | Impulsion, bruit |
+| Déterministe | Prévisible mathématiquement | Sinusoïde, rampe |
+| Aléatoire | Nature stochastique | Bruit, turbulences |
+
+**Signaux de base**:
+
+**Fonction échelon unitaire**: signal qui passe de 0 à 1 à un instant donné.
+
+**Impulsion de Dirac**: signal infiniment bref et infiniment intense, utilisé pour caractériser les systèmes.
+
+**Sinusoïde**: signal périodique de base, caractérisé par amplitude, fréquence et phase.
+
+**Signal carré**: alternance entre deux niveaux, riche en harmoniques impaires.
+
+**Opérations sur les signaux**:
+
+- Décalage temporel: retard ou avance
+- Changement d'échelle: compression ou dilatation
+- Addition et multiplication
+- Dérivation et intégration
+- Convolution: opération fondamentale liant entrée, système et sortie
+
+#### 2. Systèmes linéaires invariants (LTI)
+
+**Propriétés des systèmes LTI**:
+
+**Linéarité**: la sortie est proportionnelle à l'entrée et respecte la superposition.
+
+**Invariance temporelle**: le comportement ne change pas avec le temps.
+
+**Caractérisation par réponse impulsionnelle**:
+
+La réponse impulsionnelle h(t) décrit complètement le système.
+
+La sortie y(t) pour une entrée x(t) se calcule par convolution:
+y(t) = x(t) * h(t)
+
+**Stabilité**:
+
+Un système est stable si toute entrée bornée produit une sortie bornée (critère BIBO).
+
+Condition: l'intégrale du module de h(t) doit être finie.
+
+**Causalité**:
+
+Un système est causal si la sortie ne dépend que du présent et du passé.
+
+Condition: h(t) = 0 pour t < 0.
+
+#### 3. Analyse de Fourier
+
+**Série de Fourier**:
+
+Décomposition d'un signal périodique en somme de sinusoïdes.
+
+Un signal périodique de période T0 se décompose en:
+- Composante continue (valeur moyenne)
+- Fondamentale à fréquence F0 = 1/T0
+- Harmoniques aux fréquences multiples: 2F0, 3F0, 4F0...
+
+**Coefficients de Fourier**:
+
+Chaque harmonique a une amplitude et une phase caractéristiques.
+
+Forme complexe: utilise des exponentielles complexes pour simplifier les calculs.
+
+**Exemple signal carré**:
+
+Un signal carré ne contient que les harmoniques impaires (F0, 3F0, 5F0...).
+
+Les amplitudes décroissent en 1/n où n est le rang de l'harmonique.
+
+**Transformée de Fourier**:
+
+Généralisation aux signaux non périodiques.
+
+Passage du domaine temporel au domaine fréquentiel.
+
+**Spectre d'amplitude**: montre les fréquences présentes dans le signal.
+
+**Spectre de phase**: indique le déphasage de chaque composante.
+
+**Propriétés importantes**:
+
+| Propriété | Description |
+|-----------|-------------|
+| Linéarité | Transformée d'une somme = somme des transformées |
+| Décalage temporel | Introduit un déphasage en fréquentiel |
+| Modulation | Déplacement du spectre |
+| Convolution | Produit des transformées |
+| Dualité temps-fréquence | Signal large en temps = étroit en fréquence |
+
+**Transformée de Fourier discrète (TFD)**:
+
+Version numérique pour signaux échantillonnés.
+
+**FFT (Fast Fourier Transform)**: algorithme rapide pour calculer la TFD.
+
+Utilisée en pratique dans MATLAB avec la fonction `fft()`.
+
+#### 4. Transformée de Laplace
+
+**Principe**:
+
+Extension de la transformée de Fourier incluant des signaux exponentiels croissants.
+
+Variable complexe s = sigma + j*omega.
+
+**Fonction de transfert**:
+
+Rapport entre sortie et entrée en domaine de Laplace.
+
+Permet d'analyser les systèmes sans résoudre les équations différentielles.
+
+**Pôles et zéros**:
+
+**Pôles**: valeurs de s annulant le dénominateur.
+Déterminent la stabilité et la dynamique du système.
+
+**Zéros**: valeurs de s annulant le numérateur.
+Influencent l'amplitude de la réponse.
+
+**Analyse de stabilité**:
+
+Un système est stable si tous ses pôles ont une partie réelle négative (dans le demi-plan gauche).
+
+**Transformations utiles**:
+
+| Signal temporel | Transformée de Laplace |
+|----------------|------------------------|
+| Impulsion | 1 |
+| Échelon | 1/s |
+| Rampe | 1/s² |
+| Exponentielle | 1/(s-a) |
+| Sinusoïde | omega/(s²+omega²) |
+
+#### 5. Échantillonnage et numérisation
+
+**Théorème de Shannon-Nyquist**:
+
+Pour échantillonner correctement un signal, la fréquence d'échantillonnage Fe doit être au moins le double de la fréquence maximale du signal.
+
+Condition: Fe >= 2 × Fmax
+
+**Aliasing (repliement spectral)**:
+
+Si le théorème de Shannon n'est pas respecté, les hautes fréquences se replient sur les basses fréquences, créant des distorsions irréversibles.
+
+Solution: filtrer le signal avant échantillonnage (filtre anti-repliement).
+
+**Quantification**:
+
+Conversion de l'amplitude continue en valeurs discrètes.
+
+Nombre de bits détermine la résolution:
+- 8 bits: 256 niveaux
+- 16 bits: 65536 niveaux
+- 24 bits: 16 millions de niveaux
+
+**Bruit de quantification**: erreur introduite par l'arrondi des valeurs.
+
+#### 6. Transformée en Z
+
+**Principe**:
+
+Équivalent discret de la transformée de Laplace.
+
+Utilisée pour l'analyse des systèmes numériques.
+
+Variable complexe z.
+
+**Fonction de transfert discrète**:
+
+Rapport entre sortie et entrée en domaine Z.
+
+Permet de concevoir des filtres numériques.
+
+**Stabilité**:
+
+Un système discret est stable si tous ses pôles sont à l'intérieur du cercle unité (module < 1).
+
+**Lien avec la transformée de Fourier**:
+
+En posant z = exp(j*omega*Te), on obtient la réponse fréquentielle du système discret.
+
+#### 7. Filtrage numérique
+
+**Types de filtres**:
+
+**FIR (Finite Impulse Response)**:
+- Réponse impulsionnelle finie
+- Toujours stables
+- Phase linéaire possible
+- Plus simple à concevoir
+
+**IIR (Infinite Impulse Response)**:
+- Réponse impulsionnelle infinie
+- Plus efficaces (moins de coefficients)
+- Risque d'instabilité
+- Équivalents numériques des filtres analogiques
+
+**Filtres selon la bande passante**:
+
+| Type | Fonction |
+|------|----------|
+| Passe-bas | Laisse passer les basses fréquences |
+| Passe-haut | Laisse passer les hautes fréquences |
+| Passe-bande | Laisse passer une bande de fréquences |
+| Coupe-bande | Élimine une bande de fréquences |
+
+**Spécifications d'un filtre**:
+
+- Fréquence de coupure: limite de la bande passante
+- Ondulation en bande passante: variations d'amplitude acceptables
+- Atténuation en bande atténuée: réjection des fréquences indésirables
+- Bande de transition: zone de passage de la bande passante à la bande atténuée
+
+**Conception de filtres**:
+
+Méthodes classiques:
+- Butterworth: réponse plate en bande passante
+- Chebyshev: ondulation en bande passante, transition plus raide
+- Elliptique: ondulation en bande passante et atténuée, transition très raide
+- Bessel: phase linéaire, préserve la forme du signal
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Travaux Pratiques MATLAB
+
+**TP1: Décomposition en série de Fourier**:
+
+Objectif: analyser un signal périodique et calculer ses coefficients de Fourier.
+
+Code MATLAB typique:
+```matlab
+% Définition du signal
+tmin = 0;
+tmax = 4;
+T0 = tmax - tmin;
+F0 = 1/T0;
+dt = 0.04;
+t = tmin:dt:(tmax-dt);
+
+% Signal test (par exemple sinusoïde)
+A = 1;
+f_t = A*sin(pi/T0*t);
+
+% Tracé du signal temporel
+figure(1);
+plot(t, f_t, 'r');
+title('Signal temporel');
+xlabel('Temps (s)');
+ylabel('Amplitude');
+grid;
+
+% Calcul des coefficients de Fourier
+N = 200; % Nombre d'harmoniques
+rang = 0:1:N;
+Fourier = zeros(N+1, 1);
+
+% Calcul de chaque coefficient
+for n = 0:N
+    somme = 0;
+    for k = 1:length(t)
+        somme = somme + f_t(k) * exp(-2*pi*1i*n*t(k)/T0);
+    end
+    Fourier(n+1) = somme * dt / T0;
+end
+
+% Tracé du spectre
+figure(2);
+stem(rang, abs(Fourier));
+title('Spectre d''amplitude');
+xlabel('Rang harmonique');
+ylabel('Amplitude');
+grid;
+```
+
+**TP2: Analyse d'un signal audio**:
+
+Traitement d'un fichier WAV pour analyse spectrale.
+
+```matlab
+% Lecture du signal audio
+[signal, Fe] = audioread('signal.wav');
+
+% Paramètres
+tmax = length(signal) / Fe;
+dt = 1/Fe;
+t = 0:dt:(tmax-dt);
+
+% Tracé temporel
+figure(1);
+plot(t, signal);
+title('Signal audio');
+xlabel('Temps (s)');
+ylabel('Amplitude');
+
+% Transformée de Fourier
+N = length(signal);
+frequences = (0:N-1) * Fe / N;
+spectre = fft(signal);
+
+% Tracé du spectre
+figure(2);
+plot(frequences(1:N/2), abs(spectre(1:N/2)));
+title('Spectre fréquentiel');
+xlabel('Fréquence (Hz)');
+ylabel('Amplitude');
+grid;
+```
+
+**Critère de Nyquist**:
+
+Calcul de la fréquence maximale respectant Shannon:
+```matlab
+Fe = 44100; % Fréquence d'échantillonnage
+dt = 1/Fe;
+Fmax = Fe/2; % Fréquence de Nyquist
+```
+
+### Fonctions MATLAB essentielles
+
+**Génération de signaux**:
+```matlab
+t = 0:0.001:1;              % Vecteur temps
+sin_signal = sin(2*pi*10*t); % Sinusoïde 10 Hz
+square_signal = square(2*pi*5*t); % Signal carré 5 Hz
+sawtooth_signal = sawtooth(2*pi*3*t); % Dents de scie
+```
+
+**Transformées**:
+```matlab
+X = fft(x);                 % Transformée de Fourier
+x_reconst = ifft(X);        % Transformée inverse
+```
+
+**Filtrage**:
+```matlab
+% Filtre passe-bas Butterworth
+[b, a] = butter(4, 0.2);    % Ordre 4, fréquence normalisée 0.2
+y = filter(b, a, x);        % Application du filtre
+
+% Réponse fréquentielle
+freqz(b, a);                % Affichage Bode
+```
+
+**Analyse spectrale**:
+```matlab
+spectrogram(signal, 256, 128, 256, Fe); % Spectrogramme
+pwelch(signal, [], [], [], Fe);         % Densité spectrale
+```
+
+### Travaux Dirigés
+
+Chapitres couverts selon les corrections disponibles:
+- Chapitre 2: Systèmes LTI et convolution
+- Chapitre 3: Série de Fourier
+- Chapitre 5: Transformée de Laplace
+- Chapitre 6: Échantillonnage et transformée en Z
+
+**Exercices types**:
+
+**Calcul de convolution**:
+Déterminer la sortie d'un système connaissant son entrée et sa réponse impulsionnelle.
+
+**Analyse spectrale**:
+Calculer les coefficients de Fourier d'un signal périodique.
+
+**Fonction de transfert**:
+Déterminer la stabilité d'un système à partir de ses pôles.
+
+**Échantillonnage**:
+Calculer la fréquence minimale pour éviter l'aliasing.
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Compétences acquises
+
+**Théoriques**:
+- Compréhension des domaines temporel et fréquentiel
+- Maîtrise des transformées mathématiques
+- Analyse des systèmes LTI
+- Théorie de l'échantillonnage
+
+**Pratiques**:
+- Programmation MATLAB pour le traitement du signal
+- Analyse spectrale de signaux réels
+- Conception de filtres numériques
+- Interprétation de spectres fréquentiels
+- Détection et correction d'aliasing
+
+### Applications pratiques
+
+Le traitement du signal est omniprésent dans les technologies modernes:
+
+**Audio et musique**:
+- Compression MP3, AAC
+- Égaliseurs et effets sonores
+- Réduction de bruit
+- Synthèse vocale et reconnaissance
+
+**Télécommunications**:
+- Modulation et démodulation
+- Égalisation de canal
+- Codage de canal
+- Communications sans fil (Wi-Fi, 4G, 5G)
+
+**Traitement d'image et vidéo**:
+- Compression JPEG, MPEG
+- Filtrage et amélioration d'image
+- Détection de contours
+- Reconnaissance de formes
+
+**Biomédical**:
+- Électrocardiogramme (ECG)
+- Électroencéphalogramme (EEG)
+- Imagerie médicale (IRM, scanner)
+- Prothèses auditives
+
+**Instrumentation**:
+- Acquisition de données capteurs
+- Filtrage anti-bruit
+- Extraction de caractéristiques
+- Analyse vibratoire
+
+**Radar et sonar**:
+- Détection de cibles
+- Estimation de distance et vitesse
+- Traitement d'antenne
+
+### Liens avec autres cours
+
+| Cours | Lien |
+|-------|------|
+| Mathématiques | Transformées, intégrales, complexes |
+| Circuits Analogiques (S5) | Filtres analogiques, bande passante |
+| Architecture Matérielle (S5) | Convertisseurs A/N et N/A |
+| Systèmes Linéaires (S5) | Fonctions de transfert, stabilité |
+| Programmation C (S5) | Implémentation d'algorithmes |
+| Filtrage Numérique (S6) | Approfondissement filtres |
+| Signaux Aléatoires (S6) | Extension aux signaux stochastiques |
+| Communications (S7) | Modulation, canaux de transmission |
+
+### Outils professionnels
+
+Le cours prépare à l'utilisation d'outils industriels:
+
+**MATLAB/Simulink**: standard en R&D et enseignement.
+
+**Python** (NumPy, SciPy, Matplotlib): alternative open-source de plus en plus utilisée.
+
+**LabVIEW**: acquisition et traitement en temps réel.
+
+**DSP (Digital Signal Processor)**: processeurs spécialisés pour traitement rapide.
+
+**FPGA**: implémentation matérielle de filtres haute performance.
+
+### Concepts clés à retenir
+
+**Dualité temps-fréquence**:
+Un signal ne peut pas être simultanément très localisé en temps et en fréquence. Signal bref = spectre large.
+
+**Théorème de Shannon**:
+Fondamental pour toute numérisation. Violer ce théorème crée de l'aliasing irréversible.
+
+**Convolution**:
+Opération centrale reliant entrée, système et sortie. En fréquentiel, devient un simple produit.
+
+**Filtrage**:
+Permet d'extraire l'information utile et d'éliminer le bruit. Compromis entre efficacité et complexité.
+
+### Mon opinion
+
+Ce cours est fondamental pour comprendre comment l'information est représentée et traitée numériquement.
+
+**Points forts**:
+- Concepts mathématiques bien expliqués
+- TPs MATLAB très formateurs
+- Applications concrètes (audio, communications)
+- Base solide pour cours avancés
+
+**Applications concrètes**:
+Les notions de Fourier et d'échantillonnage sont utilisées quotidiennement dans:
+- Streaming audio/vidéo
+- Téléphonie mobile
+- Compression de données
+- Imagerie numérique
+
+**Importance professionnelle**:
+Le traitement du signal est essentiel dans de nombreux domaines:
+- Systèmes embarqués
+- Internet des objets (IoT)
+- Intelligence artificielle (prétraitement des données)
+- Télécommunications
+- Automobile (radar, lidar)
+
+**Complémentarité avec autres cours**:
+Ce cours se combine parfaitement avec:
+- Systèmes linéaires (même formalisme)
+- Filtrage numérique (applications directes)
+- Communications (modulation, codage)
+- Machine Learning (extraction de features)
+
+---
+
+**Bilan personnel**: Ce cours a apporté les outils mathématiques et pratiques pour analyser et traiter les signaux numériques. Les TPs MATLAB ont permis de manipuler concrètement les concepts théoriques. Ces compétences sont directement applicables en traitement audio, communications, et systèmes embarqués. La maîtrise de l'analyse spectrale et du filtrage est indispensable pour tout ingénieur en électronique ou informatique industrielle.
+
+---
+
+<style>
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+        }
+        h2, h3, h4, h5 {
+                color: #2a7ae2;
+        }
+        p {
+                text-align: justify;
+        }
+        code {
+                background-color: #f5f5f5;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+        }
+        pre {
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-x: auto;
+        }
+</style>

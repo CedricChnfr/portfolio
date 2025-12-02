@@ -5,6 +5,8 @@ date:   2024-10-02 10:52:03 +0200
 categories: jekyll update
 ---
 
+[← Back to Academic Project](./my-projects.html)
+
 # Introduction
 In the context of our real-time development project, we were tasked with designing and implementing various functionalities for a robot. The primary objective was to manage the robot's different tasks efficiently and securely using synchronization tools such as mutexes and semaphores. This report provides an overview of the project, the challenges encountered, and the solutions implemented.
 

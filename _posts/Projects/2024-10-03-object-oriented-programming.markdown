@@ -4,6 +4,9 @@ title:  "Object Oriented Programming"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
+
+[← Back to Academic Project](./my-projects.html)
+
 ## **Introduction**
 This project is a collection of C++ programs that illustrate various concepts of object-oriented programming, vector manipulation, and geometric figure management. It is structured into several steps and tutorials (TD), each focusing on specific aspects of C++ programming.
 

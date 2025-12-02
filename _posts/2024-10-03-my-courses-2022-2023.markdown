@@ -63,7 +63,7 @@ categories: jekyll update
 </style>
 
 <div class="year-nav">
-  <a href="./my-courses.html">2024-2025</a>
+  <a href="./my-courses-2024-2025.html">2024-2025</a>
   <a href="./my-courses-2023-2024.html">2023-2024</a>
   <a href="./my-courses-2022-2023.html" class="active">2022-2023</a>
 </div>
@@ -74,9 +74,6 @@ categories: jekyll update
 
 ## Semester 5 (S5)
 
-### [🇬🇧 Anglais](./anglais-s5.html)
-**Content**: English language development for technical and professional communication.
-
 ### [💻 Architecture Informatique Matérielle](./architecture-informatique-materielle.html)
 **Content**: Computer hardware architecture fundamentals and design.
 
@@ -85,9 +82,6 @@ categories: jekyll update
 
 ### [⚡ Composants et Notions de Puissance](./composants-puissance.html)
 **Content**: Power components and power electronics fundamentals.
-
-### [🏢 Entreprise](./entreprise-s5.html)
-**Content**: Business fundamentals and professional skills.
 
 ### [📟 Fondements Électronique Numérique](./fondements-electronique-numerique.html)
 **Content**: Digital electronics fundamentals and logic design.
@@ -107,14 +101,8 @@ categories: jekyll update
 ### [🎛️ Modélisation et Commande des Systèmes Linéaires Continus](./systemes-lineaires-continus.html)
 **Content**: Continuous linear systems modeling and control.
 
-### [🔬 PPI](./ppi-s5.html)
-**Content**: Integrated practical project.
-
 ### [🌐 Réseau](./reseau-s5.html)
 **Content**: Computer networks fundamentals and protocols.
-
-### [💾 Réseau - Projet C](./reseau-projet-c.html)
-**Content**: Network programming project in C.
 
 ### [📡 Signal](./signal.html)
 **Content**: Signal processing and analysis fundamentals.
@@ -131,9 +119,6 @@ categories: jekyll update
 ---
 
 ## Semester 6 (S6)
-
-### [🇬🇧 Anglais](./anglais-s6.html)
-**Content**: Advanced English for technical and professional contexts.
 
 ### [🖥️ Architecture Matérielle](./architecture-materielle.html)
 **Content**: Advanced computer hardware architecture concepts.
@@ -155,12 +140,6 @@ categories: jekyll update
 
 ### [🔌 Microcontrôleur](./microcontroleur.html)
 **Content**: Microcontroller programming and embedded systems.
-
-### [🔬 PPI](./ppi-s6.html)
-**Content**: Integrated practical project (semester 6).
-
-### [🔧 Projet PCB](./projet-pcb.html)
-**Content**: Printed circuit board design project.
 
 ### [🌍 Qualité Sécurité Environnement](./qualite-securite-environnement.html)
 **Content**: Quality, safety, and environmental management.

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Filtrage Numérique - S6 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Filtrage Numérique - S6" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/filtrage-numerique.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/filtrage-numerique.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Filtrage Numérique - S6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Filtrage Numérique - S6","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/filtrage-numerique.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/filtrage-numerique.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+</div>
+
+<h1 id="-filtrage-numérique---semestre-6">📊 Filtrage Numérique - Semestre 6</h1>
+
+<p><strong>Année Universitaire</strong> : 2022-2023<br />
+<strong>Semestre</strong> : 6<br />
+<strong>Crédits</strong> : 2,5 ECTS<br />
+<strong>Spécialité</strong> : Traitement du Signal et Automatique</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Ce cours approfondit le traitement numérique du signal avec un focus sur la conception et l’implémentation de filtres numériques. Il couvre les deux grandes familles de filtres : FIR (Finite Impulse Response) et IIR (Infinite Impulse Response), avec leurs méthodes de conception respectives. Le cours combine théorie mathématique (transformée en Z, réponse fréquentielle) et pratique (MATLAB, implémentation).</p>
+
+<p><strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Maîtriser la transformée en Z et l’analyse dans le domaine fréquentiel</li>
+  <li>Concevoir des filtres FIR par méthode des fenêtres</li>
+  <li>Concevoir des filtres IIR par transformation bilinéaire et invariance impulsionnelle</li>
+  <li>Analyser la stabilité et les performances des filtres numériques</li>
+  <li>Implémenter et tester des filtres en MATLAB</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce cours s’appuie sur et complète :</p>
+<ul>
+  <li><strong>Signal (S5)</strong> : transformée de Fourier, transformée de Laplace, échantillonnage</li>
+  <li><strong>Modélisation Systèmes Linéaires (S5)</strong> : fonctions de transfert, stabilité</li>
+</ul>
+
+<p>Il prépare aux applications :</p>
+<ul>
+  <li><strong>Traitement du Signal Avancé</strong> : applications audio, biomédicales, communications</li>
+  <li><strong>Embedded IA for IoT (S9)</strong> : prétraitement de signaux pour machine learning</li>
+  <li><strong>Projets de traitement de données</strong> : analyse spectrale, filtrage adaptatif</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était structuré autour de trois axes :</p>
+
+<p><strong>1. Cours magistraux</strong> :</p>
+<ul>
+  <li>Rappels sur l’échantillonnage et la transformée en Z</li>
+  <li>Filtres FIR : propriétés, méthodes de conception</li>
+  <li>Filtres IIR : transformation de filtres analogiques</li>
+  <li>Structures d’implémentation et effets de quantification</li>
+</ul>
+
+<p><strong>2. Travaux dirigés</strong> :</p>
+<ul>
+  <li>Exercices de conception de filtres FIR par fenêtrage</li>
+  <li>Transformation bilinéaire pour filtres IIR</li>
+  <li>Analyse de stabilité (placement pôles et zéros)</li>
+  <li>Calculs de réponses fréquentielles</li>
+</ul>
+
+<p><strong>3. Travaux pratiques MATLAB</strong> :</p>
+<ul>
+  <li>Utilisation de l’outil fdatool (Filter Design and Analysis Tool)</li>
+  <li>Conception et test de filtres FIR et IIR</li>
+  <li>Comparaison de performances (ordre, atténuation, phase)</li>
+  <li>Application à des signaux réels (audio, ECG)</li>
+</ul>
+
+<p><strong>Ressources pédagogiques</strong> :</p>
+<ul>
+  <li>Playlist YouTube avec cours et TD : <a href="https://www.youtube.com/playlist?list=PL_wkaC4iMBTlJQpi7W18pkzR_kY9d-jsU">Traitement du Signal</a></li>
+  <li>Annales d’examens 2022 et 2023 avec corrections</li>
+  <li>Documentation MATLAB Signal Processing Toolbox</li>
+</ul>
+
+<h3 class="section-title">Déroulement et méthodologie</h3>
+
+<p><strong>Approche progressive</strong> :</p>
+
+<p>Le cours adoptait une approche en trois étapes :</p>
+
+<ol>
+  <li><strong>Théorie</strong> : établir les fondements mathématiques (transformée en Z, équations aux différences)</li>
+  <li><strong>Méthodes</strong> : appliquer des techniques systématiques de conception</li>
+  <li><strong>Pratique</strong> : valider et optimiser avec MATLAB</li>
+</ol>
+
+<p><strong>Exemple de conception de filtre passe-bas FIR</strong> :</p>
+
+<p>Cahier des charges :</p>
+<ul>
+  <li>Fréquence de coupure : 1 kHz</li>
+  <li>Fréquence d’échantillonnage : 8 kHz</li>
+  <li>Atténuation bande coupée : &gt; 40 dB</li>
+  <li>Ondulation bande passante : &lt; 0,5 dB</li>
+</ul>
+
+<p>Démarche :</p>
+<ol>
+  <li>Choix de la méthode (fenêtre de Hamming pour compromis)</li>
+  <li>Calcul de l’ordre nécessaire (fonction du gabarit)</li>
+  <li>Génération des coefficients avec MATLAB : fir1(N, Wn, ‘low’)</li>
+  <li>Vérification de la réponse fréquentielle : freqz(b, a)</li>
+  <li>Test sur signal réel</li>
+</ol>
+
+<h3 class="section-title">Examens et évaluations</h3>
+
+<p><strong>Format des examens</strong> :</p>
+
+<p>Les annales montrent une structure récurrente :</p>
+
+<p><strong>Exercice 1 : Filtres FIR</strong> (30-40%)</p>
+<ul>
+  <li>Conception par fenêtrage</li>
+  <li>Calcul de l’ordre minimal</li>
+  <li>Comparaison de différentes fenêtres</li>
+  <li>Analyse de la réponse en fréquence</li>
+</ul>
+
+<p><strong>Exercice 2 : Filtres IIR</strong> (30-40%)</p>
+<ul>
+  <li>Transformation bilinéaire ou invariance impulsionnelle</li>
+  <li>Calcul de la fonction de transfert en Z</li>
+  <li>Placement des pôles et zéros</li>
+  <li>Vérification de la stabilité</li>
+</ul>
+
+<p><strong>Exercice 3 : Implémentation</strong> (20-30%)</p>
+<ul>
+  <li>Structure directe ou en cascade</li>
+  <li>Effets de quantification</li>
+  <li>Optimisation du nombre de bits</li>
+  <li>Équations aux différences</li>
+</ul>
+
+<p><strong>Difficultés courantes</strong> :</p>
+<ul>
+  <li>Confusion entre fréquence normalisée (0 à 1) et fréquence physique (Hz)</li>
+  <li>Erreurs dans la transformation bilinéaire (pré-déformation)</li>
+  <li>Oubli de vérifier la stabilité (pôles à l’intérieur du cercle unité)</li>
+  <li>Mauvaise interprétation des spécifications (dB vs linéaire)</li>
+</ul>
+
+<h3 class="section-title">Outils MATLAB utilisés</h3>
+
+<p><strong>Fonctions principales</strong> :</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Conception FIR</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">fir1</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'type'</span><span class="p">);</span>              <span class="c1">% Fenêtre</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">firpm</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>                    <span class="c1">% Parks-McClellan (optimal)</span>
+
+<span class="c1">% Conception IIR</span>
+<span class="p">[</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">butter</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'type'</span><span class="p">);</span>         <span class="c1">% Butterworth</span>
+<span class="p">[</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">cheby1</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'type'</span><span class="p">);</span>     <span class="c1">% Chebyshev Type I</span>
+<span class="p">[</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">cheby2</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'type'</span><span class="p">);</span>     <span class="c1">% Chebyshev Type II</span>
+<span class="p">[</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">ellip</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Rp</span><span class="p">,</span> <span class="n">Rs</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'type'</span><span class="p">);</span>  <span class="c1">% Elliptique</span>
+
+<span class="c1">% Analyse</span>
+<span class="n">freqz</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span>                        <span class="c1">% Réponse fréquentielle</span>
+<span class="n">zplane</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>                          <span class="c1">% Diagramme pôles-zéros</span>
+<span class="n">grpdelay</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>                        <span class="c1">% Délai de groupe</span>
+<span class="nb">filter</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span><span class="p">);</span>                       <span class="c1">% Filtrage</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Fondements : Transformée en Z</h3>
+
+<p>La transformée en Z est l’équivalent discret de la transformée de Laplace.</p>
+
+<p><strong>Définition</strong> :
+Pour un signal discret x[n], la transformée en Z est :</p>
+
+<p>X(z) = somme de x[n] × z^(-n) pour n de -infini à +infini</p>
+
+<p><strong>Propriétés importantes</strong> :</p>
+<ul>
+  <li>Linéarité : Z{a×x[n] + b×y[n]} = a×X(z) + b×Y(z)</li>
+  <li>Décalage temporel : Z{x[n-k]} = z^(-k) × X(z)</li>
+  <li>Convolution : Z{x[n] * h[n]} = X(z) × H(z)</li>
+</ul>
+
+<p><strong>Région de convergence (ROC)</strong> :
+Zone du plan complexe où la transformée converge. Critique pour la stabilité.</p>
+
+<p><strong>Lien avec la transformée de Fourier</strong> :
+Sur le cercle unité (z = e^(jω)), la transformée en Z devient la DTFT (Discrete-Time Fourier Transform).</p>
+
+<h3 class="section-title">2. Filtres FIR (Finite Impulse Response)</h3>
+
+<p><strong>Caractéristiques</strong> :</p>
+
+<p>Un filtre FIR a une réponse impulsionnelle de durée finie :</p>
+
+<p>y[n] = b0×x[n] + b1×x[n-1] + … + bN×x[n-N]</p>
+
+<p>Fonction de transfert : H(z) = b0 + b1×z^(-1) + … + bN×z^(-N)</p>
+
+<p><strong>Avantages</strong> :</p>
+<ul>
+  <li>Toujours stable (pas de pôles, uniquement des zéros)</li>
+  <li>Phase linéaire possible (important pour audio, images)</li>
+  <li>Pas de problème de rétroaction</li>
+  <li>Implémentation simple</li>
+</ul>
+
+<p><strong>Inconvénients</strong> :</p>
+<ul>
+  <li>Ordre élevé nécessaire pour sélectivité forte</li>
+  <li>Temps de calcul proportionnel à l’ordre</li>
+  <li>Délai de groupe constant mais parfois important</li>
+</ul>
+
+<p><strong>Méthode des fenêtres</strong> :</p>
+
+<p>Principe : partir de la réponse impulsionnelle idéale (infinie) et la tronquer avec une fenêtre.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fenêtre</th>
+      <th>Lobe principal</th>
+      <th>Atténuation bande coupée</th>
+      <th>Ondulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rectangulaire</td>
+      <td>Étroit</td>
+      <td>-21 dB</td>
+      <td>Forte (9%)</td>
+    </tr>
+    <tr>
+      <td>Hamming</td>
+      <td>Moyen</td>
+      <td>-53 dB</td>
+      <td>Moyenne (0,2%)</td>
+    </tr>
+    <tr>
+      <td>Hanning</td>
+      <td>Moyen</td>
+      <td>-44 dB</td>
+      <td>Moyenne</td>
+    </tr>
+    <tr>
+      <td>Blackman</td>
+      <td>Large</td>
+      <td>-74 dB</td>
+      <td>Faible</td>
+    </tr>
+    <tr>
+      <td>Kaiser</td>
+      <td>Ajustable</td>
+      <td>Paramétrable</td>
+      <td>Paramétrable</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Compromis</strong> : largeur du lobe principal (bande de transition) vs atténuation bande coupée.</p>
+
+<p><strong>Exemple : filtre passe-bas avec fenêtre de Hamming</strong></p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Spécifications</span>
+<span class="n">Fs</span> <span class="o">=</span> <span class="mi">8000</span><span class="p">;</span>           <span class="c1">% Fréquence d'échantillonnage (Hz)</span>
+<span class="n">Fc</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>           <span class="c1">% Fréquence de coupure (Hz)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>              <span class="c1">% Ordre du filtre</span>
+
+<span class="c1">% Fréquence normalisée (0 à 1, où 1 = Fs/2)</span>
+<span class="n">Wn</span> <span class="o">=</span> <span class="n">Fc</span> <span class="p">/</span> <span class="p">(</span><span class="n">Fs</span><span class="p">/</span><span class="mi">2</span><span class="p">);</span>
+
+<span class="c1">% Conception</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">fir1</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'low'</span><span class="p">,</span> <span class="n">hamming</span><span class="p">(</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">));</span>
+
+<span class="c1">% Visualisation</span>
+<span class="n">freqz</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1024</span><span class="p">,</span> <span class="n">Fs</span><span class="p">);</span>
+<span class="nb">title</span><span class="p">(</span><span class="s1">'Filtre passe-bas FIR - Hamming'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Méthode de Parks-McClellan (optimal)</strong> :</p>
+
+<p>Algorithme d’échange de Remez pour obtenir une réponse équi-ondulation (ripple égal en bande passante et bande coupée).</p>
+
+<p>Avantage : ordre minimal pour un gabarit donné.</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Spécifications</span>
+<span class="n">F</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mf">0.2</span> <span class="mf">0.3</span> <span class="mi">1</span><span class="p">];</span>     <span class="c1">% Fréquences normalisées</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">];</span>         <span class="c1">% Amplitudes souhaitées</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">firpm</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">A</span><span class="p">);</span>   <span class="c1">% Conception optimale</span>
+</code></pre></div></div>
+
+<h3 class="section-title">3. Filtres IIR (Infinite Impulse Response)</h3>
+
+<p><strong>Caractéristiques</strong> :</p>
+
+<p>Un filtre IIR utilise une rétroaction (récursion) :</p>
+
+<p>y[n] = b0×x[n] + b1×x[n-1] + … - a1×y[n-1] - a2×y[n-2] - …</p>
+
+<p>Fonction de transfert : H(z) = B(z) / A(z) = (b0 + b1×z^(-1) + …) / (1 + a1×z^(-1) + a2×z^(-2) + …)</p>
+
+<p><strong>Avantages</strong> :</p>
+<ul>
+  <li>Ordre faible pour sélectivité élevée (efficacité)</li>
+  <li>Correspondent aux filtres analogiques classiques</li>
+  <li>Moins de calculs que FIR équivalent</li>
+</ul>
+
+<p><strong>Inconvénients</strong> :</p>
+<ul>
+  <li>Potentiellement instables (pôles hors cercle unité)</li>
+  <li>Phase non-linéaire (distorsion de phase)</li>
+  <li>Sensibles à la quantification des coefficients</li>
+  <li>Risque de cycles limites (oscillations parasites)</li>
+</ul>
+
+<p><strong>Conception par transformation de filtres analogiques</strong> :</p>
+
+<p>On part d’un filtre analogique éprouvé (Butterworth, Chebyshev, Elliptique) et on le transforme en filtre numérique.</p>
+
+<p><strong>Approximations analogiques</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Bande passante</th>
+      <th>Bande coupée</th>
+      <th>Phase</th>
+      <th>Ordre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Butterworth</td>
+      <td>Maximalement plate</td>
+      <td>Monotone</td>
+      <td>Bonne</td>
+      <td>Élevé</td>
+    </tr>
+    <tr>
+      <td>Chebyshev I</td>
+      <td>Ondulations</td>
+      <td>Monotone</td>
+      <td>Moyenne</td>
+      <td>Moyen</td>
+    </tr>
+    <tr>
+      <td>Chebyshev II</td>
+      <td>Plate</td>
+      <td>Ondulations</td>
+      <td>Moyenne</td>
+      <td>Moyen</td>
+    </tr>
+    <tr>
+      <td>Elliptique</td>
+      <td>Ondulations</td>
+      <td>Ondulations</td>
+      <td>Mauvaise</td>
+      <td>Faible</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Transformation bilinéaire</strong> :</p>
+
+<p>Méthode la plus utilisée. Transforme l’axe imaginaire du plan s (analogique) vers le cercle unité du plan z (numérique).</p>
+
+<p>Transformation : s = (2/T) × (1 - z^(-1)) / (1 + z^(-1))</p>
+
+<p>où T est la période d’échantillonnage.</p>
+
+<p><strong>Pré-déformation en fréquence</strong> :</p>
+
+<p>La transformation bilinéaire déforme les fréquences selon :</p>
+
+<p>Omega_analogique = (2/T) × tan(omega_numérique × T/2)</p>
+
+<p>Il faut donc pré-déformer les spécifications avant transformation :</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">% Spécifications numériques</span>
+<span class="n">Fs</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">;</span>              <span class="c1">% Hz</span>
+<span class="n">Fc</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>               <span class="c1">% Hz</span>
+<span class="n">Wn</span> <span class="o">=</span> <span class="n">Fc</span> <span class="p">/</span> <span class="p">(</span><span class="n">Fs</span><span class="p">/</span><span class="mi">2</span><span class="p">);</span>       <span class="c1">% Fréquence normalisée</span>
+
+<span class="c1">% Conception Butterworth ordre 4</span>
+<span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">butter</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">Wn</span><span class="p">,</span> <span class="s1">'low'</span><span class="p">);</span>
+
+<span class="c1">% Vérification stabilité</span>
+<span class="nb">disp</span><span class="p">(</span><span class="nb">roots</span><span class="p">(</span><span class="n">a</span><span class="p">));</span>         <span class="c1">% Tous les pôles doivent être &lt; 1 en module</span>
+</code></pre></div></div>
+
+<p><strong>Invariance impulsionnelle</strong> :</p>
+
+<p>Consiste à échantillonner la réponse impulsionnelle analogique.</p>
+
+<p>Avantage : correspondance exacte en temporel.
+Inconvénient : repliement spectral (aliasing) si signal large bande.</p>
+
+<h3 class="section-title">4. Stabilité des Filtres Numériques</h3>
+
+<p><strong>Critère de stabilité</strong> :</p>
+
+<p>Un filtre numérique est stable si et seulement si tous ses pôles sont à l’intérieur du cercle unité du plan z.</p>
+
+<p>Module de chaque pôle &lt; 1</p>
+
+<p><strong>Diagramme pôles-zéros</strong> :</p>
+
+<p>Outil essentiel pour visualiser et analyser la stabilité.</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="n">butter</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="s1">'low'</span><span class="p">);</span>
+<span class="n">zplane</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong>Pôles</strong> (×) : racines du dénominateur A(z)</li>
+  <li><strong>Zéros</strong> (○) : racines du numérateur B(z)</li>
+  <li><strong>Cercle unité</strong> : frontière de stabilité</li>
+</ul>
+
+<p><strong>Interprétation</strong> :</p>
+<ul>
+  <li>Pôle proche du cercle unité → forte résonance</li>
+  <li>Zéro sur le cercle unité → annulation à cette fréquence</li>
+  <li>Pôles complexes conjugués → oscillations</li>
+</ul>
+
+<h3 class="section-title">5. Structures d'Implémentation</h3>
+
+<p><strong>Forme directe I</strong> :</p>
+
+<p>Implémentation littérale de l’équation aux différences.</p>
+<ul>
+  <li>Avantage : simple à comprendre</li>
+  <li>Inconvénient : sensible aux erreurs de quantification</li>
+</ul>
+
+<p><strong>Forme directe II</strong> :</p>
+
+<p>Réarrangement pour minimiser les mémoires (retards).</p>
+<ul>
+  <li>Avantage : moins de mémoire (N au lieu de 2N)</li>
+  <li>Inconvénient : sensible aux débordements intermédiaires</li>
+</ul>
+
+<p><strong>Forme en cascade (biquads)</strong> :</p>
+
+<p>Décomposition en cellules du 2ème ordre (sections de second ordre).</p>
+
+<p>H(z) = H1(z) × H2(z) × … × Hk(z)</p>
+
+<ul>
+  <li>Avantage : robuste à la quantification, stabilité contrôlée</li>
+  <li>Utilisation : standard pour IIR</li>
+</ul>
+
+<p><strong>Forme parallèle</strong> :</p>
+
+<p>Décomposition en fractions partielles.</p>
+
+<p>H(z) = H0 + H1(z) + H2(z) + … + Hk(z)</p>
+
+<ul>
+  <li>Avantage : traitement parallélisable</li>
+  <li>Inconvénient : plus de multiplications</li>
+</ul>
+
+<h3 class="section-title">6. Effets de la Quantification</h3>
+
+<p><strong>Sources d’erreurs en virgule fixe</strong> :</p>
+
+<ol>
+  <li><strong>Quantification des coefficients</strong> :
+    <ul>
+      <li>Les coefficients b[k] et a[k] sont arrondis</li>
+      <li>Impact : déplacement des pôles et zéros</li>
+      <li>Risque : pôles sortent du cercle unité → instabilité</li>
+    </ul>
+  </li>
+  <li><strong>Quantification des calculs</strong> :
+    <ul>
+      <li>Produits et sommes arrondis à chaque étape</li>
+      <li>Accumulation d’erreurs (bruit de quantification)</li>
+    </ul>
+  </li>
+  <li><strong>Débordement (overflow)</strong> :
+    <ul>
+      <li>Résultats intermédiaires dépassent la capacité</li>
+      <li>Solution : mise à l’échelle (scaling)</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Nombre de bits nécessaires</strong> :</p>
+
+<p>Règle empirique :</p>
+<ul>
+  <li>FIR : 12-16 bits suffisent généralement</li>
+  <li>IIR : 16-24 bits recommandés (plus sensibles)</li>
+  <li>Forme cascade : meilleure robustesse que forme directe</li>
+</ul>
+
+<h3 class="section-title">7. Réponse Fréquentielle et Analyse</h3>
+
+<p><strong>Module et phase</strong> :</p>
+
+<p>La réponse fréquentielle H(e^(jω)) caractérise le filtre :</p>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Module</td>
+          <td>H(ω)</td>
+          <td>: gain à chaque fréquence</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Phase arg(H(ω)) : déphasage introduit</li>
+</ul>
+
+<p><strong>Phase linéaire</strong> :</p>
+
+<p>Condition pour éviter la distorsion de phase : arg(H(ω)) = -α×ω + β</p>
+
+<p>Les filtres FIR peuvent avoir une phase linéaire si leurs coefficients sont symétriques ou antisymétriques.</p>
+
+<p><strong>Délai de groupe</strong> :</p>
+
+<p>Mesure du retard en fonction de la fréquence :</p>
+
+<p>τg(ω) = -d[arg(H(ω))] / dω</p>
+
+<p>Pour phase linéaire : délai de groupe constant.</p>
+
+<p><strong>Analyse MATLAB</strong> :</p>
+
+<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">]</span> <span class="o">=</span> <span class="n">freqz</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="mi">1024</span><span class="p">);</span>
+<span class="c1">% Module en dB</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">W</span><span class="p">/</span><span class="nb">pi</span><span class="p">,</span> <span class="mi">20</span><span class="o">*</span><span class="nb">log10</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">H</span><span class="p">)));</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'Magnitude (dB)'</span><span class="p">);</span>
+<span class="c1">% Phase</span>
+<span class="nb">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">W</span><span class="p">/</span><span class="nb">pi</span><span class="p">,</span> <span class="nb">angle</span><span class="p">(</span><span class="n">H</span><span class="p">));</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'Phase (radians)'</span><span class="p">);</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'Fréquence normalisée (×π rad/échantillon)'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Conception systématique de filtres</strong> :
+Le cours a fourni une méthodologie rigoureuse pour passer d’un cahier des charges (fréquences, atténuations) à un filtre implémentable. Savoir choisir entre FIR et IIR selon les contraintes.</p>
+
+<p><strong>Maîtrise de MATLAB</strong> :
+Les TPs ont développé une aisance avec Signal Processing Toolbox, indispensable pour le traitement du signal moderne. Capacité à prototyper rapidement des solutions.</p>
+
+<p><strong>Analyse fréquentielle</strong> :
+Compréhension approfondie du lien temps-fréquence, importance de la stabilité, impact des pôles et zéros sur la réponse.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. FIR vs IIR - Le choix fondamental</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Critère</th>
+      <th>Choisir FIR</th>
+      <th>Choisir IIR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Phase linéaire requise</td>
+      <td>✓</td>
+      <td>✗</td>
+    </tr>
+    <tr>
+      <td>Ordre faible critique</td>
+      <td>✗</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>Stabilité garantie</td>
+      <td>✓</td>
+      <td>✗ (vérifier)</td>
+    </tr>
+    <tr>
+      <td>Audio, images</td>
+      <td>✓</td>
+      <td>IIR possible</td>
+    </tr>
+    <tr>
+      <td>Temps réel contraint</td>
+      <td>✗ (ordre élevé)</td>
+      <td>✓</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>2. Stabilité avant tout</strong> :
+Toujours vérifier que les pôles sont dans le cercle unité. Un filtre instable est inutilisable.</p>
+
+<p><strong>3. Fréquences normalisées</strong> :
+Attention aux conversions : fréquence physique (Hz) → normalisée (0 à 1) → pulsation numérique (0 à π).</p>
+
+<p><strong>4. Quantification</strong> :
+En implémentation réelle (DSP, FPGA), les effets de virgule fixe peuvent détruire les performances. Toujours simuler avec quantification.</p>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Audio et musique</strong> :</p>
+<ul>
+  <li>Égaliseurs (filtres passe-bande multiples)</li>
+  <li>Effets (réverbération, chorus utilisant IIR)</li>
+  <li>Réduction de bruit (filtrage adaptatif)</li>
+</ul>
+
+<p><strong>Biomédical</strong> :</p>
+<ul>
+  <li>Filtrage ECG : passe-bande 0,5-40 Hz pour éliminer 50 Hz secteur</li>
+  <li>EEG : extraction de rythmes cérébraux (alpha, beta, theta)</li>
+  <li>Détection d’anomalies cardiaques</li>
+</ul>
+
+<p><strong>Télécommunications</strong> :</p>
+<ul>
+  <li>Filtres de mise en forme (raised cosine)</li>
+  <li>Égalisation de canal</li>
+  <li>Filtres anti-repliement (avant CAN) et de reconstruction (après CNA)</li>
+</ul>
+
+<p><strong>Traitement d’images</strong> :</p>
+<ul>
+  <li>Flou (passe-bas 2D)</li>
+  <li>Détection de contours (passe-haut 2D)</li>
+  <li>Débruitage (filtres médians, Wiener)</li>
+</ul>
+
+<h3 class="section-title">Liens avec projets et autres cours</h3>
+
+<p><strong>Projets personnels</strong> :
+Les compétences en filtrage numérique ont été appliquées dans plusieurs contextes :</p>
+<ul>
+  <li>Analyse de signaux vibratoires pour maintenance prédictive</li>
+  <li>Traitement de signaux audio pour reconnaissance vocale</li>
+  <li>Prétraitement de données IoT (capteurs accéléromètres)</li>
+</ul>
+
+<p><strong>Complémentarité avec d’autres cours</strong> :</p>
+<ul>
+  <li><strong>Signal (S5)</strong> : bases théoriques (Fourier, Laplace, échantillonnage)</li>
+  <li><strong>Embedded IA (S9)</strong> : filtrage comme étape de preprocessing pour ML</li>
+  <li><strong>Chaînes d’Acquisition (S8)</strong> : filtres anti-repliement et reconstruction</li>
+  <li><strong>Temps Réel (S8)</strong> : contraintes d’implémentation et optimisation</li>
+</ul>
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+<p><strong>Limites du cours</strong> :</p>
+<ul>
+  <li>Peu sur les filtres adaptatifs (LMS, RLS)</li>
+  <li>Pas de traitement multirate (décimation, interpolation)</li>
+  <li>Aspects temps réel peu développés (latence, throughput)</li>
+  <li>Implémentation matérielle (FPGA, DSP) non abordée</li>
+</ul>
+
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+  <li><strong>Filtrage adaptatif</strong> : applications en annulation d’écho, égalisation</li>
+  <li><strong>Bancs de filtres</strong> : compression audio (MP3), analyse multirésolution</li>
+  <li><strong>Traitement temps-fréquence</strong> : transformées en ondelettes</li>
+  <li><strong>Filtrage optimal</strong> : filtres de Wiener, Kalman</li>
+  <li><strong>Traitement d’antenne</strong> : beamforming, filtrage spatial</li>
+</ul>
+
+<h3 class="section-title">Évolution technologique</h3>
+
+<p><strong>Tendances actuelles</strong> :</p>
+<ul>
+  <li><strong>Machine learning</strong> : remplacement de filtres classiques par réseaux de neurones pour débruitage</li>
+  <li><strong>Filtrage embarqué</strong> : accélération matérielle (GPU, FPGA, ASIC)</li>
+  <li><strong>Filtrage distribué</strong> : traitement en edge computing pour IoT</li>
+  <li><strong>Filtrage quantique</strong> : perspectives avec calcul quantique</li>
+</ul>
+
+<p><strong>Outils modernes</strong> :</p>
+<ul>
+  <li>Python scipy.signal : alternative à MATLAB pour le prototypage</li>
+  <li>TensorFlow/PyTorch : filtrage par apprentissage profond</li>
+  <li>CMSIS-DSP : bibliothèques optimisées pour ARM Cortex-M</li>
+  <li>High-Level Synthesis : conception FPGA en C/C++</li>
+</ul>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>Le filtrage numérique est un pilier du traitement du signal. Maîtriser FIR et IIR, comprendre le compromis ordre/performances, et savoir utiliser les outils de conception sont des compétences essentielles pour l’ingénieur en systèmes embarqués, télécommunications, ou traitement de données.</p>
+
+<p>Ce cours a fourni une base solide théorique (transformée en Z, stabilité) et pratique (MATLAB, implémentation). La capacité à concevoir un filtre adapté à un cahier des charges, vérifier sa stabilité, et l’implémenter efficacement est désormais acquise.</p>
+
+<p><strong>Ressources pour approfondir</strong> :</p>
+<ul>
+  <li>Playlist YouTube du cours : <a href="https://www.youtube.com/playlist?list=PL_wkaC4iMBTlJQpi7W18pkzR_kY9d-jsU">Traitement du Signal</a></li>
+  <li>Annales avec corrections (2022, 2023) pour s’entraîner</li>
+  <li>MATLAB Signal Processing Toolbox documentation</li>
+  <li>Livres : “Digital Signal Processing” de Proakis &amp; Manolakis</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./signal.html">Signal - S5</a> : fondements théoriques</li>
+  <li><a href="./electronique-fonctions-analogiques.html">Électronique Fonctions Analogiques - S6</a> : filtres actifs</li>
+  <li><a href="./chaines-acquisition.html">Chaînes Électroniques d’Acquisition - S8</a> : application complète</li>
+  <li><a href="./embedded-ia-iot.html">Embedded IA for IoT - S9</a> : prétraitement ML</li>
+</ul>
+
+<hr />
+
+<p><em>Cours enseigné en 2022-2023 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

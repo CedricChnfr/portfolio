@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>IA Automation | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="IA Automation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video!" />
+<meta property="og:description" content="← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video!" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IA Automation" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video!","headline":"IA Automation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p><a href="./my-perso-projects.html">← Back to Personal Project</a></p>
+
+<h1 id="ia-automation-project-overview">IA Automation Project Overview</h1>
+
+<p><strong>🚀 <a href="https://video-automation.littlenuage.com/">Try the application here: https://video-automation.littlenuage.com/</a></strong></p>
+
+<p>This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video.</p>
+
+<h2 id="project-context">Project Context</h2>
+
+<p>Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization).</p>
+
+<h2 id="what-i-developed">What I Developed</h2>
+
+<h3 id="core-features">Core Features</h3>
+
+<p><strong>1. Automated Video Generation Pipeline</strong></p>
+<ul>
+  <li><strong>Script Processing</strong>: Parse and structure text into scenes with image prompts</li>
+  <li><strong>AI Image Generation</strong>: Integration with Stable Diffusion API for scene visualization</li>
+  <li><strong>Voice Synthesis</strong>: Coqui TTS integration with custom voice cloning from reference audio</li>
+  <li><strong>Video Assembly</strong>: MoviePy-based animation system with synchronized audio/video</li>
+</ul>
+
+<p><strong>2. Web Application (Flask)</strong></p>
+<ul>
+  <li><strong>User Interface</strong> (<code class="language-plaintext highlighter-rouge">app.py</code>, <code class="language-plaintext highlighter-rouge">app2.py</code>): Web-based interface for script upload and video generation</li>
+  <li><strong>RESTful API</strong>: Backend endpoints for processing requests and monitoring progress</li>
+  <li><strong>File Management</strong>: Organized input/output system for scripts, images, audio, and videos</li>
+  <li><strong>Multi-category Support</strong>: Specialized workflows for celebrities, geography, monuments, movies, etc.</li>
+</ul>
+
+<p><strong>3. Advanced Processing Tools</strong></p>
+
+<p><strong>Script Generation &amp; Verification</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate-script.py</code>: Create structured JSON scripts from text</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-script-actu.py</code>: Generate news/current events scripts</li>
+  <li><code class="language-plaintext highlighter-rouge">verify-script.py</code>: Validate script structure and content</li>
+</ul>
+
+<p><strong>Image Processing</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate_all_image.py</code>: Batch image generation for multiple scenes</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-mignature.py</code>, <code class="language-plaintext highlighter-rouge">generate-mignature2.py</code>: Thumbnail creation</li>
+  <li><code class="language-plaintext highlighter-rouge">verify-image.py</code>: Quality control and validation</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-new-image.py</code>: Regenerate specific scenes</li>
+</ul>
+
+<p><strong>Audio Processing</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate_all_audio.py</code>: Batch audio synthesis</li>
+  <li><code class="language-plaintext highlighter-rouge">cut-audio.py</code>: Audio trimming and segmentation</li>
+  <li><code class="language-plaintext highlighter-rouge">verify-audio.py</code>: Audio quality checks</li>
+  <li><code class="language-plaintext highlighter-rouge">extend-audio.py</code>: Audio extension for timing adjustments</li>
+  <li><code class="language-plaintext highlighter-rouge">extract-audio-from-mp4.py</code>: Audio extraction from video files</li>
+</ul>
+
+<p><strong>Video Processing</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate-movement.py</code>: Camera movement effects (zoom, pan)</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-text-on-video.py</code>: Subtitle and text overlay</li>
+  <li><code class="language-plaintext highlighter-rouge">cut_txt_video.py</code>: Video segmentation with text sync</li>
+  <li><code class="language-plaintext highlighter-rouge">align-subtitles.py</code>: Subtitle alignment and timing</li>
+  <li><code class="language-plaintext highlighter-rouge">corrected-subtitles-by-words.py</code>: Word-level subtitle correction</li>
+  <li><code class="language-plaintext highlighter-rouge">short-end-pub.py</code>: Add promotional end screens</li>
+</ul>
+
+<p><strong>4. Integration &amp; Deployment</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">send-to-youtube.py</code>: Automated YouTube upload with metadata</li>
+  <li><code class="language-plaintext highlighter-rouge">authentification/</code>: OAuth and API authentication system</li>
+  <li><code class="language-plaintext highlighter-rouge">utils.py</code>: Shared utilities and helper functions</li>
+  <li><code class="language-plaintext highlighter-rouge">main.py</code>: Orchestration script for full pipeline execution</li>
+</ul>
+
+<p><strong>5. Music &amp; Audio Enhancement</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate-music.py</code>: Background music generation/selection</li>
+  <li>Audio mixing and volume normalization</li>
+  <li>Multi-track audio synchronization</li>
+</ul>
+
+<h3 id="technical-architecture">Technical Architecture</h3>
+
+<p><strong>Backend Stack</strong>:</p>
+<ul>
+  <li><strong>Python 3.9+</strong>: Core programming language</li>
+  <li><strong>Flask</strong>: Web framework for API and UI</li>
+  <li><strong>Stable Diffusion WebUI</strong>: Local deployment for image generation</li>
+  <li><strong>Coqui TTS</strong>: Neural voice synthesis</li>
+  <li><strong>MoviePy</strong>: Video editing and assembly</li>
+  <li><strong>OpenCV</strong>: Image processing and effects</li>
+</ul>
+
+<p><strong>Key Integrations</strong>:</p>
+<ul>
+  <li>Stable Diffusion API (local <code class="language-plaintext highlighter-rouge">http://127.0.0.1:7860</code>)</li>
+  <li>YouTube Data API v3 (automated uploads)</li>
+  <li>Custom authentication system (OAuth2)</li>
+  <li>Configuration management (YAML, JSON, XML)</li>
+</ul>
+
+<p><strong>Processing Categories</strong>:</p>
+<ul>
+  <li><strong>Celebrity</strong>: Biography and career videos</li>
+  <li><strong>Geography</strong>: Location and travel documentaries</li>
+  <li><strong>Monument</strong>: Historical and architectural features</li>
+  <li><strong>Movie</strong>: Film analysis and summaries</li>
+  <li><strong>News/Actu</strong>: Current events and news reports</li>
+  <li><strong>Art/Oeuvre</strong>: Artistic works and analysis</li>
+</ul>
+
+<h3 id="innovation--features">Innovation &amp; Features</h3>
+
+<p><strong>Intelligent Scene Management</strong>:</p>
+<ul>
+  <li>Automatic scene detection and splitting</li>
+  <li>Context-aware prompt generation for images</li>
+  <li>Duration optimization based on narration length</li>
+</ul>
+
+<p><strong>Quality Control System</strong>:</p>
+<ul>
+  <li>Multi-stage verification (script, image, audio)</li>
+  <li>Automated error detection and correction</li>
+  <li>Manual intervention points for quality assurance</li>
+</ul>
+
+<p><strong>Scalability</strong>:</p>
+<ul>
+  <li>Batch processing for multiple videos</li>
+  <li>Parallel generation of images and audio</li>
+  <li>Caching system for reusable assets</li>
+</ul>
+
+<p><strong>Customization</strong>:</p>
+<ul>
+  <li>Template system for different video styles</li>
+  <li>Configurable animation parameters</li>
+  <li>Multiple voice profiles and languages</li>
+</ul>
+
+<h2 id="file-organization">File Organization</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
+├── generate-script.py
+├── generate-image.py
+├── generate-audio.py
+├── generate-animation.py
+├── generate-video-image.py
+├── input/
+│   └── Audio/
+│       └── Enregistrement-francais.wav
+├── output/
+│   ├── Script/
+│   ├── Image/
+│   ├── Audio/
+│   │   └── scenes/
+│   ├── Video/
+└── stable-diffusion-webui/
+</code></pre></div></div>
+<ul>
+  <li><strong>input/</strong>: source files (text, reference audio)</li>
+  <li><strong>output/</strong>: generated results (JSON scripts, images, audios, videos)</li>
+  <li><strong>stable-diffusion-webui/</strong>: WebUI and models for Stable Diffusion</li>
+</ul>
+
+<h2 id="workflow">Workflow</h2>
+
+<h3 id="1-script-preparation">1. Script Preparation</h3>
+
+<ul>
+  <li>Write your script and split it into scenes.</li>
+  <li>Each scene contains text and an image prompt.</li>
+  <li>Save the script as JSON in <code class="language-plaintext highlighter-rouge">output/Script/script.json</code>:</li>
+</ul>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"scene"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"texte"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Le soleil se lève sur la ville."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"prompt_image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A beautiful sunrise over a city skyline, vibrant colors."</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2-image-generation">2. Image Generation</h3>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">generate-image.py</code> to generate one image per scene via Stable Diffusion.</li>
+  <li>Images are saved in <code class="language-plaintext highlighter-rouge">output/Image/scene_X.png</code>.</li>
+</ul>
+
+<h3 id="3-audio-generation">3. Audio Generation</h3>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">generate-audio.py</code> to generate narration for each scene with Coqui TTS and a reference audio file.</li>
+  <li>Audio files are saved in <code class="language-plaintext highlighter-rouge">output/Audio/scenes/scene_X.wav</code>.</li>
+</ul>
+
+<h3 id="4-animation--video-editing">4. Animation &amp; Video Editing</h3>
+
+<ul>
+  <li>Run <code class="language-plaintext highlighter-rouge">generate-animation.py</code> to create a video for each scene: animation (slow zoom) and audio synchronization.</li>
+  <li>Videos are saved in <code class="language-plaintext highlighter-rouge">output/Video/scene_X.mp4</code>.</li>
+</ul>
+
+<h3 id="5-final-assembly">5. Final Assembly</h3>
+
+<ul>
+  <li>(Optional) Use <code class="language-plaintext highlighter-rouge">generate-video-image.py</code> to merge all scenes into a complete video.</li>
+</ul>
+
+<h2 id="scripts">Scripts</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">generate-script.py</code>: prepares the JSON script</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-image.py</code>: generates images via Stable Diffusion</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-audio.py</code>: synthesizes voice-over with Coqui TTS</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-animation.py</code>: assembles image and audio into animated video</li>
+  <li><code class="language-plaintext highlighter-rouge">generate-video-image.py</code>: merges scene videos</li>
+</ul>
+
+<h2 id="stable-diffusion-webui">Stable Diffusion WebUI</h2>
+
+<ul>
+  <li>Used for image generation (<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a>)</li>
+  <li>Must be run locally (<code class="language-plaintext highlighter-rouge">http://127.0.0.1:7860</code>)</li>
+  <li>Place your models and configure the WebUI as needed</li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>Python 3.9+</li>
+  <li><a href="https://pypi.org/project/moviepy/">moviepy</a></li>
+  <li><a href="https://pypi.org/project/requests/">requests</a></li>
+  <li><a href="https://github.com/coqui-ai/TTS">Coqui TTS</a></li>
+  <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a></li>
+  <li>Dependencies from <code class="language-plaintext highlighter-rouge">stable-diffusion-webui/requirements.txt</code></li>
+</ul>
+
+<p>Installation:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> stable-diffusion-webui/requirements.txt
+pip <span class="nb">install </span>moviepy requests TTS
+</code></pre></div></div>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<ul>
+  <li><strong>Stable Diffusion API error</strong>: check that the WebUI is running and the model is loaded</li>
+  <li><strong>Module not found</strong>: install missing Python packages</li>
+  <li><strong>Audio not generated</strong>: check the path to the reference WAV file</li>
+  <li><strong>Image/audio mismatch</strong>: ensure scene numbers match</li>
+</ul>
+
+<h2 id="development-challenges--solutions">Development Challenges &amp; Solutions</h2>
+
+<p><strong>Challenge 1: Audio-Visual Synchronization</strong></p>
+<ul>
+  <li><strong>Problem</strong>: Ensuring audio narration perfectly matches video duration</li>
+  <li><strong>Solution</strong>: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment</li>
+</ul>
+
+<p><strong>Challenge 2: AI Model Integration</strong></p>
+<ul>
+  <li><strong>Problem</strong>: Stable Diffusion and TTS models require significant computational resources</li>
+  <li><strong>Solution</strong>: Local GPU deployment, request queuing, and caching mechanisms</li>
+</ul>
+
+<p><strong>Challenge 3: Quality Consistency</strong></p>
+<ul>
+  <li><strong>Problem</strong>: AI-generated content can vary in quality</li>
+  <li><strong>Solution</strong>: Multi-stage verification pipeline with manual review checkpoints</li>
+</ul>
+
+<p><strong>Challenge 4: Scalability</strong></p>
+<ul>
+  <li><strong>Problem</strong>: Processing multiple videos simultaneously</li>
+  <li><strong>Solution</strong>: Asynchronous task processing, batch operations, and resource management</li>
+</ul>
+
+<h2 id="use-cases--applications">Use Cases &amp; Applications</h2>
+
+<ul>
+  <li><strong>Educational Content</strong>: Create explainer videos on any topic</li>
+  <li><strong>Social Media</strong>: Generate engaging short-form content</li>
+  <li><strong>Marketing</strong>: Product presentations and promotional videos</li>
+  <li><strong>Documentation</strong>: Tutorial and how-to videos</li>
+  <li><strong>News</strong>: Automated news reports with visual support</li>
+  <li><strong>Entertainment</strong>: Story-telling and narrative videos</li>
+</ul>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+
+<ul>
+  <li>Multi-language support with automatic translation</li>
+  <li>Real-time video generation and streaming</li>
+  <li>Advanced animation effects (3D transitions, particles)</li>
+  <li>AI-powered script writing assistance</li>
+  <li>Video style transfer and artistic filters</li>
+  <li>Integration with more TTS and image generation models</li>
+  <li>Cloud deployment for scalability</li>
+</ul>
+
+<h2 id="performance-metrics">Performance Metrics</h2>
+
+<ul>
+  <li><strong>Image Generation</strong>: ~5-10 seconds per scene (GPU-dependent)</li>
+  <li><strong>Audio Synthesis</strong>: ~2-3 seconds per scene</li>
+  <li><strong>Video Assembly</strong>: ~1-2 seconds per scene</li>
+  <li><strong>Total Pipeline</strong>: ~2-5 minutes for a 5-scene video</li>
+</ul>
+
+<h2 id="resources--credits">Resources &amp; Credits</h2>
+
+<ul>
+  <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a></li>
+  <li><a href="https://github.com/coqui-ai/TTS">Coqui TTS</a></li>
+  <li><a href="https://zulko.github.io/moviepy/">moviepy</a></li>
+  <li><strong>Developer</strong>: Cédric Chanfreau</li>
+  <li><strong>Web Application</strong>: <a href="https://video-automation.littlenuage.com/">video-automation.littlenuage.com</a></li>
+</ul>
+
+<h2 id="license">License</h2>
+
+<p>See <code class="language-plaintext highlighter-rouge">stable-diffusion-webui/LICENSE.txt</code> for the WebUI license. Other scripts are under your chosen license.</p>
+
+<hr />
+
+<h2 id="try-it-yourself">Try It Yourself!</h2>
+
+<p><strong>Access the application</strong>: <a href="https://video-automation.littlenuage.com/">https://video-automation.littlenuage.com/</a></p>
+
+<ol>
+  <li>Write your script with scene descriptions</li>
+  <li>Provide image prompts for each scene</li>
+  <li>Upload a voice reference (optional)</li>
+  <li>Click generate and wait for your video!</li>
+</ol>
+
+<p><img src="/img/automation-video/workflow.png" alt="IA Automation Workflow" style="width: 100%;" /></p>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+</html>

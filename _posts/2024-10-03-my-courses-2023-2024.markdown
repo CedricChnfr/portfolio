@@ -63,7 +63,7 @@ categories: jekyll update
 </style>
 
 <div class="year-nav">
-  <a href="./my-courses.html">2024-2025</a>
+  <a href="./my-courses-2024-2025.html">2024-2025</a>
   <a href="./my-courses-2023-2024.html" class="active">2023-2024</a>
   <a href="./my-courses-2022-2023.html">2022-2023</a>
 </div>
@@ -77,9 +77,6 @@ categories: jekyll update
 ### [📊 Analyse des Systèmes Non Linéaires](./analyse-systemes-non-lineaires.html)
 **Content**: Study of non-linear systems analysis and control methods.
 
-### [🇬🇧 Anglais](./anglais-s7.html)
-**Content**: English language development with technical and professional focus.
-
 ### [📡 Architectures Analogiques Transmission Information](./architectures-analogiques-transmission.html)
 **Content**: Analog architectures for information transmission systems.
 
@@ -92,9 +89,6 @@ categories: jekyll update
 ### [🎨 Conception Orientée Objet UML](./conception-uml.html)
 **Content**: Object-oriented design principles and UML modeling.
 
-### [🏢 Entreprise](./entreprise-s7.html)
-**Content**: Business and entrepreneurship fundamentals.
-
 ### [⚡ Étude et Modélisation des Composants Actifs](./etude-composants-actifs.html)
 **Content**: Study and modeling of active electronic components.
 
@@ -104,9 +98,6 @@ categories: jekyll update
 ### [💰 Finance](./finance.html)
 **Content**: Financial principles and management for engineers.
 
-### [🌍 Implication Citoyenne](./implication-citoyenne.html)
-**Content**: Civic engagement and social responsibility.
-
 ### [🖥️ Programmation Orientée Objets C++](./poo-cpp.html)
 **Content**: Object-oriented programming with C++.
 
@@ -115,9 +106,6 @@ categories: jekyll update
 
 ### [🔐 Sécurité Matérielle](./securite-materielle.html)
 **Content**: Hardware security principles and implementations.
-
-### [🌐 Stage Étranger](./stage-etranger.html)
-**Content**: International internship experience.
 
 ### [🎛️ Systèmes Multivariables](./systemes-multivariables.html)
 **Content**: Multivariable control systems analysis and design.
@@ -146,9 +134,6 @@ categories: jekyll update
 
 ### [📊 Processus Stochastiques et Files d'Attentes](./processus-stochastiques.html)
 **Content**: Stochastic processes and queuing theory.
-
-### [📝 Rapport VT](./rapport-vt.html)
-**Content**: Technical visit report and analysis.
 
 ### [🔷 Réseaux de Pétri](./reseaux-petri.html)
 **Content**: Petri nets modeling and analysis for discrete event systems.

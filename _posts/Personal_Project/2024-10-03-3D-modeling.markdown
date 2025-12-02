@@ -1,0 +1,354 @@
+---
+layout: default
+title: "3D Modeling"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+[← Back to Personal Project](./my-perso-projects.html)
+
+# 3D Modeling Projects
+
+This portfolio showcases various 3D modeling and design projects created using **SolidWorks**, focusing on practical solutions for everyday problems and custom fabrication. All parts were designed for 3D printing or CNC machining, demonstrating skills in CAD modeling, mechanical design, and manufacturing considerations.
+
+## Overview
+
+As an engineering student with a passion for practical problem-solving, I've developed multiple 3D models for personal and professional applications. Each project addresses a specific need, from organizing equipment to creating custom mounting solutions. The designs emphasize functionality, manufacturability, and aesthetic appeal.
+
+**Software Used**: SolidWorks (SLDPRT, SLDASM formats)  
+**Export Formats**: STEP, IGES for manufacturing compatibility  
+**Manufacturing Methods**: 3D printing (FDM, SLA), CNC machining
+
+---
+
+## Project Portfolio
+
+### 1. Katana Display Stand (Support Katana)
+
+**Purpose**: Custom display stand for Japanese katana swords with decorative One Piece Jolly Roger emblem.
+
+**Technical Details**:
+- **Components**: 
+  - Left and right support brackets
+  - Central katana holder
+  - Decorative Jolly Roger plate
+  - Assembly file with all components
+- **Design Features**:
+  - Stable base with balanced weight distribution
+  - Protective padding areas for blade
+  - Modular design for easy printing and assembly
+  - Aesthetic integration of anime-themed decoration
+
+**Files**:
+- `Support droit.SLDPRT` - Right support bracket
+- `Support gauche.SLDPRT` - Left support bracket  
+- `Support Katana.SLDPRT` - Main katana holder
+- `Jolly roger One piece.SLDPRT` - Decorative emblem
+- `Assemblage support.SLDASM` - Complete assembly
+
+**Version 2 Improvements**:
+- Redesigned with increased spacing for larger katanas
+- Optimized for CNC machining (IGES/STEP exports)
+- Split into upper and lower sections for easier manufacturing
+- Multiple width variants to accommodate different blade sizes
+
+**Challenges**:
+- Balancing structural strength with aesthetic design
+- Ensuring stability for heavy swords
+- Creating clean support surfaces that won't damage blades
+
+---
+
+### 2. Rotary Selector Cap (Bouchon Sélecteur Rotatif)
+
+**Purpose**: Replacement or custom cap for rotary selector switches on electronic equipment.
+
+**Technical Details**:
+- **Iterations**: 3 design versions (V1, V2, V3)
+- **Design Features**:
+  - Precise internal geometry for switch shaft mounting
+  - Ergonomic grip pattern for easy rotation
+  - Standardized dimensions for compatibility
+  - Visual indicators for position marking
+
+**Files**:
+- `Bouchon sélecteur rotatif.SLDPRT` - Original design
+- `Bouchon sélecteur rotatif V2.SLDPRT` - Improved grip
+- `Bouchon sélecteur rotatif V3.SLDPRT` - Final optimized version
+
+**Evolution**:
+- **V1**: Basic functional design
+- **V2**: Enhanced ergonomics and grip texture
+- **V3**: Refined aesthetics and manufacturing optimization
+
+**Applications**:
+- Audio equipment controls
+- Industrial machinery interfaces
+- Custom electronics projects
+
+---
+
+### 3. Heating Rack Bracket (Pièce Rack Chauffage)
+
+**Purpose**: Custom mounting bracket for heating equipment rack system.
+
+**Technical Details**:
+- **Iterations**: 10 design versions showing iterative refinement
+- **Design Considerations**:
+  - Load-bearing capacity for heavy equipment
+  - Mounting hole patterns for standard rack systems
+  - Thermal expansion considerations
+  - Vibration resistance
+
+**Files**: Multiple versions from V1 to V10, showing design evolution
+
+**Design Process**:
+- Initial concept and basic geometry (V1-V3)
+- Structural analysis and reinforcement (V4-V6)
+- Manufacturing optimization (V7-V9)
+- Final production-ready design (V10)
+
+**Key Features**:
+- Adjustable mounting positions
+- Cable management integration
+- Compatibility with standard rack dimensions
+- Robust construction for long-term reliability
+
+---
+
+### 4. CEC Badge Holder (Pièce Badge CEC)
+
+**Purpose**: Custom badge holder or mounting piece for identification cards.
+
+**Technical Details**:
+- **Versions**: Multiple iterations for different mounting scenarios
+- **Design Features**:
+  - Secure card retention mechanism
+  - Attachment points for lanyards or clips
+  - Protective edges to prevent card damage
+  - Compact profile for everyday carry
+
+**Files**:
+- `Piece CEC badge.SLDPRT` - Standard badge holder
+- `Piece CEC der.SLDPRT` - Variant design (last version)
+- `Piece CEC dev.SLDPRT` - Development version
+
+**Use Cases**:
+- Professional identification
+- Access control systems
+- Conference and event badges
+- School or corporate ID cards
+
+---
+
+### 5. EDF Industrial Part (Pièce-EDF)
+
+**Purpose**: Custom component designed for industrial application (EDF - Électricité de France context).
+
+**Technical Details**:
+- **Iterations**: 3 versions showing professional refinement
+- **Design Approach**:
+  - Industrial-grade specifications
+  - Precise tolerancing for manufacturing
+  - Material selection considerations
+  - Safety and compliance standards
+
+**Files**:
+- `Piece papa.SLDPRT` - Initial design
+- `Piece papa V2.SLDPRT` - Improved version
+- `Piece papa V3.SLDPRT` - Production-ready design
+
+**Engineering Considerations**:
+- Load analysis and stress testing
+- Environmental resistance (temperature, humidity)
+- Installation and maintenance accessibility
+- Long-term durability requirements
+
+---
+
+### 6. Refrigerator Component (Frigo)
+
+**Purpose**: Custom replacement or modification part for refrigerator assembly.
+
+**Technical Details**:
+- Functional part designed to solve specific refrigerator issue
+- Precise dimensional requirements for proper fit
+- Material considerations for food-safe environment
+- Temperature resistance properties
+
+**File**: `Piece julien frigo.SLDPRT`
+
+**Design Constraints**:
+- Food-safe materials (likely ABS or PETG for 3D printing)
+- Temperature range compatibility (-20°C to +50°C)
+- Easy installation without tools
+- Durability for frequent use
+
+---
+
+## Technical Skills Demonstrated
+
+### CAD Modeling
+- **Parametric Design**: Using dimensions and constraints for flexible modifications
+- **Assembly Modeling**: Creating multi-part assemblies with proper mates and relationships
+- **Surface Modeling**: Complex geometries with aesthetic considerations
+- **Design for Manufacturing (DFM)**: Optimizing parts for 3D printing and CNC machining
+
+### Engineering Analysis
+- **Structural Considerations**: Load-bearing capacity, stress distribution
+- **Tolerance Analysis**: Ensuring proper fit and function
+- **Material Selection**: Choosing appropriate materials for application
+- **Iterative Design**: Multiple versions showing continuous improvement
+
+### File Management
+- **Format Conversion**: SLDPRT to STEP/IGES for manufacturing
+- **Version Control**: Systematic versioning (V1, V2, V3...)
+- **Documentation**: Organized project structure and file naming
+- **Export Preparation**: Manufacturing-ready formats for different processes
+
+### Manufacturing Knowledge
+- **3D Printing**: FDM printer constraints (overhangs, supports, layer orientation)
+- **CNC Machining**: Tool access, minimum feature sizes, material removal
+- **Assembly**: Fastener selection, tolerances for fit types
+- **Post-Processing**: Finishing requirements and assembly procedures
+
+---
+
+## Design Philosophy
+
+### Problem-Solving Approach
+Each project begins with identifying a specific need or problem:
+1. **Requirement Analysis**: Understanding functional and aesthetic needs
+2. **Conceptual Design**: Sketching and brainstorming solutions
+3. **3D Modeling**: Creating detailed CAD models
+4. **Iteration**: Testing and refining through multiple versions
+5. **Manufacturing**: Preparing for production (3D printing or machining)
+6. **Validation**: Testing final parts in real-world applications
+
+### Key Principles
+- **Functionality First**: Design must solve the problem effectively
+- **Manufacturability**: Parts must be practical to produce
+- **Aesthetics**: Clean, professional appearance
+- **Durability**: Long-term reliability and robustness
+- **Economy**: Efficient use of materials and production time
+
+---
+
+## Manufacturing Processes
+
+### 3D Printing (FDM)
+- **Materials**: PLA, PETG, ABS
+- **Layer Height**: 0.1-0.3mm depending on application
+- **Infill**: 15-80% based on structural requirements
+- **Support Strategy**: Optimizing orientation to minimize supports
+
+### 3D Printing (SLA)
+- **Applications**: High-detail decorative parts (Jolly Roger)
+- **Resolution**: 50-100 microns
+- **Materials**: Standard and tough resins
+- **Post-Processing**: Washing, curing, finishing
+
+### CNC Machining
+- **Materials**: Aluminum, steel, plastics
+- **Export Format**: STEP, IGES for CAM software
+- **Considerations**: Tool paths, fixtures, tolerances
+- **Applications**: High-strength industrial parts
+
+---
+
+## Project Statistics
+
+- **Total Projects**: 6 distinct applications
+- **Total Design Iterations**: 30+ versions across all projects
+- **File Formats**: SLDPRT (native), SLDASM (assembly), STEP, IGES (export)
+- **Software Proficiency**: SolidWorks (CAD), Cura/PrusaSlicer (3D printing)
+- **Manufacturing Methods**: FDM 3D printing, SLA printing, CNC machining
+
+---
+
+## Future Projects
+
+### Planned Developments
+- **Parametric Design Library**: Creating reusable components and templates
+- **Topology Optimization**: Using generative design for weight reduction
+- **Multi-Material Assemblies**: Combining printed and machined components
+- **IoT Integration**: Designing enclosures for electronic projects
+- **Collaborative Projects**: Open-source designs for community use
+
+### Skills to Develop
+- **Finite Element Analysis (FEA)**: Structural simulation and validation
+- **CFD Analysis**: Thermal and fluid dynamics
+- **Rendering**: Photorealistic visualizations
+- **Technical Documentation**: Creating detailed manufacturing drawings
+- **CAM Integration**: Direct machining workflow from CAD
+
+---
+
+## Lessons Learned
+
+### Design Iteration is Essential
+The heating rack bracket went through 10 versions, demonstrating that iteration is a natural and necessary part of good design. Each version incorporated feedback and addressed specific issues.
+
+### Manufacturing Constraints Drive Design
+Designing for 3D printing requires different considerations than CNC machining. Understanding these constraints early saves time and material.
+
+### Documentation Matters
+Proper file naming, version control, and organization are crucial when managing multiple projects and iterations.
+
+### Real-World Testing is Irreplaceable
+CAD models can look perfect, but physical testing reveals issues that simulation might miss (fit, ergonomics, unexpected stresses).
+
+### Collaboration Improves Results
+Several projects (refrigerator part, EDF component) were created for specific individuals, showing the importance of understanding user needs and gathering feedback.
+
+---
+
+## Tools & Software
+
+**CAD Software**:
+- **SolidWorks**: Primary 3D modeling platform
+- **Export Formats**: STEP, IGES for interoperability
+
+**3D Printing**:
+- **Slicing Software**: Cura, PrusaSlicer
+- **Printers**: FDM and SLA technologies
+
+**Analysis** (planned):
+- **SolidWorks Simulation**: FEA for structural analysis
+- **Flow Simulation**: Thermal and fluid analysis
+
+**Documentation**:
+- **SolidWorks Composer**: Assembly instructions
+- **Technical Drawings**: 2D manufacturing drawings
+
+---
+
+## Conclusion
+
+This collection of 3D modeling projects demonstrates practical application of CAD skills to solve real-world problems. From decorative display stands to industrial components, each project required careful consideration of functionality, manufacturability, and aesthetics.
+
+The iterative design process visible across multiple versions of each part shows a commitment to continuous improvement and refinement. As I continue developing my skills in mechanical design and manufacturing, I look forward to tackling more complex projects and expanding into areas like generative design, simulation, and multi-material assemblies.
+
+**Key Takeaway**: Good design is an iterative process that balances form, function, and manufacturability while always keeping the end user's needs in focus.
+
+---
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    p {
+        text-align: justify;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+</style>

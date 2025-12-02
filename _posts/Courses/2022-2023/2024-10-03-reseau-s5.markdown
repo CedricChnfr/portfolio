@@ -1,0 +1,740 @@
+---
+layout: default
+title: "Réseau - S5"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #2a7ae2;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+# 🌐 Réseau - S5
+
+**Année**: 2022-2023 (Semestre 5)  
+**Crédits**: 3 ECTS  
+**Type**: Réseaux Informatiques
+
+---
+
+## PART A: PRÉSENTATION GÉNÉRALE
+
+### Objectifs du cours
+
+Ce cours constitue une introduction complète aux réseaux informatiques, couvrant les fondamentaux des architectures réseau, les protocoles de communication, et la configuration pratique d'équipements réseau. L'accent est mis sur le modèle TCP/IP, l'adressage IP, le routage, et les services réseau essentiels.
+
+### Compétences visées
+
+- Comprendre l'architecture en couches des réseaux (OSI, TCP/IP)
+- Maîtriser l'adressage IPv4 et le subnetting
+- Configurer des équipements réseau (switches, routeurs)
+- Analyser le trafic réseau avec des outils professionnels
+- Diagnostiquer et résoudre des problèmes réseau
+- Mettre en place des services réseau (DNS, DHCP, HTTP)
+- Comprendre les protocoles de routage et de transport
+
+### Organisation
+
+- **Volume horaire**: 48h (CM: 20h, TD: 12h, TP: 16h)
+- **Évaluation**: Examen écrit (60%) + TPs (40%)
+- **Semestre**: 5 (2022-2023)
+- **Prérequis**: Informatique de base, notions d'architecture ordinateur
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Contenu pédagogique
+
+Le cours s'organise autour des modèles en couches et des protocoles fondamentaux.
+
+#### 1. Fondamentaux des Réseaux
+
+**Types de réseaux**:
+
+| Type | Portée | Exemples |
+|------|--------|----------|
+| PAN | ~1m | Bluetooth, USB |
+| LAN | ~1km | Réseau local, Wi-Fi |
+| MAN | ~10km | Réseau urbain |
+| WAN | Mondial | Internet |
+
+**Topologies réseau**:
+
+- **Bus**: tous les nœuds sur un même câble (ancien Ethernet)
+- **Étoile**: tous connectés à un switch central (Ethernet moderne)
+- **Anneau**: connexions circulaires (Token Ring)
+- **Maillage**: connexions multiples pour redondance
+
+**Équipements réseau**:
+
+- **Hub**: répéteur simple, domaine de collision unique
+- **Switch**: commutation par adresses MAC, isole les collisions
+- **Routeur**: interconnecte réseaux IP différents
+- **Point d'accès Wi-Fi**: connectivité sans fil
+
+#### 2. Modèles en Couches
+
+**Modèle OSI (7 couches)**:
+
+| Couche | Nom | Fonction | Exemples |
+|--------|-----|----------|----------|
+| 7 | Application | Interface utilisateur | HTTP, FTP, DNS |
+| 6 | Présentation | Format données | SSL/TLS, JPEG |
+| 5 | Session | Gestion sessions | NetBIOS |
+| 4 | Transport | Bout en bout | TCP, UDP |
+| 3 | Réseau | Routage | IP, ICMP |
+| 2 | Liaison | Trame, MAC | Ethernet, Wi-Fi |
+| 1 | Physique | Signal électrique | Câbles, ondes |
+
+**Modèle TCP/IP (4 couches)**:
+
+Version simplifiée utilisée en pratique:
+- Application (= couches 5-7 OSI)
+- Transport (= couche 4 OSI)
+- Internet (= couche 3 OSI)
+- Accès réseau (= couches 1-2 OSI)
+
+**Encapsulation**:
+
+Chaque couche ajoute un en-tête aux données:
+- Application: Données
+- Transport: Segment (TCP) ou Datagramme (UDP)
+- Réseau: Paquet IP
+- Liaison: Trame Ethernet
+
+#### 3. Couche Liaison de Données
+
+**Adresse MAC**:
+
+Adresse matérielle unique sur 48 bits (6 octets).
+
+Format: XX:XX:XX:XX:XX:XX (hexadécimal)
+
+Exemple: 00:1A:2B:3C:4D:5E
+
+3 premiers octets = OUI (Organizational Unique Identifier, fabricant)
+3 derniers octets = identifiant unique
+
+**Ethernet**:
+
+Norme dominante pour LAN.
+
+Standards:
+- 10BASE-T: 10 Mbps
+- 100BASE-TX (Fast Ethernet): 100 Mbps
+- 1000BASE-T (Gigabit): 1 Gbps
+- 10GBASE-T: 10 Gbps
+
+**Trame Ethernet**:
+
+Structure: Préambule | MAC dest | MAC src | Type | Données | CRC
+
+Taille minimale: 64 octets
+Taille maximale (MTU): 1518 octets
+
+**Switch Ethernet**:
+
+Apprentissage des adresses MAC:
+1. Reçoit trame sur port A avec MAC source X
+2. Enregistre: "MAC X accessible via port A"
+3. Transfert intelligent vers port de destination
+
+Avantages vs hub:
+- Pas de collisions entre ports
+- Full-duplex possible
+- Meilleures performances
+
+**VLAN (Virtual LAN)**:
+
+Segmentation logique d'un réseau physique.
+
+Avantages:
+- Isolation du trafic
+- Sécurité accrue
+- Flexibilité administrative
+
+#### 4. Couche Réseau et Adressage IP
+
+**IPv4**:
+
+Adresse sur 32 bits (4 octets).
+
+Format: A.B.C.D où A, B, C, D entre 0 et 255
+
+Exemple: 192.168.1.10
+
+**Classes d'adresses (anciennes)**:
+
+| Classe | Premier octet | Masque par défaut | Utilisation |
+|--------|---------------|-------------------|-------------|
+| A | 1-126 | 255.0.0.0 (/8) | Très grands réseaux |
+| B | 128-191 | 255.255.0.0 (/16) | Réseaux moyens |
+| C | 192-223 | 255.255.255.0 (/24) | Petits réseaux |
+| D | 224-239 | - | Multicast |
+| E | 240-255 | - | Réservé |
+
+**Adresses particulières**:
+
+- 127.0.0.1: loopback (localhost)
+- 0.0.0.0: toute interface
+- 255.255.255.255: broadcast général
+- 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12: adresses privées
+
+**Subnetting (sous-réseaux)**:
+
+Division d'un réseau en sous-réseaux plus petits.
+
+Exemple: réseau 192.168.1.0/24 divisé en 4 sous-réseaux:
+- 192.168.1.0/26 (64 adresses)
+- 192.168.1.64/26
+- 192.168.1.128/26
+- 192.168.1.192/26
+
+Masque /26 = 255.255.255.192
+
+**CIDR (Classless Inter-Domain Routing)**:
+
+Notation /n où n = nombre de bits à 1 dans le masque.
+
+Exemples:
+- /8 = 255.0.0.0
+- /16 = 255.255.0.0
+- /24 = 255.255.255.0
+- /30 = 255.255.255.252 (4 adresses, pour liens point-à-point)
+
+**NAT (Network Address Translation)**:
+
+Traduction d'adresses privées en adresse publique.
+
+Permet:
+- Économiser les adresses IPv4 publiques
+- Masquer la topologie interne
+- Sécurité basique (firewall implicite)
+
+Types:
+- NAT statique: 1 privée ↔ 1 publique
+- NAT dynamique: pool d'adresses publiques
+- PAT (Port Address Translation): 1 publique avec ports différents
+
+**IPv6**:
+
+Adresse sur 128 bits (16 octets).
+
+Format: xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx (hexadécimal)
+
+Exemple: 2001:0db8:0000:0000:0000:ff00:0042:8329
+
+Simplifications:
+- Omettre zéros de tête: 2001:db8::ff00:42:8329
+- :: une seule fois pour suite de zéros
+
+Avantages:
+- Espace d'adressage quasi infini
+- Pas besoin de NAT
+- Meilleure sécurité (IPsec intégré)
+- Configuration automatique
+
+#### 5. Routage
+
+**Principe**:
+
+Choix du chemin pour acheminer les paquets entre réseaux.
+
+Table de routage contient:
+- Réseau de destination
+- Masque
+- Passerelle (gateway)
+- Interface de sortie
+- Métrique (coût)
+
+**Routage statique**:
+
+Routes configurées manuellement.
+
+Commande Linux:
+```bash
+ip route add 192.168.2.0/24 via 192.168.1.1
+```
+
+Avantages: simple, prévisible
+Inconvénients: pas d'adaptation automatique, lourd à gérer
+
+**Routage dynamique**:
+
+Protocoles échangeant automatiquement les routes.
+
+**RIP (Routing Information Protocol)**:
+- Protocole à vecteur de distance
+- Métrique = nombre de sauts
+- Maximum 15 sauts
+- Mises à jour toutes les 30s
+- Simple mais limité
+
+**OSPF (Open Shortest Path First)**:
+- Protocole à état de liens
+- Métrique = coût (bande passante)
+- Convergence rapide
+- Hiérarchie par zones
+- Très utilisé en entreprise
+
+**BGP (Border Gateway Protocol)**:
+- Protocole de routage inter-domaines (Internet)
+- Utilisé entre AS (Autonomous Systems)
+- Très robuste et évolutif
+
+#### 6. Couche Transport
+
+**TCP (Transmission Control Protocol)**:
+
+Protocole fiable orienté connexion.
+
+Caractéristiques:
+- Établissement connexion (3-way handshake)
+- Garantie de livraison et d'ordre
+- Contrôle de flux (fenêtre glissante)
+- Contrôle de congestion
+- Détection et retransmission d'erreurs
+
+**3-way handshake**:
+1. Client → Serveur: SYN
+2. Serveur → Client: SYN-ACK
+3. Client → Serveur: ACK
+
+**Segment TCP**:
+
+En-tête contient:
+- Port source et destination
+- Numéros de séquence et acquittement
+- Flags (SYN, ACK, FIN, RST, PSH, URG)
+- Fenêtre de réception
+- Checksum
+
+**UDP (User Datagram Protocol)**:
+
+Protocole non fiable sans connexion.
+
+Caractéristiques:
+- Pas d'établissement de connexion
+- Pas de garantie de livraison
+- Pas de contrôle de flux
+- Plus rapide et léger que TCP
+
+Utilisations:
+- DNS (requêtes rapides)
+- Streaming vidéo/audio (temps réel)
+- Jeux en ligne (faible latence)
+- DHCP, SNMP, TFTP
+
+**Numéros de ports**:
+
+Identifient les applications.
+
+Plages:
+- 0-1023: ports bien connus (HTTP=80, HTTPS=443, SSH=22, FTP=21)
+- 1024-49151: ports enregistrés
+- 49152-65535: ports dynamiques/privés
+
+#### 7. Couche Application
+
+**DNS (Domain Name System)**:
+
+Traduction noms de domaine ↔ adresses IP.
+
+Hiérarchie:
+- Racine (.)
+- TLD (Top-Level Domain): .com, .fr, .org
+- Domaines de 2e niveau: example.com
+- Sous-domaines: www.example.com
+
+Types d'enregistrements:
+- A: IPv4
+- AAAA: IPv6
+- MX: serveur mail
+- CNAME: alias
+- NS: serveur de noms
+- PTR: résolution inverse
+
+Requête DNS:
+1. Client demande résolution de www.example.com
+2. Serveur DNS local consulte cache ou serveurs autoritaires
+3. Retourne adresse IP
+
+**DHCP (Dynamic Host Configuration Protocol)**:
+
+Attribution automatique d'adresses IP.
+
+Processus DORA:
+1. **D**iscover: client cherche serveur DHCP
+2. **O**ffer: serveur propose configuration
+3. **R**equest: client accepte l'offre
+4. **A**cknowledge: serveur confirme
+
+Informations fournies:
+- Adresse IP
+- Masque de sous-réseau
+- Passerelle par défaut
+- Serveurs DNS
+- Durée du bail (lease time)
+
+**HTTP/HTTPS**:
+
+Protocole de transfert hypertexte pour le Web.
+
+Méthodes principales:
+- GET: récupérer ressource
+- POST: envoyer données
+- PUT: créer/modifier ressource
+- DELETE: supprimer ressource
+
+Codes de réponse:
+- 2xx: succès (200 OK)
+- 3xx: redirection (301, 302)
+- 4xx: erreur client (404 Not Found)
+- 5xx: erreur serveur (500 Internal Server Error)
+
+HTTPS = HTTP + TLS (chiffrement)
+
+**FTP (File Transfer Protocol)**:
+
+Transfert de fichiers.
+
+Modes:
+- Actif: serveur initie connexion de données
+- Passif: client initie toutes connexions (firewall-friendly)
+
+Ports: 21 (contrôle), 20 (données en mode actif)
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Travaux Pratiques
+
+**TP: Introduction aux réseaux et outils**
+
+Objectifs:
+- Manipulation des commandes réseau
+- Analyse de trames avec Wireshark
+- Utilisation de tsock (simulateur réseau)
+
+**Commandes réseau essentielles**:
+
+**ping**: test de connectivité ICMP
+```bash
+ping 192.168.1.1
+ping -c 4 google.com
+```
+
+**traceroute/tracert**: tracer le chemin des paquets
+```bash
+traceroute google.com
+```
+
+Affiche tous les routeurs intermédiaires.
+
+**ifconfig/ipconfig**: configuration des interfaces
+```bash
+ifconfig eth0
+ipconfig /all
+```
+
+Affiche adresse IP, MAC, masque, passerelle.
+
+**netstat**: statistiques réseau
+```bash
+netstat -an    # Connexions actives
+netstat -rn    # Table de routage
+```
+
+**nslookup/dig**: requêtes DNS
+```bash
+nslookup www.google.com
+dig www.google.com
+```
+
+**arp**: table ARP (IP ↔ MAC)
+```bash
+arp -a
+```
+
+**Wireshark**:
+
+Analyseur de paquets graphique.
+
+Fonctionnalités:
+- Capture en temps réel
+- Filtres d'affichage puissants
+- Décodage de protocoles
+- Analyse de flux TCP
+- Statistiques
+
+Filtres utiles:
+- `tcp.port == 80`: HTTP
+- `ip.addr == 192.168.1.1`: adresse spécifique
+- `dns`: requêtes DNS
+- `tcp.flags.syn == 1`: connexions TCP
+
+**Outil tsock**:
+
+Simulateur réseau pédagogique permettant:
+- Visualiser encapsulation/désencapsulation
+- Observer échanges de protocoles
+- Simuler pertes et déséquencement
+- Comprendre les mécanismes TCP
+
+### Travaux Dirigés
+
+**TD1: Bases des réseaux**:
+
+Exercices sur:
+- Calcul d'adresses réseau et broadcast
+- Détermination de masques
+- Classification d'adresses
+
+**TD2: Commutation et routage**:
+
+Problématiques:
+- Pertes de paquets (causes, détection)
+- Déséquencement (impact, réordonnancement)
+- Tables de routage
+- Configuration de routes
+
+**TD3-4: Architecture, services et protocoles**:
+
+Analyse:
+- Modèle en couches OSI/TCP-IP
+- PDU à chaque couche
+- Services offerts par chaque couche
+- Interactions entre protocoles
+
+### Configuration Pratique
+
+**Configuration d'un switch**:
+
+Commandes de base (Cisco):
+```
+enable
+configure terminal
+hostname Switch1
+interface vlan 1
+ip address 192.168.1.2 255.255.255.0
+no shutdown
+```
+
+**Configuration VLAN**:
+```
+vlan 10
+name Departement_IT
+exit
+interface FastEthernet 0/1
+switchport mode access
+switchport access vlan 10
+```
+
+**Configuration routeur**:
+```
+interface GigabitEthernet 0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+ip route 192.168.2.0 255.255.255.0 192.168.1.254
+```
+
+**Configuration serveur DHCP (Linux)**:
+
+Fichier /etc/dhcp/dhcpd.conf:
+```
+subnet 192.168.1.0 netmask 255.255.255.0 {
+    range 192.168.1.100 192.168.1.200;
+    option routers 192.168.1.1;
+    option domain-name-servers 8.8.8.8;
+}
+```
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Compétences acquises
+
+**Théoriques**:
+- Compréhension des modèles en couches
+- Maîtrise de l'adressage IP et du subnetting
+- Connaissance des protocoles fondamentaux
+- Principes du routage et de la commutation
+
+**Pratiques**:
+- Utilisation d'outils d'analyse (Wireshark)
+- Configuration d'équipements réseau
+- Diagnostic de problèmes réseau
+- Mise en place de services réseau
+- Analyse de trames et protocoles
+
+### Applications pratiques
+
+Les réseaux sont au cœur de tous les systèmes informatiques modernes:
+
+**Entreprise**:
+- Réseau LAN d'entreprise
+- Interconnexion sites distants (VPN)
+- Serveurs et services internes
+- Sécurité réseau (firewall, DMZ)
+
+**Internet et Cloud**:
+- Hébergement web
+- Services cloud (AWS, Azure, GCP)
+- CDN (Content Delivery Networks)
+- Streaming et VOD
+
+**IoT et embarqué**:
+- Objets connectés
+- Domotique
+- Réseaux industriels
+- Capteurs communicants
+
+**Télécommunications**:
+- Réseaux mobiles (4G, 5G)
+- VoIP (téléphonie sur IP)
+- Réseaux opérateurs
+
+### Liens avec autres cours
+
+| Cours | Lien |
+|-------|------|
+| Architecture Matérielle (S5) | Interfaces réseau, DMA |
+| Systèmes d'exploitation (S5) | Pile réseau, sockets |
+| Programmation C (S5) | Sockets, protocoles |
+| Sécurité (S7) | Chiffrement, VPN, firewall |
+| IoT (S9) | Protocoles IoT (MQTT, CoAP) |
+| Cloud Computing (S9) | Réseaux virtuels, SDN |
+
+### Perspectives et évolutions
+
+**Technologies émergentes**:
+
+**SDN (Software-Defined Networking)**:
+Séparation plan de contrôle et plan de données, configuration programmable.
+
+**NFV (Network Function Virtualization)**:
+Fonctions réseau virtualisées (routeurs, firewalls logiciels).
+
+**5G et au-delà**:
+Très haut débit, ultra-faible latence, IoT massif.
+
+**IPv6**:
+Adoption progressive mais inévitable (épuisement IPv4).
+
+**Sécurité**:
+Chiffrement généralisé (TLS 1.3, HTTPS partout), Zero Trust.
+
+### Recommandations
+
+**Pour approfondir**:
+1. Pratiquer avec Packet Tracer ou GNS3
+2. Monter un lab réseau à domicile
+3. Lire les RFCs des protocoles importants
+4. Analyser du trafic réel avec Wireshark
+5. Configurer routeurs et switches (occasion ou simulateurs)
+
+**Certifications**:
+- CompTIA Network+
+- Cisco CCNA
+- Juniper JNCIA
+
+### Mon opinion
+
+Ce cours est fondamental pour comprendre comment fonctionnent les communications modernes.
+
+**Points forts**:
+- Approche progressive (des fondamentaux aux protocoles avancés)
+- Outils professionnels (Wireshark)
+- Pratique avec TPs
+- Base solide pour cours avancés
+
+**Applications concrètes**:
+Les connaissances acquises sont immédiatement applicables:
+- Configuration de réseau domestique
+- Diagnostic de problèmes de connectivité
+- Compréhension des architectures web
+- Base pour administration système
+
+**Importance professionnelle**:
+Les réseaux sont omniprésents en informatique. Tout ingénieur doit comprendre:
+- Comment ses applications communiquent
+- Les contraintes réseau (latence, bande passante)
+- La sécurité réseau de base
+- Les architectures distribuées
+
+---
+
+**Bilan personnel**: Ce cours a fourni les bases essentielles des réseaux informatiques. La combinaison de théorie (modèles, protocoles) et de pratique (Wireshark, configuration) a permis une compréhension solide. Ces connaissances sont indispensables pour tous les cours suivants impliquant des communications (IoT, Cloud, Systèmes distribués) et pour la carrière professionnelle.
+
+---
+
+<style>
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+        }
+        h2, h3, h4, h5 {
+                color: #2a7ae2;
+        }
+        p {
+                text-align: justify;
+        }
+        code {
+                background-color: #f5f5f5;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+        }
+        pre {
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-x: auto;
+        }
+</style>
+
+
