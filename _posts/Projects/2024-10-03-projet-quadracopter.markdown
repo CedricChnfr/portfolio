@@ -48,11 +48,6 @@ Working in teams, we developed a complete quadcopter system capable of stable fl
 - Multiple timer channels for ESC control
 - Communication interfaces (UART, I2C, SPI)
 
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_microcontroleur/cablage.png" alt="Quadcopter Wiring" style="width: 45%;" onclick="openModal(this.src)"/>
-  <img src="/img/BE_microcontroleur/cablage2.png" alt="Quadcopter Wiring Detail" style="width: 45%;" onclick="openModal(this.src)"/>
-</div>
-
 **Firmware Options:**
 - Betaflight (popular for racing/acro)
 - Cleanflight (open-source, customizable)
@@ -72,10 +67,6 @@ Working in teams, we developed a complete quadcopter system capable of stable fl
 - MAVLink protocol standard
 - Ground control station software
 
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_microcontroleur/dashboard.png" alt="Ground Control Dashboard" style="width: 45%;" onclick="openModal(this.src)"/>
-  <img src="/img/BE_microcontroleur/mit_app.png" alt="Mobile Control App" style="width: 45%;" onclick="openModal(this.src)"/>
-</div>
 
 # Control System Design
 

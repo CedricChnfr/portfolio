@@ -139,6 +139,11 @@ Réfléchir aux protections possibles et à leurs limites.
 
 <h3 class="section-title">Difficultés rencontrées</h3>
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/securite-materielle/buffer-overflow.svg" alt="Attaque par buffer overflow" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe d'une attaque par buffer overflow - Écrasement de l'adresse de retour</p>
+</div>
+
 **Complexité des attaques** :
 Les attaques par canaux auxiliaires nécessitent des connaissances en électronique, traitement du signal, et statistiques.
 

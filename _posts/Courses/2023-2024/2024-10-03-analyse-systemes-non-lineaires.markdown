@@ -146,6 +146,11 @@ La méthode est basée sur des approximations (ne conserver que le premier harmo
 
 <h3 class="section-title">1. Introduction aux systèmes non linéaires</h3>
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/systemes-non-lineaires/non-linearite.svg" alt="Comportement non-linéaire" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Comparaison entre système linéaire et non-linéaire - Phénomène de saturation</p>
+</div>
+
 **Définition** :
 
 Un système est non linéaire si son équation ne vérifie pas le principe de superposition. Formellement, si :

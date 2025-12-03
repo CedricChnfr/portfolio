@@ -210,6 +210,11 @@ struct Etudiant *ptr = &cedric;
 ptr->naissance = 2001;  // Équivalent à (*ptr).naissance
 ```
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/langage-c/pointeurs.svg" alt="Illustration des pointeurs en C" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Concept des pointeurs - Un pointeur stocke l'adresse mémoire d'une variable</p>
+</div>
+
 **Copie de structures**:
 
 Attention aux pointeurs dans les structures:

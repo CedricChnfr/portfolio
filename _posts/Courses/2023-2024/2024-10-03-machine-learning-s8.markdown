@@ -115,6 +115,12 @@ J(β) = -(1/m) Σ[y log(h(x)) + (1-y) log(1-h(x))]
 
 **Extension multiclasse**: Softmax Regression
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S8/machine-learning/reseau-neurones.svg" alt="Réseau de neurones multicouche" 
+       style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture d'un perceptron multicouche avec propagation avant</p>
+</div>
+
 #### 4. Arbres de Décision
 
 **Principe**:

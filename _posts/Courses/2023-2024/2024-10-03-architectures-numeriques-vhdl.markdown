@@ -136,6 +136,11 @@ Chaque projet Vivado contenait :
 
 **Progression pédagogique** :
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/vhdl/architecture-vhdl.svg" alt="Architecture VHDL" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture d'un processeur simple en VHDL - ALU, registres et mémoire</p>
+</div>
+
 1. **Buffer** : Circuit simple (FIFO ou registre à décalage)
 2. **ALU** : Opérations arithmétiques et logiques
 3. **Registre** : Banc de registres avec lecture/écriture

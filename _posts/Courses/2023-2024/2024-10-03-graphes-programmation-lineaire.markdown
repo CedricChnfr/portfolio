@@ -104,6 +104,12 @@ Plus courts chemins entre toutes paires de sommets.
 - Ajouter arête de poids min reliant arbre à sommet extérieur
 - Répéter jusqu'à tous sommets inclus
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S8/graphes/dijkstra.svg" alt="Algorithme de Dijkstra" 
+       style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Recherche du plus court chemin avec l'algorithme de Dijkstra</p>
+</div>
+
 **Applications**:
 - Conception de réseaux (électrique, eau, télécoms) à coût minimum
 - Clustering

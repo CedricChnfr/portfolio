@@ -116,6 +116,11 @@ rang(Mo) = p
 où Mo = [CB  CAB  CA²B  ...  CAⁿ⁻¹B]
 ```
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/systemes-multivariables/mimo-system.svg" alt="Système MIMO" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Système MIMO (Multi-Input Multi-Output) - Couplages et découplage</p>
+</div>
+
 #### 4. Observabilité
 
 **Définition**:

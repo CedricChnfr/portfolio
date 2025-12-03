@@ -132,11 +132,21 @@ Le premier TP consistait à mesurer les imperfections d'un AOP réel (LM358) :
 
 Conception et réalisation de plusieurs topologies de filtres :
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/elec-analogique/ampli-op-inverseur.svg" alt="Amplificateur opérationnel inverseur" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Schéma d'un amplificateur opérationnel en montage inverseur</p>
+</div>
+
 **Filtre passe-bas Sallen-Key ordre 2** :
 - Fréquence de coupure : 1 kHz
 - Structure : deux résistances R, deux capacités C, AOP en suiveur
 - Pente : -40 dB/décade au-delà de fc
 - Avantage : impédance de sortie faible, pas de charge sur les étages suivants
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/elec-analogique/oscilloscope-1.png" alt="Mesure oscilloscope 1" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Mesures à l'oscilloscope - Réponse d'un filtre actif (TP)</p>
+</div>
 
 **Filtre passe-haut Sallen-Key ordre 2** :
 - Même principe avec permutation R et C

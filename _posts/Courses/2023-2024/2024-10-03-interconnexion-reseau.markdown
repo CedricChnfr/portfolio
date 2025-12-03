@@ -138,6 +138,12 @@ Le module combinait théorie et pratique intensive :
 
 <h3 class="section-title">Méthodologie d'étude</h3>
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S8/interconnexion-reseau/modele-osi.svg" alt="Modèle OSI 7 couches" 
+       style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Modèle OSI à 7 couches avec protocoles et encapsulation</p>
+</div>
+
 **Phase 1 : Maîtriser les fondamentaux** :
 Réviser modèle en couches, adressage IP, principes du routage.
 

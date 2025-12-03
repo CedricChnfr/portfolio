@@ -100,10 +100,6 @@ This project represented the culmination of our electrical engineering training,
 
 ## Phase 4: Firmware Development
 
-<div style="text-align: center; margin: 30px 0;">
-  <img src="/img/BE_REOC/monitor.png" alt="System Monitoring" style="width: 70%;" onclick="openModal(this.src)"/>
-</div>
-
 **Embedded Software:**
 - Peripheral configuration (ADC, I2C, UART, SPI)
 - Data acquisition and processing

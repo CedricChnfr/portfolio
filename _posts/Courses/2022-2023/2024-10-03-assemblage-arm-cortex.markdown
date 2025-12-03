@@ -118,6 +118,11 @@ Le module était structuré en 4 séquences progressives :
 - Communication UART
 - Interruptions
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/arm-cortex/registres-arm.svg" alt="Registres ARM Cortex-M" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Organisation des registres ARM Cortex-M - R0-R15, SP, LR, PC et PSR</p>
+</div>
+
 **Environnement de développement** :
 - **IDE** : Keil µVision 5
 - **Cible** : STM32F103RB (Cortex-M3, 128 KB Flash, 20 KB RAM)

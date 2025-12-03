@@ -120,6 +120,11 @@ Conception d'un voilier autonome radiocommandé avec :
 
 **Architecture du système** :
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/microcontroleur/architecture-stm32.svg" alt="Architecture STM32" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture d'un microcontrôleur STM32 - CPU ARM Cortex-M4 avec périphériques</p>
+</div>
+
 Le voilier autonome intègre plusieurs sous-systèmes :
 
 | Sous-système | Composants | Fonction |

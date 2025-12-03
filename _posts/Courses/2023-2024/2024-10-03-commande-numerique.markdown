@@ -104,6 +104,12 @@ Z{s[k]} = S(z) = Σ s[k]·z^(-k)  pour k=0 à ∞
 où z = e^(Te·s) relie plan de Laplace au plan en Z
 ```
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S8/commande-numerique/systeme-echantillonne.svg" alt="Système en boucle fermée échantillonné" 
+       style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Schéma bloc d'un système de commande numérique avec correcteur C(z)</p>
+</div>
+
 **Propriétés**:
 - **Linéarité**: Z{a·x[k] + b·y[k]} = a·X(z) + b·Y(z)
 - **Retard**: Z{x[k-n]} = z^(-n)·X(z)

@@ -248,6 +248,21 @@ Le système bouclé est stable si le point critique (-1, 0) n'est pas encerclé 
 
 Distance au point critique: indicateur de robustesse.
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/systemes-boucles/systeme-sans-retour.png" alt="Système en boucle ouverte" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Simulation d'un système en boucle ouverte (sans retour)</p>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/systemes-boucles/systeme-avec-retour.png" alt="Système avec retour" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Système avec retour - amélioration de la stabilité et de la précision</p>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/systemes-boucles/correcteur-proportionnel.png" alt="Correcteur proportionnel" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Réponse d'un système avec correcteur proportionnel</p>
+</div>
+
 **Abaque de Black-Nichols**:
 
 Combinaison gain-phase avec courbes iso-gain et iso-phase en boucle fermée.

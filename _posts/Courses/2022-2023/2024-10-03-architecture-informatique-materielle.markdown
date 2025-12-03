@@ -105,6 +105,11 @@ Le cours "Architecture Informatique Matérielle" fournit une compréhension appr
 
 #### 2. Mémoire Physique
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/architecture-info/von-neumann.svg" alt="Architecture Von Neumann" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture Von Neumann - Modèle classique avec bus partagés</p>
+</div>
+
 **Organisation mémoire**:
 - Hiérarchie mémoire: registres → cache → RAM → disque
 - Technologies mémoire: SRAM, DRAM, ROM, Flash

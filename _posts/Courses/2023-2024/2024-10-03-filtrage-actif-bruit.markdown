@@ -146,6 +146,11 @@ Choisir la topologie (Sallen-Key, Rauch) et calculer les composants (R, C) pour 
 **Phase 5 : Analyse du bruit** :
 Calculer les contributions de bruit de chaque composant et AOP, puis le bruit total ramené en entrée.
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/filtrage-actif/capacites-commutees.svg" alt="Filtre à capacités commutées" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe des filtres à capacités commutées - Émulation de résistance par commutation</p>
+</div>
+
 **Phase 6 : Simulation et validation** :
 Vérifier la réponse fréquentielle, le bruit, et les limitations pratiques (saturation, slew-rate).
 

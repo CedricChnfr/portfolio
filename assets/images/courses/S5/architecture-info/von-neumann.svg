@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <style>
+      .box { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .arrow { stroke: #333; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .bus { stroke: #ff6b6b; stroke-width: 3; }
+      .text { font-family: Arial; font-size: 12px; fill: #333; }
+      .label { font-family: Arial; font-size: 14px; fill: #2a7ae2; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- CPU -->
+  <rect class="box" x="50" y="100" width="100" height="80" rx="5"/>
+  <text class="label" x="80" y="145">CPU</text>
+  
+  <!-- RAM -->
+  <rect class="box" x="200" y="40" width="100" height="60" rx="5"/>
+  <text class="label" x="225" y="75">RAM</text>
+  
+  <!-- ROM -->
+  <rect class="box" x="200" y="120" width="100" height="60" rx="5"/>
+  <text class="label" x="225" y="155">ROM</text>
+  
+  <!-- I/O -->
+  <rect class="box" x="200" y="200" width="100" height="60" rx="5"/>
+  <text class="label" x="225" y="235">I/O</text>
+  
+  <!-- Bus d'adresses -->
+  <path class="arrow bus" d="M 150 120 L 200 70"/>
+  <path class="arrow bus" d="M 150 140 L 200 150"/>
+  <path class="arrow bus" d="M 150 160 L 200 230"/>
+  
+  <!-- Bus de données -->
+  <line class="arrow" x1="200" y1="85" x2="150" y2="135"/>
+  <line class="arrow" x1="200" y1="165" x2="150" y2="145"/>
+  <line class="arrow" x1="200" y1="245" x2="150" y2="165"/>
+  
+  <!-- Labels des bus -->
+  <text class="text" x="155" y="110" fill="#ff6b6b">Bus Adresses</text>
+  <text class="text" x="155" y="195">Bus Données</text>
+  <text class="text" x="320" y="145">Bus Contrôle</text>
+  
+  <!-- Flèches de contrôle -->
+  <line class="arrow" x1="300" y1="70" x2="350" y2="70"/>
+  <line class="arrow" x1="300" y1="150" x2="350" y2="150"/>
+  <line class="arrow" x1="300" y1="230" x2="350" y2="230"/>
+  
+  <!-- Titre -->
+  <text class="label" x="120" y="30">Architecture Von Neumann</text>
+</svg>

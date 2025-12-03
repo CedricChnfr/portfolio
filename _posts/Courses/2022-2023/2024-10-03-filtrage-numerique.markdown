@@ -129,6 +129,11 @@ Le cours adoptait une approche en trois étapes :
 2. **Méthodes** : appliquer des techniques systématiques de conception
 3. **Pratique** : valider et optimiser avec MATLAB
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/filtrage-numerique/filtrage.svg" alt="Filtrage numérique" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe du filtrage numérique - Réduction du bruit par filtrage</p>
+</div>
+
 **Exemple de conception de filtre passe-bas FIR** :
 
 Cahier des charges :

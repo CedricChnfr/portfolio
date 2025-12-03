@@ -132,6 +132,11 @@ Le module était organisé en deux volets complémentaires :
 
 L'objectif était de lire la température d'un capteur I2C et l'afficher en temps réel.
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/elec-numerique/spi-protocol.svg" alt="Protocole SPI" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Chronogramme du protocole SPI - Communication full-duplex avec horloge maître</p>
+</div>
+
 **Étapes de mise en œuvre** :
 
 1. **Initialisation du bus I2C** :

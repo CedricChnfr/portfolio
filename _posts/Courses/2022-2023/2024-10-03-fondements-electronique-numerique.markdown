@@ -162,6 +162,11 @@ Cependant, il est **fortement recommandé** de connecter explicitement les entr�
 
 Utilise un transistor PMOS (pull-up) et un NMOS (pull-down) en série.
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/elec-num/porte-and.svg" alt="Porte logique AND" style="max-width: 300px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Exemple de porte logique AND - Base de l'électronique numérique</p>
+</div>
+
 **Avantages du CMOS**:
 - **Consommation statique quasi-nulle**: courant uniquement pendant les transitions
 - **Large plage d'alimentation**: 3V à 18V selon la famille

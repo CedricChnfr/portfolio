@@ -100,6 +100,12 @@ Représentation de l'espace d'états.
 
 #### 4. Propriétés Comportementales
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S8/reseaux-petri/reseau-petri.svg" alt="Réseau de Pétri avec jetons" 
+       style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Exemple de réseau de Pétri avec places, transitions et jetons</p>
+</div>
+
 **Bornitude**:
 ∃ k tel que ∀M ∈ R(M₀), ∀p ∈ P: M(p) ≤ k
 

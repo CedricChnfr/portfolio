@@ -149,6 +149,11 @@ Un espace probabilisé est défini par trois éléments :
 - A : ensemble des événements (sigma-algèbre)
 - P : probabilité (mesure sur A)
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/signaux-aleatoires/pdf-gaussienne.svg" alt="Distribution gaussienne" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Fonction de densité de probabilité (PDF) - Loi normale (gaussienne)</p>
+</div>
+
 **Propriétés de la probabilité** :
 - 0 <= P(A) <= 1
 - P(Oméga) = 1

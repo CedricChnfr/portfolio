@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <defs>
+    <style>
+      .axis { stroke: #333; stroke-width: 1.5; }
+      .curve { stroke: #2a7ae2; stroke-width: 2.5; fill: none; }
+      .curve2 { stroke: #ff6b6b; stroke-width: 2.5; fill: none; }
+      .grid { stroke: #ddd; stroke-width: 0.5; }
+      .point { fill: #ff6b6b; }
+      .text { font-family: Arial; font-size: 11px; fill: #333; }
+      .label { font-family: Arial; font-size: 13px; fill: #2a7ae2; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="label" x="120" y="25">Fonction Densité de Probabilité (PDF)</text>
+  
+  <!-- Grille -->
+  <line class="grid" x1="100" y1="80" x2="100" y2="250"/>
+  <line class="grid" x1="200" y1="80" x2="200" y2="250"/>
+  <line class="grid" x1="300" y1="80" x2="300" y2="250"/>
+  <line class="grid" x1="400" y1="80" x2="400" y2="250"/>
+  
+  <!-- Axes -->
+  <line class="axis" x1="50" y1="250" x2="470" y2="250"/>
+  <line class="axis" x1="50" y1="80" x2="50" y2="270"/>
+  
+  <!-- Courbe gaussienne (loi normale) -->
+  <path class="curve" d="M 60 245 Q 100 240, 150 200 Q 200 120, 250 90 Q 300 120, 350 200 Q 400 240, 440 245"/>
+  
+  <!-- Point de moyenne -->
+  <circle class="point" cx="250" cy="90" r="4"/>
+  <line class="axis" x1="250" y1="90" x2="250" y2="255" stroke-dasharray="3,3"/>
+  
+  <!-- Annotations -->
+  <text class="text" x="240" y="275">μ</text>
+  <text class="text" x="180" y="275">μ-σ</text>
+  <text class="text" x="310" y="275">μ+σ</text>
+  
+  <!-- Zones ombrées (68% de la distribution) -->
+  <path d="M 150 200 Q 200 120, 250 90 Q 300 120, 350 200 L 350 250 Q 300 230, 250 220 Q 200 230, 150 250 Z" 
+        fill="#2a7ae2" opacity="0.2"/>
+  
+  <!-- Labels des axes -->
+  <text class="text" x="460" y="245">x</text>
+  <text class="text" x="35" y="85">f(x)</text>
+  
+  <!-- Légende -->
+  <text class="text" x="60" y="60" font-size="10px">Loi Normale : μ = moyenne, σ = écart-type</text>
+  <text class="text" x="150" y="180" fill="#2a7ae2" font-weight="bold">68%</text>
+</svg>

@@ -107,6 +107,11 @@ Le cours s'articule autour de l'analyse des signaux et des systèmes.
 
 **Sinusoïde**: signal périodique de base, caractérisé par amplitude, fréquence et phase.
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/signal/signal-sinusoidal.svg" alt="Signal sinusoïdal" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Représentation d'un signal sinusoïdal - Signal périodique de base en traitement du signal</p>
+</div>
+
 **Signal carré**: alternance entre deux niveaux, riche en harmoniques impaires.
 
 **Opérations sur les signaux**:

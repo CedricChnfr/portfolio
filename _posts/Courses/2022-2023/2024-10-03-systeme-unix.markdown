@@ -100,6 +100,11 @@ Principes de conception:
 
 **Architecture système**:
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/unix/architecture-unix.svg" alt="Architecture Unix/Linux" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture en couches d'un système Unix/Linux</p>
+</div>
+
 | Composant | Fonction |
 |-----------|----------|
 | Noyau (kernel) | Gestion matérielle, processus, mémoire |
@@ -654,6 +659,11 @@ ln -s /chemin/cible lien            # Créer lien symbolique
 # Lien dur (même inode)
 ln fichier_original lien_dur        # Créer lien dur
 ```
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/unix/reseau-config1.png" alt="Configuration réseau Unix" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Exemple de configuration réseau sous Unix/Linux - TP pratique</p>
+</div>
 
 ---
 
