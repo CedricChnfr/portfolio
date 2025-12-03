@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Systèmes Numériques (SIN) - S1 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Systèmes Numériques (SIN) - S1" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Systèmes Numériques (SIN) - Semestre 1" />
+<meta property="og:description" content="Systèmes Numériques (SIN) - Semestre 1" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/systemes-numeriques-s1.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/systemes-numeriques-s1.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Systèmes Numériques (SIN) - S1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Systèmes Numériques (SIN) - Semestre 1","headline":"Systèmes Numériques (SIN) - S1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/systemes-numeriques-s1.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/systemes-numeriques-s1.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="systèmes-numériques-sin---semestre-1">Systèmes Numériques (SIN) - Semestre 1</h1>
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 id="contexte-de-la-formation">Contexte de la formation</h3>
+<p>Les systèmes numériques sont au cœur de tous les équipements électroniques modernes : ordinateurs, smartphones, systèmes embarqués, automatismes industriels. Ce module introduit les fondements de la logique digitale et de la conception de circuits numériques, compétences indispensables pour tout technicien ou ingénieur en GEII. La maîtrise du VHDL (langage de description matériel) permet de concevoir des systèmes numériques complexes sur FPGA.</p>
+
+<h3 id="positionnement-dans-le-cursus">Positionnement dans le cursus</h3>
+<ul>
+  <li><strong>Semestre</strong> : S1 (1ère année DUT GEII)</li>
+  <li><strong>Volume horaire</strong> : 65h (25h CM + 20h TD + 20h TP)</li>
+  <li><strong>Crédits ECTS</strong> : 6</li>
+  <li><strong>Prérequis</strong> : Connaissances de base en mathématiques (binaire, booléen)</li>
+  <li><strong>Continuité</strong> : Logique Séquentielle (S2), Architectures Numériques Avancées (S3-S4)</li>
+</ul>
+
+<h3 id="public-visé">Public visé</h3>
+<p>Étudiants de première année DUT GEII découvrant la conception de circuits numériques depuis les bases (portes logiques) jusqu’à la programmation FPGA en VHDL.</p>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="objectifs-pédagogiques">Objectifs pédagogiques</h3>
+
+<p><strong>Compétences en logique numérique :</strong></p>
+<ul>
+  <li>Maîtriser les systèmes de numération et les conversions</li>
+  <li>Comprendre et appliquer l’algèbre de Boole</li>
+  <li>Concevoir des circuits combinatoires et séquentiels</li>
+  <li>Simplifier des fonctions logiques</li>
+</ul>
+
+<p><strong>Compétences en VHDL et FPGA :</strong></p>
+<ul>
+  <li>Écrire du code VHDL pour décrire des circuits</li>
+  <li>Simuler et valider des designs numériques</li>
+  <li>Synthétiser et programmer des FPGA</li>
+  <li>Utiliser l’environnement Quartus Prime (Intel/Altera)</li>
+</ul>
+
+<p><strong>Compétences transversales :</strong></p>
+<ul>
+  <li>Analyser un problème et le traduire en circuit logique</li>
+  <li>Tester et déboguer des systèmes numériques</li>
+  <li>Documenter ses conceptions</li>
+</ul>
+
+<h3 id="programme-détaillé">Programme détaillé</h3>
+
+<h4 id="1-systèmes-de-numération-8h">1. Systèmes de numération (8h)</h4>
+
+<p><strong>Bases numériques :</strong></p>
+
+<p><strong>Binaire (base 2) :</strong></p>
+<ul>
+  <li>Chiffres : 0, 1</li>
+  <li>Exemple : 1011₂ = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 11₁₀</li>
+</ul>
+
+<p><strong>Octal (base 8) :</strong></p>
+<ul>
+  <li>Chiffres : 0-7</li>
+  <li>Utilisé historiquement, moins courant aujourd’hui</li>
+  <li>Conversion facile : 3 bits binaires = 1 chiffre octal</li>
+</ul>
+
+<p><strong>Hexadécimal (base 16) :</strong></p>
+<ul>
+  <li>Chiffres : 0-9, A-F (A=10, B=11, …, F=15)</li>
+  <li>Très utilisé en informatique (adresses mémoire, couleurs RGB)</li>
+  <li>Conversion : 4 bits binaires = 1 chiffre hexadécimal</li>
+  <li>Exemple : 0xA3 = 10100011₂ = 163₁₀</li>
+</ul>
+
+<p><strong>Conversions entre bases :</strong></p>
+
+<p><em>Décimal → Binaire (divisions successives) :</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>45₁₀ → Binaire ?
+45 / 2 = 22 reste 1  (bit de poids faible)
+22 / 2 = 11 reste 0
+11 / 2 = 5 reste 1
+5 / 2 = 2 reste 1
+2 / 2 = 1 reste 0
+1 / 2 = 0 reste 1  (bit de poids fort)
+Résultat : 101101₂
+</code></pre></div></div>
+
+<p><em>Binaire → Hexadécimal (groupes de 4 bits) :</em></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11010110₂ = 1101 0110 = D6₁₆
+</code></pre></div></div>
+
+<p><strong>Codes numériques :</strong></p>
+
+<p><strong>BCD (Binary Coded Decimal) :</strong></p>
+<ul>
+  <li>Chaque chiffre décimal codé sur 4 bits</li>
+  <li>Exemple : 95₁₀ = 1001 0101 (BCD) ≠ 1011111₂ (binaire pur)</li>
+  <li>Utilisé dans les afficheurs 7 segments</li>
+</ul>
+
+<p><strong>Code Gray :</strong></p>
+<ul>
+  <li>Un seul bit change entre deux valeurs consécutives</li>
+  <li>Réduit les erreurs lors de transitions</li>
+  <li>Utilisé dans les encodeurs rotatifs</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Décimal</th>
+      <th>Binaire</th>
+      <th>Gray</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>000</td>
+      <td>000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>001</td>
+      <td>001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>010</td>
+      <td>011</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>011</td>
+      <td>010</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>100</td>
+      <td>110</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Code ASCII :</strong></p>
+<ul>
+  <li>7 bits pour coder les caractères (lettres, chiffres, symboles)</li>
+  <li>Exemple : ‘A’ = 65₁₀ = 01000001₂</li>
+</ul>
+
+<p><strong>Arithmétique binaire :</strong></p>
+
+<p><strong>Addition binaire :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1011  (11)
++ 0110  (6)
+-------
+ 10001  (17)
+
+Règles : 0+0=0, 0+1=1, 1+1=10 (retenue)
+</code></pre></div></div>
+
+<p><strong>Soustraction binaire (complément à 2) :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A - B = A + (-B)
+-B = complément à 1 de B + 1
+
+Exemple : 7 - 3
+7 = 0111
+3 = 0011 → Complément à 1 : 1100 → +1 : 1101 (-3)
+0111 + 1101 = 10100 → on garde les 4 bits de poids faible : 0100 = 4 ✓
+</code></pre></div></div>
+
+<p><strong>Représentation des nombres signés :</strong></p>
+<ul>
+  <li><strong>Signe + valeur absolue</strong> : 1 bit de signe + valeur</li>
+  <li><strong>Complément à 1</strong> : inverser tous les bits</li>
+  <li><strong>Complément à 2</strong> (le plus utilisé) : complément à 1 + 1</li>
+</ul>
+
+<p>Sur n bits, plage : -2^(n-1) à 2^(n-1)-1
+Exemple sur 8 bits : -128 à +127</p>
+
+<h4 id="2-algèbre-de-boole-et-logique-combinatoire-15h">2. Algèbre de Boole et logique combinatoire (15h)</h4>
+
+<p><strong>Portes logiques fondamentales :</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Porte</th>
+      <th>Symbole</th>
+      <th>Équation</th>
+      <th>Table de vérité (A, B → S)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>NOT</strong> (inverseur)</td>
+      <td>¬A ou A’</td>
+      <td>S = NOT A</td>
+      <td>0→1, 1→0</td>
+    </tr>
+    <tr>
+      <td><strong>AND</strong> (ET)</td>
+      <td>A ∧ B</td>
+      <td>S = A AND B</td>
+      <td>00→0, 01→0, 10→0, 11→1</td>
+    </tr>
+    <tr>
+      <td><strong>OR</strong> (OU)</td>
+      <td>A ∨ B</td>
+      <td>S = A OR B</td>
+      <td>00→0, 01→1, 10→1, 11→1</td>
+    </tr>
+    <tr>
+      <td><strong>NAND</strong> (NON-ET)</td>
+      <td>A ↑ B</td>
+      <td>S = NOT (A AND B)</td>
+      <td>00→1, 01→1, 10→1, 11→0</td>
+    </tr>
+    <tr>
+      <td><strong>NOR</strong> (NON-OU)</td>
+      <td>A ↓ B</td>
+      <td>S = NOT (A OR B)</td>
+      <td>00→1, 01→0, 10→0, 11→0</td>
+    </tr>
+    <tr>
+      <td><strong>XOR</strong> (OU exclusif)</td>
+      <td>A ⊕ B</td>
+      <td>S = A XOR B</td>
+      <td>00→0, 01→1, 10→1, 11→0</td>
+    </tr>
+    <tr>
+      <td><strong>XNOR</strong></td>
+      <td>A ⊙ B</td>
+      <td>S = NOT (A XOR B)</td>
+      <td>00→1, 01→0, 10→0, 11→1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Propriétés de l’algèbre de Boole :</strong></p>
+
+<ul>
+  <li><strong>Commutativité</strong> : A AND B = B AND A</li>
+  <li><strong>Associativité</strong> : (A AND B) AND C = A AND (B AND C)</li>
+  <li><strong>Distributivité</strong> : A AND (B OR C) = (A AND B) OR (A AND C)</li>
+  <li><strong>Élément neutre</strong> : A AND 1 = A ; A OR 0 = A</li>
+  <li><strong>Élément absorbant</strong> : A AND 0 = 0 ; A OR 1 = 1</li>
+  <li><strong>Idempotence</strong> : A AND A = A ; A OR A = A</li>
+  <li><strong>Lois de Morgan</strong> :
+    <ul>
+      <li>NOT (A AND B) = (NOT A) OR (NOT B)</li>
+      <li>NOT (A OR B) = (NOT A) AND (NOT B)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Fonctions logiques et tables de vérité :</strong></p>
+
+<p>Exemple : Fonction S = (A AND B) OR (NOT C)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>NOT C</th>
+      <th>A AND B</th>
+      <th>S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Formes canoniques :</strong></p>
+
+<ul>
+  <li><strong>Somme de produits (SOP / minterms)</strong> : S = ABC’ + A’B’C + …</li>
+  <li><strong>Produit de sommes (POS / maxterms)</strong> : S = (A+B+C’)(A’+B’+C)…</li>
+</ul>
+
+<p><strong>Simplification par tableaux de Karnaugh :</strong></p>
+
+<p>Tableau de Karnaugh pour 3 variables (A, B, C) :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      C'  C
+   ┌────┬────┐
+AB' │ 0  │ 1  │
+   ├────┼────┤
+A'B'│ 2  │ 3  │
+   ├────┼────┤
+A'B │ 6  │ 7  │
+   ├────┼────┤
+AB  │ 4  │ 5  │
+   └────┴────┘
+</code></pre></div></div>
+
+<p><em>Méthode :</em></p>
+<ol>
+  <li>Remplir le tableau avec les valeurs de sortie</li>
+  <li>Regrouper les ‘1’ adjacents par puissances de 2 (1, 2, 4, 8…)</li>
+  <li>Extraire les termes simplifiés</li>
+</ol>
+
+<p><strong>Circuits combinatoires usuels :</strong></p>
+
+<p><strong>Demi-additionneur (Half Adder) :</strong></p>
+<ul>
+  <li>Entrées : A, B</li>
+  <li>Sorties : Somme = A XOR B ; Retenue = A AND B</li>
+</ul>
+
+<p><strong>Additionneur complet (Full Adder) :</strong></p>
+<ul>
+  <li>Entrées : A, B, Cin (retenue entrante)</li>
+  <li>Sorties : Somme = A ⊕ B ⊕ Cin ; Cout = (A AND B) OR (Cin AND (A ⊕ B))</li>
+</ul>
+
+<p><strong>Multiplexeur (MUX) :</strong></p>
+<ul>
+  <li>Sélectionne une entrée parmi plusieurs selon des signaux de sélection</li>
+  <li>MUX 4:1 → 4 entrées, 2 bits de sélection, 1 sortie</li>
+</ul>
+
+<p><strong>Démultiplexeur (DEMUX) :</strong></p>
+<ul>
+  <li>Inverse du MUX : 1 entrée vers n sorties</li>
+</ul>
+
+<p><strong>Décodeur :</strong></p>
+<ul>
+  <li>Convertit un code binaire en activation d’une sortie</li>
+  <li>Décodeur 3:8 → 3 entrées, 8 sorties (une seule active à la fois)</li>
+</ul>
+
+<p><strong>Encodeur :</strong></p>
+<ul>
+  <li>Inverse du décodeur : plusieurs entrées → code binaire</li>
+</ul>
+
+<p><strong>Comparateur :</strong></p>
+<ul>
+  <li>Compare deux nombres binaires</li>
+  <li>Sorties : A&gt;B, A=B, A&lt;B</li>
+</ul>
+
+<h4 id="3-logique-séquentielle-12h">3. Logique séquentielle (12h)</h4>
+
+<p><strong>Différence combinatoire/séquentiel :</strong></p>
+<ul>
+  <li><strong>Combinatoire</strong> : Sortie = f(Entrées actuelles)</li>
+  <li><strong>Séquentiel</strong> : Sortie = f(Entrées + État précédent)
+    <ul>
+      <li>Notion de mémoire</li>
+      <li>Dépend du temps (horloge)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Bascules (Flip-Flops) :</strong></p>
+
+<p><strong>Bascule RS (Reset-Set) :</strong></p>
+<ul>
+  <li>2 entrées : R (Reset), S (Set)</li>
+  <li>2 sorties : Q, Q’</li>
+  <li>États : Set (Q=1), Reset (Q=0), Mémoire, <strong>Interdit</strong> (R=S=1)</li>
+</ul>
+
+<p><strong>Bascule D (Data) :</strong></p>
+<ul>
+  <li>1 entrée : D</li>
+  <li>Sur front d’horloge : Q ← D</li>
+  <li>La plus utilisée (mémorisation simple)</li>
+</ul>
+
+<p><strong>Bascule JK :</strong></p>
+<ul>
+  <li>2 entrées : J, K</li>
+  <li>J=K=0 : Mémoire</li>
+  <li>J=1, K=0 : Set</li>
+  <li>J=0, K=1 : Reset</li>
+  <li>J=K=1 : Toggle (Q ← NOT Q)</li>
+</ul>
+
+<p><strong>Bascule T (Toggle) :</strong></p>
+<ul>
+  <li>1 entrée : T</li>
+  <li>Si T=1 : toggle à chaque front d’horloge</li>
+</ul>
+
+<p><strong>Registres :</strong></p>
+<ul>
+  <li><strong>Registre parallèle</strong> : n bascules D pour stocker n bits simultanément</li>
+  <li><strong>Registre à décalage</strong> : Les bits se décalent à chaque coup d’horloge
+    <ul>
+      <li>SISO (Serial In Serial Out)</li>
+      <li>SIPO (Serial In Parallel Out)</li>
+      <li>PISO (Parallel In Serial Out)</li>
+      <li>PIPO (Parallel In Parallel Out)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Compteurs :</strong></p>
+
+<p><strong>Compteur asynchrone :</strong></p>
+<ul>
+  <li>Les bascules ne partagent pas la même horloge</li>
+  <li>Temps de propagation cumulatif</li>
+  <li>Simple mais lent</li>
+</ul>
+
+<p><strong>Compteur synchrone :</strong></p>
+<ul>
+  <li>Toutes les bascules sur la même horloge</li>
+  <li>Plus rapide, préféré en pratique</li>
+  <li>Compteur binaire, BCD, modulo-N</li>
+</ul>
+
+<p><strong>Machines à états finis (FSM) :</strong></p>
+
+<p><strong>Types :</strong></p>
+<ul>
+  <li><strong>Moore</strong> : Sorties dépendent uniquement de l’état</li>
+  <li><strong>Mealy</strong> : Sorties dépendent de l’état ET des entrées</li>
+</ul>
+
+<p><strong>Diagramme d’états :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     ┌──────┐  E=1  ┌──────┐
+     │  S0  │──────→│  S1  │
+     └──────┘       └──────┘
+        ↑              │
+        └──────────────┘
+           E=0
+</code></pre></div></div>
+
+<p><strong>Étapes de conception :</strong></p>
+<ol>
+  <li>Diagramme d’états</li>
+  <li>Table de transition</li>
+  <li>Codage des états (binaire)</li>
+  <li>Équations des bascules et sorties</li>
+  <li>Implémentation (schéma ou VHDL)</li>
+</ol>
+
+<h4 id="4-introduction-au-vhdl-20h">4. Introduction au VHDL (20h)</h4>
+
+<p><strong>VHDL = VHSIC Hardware Description Language</strong></p>
+<ul>
+  <li>Langage de description matériel (pas de programmation séquentielle classique)</li>
+  <li>Décrit la structure et le comportement de circuits numériques</li>
+  <li>Synthétisable sur FPGA ou ASIC</li>
+</ul>
+
+<p><strong>Structure d’un code VHDL :</strong></p>
+
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Bibliothèques</span>
+<span class="k">library</span> <span class="n">IEEE</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">IEEE</span><span class="o">.</span><span class="n">STD_LOGIC_1164</span><span class="o">.</span><span class="k">ALL</span><span class="p">;</span>
+
+<span class="c1">-- Entité (interface externe)</span>
+<span class="k">entity</span> <span class="n">PorteAND</span> <span class="k">is</span>
+    <span class="k">Port</span> <span class="p">(</span>
+        <span class="n">A</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+        <span class="n">B</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+        <span class="n">S</span> <span class="p">:</span> <span class="k">out</span> <span class="kt">STD_LOGIC</span>
+    <span class="p">);</span>
+<span class="k">end</span> <span class="n">PorteAND</span><span class="p">;</span>
+
+<span class="c1">-- Architecture (comportement interne)</span>
+<span class="k">architecture</span> <span class="n">Behavioral</span> <span class="k">of</span> <span class="n">PorteAND</span> <span class="k">is</span>
+<span class="k">begin</span>
+    <span class="n">S</span> <span class="o">&lt;=</span> <span class="n">A</span> <span class="ow">AND</span> <span class="n">B</span><span class="p">;</span>
+<span class="k">end</span> <span class="n">Behavioral</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Types de données :</strong></p>
+<ul>
+  <li><strong>STD_LOGIC</strong> : ‘0’, ‘1’, ‘Z’ (haute impédance), ‘X’ (inconnu)</li>
+  <li><strong>STD_LOGIC_VECTOR</strong> : Bus de plusieurs bits
+    <ul>
+      <li>Exemple : <code class="language-plaintext highlighter-rouge">signal bus : STD_LOGIC_VECTOR(7 downto 0);</code></li>
+    </ul>
+  </li>
+  <li><strong>INTEGER</strong> : Nombres entiers</li>
+  <li><strong>BOOLEAN</strong> : TRUE, FALSE</li>
+</ul>
+
+<p><strong>Opérateurs :</strong></p>
+<ul>
+  <li>Logiques : AND, OR, NOT, NAND, NOR, XOR, XNOR</li>
+  <li>Arithmétiques : +, -, *, / (nécessite <code class="language-plaintext highlighter-rouge">use IEEE.NUMERIC_STD.ALL;</code>)</li>
+  <li>Comparaison : =, /=, &lt;, &gt;, &lt;=, &gt;=</li>
+  <li>Concaténation : &amp;</li>
+</ul>
+
+<p><strong>Affectations :</strong></p>
+<ul>
+  <li><strong>Signal</strong> : <code class="language-plaintext highlighter-rouge">&lt;=</code> (affectation concurrente, hors process)</li>
+  <li><strong>Variable</strong> : <code class="language-plaintext highlighter-rouge">:=</code> (affectation séquentielle, dans process)</li>
+</ul>
+
+<p><strong>Processus (PROCESS) :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">process</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">reset</span><span class="p">)</span>  <span class="c1">-- Liste de sensibilité</span>
+<span class="k">begin</span>
+    <span class="k">if</span> <span class="n">reset</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+        <span class="n">compteur</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">elsif</span> <span class="n">rising_edge</span><span class="p">(</span><span class="n">clk</span><span class="p">)</span> <span class="k">then</span>  <span class="c1">-- Front montant d'horloge</span>
+        <span class="n">compteur</span> <span class="o">&lt;=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+<span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Structures de contrôle :</strong></p>
+
+<p><strong>IF-THEN-ELSE :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">condition</span><span class="p">)</span> <span class="k">then</span>
+    <span class="c1">-- instructions</span>
+<span class="k">elsif</span> <span class="p">(</span><span class="n">autre_condition</span><span class="p">)</span> <span class="k">then</span>
+    <span class="c1">-- instructions</span>
+<span class="k">else</span>
+    <span class="c1">-- instructions</span>
+<span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>CASE :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">case</span> <span class="n">sel</span> <span class="k">is</span>
+    <span class="k">when</span> <span class="s1">"00"</span> <span class="o">=&gt;</span> <span class="n">sortie</span> <span class="o">&lt;=</span> <span class="n">entree0</span><span class="p">;</span>
+    <span class="k">when</span> <span class="s1">"01"</span> <span class="o">=&gt;</span> <span class="n">sortie</span> <span class="o">&lt;=</span> <span class="n">entree1</span><span class="p">;</span>
+    <span class="k">when</span> <span class="s1">"10"</span> <span class="o">=&gt;</span> <span class="n">sortie</span> <span class="o">&lt;=</span> <span class="n">entree2</span><span class="p">;</span>
+    <span class="k">when</span> <span class="k">others</span> <span class="o">=&gt;</span> <span class="n">sortie</span> <span class="o">&lt;=</span> <span class="n">entree3</span><span class="p">;</span>
+<span class="k">end</span> <span class="k">case</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>FOR LOOP :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span> <span class="k">to</span> <span class="mi">7</span> <span class="k">loop</span>
+    <span class="n">sortie</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">entree</span><span class="p">(</span><span class="mi">7</span><span class="o">-</span><span class="n">i</span><span class="p">);</span>  <span class="c1">-- Inversion de bus</span>
+<span class="k">end</span> <span class="k">loop</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Exemple complet : Compteur 8 bits</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">library</span> <span class="n">IEEE</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">IEEE</span><span class="o">.</span><span class="n">STD_LOGIC_1164</span><span class="o">.</span><span class="k">ALL</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">IEEE</span><span class="o">.</span><span class="n">NUMERIC_STD</span><span class="o">.</span><span class="k">ALL</span><span class="p">;</span>
+
+<span class="k">entity</span> <span class="n">Compteur8bits</span> <span class="k">is</span>
+    <span class="k">Port</span> <span class="p">(</span>
+        <span class="n">clk</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+        <span class="n">reset</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+        <span class="n">enable</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+        <span class="n">count</span> <span class="p">:</span> <span class="k">out</span> <span class="kt">STD_LOGIC_VECTOR</span><span class="p">(</span><span class="mi">7</span> <span class="k">downto</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">);</span>
+<span class="k">end</span> <span class="n">Compteur8bits</span><span class="p">;</span>
+
+<span class="k">architecture</span> <span class="n">Behavioral</span> <span class="k">of</span> <span class="n">Compteur8bits</span> <span class="k">is</span>
+    <span class="k">signal</span> <span class="n">compteur</span> <span class="p">:</span> <span class="kt">unsigned</span><span class="p">(</span><span class="mi">7</span> <span class="k">downto</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span><span class="o">=</span> <span class="p">(</span><span class="k">others</span> <span class="o">=&gt;</span> <span class="sc">'0'</span><span class="p">);</span>
+<span class="k">begin</span>
+    <span class="k">process</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">reset</span><span class="p">)</span>
+    <span class="k">begin</span>
+        <span class="k">if</span> <span class="n">reset</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+            <span class="n">compteur</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="k">others</span> <span class="o">=&gt;</span> <span class="sc">'0'</span><span class="p">);</span>
+        <span class="k">elsif</span> <span class="n">rising_edge</span><span class="p">(</span><span class="n">clk</span><span class="p">)</span> <span class="k">then</span>
+            <span class="k">if</span> <span class="n">enable</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+                <span class="n">compteur</span> <span class="o">&lt;=</span> <span class="n">compteur</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+        <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+    
+    <span class="n">count</span> <span class="o">&lt;=</span> <span class="kt">std_logic_vector</span><span class="p">(</span><span class="n">compteur</span><span class="p">);</span>
+<span class="k">end</span> <span class="n">Behavioral</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="travaux-pratiques">Travaux pratiques</h3>
+
+<h4 id="tp1--prise-en-main-de-quartus-prime">TP1 : Prise en main de Quartus Prime</h4>
+<ul>
+  <li>Installation et configuration</li>
+  <li>Création d’un projet</li>
+  <li>Saisie schématique (portes logiques)</li>
+  <li>Compilation et analyse</li>
+  <li>Assignement des pins (carte FPGA)</li>
+  <li>Programmation du FPGA</li>
+</ul>
+
+<h4 id="tp2--circuits-combinatoires">TP2 : Circuits combinatoires</h4>
+<ul>
+  <li>Décodeur BCD vers 7 segments</li>
+  <li>Multiplexeur 4:1</li>
+  <li>Additionneur 4 bits</li>
+  <li>Tests et validation</li>
+</ul>
+
+<h4 id="tp3--introduction-vhdl">TP3 : Introduction VHDL</h4>
+<ul>
+  <li>Portes logiques en VHDL</li>
+  <li>Multiplexeur en VHDL</li>
+  <li>Simulation avec ModelSim</li>
+  <li>Synthèse et programmation</li>
+</ul>
+
+<h4 id="tp4--logique-séquentielle">TP4 : Logique séquentielle</h4>
+<ul>
+  <li>Bascules D et JK</li>
+  <li>Registres à décalage</li>
+  <li>Compteurs (up, down, modulo)</li>
+  <li>Diviseur de fréquence</li>
+</ul>
+
+<h4 id="tp5--machine-à-états-finis">TP5 : Machine à états finis</h4>
+<ul>
+  <li>Conception d’une FSM (feu tricolore, distributeur, etc.)</li>
+  <li>Implémentation en VHDL</li>
+  <li>Tests sur FPGA</li>
+  <li>Validation fonctionnelle</li>
+</ul>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="outils-de-conception">Outils de conception</h3>
+
+<h4 id="intel-quartus-prime">Intel Quartus Prime</h4>
+
+<p><strong>Installation :</strong></p>
+<ul>
+  <li>Version Lite (gratuite) : Jusqu’à 32k éléments logiques</li>
+  <li>Compatible Windows/Linux</li>
+  <li>Téléchargement : ~5-6 GB</li>
+</ul>
+
+<p><strong>Workflow de conception :</strong></p>
+<ol>
+  <li><strong>Création projet</strong> : File → New Project Wizard</li>
+  <li><strong>Ajout fichiers</strong> : .vhd, .v, ou schéma</li>
+  <li><strong>Compilation</strong> : Processing → Start Compilation (Ctrl+L)</li>
+  <li><strong>Analyse</strong> : Compilation Report (ressources, timing, etc.)</li>
+  <li><strong>Assignement pins</strong> : Assignments → Pin Planner</li>
+  <li><strong>Programmation</strong> : Tools → Programmer</li>
+</ol>
+
+<p><strong>Analyses disponibles :</strong></p>
+<ul>
+  <li><strong>RTL Viewer</strong> : Visualisation schéma synthétisé</li>
+  <li><strong>Technology Map Viewer</strong> : Mapping sur éléments FPGA</li>
+  <li><strong>Timing Analyzer</strong> : Analyse des chemins critiques</li>
+  <li><strong>Resource Usage</strong> : LUTs, registres, mémoire utilisés</li>
+</ul>
+
+<h4 id="modelsim-simulation">ModelSim (Simulation)</h4>
+
+<p><strong>Fonctionnalités :</strong></p>
+<ul>
+  <li>Simulation comportementale (avant synthèse)</li>
+  <li>Simulation post-synthèse (avec délais réels)</li>
+  <li>Waveform viewer (chronogrammes)</li>
+  <li>Testbenches VHDL</li>
+</ul>
+
+<p><strong>Exemple de testbench :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">library</span> <span class="n">IEEE</span><span class="p">;</span>
+<span class="k">use</span> <span class="n">IEEE</span><span class="o">.</span><span class="n">STD_LOGIC_1164</span><span class="o">.</span><span class="k">ALL</span><span class="p">;</span>
+
+<span class="k">entity</span> <span class="n">Compteur_TB</span> <span class="k">is</span>
+<span class="k">end</span> <span class="n">Compteur_TB</span><span class="p">;</span>
+
+<span class="k">architecture</span> <span class="n">Behavioral</span> <span class="k">of</span> <span class="n">Compteur_TB</span> <span class="k">is</span>
+    <span class="k">component</span> <span class="n">Compteur8bits</span>
+        <span class="k">Port</span> <span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">reset</span><span class="p">,</span> <span class="n">enable</span> <span class="p">:</span> <span class="k">in</span> <span class="kt">STD_LOGIC</span><span class="p">;</span>
+              <span class="n">count</span> <span class="p">:</span> <span class="k">out</span> <span class="kt">STD_LOGIC_VECTOR</span><span class="p">(</span><span class="mi">7</span> <span class="k">downto</span> <span class="mi">0</span><span class="p">));</span>
+    <span class="k">end</span> <span class="k">component</span><span class="p">;</span>
+    
+    <span class="k">signal</span> <span class="n">clk_tb</span><span class="p">,</span> <span class="n">reset_tb</span><span class="p">,</span> <span class="n">enable_tb</span> <span class="p">:</span> <span class="kt">STD_LOGIC</span> <span class="p">:</span><span class="o">=</span> <span class="sc">'0'</span><span class="p">;</span>
+    <span class="k">signal</span> <span class="n">count_tb</span> <span class="p">:</span> <span class="kt">STD_LOGIC_VECTOR</span><span class="p">(</span><span class="mi">7</span> <span class="k">downto</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="k">constant</span> <span class="n">clk_period</span> <span class="p">:</span> <span class="kt">time</span> <span class="p">:</span><span class="o">=</span> <span class="mi">10</span> <span class="n">ns</span><span class="p">;</span>
+    
+<span class="k">begin</span>
+    <span class="n">UUT</span><span class="p">:</span> <span class="n">Compteur8bits</span> <span class="k">port</span> <span class="k">map</span><span class="p">(</span><span class="n">clk_tb</span><span class="p">,</span> <span class="n">reset_tb</span><span class="p">,</span> <span class="n">enable_tb</span><span class="p">,</span> <span class="n">count_tb</span><span class="p">);</span>
+    
+    <span class="c1">-- Génération horloge</span>
+    <span class="n">clk_process</span> <span class="p">:</span> <span class="k">process</span>
+    <span class="k">begin</span>
+        <span class="n">clk_tb</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+        <span class="k">wait</span> <span class="k">for</span> <span class="n">clk_period</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+        <span class="n">clk_tb</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span>
+        <span class="k">wait</span> <span class="k">for</span> <span class="n">clk_period</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+    
+    <span class="c1">-- Stimulus</span>
+    <span class="n">stim_proc</span><span class="p">:</span> <span class="k">process</span>
+    <span class="k">begin</span>
+        <span class="n">reset_tb</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span>
+        <span class="k">wait</span> <span class="k">for</span> <span class="mi">20</span> <span class="n">ns</span><span class="p">;</span>
+        <span class="n">reset_tb</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+        <span class="n">enable_tb</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span>
+        <span class="k">wait</span> <span class="k">for</span> <span class="mi">1000</span> <span class="n">ns</span><span class="p">;</span>
+        <span class="n">enable_tb</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+        <span class="k">wait</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+<span class="k">end</span> <span class="n">Behavioral</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="cartes-fpga-utilisées">Cartes FPGA utilisées</h3>
+
+<h4 id="alteraintel-cyclone-ivv">Altera/Intel Cyclone IV/V</h4>
+
+<p><strong>Caractéristiques :</strong></p>
+<ul>
+  <li>6K - 115K éléments logiques</li>
+  <li>Mémoire embarquée (M9K blocks)</li>
+  <li>PLL (Phase-Locked Loops) pour gestion horloges</li>
+  <li>DSP blocks (multiplieurs matériels)</li>
+  <li>GPIO configurable (LVTTL, LVCMOS, LVDS)</li>
+</ul>
+
+<p><strong>Cartes de développement :</strong></p>
+<ul>
+  <li><strong>DE0-Nano</strong> : Cyclone IV, compacte, ~80€</li>
+  <li><strong>DE1-SoC</strong> : Cyclone V + ARM Cortex-A9, ~200€</li>
+  <li><strong>DE2-115</strong> : Cyclone IV, nombreux périphériques, ~300€</li>
+</ul>
+
+<p><strong>Périphériques typiques :</strong></p>
+<ul>
+  <li>LEDs, boutons poussoirs, switches</li>
+  <li>Afficheurs 7 segments</li>
+  <li>VGA/HDMI</li>
+  <li>GPIO (connecteurs d’extension)</li>
+  <li>USB, Ethernet (selon modèle)</li>
+</ul>
+
+<h3 id="méthodologie-de-conception">Méthodologie de conception</h3>
+
+<h4 id="bonnes-pratiques-vhdl">Bonnes pratiques VHDL</h4>
+
+<p><strong>Nommage :</strong></p>
+<ul>
+  <li>Signaux/variables : lowercase_avec_underscores</li>
+  <li>Constantes : UPPERCASE</li>
+  <li>Entités/architectures : CamelCase</li>
+</ul>
+
+<p><strong>Commentaires :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- Commentaire ligne simple</span>
+
+<span class="c1">--======================</span>
+<span class="c1">-- Bloc de commentaire</span>
+<span class="c1">--======================</span>
+</code></pre></div></div>
+
+<p><strong>Conception synchrone :</strong>
+✅ Toujours utiliser une horloge unique si possible
+✅ Éviter les logiques asynchrones complexes
+✅ Réinitialiser les signaux (reset)</p>
+
+<p><strong>Testabilité :</strong></p>
+<ul>
+  <li>Créer des testbenches systématiquement</li>
+  <li>Tester les cas limites</li>
+  <li>Vérifier le timing (setup/hold)</li>
+</ul>
+
+<h4 id="débogage">Débogage</h4>
+
+<p><strong>Erreurs de compilation courantes :</strong>
+❌ <code class="language-plaintext highlighter-rouge">Signal not declared</code> → Oublié de déclarer le signal
+❌ <code class="language-plaintext highlighter-rouge">Multiple drivers</code> → Signal assigné à plusieurs endroits
+❌ <code class="language-plaintext highlighter-rouge">Type mismatch</code> → Conversion de type nécessaire (std_logic_vector ↔ unsigned)</p>
+
+<p><strong>Outils de débogage :</strong></p>
+<ul>
+  <li><strong>SignalTap II</strong> (Quartus) : Analyseur logique interne au FPGA</li>
+  <li><strong>Simulation</strong> : Toujours simuler avant de synthétiser</li>
+  <li><strong>LEDs de debug</strong> : Afficher des états internes</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="évaluation-des-compétences">Évaluation des compétences</h3>
+
+<h4 id="modalités-dévaluation">Modalités d’évaluation</h4>
+
+<p><strong>Contrôle continu (40%) :</strong></p>
+<ul>
+  <li>QCM théoriques (2×1h) : Algèbre de Boole, logique séquentielle - 20%</li>
+  <li>Tests pratiques Quartus (2×1h30) - 20%</li>
+</ul>
+
+<p><strong>Travaux pratiques (35%) :</strong></p>
+<ul>
+  <li>5 TP notés avec rapports</li>
+  <li>Évaluation : montage fonctionnel, code VHDL, tests, documentation</li>
+</ul>
+
+<p><strong>Projet (15%) :</strong></p>
+<ul>
+  <li>Mini-projet VHDL (machine à états + compteur + affichage)</li>
+  <li>Démo sur carte FPGA</li>
+  <li>Code source commenté</li>
+  <li>Rapport technique</li>
+</ul>
+
+<p><strong>Examen terminal (10%) :</strong></p>
+<ul>
+  <li>Épreuve théorique (1h30)</li>
+  <li>Tableaux de Karnaugh, chronogrammes, VHDL</li>
+</ul>
+
+<h4 id="grille-dévaluation-tp">Grille d’évaluation TP</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Critère</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Fonctionnalité</strong> : Circuit fonctionne sur FPGA</td>
+      <td>/6</td>
+    </tr>
+    <tr>
+      <td><strong>Code VHDL</strong> : Qualité, clarté, commentaires</td>
+      <td>/5</td>
+    </tr>
+    <tr>
+      <td><strong>Simulation</strong> : Testbench et chronogrammes</td>
+      <td>/4</td>
+    </tr>
+    <tr>
+      <td><strong>Tests</strong> : Validation complète</td>
+      <td>/3</td>
+    </tr>
+    <tr>
+      <td><strong>Rapport</strong> : Clarté, schémas, analyses</td>
+      <td>/2</td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td><strong>/20</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+
+<h4 id="savoirs-théoriques">Savoirs théoriques</h4>
+
+<p>✓ Maîtriser l’algèbre de Boole et les systèmes de numération
+✓ Comprendre la logique combinatoire et séquentielle
+✓ Connaître les circuits numériques fondamentaux
+✓ Comprendre les principes des FPGA</p>
+
+<h4 id="savoir-faire-techniques">Savoir-faire techniques</h4>
+
+<p>✓ Concevoir des circuits numériques (combinatoires et séquentiels)
+✓ Simplifier des fonctions logiques (Karnaugh)
+✓ Programmer en VHDL
+✓ Simuler et valider des designs numériques
+✓ Synthétiser et programmer des FPGA avec Quartus
+✓ Déboguer des circuits numériques</p>
+
+<h4 id="savoir-être">Savoir-être</h4>
+
+<p>✓ Rigueur dans la conception (chronogrammes, timing)
+✓ Méthodologie de test et validation
+✓ Documentation technique claire
+✓ Travail en équipe sur projets</p>
+
+<h3 id="progression-et-liens-avec-le-cursus">Progression et liens avec le cursus</h3>
+
+<h4 id="suite-du-parcours-systèmes-numériques">Suite du parcours Systèmes Numériques</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Semestre</th>
+      <th>Module</th>
+      <th>Contenu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>S1</strong></td>
+      <td>SIN 1</td>
+      <td>Logique combinatoire, séquentielle, VHDL de base</td>
+    </tr>
+    <tr>
+      <td><strong>S2</strong></td>
+      <td>Logique Séquentielle</td>
+      <td>FSM avancées, FIFO, mémoires, bus</td>
+    </tr>
+    <tr>
+      <td><strong>S3</strong></td>
+      <td>Architectures Numériques Avancées</td>
+      <td>Processeurs, pipelines, VHDL avancé</td>
+    </tr>
+    <tr>
+      <td><strong>S4</strong></td>
+      <td>Projet FPGA</td>
+      <td>Conception système complet (SoC)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="liens-avec-les-autres-matières">Liens avec les autres matières</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Matière</th>
+      <th>Utilisation des systèmes numériques</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Programmation</strong></td>
+      <td>Similarités algorithmes/FSM</td>
+    </tr>
+    <tr>
+      <td><strong>Informatique Embarquée</strong></td>
+      <td>Microcontrôleurs (logique interne)</td>
+    </tr>
+    <tr>
+      <td><strong>Électronique</strong></td>
+      <td>Interface analogique/numérique (ADC, DAC)</td>
+    </tr>
+    <tr>
+      <td><strong>Automatique</strong></td>
+      <td>Contrôleurs numériques, régulateurs discrets</td>
+    </tr>
+    <tr>
+      <td><strong>Télécommunications</strong></td>
+      <td>Modulation/démodulation numérique</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="indicateurs-de-réussite">Indicateurs de réussite</h3>
+
+<h4 id="statistiques">Statistiques</h4>
+
+<p><strong>Taux de réussite :</strong> 88%
+<strong>Moyenne générale :</strong> 12.8/20</p>
+
+<p><strong>Difficultés fréquentes :</strong>
+❌ Confusion entre logique combinatoire et séquentielle
+❌ Oubli de la liste de sensibilité dans les process
+❌ Conversions de types en VHDL
+❌ Timing (setup/hold violations)
+❌ Simplification par Karnaugh (regroupements)</p>
+
+<p><strong>Clés de réussite :</strong>
+✅ Dessiner les chronogrammes avant de coder
+✅ Toujours simuler avant de synthétiser
+✅ Commencer simple, complexifier progressivement
+✅ Utiliser les exemples de code fournis
+✅ Tester sur carte FPGA régulièrement</p>
+
+<h3 id="débouchés-et-applications">Débouchés et applications</h3>
+
+<h4 id="applications-professionnelles">Applications professionnelles</h4>
+
+<p><strong>Métiers utilisant les FPGA/VHDL :</strong></p>
+<ul>
+  <li>Ingénieur FPGA (aéronautique, spatial, défense)</li>
+  <li>Concepteur de circuits ASIC</li>
+  <li>Ingénieur en traitement du signal numérique</li>
+  <li>Développeur systèmes embarqués critiques</li>
+  <li>Architecte matériel (hardware architect)</li>
+</ul>
+
+<p><strong>Industries :</strong></p>
+<ul>
+  <li><strong>Aéronautique/Spatial</strong> : Systèmes critiques, résistance radiations</li>
+  <li><strong>Télécommunications</strong> : Modems, routeurs, 5G</li>
+  <li><strong>Automobile</strong> : ADAS, contrôle moteur</li>
+  <li><strong>Médical</strong> : Imagerie (échographie, IRM), appareils de diagnostic</li>
+  <li><strong>Finance</strong> : Trading haute fréquence (FPGA pour latence ultra-faible)</li>
+  <li><strong>IA</strong> : Accélérateurs matériels (inférence neuronale)</li>
+</ul>
+
+<hr />
+
+<h2 id="-ressources-complémentaires">📚 Ressources complémentaires</h2>
+
+<h3 id="ouvrages-de-référence">Ouvrages de référence</h3>
+
+<p><strong>Logique numérique :</strong></p>
+<ol>
+  <li><em>Systèmes logiques - Tome 1 et 2</em> - A. Vachoux (PPUR) - Référence francophone</li>
+  <li><em>Digital Design</em> - M. Morris Mano (Pearson) - Classique mondial</li>
+  <li><em>Circuits numériques et synthèse logique</em> - Jacques Weber (Eyrolles)</li>
+</ol>
+
+<p><strong>VHDL :</strong></p>
+<ul>
+  <li><em>VHDL - Du langage à la modélisation</em> - Jacques Weber (Dunod)</li>
+  <li><em>Free Range VHDL</em> - Bryan Mealy (gratuit en ligne)</li>
+  <li><em>VHDL for Engineers</em> - Kenneth L. Short (Pearson)</li>
+</ul>
+
+<h3 id="sites-web-et-tutoriels">Sites web et tutoriels</h3>
+
+<p><strong>Cours en ligne :</strong></p>
+<ul>
+  <li><strong>VHDL Whiz</strong> (vhdlwhiz.com) - Tutoriels vidéo gratuits</li>
+  <li><strong>Nandland</strong> (nandland.com) - Projets FPGA pour débutants</li>
+  <li><strong>FPGA4Fun</strong> (fpga4fun.com) - Nombreux exemples VHDL</li>
+</ul>
+
+<p><strong>Forums et communautés :</strong></p>
+<ul>
+  <li><strong>Reddit</strong> : r/FPGA</li>
+  <li><strong>EDAboard</strong> : Forum spécialisé FPGA/VHDL</li>
+  <li><strong>Stack Overflow</strong> : Tag [vhdl]</li>
+</ul>
+
+<p><strong>Simulateurs en ligne :</strong></p>
+<ul>
+  <li><strong>CircuitVerse</strong> (circuitverse.org) - Logique digitale interactive</li>
+  <li><strong>EDA Playground</strong> (edaplayground.com) - Simulation VHDL en ligne</li>
+</ul>
+
+<h3 id="logiciels-libres-alternatifs">Logiciels libres alternatifs</h3>
+
+<p><strong>GHDL</strong> : Simulateur VHDL open source
+<strong>GTKWave</strong> : Visualisateur de formes d’ondes
+<strong>Icarus Verilog</strong> : Si vous voulez apprendre Verilog aussi</p>
+
+<hr />
+
+<h2 id="-conseils-méthodologiques">🎯 Conseils méthodologiques</h2>
+
+<h3 id="pour-réussir-en-systèmes-numériques">Pour réussir en systèmes numériques</h3>
+
+<p><strong>Pendant les cours/TD :</strong></p>
+<ul>
+  <li>Dessiner les circuits au fur et à mesure</li>
+  <li>Refaire les simplifications de Karnaugh chez soi</li>
+  <li>Comprendre les chronogrammes (temps = horizontal)</li>
+</ul>
+
+<p><strong>En TP :</strong></p>
+<ul>
+  <li>Lire le sujet entièrement avant de commencer</li>
+  <li>Concevoir sur papier avant de coder</li>
+  <li>Simuler systématiquement avant de programmer le FPGA</li>
+  <li>Sauvegarder fréquemment son projet</li>
+  <li>Tester progressivement (fonction par fonction)</li>
+</ul>
+
+<p><strong>Travail personnel (2-3h/semaine) :</strong></p>
+<ul>
+  <li>Refaire les exercices de simplification</li>
+  <li>Créer ses propres petits circuits en VHDL</li>
+  <li>Regarder des tutoriels vidéo (Nandland, VHDL Whiz)</li>
+  <li>Pratiquer les conversions de bases</li>
+</ul>
+
+<h3 id="erreurs-à-éviter">Erreurs à éviter</h3>
+
+<p>❌ Oublier <code class="language-plaintext highlighter-rouge">rising_edge(clk)</code> dans les process synchrones
+❌ Mélanger affectations <code class="language-plaintext highlighter-rouge">&lt;=</code> et <code class="language-plaintext highlighter-rouge">:=</code>
+❌ Négliger les types (STD_LOGIC vs INTEGER vs UNSIGNED)
+❌ Créer des boucles combinatoires (A dépend de A)
+❌ Ne pas tester les cas limites (reset, overflow, etc.)</p>
+
+<p>✅ Toujours déclarer un signal de reset
+✅ Utiliser des noms de signaux explicites
+✅ Commenter son code VHDL
+✅ Vérifier le Resource Usage après compilation
+✅ Documenter ses montages avec schémas</p>
+
+<hr />
+
+<p><strong>Bon courage dans la découverte passionnante des systèmes numériques ! ⚡🔢</strong></p>
+
+<blockquote>
+  <p>“In theory, theory and practice are the same. In practice, they are not.” - Yogi Berra</p>
+</blockquote>
+
+<p>En systèmes numériques, la simulation et les tests sur matériel réel sont essentiels. N’hésitez pas à expérimenter sur les cartes FPGA !</p>
+
+<ul>
+  <li><strong>Programmation</strong> : Structures de contrôle et algorithmique</li>
+  <li><strong>ER (Électronique et Réalisation)</strong> : Interface analogique/numérique</li>
+  <li><strong>Mathématiques</strong> : Algèbre de Boole</li>
+</ul>
+
+<h2 id="-ressources-complémentaires-1">📖 Ressources complémentaires</h2>
+
+<ul>
+  <li>Documentation Intel Quartus</li>
+  <li>Tutoriels VHDL</li>
+  <li>Datasheets des composants FPGA</li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

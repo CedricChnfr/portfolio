@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Électronique Numérique et Conception (ENC) - S3 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Électronique Numérique et Conception (ENC) - S3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Électronique Numérique et Conception (ENC) - Semestre 3" />
+<meta property="og:description" content="Électronique Numérique et Conception (ENC) - Semestre 3" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/electronique-numerique-conception-s3.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/electronique-numerique-conception-s3.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Électronique Numérique et Conception (ENC) - S3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Électronique Numérique et Conception (ENC) - Semestre 3","headline":"Électronique Numérique et Conception (ENC) - S3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/electronique-numerique-conception-s3.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/electronique-numerique-conception-s3.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="électronique-numérique-et-conception-enc---semestre-3">Électronique Numérique et Conception (ENC) - Semestre 3</h1>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 id="contexte-et-objectifs">Contexte et objectifs</h3>
+
+<p>L’ENC (Électronique Numérique et Conception) au S3 ENOC approfondit la conception de systèmes numériques programmables (FPGA/CPLD) en VHDL. Deux projets majeurs : développement de bibliothèque de composants IP et conception complète d’une platine électronique intégrant un FPGA.</p>
+
+<p><strong>Objectifs :</strong></p>
+<ul>
+  <li>Programmation VHDL avancée (FSM, pipeline, mémoires)</li>
+  <li>Synthèse et implémentation sur FPGA (Quartus, Vivado)</li>
+  <li>Conception de platines numériques professionnelles</li>
+  <li>Validation par simulation (ModelSim) et tests matériels</li>
+</ul>
+
+<h3 id="prérequis">Prérequis</h3>
+<ul>
+  <li>VHDL de base (S1 SIN)</li>
+  <li>Logique séquentielle</li>
+  <li>Conception PCB</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="module-1--vhdl-avancé">Module 1 : VHDL avancé</h3>
+
+<p><strong>Structures algorithmiques :</strong></p>
+<ul>
+  <li>Processus synchrones (rising_edge)</li>
+  <li>FSM : Moore (sorties = f(état)), Mealy (sorties = f(état, entrées))</li>
+  <li>Boucles FOR/WHILE</li>
+  <li>Architectures structurelles (component instantiation)</li>
+</ul>
+
+<p><strong>Blocs réutilisables :</strong></p>
+<ul>
+  <li>Compteurs (up/down, modulo N, avec load/enable)</li>
+  <li>Registres à décalage (SIPO, PISO, barrel shifter)</li>
+  <li>Diviseurs de fréquence</li>
+  <li>PWM à résolution variable</li>
+  <li>FIFO, RAM/ROM</li>
+</ul>
+
+<p><strong>Interfaces de communication :</strong></p>
+<ul>
+  <li>UART (Tx/Rx, baud rate configurable)</li>
+  <li>SPI (master/slave, modes 0-3)</li>
+  <li>I2C (master, arbitrage)</li>
+  <li>VGA (timing 640×480, palette couleurs)</li>
+</ul>
+
+<h3 id="module-2--fpgacpld">Module 2 : FPGA/CPLD</h3>
+
+<p><strong>Architecture FPGA (ex: Cyclone IV, Spartan-6) :</strong></p>
+<ul>
+  <li>Logic Elements (LUT + FF)</li>
+  <li>Block RAM, DSP blocks</li>
+  <li>PLL (génération horloges)</li>
+  <li>I/O programmables (standards : LVTTL, LVCMOS, LVDS)</li>
+</ul>
+
+<p><strong>CPLD vs FPGA :</strong></p>
+<ul>
+  <li>CPLD : non-volatile, démarrage rapide, capacité limitée</li>
+  <li>FPGA : volatile (Flash SPI config), haute densité, flexible</li>
+</ul>
+
+<p><strong>Outils de conception :</strong></p>
+<ul>
+  <li>Quartus Prime (Intel/Altera)</li>
+  <li>Vivado (Xilinx)</li>
+  <li>Synthèse → Placement &amp; Routage → Bitstream</li>
+  <li>Contraintes timing (SDC) et pin assignment</li>
+</ul>
+
+<h3 id="module-3--simulation-et-validation">Module 3 : Simulation et validation</h3>
+
+<p><strong>Testbench VHDL :</strong></p>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">entity</span> <span class="n">tb_uart</span> <span class="k">is</span> <span class="k">end</span><span class="p">;</span>
+<span class="k">architecture</span> <span class="n">behavior</span> <span class="k">of</span> <span class="n">tb_uart</span> <span class="k">is</span>
+  <span class="k">signal</span> <span class="n">clk</span><span class="p">,</span> <span class="n">rst</span><span class="p">,</span> <span class="n">tx_start</span> <span class="p">:</span> <span class="kt">std_logic</span><span class="p">;</span>
+  <span class="k">signal</span> <span class="n">tx_data</span> <span class="p">:</span> <span class="kt">std_logic_vector</span><span class="p">(</span><span class="mi">7</span> <span class="k">downto</span> <span class="mi">0</span><span class="p">);</span>
+<span class="k">begin</span>
+  <span class="n">uut</span><span class="p">:</span> <span class="k">entity</span> <span class="n">work</span><span class="o">.</span><span class="n">uart_tx</span> <span class="k">port</span> <span class="k">map</span><span class="p">(</span><span class="o">...</span><span class="p">);</span>
+  
+  <span class="n">clk_process</span><span class="p">:</span> <span class="k">process</span>
+  <span class="k">begin</span>
+    <span class="n">clk</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span> <span class="k">wait</span> <span class="k">for</span> <span class="mi">10</span> <span class="n">ns</span><span class="p">;</span>
+    <span class="n">clk</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span> <span class="k">wait</span> <span class="k">for</span> <span class="mi">10</span> <span class="n">ns</span><span class="p">;</span>
+  <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+  
+  <span class="n">stimulus</span><span class="p">:</span> <span class="k">process</span>
+  <span class="k">begin</span>
+    <span class="n">rst</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span> <span class="k">wait</span> <span class="k">for</span> <span class="mi">100</span> <span class="n">ns</span><span class="p">;</span>
+    <span class="n">rst</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+    <span class="n">tx_data</span> <span class="o">&lt;=</span> <span class="s1">X"A5"</span><span class="p">;</span>
+    <span class="n">tx_start</span> <span class="o">&lt;=</span> <span class="sc">'1'</span><span class="p">;</span> <span class="k">wait</span> <span class="k">for</span> <span class="mi">20</span> <span class="n">ns</span><span class="p">;</span>
+    <span class="n">tx_start</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+    <span class="k">wait</span><span class="p">;</span>
+  <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+<span class="k">end</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Simulation :</strong></p>
+<ul>
+  <li>ModelSim : waveform, assertions</li>
+  <li>Simulation fonctionnelle (pré-synthèse)</li>
+  <li>Simulation temporelle (post-routage, délais réels)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="projet-composants-vhdl">Projet Composants VHDL</h3>
+
+<p><strong>Bibliothèque IP à développer :</strong></p>
+<ol>
+  <li>UART configurable (baud rate générique)</li>
+  <li>SPI master/slave</li>
+  <li>I2C master</li>
+  <li>Contrôleur VGA (synchronisation H/V, pixel pipeline)</li>
+  <li>Contrôleur LCD HD44780</li>
+  <li>Interface PS/2 clavier</li>
+</ol>
+
+<p><strong>Livrables :</strong></p>
+<ul>
+  <li>Code VHDL commenté</li>
+  <li>Testbench complet</li>
+  <li>Rapport simulation (chronogrammes)</li>
+  <li>Documentation d’utilisation</li>
+</ul>
+
+<h3 id="projet-platine-fpga">Projet Platine FPGA</h3>
+
+<p><strong>Architecture système :</strong></p>
+<ul>
+  <li>FPGA Cyclone IV EP4CE15 ou Spartan-6 LX9</li>
+  <li>Configuration : Flash SPI + JTAG</li>
+  <li>Alimentation : 3.3V I/O, 1.2V core (régulateurs LDO)</li>
+  <li>Périphériques : LEDs, switches, UART-USB (FT232), extension GPIO</li>
+</ul>
+
+<p><strong>Schéma électrique (KiCad/Altium) :</strong></p>
+<ul>
+  <li>FPGA + découplage intensif (100nF proches + 10µF)</li>
+  <li>Oscillateur 50 MHz (GCLK)</li>
+  <li>Configuration : EPCS4 (Flash SPI 4 Mbit)</li>
+  <li>Connecteur JTAG 10 pins</li>
+  <li>USB-UART (FT232RL ou CH340)</li>
+  <li>Connecteurs extension (compatible Arduino/Pmod)</li>
+</ul>
+
+<p><strong>PCB 4 couches :</strong></p>
+<ul>
+  <li>L1 : Signaux Top</li>
+  <li>L2 : GND plane</li>
+  <li>L3 : 3.3V / 1.2V power planes</li>
+  <li>L4 : Signaux Bottom</li>
+  <li>Via stitching GND (espacement &lt;λ/10 à fmax)</li>
+  <li>Routage différentiel si LVDS</li>
+</ul>
+
+<p><strong>Programmation et test :</strong></p>
+<ul>
+  <li>Chargement bitstream JTAG</li>
+  <li>Configuration Flash (boot automatique)</li>
+  <li>Tests unitaires (LEDs, UART loopback)</li>
+  <li>Application finale (ex: oscilloscope logique USB)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="évaluation">Évaluation</h3>
+<ul>
+  <li>Projet composants VHDL (35%) : code, simulations, documentation</li>
+  <li>Projet platine FPGA (40%) : schéma, PCB, programmation, démo</li>
+  <li>Contrôles (15%)</li>
+  <li>Rapport technique (10%)</li>
+</ul>
+
+<h3 id="compétences-développées">Compétences développées</h3>
+<ul>
+  <li>VHDL avancé et réutilisable</li>
+  <li>Synthèse FPGA (timing, ressources)</li>
+  <li>Conception platines numériques professionnelles</li>
+  <li>Validation simulation + matérielle</li>
+  <li>Gestion projets électroniques complexes</li>
+</ul>
+
+<h3 id="débouchés">Débouchés</h3>
+<ul>
+  <li>Ingénieur FPGA (traitement signal, vision, crypto)</li>
+  <li>Concepteur systèmes embarqués numériques</li>
+  <li>Architecte hardware (ASIC, prototypage FPGA)</li>
+</ul>
+
+<h2 id="-contenu-du-cours">📚 Contenu du cours</h2>
+
+<h3 id="vhdl-avancé">VHDL avancé</h3>
+
+<h4 id="structures-de-base">Structures de base</h4>
+<ul>
+  <li>Entity et Architecture</li>
+  <li>Signaux, variables, constantes</li>
+  <li>Types de données (std_logic, integer, etc.)</li>
+  <li>Opérateurs logiques et arithmétiques</li>
+  <li>Assignations concurrentes et séquentielles</li>
+</ul>
+
+<h4 id="structures-algorithmiques">Structures algorithmiques</h4>
+<p><strong>Processus (process) :</strong></p>
+<ul>
+  <li>Sensibility list</li>
+  <li>Exécution séquentielle</li>
+  <li>Variables locales</li>
+  <li>Wait statements</li>
+</ul>
+
+<p><strong>Conditions :</strong></p>
+<ul>
+  <li>IF-THEN-ELSE</li>
+  <li>CASE-WHEN</li>
+  <li>WITH-SELECT-WHEN</li>
+</ul>
+
+<p><strong>Boucles :</strong></p>
+<ul>
+  <li>FOR loops</li>
+  <li>WHILE loops</li>
+  <li>LOOP-EXIT</li>
+</ul>
+
+<h4 id="conception-structurelle">Conception structurelle</h4>
+<ul>
+  <li>Component declaration</li>
+  <li>Component instantiation</li>
+  <li>Port mapping</li>
+  <li>Generic parameters</li>
+  <li>Configuration</li>
+</ul>
+
+<h4 id="machines-à-états-fsm">Machines à états (FSM)</h4>
+<p><strong>Moore :</strong></p>
+<ul>
+  <li>Sorties dépendent de l’état</li>
+  <li>2 ou 3 processus</li>
+  <li>Stabilité</li>
+</ul>
+
+<p><strong>Mealy :</strong></p>
+<ul>
+  <li>Sorties dépendent état + entrées</li>
+  <li>Plus réactif</li>
+  <li>Peut être instable</li>
+</ul>
+
+<p><strong>Encodage :</strong></p>
+<ul>
+  <li>Binary</li>
+  <li>One-hot</li>
+  <li>Gray code</li>
+</ul>
+
+<h3 id="architectures-numériques">Architectures numériques</h3>
+
+<h4 id="blocs-de-base">Blocs de base</h4>
+
+<p><strong>Compteurs :</strong></p>
+<ul>
+  <li>Binaires, décimaux</li>
+  <li>Up, down, up/down</li>
+  <li>Modulo N</li>
+  <li>Avec enable, load, clear</li>
+</ul>
+
+<p><strong>Registres :</strong></p>
+<ul>
+  <li>Registres simples</li>
+  <li>Registres à décalage (shift)</li>
+  <li>PISO, SIPO, PIPO</li>
+  <li>Barrel shifter</li>
+</ul>
+
+<p><strong>Diviseurs de fréquence :</strong></p>
+<ul>
+  <li>Division entière</li>
+  <li>Division fractionnaire</li>
+  <li>Génération d’horloges</li>
+</ul>
+
+<p><strong>Générateurs PWM :</strong></p>
+<ul>
+  <li>Résolution variable</li>
+  <li>Fréquence ajustable</li>
+  <li>Rapport cyclique contrôlable</li>
+</ul>
+
+<h4 id="blocs-arithmétiques">Blocs arithmétiques</h4>
+
+<p><strong>Additionneurs :</strong></p>
+<ul>
+  <li>Half-adder, full-adder</li>
+  <li>Ripple-carry</li>
+  <li>Carry look-ahead</li>
+  <li>Signé/non signé</li>
+</ul>
+
+<p><strong>Multiplieurs :</strong></p>
+<ul>
+  <li>Shift-and-add</li>
+  <li>Booth algorithm</li>
+  <li>Pipeline</li>
+  <li>DSP blocks</li>
+</ul>
+
+<p><strong>ALU (Arithmetic Logic Unit) :</strong></p>
+<ul>
+  <li>Opérations arithmétiques</li>
+  <li>Opérations logiques</li>
+  <li>Shifter</li>
+  <li>Flags (Z, N, C, V)</li>
+</ul>
+
+<h4 id="mémoires">Mémoires</h4>
+
+<p><strong>RAM :</strong></p>
+<ul>
+  <li>Single-port, dual-port</li>
+  <li>Block RAM (BRAM)</li>
+  <li>Distributed RAM</li>
+  <li>FIFO</li>
+</ul>
+
+<p><strong>ROM :</strong></p>
+<ul>
+  <li>Initialization</li>
+  <li>Look-up tables (LUT)</li>
+  <li>Constantes</li>
+</ul>
+
+<h3 id="fpga-et-cpld">FPGA et CPLD</h3>
+
+<h4 id="architecture-fpga">Architecture FPGA</h4>
+<ul>
+  <li>Logic Elements (LE) / Slices</li>
+  <li>Look-Up Tables (LUT)</li>
+  <li>Flip-flops</li>
+  <li>Block RAM</li>
+  <li>DSP blocks</li>
+  <li>I/O blocks</li>
+  <li>Clock management (PLL, DLL)</li>
+</ul>
+
+<h4 id="familles-de-fpga">Familles de FPGA</h4>
+<p><strong>Xilinx :</strong></p>
+<ul>
+  <li>Spartan (low-cost)</li>
+  <li>Artix, Kintex, Virtex</li>
+  <li>Zynq (ARM + FPGA)</li>
+</ul>
+
+<p><strong>Intel/Altera :</strong></p>
+<ul>
+  <li>Cyclone (entry-level)</li>
+  <li>MAX 10 (CPLD-like)</li>
+  <li>Arria, Stratix</li>
+</ul>
+
+<h4 id="cpld-vs-fpga">CPLD vs FPGA</h4>
+<p><strong>CPLD :</strong></p>
+<ul>
+  <li>Non-volatile</li>
+  <li>Démarrage rapide</li>
+  <li>Architecture simple</li>
+  <li>Capacité limitée</li>
+</ul>
+
+<p><strong>FPGA :</strong></p>
+<ul>
+  <li>Volatile (configuration externe)</li>
+  <li>Haute capacité</li>
+  <li>Flexible</li>
+  <li>DSP et mémoire intégrés</li>
+</ul>
+
+<h3 id="outils-de-conception">Outils de conception</h3>
+
+<h4 id="synthèse">Synthèse</h4>
+<ul>
+  <li>Analyse syntaxique</li>
+  <li>Optimisation</li>
+  <li>Technology mapping</li>
+  <li>Génération netlist</li>
+</ul>
+
+<h4 id="implémentation">Implémentation</h4>
+<ul>
+  <li>Placement (Placer)</li>
+  <li>Routage (Router)</li>
+  <li>Contraintes de timing</li>
+  <li>Utilisation des ressources</li>
+</ul>
+
+<h4 id="simulation">Simulation</h4>
+<p><strong>Fonctionnelle :</strong></p>
+<ul>
+  <li>Comportement logique</li>
+  <li>Pas de timing</li>
+  <li>Rapide</li>
+</ul>
+
+<p><strong>Temporelle (post-route) :</strong></p>
+<ul>
+  <li>Délais réels</li>
+  <li>Setup/hold times</li>
+  <li>Critical path</li>
+  <li>Précis</li>
+</ul>
+
+<h4 id="contraintes">Contraintes</h4>
+
+<p><strong>Timing :</strong></p>
+<ul>
+  <li>Fréquences d’horloge</li>
+  <li>Contraintes I/O</li>
+  <li>Chemins critiques</li>
+  <li>False paths</li>
+</ul>
+
+<p><strong>Placement :</strong></p>
+<ul>
+  <li>LOC (location constraints)</li>
+  <li>Groupes de signaux</li>
+  <li>Floorplanning</li>
+</ul>
+
+<p><strong>I/O :</strong></p>
+<ul>
+  <li>Standards (LVTTL, LVCMOS, LVDS)</li>
+  <li>Drive strength</li>
+  <li>Slew rate</li>
+  <li>Pull-up/down</li>
+</ul>
+
+<h2 id="️-projets-pratiques">🛠️ Projets pratiques</h2>
+
+<h3 id="projet-composants-vhdl-1">Projet Composants VHDL</h3>
+
+<h4 id="objectif">Objectif</h4>
+<p>Développement de bibliothèque de composants réutilisables</p>
+
+<p><strong>Composants à réaliser :</strong></p>
+<ul>
+  <li>UART (transmission série)</li>
+  <li>SPI master/slave</li>
+  <li>I2C master</li>
+  <li>Contrôleur VGA</li>
+  <li>Contrôleur LCD</li>
+  <li>Interface PS/2 (clavier)</li>
+</ul>
+
+<p><strong>Livrables :</strong></p>
+<ul>
+  <li>Code VHDL commenté</li>
+  <li>Testbench</li>
+  <li>Rapport de simulation</li>
+  <li>Documentation technique</li>
+</ul>
+
+<h3 id="projet-platine-avec-fpga">Projet Platine avec FPGA</h3>
+
+<h4 id="description">Description</h4>
+<p>Conception complète d’une carte avec FPGA/CPLD</p>
+
+<p><strong>Spécifications typiques :</strong></p>
+<ul>
+  <li>FPGA/CPLD (Cyclone, Spartan)</li>
+  <li>Configuration (JTAG, Active Serial)</li>
+  <li>Alimentation (3.3V, 1.2V core)</li>
+  <li>I/O (LEDs, boutons, switches)</li>
+  <li>Interfaces (UART, USB-UART)</li>
+  <li>Extension (connecteurs)</li>
+</ul>
+
+<p><strong>Étapes :</strong></p>
+<ol>
+  <li>Choix du composant</li>
+  <li>Schématique complet</li>
+  <li>PCB multicouche (4 ou 6)</li>
+  <li>Fabrication</li>
+  <li>Assemblage et test</li>
+  <li>Programmation et validation</li>
+</ol>
+
+<h4 id="considérations-techniques">Considérations techniques</h4>
+
+<p><strong>Alimentation :</strong></p>
+<ul>
+  <li>Séquencement (VCCINT avant VCCIO)</li>
+  <li>Découplage intensif</li>
+  <li>Filtrage</li>
+  <li>Supervision (Power-On Reset)</li>
+</ul>
+
+<p><strong>Configuration :</strong></p>
+<ul>
+  <li>JTAG obligatoire</li>
+  <li>Flash SPI (configuration boot)</li>
+  <li>Mémoire suffisante</li>
+  <li>Schéma de configuration</li>
+</ul>
+
+<p><strong>Signaux d’horloge :</strong></p>
+<ul>
+  <li>Oscillateur adapté</li>
+  <li>Entrée GCLK</li>
+  <li>Qualité du signal</li>
+  <li>Distribution</li>
+</ul>
+
+<p><strong>I/O :</strong></p>
+<ul>
+  <li>Protection ESD</li>
+  <li>Résistances séries</li>
+  <li>Impédance contrôlée si nécessaire</li>
+  <li>Banques d’I/O (voltage)</li>
+</ul>
+
+<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
+
+<h3 id="environnements-de-développement">Environnements de développement</h3>
+<ul>
+  <li><strong>Quartus Prime</strong> : Intel/Altera FPGA</li>
+  <li><strong>Vivado</strong> : Xilinx FPGA</li>
+  <li><strong>ISE</strong> : Xilinx (legacy)</li>
+  <li><strong>Libero SoC</strong> : Microsemi/Microchip</li>
+</ul>
+
+<h3 id="simulation-1">Simulation</h3>
+<ul>
+  <li><strong>ModelSim</strong> : Standard industrie</li>
+  <li><strong>GHDL</strong> : Open source</li>
+  <li><strong>Vivado Simulator</strong> : Intégré Xilinx</li>
+  <li><strong>Questa</strong> : Mentor Graphics</li>
+</ul>
+
+<h3 id="conception-pcb">Conception PCB</h3>
+<ul>
+  <li><strong>Altium Designer</strong></li>
+  <li><strong>KiCad</strong></li>
+  <li><strong>Eagle</strong></li>
+  <li><strong>OrCAD</strong></li>
+</ul>
+
+<h2 id="-évaluation">📊 Évaluation</h2>
+
+<ul>
+  <li>Projet composants VHDL (35%)</li>
+  <li>Projet platine FPGA (40%)</li>
+  <li>Contrôles de connaissances (15%)</li>
+  <li>Rapport et documentation (10%)</li>
+</ul>
+
+<h2 id="-liens-avec-dautres-cours">🔗 Liens avec d’autres cours</h2>
+
+<ul>
+  <li><strong>ER</strong> : Intégration FPGA dans système</li>
+  <li><strong>IE</strong> : Communication FPGA-MCU</li>
+  <li><strong>Automatisme</strong> : Logique séquentielle</li>
+  <li><strong>SE</strong> : Traitement numérique signal</li>
+</ul>
+
+<h2 id="-exemple-darchitecture-vhdl">📐 Exemple d’architecture VHDL</h2>
+
+<h3 id="diviseur-de-fréquence">Diviseur de fréquence</h3>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">entity</span> <span class="n">freq_divider</span> <span class="k">is</span>
+    <span class="k">generic</span> <span class="p">(</span>
+        <span class="n">DIV_FACTOR</span> <span class="p">:</span> <span class="kt">integer</span> <span class="p">:</span><span class="o">=</span> <span class="mi">1000</span>
+    <span class="p">);</span>
+    <span class="k">port</span> <span class="p">(</span>
+        <span class="n">clk_in</span>  <span class="p">:</span> <span class="k">in</span>  <span class="kt">std_logic</span><span class="p">;</span>
+        <span class="n">reset</span>   <span class="p">:</span> <span class="k">in</span>  <span class="kt">std_logic</span><span class="p">;</span>
+        <span class="n">clk_out</span> <span class="p">:</span> <span class="k">out</span> <span class="kt">std_logic</span>
+    <span class="p">);</span>
+<span class="k">end</span> <span class="n">freq_divider</span><span class="p">;</span>
+
+<span class="k">architecture</span> <span class="n">rtl</span> <span class="k">of</span> <span class="n">freq_divider</span> <span class="k">is</span>
+    <span class="k">signal</span> <span class="n">counter</span> <span class="p">:</span> <span class="kt">integer</span> <span class="k">range</span> <span class="mi">0</span> <span class="k">to</span> <span class="n">DIV_FACTOR</span><span class="mi">-1</span><span class="p">;</span>
+    <span class="k">signal</span> <span class="n">clk_temp</span> <span class="p">:</span> <span class="kt">std_logic</span><span class="p">;</span>
+<span class="k">begin</span>
+    <span class="k">process</span><span class="p">(</span><span class="n">clk_in</span><span class="p">,</span> <span class="n">reset</span><span class="p">)</span>
+    <span class="k">begin</span>
+        <span class="k">if</span> <span class="n">reset</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+            <span class="n">counter</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">;</span>
+            <span class="n">clk_temp</span> <span class="o">&lt;=</span> <span class="sc">'0'</span><span class="p">;</span>
+        <span class="k">elsif</span> <span class="n">rising_edge</span><span class="p">(</span><span class="n">clk_in</span><span class="p">)</span> <span class="k">then</span>
+            <span class="k">if</span> <span class="n">counter</span> <span class="o">=</span> <span class="n">DIV_FACTOR</span><span class="mi">-1</span> <span class="k">then</span>
+                <span class="n">counter</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">;</span>
+                <span class="n">clk_temp</span> <span class="o">&lt;=</span> <span class="ow">not</span> <span class="n">clk_temp</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="n">counter</span> <span class="o">&lt;=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+            <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+        <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+    
+    <span class="n">clk_out</span> <span class="o">&lt;=</span> <span class="n">clk_temp</span><span class="p">;</span>
+<span class="k">end</span> <span class="n">rtl</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="machine-à-états-fsm">Machine à états (FSM)</h3>
+<div class="language-vhdl highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">type</span> <span class="n">state_type</span> <span class="k">is</span> <span class="p">(</span><span class="n">IDLE</span><span class="p">,</span> <span class="n">START</span><span class="p">,</span> <span class="n">DATA</span><span class="p">,</span> <span class="n">STOP</span><span class="p">);</span>
+<span class="k">signal</span> <span class="n">state</span><span class="p">,</span> <span class="n">next_state</span> <span class="p">:</span> <span class="n">state_type</span><span class="p">;</span>
+
+<span class="c1">-- State register</span>
+<span class="k">process</span><span class="p">(</span><span class="n">clk</span><span class="p">,</span> <span class="n">reset</span><span class="p">)</span>
+<span class="k">begin</span>
+    <span class="k">if</span> <span class="n">reset</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+        <span class="n">state</span> <span class="o">&lt;=</span> <span class="n">IDLE</span><span class="p">;</span>
+    <span class="k">elsif</span> <span class="n">rising_edge</span><span class="p">(</span><span class="n">clk</span><span class="p">)</span> <span class="k">then</span>
+        <span class="n">state</span> <span class="o">&lt;=</span> <span class="n">next_state</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+<span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+
+<span class="c1">-- Next state logic</span>
+<span class="k">process</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">inputs</span><span class="p">)</span>
+<span class="k">begin</span>
+    <span class="k">case</span> <span class="n">state</span> <span class="k">is</span>
+        <span class="k">when</span> <span class="n">IDLE</span> <span class="o">=&gt;</span>
+            <span class="k">if</span> <span class="n">start</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+                <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">START</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">IDLE</span><span class="p">;</span>
+            <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+        <span class="k">when</span> <span class="n">START</span> <span class="o">=&gt;</span>
+            <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">DATA</span><span class="p">;</span>
+        <span class="k">when</span> <span class="n">DATA</span> <span class="o">=&gt;</span>
+            <span class="k">if</span> <span class="n">done</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="k">then</span>
+                <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">STOP</span><span class="p">;</span>
+            <span class="k">else</span>
+                <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">DATA</span><span class="p">;</span>
+            <span class="k">end</span> <span class="k">if</span><span class="p">;</span>
+        <span class="k">when</span> <span class="n">STOP</span> <span class="o">=&gt;</span>
+            <span class="n">next_state</span> <span class="o">&lt;=</span> <span class="n">IDLE</span><span class="p">;</span>
+    <span class="k">end</span> <span class="k">case</span><span class="p">;</span>
+<span class="k">end</span> <span class="k">process</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="-bonnes-pratiques-vhdl">💡 Bonnes pratiques VHDL</h2>
+
+<h3 id="horloges-et-resets">Horloges et resets</h3>
+<ul>
+  <li>Un seul edge (rising ou falling)</li>
+  <li>Reset asynchrone ou synchrone</li>
+  <li>Éviter gated clocks</li>
+  <li>Utiliser clock enables</li>
+</ul>
+
+<h3 id="synthétisabilité">Synthétisabilité</h3>
+<ul>
+  <li>Éviter délais (wait for)</li>
+  <li>Initialiser registres dans reset</li>
+  <li>Attention aux latches</li>
+  <li>Processus combinatoires complets</li>
+</ul>
+
+<h3 id="timing">Timing</h3>
+<ul>
+  <li>Registrer les sorties</li>
+  <li>Pipeline pour haute fréquence</li>
+  <li>Éviter chemins combinatoires longs</li>
+  <li>Synchronisation signaux asynchrones</li>
+</ul>
+
+<h3 id="organisation-code">Organisation code</h3>
+<ul>
+  <li>Un fichier par entity</li>
+  <li>Commentaires</li>
+  <li>Nommage cohérent</li>
+  <li>Packages pour constantes</li>
+</ul>
+
+<h2 id="-compétences-développées">📖 Compétences développées</h2>
+
+<ul>
+  <li>Programmation VHDL avancée</li>
+  <li>Conception sur FPGA/CPLD</li>
+  <li>Simulation et validation</li>
+  <li>Conception de platines numériques</li>
+  <li>Analyse de timing</li>
+  <li>Debugging sur FPGA</li>
+</ul>
+
+<h2 id="-ressources-fpga-typiques">🎯 Ressources FPGA typiques</h2>
+
+<h3 id="exemple--cyclone-iv-ep4ce15">Exemple : Cyclone IV EP4CE15</h3>
+<ul>
+  <li>15 408 Logic Elements</li>
+  <li>504 Kbits RAM</li>
+  <li>56 multiplieurs 18×18</li>
+  <li>343 I/O</li>
+  <li>4 PLLs</li>
+  <li>Configuration série ou parallèle</li>
+</ul>
+
+<h3 id="exemple--spartan-6-lx9">Exemple : Spartan-6 LX9</h3>
+<ul>
+  <li>9 152 Logic Cells</li>
+  <li>576 Kbits Block RAM</li>
+  <li>32 DSP48A1 slices</li>
+  <li>200 I/O</li>
+  <li>4 CMTs (Clock Management Tiles)</li>
+</ul>
+
+<h2 id="️-pièges-courants">⚠️ Pièges courants</h2>
+
+<h3 id="vhdl">VHDL</h3>
+<ul>
+  <li>Latches involontaires</li>
+  <li>Signaux vs variables</li>
+  <li>Delta-cycle delays</li>
+  <li>Synthèse vs simulation</li>
+</ul>
+
+<h3 id="fpga">FPGA</h3>
+<ul>
+  <li>Timing violations</li>
+  <li>Metastability (CDC)</li>
+  <li>Resource exhaustion</li>
+  <li>Configuration fails</li>
+</ul>
+
+<h3 id="pcb">PCB</h3>
+<ul>
+  <li>Alimentation insuffisante</li>
+  <li>Découplage inadéquat</li>
+  <li>EMI/CEM</li>
+  <li>Signaux d’horloge mal routés</li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

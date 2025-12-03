@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Étude et Réalisation (ER) - S3 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Étude et Réalisation (ER) - S3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Étude et Réalisation (ER) - Semestre 3" />
+<meta property="og:description" content="Étude et Réalisation (ER) - Semestre 3" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/etude-realisation-s3.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/etude-realisation-s3.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Étude et Réalisation (ER) - S3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Étude et Réalisation (ER) - Semestre 3","headline":"Étude et Réalisation (ER) - S3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/etude-realisation-s3.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/etude-realisation-s3.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="étude-et-réalisation-er---semestre-3">Étude et Réalisation (ER) - Semestre 3</h1>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 id="contexte-et-objectifs">Contexte et objectifs</h3>
+
+<p>Projet majeur S3 : conception et réalisation d’un <strong>télémètre ultrasonique</strong> intégrant électronique analogique (amplification, filtrage), numérique (VHDL/FPGA) et traitement du signal. Projet pluridisciplinaire mobilisant toutes les compétences GEII.</p>
+
+<p><strong>Objectifs :</strong></p>
+<ul>
+  <li>Concevoir système complet (specs → réalisation)</li>
+  <li>Intégrer analogique + numérique + FPGA</li>
+  <li>PCB multicouche professionnel</li>
+  <li>Validation par tests et mesures</li>
+  <li>Documentation technique complète</li>
+</ul>
+
+<h3 id="prérequis">Prérequis</h3>
+<ul>
+  <li>Électronique analogique (amplis, filtres)</li>
+  <li>VHDL (FSM, compteurs)</li>
+  <li>Conception PCB</li>
+  <li>Traitement du signal</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="système-télémètre-ultrasonique">Système Télémètre Ultrasonique</h3>
+
+<p><strong>Principe :</strong>
+Mesure de distance par temps de vol d’ondes ultrasoniques (40 kHz typique).
+Distance = (c × Δt) / 2, où c ≈ 340 m/s</p>
+
+<p><strong>Architecture :</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[FPGA/CPLD] → [Driver] → [Transducteur TX]
+                             ↓ ondes US
+                          [Cible]
+                             ↓ écho
+[FPGA] ← [Comparateur] ← [Filtrage] ← [Ampli] ← [Transducteur RX]
+   ↓
+[Affichage LCD / UART]
+</code></pre></div></div>
+
+<h3 id="module-1--chaîne-démission">Module 1 : Chaîne d’émission</h3>
+
+<p><strong>Génération burst 40 kHz :</strong></p>
+<ul>
+  <li>FPGA : compteur + diviseur de fréquence</li>
+  <li>Burst : 8-10 cycles (200-250 µs)</li>
+  <li>Driver push-pull (transistors ou pont H)</li>
+  <li>Transducteur piézo 40 kHz (impédance ≈ 2kΩ)</li>
+</ul>
+
+<p><strong>Électronique :</strong></p>
+<ul>
+  <li>Ampli classe B ou D pour efficacité</li>
+  <li>Protection (clamping diodes)</li>
+  <li>Adaptation impédance</li>
+</ul>
+
+<h3 id="module-2--chaîne-de-réception">Module 2 : Chaîne de réception</h3>
+
+<p><strong>Transducteur RX :</strong></p>
+<ul>
+  <li>Même fréquence que TX (40 kHz)</li>
+  <li>Signal faible (quelques mV)</li>
+</ul>
+
+<p><strong>Préamplification :</strong></p>
+<ul>
+  <li>Ampli instrumentation ou AOP faible bruit</li>
+  <li>Gain : 40-60 dB</li>
+  <li>Filtrage passe-bande 38-42 kHz (Sallen-Key ordre 2)</li>
+</ul>
+
+<p><strong>Détection d’enveloppe :</strong></p>
+<ul>
+  <li>Redresseur + filtrage RC</li>
+  <li>Ou détecteur de crête (diode + hold capacitor)</li>
+</ul>
+
+<p><strong>Comparateur à seuil :</strong></p>
+<ul>
+  <li>Seuil réglable (potentiomètre ou DAC)</li>
+  <li>Sortie TTL/CMOS → FPGA</li>
+  <li>Hystérésis (Schmitt trigger) pour stabilité</li>
+</ul>
+
+<h3 id="module-3--traitement-numérique-vhdl">Module 3 : Traitement numérique VHDL</h3>
+
+<p><strong>FSM de contrôle :</strong></p>
+<ol>
+  <li>IDLE : attente commande</li>
+  <li>EMIT : génération burst TX</li>
+  <li>WAIT_ECHO : comptage temps (counter++)</li>
+  <li>ECHO_DETECTED : calcul distance</li>
+  <li>DISPLAY : mise à jour affichage</li>
+</ol>
+
+<p><strong>Compteur temps de vol :</strong></p>
+<ul>
+  <li>Horloge 1 MHz → résolution 1 µs</li>
+  <li>Comptage entre fin burst et front montant écho</li>
+  <li>Timeout si pas d’écho (3-5 m max)</li>
+</ul>
+
+<p><strong>Calcul distance :</strong></p>
+<ul>
+  <li>Distance (cm) = (Compteur × 340 m/s) / (2 × 10^4)</li>
+  <li>Implémentation : division ou multiplication par constante</li>
+</ul>
+
+<p><strong>Interface :</strong></p>
+<ul>
+  <li>LCD 16×2 (affichage distance)</li>
+  <li>UART (transmission PC)</li>
+  <li>LEDs status</li>
+</ul>
+
+<h3 id="module-4--intégration-pcb">Module 4 : Intégration PCB</h3>
+
+<p><strong>PCB 4 couches :</strong></p>
+<ul>
+  <li>L1 : Analogique (amplis, filtres)</li>
+  <li>L2 : GND plane</li>
+  <li>L3 : Power planes (±12V, 5V, 3.3V)</li>
+  <li>L4 : Numérique (FPGA, affichage)</li>
+</ul>
+
+<p><strong>Règles de conception :</strong></p>
+<ul>
+  <li>Séparation analog/digital (GND unique pont à 1 point)</li>
+  <li>Découplage intensif</li>
+  <li>Blindage zone RF si nécessaire</li>
+  <li>Via stitching GND</li>
+</ul>
+
+<p><strong>Alimentation :</strong></p>
+<ul>
+  <li>Entrée 12V ou USB 5V</li>
+  <li>Régulateurs linéaires (7805, 7812, 7912) ou à découpage</li>
+  <li>Rail dual ±12V pour amplis</li>
+  <li>3.3V pour FPGA</li>
+</ul>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="réalisation-pratique">Réalisation pratique</h3>
+
+<p><strong>Phase 1 : Prototypage breadboard</strong></p>
+<ul>
+  <li>Tests amplification et filtrage</li>
+  <li>Validation génération 40 kHz</li>
+  <li>Tests transducteurs</li>
+  <li>Mesure portée</li>
+</ul>
+
+<p><strong>Phase 2 : Simulation Proteus</strong></p>
+<ul>
+  <li>Schéma complet</li>
+  <li>Simulation analogique (filtres)</li>
+  <li>Co-simulation VHDL/analogique si possible</li>
+</ul>
+
+<p><strong>Phase 3 : Conception PCB (Altium/KiCad)</strong></p>
+<ul>
+  <li>Schéma électrique complet</li>
+  <li>Footprints composants</li>
+  <li>Routage 4 couches</li>
+  <li>DRC (Design Rule Check)</li>
+  <li>Génération Gerber + BOM</li>
+</ul>
+
+<p><strong>Phase 4 : Fabrication et assemblage</strong></p>
+<ul>
+  <li>Fabrication PCB (3-7 jours)</li>
+  <li>Soudure CMS (fer, air chaud ou four)</li>
+  <li>Soudure traversants</li>
+  <li>Inspection visuelle</li>
+</ul>
+
+<p><strong>Phase 5 : Tests et validation</strong></p>
+<ul>
+  <li>Tests alimentation (tensions, ondulations)</li>
+  <li>Tests unitaires (étage par étage)</li>
+  <li>Programmation FPGA</li>
+  <li>Tests fonctionnels (mesures distances)</li>
+  <li>Calibration si nécessaire</li>
+</ul>
+
+<h3 id="outils-utilisés">Outils utilisés</h3>
+<ul>
+  <li><strong>Proteus</strong> : Simulation</li>
+  <li><strong>Quartus / Vivado</strong> : VHDL</li>
+  <li><strong>Altium / KiCad</strong> : PCB</li>
+  <li><strong>Oscilloscope</strong> : Signaux analogiques</li>
+  <li><strong>Analyseur logique</strong> : Signaux numériques</li>
+  <li><strong>Multimètre</strong> : Tensions, continuités</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="évaluation">Évaluation</h3>
+
+<p><strong>Livrables (100%) :</strong></p>
+<ul>
+  <li>Analyse et spécifications (10%)</li>
+  <li>Schémas et simulations (20%)</li>
+  <li>PCB conception (15%)</li>
+  <li>Code VHDL et testbench (15%)</li>
+  <li>Réalisation matérielle (20%)</li>
+  <li>Tests et validation (10%)</li>
+  <li>Rapport technique (10%)</li>
+</ul>
+
+<p><strong>Critères qualité :</strong></p>
+<ul>
+  <li>Fonctionnalité complète</li>
+  <li>Qualité conception (schéma, PCB)</li>
+  <li>Robustesse (tests, gestion erreurs)</li>
+  <li>Documentation (clarté, complétude)</li>
+</ul>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+<ul>
+  <li>Gestion projet électronique complet</li>
+  <li>Intégration analogique/numérique/FPGA</li>
+  <li>Conception PCB multicouche professionnelle</li>
+  <li>Traitement du signal pratique</li>
+  <li>Tests et validation systématiques</li>
+  <li>Documentation technique</li>
+</ul>
+
+<h3 id="applications-métier">Applications métier</h3>
+<ul>
+  <li>Ingénieur conception électronique</li>
+  <li>Chef de projet systèmes embarqués</li>
+  <li>Ingénieur R&amp;D capteurs/instrumentation</li>
+  <li>Concepteur objets connectés</li>
+</ul>
+
+<h2 id="-contenu-du-cours">📚 Contenu du cours</h2>
+
+<h3 id="projet-télémètre">Projet Télémètre</h3>
+
+<h4 id="description-du-projet">Description du projet</h4>
+<p>Conception d’un télémètre ultrasonique intégrant :</p>
+<ul>
+  <li>Génération de signaux ultrasoniques</li>
+  <li>Émission et réception d’ondes</li>
+  <li>Traitement du signal reçu</li>
+  <li>Mesure de distance</li>
+  <li>Affichage et interface utilisateur</li>
+  <li>Logique de contrôle (VHDL/FPGA)</li>
+</ul>
+
+<h4 id="architecture-système">Architecture système</h4>
+<p><strong>Partie émission :</strong></p>
+<ul>
+  <li>Générateur de signaux (40 kHz typique)</li>
+  <li>Amplificateur de puissance</li>
+  <li>Transducteur ultrasonique émetteur</li>
+  <li>Contrôle de l’émission</li>
+</ul>
+
+<p><strong>Partie réception :</strong></p>
+<ul>
+  <li>Transducteur ultrasonique récepteur</li>
+  <li>Préamplification faible bruit</li>
+  <li>Filtrage passe-bande</li>
+  <li>Détection d’enveloppe</li>
+  <li>Comparateur à seuil</li>
+</ul>
+
+<p><strong>Traitement numérique :</strong></p>
+<ul>
+  <li>Comptage du temps de vol</li>
+  <li>Calcul de distance</li>
+  <li>Affichage (LCD, 7 segments)</li>
+  <li>Interface UART (communication)</li>
+</ul>
+
+<p><strong>Partie logique (VHDL) :</strong></p>
+<ul>
+  <li>Contrôleur de séquence</li>
+  <li>Génération de timing</li>
+  <li>Gestion d’affichage</li>
+  <li>Interface de communication</li>
+</ul>
+
+<h3 id="conception-électronique">Conception électronique</h3>
+
+<h4 id="amplification-et-conditionnement">Amplification et conditionnement</h4>
+<ul>
+  <li>Amplificateurs d’instrumentation</li>
+  <li>Filtres actifs (Butterworth, Chebyshev)</li>
+  <li>AGC (Automatic Gain Control)</li>
+  <li>Comparateurs rapides</li>
+  <li>Circuits de protection</li>
+</ul>
+
+<h4 id="génération-de-signaux">Génération de signaux</h4>
+<ul>
+  <li>Oscillateurs à quartz</li>
+  <li>Synthèse de fréquences</li>
+  <li>Burst generation</li>
+  <li>Drivers de transducteurs</li>
+</ul>
+
+<h4 id="alimentations">Alimentations</h4>
+<ul>
+  <li>Régulateurs linéaires et à découpage</li>
+  <li>Gestion multi-tensions</li>
+  <li>Découplage et filtrage</li>
+  <li>Protection et surveillance</li>
+</ul>
+
+<h3 id="conception-numérique-vhdl">Conception numérique VHDL</h3>
+
+<h4 id="architecture-fpgacpld">Architecture FPGA/CPLD</h4>
+<ul>
+  <li>Sélection du composant</li>
+  <li>Contraintes de conception</li>
+  <li>Synthèse et routage</li>
+  <li>Configuration et programmation</li>
+</ul>
+
+<h4 id="modules-vhdl">Modules VHDL</h4>
+<ul>
+  <li>Machine à états (FSM)</li>
+  <li>Compteurs et timers</li>
+  <li>Diviseurs de fréquence</li>
+  <li>Gestion d’affichage</li>
+  <li>Interface série (UART)</li>
+</ul>
+
+<h4 id="simulation-et-validation">Simulation et validation</h4>
+<ul>
+  <li>Testbench VHDL</li>
+  <li>Simulation fonctionnelle</li>
+  <li>Simulation temporelle</li>
+  <li>Vérification timing</li>
+</ul>
+
+<h3 id="conception-pcb-avancée">Conception PCB avancée</h3>
+
+<h4 id="multicouches">Multicouches</h4>
+<ul>
+  <li>Stratégie de routage 4 couches</li>
+  <li>Plans de masse et alimentation</li>
+  <li>Via stitching</li>
+  <li>Découplage optimisé</li>
+</ul>
+
+<h4 id="considérations-rf">Considérations RF</h4>
+<ul>
+  <li>Impédance contrôlée (si nécessaire)</li>
+  <li>Séparation analogique/numérique</li>
+  <li>Routage différentiel</li>
+  <li>Antennes et zones sensibles</li>
+</ul>
+
+<h4 id="dfm-et-dft">DFM et DFT</h4>
+<ul>
+  <li>Design for Manufacturing</li>
+  <li>Design for Test</li>
+  <li>Points de test</li>
+  <li>Accessibilité des composants</li>
+</ul>
+
+<h2 id="️-réalisation-pratique">🛠️ Réalisation pratique</h2>
+
+<h3 id="prototypage">Prototypage</h3>
+<ul>
+  <li>Simulation sous Proteus</li>
+  <li>Tests sur breadboard</li>
+  <li>Validation par sous-ensembles</li>
+  <li>Mesures préliminaires</li>
+</ul>
+
+<h3 id="fabrication">Fabrication</h3>
+<ul>
+  <li>Génération fichiers Gerber</li>
+  <li>Fabrication PCB professionnelle</li>
+  <li>Réception et contrôle qualité</li>
+  <li>Préparation à l’assemblage</li>
+</ul>
+
+<h3 id="assemblage">Assemblage</h3>
+<ul>
+  <li>Programmation FPGA/CPLD</li>
+  <li>Soudure CMS et traversants</li>
+  <li>Inspection visuelle</li>
+  <li>Tests électriques</li>
+</ul>
+
+<h3 id="mise-au-point">Mise au point</h3>
+<ul>
+  <li>Tests unitaires par blocs</li>
+  <li>Intégration progressive</li>
+  <li>Calibration</li>
+  <li>Optimisation des performances</li>
+</ul>
+
+<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
+
+<h3 id="cao-électronique">CAO Électronique</h3>
+<ul>
+  <li><strong>Proteus ISIS/ARES</strong> : Schémas et PCB</li>
+  <li><strong>Altium Designer / KiCad</strong> : PCB avancé</li>
+  <li><strong>LTspice</strong> : Simulation analogique</li>
+</ul>
+
+<h3 id="vhdl-et-fpga">VHDL et FPGA</h3>
+<ul>
+  <li><strong>Quartus Prime</strong> : FPGA Intel/Altera</li>
+  <li><strong>Vivado</strong> : FPGA Xilinx</li>
+  <li><strong>ModelSim</strong> : Simulation VHDL</li>
+</ul>
+
+<h3 id="mesure-et-test">Mesure et test</h3>
+<ul>
+  <li>Oscilloscope numérique</li>
+  <li>Analyseur de spectre</li>
+  <li>Générateur de fonctions</li>
+  <li>Multimètre de précision</li>
+</ul>
+
+<h2 id="-évaluation">📊 Évaluation</h2>
+
+<ul>
+  <li>Conception (schémas, PCB, VHDL) (30%)</li>
+  <li>Réalisation et assemblage (25%)</li>
+  <li>Tests et performances (25%)</li>
+  <li>Documentation technique (15%)</li>
+  <li>Présentation (5%)</li>
+</ul>
+
+<h2 id="-liens-avec-dautres-cours">🔗 Liens avec d’autres cours</h2>
+
+<ul>
+  <li><strong>SE</strong> : Traitement du signal</li>
+  <li><strong>ENC</strong> : Conception numérique VHDL</li>
+  <li><strong>IE</strong> : Programmation embarquée</li>
+  <li><strong>Télécommunications</strong> : Propagation des ondes</li>
+  <li><strong>OL</strong> : Documentation et CAO</li>
+</ul>
+
+<h2 id="-spécifications-techniques">📐 Spécifications techniques</h2>
+
+<h3 id="performances-visées">Performances visées</h3>
+<ul>
+  <li>Portée : 2 cm à 4 m</li>
+  <li>Résolution : ±1 cm</li>
+  <li>Fréquence ultrasons : 40 kHz</li>
+  <li>Temps de rafraîchissement : &lt;100 ms</li>
+  <li>Alimentation : 5V ou 9V</li>
+  <li>Consommation : &lt;100 mA</li>
+</ul>
+
+<h3 id="contraintes">Contraintes</h3>
+<ul>
+  <li>Température de fonctionnement : 0-50°C</li>
+  <li>Bruit ambiant à filtrer</li>
+  <li>Réponses multiples (échos)</li>
+  <li>Zones aveugles</li>
+</ul>
+
+<h2 id="-défis-techniques">💡 Défis techniques</h2>
+
+<h3 id="électronique-analogique">Électronique analogique</h3>
+<ul>
+  <li>Amplification à gain élevé stable</li>
+  <li>Filtrage sélectif 40 kHz</li>
+  <li>Réjection du bruit</li>
+  <li>Dynamique du signal</li>
+</ul>
+
+<h3 id="numérique">Numérique</h3>
+<ul>
+  <li>Précision du comptage</li>
+  <li>Gestion des timeouts</li>
+  <li>Synchronisation émission/réception</li>
+  <li>Débouncing et antirebond</li>
+</ul>
+
+<h3 id="mécaniqueacoustique">Mécanique/Acoustique</h3>
+<ul>
+  <li>Positionnement des transducteurs</li>
+  <li>Angle de détection</li>
+  <li>Réflexions multiples</li>
+  <li>Absorption selon les matériaux</li>
+</ul>
+
+<h2 id="-compétences-développées">📖 Compétences développées</h2>
+
+<ul>
+  <li>Conception de systèmes mixtes (analogique/numérique)</li>
+  <li>Programmation VHDL pour FPGA</li>
+  <li>Design de PCB professionnels</li>
+  <li>Traitement du signal embarqué</li>
+  <li>Tests et validation systématiques</li>
+  <li>Gestion de projet technique</li>
+  <li>Documentation professionnelle</li>
+</ul>
+
+<h2 id="-livrables-du-projet">🎯 Livrables du projet</h2>
+
+<h3 id="documentation-technique">Documentation technique</h3>
+<ol>
+  <li>Cahier des charges détaillé</li>
+  <li>Schémas électroniques commentés</li>
+  <li>Code VHDL documenté</li>
+  <li>Layout PCB avec nomenclature</li>
+  <li>Rapport de tests et mesures</li>
+  <li>Manuel d’utilisation</li>
+</ol>
+
+<h3 id="réalisations">Réalisations</h3>
+<ul>
+  <li>PCB fonctionnel assemblé</li>
+  <li>FPGA/CPLD programmé</li>
+  <li>Boîtier (optionnel)</li>
+  <li>Démonstration vidéo</li>
+</ul>
+
+<h2 id="️-points-dattention">⚠️ Points d’attention</h2>
+
+<h3 id="sécurité">Sécurité</h3>
+<ul>
+  <li>Attention aux tensions d’alimentation</li>
+  <li>Protection des entrées sensibles</li>
+  <li>Décharge statique (ESD)</li>
+</ul>
+
+<h3 id="qualité">Qualité</h3>
+<ul>
+  <li>Soudures propres et fiables</li>
+  <li>Vérifications systématiques</li>
+  <li>Tests progressifs</li>
+  <li>Documentation à jour</li>
+</ul>
+
+<h3 id="débogage">Débogage</h3>
+<ul>
+  <li>Mesures systématiques</li>
+  <li>Isolation des problèmes</li>
+  <li>Utilisation de points de test</li>
+  <li>Comparaison simulation/réalité</li>
+</ul>
+
+<h2 id="-méthode-de-travail">🔧 Méthode de travail</h2>
+
+<h3 id="phase-1--étude-2-semaines">Phase 1 : Étude (2 semaines)</h3>
+<ul>
+  <li>Recherche bibliographique</li>
+  <li>Calculs théoriques</li>
+  <li>Simulations préliminaires</li>
+  <li>Choix des composants</li>
+</ul>
+
+<h3 id="phase-2--conception-3-semaines">Phase 2 : Conception (3 semaines)</h3>
+<ul>
+  <li>Schématique complète</li>
+  <li>Code VHDL</li>
+  <li>Design PCB</li>
+  <li>Validation simulations</li>
+</ul>
+
+<h3 id="phase-3--réalisation-3-semaines">Phase 3 : Réalisation (3 semaines)</h3>
+<ul>
+  <li>Fabrication PCB</li>
+  <li>Assemblage</li>
+  <li>Programmation FPGA</li>
+  <li>Tests unitaires</li>
+</ul>
+
+<h3 id="phase-4--validation-2-semaines">Phase 4 : Validation (2 semaines)</h3>
+<ul>
+  <li>Tests d’intégration</li>
+  <li>Mesures de performances</li>
+  <li>Optimisations</li>
+  <li>Documentation finale</li>
+</ul>
+
+<h2 id="-ressources">📚 Ressources</h2>
+
+<ul>
+  <li>Datasheets transducteurs ultrasoniques</li>
+  <li>Application notes sur télémétrie</li>
+  <li>Exemples VHDL de compteurs</li>
+  <li>Normes PCB (IPC)</li>
+  <li>Tutoriels Proteus/Quartus</li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

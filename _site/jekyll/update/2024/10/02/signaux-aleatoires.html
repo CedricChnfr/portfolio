@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Signaux Aléatoires - S6 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Signaux Aléatoires - S6" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/signaux-aleatoires.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/signaux-aleatoires.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Signaux Aléatoires - S6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Signaux Aléatoires - S6","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/signaux-aleatoires.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/signaux-aleatoires.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+</div>
+
+<h1 id="-signaux-aléatoires---semestre-6">🎲 Signaux Aléatoires - Semestre 6</h1>
+
+<p><strong>Année Universitaire</strong> : 2022-2023<br />
+<strong>Semestre</strong> : 6<br />
+<strong>Crédits</strong> : 2.5 ECTS<br />
+<strong>Spécialité</strong> : Traitement du Signal et Probabilités</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-module">PART A - Présentation Générale du Module</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Les signaux aléatoires sont omniprésents en ingénierie : bruit dans les circuits électroniques, perturbations dans les télécommunications, mesures avec incertitudes. Ce cours introduit les outils mathématiques pour modéliser, analyser et traiter ces signaux aléatoires en utilisant la théorie des probabilités et les processus stochastiques.
+<strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Maîtriser les concepts de probabilités et variables aléatoires</li>
+  <li>Comprendre les processus stochastiques et leur caractérisation</li>
+  <li>Analyser statistiquement les signaux bruités</li>
+  <li>Modéliser le bruit dans les systèmes de communication</li>
+  <li>Appliquer le filtrage optimal (Wiener, corrélation)</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce module s’appuie sur :</p>
+<ul>
+  <li><strong>Signal (S5)</strong> : transformée de Fourier, systèmes linéaires</li>
+  <li><strong>Mathématiques</strong> : probabilités, intégrales, séries</li>
+  <li><strong>Filtrage Numérique (S6)</strong> : filtres, traitement du signal</li>
+</ul>
+
+<p>Il prépare aux applications :</p>
+<ul>
+  <li><strong>Télécommunications</strong> : analyse des canaux bruités, BER</li>
+  <li><strong>Traitement du signal</strong> : débruitage, estimation</li>
+  <li><strong>Systèmes embarqués</strong> : mesures avec incertitudes, capteurs</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était organisé en cours magistraux et travaux dirigés sur le semestre :</p>
+
+<p><strong>Cours magistraux (20h)</strong> :
+Structuré en 4 chapitres (ChapterI à ChapterIV) :</p>
+<ul>
+  <li>Chapitre I : Rappels de probabilités et variables aléatoires</li>
+  <li>Chapitre II : Couples et vecteurs aléatoires</li>
+  <li>Chapitre III : Processus stochastiques</li>
+  <li>Chapitre IV : Filtrage linéaire des signaux aléatoires</li>
+</ul>
+
+<p><strong>Travaux dirigés (16h)</strong> :
+Exercices d’application avec corrections disponibles :</p>
+<ul>
+  <li>TD 1.1, 1.2, 1.3 : variables aléatoires</li>
+  <li>TD 2.1, 2.3 : couples aléatoires</li>
+  <li>TD 3.1 : processus stochastiques</li>
+</ul>
+
+<p><strong>Supports pédagogiques</strong> :</p>
+<ul>
+  <li>Fascicules de cours (4 chapitres en PDF)</li>
+  <li>Énoncés de TD avec corrections</li>
+  <li>Annales d’examens de 2014 à 2017 avec corrigés</li>
+</ul>
+
+<h3 class="section-title">Méthode de travail</h3>
+
+<p><strong>Cours théorique</strong> :
+Beaucoup de définitions mathématiques et de démonstrations. Nécessité de bien assimiler les concepts fondamentaux (densité de probabilité, fonction de répartition, espérance) avant d’aborder les processus stochastiques.</p>
+
+<p><strong>TD pratiques</strong> :
+Exercices d’application directe puis problèmes plus complexes. Les corrections détaillées permettent de vérifier sa compréhension.</p>
+
+<p><strong>Annales</strong> :
+Entraînement sur les sujets d’examens passés (2014-2017) pour se familiariser avec le type de questions posées.</p>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<p><strong>Abstraction mathématique</strong> :
+Les processus stochastiques sont des objets mathématiques abstraits. Visualiser ce qu’est un processus aléatoire (famille infinie de variables aléatoires) demande un effort d’abstraction.</p>
+
+<p><strong>Manipulation des densités de probabilité</strong> :
+Calculs avec densités conjointes, marginales, conditionnelles. Beaucoup d’intégrales et de changements de variables.</p>
+
+<p><strong>Lien théorie/pratique</strong> :
+Le cours est très théorique. Le lien avec les applications concrètes (bruit dans les circuits, canaux de communication) n’est pas toujours évident.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Rappels de probabilités</h3>
+
+<p><strong>Espace probabilisé</strong> :</p>
+
+<p>Un espace probabilisé est défini par trois éléments :</p>
+<ul>
+  <li>Oméga : ensemble des éventualités (univers)</li>
+  <li>A : ensemble des événements (sigma-algèbre)</li>
+  <li>P : probabilité (mesure sur A)</li>
+</ul>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/signaux-aleatoires/pdf-gaussienne.svg" alt="Distribution gaussienne" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Fonction de densité de probabilité (PDF) - Loi normale (gaussienne)</p>
+</div>
+
+<p><strong>Propriétés de la probabilité</strong> :</p>
+<ul>
+  <li>0 &lt;= P(A) &lt;= 1</li>
+  <li>P(Oméga) = 1</li>
+  <li>P(A ou B) = P(A) + P(B) - P(A et B)</li>
+</ul>
+
+<p><strong>Probabilité conditionnelle</strong> :</p>
+
+<p>P(A sachant B) = P(A et B) / P(B) si P(B) &gt; 0</p>
+
+<p><strong>Formule des probabilités totales</strong> :</p>
+
+<p>Si B1, B2, …, Bn forment une partition de Oméga :
+P(A) = somme sur i de P(A sachant Bi) × P(Bi)</p>
+
+<p><strong>Théorème de Bayes</strong> :</p>
+
+<p>P(B sachant A) = P(A sachant B) × P(B) / P(A)</p>
+
+<p>Application : inférence, diagnostic, filtrage de Kalman.</p>
+
+<p><strong>Indépendance</strong> :</p>
+
+<p>Deux événements A et B sont indépendants si :
+P(A et B) = P(A) × P(B)</p>
+
+<p>Équivalent à : P(A sachant B) = P(A)</p>
+
+<h3 class="section-title">2. Variables aléatoires</h3>
+
+<p><strong>Définition</strong> :
+Une variable aléatoire X est une fonction de Oméga vers les réels qui associe à chaque éventualité une valeur numérique.</p>
+
+<p><strong>Variable aléatoire discrète</strong> :</p>
+
+<p>Prend un nombre fini ou dénombrable de valeurs.</p>
+
+<p><strong>Fonction de masse (PMF)</strong> :
+p(xi) = P(X = xi)</p>
+
+<p>Propriétés :</p>
+<ul>
+  <li>p(xi) &gt;= 0</li>
+  <li>somme sur i de p(xi) = 1</li>
+</ul>
+
+<p><strong>Lois discrètes classiques</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loi</th>
+      <th>Paramètres</th>
+      <th>Usage</th>
+      <th>Espérance</th>
+      <th>Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bernoulli</td>
+      <td>p</td>
+      <td>succès/échec</td>
+      <td>p</td>
+      <td>p(1-p)</td>
+    </tr>
+    <tr>
+      <td>Binomiale</td>
+      <td>n, p</td>
+      <td>nombre de succès sur n essais</td>
+      <td>np</td>
+      <td>np(1-p)</td>
+    </tr>
+    <tr>
+      <td>Poisson</td>
+      <td>lambda</td>
+      <td>événements rares</td>
+      <td>lambda</td>
+      <td>lambda</td>
+    </tr>
+    <tr>
+      <td>Géométrique</td>
+      <td>p</td>
+      <td>nombre d’essais avant 1er succès</td>
+      <td>1/p</td>
+      <td>(1-p)/p²</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Variable aléatoire continue</strong> :</p>
+
+<p>Prend ses valeurs dans un intervalle continu.</p>
+
+<p><strong>Fonction de densité (PDF)</strong> :
+Fonction f(x) telle que :
+P(a &lt; X &lt; b) = intégrale de a à b de f(x) dx</p>
+
+<p>Propriétés :</p>
+<ul>
+  <li>f(x) &gt;= 0</li>
+  <li>intégrale de -infini à +infini de f(x) dx = 1</li>
+</ul>
+
+<p><strong>Fonction de répartition (CDF)</strong> :
+F(x) = P(X &lt;= x) = intégrale de -infini à x de f(t) dt</p>
+
+<p>Propriétés :</p>
+<ul>
+  <li>F est croissante</li>
+  <li>F(-infini) = 0, F(+infini) = 1</li>
+  <li>f(x) = dF(x)/dx</li>
+</ul>
+
+<p><strong>Lois continues classiques</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loi</th>
+      <th>Densité</th>
+      <th>Usage</th>
+      <th>Espérance</th>
+      <th>Variance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Uniforme [a,b]</td>
+      <td>1/(b-a) sur [a,b]</td>
+      <td>équiprobabilité</td>
+      <td>(a+b)/2</td>
+      <td>(b-a)²/12</td>
+    </tr>
+    <tr>
+      <td>Exponentielle</td>
+      <td>lambda × exp(-lambda × x)</td>
+      <td>durée de vie</td>
+      <td>1/lambda</td>
+      <td>1/lambda²</td>
+    </tr>
+    <tr>
+      <td>Gaussienne</td>
+      <td>(1/racine(2π)σ) exp(-(x-m)²/(2σ²))</td>
+      <td>bruit, mesures</td>
+      <td>m</td>
+      <td>σ²</td>
+    </tr>
+    <tr>
+      <td>Rayleigh</td>
+      <td>(x/σ²) exp(-x²/(2σ²))</td>
+      <td>enveloppe signal Gaussien</td>
+      <td>σ racine(π/2)</td>
+      <td>σ²(4-π)/2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Moments d’une variable aléatoire</strong> :</p>
+
+<p><strong>Espérance (moyenne)</strong> :
+E[X] = intégrale de x f(x) dx (cas continu)
+E[X] = somme de xi p(xi) (cas discret)</p>
+
+<p><strong>Variance</strong> :
+Var(X) = E[(X - E[X])²] = E[X²] - (E[X])²</p>
+
+<p><strong>Écart-type</strong> :
+sigma = racine(Var(X))</p>
+
+<p><strong>Propriétés de l’espérance</strong> :</p>
+<ul>
+  <li>E[aX + b] = a E[X] + b</li>
+  <li>E[X + Y] = E[X] + E[Y] (toujours)</li>
+  <li>E[XY] = E[X] E[Y] (si X et Y indépendantes)</li>
+</ul>
+
+<p><strong>Propriétés de la variance</strong> :</p>
+<ul>
+  <li>Var(aX + b) = a² Var(X)</li>
+  <li>Var(X + Y) = Var(X) + Var(Y) (si X et Y indépendantes)</li>
+</ul>
+
+<h3 class="section-title">3. Loi gaussienne (loi normale)</h3>
+
+<p><strong>Importance fondamentale</strong> :
+La loi gaussienne est la plus importante en ingénierie car :</p>
+<ul>
+  <li>Modélise le bruit dans les circuits (bruit thermique)</li>
+  <li>Résultat du Théorème Central Limite</li>
+  <li>Propriétés mathématiques remarquables</li>
+</ul>
+
+<p><strong>Densité de probabilité</strong> :</p>
+
+<p>f(x) = (1 / (sigma racine(2π))) exp(-(x - m)² / (2 sigma²))</p>
+
+<p>Paramètres :</p>
+<ul>
+  <li>m : moyenne</li>
+  <li>sigma² : variance</li>
+</ul>
+
+<p>Notation : X suit N(m, sigma²)</p>
+
+<p><strong>Loi gaussienne centrée réduite</strong> :</p>
+
+<p>Cas particulier avec m = 0 et sigma = 1 : N(0, 1)</p>
+
+<p>Densité : φ(x) = (1/racine(2π)) exp(-x²/2)</p>
+
+<p><strong>Standardisation</strong> :</p>
+
+<p>Si X suit N(m, sigma²), alors Z = (X - m) / sigma suit N(0, 1)</p>
+
+<p>Permet d’utiliser les tables de la loi normale standard.</p>
+
+<p><strong>Règle des 3 sigma</strong> :</p>
+
+<p>Pour une loi gaussienne N(m, sigma²) :</p>
+<ul>
+  <li>68% des valeurs dans [m - sigma, m + sigma]</li>
+  <li>95% des valeurs dans [m - 2sigma, m + 2sigma]</li>
+  <li>99,7% des valeurs dans [m - 3sigma, m + 3sigma]</li>
+</ul>
+
+<p><strong>Propriétés remarquables</strong> :</p>
+<ul>
+  <li>Somme de gaussiennes est gaussienne</li>
+  <li>Transformation linéaire d’une gaussienne est gaussienne</li>
+  <li>Maximise l’entropie à variance donnée</li>
+</ul>
+
+<h3 class="section-title">4. Couples et vecteurs aléatoires</h3>
+
+<p><strong>Couple aléatoire</strong> :</p>
+
+<p>Paire (X, Y) de variables aléatoires.</p>
+
+<p><strong>Densité conjointe</strong> :
+f(x, y) telle que P((X, Y) dans D) = intégrale double sur D de f(x, y) dx dy</p>
+
+<p><strong>Densités marginales</strong> :
+Densité de X seule : f_X(x) = intégrale de f(x, y) dy
+Densité de Y seule : f_Y(y) = intégrale de f(x, y) dx</p>
+
+<p><strong>Densité conditionnelle</strong> :
+f(x sachant y) = f(x, y) / f_Y(y)</p>
+
+<p><strong>Indépendance</strong> :</p>
+
+<p>X et Y indépendantes si et seulement si :
+f(x, y) = f_X(x) × f_Y(y)</p>
+
+<p><strong>Corrélation et covariance</strong> :</p>
+
+<p><strong>Espérance d’un couple</strong> :
+E[g(X, Y)] = intégrale double de g(x, y) f(x, y) dx dy</p>
+
+<p><strong>Covariance</strong> :
+Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X] E[Y]</p>
+
+<p><strong>Coefficient de corrélation</strong> :
+rho = Cov(X, Y) / (sigma_X sigma_Y)</p>
+
+<p>Propriétés :</p>
+<ul>
+  <li>-1 &lt;= rho &lt;= 1</li>
+  <li>rho = 0 : variables non corrélées</li>
+  <li>rho = ±1 : relation linéaire</li>
+</ul>
+
+<p><strong>Remarque importante</strong> :</p>
+<ul>
+  <li>Indépendantes =&gt; non corrélées</li>
+  <li>Non corrélées =/=&gt; indépendantes (sauf cas gaussien)</li>
+</ul>
+
+<p><strong>Couple gaussien</strong> :</p>
+
+<p>(X, Y) suit une loi gaussienne bidimensionnelle si leur densité conjointe est de la forme gaussienne à 2 dimensions.</p>
+
+<p><strong>Propriété remarquable</strong> :
+Pour un couple gaussien : non corrélées &lt;=&gt; indépendantes</p>
+
+<h3 class="section-title">5. Théorèmes limites</h3>
+
+<p><strong>Loi des grands nombres</strong> :</p>
+
+<p>Moyenne empirique converge vers l’espérance théorique.</p>
+
+<p>Si X1, X2, …, Xn variables indépendantes de même loi, d’espérance m :
+(X1 + X2 + … + Xn) / n tend vers m quand n tend vers infini</p>
+
+<p><strong>Théorème Central Limite (TCL)</strong> :</p>
+
+<p>Somme de variables aléatoires suit approximativement une loi gaussienne.</p>
+
+<p>Si X1, X2, …, Xn variables indépendantes de même loi, d’espérance m et variance sigma² :
+(X1 + X2 + … + Xn - n×m) / (sigma racine(n)) tend vers N(0, 1)</p>
+
+<p><strong>Conséquence importante</strong> :
+Explique pourquoi tant de phénomènes naturels suivent une loi gaussienne : résultat de nombreuses petites causes indépendantes.</p>
+
+<p><strong>Applications</strong> :</p>
+<ul>
+  <li>Modélisation du bruit (somme de nombreuses perturbations)</li>
+  <li>Approximation binomiale par gaussienne (si n grand)</li>
+  <li>Estimation statistique</li>
+</ul>
+
+<h3 class="section-title">6. Processus stochastiques</h3>
+
+<p><strong>Définition</strong> :</p>
+
+<p>Un processus stochastique X(t) est une famille de variables aléatoires indexées par le temps t.</p>
+
+<p>Pour chaque instant t, X(t) est une variable aléatoire.</p>
+
+<p><strong>Visualisations</strong> :</p>
+<ul>
+  <li>Réalisation : courbe X(t, omega) pour un omega fixé</li>
+  <li>Distribution : distribution de probabilité à un instant t fixé</li>
+  <li>Statistiques : espérance E[X(t)], variance Var[X(t)]</li>
+</ul>
+
+<p><strong>Types de processus</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Temps</th>
+      <th>Valeurs</th>
+      <th>Exemple</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discret-Discret</td>
+      <td>discret</td>
+      <td>discrètes</td>
+      <td>Marche aléatoire</td>
+    </tr>
+    <tr>
+      <td>Continu-Discret</td>
+      <td>continu</td>
+      <td>discrètes</td>
+      <td>Processus de Poisson</td>
+    </tr>
+    <tr>
+      <td>Discret-Continu</td>
+      <td>discret</td>
+      <td>continues</td>
+      <td>Suite de mesures</td>
+    </tr>
+    <tr>
+      <td>Continu-Continu</td>
+      <td>continu</td>
+      <td>continues</td>
+      <td>Bruit thermique</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Moyenne et autocorrélation</strong> :</p>
+
+<p><strong>Moyenne</strong> :
+m_X(t) = E[X(t)]</p>
+
+<p>Fonction du temps (en général).</p>
+
+<p><strong>Fonction d’autocorrélation</strong> :
+R_X(t1, t2) = E[X(t1) X(t2)]</p>
+
+<p>Mesure la corrélation entre les valeurs du processus à deux instants différents.</p>
+
+<p><strong>Fonction d’autocovariance</strong> :
+C_X(t1, t2) = E[(X(t1) - m_X(t1))(X(t2) - m_X(t2))]
+C_X(t1, t2) = R_X(t1, t2) - m_X(t1) m_X(t2)</p>
+
+<h3 class="section-title">7. Processus stationnaires</h3>
+
+<p><strong>Stationnarité stricte</strong> :</p>
+
+<p>Toutes les statistiques du processus sont invariantes par translation dans le temps.</p>
+
+<p>Difficile à vérifier en pratique.</p>
+
+<p><strong>Stationnarité au sens large (WSS - Wide Sense Stationary)</strong> :</p>
+
+<p>Deux conditions suffisent :</p>
+<ol>
+  <li>Moyenne constante : m_X(t) = m (indépendant de t)</li>
+  <li>Autocorrélation dépend seulement de l’écart : R_X(t1, t2) = R_X(tau) avec tau = t2 - t1</li>
+</ol>
+
+<p><strong>Propriétés de R_X(tau)</strong> :</p>
+<ul>
+  <li>R_X(0) = E[X²(t)] = puissance moyenne</li>
+  <li>R_X(tau) = R_X(-tau) (fonction paire)</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>R_X(tau)</td>
+          <td>&lt;= R_X(0)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>R_X(tau) maximum en tau = 0</li>
+</ul>
+
+<p><strong>Ergodicité</strong> :</p>
+
+<p>Un processus stationnaire est ergodique si les moyennes temporelles (sur une réalisation) convergent vers les moyennes d’ensemble.</p>
+
+<p>Moyenne temporelle = limite quand T tend vers infini de (1/T) intégrale de 0 à T de x(t) dt</p>
+
+<p>Si ergodique :</p>
+<ul>
+  <li>Moyenne temporelle = moyenne théorique E[X]</li>
+  <li>Permet d’estimer les statistiques sur une seule réalisation</li>
+</ul>
+
+<h3 class="section-title">8. Densité spectrale de puissance (DSP)</h3>
+
+<p><strong>Théorème de Wiener-Khinchin</strong> :</p>
+
+<p>Pour un processus WSS, la densité spectrale de puissance S_X(f) est la transformée de Fourier de l’autocorrélation R_X(tau) :</p>
+
+<p>S_X(f) = TF[R_X(tau)]</p>
+
+<p>Réciproquement :
+R_X(tau) = TF⁻¹[S_X(f)]</p>
+
+<p><strong>Interprétation</strong> :
+S_X(f) représente la répartition de la puissance du signal en fonction de la fréquence.</p>
+
+<p><strong>Propriétés</strong> :</p>
+<ul>
+  <li>S_X(f) &gt;= 0 (fonction positive)</li>
+  <li>S_X(f) = S_X(-f) (fonction paire, si X réel)</li>
+  <li>Puissance totale = R_X(0) = intégrale de S_X(f) df</li>
+</ul>
+
+<p><strong>Puissance dans une bande</strong> :</p>
+
+<p>Puissance entre f1 et f2 = intégrale de f1 à f2 de S_X(f) df</p>
+
+<h3 class="section-title">9. Bruit blanc</h3>
+
+<p><strong>Définition</strong> :</p>
+
+<p>Processus dont la DSP est constante sur toutes les fréquences :
+S_X(f) = N0/2</p>
+
+<p>Autocorrélation :
+R_X(tau) = (N0/2) delta(tau)</p>
+
+<p>où delta est la distribution de Dirac.</p>
+
+<p><strong>Interprétation</strong> :</p>
+<ul>
+  <li>Puissance répartie uniformément sur toutes les fréquences</li>
+  <li>Valeurs à deux instants différents non corrélées (delta de Dirac)</li>
+</ul>
+
+<p><strong>Bruit blanc gaussien</strong> :</p>
+
+<p>Processus gaussien avec spectre plat. Noté AWGN (Additive White Gaussian Noise).</p>
+
+<p>Modèle standard du bruit dans les télécommunications.</p>
+
+<p><strong>Bruit blanc en pratique</strong> :</p>
+
+<p>Le bruit blanc idéal n’existe pas (puissance infinie). En pratique :</p>
+<ul>
+  <li>Bruit blanc dans une bande limitée</li>
+  <li>DSP plate sur la bande d’intérêt</li>
+</ul>
+
+<p><strong>Bruit thermique</strong> :</p>
+
+<p>Bruit dans les résistances dû à l’agitation thermique (Johnson-Nyquist).</p>
+
+<p>DSP : S_V(f) = 4 k T R</p>
+
+<p>où k = constante de Boltzmann, T = température (Kelvin), R = résistance.</p>
+
+<p>Approximation de bruit blanc dans une large bande.</p>
+
+<h3 class="section-title">10. Filtrage linéaire des signaux aléatoires</h3>
+
+<p><strong>Système linéaire invariant (SLI)</strong> :</p>
+
+<p>Caractérisé par sa réponse impulsionnelle h(t) ou sa fonction de transfert H(f).</p>
+
+<p><strong>Entrée aléatoire X(t), sortie Y(t)</strong> :</p>
+
+<p>Si X(t) est WSS, alors Y(t) est aussi WSS.</p>
+
+<p><strong>Relations entrée-sortie</strong> :</p>
+
+<p><strong>Moyenne</strong> :
+m_Y = m_X × H(0)</p>
+
+<p>où H(0) est le gain DC du filtre.</p>
+
+<p><strong>Autocorrélation</strong> :
+R_Y(tau) = R_X(tau) * h(tau) * h(-tau)</p>
+
+<p>où * est la convolution.</p>
+
+<p><strong>DSP</strong> :
+S_Y(f) = S_X(f) × |H(f)|²</p>
+
+<p><strong>Formule fondamentale</strong> : la DSP de sortie est la DSP d’entrée multipliée par le carré du module de la fonction de transfert.</p>
+
+<p><strong>Variance de la sortie</strong> :
+Var(Y) = R_Y(0) = intégrale de S_Y(f) df = intégrale de S_X(f) |H(f)|² df</p>
+
+<p><strong>Exemple : bruit blanc filtré</strong></p>
+
+<p>Entrée : bruit blanc de DSP N0/2
+Filtre : passe-bas de bande B
+Sortie : DSP S_Y(f) = (N0/2) |H(f)|²</p>
+
+<p>Puissance de sortie : (N0/2) × 2B = N0 B</p>
+
+<p>(approximation si filtre idéal)</p>
+
+<h3 class="section-title">11. Rapport signal sur bruit (SNR)</h3>
+
+<p><strong>Définition</strong> :</p>
+
+<p>SNR = Puissance du signal / Puissance du bruit</p>
+
+<p>En décibels : SNR_dB = 10 log10(SNR)</p>
+
+<p><strong>Signal dans le bruit</strong> :</p>
+
+<p>Signal utile : s(t) de puissance P_s
+Bruit : n(t) de puissance P_n
+Signal reçu : r(t) = s(t) + n(t)</p>
+
+<p>SNR = P_s / P_n</p>
+
+<p><strong>Amélioration du SNR par filtrage</strong> :</p>
+
+<p>Filtre adapté maximise le SNR en sortie.</p>
+
+<p><strong>Filtre de Wiener</strong> :</p>
+
+<p>Filtre optimal au sens de l’erreur quadratique moyenne minimale (MMSE).</p>
+
+<p>Fonction de transfert optimale :
+H_opt(f) = S_XY(f) / (S_X(f) + S_N(f))</p>
+
+<p>où S_XY est l’intercorrélation signal-observation, S_X spectre du signal, S_N spectre du bruit.</p>
+
+<p><strong>Filtre adapté</strong> :</p>
+
+<p>Pour détecter un signal connu s(t) dans du bruit blanc, le filtre optimal a :
+h(t) = s(T - t)</p>
+
+<p>où T est l’instant de décision.</p>
+
+<p>Maximise le SNR à l’instant d’échantillonnage.</p>
+
+<h3 class="section-title">12. Applications en télécommunications</h3>
+
+<p><strong>Canal AWGN (Additive White Gaussian Noise)</strong> :</p>
+
+<p>Modèle standard de canal de communication.</p>
+
+<p>Signal reçu : r(t) = s(t) + n(t)</p>
+
+<p>où n(t) est un bruit blanc gaussien.</p>
+
+<p><strong>Taux d’erreur binaire (BER)</strong> :</p>
+
+<p>Probabilité d’erreur sur un bit en fonction du SNR.</p>
+
+<p>Pour une modulation binaire simple :
+BER = fonction du rapport Eb/N0</p>
+
+<p>où Eb est l’énergie par bit, N0 la DSP du bruit.</p>
+
+<p><strong>Capacité de Shannon</strong> :</p>
+
+<p>Débit maximal théorique d’un canal :
+C = B log2(1 + SNR)</p>
+
+<p>où B est la bande passante, C la capacité en bits/s.</p>
+
+<p><strong>Théorème de Shannon</strong> :
+On peut transmettre à un débit &lt; C avec une probabilité d’erreur arbitrairement faible (grâce au codage canal).</p>
+
+<h3 class="section-title">13. Estimation et détection</h3>
+
+<p><strong>Estimation de paramètres</strong> :</p>
+
+<p>À partir d’observations bruitées, estimer un paramètre inconnu.</p>
+
+<p><strong>Estimateur du maximum de vraisemblance (MLE)</strong> :</p>
+
+<p>Choisir la valeur du paramètre qui maximise la probabilité d’observer les données.</p>
+
+<p>Principe : theta_MLE = argmax de la vraisemblance L(theta)</p>
+
+<p><strong>Estimateur MMSE</strong> :</p>
+
+<p>Minimise l’erreur quadratique moyenne.</p>
+
+<p>E[(theta - theta_estimé)²] minimale</p>
+
+<p><strong>Détection d’hypothèses</strong> :</p>
+
+<p>Décider entre plusieurs hypothèses (H0 ou H1) à partir d’observations.</p>
+
+<p><strong>Critère de Neyman-Pearson</strong> :</p>
+
+<p>Maximiser la probabilité de détection pour une probabilité de fausse alarme donnée.</p>
+
+<p><strong>Courbe ROC (Receiver Operating Characteristic)</strong> :</p>
+
+<p>Probabilité de détection en fonction de la probabilité de fausse alarme.</p>
+
+<p>Permet de comparer les performances de différents détecteurs.</p>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Rigueur mathématique</strong> :
+Le cours développe une approche rigoureuse des probabilités et des processus stochastiques. Les démonstrations mathématiques renforcent la compréhension profonde des concepts.</p>
+
+<p><strong>Modélisation de l’aléatoire</strong> :
+Capacité à modéliser des phénomènes aléatoires réels (bruit, mesures, signaux) par des lois de probabilité et des processus stochastiques appropriés.</p>
+
+<p><strong>Analyse spectrale</strong> :
+Maîtrise de la densité spectrale de puissance comme outil d’analyse des signaux aléatoires, complément essentiel à la transformée de Fourier classique.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. Loi gaussienne centrale</strong> :
+La loi gaussienne est omniprésente grâce au Théorème Central Limite. Comprendre ses propriétés est essentiel pour l’ingénieur.</p>
+
+<p><strong>2. Corrélation vs indépendance</strong> :
+Non corrélation n’implique pas indépendance (sauf cas gaussien). Distinction fondamentale souvent source d’erreurs.</p>
+
+<p><strong>3. Stationnarité = simplicité</strong> :
+Les processus stationnaires sont beaucoup plus simples à analyser. En pratique, on suppose souvent la stationnarité (au moins localement).</p>
+
+<p><strong>4. DSP = outil de choix</strong> :
+La densité spectrale de puissance est l’outil principal pour analyser et filtrer les signaux aléatoires. Théorème de Wiener-Khinchin est fondamental.</p>
+
+<p><strong>5. Filtrage optimal</strong> :
+Le filtre de Wiener et le filtre adapté sont des résultats théoriques importants qui guident la conception de systèmes réels.</p>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Télécommunications</strong> :</p>
+<ul>
+  <li>Modélisation du canal (bruit AWGN, évanouissements)</li>
+  <li>Calcul du BER en fonction du SNR</li>
+  <li>Conception de récepteurs optimaux</li>
+  <li>Égalisation, débruitage</li>
+</ul>
+
+<p><strong>Traitement du signal</strong> :</p>
+<ul>
+  <li>Estimation de paramètres (fréquence, phase, amplitude)</li>
+  <li>Détection de signaux noyés dans le bruit</li>
+  <li>Filtrage optimal (Wiener)</li>
+  <li>Analyse spectrale (estimation de DSP)</li>
+</ul>
+
+<p><strong>Systèmes de mesure</strong> :</p>
+<ul>
+  <li>Quantification de l’incertitude</li>
+  <li>Amélioration du SNR par moyennage</li>
+  <li>Conception de capteurs</li>
+  <li>Traitement statistique des mesures</li>
+</ul>
+
+<p><strong>Radar et sonar</strong> :</p>
+<ul>
+  <li>Détection de cibles</li>
+  <li>Estimation de distance, vitesse</li>
+  <li>Filtrage adapté pour maximiser le SNR</li>
+</ul>
+
+<h3 class="section-title">Retour d'expérience</h3>
+
+<p><strong>Cours théorique</strong> :
+Le cours est dense et mathématique. La maîtrise des concepts demande du temps et de la pratique sur des exercices variés. Les TD sont essentiels pour assimiler la théorie.</p>
+
+<p><strong>Annales précieuses</strong> :
+Les annales de 2014 à 2017 avec corrections sont une ressource importante pour se préparer à l’examen et comprendre les attentes.</p>
+
+<p><strong>Difficulté progressive</strong> :</p>
+<ul>
+  <li>Chapitre I (probabilités et variables aléatoires) : relativement accessible</li>
+  <li>Chapitre II (couples aléatoires) : plus technique (intégrales doubles)</li>
+  <li>Chapitre III (processus stochastiques) : abstrait</li>
+  <li>Chapitre IV (filtrage) : applications concrètes, plus motivant</li>
+</ul>
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+<p><strong>Limites du module</strong> :</p>
+<ul>
+  <li>Peu d’applications pratiques (simulations MATLAB)</li>
+  <li>Traitement limité de l’estimation (pas de Kalman détaillé)</li>
+  <li>Pas de processus non-stationnaires (signaux transitoires)</li>
+</ul>
+
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+  <li><strong>Traitement statistique du signal</strong> : estimation spectrale, analyse temps-fréquence</li>
+  <li><strong>Communications numériques</strong> : modulations, codage canal, égalisation</li>
+  <li><strong>Filtrage de Kalman</strong> : estimation récursive, systèmes dynamiques</li>
+  <li><strong>Apprentissage automatique</strong> : modèles probabilistes, inférence bayésienne</li>
+  <li><strong>Traitement d’image</strong> : bruit dans les images, restauration</li>
+  <li><strong>Finance</strong> : modélisation des marchés (mouvement brownien, processus stochastiques)</li>
+</ul>
+
+<h3 class="section-title">Liens avec d'autres domaines</h3>
+
+<p><strong>Théorie de l’information</strong> :
+Entropie, information mutuelle, capacité de canal (Shannon).</p>
+
+<p><strong>Statistiques</strong> :
+Tests d’hypothèses, estimation, intervalles de confiance.</p>
+
+<p><strong>Contrôle stochastique</strong> :
+Systèmes dynamiques avec incertitudes, commande optimale.</p>
+
+<p><strong>Apprentissage automatique</strong> :
+Modèles génératifs probabilistes, réseaux bayésiens, processus gaussiens.</p>
+
+<h3 class="section-title">Conseils pour réussir</h3>
+
+<p><strong>1. Maîtriser les bases</strong> :
+Assurer les fondamentaux (probabilités, densités, espérance, variance) avant d’aborder les processus stochastiques.</p>
+
+<p><strong>2. Faire les TD</strong> :
+Les exercices sont essentiels. Refaire les TD sans regarder les corrections pour tester sa compréhension.</p>
+
+<p><strong>3. Utiliser les annales</strong> :
+S’entraîner sur les examens passés pour se familiariser avec le format et identifier les points importants.</p>
+
+<p><strong>4. Visualiser</strong> :
+Essayer de visualiser les concepts (courbes de densité, réalisations de processus) plutôt que rester dans l’abstraction pure.</p>
+
+<p><strong>5. Comprendre les théorèmes</strong> :
+Théorème Central Limite, Wiener-Khinchin sont fondamentaux. Bien comprendre leurs hypothèses et conséquences.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>Le module Signaux Aléatoires apporte les fondements mathématiques indispensables pour traiter les signaux bruités et les phénomènes aléatoires omniprésents en ingénierie. La théorie des probabilités et des processus stochastiques, bien que parfois abstraite, fournit des outils puissants et rigoureux.</p>
+
+<p><strong>Impact sur la formation</strong> :
+Ce cours change la vision des signaux : tout signal réel contient de l’aléatoire (bruit, incertitudes). Savoir modéliser et traiter cet aléatoire est essentiel pour l’ingénieur.</p>
+
+<p><strong>Complémentarité</strong> :
+En complément du traitement du signal déterministe (Fourier, filtres), le traitement statistique des signaux aléatoires permet d’aborder des problèmes réels (estimation, détection, débruitage).</p>
+
+<p><strong>Message principal</strong> :
+L’aléatoire n’est pas l’ennemi de l’ingénieur. Avec les bons outils (probabilités, processus stochastiques, DSP, filtrage optimal), on peut analyser, modéliser et traiter efficacement les signaux aléatoires.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+  <li>Approfondir avec des simulations (MATLAB, Python) pour visualiser les concepts</li>
+  <li>Lire des articles sur applications concrètes (radar, télécommunications)</li>
+  <li>Se former au filtrage de Kalman (extension naturelle)</li>
+  <li>Explorer les liens avec l’apprentissage automatique (modèles probabilistes)</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./signal.html">Signal - S5</a> : transformée de Fourier, systèmes linéaires</li>
+  <li><a href="./filtrage-numerique.html">Filtrage Numérique - S6</a> : filtres numériques FIR/IIR</li>
+  <li><a href="./electronique-fonctions-numeriques.html">Électronique Fonctions Numériques - S6</a> : bruit dans les circuits</li>
+</ul>
+
+<hr />
+
+<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Chapitre I - Probabilités</h4>
+      <p>Introduction aux probabilités : espérances mathématiques, axiomes, probabilités conditionnelles et théorème de Bayes.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre II - Variables Aléatoires</h4>
+      <p>Variables aléatoires discrètes et continues : lois de probabilité, moments, fonction caractéristique et espérance.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre III - Processus Stochastiques</h4>
+      <p>Processus aléatoires : stationnarité, ergodicité, autocorrélation et propriétés des processus stationnaires.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre IV - Analyse Spectrale</h4>
+      <p>Densité spectrale de puissance (DSP), théorème de Wiener-Khintchine et filtrage linéaire des processus aléatoires.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><em>Cours suivi en 2022-2023 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

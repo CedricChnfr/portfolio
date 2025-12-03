@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Langage C - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Langage C - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/langage-c.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/langage-c.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Langage C - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Langage C - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/langage-c.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/langage-c.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-langage-c---s5">💻 Langage C - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Programmation Système</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Le cours de Langage C fournit une formation complète à la programmation système en C, langage fondamental pour le développement de systèmes embarqués, systèmes d’exploitation et applications nécessitant des performances optimales. Le cours couvre les concepts fondamentaux (pointeurs, tableaux, structures) ainsi que les aspects avancés (allocation dynamique, manipulation de bits, structures de données complexes).</p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Maîtriser la syntaxe C et les types de données</li>
+  <li>Comprendre les pointeurs et l’arithmétique des pointeurs</li>
+  <li>Gérer la mémoire dynamique (malloc, free)</li>
+  <li>Manipuler les structures de données (listes chaînées, arbres)</li>
+  <li>Réaliser des opérations bit à bit pour le bas niveau</li>
+  <li>Créer des programmes modulaires avec fichiers multiples</li>
+  <li>Déboguer et optimiser du code C</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: 48h (CM: 24h, TD/TP: 24h)</li>
+  <li><strong>Évaluation</strong>: Examens écrits (60%) + TPs et projets (40%)</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Algorithmique de base, notions de programmation</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<h4 id="1-fondamentaux-du-c">1. Fondamentaux du C</h4>
+
+<p><strong>Types de données et opérateurs</strong>:</p>
+
+<p>Le C propose des types primitifs de tailles fixes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">char</code>: 1 octet (8 bits)</li>
+  <li><code class="language-plaintext highlighter-rouge">int</code>: 4 octets sur systèmes 32/64 bits</li>
+  <li><code class="language-plaintext highlighter-rouge">float</code>: 4 octets (simple précision)</li>
+  <li><code class="language-plaintext highlighter-rouge">double</code>: 8 octets (double précision)</li>
+</ul>
+
+<p><strong>Modificateurs</strong>: <code class="language-plaintext highlighter-rouge">signed</code>, <code class="language-plaintext highlighter-rouge">unsigned</code>, <code class="language-plaintext highlighter-rouge">short</code>, <code class="language-plaintext highlighter-rouge">long</code></p>
+
+<p>Exemple de déclarations:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">nombre</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">positif</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="kt">char</span> <span class="n">lettre</span> <span class="o">=</span> <span class="sc">'A'</span><span class="p">;</span>
+<span class="kt">float</span> <span class="n">pi</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">14</span><span class="n">f</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Opérateurs bit à bit</strong>:</p>
+
+<p>Essentiels pour la manipulation bas niveau:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&amp;</code> (AND), <code class="language-plaintext highlighter-rouge">|</code> (OR), <code class="language-plaintext highlighter-rouge">^</code> (XOR), <code class="language-plaintext highlighter-rouge">~</code> (NOT)</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;&lt;</code> (décalage gauche), <code class="language-plaintext highlighter-rouge">&gt;&gt;</code> (décalage droite)</li>
+</ul>
+
+<p><strong>Application TD1</strong>: Compter les bits à 1 dans un entier:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">bitcount</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">n</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">// Teste le bit de poids faible</span>
+        <span class="n">n</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="p">;</span>         <span class="c1">// Décale d'un bit à droite</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Pour <code class="language-plaintext highlighter-rouge">0xF0000F00</code>, résultat: 8 bits à 1.</p>
+
+<p><strong>Structures de contrôle</strong>:</p>
+
+<p>Boucles et conditionnelles standard:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Tri à bulles (TD1)</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">TAILLE</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">TAILLE</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+            <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="2-pointeurs-et-gestion-mémoire">2. Pointeurs et Gestion Mémoire</h4>
+
+<p><strong>Les pointeurs</strong>:</p>
+
+<p>Concept fondamental du C: variable contenant une adresse mémoire.</p>
+
+<p>Déclaration et utilisation:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>  <span class="c1">// ptr pointe vers x</span>
+<span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>      <span class="c1">// Modifie x via le pointeur</span>
+</code></pre></div></div>
+
+<p><strong>Arithmétique des pointeurs</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">tab</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="n">tab</span><span class="p">;</span>  <span class="c1">// Pointe vers tab[0]</span>
+<span class="n">p</span><span class="o">++</span><span class="p">;</span>           <span class="c1">// Pointe vers tab[1]</span>
+<span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>      <span class="c1">// tab[1] = 100</span>
+</code></pre></div></div>
+
+<p><strong>Permutation par pointeurs (TD2)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">Permute</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="o">*</span><span class="n">a</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">a</span> <span class="o">=</span> <span class="o">*</span><span class="n">b</span><span class="p">;</span>
+    <span class="o">*</span><span class="n">b</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Allocation dynamique</strong>:</p>
+
+<p>Fonctions essentielles:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">malloc(size)</code>: alloue size octets</li>
+  <li><code class="language-plaintext highlighter-rouge">calloc(n, size)</code>: alloue et initialise à 0</li>
+  <li><code class="language-plaintext highlighter-rouge">free(ptr)</code>: libère la mémoire</li>
+</ul>
+
+<p>Exemple TD2:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">chaine</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+<span class="kt">int</span><span class="o">*</span> <span class="n">tab</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span>
+
+<span class="c1">// Utilisation...</span>
+
+<span class="n">free</span><span class="p">(</span><span class="n">chaine</span><span class="p">);</span>
+<span class="n">free</span><span class="p">(</span><span class="n">tab</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Risques</strong>:</p>
+<ul>
+  <li>Fuite mémoire si oubli de <code class="language-plaintext highlighter-rouge">free</code></li>
+  <li>Double free (libérer deux fois)</li>
+  <li>Accès après free (use-after-free)</li>
+  <li>Dépassement de buffer</li>
+</ul>
+
+<h4 id="3-structures-et-types-composés">3. Structures et Types Composés</h4>
+
+<p><strong>Définition de structures (TD3)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="p">{</span>
+    <span class="kt">char</span> <span class="n">nom</span><span class="p">[</span><span class="mi">50</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">naissance</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">notes</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">nb_notes</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p><strong>Utilisation</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="n">cedric</span><span class="p">;</span>
+<span class="n">strcpy</span><span class="p">(</span><span class="n">cedric</span><span class="p">.</span><span class="n">nom</span><span class="p">,</span> <span class="s">"Chanfreau"</span><span class="p">);</span>
+<span class="n">cedric</span><span class="p">.</span><span class="n">naissance</span> <span class="o">=</span> <span class="mi">2000</span><span class="p">;</span>
+<span class="n">cedric</span><span class="p">.</span><span class="n">notes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Pointeurs vers structures</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">Etudiant</span> <span class="o">*</span><span class="n">ptr</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">cedric</span><span class="p">;</span>
+<span class="n">ptr</span><span class="o">-&gt;</span><span class="n">naissance</span> <span class="o">=</span> <span class="mi">2001</span><span class="p">;</span>  <span class="c1">// Équivalent à (*ptr).naissance</span>
+</code></pre></div></div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/langage-c/pointeurs.svg" alt="Illustration des pointeurs en C" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Concept des pointeurs - Un pointeur stocke l'adresse mémoire d'une variable</p>
+</div>
+
+<p><strong>Copie de structures</strong>:</p>
+
+<p>Attention aux pointeurs dans les structures:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">S1</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">ch</span><span class="p">;</span>  <span class="c1">// Pointeur</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">S1</span> <span class="n">v1</span><span class="p">,</span> <span class="n">v2</span><span class="p">;</span>
+<span class="n">v1</span><span class="p">.</span><span class="n">ch</span> <span class="o">=</span> <span class="n">calloc</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">char</span><span class="p">));</span>
+<span class="n">strcpy</span><span class="p">(</span><span class="n">v1</span><span class="p">.</span><span class="n">ch</span><span class="p">,</span> <span class="s">"Test"</span><span class="p">);</span>
+
+<span class="n">v2</span> <span class="o">=</span> <span class="n">v1</span><span class="p">;</span>  <span class="c1">// Copie superficielle: v2.ch pointe vers la même zone!</span>
+</code></pre></div></div>
+
+<p>Solution: copie profonde manuelle ou allocation séparée.</p>
+
+<h4 id="4-structures-de-données-dynamiques">4. Structures de Données Dynamiques</h4>
+
+<p><strong>Listes chaînées (TP principal)</strong>:</p>
+
+<p>Structure d’un élément:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">struct</span> <span class="n">element</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">suiv</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">liste</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">premier</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">dernier</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">element</span><span class="o">*</span> <span class="n">courant</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p><strong>Initialisation</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">init_liste</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">premier</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Ajout en queue (file)</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">ajout_file</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">der</span><span class="p">,</span> <span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Liste vide</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">element</span><span class="p">));</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">coureur</span> <span class="o">=</span> <span class="n">coureur</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">premier</span> <span class="o">=</span> <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Ajout en fin</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">element</span><span class="p">));</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span> <span class="o">=</span> <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">coureur</span> <span class="o">=</span> <span class="n">coureur</span><span class="p">;</span>
+        <span class="n">der</span><span class="o">-&gt;</span><span class="n">dernier</span><span class="o">-&gt;</span><span class="n">suiv</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Parcours de liste</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">Aller_Debut</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span> <span class="o">=</span> <span class="n">liste</span><span class="o">-&gt;</span><span class="n">premier</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">Avancer</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span><span class="o">*</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span> <span class="o">=</span> <span class="n">liste</span><span class="o">-&gt;</span><span class="n">courant</span><span class="o">-&gt;</span><span class="n">suiv</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">Fin</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">liste</span><span class="p">.</span><span class="n">courant</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Comptage d’éléments</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">nbElement</span><span class="p">(</span><span class="k">struct</span> <span class="n">liste</span> <span class="n">liste</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">Fin</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">Avancer</span><span class="p">(</span><span class="o">&amp;</span><span class="n">liste</span><span class="p">);</span>
+        <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="5-fichiers-et-arguments">5. Fichiers et Arguments</h4>
+
+<p><strong>Arguments de ligne de commande (TD2)</strong>:</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Nombre d'arguments: %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argc</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Programme: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Arg1: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Arg2: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Exécution: <code class="language-plaintext highlighter-rouge">./programme arg1 arg2</code></p>
+
+<p><strong>Manipulation de fichiers</strong>:</p>
+
+<p>Ouverture et lecture:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">FILE</span><span class="o">*</span> <span class="n">fichier</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="s">"data.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">fichier</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">"Erreur ouverture"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="n">fichier</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">fclose</span><span class="p">(</span><span class="n">fichier</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Modes d’ouverture: <code class="language-plaintext highlighter-rouge">"r"</code> (lecture), <code class="language-plaintext highlighter-rouge">"w"</code> (écriture), <code class="language-plaintext highlighter-rouge">"a"</code> (ajout), <code class="language-plaintext highlighter-rouge">"rb"</code> (binaire)</p>
+
+<h4 id="6-programmation-modulaire">6. Programmation Modulaire</h4>
+
+<p><strong>Projet TP: Structure modulaire</strong></p>
+
+<p>Fichier <code class="language-plaintext highlighter-rouge">coureur.h</code>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#ifndef _COUREUR_H
+#define _COUREUR_H
+</span>
+<span class="k">struct</span> <span class="n">Coureur</span> <span class="p">{</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">nom</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">prenom</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">num_dossard</span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="n">nom_equipe</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">temps_etapes</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="nf">Creer_Coureur</span><span class="p">(</span><span class="kt">char</span> <span class="n">nom</span><span class="p">[],</span> <span class="kt">char</span> <span class="n">prenom</span><span class="p">[],</span> 
+                               <span class="kt">int</span> <span class="n">dossard</span><span class="p">,</span> <span class="kt">char</span> <span class="n">equipe</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">temps</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">Ajouter_Temps</span><span class="p">(</span><span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">,</span> <span class="kt">int</span> <span class="n">temps_jour</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">Afficher_Coureur</span><span class="p">(</span><span class="k">struct</span> <span class="n">Coureur</span><span class="o">*</span> <span class="n">coureur</span><span class="p">);</span>
+
+<span class="cp">#endif
+</span></code></pre></div></div>
+
+<p><strong>Guards d’inclusion</strong>: <code class="language-plaintext highlighter-rouge">#ifndef</code>, <code class="language-plaintext highlighter-rouge">#define</code>, <code class="language-plaintext highlighter-rouge">#endif</code> évitent les inclusions multiples.</p>
+
+<p><strong>Compilation modulaire</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-c</span> coureur.c <span class="nt">-o</span> coureur.o
+gcc <span class="nt">-Wall</span> <span class="nt">-c</span> liste.c <span class="nt">-o</span> liste.o
+gcc <span class="nt">-Wall</span> <span class="nt">-c</span> test_coureur.c <span class="nt">-o</span> test_coureur.o
+gcc coureur.o liste.o test_coureur.o <span class="nt">-o</span> programme
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="exercices-de-td">Exercices de TD</h3>
+
+<p><strong>TD1: Manipulation de tableaux et bits</strong></p>
+
+<p>Objectifs:</p>
+<ul>
+  <li>Tri à bulles d’un tableau</li>
+  <li>Multiplication sans opérateur *</li>
+  <li>Opérations bit à bit (masquage, comptage)</li>
+</ul>
+
+<p><strong>TD2: Pointeurs et allocation dynamique</strong></p>
+
+<p>Exercices:</p>
+<ul>
+  <li>Fonction Permute avec pointeurs</li>
+  <li>Allocation dynamique avec calloc</li>
+  <li>Arguments de ligne de commande</li>
+</ul>
+
+<p><strong>TD3: Structures et copie</strong></p>
+
+<p>Problématiques:</p>
+<ul>
+  <li>Structures avec pointeurs vs tableaux</li>
+  <li>Copie superficielle vs profonde</li>
+  <li>Gestion mémoire dans structures</li>
+</ul>
+
+<p><strong>TD4-TD5: Fichiers et structures avancées</strong></p>
+
+<p>Applications pratiques de manipulation de données.</p>
+
+<h3 id="travaux-pratiques">Travaux Pratiques</h3>
+
+<p><strong>TP: Gestion de liste de coureurs</strong></p>
+
+<p>Application complète avec:</p>
+<ul>
+  <li>Structure <code class="language-plaintext highlighter-rouge">Coureur</code> avec allocation dynamique de chaînes</li>
+  <li>Liste chaînée pour gérer plusieurs coureurs</li>
+  <li>Opérations: création, ajout, parcours, suppression</li>
+  <li>Affichage et calcul de statistiques</li>
+</ul>
+
+<p><strong>Fonctionnalités implémentées</strong>:</p>
+<ul>
+  <li>Création de coureurs avec malloc pour les strings</li>
+  <li>Ajout en file (FIFO)</li>
+  <li>Parcours avec pointeur courant</li>
+  <li>Suppression d’élément à position donnée</li>
+  <li>Comptage d’éléments</li>
+  <li>Libération mémoire complète</li>
+</ul>
+
+<p><strong>TP_bis: Extensions</strong></p>
+
+<p>Versions avancées avec:</p>
+<ul>
+  <li>Tri de listes</li>
+  <li>Recherche par critères</li>
+  <li>Fusion de listes</li>
+  <li>Optimisations mémoire</li>
+</ul>
+
+<h3 id="outils-de-développement">Outils de Développement</h3>
+
+<p><strong>GCC (GNU Compiler Collection)</strong>:</p>
+
+<p>Compilation de base:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-Wall</span> <span class="nt">-o</span> programme source.c
+</code></pre></div></div>
+
+<p>Options utiles:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">-Wall</code>: affiche tous les warnings</li>
+  <li><code class="language-plaintext highlighter-rouge">-g</code>: ajoute symboles de debug</li>
+  <li><code class="language-plaintext highlighter-rouge">-O2</code>: optimisation niveau 2</li>
+  <li><code class="language-plaintext highlighter-rouge">-std=c99</code>: standard C99</li>
+</ul>
+
+<p><strong>GDB (GNU Debugger)</strong>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gcc <span class="nt">-g</span> <span class="nt">-o</span> programme source.c
+gdb ./programme
+</code></pre></div></div>
+
+<p>Commandes GDB:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">break main</code>: point d’arrêt</li>
+  <li><code class="language-plaintext highlighter-rouge">run</code>: exécution</li>
+  <li><code class="language-plaintext highlighter-rouge">next</code>: ligne suivante</li>
+  <li><code class="language-plaintext highlighter-rouge">print var</code>: afficher variable</li>
+  <li><code class="language-plaintext highlighter-rouge">backtrace</code>: pile d’appels</li>
+</ul>
+
+<p><strong>Valgrind (détection fuites mémoire)</strong>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>valgrind <span class="nt">--leak-check</span><span class="o">=</span>full ./programme
+</code></pre></div></div>
+
+<p>Détecte:</p>
+<ul>
+  <li>Fuites mémoire (malloc sans free)</li>
+  <li>Accès mémoire invalides</li>
+  <li>Utilisation de mémoire non initialisée</li>
+</ul>
+
+<h3 id="bonnes-pratiques">Bonnes Pratiques</h3>
+
+<p><strong>Gestion mémoire</strong>:</p>
+<ul>
+  <li>Toujours libérer ce qui est alloué</li>
+  <li>Vérifier le retour de malloc</li>
+  <li>Mettre les pointeurs à NULL après free</li>
+</ul>
+
+<p><strong>Code sûr</strong>:</p>
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">char</span><span class="o">*</span> <span class="n">str</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">str</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">"Erreur allocation</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Utilisation...</span>
+
+<span class="n">free</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+<span class="n">str</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>  <span class="c1">// Évite double free</span>
+</code></pre></div></div>
+
+<p><strong>Organisation code</strong>:</p>
+<ul>
+  <li>Fichiers .h pour déclarations</li>
+  <li>Fichiers .c pour implémentations</li>
+  <li>Guards d’inclusion systématiques</li>
+  <li>Commentaires pour fonctions complexes</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+
+<p><strong>Techniques</strong>:</p>
+<ul>
+  <li>Maîtrise des pointeurs et gestion mémoire</li>
+  <li>Implémentation de structures de données complexes</li>
+  <li>Débogage avec GDB et Valgrind</li>
+  <li>Compilation modulaire et organisation projet</li>
+  <li>Manipulation bit à bit pour le bas niveau</li>
+</ul>
+
+<p><strong>Méthodologiques</strong>:</p>
+<ul>
+  <li>Rigueur dans la gestion mémoire</li>
+  <li>Tests systématiques des allocations</li>
+  <li>Documentation et organisation du code</li>
+  <li>Résolution méthodique des bugs</li>
+</ul>
+
+<h3 id="auto-évaluation">Auto-évaluation</h3>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Compréhension solide des pointeurs</li>
+  <li>Capacité à créer structures de données dynamiques</li>
+  <li>Bonne pratique de la compilation modulaire</li>
+  <li>Maîtrise des outils (GCC, GDB)</li>
+</ul>
+
+<p><strong>Défis</strong>:</p>
+<ul>
+  <li>Complexité initiale des pointeurs de pointeurs</li>
+  <li>Gestion rigoureuse de la mémoire (fuites)</li>
+  <li>Debugging de segmentation faults</li>
+  <li>Compréhension fine des copies de structures</li>
+</ul>
+
+<h3 id="applications-pratiques">Applications pratiques</h3>
+
+<p>Le C est utilisé dans:</p>
+<ul>
+  <li><strong>Systèmes embarqués</strong>: microcontrôleurs (Arduino, STM32)</li>
+  <li><strong>Systèmes d’exploitation</strong>: Linux kernel, drivers</li>
+  <li><strong>Temps réel</strong>: applications critiques</li>
+  <li><strong>Performances</strong>: calcul scientifique, traitement signal</li>
+  <li><strong>Réseaux</strong>: protocoles, serveurs</li>
+  <li><strong>Bases de données</strong>: PostgreSQL, SQLite</li>
+</ul>
+
+<h3 id="connexions-avec-autres-cours">Connexions avec autres cours</h3>
+
+<ul>
+  <li><strong>Microcontrôleurs</strong> (S6): programmation STM32 en C</li>
+  <li><strong>Systèmes d’exploitation</strong> (S6): appels système en C</li>
+  <li><strong>Temps Réel</strong> (S8): FreeRTOS programmé en C</li>
+  <li><strong>Réseaux</strong> (S6): sockets et protocoles en C</li>
+  <li><strong>Architecture</strong> (S5): compréhension assembleur depuis C</li>
+</ul>
+
+<h3 id="perspectives">Perspectives</h3>
+
+<p><strong>Évolution du langage</strong>:</p>
+<ul>
+  <li>C11, C17, C23: standards modernes</li>
+  <li>Outils statiques: Clang, sanitizers</li>
+  <li>Intégration IDE: VS Code, CLion</li>
+</ul>
+
+<p><strong>Alternatives modernes</strong>:</p>
+<ul>
+  <li>Rust: sécurité mémoire garantie</li>
+  <li>C++: orienté objet avec compatibilité C</li>
+  <li>Zig: modernisation du C</li>
+</ul>
+
+<p>Mais le C reste incontournable pour:</p>
+<ul>
+  <li>Systèmes embarqués contraints</li>
+  <li>Interfaces hardware</li>
+  <li>Performance maximale</li>
+  <li>Legacy code (Linux, UNIX)</li>
+</ul>
+
+<h3 id="recommandations">Recommandations</h3>
+
+<ol>
+  <li><strong>Pratiquer régulièrement</strong>: coder chaque jour</li>
+  <li><strong>Lire du code</strong>: projets open source (Git, SQLite)</li>
+  <li><strong>Utiliser Valgrind</strong>: systématiquement</li>
+  <li><strong>Tester rigoureusement</strong>: cas limites, gestion erreurs</li>
+  <li><strong>Documenter</strong>: fonctions et algorithmes complexes</li>
+</ol>
+
+<p><strong>Ressources</strong>:</p>
+<ul>
+  <li>K&amp;R: “The C Programming Language” (référence)</li>
+  <li>Beej’s Guide: tutoriels réseau et sockets</li>
+  <li>Linux kernel source: exemples réels</li>
+  <li>Stack Overflow: résolution problèmes</li>
+</ul>
+
+<p>En conclusion, le C reste le langage fondamental pour comprendre le fonctionnement bas niveau des ordinateurs et programmer efficacement les systèmes embarqués. La rigueur acquise en C est bénéfique pour tous les autres langages.</p>
+
+<hr />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4, h5 {
+        color: #2a7ae2;
+    }
+    p {
+        text-align: justify;
+    }
+    code {
+        background-color: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: 'Courier New', monospace;
+    }
+    pre {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h3 id="environnement-de-développement">Environnement de développement</h3>
+
+<p><strong>Outils utilisés</strong>:</p>
+<ul>
+  <li><strong>GCC</strong> (GNU Compiler Collection): Compilateur principal</li>
+  <li><strong>GDB</strong> (GNU Debugger): Débogueur en ligne de commande</li>
+  <li><strong>Make et Makefiles</strong>: Automatisation de compilation</li>
+  <li><strong>Valgrind</strong>: Débogage et détection de fuites mémoire</li>
+  <li><strong>Éditeurs</strong>: VS Code, Vim, Emacs</li>
+</ul>
+
+<h3 id="organisation-mémoire">Organisation mémoire</h3>
+
+<p><strong>Layout mémoire</strong>:</p>
+<ul>
+  <li>Stack (pile) vs Heap (tas)</li>
+  <li>Segments mémoire (text, data, BSS)</li>
+  <li>Stack frames et call stack</li>
+  <li>Alignement mémoire</li>
+  <li>Gestion automatique vs manuelle</li>
+</ul>
+
+<h3 id="processus-de-compilation">Processus de compilation</h3>
+
+<ol>
+  <li><strong>Préprocessing</strong>: Traitement des directives #</li>
+  <li><strong>Compilation</strong>: Traduction en assembleur</li>
+  <li><strong>Assembly</strong>: Génération du code machine</li>
+  <li><strong>Linking</strong>: Édition de liens</li>
+  <li><strong>Exécutable</strong>: Fichier final</li>
+</ol>
+
+<h3 id="structures-de-données-implémentées">Structures de données implémentées</h3>
+
+<ul>
+  <li>Listes chaînées (simples, doubles, circulaires)</li>
+  <li>Piles et files</li>
+  <li>Arbres binaires</li>
+  <li>Tables de hachage</li>
+  <li>Graphes</li>
+</ul>
+
+<h3 id="bonnes-pratiques-enseignées">Bonnes pratiques enseignées</h3>
+
+<ul>
+  <li>Organisation et structure du code</li>
+  <li>Conventions de nommage</li>
+  <li>Commentaires et documentation</li>
+  <li>Stratégies de gestion d’erreurs</li>
+  <li>Sécurité mémoire</li>
+  <li>Portabilité du code</li>
+  <li>Optimisation des performances</li>
+</ul>
+
+<h3 id="concepts-de-programmation-système">Concepts de programmation système</h3>
+
+<ul>
+  <li>Appels système</li>
+  <li>Gestion de processus</li>
+  <li>Communication inter-processus</li>
+  <li>Signaux</li>
+  <li>Threads (introduction)</li>
+  <li>Programmation réseau (sockets)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-compétences-acquises-auto-évaluation-avis">PART D: COMPÉTENCES ACQUISES, AUTO-ÉVALUATION, AVIS</h2>
+
+<h3 id="compétences-développées">Compétences développées</h3>
+
+<p><strong>Compétences techniques</strong>:</p>
+<ul>
+  <li>Maîtrise solide de la programmation C</li>
+  <li>Débogage systématique et tests</li>
+  <li>Gestion efficace de la mémoire</li>
+  <li>Compétences en programmation bas niveau</li>
+  <li>Pensée algorithmique en C</li>
+</ul>
+
+<p><strong>Compétences transversales</strong>:</p>
+<ul>
+  <li>Rigueur et précision dans le code</li>
+  <li>Résolution méthodique de problèmes</li>
+  <li>Analyse et optimisation de performances</li>
+  <li>Lecture et compréhension de code existant</li>
+  <li>Documentation technique</li>
+</ul>
+
+<h3 id="auto-évaluation-1">Auto-évaluation</h3>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Compréhension approfondie des pointeurs et de la mémoire</li>
+  <li>Capacité à écrire du code C efficace et optimisé</li>
+  <li>Maîtrise des outils de développement (GCC, GDB, Make)</li>
+  <li>Solide fondation pour la programmation système</li>
+  <li>Expérience pratique avec projets réels</li>
+</ul>
+
+<p><strong>Défis rencontrés</strong>:</p>
+<ul>
+  <li>Complexité initiale des pointeurs et de l’arithmétique pointeurs</li>
+  <li>Gestion des fuites mémoire et bugs subtils</li>
+  <li>Débogage de problèmes de segmentation fault</li>
+  <li>Compréhension fine du cycle de compilation</li>
+  <li>Optimisation mémoire et performances</li>
+</ul>
+
+<h3 id="apports-pour-le-parcours">Apports pour le parcours</h3>
+
+<p>Ce cours a été fondamental pour:</p>
+<ul>
+  <li><strong>Systèmes embarqués</strong>: Base essentielle pour la programmation microcontrôleurs</li>
+  <li><strong>Systèmes d’exploitation</strong>: Compréhension des mécanismes bas niveau</li>
+  <li><strong>Performance</strong>: Capacité à écrire du code efficace</li>
+  <li><strong>Projets techniques</strong>: Langage utilisé dans de nombreux projets d’école</li>
+  <li><strong>Employabilité</strong>: Compétence très recherchée en industrie</li>
+</ul>
+
+<h3 id="applications-pratiques-1">Applications pratiques</h3>
+
+<p>Les compétences acquises sont directement utilisées dans:</p>
+<ul>
+  <li>Développement de systèmes d’exploitation</li>
+  <li>Programmation de systèmes embarqués</li>
+  <li>Développement de drivers et pilotes</li>
+  <li>Utilitaires système</li>
+  <li>Calcul haute performance</li>
+  <li>Systèmes temps réel</li>
+  <li>Programmation réseau</li>
+</ul>
+
+<h3 id="projets-marquants">Projets marquants</h3>
+
+<p><strong>Gestion de structures de données</strong>:</p>
+<ul>
+  <li>Implémentation complète de listes chaînées avec gestion mémoire</li>
+  <li>Création de structures de données réutilisables</li>
+</ul>
+
+<p><strong>Manipulation de fichiers</strong>:</p>
+<ul>
+  <li>Développement d’utilitaires de traitement de fichiers</li>
+  <li>Gestion d’erreurs robuste</li>
+</ul>
+
+<p><strong>Programmation système</strong>:</p>
+<ul>
+  <li>Simulateurs de bas niveau</li>
+  <li>Interfaces avec le système</li>
+</ul>
+
+<h3 id="ressources-et-documentation">Ressources et documentation</h3>
+
+<ul>
+  <li>Notes de cours complètes</li>
+  <li>Exercices TD avec solutions détaillées</li>
+  <li>Supports TP laboratoire</li>
+  <li>Exercices complémentaires (TP_bis)</li>
+  <li>Manuels de référence C</li>
+  <li>Documentation en ligne (GNU, C standard)</li>
+</ul>
+
+<h3 id="évolution-des-compétences">Évolution des compétences</h3>
+
+<ul>
+  <li><strong>Début</strong>: Syntaxe de base, types simples</li>
+  <li><strong>Milieu</strong>: Pointeurs, structures, allocation dynamique</li>
+  <li><strong>Fin</strong>: Programmation système, optimisation, projets complexes</li>
+</ul>
+
+<p><strong>Recommandation</strong>: Le langage C est fondamental en ingénierie électronique et informatique embarquée. Ce cours établit des bases solides pour tous les cours de systèmes embarqués, microcontrôleurs et systèmes d’exploitation à venir. La pratique régulière et la lecture de code source sont essentielles pour consolider ces compétences.</p>
+
+<hr />
+
+<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+
+<p>Voici les supports de cours en PDF pour approfondir les différents aspects de la programmation C :</p>
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        margin-top: 0;
+        color: #2a7ae2;
+        border-bottom: 2px solid #2a7ae2;
+        padding-bottom: 10px;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>🎯 Les Pointeurs</h4>
+      <p>Cours complet sur les pointeurs, l'arithmétique des pointeurs, et la manipulation de la mémoire en C.</p>
+      <embed src="/cours-pdf/S5/Langage-C/pointeurs.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/pointeurs.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🏗️ Structures et Types Composés</h4>
+      <p>Définition et utilisation des structures, unions, énumérations et types définis par l'utilisateur.</p>
+      <embed src="/cours-pdf/S5/Langage-C/structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>💾 Gestion de la Mémoire</h4>
+      <p>Allocation dynamique, gestion du heap, détection de fuites mémoire et bonnes pratiques.</p>
+      <embed src="/cours-pdf/S5/Langage-C/memorisation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/memorisation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>⚙️ Compilation et Linking</h4>
+      <p>Processus de compilation, préprocesseur, linkage, bibliothèques statiques et dynamiques.</p>
+      <embed src="/cours-pdf/S5/Langage-C/compilation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/compilation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📁 Entrées/Sorties et Fichiers</h4>
+      <p>Manipulation de fichiers en C, flux standard, fonctions de lecture/écriture et gestion d'erreurs.</p>
+      <embed src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/io_fichiers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🏃 TP: Gestion de Coureurs</h4>
+      <p>Travail pratique complet sur les listes chaînées avec gestion dynamique de structures de coureurs.</p>
+      <embed src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/tp_coureur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><a href="./my-courses-2022-2023.html">← Back to My Courses 2022-2023</a></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

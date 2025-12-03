@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Middleware for IoT | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Middleware for IoT" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="← Back to My Courses 2024-2025 🔗 Cours connexes: Security for Connected Objects - S9 - Sécurisation IoT Cloud &amp; Edge Computing - S9 - Architectures IoT Wireless Sensors Networks - S9 - Réseaux de capteurs Middleware for IoT PART A: GENERALITIES Presentation The “Middleware for IoT” course, taught by T. Monteil, provided an in-depth look into communication protocols and middleware solutions for IoT. The course covered middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial. My Function In this course, I was responsible for: Understanding different middleware architectures and their applications in IoT. Designing and implementing middleware solutions for IoT systems. Conducting experiments to test the efficiency and scalability of various middleware solutions. PART C: TECHNICAL PART This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT, OneM2M and Node-RED and their applications in real-world scenarios. Technical Concepts Learned 1. MQTT Protocol I learned about the MQTT protocol, which is a lightweight messaging protocol designed for small sensors and mobile devices. MQTT uses a publish/subscribe model, making it efficient for IoT applications with limited bandwidth and resources. Key features include: Architecture: Devices (IoT nodes) publish and subscribe to topics via an MQTT broker. IP Protocol: MQTT operates over TCP/IP, ensuring reliable communication with minimal bandwidth usage. Security: MQTT supports username/password authentication and TLS encryption for secure communication. 2. Installing and Testing the MQTT Broker I installed the Mosquitto broker, an open-source implementation of the MQTT protocol. Using commands like mosquitto_pub and mosquitto_sub, I tested the communication between the client and the broker, validating the setup. 3. NodeMCU and MQTT Communication I used the ESP8266 to create an IoT device that communicates via MQTT. The NodeMCU supports Wi-Fi and can be programmed using the Arduino IDE. I configured the board to publish and subscribe to MQTT topics, enabling real-time communication with other devices. I utilized the ArduinoMqttClient library to program the board. The objective was to update the button status on the button/state topic each time the button was pressed. Additionally, each button press triggered the extraction of luminosity data, which was then published on the light/state topic. 4. Fast Application Prototyping with Node-RED Node-RED is a visual programming tool that simplifies IoT application development. I used Node-RED to integrate real and simulated devices, accelerating development and providing clear visualization. I implemented the following features to manage sensor data and control actuators: a. Check MQTT Connectivity We added an MQTT receiver block on Node-RED subscribed to the insa/luminosity topic. The debugger confirmed correct value reception. b. Sensors and Actuators This flow simulates a light sensor sending values. A Switch node checks if luminosity exceeds 50, toggling LED ON or OFF: Light &gt; 50 ⇒ LED ON Light ≤ 50 ⇒ LED OFF c. Dashboard Using node-red-dashboard, we created a GUI to visualize sensor data and control devices in real-time. Graphs display sensor data, and buttons control actuators. d. Email and Notification Implemented with node-red-node-email, this feature sends automatic alerts when switch state or luminosity changes, ensuring proactive monitoring and quick reactions to anomalies. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the main standards for the Internet of Things. Deploying and configuring IoT architectures using MQTT and OneM2M. Integrating new technologies into deployed architectures. Analyzing and evaluating optimal wireless network technologies. Suggesting optimal technological solutions for IoT networks. Optimizing communication protocols for IoT with respect to energy limitations and security concerns. Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver. Self-Evaluation This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices. Also I understood the utility of these concepts which lead to an utilization of few of them in our innovative project for a better functioning. My Opinion This was one of my favorite courses as it combined both hardware and software aspects. I aspire to work as an embedded software engineer, and this course provided a perfect blend of both domains. The labs showed a clear progression in our work on the project. We started with simple MQTT communication, moved on to using the Arduino library for MQTT, and finally integrated everything with Node-RED. This step-by-step approach made the learning process both enjoyable and highly educational. Project Report Open Complete Report Open Lab Subject" />
+<meta property="og:description" content="← Back to My Courses 2024-2025 🔗 Cours connexes: Security for Connected Objects - S9 - Sécurisation IoT Cloud &amp; Edge Computing - S9 - Architectures IoT Wireless Sensors Networks - S9 - Réseaux de capteurs Middleware for IoT PART A: GENERALITIES Presentation The “Middleware for IoT” course, taught by T. Monteil, provided an in-depth look into communication protocols and middleware solutions for IoT. The course covered middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial. My Function In this course, I was responsible for: Understanding different middleware architectures and their applications in IoT. Designing and implementing middleware solutions for IoT systems. Conducting experiments to test the efficiency and scalability of various middleware solutions. PART C: TECHNICAL PART This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT, OneM2M and Node-RED and their applications in real-world scenarios. Technical Concepts Learned 1. MQTT Protocol I learned about the MQTT protocol, which is a lightweight messaging protocol designed for small sensors and mobile devices. MQTT uses a publish/subscribe model, making it efficient for IoT applications with limited bandwidth and resources. Key features include: Architecture: Devices (IoT nodes) publish and subscribe to topics via an MQTT broker. IP Protocol: MQTT operates over TCP/IP, ensuring reliable communication with minimal bandwidth usage. Security: MQTT supports username/password authentication and TLS encryption for secure communication. 2. Installing and Testing the MQTT Broker I installed the Mosquitto broker, an open-source implementation of the MQTT protocol. Using commands like mosquitto_pub and mosquitto_sub, I tested the communication between the client and the broker, validating the setup. 3. NodeMCU and MQTT Communication I used the ESP8266 to create an IoT device that communicates via MQTT. The NodeMCU supports Wi-Fi and can be programmed using the Arduino IDE. I configured the board to publish and subscribe to MQTT topics, enabling real-time communication with other devices. I utilized the ArduinoMqttClient library to program the board. The objective was to update the button status on the button/state topic each time the button was pressed. Additionally, each button press triggered the extraction of luminosity data, which was then published on the light/state topic. 4. Fast Application Prototyping with Node-RED Node-RED is a visual programming tool that simplifies IoT application development. I used Node-RED to integrate real and simulated devices, accelerating development and providing clear visualization. I implemented the following features to manage sensor data and control actuators: a. Check MQTT Connectivity We added an MQTT receiver block on Node-RED subscribed to the insa/luminosity topic. The debugger confirmed correct value reception. b. Sensors and Actuators This flow simulates a light sensor sending values. A Switch node checks if luminosity exceeds 50, toggling LED ON or OFF: Light &gt; 50 ⇒ LED ON Light ≤ 50 ⇒ LED OFF c. Dashboard Using node-red-dashboard, we created a GUI to visualize sensor data and control devices in real-time. Graphs display sensor data, and buttons control actuators. d. Email and Notification Implemented with node-red-node-email, this feature sends automatic alerts when switch state or luminosity changes, ensuring proactive monitoring and quick reactions to anomalies. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the main standards for the Internet of Things. Deploying and configuring IoT architectures using MQTT and OneM2M. Integrating new technologies into deployed architectures. Analyzing and evaluating optimal wireless network technologies. Suggesting optimal technological solutions for IoT networks. Optimizing communication protocols for IoT with respect to energy limitations and security concerns. Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver. Self-Evaluation This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices. Also I understood the utility of these concepts which lead to an utilization of few of them in our innovative project for a better functioning. My Opinion This was one of my favorite courses as it combined both hardware and software aspects. I aspire to work as an embedded software engineer, and this course provided a perfect blend of both domains. The labs showed a clear progression in our work on the project. We started with simple MQTT communication, moved on to using the Arduino library for MQTT, and finally integrated everything with Node-RED. This step-by-step approach made the learning process both enjoyable and highly educational. Project Report Open Complete Report Open Lab Subject" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/middleware-iot.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/middleware-iot.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Middleware for IoT" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"← Back to My Courses 2024-2025 🔗 Cours connexes: Security for Connected Objects - S9 - Sécurisation IoT Cloud &amp; Edge Computing - S9 - Architectures IoT Wireless Sensors Networks - S9 - Réseaux de capteurs Middleware for IoT PART A: GENERALITIES Presentation The “Middleware for IoT” course, taught by T. Monteil, provided an in-depth look into communication protocols and middleware solutions for IoT. The course covered middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial. My Function In this course, I was responsible for: Understanding different middleware architectures and their applications in IoT. Designing and implementing middleware solutions for IoT systems. Conducting experiments to test the efficiency and scalability of various middleware solutions. PART C: TECHNICAL PART This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT, OneM2M and Node-RED and their applications in real-world scenarios. Technical Concepts Learned 1. MQTT Protocol I learned about the MQTT protocol, which is a lightweight messaging protocol designed for small sensors and mobile devices. MQTT uses a publish/subscribe model, making it efficient for IoT applications with limited bandwidth and resources. Key features include: Architecture: Devices (IoT nodes) publish and subscribe to topics via an MQTT broker. IP Protocol: MQTT operates over TCP/IP, ensuring reliable communication with minimal bandwidth usage. Security: MQTT supports username/password authentication and TLS encryption for secure communication. 2. Installing and Testing the MQTT Broker I installed the Mosquitto broker, an open-source implementation of the MQTT protocol. Using commands like mosquitto_pub and mosquitto_sub, I tested the communication between the client and the broker, validating the setup. 3. NodeMCU and MQTT Communication I used the ESP8266 to create an IoT device that communicates via MQTT. The NodeMCU supports Wi-Fi and can be programmed using the Arduino IDE. I configured the board to publish and subscribe to MQTT topics, enabling real-time communication with other devices. I utilized the ArduinoMqttClient library to program the board. The objective was to update the button status on the button/state topic each time the button was pressed. Additionally, each button press triggered the extraction of luminosity data, which was then published on the light/state topic. 4. Fast Application Prototyping with Node-RED Node-RED is a visual programming tool that simplifies IoT application development. I used Node-RED to integrate real and simulated devices, accelerating development and providing clear visualization. I implemented the following features to manage sensor data and control actuators: a. Check MQTT Connectivity We added an MQTT receiver block on Node-RED subscribed to the insa/luminosity topic. The debugger confirmed correct value reception. b. Sensors and Actuators This flow simulates a light sensor sending values. A Switch node checks if luminosity exceeds 50, toggling LED ON or OFF: Light &gt; 50 ⇒ LED ON Light ≤ 50 ⇒ LED OFF c. Dashboard Using node-red-dashboard, we created a GUI to visualize sensor data and control devices in real-time. Graphs display sensor data, and buttons control actuators. d. Email and Notification Implemented with node-red-node-email, this feature sends automatic alerts when switch state or luminosity changes, ensuring proactive monitoring and quick reactions to anomalies. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the main standards for the Internet of Things. Deploying and configuring IoT architectures using MQTT and OneM2M. Integrating new technologies into deployed architectures. Analyzing and evaluating optimal wireless network technologies. Suggesting optimal technological solutions for IoT networks. Optimizing communication protocols for IoT with respect to energy limitations and security concerns. Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver. Self-Evaluation This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices. Also I understood the utility of these concepts which lead to an utilization of few of them in our innovative project for a better functioning. My Opinion This was one of my favorite courses as it combined both hardware and software aspects. I aspire to work as an embedded software engineer, and this course provided a perfect blend of both domains. The labs showed a clear progression in our work on the project. We started with simple MQTT communication, moved on to using the Arduino library for MQTT, and finally integrated everything with Node-RED. This step-by-step approach made the learning process both enjoyable and highly educational. Project Report Open Complete Report Open Lab Subject","headline":"Middleware for IoT","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/middleware-iot.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/middleware-iot.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p><a href="./my-courses-2024-2025.html">← Back to My Courses 2024-2025</a></p>
+
+<p><strong>🔗 Cours connexes</strong>:</p>
+<ul>
+  <li><a href="./2024-10-03-security-object.html">Security for Connected Objects - S9</a> - Sécurisation IoT</li>
+  <li><a href="./2024-10-03-cloud-edge.html">Cloud &amp; Edge Computing - S9</a> - Architectures IoT</li>
+  <li><a href="./2024-10-03-wireless-sensors.html">Wireless Sensors Networks - S9</a> - Réseaux de capteurs</li>
+</ul>
+
+<hr />
+
+<h1 id="middleware-for-iot">Middleware for IoT</h1>
+
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The “Middleware for IoT” course, taught by T. Monteil, provided an in-depth look into communication protocols and middleware solutions for IoT. The course covered middleware architectures and their applications in IoT, focusing on how to create scalable and efficient communication systems.</p>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="experience-details">Experience Details</h3>
+
+<h4 id="environment-and-context">Environment and Context</h4>
+<p>During this course, I explored both theoretical and practical aspects of middleware for IoT. The increasing importance of efficient communication protocols in IoT highlighted the relevance of this subject. The hands-on sessions allowed me to apply the concepts learned in class to real-world scenarios, which was beneficial.</p>
+
+<h4 id="my-function">My Function</h4>
+<p>In this course, I was responsible for:</p>
+<ul>
+  <li>Understanding different middleware architectures and their applications in IoT.</li>
+  <li>Designing and implementing middleware solutions for IoT systems.</li>
+  <li>Conducting experiments to test the efficiency and scalability of various middleware solutions.</li>
+</ul>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<p>This section explores the technical aspects of middleware for IoT, focusing on communication protocols like MQTT, OneM2M and Node-RED and their applications in real-world scenarios.</p>
+
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
+
+<h4 id="1-mqtt-protocol">1. MQTT Protocol</h4>
+<p>I learned about the MQTT protocol, which is a lightweight messaging protocol designed for small sensors and mobile devices. MQTT uses a publish/subscribe model, making it efficient for IoT applications with limited bandwidth and resources. Key features include:</p>
+<ul>
+  <li><strong>Architecture</strong>: Devices (IoT nodes) publish and subscribe to topics via an MQTT broker.</li>
+  <li><strong>IP Protocol</strong>: MQTT operates over TCP/IP, ensuring reliable communication with minimal bandwidth usage.</li>
+  <li><strong>Security</strong>: MQTT supports username/password authentication and TLS encryption for secure communication.</li>
+</ul>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt.png" style="width: 50%;" />
+</div>
+<p><br /></p>
+
+<h4 id="2-installing-and-testing-the-mqtt-broker">2. Installing and Testing the MQTT Broker</h4>
+<p>I installed the Mosquitto broker, an open-source implementation of the MQTT protocol. Using commands like <code class="language-plaintext highlighter-rouge">mosquitto_pub</code> and <code class="language-plaintext highlighter-rouge">mosquitto_sub</code>, I tested the communication between the client and the broker, validating the setup.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt_start.png" style="width: 60%;" />
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/mqtt_sub_pub.png" style="width: 60%;" />
+</div>
+<p><br /></p>
+
+<h4 id="3-nodemcu-and-mqtt-communication">3. NodeMCU and MQTT Communication</h4>
+<p>I used the ESP8266 to create an IoT device that communicates via MQTT. The NodeMCU supports Wi-Fi and can be programmed using the Arduino IDE. I configured the board to publish and subscribe to MQTT topics, enabling real-time communication with other devices.</p>
+
+<p>I utilized the ArduinoMqttClient library to program the board. The objective was to update the button status on the <code class="language-plaintext highlighter-rouge">button/state</code> topic each time the button was pressed. Additionally, each button press triggered the extraction of luminosity data, which was then published on the <code class="language-plaintext highlighter-rouge">light/state</code> topic.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodemcu_app.png" style="width: 70%;" />
+</div>
+<p><br /></p>
+
+<h4 id="4-fast-application-prototyping-with-node-red">4. Fast Application Prototyping with Node-RED</h4>
+<p>Node-RED is a visual programming tool that simplifies IoT application development. I used Node-RED to integrate real and simulated devices, accelerating development and providing clear visualization. I implemented the following features to manage sensor data and control actuators:</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered.png" style="width: 70%;" />
+</div>
+
+<h4 id="a-check-mqtt-connectivity">a. Check MQTT Connectivity</h4>
+<p>We added an MQTT receiver block on Node-RED subscribed to the <code class="language-plaintext highlighter-rouge">insa/luminosity</code> topic. The debugger confirmed correct value reception.</p>
+
+<h4 id="b-sensors-and-actuators">b. Sensors and Actuators</h4>
+<p>This flow simulates a light sensor sending values. A Switch node checks if luminosity exceeds 50, toggling LED ON or OFF:</p>
+<ul>
+  <li>Light &gt; 50 ⇒ LED ON</li>
+  <li>Light ≤ 50 ⇒ LED OFF</li>
+</ul>
+
+<h4 id="c-dashboard">c. Dashboard</h4>
+<p>Using <code class="language-plaintext highlighter-rouge">node-red-dashboard</code>, we created a GUI to visualize sensor data and control devices in real-time. Graphs display sensor data, and buttons control actuators.</p>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered_dashboard.png" style="width: 30%;" />
+</div>
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_Middleware_IOT/nodered_led.png" style="width: 60%;" />
+</div>
+<p><br /></p>
+
+<h4 id="d-email-and-notification">d. Email and Notification</h4>
+<p>Implemented with <code class="language-plaintext highlighter-rouge">node-red-node-email</code>, this feature sends automatic alerts when switch state or luminosity changes, ensuring proactive monitoring and quick reactions to anomalies.</p>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
+<ul>
+  <li>Understanding the main standards for the Internet of Things.</li>
+  <li>Deploying and configuring IoT architectures using MQTT and OneM2M.</li>
+  <li>Integrating new technologies into deployed architectures.</li>
+  <li>Analyzing and evaluating optimal wireless network technologies.</li>
+  <li>Suggesting optimal technological solutions for IoT networks.</li>
+  <li>Optimizing communication protocols for IoT with respect to energy limitations and security concerns.</li>
+  <li>Understanding the main processing techniques used for digital communication and explaining the basic structure of digital RF transmitter-receiver.</li>
+</ul>
+
+<h3 id="self-evaluation">Self-Evaluation</h3>
+
+<p>This course was my first experience with concepts like MQTT and OneM2M. I found them relatively simple to use and did not encounter significant difficulties. I am aware that tools like these are extremely useful in IoT projects. Thanks to libray that exist already and forums, it is pretty simple to put in place a communication system between devices.
+Also I understood the utility of these concepts which lead to an utilization of few of them in our innovative project for a better functioning.</p>
+
+<h3 id="my-opinion">My Opinion</h3>
+<p>This was one of my favorite courses as it combined both hardware and software aspects. I aspire to work as an embedded software engineer, and this course provided a perfect blend of both domains. The labs showed a clear progression in our work on the project. We started with simple MQTT communication, moved on to using the Arduino library for MQTT, and finally integrated everything with Node-RED. This step-by-step approach made the learning process both enjoyable and highly educational.</p>
+
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Middleware_IOT/Report_Middleware_IOT.pdf" target="_blank">Open Complete Report</a>
+</p>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Middleware_IOT/Lab_Subject_middleware.pdf" target="_blank">Open Lab Subject</a>
+</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+    p {
+    text-align: justify;
+    }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

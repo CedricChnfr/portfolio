@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="350" viewBox="0 0 550 350">
+  <defs>
+    <style>
+      .box { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .adc { stroke: #ff6b6b; stroke-width: 2; fill: #ffe8e8; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrow); }
+      .signal { stroke: #4ecdc4; stroke-width: 2; fill: none; }
+      .text { font-family: Arial; font-size: 11px; fill: #333; }
+      .label { font-family: Arial; font-size: 12px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="130" y="25">Chaîne d'Acquisition de Données</text>
+  
+  <!-- Capteur -->
+  <rect class="box" x="50" y="100" width="80" height="60" rx="5"/>
+  <text class="label" x="65" y="125">Capteur</text>
+  <text class="text" x="55" y="145">Température</text>
+  <text class="text" x="65" y="158">Pression</text>
+  
+  <!-- Conditionneur -->
+  <rect class="box" x="180" y="100" width="100" height="60" rx="5"/>
+  <text class="label" x="195" y="125">Conditionneur</text>
+  <text class="text" x="190" y="145">Amplification</text>
+  <text class="text" x="200" y="158">Filtrage</text>
+  
+  <!-- CAN (ADC) -->
+  <rect class="adc" x="330" y="100" width="80" height="60" rx="5"/>
+  <text class="label" x="355" y="125">CAN</text>
+  <text class="text" x="340" y="145">12 bits</text>
+  <text class="text" x="335" y="158">1 Msps</text>
+  
+  <!-- Microcontrôleur -->
+  <rect class="box" x="460" y="100" width="80" height="60" rx="5"/>
+  <text class="label" x="485" y="125">μC</text>
+  <text class="text" x="465" y="145">Traitement</text>
+  <text class="text" x="470" y="158">Stockage</text>
+  
+  <!-- Flèches -->
+  <line class="arrow" x1="130" y1="130" x2="180" y2="130"/>
+  <line class="arrow" x1="280" y1="130" x2="330" y2="130"/>
+  <line class="arrow" x1="410" y1="130" x2="460" y2="130"/>
+  
+  <!-- Labels signaux -->
+  <text class="text" x="140" y="120">Analogique</text>
+  <text class="text" x="145" y="135">mV - V</text>
+  
+  <text class="text" x="290" y="120">Analogique</text>
+  <text class="text" x="295" y="135">0-5V</text>
+  
+  <text class="text" x="420" y="120">Numérique</text>
+  <text class="text" x="425" y="135">0-4095</text>
+  
+  <!-- Signal analogique -->
+  <path class="signal" d="M 50 220 Q 90 200, 130 220 T 210 220 Q 250 240, 290 220"/>
+  <text class="text" x="50" y="250">Signal analogique brut</text>
+  
+  <!-- Signal après conditionnement -->
+  <path class="signal" d="M 50 280 Q 90 270, 130 280 T 210 280 Q 250 290, 290 280" stroke="#2a7ae2"/>
+  <text class="text" x="50" y="310">Signal conditionné (amplifié, filtré)</text>
+  
+  <!-- Description -->
+  <rect x="320" y="200" width="220" height="110" rx="5" fill="#f9f9f9" stroke="#2a7ae2" stroke-width="1"/>
+  <text class="label" x="340" y="220">Étapes clés :</text>
+  <text class="text" x="330" y="240">1. Capteur : grandeur physique → V</text>
+  <text class="text" x="330" y="260">2. Conditionnement : adaptation signal</text>
+  <text class="text" x="330" y="280">3. CAN : analogique → numérique</text>
+  <text class="text" x="330" y="300">4. Traitement : calculs, stockage</text>
+</svg>

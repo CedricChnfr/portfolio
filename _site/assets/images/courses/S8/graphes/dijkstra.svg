@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <defs>
+    <style>
+      .node { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .selected { stroke: #ff6b6b; stroke-width: 3; fill: #ffe8e8; }
+      .edge { stroke: #333; stroke-width: 2; }
+      .weight { font-family: 'Courier New', monospace; font-size: 10px; fill: #333; font-weight: bold; }
+      .text { font-family: Arial; font-size: 11px; fill: #333; }
+      .label { font-family: Arial; font-size: 12px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+      .path { stroke: #ff6b6b; stroke-width: 3; stroke-dasharray: 5,3; }
+    </style>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="100" y="25">Algorithme de Dijkstra - Plus Court Chemin</text>
+  
+  <!-- Nœuds -->
+  <circle class="selected" cx="80" cy="100" r="20"/>
+  <text class="label" x="72" y="105">A</text>
+  
+  <circle class="node" cx="200" cy="80" r="20"/>
+  <text class="label" x="192" y="85">B</text>
+  
+  <circle class="node" cx="200" cy="180" r="20"/>
+  <text class="label" x="192" y="185">C</text>
+  
+  <circle class="node" cx="320" cy="80" r="20"/>
+  <text class="label" x="312" y="85">D</text>
+  
+  <circle class="node" cx="320" cy="180" r="20"/>
+  <text class="label" x="312" y="185">E</text>
+  
+  <circle class="selected" cx="420" cy="130" r="20"/>
+  <text class="label" x="412" y="135">F</text>
+  
+  <!-- Arêtes -->
+  <line class="edge" x1="100" y1="95" x2="180" y2="85"/>
+  <text class="weight" x="135" y="85">4</text>
+  
+  <line class="edge" x1="95" y1="115" x2="185" y2="170"/>
+  <text class="weight" x="130" y="150">2</text>
+  
+  <line class="edge" x1="220" y1="85" x2="300" y2="85"/>
+  <text class="weight" x="255" y="80">3</text>
+  
+  <line class="edge" x1="205" y1="100" x2="305" y2="165"/>
+  <text class="weight" x="245" y="140">1</text>
+  
+  <line class="edge" x1="220" y1="175" x2="300" y2="175"/>
+  <text class="weight" x="255" y="170">5</text>
+  
+  <line class="edge" x1="340" y1="85" x2="400" y2="120"/>
+  <text class="weight" x="365" y="95">2</text>
+  
+  <line class="edge" x1="340" y1="175" x2="400" y2="140"/>
+  <text class="weight" x="365" y="165">1</text>
+  
+  <!-- Plus court chemin (en pointillés) -->
+  <path class="path" d="M 95 115 L 185 170 L 305 165 L 400 140" fill="none"/>
+  
+  <!-- Distances -->
+  <rect x="60" y="140" width="40" height="20" rx="3" fill="#ffe8e8" stroke="#ff6b6b"/>
+  <text class="text" x="70" y="155" font-weight="bold">d=0</text>
+  
+  <rect x="180" y="200" width="40" height="20" rx="3" fill="#ffe8e8" stroke="#ff6b6b"/>
+  <text class="text" x="190" y="215" font-weight="bold">d=2</text>
+  
+  <rect x="300" y="200" width="40" height="20" rx="3" fill="#ffe8e8" stroke="#ff6b6b"/>
+  <text class="text" x="310" y="215" font-weight="bold">d=3</text>
+  
+  <rect x="400" y="155" width="40" height="20" rx="3" fill="#ffe8e8" stroke="#ff6b6b"/>
+  <text class="text" x="410" y="170" font-weight="bold">d=4</text>
+  
+  <!-- Description -->
+  <rect x="50" y="250" width="400" height="90" rx="5" fill="#f9f9f9" stroke="#2a7ae2" stroke-width="1"/>
+  <text class="label" x="150" y="275">Principe de Dijkstra :</text>
+  <text class="text" x="60" y="295">1. Initialiser distances : source = 0, autres = ∞</text>
+  <text class="text" x="60" y="315">2. Choisir nœud non visité avec distance minimale</text>
+  <text class="text" x="60" y="335">3. Mettre à jour distances des voisins : d[v] = min(d[v], d[u] + w(u,v))</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <defs>
+    <style>
+      .box { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrow); }
+      .feedback { stroke: #ff6b6b; stroke-width: 2; stroke-dasharray: 5,3; }
+      .text { font-family: Arial; font-size: 12px; fill: #333; }
+      .label { font-family: Arial; font-size: 13px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+      .math { font-family: 'Courier New', monospace; font-size: 11px; fill: #333; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="120" y="25">Système MIMO - Multi-entrées Multi-sorties</text>
+  
+  <!-- Consigne r1 -->
+  <circle cx="60" cy="100" r="15" fill="white" stroke="#333" stroke-width="2"/>
+  <text class="text" x="52" y="105">r₁</text>
+  
+  <!-- Consigne r2 -->
+  <circle cx="60" cy="180" r="15" fill="white" stroke="#333" stroke-width="2"/>
+  <text class="text" x="52" y="185">r₂</text>
+  
+  <!-- Correcteur K -->
+  <rect class="box" x="120" y="120" width="80" height="80" rx="5"/>
+  <text class="label" x="140" y="155">K(s)</text>
+  <text class="math" x="125" y="175">k₁₁  k₁₂</text>
+  <text class="math" x="125" y="190">k₂₁  k₂₂</text>
+  
+  <!-- Système G -->
+  <rect class="box" x="260" y="120" width="80" height="80" rx="5"/>
+  <text class="label" x="280" y="155">G(s)</text>
+  <text class="math" x="265" y="175">g₁₁  g₁₂</text>
+  <text class="math" x="265" y="190">g₂₁  g₂₂</text>
+  
+  <!-- Sorties y1 et y2 -->
+  <circle cx="440" cy="140" r="15" fill="white" stroke="#333" stroke-width="2"/>
+  <text class="text" x="432" y="145">y₁</text>
+  
+  <circle cx="440" cy="180" r="15" fill="white" stroke="#333" stroke-width="2"/>
+  <text class="text" x="432" y="185">y₂</text>
+  
+  <!-- Flèches vers l'avant -->
+  <line class="arrow" x1="75" y1="100" x2="120" y2="135"/>
+  <line class="arrow" x1="75" y1="180" x2="120" y2="165"/>
+  <line class="arrow" x1="200" y1="145" x2="260" y2="145"/>
+  <line class="arrow" x1="200" y1="175" x2="260" y2="175"/>
+  <line class="arrow" x1="340" y1="140" x2="425" y2="140"/>
+  <line class="arrow" x1="340" y1="180" x2="425" y2="180"/>
+  
+  <!-- Retour d'état -->
+  <path class="feedback" d="M 400 140 L 400 240 L 100 240 L 100 200" fill="none" marker-end="url(#arrow)"/>
+  <path class="feedback" d="M 400 180 L 380 220 L 120 220 L 120 200" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Labels -->
+  <text class="text" x="90" y="115">e₁</text>
+  <text class="text" x="90" y="195">e₂</text>
+  <text class="text" x="220" y="135">u₁</text>
+  <text class="text" x="220" y="185">u₂</text>
+  
+  <!-- Description -->
+  <rect x="50" y="270" width="400" height="70" rx="5" fill="#f9f9f9" stroke="#2a7ae2" stroke-width="1"/>
+  <text class="label" x="150" y="290">Problématique MIMO :</text>
+  <text class="text" x="70" y="310">• Couplages entre entrées et sorties (g₁₂, g₂₁)</text>
+  <text class="text" x="70" y="328">• Découplage : concevoir K pour éliminer interactions</text>
+</svg>

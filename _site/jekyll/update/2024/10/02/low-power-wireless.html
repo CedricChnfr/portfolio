@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Low Power Wireless Personal Area Network (LP-WPAN) | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Low Power Wireless Personal Area Network (LP-WPAN)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="← Back to My Courses 2024-2025 Low Power Wireless Personal Area Network PART A: GENERALITIES Presentation The “Low Power Wireless Networks” course provided an in-depth look into the principles and applications of low power wireless personal area networks (LP-WPAN). The course covered various protocols and technologies used in LP-WPAN, focusing on their efficiency and scalability in IoT contexts. PART B: DESCRIPTIVE PART Experience Details Environment and Context Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size. New Concepts Learned 6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs. My Function In this course, I was responsible for: Understanding the principles and architecture of 6LoWPAN. Exploring various protocols and their applications in low power wireless networks. Conducting experiments to test the efficiency and scalability of different LP-WPAN solutions. PART C: TECHNICAL PART This section explores the technical aspects of the TCP/IP protocol stack for LP-WPAN, focusing on the 802.15.4 norm, IPv6, and 6LoWPAN. Technical Concepts Learned 1. IPv6 Basics for IoT I learned about the basics of IPv6, including auto-configuration, router advertisements, multicasting, and routing. These concepts are necessary for understanding how IPv6 can be used in IoT networks to provide efficient and scalable communication. 2. Auto-configuration of Link-local Addresses We practiced auto-configuring link-local IPv6 addresses on network interfaces. This involved bringing up the network interface and observing the assignment of IPv6 addresses. We also analyzed the Duplicate Address Detection (DAD) procedures using tools like tcpdump and wireshark. We executed the command ifconfig eth0 up to bring up the network interface eth0. Following this, we used ip -6 addr show dev eth0 to display the IPv6 addresses assigned to the interface. The output showed an address in the format inet6 fe80::527c:6fff:fe56:e8b0. This address is a link-local IPv6 address, which is automatically configured on all IPv6-enabled interfaces. Link-local addresses are used for communication within a single network segment and are not routable beyond that segment. The fe80::/10 prefix indicates that it is a link-local address. The remaining part of the address (527c:6fff:fe56:e8b0) is derived from the interface’s MAC address using the Modified EUI-64 format. Understanding link-local addresses is crucial for configuring and troubleshooting IPv6 networks, as they are fundamental for neighbor discovery and other local network operations. 3. Auto-configuration of Unicast Global Addresses We explored the process of auto-configuring unicast global IPv6 addresses using router advertisements. This involved configuring the router to send advertisements and observing how end-hosts derive their network configuration from these advertisements. We used tool tcpdump to capture and analyze the ICMPv6 messages exchanged between the router and the end-hosts. These messages indicate the neighbor solicitation and router solicitation processes, for the auto-configuration of unicast global IPv6 addresses. The neighbor solicitation message is used to discover the link-layer address of a neighbor or to verify that a neighbor is still reachable. The router solicitation message is sent by an end-host to request a router advertisement from a local router, which contains the necessary information for the end-host to configure its global IPv6 address. 4. End-to-end IPv6 Connectivity and MQTT We established end-to-end IPv6 connectivity with an application server and set up MQTT for data distribution. This involved configuring the MQTT broker and using tools like mosquitto_sub and mosquitto_pub to distribute data between topic publishers and consumers. 5. 6LoWPAN Header Compression We practiced some aspects of 6LoWPAN, focusing on its header compression mechanism. This involved analyzing the encapsulation of IPv6 packets in 6LoWPAN frames and identifying the modes used for compressing different fields of the IPv6 header. We used Wireshark to capture and analyze ICMPv6 packets. By examining the ICMPv6 section, we could see the IP Header Compression (IPHC) header, which provides information about the compressed IPv6 header fields. This analysis helped us understand how 6LoWPAN reduces the overhead of IPv6 headers, making it suitable for low power and lossy networks. 6. RPL Routing Protocol We explored the RPL routing protocol, which is designed for low power and lossy networks. This involved configuring a network topology with RPL enabled and analyzing the routing tables and traffic generated by the protocol. Multipoint-to-point traffic: Traffic from multiple nodes converging to a single root node, typically used for data collection in sensor networks. Point-to-multipoint traffic: Traffic from a single root node disseminating information to multiple nodes, often used for control messages or updates. Point-to-point traffic: Direct communication between two nodes within the network, used for peer-to-peer data exchange. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the fundamentals of LP-WPAN and its TCP/IP protocol stack. Analyzing the benefits and drawbacks of using standard protocols based on IP. Integrating IPv6 in low power use cases with 6LoWPAN. Understanding the 802.15.4 norm and its applications in protocols like Zigbee. Self Evaluation I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts. Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively. My Opinion It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies. Project Report Open the full report" />
+<meta property="og:description" content="← Back to My Courses 2024-2025 Low Power Wireless Personal Area Network PART A: GENERALITIES Presentation The “Low Power Wireless Networks” course provided an in-depth look into the principles and applications of low power wireless personal area networks (LP-WPAN). The course covered various protocols and technologies used in LP-WPAN, focusing on their efficiency and scalability in IoT contexts. PART B: DESCRIPTIVE PART Experience Details Environment and Context Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size. New Concepts Learned 6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs. My Function In this course, I was responsible for: Understanding the principles and architecture of 6LoWPAN. Exploring various protocols and their applications in low power wireless networks. Conducting experiments to test the efficiency and scalability of different LP-WPAN solutions. PART C: TECHNICAL PART This section explores the technical aspects of the TCP/IP protocol stack for LP-WPAN, focusing on the 802.15.4 norm, IPv6, and 6LoWPAN. Technical Concepts Learned 1. IPv6 Basics for IoT I learned about the basics of IPv6, including auto-configuration, router advertisements, multicasting, and routing. These concepts are necessary for understanding how IPv6 can be used in IoT networks to provide efficient and scalable communication. 2. Auto-configuration of Link-local Addresses We practiced auto-configuring link-local IPv6 addresses on network interfaces. This involved bringing up the network interface and observing the assignment of IPv6 addresses. We also analyzed the Duplicate Address Detection (DAD) procedures using tools like tcpdump and wireshark. We executed the command ifconfig eth0 up to bring up the network interface eth0. Following this, we used ip -6 addr show dev eth0 to display the IPv6 addresses assigned to the interface. The output showed an address in the format inet6 fe80::527c:6fff:fe56:e8b0. This address is a link-local IPv6 address, which is automatically configured on all IPv6-enabled interfaces. Link-local addresses are used for communication within a single network segment and are not routable beyond that segment. The fe80::/10 prefix indicates that it is a link-local address. The remaining part of the address (527c:6fff:fe56:e8b0) is derived from the interface’s MAC address using the Modified EUI-64 format. Understanding link-local addresses is crucial for configuring and troubleshooting IPv6 networks, as they are fundamental for neighbor discovery and other local network operations. 3. Auto-configuration of Unicast Global Addresses We explored the process of auto-configuring unicast global IPv6 addresses using router advertisements. This involved configuring the router to send advertisements and observing how end-hosts derive their network configuration from these advertisements. We used tool tcpdump to capture and analyze the ICMPv6 messages exchanged between the router and the end-hosts. These messages indicate the neighbor solicitation and router solicitation processes, for the auto-configuration of unicast global IPv6 addresses. The neighbor solicitation message is used to discover the link-layer address of a neighbor or to verify that a neighbor is still reachable. The router solicitation message is sent by an end-host to request a router advertisement from a local router, which contains the necessary information for the end-host to configure its global IPv6 address. 4. End-to-end IPv6 Connectivity and MQTT We established end-to-end IPv6 connectivity with an application server and set up MQTT for data distribution. This involved configuring the MQTT broker and using tools like mosquitto_sub and mosquitto_pub to distribute data between topic publishers and consumers. 5. 6LoWPAN Header Compression We practiced some aspects of 6LoWPAN, focusing on its header compression mechanism. This involved analyzing the encapsulation of IPv6 packets in 6LoWPAN frames and identifying the modes used for compressing different fields of the IPv6 header. We used Wireshark to capture and analyze ICMPv6 packets. By examining the ICMPv6 section, we could see the IP Header Compression (IPHC) header, which provides information about the compressed IPv6 header fields. This analysis helped us understand how 6LoWPAN reduces the overhead of IPv6 headers, making it suitable for low power and lossy networks. 6. RPL Routing Protocol We explored the RPL routing protocol, which is designed for low power and lossy networks. This involved configuring a network topology with RPL enabled and analyzing the routing tables and traffic generated by the protocol. Multipoint-to-point traffic: Traffic from multiple nodes converging to a single root node, typically used for data collection in sensor networks. Point-to-multipoint traffic: Traffic from a single root node disseminating information to multiple nodes, often used for control messages or updates. Point-to-point traffic: Direct communication between two nodes within the network, used for peer-to-peer data exchange. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the fundamentals of LP-WPAN and its TCP/IP protocol stack. Analyzing the benefits and drawbacks of using standard protocols based on IP. Integrating IPv6 in low power use cases with 6LoWPAN. Understanding the 802.15.4 norm and its applications in protocols like Zigbee. Self Evaluation I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts. Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively. My Opinion It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies. Project Report Open the full report" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Low Power Wireless Personal Area Network (LP-WPAN)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"← Back to My Courses 2024-2025 Low Power Wireless Personal Area Network PART A: GENERALITIES Presentation The “Low Power Wireless Networks” course provided an in-depth look into the principles and applications of low power wireless personal area networks (LP-WPAN). The course covered various protocols and technologies used in LP-WPAN, focusing on their efficiency and scalability in IoT contexts. PART B: DESCRIPTIVE PART Experience Details Environment and Context Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size. New Concepts Learned 6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs. My Function In this course, I was responsible for: Understanding the principles and architecture of 6LoWPAN. Exploring various protocols and their applications in low power wireless networks. Conducting experiments to test the efficiency and scalability of different LP-WPAN solutions. PART C: TECHNICAL PART This section explores the technical aspects of the TCP/IP protocol stack for LP-WPAN, focusing on the 802.15.4 norm, IPv6, and 6LoWPAN. Technical Concepts Learned 1. IPv6 Basics for IoT I learned about the basics of IPv6, including auto-configuration, router advertisements, multicasting, and routing. These concepts are necessary for understanding how IPv6 can be used in IoT networks to provide efficient and scalable communication. 2. Auto-configuration of Link-local Addresses We practiced auto-configuring link-local IPv6 addresses on network interfaces. This involved bringing up the network interface and observing the assignment of IPv6 addresses. We also analyzed the Duplicate Address Detection (DAD) procedures using tools like tcpdump and wireshark. We executed the command ifconfig eth0 up to bring up the network interface eth0. Following this, we used ip -6 addr show dev eth0 to display the IPv6 addresses assigned to the interface. The output showed an address in the format inet6 fe80::527c:6fff:fe56:e8b0. This address is a link-local IPv6 address, which is automatically configured on all IPv6-enabled interfaces. Link-local addresses are used for communication within a single network segment and are not routable beyond that segment. The fe80::/10 prefix indicates that it is a link-local address. The remaining part of the address (527c:6fff:fe56:e8b0) is derived from the interface’s MAC address using the Modified EUI-64 format. Understanding link-local addresses is crucial for configuring and troubleshooting IPv6 networks, as they are fundamental for neighbor discovery and other local network operations. 3. Auto-configuration of Unicast Global Addresses We explored the process of auto-configuring unicast global IPv6 addresses using router advertisements. This involved configuring the router to send advertisements and observing how end-hosts derive their network configuration from these advertisements. We used tool tcpdump to capture and analyze the ICMPv6 messages exchanged between the router and the end-hosts. These messages indicate the neighbor solicitation and router solicitation processes, for the auto-configuration of unicast global IPv6 addresses. The neighbor solicitation message is used to discover the link-layer address of a neighbor or to verify that a neighbor is still reachable. The router solicitation message is sent by an end-host to request a router advertisement from a local router, which contains the necessary information for the end-host to configure its global IPv6 address. 4. End-to-end IPv6 Connectivity and MQTT We established end-to-end IPv6 connectivity with an application server and set up MQTT for data distribution. This involved configuring the MQTT broker and using tools like mosquitto_sub and mosquitto_pub to distribute data between topic publishers and consumers. 5. 6LoWPAN Header Compression We practiced some aspects of 6LoWPAN, focusing on its header compression mechanism. This involved analyzing the encapsulation of IPv6 packets in 6LoWPAN frames and identifying the modes used for compressing different fields of the IPv6 header. We used Wireshark to capture and analyze ICMPv6 packets. By examining the ICMPv6 section, we could see the IP Header Compression (IPHC) header, which provides information about the compressed IPv6 header fields. This analysis helped us understand how 6LoWPAN reduces the overhead of IPv6 headers, making it suitable for low power and lossy networks. 6. RPL Routing Protocol We explored the RPL routing protocol, which is designed for low power and lossy networks. This involved configuring a network topology with RPL enabled and analyzing the routing tables and traffic generated by the protocol. Multipoint-to-point traffic: Traffic from multiple nodes converging to a single root node, typically used for data collection in sensor networks. Point-to-multipoint traffic: Traffic from a single root node disseminating information to multiple nodes, often used for control messages or updates. Point-to-point traffic: Direct communication between two nodes within the network, used for peer-to-peer data exchange. PART D: ANALYTICAL PART The Knowledge and Skills Mobilized Understanding the fundamentals of LP-WPAN and its TCP/IP protocol stack. Analyzing the benefits and drawbacks of using standard protocols based on IP. Integrating IPv6 in low power use cases with 6LoWPAN. Understanding the 802.15.4 norm and its applications in protocols like Zigbee. Self Evaluation I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts. Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively. My Opinion It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies. Project Report Open the full report","headline":"Low Power Wireless Personal Area Network (LP-WPAN)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/low-power-wireless.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p><a href="./my-courses-2024-2025.html">← Back to My Courses 2024-2025</a></p>
+
+<h1 id="low-power-wireless-personal-area-network">Low Power Wireless Personal Area Network</h1>
+
+<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+
+<h3 id="presentation">Presentation</h3>
+<p>The “Low Power Wireless Networks” course provided an in-depth look into the principles and applications of low power wireless personal area networks (LP-WPAN). The course covered various protocols and technologies used in LP-WPAN, focusing on their efficiency and scalability in IoT contexts.</p>
+
+<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+
+<h3 id="experience-details">Experience Details</h3>
+
+<h4 id="environment-and-context">Environment and Context</h4>
+<p>Given the short duration of the course, we focused on a few key technical concepts. The initial part of the course covered basic network and telecommunication concepts, such as scrambled networks and interference. We then delved into the specifics of a TCP/IP protocol stack for LP-WPAN, using the 802.15.4 norm for the MAC and physical layers. This norm is commonly used in protocols like Zigbee. We also explored the use of IPv6 with an intermediate layer, 6LoWPAN, to reduce packet size.</p>
+
+<h4 id="new-concepts-learned">New Concepts Learned</h4>
+<p>6LoWPAN, a key technology for enabling IPv6 over low power wireless networks, stands for IPv6 over Low-Power Wireless Personal Area Networks. It is designed to allow small devices with limited processing power and memory to communicate over the Internet. 6LoWPAN achieves this by compressing the IPv6 headers, making them suitable for the constrained environments of LP-WPANs.</p>
+<h4 id="my-function">My Function</h4>
+<p>In this course, I was responsible for:</p>
+<ul>
+  <li>Understanding the principles and architecture of 6LoWPAN.</li>
+  <li>Exploring various protocols and their applications in low power wireless networks.</li>
+  <li>Conducting experiments to test the efficiency and scalability of different LP-WPAN solutions.</li>
+</ul>
+
+<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+
+<p>This section explores the technical aspects of the TCP/IP protocol stack for LP-WPAN, focusing on the 802.15.4 norm, IPv6, and 6LoWPAN.</p>
+
+<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
+
+<h4 id="1-ipv6-basics-for-iot">1. IPv6 Basics for IoT</h4>
+<p>I learned about the basics of IPv6, including auto-configuration, router advertisements, multicasting, and routing. These concepts are necessary for understanding how IPv6 can be used in IoT networks to provide efficient and scalable communication.</p>
+
+<h4 id="2-auto-configuration-of-link-local-addresses">2. Auto-configuration of Link-local Addresses</h4>
+<p>We practiced auto-configuring link-local IPv6 addresses on network interfaces. This involved bringing up the network interface and observing the assignment of IPv6 addresses. We also analyzed the Duplicate Address Detection (DAD) procedures using tools like tcpdump and wireshark.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Low_Power/auto_conf.png" style="width: 70%;" />
+</div>
+<p><br /></p>
+
+<p>We executed the command <code class="language-plaintext highlighter-rouge">ifconfig eth0 up</code> to bring up the network interface <code class="language-plaintext highlighter-rouge">eth0</code>. Following this, we used <code class="language-plaintext highlighter-rouge">ip -6 addr show dev eth0</code> to display the IPv6 addresses assigned to the interface. The output showed an address in the format <code class="language-plaintext highlighter-rouge">inet6 fe80::527c:6fff:fe56:e8b0</code>.</p>
+
+<p>This address is a link-local IPv6 address, which is automatically configured on all IPv6-enabled interfaces. Link-local addresses are used for communication within a single network segment and are not routable beyond that segment.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">fe80::/10</code> prefix indicates that it is a link-local address. The remaining part of the address (<code class="language-plaintext highlighter-rouge">527c:6fff:fe56:e8b0</code>) is derived from the interface’s MAC address using the Modified EUI-64 format.</p>
+
+<p>Understanding link-local addresses is crucial for configuring and troubleshooting IPv6 networks, as they are fundamental for neighbor discovery and other local network operations.</p>
+
+<h4 id="3-auto-configuration-of-unicast-global-addresses">3. Auto-configuration of Unicast Global Addresses</h4>
+<p>We explored the process of auto-configuring unicast global IPv6 addresses using router advertisements. This involved configuring the router to send advertisements and observing how end-hosts derive their network configuration from these advertisements.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Low_Power/dump.png" style="width:80%;" />
+</div>
+<p><br /></p>
+
+<p>We used tool tcpdump to capture and analyze the ICMPv6 messages exchanged between the router and the end-hosts. These messages indicate the neighbor solicitation and router solicitation processes, for the auto-configuration of unicast global IPv6 addresses.</p>
+
+<p>The neighbor solicitation message is used to discover the link-layer address of a neighbor or to verify that a neighbor is still reachable.</p>
+
+<p>The router solicitation message is sent by an end-host to request a router advertisement from a local router, which contains the necessary information for the end-host to configure its global IPv6 address.</p>
+
+<h4 id="4-end-to-end-ipv6-connectivity-and-mqtt">4. End-to-end IPv6 Connectivity and MQTT</h4>
+<p>We established end-to-end IPv6 connectivity with an application server and set up MQTT for data distribution. This involved configuring the MQTT broker and using tools like mosquitto_sub and mosquitto_pub to distribute data between topic publishers and consumers.</p>
+
+<h4 id="5-6lowpan-header-compression">5. 6LoWPAN Header Compression</h4>
+<p>We practiced some aspects of 6LoWPAN, focusing on its header compression mechanism. This involved analyzing the encapsulation of IPv6 packets in 6LoWPAN frames and identifying the modes used for compressing different fields of the IPv6 header.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Low_Power/header.png" style="width: 70%;" />
+</div>
+<p><br /></p>
+
+<p>We used Wireshark to capture and analyze ICMPv6 packets. By examining the ICMPv6 section, we could see the IP Header Compression (IPHC) header, which provides information about the compressed IPv6 header fields. This analysis helped us understand how 6LoWPAN reduces the overhead of IPv6 headers, making it suitable for low power and lossy networks.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Low_Power/compression.png" style="width: 70%;" />
+</div>
+<p><br /></p>
+
+<h4 id="6-rpl-routing-protocol">6. RPL Routing Protocol</h4>
+<p>We explored the RPL routing protocol, which is designed for low power and lossy networks. This involved configuring a network topology with RPL enabled and analyzing the routing tables and traffic generated by the protocol.</p>
+
+<div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/BE_Low_Power/node.png" style="width: 90%;" />
+</div>
+
+<ul>
+  <li><strong>Multipoint-to-point traffic</strong>: Traffic from multiple nodes converging to a single root node, typically used for data collection in sensor networks.</li>
+  <li><strong>Point-to-multipoint traffic</strong>: Traffic from a single root node disseminating information to multiple nodes, often used for control messages or updates.</li>
+  <li><strong>Point-to-point traffic</strong>: Direct communication between two nodes within the network, used for peer-to-peer data exchange.</li>
+</ul>
+
+<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+
+<h3 id="the-knowledge-and-skills-mobilized">The Knowledge and Skills Mobilized</h3>
+<ul>
+  <li>Understanding the fundamentals of LP-WPAN and its TCP/IP protocol stack.</li>
+  <li>Analyzing the benefits and drawbacks of using standard protocols based on IP.</li>
+  <li>Integrating IPv6 in low power use cases with 6LoWPAN.</li>
+  <li>Understanding the 802.15.4 norm and its applications in protocols like Zigbee.</li>
+</ul>
+
+<h3 id="self-evaluation">Self Evaluation</h3>
+<p>I found the LP-WPAN course to be a valuable introduction to low power wireless networks. I particularly enjoyed working with IPv6 and 6LoWPAN, there is some areas where I still have uncertainties and need to deepen my knowledge but with time and practice, I am confident that I will master these concepts.</p>
+
+<p>Fortunately, the labs were well guided by the teacher, which allowed me to understand better because it was pretty complex at first, but he managed to transmit the course skill effectively.</p>
+
+<h3 id="my-opinion">My Opinion</h3>
+<p>It was a new concept I appreciated working on. It provided a fresh perspective on network possibilities and allowed me to explore innovative solutions in low power wireless networks. The practical experiments was interesting as they demonstrated the real-world applications of LP-WPAN technologies.</p>
+
+<div style="text-align: center;">
+    <h1>Project Report</h1>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/img/BE_Low_Power/IPV6_Report.pdf" width="100%" height="800px" type="application/pdf" />
+</div>
+
+<p style="text-align: center;">
+    <a href="/img/BE_Low_Power/IPV6_Report.pdf">Open the full report</a>
+</p>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+    }
+    h2, h3, h4 {
+        color: #007BFF;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+    .styled-button {
+        display: inline-block;
+        width: 100px;
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 16px;
+        color: white;
+        background-color: #66B2FF;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+        background-color: #3399FF;
+        transform: scale(1.05);
+    }
+    p {
+    text-align: justify;
+    }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

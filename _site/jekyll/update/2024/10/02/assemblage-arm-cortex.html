@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Langage d’Assemblage ARM CORTEX - S6 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Langage d’Assemblage ARM CORTEX - S6" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/assemblage-arm-cortex.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/assemblage-arm-cortex.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Langage d’Assemblage ARM CORTEX - S6" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Langage d’Assemblage ARM CORTEX - S6","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/assemblage-arm-cortex.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/assemblage-arm-cortex.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+</div>
+
+<h1 id="️-langage-dassemblage-arm-cortex---semestre-6">⚙️ Langage d’Assemblage ARM CORTEX - Semestre 6</h1>
+
+<p><strong>Année Universitaire</strong> : 2022-2023<br />
+<strong>Semestre</strong> : 6<br />
+<strong>Crédits</strong> : 2 ECTS<br />
+<strong>Spécialité</strong> : Systèmes Embarqués et Programmation Bas Niveau</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Ce cours enseigne la programmation en langage assembleur pour les microcontrôleurs ARM Cortex-M (architecture 32 bits). Il couvre l’architecture du processeur, le jeu d’instructions Thumb-2, et la programmation bas niveau pour systèmes embarqués. Les travaux pratiques utilisent des STM32F103 (Cortex-M3) avec l’environnement Keil µVision.</p>
+
+<p><strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Comprendre l’architecture ARM Cortex-M (registres, pipeline, mémoire)</li>
+  <li>Maîtriser le jeu d’instructions Thumb-2</li>
+  <li>Programmer en assembleur (boucles, fonctions, accès périphériques)</li>
+  <li>Interfacer avec du matériel (GPIO, UART, timers)</li>
+  <li>Optimiser le code pour performances et taille</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce cours complète et approfondit :</p>
+<ul>
+  <li><strong>Architecture Informatique Matérielle (S5)</strong> : bases de l’architecture processeur</li>
+  <li><strong>Architecture Matérielle (S6)</strong> : ARM vs x86, pipeline, caches</li>
+  <li><strong>Microcontrôleur (S6)</strong> : périphériques et programmation en C</li>
+</ul>
+
+<p>Il prépare aux applications :</p>
+<ul>
+  <li><strong>Systèmes embarqués temps réel</strong> : code critique et optimisé</li>
+  <li><strong>Développement de drivers</strong> : accès direct au matériel</li>
+  <li><strong>Bootloaders et firmware</strong> : code de bas niveau</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était structuré en 4 séquences progressives :</p>
+
+<p><strong>1. Séquence 1 : Architecture ARM Cortex-M</strong></p>
+<ul>
+  <li>Organisation mémoire et registres</li>
+  <li>Pipeline et modes d’exécution</li>
+  <li>Conventions d’appel AAPCS</li>
+</ul>
+
+<p><strong>2. Séquence 2 : Jeu d’instructions de base</strong></p>
+<ul>
+  <li>Instructions arithmétiques et logiques</li>
+  <li>Déplacements et chargements mémoire</li>
+  <li>Branchements et boucles</li>
+</ul>
+
+<p><strong>3. Séquence 3 : Sous-programmes et pile</strong></p>
+<ul>
+  <li>Appels de fonctions (BL, BX)</li>
+  <li>Gestion de la pile (PUSH, POP)</li>
+  <li>Passage de paramètres</li>
+</ul>
+
+<p><strong>4. Séquence 4 : Accès périphériques</strong></p>
+<ul>
+  <li>Registres memory-mapped</li>
+  <li>Contrôle GPIO</li>
+  <li>Communication UART</li>
+  <li>Interruptions</li>
+</ul>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/arm-cortex/registres-arm.svg" alt="Registres ARM Cortex-M" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Organisation des registres ARM Cortex-M - R0-R15, SP, LR, PC et PSR</p>
+</div>
+
+<p><strong>Environnement de développement</strong> :</p>
+<ul>
+  <li><strong>IDE</strong> : Keil µVision 5</li>
+  <li><strong>Cible</strong> : STM32F103RB (Cortex-M3, 128 KB Flash, 20 KB RAM)</li>
+  <li><strong>Simulateur</strong> : simulation cycle-accurate sans carte physique</li>
+  <li><strong>Débuggage</strong> : breakpoints, registres, mémoire, désassemblage</li>
+</ul>
+
+<h3 class="section-title">Déroulement des TDs et TPs</h3>
+
+<p><strong>TD2 : Conversion et affichage</strong></p>
+
+<p>Objectif : lire 4 chiffres au clavier, les convertir en entier, et afficher le résultat.</p>
+
+<p><strong>Fonctions à implémenter</strong> :</p>
+
+<pre><code class="language-asm">; Lecture de 4 caractères via UART
+BL GetKey_Echo      ; Lit un caractère et l'affiche
+STRB R0,[R7]        ; Stocke dans la mémoire RAM
+
+; Conversion ASCII → nombre
+LDRB R3,[R7],#1     ; Charge caractère
+SUB R3,#'0'         ; Convertit '0'-'9' en 0-9
+MOV R4,#10
+MUL R3,R3,R4        ; Décalage décimal
+
+; Affichage d'une chaîne
+Affichaine PROC
+    LDRB R0,[R3],#1  ; Charge caractère
+    CBZ R0,Fin       ; Si 0, fin de chaîne
+    BL SendChar      ; Envoie via UART
+    B Car_suivant    ; Boucle
+Fin_Chaine
+    POP {R0,PC}      ; Retour
+    ENDP
+</code></pre>
+
+<p><strong>Concepts clés</strong> :</p>
+<ul>
+  <li>Adressage indirect avec post-incrément : <code class="language-plaintext highlighter-rouge">[R7],#1</code></li>
+  <li>Convention d’appel : paramètres dans R0-R3</li>
+  <li>Sauvegarde contexte : PUSH/POP avec LR</li>
+</ul>
+
+<p><strong>TD3 : Manipulation de tableaux</strong></p>
+
+<p>Travail sur tableaux d’entiers : tri, recherche, calculs statistiques.</p>
+
+<p><strong>Exemple : recherche du maximum</strong></p>
+
+<pre><code class="language-asm">; R0 = adresse du tableau
+; R1 = taille du tableau
+; Retour : R2 = valeur maximale
+
+Recherche_Max PROC
+    PUSH {R3,R4,LR}
+    LDR R2,[R0],#4   ; Premier élément = max initial
+    SUBS R1,#1       ; Compteur -1
+    
+Boucle
+    LDR R3,[R0],#4   ; Élément suivant
+    CMP R3,R2
+    BLE Suivant      ; Si &lt;= max, passe au suivant
+    MOV R2,R3        ; Nouveau max
+Suivant
+    SUBS R1,#1       ; Décrément compteur
+    BNE Boucle       ; Tant que != 0
+    
+    POP {R3,R4,PC}
+    ENDP
+</code></pre>
+
+<p><strong>TD4 : Fonctions mathématiques</strong></p>
+
+<p>Implémentation d’opérations complexes (division, racine carrée par approximations successives).</p>
+
+<p><strong>TP : Projet “Roue Magique”</strong></p>
+
+<p>Projet fil rouge en plusieurs étapes pour créer un jeu de lumières avec LEDs.</p>
+
+<p><strong>Étape 1 : Contrôle d’une LED</strong></p>
+
+<pre><code class="language-asm">; Allumer une LED sur PC10
+Allume_LED PROC
+    LDR R0,=0x40010C10  ; Adresse GPIOC_BSRR (Bit Set Reset Register)
+    MOV R1,#(0x01 &lt;&lt; 10) ; Bit 10 pour PC10
+    STR R1,[R0]          ; Écriture → LED allumée
+    BX LR                ; Retour
+    ENDP
+
+; Éteindre la LED
+Eteint_LED PROC
+    LDR R2,=0x40010C14  ; Adresse GPIOC_BRR (Bit Reset Register)
+    MOV R3,#(0x01 &lt;&lt; 10)
+    STR R3,[R2]
+    BX LR
+    ENDP
+</code></pre>
+
+<p><strong>Étape 2 : Lecture d’un bouton</strong></p>
+
+<pre><code class="language-asm">; Lire l'état d'un bouton sur PB8
+Capteur PROC
+    LDR R4,=0x40010808   ; Adresse GPIOB_IDR (Input Data Register)
+    LDRH R5,[R4]         ; Lecture 16 bits
+    AND R5,R5,#0x0100    ; Masque bit 8
+    CMP R5,#0
+    BEQ Bouton_Presse    ; Si 0, bouton appuyé
+    BX LR
+    ENDP
+</code></pre>
+
+<p><strong>Étape 3 : Séquence de LEDs</strong></p>
+
+<p>Faire clignoter plusieurs LEDs en séquence (chenillard).</p>
+
+<p><strong>Étape 4 : Interruptions et timers</strong></p>
+
+<p>Utiliser un timer pour créer des délais précis sans attente active.</p>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<p><strong>Gestion de la pile</strong> :
+Oublier de faire POP après PUSH provoque des erreurs de retour de fonction. Le LR (Link Register) doit être sauvegardé si la fonction appelle d’autres fonctions.</p>
+
+<p><strong>Adressage mémoire</strong> :
+Confusion entre adresse et valeur. LDR R0,=0x2000 charge l’adresse, LDR R0,[R1] charge la valeur à l’adresse contenue dans R1.</p>
+
+<p><strong>Flags de condition</strong> :
+Les instructions avec ‘S’ (ADDS, SUBS) modifient les flags NZCV. Nécessaire avant CMP pour les branchements conditionnels.</p>
+
+<p><strong>Registres de périphériques</strong> :
+Adresses spécifiques à mémoriser ou utiliser des fichiers include. Documentation du STM32 indispensable.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Architecture ARM Cortex-M3</h3>
+
+<p><strong>Banc de registres</strong> :</p>
+
+<p>Le Cortex-M3 dispose de 16 registres 32 bits :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registre</th>
+      <th>Nom</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R0-R12</td>
+      <td>Registres généraux</td>
+      <td>Calculs, données temporaires</td>
+    </tr>
+    <tr>
+      <td>R13 (SP)</td>
+      <td>Stack Pointer</td>
+      <td>Pointeur de pile</td>
+    </tr>
+    <tr>
+      <td>R14 (LR)</td>
+      <td>Link Register</td>
+      <td>Adresse de retour de fonction</td>
+    </tr>
+    <tr>
+      <td>R15 (PC)</td>
+      <td>Program Counter</td>
+      <td>Adresse de l’instruction en cours</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Registres spéciaux</strong> :</p>
+<ul>
+  <li><strong>PSR</strong> (Program Status Register) : flags N, Z, C, V, mode, exceptions</li>
+  <li><strong>PRIMASK</strong> : masque global d’interruptions</li>
+  <li><strong>CONTROL</strong> : sélection de pile, niveau de privilège</li>
+</ul>
+
+<p><strong>Organisation mémoire</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Région</th>
+      <th>Adresses</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Code</td>
+      <td>0x00000000 - 0x1FFFFFFF</td>
+      <td>Flash, instructions</td>
+    </tr>
+    <tr>
+      <td>SRAM</td>
+      <td>0x20000000 - 0x3FFFFFFF</td>
+      <td>RAM, données</td>
+    </tr>
+    <tr>
+      <td>Périphériques</td>
+      <td>0x40000000 - 0x5FFFFFFF</td>
+      <td>Registres memory-mapped</td>
+    </tr>
+    <tr>
+      <td>Système</td>
+      <td>0xE0000000 - 0xFFFFFFFF</td>
+      <td>NVIC, SysTick, debug</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Pipeline 3 étages</strong> :</p>
+<ol>
+  <li>Fetch : lecture instruction</li>
+  <li>Decode : décodage</li>
+  <li>Execute : exécution</li>
+</ol>
+
+<p>Conséquence : le PC pointe toujours 2 instructions en avance (PC+4 en Thumb-2).</p>
+
+<h3 class="section-title">2. Jeu d'Instructions Thumb-2</h3>
+
+<p><strong>Instructions arithmétiques</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instruction</th>
+      <th>Syntaxe</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ADD</td>
+      <td>ADD Rd, Rn, Rm</td>
+      <td>Rd = Rn + Rm</td>
+    </tr>
+    <tr>
+      <td>SUB</td>
+      <td>SUB Rd, Rn, Rm</td>
+      <td>Rd = Rn - Rm</td>
+    </tr>
+    <tr>
+      <td>MUL</td>
+      <td>MUL Rd, Rn, Rm</td>
+      <td>Rd = Rn × Rm</td>
+    </tr>
+    <tr>
+      <td>SDIV</td>
+      <td>SDIV Rd, Rn, Rm</td>
+      <td>Rd = Rn / Rm (signé)</td>
+    </tr>
+    <tr>
+      <td>UDIV</td>
+      <td>UDIV Rd, Rn, Rm</td>
+      <td>Rd = Rn / Rm (non signé)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Variantes avec flags : ADDS, SUBS (modifient NZCV).</p>
+
+<p><strong>Instructions logiques</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instruction</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AND Rd, Rn, Rm</td>
+      <td>ET logique</td>
+    </tr>
+    <tr>
+      <td>ORR Rd, Rn, Rm</td>
+      <td>OU logique</td>
+    </tr>
+    <tr>
+      <td>EOR Rd, Rn, Rm</td>
+      <td>OU exclusif (XOR)</td>
+    </tr>
+    <tr>
+      <td>BIC Rd, Rn, Rm</td>
+      <td>Bit Clear (Rd = Rn AND NOT Rm)</td>
+    </tr>
+    <tr>
+      <td>MVN Rd, Rm</td>
+      <td>NOT (inversion)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Décalages</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instruction</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LSL Rd, Rn, #n</td>
+      <td>Logical Shift Left (décalage gauche)</td>
+    </tr>
+    <tr>
+      <td>LSR Rd, Rn, #n</td>
+      <td>Logical Shift Right (décalage droite, complète avec 0)</td>
+    </tr>
+    <tr>
+      <td>ASR Rd, Rn, #n</td>
+      <td>Arithmetic Shift Right (conserve le signe)</td>
+    </tr>
+    <tr>
+      <td>ROR Rd, Rn, #n</td>
+      <td>Rotate Right (rotation)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Déplacements de données</strong> :</p>
+
+<pre><code class="language-asm">MOV R0,#42          ; R0 = 42 (immédiat)
+MOV R1,R2           ; R1 = R2 (copie)
+MOVW R0,#0x1234     ; Charge 16 bits bas
+MOVT R0,#0x5678     ; Charge 16 bits haut → R0 = 0x56781234
+</code></pre>
+
+<h3 class="section-title">3. Accès Mémoire</h3>
+
+<p><strong>Instructions de chargement</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instruction</th>
+      <th>Taille</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LDR Rd,[Rn]</td>
+      <td>32 bits</td>
+      <td>Charge mot</td>
+    </tr>
+    <tr>
+      <td>LDRH Rd,[Rn]</td>
+      <td>16 bits</td>
+      <td>Charge demi-mot (halfword)</td>
+    </tr>
+    <tr>
+      <td>LDRB Rd,[Rn]</td>
+      <td>8 bits</td>
+      <td>Charge octet (byte)</td>
+    </tr>
+    <tr>
+      <td>LDRSB Rd,[Rn]</td>
+      <td>8 bits signé</td>
+      <td>Charge octet avec extension de signe</td>
+    </tr>
+    <tr>
+      <td>LDRSH Rd,[Rn]</td>
+      <td>16 bits signé</td>
+      <td>Charge demi-mot avec extension de signe</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Instructions de stockage</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Instruction</th>
+      <th>Taille</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STR Rd,[Rn]</td>
+      <td>32 bits</td>
+      <td>Stocke mot</td>
+    </tr>
+    <tr>
+      <td>STRH Rd,[Rn]</td>
+      <td>16 bits</td>
+      <td>Stocke demi-mot</td>
+    </tr>
+    <tr>
+      <td>STRB Rd,[Rn]</td>
+      <td>8 bits</td>
+      <td>Stocke octet</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Modes d’adressage</strong> :</p>
+
+<pre><code class="language-asm">; Direct
+LDR R0,[R1]         ; R0 = mem[R1]
+
+; Offset
+LDR R0,[R1,#8]      ; R0 = mem[R1+8]
+
+; Pré-incrémenté
+LDR R0,[R1,#8]!     ; R1 = R1+8, puis R0 = mem[R1]
+
+; Post-incrémenté
+LDR R0,[R1],#8      ; R0 = mem[R1], puis R1 = R1+8
+
+; Indexé par registre
+LDR R0,[R1,R2]      ; R0 = mem[R1+R2]
+
+; PC-relatif (litteral pool)
+LDR R0,=0x20000000  ; Charge adresse via pool constant
+</code></pre>
+
+<h3 class="section-title">4. Contrôle de Flux</h3>
+
+<p><strong>Branchements inconditionnels</strong> :</p>
+
+<pre><code class="language-asm">B etiquette         ; Branchement simple
+BL fonction         ; Branchement avec Link (LR = PC+4)
+BX Rm               ; Branchement vers adresse dans Rm
+BLX Rm              ; Branchement avec Link vers Rm
+</code></pre>
+
+<p><strong>Branchements conditionnels</strong> :</p>
+
+<p>Basés sur les flags NZCV (Negative, Zero, Carry, oVerflow).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Suffixe</th>
+      <th>Condition</th>
+      <th>Flags</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EQ</td>
+      <td>Égal</td>
+      <td>Z=1</td>
+    </tr>
+    <tr>
+      <td>NE</td>
+      <td>Non égal</td>
+      <td>Z=0</td>
+    </tr>
+    <tr>
+      <td>GT</td>
+      <td>Supérieur (signé)</td>
+      <td>Z=0 ET N=V</td>
+    </tr>
+    <tr>
+      <td>LT</td>
+      <td>Inférieur (signé)</td>
+      <td>N≠V</td>
+    </tr>
+    <tr>
+      <td>GE</td>
+      <td>Supérieur ou égal (signé)</td>
+      <td>N=V</td>
+    </tr>
+    <tr>
+      <td>LE</td>
+      <td>Inférieur ou égal (signé)</td>
+      <td>Z=1 OU N≠V</td>
+    </tr>
+    <tr>
+      <td>HI</td>
+      <td>Supérieur (non signé)</td>
+      <td>C=1 ET Z=0</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>Inférieur ou égal (non signé)</td>
+      <td>C=0 OU Z=1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Comparaisons</strong> :</p>
+
+<pre><code class="language-asm">CMP R0,R1           ; Compare R0 et R1 (calcule R0-R1, met à jour flags)
+CMN R0,R1           ; Compare negative (calcule R0+R1)
+TST R0,R1           ; Test bits (AND, met à jour flags sans stocker)
+TEQ R0,R1           ; Test equal (XOR, met à jour flags)
+</code></pre>
+
+<p><strong>Exemple de boucle</strong> :</p>
+
+<pre><code class="language-asm">    MOV R0,#10      ; Compteur
+Boucle
+    ; ... code ...
+    SUBS R0,#1      ; Décrément et mise à jour flags
+    BNE Boucle      ; Tant que R0 != 0
+</code></pre>
+
+<h3 class="section-title">5. Sous-programmes et Pile</h3>
+
+<p><strong>Convention d’appel AAPCS</strong> (ARM Architecture Procedure Call Standard) :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registre</th>
+      <th>Usage</th>
+      <th>Sauvegarde</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R0-R3</td>
+      <td>Paramètres et retour</td>
+      <td>Caller-saved</td>
+    </tr>
+    <tr>
+      <td>R4-R11</td>
+      <td>Variables locales</td>
+      <td>Callee-saved</td>
+    </tr>
+    <tr>
+      <td>R12</td>
+      <td>Temporaire</td>
+      <td>Caller-saved</td>
+    </tr>
+    <tr>
+      <td>R13 (SP)</td>
+      <td>Pile</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>R14 (LR)</td>
+      <td>Adresse retour</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Appel de fonction</strong> :</p>
+
+<pre><code class="language-asm">; Appelant (caller)
+    MOV R0,#5       ; Premier paramètre
+    MOV R1,#10      ; Deuxième paramètre
+    BL MaFonction   ; Appel (LR = adresse retour)
+    ; R0 contient le résultat
+
+; Fonction (callee)
+MaFonction PROC
+    PUSH {R4,LR}    ; Sauvegarde registres utilisés
+    
+    ; Calculs utilisant R0, R1, R4
+    ADD R4,R0,R1
+    MOV R0,R4       ; Résultat dans R0
+    
+    POP {R4,PC}     ; Restaure et retourne
+    ENDP
+</code></pre>
+
+<p><strong>Gestion de la pile</strong> :</p>
+
+<p>La pile croît vers les adresses décroissantes (full descending).</p>
+
+<pre><code class="language-asm">PUSH {R0-R3,LR}     ; Sauvegarde multiple
+; SP = SP - 20 (5 registres × 4 octets)
+
+POP {R0-R3,PC}      ; Restauration et retour
+; SP = SP + 20
+</code></pre>
+
+<p><strong>Équivalent</strong> :</p>
+<ul>
+  <li>PUSH {Rx} = STMDB SP!, {Rx} (Store Multiple Decrement Before)</li>
+  <li>POP {Rx} = LDMIA SP!, {Rx} (Load Multiple Increment After)</li>
+</ul>
+
+<h3 class="section-title">6. Accès aux Périphériques</h3>
+
+<p><strong>Memory-mapped I/O</strong> :</p>
+
+<p>Les périphériques sont accessibles via des adresses mémoire spécifiques.</p>
+
+<p><strong>Exemple : GPIO (General Purpose Input/Output)</strong></p>
+
+<p>Registres du GPIOC (Port C) pour STM32F103 :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registre</th>
+      <th>Adresse</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CRL</td>
+      <td>0x40011000</td>
+      <td>Configuration broches 0-7</td>
+    </tr>
+    <tr>
+      <td>CRH</td>
+      <td>0x40011004</td>
+      <td>Configuration broches 8-15</td>
+    </tr>
+    <tr>
+      <td>IDR</td>
+      <td>0x40011008</td>
+      <td>Input Data Register (lecture)</td>
+    </tr>
+    <tr>
+      <td>ODR</td>
+      <td>0x4001100C</td>
+      <td>Output Data Register (écriture)</td>
+    </tr>
+    <tr>
+      <td>BSRR</td>
+      <td>0x40011010</td>
+      <td>Bit Set/Reset Register</td>
+    </tr>
+    <tr>
+      <td>BRR</td>
+      <td>0x40011014</td>
+      <td>Bit Reset Register</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Configuration d’une broche en sortie</strong> :</p>
+
+<pre><code class="language-asm">; Configurer PC10 en sortie push-pull, 50 MHz
+    LDR R0,=0x40011004  ; GPIOC_CRH
+    LDR R1,[R0]
+    BIC R1,#(0xF &lt;&lt; 8)  ; Clear bits pour PC10
+    ORR R1,#(0x3 &lt;&lt; 8)  ; MODE=11 (50MHz), CNF=00 (push-pull)
+    STR R1,[R0]
+</code></pre>
+
+<p><strong>Manipulation de bits</strong> :</p>
+
+<pre><code class="language-asm">; Mise à 1 d'un bit (set)
+LDR R0,=0x40011010  ; GPIOC_BSRR
+MOV R1,#(1 &lt;&lt; 10)   ; Bit 10
+STR R1,[R0]         ; PC10 = 1
+
+; Mise à 0 d'un bit (reset)
+LDR R0,=0x40011014  ; GPIOC_BRR
+MOV R1,#(1 &lt;&lt; 10)
+STR R1,[R0]         ; PC10 = 0
+
+; Lecture d'un bit
+LDR R0,=0x40011008  ; GPIOC_IDR
+LDR R1,[R0]
+TST R1,#(1 &lt;&lt; 8)    ; Test bit 8
+BEQ Bit_A_Zero      ; Branch if zero
+</code></pre>
+
+<h3 class="section-title">7. Directives Assembleur</h3>
+
+<p><strong>Organisation du code</strong> :</p>
+
+<pre><code class="language-asm">    AREA MonCode, CODE, READONLY, ALIGN=2
+    ; Sections de code
+    
+    AREA MesDonnees, DATA, READWRITE
+    ; Sections de données
+</code></pre>
+
+<p><strong>Définition de données</strong> :</p>
+
+<pre><code class="language-asm">; Constantes
+Valeur  EQU 42          ; Équivalent #define
+
+; Données initialisées
+Tableau DCD 1,2,3,4,5   ; Define Constant Data (32 bits)
+Chaine  DCB "Hello",0   ; Define Constant Byte (8 bits)
+Mot     DCW 0x1234      ; Define Constant Word (16 bits)
+
+; Données non initialisées
+Buffer  SPACE 100       ; Réserve 100 octets
+</code></pre>
+
+<p><strong>Déclarations</strong> :</p>
+
+<pre><code class="language-asm">    EXPORT main         ; Rend le symbole visible à l'extérieur
+    IMPORT fonction     ; Importe un symbole externe
+    
+    PROC                ; Début de procédure
+    ENDP                ; Fin de procédure
+    
+    END                 ; Fin du fichier source
+</code></pre>
+
+<h3 class="section-title">8. Optimisations</h3>
+
+<p><strong>Taille de code</strong> :</p>
+
+<p>Instructions Thumb-2 sont 16 ou 32 bits. Préférer les instructions 16 bits quand possible.</p>
+
+<pre><code class="language-asm">; 16 bits
+ADDS R0,R1,R2       ; Si R0-R7 et résultat modifie flags
+
+; 32 bits
+ADD.W R0,R1,R2      ; Force 32 bits
+</code></pre>
+
+<p><strong>Boucles efficaces</strong> :</p>
+
+<pre><code class="language-asm">; Inefficace (compare à 0 à chaque itération)
+    MOV R0,#0
+Boucle
+    ; ...
+    ADD R0,#1
+    CMP R0,#100
+    BLT Boucle
+
+; Efficace (décrémente et teste zéro implicitement)
+    MOV R0,#100
+Boucle
+    ; ...
+    SUBS R0,#1
+    BNE Boucle
+</code></pre>
+
+<p><strong>Éviter les branchements</strong> :</p>
+
+<p>Utiliser les instructions conditionnelles quand possible.</p>
+
+<pre><code class="language-asm">; Avec branchement
+    CMP R0,R1
+    BLE Suivant
+    MOV R2,R0
+Suivant
+    ; ...
+
+; Sans branchement (IT = If-Then)
+    CMP R0,R1
+    IT GT
+    MOVGT R2,R0     ; Exécuté si GT
+</code></pre>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Compréhension bas niveau</strong> :
+La programmation en assembleur force à comprendre exactement ce qui se passe au niveau processeur : chaque instruction, chaque accès mémoire, chaque modification de flag. Cette compréhension aide à débugger et optimiser le code C.</p>
+
+<p><strong>Contrôle total du matériel</strong> :
+Accès direct aux registres de périphériques, manipulation bit à bit, timing précis. Essentiel pour développer des drivers ou du code temps réel critique.</p>
+
+<p><strong>Optimisation</strong> :
+Conscience du coût de chaque instruction. Savoir où optimiser (boucles critiques) et quand laisser le compilateur faire le travail.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. La pile est votre amie (et votre ennemie)</strong> :
+PUSH/POP doivent toujours être équilibrés. Oublier un POP ou faire POP du mauvais registre provoque des bugs difficiles à tracer.</p>
+
+<p><strong>2. LR doit être sauvegardé</strong> :
+Si une fonction appelle d’autres fonctions, LR doit être sauvegardé (PUSH {LR}) et restauré (POP {PC}) pour retourner correctement.</p>
+
+<p><strong>3. Flags de condition</strong> :
+Les instructions avec ‘S’ (ADDS, SUBS) modifient les flags. Nécessaire pour les branchements conditionnels. Attention à ne pas écraser les flags entre CMP et Bxx.</p>
+
+<p><strong>4. Adressage mémoire</strong> :
+Bien distinguer adresse et valeur. LDR R0,=etiquette charge l’adresse, LDR R0,[R1] charge la valeur à l’adresse contenue dans R1.</p>
+
+<p><strong>5. Documentation indispensable</strong> :
+Avoir toujours sous la main :</p>
+<ul>
+  <li>ARM Architecture Reference Manual (jeu d’instructions)</li>
+  <li>STM32 Reference Manual (adresses périphériques)</li>
+  <li>Cortex-M3 Technical Reference Manual (architecture)</li>
+</ul>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Systèmes embarqués critiques</strong> :
+Bootloaders, routines d’initialisation, handlers d’interruption critiques. Code assembleur pour timing précis ou optimisation extrême.</p>
+
+<p><strong>Drivers de périphériques</strong> :
+Accès direct aux registres matériels pour performances maximales. Utile quand les HAL (Hardware Abstraction Layer) sont trop lourds.</p>
+
+<p><strong>Reverse engineering</strong> :
+Comprendre l’assembleur permet d’analyser du code compilé, débugger des problèmes obscurs, ou étudier des malwares.</p>
+
+<p><strong>Inline assembly en C</strong> :
+Intégrer quelques instructions assembleur dans du code C pour optimisations locales.</p>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Exemple inline assembly GCC</span>
+<span class="kr">__asm</span> <span class="nf">volatile</span> <span class="p">(</span>
+    <span class="s">"MOV R0, #42</span><span class="se">\n</span><span class="s">"</span>
+    <span class="s">"ADD R1, R0, R0</span><span class="se">\n</span><span class="s">"</span>
+    <span class="o">:</span> <span class="s">"=r"</span> <span class="p">(</span><span class="n">resultat</span><span class="p">)</span>
+    <span class="o">:</span> <span class="s">"r"</span> <span class="p">(</span><span class="n">entree</span><span class="p">)</span>
+    <span class="o">:</span> <span class="s">"r0"</span><span class="p">,</span> <span class="s">"r1"</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h3 class="section-title">Assembleur vs C</h3>
+
+<p><strong>Quand utiliser l’assembleur</strong> :</p>
+<ul>
+  <li>Code critique en temps (ISR ultra-rapides)</li>
+  <li>Optimisation extrême (boucles intensives)</li>
+  <li>Accès à des fonctionnalités spéciales (instructions SIMD)</li>
+  <li>Bootloaders et code d’initialisation</li>
+  <li>Taille de code très contrainte</li>
+</ul>
+
+<p><strong>Quand préférer le C</strong> :</p>
+<ul>
+  <li>Développement rapide et maintenabilité</li>
+  <li>Portabilité entre architectures</li>
+  <li>Code métier complexe</li>
+  <li>95% des cas !</li>
+</ul>
+
+<p>Les compilateurs modernes optimisent très bien. L’assembleur manuel n’est souvent nécessaire que pour quelques pourcents du code.</p>
+
+<h3 class="section-title">Retour d'expérience sur le projet TP</h3>
+
+<p>Le projet “Roue Magique” a permis d’appliquer tous les concepts :</p>
+<ul>
+  <li>Étape 1 : contrôle GPIO, découverte des registres</li>
+  <li>Étape 2 : lecture d’entrées, logique conditionnelle</li>
+  <li>Étape 3 : boucles et séquences</li>
+  <li>Étape 4 : timers et interruptions</li>
+</ul>
+
+<p><strong>Progression pédagogique</strong> :
+Chaque étape ajoute de la complexité. On construit progressivement un système complet. Sentiment d’accomplissement en voyant les LEDs s’allumer selon notre code.</p>
+
+<p><strong>Difficultés</strong> :
+Débugger en assembleur est plus difficile qu’en C. Pas de printf facile. Utilisation intensive du debugger et de l’observation des registres.</p>
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+<p><strong>Limites du cours</strong> :</p>
+<ul>
+  <li>Peu sur les interruptions avancées (NVIC complet)</li>
+  <li>Pas de DMA ou timers complexes</li>
+  <li>Peu de code optimisé (SIMD, DSP)</li>
+  <li>Pas de systèmes d’exploitation temps réel (RTOS)</li>
+</ul>
+
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+  <li><strong>Embedded C avancé</strong> : inline assembly, optimisations</li>
+  <li><strong>RTOS</strong> : FreeRTOS, tâches, synchronisation</li>
+  <li><strong>Compilation et linking</strong> : fichiers objets, éditeur de liens</li>
+  <li><strong>Architectures avancées</strong> : Cortex-M4 DSP, Cortex-M7 cache</li>
+  <li><strong>Sécurité</strong> : TrustZone, secure boot</li>
+</ul>
+
+<h3 class="section-title">Évolution technologique</h3>
+
+<p><strong>Tendances actuelles</strong> :</p>
+<ul>
+  <li><strong>Cortex-M33</strong> : TrustZone pour sécurité</li>
+  <li><strong>Cortex-M55</strong> : extensions Helium pour machine learning</li>
+  <li><strong>RISC-V</strong> : alternative open-source à ARM</li>
+  <li><strong>Compilation Just-In-Time</strong> : pour microcontrôleurs puissants</li>
+</ul>
+
+<p><strong>Outils modernes</strong> :</p>
+<ul>
+  <li>CMSIS (Cortex Microcontroller Software Interface Standard)</li>
+  <li>HAL (Hardware Abstraction Layer) générées automatiquement</li>
+  <li>IDE graphiques (STM32CubeIDE, Mbed Studio)</li>
+  <li>Débogage avancé (Segger J-Link, Ozone)</li>
+</ul>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>La programmation en assembleur ARM est un passage obligé pour comprendre en profondeur le fonctionnement des microcontrôleurs. Même si 95% du code moderne est écrit en C/C++, connaître l’assembleur permet :</p>
+<ul>
+  <li>De mieux comprendre ce que fait le compilateur</li>
+  <li>D’optimiser le code critique</li>
+  <li>De débugger des problèmes complexes</li>
+  <li>De développer des drivers efficaces</li>
+  <li>D’apprécier la puissance des langages de haut niveau</li>
+</ul>
+
+<p>L’architecture ARM Cortex-M est omniprésente dans les systèmes embarqués modernes (IoT, wearables, drones, automobile). La maîtriser est un atout majeur pour tout ingénieur en systèmes embarqués.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+  <li>Pratiquer régulièrement (petits programmes, défis)</li>
+  <li>Lire du code assembleur généré par le compilateur (option -S de GCC)</li>
+  <li>Participer à des CTF (Capture The Flag) de reverse engineering</li>
+  <li>Expérimenter avec différentes architectures (ARM, RISC-V, x86)</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./architecture-materielle.html">Architecture Matérielle - S6</a> : pipeline, cache</li>
+  <li><a href="./microcontroleur.html">Microcontrôleur - S6</a> : périphériques, C embarqué</li>
+  <li><a href="./electronique-fonctions-numeriques.html">Électronique Fonctions Numériques - S6</a> : bus I2C/SPI</li>
+  <li><a href="./temps-reel.html">Temps Réel - S8</a> : contraintes temporelles</li>
+</ul>
+
+<hr />
+
+<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Séquence 1 - Introduction ARM</h4>
+      <p>Introduction à l'architecture ARM Cortex-M, registres, jeu d'instructions de base et organisation mémoire.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Séquence 2 - Instructions ARM</h4>
+      <p>Jeu d'instructions ARM complète : arithmétique, logique, branchements, et modes d'adressage.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Séquence 3 - Fonctions et Pile</h4>
+      <p>Convention d'appel AAPCS, gestion de la pile, prologue/épilogue de fonctions et passage de paramètres.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Référence Jeu d'Instructions</h4>
+      <p>Tableau synthétique complet du jeu d'instructions ARM Cortex-M avec syntaxe et exemples.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><em>Cours enseigné en 2022-2023 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

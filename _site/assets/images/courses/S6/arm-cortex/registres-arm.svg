@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <defs>
+    <style>
+      .register { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .bit { stroke: #666; stroke-width: 1; fill: white; }
+      .text { font-family: 'Courier New', monospace; font-size: 10px; fill: #333; text-anchor: middle; }
+      .label { font-family: Arial; font-size: 12px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+      .desc { font-family: Arial; font-size: 11px; fill: #666; }
+    </style>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="100" y="25">Architecture ARM Cortex-M - Registres</text>
+  
+  <!-- Registres généraux R0-R12 -->
+  <text class="label" x="50" y="60">Registres Généraux (32 bits)</text>
+  
+  <rect class="register" x="50" y="70" width="180" height="30" rx="3"/>
+  <text class="text" x="75" y="90">R0</text>
+  <text class="desc" x="250" y="90">Argument / Résultat</text>
+  
+  <rect class="register" x="50" y="110" width="180" height="30" rx="3"/>
+  <text class="text" x="75" y="130">R1 - R3</text>
+  <text class="desc" x="250" y="130">Arguments</text>
+  
+  <rect class="register" x="50" y="150" width="180" height="30" rx="3"/>
+  <text class="text" x="75" y="170">R4 - R11</text>
+  <text class="desc" x="250" y="170">Variables locales</text>
+  
+  <rect class="register" x="50" y="190" width="180" height="30" rx="3"/>
+  <text class="text" x="75" y="210">R12</text>
+  <text class="desc" x="250" y="210">Temporaire</text>
+  
+  <!-- Registres spéciaux -->
+  <text class="label" x="50" y="250">Registres Spéciaux</text>
+  
+  <rect class="register" x="50" y="260" width="180" height="30" rx="3" fill="#ffe8e8"/>
+  <text class="text" x="75" y="280">SP (R13)</text>
+  <text class="desc" x="250" y="280">Stack Pointer (pile)</text>
+  
+  <rect class="register" x="50" y="300" width="180" height="30" rx="3" fill="#ffe8e8"/>
+  <text class="text" x="75" y="320">LR (R14)</text>
+  <text class="desc" x="250" y="320">Link Register (retour)</text>
+  
+  <rect class="register" x="300" y="70" width="180" height="30" rx="3" fill="#ffe8e8"/>
+  <text class="text" x="325" y="90">PC (R15)</text>
+  <text class="desc" x="320" y="115">Program Counter</text>
+  
+  <!-- PSR -->
+  <rect class="register" x="300" y="150" width="180" height="30" rx="3" fill="#e8f9f7"/>
+  <text class="text" x="325" y="170">PSR</text>
+  <text class="desc" x="320" y="195">Program Status Register</text>
+  
+  <!-- Flags PSR -->
+  <text class="desc" x="310" y="225">Flags : N Z C V</text>
+  <rect class="bit" x="310" y="230" width="30" height="20"/>
+  <text class="text" x="325" y="243">N</text>
+  
+  <rect class="bit" x="345" y="230" width="30" height="20"/>
+  <text class="text" x="360" y="243">Z</text>
+  
+  <rect class="bit" x="380" y="230" width="30" height="20"/>
+  <text class="text" x="395" y="243">C</text>
+  
+  <rect class="bit" x="415" y="230" width="30" height="20"/>
+  <text class="text" x="430" y="243">V</text>
+  
+  <text class="desc" x="310" y="270" font-size="9px">Negative, Zero, Carry, Overflow</text>
+</svg>

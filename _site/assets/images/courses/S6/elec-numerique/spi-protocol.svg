@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400">
+  <defs>
+    <style>
+      .waveform { stroke-width: 3; fill: none; }
+      .clk { stroke: #2a7ae2; }
+      .data { stroke: #ff6b6b; }
+      .axis { stroke: #666; stroke-width: 1; }
+      .text { font-family: Arial; font-size: 12px; fill: #333; }
+      .label { font-family: Arial; font-size: 13px; font-weight: bold; }
+      .bit { font-family: 'Courier New', monospace; font-size: 11px; fill: #666; }
+    </style>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="label" x="150" y="25" fill="#2a7ae2">Protocole SPI - Transmission de données</text>
+  
+  <!-- CLK Signal -->
+  <text class="text" x="20" y="65">CLK</text>
+  <line class="axis" x1="80" y1="60" x2="450" y2="60"/>
+  <path class="waveform clk" d="M 80 60 L 100 60 L 100 40 L 140 40 L 140 60 L 180 60 L 180 40 L 220 40 L 220 60 L 260 60 L 260 40 L 300 40 L 300 60 L 340 60 L 340 40 L 380 40 L 380 60 L 420 60 L 420 40 L 450 40"/>
+  
+  <!-- MOSI Signal (Master Out Slave In) -->
+  <text class="text" x="10" y="125">MOSI</text>
+  <line class="axis" x1="80" y1="120" x2="450" y2="120"/>
+  <path class="waveform data" d="M 80 120 L 100 120 L 100 100 L 140 100 L 140 120 L 180 120 L 180 100 L 220 100 L 220 120 L 260 120 L 260 100 L 300 100 L 300 120 L 340 120 L 340 100 L 380 100 L 380 120 L 420 120 L 420 100 L 450 100"/>
+  
+  <!-- MISO Signal (Master In Slave Out) -->
+  <text class="text" x="15" y="185">MISO</text>
+  <line class="axis" x1="80" y1="180" x2="450" y2="180"/>
+  <path class="waveform data" d="M 80 180 L 100 180 L 100 200 L 140 200 L 140 180 L 180 180 L 180 200 L 220 200 L 220 180 L 260 180 L 260 200 L 300 200 L 300 180 L 340 180 L 340 200 L 380 200 L 380 180 L 420 180 L 420 200 L 450 200"/>
+  
+  <!-- CS Signal (Chip Select) -->
+  <text class="text" x="25" y="245">CS</text>
+  <line class="axis" x1="80" y1="240" x2="450" y2="240"/>
+  <path class="waveform" stroke="#4ecdc4" d="M 80 220 L 90 220 L 90 240 L 430 240 L 430 220 L 450 220"/>
+  
+  <!-- Bit numbers -->
+  <text class="bit" x="115" y="155">bit 7</text>
+  <text class="bit" x="155" y="155">bit 6</text>
+  <text class="bit" x="195" y="155">bit 5</text>
+  <text class="bit" x="235" y="155">bit 4</text>
+  <text class="bit" x="275" y="155">bit 3</text>
+  <text class="bit" x="315" y="155">bit 2</text>
+  <text class="bit" x="355" y="155">bit 1</text>
+  <text class="bit" x="395" y="155">bit 0</text>
+  
+  <!-- Légende -->
+  <rect x="50" y="280" width="400" height="100" rx="5" fill="#f9f9f9" stroke="#2a7ae2" stroke-width="1"/>
+  <text class="label" x="150" y="305" fill="#2a7ae2">Caractéristiques SPI:</text>
+  <text class="text" x="70" y="330">• Full-duplex (transmission simultanée)</text>
+  <text class="text" x="70" y="350">• Maître contrôle l'horloge (CLK)</text>
+  <text class="text" x="70" y="370">• CS actif bas sélectionne l'esclave</text>
+</svg>

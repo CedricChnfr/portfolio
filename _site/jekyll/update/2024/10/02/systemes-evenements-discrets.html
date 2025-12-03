@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Modélisation et Commande des Systèmes à Événements Discrets - S5 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Modélisation et Commande des Systèmes à Événements Discrets - S5" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/systemes-evenements-discrets.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/systemes-evenements-discrets.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Modélisation et Commande des Systèmes à Événements Discrets - S5" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Modélisation et Commande des Systèmes à Événements Discrets - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/systemes-evenements-discrets.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/systemes-evenements-discrets.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #2a7ae2;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+</div>
+
+<h1 id="-modélisation-et-commande-des-systèmes-à-événements-discrets---s5">🔄 Modélisation et Commande des Systèmes à Événements Discrets - S5</h1>
+
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Crédits</strong>: 2 ECTS<br />
+<strong>Type</strong>: Automatique et Systèmes<br />
+<strong>Enseignant</strong>: Vignolles</p>
+
+<hr />
+
+<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+
+<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+
+<p>Ce cours introduit la modélisation et la commande des systèmes à événements discrets (SED), systèmes dont l’évolution est déclenchée par des événements discrets plutôt que par le temps continu. Ces systèmes sont omniprésents dans l’industrie (lignes de production, systèmes de transport), l’informatique (protocoles, workflows) et la robotique. Le cours couvre les automates finis et les réseaux de Petri, outils fondamentaux pour modéliser, analyser et commander ces systèmes.</p>
+
+<h3 id="compétences-visées">Compétences visées</h3>
+
+<ul>
+  <li>Modéliser des systèmes industriels avec automates et réseaux de Petri</li>
+  <li>Analyser les propriétés des systèmes (vivacité, blocage, atteignabilité)</li>
+  <li>Concevoir des superviseurs pour garantir des spécifications</li>
+  <li>Utiliser des logiciels de simulation (AutomDiscrete)</li>
+  <li>Implémenter des automates sur automates programmables (grafcet)</li>
+  <li>Détecter et résoudre les problèmes de synchronisation et blocages</li>
+</ul>
+
+<h3 id="organisation">Organisation</h3>
+
+<ul>
+  <li><strong>Volume horaire</strong>: 20h (CM: 10h, TD: 6h, TP: 4h)</li>
+  <li><strong>Évaluation</strong>: Examen écrit (70%) + TPs (30%)</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Logique, algèbre de base, notions d’automatique</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+
+<p>Le cours s’organise autour de deux formalismes complémentaires: les automates et les réseaux de Petri.</p>
+
+<h4 id="1-systèmes-à-événements-discrets">1. Systèmes à Événements Discrets</h4>
+
+<p><strong>Caractéristiques principales</strong>:</p>
+
+<p>Les SED évoluent par sauts discrets déclenchés par des événements:</p>
+<ul>
+  <li><strong>États discrets</strong>: nombre fini ou dénombrable d’états</li>
+  <li><strong>Événements</strong>: actions instantanées causant des transitions</li>
+  <li><strong>Évolution asynchrone</strong>: pas de synchronisation globale</li>
+  <li><strong>Non-déterminisme</strong>: plusieurs transitions possibles depuis un état</li>
+  <li><strong>Concurrence</strong>: plusieurs processus simultanés</li>
+</ul>
+
+<p><strong>Exemples typiques</strong>:</p>
+<ul>
+  <li>Système de tri de pièces (TP principal)</li>
+  <li>Feux de circulation</li>
+  <li>Distributeur automatique</li>
+  <li>Ligne de production manufacturière</li>
+  <li>Protocole de communication</li>
+</ul>
+
+<p><strong>Différence avec systèmes continus</strong>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Critère</th>
+      <th>Systèmes continus</th>
+      <th>Systèmes discrets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>États</td>
+      <td>Continus (réels)</td>
+      <td>Discrets (entiers)</td>
+    </tr>
+    <tr>
+      <td>Temps</td>
+      <td>Évolution continue</td>
+      <td>Événements instantanés</td>
+    </tr>
+    <tr>
+      <td>Modèle</td>
+      <td>Équations différentielles</td>
+      <td>Automates, Petri</td>
+    </tr>
+    <tr>
+      <td>Exemple</td>
+      <td>Régulation température</td>
+      <td>Ligne d’assemblage</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2-automates-à-états-finis">2. Automates à États Finis</h4>
+
+<p><strong>Définition</strong>:</p>
+
+<p>Un automate est défini par:</p>
+<ul>
+  <li>E : ensemble d’états</li>
+  <li>e0 : état initial</li>
+  <li>Σ : alphabet d’événements</li>
+  <li>δ : fonction de transition (E × Σ → E)</li>
+  <li>Em : états marqués (acceptants)</li>
+</ul>
+
+<p><strong>Représentation graphique</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    [e1] --a--&gt; [e2] --b--&gt; [e3]
+     |                       |
+     +----------c------------+
+</code></pre></div></div>
+
+<p>États = cercles, transitions = flèches étiquetées, état initial = flèche entrante.</p>
+
+<p><strong>Exemple TD: Distributeur de boissons</strong>:</p>
+
+<p>États:</p>
+<ul>
+  <li>e0 : attente</li>
+  <li>e1 : 50 centimes insérés</li>
+  <li>e2 : 1 euro inséré</li>
+  <li>e3 : boisson servie</li>
+</ul>
+
+<p>Événements:</p>
+<ul>
+  <li>p50 : insertion 50 centimes</li>
+  <li>p100 : insertion 1 euro</li>
+  <li>serv : servir boisson</li>
+  <li>annul : annulation</li>
+</ul>
+
+<p><strong>Déterminisme vs non-déterminisme</strong>:</p>
+
+<p>Automate déterministe: une seule transition possible pour chaque couple (état, événement).
+Automate non-déterministe: plusieurs transitions possibles.</p>
+
+<p><strong>Opérations sur automates</strong>:</p>
+
+<p><strong>Produit synchrone</strong>: combine deux automates avec synchronisation sur événements communs.</p>
+
+<p>Utilisé pour modéliser des systèmes composés de plusieurs sous-systèmes interagissant.</p>
+
+<p><strong>Accessibilité</strong>: un état est accessible s’il existe un chemin depuis l’état initial.</p>
+
+<p><strong>Co-accessibilité</strong>: un état est co-accessible s’il existe un chemin vers un état marqué.</p>
+
+<p><strong>Trim</strong>: automate ne contenant que les états accessibles et co-accessibles.</p>
+
+<h4 id="3-réseaux-de-petri">3. Réseaux de Petri</h4>
+
+<p><strong>Structure de base</strong>:</p>
+
+<p>Un réseau de Petri comprend:</p>
+<ul>
+  <li>Places (cercles): contiennent des jetons</li>
+  <li>Transitions (rectangles): événements</li>
+  <li>Arcs orientés: places → transitions ou transitions → places</li>
+  <li>Marquage M: nombre de jetons dans chaque place</li>
+</ul>
+
+<p><strong>Règle de tir</strong>:</p>
+
+<p>Une transition est franchissable si toutes les places d’entrée contiennent au moins un jeton.</p>
+
+<p>Après franchissement:</p>
+<ul>
+  <li>Retirer un jeton de chaque place d’entrée</li>
+  <li>Ajouter un jeton à chaque place de sortie</li>
+</ul>
+
+<p><strong>Exemple: Producteur-Consommateur</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    (Buffer vide) --produire--&gt; (Buffer plein) --consommer--&gt; (Buffer vide)
+</code></pre></div></div>
+
+<p>Places: Buffer vide (1 jeton initial), Buffer plein (0 jeton)
+Transitions: produire, consommer</p>
+
+<p><strong>Propriétés importantes</strong>:</p>
+
+<p><strong>Bornage</strong>: nombre maximal de jetons dans une place.</p>
+<ul>
+  <li>Réseau borné: toutes les places ont un nombre limité de jetons</li>
+  <li>Réseau sauf (safe): maximum 1 jeton par place</li>
+</ul>
+
+<p><strong>Vivacité</strong>: une transition est vivante si elle peut toujours être franchie dans le futur (pas de blocage définitif).</p>
+
+<p><strong>Réinitialisabilité</strong>: possibilité de revenir au marquage initial.</p>
+
+<p><strong>Blocage (deadlock)</strong>: marquage où aucune transition n’est franchissable.</p>
+
+<p><strong>Analyse par graphe de marquages</strong>:</p>
+
+<p>Graphe représentant tous les marquages atteignables et les transitions entre eux.</p>
+
+<p>Permet de:</p>
+<ul>
+  <li>Détecter les blocages</li>
+  <li>Vérifier la bornage</li>
+  <li>Analyser la vivacité</li>
+  <li>Calculer les états accessibles</li>
+</ul>
+
+<h4 id="4-modélisation-de-systèmes-industriels">4. Modélisation de Systèmes Industriels</h4>
+
+<p><strong>Système de tri de pièces (TP)</strong>:</p>
+
+<p>Composants:</p>
+<ul>
+  <li>Tapis d’entrée (T_ON) et de sortie (C_ON)</li>
+  <li>Capteurs: entrée tapis, détection métal, détection autre</li>
+  <li>Bacs de sortie: métal (B1), autre (B2), rebut (B)</li>
+  <li>Vérins pour diriger les pièces</li>
+</ul>
+
+<p>États du système:</p>
+<ul>
+  <li>État 0: attente (tapis arrêtés)</li>
+  <li>État 1: démarrage (tapis en marche)</li>
+  <li>État 2: pièce détectée (temporisation)</li>
+  <li>État 3: identification pièce</li>
+  <li>États 4,5,6: tri selon catégorie</li>
+</ul>
+
+<p><strong>Logique de commande (automate programmable)</strong>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>IF (STATE_TRI = 0) THEN
+    T_ON := 0;  // Tapis arrêté
+    C_ON := 0;
+    IF ((P_g1=1) AND (P_g2=1) AND (P_g3=1)) THEN
+        STATE_TRI := 1;  // Tous les bacs vides, démarrer
+    END_IF;
+END_IF;
+
+IF (STATE_TRI = 1) THEN
+    T_ON := 1;  // Démarrer tapis
+    C_ON := 1;
+    IF (Pp_entreeTapis = 1) THEN
+        STATE_TRI := 2;  // Pièce détectée
+    END_IF;
+END_IF;
+
+IF (STATE_TRI = 3) THEN
+    IF ((p_autre=1) AND (p_metal=1)) THEN
+        STATE_TRI := 5;  // Pièce métallique
+    ELSIF (p_autre=1) THEN
+        STATE_TRI := 6;  // Autre pièce
+    ELSE
+        STATE_TRI := 4;  // Rebut
+    END_IF;
+END_IF;
+</code></pre></div></div>
+
+<p><strong>Temporisations</strong>:</p>
+
+<p>Les timers permettent d’attendre la stabilisation des capteurs:</p>
+<ul>
+  <li>Timer1, Timer2, Timer3: temporisations de 2s ou 1s</li>
+  <li>Évitent les fausses détections</li>
+</ul>
+
+<h4 id="5-grafcet-et-automates-programmables">5. Grafcet et Automates Programmables</h4>
+
+<p><strong>Grafcet (Graphe Fonctionnel de Commande Étape-Transition)</strong>:</p>
+
+<p>Représentation graphique pour automatismes industriels:</p>
+<ul>
+  <li>Étapes (carrés numérotés): états du système</li>
+  <li>Transitions (traits horizontaux): conditions de passage</li>
+  <li>Actions associées aux étapes</li>
+  <li>Liaisons orientées</li>
+</ul>
+
+<p><strong>Règles d’évolution</strong>:</p>
+<ol>
+  <li>Étape initiale active au démarrage</li>
+  <li>Transition franchie si étape amont active ET condition vraie</li>
+  <li>Activation étape aval et désactivation étape amont</li>
+</ol>
+
+<p><strong>Conversion Grafcet → Automate programmable</strong>:</p>
+
+<p>Le grafcet se traduit directement en code pour API (Automate Programmable Industriel) en langage structuré ou ladder.</p>
+
+<h4 id="6-synthèse-de-superviseurs">6. Synthèse de Superviseurs</h4>
+
+<p><strong>Principe</strong>:</p>
+
+<p>Concevoir un contrôleur (superviseur) qui restreint le comportement du système pour respecter des spécifications.</p>
+
+<p><strong>Spécifications typiques</strong>:</p>
+<ul>
+  <li>Éviter les blocages</li>
+  <li>Garantir la sécurité (états interdits)</li>
+  <li>Maximiser la productivité</li>
+  <li>Respecter des séquences obligatoires</li>
+</ul>
+
+<p><strong>Événements contrôlables vs non-contrôlables</strong>:</p>
+
+<p>Contrôlables: le superviseur peut empêcher leur occurrence (ex: démarrer machine).
+Non-contrôlables: arrivent spontanément (ex: pièce arrivée, panne).</p>
+
+<p><strong>Méthode</strong>:</p>
+<ol>
+  <li>Modéliser le système (automate ou Petri)</li>
+  <li>Définir les spécifications (états ou comportements interdits)</li>
+  <li>Calculer le superviseur (restreindre les transitions)</li>
+  <li>Vérifier les propriétés (non-blocage, contrôlabilité)</li>
+</ol>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="travaux-pratiques">Travaux Pratiques</h3>
+
+<p><strong>TP1: Système de tri automatique</strong></p>
+
+<p>Objectif: modéliser et simuler un système de tri de pièces sur tapis avec le logiciel AutomDiscrete.</p>
+
+<p><strong>Cahier des charges</strong>:</p>
+<ul>
+  <li>Tri de 3 catégories: métal, autre, rebut</li>
+  <li>3 bacs de sortie avec capteurs de niveau</li>
+  <li>Capteurs de détection: métal, autre matière</li>
+  <li>Temporisations pour stabilisation</li>
+  <li>Arrêt automatique si bacs pleins</li>
+</ul>
+
+<p><strong>Modélisation par automate</strong>:</p>
+
+<p>États du système: 7 états (0 à 6)</p>
+<ul>
+  <li>0: Repos</li>
+  <li>1: Tapis en marche</li>
+  <li>2: Temporisation après détection</li>
+  <li>3: Identification de la pièce</li>
+  <li>4: Tri rebut</li>
+  <li>5: Tri métal</li>
+  <li>6: Tri autre</li>
+</ul>
+
+<p>Événements:</p>
+<ul>
+  <li>Bacs vides (P_g1, P_g2, P_g3)</li>
+  <li>Pièce entrée tapis</li>
+  <li>Fin temporisation</li>
+  <li>Détection métal, autre</li>
+  <li>Bacs pleins</li>
+</ul>
+
+<p><strong>Implémentation logiciel AutomDiscrete</strong>:</p>
+
+<p>Outil graphique permettant:</p>
+<ul>
+  <li>Dessiner l’automate (états, transitions)</li>
+  <li>Définir les événements et actions</li>
+  <li>Simuler l’évolution du système</li>
+  <li>Exporter en code automate programmable</li>
+</ul>
+
+<p><strong>Code généré</strong> (extrait):</p>
+
+<p>Variables:</p>
+<ul>
+  <li>STATE_TRI: état courant</li>
+  <li>T_ON, C_ON: commandes tapis</li>
+  <li>B_OFF, B1_ON, B2_ON: commandes vérins</li>
+  <li>P1-P6: états internes</li>
+  <li>Timers pour temporisations</li>
+</ul>
+
+<p><strong>Tests et validation</strong>:</p>
+<ul>
+  <li>Scénario nominal: tri correct selon catégorie</li>
+  <li>Cas limites: bacs pleins, pièces successives rapides</li>
+  <li>Gestion erreurs: capteurs défaillants</li>
+</ul>
+
+<h3 id="travaux-dirigés">Travaux Dirigés</h3>
+
+<p><strong>TD1: Automates de base</strong></p>
+
+<p>Exercices:</p>
+<ul>
+  <li>Modéliser un distributeur de boissons</li>
+  <li>Calculer le produit synchrone de deux automates</li>
+  <li>Déterminer les états accessibles et co-accessibles</li>
+  <li>Minimiser un automate</li>
+</ul>
+
+<p><strong>TD2: Réseaux de Petri</strong></p>
+
+<p>Exercices:</p>
+<ul>
+  <li>Modéliser un système producteur-consommateur</li>
+  <li>Calculer le graphe de marquages</li>
+  <li>Analyser la vivacité et le bornage</li>
+  <li>Détecter les blocages potentiels</li>
+</ul>
+
+<p><strong>TD: Système manufacturier</strong></p>
+
+<p>Modélisation d’une cellule flexible avec:</p>
+<ul>
+  <li>Machines en parallèle</li>
+  <li>Buffers limités</li>
+  <li>Ressources partagées (robot)</li>
+  <li>Analyse des deadlocks</li>
+</ul>
+
+<h3 id="outils-logiciels">Outils Logiciels</h3>
+
+<p><strong>AutomDiscrete</strong>:</p>
+<ul>
+  <li>Éditeur graphique d’automates</li>
+  <li>Simulation pas à pas</li>
+  <li>Export en grafcet et code API</li>
+  <li>Version utilisée: v4.0</li>
+</ul>
+
+<p><strong>Autres outils</strong>:</p>
+<ul>
+  <li>PIPE: éditeur de réseaux de Petri</li>
+  <li>TINA: analyse de Petri temporisés</li>
+  <li>Supremica: synthèse de superviseurs</li>
+  <li>Stateflow (Simulink): automates dans MATLAB</li>
+</ul>
+
+<h3 id="méthodologie-de-conception">Méthodologie de Conception</h3>
+
+<p><strong>Étapes pour modéliser un système</strong>:</p>
+
+<ol>
+  <li><strong>Identifier les états</strong>: situations distinctes du système</li>
+  <li><strong>Lister les événements</strong>: actions déclenchant changements</li>
+  <li><strong>Définir les transitions</strong>: conditions de passage entre états</li>
+  <li><strong>Spécifier les actions</strong>: sorties associées aux états ou transitions</li>
+  <li><strong>Valider</strong>: simulation et vérification propriétés</li>
+</ol>
+
+<p><strong>Choix entre automates et Petri</strong>:</p>
+
+<p>Utiliser automates si:</p>
+<ul>
+  <li>Système avec états bien définis</li>
+  <li>Séquences d’événements linéaires</li>
+  <li>Peu de concurrence</li>
+</ul>
+
+<p>Utiliser réseaux de Petri si:</p>
+<ul>
+  <li>Forte concurrence entre processus</li>
+  <li>Ressources partagées</li>
+  <li>Synchronisations complexes</li>
+  <li>Systèmes distribués</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+
+<p><strong>Modélisation</strong>:</p>
+<ul>
+  <li>Capacité à abstraire un système réel en modèle formel</li>
+  <li>Choix du formalisme adapté (automate vs Petri)</li>
+  <li>Représentation graphique claire et structurée</li>
+</ul>
+
+<p><strong>Analyse</strong>:</p>
+<ul>
+  <li>Détection de blocages et situations dangereuses</li>
+  <li>Vérification de propriétés (vivacité, bornage)</li>
+  <li>Évaluation de performances (temps de cycle)</li>
+</ul>
+
+<p><strong>Conception</strong>:</p>
+<ul>
+  <li>Synthèse de lois de commande garantissant spécifications</li>
+  <li>Implémentation sur automates programmables</li>
+  <li>Tests et validation de systèmes automatisés</li>
+</ul>
+
+<h3 id="applications-pratiques">Applications pratiques</h3>
+
+<p>Les SED sont omniprésents dans l’industrie et l’informatique:</p>
+
+<p><strong>Industrie manufacturière</strong>:</p>
+<ul>
+  <li>Lignes d’assemblage automobile</li>
+  <li>Systèmes de tri postal</li>
+  <li>Chaînes de conditionnement alimentaire</li>
+  <li>Ateliers flexibles</li>
+</ul>
+
+<p><strong>Transport et logistique</strong>:</p>
+<ul>
+  <li>Contrôle de feux de circulation</li>
+  <li>Gestion de flottes de véhicules</li>
+  <li>Systèmes de métro automatique</li>
+  <li>Entrepôts automatisés</li>
+</ul>
+
+<p><strong>Informatique</strong>:</p>
+<ul>
+  <li>Protocoles réseau (TCP/IP)</li>
+  <li>Workflows d’entreprise</li>
+  <li>Systèmes d’exploitation (ordonnancement)</li>
+  <li>Applications réactives</li>
+</ul>
+
+<p><strong>Robotique</strong>:</p>
+<ul>
+  <li>Coordination multi-robots</li>
+  <li>Tâches séquentielles complexes</li>
+  <li>Interaction avec environnement</li>
+</ul>
+
+<h3 id="liens-avec-autres-cours">Liens avec autres cours</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cours</th>
+      <th>Semestre</th>
+      <th>Lien avec SED</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logique Séquentielle</td>
+      <td>S5</td>
+      <td>Machines d’états, FSM</td>
+    </tr>
+    <tr>
+      <td>Systèmes Bouclés</td>
+      <td>S5</td>
+      <td>Automatique, commande</td>
+    </tr>
+    <tr>
+      <td>Programmation Orientée Objet</td>
+      <td>S7</td>
+      <td>Patterns état (State pattern)</td>
+    </tr>
+    <tr>
+      <td>Temps Réel</td>
+      <td>S8</td>
+      <td>Ordonnancement, synchronisation</td>
+    </tr>
+    <tr>
+      <td>Réseaux de Pétri</td>
+      <td>S8</td>
+      <td>Approfondissement Petri</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="perspectives-et-extensions">Perspectives et extensions</h3>
+
+<p><strong>Systèmes hybrides</strong>:
+Combinaison de dynamique continue (équations différentielles) et événements discrets.
+Exemple: thermostat (température continue, chauffage on/off).</p>
+
+<p><strong>Diagnostic et supervision</strong>:
+Utilisation d’automates observateurs pour détecter pannes et anomalies.</p>
+
+<p><strong>Optimisation</strong>:
+Minimisation temps de cycle, maximisation throughput avec Petri temporisés.</p>
+
+<p><strong>Vérification formelle</strong>:
+Model checking pour prouver l’absence de bugs dans protocoles et systèmes critiques.</p>
+
+<h3 id="recommandations">Recommandations</h3>
+
+<p><strong>Pour réussir le cours</strong>:</p>
+<ol>
+  <li>Bien comprendre la différence états/événements</li>
+  <li>Pratiquer la modélisation graphique (dessiner les automates)</li>
+  <li>Tester systématiquement avec simulation</li>
+  <li>Analyser les cas limites (bacs pleins, erreurs capteurs)</li>
+</ol>
+
+<p><strong>Ressources complémentaires</strong>:</p>
+<ul>
+  <li>Cassandras &amp; Lafortune: “Introduction to Discrete Event Systems”</li>
+  <li>David &amp; Alla: “Réseaux de Petri et Grafcet”</li>
+  <li>Cours en ligne sur automates finis (théorie des langages)</li>
+</ul>
+
+<h3 id="mon-opinion">Mon opinion</h3>
+
+<p>Ce cours offre une perspective différente de l’automatique classique (systèmes continus). Il est particulièrement utile pour comprendre les systèmes industriels réels où la notion d’événements discrets est naturelle.</p>
+
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Approche graphique intuitive (automates, Petri)</li>
+  <li>Applications concrètes immédiates (industrie)</li>
+  <li>Outils logiciels facilitant la modélisation</li>
+  <li>Lien direct avec automates programmables</li>
+</ul>
+
+<p><strong>Complémentarité</strong>:
+Les SED complètent parfaitement les cours de systèmes continus. Dans la réalité, beaucoup de systèmes sont hybrides (ex: robot avec contrôle position continue + séquences de tâches discrètes).</p>
+
+<p><strong>Importance professionnelle</strong>:
+Compétences très recherchées dans l’automatisation industrielle, la robotique, et les systèmes embarqués. Les grafcets sont le langage standard des automaticiens.</p>
+
+<p><strong>Applications futures</strong>:
+Ces concepts se retrouvent dans les cours de S8 (Temps Réel, Réseaux de Pétri avancés) et dans les projets industriels (automatisation, supervision).</p>
+
+<hr />
+
+<p><strong>Bilan personnel</strong>: Ce cours a apporté une vision complémentaire de l’automatique, centrée sur les événements plutôt que le temps. La modélisation par automates et réseaux de Petri est intuitive et directement applicable aux systèmes industriels. Le TP sur le système de tri a permis de concrétiser ces concepts avec un cas réel d’automatisation.</p>
+
+<hr />
+
+<style>
+        body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+        }
+        h2, h3, h4, h5 {
+                color: #2a7ae2;
+        }
+        p {
+                text-align: justify;
+        }
+        code {
+                background-color: #f5f5f5;
+                padding: 2px 6px;
+                border-radius: 3px;
+                font-family: 'Courier New', monospace;
+        }
+        pre {
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-x: auto;
+        }
+</style>
+
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

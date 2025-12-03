@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>🔐 Sécurité Matérielle - Semestre 7 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="🔐 Sécurité Matérielle - Semestre 7" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/securite-materielle.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/securite-materielle.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="🔐 Sécurité Matérielle - Semestre 7" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"🔐 Sécurité Matérielle - Semestre 7","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/securite-materielle.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/securite-materielle.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.back-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-nav a:hover {
+    text-decoration: underline;
+}
+
+.section-title {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+<h1 id="-sécurité-matérielle---semestre-7">🔐 Sécurité Matérielle - Semestre 7</h1>
+
+<p><strong>Année académique</strong> : 2023-2024<br />
+<strong>ECTS</strong> : 2<br />
+<strong>Catégorie</strong> : Sécurité et Systèmes Embarqués</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-module">PART A - Présentation Générale du Module</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Ce cours aborde la sécurité matérielle, un domaine essentiel à l’ère des objets connectés et des systèmes embarqués. Il couvre les vulnérabilités physiques des systèmes électroniques, les attaques par canaux auxiliaires, les mécanismes de protection, et les techniques de conception sécurisée pour prévenir l’extraction d’informations sensibles.</p>
+
+<p><strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Comprendre les menaces pesant sur la sécurité matérielle</li>
+  <li>Maîtriser les attaques par canaux auxiliaires (timing, cache, puissance)</li>
+  <li>Analyser les vulnérabilités des implémentations cryptographiques</li>
+  <li>Découvrir les attaques par dépassement de tampon et injection de code</li>
+  <li>Implémenter des contre-mesures efficaces</li>
+  <li>Évaluer la sécurité physique des systèmes embarqués</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce module complète la formation en sécurité :</p>
+<ul>
+  <li><strong>Architecture Matérielle (S6)</strong> : fonctionnement processeurs, caches, mémoires</li>
+  <li><strong>Microcontrôleurs (S6)</strong> : systèmes embarqués, ARM Cortex</li>
+  <li><strong>Systèmes d’Exploitation (S5)</strong> : gestion mémoire, processus</li>
+  <li><strong>Langage C et Assemblage (S5, S6)</strong> : programmation bas niveau</li>
+</ul>
+
+<p>Il prépare à :</p>
+<ul>
+  <li><strong>Embedded IA for IoT (S9)</strong> : sécurité des objets connectés</li>
+  <li><strong>Projets professionnels</strong> : conception de systèmes sécurisés</li>
+  <li><strong>Cybersécurité</strong> : approche globale hardware/software</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était organisé en cours magistraux et travaux pratiques intensifs :</p>
+
+<p><strong>Cours magistraux (12h)</strong> :</p>
+<ul>
+  <li>Introduction à la sécurité matérielle</li>
+  <li>Attaques par canaux auxiliaires (timing, cache, puissance)</li>
+  <li>Analyse de la consommation électrique (SPA, DPA, CPA)</li>
+  <li>Attaques par injection de fautes</li>
+  <li>Vulnérabilités logicielles (buffer overflow, shellcode)</li>
+  <li>Contre-mesures matérielles et logicielles</li>
+</ul>
+
+<p><strong>Travaux pratiques (12h)</strong> :</p>
+<ul>
+  <li><strong>TP1</strong> : Analyse de consommation sur microcontrôleur STM32</li>
+  <li><strong>TP Cache et SCA</strong> : Attaques par analyse de cache, détection d’ouverture de fichiers</li>
+  <li><strong>TP3 Overflow</strong> : Exploitation de dépassements de tampon, shellcode, injection de code</li>
+  <li><strong>TP AES</strong> : Analyse de vulnérabilités dans implémentations OpenSSL</li>
+</ul>
+
+<p><strong>Ressources</strong> :</p>
+<ul>
+  <li>6 polycopiés de cours (slides, polycopiés détaillés)</li>
+  <li>2 TD avec corrections</li>
+  <li>Outils : ChipWhisperer (analyse de puissance), GDB (débogage)</li>
+  <li>Code source AES (OpenSSL versions 0.9.7a et 1.1.1t)</li>
+  <li>Annales (4 sujets d’examens)</li>
+</ul>
+
+<h3 class="section-title">Méthodologie d'étude</h3>
+
+<p><strong>Phase 1 : Assimiler les concepts théoriques</strong> :
+Comprendre les principes des attaques (canaux auxiliaires, injection de fautes, overflow).</p>
+
+<p><strong>Phase 2 : Manipuler en TP</strong> :
+Réaliser les attaques concrètes pour comprendre leur fonctionnement et leur puissance.</p>
+
+<p><strong>Phase 3 : Analyser le code</strong> :
+Étudier le code vulnérable (AES, programmes C) pour identifier les failles.</p>
+
+<p><strong>Phase 4 : Concevoir des contre-mesures</strong> :
+Réfléchir aux protections possibles et à leurs limites.</p>
+
+<p><strong>Phase 5 : Développer une vision critique</strong> :
+Évaluer la sécurité globale d’un système en considérant tous les vecteurs d’attaque.</p>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/securite-materielle/buffer-overflow.svg" alt="Attaque par buffer overflow" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe d'une attaque par buffer overflow - Écrasement de l'adresse de retour</p>
+</div>
+
+<p><strong>Complexité des attaques</strong> :
+Les attaques par canaux auxiliaires nécessitent des connaissances en électronique, traitement du signal, et statistiques.</p>
+
+<p><strong>Environnement technique</strong> :
+Manipuler des outils spécialisés (ChipWhisperer, oscilloscopes) et du code assembleur requiert de la pratique.</p>
+
+<p><strong>Équilibre sécurité/performance</strong> :
+Concevoir des contre-mesures efficaces sans dégrader les performances est un défi constant.</p>
+
+<p><strong>Diversité des vulnérabilités</strong> :
+La sécurité matérielle couvre un spectre large : du cache au dépassement de tampon, chaque domaine a ses spécificités.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Attaques par canaux auxiliaires</h3>
+
+<p><strong>Principe général</strong> :</p>
+
+<p>Les attaques par canaux auxiliaires exploitent les fuites d’information physiques lors de l’exécution d’algorithmes :</p>
+<ul>
+  <li>Consommation électrique</li>
+  <li>Temps d’exécution</li>
+  <li>Émissions électromagnétiques</li>
+  <li>Contenu du cache</li>
+</ul>
+
+<p>Même si l’algorithme est mathématiquement sûr, son implémentation peut révéler des secrets.</p>
+
+<p><strong>Attaques temporelles (Timing Attacks)</strong> :</p>
+
+<p>Exploitent les variations du temps d’exécution.</p>
+
+<p><strong>Exemple classique : Cache timing sur AES</strong> :</p>
+
+<p>AES utilise des tables de substitution (S-box). L’accès à ces tables dépend de la clé et du message.</p>
+
+<p>Si une partie de la table est en cache (accès rapide) et une autre non (accès lent), on peut déduire quelle partie a été accédée en mesurant le temps.</p>
+
+<p><strong>Attaque</strong> :</p>
+<ol>
+  <li>Mesurer le temps d’exécution pour différents messages</li>
+  <li>Analyser les variations temporelles</li>
+  <li>Déduire quelle partie de la S-box a été accédée</li>
+  <li>Récupérer progressivement les octets de la clé</li>
+</ol>
+
+<p><strong>Contre-mesures</strong> :</p>
+<ul>
+  <li>Implémentations à temps constant (même durée quel que soit l’input)</li>
+  <li>Désactivation du cache pour opérations sensibles</li>
+  <li>Ajout de bruit temporel (jitter)</li>
+</ul>
+
+<p><strong>Attaques par analyse de cache</strong> :</p>
+
+<p>Le cache CPU peut révéler des informations sensibles.</p>
+
+<p><strong>Technique Prime+Probe</strong> :</p>
+<ol>
+  <li>Attaquant remplit le cache avec ses propres données (Prime)</li>
+  <li>Victime exécute opération cryptographique</li>
+  <li>Attaquant mesure quelles lignes de cache ont été évincées (Probe)</li>
+  <li>En déduire les accès mémoire de la victime</li>
+</ol>
+
+<p><strong>TP réalisé : Détection d’ouverture de fichier</strong> :</p>
+
+<p>Programme spy.c :</p>
+<ul>
+  <li>Vide (flush) le cache pour une adresse du fichier cible</li>
+  <li>Attend un délai</li>
+  <li>Mesure le temps d’accès à cette adresse</li>
+  <li>Si temps &lt; seuil : fichier en cache → fichier a été ouvert récemment</li>
+</ul>
+
+<p>Application : espionnage d’activité sans accès système.</p>
+
+<p><strong>Attaques par analyse de la consommation (Power Analysis)</strong> :</p>
+
+<p><strong>Simple Power Analysis (SPA)</strong> :</p>
+
+<p>Observation directe de la trace de consommation.</p>
+
+<p>Chaque instruction consomme différemment : multiplication, addition, lecture mémoire ont des signatures distinctes.</p>
+
+<p><strong>Exemple</strong> : Exponentiation modulaire en RSA :</p>
+<ul>
+  <li>Opération “carré” visible</li>
+  <li>Opération “carré puis multiplication” visible</li>
+  <li>On déduit directement les bits de la clé privée</li>
+</ul>
+
+<p><strong>Differential Power Analysis (DPA)</strong> :</p>
+
+<p>Analyse statistique sur de nombreuses traces.</p>
+
+<p>Principe :</p>
+<ol>
+  <li>Capturer N traces de consommation pour N messages différents</li>
+  <li>Faire des hypothèses sur une partie de la clé</li>
+  <li>Prédire la consommation pour chaque hypothèse</li>
+  <li>Corréler prédictions avec traces réelles</li>
+  <li>L’hypothèse correcte donne la meilleure corrélation</li>
+</ol>
+
+<p><strong>Correlation Power Analysis (CPA)</strong> :</p>
+
+<p>Variante améliorée utilisant le coefficient de corrélation de Pearson.</p>
+
+<p>Permet d’attaquer des implémentations plus résistantes.</p>
+
+<p><strong>TP réalisé : Analyse de consommation sur STM32</strong> :</p>
+
+<p>Programme main.c (TP1) :</p>
+<ul>
+  <li>Microcontrôleur exécute des opérations (multiplications répétées)</li>
+  <li>Oscilloscope capture la consommation électrique</li>
+  <li>Analyse des traces pour identifier les opérations</li>
+  <li>Corrélation entre données manipulées et consommation</li>
+</ul>
+
+<h3 class="section-title">2. Attaques par injection de fautes</h3>
+
+<p><strong>Principe</strong> :</p>
+
+<p>Provoquer volontairement des erreurs lors de l’exécution pour obtenir des informations ou contourner des protections.</p>
+
+<p><strong>Techniques d’injection</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Technique</th>
+      <th>Description</th>
+      <th>Effet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clock glitching</td>
+      <td>Impulsions sur horloge</td>
+      <td>Instructions sautées</td>
+    </tr>
+    <tr>
+      <td>Voltage glitching</td>
+      <td>Variation tension alimentation</td>
+      <td>Erreurs calcul</td>
+    </tr>
+    <tr>
+      <td>Laser</td>
+      <td>Faisceau laser focalisé</td>
+      <td>Modification bit mémoire</td>
+    </tr>
+    <tr>
+      <td>Température</td>
+      <td>Chauffage/refroidissement</td>
+      <td>Instabilités</td>
+    </tr>
+    <tr>
+      <td>EM</td>
+      <td>Impulsion électromagnétique</td>
+      <td>Perturbation circuits</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Exemple : Attaque sur authentification</strong> :</p>
+
+<p>Code vulnérable :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (password == correct_password) {
+    grant_access();
+} else {
+    deny_access();
+}
+</code></pre></div></div>
+
+<p>Injection de faute au moment du test :</p>
+<ul>
+  <li>Le test échoue (mauvais mot de passe)</li>
+  <li>Mais la faute inverse le résultat → accès accordé</li>
+</ul>
+
+<p><strong>Contre-mesures</strong> :</p>
+<ul>
+  <li>Redondance (double vérification)</li>
+  <li>Codes correcteurs d’erreurs</li>
+  <li>Détecteurs de glitches (capteurs de tension/horloge)</li>
+  <li>Vérifications de cohérence</li>
+</ul>
+
+<h3 class="section-title">3. Vulnérabilités logicielles : Buffer Overflow</h3>
+
+<p><strong>Principe</strong> :</p>
+
+<p>Dépassement de tampon : écrire au-delà de la taille allouée d’un buffer, écrasant des données adjacentes (adresse de retour, variables).</p>
+
+<p><strong>Mécanisme sur la pile (stack)</strong> :</p>
+
+<p>Organisation de la pile lors d’un appel de fonction :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[paramètres]
+[adresse de retour]
+[ancien ebp]
+[variables locales]
+[buffer]
+</code></pre></div></div>
+
+<p>Si on écrit trop dans buffer, on écrase les variables, ebp, et l’adresse de retour.</p>
+
+<p><strong>Exploitation</strong> :</p>
+
+<ol>
+  <li>Remplir le buffer avec du code malveillant (shellcode)</li>
+  <li>Écraser l’adresse de retour pour pointer vers le shellcode</li>
+  <li>Quand la fonction retourne, le shellcode s’exécute</li>
+</ol>
+
+<p><strong>TP réalisé : Exploitation de buffer overflow</strong> :</p>
+
+<p><strong>Part 1 : Organisation mémoire</strong> :
+Analyse de la pile avec GDB, calcul des offsets.</p>
+
+<p><strong>Part 2 : Exploitation simple</strong> :
+Programme vulnérable avec strcpy sans vérification de taille.
+Injection pour modifier une variable ou sauter une vérification.</p>
+
+<p><strong>Part 3 : Injection de shellcode</strong> :</p>
+
+<p>shellcode.c :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void shellcode() {
+  asm(
+    "mov $0x3b, %rax"    // syscall execve
+    "mov $0x0, %rdx"
+    "movabs $0x0068732f6e69622f, %r8"  // "/bin/sh"
+    "push %r8"
+    "mov %rsp, %rdi"     // adresse de "/bin/sh"
+    "syscall"            // execve("/bin/sh", ...)
+  );
+}
+</code></pre></div></div>
+
+<p>Objectif : injecter ce code et rediriger l’exécution pour ouvrir un shell.</p>
+
+<p><strong>Part 4 &amp; 5 : Exploitation complète</strong> :</p>
+<ul>
+  <li>Calcul de l’adresse du shellcode</li>
+  <li>Construction du payload (NOP sled + shellcode + adresse retour)</li>
+  <li>Injection via upload.py</li>
+  <li>Obtention d’un shell avec privilèges</li>
+</ul>
+
+<p><strong>Contre-mesures modernes</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contre-mesure</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stack canaries</td>
+      <td>Valeur sentinelle avant adresse retour, vérifiée</td>
+    </tr>
+    <tr>
+      <td>ASLR (Address Space Layout Randomization)</td>
+      <td>Adresses mémoire aléatoires</td>
+    </tr>
+    <tr>
+      <td>DEP/NX (Data Execution Prevention)</td>
+      <td>Mémoire non exécutable (pile, tas)</td>
+    </tr>
+    <tr>
+      <td>RELRO (Relocation Read-Only)</td>
+      <td>Sections mémoire en lecture seule</td>
+    </tr>
+    <tr>
+      <td>Compilation sécurisée</td>
+      <td>Options -fstack-protector, -D_FORTIFY_SOURCE</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="section-title">4. Analyse de cache - Profiling</h3>
+
+<p><strong>Hiérarchie mémoire</strong> :</p>
+
+<p>CPU → Cache L1 (1-3 cycles) → Cache L2 (10-20 cycles) → Cache L3 (40-75 cycles) → RAM (100-300 cycles)</p>
+
+<p>Le cache accélère l’accès aux données fréquemment utilisées.</p>
+
+<p><strong>Mesure du temps d’accès</strong> :</p>
+
+<p>TP Cache Profiling (profiling.c) :</p>
+<ul>
+  <li>Fonction memaccesstime(ptr) : mesure le temps pour accéder à une adresse</li>
+  <li>Fonction clflush(ptr) : vide (flush) l’adresse du cache</li>
+  <li>Boucle de profiling :
+    <ul>
+      <li>Accéder → mesurer (cache hit)</li>
+      <li>Flush → accéder → mesurer (cache miss)</li>
+    </ul>
+  </li>
+  <li>Génération d’histogrammes avec gnuplot</li>
+</ul>
+
+<p><strong>Résultats typiques</strong> :</p>
+<ul>
+  <li>Cache hit : 10-50 cycles</li>
+  <li>Cache miss : 200-400 cycles</li>
+</ul>
+
+<p><strong>Exploitation pour attaque</strong> :</p>
+
+<p><strong>Technique Flush+Reload</strong> :</p>
+<ol>
+  <li>Flush une ligne de cache partagée avec la victime</li>
+  <li>Victime exécute son code</li>
+  <li>Attaquant mesure le temps de rechargement</li>
+  <li>Si rapide : victime a accédé à cette ligne</li>
+</ol>
+
+<p><strong>Application : Détection d’ouverture de fichier</strong> (spy.c) :</p>
+<ul>
+  <li>Surveiller une adresse d’un fichier sensible</li>
+  <li>Si le fichier est ouvert par un processus, il sera en cache</li>
+  <li>Détection sans accès au système de fichiers</li>
+</ul>
+
+<h3 class="section-title">5. Vulnérabilités cryptographiques - AES</h3>
+
+<p><strong>AES (Advanced Encryption Standard)</strong> :</p>
+
+<p>Algorithme de chiffrement par blocs, standard depuis 2001.</p>
+
+<p><strong>Structure</strong> :</p>
+<ul>
+  <li>Blocs de 128 bits</li>
+  <li>Clés de 128, 192 ou 256 bits</li>
+  <li>10, 12 ou 14 rondes selon taille de clé</li>
+  <li>Opérations : SubBytes (S-box), ShiftRows, MixColumns, AddRoundKey</li>
+</ul>
+
+<p><strong>Vulnérabilités d’implémentation</strong> :</p>
+
+<p><strong>Implémentation naïve : Accès tables dépendant de la clé</strong></p>
+
+<p>AES utilise des tables de substitution (S-box). L’implémentation classique stocke ces tables en mémoire.</p>
+
+<p>Lors de l’exécution :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>state[i] = Sbox[state[i] XOR key[i]]
+</code></pre></div></div>
+
+<p>L’indice d’accès dépend de la clé : vulnérabilité aux attaques par cache.</p>
+
+<p><strong>TP : Comparaison OpenSSL versions</strong></p>
+
+<p><strong>OpenSSL 0.9.7a (vulnérable)</strong> :</p>
+<ul>
+  <li>Accès direct aux tables T0, T1, T2, T3</li>
+  <li>Indices dépendent des données et de la clé</li>
+  <li>Vulnérable aux cache timing attacks</li>
+</ul>
+
+<p><strong>OpenSSL 1.1.1t (protégée)</strong> :</p>
+<ul>
+  <li>Implémentation AES-NI (instructions matérielles)</li>
+  <li>Pas d’accès mémoire dépendant de la clé</li>
+  <li>Résistant aux cache timing attacks</li>
+</ul>
+
+<p><strong>AES-NI</strong> :</p>
+
+<p>Instructions processeur dédiées (Intel, AMD depuis 2010) :</p>
+<ul>
+  <li>AESENC, AESENCLAST : chiffrement</li>
+  <li>AESDEC, AESDECLAST : déchiffrement</li>
+  <li>AESIMC, AESKEYGENASSIST : génération de clés</li>
+</ul>
+
+<p>Avantages :</p>
+<ul>
+  <li>Performance élevée</li>
+  <li>Implémentation résistante aux canaux auxiliaires</li>
+  <li>Pas de tables en mémoire</li>
+</ul>
+
+<h3 class="section-title">6. Autres contre-mesures</h3>
+
+<p><strong>Masquage (Masking)</strong> :</p>
+
+<p>Technique contre les attaques DPA.</p>
+
+<p>Principe : Randomiser les valeurs intermédiaires.</p>
+
+<p>Au lieu de manipuler directement x, on manipule x XOR m (m aléatoire).</p>
+
+<p>Les fuites de consommation portent sur x XOR m, qui est aléatoire.</p>
+
+<p><strong>Exemple</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x' = x XOR m
+y' = f(x') = f(x XOR m)
+y = y' XOR m' (où m' découle de m)
+</code></pre></div></div>
+
+<p><strong>Inconvénients</strong> :</p>
+<ul>
+  <li>Surcoût en calcul et en aléatoire</li>
+  <li>Difficile à implémenter correctement (fuites possibles)</li>
+</ul>
+
+<p><strong>Hiding</strong> :</p>
+
+<p>Réduire le rapport signal/bruit dans les traces de consommation.</p>
+
+<p>Techniques :</p>
+<ul>
+  <li>Randomisation de l’ordre des opérations</li>
+  <li>Insertion d’opérations factices (dummy operations)</li>
+  <li>Consommation constante (circuits à double rail)</li>
+</ul>
+
+<p><strong>Sécurité physique</strong> :</p>
+
+<p><strong>Capteurs</strong> :</p>
+<ul>
+  <li>Détecteurs d’ouverture du boîtier</li>
+  <li>Capteurs de température, lumière</li>
+  <li>Capteurs de tension/fréquence anormales</li>
+</ul>
+
+<p><strong>Mémoire effaçable</strong> :
+En cas de détection d’attaque, effacer les clés.</p>
+
+<p><strong>Encapsulation</strong> :
+Protéger les circuits sensibles dans des résines difficiles à retirer.</p>
+
+<h3 class="section-title">7. Outils et méthodologies</h3>
+
+<p><strong>ChipWhisperer</strong> :</p>
+
+<p>Plateforme open-source pour analyse de canaux auxiliaires.</p>
+
+<p>Fonctionnalités :</p>
+<ul>
+  <li>Capture de traces de consommation électrique</li>
+  <li>Synchronisation avec cible (trigger)</li>
+  <li>Analyses DPA, CPA</li>
+  <li>Injection de glitches (clock, voltage)</li>
+</ul>
+
+<p><strong>GDB (GNU Debugger)</strong> :</p>
+
+<p>Utilisé pour analyser les programmes vulnérables :</p>
+<ul>
+  <li>Poser des breakpoints</li>
+  <li>Examiner la pile et les registres</li>
+  <li>Calculer les offsets pour exploitations</li>
+</ul>
+
+<p><strong>Commandes utiles</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>info registers    # état des registres
+x/32x $rsp       # examiner la pile
+disassemble      # désassembler une fonction
+</code></pre></div></div>
+
+<p><strong>Gnuplot</strong> :</p>
+
+<p>Visualisation des distributions de temps d’accès (cache hit/miss).</p>
+
+<h3 class="section-title">8. Domaines d'application</h3>
+
+<p><strong>Cartes à puce</strong> :</p>
+
+<p>Cibles privilégiées : paiement, authentification, SIM.
+Menaces : clonage, extraction de clés.
+Protections : masquage, capteurs, hardware sécurisé.</p>
+
+<p><strong>Systèmes embarqués critiques</strong> :</p>
+
+<p>Automobile (CAN bus, ECU), aéronautique, médical.
+Risques : injection de fautes, reverse engineering.</p>
+
+<p><strong>IoT (Internet of Things)</strong> :</p>
+
+<p>Objets connectés souvent peu protégés.
+Attaques possibles : extraction firmware, clonage, botnets.</p>
+
+<p><strong>Infrastructures cloud</strong> :</p>
+
+<p>Attaques par cache entre machines virtuelles (VM).
+Risque de fuite d’informations entre locataires (tenants).</p>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Compréhension des menaces matérielles</strong> :
+Capacité à identifier les vulnérabilités physiques et logicielles des systèmes embarqués.</p>
+
+<p><strong>Maîtrise des attaques par canaux auxiliaires</strong> :
+Aptitude à analyser les fuites d’information (timing, cache, puissance) et à exploiter ces failles.</p>
+
+<p><strong>Exploitation de vulnérabilités logicielles</strong> :
+Compétence en exploitation de buffer overflow, injection de shellcode, et compréhension des protections modernes.</p>
+
+<p><strong>Conception sécurisée</strong> :
+Développement de réflexes pour intégrer la sécurité dès la conception (secure by design).</p>
+
+<p><strong>Vision d’ensemble</strong> :
+Capacité à évaluer la sécurité globale d’un système en considérant hardware, software, et attaques physiques.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. Sécurité ≠ Cryptographie seule</strong> :
+Un algorithme mathématiquement sûr peut être vulnérable si son implémentation fuit des informations.</p>
+
+<p><strong>2. Les canaux auxiliaires sont réels</strong> :
+Timing, cache, consommation : ces attaques sont pratiques et ont compromis des systèmes réels (cartes bancaires, DRM).</p>
+
+<p><strong>3. Défense en profondeur</strong> :
+Pas de solution miracle. Combiner plusieurs contre-mesures pour augmenter le coût de l’attaque.</p>
+
+<p><strong>4. Trade-off sécurité/performance</strong> :
+Les protections coûtent en performance, énergie, et complexité. Trouver le bon équilibre selon le contexte.</p>
+
+<p><strong>5. Évolution constante</strong> :
+Nouvelles attaques régulièrement découvertes (Spectre, Meltdown, Rowhammer). Veille technologique indispensable.</p>
+
+<h3 class="section-title">Retour d'expérience</h3>
+
+<p><strong>Aspect révélateur</strong> :
+Ce cours a ouvert les yeux sur la fragilité des systèmes face aux attaques physiques. Voir des attaques théoriques fonctionner en TP est impressionnant.</p>
+
+<p><strong>Difficulté de la sécurité</strong> :
+Concevoir un système sûr est difficile. Il faut penser comme un attaquant pour identifier toutes les failles possibles.</p>
+
+<p><strong>Outils spécialisés</strong> :
+Manipuler ChipWhisperer, GDB, et analyser des traces demande de la pratique. Les TP ont permis de se familiariser avec ces outils professionnels.</p>
+
+<p><strong>Équilibre nécessaire</strong> :
+Les contre-mesures ajoutent de la complexité. Il faut évaluer le niveau de menace et adapter la protection.</p>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Pour ingénieur en sécurité</strong> :</p>
+<ul>
+  <li>Audit de sécurité de systèmes embarqués</li>
+  <li>Conception de produits résistants aux attaques physiques</li>
+  <li>Certification sécuritaire (Common Criteria, FIPS)</li>
+</ul>
+
+<p><strong>Pour développeur embarqué</strong> :</p>
+<ul>
+  <li>Écrire du code résistant aux attaques (timing constant)</li>
+  <li>Éviter les vulnérabilités classiques (buffer overflow)</li>
+  <li>Tester la robustesse face aux fautes</li>
+</ul>
+
+<p><strong>Pour concepteur hardware</strong> :</p>
+<ul>
+  <li>Intégrer des contre-mesures matérielles (capteurs, masking)</li>
+  <li>Choisir des composants sécurisés (TEE, Secure Element)</li>
+  <li>Évaluer les risques dès la phase de design</li>
+</ul>
+
+<p><strong>Dans la vie courante</strong> :</p>
+<ul>
+  <li>Comprendre les risques des objets connectés (caméras, serrures)</li>
+  <li>Évaluer la sécurité de produits (cartes bancaires, smartphones)</li>
+  <li>Sensibiliser aux enjeux de cybersécurité</li>
+</ul>
+
+<h3 class="section-title">Limites et ouvertures</h3>
+
+<p><strong>Limites du module</strong> :</p>
+<ul>
+  <li>Peu d’approfondissement sur les attaques EM (électromagnétiques)</li>
+  <li>Pas de manipulation réelle d’injection laser ou voltage glitching</li>
+  <li>Aspects légaux et éthiques peu abordés</li>
+</ul>
+
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+  <li><strong>Secure Elements</strong> : HSM, TPM, Trusted Execution Environments (TEE)</li>
+  <li><strong>Post-Quantum Cryptography</strong> : résistance aux ordinateurs quantiques</li>
+  <li><strong>Formal Verification</strong> : preuves formelles de sécurité</li>
+  <li><strong>Bug Bounty</strong> : recherche éthique de vulnérabilités</li>
+</ul>
+
+<h3 class="section-title">Évolutions récentes</h3>
+
+<p><strong>Attaques Spectre et Meltdown (2018)</strong> :</p>
+
+<p>Exploitation de l’exécution spéculative des processeurs modernes.</p>
+
+<p>Spectre : forcer un programme à révéler ses secrets via le cache.
+Meltdown : lire la mémoire du noyau depuis l’espace utilisateur.</p>
+
+<p>Impact : tous les processeurs Intel, AMD, ARM concernés.</p>
+
+<p><strong>Rowhammer (2014)</strong> :</p>
+
+<p>Attaque sur mémoire DRAM : accès répétés à des lignes de mémoire peuvent induire des flips de bits sur lignes adjacentes.</p>
+
+<p>Exploitation : élévation de privilèges, évasion de machines virtuelles.</p>
+
+<p><strong>Attaques sur IA embarquée</strong> :</p>
+
+<p>Les réseaux de neurones sont vulnérables :</p>
+<ul>
+  <li>Attaques adversariales (perturbations imperceptibles)</li>
+  <li>Extraction de modèles par observation</li>
+  <li>Backdoors dans modèles</li>
+</ul>
+
+<p>Enjeu croissant avec l’IA embarquée (reconnaissance vocale, vision).</p>
+
+<p><strong>5G et IoT</strong> :</p>
+
+<p>Explosion du nombre d’objets connectés.
+Surface d’attaque considérable.
+Besoin de sécurité légère et efficace énergétiquement.</p>
+
+<h3 class="section-title">Conseils pour réussir</h3>
+
+<p><strong>1. Comprendre avant d’exploiter</strong> :
+Bien maîtriser le fonctionnement normal d’un système avant de chercher les failles.</p>
+
+<p><strong>2. Pratiquer les TP sérieusement</strong> :
+Les manipulations pratiques sont essentielles pour intégrer les concepts.</p>
+
+<p><strong>3. Lire le code</strong> :
+Analyser le code source (shellcode, AES) pour comprendre les vulnérabilités.</p>
+
+<p><strong>4. Penser en attaquant</strong> :
+Adopter la mentalité d’un attaquant : chercher le maillon faible, les hypothèses implicites.</p>
+
+<p><strong>5. Se documenter</strong> :
+Lire des articles académiques, des rapports de vulnérabilités (CVE), des blogs de sécurité.</p>
+
+<p><strong>6. Respecter l’éthique</strong> :
+Ne jamais utiliser ces connaissances de manière illégale. Hacking éthique uniquement.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>Ce module est fondamental pour toute personne travaillant sur des systèmes embarqués ou critiques. La sécurité matérielle est souvent négligée au profit de la sécurité logicielle, mais les attaques physiques sont réelles et efficaces.</p>
+
+<p><strong>Compétences transférables</strong> :</p>
+<ul>
+  <li>Analyse critique de la sécurité d’un système</li>
+  <li>Compréhension profonde du fonctionnement des processeurs et mémoires</li>
+  <li>Capacité à intégrer la sécurité dès la conception</li>
+  <li>Vision multidisciplinaire (hardware, software, cryptographie, physique)</li>
+</ul>
+
+<p><strong>Pertinence professionnelle</strong> :
+Avec l’explosion de l’IoT, de l’industrie 4.0, et des véhicules autonomes, la sécurité matérielle est un domaine en forte demande. Les ingénieurs formés à ces problématiques sont recherchés.</p>
+
+<p><strong>Message principal</strong> :
+La sécurité est un processus, pas un produit. Il faut constamment évaluer, tester, et améliorer. Un système n’est jamais 100% sûr, mais on peut augmenter considérablement le coût de l’attaque.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+  <li>Approfondir avec des cours avancés (Riscure Academy, Coursera)</li>
+  <li>Suivre les conférences de sécurité (Black Hat, DEF CON, CHES)</li>
+  <li>Pratiquer sur des plateformes (Hack The Box, CTF sécurité hardware)</li>
+  <li>Rejoindre des communautés (r/ReverseEngineering, forums spécialisés)</li>
+  <li>Rester informé des nouvelles vulnérabilités (CVE, bulletins de sécurité)</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./architecture-materielle.html">Architecture Matérielle - S6</a> : caches, processeurs</li>
+  <li><a href="./microcontroleurs.html">Microcontrôleurs - S6</a> : ARM Cortex, systèmes embarqués</li>
+  <li><a href="./systemes-exploitation.html">Systèmes d’Exploitation - S5</a> : gestion mémoire</li>
+  <li><a href="./langage-c.html">Langage C - S5</a> : programmation bas niveau</li>
+  <li><a href="./embedded-ia-iot.html">Embedded IA for IoT - S9</a> : sécurité des objets connectés</li>
+</ul>
+
+<hr />
+
+<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet</h4>
+      <p>Cours complet de sécurité matérielle : attaques par canaux cachés, buffer overflow, vulnérabilités Spectre/Meltdown.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Buffer Overflow</h4>
+      <p>Cours sur les attaques par dépassement de tampon : exploitation, stack smashing, protections et contre-mesures.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 TP Cache Side-Channel Attack</h4>
+      <p>Sujet de TP sur les attaques par canaux cachés via cache : timing attacks, Flush+Reload et expérimentations.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><em>Cours suivi en 2023-2024 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

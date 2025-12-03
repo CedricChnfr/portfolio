@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Circuits Hyperfréquences - S3 | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Circuits Hyperfréquences - S3" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Circuits Hyperfréquences - Semestre 3" />
+<meta property="og:description" content="Circuits Hyperfréquences - Semestre 3" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/circuits-hyperfrequences-s3.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/circuits-hyperfrequences-s3.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Circuits Hyperfréquences - S3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Circuits Hyperfréquences - Semestre 3","headline":"Circuits Hyperfréquences - S3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/circuits-hyperfrequences-s3.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/circuits-hyperfrequences-s3.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="circuits-hyperfréquences---semestre-3">Circuits Hyperfréquences - Semestre 3</h1>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+
+<h3 id="contexte-et-objectifs">Contexte et objectifs</h3>
+
+<p>Ce cours de S3 spécialisation ENOC introduit la conception de circuits fonctionnant aux fréquences RF et micro-ondes (100 MHz - 10+ GHz). Il combine théorie électromagnétique, simulation EM 3D et réalisation pratique sur PCB, avec caractérisation par analyseur de réseau vectoriel.</p>
+
+<p><strong>Objectifs principaux :</strong></p>
+<ul>
+  <li>Maîtriser les technologies de circuits RF planaires (microstrip, stripline, CPW)</li>
+  <li>Concevoir filtres, adaptations d’impédance, diviseurs de puissance</li>
+  <li>Simuler avec outils EM professionnels (ADS Momentum, HFSS, CST)</li>
+  <li>Fabriquer sur PCB et mesurer avec VNA</li>
+  <li>Comprendre phénomènes HF : effet de peau, pertes diélectriques, couplages</li>
+</ul>
+
+<h3 id="prérequis">Prérequis</h3>
+<ul>
+  <li>Propagation et Hyperfréquences S3 (lignes de transmission, Smith chart, paramètres S)</li>
+  <li>Électronique analogique (composants passifs, filtrage)</li>
+  <li>Conception PCB (ER S1-S2)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+
+<h3 id="module-1--technologies-rf-sur-pcb">Module 1 : Technologies RF sur PCB</h3>
+
+<p><strong>Substrats RF :</strong></p>
+<ul>
+  <li>FR-4 : εr≈4.3-4.7, tan δ≈0.02, économique, limité &lt;3 GHz</li>
+  <li>Rogers RO4003/RO4350 : εr stable (3.38/3.48), faibles pertes, 0-10+ GHz</li>
+  <li>PTFE/Téflon : εr≈2.1, très faibles pertes, difficile à usiner</li>
+</ul>
+
+<p><strong>Lignes microstrip :</strong></p>
+<ul>
+  <li>Calcul largeur pour Z₀=50Ω : W≈3mm (FR-4 1.6mm), εr_eff≈3.2</li>
+  <li>Pertes : conducteur (cuivre) + diélectrique (tan δ)</li>
+  <li>Applications : alimentations, adaptations</li>
+</ul>
+
+<p><strong>Composants passifs RF :</strong></p>
+<ul>
+  <li>Résistances 50Ω (charges, atténuateurs)</li>
+  <li>Condensateurs RF CMS (résonance série SRF critique)</li>
+  <li>Inductances (bobines air, CMS, facteur Q)</li>
+  <li>Vias de masse (stitching λ/10)</li>
+</ul>
+
+<h3 id="module-2--circuits-dadaptation-et-filtres">Module 2 : Circuits d’adaptation et filtres</h3>
+
+<p><strong>Réseaux d’adaptation localisés (L, π, T) :</strong></p>
+<ul>
+  <li>Transformation impédance avec L/C CMS</li>
+  <li>Calcul par Smith chart</li>
+  <li>Bande étroite</li>
+</ul>
+
+<p><strong>Adaptation distribuée :</strong></p>
+<ul>
+  <li>Stub simple (série/parallèle) : position et longueur</li>
+  <li>Ligne λ/4 : $Z_{\lambda/4} = \sqrt{Z_1 \cdot Z_2}$</li>
+  <li>Double stub : positions fixes 3λ/8</li>
+</ul>
+
+<p><strong>Filtres microstrip :</strong></p>
+<ul>
+  <li>Passe-bas/haut/bande à éléments localisés</li>
+  <li>Filtres à stubs (bande-stop)</li>
+  <li>Filtres à lignes couplées (passe-bande)</li>
+  <li>Synthèse : Butterworth, Chebyshev</li>
+</ul>
+
+<p><strong>Coupleurs et diviseurs :</strong></p>
+<ul>
+  <li>Diviseur Wilkinson : division égale, isolation, résistance 100Ω</li>
+  <li>Coupleur directionnel : couplage -3/-10/-20 dB</li>
+  <li>Rat-race : 180° hybrid, 3λ/2 circonférence</li>
+</ul>
+
+<h3 id="module-3--simulation-em">Module 3 : Simulation EM</h3>
+
+<p><strong>Logiciels professionnels :</strong></p>
+<ul>
+  <li>ADS Momentum : 2.5D planar, rapide</li>
+  <li>HFSS : 3D FEM, précis</li>
+  <li>CST : 3D temps/fréquence</li>
+  <li>Sonnet : 2.5D, gratuit version limitée</li>
+</ul>
+
+<p><strong>Workflow simulation :</strong></p>
+<ol>
+  <li>Schématique circuit (calcul initial)</li>
+  <li>Layout PCB (dessin géométrie)</li>
+  <li>Simulation EM 3D (champs, courants)</li>
+  <li>Optimisation paramètres</li>
+  <li>Validation specs (S-parameters)</li>
+</ol>
+
+<p><strong>Paramètres analysés :</strong></p>
+<ul>
+  <li>S11 (adaptation), S21 (transmission)</li>
+  <li>Champs E et H</li>
+  <li>Courants de surface</li>
+  <li>Pertes (conducteur, diélectrique, rayonnement)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<h3 id="projets-pratiques">Projets pratiques</h3>
+
+<p><strong>Projet 1 : Filtre passe-bande 2.4 GHz</strong></p>
+<ul>
+  <li>Specs : f₀=2.4 GHz, BW=200 MHz, IL&lt;3 dB</li>
+  <li>Topologie : lignes couplées ou stubs</li>
+  <li>Simulation ADS → Layout → Fabrication PCB → Mesure VNA</li>
+</ul>
+
+<p><strong>Projet 2 : Diviseur Wilkinson</strong></p>
+<ul>
+  <li>Division 50Ω → 2×50Ω</li>
+  <li>Lignes λ/4 à 70.7Ω</li>
+  <li>Isolation &gt;20 dB</li>
+</ul>
+
+<p><strong>Projet 3 : Adaptation stub</strong></p>
+<ul>
+  <li>Charge complexe ZL → 50Ω</li>
+  <li>Calcul Smith chart</li>
+  <li>Stub court-circuit ou ouvert</li>
+</ul>
+
+<h3 id="caractérisation-vna">Caractérisation VNA</h3>
+
+<p><strong>Calibration :</strong></p>
+<ul>
+  <li>SOLT : Short, Open, Load, Thru</li>
+  <li>TRL pour substrats spécifiques</li>
+  <li>Kit de calibration précis</li>
+</ul>
+
+<p><strong>Mesures :</strong></p>
+<ul>
+  <li>Paramètres S (magnitude, phase)</li>
+  <li>Smith chart impédance</li>
+  <li>TDR (Time Domain Reflectometry)</li>
+  <li>Comparaison simulation vs mesure</li>
+</ul>
+
+<h3 id="fabrication-pcb-rf">Fabrication PCB RF</h3>
+
+<p><strong>Fichiers Gerber :</strong></p>
+<ul>
+  <li>Couches cuivre (Top, Bottom)</li>
+  <li>Plans de masse continus</li>
+  <li>Drill (vias)</li>
+  <li>Soldermask, Silkscreen</li>
+</ul>
+
+<p><strong>Fabricants :</strong></p>
+<ul>
+  <li>PCBWay, JLCPCB (économique)</li>
+  <li>Eurocircuits (professionnel EU)</li>
+  <li>Spécifier : substrat, épaisseur, εr, finition (ENIG recommandé RF)</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+
+<h3 id="évaluation">Évaluation</h3>
+<ul>
+  <li>Projets simulation + réalisation (60%)</li>
+  <li>Mesures et rapports (25%)</li>
+  <li>Examen théorique (15%)</li>
+</ul>
+
+<h3 id="compétences-acquises">Compétences acquises</h3>
+<ul>
+  <li>Simulation EM 3D professionnelle</li>
+  <li>Conception circuits RF planaires</li>
+  <li>Utilisation VNA</li>
+  <li>Optimisation performances RF</li>
+  <li>Design for Manufacturing RF</li>
+</ul>
+
+<h3 id="applications-industrielles">Applications industrielles</h3>
+<ul>
+  <li>Télécommunications (WiFi, 4G/5G, satellite)</li>
+  <li>IoT (LoRa, Sigfox, Bluetooth)</li>
+  <li>Radar automobile</li>
+  <li>Instrumentation RF</li>
+</ul>
+
+<h2 id="-contenu-du-cours">📚 Contenu du cours</h2>
+
+<h3 id="technologies-de-circuits-rf">Technologies de circuits RF</h3>
+
+<h4 id="substrats-rf">Substrats RF</h4>
+<p><strong>FR-4 :</strong></p>
+<ul>
+  <li>εr ≈ 4.3-4.7 (variable)</li>
+  <li>tan δ ≈ 0.02 (pertes élevées)</li>
+  <li>Économique</li>
+  <li>Limité à quelques GHz</li>
+</ul>
+
+<p><strong>Rogers (RO4003, RO4350) :</strong></p>
+<ul>
+  <li>εr stable (3.38, 3.48)</li>
+  <li>tan δ faible (0.0027)</li>
+  <li>Bon jusqu’à 10+ GHz</li>
+  <li>Plus cher</li>
+</ul>
+
+<p><strong>PTFE/Téflon :</strong></p>
+<ul>
+  <li>εr ≈ 2.1-2.5</li>
+  <li>tan δ très faible</li>
+  <li>Hautes performances</li>
+  <li>Difficile à usiner</li>
+</ul>
+
+<h4 id="lignes-de-transmission-sur-pcb">Lignes de transmission sur PCB</h4>
+
+<p><strong>Microstrip :</strong></p>
+<ul>
+  <li>Ligne sur face supérieure</li>
+  <li>Plan de masse en dessous</li>
+  <li>Facile à fabriquer</li>
+  <li>Émissions rayonnées</li>
+</ul>
+
+<p><strong>Stripline :</strong></p>
+<ul>
+  <li>Ligne entre deux plans de masse</li>
+  <li>Bien blindée</li>
+  <li>PCB multicouche requis</li>
+</ul>
+
+<p><strong>Coplanar waveguide (CPW) :</strong></p>
+<ul>
+  <li>Plans de masse sur même face</li>
+  <li>Bon pour composants CMS</li>
+  <li>Bonne isolation</li>
+</ul>
+
+<h3 id="composants-passifs-rf">Composants passifs RF</h3>
+
+<h4 id="résistances">Résistances</h4>
+<ul>
+  <li>Charges 50Ω</li>
+  <li>Atténuateurs</li>
+  <li>Terminaisons</li>
+  <li>Modèles hautes fréquences</li>
+</ul>
+
+<h4 id="condensateurs">Condensateurs</h4>
+<ul>
+  <li>Capacités de découplage</li>
+  <li>Résonance série (SRF)</li>
+  <li>ESL et ESR</li>
+  <li>Condensateurs RF (ATC, AVX)</li>
+</ul>
+
+<h4 id="inductances">Inductances</h4>
+<ul>
+  <li>Bobines air</li>
+  <li>Inductances CMS</li>
+  <li>Facteur de qualité Q</li>
+  <li>Auto-résonance</li>
+</ul>
+
+<h4 id="vias">Vias</h4>
+<ul>
+  <li>Via de masse (stitching)</li>
+  <li>Via thermique</li>
+  <li>Inductance parasite</li>
+  <li>Espacement recommandé</li>
+</ul>
+
+<h3 id="circuits-dadaptation">Circuits d’adaptation</h3>
+
+<h4 id="réseaux-l-π-t">Réseaux L, π, T</h4>
+<ul>
+  <li>Composants localisés</li>
+  <li>Calcul analytique</li>
+  <li>Simulation (Smith chart)</li>
+  <li>Réalisation CMS</li>
+</ul>
+
+<h4 id="adaptation-distribuée">Adaptation distribuée</h4>
+<ul>
+  <li>Stubs microstrip</li>
+  <li>Lignes λ/4</li>
+  <li>Multi-sections</li>
+  <li>Large bande</li>
+</ul>
+
+<h3 id="filtres-rf">Filtres RF</h3>
+
+<h4 id="filtres-à-éléments-localisés">Filtres à éléments localisés</h4>
+<ul>
+  <li>Passe-bas, passe-haut, passe-bande</li>
+  <li>Butterworth, Chebyshev</li>
+  <li>Transformation LC</li>
+  <li>Réalisation CMS</li>
+</ul>
+
+<h4 id="filtres-distribués">Filtres distribués</h4>
+<ul>
+  <li>Filtres à stubs</li>
+  <li>Filtres à lignes couplées</li>
+  <li>Filtres interdigités</li>
+  <li>Résonateurs</li>
+</ul>
+
+<h3 id="coupleurs-et-diviseurs">Coupleurs et diviseurs</h3>
+
+<h4 id="coupleur-directionnel">Coupleur directionnel</h4>
+<ul>
+  <li>Couplage -3dB, -10dB, -20dB</li>
+  <li>Isolation</li>
+  <li>Directivité</li>
+  <li>Applications (mesure, feedback)</li>
+</ul>
+
+<h4 id="diviseur-de-wilkinson">Diviseur de Wilkinson</h4>
+<ul>
+  <li>Division de puissance égale</li>
+  <li>Isolation entre sorties</li>
+  <li>Impédances 50Ω</li>
+  <li>Résistance d’isolation</li>
+</ul>
+
+<h4 id="rat-race-anneau-hybride">Rat-race (anneau hybride)</h4>
+<ul>
+  <li>Combineur/diviseur 180°</li>
+  <li>4 ports</li>
+  <li>λg × 3/2 circonférence</li>
+</ul>
+
+<h3 id="oscillateurs-rf">Oscillateurs RF</h3>
+
+<h4 id="oscillateurs-à-quartz">Oscillateurs à quartz</h4>
+<ul>
+  <li>Fréquence fixe précise</li>
+  <li>Stabilité</li>
+  <li>TCXO, OCXO</li>
+</ul>
+
+<h4 id="vco-voltage-controlled-oscillator">VCO (Voltage Controlled Oscillator)</h4>
+<ul>
+  <li>Fréquence variable</li>
+  <li>PLL (Phase-Locked Loop)</li>
+  <li>Plage d’accord</li>
+  <li>Bruit de phase</li>
+</ul>
+
+<h3 id="amplificateurs-rf">Amplificateurs RF</h3>
+
+<h4 id="classes-damplification">Classes d’amplification</h4>
+<ul>
+  <li>Classe A (linéaire)</li>
+  <li>Classe B, AB (push-pull)</li>
+  <li>Classe C (RF, non linéaire)</li>
+  <li>Classe E, F (commutation)</li>
+</ul>
+
+<h4 id="caractéristiques">Caractéristiques</h4>
+<ul>
+  <li>Gain (dB)</li>
+  <li>P1dB (point de compression à 1dB)</li>
+  <li>IP3 (point d’interception d’ordre 3)</li>
+  <li>Facteur de bruit (NF)</li>
+  <li>Stabilité (K-factor, µ)</li>
+</ul>
+
+<h2 id="️-projets-pratiques">🛠️ Projets pratiques</h2>
+
+<h3 id="conception-de-composants-rf">Conception de composants RF</h3>
+
+<h4 id="projet-1--filtre-passe-bande">Projet 1 : Filtre passe-bande</h4>
+<ul>
+  <li>Spécifications (f0, BW, IL)</li>
+  <li>Calcul et simulation</li>
+  <li>Layout PCB</li>
+  <li>Caractérisation</li>
+</ul>
+
+<h4 id="projet-2--diviseur-de-puissance">Projet 2 : Diviseur de puissance</h4>
+<ul>
+  <li>Wilkinson 50Ω</li>
+  <li>Simulation EM</li>
+  <li>Fabrication</li>
+  <li>Mesure paramètres S</li>
+</ul>
+
+<h4 id="projet-3--ligne-dadaptation">Projet 3 : Ligne d’adaptation</h4>
+<ul>
+  <li>Stub ou λ/4</li>
+  <li>Dimensionnement</li>
+  <li>Optimisation</li>
+  <li>Tests sur VNA</li>
+</ul>
+
+<h3 id="simulation-et-conception">Simulation et conception</h3>
+
+<h4 id="étapes">Étapes</h4>
+<ol>
+  <li><strong>Calcul théorique</strong> : Formules, Smith chart</li>
+  <li><strong>Simulation circuit</strong> : Schématique</li>
+  <li><strong>Simulation EM</strong> : Layout 3D</li>
+  <li><strong>Optimisation</strong> : Tuning paramètres</li>
+  <li><strong>Génération Gerber</strong> : Fabrication</li>
+</ol>
+
+<h3 id="fabrication">Fabrication</h3>
+
+<h4 id="méthodes">Méthodes</h4>
+<ul>
+  <li><strong>Gravure chimique</strong> : Proto rapide</li>
+  <li><strong>Fraiseuse CNC</strong> : Précision</li>
+  <li><strong>Fabrication professionnelle</strong> : Production</li>
+</ul>
+
+<h4 id="fichiers-nécessaires">Fichiers nécessaires</h4>
+<ul>
+  <li>Gerber (couches cuivre)</li>
+  <li>Drill (perçages)</li>
+  <li>Soldermask (vernis)</li>
+  <li>Silkscreen (sérigraphie)</li>
+</ul>
+
+<h3 id="caractérisation">Caractérisation</h3>
+
+<h4 id="mesures-avec-vna">Mesures avec VNA</h4>
+<ul>
+  <li>Calibration (SOLT, TRL)</li>
+  <li>Paramètres S (S11, S21)</li>
+  <li>Smith chart</li>
+  <li>Comparaison simulation/mesure</li>
+</ul>
+
+<h4 id="paramètres-mesurés">Paramètres mesurés</h4>
+<ul>
+  <li>Pertes d’insertion (IL)</li>
+  <li>Pertes de retour (RL)</li>
+  <li>Isolation</li>
+  <li>Bande passante</li>
+  <li>Impédance</li>
+</ul>
+
+<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
+
+<h3 id="simulation-rf">Simulation RF</h3>
+<ul>
+  <li><strong>ADS (Advanced Design System)</strong> : Keysight</li>
+  <li><strong>AWR Microwave Office</strong> : Cadence</li>
+  <li><strong>Qucs</strong> : Open source</li>
+  <li><strong>LTspice</strong> : Circuits RF</li>
+</ul>
+
+<h3 id="simulation-em">Simulation EM</h3>
+<ul>
+  <li><strong>Momentum</strong> : Intégré ADS (2.5D)</li>
+  <li><strong>HFSS</strong> : Ansys (3D)</li>
+  <li><strong>CST Microwave Studio</strong> : 3D</li>
+  <li><strong>Sonnet</strong> : 2.5D planar</li>
+</ul>
+
+<h3 id="cao-pcb">CAO PCB</h3>
+<ul>
+  <li><strong>Altium Designer</strong></li>
+  <li><strong>KiCad</strong> : Open source</li>
+  <li><strong>Eagle</strong></li>
+  <li><strong>PADS</strong></li>
+</ul>
+
+<h3 id="mesure">Mesure</h3>
+<ul>
+  <li><strong>Analyseur de réseau vectoriel</strong> (VNA)</li>
+  <li><strong>Analyseur de spectre</strong></li>
+  <li><strong>Générateur RF</strong></li>
+  <li><strong>Oscilloscope haute fréquence</strong></li>
+</ul>
+
+<h2 id="-évaluation">📊 Évaluation</h2>
+
+<ul>
+  <li>Conception et simulation (25%)</li>
+  <li>Réalisation PCB (25%)</li>
+  <li>Caractérisation et mesures (30%)</li>
+  <li>Rapport technique (15%)</li>
+  <li>Présentation (5%)</li>
+</ul>
+
+<h2 id="-liens-avec-dautres-cours">🔗 Liens avec d’autres cours</h2>
+
+<ul>
+  <li><strong>Propagation et Hyperfréquences</strong> : Théorie</li>
+  <li><strong>ER</strong> : Conception PCB</li>
+  <li><strong>Antennes (S4)</strong> : Systèmes rayonnants</li>
+  <li><strong>OL</strong> : Outils de simulation</li>
+</ul>
+
+<h2 id="-exemples-de-dimensionnement">📐 Exemples de dimensionnement</h2>
+
+<h3 id="ligne-microstrip-50ω-fr-4-h16mm">Ligne microstrip 50Ω (FR-4, h=1.6mm)</h3>
+<ul>
+  <li>Largeur W ≈ 3 mm</li>
+  <li>εr = 4.3</li>
+  <li>εr_eff ≈ 3.2</li>
+  <li>Z0 = 50Ω</li>
+</ul>
+
+<h3 id="stub-λ4-à-24-ghz">Stub λ/4 à 2.4 GHz</h3>
+<ul>
+  <li>λ0 = 125 mm</li>
+  <li>λg = λ0/√εr_eff ≈ 70 mm</li>
+  <li>Longueur stub ≈ 17.5 mm</li>
+</ul>
+
+<h3 id="diviseur-wilkinson-24-ghz">Diviseur Wilkinson 2.4 GHz</h3>
+<ul>
+  <li>Lignes λ/4 à 70.7Ω</li>
+  <li>Résistance isolation 100Ω</li>
+  <li>Impédance entrée/sorties 50Ω</li>
+</ul>
+
+<h2 id="-règles-de-conception-rf">💡 Règles de conception RF</h2>
+
+<h3 id="layout-pcb">Layout PCB</h3>
+<ul>
+  <li><strong>Plans de masse</strong> : Continus, via stitching</li>
+  <li><strong>Largeur de piste</strong> : Contrôlée (50Ω)</li>
+  <li><strong>Courbures</strong> : Rayon &gt; 3× largeur</li>
+  <li><strong>Espacement</strong> : Éviter couplages parasites</li>
+  <li><strong>Vias</strong> : Minimiser sur lignes RF</li>
+</ul>
+
+<h3 id="découplage">Découplage</h3>
+<ul>
+  <li>Condensateurs proches des composants</li>
+  <li>Multiple valeurs (nF, µF)</li>
+  <li>Via court vers masse</li>
+  <li>Plans de masse séparés (analogique/numérique)</li>
+</ul>
+
+<h3 id="blindage">Blindage</h3>
+<ul>
+  <li>Boîtier métallique si nécessaire</li>
+  <li>Cloisons entre sections</li>
+  <li>Absorption RF (ferrites, mousses)</li>
+</ul>
+
+<h2 id="-compétences-développées">📖 Compétences développées</h2>
+
+<ul>
+  <li>Simulation EM 3D</li>
+  <li>Conception de circuits RF sur PCB</li>
+  <li>Utilisation d’analyseur de réseau</li>
+  <li>Optimisation de performances RF</li>
+  <li>Fabrication de circuits micro-ondes</li>
+  <li>Analyse de résultats de mesure</li>
+</ul>
+
+<h2 id="-phénomènes-hautes-fréquences">🎯 Phénomènes hautes fréquences</h2>
+
+<h3 id="effet-de-peau">Effet de peau</h3>
+<ul>
+  <li>Profondeur de pénétration δ</li>
+  <li>Résistance AC &gt; DC</li>
+  <li>Dépend de la fréquence</li>
+  <li>Cuivre argenté pour améliorer</li>
+</ul>
+
+<h3 id="pertes-diélectriques">Pertes diélectriques</h3>
+<ul>
+  <li>tan δ du substrat</li>
+  <li>Augmentent avec fréquence</li>
+  <li>Chauffage du PCB</li>
+  <li>Choix substrat crucial</li>
+</ul>
+
+<h3 id="couplages">Couplages</h3>
+<ul>
+  <li>Couplage capacitif (E-field)</li>
+  <li>Couplage inductif (H-field)</li>
+  <li>Couplage par substrat</li>
+  <li>Espacement et blindage</li>
+</ul>
+
+<h3 id="modes-parasites">Modes parasites</h3>
+<ul>
+  <li>Modes de cavité</li>
+  <li>Résonances indésirables</li>
+  <li>Rayonnement</li>
+  <li>Via fencing pour mitiger</li>
+</ul>
+
+<h2 id="️-erreurs-à-éviter">⚠️ Erreurs à éviter</h2>
+
+<h3 id="conception">Conception</h3>
+<ul>
+  <li>Plans de masse discontinus</li>
+  <li>Lignes d’impédance non contrôlée</li>
+  <li>Transitions brusques (stubs, angles droits)</li>
+  <li>Sous-estimation des pertes</li>
+</ul>
+
+<h3 id="fabrication-1">Fabrication</h3>
+<ul>
+  <li>Épaisseur cuivre non uniforme</li>
+  <li>Gravure excessive ou insuffisante</li>
+  <li>Désalignement des couches</li>
+  <li>Qualité soudures CMS RF</li>
+</ul>
+
+<h3 id="mesure-1">Mesure</h3>
+<ul>
+  <li>Calibration inadéquate</li>
+  <li>Connecteurs mal serrés</li>
+  <li>Câbles endommagés</li>
+  <li>Gamme de fréquence incorrecte</li>
+</ul>
+
+<h2 id="-processus-de-conception-typique">🔧 Processus de conception typique</h2>
+
+<h3 id="phase-1--spécifications">Phase 1 : Spécifications</h3>
+<ul>
+  <li>Fréquence de travail</li>
+  <li>Impédance (50Ω typique)</li>
+  <li>Performances requises</li>
+  <li>Contraintes (taille, coût)</li>
+</ul>
+
+<h3 id="phase-2--conception-théorique">Phase 2 : Conception théorique</h3>
+<ul>
+  <li>Calculs analytiques</li>
+  <li>Choix de topologie</li>
+  <li>Simulation schématique</li>
+  <li>Validation concept</li>
+</ul>
+
+<h3 id="phase-3--layout-et-em">Phase 3 : Layout et EM</h3>
+<ul>
+  <li>Dessin PCB</li>
+  <li>Simulation EM 3D</li>
+  <li>Optimisation dimensions</li>
+  <li>Vérification DRC</li>
+</ul>
+
+<h3 id="phase-4--fabrication">Phase 4 : Fabrication</h3>
+<ul>
+  <li>Génération fichiers Gerber</li>
+  <li>Choix fabricant</li>
+  <li>Réception et inspection</li>
+  <li>Assemblage CMS</li>
+</ul>
+
+<h3 id="phase-5--test">Phase 5 : Test</h3>
+<ul>
+  <li>Calibration VNA</li>
+  <li>Mesures paramètres S</li>
+  <li>Comparaison avec simulation</li>
+  <li>Ajustements (tuning)</li>
+</ul>
+
+<h2 id="-ressources">📚 Ressources</h2>
+
+<ul>
+  <li>Application notes fabricants (Mini-Circuits, Analog Devices)</li>
+  <li>“Microwave Engineering” - Pozar</li>
+  <li>“RF Circuit Design” - Bowick</li>
+  <li>Tutoriels ADS/AWR</li>
+  <li>Calculateurs en ligne (impédance, atténuation)</li>
+</ul>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>

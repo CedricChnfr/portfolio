@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <defs>
+    <style>
+      .axis { stroke: #333; stroke-width: 1.5; }
+      .curve { stroke: #ff6b6b; stroke-width: 3; fill: none; }
+      .linear { stroke: #2a7ae2; stroke-width: 2; stroke-dasharray: 5,3; fill: none; }
+      .grid { stroke: #ddd; stroke-width: 0.5; }
+      .point { fill: #ff6b6b; }
+      .text { font-family: Arial; font-size: 12px; fill: #333; }
+      .label { font-family: Arial; font-size: 14px; fill: #2a7ae2; font-weight: bold; }
+    </style>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="label" x="120" y="25">Comportement Non-Linéaire vs Linéaire</text>
+  
+  <!-- Grille -->
+  <line class="grid" x1="100" y1="80" x2="100" y2="300"/>
+  <line class="grid" x1="200" y1="80" x2="200" y2="300"/>
+  <line class="grid" x1="300" y1="80" x2="300" y2="300"/>
+  <line class="grid" x1="400" y1="80" x2="400" y2="300"/>
+  
+  <!-- Axes -->
+  <line class="axis" x1="50" y1="300" x2="470" y2="300"/>
+  <line class="axis" x1="50" y1="80" x2="50" y2="320"/>
+  
+  <!-- Courbe linéaire (référence) -->
+  <path class="linear" d="M 60 290 L 440 100"/>
+  
+  <!-- Courbe non-linéaire (saturation) -->
+  <path class="curve" d="M 60 290 Q 150 250, 200 200 Q 250 150, 300 120 Q 350 105, 440 100"/>
+  
+  <!-- Points caractéristiques -->
+  <circle class="point" cx="200" cy="200" r="4"/>
+  <circle class="point" cx="300" cy="120" r="4"/>
+  
+  <!-- Annotations -->
+  <text class="text" x="210" y="195">Zone linéaire</text>
+  <text class="text" x="310" y="115">Saturation</text>
+  
+  <!-- Labels des axes -->
+  <text class="text" x="460" y="295">Entrée (u)</text>
+  <text class="text" x="25" y="85">Sortie (y)</text>
+  
+  <!-- Légende -->
+  <line class="linear" x1="80" y1="40" x2="120" y2="40"/>
+  <text class="text" x="130" y="45">Système linéaire</text>
+  
+  <line class="curve" x1="260" y1="40" x2="300" y2="40"/>
+  <text class="text" x="310" y="45">Système non-linéaire</text>
+  
+  <!-- Description -->
+  <rect x="60" y="250" width="380" height="40" rx="5" fill="#f9f9f9" stroke="#666" stroke-width="1"/>
+  <text class="text" x="80" y="270" font-size="11px">Exemples : saturation d'amplificateurs, frottements,</text>
+  <text class="text" x="80" y="285" font-size="11px">hystérésis, zones mortes, non-linéarités géométriques</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="350" viewBox="0 0 500 350">
+  <defs>
+    <style>
+      .box { stroke: #2a7ae2; stroke-width: 2; fill: #e8f4f8; }
+      .attack { stroke: #ff6b6b; stroke-width: 2; fill: #ffe8e8; }
+      .arrow { stroke: #ff6b6b; stroke-width: 2.5; marker-end: url(#arrow); }
+      .line { stroke: #333; stroke-width: 1.5; }
+      .text { font-family: Arial; font-size: 11px; fill: #333; }
+      .label { font-family: Arial; font-size: 12px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+      .warning { font-family: Arial; font-size: 10px; fill: #ff6b6b; font-weight: bold; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ff6b6b"/>
+    </marker>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="120" y="25">Attaque par Buffer Overflow</text>
+  
+  <!-- Mémoire avant attaque -->
+  <text class="label" x="80" y="60">État Normal</text>
+  <rect class="box" x="50" y="70" width="150" height="40" rx="3"/>
+  <text class="text" x="80" y="92">Buffer[8]</text>
+  
+  <rect class="box" x="50" y="115" width="150" height="30" rx="3"/>
+  <text class="text" x="80" y="135">Adresse retour</text>
+  
+  <rect class="box" x="50" y="150" width="150" height="30" rx="3"/>
+  <text class="text" x="80" y="170">Variables locales</text>
+  
+  <!-- Mémoire après attaque -->
+  <text class="label" x="320" y="60">Après Overflow</text>
+  <rect class="attack" x="280" y="70" width="150" height="40" rx="3"/>
+  <text class="text" x="300" y="92" font-weight="bold">Données malveillantes</text>
+  
+  <rect class="attack" x="280" y="115" width="150" height="30" rx="3"/>
+  <text class="text" x="290" y="135" fill="#ff6b6b" font-weight="bold">Adresse écrasée!</text>
+  
+  <rect class="box" x="280" y="150" width="150" height="30" rx="3"/>
+  <text class="text" x="310" y="170">Variables locales</text>
+  
+  <!-- Flèche d'attaque -->
+  <path class="arrow" d="M 200 90 L 280 90"/>
+  <text class="warning" x="215" y="85">OVERFLOW</text>
+  
+  <!-- Code vulnérable -->
+  <rect x="50" y="210" width="400" height="120" rx="5" fill="#f9f9f9" stroke="#666" stroke-width="1"/>
+  <text class="label" x="60" y="230" fill="#ff6b6b">Code vulnérable :</text>
+  <text class="text" x="60" y="250" font-family="Courier New">void vulnerable_func(char* input) {</text>
+  <text class="text" x="80" y="265" font-family="Courier New">char buffer[8];</text>
+  <text class="text" x="80" y="280" font-family="Courier New">strcpy(buffer, input);  // Pas de vérification!</text>
+  <text class="text" x="60" y="295" font-family="Courier New">}</text>
+  <text class="warning" x="60" y="315">⚠ strcpy ne vérifie pas la taille → débordement possible</text>
+  
+  <!-- Protection -->
+  <text class="label" x="200" y="50" fill="#4ecdc4">Protection : strncpy, canary, ASLR, DEP</text>
+</svg>

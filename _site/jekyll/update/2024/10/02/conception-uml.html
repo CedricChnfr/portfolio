@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Conception Orientée Objet UML | Cédric Chanfreau - Portfolio</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Conception Orientée Objet UML" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/conception-uml.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/conception-uml.html" />
+<meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-10-02T09:03:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Conception Orientée Objet UML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T09:03:00+02:00","datePublished":"2024-10-02T09:03:00+02:00","headline":"Conception Orientée Objet UML","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/conception-uml.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/conception-uml.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #2a7ae2;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.code-block {
+    background: #f4f4f4;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', monospace;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+<h1 id="-conception-orientée-objet-uml---semestre-7">🎨 Conception Orientée Objet UML - Semestre 7</h1>
+
+<p><strong>Année Universitaire</strong> : 2023-2024<br />
+<strong>Semestre</strong> : 7<br />
+<strong>Crédits</strong> : 2.5 ECTS<br />
+<strong>Spécialité</strong> : Génie Logiciel et Méthodologie</p>
+
+<hr />
+
+<h2 id="part-a---présentation-générale-du-module">PART A - Présentation Générale du Module</h2>
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+<p>Ce cours enseigne la conception orientée objet et le langage UML (Unified Modeling Language) pour analyser, concevoir et documenter des systèmes logiciels complexes. Il fournit une méthodologie structurée pour passer de l’analyse des besoins à une architecture logicielle robuste avant l’implémentation.</p>
+
+<p><strong>Objectifs pédagogiques</strong> :</p>
+<ul>
+  <li>Maîtriser les diagrammes UML structurels et comportementaux</li>
+  <li>Appliquer les principes de conception objet (SOLID)</li>
+  <li>Utiliser les design patterns classiques (GoF)</li>
+  <li>Concevoir des architectures logicielles maintenables</li>
+  <li>Documenter efficacement un projet logiciel</li>
+</ul>
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+<p>Ce module complète :</p>
+<ul>
+  <li><strong>Programmation Orientée Objets C++ (S7)</strong> : concepts POO en pratique</li>
+  <li><strong>Programmation Orientée Objets Java (S7)</strong> : implémentation des designs</li>
+  <li><strong>Langage C (S5)</strong> : transition vers la POO</li>
+</ul>
+
+<p>Il prépare à :</p>
+<ul>
+  <li><strong>Projets de génie logiciel</strong> : architectures complexes</li>
+  <li><strong>Travail en équipe</strong> : communication via UML</li>
+  <li><strong>Ingénierie logicielle industrielle</strong> : documentation standardisée</li>
+  <li><strong>Maintenance et évolution</strong> : code structuré et extensible</li>
+</ul>
+
+<hr />
+
+<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+
+<h3 class="section-title">Organisation et ressources</h3>
+
+<p>Le module était structuré en plusieurs volets :</p>
+
+<p><strong>Cours magistraux (12h)</strong> :</p>
+<ul>
+  <li>Introduction à UML et à la conception objet</li>
+  <li>Diagrammes structurels (classes, objets, composants, déploiement)</li>
+  <li>Diagrammes comportementaux (séquence, activité, états)</li>
+  <li>Principes SOLID et bonnes pratiques</li>
+  <li>Design patterns du Gang of Four</li>
+</ul>
+
+<p><strong>Travaux dirigés (12h)</strong> :</p>
+<ul>
+  <li>Exercices de modélisation sur cas d’étude</li>
+  <li>Correction et discussion des TD</li>
+  <li>Ressource disponible : Correction_TD.txt avec lien Notion détaillé</li>
+  <li>Analyse de problèmes réels (bibliothèque, e-commerce, système embarqué)</li>
+</ul>
+
+<p><strong>Projet de conception (16h)</strong> :
+Réalisation complète d’un système avec :</p>
+<ul>
+  <li>Analyse des besoins (cas d’utilisation)</li>
+  <li>Modélisation structurelle (diagrammes de classes)</li>
+  <li>Modélisation comportementale (séquence, états)</li>
+  <li>Prototypage en Java ou C++</li>
+  <li>Documentation UML complète</li>
+</ul>
+
+<p><strong>Ressources pédagogiques</strong> :</p>
+<ul>
+  <li>Cours_ConceptionArchitectures.pdf (support de cours)</li>
+  <li>Notes partagées Notion (correction des TD)</li>
+  <li>Outils : Enterprise Architect, StarUML, PlantUML</li>
+  <li>Livres de référence : “Design Patterns” (GoF), “UML 2” (Pascal Roques)</li>
+</ul>
+
+<h3 class="section-title">Méthodologie d'apprentissage</h3>
+
+<p><strong>Phase 1 : Analyse des besoins</strong> :
+Identifier les acteurs, définir les cas d’utilisation, spécifier les exigences fonctionnelles et non-fonctionnelles.</p>
+
+<p><strong>Phase 2 : Modélisation structurelle</strong> :
+Créer les diagrammes de classes (entités, relations, multiplicités), définir les interfaces et l’architecture en couches.</p>
+
+<p><strong>Phase 3 : Modélisation comportementale</strong> :
+Décrire les interactions (diagrammes de séquence), les workflows (diagrammes d’activité), les états (machines à états).</p>
+
+<p><strong>Phase 4 : Application des patterns</strong> :
+Identifier les problèmes récurrents et appliquer les patterns appropriés (Factory, Observer, Strategy, etc.).</p>
+
+<p><strong>Phase 5 : Implémentation</strong> :
+Générer le code squelette depuis les diagrammes, implémenter la logique métier, maintenir la cohérence UML/code.</p>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<p><strong>Niveau d’abstraction</strong> :
+Trouver le bon équilibre entre détail et abstraction. Trop détaillé rend les diagrammes illisibles, trop abstrait les rend inutiles.</p>
+
+<p><strong>Multiplicité des diagrammes</strong> :
+UML propose 14 types de diagrammes. Savoir lesquels utiliser selon le contexte n’est pas immédiat.</p>
+
+<p><strong>Maintien de la cohérence</strong> :
+Garder les diagrammes synchronisés avec le code lors des évolutions demande de la rigueur et du temps.</p>
+
+<p><strong>Over-engineering</strong> :
+Tendance à vouloir appliquer trop de patterns ou créer des architectures trop complexes pour le problème donné.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+
+<h3 class="section-title">1. Introduction à UML</h3>
+
+<p><strong>UML = Unified Modeling Language</strong></p>
+
+<p>Langage de modélisation graphique standardisé (ISO/IEC 19505) pour visualiser, spécifier, construire et documenter des systèmes logiciels.</p>
+
+<p><strong>Historique</strong> :</p>
+<ul>
+  <li>Années 1990 : fusion des méthodes Booch, OMT, OOSE</li>
+  <li>Version 1.0 en 1997</li>
+  <li>Version 2.5 actuelle (2015)</li>
+</ul>
+
+<p><strong>Les 14 diagrammes UML</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Catégorie</th>
+      <th>Diagrammes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Structurels</td>
+      <td>Classes, Objets, Composants, Déploiement, Packages, Structure composite, Profil</td>
+    </tr>
+    <tr>
+      <td>Comportementaux</td>
+      <td>Cas d’utilisation, Activité, États-transitions, Séquence, Communication, Timing, Vue d’ensemble interaction</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>En pratique</strong> : On utilise principalement 5-6 diagrammes (classes, séquence, activité, états, cas d’utilisation, composants).</p>
+
+<h3 class="section-title">2. Diagramme de cas d'utilisation</h3>
+
+<p><strong>Objectif</strong> : Décrire les fonctionnalités du système du point de vue utilisateur.</p>
+
+<p><strong>Éléments</strong> :</p>
+<ul>
+  <li><strong>Acteur</strong> : Utilisateur ou système externe</li>
+  <li><strong>Cas d’utilisation</strong> : Fonctionnalité offerte</li>
+  <li><strong>Relations</strong> : include (inclusion obligatoire), extend (extension conditionnelle), généralisation</li>
+</ul>
+
+<p><strong>Exemple : Système de bibliothèque</strong></p>
+
+<p>Acteurs :</p>
+<ul>
+  <li>Lecteur (emprunter livre, consulter catalogue)</li>
+  <li>Bibliothécaire (enregistrer retour, gérer amendes)</li>
+  <li>Administrateur (ajouter livre, gérer utilisateurs)</li>
+</ul>
+
+<p>Relations :</p>
+<ul>
+  <li>“Emprunter livre” include “Vérifier disponibilité”</li>
+  <li>“Rechercher livre” extend “Filtrer par auteur”</li>
+</ul>
+
+<p><strong>Notation</strong> :</p>
+<ul>
+  <li>Acteur : bonhomme stylisé</li>
+  <li>Cas d’utilisation : ellipse avec nom</li>
+  <li>Relations : flèches avec stéréotypes</li>
+</ul>
+
+<h3 class="section-title">3. Diagramme de classes</h3>
+
+<p><strong>Objectif</strong> : Décrire la structure statique du système (classes, attributs, méthodes, relations).</p>
+
+<p><strong>Classe</strong> :</p>
+
+<p>Une classe contient trois compartiments :</p>
+<ul>
+  <li>Nom de la classe</li>
+  <li>Attributs (visibilité nom : type)</li>
+  <li>Méthodes (visibilité nom(paramètres) : type_retour)</li>
+</ul>
+
+<p><strong>Visibilités</strong> :</p>
+<ul>
+  <li>
+    <ul>
+      <li>public (accessible partout)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>private (accessible seulement dans la classe)</li>
+    </ul>
+  </li>
+  <li># protected (accessible dans la classe et ses sous-classes)</li>
+  <li>~ package (accessible dans le package)</li>
+</ul>
+
+<p><strong>Exemple</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Livre
+--------------
+- isbn : String
+- titre : String
+- auteur : String
+- disponible : Boolean
+--------------
++ emprunter() : Boolean
++ retourner() : void
++ estDisponible() : Boolean
+</code></pre></div></div>
+
+<p><strong>Relations entre classes</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Relation</th>
+      <th>Symbole</th>
+      <th>Signification</th>
+      <th>Exemple</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Association</td>
+      <td>ligne simple</td>
+      <td>Les classes se connaissent</td>
+      <td>Lecteur — Livre</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Agrégation</td>
+      <td>losange vide</td>
+      <td>“A des” (partie peut exister seule)</td>
+      <td>Bibliothèque ◇— Livre</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Composition</td>
+      <td>losange plein</td>
+      <td>“Composé de” (partie liée au tout)</td>
+      <td>Voiture ◆— Moteur</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Héritage</td>
+      <td>flèche triangle vide</td>
+      <td>“Est un”</td>
+      <td>LivreNumerique —</td>
+      <td>&gt; Livre</td>
+    </tr>
+    <tr>
+      <td>Réalisation</td>
+      <td>flèche triangle pointillée</td>
+      <td>Implémente interface</td>
+      <td>ClasseConcrète ..</td>
+      <td>&gt; Interface</td>
+    </tr>
+    <tr>
+      <td>Dépendance</td>
+      <td>flèche pointillée</td>
+      <td>Utilise temporairement</td>
+      <td>Client …&gt; Service</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Multiplicités</strong> :</p>
+<ul>
+  <li>1 : exactement un</li>
+  <li>0..1 : zéro ou un</li>
+  <li>* : zéro ou plusieurs</li>
+  <li>1..* : un ou plusieurs</li>
+  <li>2..5 : entre 2 et 5</li>
+</ul>
+
+<p><strong>Exemple complet</strong> :</p>
+
+<p>Bibliothèque (1) ◆— (0..*) Livre
+Lecteur (1) — (0..5) Emprunt
+Emprunt (*) — (1) Livre</p>
+
+<p>Un lecteur peut avoir au maximum 5 emprunts simultanés.</p>
+
+<h3 class="section-title">4. Diagramme d'objets</h3>
+
+<p><strong>Objectif</strong> : Montrer des instances concrètes à un instant donné (snapshot).</p>
+
+<p><strong>Différence avec diagramme de classes</strong> :</p>
+<ul>
+  <li>Classes : structure générale</li>
+  <li>Objets : instances particulières avec valeurs</li>
+</ul>
+
+<p><strong>Exemple</strong> :</p>
+
+<p>livre1 : Livre</p>
+<ul>
+  <li>isbn = “978-2-1234”</li>
+  <li>titre = “Design Patterns”</li>
+  <li>disponible = false</li>
+</ul>
+
+<p>lecteur1 : Lecteur</p>
+<ul>
+  <li>nom = “Dupont”</li>
+  <li>numeroCart = “12345”</li>
+</ul>
+
+<p>emprunt1 : Emprunt</p>
+<ul>
+  <li>dateEmprunt = “2024-11-15”</li>
+  <li>dateRetourPrevue = “2024-12-15”</li>
+</ul>
+
+<p><strong>Utilité</strong> : Valider le diagramme de classes avec des exemples concrets, illustrer des configurations complexes.</p>
+
+<h3 class="section-title">5. Diagramme de séquence</h3>
+
+<p><strong>Objectif</strong> : Montrer les interactions entre objets dans le temps (ordre chronologique des messages).</p>
+
+<p><strong>Éléments</strong> :</p>
+<ul>
+  <li><strong>Lignes de vie</strong> : lignes verticales représentant les objets</li>
+  <li><strong>Messages</strong> : flèches horizontales entre lignes de vie</li>
+  <li><strong>Activation</strong> : rectangle sur ligne de vie (objet actif)</li>
+  <li><strong>Fragments</strong> : alt (alternative), loop (boucle), opt (optionnel), par (parallèle)</li>
+</ul>
+
+<p><strong>Types de messages</strong> :</p>
+<ul>
+  <li>Synchrone : flèche pleine (appelant attend la réponse)</li>
+  <li>Asynchrone : flèche ouverte (appelant continue sans attendre)</li>
+  <li>Retour : flèche pointillée</li>
+</ul>
+
+<p><strong>Exemple : Emprunter un livre</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Lecteur → Bibliotheque : emprunterLivre(isbn)
+Bibliotheque → Catalogue : rechercherLivre(isbn)
+Catalogue → Bibliotheque : livre
+alt livre disponible
+    Bibliotheque → Emprunt : creerEmprunt(lecteur, livre)
+    Emprunt → Livre : marquerEmprunte()
+    Bibliotheque → Lecteur : confirmationEmprunt
+else livre indisponible
+    Bibliotheque → Lecteur : messageErreur
+end
+</code></pre></div></div>
+
+<p><strong>Fragments utiles</strong> :</p>
+<ul>
+  <li><strong>alt</strong> : if/else (branches alternatives)</li>
+  <li><strong>loop</strong> : boucle (condition et itération)</li>
+  <li><strong>opt</strong> : optionnel (exécuté si condition vraie)</li>
+  <li><strong>par</strong> : parallèle (exécution simultanée)</li>
+  <li><strong>ref</strong> : référence à un autre diagramme</li>
+</ul>
+
+<h3 class="section-title">6. Diagramme d'activité</h3>
+
+<p><strong>Objectif</strong> : Modéliser les workflows, processus métier, algorithmes (similaire à un organigramme amélioré).</p>
+
+<p><strong>Éléments</strong> :</p>
+<ul>
+  <li><strong>Nœud initial</strong> : cercle noir plein</li>
+  <li><strong>Nœud final</strong> : cercle noir avec cercle autour</li>
+  <li><strong>Activité</strong> : rectangle arrondi</li>
+  <li><strong>Décision</strong> : losange (condition)</li>
+  <li><strong>Fork/Join</strong> : barre horizontale (parallélisme)</li>
+  <li><strong>Swimlanes</strong> : partitions par acteur/système</li>
+</ul>
+
+<p><strong>Exemple : Processus d’emprunt</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Début]
+↓
+Lecteur présente carte
+↓
+&lt;Carte valide?&gt;
+  Non → Refuser emprunt → [Fin]
+  Oui ↓
+Scanner code-barres livre
+↓
+&lt;Livre disponible?&gt;
+  Non → Proposer réservation → [Fin]
+  Oui ↓
+Enregistrer emprunt
+|
+Imprimer ticket
+↓
+[Fin]
+</code></pre></div></div>
+
+<p><strong>Parallélisme avec fork/join</strong> :</p>
+
+<p>Fork (barre horizontale) :
+→ Activité A
+→ Activité B (en parallèle)</p>
+
+<p>Join : synchronisation (attendre que A et B soient terminées)</p>
+
+<h3 class="section-title">7. Diagramme d'états-transitions</h3>
+
+<p><strong>Objectif</strong> : Modéliser le cycle de vie d’un objet (états possibles et transitions).</p>
+
+<p><strong>Éléments</strong> :</p>
+<ul>
+  <li><strong>État</strong> : rectangle arrondi</li>
+  <li><strong>Transition</strong> : flèche avec événement déclencheur</li>
+  <li><strong>État initial</strong> : cercle noir</li>
+  <li><strong>État final</strong> : cercle noir avec cercle</li>
+  <li><strong>Actions</strong> : entry/ (à l’entrée), do/ (pendant), exit/ (à la sortie)</li>
+</ul>
+
+<p><strong>Exemple : États d’un livre</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Initial]
+↓
+Disponible
+  entry/ afficherDisponible()
+  
+Disponible --[emprunter]--&gt; Emprunté
+  entry/ enregistrerEmprunt()
+  do/ decrementersDisponibilites()
+  
+Emprunté --[retourner]--&gt; Disponible
+  exit/ libererExemplaire()
+  
+Emprunté --[depasser delai]--&gt; EnRetard
+  entry/ calculerAmende()
+  
+EnRetard --[retourner + payer amende]--&gt; Disponible
+
+Disponible --[retirer du catalogue]--&gt; [Final]
+</code></pre></div></div>
+
+<p><strong>États composites</strong> :
+Un état peut contenir des sous-états (hiérarchie).</p>
+
+<p><strong>États concurrents</strong> :
+Plusieurs états actifs simultanément (séparés par ligne pointillée).</p>
+
+<h3 class="section-title">8. Diagrammes de composants et déploiement</h3>
+
+<p><strong>Diagramme de composants</strong> :</p>
+
+<p>Montre l’organisation logicielle en modules/bibliothèques avec leurs dépendances.</p>
+
+<p>Composants typiques :</p>
+<ul>
+  <li>Interface Utilisateur (UI)</li>
+  <li>Logique métier (Business Logic)</li>
+  <li>Accès aux données (DAO)</li>
+  <li>Bibliothèques externes</li>
+</ul>
+
+<p>Relations :</p>
+<ul>
+  <li>Dépendances entre composants</li>
+  <li>Interfaces fournies (cercle) et requises (demi-cercle)</li>
+</ul>
+
+<p><strong>Diagramme de déploiement</strong> :</p>
+
+<p>Montre l’architecture physique (serveurs, réseaux, artefacts déployés).</p>
+
+<p>Éléments :</p>
+<ul>
+  <li><strong>Nœuds</strong> : matériel (serveur, PC, mobile)</li>
+  <li><strong>Artefacts</strong> : fichiers déployés (JAR, EXE, WAR)</li>
+  <li><strong>Communications</strong> : protocoles (HTTP, TCP, etc.)</li>
+</ul>
+
+<p>Exemple :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Serveur Web
+  - Apache Tomcat
+  - Application.war
+  
+Base de données
+  - MySQL Server
+  - Schema bibliotheque
+  
+Poste client
+  - Navigateur Web
+  - Interface HTML/CSS/JS
+</code></pre></div></div>
+
+<h3 class="section-title">9. Principes de conception SOLID</h3>
+
+<p>Ensemble de 5 principes pour créer du code maintenable et extensible.</p>
+
+<p><strong>S - Single Responsibility Principle (SRP)</strong> :</p>
+
+<p>Une classe doit avoir une seule raison de changer (une seule responsabilité).</p>
+
+<p>Mauvais :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Livre
+  + sauvegarderDansBaseDeDonnees()  // responsabilité persistance
+  + envoyerEmailNotification()       // responsabilité notification
+</code></pre></div></div>
+
+<p>Bon :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Livre
+  // seulement logique métier livre
+
+class LivreRepository
+  + sauvegarder(livre)
+
+class NotificationService
+  + envoyerEmail(destinataire, message)
+</code></pre></div></div>
+
+<p><strong>O - Open/Closed Principle (OCP)</strong> :</p>
+
+<p>Les classes doivent être ouvertes à l’extension, fermées à la modification.</p>
+
+<p>Utiliser l’héritage, la composition, ou les interfaces pour étendre sans modifier le code existant.</p>
+
+<p><strong>L - Liskov Substitution Principle (LSP)</strong> :</p>
+
+<p>Les objets d’une classe dérivée doivent pouvoir remplacer les objets de la classe de base sans altérer le comportement.</p>
+
+<p><strong>I - Interface Segregation Principle (ISP)</strong> :</p>
+
+<p>Mieux vaut plusieurs interfaces spécifiques qu’une interface générale.</p>
+
+<p>Mauvais :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface DocumentActions
+  + imprimer()
+  + scanner()
+  + faxer()
+</code></pre></div></div>
+
+<p>Une imprimante simple doit implémenter scanner() et faxer() même si elle ne les supporte pas.</p>
+
+<p>Bon :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface Imprimable
+  + imprimer()
+
+interface Scannable
+  + scanner()
+
+class ImprimanteSimple implements Imprimable
+class ImprimanteMultifonction implements Imprimable, Scannable
+</code></pre></div></div>
+
+<p><strong>D - Dependency Inversion Principle (DIP)</strong> :</p>
+
+<p>Dépendre des abstractions (interfaces), pas des implémentations concrètes.</p>
+
+<p>Mauvais :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Bibliotheque
+  private MySQLDatabase db  // dépendance concrète
+</code></pre></div></div>
+
+<p>Bon :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface Database
+  + sauvegarder(data)
+  + charger(id)
+
+class Bibliotheque
+  private Database db  // dépendance abstraite
+
+class MySQLDatabase implements Database
+class MongoDBDatabase implements Database
+</code></pre></div></div>
+
+<p>Permet de changer facilement de base de données sans modifier Bibliotheque.</p>
+
+<h3 class="section-title">10. Design Patterns (Patrons de conception)</h3>
+
+<p>Solutions éprouvées à des problèmes récurrents de conception.</p>
+
+<p><strong>Patterns créationnels</strong> : gestion de la création d’objets</p>
+
+<p><strong>Singleton</strong> :
+Garantir une seule instance d’une classe.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ConfigurationManager
+  private static instance : ConfigurationManager
+  
+  private ConfigurationManager()  // constructeur privé
+  
+  public static getInstance() : ConfigurationManager
+    if instance == null
+      instance = new ConfigurationManager()
+    return instance
+</code></pre></div></div>
+
+<p>Utilisation : gestionnaires uniques (configuration, logging, pool de connexions).</p>
+
+<p><strong>Factory Method</strong> :
+Déléguer la création d’objets aux sous-classes.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>abstract class DocumentFactory
+  abstract creerDocument() : Document
+  
+class PDFFactory extends DocumentFactory
+  creerDocument() : Document
+    return new PDFDocument()
+    
+class WordFactory extends DocumentFactory
+  creerDocument() : Document
+    return new WordDocument()
+</code></pre></div></div>
+
+<p><strong>Abstract Factory</strong> :
+Créer des familles d’objets liés sans spécifier leurs classes concrètes.</p>
+
+<p><strong>Patterns structurels</strong> : organisation des classes et objets</p>
+
+<p><strong>Adapter</strong> :
+Convertir l’interface d’une classe en une autre interface attendue.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface LecteurMultimedia
+  + lire(fichier)
+
+class LecteurMP3
+  + jouerMP3(fichier)
+
+class AdapterMP3 implements LecteurMultimedia
+  private lecteurMP3 : LecteurMP3
+  
+  lire(fichier)
+    lecteurMP3.jouerMP3(fichier)
+</code></pre></div></div>
+
+<p><strong>Decorator</strong> :
+Ajouter dynamiquement des responsabilités à un objet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface Cafe
+  + cout() : double
+
+class CafeSimple implements Cafe
+  cout() : double
+    return 2.0
+
+class AvecLait implements Cafe
+  private cafe : Cafe
+  
+  cout() : double
+    return cafe.cout() + 0.5
+
+class AvecSucre implements Cafe
+  private cafe : Cafe
+  
+  cout() : double
+    return cafe.cout() + 0.2
+</code></pre></div></div>
+
+<p>Usage :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Cafe monCafe = new AvecLait(new AvecSucre(new CafeSimple()))
+// cout = 2.0 + 0.2 + 0.5 = 2.7
+</code></pre></div></div>
+
+<p><strong>Composite</strong> :
+Composer des objets en structures arborescentes (traiter uniformément objets individuels et compositions).</p>
+
+<p><strong>Patterns comportementaux</strong> : interactions entre objets</p>
+
+<p><strong>Observer</strong> :
+Notifier automatiquement des objets lors d’un changement d’état.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface Observer
+  + update(sujet)
+
+class Sujet
+  private observateurs : List&lt;Observer&gt;
+  
+  + attacher(observateur)
+    observateurs.add(observateur)
+  
+  + notifier()
+    for each observateur in observateurs
+      observateur.update(this)
+
+class AffichageTemperature implements Observer
+  update(sujet)
+    temperature = sujet.getTemperature()
+    afficher(temperature)
+</code></pre></div></div>
+
+<p>Utilisation : interfaces graphiques (MVC), systèmes événementiels.</p>
+
+<p><strong>Strategy</strong> :
+Encapsuler des algorithmes interchangeables.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>interface StrategieCalculAmende
+  + calculer(joursRetard) : double
+
+class AmendeStandard implements StrategieCalculAmende
+  calculer(joursRetard) : double
+    return joursRetard * 0.5
+
+class AmendeEtudiant implements StrategieCalculAmende
+  calculer(joursRetard) : double
+    return joursRetard * 0.2
+
+class GestionnaireEmprunt
+  private strategie : StrategieCalculAmende
+  
+  definirStrategie(strategie)
+    this.strategie = strategie
+  
+  calculerAmende(joursRetard)
+    return strategie.calculer(joursRetard)
+</code></pre></div></div>
+
+<p><strong>Command</strong> :
+Encapsuler une requête comme un objet.</p>
+
+<p>Permet : annulation (undo), file d’attente de commandes, journalisation.</p>
+
+<p><strong>State</strong> :
+Modifier le comportement d’un objet selon son état interne.</p>
+
+<p><strong>Template Method</strong> :
+Définir le squelette d’un algorithme, les sous-classes redéfinissent certaines étapes.</p>
+
+<h3 class="section-title">11. De UML au code</h3>
+
+<p><strong>Forward Engineering</strong> : générer du code depuis les diagrammes UML.</p>
+
+<p>Outils :</p>
+<ul>
+  <li>Enterprise Architect (génération Java, C++, C#, Python)</li>
+  <li>StarUML (génération code basique)</li>
+  <li>PlantUML + scripts custom</li>
+</ul>
+
+<p>Exemple : diagramme de classes → classes Java avec attributs et signatures de méthodes (squelettes).</p>
+
+<p><strong>Reverse Engineering</strong> : générer des diagrammes UML depuis le code existant.</p>
+
+<p>Utile pour :</p>
+<ul>
+  <li>Documenter du legacy code</li>
+  <li>Analyser une base de code inconnue</li>
+  <li>Maintenir cohérence code/documentation</li>
+</ul>
+
+<p><strong>Round-trip Engineering</strong> : synchronisation bidirectionnelle code ↔ UML.</p>
+
+<p>Modifications du code reflétées dans les diagrammes et vice-versa.</p>
+
+<p>En pratique : difficile à maintenir, nécessite discipline et outillage adapté.</p>
+
+<h3 class="section-title">12. Outils de modélisation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outil</th>
+      <th>Type</th>
+      <th>Avantages</th>
+      <th>Inconvénients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enterprise Architect</td>
+      <td>Commercial</td>
+      <td>Complet, génération code, collaboration</td>
+      <td>Coûteux, interface complexe</td>
+    </tr>
+    <tr>
+      <td>StarUML</td>
+      <td>Open-source/Commercial</td>
+      <td>Interface intuitive, légèreté</td>
+      <td>Fonctionnalités limitées version gratuite</td>
+    </tr>
+    <tr>
+      <td>PlantUML</td>
+      <td>Open-source</td>
+      <td>Textuel, intégration CI/CD, versioning</td>
+      <td>Courbe apprentissage syntaxe</td>
+    </tr>
+    <tr>
+      <td>Lucidchart</td>
+      <td>Web</td>
+      <td>Collaboratif, facile</td>
+      <td>Limité version gratuite</td>
+    </tr>
+    <tr>
+      <td>draw.io</td>
+      <td>Web/Open</td>
+      <td>Gratuit, simple</td>
+      <td>Pas spécialisé UML</td>
+    </tr>
+    <tr>
+      <td>Visual Paradigm</td>
+      <td>Commercial</td>
+      <td>Puissant, formation incluse</td>
+      <td>Coûteux</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Recommandation personnelle</strong> :</p>
+<ul>
+  <li>Projets personnels : PlantUML (versionnable avec Git)</li>
+  <li>Entreprise : Enterprise Architect ou Visual Paradigm</li>
+  <li>Collaboration rapide : Lucidchart ou Miro</li>
+</ul>
+
+<hr />
+
+<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+
+<h3 class="section-title">Compétences acquises</h3>
+
+<p><strong>Modélisation et abstraction</strong> :
+Capacité à analyser un problème complexe et à le décomposer en entités, relations et comportements modélisables.</p>
+
+<p><strong>Communication technique</strong> :
+UML fournit un langage universel pour communiquer des architectures entre développeurs, chefs de projet, et clients.</p>
+
+<p><strong>Anticipation et planification</strong> :
+Concevoir avant d’implémenter permet d’identifier les problèmes d’architecture tôt, réduisant les coûts de refactoring.</p>
+
+<p><strong>Qualité logicielle</strong> :
+Application des principes SOLID et patterns produit du code plus maintenable, testable et extensible.</p>
+
+<h3 class="section-title">Projet réalisé : Système de gestion de bibliothèque</h3>
+
+<p><strong>Contexte</strong> :
+Conception complète d’un système de bibliothèque multimédia (livres, DVDs, périodiques) avec gestion des emprunts, réservations, amendes, et utilisateurs.</p>
+
+<p><strong>Livrables</strong> :</p>
+<ul>
+  <li>Diagramme de cas d’utilisation (12 cas, 4 acteurs)</li>
+  <li>Diagramme de classes complet (35+ classes)</li>
+  <li>Diagrammes de séquence (emprunter, retourner, réserver, payer amende)</li>
+  <li>Diagrammes d’états (cycle de vie livre, emprunt)</li>
+  <li>Diagramme d’activité (processus d’emprunt complet)</li>
+  <li>Prototype Java avec patterns appliqués</li>
+</ul>
+
+<p><strong>Patterns utilisés</strong> :</p>
+<ul>
+  <li><strong>Singleton</strong> : BibliothequeManager (instance unique)</li>
+  <li><strong>Factory</strong> : DocumentFactory pour créer Livre, DVD, Periodique</li>
+  <li><strong>Observer</strong> : notification disponibilité pour réservations</li>
+  <li><strong>Strategy</strong> : calcul amendes selon type utilisateur (standard, étudiant, enseignant)</li>
+  <li><strong>State</strong> : gestion états emprunt (en cours, en retard, terminé)</li>
+</ul>
+
+<p><strong>Résultats</strong> :
+Architecture claire et extensible. Ajout de nouveaux types de documents ou nouvelles règles d’amende facile grâce aux patterns. Code bien structuré avec séparation des responsabilités.</p>
+
+<h3 class="section-title">Points clés à retenir</h3>
+
+<p><strong>1. UML = outil, pas objectif</strong> :
+L’objectif est une bonne conception, pas de beaux diagrammes. Utiliser UML de manière pragmatique.</p>
+
+<p><strong>2. Tous les diagrammes ne sont pas nécessaires</strong> :
+Identifier ceux qui apportent de la valeur selon le contexte (classes et séquence souvent suffisants).</p>
+
+<p><strong>3. SOLID avant patterns</strong> :
+Comprendre et appliquer SOLID est plus important que connaître tous les patterns.</p>
+
+<p><strong>4. Patterns = solutions, pas recettes magiques</strong> :
+Ne pas forcer l’utilisation d’un pattern. L’appliquer seulement si le problème correspond.</p>
+
+<p><strong>5. Documentation vivante</strong> :
+La documentation doit évoluer avec le code, sinon elle devient obsolète et trompeuse.</p>
+
+<h3 class="section-title">Retour d'expérience</h3>
+
+<p><strong>Courbe d’apprentissage</strong> :
+UML semblait complexe initialement (14 diagrammes, notations spécifiques). Avec la pratique, on identifie rapidement les 5-6 diagrammes essentiels.</p>
+
+<p><strong>Lien avec la POO</strong> :
+Ce cours a renforcé ma compréhension de la POO au-delà de la syntaxe. Concepts comme l’encapsulation, l’abstraction, le polymorphisme deviennent concrets.</p>
+
+<p><strong>Application en projets</strong> :
+Utiliser UML sur des projets réels (même simplifiés) a prouvé son utilité. Gain de temps et moins de bugs grâce à la réflexion en amont.</p>
+
+<p><strong>Collaboration facilitée</strong> :
+Travailler en équipe avec UML comme langage commun a grandement amélioré la communication et réduit les malentendus.</p>
+
+<h3 class="section-title">Applications pratiques</h3>
+
+<p><strong>Développement logiciel</strong> :</p>
+<ul>
+  <li>Applications d’entreprise (ERP, CRM)</li>
+  <li>Systèmes embarqués (modélisation états et séquences critiques)</li>
+  <li>Applications web (architecture MVC/MVVM)</li>
+</ul>
+
+<p><strong>Refactoring</strong> :
+Reverse engineering de code legacy, identification des problèmes (couplage fort, responsabilités mixtes), puis refactoring guidé par SOLID.</p>
+
+<p><strong>Documentation</strong> :
+Générer automatiquement documentation technique à partir des diagrammes UML. Intégration dans wikis d’entreprise.</p>
+
+<p><strong>Communication client</strong> :
+Diagrammes de cas d’utilisation et d’activité compréhensibles par non-développeurs pour valider les besoins.</p>
+
+<h3 class="section-title">Limites et critiques</h3>
+
+<p><strong>UML lourd et verbeux</strong> :
+Créer et maintenir tous les diagrammes prend du temps. Approche agile préfère “UML léger” (quelques diagrammes clés).</p>
+
+<p><strong>Décalage documentation/code</strong> :
+Sans discipline ou outils de synchronisation, les diagrammes deviennent rapidement obsolètes.</p>
+
+<p><strong>Over-engineering</strong> :
+Risque de créer des architectures trop complexes, avec trop de patterns, pour des problèmes simples.</p>
+
+<p><strong>Alternatives modernes</strong> :</p>
+<ul>
+  <li><strong>C4 Model</strong> : documentation architecturale pragmatique (Context, Containers, Components, Code)</li>
+  <li><strong>Architecture Decision Records (ADR)</strong> : documenter les décisions plutôt que les diagrammes</li>
+  <li><strong>Living Documentation</strong> : tests et code comme documentation</li>
+</ul>
+
+<h3 class="section-title">Évolutions et perspectives</h3>
+
+<p><strong>Domain-Driven Design (DDD)</strong> :
+Approche centrée sur le domaine métier. Utilise UML mais ajoute concepts (Entities, Value Objects, Aggregates, Repositories).</p>
+
+<p><strong>SysML</strong> :
+Extension UML pour ingénierie système (pas seulement logiciel). Utilisé en aéronautique, automobile, défense.</p>
+
+<p><strong>Outils modernes</strong> :</p>
+<ul>
+  <li>Génération automatique de diagrammes depuis le code (Doxygen, Javadoc UML)</li>
+  <li>Documentation as Code (PlantUML en Markdown, versioning Git)</li>
+  <li>Collaboration temps réel (Miro, Lucidchart, Figma pour UML)</li>
+</ul>
+
+<p><strong>Intelligence Artificielle</strong> :
+IA génératrice de diagrammes UML depuis descriptions textuelles, détection automatique de violations SOLID, suggestions de patterns.</p>
+
+<h3 class="section-title">Conseils pour réussir</h3>
+
+<p><strong>1. Pratiquer sur projets concrets</strong> :
+Modéliser des systèmes réels (e-commerce, réseau social, jeu) plutôt que des exercices abstraits.</p>
+
+<p><strong>2. Commencer simple</strong> :
+Débuter avec diagrammes de classes et séquence. Ajouter d’autres types selon les besoins.</p>
+
+<p><strong>3. Valider avec du code</strong> :
+Implémenter les designs pour vérifier leur cohérence et faisabilité.</p>
+
+<p><strong>4. Étudier du code open-source</strong> :
+Analyser l’architecture de projets populaires (Spring Framework, Apache Commons) pour voir SOLID et patterns en pratique.</p>
+
+<p><strong>5. Itérer</strong> :
+La conception n’est jamais parfaite du premier coup. Réviser et améliorer au fur et à mesure.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>Ce module fournit une méthodologie essentielle pour concevoir des systèmes logiciels robustes et maintenables. Au-delà de la syntaxe UML, ce sont les principes de conception objet (SOLID) et les patterns qui constituent l’apport majeur.</p>
+
+<p><strong>Compétences transférables</strong> :</p>
+<ul>
+  <li>Pensée architecturale et abstraite</li>
+  <li>Conception avant implémentation</li>
+  <li>Communication technique efficace</li>
+  <li>Code de qualité professionnelle</li>
+</ul>
+
+<p><strong>Pertinence professionnelle</strong> :
+En entreprise, la conception et documentation sont attendues, surtout pour projets critiques ou réglementés. Savoir modéliser et justifier ses choix d’architecture est un atout majeur.</p>
+
+<p><strong>Message principal</strong> :
+UML est un outil parmi d’autres. L’essentiel est de développer une démarche de conception structurée, applicable quel que soit le formalisme. Les principes SOLID et patterns sont universels et transcendent les langages et outils.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+  <li>Utiliser UML de manière pragmatique (éviter dogmatisme)</li>
+  <li>Privilégier les diagrammes qui apportent de la valeur</li>
+  <li>Maintenir documentation à jour (automatisation si possible)</li>
+  <li>Continuer à apprendre patterns avancés et architectures (microservices, event-driven)</li>
+  <li>Explorer DDD pour approfondir modélisation métier</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+  <li><a href="./programmation-cpp.html">Programmation Orientée Objets C++ - S7</a> : implémentation des concepts</li>
+  <li><a href="./programmation-java.html">Programmation Orientée Objets Java - S7</a> : application pratique</li>
+  <li><a href="./graphes-programmation-lineaire.html">Graphes et Programmation Linéaire - S8</a> : modélisation problèmes</li>
+</ul>
+
+<hr />
+
+<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Conception et Architectures</h4>
+      <p>Cours complet UML : diagrammes de classes, séquences, cas d'utilisation, patterns de conception et principes SOLID.</p>
+      <embed src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Conception-UML/cours-conception.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Sujet TD</h4>
+      <p>Travaux dirigés sur la conception orientée objet : modélisation de systèmes embarqués et architectures logicielles.</p>
+      <embed src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Conception-UML/td-sujet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><em>Cours suivi en 2023-2024 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-emails">
+        <ul class="contact-list">
+          <li><a class="u-email" href="mailto:cedric.chanfreau@gmail.com">cedric.chanfreau@gmail.com</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="social-links">
+          <ul class="social-media-list"><li>
+              <a href="https://github.com/CedricChnfr">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg>
+                <span class="username">CedricChnfr</span>
+              </a>
+            </li><li>
+              <a href="https://www.linkedin.com/in/cedricchanfreau">
+                <svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#linkedin"></use></svg>
+                <span class="username">cedricchanfreau</span>
+              </a>
+            </li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
+<div id="ai-chatbot-widget">
+    <!-- Bouton flottant en bas à droite -->
+    <button id="chatbot-toggle" class="chatbot-toggle-btn" aria-label="Ouvrir le chatbot">
+        <svg class="chatbot-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3 .97 4.29L2 22l5.71-.97C9 21.64 10.46 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.38 0-2.68-.31-3.86-.85l-.28-.13-2.89.49.49-2.89-.13-.28C4.31 14.68 4 13.38 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z"/>
+            <circle cx="9" cy="12" r="1.5"/>
+            <circle cx="15" cy="12" r="1.5"/>
+        </svg>
+    </button>
+    
+    <!-- Fenêtre de chat -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <!-- Header -->
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">🤖</div>
+                <div>
+                    <h3 class="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                </div>
+            </div>
+            <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <!-- Les messages seront ajoutés ici dynamiquement -->
+        </div>
+        
+        <!-- Input -->
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input"
+                placeholder="Posez votre question sur mon profil..."
+                autocomplete="off"
+            />
+            <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+/* === Bouton flottant === */
+.chatbot-toggle-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    z-index: 9998;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.chatbot-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.chatbot-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-icon {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 24px rgba(102, 126, 234, 0.6);
+    }
+}
+
+/* === Fenêtre de chat === */
+.chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 24px;
+    width: 400px;
+    height: 600px;
+    max-height: calc(100vh - 140px);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+}
+
+.chatbot-window.hidden {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    pointer-events: none;
+}
+
+/* === Header === */
+.chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.chatbot-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chatbot-avatar {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.chatbot-subtitle {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.chatbot-close-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.chatbot-close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.chatbot-close-btn svg {
+    color: white;
+}
+
+/* === Messages === */
+.chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chatbot-message {
+    display: flex;
+    gap: 10px;
+    animation: messageSlideIn 0.3s ease;
+}
+
+@keyframes messageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.chatbot-message.user .chatbot-message-avatar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.chatbot-message.ai .chatbot-message-avatar {
+    background: #e2e8f0;
+}
+
+.chatbot-message-content {
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 16px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.chatbot-message.user .chatbot-message-content {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-bottom-right-radius: 4px;
+}
+
+.chatbot-message.ai .chatbot-message-content {
+    background: white;
+    color: #2d3748;
+    border: 1px solid #e2e8f0;
+    border-bottom-left-radius: 4px;
+}
+
+/* === Formatage Markdown dans les messages === */
+.chatbot-message-content h1,
+.chatbot-message-content h2,
+.chatbot-message-content h3 {
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.chatbot-message-content .chat-h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #667eea;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 4px;
+}
+
+.chatbot-message-content .chat-h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #764ba2;
+}
+
+.chatbot-message-content .chat-h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.chatbot-message-content strong {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.chatbot-message-content em {
+    font-style: italic;
+}
+
+.chatbot-message-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s;
+}
+
+.chatbot-message-content a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+.chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.chatbot-message-content ol {
+    margin: 8px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.chatbot-message-content li {
+    margin: 4px 0;
+}
+
+.chatbot-message-content code {
+    background: #f1f3f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e53e3e;
+}
+
+.chatbot-message-content br {
+    line-height: 1.8;
+}
+
+.chatbot-loading {
+    display: flex;
+    gap: 4px;
+    padding: 12px 16px;
+}
+
+.chatbot-loading-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    animation: loadingPulse 1.4s infinite ease-in-out;
+}
+
+.chatbot-loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.chatbot-loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes loadingPulse {
+    0%, 80%, 100% {
+        opacity: 0.4;
+        transform: scale(0.8);
+    }
+    40% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* === Input === */
+.chatbot-input-container {
+    padding: 16px 20px;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    gap: 12px;
+    border-radius: 0 0 16px 16px;
+}
+
+.chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chatbot-input:focus {
+    border-color: #667eea;
+}
+
+.chatbot-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.chatbot-send-btn:hover {
+    transform: scale(1.05);
+}
+
+.chatbot-send-btn:active {
+    transform: scale(0.95);
+}
+
+.chatbot-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.chatbot-send-btn svg {
+    color: white;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .chatbot-window {
+        width: calc(100vw - 32px);
+        height: calc(100vh - 120px);
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .chatbot-toggle-btn {
+        bottom: 16px;
+        right: 16px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .chatbot-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-window {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        max-height: 100vh;
+    }
+    
+    .chatbot-header {
+        border-radius: 0;
+    }
+    
+    .chatbot-input-container {
+        border-radius: 0;
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Configuration - Appel direct à Ollama
+    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
+    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
+    
+    // Prompt système simplifié et optimisé
+    const SYSTEM_PROMPT = `Tu es l'assistant IA du portfolio de Cédric CHANFREAU. Tu réponds UNIQUEMENT aux questions sur son profil professionnel.
+
+# INFORMATIONS ESSENTIELLES (À UTILISER EXACTEMENT)
+
+**Identité**
+- Cédric CHANFREAU, 22 ans (né le 13/12/2002)
+- Toulouse, France
+- Email : cedric.chanfreau@gmail.com
+- Tel : +33 6 79 79 17 82
+- Portfolio : https://cedric.littlenuage.com/
+
+**Formation**
+- 2020-2025 : Ingénieur INSA Toulouse (Automatique & Électronique)
+- 2024-2025 : Master ENSEEIHT (Réseaux Embarqués & IoT)
+- Double diplôme Bac+5
+
+**Compétences principales**
+- Langages : C/C++, Python, VHDL, Java
+- Systèmes embarqués : ARM Cortex, microcontrôleurs, FPGA
+- IoT & Réseaux : protocoles industriels, Edge Computing
+- IA/ML : TensorFlow, Computer Vision, automation
+- Outils : Git, Docker, Linux, RTOS
+
+**Expérience**
+- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
+  → Développement firmware automotive, tests ISO 26262
+- 15+ projets académiques et personnels
+
+**Projets clés**
+- Robot autonome avec IA et contrôle moteur
+- Trottinette électrique connectée (IoT)
+- Application mobile Toulouse Sport (Flutter)
+- Système de détection objets par caméra
+- Portfolio web avec chatbot IA
+
+**Objectif**
+Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Secteurs : Automobile, Aéronautique, Robotique, IoT
+
+**Liens importants**
+- CV complet : https://cedric.littlenuage.com/file/CV_Cedric_Chanfreau_USA.pdf
+- Tous les projets : https://cedric.littlenuage.com/jekyll/update/2024/10/03/my-projects.html
+- GitHub : github.com/CedricChnfr
+- LinkedIn : linkedin.com/in/cedricchanfreau
+
+# RÈGLES DE RÉPONSE
+
+1. SCOPE : Tu réponds SEULEMENT aux questions sur Cédric. Si hors sujet → refuse poliment
+2. PRÉCISION : Utilise EXACTEMENT les infos ci-dessus (âge 22 ans, formations, compétences)
+3. CONCISION : Réponses courtes (2-4 phrases max), directes, factuelles
+4. LIENS : Propose toujours le portfolio pour + de détails : https://cedric.littlenuage.com/
+5. TON : Professionnel et accessible, pas d'exagération
+
+Question du recruteur :`;
+    
+    // État
+    let conversationHistory = [];
+    
+    // Éléments DOM
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatWindow = document.getElementById('chatbot-window');
+    const closeBtn = document.getElementById('chatbot-close');
+    const messagesContainer = document.getElementById('chatbot-messages');
+    const input = document.getElementById('chatbot-input');
+    const sendBtn = document.getElementById('chatbot-send');
+    
+    // Initialisation
+    function init() {
+        // Message de bienvenue
+        addMessage(
+            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
+            'ai'
+        );
+        
+        // Event listeners
+        toggleBtn.addEventListener('click', openChat);
+        closeBtn.addEventListener('click', closeChat);
+        sendBtn.addEventListener('click', sendMessage);
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    }
+    
+    // Ouvrir le chat
+    function openChat() {
+        chatWindow.classList.remove('hidden');
+        input.focus();
+    }
+    
+    // Fermer le chat
+    function closeChat() {
+        chatWindow.classList.add('hidden');
+    }
+    
+    // Ajouter un message
+    function addMessage(text, type) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${type}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = type === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'chatbot-message-content';
+        
+        // Formater le texte avec Markdown basique
+        if (type === 'ai') {
+            content.innerHTML = formatMarkdown(text);
+        } else {
+            content.textContent = text;
+        }
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        messagesContainer.appendChild(messageDiv);
+        
+        // Scroll vers le bas
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Formater le texte avec Markdown
+    function formatMarkdown(text) {
+        // Échapper le HTML
+        let html = text
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+        
+        // Titres
+        html = html.replace(/^### (.+)$/gm, '<h3 class="chat-h3">$1</h3>');
+        html = html.replace(/^## (.+)$/gm, '<h2 class="chat-h2">$1</h2>');
+        html = html.replace(/^# (.+)$/gm, '<h1 class="chat-h1">$1</h1>');
+        
+        // Gras
+        html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        
+        // Italique
+        html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+        
+        // Liens
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // URLs simples
+        html = html.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Listes à puces
+        html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+        
+        // Listes numérotées
+        html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+        
+        // Code inline
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        
+        // Sauts de ligne
+        html = html.replace(/\n\n/g, '<br><br>');
+        html = html.replace(/\n/g, '<br>');
+        
+        return html;
+    }
+    
+    // Afficher le chargement
+    function showLoading() {
+        const loadingDiv = document.createElement('div');
+        loadingDiv.className = 'chatbot-message ai';
+        loadingDiv.id = 'chatbot-loading';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'chatbot-message-avatar';
+        avatar.textContent = '🤖';
+        
+        const loading = document.createElement('div');
+        loading.className = 'chatbot-loading';
+        loading.innerHTML = `
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+            <div class="chatbot-loading-dot"></div>
+        `;
+        
+        loadingDiv.appendChild(avatar);
+        loadingDiv.appendChild(loading);
+        messagesContainer.appendChild(loadingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+    
+    // Retirer le chargement
+    function removeLoading() {
+        const loadingDiv = document.getElementById('chatbot-loading');
+        if (loadingDiv) {
+            loadingDiv.remove();
+        }
+    }
+    
+    // Envoyer un message
+    async function sendMessage() {
+        const message = input.value.trim();
+        
+        if (!message) return;
+        
+        // Désactiver l'input pendant l'envoi
+        input.disabled = true;
+        sendBtn.disabled = true;
+        
+        // Ajouter le message de l'utilisateur
+        addMessage(message, 'user');
+        input.value = '';
+        
+        // Afficher le chargement
+        showLoading();
+        
+        try {
+            // Construire le prompt avec historique
+            let fullPrompt = SYSTEM_PROMPT;
+            
+            // Ajouter l'historique de conversation pour le contexte
+            if (conversationHistory.length > 0) {
+                fullPrompt += '\n\n# Historique récent:\n';
+                conversationHistory.slice(-3).forEach(msg => {
+                    fullPrompt += `\nRecruteur: ${msg.user}\nAssistant: ${msg.ai}\n`;
+                });
+            }
+            
+            fullPrompt += `\n\n${message}`;
+            
+            // Appeler Ollama directement
+            const response = await fetch(OLLAMA_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    model: MODEL,
+                    prompt: fullPrompt,
+                    stream: false,
+                    options: {
+                        temperature: 0.3,
+                        top_p: 0.9,
+                        num_predict: 400
+                    }
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`Erreur HTTP: ${response.status}`);
+            }
+            
+            const data = await response.json();
+            
+            // Retirer le chargement
+            removeLoading();
+            
+            // Ajouter la réponse de l'IA
+            if (data.response) {
+                const aiResponse = data.response.trim();
+                addMessage(aiResponse, 'ai');
+                
+                // Sauvegarder dans l'historique
+                conversationHistory.push({
+                    user: message,
+                    ai: aiResponse
+                });
+                
+                // Garder seulement les 5 derniers échanges
+                if (conversationHistory.length > 5) {
+                    conversationHistory = conversationHistory.slice(-5);
+                }
+            } else {
+                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+            }
+            
+        } catch (error) {
+            console.error('Erreur:', error);
+            removeLoading();
+            addMessage(
+                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                'ai'
+            );
+        } finally {
+            // Réactiver l'input
+            input.disabled = false;
+            sendBtn.disabled = false;
+            input.focus();
+        }
+    }
+    
+    // Démarrer quand le DOM est prêt
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+</body>
+
+</html>
