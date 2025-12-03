@@ -410,7 +410,60 @@ Ces compétences sont applicables dans de nombreux secteurs:
 
 La maîtrise de ces outils, couplée à des compétences en data science et apprentissage automatique, ouvre des perspectives en data-driven optimization: utiliser données massives pour affiner modèles et prédictions, puis optimiser en conséquence.
 
-En conclusion, ce cours fournit des fondations solides en optimisation combinatoire et continue. C'est un domaine où mathématiques et applications pratiques se rencontrent de manière très concrète, avec impact direct et mesurable.
+Maîtriser ces techniques en S8 est essentiel pour tout ingénieur souhaitant concevoir ou améliorer des systèmes efficaces dans un monde toujours plus connecté et complex.
+
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Annales 2018</h4>
+      <p>Sujet d'examen 2018 : algorithmes de graphes (Dijkstra, Bellman-Ford), flots et programmation linéaire.</p>
+      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Correction Examen 2024</h4>
+      <p>Correction complète de l'examen 2024 avec explications détaillées des algorithmes et méthodes de résolution.</p>
+      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 TP Algorithme de Dijkstra</h4>
+      <p>Travaux pratiques : implémentation de Dijkstra pour recherche de plus court chemin dans différents graphes.</p>
+      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
 
 <style>
     body {

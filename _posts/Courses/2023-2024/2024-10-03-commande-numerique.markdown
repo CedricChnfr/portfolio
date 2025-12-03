@@ -469,6 +469,59 @@ L'avenir verra probablement:
 
 Avoir des bases solides en commande numérique classique est le prérequis pour comprendre et contribuer à ces évolutions futures.
 
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Polycopié Commande Numérique</h4>
+      <p>Cours complet : transformée en Z, échantillonnage, synthèse de correcteurs numériques et implémentation discrète.</p>
+      <embed src="/cours-pdf/S8/Commande-Numerique/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Commande-Numerique/polycopie.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Annales 2019</h4>
+      <p>Sujet d'examen 2019 avec exercices sur transformée en Z, stabilité et synthèse de correcteurs PID numériques.</p>
+      <embed src="/cours-pdf/S8/Commande-Numerique/annales-2019.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Commande-Numerique/annales-2019.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Correction 2019</h4>
+      <p>Correction détaillée de l'examen 2019 avec méthodes de résolution et explications complètes.</p>
+      <embed src="/cours-pdf/S8/Commande-Numerique/correction-2019.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Commande-Numerique/correction-2019.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
 <style>
     body {
         font-family: Arial, sans-serif;

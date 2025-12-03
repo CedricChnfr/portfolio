@@ -665,4 +665,57 @@ Chacun est acteur de la qualité, de la sécurité et de la protection de l'envi
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Ergonomie du Poste de Travail</h4>
+      <p>Guide sur l'ergonomie au bureau : posture, éclairage, aménagement et prévention des TMS.</p>
+      <embed src="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Accidents Électriques</h4>
+      <p>Prévention des risques électriques : accidents, habilitations, procédures de sécurité et premiers secours.</p>
+      <embed src="/cours-pdf/S6/QSE/accidents-electrique.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/QSE/accidents-electrique.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Dangers de l'Électricité</h4>
+      <p>Cours sur les risques électriques : contact direct/indirect, arc électrique, mesures de protection et normes.</p>
+      <embed src="/cours-pdf/S6/QSE/danger-electricite.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/QSE/danger-electricite.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Module suivi en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

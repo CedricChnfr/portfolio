@@ -597,4 +597,51 @@ Ce cours a fourni une base solide théorique (transformée en Z, stabilité) et 
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Sujet Examen 2023</h4>
+      <p>Énoncé de l'examen de Filtrage Numérique 2023 avec exercices sur FIR/IIR, transformée en Z et conception de filtres.</p>
+      <embed src="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" target="_blank">📥 Télécharger le sujet</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Correction Examen 2023</h4>
+      <p>Correction détaillée de l'examen avec les solutions complètes et explications des méthodes de conception.</p>
+      <embed src="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" target="_blank">📥 Télécharger la correction</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

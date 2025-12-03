@@ -408,7 +408,60 @@ L'avenir:
 - Vérification de systèmes cyber-physiques
 - IA et apprentissage: synthèse automatique de modèles depuis données
 
-En conclusion, les réseaux de Pétri sont un outil puissant et rigoureux pour les systèmes à événements discrets. Bien que mathématiquement exigeants, ils fournissent des garanties formelles précieuses. Dans un monde où la complexité des systèmes croît, les méthodes formelles comme les réseaux de Pétri deviennent de plus en plus importantes pour assurer sûreté et fiabilité.
+En conclusion, les réseaux de Pétri sont un formalisme puissant pour modéliser, analyser et vérifier des systèmes à événements discrets. Ils complètent les automates et les langages de description (GRAFCET, Statecharts) en offrant une sémantique mathématique rigoureuse et des outils d'analyse formelle. Ils restent utilisés en recherche et dans l'industrie pour les systèmes critiques.
+
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet Réseaux de Pétri</h4>
+      <p>Cours complet : modélisation, propriétés structurelles et comportementales, analyse de vivacité et blocage.</p>
+      <embed src="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Examen 2023</h4>
+      <p>Sujet d'examen 2023 : construction de réseaux, calcul d'invariants, analyse de blocage et synthèse.</p>
+      <embed src="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Correction 2023</h4>
+      <p>Correction complète de l'examen 2023 avec méthodes d'analyse et explications détaillées.</p>
+      <embed src="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
 
 <style>
     body {

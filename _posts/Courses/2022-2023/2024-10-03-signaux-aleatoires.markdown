@@ -776,4 +776,63 @@ L'aléatoire n'est pas l'ennemi de l'ingénieur. Avec les bons outils (probabili
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Chapitre I - Probabilités</h4>
+      <p>Introduction aux probabilités : espérances mathématiques, axiomes, probabilités conditionnelles et théorème de Bayes.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre II - Variables Aléatoires</h4>
+      <p>Variables aléatoires discrètes et continues : lois de probabilité, moments, fonction caractéristique et espérance.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre III - Processus Stochastiques</h4>
+      <p>Processus aléatoires : stationnarité, ergodicité, autocorrélation et propriétés des processus stationnaires.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre IV - Analyse Spectrale</h4>
+      <p>Densité spectrale de puissance (DSP), théorème de Wiener-Khintchine et filtrage linéaire des processus aléatoires.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

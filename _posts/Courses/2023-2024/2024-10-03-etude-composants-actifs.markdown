@@ -789,6 +789,59 @@ Les transistors sont les briques de base de toute l'électronique moderne. Compr
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet EMCA 2023-2024</h4>
+      <p>Cours complet d'étude et modélisation des composants actifs : diodes, BJT, MOSFET et amplificateurs.</p>
+      <embed src="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre 1 - Diodes</h4>
+      <p>Modélisation physique et électrique des diodes : jonction PN, caractéristique I-V, modèles petits signaux.</p>
+      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre 2 - Transistors Bipolaires</h4>
+      <p>Étude des transistors BJT : principe de fonctionnement, modèles Ebers-Moll et hybride-π, polarisation.</p>
+      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
 
 <div class="back-nav">

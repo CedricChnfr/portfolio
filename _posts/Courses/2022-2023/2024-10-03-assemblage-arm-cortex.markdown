@@ -753,4 +753,63 @@ L'architecture ARM Cortex-M est omniprésente dans les systèmes embarqués mode
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Séquence 1 - Introduction ARM</h4>
+      <p>Introduction à l'architecture ARM Cortex-M, registres, jeu d'instructions de base et organisation mémoire.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Séquence 2 - Instructions ARM</h4>
+      <p>Jeu d'instructions ARM complète : arithmétique, logique, branchements, et modes d'adressage.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Séquence 3 - Fonctions et Pile</h4>
+      <p>Convention d'appel AAPCS, gestion de la pile, prologue/épilogue de fonctions et passage de paramètres.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Référence Jeu d'Instructions</h4>
+      <p>Tableau synthétique complet du jeu d'instructions ARM Cortex-M avec syntaxe et exemples.</p>
+      <embed src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

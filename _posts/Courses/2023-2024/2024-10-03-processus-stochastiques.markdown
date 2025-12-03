@@ -417,7 +417,60 @@ L'explosion du trafic Internet et du cloud a renouvelé l'intérêt pour ces th�
 Le lien avec l'IA:
 Le Machine Learning peut prédire les arrivées (λ variable dans le temps) et adapter dynamiquement les ressources. Combiner modèles stochastiques classiques avec apprentissage automatique est une voie prometteuse.
 
-En conclusion, ce cours fournit des bases solides pour analyser et optimiser des systèmes stochastiques. Les compétences développées sont applicables dans de nombreux domaines où l'aléa et la congestion sont présents. C'est un outil précieux dans la boîte à outils de l'ingénieur.
+En conclusion, ce cours sur les processus stochastiques et files d'attente fournit des outils puissants pour modéliser et analyser l'incertitude, les dépendances temporelles et les performances des systèmes. C'est une complémentation essentielle aux cours de signal (aléatoire) et un prérequis pour comprendre beaucoup de problèmes d'ingénierie réels.
+
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Polycopié Processus Stochastiques</h4>
+      <p>Cours complet : chaînes de Markov, processus de Poisson, files d'attente et analyse de performance.</p>
+      <embed src="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chaînes de Markov à Temps Discret</h4>
+      <p>DTMC : matrices de transition, probabilités stationnaires, classification d'états et ergodicité.</p>
+      <embed src="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Théorie des Files d'Attente</h4>
+      <p>Modèles M/M/1, M/M/c, formules de Little, temps d'attente, taux d'occupation et optimisation.</p>
+      <embed src="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
 
 <style>
     body {

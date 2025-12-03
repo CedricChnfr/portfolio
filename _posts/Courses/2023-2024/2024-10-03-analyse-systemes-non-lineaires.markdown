@@ -673,4 +673,63 @@ Les systèmes non linéaires ne sont pas des versions compliquées de systèmes 
 
 ---
 
-*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.**Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Chapitre 1 - Introduction</h4>
+      <p>Introduction aux systèmes non linéaires : exemples, limites des approches linéaires et présentation des outils d'analyse.</p>
+      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre1.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre1.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre 2 - Plans de Phase</h4>
+      <p>Méthode du plan de phase : points d'équilibre, trajectoires, portrait de phase et analyse géométrique de la stabilité.</p>
+      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre2.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre2.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Chapitre 3 - Méthode de Lyapunov</h4>
+      <p>Théorie de Lyapunov : fonctions de Lyapunov, critères de stabilité et méthode directe pour l'analyse de stabilité.</p>
+      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre3.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre3.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Annales 2023</h4>
+      <p>Sujet d'examen 2023 avec exercices sur la stabilité, méthode de Lyapunov et cycles limites.</p>
+      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/annales-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/annales-2023.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
+*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

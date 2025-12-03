@@ -609,4 +609,97 @@ En conclusion, ce cours fournit les bases essentielles pour comprendre comment l
         border-radius: 5px;
         overflow-x: auto;
     }
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        margin-top: 0;
+        color: #2a7ae2;
+        border-bottom: 2px solid #2a7ae2;
+        padding-bottom: 10px;
+    }
 </style>
+
+---
+
+## 📚 Documents de Cours
+
+Voici les supports de cours en PDF pour approfondir l'architecture informatique matérielle :
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Introduction aux Architectures</h4>
+      <p>Vue d'ensemble des architectures informatiques, évolution historique et concepts fondamentaux.</p>
+      <embed src="/cours-pdf/S5/Architecture-Info/introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Architecture-Info/introduction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>💾 Mémoire Physique</h4>
+      <p>Organisation de la mémoire physique, types de mémoires (RAM, ROM, Flash) et hiérarchie mémoire.</p>
+      <embed src="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🗺️ Mémoire Virtuelle</h4>
+      <p>Gestion de la mémoire virtuelle, pagination, segmentation et traduction d'adresses.</p>
+      <embed src="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>⚡ Mémoires Caches</h4>
+      <p>Fonctionnement des caches, politiques de remplacement, cohérence des caches et optimisation des performances.</p>
+      <embed src="/cours-pdf/S5/Architecture-Info/caches.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Architecture-Info/caches.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🖥️ Processeur</h4>
+      <p>Architecture du processeur, pipeline, parallélisme d'instructions et optimisations matérielles.</p>
+      <embed src="/cours-pdf/S5/Architecture-Info/processeur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Architecture-Info/processeur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---

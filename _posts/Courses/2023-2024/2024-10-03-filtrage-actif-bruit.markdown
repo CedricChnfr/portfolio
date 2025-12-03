@@ -839,6 +839,59 @@ Le filtrage analogique reste indispensable malgré l'essor du numérique (condit
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Filtrage Actif</h4>
+      <p>Cours complet sur le filtrage actif : structures Sallen-Key, Rauch, topologies d'ordre supérieur et synthèse de filtres.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Bruit dans les AOP</h4>
+      <p>Modélisation des sources de bruit dans les amplificateurs opérationnels : bruit thermique, flicker, calcul du bruit total.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Structure Sallen-Key</h4>
+      <p>Cours sur la topologie Sallen-Key : principe, conception, sensibilité aux composants et réalisation pratique.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
 
 <div class="back-nav">

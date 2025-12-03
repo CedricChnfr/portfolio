@@ -1075,4 +1075,64 @@ Unix s'intègre parfaitement avec:
                 border-radius: 5px;
                 overflow-x: auto;
         }
+        .pdf-container {
+                margin: 40px 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+        }
+        .pdf-viewer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 20px;
+        }
+        .pdf-item {
+                flex: 1;
+                min-width: 400px;
+                background: white;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pdf-item h4 {
+                margin-top: 0;
+                color: #2a7ae2;
+                border-bottom: 2px solid #2a7ae2;
+                padding-bottom: 10px;
+        }
 </style>
+
+---
+
+## 📚 Documents de Cours
+
+Voici les supports de cours en PDF pour approfondir le système Unix :
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Unix Complet</h4>
+      <p>Guide complet du système Unix, commandes shell, scripts Bash, gestion de processus et administration système.</p>
+      <embed src="/cours-pdf/S5/Unix/unix-cours.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Unix/unix-cours.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📝 Mémo Commandes Unix</h4>
+      <p>Aide-mémoire pratique des commandes Unix/Linux les plus utilisées pour la ligne de commande et les scripts.</p>
+      <embed src="/cours-pdf/S5/Unix/memo.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Unix/memo.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---

@@ -704,6 +704,59 @@ La sécurité est un processus, pas un produit. Il faut constamment évaluer, te
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet</h4>
+      <p>Cours complet de sécurité matérielle : attaques par canaux cachés, buffer overflow, vulnérabilités Spectre/Meltdown.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Buffer Overflow</h4>
+      <p>Cours sur les attaques par dépassement de tampon : exploitation, stack smashing, protections et contre-mesures.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 TP Cache Side-Channel Attack</h4>
+      <p>Sujet de TP sur les attaques par canaux cachés via cache : timing attacks, Flush+Reload et expérimentations.</p>
+      <embed src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
 
 <div class="back-nav">

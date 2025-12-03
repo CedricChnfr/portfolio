@@ -20,3 +20,7 @@ categories: jekyll update
 # 2023
 
 - ## [🎨 3D Modeling](./3D-modeling.html)
+
+# 2022
+
+- ## [🔌 Arduino Projects](./Arduino-Projects.html)

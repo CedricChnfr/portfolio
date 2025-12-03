@@ -1146,6 +1146,47 @@ Pour un ingénieur entrepreneur, ces connaissances sont cruciales pour:
 
 En conclusion, ce cours élargit la perspective de l'ingénieur au-delà du technique pour embrasser la dimension économique, essentielle à la pérennité de tout projet.
 
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours de Finance</h4>
+      <p>Cours complet de finance d'entreprise : marchés financiers, valorisation d'actifs, MEDAF, options et gestion de portefeuille.</p>
+      <embed src="/cours-pdf/S7/Finance/cours-finance.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
 <style>
     body {
         font-family: Arial, sans-serif;

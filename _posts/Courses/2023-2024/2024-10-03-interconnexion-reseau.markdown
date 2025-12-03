@@ -1278,6 +1278,53 @@ L'automatisation des réseaux (via Python, Ansible, APIs) transforme le métier.
 
 En conclusion, ce cours fournit des bases solides sur les protocoles et architectures réseau. C'est un domaine en évolution constante, nécessitant veille technologique et formation continue. Mais les fondamentaux (TCP/IP, routage, commutation) restent pertinents et constituent la base pour comprendre les innovations futures.
 
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet Interconnexion Réseaux</h4>
+      <p>Cours complet sur les architectures réseaux : routage, protocoles (RIP, OSPF, BGP), VLAN, qualité de service.</p>
+      <embed src="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Travaux Dirigés</h4>
+      <p>TD : exercices de configuration routeurs, analyse de trames, déploiement VLAN et dépannage réseau.</p>
+      <embed src="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
 <style>
     body {
         font-family: Arial, sans-serif;

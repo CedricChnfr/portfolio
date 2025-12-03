@@ -429,6 +429,59 @@ Ces techniques sont applicables dans de nombreux domaines:
 
 La maîtrise de ces outils est un atout majeur pour concevoir des systèmes de commande performants et robustes. Couplée avec des compétences en traitement du signal, estimation, et optimisation, elle ouvre la voie à des carrières en R&D ou ingénierie avancée dans l'automatique et les systèmes embarqués.
 
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Polycopié Cours</h4>
+      <p>Cours complet sur les systèmes multivariables : représentation d'état, commandabilité, observabilité et synthèse de correcteurs.</p>
+      <embed src="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Annales 2022</h4>
+      <p>Sujet d'examen 2022 avec exercices sur représentation d'état, stabilité et commande multivariable.</p>
+      <embed src="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Correction Annales 2022</h4>
+      <p>Correction détaillée de l'examen 2022 avec explications complètes des méthodes et résultats.</p>
+      <embed src="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
 <style>
     body {
         font-family: Arial, sans-serif;

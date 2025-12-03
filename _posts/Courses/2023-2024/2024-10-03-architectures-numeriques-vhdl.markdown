@@ -882,6 +882,51 @@ VHDL et les FPGA offrent un contrôle total sur le matériel, permettant des per
 
 ---
 
-*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours VHDL Complet</h4>
+      <p>Cours complet de VHDL : syntaxe, processus, machines à états, simulation et synthèse pour FPGA.</p>
+      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Projet Processeur RISC</h4>
+      <p>Sujet du projet BE : conception d'un microprocesseur RISC en VHDL avec ALU, banc de registres et mémoire.</p>
+      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
 
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

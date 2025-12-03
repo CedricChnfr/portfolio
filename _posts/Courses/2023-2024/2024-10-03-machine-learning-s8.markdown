@@ -432,7 +432,60 @@ L'avenir:
 - **Explainable AI**: rendre modèles interprétables
 - **Quantum ML**: exploiter ordinateurs quantiques
 
-En conclusion, ce cours fournit des fondations solides en Machine Learning. C'est un domaine vaste et en évolution rapide. La formation continue (MOOCs, papers, compétitions Kaggle) est nécessaire pour rester à jour. Mais les concepts fondamentaux (biais-variance, validation, optimisation) restent pertinents et sont la base pour explorer les avancées futures.
+Ces bases en Machine Learning nous permettent de concevoir des systèmes plus "intelligents", capables d'apprendre et de s'adapter, une compétence devenue essentielle dans presque tous les domaines de l'ingénierie moderne.
+
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet Machine Learning</h4>
+      <p>Cours complet : apprentissage supervisé/non-supervisé, réseaux de neurones, arbres de décision, SVM et métriques.</p>
+      <embed src="/cours-pdf/S8/Machine-Learning/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Machine-Learning/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Perceptron & Réseaux de Neurones</h4>
+      <p>Slides sur le perceptron : modèle linéaire, fonction d'activation, règle d'apprentissage et limitations.</p>
+      <embed src="/cours-pdf/S8/Machine-Learning/perceptron.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Machine-Learning/perceptron.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Réseaux de Neurones Profonds</h4>
+      <p>Architectures multicouches, rétropropagation, fonctions d'activation avancées et techniques d'optimisation.</p>
+      <embed src="/cours-pdf/S8/Machine-Learning/neural-networks.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Machine-Learning/neural-networks.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
 
 <style>
     body {

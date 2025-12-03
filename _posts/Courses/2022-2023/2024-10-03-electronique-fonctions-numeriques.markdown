@@ -488,4 +488,63 @@ Ce cours a fourni une base solide en I2C et SPI, avec une approche pratique sur 
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Protocole I2C</h4>
+      <p>Cours complet sur le bus I2C : principe de fonctionnement, adressage, trame de communication et implémentation.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Protocole SPI</h4>
+      <p>Cours sur le bus SPI : principe maître-esclave, sélection de périphérique, modes d'horloge et communication full-duplex.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Low Power Design</h4>
+      <p>Techniques d'optimisation de la consommation : modes de veille, clock gating, gestion d'énergie dans les microcontrôleurs.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Microcontrôleur, Horloge et DMA</h4>
+      <p>Architecture des microcontrôleurs : gestion des horloges système et accès direct mémoire (DMA) pour performances optimales.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

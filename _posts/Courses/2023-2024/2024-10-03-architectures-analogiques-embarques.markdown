@@ -646,4 +646,51 @@ Les circuits commandés en tension apportent de la flexibilité et de l'adaptabi
 
 ---
 
-*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.**Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Sujet Bureau d'Études</h4>
+      <p>Sujet complet du BE : conception d'un modulateur et filtre commandés en tension avec TINA et Altium Designer.</p>
+      <embed src="/cours-pdf/S7/Archi-Analogiques-Embarques/sujet-be.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Analogiques-Embarques/sujet-be.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 TD1 - Gain Commandé en Tension</h4>
+      <p>TD sur la conception d'amplificateurs à gain variable commandé en tension (VCA) avec OTA et circuits intégrés.</p>
+      <embed src="/cours-pdf/S7/Archi-Analogiques-Embarques/td1-gain-commande.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Analogiques-Embarques/td1-gain-commande.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
+*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

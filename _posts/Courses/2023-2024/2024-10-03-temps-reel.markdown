@@ -500,7 +500,48 @@ L'avenir:
 
 Les compétences en temps réel resteront critiques. Même avec processeurs plus rapides, les applications deviennent plus complexes et exigeantes.
 
-En conclusion, ce cours fournit les fondamentaux pour concevoir des systèmes respectant des contraintes temporelles strictes. C'est une discipline rigoureuse, mêlant théorie mathématique et contraintes pratiques. Les compétences développées sont essentielles pour de nombreux domaines de l'ingénierie moderne où le temps n'est pas qu'une dimension à optimiser mais une contrainte à garantir.
+En conclusion, ce cours sur les systèmes temps réel fournit les bases essentielles pour concevoir des systèmes embarqués fiables respectant des contraintes temporelles strictes. C'est un domaine exigeant, combinant théorie (ordonnancement) et pratique (RTOS, Xenomai), crucial dans de nombreux secteurs industriels.
+
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Polycopié Xenomai</h4>
+      <p>Guide complet sur Xenomai : installation, APIs temps réel, tâches périodiques, synchronisation et débogage.</p>
+      <embed src="/cours-pdf/S8/Temps-Reel/polycopie-xenomai.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Temps-Reel/polycopie-xenomai.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
 
 <style>
     body {

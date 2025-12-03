@@ -918,3 +918,60 @@ Vers plus de:
                 overflow-x: auto;
         }
 </style>
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Introduction à l'Assembleur</h4>
+      <p>Cours complet sur les langages assembleurs, leur rôle et leur utilisation dans l'architecture des processeurs.</p>
+      <embed src="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Comparaison ARM vs x86</h4>
+      <p>Étude comparative des architectures ARM et x86/x64 : instructions, registres, conventions d'appel et performances.</p>
+      <embed src="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Introduction aux Attaques Matérielles</h4>
+      <p>Présentation des vulnérabilités matérielles et des attaques par canaux cachés (Spectre, Meltdown, timing attacks).</p>
+      <embed src="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Attaques par Consommation Énergétique</h4>
+      <p>Analyse détaillée des attaques SPA et DPA sur circuits cryptographiques via l'analyse de consommation électrique.</p>
+      <embed src="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>

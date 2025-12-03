@@ -898,6 +898,53 @@ UML est un outil parmi d'autres. L'essentiel est de développer une démarche de
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Conception et Architectures</h4>
+      <p>Cours complet UML : diagrammes de classes, séquences, cas d'utilisation, patterns de conception et principes SOLID.</p>
+      <embed src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Conception-UML/cours-conception.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Sujet TD</h4>
+      <p>Travaux dirigés sur la conception orientée objet : modélisation de systèmes embarqués et architectures logicielles.</p>
+      <embed src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Conception-UML/td-sujet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
 
 <div class="back-nav">

@@ -743,4 +743,109 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
 
 ---
 
+## 📚 Documents de Cours
+
+Voici les supports de cours en PDF pour approfondir la programmation des microcontrôleurs STM32 :
+
+<style>
+        .pdf-container {
+                margin: 40px 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+        }
+        .pdf-viewer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 20px;
+        }
+        .pdf-item {
+                flex: 1;
+                min-width: 400px;
+                background: white;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pdf-item h4 {
+                margin-top: 0;
+                color: #2a7ae2;
+                border-bottom: 2px solid #2a7ae2;
+                padding-bottom: 10px;
+        }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>🔧 STM32 - Structures et Registres</h4>
+      <p>Guide complet des structures C pour l'accès aux registres du STM32, configuration et utilisation des périphériques.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📌 GPIO - Entrées/Sorties</h4>
+      <p>Configuration des GPIO, modes d'entrée/sortie, pull-up/pull-down et manipulation des broches avec pointeurs.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/gpio.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/gpio.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>⚡ Interruptions</h4>
+      <p>Gestion des interruptions, NVIC, priorités, handlers et bonnes pratiques de programmation temps réel.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/interruptions.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/interruptions.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>⏱️ Timers</h4>
+      <p>Configuration et utilisation des timers pour génération de délais, comptage d'événements et mesures temporelles.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/timers.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/timers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🌊 PWM - Modulation de Largeur d'Impulsion</h4>
+      <p>Génération de signaux PWM pour commande de moteurs, LEDs et variation d'intensité avec les timers.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/pwm.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/pwm.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📊 ADC - Convertisseur Analogique-Numérique</h4>
+      <p>Configuration de l'ADC, acquisition de signaux analogiques, modes de déclenchement et utilisation avec DMA.</p>
+      <embed src="/cours-pdf/S6/Microcontroleur/adc.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S6/Microcontroleur/adc.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

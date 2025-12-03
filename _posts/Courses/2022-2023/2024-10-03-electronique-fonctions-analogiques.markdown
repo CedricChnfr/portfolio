@@ -392,4 +392,51 @@ Ce cours a permis de comprendre les subtilités des circuits analogiques réels,
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 TD Correction</h4>
+      <p>Correction des travaux dirigés sur les amplificateurs opérationnels et les filtres actifs avec méthodes détaillées.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 TP1 - Mesure Défauts AOP</h4>
+      <p>Sujet du TP sur la mesure des défauts réels des amplificateurs opérationnels : offset, bande passante, slew-rate.</p>
+      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

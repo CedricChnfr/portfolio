@@ -1231,5 +1231,76 @@ En conclusion, ce cours fournit les fondations indispensables pour concevoir des
     tr:nth-child(even) {
         background-color: #f9f9f9;
     }
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        margin-top: 0;
+        color: #2a7ae2;
+        border-bottom: 2px solid #2a7ae2;
+        padding-bottom: 10px;
+    }
 </style>
+
+---
+
+## 📚 Documents de Cours
+
+Voici les supports de cours en PDF pour approfondir les différents aspects de l'électronique numérique :
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Technologie des Circuits Logiques</h4>
+      <p>Document détaillant les technologies TTL et CMOS, leurs caractéristiques électriques, et les méthodes d'interfaçage.</p>
+      <embed src="/cours-pdf/S5/Elec-Num/Technologie-circuits-logiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Elec-Num/Technologie-circuits-logiques.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>⏱️ Chronogrammes et Compteurs</h4>
+      <p>Analyse des chronogrammes de compteurs synchrones et asynchrones avec exemples pratiques de conception.</p>
+      <embed src="/cours-pdf/S5/Elec-Num/chronogrammes-compteur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Elec-Num/chronogrammes-compteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>🔄 TD Convertisseurs ADC/DAC</h4>
+      <p>Travaux dirigés sur les convertisseurs analogique-numérique et numérique-analogique avec exercices d'application.</p>
+      <embed src="/cours-pdf/S5/Elec-Num/TD-IMACS-NUM-CAN.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Elec-Num/TD-IMACS-NUM-CAN.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
 

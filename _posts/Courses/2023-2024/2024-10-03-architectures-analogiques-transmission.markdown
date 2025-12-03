@@ -740,4 +740,57 @@ Comprendre les architectures RF analogiques est fondamental pour tout ingénieur
 
 ---
 
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Cours Complet</h4>
+      <p>Cours complet sur les architectures RF : oscillateurs, PLL, mélangeurs, modulation/démodulation AM et FM.</p>
+      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Modulation et Démodulation FM</h4>
+      <p>Cours détaillé sur la modulation de fréquence : VCO, discriminateurs, détecteurs de phase et applications.</p>
+      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Recueil TDs</h4>
+      <p>Ensemble des travaux dirigés avec exercices sur oscillateurs, PLL, mélangeurs et chaînes RF complètes.</p>
+      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

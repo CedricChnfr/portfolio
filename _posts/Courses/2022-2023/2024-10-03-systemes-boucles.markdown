@@ -695,4 +695,75 @@ Ce cours prépare à:
                 border-radius: 5px;
                 overflow-x: auto;
         }
+        .pdf-container {
+                margin: 40px 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+        }
+        .pdf-viewer {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin-top: 20px;
+        }
+        .pdf-item {
+                flex: 1;
+                min-width: 400px;
+                background: white;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .pdf-item h4 {
+                margin-top: 0;
+                color: #2a7ae2;
+                border-bottom: 2px solid #2a7ae2;
+                padding-bottom: 10px;
+        }
 </style>
+
+---
+
+## 📚 Documents de Cours
+
+Voici les supports de cours en PDF pour approfondir les systèmes bouclés :
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Chapitre 1 - Fondamentaux</h4>
+      <p>Introduction aux systèmes bouclés, concepts de base de l'automatique et premières notions de commande.</p>
+      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📊 Chapitre 2 - Analyse et Synthèse</h4>
+      <p>Analyse fréquentielle, stabilité, marges de gain et de phase, méthodes de synthèse de correcteurs.</p>
+      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    
+    <div class="pdf-item">
+      <h4>📈 Chapitre 3 - Diagrammes de Bode</h4>
+      <p>Tracé et analyse des diagrammes de Bode, identification de systèmes et réglage de correcteurs.</p>
+      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---

@@ -1205,6 +1205,59 @@ Le domaine évolue rapidement avec:
 
 Maîtriser les fondamentaux de l'acquisition permet de s'adapter à ces évolutions tout en gardant une compréhension profonde des principes physiques sous-jacents.
 
+---
+
+## 📚 Documents de Cours
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>📖 Conditionneur de Signaux</h4>
+      <p>Cours sur le conditionnement de signaux : amplification, filtrage, adaptation d'impédance et préparation pour conversion.</p>
+      <embed src="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Convertisseurs Analogique-Numérique</h4>
+      <p>Cours sur les CAN : architectures (flash, SAR, sigma-delta), performances (résolution, vitesse, SNR) et choix.</p>
+      <embed src="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>📖 Capteurs Numériques</h4>
+      <p>Mise en œuvre de capteurs numériques : protocoles I2C/SPI, configuration, calibration et exploitation des données.</p>
+      <embed src="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" target="_blank">📥 Télécharger</a></p>
+    </div>
+  </div>
+</div>
+
 <style>
     body {
         font-family: Arial, sans-serif;
