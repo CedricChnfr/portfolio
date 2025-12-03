@@ -193,9 +193,6 @@ categories: jekyll update
 ### [💼 Culture, Expression, Communication (CEC)](./cec-s2.html)
 **Contenu**: Communication professionnelle avancée, projet tuteuré.
 
-### [🚁 Projet Tuteuré: Quadracopter](./projet-quadracopter.html)
-**Contenu**: Projet de groupe sur la conception d'un quadricoptère.
-
 ### [🎨 Coloration ENOC](./coloration-enoc.html)
 **Contenu**: Module de spécialisation choisi.
 

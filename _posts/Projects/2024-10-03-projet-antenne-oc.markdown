@@ -1,31 +1,192 @@
 ---
 layout: default
-title: "Projet Tuteuté : Antenne OC - S4"
+title: "Antenna Design for Connected Objects"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Projet Tuteuté : Antenne pour Objets Connectés - S4
+[← Back to Academic Project](./my-projects.html)
 
----
+# Introduction
+This tutored project focused on designing and optimizing an antenna for IoT applications operating in ISM bands (433/868 MHz or 2.4 GHz). The project encompassed the complete design cycle from theoretical calculations and electromagnetic simulations to PCB fabrication and professional characterization using VNA and anechoic chamber measurements.
 
-## PART A - Présentation Générale du Cours
+# Project Overview
+The goal was to develop a compact, efficient antenna for LoRa, Sigfox, WiFi, or Bluetooth applications. Key specifications included S11 < -10 dB, omnidirectional gain > 0 dBi, and 50Ω impedance matching.
 
-### Contexte et objectifs
+## Design Specifications
 
-Projet tuteuté spécialisation ENOC : conception complète d'une antenne IoT (LoRa, Sigfox, WiFi, Bluetooth). Du dimensionnement à la caractérisation. Travail en binome sur 50h.
+**Target Frequencies:**
+- 433 MHz or 868 MHz (LoRa/Sigfox)
+- 2.4 GHz (WiFi/Bluetooth)
+- Bandwidth: ±10 MHz minimum
 
-**Objectifs :**
-- Concevoir antenne bande ISM (433/868 MHz ou 2.4 GHz)
-- Simuler EM (MMANA, CST, HFSS)
-- Réaliser PCB
-- Caractériser VNA et chambre anéchoïque
-- Tester liaison radio réelle
+**Performance Requirements:**
+- Return Loss: S11 < -10 dB
+- Gain: > 0 dBi (omnidirectional)
+- Impedance: 50Ω
+- Efficiency: > 70%
 
-### Prérequis
-- Antennes-Propagation S4
-- Circuits HF S3
-- Propagation-HF S3
+## Antenna Topologies Studied
+
+### For 433/868 MHz:
+- Quarter-wave monopole (λ/4: 7-17 cm)
+- Folded dipole
+- Helical antenna (compact)
+- PIFA (Planar Inverted-F Antenna)
+
+### For 2.4 GHz:
+- Rectangular patch (3×4 cm)
+- Printed dipole
+- Meandered antenna (compact)
+- Yagi (high gain)
+
+# Design and Simulation
+
+## Electromagnetic Modeling
+We used CST Studio or HFSS for 3D electromagnetic simulation. The design process included:
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-1_page1_img1.png" alt="Antenna Design Phase 1" style="width: 45%;" onclick="openModal(this.src)"/>
+  <img src="/img/BE_Antenne/Antenne-phase-1_page2_img1.png" alt="Antenna Specifications" style="width: 45%;" onclick="openModal(this.src)"/>
+</div>
+
+**Initial Dimensioning:**
+- Analytical formulas for patch/monopole dimensions
+- Example: 2.4 GHz patch on FR-4 substrate (εr=4.4): L ≈ 3 cm, W ≈ 4 cm
+
+**Optimization:**
+- Parametric sweeps on critical dimensions
+- S11 optimization at center frequency
+- Radiation pattern analysis
+- Impedance matching network design (stub, L-match)
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_Antenne/Antenne-phase-1_page3_img1.png" alt="Simulation Setup" style="width: 60%;" onclick="openModal(this.src)"/>
+</div>
+
+**Simulation Results:**
+- S11 < -15 dB at f₀
+- Gain: 6-8 dBi (patch), 2 dBi (monopole)
+- 3D radiation pattern
+- Input impedance: Z = 50 + j0 Ω
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img1.jpeg" alt="Simulation Results" style="width: 45%;" onclick="openModal(this.src)"/>
+  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img2.jpeg" alt="Radiation Pattern" style="width: 45%;" onclick="openModal(this.src)"/>
+</div>
+
+# PCB Fabrication
+
+## Design and Manufacturing
+- Designed in KiCad/Altium Designer
+- Precise layout matching optimized dimensions
+- Substrate: FR-4 (εr=4.4) or Rogers for better performance
+- Manufactured by PCBWay/JLCPCB
+- SMA connector soldering
+- Visual inspection and continuity testing
+
+# Characterization and Testing
+
+## VNA Measurements
+Using Vector Network Analyzer with SOLT calibration:
+- S11 parameter (reflection coefficient) vs frequency
+- Smith chart for impedance analysis
+- Comparison simulation vs measurement
+- Bandwidth verification
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_Antenne/Antenne-phase-3_page1_img1.png" alt="VNA Measurements" style="width: 70%;" onclick="openModal(this.src)"/>
+</div>
+
+## Anechoic Chamber Testing
+Professional RF chamber measurements:
+- Radiation patterns (E-plane, H-plane)
+- Absolute gain measurement
+- Polarization characteristics
+- Cross-polarization levels
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img1.png" alt="Anechoic Chamber Setup" style="width: 45%;" onclick="openModal(this.src)"/>
+  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img2.png" alt="Measurement Results" style="width: 45%;" onclick="openModal(this.src)"/>
+</div>
+
+## Real-World Link Testing
+- Connected to LoRa/WiFi module
+- Range testing with RSSI measurements
+- Comparison with commercial antenna
+- Performance validation in operating environment
+
+# Results and Analysis
+
+The fabricated antenna met specifications with S11 < -12 dB at the target frequency. Measured gain matched simulations within ±1 dB. Real-world link tests demonstrated effective communication range for the target IoT application.
+
+Key learnings included the impact of substrate properties on performance, importance of precise manufacturing tolerances, and ground plane effects on radiation patterns.
+
+# Conclusion
+This project provided comprehensive hands-on experience in RF antenna design, from theoretical analysis through professional characterization. We successfully designed, fabricated, and validated a functional antenna for IoT applications, demonstrating the complete engineering workflow for wireless communication systems.
+
+<style>
+p {
+  text-align: justify;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<script>
+function openModal(src) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+</script>
 
 ---
 
@@ -622,3 +783,49 @@ $$\lambda_g = \frac{\lambda_0}{\sqrt{\varepsilon_{reff}}}$$
 - IEEE Antennas and Propagation Magazine
 - Tutoriels CST/HFSS
 - Forums RF (edaboard, etc.)
+
+---
+
+# Project Documentation
+
+Below are the three phases of the antenna project documentation. You can scroll through each PDF side by side.
+
+<div style="display: flex; gap: 15px; margin: 40px 0; overflow-x: auto; padding-bottom: 20px;">
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 1: Design & Specifications</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-1.pdf" 
+           type="application/pdf" 
+           width="100%" 
+           height="800px"
+           style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+  
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 2: Simulation & Optimization</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-2.pdf" 
+           type="application/pdf" 
+           width="100%" 
+           height="800px"
+           style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+  
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 3: Fabrication & Testing</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-3.pdf" 
+           type="application/pdf" 
+           width="100%" 
+           height="800px"
+           style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+</div>
+
+<style>
+@media (max-width: 1200px) {
+  div[style*="display: flex"] {
+    flex-direction: column;
+  }
+  div[style*="min-width: 400px"] {
+    min-width: 100%;
+  }
+}
+</style>

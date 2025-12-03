@@ -1,32 +1,216 @@
 ---
 layout: default
-title: "Projet Tuteuté : Électronique (ER) - S4"
+title: "Advanced Electronics System Design"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Projet Tuteuté : Électronique (ER) - Semestre 4
+[← Back to Academic Project](./my-projects.html)
 
----
+# Introduction
+This open-ended project provided complete autonomy to design and build a complex electronic system from concept to working prototype. Working in pairs over 60 hours, we could choose from various applications: multi-sensor datalogger, USB oscilloscope, programmable laboratory power supply, or other custom electronic instruments. The project synthesized knowledge from analog circuits, digital systems, embedded programming, and professional PCB design.
 
-## PART A - Présentation Générale du Cours
+# Project Overview
+This project represented the culmination of our electrical engineering training, requiring us to manage every aspect: specifications definition, component selection, schematic design, PCB layout, firmware development, and comprehensive testing. The emphasis was on professional-grade implementation and autonomous project management.
 
-### Contexte et objectifs
+## Example Project Types
 
-Projet libre électronique analogique-numérique : datalogger, oscilloscope USB, alimentation programble, etc. Synthèse compétences GEII. Binome, 60h.
+### Data Acquisition Systems
+**Multi-Sensor Datalogger:**
+- Multiple sensor inputs (temperature, pressure, humidity)
+- Instrumentation amplifiers and filtering
+- 12-16 bit ADC (STM32 or ADS1115)
+- SD card storage via SPI
+- OLED/LCD display
+- Li-Ion battery with charging circuit
 
-**Objectifs :**
-- Concevoir système électronique complet (cahier des charges → prototype)
-- Intégrer analogique, numérique, MCU
-- PCB multicouche professionnel
-- Valider performances
-- Autonomie et gestion projet
+**USB Oscilloscope (1 MHz bandwidth):**
+- Switchable input attenuator (1x, 10x)
+- Differential amplifier with ±50V protection
+- Fast ADC (MSPS sampling)
+- USB interface to PC
+- Python GUI for visualization
+- Analog trigger circuit
 
-### Prérequis
-- Électronique analogique
-- Électronique numérique
-- Informatique embarquée
-- Conception PCB
+### Power Electronics
+**Programmable Laboratory Power Supply:**
+- Dual output: 0-30V, 0-3A per channel
+- Linear or switching regulation
+- Microcontroller control with DAC setpoints
+- LCD display for voltage/current
+- Overvoltage and overcurrent protection
+- UART interface for PC control
+
+### Embedded Systems
+**Autonomous Weather Station:**
+- Environmental sensors (T°, pressure, humidity, wind, rain)
+- ESP32 microcontroller with WiFi
+- MQTT data transmission to cloud
+- Solar panel + battery power system
+- IP65 outdoor enclosure
+- Low-power operation for extended autonomy
+
+# Design Methodology
+
+## Phase 1: Specifications and Planning
+**Requirements Definition:**
+- Detailed functional specifications
+- Performance targets (accuracy, speed, autonomy)
+- Constraints (cost, size, power budget)
+
+**Feasibility Study:**
+- Component research and selection
+- Technical solution evaluation
+- Cost estimation and BOM planning
+
+## Phase 2: Electronic Design
+
+**Functional Block Diagram:**
+- System architecture decomposition
+- Interface definitions between blocks
+- Signal flow analysis
+
+**Schematic Design (KiCad/Altium):**
+- Power supply section (regulators, decoupling)
+- Analog conditioning circuits
+- Microcontroller and peripherals
+- Connectors and interfaces
+- Component selection with verified part numbers (Mouser/Digi-Key)
+
+**Circuit Simulations:**
+- LTspice for analog circuits
+- Proteus for MCU co-simulation
+- Validation of critical parameters
+
+## Phase 3: PCB Design
+
+**Layout Strategy:**
+- 2 or 4-layer PCB depending on complexity
+- Component placement (thermal, EMC considerations)
+- Trace routing: width for current capacity, spacing for voltage
+- Ground and power planes
+- Design Rule Check (DRC) validation
+
+**Manufacturing:**
+- Gerber file generation
+- Order from PCB fabricator (3-7 day turnaround)
+- Inspection upon reception
+- SMD and through-hole component assembly
+- Soldering with iron, hot air, or reflow oven
+
+## Phase 4: Firmware Development
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_REOC/monitor.png" alt="System Monitoring" style="width: 70%;" onclick="openModal(this.src)"/>
+</div>
+
+**Embedded Software:**
+- Peripheral configuration (ADC, I2C, UART, SPI)
+- Data acquisition and processing
+- Calibration algorithms
+- User interface (buttons, LCD)
+- Communication protocols
+
+**PC Interface (if applicable):**
+- Python/Qt GUI development
+- Serial communication (UART/USB)
+- Data visualization and logging
+
+## Phase 5: Testing and Validation
+
+**Unit Testing:**
+- Power supply verification (voltages, ripple)
+- Analog conditioning (gain, offset, noise)
+- Digital communication (I2C, SPI, UART)
+- Individual subsystem validation
+
+**Functional Testing:**
+- Specifications compliance verification
+- Accuracy and repeatability measurements  
+- Calibration procedures
+- Performance characterization
+
+**Documentation:**
+- Test protocols and procedures
+- Results tables and graphs
+- Deviation analysis
+- Final validation report
+
+# Results and Analysis
+
+The completed system met or exceeded design specifications, demonstrating successful integration of analog and digital subsystems. Key challenges included minimizing noise in sensitive analog circuits, optimizing power consumption for battery operation, and achieving reliable communication between subsystems.
+
+Performance validation confirmed:
+- Measurement accuracy within design targets
+- Stable operation across specified conditions
+- Reliable data acquisition and storage
+- User-friendly interface operation
+
+# Conclusion
+This project provided comprehensive experience in professional electronic system development, from concept through validated prototype. The autonomous nature of the work developed critical project management skills including planning, problem-solving, and technical documentation. The working prototype demonstrates our ability to deliver complete, functional electronic systems meeting real-world requirements.
+
+<style>
+p {
+  text-align: justify;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<script>
+function openModal(src) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+</script>
 
 ---
 

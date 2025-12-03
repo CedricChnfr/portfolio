@@ -195,18 +195,6 @@ categories: jekyll update
 ### [📶 Télécommunications Numériques - Modulation](./telecommunications-numeriques-s4.html)
 **Contenu**: Modulations numériques (PSK, QAM, FSK), codage canal.
 
-### [📡 Projet Tuteuré: Antenne OC](./projet-antenne-oc.html)
-**Contenu**: Conception et réalisation d'une antenne pour objets connectés.
-
-### [🔌 Projet Tuteuré: Électronique (ER)](./projet-electronique-er.html)
-**Contenu**: Projet de conception électronique complexe.
-
-### [⚡ Projet Tuteuré: Énergie (EN)](./projet-energie-en.html)
-**Contenu**: Système de gestion d'énergie pour objets connectés.
-
-### [🎯 Projet Tuteuré: Électronique Connectée (ELECC)](./projet-electronique-connectee.html)
-**Contenu**: Conception d'un système électronique connecté complet.
-
 ---
 
 <div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">

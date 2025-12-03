@@ -186,7 +186,7 @@ layout: default
 /* Navigation Cards Améliorées */
 .navigation-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 35px;
     margin: 80px auto;
     max-width: 1200px;
@@ -225,10 +225,12 @@ layout: default
 .card-content {
     position: relative;
     z-index: 1;
-    padding: 45px 35px;
+    padding: 35px 25px;
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
     transition: all 0.5s ease;
 }
 
@@ -258,9 +260,9 @@ layout: default
 }
 
 .card-icon {
-    font-size: 3.5em;
-    margin-bottom: 25px;
-    display: inline-block;
+    font-size: 2.5em;
+    margin: 0;
+    flex-shrink: 0;
     animation: bounce 2s ease infinite;
     transition: all 0.3s ease;
 }
@@ -275,9 +277,17 @@ layout: default
     50% { transform: translateY(-12px); }
 }
 
+.card-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
 .nav-card h3 {
-    font-size: 1.9em;
-    margin: 0 0 18px 0;
+    font-size: 1.3em;
+    margin: 0;
     color: #2d3748;
     font-weight: 800;
     transition: color 0.5s ease;
@@ -289,10 +299,9 @@ layout: default
 
 .nav-card p {
     color: #718096;
-    line-height: 1.7;
-    margin: 0 0 25px 0;
-    flex: 1;
-    font-size: 1.05em;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.9em;
     transition: color 0.5s ease;
 }
 
@@ -301,11 +310,12 @@ layout: default
 }
 
 .card-arrow {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #667eea;
     font-weight: bold;
     transition: all 0.4s ease;
     display: inline-block;
+    flex-shrink: 0;
     align-self: flex-start;
 }
 
@@ -840,6 +850,15 @@ layout: default
 }
 
 /* Responsive Design */
+/* Tablettes */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navigation-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 25px;
+    }
+}
+
+/* Mobile */
 @media (max-width: 900px) {
     .hero-content {
         flex-direction: column;
@@ -871,7 +890,13 @@ layout: default
     }
     
     .navigation-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        margin: 40px auto;
+    }
+    
+    .nav-card {
+        min-height: 200px;
     }
     
     .experience-section {
@@ -1143,7 +1168,7 @@ document.addEventListener('keydown', function(e) {
     </div>
 </div>
 
-<div class="navigation-cards" style="grid-template-columns: repeat(4, 1fr);">
+<div class="navigation-cards">
     <a href="./jekyll/update/2024/10/02/my-courses-2024-2025.html" class="nav-card courses-card">
         <div class="card-background"></div>
         <div class="card-content">

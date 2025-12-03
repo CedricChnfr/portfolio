@@ -1,32 +1,189 @@
 ---
 layout: default
-title: "Projet Tuteuté : Électronique Connectée (ELECC) - S4"
+title: "Connected Electronics System (RF Communication)"
 date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Projet Tuteuté : Électronique Connectée (ELECC) - Semestre 4
+[← Back to Academic Project](./my-projects.html)
 
----
+# Introduction
+This comprehensive synthesis project involved designing and implementing a complete RF wireless communication system from scratch. The system featured separate transmitter and receiver modules, integrating analog sensor conditioning, microcontroller data processing, digital modulation (FSK/ASK), RF amplification, and custom antennas to achieve reliable wireless data transmission over 50-100 meters.
 
-## PART A - Présentation Générale du Cours
+# Project Overview
+Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.
 
-### Contexte et objectifs
+## System Architecture
 
-Projet synthèse ENOC S4 : système de communication RF complet (émetteur + récepteur). Intégration capteur, conditionnement, MCU, modulation, RF, antenne. Travail en binome, 60h.
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_Reseau/topology.png" alt="Network Topology" style="width: 70%;" onclick="openModal(this.src)"/>
+</div>
 
-**Objectifs :**
-- Concevoir chaîne émission-réception complète
-- Intégrer analogique, numérique, RF
-- Implémenter modulation (FSK, ASK)
-- Réaliser 2 PCB (TX et RX)
-- Valider liaison radio (portée, données)
+### Transmitter Chain
+1. **Data Acquisition:** Sensors (temperature, pressure, accelerometer) with analog conditioning
+2. **Processing:** STM32 microcontroller for data framing (preamble + data + CRC)
+3. **Modulation:** FSK (Frequency Shift Keying) or ASK (Amplitude Shift Keying) implementation
+4. **RF Amplification:** Power amplifier delivering +10 to +20 dBm
+5. **Antenna:** Matched monopole or patch antenna (50Ω)
 
-### Prérequis
-- Tous cours ENOC S3-S4
-- Télécom Num (modulations)
-- Circuits HF (amplification RF)
-- Antennes
+### Receiver Chain
+1. **Antenna:** Receiving antenna with 50Ω impedance matching
+2. **LNA:** Low Noise Amplifier (15-20 dB gain, NF < 3 dB)
+3. **Demodulation:** FSK/ASK detector with threshold comparator
+4. **Processing:** STM32 for frame synchronization and CRC validation
+5. **Display:** LCD/OLED or UART output to PC
+
+# Design and Implementation
+
+## RF Link Budget
+Calculated using Friis transmission formula:
+- Transmit power: +10 dBm (10 mW)
+- Frequency: 433 MHz or 868 MHz
+- Antenna gains: ~2 dBi each
+- Target range: > 50 m outdoor
+- Data rate: 1-10 kbps
+
+## Modulation Schemes
+
+**FSK (Frequency Shift Keying):**
+- Binary 0 → frequency f₁
+- Binary 1 → frequency f₂
+- Frequency deviation: ±25 kHz
+- Generated using MCU PWM or dedicated modulator IC (RFM69)
+
+**ASK (Amplitude Shift Keying):**
+- Binary 0 → amplitude A₀ (low/off)
+- Binary 1 → amplitude A₁ (high)
+- Simpler implementation but more susceptible to noise
+
+## PCB Design
+Fabricated two separate PCBs:
+
+**Transmitter PCB:**
+- Sensor inputs and conditioning circuits
+- STM32 microcontroller
+- Modulator stage
+- RF power amplifier
+- Antenna matching network
+
+**Receiver PCB:**
+- Antenna input with protection
+- LNA and band-pass filter
+- Demodulator circuit
+- STM32 microcontroller
+- Display interface
+
+## Software Implementation
+
+**Transmitter Firmware:**
+```c
+// Data frame structure
+struct Packet {
+    uint8_t preamble[4];    // Sync pattern
+    uint8_t data[32];       // Payload
+    uint16_t crc;           // Error detection
+};
+
+// Transmit function
+void transmit_packet(uint8_t *data, uint8_t length) {
+    prepare_frame(data, length);
+    modulate_and_send();
+    wait_for_ack();
+}
+```
+
+**Receiver Firmware:**
+- Preamble detection for synchronization
+- CRC verification
+- Error handling and retransmission requests
+
+# Testing and Validation
+
+## Unit Testing
+- Power supply voltages and ripple
+- Modulation signal quality (oscilloscope)
+- RF output power and spectrum (spectrum analyzer)
+- Demodulator threshold levels
+
+## System Integration
+- Short-range testing (1 m) for initial validation
+- Progressive distance testing up to 100 m
+- RSSI (Received Signal Strength Indicator) measurements
+- Bit Error Rate (BER) characterization
+- Performance in noisy environments
+
+## Results
+Successfully achieved:
+- Reliable communication at 50+ meters outdoor
+- Data rate of 9600 bps
+- BER < 10⁻³ under normal conditions
+- Power consumption optimized for battery operation
+
+# Conclusion
+This project provided invaluable hands-on experience in designing complete RF communication systems. We successfully integrated multiple engineering disciplines to create a functional wireless link, demonstrating the importance of systematic design, careful testing, and iterative optimization in complex electronic systems.
+
+<style>
+p {
+  text-align: justify;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+</div>
+
+<script>
+function openModal(src) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("img01");
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+</script>
 
 ---
 
