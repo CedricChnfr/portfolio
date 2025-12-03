@@ -22,14 +22,14 @@ categories: jekyll update
 
 ## 🎯 Vue d'ensemble
 
-Ce document décrit le processus de déploiement du portfolio statique sur un serveur utilisant Nginx comme serveur web. Le site est accessible via l'adresse IP `192.168.2.50` sur le port `3000`.
+Ce document décrit le processus de déploiement du portfolio statique sur un serveur utilisant Nginx comme serveur web. Le site est accessible via l'adresse IP `192.168.X.X` sur le port `3000`.
 
 ### Informations du projet
 
 - **Nom du projet** : Mon Portfolio
 - **Type** : Site statique
 - **Serveur Web** : Nginx
-- **Adresse IP** : 192.168.2.50
+- **Adresse IP** : 192.168.X.X
 - **Port** : 3000
 - **Chemin source** : `/home/cedric/portfolio/_site`
 - **Domaine** : cedric.littlenuage.com
@@ -52,7 +52,7 @@ Avant de commencer, assurez-vous d'avoir :
 ```
 ┌─────────────────┐
 │   Client Web    │
-│  192.168.2.50   │
+│  192.168.X.X   │
 └────────┬────────┘
          │ Port 3000
          │
@@ -68,7 +68,7 @@ Avant de commencer, assurez-vous d'avoir :
 ```
 
 **Flux de requête** :
-1. L'utilisateur accède à `http://192.168.2.50:3000`
+1. L'utilisateur accède à `http://192.168.X.X:3000`
 2. Nginx reçoit la requête sur le port 3000
 3. Nginx sert les fichiers statiques depuis `/home/cedric/portfolio/_site`
 4. Le navigateur affiche le site
@@ -123,7 +123,7 @@ server {
     listen 3000;
     
     # Noms de serveur acceptés
-    server_name 192.168.2.50 cedric.littlenuage.com www.cedric.littlenuage.com;
+    server_name 192.168.X.X cedric.littlenuage.com www.cedric.littlenuage.com;
 
     # Répertoire racine du site
     root /home/cedric/portfolio/_site;
@@ -212,10 +212,10 @@ sudo netstat -tlnp | grep 3000
 curl http://localhost:3000
 
 # Test avec l'IP
-curl http://192.168.2.50:3000
+curl http://192.168.X.X:3000
 ```
 
-Ouvrez votre navigateur et accédez à : **http://192.168.2.50:3000**
+Ouvrez votre navigateur et accédez à : **http://192.168.X.X:3000**
 
 ---
 
@@ -358,7 +358,7 @@ tar -czf portfolio-backup-$(date +%Y%m%d).tar.gz /home/cedric/portfolio/_site
 - [ ] Permissions correctes (755)
 - [ ] Port 3000 ouvert dans le pare-feu
 - [ ] Nginx redémarré
-- [ ] Site accessible via `http://192.168.2.50:3000`
+- [ ] Site accessible via `http://192.168.X.X:3000`
 
 ---
 
