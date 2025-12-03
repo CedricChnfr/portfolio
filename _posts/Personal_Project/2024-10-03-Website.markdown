@@ -5,4 +5,403 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-[← Back to Personal Project](./my-perso-projects.html)
+# Documentation de Déploiement - Portfolio avec Nginx
+
+## 📋 Table des matières
+
+- [Vue d'ensemble](#vue-densemble)
+- [Prérequis](#prérequis)
+- [Architecture](#architecture)
+- [Installation](#installation)
+- [Configuration Nginx](#configuration-nginx)
+- [Déploiement](#déploiement)
+- [Dépannage](#dépannage)
+- [Maintenance](#maintenance)
+
+---
+
+## 🎯 Vue d'ensemble
+
+Ce document décrit le processus de déploiement du portfolio statique sur un serveur utilisant Nginx comme serveur web. Le site est accessible via l'adresse IP `192.168.2.50` sur le port `3000`.
+
+### Informations du projet
+
+- **Nom du projet** : Mon Portfolio
+- **Type** : Site statique
+- **Serveur Web** : Nginx
+- **Adresse IP** : 192.168.2.50
+- **Port** : 3000
+- **Chemin source** : `/home/cedric/portfolio/_site`
+- **Domaine** : cedric.littlenuage.com
+
+---
+
+## ✅ Prérequis
+
+Avant de commencer, assurez-vous d'avoir :
+
+- Un serveur Linux (Ubuntu/Debian recommandé)
+- Accès root ou sudo
+- Nginx installé
+- Les fichiers du site dans `/home/cedric/portfolio/_site`
+
+---
+
+## 🏗️ Architecture
+
+```
+┌─────────────────┐
+│   Client Web    │
+│  192.168.2.50   │
+└────────┬────────┘
+         │ Port 3000
+         │
+┌────────▼────────┐
+│     Nginx       │
+│  Serveur Web    │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│  Fichiers HTML  │
+│    _site/       │
+└─────────────────┘
+```
+
+**Flux de requête** :
+1. L'utilisateur accède à `http://192.168.2.50:3000`
+2. Nginx reçoit la requête sur le port 3000
+3. Nginx sert les fichiers statiques depuis `/home/cedric/portfolio/_site`
+4. Le navigateur affiche le site
+
+---
+
+## 🔧 Installation
+
+### Étape 1 : Installer Nginx
+
+```bash
+# Mettre à jour les paquets
+sudo apt update
+
+# Installer Nginx
+sudo apt install nginx -y
+
+# Vérifier l'installation
+nginx -v
+```
+
+### Étape 2 : Vérifier le statut de Nginx
+
+```bash
+# Vérifier que Nginx est actif
+sudo systemctl status nginx
+
+# Démarrer Nginx si nécessaire
+sudo systemctl start nginx
+
+# Activer Nginx au démarrage
+sudo systemctl enable nginx
+```
+
+---
+
+## ⚙️ Configuration Nginx
+
+### Créer le fichier de configuration
+
+```bash
+sudo nano /etc/nginx/sites-available/mon-portfolio
+```
+
+### Configuration du site
+
+Ajoutez cette configuration :
+
+```nginx
+server {
+    # Port d'écoute
+    listen 3000;
+    
+    # Noms de serveur acceptés
+    server_name 192.168.2.50 cedric.littlenuage.com www.cedric.littlenuage.com;
+
+    # Répertoire racine du site
+    root /home/cedric/portfolio/_site;
+    
+    # Fichiers index par défaut
+    index index.html index.htm;
+
+    # Gestion des requêtes
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    
+    # Logs (optionnel)
+    access_log /var/log/nginx/portfolio_access.log;
+    error_log /var/log/nginx/portfolio_error.log;
+}
+```
+
+### Activer le site
+
+```bash
+# Créer un lien symbolique vers sites-enabled
+sudo ln -s /etc/nginx/sites-available/mon-portfolio /etc/nginx/sites-enabled/
+
+# Vérifier la configuration
+sudo nginx -t
+
+# Recharger Nginx
+sudo systemctl reload nginx
+```
+
+---
+
+## 🚀 Déploiement
+
+### Étape 1 : Préparer les fichiers du site
+
+```bash
+# Créer le répertoire si nécessaire
+mkdir -p /home/cedric/portfolio/_site
+
+# Vérifier que les fichiers existent
+ls -la /home/cedric/portfolio/_site
+```
+
+### Étape 2 : Configurer les permissions
+
+```bash
+# Donner les bonnes permissions
+sudo chmod -R 755 /home/cedric/portfolio/_site
+
+# Changer le propriétaire (optionnel)
+sudo chown -R www-data:www-data /home/cedric/portfolio/_site
+```
+
+### Étape 3 : Configurer le pare-feu
+
+```bash
+# Autoriser le port 3000
+sudo ufw allow 3000
+
+# Autoriser Nginx
+sudo ufw allow 'Nginx Full'
+
+# Vérifier le statut
+sudo ufw status
+```
+
+### Étape 4 : Redémarrer Nginx
+
+```bash
+# Tester la configuration
+sudo nginx -t
+
+# Redémarrer Nginx
+sudo systemctl restart nginx
+
+# Vérifier que Nginx écoute sur le port 3000
+sudo netstat -tlnp | grep 3000
+```
+
+### Étape 5 : Tester le site
+
+```bash
+# Test en local
+curl http://localhost:3000
+
+# Test avec l'IP
+curl http://192.168.2.50:3000
+```
+
+Ouvrez votre navigateur et accédez à : **http://192.168.2.50:3000**
+
+---
+
+## 🔍 Dépannage
+
+### Le site ne s'ouvre pas
+
+#### 1. Vérifier que Nginx tourne
+
+```bash
+sudo systemctl status nginx
+```
+
+**Solution** : Si inactif, démarrer Nginx
+```bash
+sudo systemctl start nginx
+```
+
+#### 2. Vérifier que le port 3000 est ouvert
+
+```bash
+sudo netstat -tlnp | grep 3000
+```
+
+**Solution** : Si le port n'est pas listé, vérifier la configuration Nginx
+
+#### 3. Consulter les logs d'erreur
+
+```bash
+# Logs Nginx
+sudo tail -50 /var/log/nginx/error.log
+
+# Logs du site
+sudo tail -50 /var/log/nginx/portfolio_error.log
+```
+
+#### 4. Vérifier les permissions
+
+```bash
+ls -la /home/cedric/portfolio/_site
+```
+
+**Solution** : Corriger les permissions
+```bash
+sudo chmod -R 755 /home/cedric/portfolio/_site
+```
+
+#### 5. Tester la configuration Nginx
+
+```bash
+sudo nginx -t
+```
+
+**Solution** : Si erreur de syntaxe, corriger le fichier de configuration
+
+#### 6. Vérifier le pare-feu
+
+```bash
+sudo ufw status
+```
+
+**Solution** : Ouvrir le port 3000
+```bash
+sudo ufw allow 3000
+```
+
+### Erreur 404 Not Found
+
+- Vérifier que `index.html` existe dans `/home/cedric/portfolio/_site`
+- Vérifier le chemin `root` dans la configuration Nginx
+
+### Erreur 403 Forbidden
+
+- Problème de permissions
+- Solution :
+```bash
+sudo chmod -R 755 /home/cedric/portfolio/_site
+sudo chown -R www-data:www-data /home/cedric/portfolio/_site
+```
+
+---
+
+## 🛠️ Maintenance
+
+### Mettre à jour le site
+
+```bash
+# 1. Placer les nouveaux fichiers dans _site
+cp -r /chemin/vers/nouveaux/fichiers/* /home/cedric/portfolio/_site/
+
+# 2. Vérifier les permissions
+sudo chmod -R 755 /home/cedric/portfolio/_site
+
+# 3. Recharger Nginx (optionnel pour les fichiers statiques)
+sudo systemctl reload nginx
+```
+
+### Commandes utiles
+
+```bash
+# Redémarrer Nginx
+sudo systemctl restart nginx
+
+# Recharger la configuration sans interruption
+sudo systemctl reload nginx
+
+# Arrêter Nginx
+sudo systemctl stop nginx
+
+# Voir les logs en temps réel
+sudo tail -f /var/log/nginx/error.log
+sudo tail -f /var/log/nginx/portfolio_access.log
+
+# Tester la configuration
+sudo nginx -t
+
+# Voir les connexions actives
+sudo netstat -tlnp | grep nginx
+```
+
+### Sauvegardes
+
+```bash
+# Sauvegarder la configuration Nginx
+sudo cp /etc/nginx/sites-available/mon-portfolio /etc/nginx/sites-available/mon-portfolio.bak
+
+# Sauvegarder les fichiers du site
+tar -czf portfolio-backup-$(date +%Y%m%d).tar.gz /home/cedric/portfolio/_site
+```
+
+---
+
+## 📊 Checklist de déploiement
+
+- [ ] Nginx installé et actif
+- [ ] Fichier de configuration créé dans `/etc/nginx/sites-available/`
+- [ ] Lien symbolique créé dans `/etc/nginx/sites-enabled/`
+- [ ] Configuration Nginx testée (`nginx -t`)
+- [ ] Fichiers du site présents dans `/home/cedric/portfolio/_site`
+- [ ] Permissions correctes (755)
+- [ ] Port 3000 ouvert dans le pare-feu
+- [ ] Nginx redémarré
+- [ ] Site accessible via `http://192.168.2.50:3000`
+
+---
+
+## 📝 Notes supplémentaires
+
+### Pour passer en production sur le port 80
+
+Si vous souhaitez rendre le site accessible sans spécifier le port :
+
+```nginx
+server {
+    listen 80;
+    server_name cedric.littlenuage.com www.cedric.littlenuage.com;
+    
+    root /home/cedric/portfolio/_site;
+    index index.html index.htm;
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+### Ajouter HTTPS avec Let's Encrypt
+
+```bash
+# Installer Certbot
+sudo apt install certbot python3-certbot-nginx
+
+# Obtenir un certificat SSL
+sudo certbot --nginx -d cedric.littlenuage.com -d www.cedric.littlenuage.com
+```
+
+---
+
+## 📚 Ressources
+
+- [Documentation Nginx](https://nginx.org/en/docs/)
+- [Nginx Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html)
+- [Configuration Nginx pour sites statiques](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
+
+---
+
+**Dernière mise à jour** : $(date +%Y-%m-%d)  
+**Auteur** : Cédric  
+**Version** : 1.0
