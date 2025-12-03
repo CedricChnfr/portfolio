@@ -1,0 +1,730 @@
+---
+layout: default
+title: "Anglais - S1"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Anglais - Semestre 1
+
+## PART A - Présentation Générale du Cours
+
+### Contexte de la formation
+L'anglais est devenu incontournable dans les métiers de l'ingénierie et de la technologie. La majorité de la documentation technique, des articles scientifiques, et des échanges professionnels internationaux se font en anglais. Ce module vise à préparer les étudiants à évoluer dans un environnement professionnel international et à être capables de communiquer efficacement dans leur domaine technique.
+
+### Positionnement dans le cursus
+- **Semestre** : S1 (1ère année DUT GEII)
+- **Volume horaire** : 30h (TD en groupes réduits de 15-20 étudiants)
+- **Crédits ECTS** : 2
+- **Prérequis** : Niveau B1 du CECRL recommandé (niveau Bac général)
+- **Continuité** : Module d'anglais à chaque semestre (S1 à S4)
+
+### Public visé
+Étudiants de première année DUT GEII avec des niveaux hétérogènes en anglais, nécessitant un renforcement linguistique adapté au domaine technique de l'électronique et de l'informatique industrielle.
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Objectifs pédagogiques
+
+**Compétences linguistiques générales :**
+- Atteindre le niveau B2 du CECRL en fin de DUT
+- Comprendre et produire des documents techniques en anglais
+- Communiquer efficacement à l'oral en contexte professionnel
+- Acquérir une aisance dans les situations de communication technique
+
+**Compétences professionnelles :**
+- Lire et comprendre de la documentation technique (datasheets, manuels)
+- Rédiger des documents professionnels (emails, rapports, CV)
+- Présenter des projets techniques devant un auditoire
+- Participer à des échanges professionnels internationaux
+
+### Programme détaillé
+
+#### 1. Compréhension écrite (Reading comprehension) - 8h
+
+**Documents techniques :**
+- **Datasheets** de composants électroniques (résistances, condensateurs, microcontrôleurs)
+  * Lecture des caractéristiques techniques
+  * Compréhension des tableaux et graphiques
+  * Interprétation des conditions d'utilisation
+
+- **Manuels d'utilisation** (User manuals)
+  * Instructions de montage et d'utilisation
+  * Consignes de sécurité
+  * Procédures de dépannage (troubleshooting)
+
+- **Articles techniques et scientifiques**
+  * Structure d'un article (abstract, introduction, methods, results, discussion)
+  * Vocabulaire scientifique
+  * Lecture rapide (skimming) et détaillée (scanning)
+
+- **Normes et standards** (IEEE, IEC, ISO)
+  * Compréhension des nomenclatures
+  * Spécifications techniques internationales
+
+**Stratégies de lecture :**
+- Identifier les mots-clés techniques
+- Deviner le sens par le contexte
+- Utiliser les cognates (mots similaires français-anglais)
+- S'appuyer sur la structure du document
+
+#### 2. Expression écrite (Writing) - 7h
+
+**Emails professionnels :**
+- Structure et formules de politesse
+- Demande d'information technique
+- Signalement de problème ou bug report
+- Confirmation de réunion ou de commande
+
+*Exemple type :*
+```
+Subject: Technical inquiry regarding STM32 microcontroller
+
+Dear Sir/Madam,
+
+I am currently working on a project involving the STM32F407 
+microcontroller. I would like to inquire about the maximum 
+current consumption in sleep mode.
+
+Could you please provide me with the datasheet section 
+covering power management features?
+
+Thank you for your assistance.
+
+Best regards,
+[Name]
+```
+
+**Comptes-rendus techniques (Technical reports) :**
+- Structure : Introduction, Materials & Methods, Results, Conclusion
+- Description de procédures expérimentales
+- Présentation de résultats avec tableaux/graphiques
+- Rédaction claire et concise
+
+**CV et lettre de motivation en anglais :**
+- Format anglo-saxon vs format français
+- Sections principales (Personal information, Education, Experience, Skills)
+- Action verbs (designed, implemented, tested, analyzed)
+- Lettre de motivation (cover letter) pour stage ou emploi
+
+**Documentation de projets :**
+- README files
+- Code comments
+- User guides
+- Technical specifications
+
+#### 3. Compréhension orale (Listening comprehension) - 7h
+
+**Supports audio/vidéo :**
+- **Tutoriels techniques** (YouTube : EEVblog, GreatScott!, etc.)
+  * Explication de circuits électroniques
+  * Démonstrations d'outils (oscilloscope, multimètre)
+  * Reviews de composants
+
+- **Présentations de conférences** (TEDx, IEEE conferences)
+  * Innovations technologiques
+  * Tendances en électronique et IoT
+  * Accents variés (américain, britannique, international)
+
+- **Podcasts techniques** (Embedded, The Amp Hour)
+  * Discussions sur l'actualité tech
+  * Interviews d'ingénieurs
+
+**Activités :**
+- Exercices de compréhension (QCM, vrai/faux, questions ouvertes)
+- Prise de notes (note-taking)
+- Résumé oral ou écrit
+- Dictées techniques
+
+#### 4. Expression orale (Speaking) - 8h
+
+**Présentations techniques :**
+- **Présentation individuelle (5-7 min)** :
+  * Mon parcours et mes objectifs professionnels
+  * Présentation d'un composant électronique
+  * Explication d'un circuit ou système
+
+- **Présentation de projet en groupe (10-15 min)** :
+  * Introduction et contexte
+  * Description technique (schémas, prototypes)
+  * Démonstration fonctionnelle
+  * Réponses aux questions (Q&A)
+
+**Structure type d'une présentation :**
+1. Opening (introduction, agenda)
+2. Body (main points with visual supports)
+3. Conclusion (summary, recommendations)
+4. Q&A session
+
+**Phrases utiles :**
+- "Let me start by introducing..."
+- "As you can see in this diagram..."
+- "The main advantage of this solution is..."
+- "To sum up..."
+
+**Discussions et débats :**
+- Discussions en petits groupes sur des sujets techniques
+- Débat : "Should we ban gasoline cars by 2035?"
+- Argumentation et contre-argumentation
+
+**Jeux de rôle professionnels :**
+- Entretien d'embauche en anglais
+- Appel téléphonique professionnel
+- Réunion technique
+- Négociation client-fournisseur
+
+**Prononciation et intonation :**
+- Phonèmes difficiles pour francophones (/θ/, /ð/, /h/, /r/)
+- Accentuation des mots (stress patterns)
+- Intonation pour les questions
+- Rythme de la phrase en anglais
+
+### Vocabulaire technique par thématique
+
+#### Électricité et Électronique
+
+| English | Français | Context |
+|---------|----------|---------|
+| Resistor | Résistance | Passive component |
+| Capacitor | Condensateur | Stores electrical energy |
+| Inductor | Bobine/Inductance | Magnetic component |
+| Voltage | Tension | Measured in Volts (V) |
+| Current | Courant | Measured in Amperes (A) |
+| Power supply | Alimentation | Provides electrical energy |
+| Circuit board | Circuit imprimé (PCB) | Printed Circuit Board |
+| Breadboard | Plaque d'essai | Prototyping tool |
+| Soldering iron | Fer à souder | Welding tool |
+| Multimeter | Multimètre | Measurement device |
+| Oscilloscope | Oscilloscope | Waveform visualization |
+
+#### Informatique et Programmation
+
+| English | Français |
+|---------|----------|
+| Embedded system | Système embarqué |
+| Firmware | Micrologiciel |
+| Debugging | Débogage |
+| Compiler | Compilateur |
+| To upload/download | Télécharger (vers/depuis serveur) |
+| Loop | Boucle |
+| Array | Tableau |
+| Function | Fonction |
+| Variable | Variable |
+| Algorithm | Algorithme |
+
+#### Termes professionnels
+
+| English | Français |
+|---------|----------|
+| Internship | Stage |
+| Trainee | Stagiaire |
+| Skills | Compétences |
+| Team player | Esprit d'équipe |
+| Deadline | Date limite |
+| Schedule | Planning |
+| Meeting | Réunion |
+| Stakeholder | Partie prenante |
+
+### Méthodes pédagogiques
+
+**Cours en petits groupes (15-20 étudiants) :**
+- Interaction maximale
+- Participation active encouragée
+- Atmosphère bienveillante pour oser parler
+
+**Approche communicative :**
+- Priorité à la communication efficace
+- Travail sur l'aisance avant la perfection grammaticale
+- Situations authentiques et contextualisées
+
+**Utilisation des TICE (Technologies de l'Information) :**
+- Plateformes d'e-learning (Moodle)
+- Ressources multimédias (vidéos, podcasts)
+- Exercices interactifs en ligne
+- Outils de présentation (PowerPoint, Prezi)
+
+**Pédagogie différenciée :**
+- Activités adaptées selon les niveaux
+- Groupes de besoin ponctuels
+- Tutorat entre pairs
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Outils numériques et ressources
+
+#### Plateformes d'apprentissage
+
+**Moodle (plateforme IUT) :**
+- Dépôt de documents de cours
+- Exercices en ligne autocorrectifs
+- Forums de discussion en anglais
+- Soumission de devoirs
+
+**Applications mobiles recommandées :**
+- **Duolingo** : Apprentissage ludique quotidien (15 min/jour)
+- **Anki** : Cartes mémoire (flashcards) pour le vocabulaire
+- **BBC Learning English** : Podcasts et exercices
+- **TED** : Vidéos inspirantes avec sous-titres
+
+#### Ressources en ligne gratuites
+
+**Chaînes YouTube techniques en anglais :**
+- **EEVblog** : Blog électronique, reviews, tutorials
+- **GreatScott!** : Projets DIY électroniques
+- **ElectroBOOM** : Électronique avec humour (attention aux erreurs volontaires !)
+- **Ben Eater** : Électronique numérique et informatique
+
+**Sites web pédagogiques :**
+- **BBC Learning English** (learningenglish.bbc.co.uk) - Gratuit, excellent pour l'audio
+- **Cambridge English** - Tests de niveau et exercices
+- **Coursera/edX** - Cours en anglais sur l'électronique
+- **Stack Overflow** - Forum de programmation (lire les questions/réponses)
+
+**Dictionnaires techniques :**
+- **WordReference.com** - Dictionnaire avec forums contextuels
+- **Linguee.com** - Traductions en contexte
+- **Reverso Context** - Exemples d'utilisation
+- **Electropedia (IEC)** - Terminologie électrotechnique multilingue
+
+#### Logiciels et outils
+
+**Grammarly (extension navigateur) :**
+- Correction grammaticale et orthographique
+- Suggestions de style
+- Version gratuite suffisante pour étudiants
+
+**Google Translate :**
+- Traduction rapide (attention à vérifier la justesse)
+- Fonction dictionnaire vocal
+- OCR pour traduire images de texte
+
+**Pronunciation tools :**
+- **Forvo.com** - Prononciation par des natifs
+- **YouGlish.com** - Prononciation dans des vidéos YouTube
+- Google Translate (icône haut-parleur)
+
+### Techniques d'apprentissage efficaces
+
+#### Méthode d'étude du vocabulaire
+
+**Technique des flashcards (Anki) :**
+1. Créer des cartes recto-verso :
+   - Recto : mot anglais + image si possible
+   - Verso : traduction + exemple de phrase
+2. Révision espacée (spaced repetition) :
+   - Jour 1, Jour 3, Jour 7, Jour 14, Jour 30
+3. Contexte : toujours apprendre dans une phrase
+
+**Exemple :**
+- Front: "Capacitor" [image of a capacitor]
+- Back: "Condensateur - Stores electrical charge. *Example: This circuit uses a 10µF capacitor.*"
+
+#### Immersion quotidienne (15-30 min/jour)
+
+**Stratégie des petits pas :**
+- Changer langue du téléphone en anglais
+- Regarder une vidéo YouTube technique par jour
+- Lire un article court sur un sujet d'intérêt
+- Écouter un podcast pendant les transports
+
+#### Amélioration de l'oral
+
+**Technique du shadowing :**
+1. Écouter une phrase en anglais
+2. La répéter immédiatement en imitant l'intonation
+3. Augmenter progressivement la vitesse
+
+**Enregistrement vocal :**
+- S'enregistrer en train de parler
+- Comparer avec un modèle natif
+- Identifier les points à améliorer
+
+**Parler seul (self-talk) :**
+- Décrire ce qu'on fait en anglais
+- Expliquer un concept technique à haute voix
+- Penser en anglais progressivement
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Évaluation des compétences
+
+#### Modalités d'évaluation
+
+**Contrôle continu (100% du module) :**
+
+1. **Compréhension écrite (25%)** :
+   - 2 évaluations dans le semestre
+   - Textes techniques avec questions (QCM, vrai/faux, questions ouvertes)
+   - Durée : 1h
+   - Dictionnaire unilingue anglais autorisé
+
+2. **Compréhension orale (20%)** :
+   - 2 évaluations audio/vidéo
+   - Écoute de documents techniques
+   - QCM et questions courtes
+   - 2 écoutes autorisées
+
+3. **Expression orale (30%)** :
+   - **Présentation individuelle** (15%) : 5-7 min + questions
+   - **Participation orale** (15%) : Assiduité, interventions, jeux de rôle
+
+4. **Expression écrite (25%)** :
+   - Rédaction d'emails professionnels (5%)
+   - Compte-rendu technique ou rapport (10%)
+   - CV + lettre de motivation (10%)
+
+#### Grille d'évaluation - Présentation orale (exemple)
+
+| Critère | Insuffisant (0-5) | Moyen (6-10) | Bien (11-15) | Excellent (16-20) |
+|---------|-------------------|--------------|--------------|-------------------|
+| **Contenu technique** | Superficiel, erreurs | Correct mais basique | Précis et détaillé | Expert, approfondi |
+| **Structure** | Désorganisé | Structure visible | Bien structuré | Parfaitement organisé |
+| **Langue** | Erreurs gênant compréhension | Erreurs fréquentes | Globalement correct | Maîtrise très bonne |
+| **Prononciation** | Difficile à comprendre | Compréhensible avec effort | Claire | Excellente |
+| **Interaction** | Pas de contact visuel | Contact minimal | Bon contact | Excellente présence |
+| **Support visuel** | Absent ou inadapté | Basique | Pertinent | Professionnel |
+
+**Coefficient par critère** : Contenu 30%, Structure 15%, Langue 25%, Prononciation 15%, Interaction 10%, Support 5%
+
+### Niveaux du CECRL et progression
+
+#### Référentiel européen (CECRL)
+
+**Niveau A1-A2 (Débutant/Élémentaire) :**
+- Comprend phrases simples
+- Peut se présenter et poser des questions basiques
+- Vocabulaire limité
+
+**Niveau B1 (Intermédiaire) - Objectif début DUT :**
+- Comprend les points essentiels d'un discours clair
+- Peut raconter une expérience ou un événement
+- Commence à suivre des discussions techniques simples
+
+**Niveau B2 (Indépendant) - Objectif fin DUT :**
+- Comprend des conférences et présentations techniques
+- Peut communiquer avec aisance avec locuteurs natifs
+- Rédige des textes détaillés sur des sujets techniques
+- **Niveau requis pour certifications professionnelles**
+
+**Niveau C1 (Autonome) :**
+- Comprend des textes longs et complexes
+- S'exprime spontanément et couramment
+- Niveau d'écoles d'ingénieurs ou poursuite d'études
+
+#### Progression typique en DUT GEII
+
+| Semestre | Objectif CECRL | Focus |
+|----------|----------------|-------|
+| S1 | Consolidation B1 | Bases techniques, vocabulaire |
+| S2 | B1+ / B2- | Compréhension technique avancée |
+| S3 | B2 | Expression orale, présentations |
+| S4 | B2+ | Préparation TOEIC, autonomie professionnelle |
+
+### Certifications et tests
+
+#### TOEIC (Test of English for International Communication)
+
+**Format :**
+- **Listening** (100 questions, 45 min) : Compréhension orale
+- **Reading** (100 questions, 75 min) : Compréhension écrite
+- Score : 10 à 990 points
+
+**Scores de référence :**
+- 400-600 : Niveau B1
+- 600-785 : Niveau B2 (autonome)
+- 785-900 : Niveau C1 (compétent)
+- 900+ : Niveau C2 (maîtrise)
+
+**Préparation :**
+- Tests blancs fournis par l'IUT
+- Livres : *Official TOEIC Practice*
+- Applications : TOEIC Test Pro
+- **Passage en S4 recommandé** (généralement organisé par l'IUT)
+
+#### Autres certifications reconnues
+
+- **TOEFL** (plus académique, pour études à l'étranger)
+- **Cambridge English** (B2 First, C1 Advanced)
+- **IELTS** (pour UK, Commonwealth)
+- **Linguaskill** (Cambridge, en ligne)
+
+### Compétences acquises et débouchés
+
+#### Compétences linguistiques
+
+✓ Compréhension de documentation technique en anglais
+✓ Rédaction de documents professionnels (emails, rapports)
+✓ Présentation de projets techniques devant un auditoire anglophone
+✓ Participation à des réunions/discussions professionnelles
+✓ Autonomie dans l'apprentissage continu de l'anglais
+
+#### Compétences transversales
+
+✓ Confiance en soi à l'oral
+✓ Capacité d'adaptation (accents, contextes variés)
+✓ Ouverture interculturelle
+✓ Rigueur dans la communication écrite
+✓ Travail en équipe multiculturelle
+
+#### Applications professionnelles
+
+**Dans le monde du travail :**
+- 60% des offres d'emploi en ingénierie mentionnent l'anglais
+- Salaires moyens supérieurs de 15-20% pour bilingues
+- Accès à des postes internationaux
+- Veille technologique (publications, brevets en anglais)
+- Collaboration avec équipes internationales (offshore, nearshore)
+
+**Mobilité internationale :**
+- Stages à l'étranger (Erasmus+, programmes bilateraux)
+- Poursuite d'études en Master international
+- Expatriation professionnelle
+- Conférences et salons internationaux
+
+### Liens avec les autres cours
+
+| Module GEII | Utilisation de l'anglais | Exemples |
+|-------------|--------------------------|----------|
+| **Électronique** | Datasheets composants | Lecture de specs de microcontrôleurs, transistors |
+| **Programmation** | Documentation code | Arduino, Python documentation |
+| **Systèmes Numériques** | Standards IEEE | VHDL, Verilog documentation |
+| **Projets** | Présentations finales | Soutenance en anglais parfois demandée |
+| **Travaux de Labo** | Notices équipements | Manuels oscilloscopes (Tektronix, Keysight) |
+
+---
+
+## 📚 Ressources complémentaires
+
+### Ouvrages recommandés
+
+**Grammaire et vocabulaire :**
+1. *English Grammar in Use* - Raymond Murphy (Cambridge) - **LA référence mondiale**
+2. *Oxford English for Electrical and Mechanical Engineering* - Eric Glendinning
+3. *Professional English in Use - Engineering* - Mark Ibbotson (Cambridge)
+4. *Technical English - Vocabulary and Grammar* - David Bonamy (Pearson)
+
+**Préparation TOEIC :**
+- *Official TOEIC Study Guide* - ETS
+- *Tactics for TOEIC* - Grant Trew (Oxford)
+- *Réussir le TOEIC* - David Mayer (Studyrama)
+
+### Sites web et applications
+
+**Apprentissage autonome :**
+- **Duolingo** (duolingo.com) - Gamification, gratuit
+- **Memrise** - Vocabulaire avec vidéos de natifs
+- **Quizlet** - Flashcards collaboratives
+- **Anki** - Révision espacée (plus avancé)
+
+**Compréhension orale :**
+- **TED Talks** (ted.com) - Sous-titres disponibles
+- **BBC Learning English** - Podcasts quotidiens (6 minutes English)
+- **VOA Learning English** - Anglais simplifié avec transcriptions
+- **Spotify** - Podcasts techniques (Embedded, The Amp Hour, Sparkfun, Adafruit)
+
+**Lecture :**
+- **IEEE Spectrum** (spectrum.ieee.org) - Actualités techno en anglais
+- **Hackaday** (hackaday.com) - Projets DIY électroniques
+- **All About Circuits** - Tutoriels et forums
+- **Medium** - Articles techniques
+
+**Pratique orale :**
+- **italki** - Cours particuliers avec professeurs natifs (payant, ~10€/h)
+- **HelloTalk / Tandem** - Échanges linguistiques (gratuit)
+- **Meetup** - Rencontres anglophones locales
+
+### Conseils de réussite
+
+#### Stratégies d'apprentissage
+
+**Régularité avant intensité :**
+❌ 3h d'anglais le dimanche soir
+✅ 20 minutes chaque jour
+
+**Plaisir et intérêt :**
+- Choisir des contenus qui vous passionnent (électronique, gaming, musique)
+- Varier les activités (vidéo, lecture, écoute, écriture)
+- Progresser sans s'ennuyer
+
+**Oser parler sans peur de l'erreur :**
+- L'erreur est normale et fait partie de l'apprentissage
+- Les locuteurs natifs font aussi des erreurs
+- La communication prime sur la perfection
+
+**Immersion maximale :**
+- Séries/films en VO sous-titrée anglais (pas français !)
+- Musique avec paroles
+- Jeux vidéo en anglais
+- Réseaux sociaux en anglais
+
+#### Erreurs courantes à éviter (False friends)
+
+| False friend (English) | Signification réelle | Confusion avec |
+|------------------------|----------------------|----------------|
+| Actually | En réalité | Actuellement = currently |
+| Eventually | Finalement | Éventuellement = possibly |
+| Library | Bibliothèque | Librairie = bookstore |
+| To attend | Assister à | Attendre = to wait |
+| Sensible | Raisonnable | Sensible = sensitive |
+| To achieve | Accomplir | Achever = to complete/finish |
+
+#### Méthodologie pour les présentations orales
+
+**Préparation (80% du succès) :**
+1. Définir objectif et message clé
+2. Structurer en 3 parties claires
+3. Préparer support visuel simple (images > texte)
+4. Rédiger un script (mais ne pas lire !)
+5. S'entraîner à voix haute (minimum 3 fois)
+6. Anticiper les questions
+
+**Jour J :**
+- Arriver en avance, tester le matériel
+- Respirer calmement avant de commencer
+- Regarder l'auditoire, sourire
+- Parler lentement et articuler
+- Faire des pauses
+- Utiliser des gestes naturels
+
+**Phrases de secours :**
+- "Let me rephrase that..." (Laissez-moi reformuler)
+- "What I mean is..." (Ce que je veux dire c'est)
+- "Could you repeat the question?" (Pouvez-vous répéter la question ?)
+- "That's an interesting question. Let me think..." (Bonne question, laissez-moi réfléchir)
+
+---
+
+## 🎯 Objectif final
+
+À la fin du S1, vous devriez être capable de :
+
+✅ Lire et comprendre une datasheet de composant électronique
+✅ Rédiger un email professionnel simple en anglais
+✅ Vous présenter et parler de votre parcours (2-3 minutes)
+✅ Comprendre une vidéo technique (avec aide des sous-titres)
+✅ Utiliser le vocabulaire de base en électronique et informatique
+
+**Remember : Practice makes perfect! 🚀**
+
+The only way to improve is to practice regularly and not be afraid of making mistakes. English is a tool, not an exam subject. Use it, enjoy it, and it will become natural!
+
+## 🎯 Objectifs pédagogiques
+
+- Comprendre des documents techniques en anglais
+- Communiquer efficacement en contexte professionnel
+- Acquérir le vocabulaire technique du domaine
+- Développer les compétences orales et écrites
+- Se préparer aux certifications en anglais
+
+## 📚 Contenu du cours
+
+### Compréhension écrite
+- Lecture de documentation technique
+- Articles scientifiques et techniques
+- Manuels d'utilisation
+- Datasheets de composants électroniques
+- Normes et standards internationaux
+
+### Expression écrite
+- Rédaction de courriels professionnels
+- Comptes-rendus techniques
+- Résumés d'articles
+- Documentation de projets
+- CV et lettre de motivation en anglais
+
+### Compréhension orale
+- Écoute de présentations techniques
+- Vidéos éducatives et tutoriels
+- Conférences et webinaires
+- Communications professionnelles
+
+### Expression orale
+- Présentations techniques
+- Discussions en groupe
+- Simulations de situations professionnelles
+- Prononciation et intonation
+
+## 🔤 Vocabulaire technique
+
+### Électronique et électricité
+- Composants électroniques
+- Circuits et systèmes
+- Mesures et unités
+- Outils et équipements
+
+### Informatique
+- Programmation
+- Systèmes d'exploitation
+- Réseaux
+- Hardware et software
+
+### Domaine professionnel
+- Vocabulaire de l'entreprise
+- Gestion de projet
+- Communication professionnelle
+- Terminologie des métiers de l'ingénieur
+
+## 💻 Supports pédagogiques
+
+- Manuels d'anglais technique
+- Ressources en ligne (vidéos, articles)
+- Plateformes d'apprentissage (Moodle, etc.)
+- Exercices interactifs
+- Documents authentiques
+
+## 🛠️ Activités pratiques
+
+### Travaux en groupe
+- Projets de présentation
+- Débats techniques
+- Études de cas
+- Jeux de rôle professionnels
+
+### Travail individuel
+- Exercices de grammaire et vocabulaire
+- Compréhensions écrites et orales
+- Rédactions
+- Préparation aux certifications
+
+## 📊 Évaluation
+
+- Contrôles continus (vocabulaire, grammaire)
+- Compréhensions écrites et orales
+- Présentations orales (20-30%)
+- Projet écrit (rapport, article)
+- Examen final
+
+## 🎓 Certifications
+
+Préparation aux certifications reconnues :
+- TOEIC (Test of English for International Communication)
+- TOEFL
+- Cambridge English
+- BULATS
+
+## 🔗 Liens avec d'autres cours
+
+- **Tous les cours techniques** : Lecture de documentation en anglais
+- **CEC** : Communication professionnelle
+- **Projets** : Présentation en anglais
+
+## 📖 Compétences développées
+
+- Autonomie dans l'apprentissage de l'anglais
+- Confiance à l'oral
+- Capacité à lire et comprendre des documents techniques
+- Communication professionnelle internationale
+- Préparation à la mobilité internationale
+
+## 🌍 Ouverture internationale
+
+- Sensibilisation aux cultures anglophones
+- Contexte international du métier d'ingénieur
+- Opportunités de stages et d'études à l'étranger
+- Réseau professionnel international

@@ -1,0 +1,366 @@
+---
+layout: default
+title: "Énergie - S3"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Énergie - Semestre 3
+
+---
+
+## PART A - Présentation Générale du Cours
+
+### Contexte et objectifs
+
+Approfondissement de l'électronique de puissance (suite S1) avec convertisseurs avancés, machines électriques AC, variateurs de vitesse et énergies renouvelables. Applications aux systèmes modernes (véhicules électriques, énergies vertes, industrie 4.0).
+
+**Objectifs :**
+- Maîtriser hacheurs (Buck, Boost, Buck-Boost), onduleurs, redresseurs
+- Étudier machines asynchrones et synchrones
+- Concevoir variateurs de vitesse
+- Comprendre CEM et composants Wide Bandgap (SiC, GaN)
+- Appréhender systèmes photovoltaïques et éoliens
+
+### Prérequis
+- Électronique de puissance S1 (redresseurs, hacheurs de base)
+- Circuits AC (impédances complexes)
+- Machines DC
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Module 1 : Convertisseurs DC-DC avancés
+
+**Hacheurs :**
+- Buck (abaisseur) : Vout = α·Vin, mode CCM/DCM
+- Boost (élévateur) : Vout = Vin/(1-α)
+- Buck-Boost : Vout = -α·Vin/(1-α)
+- Ćuk, SEPIC : isolation, low ripple
+- Dimensionnement L, C (ondulation ΔI, ΔV)
+
+**Régulation :**
+- PWM à fréquence fixe (20-100 kHz)
+- Contrôle en mode tension ou courant
+- Boucle de rétroaction (TL431, optocoupleur)
+
+### Module 2 : Onduleurs
+
+**Onduleurs monophasés :**
+- Demi-pont : Vout = ±Vdc/2
+- Pont complet (H-bridge) : Vout = ±Vdc
+- MLI sinusoïdale : commande complémentaire avec temps mort
+- Filtrage LC (harmoniques)
+- THD (Total Harmonic Distortion)
+
+**Onduleurs triphasés :**
+- 6 interrupteurs (IGBT)
+- MLI sinus (modulation chaque phase)
+- MLI vectorielle (SVM) : meilleure utilisation Vdc
+- Applications : variateurs, onduleurs solaires/éoliens
+
+### Module 3 : Machines électriques AC
+
+**Machine asynchrone (MAS) :**
+- Principe : champ tournant, glissement s = (ns - n)/ns
+- Schéma équivalent (résistances, réactances)
+- Couple : Tmax au glissement s ≈ 10-20%
+- Démarrage : direct (I=6-8 In), étoile-triangle, variateur
+
+**Machine synchrone :**
+- Rotor : aimants permanents (PMSM) ou bobiné
+- Synchronisme : n = f/p (pas de glissement)
+- Moteur brushless (BLDC) : commutation électronique
+- Applications : VE, robotique, éolien
+
+**Variateurs de vitesse :**
+- Contrôle scalaire MAS : loi V/f constante
+- Contrôle vectoriel (FOC) : découplage flux/couple
+- Régulation en boucle fermée (encodeur)
+- Économie d'énergie (adaptation charge)
+
+### Module 4 : Énergies renouvelables
+
+**Photovoltaïque :**
+- Caractéristique I-V panneau (Isc, Voc, Pmax)
+- MPPT (Maximum Power Point Tracking) : Perturb & Observe, Incremental Conductance
+- Onduleurs grid-tie (injection réseau)
+- Stockage batteries (Li-Ion, LiFePO4)
+
+**Éolien :**
+- Turbine → génératrice (asynchrone ou synchrone à aimants)
+- Redresseur + bus DC + onduleur réseau
+- Pitch control (orientation pales)
+
+**Stockage :**
+- Batteries : chimies (Lithium, Plomb), BMS (Battery Management System)
+- Supercapacités : forte puissance, faible énergie
+- Hydrogène : électrolyseur, pile à combustible
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### TP Convertisseurs
+
+**TP1 : Hacheur Boost :**
+- Montage : MOSFET, diode Schottky, L, C
+- Tests : α variable, mesure Vout, rendement
+- Ondulations ΔIL, ΔVout
+
+**TP2 : Onduleur monophasé MLI :**
+- H-bridge IGBT
+- Commande MLI (Arduino/STM32 ou CI dédié)
+- Charge RL : mesure THD
+
+**TP3 : MPPT photovoltaïque :**
+- Panneau PV simulé (source + résistance)
+- Hacheur Boost avec MPPT P&O
+- Mesure point de puissance maximale
+
+### TP Machines
+
+**TP Variateur MAS :**
+- Moteur asynchrone 0.5-1 kW
+- Variateur industriel (Schneider ATV, Siemens)
+- Programmation : fréquence, rampes, protections
+- Mesure couple-vitesse
+- Économie énergie vs démarrage direct
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Évaluation
+- TP et comptes-rendus (35%)
+- Projet énergie renouvelable (20%)
+- Contrôles continus (25%)
+- Examen final (20%)
+
+### Compétences acquises
+- Dimensionnement convertisseurs de puissance
+- Commande de machines électriques
+- Conception systèmes énergies renouvelables
+- Analyse CEM et thermique
+- Utilisation outils simulation (PSIM, PLECS)
+
+### Applications professionnelles
+- Véhicules électriques/hybrides
+- Énergies renouvelables (solaire, éolien)
+- Variateurs industriels
+- Alimentations DC (serveurs, télécom)
+- Smart grids
+
+## 📚 Contenu du cours
+
+### Convertisseurs statiques avancés
+
+#### Hacheurs (approfondissement)
+- Hacheur Buck (abaisseur)
+- Hacheur Boost (élévateur)
+- Hacheur Buck-Boost
+- Hacheur Ćuk et SEPIC
+- Mode de conduction continu et discontinu
+- Ondulation et dimensionnement
+
+#### Onduleurs
+**Onduleurs monophasés :**
+- Onduleur en demi-pont
+- Onduleur en pont complet (H-bridge)
+- Commande MLI (PWM)
+- Filtrage de sortie
+- Distorsion harmonique
+
+**Onduleurs triphasés :**
+- Structure à 6 interrupteurs
+- MLI sinusoïdale
+- MLI vectorielle (SVM)
+- Applications (variateurs, onduleurs solaires)
+
+#### Redresseurs commandés
+- Redresseurs à thyristors
+- Redresseurs mixtes
+- Facteur de puissance
+- Harmoniques réseau
+- Correction du facteur de puissance (PFC)
+
+### Machines électriques avancées
+
+#### Machines asynchrones
+- Principe et constitution
+- Schéma équivalent
+- Couple et glissement
+- Bilan de puissance
+- Démarrage (direct, étoile-triangle, variateur)
+- Freinage
+
+#### Machines synchrones
+- Types (aimants permanents, rotor bobiné)
+- Diagramme de Behn-Eschenburg
+- Alternateur synchrone
+- Moteur synchrone autopilot é
+- Machines à aimants (PMSM, BLDC)
+
+#### Variateurs de vitesse
+- Variateur pour MAS (contrôle scalaire, vectoriel)
+- Variateur pour machines synchrones
+- Régulation de vitesse
+- Optimisation énergétique
+
+### Électronique de puissance moderne
+
+#### Composants avancés
+- IGBT (structure, commande, protection)
+- MOSFET SiC et GaN (Wide Bandgap)
+- Modules de puissance intelligents
+- Drivers de grille
+- Protection et diagnostic
+
+#### CEM (Compatibilité ÉlectroMagnétique)
+- Sources de perturbations
+- Modes commun et différentiel
+- Techniques de réduction (filtrage, blindage)
+- Normes CEM
+- Mesures et conformité
+
+### Énergies renouvelables
+
+#### Énergie solaire photovoltaïque
+- Cellules et panneaux PV
+- Caractéristique I-V
+- MPPT (Maximum Power Point Tracking)
+- Onduleurs solaires
+- Stockage d'énergie
+
+#### Énergie éolienne
+- Turbines éoliennes
+- Génératrices (asynchrone, synchrone)
+- Conversion d'énergie
+- Raccordement au réseau
+
+#### Stockage d'énergie
+- Batteries (Lithium-Ion, LiFePO4)
+- BMS (Battery Management System)
+- Supercapacités
+- Hydrogène et piles à combustible
+
+## 🛠️ Travaux pratiques
+
+### TP Convertisseurs
+- Hacheur Buck avec charge RL
+- Onduleur monophasé MLI
+- Redresseur PFC
+- Mesure de rendement
+
+### TP Machines
+- Caractérisation de MAS
+- Variateur de vitesse
+- Machine synchrone à aimants
+- Mesures de couple et rendement
+
+### TP Énergies renouvelables
+- Caractérisation de panneau PV
+- MPPT algorithmique
+- Onduleur grid-tie
+- Système de stockage
+
+## 💻 Outils utilisés
+
+- **PSIM / PLECS** : Simulation power electronics
+- **MATLAB/Simulink** : Modélisation systèmes
+- **LTspice** : Simulation rapide
+- **Analyseur de puissance** : Mesures précises
+- **Oscilloscope** : Visualisation formes d'ondes
+- **Bancs machines** : Tests réels
+
+## 📊 Évaluation
+
+- Travaux pratiques (35%)
+- Contrôles continus (25%)
+- Projet d'énergie (20%)
+- Examen final (20%)
+
+## 🔗 Liens avec d'autres cours
+
+- **Automatique** : Régulation de machines
+- **IE** : Commande numérique de convertisseurs
+- **Composants Actifs** : Transistors de puissance
+- **CEM** : Perturbations et compatibilité
+
+## 📐 Applications pratiques
+
+### Mobilité électrique
+- Véhicules électriques et hybrides
+- Chargeurs embarqués
+- Stations de recharge
+- Traction électrique
+
+### Smart Grids
+- Gestion intelligente de l'énergie
+- Micro-réseaux
+- Vehicle-to-Grid (V2G)
+- Stockage distribué
+
+### Industrie
+- Variateurs de vitesse
+- Alimentation sans interruption (UPS)
+- Qualité de l'énergie
+- Efficacité énergétique
+
+## 💡 Concepts avancés
+
+### Modulation MLI
+- PWM sinusoïdale
+- Space Vector Modulation (SVM)
+- Fréquence de commutation
+- Harmoniques et THD
+
+### Contrôle de machines
+- Contrôle scalaire (V/f)
+- Contrôle vectoriel (FOC)
+- Direct Torque Control (DTC)
+- Sensorless control
+
+## ⚠️ Contraintes de conception
+
+### Thermique
+- Dissipation dans les semiconducteurs
+- Dimensionnement des dissipateurs
+- Gestion thermique
+- Fiabilité
+
+### CEM
+- Filtrage des perturbations
+- Layout de PCB
+- Blindage
+- Conformité normative
+
+### Sécurité
+- Isolation galvanique
+- Protection contre les surintensités
+- Détection de défauts
+- Norme sécurité électrique
+
+## 📖 Compétences développées
+
+- Conception de convertisseurs de puissance
+- Dimensionnement de systèmes énergétiques
+- Commande de machines électriques
+- Analyse CEM
+- Intégration d'énergies renouvelables
+- Optimisation énergétique
+
+## 🌍 Enjeux énergétiques
+
+### Transition énergétique
+- Décarbonation
+- Mix énergétique
+- Stockage d'énergie
+- Efficacité énergétique
+
+### Smart Energy
+- Gestion intelligente
+- Prédiction de production
+- Optimisation de consommation
+- Flexibilité du réseau

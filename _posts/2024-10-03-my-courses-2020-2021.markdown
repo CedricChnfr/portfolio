@@ -1,0 +1,226 @@
+---
+layout: default
+title: "My Courses - 2020-2021"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+<style>
+.year-nav {
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+.year-nav a {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.year-nav a:hover {
+  color: #111;
+  border-left-color: #2a7ae2;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.year-nav a.active {
+  color: #2a7ae2;
+  border-left-color: #2a7ae2;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .year-nav {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .year-nav a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+  .year-nav a:hover,
+  .year-nav a.active {
+    border-left: none;
+    border-bottom-color: #2a7ae2;
+    transform: translateX(0);
+  }
+}
+
+.semester-section {
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 20%);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.semester-title {
+  font-size: 2em;
+  color: #2a7ae2;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #2a7ae2;
+}
+
+.course-card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+  color: #2d3748;
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+}
+
+.course-card p {
+  color: #718096;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.course-description {
+  font-style: italic;
+  color: #4a5568;
+  margin-top: 10px;
+}
+</style>
+
+<div class="year-nav">
+  <a href="./my-courses-2024-2025.html">2024-2025</a>
+  <a href="./my-courses-2023-2024.html">2023-2024</a>
+  <a href="./my-courses-2022-2023.html">2022-2023</a>
+  <a href="./my-courses-2021-2022.html">2021-2022</a>
+  <a href="./my-courses-2020-2021.html" class="active">2020-2021</a>
+</div>
+
+# My Courses - 2020-2021
+## DUT GEII - Première Année
+
+<p style="text-align: center; font-size: 1.2em; color: #4a5568; margin: 20px 0;">
+  🎓 <strong>Diplôme Universitaire de Technologie</strong><br>
+  Génie Électrique et Informatique Industrielle<br>
+  IUT Paul Sabatier - Toulouse
+</p>
+
+---
+
+## Semestre 1 (S1)
+
+### [🔌 Électronique et Réalisation (ER)](./electronique-realisation-s1.html)
+**Contenu**: Introduction aux circuits électroniques, composants passifs et actifs, simulations sous Proteus.
+
+### [⚡ Énergie](./energie-s1.html)
+**Contenu**: Électrotechnique de base, circuits électriques, lois fondamentales (Ohm, Kirchhoff).
+
+### [💻 Programmation](./programmation-s1.html)
+**Contenu**: Initiation au C++, structures de données, algorithmes fondamentaux.
+
+### [📊 Systèmes Numériques (SIN)](./systemes-numeriques-s1.html)
+**Contenu**: Logique combinatoire et séquentielle, circuits numériques, introduction au VHDL avec Quartus.
+
+### [🖥️ Systèmes d'Exploitation (SE)](./systemes-exploitation-s1.html)
+**Contenu**: Fondamentaux des systèmes d'exploitation, gestion de processus, mémoire.
+
+### [🧮 Mathématiques](./mathematiques-s1.html)
+**Contenu**: Analyse, algèbre linéaire, nombres complexes, transformations.
+
+### [🛠️ Outils Logiciels (OL)](./outils-logiciels-s1.html)
+**Contenu**: Maîtrise des outils bureautiques, documentation technique.
+
+### [🔬 Travaux de Laboratoire (TL)](./travaux-laboratoire-s1.html)
+**Contenu**: Manipulation pratique des concepts théoriques en électronique.
+
+### [💼 Culture, Expression, Communication (CEC)](./cec-s1.html)
+**Contenu**: Communication professionnelle, expression écrite et orale.
+
+---
+
+## Semestre 2 (S2)
+
+### [⚡ Énergie](./energie-s2.html)
+**Contenu**: Conversion d'énergie, machines électriques, électronique de puissance.
+
+### [🔌 Étude et Réalisation (ER)](./etude-realisation-s2.html)
+**Contenu**: Conception et réalisation de cartes électroniques complètes.
+
+### [🤖 Informatique Embarquée (IE)](./informatique-embarquee-s2.html)
+**Contenu**: Programmation de microcontrôleurs, systèmes embarqués.
+
+### [💻 Programmation](./programmation-s2.html)
+**Contenu**: Programmation avancée en C++, structures de données complexes.
+
+### [🖥️ Systèmes Électroniques (SE)](./systemes-electroniques-s2.html)
+**Contenu**: Analyse de systèmes électroniques complexes, traitement du signal.
+
+### [🌡️ Physique: Thermique, Capteurs, Mécanique](./physique-s2.html)
+**Contenu**: Principes physiques appliqués, capteurs et instrumentation.
+
+### [🧮 Mathématiques](./mathematiques-s2.html)
+**Contenu**: Mathématiques avancées pour l'ingénieur, transformées, analyse fréquentielle.
+
+### [🛠️ Outils Logiciels (OL)](./outils-logiciels-s2.html)
+**Contenu**: Approfondissement des outils professionnels.
+
+### [🔬 Travaux de Laboratoire (TL)](./travaux-laboratoire-s2.html)
+**Contenu**: Manipulations pratiques avancées.
+
+### [💼 Culture, Expression, Communication (CEC)](./cec-s2.html)
+**Contenu**: Communication professionnelle avancée, projet tuteuré.
+
+### [🚁 Projet Tuteuré: Quadracopter](./projet-quadracopter.html)
+**Contenu**: Projet de groupe sur la conception d'un quadricoptère.
+
+### [🎨 Coloration ENOC](./coloration-enoc.html)
+**Contenu**: Module de spécialisation choisi.
+
+---
+
+<div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+  <h3 style="color: white; margin-bottom: 15px;">📊 Bilan de l'année</h3>
+  <p style="font-size: 1.1em; line-height: 1.8;">
+    Année fondamentale du DUT GEII posant les bases en <strong>électronique</strong>, <strong>programmation</strong>, 
+    et <strong>systèmes numériques</strong>. Introduction aux outils professionnels et aux projets pratiques.
+  </p>
+  <div style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    <div>
+      <div style="font-size: 2em; font-weight: bold;">20+</div>
+      <div style="font-size: 0.9em; opacity: 0.9;">Modules enseignés</div>
+    </div>
+    <div>
+      <div style="font-size: 2em; font-weight: bold;">500+</div>
+      <div style="font-size: 0.9em; opacity: 0.9;">Heures de formation</div>
+    </div>
+    <div>
+      <div style="font-size: 2em; font-weight: bold;">5+</div>
+      <div style="font-size: 0.9em; opacity: 0.9;">Projets réalisés</div>
+    </div>
+  </div>
+</div>
+
+{% include chatbot.html %}

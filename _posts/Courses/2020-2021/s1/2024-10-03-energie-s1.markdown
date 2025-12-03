@@ -1,0 +1,770 @@
+---
+layout: default
+title: "Énergie - S1"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Énergie - Semestre 1
+
+---
+
+## A) GÉNÉRALITÉS
+
+### Contexte et objectifs
+
+Module fondamental GEII : électrotechnique et circuits électriques. Bases théoriques et pratiques pour comprendre circuits AC/DC, puissance, transformateurs. Volume 70h.
+
+**Objectifs :**
+- Circuits électriques continus et alternatifs
+- Lois fondamentales (Ohm, Kirchhoff, Thévenin, Norton)
+- Puissance électrique (active, réactive, apparente)
+- Composants passifs (R, L, C)
+- Transformateurs monophasés
+
+### Prérequis
+- Électricité de base (Terminale)
+
+---
+
+## B) DESCRIPTIF
+
+### Module 1 : Circuits courant continu
+
+**Lois fondamentales :**
+- Loi d'Ohm : U = R·I
+- Loi de Kirchhoff : ΣI = 0 (nœuds), ΣU = 0 (mailles)
+- Diviseur de tension, diviseur de courant
+
+**Théorèmes :**
+- Thévenin : circuit quelconque → source tension + résistance série
+- Norton : circuit → source courant + résistance parallèle
+- Superposition : sources multiples
+
+**Puissance DC :**
+- P = U·I = R·I² = U²/R
+- Rendement η = P_utile / P_absorbée
+
+### Module 2 : Circuits alternatifs sinusoïdaux
+
+**Grandeurs AC :**
+- Signal sinusoïdal : u(t) = U_max·sin(ωt + φ)
+- Valeur efficace : U_eff = U_max / √2
+- Pulsation ω = 2πf, période T = 1/f
+
+**Impédances complexes :**
+- Résistance : Z_R = R
+- Inductance : Z_L = jLω (déphasage +90°)
+- Condensateur : Z_C = 1/(jCω) (déphasage -90°)
+
+**Lois AC :**
+- Loi d'Ohm complexe : V = Z·I
+- Association série/parallèle d'impédances
+
+### Module 3 : Puissance en alternatif
+
+**Triangle des puissances :**
+- Puissance active : P = U·I·cos(φ) (Watts)
+- Puissance réactive : Q = U·I·sin(φ) (VAR)
+- Puissance apparente : S = U·I (VA), S² = P² + Q²
+- Facteur de puissance : cos(φ)
+
+**Amélioration cos(φ) :**
+- Batteries de condensateurs
+- Réduction pertes Joule
+
+### Module 4 : Systèmes triphasés
+
+**Configuration :**
+- 3 phases déphasées de 120°
+- Couplage étoile (Y) : U_ligne = √3·U_phase
+- Couplage triangle (Δ) : I_ligne = √3·I_phase
+
+**Puissance triphasée :**
+- P = √3·U_ligne·I_ligne·cos(φ)
+
+### Module 5 : Transformateurs monophasés
+
+**Principe :**
+- Induction mutuelle entre primaire et secondaire
+- Rapport de transformation : m = N₂/N₁ = U₂/U₁
+
+**Modèle équivalent :**
+- Résistances pertes Joule
+- Inductances de fuite
+- Pertes fer
+
+**Rendement :**
+- η = P_sortie / P_entrée
+- Maximisé à charge optimale
+
+---
+
+## C) TECHNIQUE
+
+### TP Circuits
+
+**TP1 : Lois fondamentales DC**
+- Vérification Ohm, Kirchhoff
+- Thévenin expérimental
+- Pont diviseur
+
+**TP2 : Circuits AC monophasés**
+- Mesure U_eff, I_eff, déphasage
+- Circuit RLC série : résonance
+- Calcul puissance, cos(φ)
+
+**TP3 : Amélioration facteur de puissance**
+- Mesure cos(φ) charge inductive
+- Dimensionnement condensateur
+- Vérification amélioration
+
+**TP4 : Transformateur**
+- Mesure rapport transformation
+- Essai à vide, en court-circuit
+- Calcul rendement
+
+### Outils
+- Multimètres, oscilloscopes
+- Wattmètres, phasemètres
+- Alimentation AC/DC
+- Charges résistives, inductives, capacitives
+
+---
+
+## D) ANALYTIQUE
+
+### Évaluation
+- TP et comptes-rendus (30%)
+- Contrôles continus (35%)
+- Examen final (35%)
+
+### Compétences acquises
+- Analyse circuits AC/DC
+- Calcul puissances électriques
+- Mesures électriques précises
+- Dimensionnement composants
+- Fondements électrotechnique
+
+### Applications interdisciplinaires
+- **Mathématiques S1** : complexes, équations différentielles
+- **Électronique** : alimentations, filtres
+- **Automatique** : actionneurs électriques
+- **Énergie S3** : convertisseurs de puissance
+
+**Compétences visées :**
+- Maîtriser les lois fondamentales de l'électricité et les appliquer aux circuits
+- Analyser des circuits en régime continu (DC) et alternatif sinusoïdal (AC)
+- Calculer les puissances électriques et comprendre les bilans énergétiques
+- Utiliser les méthodes systématiques d'analyse de circuits
+- Réaliser des mesures électriques en laboratoire
+
+### Programme détaillé
+
+#### 1. Lois fondamentales de l'électricité (10h)
+
+**Grandeurs électriques de base :**
+- Tension (V), courant (I), résistance (R)
+- Conventions récepteur et générateur
+- Loi d'Ohm : V = R·I
+- Effet Joule : P = R·I² = V²/R
+
+**Lois de Kirchhoff :**
+- **Loi des nœuds (LKC)** : ΣI_entrantes = ΣI_sortantes
+- **Loi des mailles (LKV)** : ΣV = 0 dans une boucle fermée
+- Applications à l'analyse de circuits complexes
+
+**Sources électriques :**
+- Source de tension idéale et réelle (avec résistance interne)
+- Source de courant idéale et réelle
+- Conversion source tension ↔ source courant
+
+#### 2. Analyse de circuits en régime continu (15h)
+
+**Circuits résistifs :**
+- Association série : R_eq = R₁ + R₂ + ... + R_n
+- Association parallèle : 1/R_eq = 1/R₁ + 1/R₂ + ... + 1/R_n
+- Pont diviseur de tension : V_out = V_in · R₂/(R₁+R₂)
+- Pont diviseur de courant : I₁ = I_total · R₂/(R₁+R₂)
+
+**Méthodes d'analyse systématiques :**
+- **Méthode des mailles** (loi des tensions de Kirchhoff)
+- **Méthode des nœuds** (loi des courants de Kirchhoff)
+- Choix de la méthode selon le circuit
+
+**Théorèmes fondamentaux :**
+- **Théorème de superposition** : analyser l'effet de chaque source indépendamment
+- **Théorème de Thévenin** : remplacer un circuit par V_th et R_th
+- **Théorème de Norton** : remplacer un circuit par I_N et R_N
+- **Théorème de Millman** : calcul de potentiel de nœud
+
+**Ponts de mesure :**
+- Pont de Wheatstone pour mesure de résistance
+- Condition d'équilibre : R₁/R₂ = R₃/R₄
+
+#### 3. Régime alternatif sinusoïdal (20h)
+
+**Grandeurs sinusoïdales :**
+- Représentation temporelle : v(t) = V_max·sin(ωt + φ)
+- Valeur efficace : V_eff = V_max/√2
+- Pulsation ω = 2πf, période T = 1/f
+- Déphasage entre tension et courant
+
+**Représentation complexe :**
+- Notation de Fresnel : V̄ = V_eff·e^(jφ) = V_eff·(cos φ + j sin φ)
+- Passage temps → complexe pour simplifier les calculs
+- Représentation graphique (diagramme de Fresnel)
+
+**Impédances complexes :**
+- **Résistance** : Z̄_R = R (déphasage nul)
+- **Inductance** : Z̄_L = jLω (courant en retard de 90°)
+- **Condensateur** : Z̄_C = 1/(jCω) = -j/(Cω) (courant en avance de 90°)
+
+**Loi d'Ohm complexe :**
+V̄ = Z̄·Ī
+
+**Circuits RLC :**
+- Circuit série : Z̄_eq = R + jLω - j/(Cω)
+- Circuit parallèle : 1/Z̄_eq = 1/R + 1/(jLω) + jCω
+- Résonance : condition X_L = X_C (impédance minimale en série)
+
+**Admittance :**
+Ȳ = 1/Z̄ = G + jB (conductance G, susceptance B)
+
+#### 4. Puissance en régime alternatif (15h)
+
+**Puissance instantanée :**
+p(t) = v(t)·i(t)
+
+**Puissance active (W) :**
+P = V_eff·I_eff·cos φ
+- Puissance réellement consommée (dissipée)
+- Mesurée en Watts
+
+**Puissance réactive (VAR) :**
+Q = V_eff·I_eff·sin φ
+- Puissance échangée avec les éléments réactifs (L, C)
+- Mesurée en VoltAmpères Réactifs
+
+**Puissance apparente (VA) :**
+S = V_eff·I_eff
+- Notation complexe : S̄ = P + jQ
+- Module : |S| = √(P² + Q²)
+
+**Facteur de puissance :**
+cos φ = P/S
+- Varie entre 0 et 1
+- Important pour l'efficacité énergétique
+- Amélioration par compensation (condensateurs)
+
+**Théorème de Boucherot :**
+Dans un réseau, les puissances se somment :
+- P_total = ΣP_i
+- Q_total = ΣQ_i
+
+#### 5. Transformations et équivalences (10h)
+
+**Transformation triangle-étoile (Δ-Y) :**
+Conversion entre deux configurations de résistances
+- Utile pour simplifier les circuits
+
+**Équivalent Thévenin-Norton :**
+Calcul de V_th, R_th, I_N, R_N pour modéliser un circuit
+- Applications : adaptation d'impédance, transfert de puissance max
+
+**Adaptation d'impédance :**
+Pour transfert maximal de puissance : Z_charge = Z_source*
+(conjugué complexe)
+
+### Méthodes pédagogiques
+
+**Cours magistraux (35h) :**
+- Exposés théoriques avec démonstrations
+- Nombreux exemples d'application
+- Schémas et diagrammes explicatifs
+
+**Travaux dirigés (20h) :**
+- Résolution d'exercices progressifs
+- Méthodes systématiques appliquées
+- Calculs de circuits réels
+
+**Travaux pratiques (15h) :**
+- Manipulation d'équipements (multimètres, oscilloscopes, GBF)
+- Mesures sur circuits RC, RL, RLC
+- Vérification expérimentale des théorèmes
+- Rédaction de comptes-rendus
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Outils de simulation et calcul
+
+#### Logiciels de simulation de circuits
+
+**LTspice (gratuit, Analog Devices) :**
+- Simulation SPICE très puissante
+- Analyse DC, AC, transitoire
+- Bibliothèque de composants étendue
+
+*Exemple : simulation circuit RC*
+```
+* Circuit RC simple
+V1 in 0 AC 1 0
+R1 in out 1k
+C1 out 0 1u
+.ac dec 100 1 100k
+.end
+```
+
+**Proteus (ISIS/ARES) :**
+- Simulation et conception PCB
+- Visualisation oscilloscope intégrée
+- Composants variés (R, L, C, sources)
+
+**TINA-TI (Texas Instruments) :**
+- Simulation circuits analogiques
+- Analyse fréquentielle
+- Interface graphique intuitive
+
+**CircuitLab / EveryCircuit (en ligne) :**
+- Simulations rapides dans le navigateur
+- Visualisation animée du courant
+
+#### MATLAB/Octave pour calculs numériques
+
+**Calculs d'impédances complexes :**
+```matlab
+% Fréquence et composants
+f = 1000;  % Hz
+omega = 2*pi*f;
+R = 1000;  % Ohm
+L = 100e-3;  % H
+C = 1e-6;  % F
+
+% Impédances
+Z_R = R;
+Z_L = 1i * omega * L;
+Z_C = 1 / (1i * omega * C);
+
+% Impédance série RLC
+Z_total = Z_R + Z_L + Z_C;
+
+% Affichage
+disp(['Module: ', num2str(abs(Z_total)), ' Ohm']);
+disp(['Argument: ', num2str(angle(Z_total)*180/pi), ' degrés']);
+```
+
+**Tracé de diagramme de Bode :**
+```matlab
+% Fonction de transfert H(jω) = V_out/V_in
+% Filtre RC passe-bas : H = 1/(1+jRCω)
+R = 1000;
+C = 1e-6;
+f = logspace(0, 6, 1000);  % 1Hz à 1MHz
+omega = 2*pi*f;
+
+H = 1 ./ (1 + 1i*R*C*omega);
+
+% Diagramme de Bode
+subplot(2,1,1);
+semilogx(f, 20*log10(abs(H)));
+ylabel('Gain (dB)');
+grid on;
+
+subplot(2,1,2);
+semilogx(f, angle(H)*180/pi);
+ylabel('Phase (°)');
+xlabel('Fréquence (Hz)');
+grid on;
+```
+
+### Équipements de laboratoire
+
+#### Appareils de mesure
+
+**Multimètre numérique :**
+- Mesure tension DC/AC
+- Mesure courant DC/AC
+- Mesure résistance
+- Précision typique : ±0.5%
+
+**Oscilloscope :**
+- Visualisation formes d'ondes
+- Mesure amplitude, période, fréquence
+- Mesure déphasage entre signaux
+- Déclenchement (trigger)
+
+**Générateur Basses Fréquences (GBF) :**
+- Génération signaux sinusoïdaux, carrés, triangulaires
+- Réglage amplitude et fréquence
+- Offset DC
+
+**Wattmètre :**
+- Mesure puissance active
+- Mesure facteur de puissance
+- Analyse énergétique
+
+#### Composants passifs utilisés
+
+| Composant | Symbole | Rôle | Valeurs typiques TP |
+|-----------|---------|------|---------------------|
+| Résistance | R | Limiter courant, diviser tension | 100Ω - 10kΩ |
+| Inductance | L | Stocker énergie magnétique | 10mH - 1H |
+| Condensateur | C | Stocker énergie électrique | 1nF - 100µF |
+
+### Techniques de mesure
+
+#### Mesure de déphasage à l'oscilloscope
+
+**Méthode temporelle :**
+1. Afficher v(t) et i(t) simultanément
+2. Mesurer le décalage temporel Δt
+3. Calculer le déphasage : φ = (Δt/T) × 360°
+
+**Méthode Lissajous :**
+1. Mode XY (v(t) en X, i(t) en Y)
+2. Observer la forme (ellipse)
+3. Déterminer φ selon l'inclinaison
+
+#### Mesure d'impédance
+
+**Méthode voltampèremétrique :**
+- Mesurer V et I
+- Calculer Z = V/I
+- En AC : utiliser valeurs efficaces
+
+**Pont d'impédances :**
+- Équilibrage du pont
+- Lecture directe de Z
+
+### Applications pratiques
+
+#### Exemple 1 : Circuit RC série
+
+**Configuration :**
+```
+V_in ──R(1kΩ)──┬──C(1µF)── GND
+                │
+               V_out
+```
+
+**Analyse :**
+- Diviseur de tension complexe
+- Fonction de transfert : H = Z_C/(Z_R + Z_C)
+- Filtre passe-bas
+- Fréquence de coupure : f_c = 1/(2πRC) ≈ 159 Hz
+
+**Calcul numérique :**
+- À f = f_c : |H| = 1/√2 ≈ -3dB
+- Phase : φ = -45°
+
+#### Exemple 2 : Circuit RLC série - Résonance
+
+**Configuration :**
+```
+V_s ──R──L──C── GND
+```
+
+**Paramètres :**
+- R = 10Ω
+- L = 10mH
+- C = 10µF
+
+**Fréquence de résonance :**
+$$f_0 = \frac{1}{2\pi\sqrt{LC}} = \frac{1}{2\pi\sqrt{10 \times 10^{-3} \times 10 \times 10^{-6}}} \approx 1592 \text{ Hz}$$
+
+**À la résonance :**
+- Z = R (impédance minimale)
+- Courant maximal : I = V_s/R
+- Q = Lω₀/R (facteur de qualité)
+- Surtension sur L et C
+
+#### Exemple 3 : Compensation de puissance réactive
+
+**Problème :**
+Une charge inductive (moteur) consomme :
+- P = 1000 W
+- cos φ = 0.7 (inductif)
+- V = 230 V, f = 50 Hz
+
+**Objectif :** Relever le facteur de puissance à 0.95
+
+**Calcul :**
+1. Q_initial = P·tan(arccos 0.7) ≈ 1020 VAR
+2. Q_final = P·tan(arccos 0.95) ≈ 329 VAR
+3. Q_condensateur = Q_initial - Q_final = 691 VAR
+4. C = Q_c/(ω·V²) ≈ 42 µF
+
+**Bénéfice :**
+- Réduction du courant appelé
+- Amélioration de l'efficacité énergétique
+- Éviter pénalités fournisseur d'énergie
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Évaluation des compétences
+
+#### Modalités d'évaluation
+
+**Contrôle continu (35%) :**
+- 2 contrôles écrits (1h30 chacun)
+- Sujets : circuits DC et AC, calculs de puissance
+- Calculatrice autorisée
+
+**Travaux pratiques (25%) :**
+- 5 TP notés avec comptes-rendus
+- Évaluation : manipulation, mesures, analyse, rédaction
+- Présence obligatoire
+
+**Travaux dirigés (10%) :**
+- Participation active
+- Mini-interrogations (QCM ou exercices rapides)
+
+**Examen terminal (30%) :**
+- Épreuve de 2h en fin de semestre
+- Synthèse de tout le programme
+- Exercices + problème d'application
+
+#### Grille d'évaluation TP (exemple)
+
+| Critère | Barème |
+|---------|--------|
+| Préparation (connaissance protocole) | /3 |
+| Réalisation des mesures (précision, méthode) | /5 |
+| Analyse des résultats (comparaison théorie/pratique) | /5 |
+| Compte-rendu (clarté, rigueur, présentation) | /5 |
+| Respect des consignes de sécurité | /2 |
+| **Total** | **/20** |
+
+### Compétences acquises
+
+#### Savoirs théoriques
+
+✓ Maîtriser les lois fondamentales (Ohm, Kirchhoff, Thévenin, Norton)
+✓ Comprendre les phénomènes en régime continu et alternatif
+✓ Connaître les composants passifs (R, L, C) et leur comportement
+✓ Maîtriser la notation complexe pour les circuits AC
+✓ Comprendre les notions de puissance active, réactive, apparente
+
+#### Savoir-faire techniques
+
+✓ Analyser un circuit électrique par les méthodes systématiques
+✓ Calculer des impédances complexes et des puissances
+✓ Utiliser les équivalents Thévenin/Norton
+✓ Dimensionner des circuits simples (diviseurs, filtres)
+✓ Réaliser des mesures électriques avec précision
+✓ Interpréter des relevés oscilloscopiques
+
+#### Savoir-être professionnels
+
+✓ Rigueur dans les calculs et les mesures
+✓ Respect des normes de sécurité électrique
+✓ Rédaction technique claire et structurée
+✓ Travail en binôme (communication, coopération)
+✓ Autonomie dans la résolution de problèmes
+
+### Progression et liens avec le cursus
+
+#### Articulation avec les autres modules
+
+| Module | Lien avec Énergie | Applications |
+|--------|-------------------|--------------|
+| **Mathématiques** | Nombres complexes, équations diff. | Calculs d'impédances, régimes transitoires |
+| **Électronique & Réalisation** | Circuits électroniques | Alimentations, filtres, amplificateurs |
+| **Travaux de Laboratoire** | Manipulation pratique | Mesures, validation théorie |
+| **Systèmes Numériques** | Alimentation circuits logiques | Régulateurs, découplage |
+| **Programmation** | Calculs numériques | Simulations, automatisation mesures |
+
+#### Suite du parcours Énergie
+
+**S2 - Énergie 2 :**
+- Transformateurs
+- Machines électriques (MCC, moteur asynchrone)
+- Électronique de puissance (redresseurs, hacheurs)
+- Régimes transitoires
+
+**S3 - Énergie 3 :**
+- Convertisseurs DC/DC
+- Onduleurs
+- Commande de machines
+- Énergies renouvelables
+
+**S4 - Projets énergétiques :**
+- Conception de systèmes complets
+- Gestion de l'énergie
+- Efficacité énergétique
+
+### Indicateurs de réussite
+
+#### Statistiques du module
+
+**Taux de réussite :** 85% (moyenne ≥ 10/20)
+**Moyenne générale :** 12.5/20
+
+**Répartition des notes (année précédente) :**
+- Excellent (≥ 16) : 15%
+- Bien (14-16) : 25%
+- Assez bien (12-14) : 30%
+- Passable (10-12) : 15%
+- Insuffisant (< 10) : 15%
+
+#### Points de vigilance
+
+**Difficultés fréquentes :**
+❌ Confusion entre valeurs max et efficaces en AC
+❌ Erreurs de signes dans les lois de Kirchhoff
+❌ Oubli des unités ou conversions incorrectes
+❌ Mauvaise application des conventions récepteur/générateur
+❌ Calculs d'impédances complexes (parties réelle/imaginaire)
+
+**Clés de réussite :**
+✅ Travailler régulièrement (refaire les TD et exemples)
+✅ Bien préparer les TP (lire le sujet à l'avance)
+✅ Maîtriser les nombres complexes (revoir les maths si nécessaire)
+✅ Faire des schémas clairs et annoter les conventions
+✅ Vérifier la cohérence des résultats (ordres de grandeur)
+
+### Débouchés et applications professionnelles
+
+#### Métiers utilisant ces compétences
+
+**Conception et Bureau d'études :**
+- Dimensionnement de circuits électriques
+- Calculs de bilans énergétiques
+- Choix de composants
+
+**Maintenance et exploitation :**
+- Diagnostic de pannes électriques
+- Mesures et contrôles
+- Optimisation énergétique
+
+**Automatisation et contrôle :**
+- Alimentation de systèmes automatisés
+- Interface capteurs/actionneurs
+- Gestion de puissance
+
+#### Exemples d'applications réelles
+
+**Industrie :**
+- Alimentations de machines
+- Distribution électrique
+- Compensation d'énergie réactive
+
+**Électronique embarquée :**
+- Gestion de batterie
+- Convertisseurs DC/DC
+- Filtrage d'alimentation
+
+**Énergies renouvelables :**
+- Panneaux solaires (MPPT)
+- Éoliennes (conversion)
+- Smart grids
+
+---
+
+## 📚 Ressources complémentaires
+
+### Bibliographie
+
+**Ouvrages de référence :**
+1. *Électrotechnique* - Théodore Wildi (Presses Université Laval)
+2. *Cours d'électrotechnique - Tome 1* - Wildi
+3. *Électricité générale - Analyse et synthèse des circuits* - Alain Durieux (Dunod)
+4. *Circuits électriques en régime continu et sinusoïdal* - François Milsant (Ellipses)
+
+**Aide-mémoires :**
+- *Formulaire d'électricité* - Collection Dunod
+- *Mémentos Larousse - Électricité*
+
+### Ressources numériques
+
+**Sites web pédagogiques :**
+- Cours d'électronique (fabrice.sincere.free.fr)
+- Eduscol Ressources Énergie
+- Khan Academy - Circuits électriques
+
+**Chaînes YouTube :**
+- ElectroniqueClub
+- Sciences Techniques Industrielles
+- Électrotechnique (chaînes universitaires)
+
+**Logiciels gratuits :**
+- **LTspice** (Analog Devices) - simulation SPICE
+- **CircuitJS** (falstad.com) - simulation en ligne interactive
+- **GNU Octave** - calculs numériques (alternative MATLAB)
+
+### Supports de cours
+
+**Documents fournis :**
+- Polycopié complet (150 pages)
+- Recueils d'exercices corrigés
+- Fiches de TP avec protocoles
+- Formulaires et abaques
+- Annales d'examens
+
+**Plateforme Moodle :**
+- QCM d'auto-évaluation
+- Simulations interactives
+- Forum d'entraide
+- Corrections vidéo des exercices types
+
+---
+
+## 🎯 Conseils méthodologiques
+
+### Pendant les cours
+
+- Prendre des notes organisées avec schémas
+- Poser des questions immédiatement en cas d'incompréhension
+- Refaire les démonstrations importantes à la maison
+- Noter les applications pratiques et exemples réels
+
+### En TD
+
+- Préparer les exercices à l'avance (même partiellement)
+- Travailler activement, ne pas seulement recopier la correction
+- Identifier les méthodes types à mémoriser
+- Demander des explications sur les points bloquants
+
+### En TP
+
+- Lire le sujet et préparer les calculs théoriques avant la séance
+- Respecter les consignes de sécurité (couper alimentation avant modification)
+- Faire valider le montage avant mise sous tension
+- Noter immédiatement les mesures dans un tableau
+- Analyser les écarts théorie/pratique
+- Rédiger le compte-rendu rapidement après le TP
+
+### Travail personnel (estimé : 3h/semaine)
+
+- Relire le cours dans les 48h
+- Refaire les exercices de TD seul
+- Anticiper les calculs pour le prochain TP
+- S'entraîner avec les annales avant les contrôles
+
+---
+
+## ⚠️ Sécurité électrique
+
+### Règles fondamentales en TP
+
+🔴 **Ne jamais toucher un circuit sous tension**
+🔴 **Couper l'alimentation avant toute modification de câblage**
+🔴 **Vérifier la polarité des alimentations**
+🔴 **Respecter les calibres des appareils de mesure**
+🔴 **Signaler immédiatement toute anomalie (odeur, fumée, étincelle)**
+
+### Bonnes pratiques
+
+✅ Utiliser des fils avec embouts bananes en bon état
+✅ Vérifier visuellement le montage avant mise sous tension
+✅ Faire valider par l'enseignant avant la première mise sous tension
+✅ Augmenter progressivement la tension/courant
+✅ Ranger le poste de travail en fin de séance
+
+---
+
+**Bon courage pour votre apprentissage de l'électrotechnique ! ⚡**

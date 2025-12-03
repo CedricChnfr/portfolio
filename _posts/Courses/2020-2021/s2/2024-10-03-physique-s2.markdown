@@ -1,0 +1,199 @@
+---
+layout: default
+title: "Physique: Thermique, Capteurs, Mécanique - S2"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Physique: Thermique, Capteurs, Mécanique - Semestre 2
+
+## 📋 Description du cours
+
+Cours de physique appliquée couvrant trois domaines essentiels pour l'ingénieur électricien : la thermique, les capteurs et la mécanique. Ces connaissances sont indispensables pour comprendre les systèmes physiques et leur instrumentation.
+
+## 🎯 Objectifs pédagogiques
+
+- Comprendre les phénomènes thermiques
+- Maîtriser les principes de fonctionnement des capteurs
+- Appréhender les bases de la mécanique
+- Choisir et utiliser des capteurs adaptés
+- Dimensionner des systèmes physiques simples
+
+## 📚 Contenu du cours
+
+### Thermique
+#### Transferts thermiques
+- Conduction thermique (loi de Fourier)
+- Convection (naturelle et forcée)
+- Rayonnement thermique
+- Résistance et capacité thermiques
+- Analogie électrique-thermique
+
+#### Applications
+- Refroidissement de composants électroniques
+- Dissipateurs thermiques
+- Isolation thermique
+- Régulation thermique
+- Mesure de température
+
+### Capteurs et instrumentation
+#### Principes de capteurs
+- Définitions (capteur, transducteur, transmetteur)
+- Caractéristiques métrologiques
+  - Étendue de mesure
+  - Sensibilité
+  - Linéarité
+  - Précision et exactitude
+  - Répétabilité
+  - Hystérésis
+
+#### Types de capteurs
+
+**Capteurs de température**
+- Thermocouples (effet Seebeck)
+- Thermistances (CTN, CTP)
+- Sondes PT100/PT1000
+- Capteurs à semi-conducteurs
+- Pyromètres infrarouges
+
+**Capteurs de position et déplacement**
+- Potentiomètres
+- LVDT (Linear Variable Differential Transformer)
+- Codeurs incrémentaux et absolus
+- Capteurs inductifs, capacitifs
+- Capteurs à effet Hall
+
+**Capteurs de force et pression**
+- Jauges de contrainte
+- Pont de Wheatstone
+- Capteurs piézoélectriques
+- Capteurs de pression (relatifs, absolus)
+- Cellules de charge
+
+**Capteurs de vitesse et accélération**
+- Tachymètres
+- Accéléromètres (piézo, MEMS)
+- Gyroscopes
+- Capteurs de vibration
+
+**Autres capteurs**
+- Capteurs optiques (photodiodes, phototransistors)
+- Capteurs de proximité
+- Capteurs de niveau
+- Capteurs chimiques (pH, gaz)
+
+### Mécanique
+#### Statique
+- Forces et moments
+- Équilibre des solides
+- Centre de gravité
+- Liaisons mécaniques
+
+#### Cinématique
+- Mouvement rectiligne
+- Mouvement circulaire
+- Vitesse et accélération
+- Transmission de mouvement
+
+#### Dynamique
+- Lois de Newton
+- Énergie cinétique et potentielle
+- Travail et puissance
+- Moment d'inertie
+- Applications aux systèmes motorisés
+
+## 🛠️ Travaux pratiques
+
+### TP Thermique
+- Mesure de résistance thermique
+- Étude de dissipateurs
+- Régulation thermique PID
+- Caractérisation de capteurs de température
+
+### TP Capteurs
+- Étalonnage de capteurs
+- Pont de Wheatstone et jauges de contrainte
+- Mesure avec thermocouples et PT100
+- Conditionnement de signaux de capteurs
+- Capteurs de position et déplacement
+
+### TP Mécanique
+- Mesures de forces et couples
+- Transmission de puissance
+- Caractérisation d'un moteur
+- Mesure d'inertie
+
+## 💻 Outils utilisés
+
+- **Multimètres et oscilloscopes** : Mesures électriques
+- **Bancs de caractérisation** : Tests de capteurs
+- **Logiciels d'acquisition** : LabVIEW, Python
+- **Simulation thermique** : COMSOL (éventuellement)
+- **Thermomètres infrarouges** : Mesures sans contact
+
+## 📊 Évaluation
+
+- Travaux pratiques (40%)
+- Comptes-rendus (20%)
+- Contrôle continu (20%)
+- Examen final (20%)
+
+## 🔗 Liens avec d'autres cours
+
+- **SE (Systèmes Électroniques)** : Chaînes d'acquisition
+- **ER** : Interface électronique-physique
+- **Automatique** : Systèmes physiques à commander
+- **Mathématiques** : Modélisation de phénomènes physiques
+
+## 📐 Choix et mise en œuvre de capteurs
+
+### Critères de choix
+- Grandeur à mesurer
+- Étendue de mesure
+- Précision requise
+- Environnement (température, humidité, etc.)
+- Contraintes électriques (alimentation, sortie)
+- Coût et disponibilité
+
+### Mise en œuvre
+- Alimentation du capteur
+- Conditionnement du signal
+- Linéarisation si nécessaire
+- Calibration
+- Protection et filtrage
+
+## 💡 Applications pratiques
+
+- Contrôle de processus industriels
+- Instrumentation de laboratoire
+- Automobile et aéronautique
+- Domotique et bâtiment intelligent
+- Robotique et automatisation
+- Électronique médicale
+
+## 📖 Compétences développées
+
+- Lecture de documentations techniques (datasheets)
+- Dimensionnement thermique
+- Sélection de capteurs appropriés
+- Analyse de chaînes d'acquisition
+- Étalonnage et validation
+- Interprétation de mesures physiques
+
+## ⚠️ Points d'attention
+
+### Thermique
+- Ne pas sous-estimer les problèmes thermiques
+- Importance de la gestion thermique en électronique
+- Fiabilité liée à la température
+
+### Capteurs
+- Importance de l'étalonnage
+- Gestion des dérives et vieillissement
+- Conditionnement adapté
+- Influence de l'environnement
+
+### Mécanique
+- Sécurité avec les pièces en mouvement
+- Importance du dimensionnement
+- Couplage mécanique-électrique

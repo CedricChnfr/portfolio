@@ -1,0 +1,125 @@
+---
+layout: default
+title: "Énergie - S2"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Énergie - Semestre 2
+
+## 📋 Description du cours
+
+Approfondissement en électrotechnique avec focus sur la conversion d'énergie, les machines électriques et l'électronique de puissance. Ce cours aborde les systèmes de puissance et leur contrôle.
+
+## 🎯 Objectifs pédagogiques
+
+- Comprendre les principes de conversion d'énergie
+- Maîtriser le fonctionnement des machines électriques
+- Analyser les convertisseurs d'électronique de puissance
+- Dimensionner des systèmes de puissance
+- Appréhender les problématiques énergétiques
+
+## 📚 Contenu du cours
+
+### Conversion d'énergie
+- Principes de conversion électromécanique
+- Bilan énergétique et rendement
+- Pertes dans les systèmes électriques
+- Efficacité énergétique
+- Normes et réglementation
+
+### Machines électriques
+#### Machines à courant continu
+- Principe de fonctionnement
+- Modèle équivalent
+- Caractéristiques couple-vitesse
+- Modes de fonctionnement (moteur/génératrice)
+- Commande et régulation
+
+#### Transformateurs
+- Constitution et principe
+- Transformateur idéal et réel
+- Essais à vide et en court-circuit
+- Couplages (étoile, triangle)
+- Applications pratiques
+
+#### Machines asynchrones (introduction)
+- Principe du champ tournant
+- Constitution du moteur asynchrone
+- Caractéristiques mécaniques
+- Démarrage et variation de vitesse
+
+#### Machines synchrones (introduction)
+- Principe de fonctionnement
+- Alternateur synchrone
+- Moteur synchrone
+- Applications
+
+### Électronique de puissance
+#### Composants de puissance
+- Diodes de puissance
+- Thyristors
+- Transistors de puissance (MOSFET, IGBT)
+- Drivers et commande
+
+#### Convertisseurs statiques
+- Redresseurs (mono et triphasés)
+- Hacheurs (Buck, Boost, Buck-Boost)
+- Onduleurs (monophasés, triphasés)
+- Gradateurs
+
+#### Applications
+- Alimentations à découpage
+- Variation de vitesse
+- Qualité de l'énergie
+- Harmoniques et filtrage
+
+## 🛠️ Travaux pratiques
+
+### Manipulations sur machines
+- Caractérisation de machines à courant continu
+- Essais sur transformateurs
+- Mesure de rendement
+- Relevé de caractéristiques
+
+### Électronique de puissance
+- Redressement et filtrage
+- Hacheurs et alimentations
+- Commande de machines
+- Mesure de pertes et rendement
+
+## 💻 Outils utilisés
+
+- **PSIM/PLECS** : Simulation d'électronique de puissance
+- **Bancs d'essai** : Machines réelles
+- **Analyseur de puissance** : Mesures sur systèmes de puissance
+- **Oscilloscope** : Visualisation de signaux de puissance
+
+## 📊 Évaluation
+
+- Contrôles théoriques
+- Comptes-rendus de TP
+- Projet pratique
+- Examen final (théorie + pratique)
+
+## 🔗 Liens avec d'autres cours
+
+- **Énergie S1** : Consolidation des bases
+- **ER** : Circuits de puissance
+- **Automatique** : Commande de machines
+- **Mathématiques** : Modélisation de systèmes
+
+## ⚠️ Sécurité
+
+- Manipulation de tensions et courants élevés
+- Respect strict des consignes de sécurité
+- Port des EPI (si nécessaire)
+- Habilitation électrique (sensibilisation)
+
+## 📖 Applications industrielles
+
+- Variateurs de vitesse industriels
+- Alimentations électriques
+- Systèmes de traction
+- Énergies renouvelables (éolien, solaire)
+- Smart grids

@@ -1,0 +1,541 @@
+---
+layout: default
+title: "Culture, Expression, Communication (CEC) - S1"
+date: 2024-10-02 10:56:03 +0200
+categories: jekyll update
+---
+
+# Culture, Expression, Communication (CEC) - Semestre 1
+
+## PART A - Présentation Générale du Cours
+
+### Contexte de la formation
+Le module CEC (Culture, Expression, Communication) est essentiel dans la formation d'un technicien supérieur ou ingénieur. Au-delà des compétences techniques, la capacité à communiquer efficacement, à travailler en équipe, et à s'intégrer dans un environnement professionnel est déterminante pour la réussite de carrière. Ce module développe ces compétences transversales souvent appelées "soft skills", de plus en plus valorisées par les employeurs.
+
+### Positionnement dans le cursus
+- **Semestre** : S1 (1ère année DUT GEII)
+- **Volume horaire** : 30h (15h TD + 15h activités/sorties)
+- **Crédits ECTS** : 2
+- **Prérequis** : Niveau Bac (expression écrite et orale de base)
+- **Continuité** : CEC S2, puis 3PE (Projet Personnel et Professionnel) S1-S4
+
+### Public visé
+Tous les étudiants de première année DUT GEII, quels que soient leurs profils et leurs facilités d'expression. Le cours s'adapte aux niveaux de chacun avec une approche progressive et bienveillante.
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+
+### Objectifs pédagogiques
+
+**Compétences en expression :**
+- Maîtriser l'expression écrite et orale en contexte professionnel
+- Structurer sa pensée et ses arguments
+- Adapter sa communication au public et au contexte
+- Développer l'aisance à l'oral
+
+**Compétences méthodologiques :**
+- Rechercher, sélectionner et traiter l'information
+- Analyser de manière critique
+- Synthétiser des informations complexes
+- Citer et référencer ses sources correctement
+
+**Compétences culturelles et citoyennes :**
+- Développer sa culture générale scientifique et technique
+- Comprendre les enjeux socio-économiques actuels
+- Réfléchir à l'éthique et la responsabilité de l'ingénieur
+- S'ouvrir aux diversités culturelles
+
+### Programme détaillé
+
+#### 1. Expression écrite (8h)
+
+**Techniques de rédaction :**
+- **Structure d'un texte** : Introduction, développement, conclusion
+- **Paragraphes** : Une idée par paragraphe, phrases de transition
+- **Style professionnel** : Clarté, concision, précision
+- **Vocabulaire technique** : Utilisation appropriée et définitions
+- **Orthographe et grammaire** : Révision des règles essentielles
+
+**Types de documents professionnels :**
+
+**Compte-rendu de lecture :**
+- Présentation de l'ouvrage/article
+- Résumé des idées principales
+- Analyse critique personnelle
+- Liens avec la formation
+
+**Note de synthèse :**
+- Synthétiser plusieurs documents sur un thème
+- Dégager les idées principales
+- Structurer l'information de manière logique
+- Rester objectif (pas d'opinion personnelle)
+
+**Rapport technique :**
+- Page de garde professionnelle
+- Sommaire automatique
+- Introduction et contexte
+- Corps du rapport (méthodologie, résultats, analyse)
+- Conclusion et perspectives
+- Bibliographie et annexes
+
+**Argumentation écrite :**
+- Thèse, arguments, exemples
+- Connecteurs logiques (en effet, ainsi, néanmoins, par conséquent)
+- Anticipation des contre-arguments
+- Conclusion qui ouvre le débat
+
+#### 2. Expression orale (8h)
+
+**Techniques de prise de parole :**
+
+**Préparation :**
+- Définir l'objectif de la présentation
+- Connaître son auditoire
+- Structurer son discours (accroche, plan annoncé, développement, conclusion)
+- Préparer un support visuel sobre et efficace
+- Répéter à voix haute (chronomètre)
+
+**Pendant la présentation :**
+- **Voix** : Volume, débit, articulation, intonation
+- **Posture** : Debout, ancré, ouvert vers le public
+- **Regard** : Balayer l'auditoire, contact visuel
+- **Gestes** : Naturels, pas de mains dans les poches
+- **Respiration** : Pauses, gestion du stress
+
+**Gestion du trac :**
+- Techniques de respiration profonde
+- Visualisation positive
+- Préparation rigoureuse (confiance)
+- Accepter le stress (il est normal)
+- Se concentrer sur le message, pas sur soi
+
+**Communication non-verbale :**
+- Langage corporel (70% de la communication)
+- Expressions faciales
+- Proxémique (distance avec l'auditoire)
+- Contact visuel
+- Synchronisation verbal/non-verbal
+
+**Prise de parole en public :**
+- Présentation individuelle (3-5 min)
+- Présentation de groupe
+- Débat argumenté
+- Questions-réponses
+
+#### 3. Recherche d'information et documentation (6h)
+
+**Méthodologie de recherche :**
+
+**Définir son besoin :**
+- Formuler une question de recherche claire
+- Identifier les mots-clés
+- Délimiter le périmètre
+
+**Sources d'information :**
+- **Bibliothèque universitaire** : Ouvrages, périodiques, thèses
+- **Bases de données académiques** : IEEE Xplore, ScienceDirect, HAL
+- **Moteurs de recherche** : Google Scholar (pas Google tout court !)
+- **Sites institutionnels** : Universités, organismes de recherche
+- **Presse scientifique** : Pour l'Actualité, La Recherche, Sciences et Avenir
+
+**Évaluer la fiabilité :**
+- Auteur identifié et qualifié ?
+- Source institutionnelle ou blog personnel ?
+- Date de publication (information à jour ?)
+- Références et bibliographie présentes ?
+- Biais éventuels ?
+
+**Citer ses sources (éviter le plagiat) :**
+
+**Normes de citation :**
+- IEEE (pour l'ingénierie) : [1], [2], etc.
+- APA (sciences humaines) : (Auteur, année)
+
+**Exemple IEEE :**
+```
+[1] M. Dupont, "Titre de l'article," Nom de la Revue, vol. 12, no. 3, pp. 45-67, mars 2020.
+```
+
+**Bibliographie :**
+- Ordre alphabétique ou numérique
+- Format cohérent
+- Toutes les sources citées dans le texte
+
+**Veille technologique :**
+- S'abonner à des flux RSS
+- Newsletters spécialisées
+- Réseaux sociaux professionnels (LinkedIn, ResearchGate)
+- Alertes Google Scholar
+
+#### 4. Culture générale et ouverture (8h)
+
+**Actualités scientifiques et techniques :**
+- Innovations technologiques récentes
+- Grands projets scientifiques (CERN, spatial, IA)
+- Enjeux de la transition numérique
+- Intelligence artificielle et éthique
+
+**Contexte socio-économique :**
+- Rôle de l'ingénieur dans la société
+- Industrie 4.0 et transformation digitale
+- Économie circulaire et développement durable
+- Mondialisation et délocalisations
+
+**Éthique et responsabilité :**
+- Responsabilité sociétale de l'ingénieur
+- Impact environnemental des technologies
+- Protection des données personnelles
+- Obsolescence programmée
+- Technologies duales (civiles/militaires)
+
+**Débats contemporains :**
+- Voiture autonome (responsabilité en cas d'accident ?)
+- IA et emploi (destruction ou création ?)
+- 5G et santé
+- Énergies renouvelables vs nucléaire
+
+### Activités pratiques et sorties
+
+#### Visites culturelles
+
+**Visite de la Halle de la Machine (Toulouse) :**
+- Découverte des machines spectaculaires
+- Rencontre art, technologie et spectacle vivant
+- Réflexion sur l'innovation et la créativité
+- Compte-rendu de visite (écrit)
+
+**Autres sorties possibles :**
+- Cité de l'Espace (spatial, technologies)
+- Musée Aeroscopia (aéronautique)
+- Entreprises locales (Airbus, Continental, etc.)
+- Salons professionnels (Enova, Embedded World)
+
+#### Conférences
+
+**Intervenants extérieurs :**
+- Professionnels du secteur GEII
+- Anciens étudiants (parcours, métiers)
+- Chercheurs (vulgarisation scientifique)
+- Entrepreneurs (start-ups, innovation)
+
+**Thèmes abordés :**
+- Parcours professionnel et choix de carrière
+- Innovation et entrepreneuriat
+- Recherche et développement
+- Transition écologique dans l'industrie
+
+#### Travaux de groupe
+
+**Exposé collectif (3-4 personnes) :**
+- Recherche documentaire sur un thème imposé
+- Répartition du travail
+- Présentation orale collective (15-20 min)
+- Gestion des questions
+
+**Débats organisés :**
+- Sujets de société liés à la technologie
+- Argumentation pour/contre
+- Écoute et respect des opinions divergentes
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Outils de communication
+
+#### Logiciels de présentation
+
+**PowerPoint / Impress / Google Slides :**
+
+**Règles d'or d'un bon diaporama :**
+- **Une idée par diapo** (pas de surcharge)
+- **Peu de texte** : Mots-clés, pas de phrases complètes
+- **Visuels** : Images, schémas, graphiques
+- **Lisibilité** : Police ≥24 pt, contraste fort
+- **Cohérence** : Thème uniforme, pas d'effets inutiles
+- **Support** : Le diaporama illustre, vous expliquez
+
+**Structure type :**
+1. Titre (avec noms des auteurs)
+2. Plan/Sommaire
+3. Introduction/Contexte
+4. Développement (3-4 parties)
+5. Conclusion
+6. Questions / Merci pour votre attention
+
+#### Outils de rédaction
+
+**Traitement de texte (Word, LibreOffice Writer) :**
+- Styles de titre (hiérarchie automatique)
+- Table des matières automatique
+- Insertion de figures et tableaux numérotés
+- Références croisées
+- Correcteur orthographique
+
+**LaTeX (introduction) :**
+- Langage de composition de documents scientifiques
+- Qualité typographique professionnelle
+- Gestion automatique de la bibliographie
+- Équations mathématiques
+- Utilisé dans la recherche académique
+
+#### Outils collaboratifs
+
+**Google Drive / OneDrive :**
+- Travail collaboratif en ligne
+- Partage et synchronisation
+- Historique des versions
+- Commentaires et suggestions
+
+**Trello / Notion :**
+- Gestion de projet en équipe
+- Répartition des tâches
+- Suivi de l'avancement
+
+### Techniques de communication
+
+#### Communication écrite efficace
+
+**Principe KISS (Keep It Simple, Stupid) :**
+- Phrases courtes (15-20 mots max)
+- Vocabulaire simple mais précis
+- Structure claire
+- Éviter le jargon inutile
+
+**Relecture en 3 passes :**
+1. **Contenu** : Idées, logique, arguments
+2. **Style** : Clarté, fluidité, répétitions
+3. **Forme** : Orthographe, grammaire, ponctuation
+
+#### Communication orale percutante
+
+**Technique du storytelling :**
+- Raconter une histoire (situation, problème, solution)
+- Captiver l'attention
+- Rendre mémorable
+- Humaniser le discours technique
+
+**Règle des 3** :
+- 3 parties dans votre présentation
+- 3 idées principales
+- Chiffre magique pour la mémoire
+
+**Gestion des questions :**
+- Écouter la question jusqu'au bout
+- Reformuler si nécessaire
+- Répondre directement
+- Si on ne sait pas : "Bonne question, je vais me renseigner"
+- Pas de langue de bois
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Évaluation des compétences
+
+#### Modalités d'évaluation
+
+**Travaux écrits (40%) :**
+- Compte-rendu de lecture (10%)
+- Note de synthèse (15%)
+- Rapport de visite culturelle (15%)
+
+**Expression orale (40%) :**
+- Présentation individuelle (3-5 min) - 20%
+- Exposé de groupe (15-20 min) - 20%
+
+**Participation et engagement (20%) :**
+- Assiduité aux activités
+- Participation aux débats
+- Implication dans les travaux de groupe
+
+#### Grille d'évaluation - Présentation orale
+
+| Critère | Insuffisant (0-5) | Moyen (6-10) | Bien (11-15) | Excellent (16-20) |
+|---------|-------------------|--------------|--------------|-------------------|
+| **Contenu** | Superficiel, imprécis | Basique, correct | Précis, détaillé | Riche, approfondi |
+| **Structure** | Désorganisé | Structure visible | Bien structuré | Parfaite organisation |
+| **Expression** | Difficultés majeures | Compréhensible | Clair | Éloquent |
+| **Support visuel** | Inadapté ou absent | Basique | Efficace | Professionnel |
+| **Gestion du temps** | Hors temps | Approximatif | Respecté | Maîtrisé |
+| **Interaction** | Pas de contact | Contact minimal | Bon contact | Excellente présence |
+
+#### Grille d'évaluation - Rapport écrit
+
+| Critère | Points |
+|---------|--------|
+| **Forme** : Mise en page, orthographe, grammaire | /4 |
+| **Structure** : Organisation logique, plan clair | /4 |
+| **Contenu** : Pertinence, précision, exhaustivité | /6 |
+| **Analyse** : Esprit critique, recul, réflexion personnelle | /4 |
+| **Sources** : Bibliographie, citations, références | /2 |
+| **Total** | **/20** |
+
+### Compétences acquises et progression
+
+#### Savoirs
+
+✓ Connaître les techniques d'expression écrite et orale
+✓ Maîtriser la méthodologie de recherche documentaire
+✓ Comprendre les enjeux socio-économiques et éthiques
+✓ Développer sa culture scientifique et technique
+
+#### Savoir-faire
+
+✓ Rédiger des documents professionnels (rapports, synthèses)
+✓ Présenter à l'oral devant un auditoire
+✓ Rechercher et traiter l'information de manière critique
+✓ Argumenter et débattre de manière constructive
+✓ Travailler en équipe sur des projets
+
+#### Savoir-être
+
+✓ Aisance dans la communication interpersonnelle
+✓ Confiance en soi à l'oral
+✓ Écoute active et empathie
+✓ Esprit critique et curiosité intellectuelle
+✓ Ouverture d'esprit et respect des opinions divergentes
+
+### Liens avec le cursus et les débouchés
+
+#### Articulation avec les autres modules
+
+| Module | Lien avec CEC | Applications |
+|--------|---------------|--------------|
+| **3PE** | Projet Personnel et Professionnel | CV, lettre de motivation, entretiens |
+| **Anglais** | Communication internationale | Présentations, rapports en anglais |
+| **OL** | Outils logiciels | Maîtrise des outils de communication |
+| **Projets (tous)** | Présentation et documentation | Soutenances, rapports techniques |
+| **Tous les cours** | Comptes-rendus de TP | Rédaction technique |
+
+#### Compétences valorisées en entreprise
+
+**Top 10 des soft skills recherchés (enquête LinkedIn 2023) :**
+1. **Communication** ← CEC
+2. Résolution de problèmes
+3. **Travail d'équipe** ← CEC
+4. Adaptabilité
+5. **Créativité** ← CEC
+6. Gestion du temps
+7. **Pensée critique** ← CEC
+8. Intelligence émotionnelle
+9. **Prise de parole** ← CEC
+10. Leadership
+
+**Dans les offres d'emploi GEII :**
+- "Bonnes capacités de communication" : 85% des annonces
+- "Rédaction de rapports techniques" : 60%
+- "Présentations clients" : 45%
+- "Travail en équipe pluridisciplinaire" : 90%
+
+### Conseils de réussite
+
+#### Pour l'écrit
+
+**Avant de rédiger :**
+- Faire un plan détaillé
+- Lister les idées principales
+- Identifier les sources nécessaires
+
+**Pendant la rédaction :**
+- Écrire au fil de la plume d'abord (ne pas se censurer)
+- Structurer ensuite
+- Relire à voix haute
+
+**Erreurs à éviter :**
+❌ Copier-coller sans citer (plagiat)
+❌ Phrases trop longues et alambiquées
+❌ Fautes d'orthographe (utiliser le correcteur !)
+❌ Hors-sujet
+❌ Manque de structure
+
+#### Pour l'oral
+
+**Préparation :**
+✅ Connaître parfaitement son sujet
+✅ Répéter plusieurs fois à voix haute
+✅ Chronométrer
+✅ Anticiper les questions
+✅ Préparer son support visuel
+
+**Le jour J :**
+✅ Arriver en avance
+✅ Respirer profondément
+✅ Sourire et regarder le public
+✅ Parler lentement et articuler
+✅ Être authentique, pas de rôle de composition
+
+**Gestion du trac :**
+- Le trac est normal (même pour les professionnels !)
+- Il diminue après les premières secondes
+- Se concentrer sur le message, pas sur soi
+- Visualiser une présentation réussie
+
+---
+
+## 📚 Ressources complémentaires
+
+### Ouvrages de référence
+
+**Expression écrite :**
+1. *Bien rédiger* - Jean-Luc Bizouard (Studyrama)
+2. *La communication écrite professionnelle* - Alain Bentolila
+3. *Le français au bureau* - Office québécois de la langue française
+
+**Expression orale :**
+- *Parler en public* - Lionel Bellenger (ESF)
+- *Prise de parole en public* - Bernard Poussigue (Dunod)
+- *TED Talks* - Chris Anderson (comment donner une présentation mémorable)
+
+**Méthodologie :**
+- *La recherche documentaire* - Martine Défourneaux (Armand Colin)
+- *Savoir chercher* - Frédéric Martinet (Dunod)
+
+### Sites web et ressources en ligne
+
+**Expression et communication :**
+- **TED.com** : Exemples de présentations inspirantes
+- **Projet Voltaire** : Améliorer son orthographe (certificat reconnu)
+- **MOOC "Du manager au leader"** (Cnam) : Communication professionnelle
+
+**Culture scientifique :**
+- **Science.gouv.fr** : Actualités scientifiques françaises
+- **Pour la Science** : Vulgarisation scientifique de qualité
+- **The Conversation** : Articles de chercheurs accessibles
+- **Futura-Sciences** : Actualités sciences et technologies
+
+**Recherche documentaire :**
+- **Google Scholar** (scholar.google.fr)
+- **HAL** (archives ouvertes françaises)
+- **IEEE Xplore** (via bibliothèque universitaire)
+- **Zotero** : Gestionnaire de bibliographie gratuit
+
+### Chaînes YouTube et podcasts
+
+**Vulgarisation scientifique :**
+- **Science Étonnante** (David Louapre)
+- **Défakator** : Esprit critique et zététique
+- **La Tronche en Biais** : Pensée critique
+- **Dirty Biology** : Biologie et sciences
+
+**Communication :**
+- **TEDx Talks** : Modèles de présentations
+- **Sébastien Tissier** : Prise de parole en public
+
+---
+
+## 🎯 Message de conclusion
+
+Le module CEC n'est pas "juste" un cours de français. C'est une formation aux compétences qui feront la différence dans votre carrière professionnelle. Dans 10 ans, les connaissances techniques que vous apprenez aujourd'hui seront peut-être obsolètes, mais votre capacité à communiquer, à travailler en équipe, à vous adapter et à apprendre restera votre atout majeur.
+
+> "La communication est une compétence que vous pouvez apprendre. C'est comme faire du vélo ou taper à la machine. Si vous y travaillez, vous pouvez rapidement améliorer la qualité de chaque aspect de votre vie." - Brian Tracy
+
+**Profitez de ce module pour :**
+- Sortir de votre zone de confort
+- Oser prendre la parole
+- Développer votre esprit critique
+- Vous ouvrir aux autres et au monde
+- Construire votre identité professionnelle
+
+Bon courage et bonne communication ! 🎤📝🌍

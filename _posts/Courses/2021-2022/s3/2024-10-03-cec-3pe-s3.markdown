@@ -1,0 +1,660 @@
+---
+layout: default
+title: "CEC et 3PE - S3"
+date: 2021-09-01
+semester: "S3"
+year: "2021-2022"
+category: "DUT GEII"
+---
+
+# CEC et 3PE - Semestre 3
+
+---
+
+## PART A - Présentation Générale du Cours
+
+### Contexte pédagogique
+
+Le module CEC (Culture d'Entreprise et Communication) et 3PE (Projet Personnel et Professionnel de l'Étudiant) occupe une place stratégique au semestre 3 du DUT GEII, moment charnière où les étudiants construisent activement leur projet professionnel en vue du stage de fin de DUT (S4) et de leur future insertion professionnelle.
+
+Cette unité d'enseignement transversale complète la formation technique en développant des compétences essentielles pour l'employabilité : communication professionnelle, connaissance du monde de l'entreprise, capacité à se présenter et à valoriser ses compétences.
+
+### Objectifs d'apprentissage
+
+**Objectifs principaux :**
+- Construire et formaliser son projet professionnel à court et moyen terme
+- Maîtriser les outils de communication professionnelle (CV, lettre de motivation, portfolio)
+- Développer sa capacité à se présenter et à argumenter lors d'entretiens
+- Comprendre les codes et le fonctionnement du monde de l'entreprise
+- Développer son réseau professionnel et sa présence en ligne
+
+**Compétences transversales :**
+- Auto-évaluation et connaissance de soi
+- Communication écrite et orale professionnelle
+- Recherche d'information et veille
+- Personal branding et e-réputation
+- Capacité à pitcher son parcours et ses projets
+
+### Lien avec le stage S4
+
+Ce module prépare directement le stage de fin de DUT (10 semaines minimum, S4) :
+- Recherche active d'entreprises et de missions
+- Constitution d'un dossier de candidature complet
+- Préparation aux entretiens de recrutement
+- Définition d'objectifs professionnels clairs
+
+---
+
+## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION DU COURS
+
+### Module 1 : Culture d'Entreprise
+
+#### Le monde de l'entreprise
+
+**Types de structures :**
+- **PME** (Petites et Moyennes Entreprises) : < 250 salariés, flexibilité, polyvalence
+- **ETI** (Entreprises de Taille Intermédiaire) : 250-5000 salariés, croissance, innovation
+- **Grandes entreprises / Groupes** : > 5000 salariés, carrières structurées, international
+- **Start-ups** : Innovation, technologie, risque/opportunité
+- **Cabinets d'ingénierie / ESN** : Prestations, missions variées chez clients
+
+**Secteurs pour GEII :**
+- Électronique embarquée et systèmes
+- Télécommunications et réseaux
+- Objets connectés (IoT)
+- Automatisme et industrie 4.0
+- Énergie et énergies renouvelables
+- Aéronautique, spatial, défense
+- Automobile et transports
+- Médical et santé connectée
+
+**Organisation entreprise :**
+- Direction générale
+- R&D / Bureau d'études
+- Production / Opérations
+- Qualité et méthodes
+- Commercial et marketing
+- Support (RH, finance, IT)
+
+**Culture et valeurs :**
+- Vision, mission, valeurs d'entreprise
+- Responsabilité Sociétale des Entreprises (RSE)
+- Éthique professionnelle
+- Diversité et inclusion
+
+#### Communication professionnelle
+
+**Communication écrite :**
+- Emails professionnels (objet, formules, concision)
+- Rapports techniques
+- Comptes-rendus de réunion
+- Notes de synthèse
+- Documentation projet
+
+**Communication orale :**
+- Prise de parole en réunion
+- Présentation de projet
+- Pitch elevator (30 secondes)
+- Argumentation et persuasion
+- Gestion du stress
+
+**Communication numérique :**
+- Réseaux sociaux professionnels (LinkedIn prioritaire)
+- Personal branding
+- E-réputation
+- Veille professionnelle
+- Partage de contenu technique
+
+**LinkedIn - Réseau professionnel :**
+- Profil optimisé (photo, titre accrocheur, résumé personnalisé)
+- Mise en valeur compétences et projets
+- Réseau de contacts (alumni, professionnels, recruteurs)
+- Publications et engagement
+- Recommandations
+
+### Module 2 : Projet Personnel et Professionnel (3PE)
+
+#### Auto-évaluation et bilan personnel
+
+**Bilan de compétences techniques :**
+- Compétences GEII acquises (S1-S3)
+- Projets réalisés et apprentissages
+- Points forts techniques
+- Domaines d'approfondissement souhaités
+
+**Bilan compétences transversales :**
+- Soft skills (communication, travail d'équipe, autonomie)
+- Langues (anglais technique, autres)
+- Informatique (bureautique, programmation, CAO)
+- Gestion de projet
+
+**Intérêts et motivation :**
+- Domaines techniques préférés
+- Type d'environnement (PME, grande entreprise, startup)
+- Mobilité géographique
+- Aspirations (responsabilités, expertise, international)
+
+**Valeurs personnelles :**
+- Équilibre vie pro/perso
+- Sens du travail
+- Innovation vs stabilité
+- Impact sociétal
+
+#### Exploration des métiers GEII
+
+**Métiers de l'électronique :**
+- Ingénieur électronique embarquée
+- Concepteur de cartes électroniques
+- Ingénieur test et validation
+- Responsable bureau d'études électronique
+
+**Métiers de l'informatique industrielle :**
+- Ingénieur automatisme
+- Développeur firmware / logiciel embarqué
+- Ingénieur systèmes temps réel
+- Intégrateur systèmes
+
+**Métiers objets connectés / IoT :**
+- Architecte solutions IoT
+- Ingénieur IoT (hardware + software)
+- Chef de projet IoT
+- Ingénieur cybersécurité IoT
+
+**Métiers télécommunications :**
+- Ingénieur RF
+- Ingénieur réseaux
+- Architecte systèmes de communication
+- Ingénieur antennes
+
+**Témoignages et rencontres :**
+- Alumni DUT GEII (parcours, conseils)
+- Professionnels en activité
+- Conférences métiers
+- Visites d'entreprises
+
+#### Construction du projet professionnel
+
+**Objectifs court terme (0-2 ans) :**
+- Stage de fin de DUT (S4)
+- Poursuite d'études : Licence Pro, École d'ingénieur, BUT
+- Premier emploi : technicien supérieur
+
+**Objectifs moyen terme (3-5 ans) :**
+- Spécialisation technique ou managériale
+- Évolution de poste
+- Mobilité (entreprise, géographique)
+
+**Objectifs long terme (carrière) :**
+- Expert technique / Ingénieur R&D
+- Management de projet / Chef de projet
+- Responsable d'équipe / Manager
+- Création d'entreprise
+
+**Plan d'action :**
+- Formations complémentaires à envisager
+- Compétences à développer
+- Réseau à construire
+- Expériences à acquérir
+
+### Module 3 : Outils professionnels
+
+#### Le CV (Curriculum Vitae)
+
+**Principes généraux :**
+- 1 page pour débutant (2 pages si > 5 ans expérience)
+- Clarté, lisibilité, hiérarchisation
+- Adaptation au poste visé
+- Zéro faute d'orthographe
+- Format PDF (nom : Nom_Prenom_CV.pdf)
+
+**Structure CV chronologique anti-chronologique :**
+
+1. **En-tête :**
+   - Nom, prénom (taille importante)
+   - Titre/accroche (ex: "Technicien supérieur GEII - Spécialité Électronique Embarquée")
+   - Coordonnées (téléphone, email pro, LinkedIn, portfolio)
+   - Photo professionnelle (optionnelle mais recommandée)
+
+2. **Formation :**
+   - DUT GEII - Spécialité ENOC, IUT Paul Sabatier, 2020-2022
+   - Baccalauréat (série, mention, année)
+   - Certifications (TOEIC, etc.)
+
+3. **Expériences professionnelles :**
+   - Stages, alternances, jobs étudiants (si pertinents)
+   - Entreprise, durée, poste
+   - Missions et réalisations (3-5 bullets points)
+   - Utiliser verbes d'action : conçu, développé, réalisé, optimisé
+
+4. **Compétences techniques :**
+   - Langages programmation (C, C++, Python, VHDL)
+   - Outils (MATLAB, Proteus, Altium, Quartus)
+   - Domaines (électronique analogique/numérique, systèmes embarqués, automatisme)
+
+5. **Projets académiques :**
+   - Projets significatifs (Télémètre, Station de tri, Antenne OC)
+   - Technologies mises en œuvre
+
+6. **Langues :**
+   - Anglais : Niveau (B2, TOEIC 750)
+   - Autres langues
+
+7. **Centres d'intérêt :**
+   - Pertinents et révélateurs de personnalité
+   - Électronique/robotique amateur si applicable
+
+**CV formats :**
+- **CV classique** : Sobre, entreprises traditionnelles
+- **CV moderne** : Couleurs, startups, postes créatifs
+- **CV Europass** : International (peu utilisé en France)
+
+**Outils :**
+- Canva (templates gratuits)
+- Word / Google Docs
+- LaTeX (CV très professionnel)
+- LinkedIn (export CV)
+
+#### La lettre de motivation
+
+**Structure en 3 parties (1 page maximum) :**
+
+**Paragraphe 1 - Vous (l'entreprise) :**
+- Pourquoi cette entreprise ?
+- Connaissance de l'entreprise (produits, valeurs, actualités)
+- Intérêt pour le secteur/mission
+
+**Paragraphe 2 - Moi :**
+- Mon parcours (DUT GEII, spécialité)
+- Mes compétences en lien avec le poste
+- Projets/expériences pertinents
+
+**Paragraphe 3 - Nous :**
+- Apports mutuels
+- Motivation pour collaborer
+- Disponibilité et suite souhaitée
+
+**Règles d'or :**
+- Personnalisée pour chaque candidature
+- Concise et dynamique
+- Exemples concrets
+- Ton positif et professionnel
+- Formules de politesse appropriées
+
+#### Le portfolio professionnel
+
+**Support de valorisation :**
+Site web personnel présentant projets, compétences, réalisations.
+
+**Contenu :**
+- Présentation (qui suis-je, parcours)
+- Projets techniques détaillés :
+  - Télémètre ultrasonique (électronique + VHDL)
+  - Station de tri (automatisme + IHM)
+  - Antenne patch (RF + simulation EM)
+  - Régulateur PID (automatique)
+- Compétences techniques
+- CV téléchargeable
+- Contact
+
+**Technologies :**
+- GitHub Pages + Jekyll (gratuit, simple)
+- WordPress
+- Wix / Squarespace
+- HTML/CSS custom
+
+**Avantages :**
+- Démonstration concrète de compétences
+- Différenciation des autres candidats
+- Lien à mettre sur CV et LinkedIn
+- Évolution continue (ajout projets)
+
+### Module 4 : Préparation aux entretiens
+
+#### Types d'entretiens
+
+**Entretien de motivation :**
+- Présentation du parcours
+- Motivation pour poste/entreprise
+- Questions comportementales
+- Cohérence avec projet professionnel
+
+**Entretien technique :**
+- Questions sur compétences annoncées
+- Résolution de problèmes
+- Compréhension de projets réalisés
+- Mise en situation
+
+**Entretien vidéo différé :**
+- Enregistrement réponses à questions posées
+- Temps limité par question
+- Préparation en amont essentielle
+
+**Assessment center :**
+- Tests psychotechniques
+- Mises en situation de groupe
+- Exercices pratiques
+- Observation comportements
+
+#### Préparation à l'entretien
+
+**Recherche sur l'entreprise :**
+- Activité, produits, services
+- Actualités récentes
+- Valeurs et culture
+- Concurrents
+- Chiffres clés
+
+**Préparation de réponses :**
+- Présentation en 3 minutes (parcours, compétences, motivation)
+- Qualités et défauts
+- Réussites et échecs
+- Projets marquants (méthode STAR : Situation, Tâche, Action, Résultat)
+
+**Questions à poser au recruteur :**
+- Missions concrètes du poste
+- Composition de l'équipe
+- Projets en cours
+- Formation et évolution
+- Prochaines étapes recrutement
+
+**Logistique :**
+- Lieu, horaire, interlocuteur
+- Trajet et timing (arriver 10 min en avance)
+- Tenue professionnelle adaptée
+- Copies CV, diplômes si demandés
+
+#### Simulation d'entretiens
+
+**Exercices pratiques :**
+- Mises en situation filmées
+- Debriefing individualisé
+- Analyse des points à améliorer
+- Nouvel essai
+
+**Grille d'évaluation :**
+- Présentation (tenue, posture)
+- Communication verbale (clarté, structure)
+- Communication non-verbale (regard, gestes)
+- Réponses aux questions (pertinence, exemples)
+- Questions posées
+- Motivation perçue
+
+---
+
+## PART C: ASPECTS TECHNIQUES
+
+### Outils et méthodologie
+
+#### Création de CV
+
+**Templates recommandés :**
+- Canva (bibliothèque templates gratuits GEII-friendly)
+- Overleaf (LaTeX, templates ModernCV, AltaCV)
+- Microsoft Word (templates intégrés)
+
+**Checklist validation CV :**
+- [ ] Format PDF, nom de fichier professionnel
+- [ ] 1 page, police lisible (11-12pt)
+- [ ] Coordonnées complètes et actualisées
+- [ ] Photo professionnelle si présente
+- [ ] Zéro faute d'orthographe (relecture + Antidote/LanguageTool)
+- [ ] Cohérence dates et informations
+- [ ] Compétences techniques adaptées au poste
+- [ ] Projets valorisés avec résultats quantifiés
+- [ ] Design épuré, hiérarchie claire
+
+#### Portfolio web
+
+**Création avec GitHub Pages + Jekyll :**
+
+1. Création repository GitHub : `username.github.io`
+2. Choix thème Jekyll (Minimal, Cayman, Slate)
+3. Structure :
+   ```
+   index.md (accueil)
+   about.md (à propos)
+   projects.md (projets)
+   cv.pdf
+   ```
+4. Rédaction pages Markdown
+5. Publication automatique sur `https://username.github.io`
+
+**Contenu projet type :**
+- Titre et contexte
+- Technologies utilisées
+- Problématiques résolues
+- Photos/schémas/vidéos
+- Résultats et apprentissages
+- Lien GitHub si code open source
+
+#### Optimisation LinkedIn
+
+**Profil complet :**
+- Photo professionnelle (fond neutre, sourire)
+- Photo de couverture (thématique tech)
+- Titre personnalisé (pas juste "Étudiant DUT GEII")
+  - Ex: "Futur Ingénieur Électronique Embarquée | IoT & Systèmes Temps Réel | Passionné Innovation"
+- Résumé (3-5 paragraphes) :
+  - Parcours et domaine d'expertise
+  - Projets marquants
+  - Centres d'intérêt professionnels
+  - Recherche stage/opportunités
+
+**Développement réseau :**
+- Connexion avec promotion (camarades)
+- Alumni IUT (anciens étudiants GEII)
+- Enseignants et intervenants
+- Professionnels rencontrés (conférences, salons)
+- Recruteurs dans domaines cibles
+
+**Engagement :**
+- Like/commentaire posts pertinents
+- Partage articles techniques
+- Publications personnelles (projets, veille)
+- Recommandations compétences (demander/donner)
+
+### Recherche de stage S4
+
+#### Identification d'entreprises cibles
+
+**Critères de sélection :**
+- Secteur d'activité (électronique, IoT, télécom, automatisme)
+- Taille entreprise (préférence PME/ETI/Grande entreprise)
+- Localisation (région, mobilité)
+- Mission proposée (adéquation projet professionnel)
+
+**Sources de recherche :**
+- Sites d'offres d'emploi (Indeed, LinkedIn, Welcome to the Jungle)
+- Sites entreprises (rubrique carrières/stages)
+- Réseau alumni IUT
+- Salons et forums emploi
+- Candidatures spontanées
+
+**Tableau de suivi :**
+| Entreprise | Contact | Date envoi | Relance | Réponse | Entretien | Statut |
+|------------|---------|------------|---------|---------|-----------|--------|
+| ... | ... | ... | ... | ... | ... | ... |
+
+Outil recommandé : Google Sheets ou Excel
+
+#### Candidature
+
+**Email de candidature :**
+- Objet précis : "Candidature stage DUT GEII - Électronique Embarquée - 10 semaines"
+- Corps concis (5-10 lignes) :
+  - Présentation (étudiant DUT GEII S3)
+  - Intérêt pour entreprise/mission
+  - Disponibilité
+  - Pièces jointes annoncées
+- Pièces jointes : CV + Lettre motivation (PDFs nommés)
+- Signature email professionnelle
+
+**Relance :**
+- Si pas de réponse sous 2 semaines
+- Email court et courtois
+- Rappel candidature et motivation
+- Disponibilité pour échange
+
+---
+
+## PART D: ANALYSE ET RÉFLEXION
+
+### Évaluation
+
+**Livrables à produire :**
+
+1. **CV et lettre de motivation (25%) :**
+   - Plusieurs versions adaptées à différents postes
+   - Révisions successives avec feedback enseignant
+
+2. **Portfolio en ligne (20%) :**
+   - Site web opérationnel
+   - Minimum 3 projets techniques détaillés
+   - Design professionnel
+
+3. **Dossier 3PE (25%) :**
+   - Bilan personnel (compétences, intérêts, valeurs)
+   - Exploration métiers (fiches métiers, témoignages)
+   - Projet professionnel formalisé (objectifs, plan d'action)
+   - 15-20 pages
+
+4. **Simulation d'entretien filmée (20%) :**
+   - Présentation parcours (3 min)
+   - Réponses aux questions
+   - Analyse vidéo personnelle
+   - Debriefing avec enseignant
+
+5. **Participation et implication (10%) :**
+   - Assiduité
+   - Engagement dans exercices
+   - Progrès réalisés
+
+### Compétences transversales acquises
+
+- Connaissance de soi et capacité d'auto-évaluation
+- Communication professionnelle écrite et orale
+- Recherche d'information et veille sectorielle
+- Construction et pilotage de projet professionnel
+- Présentation et argumentation
+- Utilisation outils numériques professionnels
+
+### Impact sur insertion professionnelle
+
+**Stage S4 :**
+Application directe des acquis pour obtenir stage de qualité (missions intéressantes, entreprise en adéquation avec projet).
+
+**Poursuite d'études :**
+Dossiers de candidature (Licence Pro, École d'ingénieur) valorisant parcours et projet.
+
+**Premier emploi :**
+Capacité à se présenter efficacement, construire réseau, identifier opportunités.
+
+---
+
+## 📖 SYNTHÈSE
+
+Le module CEC et 3PE est un investissement stratégique dans l'employabilité. Les outils créés (CV, portfolio, profil LinkedIn) et les compétences développées (communication, auto-présentation, networking) constituent un capital professionnel valorisable tout au long de la carrière, bien au-delà du stage de S4.
+
+### Projet Personnel et Professionnel (3PE)
+
+#### Construction du projet
+
+**Auto-évaluation :**
+- Bilan de compétences
+- Points forts et faibles
+- Intérêts professionnels
+- Valeurs personnelles
+
+**Exploration des métiers :**
+- Métiers de l'électronique
+- Métiers des objets connectés
+- Évolution de carrière
+- Témoignages de professionnels
+
+**Définition d'objectifs :**
+- Court terme (stage, premier emploi)
+- Moyen terme (3-5 ans)
+- Long terme (carrière)
+
+#### Outils professionnels
+
+**CV (Curriculum Vitae) :**
+- Structure et contenu
+- Mise en page
+- Adaptation au poste
+- CV classique vs créatif
+- Formats (PDF, online)
+
+**Lettre de motivation :**
+- Structure en 3 parties
+- Personnalisation
+- Argumentation
+- Relecture et corrections
+
+**Portfolio/Book :**
+- Projets académiques
+- Réalisations personnelles
+- Compétences techniques
+- Présentation visuelle
+
+#### Préparation aux entretiens
+
+**Types d'entretiens :**
+- Entretien de motivation
+- Entretien technique
+- Entretien vidéo différé
+- Assessment center
+
+**Simulation d'entretiens :**
+- Questions fréquentes
+- Présentation de soi
+- Mise en situation
+- Questions à poser
+
+**Communication non-verbale :**
+- Posture et attitude
+- Contact visuel
+- Gestuelle
+- Tenue vestimentaire
+
+### Recherche de stage (S4)
+
+#### Préparation
+- Définir ses critères (secteur, lieu, durée)
+- Identifier les entreprises cibles
+- Préparer documents
+- Planning de recherche
+
+#### Démarches
+- Candidatures
+- Relances
+- Gestion des réponses
+- Organisation
+
+#### Suivi et évaluation
+- Tableau de suivi
+- Retours d'expérience
+- Ajustements
+- Bilan
+
+## 🛠️ Travaux pratiques
+
+### CV et Lettre de motivation
+- Rédaction de plusieurs versions
+- Adaptation à des offres réelles
+- Revue par pairs
+- Corrections par l'enseignant
+
+### Portfolio en ligne
+- Création site web personnel
+- Présentation de projets
+- Blog technique (optionnel)
+- Optimisation SEO
+
+### Simulation d'entretien
+- Entretien filmé
+- Analyse de sa performance
+- Points d'amélioration
+- Nouvel essai
+
+

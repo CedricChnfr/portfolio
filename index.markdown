@@ -1394,9 +1394,7 @@ function toggleExperiences() {
 </script>
 
 <div id="ai-chat-widget">
-    <button id="chat-toggle" class="chat-toggle-btn">
-        <span class="chat-icon">🤖</span>
-    </button>
+
     
     <div id="chat-window" class="chat-window hidden">
         <div class="chat-header">
