@@ -50,11 +50,6 @@ The project synthesized knowledge from power electronics, renewable energy syste
 
 # Energy Budget and Sizing
 
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_Energy_Connected_Object/Antenna1.png" alt="Energy System Antenna 1" style="width: 45%;" onclick="openModal(this.src)"/>
-  <img src="/img/BE_Energy_Connected_Object/Antenna2.png" alt="Energy System Antenna 2" style="width: 45%;" onclick="openModal(this.src)"/>
-</div>
-
 ## Power Consumption Analysis
 Detailed current consumption calculation for each subsystem:
 

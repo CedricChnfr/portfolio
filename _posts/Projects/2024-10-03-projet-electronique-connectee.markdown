@@ -15,10 +15,6 @@ Working in pairs over 60 hours, we developed a full duplex or half-duplex wirele
 
 ## System Architecture
 
-<div style="text-align: center; margin: 30px 0;">
-  <img src="/img/BE_Reseau/topology.png" alt="Network Topology" style="width: 70%;" onclick="openModal(this.src)"/>
-</div>
-
 ### Transmitter Chain
 1. **Data Acquisition:** Sensors (temperature, pressure, accelerometer) with analog conditioning
 2. **Processing:** STM32 microcontroller for data framing (preamble + data + CRC)

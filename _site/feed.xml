@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-03T19:09:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cédric Chanfreau - Portfolio</title><entry><title type="html">Antenna Design for Connected Objects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html" rel="alternate" type="text/html" title="Antenna Design for Connected Objects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-12-07T15:45:24+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Cédric Chanfreau - Portfolio</title><entry><title type="html">Antenna Design for Connected Objects</title><link href="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html" rel="alternate" type="text/html" title="Antenna Design for Connected Objects" /><published>2024-10-02T10:56:03+02:00</published><updated>2024-10-02T10:56:03+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"><![CDATA[<p><a href="./my-projects.html">← Back to Academic Project</a></p>
 
 <h1 id="introduction">Introduction</h1>
 <p>This tutored project focused on designing and optimizing an antenna for IoT applications operating in ISM bands (433/868 MHz or 2.4 GHz). The project encompassed the complete design cycle from theoretical calculations and electromagnetic simulations to PCB fabrication and professional characterization using VNA and anechoic chamber measurements.</p>
@@ -1022,10 +1022,6 @@ Selon type choisi (λ/4, λ/2, patch, etc.)</p>
 <p>Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.</p>
 
 <h2 id="system-architecture">System Architecture</h2>
-
-<div style="text-align: center; margin: 30px 0;">
-  <img src="/img/BE_Reseau/topology.png" alt="Network Topology" style="width: 70%;" onclick="openModal(this.src)" />
-</div>
 
 <h3 id="transmitter-chain">Transmitter Chain</h3>
 <ol>
@@ -3106,11 +3102,6 @@ function closeModal() {
 </ul>
 
 <h1 id="energy-budget-and-sizing">Energy Budget and Sizing</h1>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_Energy_Connected_Object/Antenna1.png" alt="Energy System Antenna 1" style="width: 45%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Energy_Connected_Object/Antenna2.png" alt="Energy System Antenna 2" style="width: 45%;" onclick="openModal(this.src)" />
-</div>
 
 <h2 id="power-consumption-analysis">Power Consumption Analysis</h2>
 <p>Detailed current consumption calculation for each subsystem:</p>

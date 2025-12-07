@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Antennes et Propagation - S4" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Antennes et Propagation - Semestre 4" />
-<meta property="og:description" content="Antennes et Propagation - Semestre 4" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,7 +15,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Antennes et Propagation - S4" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"Antennes et Propagation - Semestre 4","headline":"Antennes et Propagation - S4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","headline":"Antennes et Propagation - S4","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/antennes-propagation-s4.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
 <body><header class="site-header" role="banner">
@@ -37,209 +35,1316 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1 id="antennes-et-propagation---semestre-4">Antennes et Propagation - Semestre 4</h1>
+        <style>
+  .course-header {
+    background: linear-gradient(135deg, #ffffffff 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  .section-title {
+    color: #2a7ae2;
+    border-left: 4px solid #2a7ae2;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .info-box {
+    background: #f0f7ff;
+    border-left: 4px solid #2a7ae2;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+  }
+  .warning-box {
+    background: #fff4e6;
+    border-left: 4px solid #ff9800;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="course-header">
+  <h1>📡 Antennes et Propagation</h1>
+  <p><strong>Semestre 4 - DUT GEII</strong></p>
+  <p>Conception, simulation et caractérisation d'antennes pour systèmes sans fil. Applications IoT, WiFi, 4G/5G, satellite.</p>
+</div>
 
 <hr />
 
 <h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
 
-<h3 id="contexte-et-objectifs">Contexte et objectifs</h3>
+<h3 class="section-title">Contexte et objectifs</h3>
 
-<p>Conception, simulation et caractérisation d’antennes pour systèmes sans fil. Suite directe de Propagation-HF S3. Applications IoT, WiFi, 4G/5G, satellite.</p>
+<p>Ce module constitue la suite directe du cours de <strong>Propagation et Hyperfréquences du S3</strong>, en approfondissant la conception et la caractérisation d’antennes pour les communications sans fil modernes. Dans un contexte où les systèmes RF se multiplient (IoT, 5G, satellite, RFID), la maîtrise de la conception d’antennes devient une compétence clé pour l’ingénieur en électronique.</p>
 
-<p><strong>Objectifs :</strong></p>
+<p><strong>Objectifs pédagogiques :</strong></p>
 <ul>
-  <li>Paramètres antennes (gain, diagramme, polarisation)</li>
-  <li>Conception antennes (dipôle, patch, Yagi)</li>
-  <li>Simulation EM (MMANA, CST, HFSS)</li>
-  <li>Mesures chambre anéchoïque et VNA</li>
-  <li>Bilans de liaison radio</li>
+  <li>Maîtriser les <strong>paramètres caractéristiques des antennes</strong> (gain, diagramme de rayonnement, polarisation, adaptation)</li>
+  <li>Concevoir différents types d’antennes (dipôle, patch, Yagi-Uda)</li>
+  <li>Utiliser des <strong>outils de simulation électromagnétique</strong> professionnels (MMANA-GAL, CST, HFSS)</li>
+  <li>Réaliser des <strong>mesures en chambre anéchoïque</strong> et au VNA (analyseur de réseau)</li>
+  <li>Effectuer des <strong>bilans de liaison radio</strong> pour planifier des systèmes de communication</li>
 </ul>
 
-<h3 id="prérequis">Prérequis</h3>
+<p><strong>Prérequis nécessaires :</strong></p>
 <ul>
-  <li>Propagation-HF S3 (lignes, Smith, paramètres S)</li>
-  <li>Circuits HF (adaptation)</li>
+  <li>Propagation et Hyperfréquences S3 (lignes de transmission, abaque de Smith, paramètres S)</li>
+  <li>Circuits Hyperfréquences (techniques d’adaptation d’impédance)</li>
+  <li>Électromagnétisme (équations de Maxwell, ondes planes)</li>
 </ul>
 
 <hr />
 
-<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+<h2 id="part-b---expérience-contexte-et-fonction">PART B - Expérience, Contexte et Fonction</h2>
 
-<h3 id="module-1--paramètres-caractéristiques">Module 1 : Paramètres caractéristiques</h3>
+<h3 class="section-title">Organisation et ressources</h3>
 
-<p><strong>Diagramme de rayonnement :</strong></p>
+<p>Le module était structuré en trois volets complémentaires combinant théorie, simulation et pratique :</p>
+
+<p><strong>Cours magistraux (18h)</strong> :</p>
 <ul>
-  <li>2D et 3D, lobe principal, lobes secondaires</li>
-  <li>Ouverture -3dB, rapport avant/arrière</li>
+  <li><strong>CM1-2</strong> : Paramètres caractéristiques des antennes (gain, diagramme, polarisation, impédance)</li>
+  <li><strong>CM3-4</strong> : Antennes filaires (dipôle, monopole, Yagi-Uda)</li>
+  <li><strong>CM5-6</strong> : Antennes imprimées (patch rectangulaire, circulaire)</li>
+  <li><strong>CM7-8</strong> : Propagation des ondes (modes, phénomènes, modèles)</li>
+  <li><strong>CM9</strong> : Bilans de liaison radio et planification</li>
 </ul>
 
-<p><strong>Gain et directivité :</strong></p>
+<p><strong>Travaux dirigés (12h)</strong> :</p>
 <ul>
-  <li>Directivité D (dBi) : concentration puissance</li>
-  <li>Gain G = η × D (efficacité η)</li>
+  <li><strong>TD1</strong> : Calculs de paramètres d’antennes (gain, directivité, efficacité)</li>
+  <li><strong>TD2</strong> : Dimensionnement de dipôles et monopoles</li>
+  <li><strong>TD3</strong> : Conception d’antenne patch (formules de dimensionnement)</li>
+  <li><strong>TD4</strong> : Bilan de liaison Friis, pertes en espace libre</li>
+  <li><strong>TD5</strong> : Propagation multi-trajets, zone de Fresnel</li>
+  <li><strong>TD6</strong> : Antenne Yagi (optimisation gain/encombrement)</li>
 </ul>
 
-<p><strong>Polarisation :</strong></p>
+<p><strong>Travaux pratiques (18h)</strong> :</p>
 <ul>
-  <li>Linéaire (H/V), circulaire (RHCP/LHCP)</li>
-  <li>Rapport axial AR</li>
+  <li><strong>TP1-2</strong> : Simulation d’antennes avec MMANA-GAL (Yagi) et 4NEC2 (dipôle)</li>
+  <li><strong>TP3-4</strong> : Simulation patch avec CST Microwave Studio ou HFSS</li>
+  <li><strong>TP5-6</strong> : Mesures en chambre anéchoïque (diagrammes de rayonnement, gain)</li>
+  <li><strong>TP7-8</strong> : Mesures d’adaptation au VNA (S11, impédance, TOS)</li>
+  <li><strong>TP9</strong> : Bilan de liaison avec Radio Mobile (planification couverture)</li>
 </ul>
 
-<p><strong>Impédance et adaptation :</strong></p>
+<p><strong>Projet (20h)</strong> :
+Conception complète d’une antenne (patch ou Yagi) : dimensionnement, simulation, fabrication, mesures et documentation.</p>
+
+<p><strong>Ressources pédagogiques</strong> :</p>
 <ul>
-  <li>Z = R + jX</li>
+  <li>Polycopié de cours “Antennes et Propagation EN2A 2021-2022”</li>
+  <li>TD avec exercices d’application</li>
+  <li>Texte global TP “Antennes EN 2021-2022”</li>
+  <li>Datasheet antenne Yagi Siretta Oscar3A (exemple industriel)</li>
+  <li>Logiciels : MMANA-GAL, 4NEC2, CST Microwave Studio, HFSS, Radio Mobile</li>
+  <li>Équipements : chambre anéchoïque, VNA (analyseur de réseau), analyseur de spectre</li>
+</ul>
+
+<h3 class="section-title">Méthodologie d'étude</h3>
+
+<p><strong>Phase 1 : Comprendre les fondamentaux</strong> :
+Assimiler les paramètres caractéristiques (gain, directivité, diagramme, polarisation) et leur signification physique. Établir le lien entre géométrie de l’antenne et ses performances.</p>
+
+<p><strong>Phase 2 : Maîtriser le dimensionnement</strong> :
+S’exercer sur les formules de calcul pour dipôles et patchs. Comprendre l’influence des paramètres (fréquence, substrat, dimensions) sur les performances. Utiliser les TD pour développer l’intuition.</p>
+
+<p><strong>Phase 3 : Simulation intensive</strong> :
+Prendre en main les logiciels de simulation EM. Commencer par des structures simples (dipôle) puis progresser vers des antennes complexes (Yagi, patch). Analyser S11, gain, diagrammes.</p>
+
+<p><strong>Phase 4 : Mesures et validation</strong> :
+Confronter simulations et mesures réelles en chambre anéchoïque et au VNA. Identifier les écarts et leurs causes (imperfections de fabrication, environnement, câbles).</p>
+
+<p><strong>Phase 5 : Approche système</strong> :
+Développer une vision globale avec les bilans de liaison. Intégrer antennes, propagation, pertes et marges pour concevoir un système complet.</p>
+
+<h3 class="section-title">Difficultés rencontrées</h3>
+
+<p><strong>Complexité de la simulation EM</strong> :
+Les logiciels 3D (CST, HFSS) ont une courbe d’apprentissage importante. Le maillage, les conditions aux limites et les temps de calcul nécessitent de l’expérience. Commencer par des tutoriels simples avant d’aborder des structures complexes.</p>
+
+<p><strong>Sensibilité aux paramètres de fabrication</strong> :
+Les antennes patch sont sensibles à l’épaisseur du substrat, aux tolérances d’usinage PCB et à la qualité des soudures. Un décalage de quelques % en fréquence est fréquent entre simulation et réalité.</p>
+
+<p><strong>Environnement de mesure</strong> :
+Même en chambre anéchoïque, des réflexions résiduelles et le couplage avec les câbles affectent les mesures. L’étalonnage du VNA et le positionnement précis des antennes sont critiques.</p>
+
+<p><strong>Compromis de conception</strong> :
+Gain, bande passante et encombrement sont antagonistes. Une antenne directive (Yagi) a un gain élevé mais est volumineuse. Un patch est compact mais a une bande étroite. Identifier le bon compromis selon l’application demande de l’expérience.</p>
+
+<p><strong>Propagation multi-trajets</strong> :
+En environnement réel, les phénomènes de réflexion, diffraction et fading compliquent le bilan de liaison. Les modèles théoriques (Friis, Okumura-Hata) donnent des estimations qu’il faut corriger par des marges de sécurité.</p>
+
+<hr />
+
+<h2 id="part-c---aspects-techniques">PART C - Aspects Techniques</h2>
+
+<h3 class="section-title">Module 1 : Paramètres caractéristiques des antennes</h3>
+
+<h4 id="diagramme-de-rayonnement">Diagramme de rayonnement</h4>
+
+<p>Le diagramme de rayonnement représente la distribution spatiale de la puissance rayonnée par l’antenne.</p>
+
+<p><strong>Représentations</strong> :</p>
+<ul>
+  <li><strong>2D</strong> : Coupes dans les plans E (électrique) et H (magnétique)</li>
+  <li><strong>3D</strong> : Visualisation complète de la distribution de puissance</li>
+  <li><strong>Coordonnées</strong> : Polaires (θ, φ) ou cartésiennes</li>
+</ul>
+
+<p><strong>Caractéristiques du diagramme</strong> :</p>
+<ul>
+  <li><strong>Lobe principal</strong> : Direction de rayonnement maximal</li>
+  <li><strong>Lobes secondaires</strong> : Directions indésirables de rayonnement</li>
+  <li><strong>Ouverture à -3 dB</strong> : Angle dans lequel la puissance reste supérieure à la moitié du maximum</li>
+  <li><strong>Rapport avant/arrière (F/B)</strong> : Rapport entre puissance rayonnée vers l’avant et vers l’arrière (en dB)</li>
+</ul>
+
+<h4 id="gain-et-directivité">Gain et directivité</h4>
+
+<p><strong>Directivité D (dBi)</strong> :
+La directivité quantifie la capacité de l’antenne à concentrer l’énergie dans une direction privilégiée, comparée à une antenne isotrope.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D = 4π × Umax / Prad
+</code></pre></div></div>
+<p>Où Umax est l’intensité de rayonnement maximale et Prad la puissance totale rayonnée.</p>
+
+<p><strong>Gain G (dBi)</strong> :
+Le gain tient compte des pertes réelles de l’antenne (pertes ohmiques, diélectriques).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>G = η × D
+</code></pre></div></div>
+<p>Où η est l’efficacité de rayonnement (typiquement 70-95%).</p>
+
+<p><strong>Relation entre gain et ouverture</strong> :
+Plus l’antenne est directive (ouverture étroite), plus son gain est élevé.</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S4/antennes-propagation/dipole-half-wave.svg" alt="Antenne dipôle demi-onde" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure 1 : Antenne dipôle λ/2 avec caractéristiques et diagrammes de rayonnement</p>
+</div>
+
+<h4 id="polarisation">Polarisation</h4>
+
+<p>La polarisation décrit l’orientation du champ électrique de l’onde rayonnée.</p>
+
+<p><strong>Types de polarisation</strong> :</p>
+<ul>
+  <li><strong>Linéaire</strong> : Verticale (V), Horizontale (H), ou oblique</li>
+  <li><strong>Circulaire</strong> : Droite (RHCP - Right Hand) ou Gauche (LHCP - Left Hand)</li>
+  <li><strong>Elliptique</strong> : Cas général entre linéaire et circulaire</li>
+</ul>
+
+<p><strong>Rapport axial (AR)</strong> :
+Pour une polarisation circulaire, l’AR mesure la qualité de circularité :</p>
+<ul>
+  <li>AR = 1 (0 dB) : polarisation circulaire parfaite</li>
+  <li>AR &gt; 3 (&gt; 4.8 dB) : considérée comme linéaire</li>
+</ul>
+
+<p><strong>Importance</strong> :
+Pour une communication efficace, émetteur et récepteur doivent avoir la même polarisation. Une désadaptation de polarisation entraîne des pertes (jusqu’à ∞ dB pour des polarisations orthogonales).</p>
+
+<h4 id="impédance-dentrée-et-adaptation">Impédance d’entrée et adaptation</h4>
+
+<p><strong>Impédance complexe</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Z = R + jX
+</code></pre></div></div>
+<ul>
+  <li>R : partie résistive (rayonnement + pertes)</li>
+  <li>X : partie réactive (stockage d’énergie)</li>
+</ul>
+
+<p><strong>Adaptation 50Ω</strong> :
+La plupart des systèmes RF utilisent une impédance caractéristique de 50Ω. L’antenne doit être adaptée à cette valeur pour un transfert de puissance maximal.</p>
+
+<p><strong>Coefficient de réflexion S11</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>S11 (dB) = 20 log |Γ|
+où Γ = (Z - Z0) / (Z + Z0)
+</code></pre></div></div>
+<ul>
+  <li>S11 &lt; -10 dB : adaptation acceptable (&lt; 10% puissance réfléchie)</li>
+  <li>S11 &lt; -15 dB : bonne adaptation (&lt; 3% réfléchie)</li>
+  <li>S11 &lt; -20 dB : excellente adaptation (&lt; 1% réfléchie)</li>
+</ul>
+
+<p><strong>Taux d’ondes stationnaires (TOS ou SWR)</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TOS = (1 + |Γ|) / (1 - |Γ|)
+</code></pre></div></div>
+<ul>
+  <li>TOS = 1 : adaptation parfaite</li>
+  <li>TOS &lt; 2 : généralement acceptable</li>
+  <li>TOS &gt; 3 : adaptation médiocre</li>
+</ul>
+
+<h4 id="bande-passante">Bande passante</h4>
+
+<p>Une antenne a plusieurs bandes passantes selon le critère considéré :</p>
+
+<p><strong>Bande d’adaptation</strong> :
+Plage de fréquences où S11 &lt; -10 dB. Pour les antennes résonnantes (dipôle, patch), typiquement 2-5% de la fréquence centrale.</p>
+
+<p><strong>Bande de rayonnement</strong> :
+Plage où le gain reste dans une certaine tolérance (ex: ±1 dB).</p>
+
+<p><strong>Bande de polarisation</strong> :
+Plage où la polarisation reste acceptable (AR &lt; 3 dB pour circulaire).</p>
+
+<h3 class="section-title">Module 2 : Types d'antennes</h3>
+
+<h4 id="antennes-filaires">Antennes filaires</h4>
+
+<p><strong>Dipôle demi-onde (λ/2)</strong> :</p>
+
+<p>Structure la plus simple et fondamentale en théorie des antennes.</p>
+
+<p><strong>Caractéristiques</strong> :</p>
+<ul>
+  <li>Longueur physique : L ≈ 0.95 × λ/2 (effet capacitif des extrémités)</li>
+  <li>Impédance : Z ≈ 73 + j42.5 Ω au centre</li>
+  <li>Gain : 2.15 dBi</li>
+  <li>Diagramme : omnidirectionnel en plan H, directif en plan E</li>
+  <li>Polarisation linéaire</li>
+</ul>
+
+<p><strong>Calcul pratique</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>λ = c / f = 300 / f(MHz)  [en mètres]
+L ≈ 143 / f(MHz)  [en mètres]
+</code></pre></div></div>
+
+<p><strong>Applications</strong> : Radio FM, WiFi simple, mesures, référence.</p>
+
+<p><strong>Dipôle replié</strong> :</p>
+
+<p>Variante avec deux brins reliés aux extrémités.</p>
+<ul>
+  <li>Impédance ≈ 300Ω (transformation 4:1)</li>
+  <li>Bande passante améliorée</li>
+  <li>Utilisé en TV (antenne râteau)</li>
+</ul>
+
+<p><strong>Monopole quart d’onde (λ/4)</strong> :</p>
+
+<p>Moitié d’un dipôle au-dessus d’un plan de masse (effet miroir).</p>
+
+<p><strong>Caractéristiques</strong> :</p>
+<ul>
+  <li>Nécessite un plan de masse étendu (λ/4 minimum)</li>
+  <li>Impédance : Z ≈ 36.5Ω</li>
+  <li>Gain : 5.15 dBi (par rapport à isotrope, grâce au plan de masse)</li>
+  <li>Omnidirectionnel en plan H</li>
+</ul>
+
+<p><strong>Applications</strong> : Antennes véhicules, WiFi, GSM, radio mobiles.</p>
+
+<p><strong>Antenne Yagi-Uda</strong> :</p>
+
+<p>Antenne directive composée d’éléments parasites.</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S4/antennes-propagation/yagi-antenna.svg" alt="Antenne Yagi-Uda" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure 2 : Structure d'une antenne Yagi-Uda avec réflecteur et directeurs</p>
+</div>
+
+<p><strong>Structure</strong> :</p>
+<ul>
+  <li><strong>Réflecteur</strong> : Élément plus long que λ/2 (environ 5% de plus), placé derrière</li>
+  <li><strong>Élément rayonnant</strong> : Dipôle alimenté, longueur λ/2</li>
+  <li><strong>Directeurs</strong> : Éléments plus courts (5% de moins), devant l’élément rayonnant</li>
+</ul>
+
+<p><strong>Principe</strong> :
+Les éléments parasites re-rayonnent l’énergie captée avec un déphasage qui concentre le faisceau vers l’avant.</p>
+
+<p><strong>Caractéristiques</strong> :</p>
+<ul>
+  <li>Gain : 6-17 dBi selon nombre d’éléments (3 éléments ≈ 7 dBi, 10 éléments ≈ 13 dBi)</li>
+  <li>Très directive (ouverture 40-70°)</li>
+  <li>Rapport F/B : 15-25 dB</li>
+  <li>Espacement éléments : 0.2λ à 0.35λ</li>
+</ul>
+
+<p><strong>Dimensionnement</strong> :
+L’optimisation d’une Yagi nécessite des simulations (MMANA-GAL, 4NEC2) pour ajuster longueurs et espacements.</p>
+
+<p><strong>Applications</strong> : TNT (TV numérique terrestre), liaisons point-à-point WiFi, radioamateur, télémétrie.</p>
+
+<h4 id="antennes-imprimées-patch">Antennes imprimées (patch)</h4>
+
+<p><strong>Patch rectangulaire</strong> :</p>
+
+<p>Antenne constituée d’un élément métallique rectangulaire sur un substrat diélectrique avec plan de masse.</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S4/antennes-propagation/patch-antenna.svg" alt="Antenne patch rectangulaire" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure 3 : Antenne patch rectangulaire avec formules de dimensionnement</p>
+</div>
+
+<p><strong>Principe de fonctionnement</strong> :
+Le patch se comporte comme une cavité résonnante. Les bords rayonnent comme deux fentes espacées de λ/2.</p>
+
+<p><strong>Formules de dimensionnement</strong> :</p>
+
+<ol>
+  <li><strong>Largeur W</strong> (influence l’impédance) :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>W = (c / 2fr) × √(2 / (εr + 1))
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Permittivité effective εreff</strong> :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>εreff = (εr + 1)/2 + (εr - 1)/2 × [1 + 12h/W]^(-1/2)
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Extension de longueur ΔL</strong> (effet de frange) :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ΔL = 0.412h × [(εreff + 0.3)(W/h + 0.264)] / [(εreff - 0.258)(W/h + 0.8)]
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Longueur L</strong> :
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L = (c / 2fr√εreff) - 2ΔL
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Où :</p>
+<ul>
+  <li>fr : fréquence de résonance</li>
+  <li>εr : permittivité relative du substrat</li>
+  <li>h : épaisseur du substrat</li>
+  <li>c = 3×10⁸ m/s</li>
+</ul>
+
+<p><strong>Substrats courants</strong> :</p>
+<ul>
+  <li>FR-4 : εr = 4.4, tan δ = 0.02 (bas coût, pertes moyennes)</li>
+  <li>Rogers RO4003 : εr = 3.38, tan δ = 0.0027 (faibles pertes, stable)</li>
+  <li>Rogers RT/duroid 5880 : εr = 2.2, tan δ = 0.0009 (très faibles pertes, cher)</li>
+</ul>
+
+<p><strong>Modes d’alimentation</strong> :</p>
+<ul>
+  <li><strong>Coaxiale</strong> : Connecteur SMA traversant, ajustement position pour adaptation</li>
+  <li><strong>Microstrip</strong> : Ligne microruban, simple à réaliser</li>
+  <li><strong>Couplage par fente</strong> : Isolation émetteur/antenne, bande passante améliorée</li>
+</ul>
+
+<p><strong>Caractéristiques</strong> :</p>
+<ul>
+  <li>Gain : 6-8 dBi</li>
+  <li>Bande passante : 2-5% (étroite)</li>
+  <li>Directivité : rayonnement hémisphérique (demi-espace)</li>
+  <li>Efficacité : 70-90%</li>
+  <li>Polarisation : linéaire (ou circulaire avec patch carré et double alimentation)</li>
+</ul>
+
+<p><strong>Avantages</strong> :</p>
+<ul>
+  <li>Faible profil et léger</li>
+  <li>Fabrication PCB standard (low-cost)</li>
+  <li>Intégration facile dans équipements</li>
+  <li>Réseau d’antennes (array) simple à réaliser</li>
+</ul>
+
+<p><strong>Inconvénients</strong> :</p>
+<ul>
+  <li>Bande passante étroite</li>
+  <li>Efficacité moyenne (pertes diélectriques)</li>
+  <li>Sensible à l’épaisseur du substrat</li>
+  <li>Rayonnement arrière (pertes vers plan de masse)</li>
+</ul>
+
+<p><strong>Applications</strong> : GPS, WiFi, télémétrie, drones, IoT, GNSS.</p>
+
+<p><strong>Patch circulaire</strong> :</p>
+
+<p>Variante circulaire, souvent utilisée pour polarisation circulaire.</p>
+<ul>
+  <li>Rayon : a ≈ λ / (2√εreff)</li>
+  <li>Polarisation circulaire avec double alimentation en quadrature (90°)</li>
+  <li>Applications GPS, GNSS</li>
+</ul>
+
+<h4 id="antennes-large-bande">Antennes large bande</h4>
+
+<p><strong>Antenne log-périodique</strong> :</p>
+
+<p>Structure avec éléments de longueurs croissantes selon une loi logarithmique.</p>
+<ul>
+  <li>Large bande : rapport 10:1 possible (ex: 100-1000 MHz)</li>
+  <li>Gain modéré mais constant sur la bande (6-10 dBi)</li>
+  <li>Encombrante</li>
+  <li>Applications : mesure, EMC, radioastronomie</li>
+</ul>
+
+<p><strong>Antenne spirale</strong> :</p>
+
+<p>Spirale d’Archimède ou logarithmique.</p>
+<ul>
+  <li>Ultra large bande (rapport &gt; 10:1)</li>
+  <li>Polarisation circulaire naturelle</li>
+  <li>Applications : militaire (guerre électronique), GNSS multi-bandes</li>
+</ul>
+
+<p><strong>Antenne biconique</strong> :</p>
+
+<p>Deux cônes métalliques face à face.</p>
+<ul>
+  <li>Ultra large bande (décades)</li>
+  <li>Omnidirectionnelle</li>
+  <li>Applications : mesure, EMC, calibration</li>
+</ul>
+
+<h4 id="antennes-spécialisées">Antennes spécialisées</h4>
+
+<p><strong>Antenne cornet</strong> :</p>
+
+<p>Extrémité ouverte d’un guide d’onde.</p>
+<ul>
+  <li>Gain élevé : 10-25 dBi</li>
+  <li>Bande passante : 10-30%</li>
+  <li>Applications : radar, micro-ondes, alimentateur de parabole</li>
+</ul>
+
+<p><strong>Réseau d’antennes (Array)</strong> :</p>
+
+<p>Combinaison de plusieurs antennes élémentaires avec déphasage contrôlé.</p>
+<ul>
+  <li>Balayage électronique du faisceau (phased array)</li>
+  <li>Gain élevé (N éléments → gain × N)</li>
+  <li>Applications : radar, 5G (beamforming), satellite</li>
+</ul>
+
+<p><strong>Antenne RFID</strong> :</p>
+
+<p>Antennes spécifiques pour identification radio-fréquence.</p>
+<ul>
+  <li><strong>HF (13.56 MHz)</strong> : boucle magnétique, courte portée (&lt; 1m)</li>
+  <li><strong>UHF (865-868 MHz EU, 902-928 MHz US)</strong> : dipôle ou patch, longue portée (&gt; 10m)</li>
+  <li>Polarisation circulaire souvent préférée (lecture tous angles)</li>
+</ul>
+
+<h3 class="section-title">Module 3 : Propagation des ondes radioélectriques</h3>
+
+<h4 id="modes-de-propagation">Modes de propagation</h4>
+
+<p><strong>Onde de sol (surface wave)</strong> :</p>
+
+<p>L’onde suit la courbure terrestre en s’appuyant sur la conductivité du sol.</p>
+<ul>
+  <li>Fréquences : VLF, LF, MF (&lt; 3 MHz)</li>
+  <li>Atténuation croissante avec la fréquence</li>
+  <li>Portée : centaines à milliers de km</li>
+  <li>Applications : radio maritime, navigation (Loran), radio AM</li>
+</ul>
+
+<p><strong>Onde de surface (ground wave)</strong> :</p>
+
+<p>Propagation en contact direct avec le sol, faible hauteur.</p>
+<ul>
+  <li>Portée limitée : quelques dizaines de km</li>
+  <li>Utilisée en AM radio</li>
+</ul>
+
+<p><strong>Onde d’espace (space wave)</strong> :</p>
+
+<p>Propagation directe + réfléchie sur le sol (two-ray model).</p>
+<ul>
+  <li>Fréquences : VHF, UHF (&gt; 30 MHz)</li>
+  <li>Nécessite ligne de vue (LOS - Line Of Sight)</li>
+  <li>Interférences constructives/destructives (fading)</li>
+  <li>Portée : horizon optique étendu (~ 4/3 × horizon géométrique)</li>
+  <li>Applications : TV, FM, GSM, WiFi</li>
+</ul>
+
+<p><strong>Horizon radio</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d (km) ≈ 4.12 × [√h1(m) + √h2(m)]
+</code></pre></div></div>
+<p>Où h1 et h2 sont les hauteurs des antennes.</p>
+
+<p><strong>Onde ionosphérique (sky wave)</strong> :</p>
+
+<p>Réflexion sur les couches ionisées de l’atmosphère (ionosphère).</p>
+<ul>
+  <li>Fréquences : HF (3-30 MHz)</li>
+  <li>Portée : intercontinentale (milliers de km)</li>
+  <li>Dépend de l’heure (jour/nuit), saison, activité solaire</li>
+  <li>MUF (Maximum Usable Frequency) et LUF (Lowest Usable Frequency)</li>
+  <li>Applications : radio ondes courtes, radioamateur</li>
+</ul>
+
+<h4 id="phénomènes-de-propagation">Phénomènes de propagation</h4>
+
+<p><strong>Réflexion</strong> :</p>
+
+<p>Rebond de l’onde sur une surface (sol, bâtiments, obstacles).</p>
+<ul>
+  <li>Coefficient de réflexion dépend de l’angle d’incidence, polarisation, matériau</li>
+  <li>Multi-trajets : somme de rayons direct + réfléchis → interférences</li>
+</ul>
+
+<p><strong>Diffraction</strong> :</p>
+
+<p>Contournement d’obstacles par l’onde.</p>
+<ul>
+  <li>Principe de Huygens-Fresnel</li>
+  <li>Permet communication sans ligne de vue directe (NLOS)</li>
+  <li>Atténuation knife-edge : pertes selon hauteur obstacle et zone de Fresnel</li>
+  <li>Important en zone urbaine (immeubles)</li>
+</ul>
+
+<p><strong>Zone de Fresnel</strong> :</p>
+
+<p>Ellipsoïde entre émetteur et récepteur. Pour un lien optimal, la première zone de Fresnel doit être dégagée à 60%.</p>
+
+<p><strong>Rayon première zone de Fresnel</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r (m) = √(λ × d1 × d2 / (d1 + d2))
+</code></pre></div></div>
+<p>Où d1 et d2 sont les distances aux antennes.</p>
+
+<p><strong>Réfraction</strong> :</p>
+
+<p>Courbure de la trajectoire lors du changement de milieu (indice optique différent).</p>
+<ul>
+  <li>Réfraction atmosphérique : gradient de température et humidité</li>
+  <li>Ducting : onde piégée dans un conduit atmosphérique → portée accrue</li>
+</ul>
+
+<p><strong>Absorption</strong> :</p>
+
+<p>Atténuation par absorption dans les matériaux.</p>
+<ul>
+  <li><strong>Pluie</strong> : atténuation importante au-dessus de 10 GHz (0.1-10 dB/km selon intensité)</li>
+  <li><strong>Végétation</strong> : pertes selon densité feuillage et fréquence</li>
+  <li><strong>Atmosphère</strong> : bandes d’absorption O2 (60 GHz) et H2O (22, 183 GHz)</li>
+  <li><strong>Matériaux</strong> : béton (5-15 dB), murs (3-10 dB), verre (2-6 dB)</li>
+</ul>
+
+<p><strong>Multi-trajets et fading</strong> :</p>
+
+<p>En environnement complexe, multiples répliques du signal arrivent avec retards et phases différents.</p>
+<ul>
+  <li><strong>Fading rapide</strong> : interférences constructives/destructives (variations amplitude)</li>
+  <li><strong>Fading lent</strong> : masquage par obstacles</li>
+  <li><strong>Fading sélectif en fréquence</strong> : étalement temporel des trajets</li>
+  <li><strong>Effet Doppler</strong> : décalage fréquentiel dû au mouvement</li>
+</ul>
+
+<h4 id="modèles-de-propagation">Modèles de propagation</h4>
+
+<p><strong>Espace libre (Friis)</strong> :</p>
+
+<p>Propagation idéale sans obstacles.</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S4/antennes-propagation/friis-equation.svg" alt="Équation de Friis" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure 4 : Équation de Friis pour la propagation en espace libre</p>
+</div>
+
+<p><strong>Équation de Friis</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pr = Pt + Gt + Gr + 20 log(λ / 4πd)  [en dB]
+</code></pre></div></div>
+
+<p>Ou en termes de pertes en espace libre (FSPL - Free Space Path Loss) :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FSPL (dB) = 32.45 + 20 log(f_MHz) + 20 log(d_km)
+</code></pre></div></div>
+
+<p><strong>Exemple</strong> :
+f = 2.4 GHz, d = 100 m
+FSPL = 32.45 + 20 log(2400) + 20 log(0.1) = 32.45 + 67.6 - 20 = <strong>80 dB</strong></p>
+
+<p><strong>Modèle à deux rayons (two-ray model)</strong> :</p>
+
+<p>Rayon direct + rayon réfléchi sur le sol.</p>
+<ul>
+  <li>Interférences selon hauteurs antennes et distance</li>
+  <li>Plus réaliste que Friis au-dessus d’une surface</li>
+</ul>
+
+<p><strong>Okumura-Hata</strong> :</p>
+
+<p>Modèle empirique pour environnements urbains/suburbains.</p>
+<ul>
+  <li>Fréquences : 150 MHz - 1.5 GHz</li>
+  <li>Hauteur BS : 30-200 m, hauteur mobile : 1-10 m</li>
+  <li>Paramètres : type d’environnement (urbain dense, urbain, suburbain, rural)</li>
+</ul>
+
+<p><strong>COST-231 Hata</strong> :</p>
+
+<p>Extension du modèle Okumura-Hata.</p>
+<ul>
+  <li>Fréquences : jusqu’à 2 GHz</li>
+  <li>Inclut correction pour bâtiments</li>
+</ul>
+
+<p><strong>Modèle Walfisch-Ikegami (COST-231)</strong> :</p>
+
+<p>Modèle pour environnements urbains avec diffraction sur toits.</p>
+<ul>
+  <li>Hauteur bâtiments, largeur rues</li>
+  <li>Précis mais complexe</li>
+</ul>
+
+<p><strong>Recommandation ITU-R P.1546</strong> :</p>
+
+<p>Courbes de propagation pour services VHF/UHF (broadcast).</p>
+<ul>
+  <li>Basé sur mesures statistiques</li>
+  <li>Variations selon % temps et % emplacements</li>
+</ul>
+
+<h3 class="section-title">Module 4 : Simulations et mesures</h3>
+
+<h4 id="outils-de-simulation-électromagnétique">Outils de simulation électromagnétique</h4>
+
+<p><strong>MMANA-GAL</strong> :</p>
+
+<p>Logiciel basé sur la méthode des moments (MoM) pour antennes filaires.</p>
+<ul>
+  <li>Spécialisé Yagi-Uda, dipôles</li>
+  <li>Interface simple, rapide</li>
+  <li>Optimisation automatique</li>
+  <li>Gratuit</li>
+</ul>
+
+<p><strong>4NEC2</strong> :</p>
+
+<p>Interface graphique pour moteur NEC-2 (Numerical Electromagnetics Code).</p>
+<ul>
+  <li>Antennes filaires complexes</li>
+  <li>Calcul S11, diagrammes, gain</li>
+  <li>Très utilisé en radioamateur</li>
+  <li>Open source</li>
+</ul>
+
+<p><strong>CST Microwave Studio</strong> :</p>
+
+<p>Logiciel commercial 3D complet (FIT - Finite Integration Technique).</p>
+<ul>
+  <li>Structures quelconques (patch, cornet, réseaux)</li>
+  <li>Paramétrage, optimisation, analyse paramétrique</li>
+  <li>Calcul temps/fréquence</li>
+  <li>Visualisation 3D avancée</li>
+  <li>Version académique disponible</li>
+</ul>
+
+<p><strong>HFSS (Ansys)</strong> :</p>
+
+<p>Logiciel commercial utilisant FEM (Finite Element Method).</p>
+<ul>
+  <li>Référence industrielle pour antennes</li>
+  <li>Précision élevée</li>
+  <li>Calcul S-parameters multi-ports</li>
+  <li>Intégration circuits RF</li>
+  <li>Version étudiante limitée</li>
+</ul>
+
+<p><strong>FEKO</strong> :</p>
+
+<p>Logiciel hybride MoM/FEM pour structures électriquement grandes.</p>
+<ul>
+  <li>Antennes sur véhicules, avions</li>
+  <li>Radar, compatibilité EM</li>
+</ul>
+
+<h4 id="mesures-en-chambre-anéchoïque">Mesures en chambre anéchoïque</h4>
+
+<p><strong>Principe</strong> :</p>
+
+<p>Chambre tapissée d’absorbants RF (pyramides ou ferrites) pour éliminer les réflexions et recréer un espace libre.</p>
+
+<p><strong>Mesures réalisées</strong> :</p>
+
+<p><strong>Diagramme de rayonnement</strong> :</p>
+<ul>
+  <li>Antenne sous test (AUT) sur plateau tournant</li>
+  <li>Antenne source fixe (cornet étalon)</li>
+  <li>Rotation azimut et élévation</li>
+  <li>Mesure puissance reçue → diagramme</li>
+</ul>
+
+<p><strong>Gain absolu</strong> :
+Méthode des trois antennes ou comparaison avec antenne étalonnée.</p>
+
+<p><strong>Polarisation</strong> :
+Rotation antenne source pour identifier polarisation AUT.</p>
+
+<p><strong>Équipements</strong> :</p>
+<ul>
+  <li>Analyseur de spectre ou récepteur calibré</li>
+  <li>Générateur RF</li>
+  <li>Positionneur motorisé</li>
+  <li>Antenne de référence</li>
+</ul>
+
+<h4 id="mesures-au-vna-vector-network-analyzer">Mesures au VNA (Vector Network Analyzer)</h4>
+
+<p><strong>Analyseur de réseau vectoriel</strong> :</p>
+
+<p>Mesure amplitude et phase des paramètres S.</p>
+
+<p><strong>S11 (coefficient de réflexion)</strong> :</p>
+<ul>
+  <li>Indique l’adaptation de l’antenne</li>
   <li>S11 &lt; -10 dB souhaité</li>
-  <li>TOS &lt; 2</li>
 </ul>
 
-<p><strong>Bande passante :</strong></p>
+<p><strong>Impédance Z</strong> :
+Calculée à partir de S11 : Z = Z0 × (1 + S11) / (1 - S11)</p>
+
+<p><strong>TOS</strong> :
+Calculé à partir de S11 : TOS = (1 + |S11|) / (1 - |S11|)</p>
+
+<p><strong>Procédure</strong> :</p>
+<ol>
+  <li>Calibrage (Open, Short, Load, Thru)</li>
+  <li>Connexion antenne</li>
+  <li>Balayage fréquentiel</li>
+  <li>Identification fréquence de résonance (min S11)</li>
+</ol>
+
+<p><strong>Pièges à éviter</strong> :</p>
 <ul>
-  <li>Bande d’adaptation, rayonnement, polarisation</li>
+  <li>Câbles de test rayonnent → perturbe mesure (utiliser ferrites)</li>
+  <li>Connecteurs mal serrés</li>
+  <li>Proximité main/corps</li>
 </ul>
 
-<h3 id="module-2--types-dantennes">Module 2 : Types d’antennes</h3>
+<h4 id="bilan-de-liaison-radio">Bilan de liaison radio</h4>
 
-<p><strong>Dipôle λ/2 :</strong></p>
+<p><strong>Logiciel Radio Mobile</strong> :</p>
+
+<p>Outil de planification de couverture radio.</p>
 <ul>
-  <li>Z ≈ 73Ω, gain 2.15 dBi</li>
-  <li>Omnidirectionnel plan H</li>
+  <li>Modèles numériques de terrain (MNT)</li>
+  <li>Calcul pertes selon topographie</li>
+  <li>Profil de liaison point-à-point</li>
+  <li>Zones de couverture</li>
 </ul>
 
-<p><strong>Monopole λ/4 :</strong></p>
+<p><strong>Paramètres d’entrée</strong> :</p>
 <ul>
-  <li>Plan de masse requis</li>
-  <li>Z ≈ 36Ω</li>
-  <li>WiFi, mobiles</li>
+  <li>Fréquence</li>
+  <li>Puissance émetteur (EIRP)</li>
+  <li>Gains antennes</li>
+  <li>Hauteurs antennes</li>
+  <li>Sensibilité récepteur</li>
+  <li>Modèle de propagation (Okumura-Hata, ITU, etc.)</li>
 </ul>
 
-<p><strong>Patch rectangulaire :</strong></p>
+<p><strong>Sorties</strong> :</p>
 <ul>
-  <li>Sur substrat (Rogers, FR-4)</li>
-  <li>Compact, gain 6-8 dBi</li>
-  <li>GPS, WiFi, télémétrie</li>
-  <li>L ≈ λ_eff/2</li>
+  <li>Profil altimétrique avec zones de Fresnel</li>
+  <li>Pertes de trajet</li>
+  <li>Marge de liaison</li>
+  <li>Cartographie de couverture</li>
 </ul>
 
-<p><strong>Yagi-Uda :</strong></p>
+<p><strong>Marge de liaison</strong> :</p>
+
+<p>Différence entre puissance reçue et sensibilité récepteur.</p>
 <ul>
-  <li>Réflecteur + directeurs</li>
-  <li>Gain 6-17 dBi</li>
-  <li>Directive, TV, radio</li>
+  <li>Marge typique : 10-20 dB (compense fading, pertes supplémentaires)</li>
 </ul>
 
-<p><strong>Antennes large bande :</strong></p>
-<ul>
-  <li>Log-périodique, spirale</li>
-  <li>Rapport 10:1</li>
-</ul>
-
-<h3 id="module-3--propagation">Module 3 : Propagation</h3>
-
-<p><strong>Modes :</strong></p>
-<ul>
-  <li>Onde de sol, d’espace, ionosphérique</li>
-  <li>Espace libre : équation de Friis</li>
-</ul>
-
-<p><strong>Phénomènes :</strong></p>
-<ul>
-  <li>Réflexion, diffraction, réfraction</li>
-  <li>Absorption (pluie, végétation)</li>
-  <li>Multi-trajets (fading)</li>
-</ul>
-
-<p><strong>Modèles :</strong></p>
-<ul>
-  <li>Espace libre, Okumura-Hata, COST-231</li>
-  <li>Zone de Fresnel</li>
-</ul>
+<p><strong>Équation bilan</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Pr (dBm) = EIRP (dBm) - FSPL (dB) + Gr (dBi) - Pertes_diverses (dB)
+Marge (dB) = Pr (dBm) - Sensibilité_Rx (dBm)
+</code></pre></div></div>
 
 <hr />
 
-<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+<h2 id="part-d---analyse-et-réflexion">PART D - Analyse et Réflexion</h2>
 
-<h3 id="tp-simulation">TP Simulation</h3>
+<h3 class="section-title">Évaluation</h3>
 
-<p><strong>Logiciels :</strong></p>
+<p>Le module était évalué selon une approche mixte valorisant théorie, pratique et projet :</p>
+
+<p><strong>Travaux pratiques (25%)</strong> :
+Évaluation continue sur les 9 séances de TP (simulation et mesures). Critères : compréhension outils, méthodologie, qualité résultats, analyse écarts simulation/mesure.</p>
+
+<p><strong>Projet antenne (40%)</strong> :
+Conception complète d’une antenne (patch ou Yagi) en binôme sur 20h. Livrables : cahier des charges, dimensionnement théorique, simulations, fabrication, mesures, rapport technique et soutenance orale. Évaluation sur démarche scientifique, qualité réalisation et validation expérimentale.</p>
+
+<p><strong>Contrôle continu (15%)</strong> :
+Interrogations écrites courtes (QCM, exercices) pendant les TD pour vérifier acquisition fondamentaux.</p>
+
+<p><strong>Examen final (15%)</strong> :
+Épreuve de 2h : exercices de dimensionnement, analyse de diagrammes, calculs de bilans de liaison. Documents autorisés (polycopié, formulaire).</p>
+
+<h3 class="section-title">Compétences développées</h3>
+
+<p><strong>Techniques</strong> :</p>
 <ul>
-  <li>MMANA-GAL (Yagi, méthode moments)</li>
-  <li>CST Microwave Studio (3D)</li>
-  <li>HFSS (FEM)</li>
+  <li><strong>Conception d’antennes RF</strong> : maîtrise du dimensionnement théorique (formules analytiques) pour dipôles, monopoles, patchs et Yagi</li>
+  <li><strong>Simulation électromagnétique</strong> : utilisation professionnelle de logiciels EM (MMANA, CST, HFSS) pour analyse et optimisation</li>
+  <li><strong>Mesures RF avancées</strong> : caractérisation en chambre anéchoïque (diagrammes, gain, polarisation) et au VNA (S11, impédance)</li>
+  <li><strong>Bilans de liaison</strong> : calculs de couverture radio, planification avec Radio Mobile</li>
+  <li><strong>Optimisation</strong> : compromis gain/bande passante/encombrement selon contraintes applicatives</li>
 </ul>
 
-<p><strong>Antennes simulées :</strong></p>
+<p><strong>Transversales</strong> :</p>
 <ul>
-  <li>Dipôle, Yagi 3-5 éléments</li>
-  <li>Patch rectangulaire</li>
-  <li>Analyse S11, gain, diagramme</li>
+  <li>Démarche scientifique : confrontation théorie/simulation/mesure, analyse des écarts</li>
+  <li>Gestion de projet : cahier des charges, planning, fabrication, documentation technique</li>
+  <li>Travail en équipe : répartition des tâches, collaboration TP/projet</li>
+  <li>Communication technique : rédaction rapports, présentations orales avec support visuel</li>
 </ul>
 
-<h3 id="tp-mesures">TP Mesures</h3>
+<h3 class="section-title">Apports pour la formation</h3>
 
-<p><strong>Chambre anéchoïque :</strong></p>
+<p><strong>Poursuite d’études (Licence, École d’ingénieurs)</strong> :</p>
+
+<p>Ce module constitue une base solide pour des spécialisations en :</p>
 <ul>
-  <li>Diagrammes rayonnement</li>
-  <li>Gain absolu, polarisation</li>
+  <li><strong>Télécommunications RF</strong> : systèmes sans fil, radio logicielle (SDR)</li>
+  <li><strong>Systèmes embarqués communicants</strong> : IoT, drones, télémétrie</li>
+  <li><strong>Conception de circuits RF/micro-ondes</strong> : front-end radio, amplificateurs</li>
+  <li><strong>Compatibilité électromagnétique (CEM)</strong> : mesures, antennes de test</li>
 </ul>
 
-<p><strong>VNA :</strong></p>
+<p>Les compétences en simulation EM sont directement valorisables en bureau d’études industriel.</p>
+
+<p><strong>Vie professionnelle</strong> :</p>
+
+<p>Applications directes dans de nombreux secteurs :</p>
 <ul>
-  <li>S11, impédance, TOS</li>
+  <li><strong>Télécommunications</strong> : opérateurs mobiles (antennes stations de base 4G/5G), équipementiers (Ericsson, Nokia, Huawei)</li>
+  <li><strong>Aéronautique/Spatial</strong> : antennes satellites, télémétrie avions/drones, GNSS</li>
+  <li><strong>Automobile</strong> : V2X, radar, keyless entry, TPM, télémétrie</li>
+  <li><strong>IoT</strong> : LoRa, Sigfox, Zigbee, BLE - intégration antennes dans objets connectés</li>
+  <li><strong>Défense</strong> : radars, guerre électronique, communications sécurisées</li>
+  <li><strong>Recherche</strong> : radioastronomie, radar météo, télédétection</li>
 </ul>
 
-<h3 id="tp-bilan-de-liaison">TP Bilan de liaison</h3>
-
-<p><strong>Radio Mobile :</strong></p>
+<p><strong>Métiers visés</strong> :</p>
 <ul>
-  <li>Planification couverture</li>
-  <li>Profil terrain (MNT)</li>
-  <li>Liaison point-à-point</li>
+  <li>Ingénieur antennes RF</li>
+  <li>Ingénieur systèmes radio</li>
+  <li>Ingénieur mesures RF</li>
+  <li>Ingénieur CEM</li>
+  <li>Consultant en planification radio</li>
 </ul>
 
-<h3 id="projet-antenne">Projet Antenne</h3>
+<h3 class="section-title">Perspectives et évolutions technologiques</h3>
 
-<p><strong>Réalisation complète :</strong></p>
+<p><strong>Tendances actuelles</strong> :</p>
+
+<p><strong>Massive MIMO (Multiple-Input Multiple-Output)</strong> :
+Réseaux de dizaines/centaines d’antennes en station de base 5G pour beamforming avancé (focalisation du faisceau vers chaque utilisateur). Amélioration capacité et efficacité spectrale.</p>
+
+<p><strong>Antennes reconfigurables</strong> :
+Modification dynamique des caractéristiques (fréquence, diagramme, polarisation) par :</p>
 <ul>
-  <li>Choix type (patch, Yagi)</li>
-  <li>Dimensionnement + simulation</li>
-  <li>Fabrication (PCB ou mécanique)</li>
-  <li>Mesures et validation</li>
-  <li>Documentation</li>
+  <li>Commutateurs RF (PIN diodes, MEMS)</li>
+  <li>Matériaux actifs (varactors, cristaux liquides)</li>
+  <li>Métamatériaux et surfaces intelligentes reconfigurables (RIS)</li>
 </ul>
+
+<p><strong>Antennes millimétriques (mmWave)</strong> :
+Bandes 26, 28, 39 GHz pour 5G. Antennes miniatures intégrées dans smartphones et stations de base. Défis : pertes de propagation, sensibilité blocage.</p>
+
+<p><strong>Antennes imprimées 3D</strong> :
+Fabrication additive métallique pour formes complexes (spirales 3D, antennes diélectriques). Optimisation topologique par IA.</p>
+
+<p><strong>Intégration antenne-circuit (AiP - Antenna in Package)</strong> :
+Antennes intégrées dans substrat ou boîtier du circuit (SiP, PCB multicouche). Réduction taille et coût, crucial pour IoT et wearables.</p>
+
+<p><strong>Antennes pour satellite LEO (Low Earth Orbit)</strong> :
+Constellations Starlink, OneWeb nécessitent antennes plates à balayage électronique (phased arrays) pour suivi satellite.</p>
+
+<p><strong>Intelligence Artificielle en conception</strong> :
+Algorithmes d’optimisation (algorithmes génétiques, réseaux neurones) pour synthèse automatique d’antennes selon spécifications.</p>
+
+<h3 class="section-title">Conseils pour approfondir</h3>
+
+<p><strong>Livres de référence</strong> :</p>
+<ul>
+  <li>“Antenna Theory: Analysis and Design” - C. Balanis (référence universitaire)</li>
+  <li>“Antennes : Théorie et pratique” - Jean-Paul Yonnet (en français)</li>
+  <li>“Microstrip Antenna Design Handbook” - Garg et al. (patch antennas)</li>
+  <li>“The ARRL Antenna Book” (pratique radioamateur)</li>
+</ul>
+
+<p><strong>Ressources en ligne</strong> :</p>
+<ul>
+  <li><strong>Cours vidéo</strong> : MIT OpenCourseWare, Coursera “RF and Millimeter-Wave Circuit Design”</li>
+  <li><strong>Tutoriels logiciels</strong> : CST, HFSS sur YouTube, forums officiels</li>
+  <li><strong>Communauté radioamateur</strong> : forums, blogs, projets open-source d’antennes</li>
+  <li><strong>Standards IEEE</strong> : IEEE Transactions on Antennas and Propagation</li>
+</ul>
+
+<p><strong>Projets personnels</strong> :</p>
+<ul>
+  <li>Réaliser antennes WiFi/LoRa DIY, mesurer avec RTL-SDR ou NanoVNA</li>
+  <li>Participer à compétitions (CubeSat, CanSat) nécessitant conception antennes</li>
+  <li>Contribuer à projets open hardware (antennes imprimables, DIY VNA)</li>
+</ul>
+
+<p><strong>Certifications professionnelles</strong> :</p>
+<ul>
+  <li>Formation logiciels EM (CST, HFSS) - certifications éditeurs</li>
+  <li>Radioamateur : licence HAREC (pratique antennes autorisée)</li>
+</ul>
+
+<h3 class="section-title">Retour d'expérience et conseils pratiques</h3>
+
+<div class="info-box">
+<strong>💡 Conseil n°1 : Simulation avant fabrication</strong><br />
+Ne jamais fabriquer une antenne sans l'avoir simulée. Les erreurs de dimensionnement sont coûteuses (PCB, usinage). Une simulation bien paramétrée permet d'anticiper les performances et d'optimiser avant réalisation.
+</div>
+
+<div class="info-box">
+<strong>💡 Conseil n°2 : Importance du plan de masse</strong><br />
+Pour monopoles et patchs, le plan de masse est critique. Sa taille, sa qualité (continuité électrique) et sa connexion (vias) influencent directement le diagramme de rayonnement et l'adaptation.
+</div>
+
+<div class="info-box">
+<strong>💡 Conseil n°3 : Gérer les écarts simulation/mesure</strong><br />
+Un écart de 5-10% en fréquence entre simulation et mesure est normal. Causes : tolérances substrat (εr), usinage PCB, soudures, connecteurs. Prévoir une plage d'ajustement (stubs ajustables, trimming).
+</div>
+
+<div class="warning-box">
+<strong>⚠️ Piège n°1 : Environnement de mesure</strong><br />
+Mesurer une antenne sur une table métallique ou près d'un mur fausse complètement les résultats. Toujours mesurer en chambre anéchoïque ou à l'extérieur, loin d'obstacles (&gt; 3λ).
+</div>
+
+<div class="warning-box">
+<strong>⚠️ Piège n°2 : Câbles rayonnants</strong><br />
+Le câble coaxial d'alimentation peut rayonner et perturber le diagramme (courant de mode commun). Utiliser des ferrites (chokes) ou un balun pour bloquer ces courants parasites.
+</div>
+
+<div class="warning-box">
+<strong>⚠️ Piège n°3 : Bande passante patch</strong><br />
+Les antennes patch ont une bande étroite (2-5%). Pour élargir : augmenter épaisseur substrat (h), utiliser substrat faible εr, ou empiler plusieurs patchs. Compromis gain/bande.
+</div>
+
+<h3 class="section-title">Applications pratiques et études de cas</h3>
+
+<p><strong>Cas 1 : Antenne WiFi 2.4 GHz pour drone</strong></p>
+
+<p><strong>Besoin</strong> : antenne compacte, légère, gain modéré (3-5 dBi), omnidirectionnelle.</p>
+
+<p><strong>Solution</strong> : Patch rectangulaire sur FR-4.</p>
+<ul>
+  <li>Dimensionnement : L = 28 mm, W = 36 mm sur FR-4 h=1.6mm</li>
+  <li>Alimentation coaxiale ajustable (x0 = 10 mm du bord pour 50Ω)</li>
+  <li>Simulation CST : S11 = -25 dB à 2.44 GHz, gain 5.2 dBi</li>
+  <li>Fabrication PCB standard, protection vernis</li>
+  <li>Mesures : S11 = -18 dB à 2.42 GHz (shift 20 MHz acceptable), gain mesuré 4.8 dBi</li>
+</ul>
+
+<p><strong>Cas 2 : Liaison point-à-point 5.8 GHz pour transmission vidéo</strong></p>
+
+<p><strong>Besoin</strong> : portée 2 km en zone dégagée, débit vidéo HD.</p>
+
+<p><strong>Solution</strong> : Antennes Yagi 18 éléments (gain 16 dBi).</p>
+<ul>
+  <li>Fréquence : 5.8 GHz (ISM, pas de licence)</li>
+  <li>Émetteur : 500 mW EIRP (27 dBm + 16 dBi = 43 dBm)</li>
+  <li>Récepteur : sensibilité -85 dBm</li>
+</ul>
+
+<p><strong>Bilan de liaison</strong> :</p>
+<ul>
+  <li>FSPL (2 km, 5.8 GHz) = 119 dB</li>
+  <li>Pr = 43 + 16 - 119 = -60 dBm</li>
+  <li>Marge = -60 - (-85) = <strong>25 dB</strong> ✓ (excellente)</li>
+</ul>
+
+<p>Zone de Fresnel : rayon 1.5 m au milieu de la liaison. Vérifier dégagement sur profil terrain (Radio Mobile).</p>
+
+<p><strong>Cas 3 : Antenne RFID UHF pour logistique</strong></p>
+
+<p><strong>Besoin</strong> : lecture étiquettes RFID jusqu’à 10 m, polarisation circulaire (lecture tous angles).</p>
+
+<p><strong>Solution</strong> : Antenne patch circulaire double alimentation en quadrature.</p>
+<ul>
+  <li>Fréquence : 866 MHz (EU)</li>
+  <li>Patch carré 160 mm × 160 mm, deux points d’alimentation à 90° avec déphasage 90°</li>
+  <li>Polarisation circulaire (AR &lt; 2 dB)</li>
+  <li>Gain : 8 dBi</li>
+  <li>Ouverture : 70° (suffisante pour zone de lecture)</li>
+</ul>
+
+<h2 id="-ressources-et-documents-complémentaires">📚 Ressources et documents complémentaires</h2>
+
+<h3 id="documents-de-cours-disponibles">Documents de cours disponibles</h3>
+
+<p>Les ressources suivantes sont accessibles dans le dossier du cours :</p>
+
+<p><strong>Cours théoriques</strong> :</p>
+<ul>
+  <li>📄 <code class="language-plaintext highlighter-rouge">Cours Antenne EN2A 2021-2022.pdf</code> - Polycopié complet du cours magistral couvrant tous les chapitres (paramètres, types d’antennes, propagation)</li>
+  <li>📄 <code class="language-plaintext highlighter-rouge">Notes de cours#1.pdf</code> et <code class="language-plaintext highlighter-rouge">Notes sur le cours#2.pdf</code> - Notes de cours manuscrites complémentaires avec exemples détaillés</li>
+</ul>
+
+<p><strong>Travaux dirigés</strong> :</p>
+<ul>
+  <li>📄 <code class="language-plaintext highlighter-rouge">TD Antenne ENOC 2021-2022.pdf</code> - Recueil d’exercices corrigés sur dimensionnement, bilans de liaison, et calculs de paramètres</li>
+</ul>
+
+<p><strong>Travaux pratiques</strong> :</p>
+<ul>
+  <li>📄 <code class="language-plaintext highlighter-rouge">Texte global TL Antenne EN 2021-2022.pdf</code> - Guide complet des séances de TP avec protocoles de manipulation et consignes de mesure</li>
+</ul>
+
+<p><strong>Documentation technique</strong> :</p>
+<ul>
+  <li>📄 <code class="language-plaintext highlighter-rouge">Datasheet Antenne Yagi Siretta Oscar3A.pdf</code> - Exemple industriel de spécifications d’antenne Yagi (caractéristiques, diagrammes, courbes)</li>
+</ul>
+
+<h3 id="pour-aller-plus-loin">Pour aller plus loin</h3>
+
+<p><strong>Logiciels et outils</strong> :</p>
+<ul>
+  <li><strong>MMANA-GAL</strong> : http://www.qsl.net/mmhamsoft/mmana/ (gratuit, Windows)</li>
+  <li><strong>4NEC2</strong> : https://www.qsl.net/4nec2/ (gratuit, Windows)</li>
+  <li><strong>NanoVNA</strong> : Analyseur de réseau vectoriel portable low-cost (&lt; 50€) pour mesures S11</li>
+  <li><strong>Radio Mobile</strong> : http://www.ve2dbe.com/rmonline.asp (gratuit, planification radio)</li>
+</ul>
+
+<p><strong>Communautés et forums</strong> :</p>
+<ul>
+  <li><strong>IEEE Antennas and Propagation Society</strong> : https://www.ieeeaps.org/</li>
+  <li><strong>Radioamateur.org</strong> : Forums francophones sur antennes</li>
+  <li><strong>Reddit r/amateurradio</strong> : Projets et discussions antennes</li>
+  <li><strong>EEVblog Forum</strong> : Section RF et antennes</li>
+</ul>
+
+<p><strong>Bases de données</strong> :</p>
+<ul>
+  <li><strong>Antenna Magus</strong> : Bibliothèque de structures d’antennes avec formules et modèles</li>
+  <li><strong>Rogers Corporation</strong> : Datasheets substrats haute fréquence</li>
+  <li><strong>ITU-R Recommendations</strong> : Modèles de propagation officiels</li>
+</ul>
+
+<h3 id="formules-essentielles-à-retenir">Formules essentielles à retenir</h3>
+
+<p><strong>Conversion longueur d’onde / fréquence</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>λ (m) = c / f = 300 / f(MHz)
+</code></pre></div></div>
+
+<p><strong>Dipôle λ/2</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L (m) ≈ 143 / f(MHz)
+Z ≈ 73 Ω
+Gain = 2.15 dBi
+</code></pre></div></div>
+
+<p><strong>Patch rectangulaire</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L ≈ λ/(2√εreff) - 2ΔL
+W ≈ λ/(2√((εr+1)/2))
+</code></pre></div></div>
+
+<p><strong>Friis et FSPL</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FSPL (dB) = 32.45 + 20log(f_MHz) + 20log(d_km)
+Pr (dBm) = Pt(dBm) + Gt(dBi) + Gr(dBi) - FSPL(dB)
+</code></pre></div></div>
+
+<p><strong>Horizon radio</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>d (km) ≈ 4.12 × [√h1(m) + √h2(m)]
+</code></pre></div></div>
+
+<p><strong>Zone de Fresnel</strong> :</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r (m) = √(λ × d1 × d2 / (d1 + d2))
+</code></pre></div></div>
+
+<h3 id="tableau-récapitulatif-des-antennes">Tableau récapitulatif des antennes</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Gain (dBi)</th>
+      <th>Bande passante</th>
+      <th>Encombrement</th>
+      <th>Coût</th>
+      <th>Applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dipôle λ/2</td>
+      <td>2.15</td>
+      <td>5-10%</td>
+      <td>Moyen</td>
+      <td>Très faible</td>
+      <td>FM, WiFi simple, mesure</td>
+    </tr>
+    <tr>
+      <td>Monopole λ/4</td>
+      <td>5.15</td>
+      <td>5-10%</td>
+      <td>Faible</td>
+      <td>Très faible</td>
+      <td>GSM, radio mobile</td>
+    </tr>
+    <tr>
+      <td>Patch rectangulaire</td>
+      <td>6-8</td>
+      <td>2-5%</td>
+      <td>Très faible</td>
+      <td>Faible</td>
+      <td>GPS, WiFi, IoT, drones</td>
+    </tr>
+    <tr>
+      <td>Yagi 3 éléments</td>
+      <td>6-8</td>
+      <td>3-5%</td>
+      <td>Moyen</td>
+      <td>Faible</td>
+      <td>WiFi directif, TNT</td>
+    </tr>
+    <tr>
+      <td>Yagi 10 éléments</td>
+      <td>13-15</td>
+      <td>2-3%</td>
+      <td>Élevé</td>
+      <td>Moyen</td>
+      <td>Liaison longue distance</td>
+    </tr>
+    <tr>
+      <td>Log-périodique</td>
+      <td>6-10</td>
+      <td>&gt; 100%</td>
+      <td>Élevé</td>
+      <td>Moyen</td>
+      <td>Mesure, EMC</td>
+    </tr>
+    <tr>
+      <td>Cornet</td>
+      <td>10-25</td>
+      <td>10-30%</td>
+      <td>Moyen</td>
+      <td>Moyen</td>
+      <td>Radar, micro-ondes</td>
+    </tr>
+    <tr>
+      <td>Parabole</td>
+      <td>20-40</td>
+      <td>10-20%</td>
+      <td>Très élevé</td>
+      <td>Élevé</td>
+      <td>Satellite, radar</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="bandes-de-fréquences-et-longueurs-donde">Bandes de fréquences et longueurs d’onde</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Bande</th>
+      <th>Fréquence</th>
+      <th>λ</th>
+      <th>Applications typiques</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FM Radio</td>
+      <td>88-108 MHz</td>
+      <td>2.8-3.4 m</td>
+      <td>Radio FM, RDS</td>
+    </tr>
+    <tr>
+      <td>VHF Aéro</td>
+      <td>108-137 MHz</td>
+      <td>2.2-2.8 m</td>
+      <td>Communications aéronautiques</td>
+    </tr>
+    <tr>
+      <td>VHF Maritime</td>
+      <td>156-174 MHz</td>
+      <td>1.7-1.9 m</td>
+      <td>Maritime VHF</td>
+    </tr>
+    <tr>
+      <td>TNT (UHF TV)</td>
+      <td>470-862 MHz</td>
+      <td>35-64 cm</td>
+      <td>Télévision numérique terrestre</td>
+    </tr>
+    <tr>
+      <td>GSM 900</td>
+      <td>890-960 MHz</td>
+      <td>31-34 cm</td>
+      <td>2G mobile</td>
+    </tr>
+    <tr>
+      <td>LoRa EU</td>
+      <td>863-870 MHz</td>
+      <td>34-35 cm</td>
+      <td>IoT longue portée</td>
+    </tr>
+    <tr>
+      <td>RFID UHF</td>
+      <td>865-868 MHz (EU)</td>
+      <td>34-35 cm</td>
+      <td>Logistique, inventaire</td>
+    </tr>
+    <tr>
+      <td>GPS L1</td>
+      <td>1575 MHz</td>
+      <td>19 cm</td>
+      <td>Navigation GNSS</td>
+    </tr>
+    <tr>
+      <td>GSM 1800 (DCS)</td>
+      <td>1710-1880 MHz</td>
+      <td>16-17.5 cm</td>
+      <td>2G/4G mobile</td>
+    </tr>
+    <tr>
+      <td>WiFi 2.4G</td>
+      <td>2.4-2.5 GHz</td>
+      <td>12-12.5 cm</td>
+      <td>WiFi b/g/n, Bluetooth</td>
+    </tr>
+    <tr>
+      <td>4G LTE</td>
+      <td>2.6 GHz</td>
+      <td>11.5 cm</td>
+      <td>4G mobile</td>
+    </tr>
+    <tr>
+      <td>WiMAX</td>
+      <td>3.5 GHz</td>
+      <td>8.6 cm</td>
+      <td>Accès fixe sans fil</td>
+    </tr>
+    <tr>
+      <td>WiFi 5G</td>
+      <td>5.15-5.85 GHz</td>
+      <td>5.1-5.8 cm</td>
+      <td>WiFi a/n/ac/ax</td>
+    </tr>
+    <tr>
+      <td>5G mmWave</td>
+      <td>26-28 GHz</td>
+      <td>1.1-1.2 cm</td>
+      <td>5G haut débit</td>
+    </tr>
+  </tbody>
+</table>
 
 <hr />
 
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+<div style="text-align: center; margin: 40px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px;">
+  <h3 style="margin-top: 0;">🎯 Points clés à retenir</h3>
+  <p><strong>1.</strong> Une antenne est un transducteur entre onde guidée (câble) et onde libre (espace) - son efficacité dépend de l'adaptation d'impédance et du rayonnement.</p>
+  <p><strong>2.</strong> Le compromis gain/bande passante/encombrement est incontournable : choisir le type d'antenne selon l'application.</p>
+  <p><strong>3.</strong> La simulation EM est indispensable avant fabrication, mais doit être validée par mesure expérimentale.</p>
+  <p><strong>4.</strong> En propagation réelle, les phénomènes multi-trajets et l'environnement complexifient le bilan de liaison - prévoir des marges.</p>
+  <p><strong>5.</strong> Les antennes sont au cœur de la révolution IoT/5G/satellite : un domaine d'avenir avec de nombreuses opportunités.</p>
+</div>
 
-<h3 id="évaluation">Évaluation</h3>
-<ul>
-  <li>TP simulation (25%)</li>
-  <li>TP mesures (20%)</li>
-  <li>Projet antenne (40%)</li>
-  <li>Examen (15%)</li>
-</ul>
+<hr />
 
-<h3 id="compétences-acquises">Compétences acquises</h3>
-<ul>
-  <li>Conception antennes RF</li>
-  <li>Simulation EM professionnelle</li>
-  <li>Mesures chambre anéchoïque et VNA</li>
-  <li>Bilans de liaison radio</li>
-  <li>Optimisation structures rayonnantes</li>
-</ul>
-
-<h3 id="applications">Applications</h3>
-<ul>
-  <li>Télécommunications (WiFi, 4G/5G, satellite)</li>
-  <li>IoT (LoRa, Sigfox)</li>
-  <li>GNSS (GPS, Galileo)</li>
-  <li>RFID, radar</li>
-</ul>
-
-<h2 id="-contenu-du-cours">📚 Contenu du cours</h2>
-
-<h3 id="fondamentaux-des-antennes">Fondamentaux des antennes</h3>
+<p><em>Ce cours a été dispensé au semestre 4 du DUT GEII à l’INSA Toulouse (2021-2022).</em></p>
 
 <h4 id="paramètres-caractéristiques">Paramètres caractéristiques</h4>
 
@@ -295,7 +1400,7 @@
 
 <h3 id="types-dantennes">Types d’antennes</h3>
 
-<h4 id="antennes-filaires">Antennes filaires</h4>
+<h4 id="antennes-filaires-1">Antennes filaires</h4>
 
 <p><strong>Dipôle demi-onde (λ/2) :</strong></p>
 <ul>
@@ -328,7 +1433,7 @@
   <li>TV, radioamateur</li>
 </ul>
 
-<h4 id="antennes-imprimées-patch">Antennes imprimées (patch)</h4>
+<h4 id="antennes-imprimées-patch-1">Antennes imprimées (patch)</h4>
 
 <p><strong>Patch rectangulaire :</strong></p>
 <ul>
@@ -362,7 +1467,7 @@
   <li>Pertes diélectriques</li>
 </ul>
 
-<h4 id="antennes-large-bande">Antennes large bande</h4>
+<h4 id="antennes-large-bande-1">Antennes large bande</h4>
 
 <p><strong>Antenne log-périodique :</strong></p>
 <ul>
@@ -411,7 +1516,7 @@
 
 <h3 id="propagation-des-ondes">Propagation des ondes</h3>
 
-<h4 id="modes-de-propagation">Modes de propagation</h4>
+<h4 id="modes-de-propagation-1">Modes de propagation</h4>
 
 <p><strong>Onde de sol :</strong></p>
 <ul>
@@ -442,7 +1547,7 @@
   <li>Dépend heure/saison</li>
 </ul>
 
-<h4 id="phénomènes-de-propagation">Phénomènes de propagation</h4>
+<h4 id="phénomènes-de-propagation-1">Phénomènes de propagation</h4>
 
 <p><strong>Réflexion :</strong></p>
 <ul>
@@ -472,7 +1577,7 @@
   <li>Atmosphère (O2, H2O)</li>
 </ul>
 
-<h4 id="modèles-de-propagation">Modèles de propagation</h4>
+<h4 id="modèles-de-propagation-1">Modèles de propagation</h4>
 
 <p><strong>Espace libre :</strong></p>
 <ul>
@@ -543,7 +1648,7 @@
   <li>Impédance complexe</li>
 </ul>
 
-<h3 id="tp-bilan-de-liaison-1">TP Bilan de liaison</h3>
+<h3 id="tp-bilan-de-liaison">TP Bilan de liaison</h3>
 
 <p><strong>Radio Mobile :</strong></p>
 <ul>
@@ -560,7 +1665,7 @@
   <li>Liaison longue distance</li>
 </ul>
 
-<h3 id="projet-antenne-1">Projet Antenne</h3>
+<h3 id="projet-antenne">Projet Antenne</h3>
 
 <p><strong>Réalisation d’une antenne :</strong></p>
 <ul>
@@ -751,7 +1856,7 @@
   <li>Rayonnement arrière</li>
 </ul>
 
-<h3 id="antennes-filaires-1">Antennes filaires</h3>
+<h3 id="antennes-filaires-2">Antennes filaires</h3>
 <ul>
   <li>Plan de masse essentiel (monopole)</li>
   <li>Environnement influence performances</li>

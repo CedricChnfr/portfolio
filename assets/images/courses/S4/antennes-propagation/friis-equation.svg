@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="350" viewBox="0 0 550 350">
+  <defs>
+    <style>
+      .antenna { fill: #2a7ae2; }
+      .signal { stroke: #4ecdc4; stroke-width: 2; fill: none; stroke-dasharray: 5,3; }
+      .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrow); }
+      .text { font-family: Arial; font-size: 11px; fill: #333; }
+      .label { font-family: Arial; font-size: 12px; fill: #2a7ae2; font-weight: bold; }
+      .title { font-family: Arial; font-size: 16px; fill: #2a7ae2; font-weight: bold; }
+      .math { font-family: 'Courier New', monospace; font-size: 11px; fill: #333; }
+      .box { fill: #f9f9f9; stroke: #2a7ae2; stroke-width: 1; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Titre -->
+  <text class="title" x="150" y="25">Équation de Friis - Propagation en Espace Libre</text>
+  
+  <!-- Antenne émettrice -->
+  <g transform="translate(80, 120)">
+    <path class="antenna" d="M -10 -30 L 0 0 L -10 30 L 0 20 L 0 -20 Z"/>
+    <circle cx="0" cy="0" r="3" fill="#ff6b6b"/>
+    <text class="label" x="-25" y="50">Tx</text>
+    <text class="text" x="-35" y="65">Émetteur</text>
+    <text class="math" x="-30" y="-45">Pt, Gt</text>
+  </g>
+  
+  <!-- Antenne réceptrice -->
+  <g transform="translate(460, 120)">
+    <path class="antenna" d="M 10 -30 L 0 0 L 10 30 L 0 20 L 0 -20 Z"/>
+    <circle cx="0" cy="0" r="3" fill="#ff6b6b"/>
+    <text class="label" x="-10" y="50">Rx</text>
+    <text class="text" x="-25" y="65">Récepteur</text>
+    <text class="math" x="-20" y="-45">Pr, Gr</text>
+  </g>
+  
+  <!-- Propagation -->
+  <ellipse cx="270" cy="120" rx="150" ry="60" class="signal"/>
+  <ellipse cx="270" cy="120" rx="100" ry="40" class="signal"/>
+  <ellipse cx="270" cy="120" rx="50" ry="20" class="signal"/>
+  
+  <!-- Distance -->
+  <line class="arrow" x1="80" y1="200" x2="460" y2="200"/>
+  <text class="label" x="250" y="220">Distance d</text>
+  
+  <!-- Formule principale -->
+  <rect class="box" x="50" y="240" width="450" height="100" rx="5"/>
+  <text class="label" x="200" y="265">Équation de Friis :</text>
+  
+  <text class="math" x="140" y="290">Pr = Pt + Gt + Gr + 20·log₁₀(λ / 4πd)</text>
+  <text class="math" x="100" y="310">Pr = Pt + Gt + Gr - 20·log₁₀(d) - 20·log₁₀(f) + 147.55 dB</text>
+  
+  <text class="text" x="60" y="330">où : Pt, Pr en dBm | Gt, Gr en dBi | d en mètres | f en Hz</text>
+  
+  <!-- Légende -->
+  <rect class="box" x="50" y="50" width="200" height="60" rx="5"/>
+  <text class="label" x="100" y="70">Paramètres :</text>
+  <text class="text" x="60" y="90">• Pt : puissance émise (dBm)</text>
+  <text class="text" x="60" y="105">• Gt, Gr : gains antennes (dBi)</text>
+  
+  <rect class="box" x="270" y="50" width="230" height="60" rx="5"/>
+  <text class="label" x="330" y="70">Pertes en espace libre :</text>
+  <text class="text" x="280" y="90">FSPL = 32.45 + 20log₁₀(f_MHz) + 20log₁₀(d_km)</text>
+  <text class="text" x="280" y="105">Exemple : 2.4 GHz, 1 km → 100 dB</text>
+</svg>
