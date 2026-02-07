@@ -479,99 +479,99 @@ Ces outils mathematiques ne sont pas une fin en soi mais un langage commun qui p
     <div class="pdf-item">
       <h4>Cours Polynomes</h4>
       <p>Support de cours sur les polynomes : definitions, operations, racines, factorisation et theoreme fondamental de l'algebre. Ce document couvre egalement la division euclidienne et les applications aux fonctions de transfert.</p>
-      <embed src="/cours-pdf/S2/MATHS/cours polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/cours_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/cours polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/cours_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Exercices Polynomes</h4>
       <p>Fascicule d'exercices sur les polynomes : factorisation, recherche de racines, division euclidienne et applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/exercice polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Cours Fractions Rationnelles</h4>
       <p>Support de cours sur les fractions rationnelles : decomposition en elements simples, poles simples et multiples, poles complexes conjugues. Methodes de calcul et applications aux transformees inverses.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice fractions rationnels.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/exercice fractions rationnels.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Cours Calcul Integral</h4>
       <p>Support de cours sur le calcul integral : primitives, techniques d'integration (par parties, changement de variable, fonctions rationnelles) et applications au calcul de valeurs moyennes et efficaces.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Cours_intégral.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Cours intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Cours_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Exercices Calcul Integral</h4>
       <p>Fascicule d'exercices sur le calcul integral : calculs de primitives par differentes methodes, integrales definies et applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/exercice_intégral.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/exercice intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/exercice_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Correction Exercices Calcul Integral</h4>
       <p>Corriges detailles des exercices de calcul integral : methodes de resolution pas a pas et verification des resultats.</p>
-      <embed src="/cours-pdf/S2/MATHS/Correction calcul intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Correction calcul intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Cours Equations Differentielles du 1er Ordre</h4>
       <p>Support de cours sur les equations differentielles du premier ordre : forme generale, solution homogene, methode de variation de la constante, constante de temps et applications aux circuits RC et RL.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours équation différentiel du 1er ordre.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Cours équation différentiel du 1er ordre.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Cours Equations Differentielles d'Ordre 2</h4>
       <p>Support de cours sur les equations differentielles du second ordre : equation caracteristique, les trois regimes (aperiodique, critique, pseudo-periodique), solutions avec second membre et applications aux circuits RLC.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours équations différentielles d'ordre 2.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Cours équations différentielles d'ordre 2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Exercices EDO du 1er Ordre</h4>
       <p>Fascicule d'exercices sur les equations differentielles du premier ordre : resolution, conditions initiales et applications aux circuits du premier ordre.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices équations différentielles d'ordre 1.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Exercices équations différentielles d'ordre 1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Exercices EDO du 2nd Ordre</h4>
       <p>Fascicule d'exercices sur les equations differentielles du second ordre : determination du regime, resolution complete avec conditions initiales et applications aux circuits RLC.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices  équations différentielles d'ordre 2.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/Exercices  équations différentielles d'ordre 2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Annale Mathematiques GEII 2018-2019</h4>
       <p>Sujet d'examen de l'annee 2018-2019 couvrant l'ensemble du programme : polynomes, integrales, equations differentielles. Utile pour la preparation aux examens.</p>
-      <embed src="/cours-pdf/S2/MATHS/annale 1.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/MATHS/annale_1.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/MATHS/annale 1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/MATHS/annale_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

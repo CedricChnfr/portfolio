@@ -484,9 +484,9 @@ end
     <div class="pdf-item">
       <h4>Transformation en Z et Resolution d'Equations de Recurrence</h4>
       <p>Cours sur la transformee en Z, ses proprietes et la resolution d'equations aux differences.</p>
-      <embed src="/cours-pdf/S3/OL/Transformation en z-resolution_equa_recuurence.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S3/OL/Transformation_en_z-resolution_equa_recuurence.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/OL/Transformation en z-resolution_equa_recuurence.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/OL/Transformation_en_z-resolution_equa_recuurence.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

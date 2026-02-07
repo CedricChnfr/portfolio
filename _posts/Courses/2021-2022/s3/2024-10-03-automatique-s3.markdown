@@ -914,9 +914,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Introduction a l'Automatique</h4>
       <p>Presentation generale du cours d'automatique : definitions, vocabulaire et objectifs.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_00_Introduction (1).pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S3/Automatique/C_00_Introduction_(1).pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/Automatique/C_00_Introduction (1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Automatique/C_00_Introduction_(1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
@@ -959,9 +959,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Introduction a la Correction</h4>
       <p>Correcteurs P, PI, PID : principes, reglage et methodes de Ziegler-Nichols.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_05_Introduction à la correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S3/Automatique/C_05_Introduction_à_la_correction.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/Automatique/C_05_Introduction à la correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Automatique/C_05_Introduction_à_la_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

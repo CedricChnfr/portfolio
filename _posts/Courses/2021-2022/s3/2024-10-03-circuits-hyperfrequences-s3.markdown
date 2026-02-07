@@ -560,9 +560,9 @@ Ce cours de S3 spécialisation ENOC introduit la conception de circuits fonction
     <div class="pdf-item">
       <h4>Circuits et Fonctions Hyperfrequences</h4>
       <p>Support de cours complet sur les circuits hyperfrequences : lignes de transmission, adaptation d'impedance, filtres HF et composants passifs distribues.</p>
-      <embed src="/cours-pdf/S3/Circuits-HF/Circuits et Fonction HF_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/Circuits-HF/Circuits et Fonction HF_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

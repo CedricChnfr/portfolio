@@ -548,9 +548,9 @@ Les mathématiques du S1 sont le socle pour :
     <div class="pdf-item">
       <h4>Nombres Complexes</h4>
       <p>Cours complet sur les nombres complexes : formes algébrique, trigonométrique et exponentielle. Applications aux impédances électriques et circuits RLC.</p>
-      <embed src="/cours-pdf/S1/MATHS/1_Nombres complexe.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S1/MATHS/1_Nombres_complexe.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S1/MATHS/1_Nombres complexe.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+        <a href="/cours-pdf/S1/MATHS/1_Nombres_complexe.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Télécharger le PDF
         </a>
       </p>
@@ -558,9 +558,9 @@ Les mathématiques du S1 sont le socle pour :
     <div class="pdf-item">
       <h4>Limites d'une fonction numérique</h4>
       <p>Étude des limites de fonctions numériques : définitions, propriétés, théorèmes fondamentaux et applications.</p>
-      <embed src="/cours-pdf/S1/MATHS/2_Limites d'une fct numérique.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S1/MATHS/2_Limites_d'une_fct_numérique.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S1/MATHS/2_Limites d'une fct numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+        <a href="/cours-pdf/S1/MATHS/2_Limites_d'une_fct_numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Télécharger le PDF
         </a>
       </p>
@@ -568,9 +568,9 @@ Les mathématiques du S1 sont le socle pour :
     <div class="pdf-item">
       <h4>Propriétés d'une fonction numérique</h4>
       <p>Propriétés des fonctions numériques : continuité, dérivabilité, étude de fonctions et applications.</p>
-      <embed src="/cours-pdf/S1/MATHS/3_Propriété d'une fct numérique.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S1/MATHS/3_Propriété_d'une_fct_numérique.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S1/MATHS/3_Propriété d'une fct numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+        <a href="/cours-pdf/S1/MATHS/3_Propriété_d'une_fct_numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Télécharger le PDF
         </a>
       </p>

@@ -607,8 +607,8 @@ L'apprentissage des microservices a ete une ouverture vers les pratiques DevOps 
     <div class="pdf-item">
       <h4>Standards WSDL (Partie 1)</h4>
       <p>Web Services Description Language : structure du WSDL, types, messages, portType et binding.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1 .pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1 .pdf" target="_blank">Telecharger</a></p>
+      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Standards WSDL (Partie 2)</h4>

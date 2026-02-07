@@ -575,9 +575,9 @@ Ce cours a ete l'un des plus exigeants du semestre en termes de rigueur mathemat
 <div class="pdf-item">
   <h4>TD1 : Exercices sur les quadripoles et circuits de base</h4>
   <p>Premier fascicule de travaux diriges : exercices sur les quadripoles, calculs de matrices, et circuits du premier ordre.</p>
-  <embed src="/cours-pdf/S2/SE/TD1 (en_2_seances).pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/SE/TD1 (en_2_seances).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 

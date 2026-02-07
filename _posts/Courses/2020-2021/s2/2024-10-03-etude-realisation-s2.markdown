@@ -722,18 +722,18 @@ Ce module est l'un des plus formateurs du DUT GEII car il oblige a manipuler l'e
 <div class="pdf-item">
   <h4>ER FPGA S2 2020-2021</h4>
   <p>Support complet du sous-module ER FPGA : introduction aux FPGA Cyclone II, langage VHDL, prediviseurs, compteurs, generateurs PWM, frequencemetre. Inclut les sujets de TP.</p>
-  <embed src="/cours-pdf/S2/ER/ER FPGA S2 2020-2021  - etu.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/ER/ER FPGA S2 2020-2021  - etu.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 
 <div class="pdf-item">
-  <h4>Cours Interface S2</h4>
+  <h4>COURS interface S2</h4>
   <p>Cours sur la conception de cartes d'interface : schemathique, composants, regles de conception, connectique entre microcontroleur et peripheriques.</p>
-  <embed src="/cours-pdf/S2/ER/COURS interface S2.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/ER/COURS interface S2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/ER/COURS_interface_S2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 

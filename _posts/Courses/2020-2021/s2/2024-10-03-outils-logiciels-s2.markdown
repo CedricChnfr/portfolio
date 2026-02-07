@@ -482,9 +482,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Annale - Series de Fourier</h4>
       <p>Sujet d'examen sur les series de Fourier : exercices de calcul de coefficients, spectres et applications.</p>
-      <embed src="/cours-pdf/S2/OL/Annale Série de fourrier.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/OL/Annale_Série_de_fourrier.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/OL/Annale Série de fourrier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/OL/Annale_Série_de_fourrier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
@@ -509,9 +509,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Cours - Transformee de Laplace Inverse</h4>
       <p>Support sur la methode de la transformee inverse de Laplace par decomposition en elements simples : poles simples, multiples et complexes conjugues.</p>
-      <embed src="/cours-pdf/S2/OL/Transformation de Laplace inverse.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/OL/Transformation_de_Laplace_inverse.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/OL/Transformation de Laplace inverse.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/OL/Transformation_de_Laplace_inverse.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
@@ -527,18 +527,18 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>TD1 - Correction Laplace</h4>
       <p>Corrige detaille du premier TD de Laplace : decompositions en elements simples, transformees inverses et resolution d'equations differentielles.</p>
-      <embed src="/cours-pdf/S2/OL/TD1 correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/OL/TD1_correction.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/OL/TD1 correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/OL/TD1_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>ED1 - Resolution Analytique d'Equations Differentielles</h4>
       <p>Premier fascicule de resolution analytique d'equations differentielles lineaires a coefficients constants par la methode classique et par Laplace.</p>
-      <embed src="/cours-pdf/S2/OL/Résolution des équations différentielles linéaires à coefficients constantsV2.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/OL/Résolution_des_équations_différentielles_linéaires_à_coefficients_constantsV2.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/OL/Résolution des équations différentielles linéaires à coefficients constantsV2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/OL/Résolution_des_équations_différentielles_linéaires_à_coefficients_constantsV2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

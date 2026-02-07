@@ -731,8 +731,8 @@ Je me sens desormais confiant dans ma capacite a analyser et optimiser des proto
     <div class="pdf-item">
       <h4>Modulations et MAC</h4>
       <p>Cours sur les techniques de modulation pour les communications a faible puissance et les protocoles MAC pour WSN.</p>
-      <embed src="/cours-pdf/S9/WSNL/Modulations et MAC.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S9/WSNL/Modulations et MAC.pdf" target="_blank">Telecharger</a></p>
+      <embed src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
 </div>

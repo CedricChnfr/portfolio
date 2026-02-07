@@ -388,9 +388,9 @@ Approfondissement de l'électronique de puissance (suite S1) avec convertisseurs
     <div class="pdf-item">
       <h4>Polycopie de Cours Energie S3</h4>
       <p>Support de cours complet : conversion d'energie, machines electriques, electronique de puissance et energies renouvelables.</p>
-      <embed src="/cours-pdf/S3/Energie/Poly Cours S3 2020 - 2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/Energie/Poly Cours S3 2020 - 2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

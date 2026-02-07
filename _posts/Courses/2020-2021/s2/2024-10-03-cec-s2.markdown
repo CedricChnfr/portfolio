@@ -368,9 +368,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Organisation du Travail pour le Projet SF</h4>
       <p>Document definissant le planning, les objectifs et les modalites du projet Science-Fiction : themes a traiter, lectures a faire et productions attendues.</p>
-      <embed src="/cours-pdf/S2/CEC/Organisation du travail pour SF_2021_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/Organisation_du_travail_pour_SF_2021_sb.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/Organisation du travail pour SF_2021_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/Organisation_du_travail_pour_SF_2021_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
@@ -404,45 +404,45 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>CV Coloration</h4>
       <p>CV redige pour le dossier de candidature a la coloration ENOC : formation, competences techniques, projets et centres d'interet.</p>
-      <embed src="/cours-pdf/S2/CEC/CV coloration.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/CV_coloration.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/CV coloration.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/CV_coloration.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Lettre de Motivation Coloration</h4>
       <p>Lettre de motivation pour la candidature a la coloration ENOC : argumentation du choix, projet professionnel et motivation.</p>
-      <embed src="/cours-pdf/S2/CEC/Lettre de motivation coloration_vc_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/Lettre_de_motivation_coloration_vc_sb.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/Lettre de motivation coloration_vc_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/Lettre_de_motivation_coloration_vc_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Comment creer un sommaire automatique Word</h4>
       <p>Guide pratique pour la creation d'un sommaire automatique dans Word : styles de titres, niveaux, mise a jour automatique. Utile pour la redaction du rapport PTUT.</p>
-      <embed src="/cours-pdf/S2/CEC/Comment créer un sommaire automatique Word.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_automatique_Word.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/Comment créer un sommaire automatique Word.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_automatique_Word.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Comment creer un sommaire avec des tabulations</h4>
       <p>Guide complementaire sur la creation de sommaires avec tabulations et points de suite dans Word.</p>
-      <embed src="/cours-pdf/S2/CEC/Comment créer un sommaire avec des tabulations.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_avec_des_tabulations.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/Comment créer un sommaire avec des tabulations.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_avec_des_tabulations.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>Presenter un document long</h4>
       <p>Guide de mise en page pour les documents longs : en-tetes, pieds de page, numerotation, sauts de section, pages de garde et annexes.</p>
-      <embed src="/cours-pdf/S2/CEC/PRESENTER UN DOCUMENT LONG Vok.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/CEC/PRESENTER_UN_DOCUMENT_LONG_Vok.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/CEC/PRESENTER UN DOCUMENT LONG Vok.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/CEC/PRESENTER_UN_DOCUMENT_LONG_Vok.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

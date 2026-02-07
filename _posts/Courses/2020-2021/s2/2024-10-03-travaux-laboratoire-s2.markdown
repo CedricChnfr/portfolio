@@ -496,9 +496,9 @@ Les TPs du S2 ont complete de maniere essentielle les acquis du S1. La progressi
     <div class="pdf-item">
       <h4>TL1_4 - Feuille de Mesures AOP Reel</h4>
       <p>Feuille de mesures pour le TP AOP reel : releve des tensions d'offset, gains, bande passante et slew rate.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TL1_4 AOP_reel_feuille_mesures_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/TL/S2_TL1_4 AOP_reel_feuille_mesures_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
@@ -514,36 +514,36 @@ Les TPs du S2 ont complete de maniere essentielle les acquis du S1. La progressi
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Temporel (Distanciel)</h4>
       <p>Sujet du TP sur l'analyse temporelle d'un filtre du second ordre : reponse a un echelon, identification des regimes, mesure du depassement et de la pseudo-periode.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme ordre_temporel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme ordre_temporel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Temporel - Documentation Moodle</h4>
       <p>Documentation complementaire Moodle pour le TP 2eme ordre temporel : donnees experimentales et consignes pour le travail distanciel.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme ordre_temporel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme ordre_temporel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Frequentiel (Distanciel)</h4>
       <p>Sujet du TP sur l'analyse frequentielle d'un filtre du second ordre : trace du diagramme de Bode, resonance, bande passante et facteur de qualite.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP 2_2_2°ordre_frequentiel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/TL/S2_TP 2_2_2°ordre_frequentiel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Frequentiel - Documentation Moodle</h4>
       <p>Documentation complementaire Moodle pour le TP 2eme ordre frequentiel : captures d'oscilloscope et donnees de mesure.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP 2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S2/TL/S2_TP 2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
     </div>
 

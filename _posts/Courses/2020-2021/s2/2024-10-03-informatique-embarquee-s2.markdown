@@ -606,18 +606,18 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 0-1 : Representation des nombres binaires</h4>
   <p>Entiers signes et non signes, complement a deux, representation hexadecimale, virgule fixe et flottante (IEEE 754).</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation nombres binaires_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation_nombres_binaires_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation nombres binaires_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation_nombres_binaires_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 
 <div class="pdf-item">
   <h4>Chapitre 2-3-4 : Memoire, architecture et rappels C</h4>
   <p>Organisation memoire du C167, architecture du processeur, rappels de programmation C pour l'embarque.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_ memoire_architecture_rappel1_C_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_memoire_architecture_rappel1_C_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_ memoire_architecture_rappel1_C_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_memoire_architecture_rappel1_C_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 
@@ -660,18 +660,18 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 8 : CNA et CAN</h4>
   <p>Convertisseurs numerique-analogique et analogique-numerique, resolution, temps de conversion, ADC 10 bits du C167.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP8 CNA-CAN_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP8_CNA-CAN_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/Informatique-embarque/CHAP8 CNA-CAN_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/Informatique-embarque/CHAP8_CNA-CAN_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 
 <div class="pdf-item">
   <h4>Chapitre 9 : Interruptions</h4>
   <p>Mecanisme d'interruption, vecteurs, priorites, registres de controle, routines d'interruption (ISR), imbrication.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP9 Interruptions_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP9_Interruptions_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
   <p style="text-align: center; margin-top: 10px;">
-    <a href="/cours-pdf/S2/Informatique-embarque/CHAP9 Interruptions_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+    <a href="/cours-pdf/S2/Informatique-embarque/CHAP9_Interruptions_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
 </div>
 
