@@ -21,7 +21,7 @@
 title: Cédric Chanfreau - Portfolio
 email: cedric.chanfreau@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cedric.littlenuage.com" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: cedricchanfreau
 github_username: CedricChnfr
 
@@ -54,6 +54,11 @@ plugins:
 # N'excluez PAS search.json
 # exclude:
 #   - search.json  # <-- NE PAS faire ça
+
+exclude:
+  - INSA/
+  - vendor/
+  - Gemfile.lock.bak
 
 # Ou explicitement l'inclure
 include:

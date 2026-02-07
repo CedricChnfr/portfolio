@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Automatisme - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Technique
 
 ---
 
@@ -1237,5 +1250,77 @@ L'automatisme industriel est une discipline centrale du DUT GEII, formant aux te
 
 **Perspectives :**
 Les compétences acquises sont directement valorisables en industrie, l'automatisme représentant un marché d'emploi dynamique avec forte demande de profils qualifiés. Les projets réalisés constituent un portfolio technique démontrant capacités d'analyse, de conception et de réalisation.
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>Introduction a l'Automatisme</h4>
+      <p>Presentation generale du cours : contexte industriel, objectifs et organisation.</p>
+      <embed src="/cours-pdf/S3/Automatisme/A - 1 - Introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/A - 1 - Introduction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Machines a Etats</h4>
+      <p>Modelisation par machines a etats finis : etats, transitions, sorties.</p>
+      <embed src="/cours-pdf/S3/Automatisme/B - 4 - Machines à états.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/B - 4 - Machines à états.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Grafcet</h4>
+      <p>Modelisation par Grafcet : etapes, transitions, divergences et convergences.</p>
+      <embed src="/cours-pdf/S3/Automatisme/B - 5 - Grafcet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/B - 5 - Grafcet.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Automates Programmables Industriels (API)</h4>
+      <p>Architecture et fonctionnement des API : entrees/sorties, cycle automate, programmation.</p>
+      <embed src="/cours-pdf/S3/Automatisme/D - 7 - API (1).pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/D - 7 - API (1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Norme CEI 61131</h4>
+      <p>La norme internationale de programmation des automates : langages normalises et bonnes pratiques.</p>
+      <embed src="/cours-pdf/S3/Automatisme/D - 8 - La norme CEI 61131 (1).pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/D - 8 - La norme CEI 61131 (1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Le Langage Ladder Diagrams</h4>
+      <p>Programmation en langage Ladder : contacts, bobines, temporisateurs et compteurs.</p>
+      <embed src="/cours-pdf/S3/Automatisme/D - 9 - Le langage Ladder Diagrams.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatisme/D - 9 - Le langage Ladder Diagrams.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
 
 

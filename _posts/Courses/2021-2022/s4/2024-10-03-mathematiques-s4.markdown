@@ -1,10 +1,8 @@
 ---
 layout: default
 title: "Mathématiques - S4"
-date: 2022-01-01
-semester: "S4"
-year: "2021-2022"
-category: "DUT GEII"
+date:   2024-10-02 10:56:03 +0200
+categories: jekyll update
 ---
 
 # Mathématiques - Semestre 4

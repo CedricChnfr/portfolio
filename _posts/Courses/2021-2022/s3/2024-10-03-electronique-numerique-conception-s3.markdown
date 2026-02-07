@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Électronique Numérique et Conception (ENC) - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Technique
 
 ---
 
@@ -615,3 +628,11 @@ end process;
 - Découplage inadéquat
 - EMI/CEM
 - Signaux d'horloge mal routés
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>

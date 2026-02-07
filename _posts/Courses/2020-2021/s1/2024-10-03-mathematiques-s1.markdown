@@ -5,145 +5,54 @@ date: 2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Mathématiques - Semestre 1
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">← Retour à Mes Cours 2020-2021</a>
+</div>
+
+# Mathématiques - S1
+
+**Année** : 2020-2021 | **Semestre** : 1 | **Type** : Sciences fondamentales
 
 ---
 
-## A) GÉNÉRALITÉS
+## PART A : PRÉSENTATION GÉNÉRALE
 
 ### Contexte et objectifs
 
-Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Fondations pour analyse de circuits, traitement du signal, automatique. Volume 60h.
+Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Elles posent les fondations indispensables pour l'analyse de circuits, le traitement du signal et l'automatique. Le volume horaire est de 60h (30h CM + 30h TD).
 
 **Objectifs :**
-- Nombres complexes et applications AC
+- Nombres complexes et applications aux circuits AC
 - Fonctions de plusieurs variables
 - Équations différentielles (circuits RL, RC, RLC)
 - Développements limités
-- Intégration (calcul surfaces, énergies)
+- Intégration (calcul de surfaces, énergies)
 
 ### Prérequis
 - Terminale scientifique (fonctions, dérivation, intégration)
 
----
-
-## B) DESCRIPTIF
-
-### Module 1 : Nombres complexes
-
-**Forme algébrique et trigonométrique :**
-- z = a + jb = r·e^(jθ)
-- Module |z| = √(a² + b²)
-- Argument arg(z) = arctan(b/a)
-- Opérations : addition, multiplication, division
-
-**Applications électricité :**
-- Impédances complexes : Z_R = R, Z_L = jLω, Z_C = 1/(jCω)
-- Loi d'Ohm complexe : V = Z·I
-- Déphasage tension/courant
-- Puissance complexe : S = V·I*
-
-### Module 2 : Fonctions de plusieurs variables
-
-**Dérivées partielles :**
-- ∂f/∂x, ∂f/∂y
-- Gradient, différentielle totale
-
-**Applications :**
-- Variation de grandeurs électriques
-- Optimisation (minimum, maximum)
-- Sensibilité paramètres
-
-### Module 3 : Équations différentielles
-
-**Ordre 1 : y' + ay = b**
-- Solution homogène + particulière
-- Constante de temps τ = 1/a
-- Applications : circuit RC (charge/décharge condensateur)
-
-**Ordre 2 : y'' + 2ζω₀y' + ω₀²y = f(t)**
-- Régime libre, forcé
-- Amortissement : ζ < 1 (oscillant), ζ = 1 (critique), ζ > 1 (apériodique)
-- Applications : circuit RLC, systèmes mécaniques
-
-### Module 4 : Développements limités
-
-**Taylor-Young :**
-- Approximation locale fonctions
-- DL usuels : e^x, sin(x), cos(x), ln(1+x)
-
-**Applications :**
-- Approximations petits signaux (électronique)
-- Calculs simplifiés
-
-### Module 5 : Intégration
-
-**Techniques :**
-- Primitives usuelles
-- Intégration par parties
-- Changement de variable
-
-**Applications :**
-- Calcul énergies (W = ∫P dt)
-- Aires, volumes
-- Valeur moyenne, efficace
-
----
-
-## C) TECHNIQUE
-
-### TD appliqués
-
-**TD1 : Complexes et circuits AC**
-- Calcul impédances séries/parallèles
-- Diviseur de tension/courant
-- Puissance active, réactive, apparente
-
-**TD2 : Équations différentielles**
-- Circuit RC : charge condensateur à partir de 0V
-- Circuit RLC série : réponse indicielle
-- Détermination τ, ω₀, ζ
-
-**TD3 : Intégration**
-- Énergie stockée condensateur : E = ½CV²
-- Travail d'une force
-
-### Outils
-- Calculatrice scientifique (mode complexe)
-- MATLAB/Octave (calculs numériques)
-- Formulaires mathématiques
-
----
-
-## D) ANALYTIQUE
-
-### Évaluation
-- TD et exercices (25%)
-- Contrôles continus (35%)
-- Examen final (40%)
-
-### Compétences acquises
-- Maîtrise nombres complexes (circuits AC)
-- Résolution équations différentielles (transitoires)
-- Calcul intégral (énergies)
-- Modélisation mathématique problèmes GEII
-
-### Applications interdisciplinaires
-- **Énergie S1** : circuits AC, impédances
-- **Signaux S2** : Fourier, Laplace
-- **Automatique S3** : fonctions transfert
-- **Électronique** : amplificateurs, filtres
-
-**Compétences visées :**
+### Compétences visées
 - Maîtriser l'analyse mathématique appliquée aux signaux et systèmes
 - Manipuler les nombres complexes dans un contexte d'impédances électriques
 - Résoudre des équations différentielles modélisant des systèmes physiques
 - Utiliser l'algèbre linéaire pour les systèmes multi-variables
 - Appliquer les transformées de Laplace et Fourier aux signaux
 
+---
+
+## PART B : EXPÉRIENCE ET CONTEXTE
+
 ### Programme détaillé
 
 #### 1. Analyse réelle (15h)
+
 **Fonctions d'une variable réelle :**
 - Limites, continuité, dérivabilité
 - Étude de fonctions (monotonie, extrema, convexité)
@@ -158,6 +67,7 @@ Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Fo
 - Intégrales généralisées (convergence)
 
 #### 2. Nombres complexes (12h)
+
 **Représentations :**
 - Forme algébrique : z = a + jb
 - Forme trigonométrique : z = r(cos θ + j sin θ)
@@ -166,14 +76,21 @@ Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Fo
 
 **Opérations et applications :**
 - Addition, multiplication, division, conjugaison
-- Module, argument et propriétés
+- Module |z| = √(a² + b²), argument arg(z) = arctan(b/a) et propriétés
 - Racines n-ièmes d'un nombre complexe
 - **Application électrique** : représentation des impédances complexes (Z = R + jX)
 - Circuits RLC en régime sinusoïdal
 
+**Applications électricité :**
+- Impédances complexes : Z_R = R, Z_L = jLω, Z_C = 1/(jCω)
+- Loi d'Ohm complexe : V = Z·I
+- Déphasage tension/courant
+- Puissance complexe : S = V·I*
+
 #### 3. Algèbre linéaire (15h)
+
 **Vecteurs et espaces vectoriels :**
-- Vecteurs de ℝ² et ℝ³
+- Vecteurs de R² et R³
 - Opérations vectorielles (addition, multiplication scalaire)
 - Produit scalaire, norme, orthogonalité
 - Base et dimension
@@ -195,19 +112,24 @@ Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Fo
 - Applications aux systèmes dynamiques
 
 #### 4. Équations différentielles (12h)
+
 **Équations du 1er ordre :**
 - Équations à variables séparables
-- Équations linéaires du premier ordre
+- Équations linéaires du premier ordre : y' + ay = b
 - Solution générale et particulière
+- Constante de temps τ = 1/a
 - Conditions initiales
+- Applications : circuit RC (charge/décharge condensateur)
 
 **Équations du 2nd ordre :**
-- Équations linéaires à coefficients constants
+- Équations linéaires à coefficients constants : y'' + 2ζω₀y' + ω₀²y = f(t)
 - Résolution de l'équation homogène (racines caractéristiques)
 - Solution particulière (second membre)
+- Amortissement : ζ < 1 (oscillant), ζ = 1 (critique), ζ > 1 (apériodique)
 - Applications : circuits RC, RL, RLC (charge/décharge)
 
 #### 5. Transformations (6h)
+
 **Transformée de Laplace :**
 - Définition et propriétés fondamentales
 - Transformées usuelles (échelon, exponentielle, sinus, cosinus)
@@ -239,11 +161,12 @@ Les mathématiques S1 constituent le socle théorique pour l'ingénieur GEII. Fo
 
 ---
 
-## PART C: ASPECTS TECHNIQUES
+## PART C : ASPECTS TECHNIQUES
 
 ### Outils mathématiques et logiciels
 
 #### Calculatrices
+
 **Calculatrice scientifique/graphique :**
 - Modèles recommandés : TI-83+, TI-84, Casio Graph 35+
 - Fonctionnalités utilisées :
@@ -350,10 +273,10 @@ $$L\frac{d^2i}{dt^2} + R\frac{di}{dt} + \frac{1}{C}i = \frac{dV_s}{dt}$$
 
 #### Calcul matriciel efficace
 
-**Inversion de matrice 2×2 :**
+**Inversion de matrice 2x2 :**
 $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^{-1} = \frac{1}{ad-bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$$
 
-**Déterminant 3×3 (règle de Sarrus) :**
+**Déterminant 3x3 (règle de Sarrus) :**
 ```
 | a b c |
 | d e f | = aei + bfg + cdh - ceg - afh - bdi
@@ -362,7 +285,7 @@ $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^{-1} = \frac{1}{ad
 
 #### Transformée de Laplace : table des transformées usuelles
 
-| f(t) | F(s) = ℒ{f(t)} |
+| f(t) | F(s) = L{f(t)} |
 |------|----------------|
 | δ(t) (Dirac) | 1 |
 | u(t) (échelon) | 1/s |
@@ -373,9 +296,9 @@ $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^{-1} = \frac{1}{ad
 | e^(at)sin(ωt) | ω/((s-a)²+ω²) |
 
 **Théorèmes importants :**
-- Dérivation : ℒ{f'(t)} = sF(s) - f(0)
-- Intégration : ℒ{∫f(τ)dτ} = F(s)/s
-- Translation : ℒ{e^(at)f(t)} = F(s-a)
+- Dérivation : L{f'(t)} = sF(s) - f(0)
+- Intégration : L{∫f(τ)dτ} = F(s)/s
+- Translation : L{e^(at)f(t)} = F(s-a)
 
 ### Applications pratiques en GEII
 
@@ -386,7 +309,7 @@ $$A = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \implies A^{-1} = \frac{1}{ad
 - Inductance : Z_L = jLω
 - Capacité : Z_C = 1/(jCω) = -j/(Cω)
 
-**Loi d'Ohm complexe :** V̄ = Z̄·Ī
+**Loi d'Ohm complexe :** V = Z·I
 
 **Exemple : Diviseur de tension complexe**
 ```
@@ -409,9 +332,25 @@ Forme canonique : $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i
 - Coefficient d'amortissement : ξ = R/(2√(L/C))
 - Régimes : sous-amorti (ξ<1), critique (ξ=1), sur-amorti (ξ>1)
 
+### TD appliqués
+
+**TD1 : Complexes et circuits AC**
+- Calcul impédances séries/parallèles
+- Diviseur de tension/courant
+- Puissance active, réactive, apparente
+
+**TD2 : Équations différentielles**
+- Circuit RC : charge condensateur à partir de 0V
+- Circuit RLC série : réponse indicielle
+- Détermination τ, ω₀, ζ
+
+**TD3 : Intégration**
+- Énergie stockée condensateur : E = ½CV²
+- Travail d'une force
+
 ---
 
-## PART D: ANALYSE ET RÉFLEXION
+## PART D : ANALYSE ET RÉFLEXION
 
 ### Évaluation des compétences
 
@@ -441,7 +380,7 @@ Forme canonique : $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i
 - Application circuit RLC (1 pt)
 
 **Exercice 2 - Algèbre linéaire (6 points) :**
-- Résolution système 3×3 (3 pts)
+- Résolution système 3x3 (3 pts)
 - Calcul de déterminant et inverse (2 pts)
 - Valeurs propres (1 pt)
 
@@ -460,19 +399,19 @@ Forme canonique : $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i
 #### Niveaux de maîtrise
 
 **Niveau 1 - Connaissance (fin S1) :**
-✓ Connaître les définitions et propriétés fondamentales
-✓ Appliquer des formules directes
-✓ Résoudre des exercices types simples
+- Connaître les définitions et propriétés fondamentales
+- Appliquer des formules directes
+- Résoudre des exercices types simples
 
 **Niveau 2 - Application (S2-S3) :**
-✓ Choisir la bonne méthode selon le problème
-✓ Enchaîner plusieurs étapes de calcul
-✓ Interpréter les résultats
+- Choisir la bonne méthode selon le problème
+- Enchaîner plusieurs étapes de calcul
+- Interpréter les résultats
 
 **Niveau 3 - Maîtrise (S3-S4) :**
-✓ Résoudre des problèmes complexes
-✓ Faire le lien entre mathématiques et applications physiques
-✓ Modéliser un système réel
+- Résoudre des problèmes complexes
+- Faire le lien entre mathématiques et applications physiques
+- Modéliser un système réel
 
 ### Liens avec les autres matières
 
@@ -554,17 +493,12 @@ Forme canonique : $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i
 
 #### Erreurs fréquentes à éviter
 
-❌ Confondre radians et degrés (notamment en complexes)
-❌ Oublier les conditions initiales dans les équations différentielles
-❌ Négliger les unités dans les applications physiques
-❌ Faire des erreurs de signes dans le calcul matriciel
-❌ Utiliser la transformée de Laplace sans vérifier les conditions
-❌ Se précipiter sur la calculatrice sans réfléchir à la méthode
-
-✅ Toujours vérifier la cohérence du résultat
-✅ Faire des schémas pour les problèmes géométriques
-✅ Simplifier les expressions autant que possible
-✅ Garder une trace écrite des étapes de calcul
+- Confondre radians et degrés (notamment en complexes)
+- Oublier les conditions initiales dans les équations différentielles
+- Négliger les unités dans les applications physiques
+- Faire des erreurs de signes dans le calcul matriciel
+- Utiliser la transformée de Laplace sans vérifier les conditions
+- Se précipiter sur la calculatrice sans réfléchir à la méthode
 
 ### Débouchés et perspectives
 
@@ -576,12 +510,6 @@ Forme canonique : $$\frac{d^2i}{dt^2} + \frac{R}{L}\frac{di}{dt} + \frac{1}{LC}i
 - **Traitement du signal** : analyse fréquentielle, filtrage numérique
 - **Énergie et puissance** : calculs de rendement, facteur de puissance
 
-**Compétences transversales :**
-- Rigueur et méthode de raisonnement
-- Capacité d'abstraction et de modélisation
-- Résolution de problèmes complexes
-- Utilisation d'outils numériques
-
 #### Poursuite d'études
 
 Les mathématiques du S1 sont le socle pour :
@@ -590,39 +518,70 @@ Les mathématiques du S1 sont le socle pour :
 - École d'ingénieurs (INSA, ENSEEIHT, etc.)
 - Master en Électronique, Automatique, Traitement du signal
 
----
+### Bibliographie et ressources
 
-## 📚 Bibliographie et ressources
-
-### Ouvrages de référence
-
-**Livres recommandés :**
+**Ouvrages de référence :**
 1. *Mathématiques pour l'ingénieur* - Jean-Pierre Lecoutre (Dunod)
 2. *Analyse mathématique* - Walter Damin (De Boeck)
 3. *Mathématiques appliquées à l'électronique* - François Christophe (Ellipses)
 4. *Aide-mémoire Mathématiques de l'ingénieur* - Yves Leroyer (Dunod)
 
-**Pour aller plus loin :**
-- *Cours de mathématiques supérieures* (Tome 1) - Smirnov
-- *Calcul différentiel et intégral* - N. Piskunov
-
-### Ressources numériques
-
-**Sites web :**
+**Ressources numériques :**
 - Khan Academy (vidéos pédagogiques en français)
 - Bibmath.net (cours et exercices)
 - Exo7 (cours et exercices université de Lille)
 - GeoGebra (visualisation interactive)
 
-**Chaînes YouTube :**
-- Yvan Monka (cours de maths)
-- Science4All
-- 3Blue1Brown (en anglais, visualisations superbes)
-
-### Logiciels gratuits
-
+**Logiciels gratuits :**
 - **GNU Octave** : alternative gratuite à MATLAB
 - **Python + Anaconda** : environnement scientifique complet
 - **GeoGebra** : géométrie dynamique et graphiques
 - **Maxima** : calcul formel open source
 - **SageMath** : système complet de mathématiques
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Nombres Complexes</h4>
+      <p>Cours complet sur les nombres complexes : formes algébrique, trigonométrique et exponentielle. Applications aux impédances électriques et circuits RLC.</p>
+      <embed src="/cours-pdf/S1/MATHS/1_Nombres complexe.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S1/MATHS/1_Nombres complexe.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    <div class="pdf-item">
+      <h4>Limites d'une fonction numérique</h4>
+      <p>Étude des limites de fonctions numériques : définitions, propriétés, théorèmes fondamentaux et applications.</p>
+      <embed src="/cours-pdf/S1/MATHS/2_Limites d'une fct numérique.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S1/MATHS/2_Limites d'une fct numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le PDF
+        </a>
+      </p>
+    </div>
+    <div class="pdf-item">
+      <h4>Propriétés d'une fonction numérique</h4>
+      <p>Propriétés des fonctions numériques : continuité, dérivabilité, étude de fonctions et applications.</p>
+      <embed src="/cours-pdf/S1/MATHS/3_Propriété d'une fct numérique.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S1/MATHS/3_Propriété d'une fct numérique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">← Retour à Mes Cours 2020-2021</a>
+</div>

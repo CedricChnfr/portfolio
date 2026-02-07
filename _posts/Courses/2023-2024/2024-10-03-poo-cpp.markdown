@@ -5,7 +5,26 @@ date: 2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-[← Back to My Courses 2023-2024](./my-courses-2023-2024.html)
+<style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.back-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-nav a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">&larr; Retour aux Cours 2023-2024</a>
+</div>
 
 # Programmation Orientée Objets C++
 
@@ -509,6 +528,43 @@ Areas I would have liked to explore more:
 - Build systems and project organization
 
 The projects helped solidify concepts, though more real-world applications (like embedded systems programming or game development) would have been valuable. Overall, this course equipped me with essential skills for modern software development.
+
+---
+
+## Illustrations du Projet Gamelle Connectee
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Class_Diag.png" alt="Diagramme de classes du projet Gamelle Connectee" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Diagramme de classes UML du projet Gamelle Connectee</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Gamelle.png" alt="Interface de la Gamelle Connectee" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Application Gamelle Connectee - interface client</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Serveur.png" alt="Architecture serveur du projet Gamelle Connectee" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture serveur du projet Gamelle Connectee</p>
+</div>
+
+---
+
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Rapport Gamelle Connectee</h4>
+      <p>Rapport du projet de programmation orientee objets C++ : conception et implementation d'une gamelle connectee avec architecture client-serveur.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S7/Rapport_Gamelle_Connectée.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Telecharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
 ---
 

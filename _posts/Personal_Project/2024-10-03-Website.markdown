@@ -402,6 +402,6 @@ sudo certbot --nginx -d cedric.littlenuage.com -d www.cedric.littlenuage.com
 
 ---
 
-**Dernière mise à jour** : $(date +%Y-%m-%d)  
+**Dernière mise à jour** : 2025-01-01  
 **Auteur** : Cédric  
 **Version** : 1.0

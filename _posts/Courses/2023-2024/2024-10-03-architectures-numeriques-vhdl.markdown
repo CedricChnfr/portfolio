@@ -887,6 +887,58 @@ VHDL et les FPGA offrent un contrôle total sur le matériel, permettant des per
 
 ---
 
+## Illustrations du Projet BE Pipeline
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/Pipeline_path.png" alt="Chemin de données du pipeline processeur" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Chemin de donnees (Datapath) du processeur pipeline</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/ALU.png" alt="Schema de l'ALU" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Schema de l'Unite Arithmetique et Logique (ALU)</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/Register_bench.png" alt="Banc de registres" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Banc de registres (Register Bench)</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/Instruction_Memory.png" alt="Memoire d'instructions" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Memoire d'instructions (Instruction Memory)</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/Data_Memory.png" alt="Memoire de donnees" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Memoire de donnees (Data Memory)</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Pipeline/ALEA.png" alt="Gestion des aleas du pipeline" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Gestion des aleas (hazards) dans le pipeline</p>
+</div>
+
+---
+
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Rapport de Projet VHDL</h4>
+      <p>Rapport du bureau d'etudes : conception d'un processeur pipeline en VHDL, incluant ALU, banc de registres, memoires et gestion des aleas.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S7/Rapport_VHDL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Telecharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
 ## 📚 Documents de Cours
 
 <style>

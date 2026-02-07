@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Étude et Réalisation (ER) - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Technique
 
 ---
 
@@ -480,3 +493,57 @@ Conception d'un télémètre ultrasonique intégrant :
 - Exemples VHDL de compteurs
 - Normes PCB (IPC)
 - Tutoriels Proteus/Quartus
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>OPA2350 - Amplificateur Operationnel</h4>
+      <p>Datasheet de l'amplificateur operationnel OPA2350 utilise dans le projet telemetre ultrasonique.</p>
+      <embed src="/cours-pdf/S3/ER/opa2350.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/ER/opa2350.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>MAX941/MAX944 - Comparateurs</h4>
+      <p>Datasheet des comparateurs rapides MAX941-MAX944 pour la detection de seuil.</p>
+      <embed src="/cours-pdf/S3/ER/MAX941-MAX944.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/ER/MAX941-MAX944.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Si9986 - Driver Pont en H</h4>
+      <p>Datasheet du driver de pont en H Si9986 pour la commande de l'emetteur ultrasonique.</p>
+      <embed src="/cours-pdf/S3/ER/si9986.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/ER/si9986.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>MCP41xx - Potentiometre Numerique SPI</h4>
+      <p>Datasheet du potentiometre numerique MCP41xx commande par bus SPI.</p>
+      <embed src="/cours-pdf/S3/ER/mcp41xx.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/ER/mcp41xx.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>

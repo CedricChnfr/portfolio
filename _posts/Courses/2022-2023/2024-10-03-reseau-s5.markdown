@@ -710,6 +710,81 @@ Les réseaux sont omniprésents en informatique. Tout ingénieur doit comprendre
 
 ---
 
+## Photos de TP Réseau
+
+Les travaux pratiques réseau ont permis de manipuler les outils et protocoles étudiés en cours. Voici les captures réalisées lors des séances de TP.
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S5/reseau/Q1(1).png" alt="TP Réseau - Question 1" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : TP Réseau - Question 1</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S5/reseau/Q2(1).png" alt="TP Réseau - Question 2" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : TP Réseau - Question 2</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S5/reseau/Q3(1).png" alt="TP Réseau - Question 3" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : TP Réseau - Question 3</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S5/reseau/Q4(1).png" alt="TP Réseau - Question 4" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : TP Réseau - Question 4</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S5/reseau/Q5(1).png" alt="TP Réseau - Question 5" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : TP Réseau - Question 5</p>
+</div>
+
+---
+
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Compte Rendu TD2 - Réseau S5</h4>
+      <p>Rapport de travaux dirigés sur les réseaux : commutation, routage, pertes de paquets et déséquencement.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/Compte_rendu_TD2_JUMIN_CHANFREAU.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
 <style>
         body {
                 font-family: Arial, sans-serif;

@@ -5,104 +5,483 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
 
+.back-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-[← Back to My Courses 2024-2025](./my-courses-2024-2025.html)
+.back-nav a:hover {
+    text-decoration: underline;
+}
 
-# English
+.section-title {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
 
-## PART A: GENERALITIES
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
 
-### Presentation
-The English course taught by J. Shea, was designed to enhance our communication skills, particularly in a professional and technical context. The course included sessions focused on preparing and delivering presentations, as well as writing reports in English. Additionally, we had sessions dedicated to preparing for the TOEIC exam, which is a requirement for obtaining the engineering diploma.
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
 
-## PART B: DESCRIPTIVE PART
+th {
+    background-color: #007BFF;
+    color: white;
+}
 
-### Experience Details
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-#### Environment and Context
-During this course, I worked on improving my English communication skills through various activities. We had sessions dedicated to working on presentations for our innovative project "What a Leak" and writing the corresponding report. These sessions were crucial for developing my ability to present and debate technical choices in English and produce detailed reports for our projects.
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
 
-#### My Function
-In this course, I was responsible for:
-- Presenting and debating the technical choices made for the [Innovative project (What a Leak)](./innovative-project.html) project in English.
-- Producing a detailed report in English for the developed project.
-- Preparing for the TOEIC exam through dedicated sessions.
+h2, h3, h4 {
+    color: #007BFF;
+}
 
-## PART C: TECHNICAL PART
+p {
+    text-align: justify;
+}
 
-In this section I present the technical aspects of the English course, focusing on the preparation and delivery of presentations, report writing, and TOEIC exam preparation.
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
 
-### Technical Concepts Learned
-#### 1. Presentation Skills
-We learned how to make and give good presentations in English. This included organizing the presentation, using visual aids, and practicing speaking in front of others. The goal was to clearly explain technical information and keep the audience interested. Additionally, we focused on body language, such as maintaining eye contact, using gestures effectively, and ensuring confident posture for presentations.
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-#### 2. Report Writing
-We practiced writing detailed technical reports in English. This involved organizing the content, using the right technical words, and making sure everything was clear and easy to understand. The reports were about our innovative project "What a Leak," and we got feedback to help us improve our writing.
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-#### 3. TOEIC Exam Preparation
-We had special sessions to get ready for the TOEIC exam. Including listening, reading, and grammar exercises. We also took practice exams to get used to the format and timing of the test.
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
+</style>
 
-## PART D: ANALYTICAL PART
+<div class="back-nav">
+    <a href="./my-courses-2024-2025.html">← Retour aux Cours 2024-2025</a>
+</div>
 
-### The Knowledge and Skills Mobilized
-- Presenting and debating technical choices in English.
-- Producing detailed reports in English for technical projects.
-- Preparing for and successfully passing the TOEIC exam.
+# English - Semestre 9
 
-### Self Evaluation
-At the beginning of the school year, I was not very confident in my oral presentation skills, as it had been more than six months since my last presentation. However, with regular project presentations, I improved my presentation and writing skills through practice. Additionally, the internship abroad in Romania significantly enhanced my comprehension and oral skills, which was a major factor in my success in the TOEIC exam that I get with a score of 890 was a significant achievement. However, I realized that I need to continue practicing English communication skills to maintain and further improve proficiency.
+**Annee academique** : 2024-2025
+**Enseignant** : J. Shea
+**Categorie** : Langues et Communication Professionnelle
 
-### My Opinion
-I found the English course to be very beneficial for improving my communication skills in a professional and technical context. The focus on presentations, report writing, and TOEIC exam preparation provided a well-rounded approach to enhancing English proficiency. The hands-on practice and feedback from the instructor were particularly helpful in identifying areas for improvement and building confidence in English communication.
+---
+
+## PART A - Presentation Generale
+
+<h3 class="section-title">Vue d'ensemble</h3>
+
+Le cours d'anglais du semestre 9, dispense par J. Shea, s'inscrit dans la formation d'ingenieur a l'INSA Toulouse au sein du departement Genie Electrique et Informatique, specialite Innovative Smart Systems (ISS). Ce module a pour objectif principal de renforcer les competences en communication anglaise dans un contexte professionnel et technique, tout en preparant les etudiants a l'examen du TOEIC (Test of English for International Communication), obligatoire pour l'obtention du diplome d'ingenieur.
+
+L'anglais est une competence transversale essentielle pour tout ingenieur evolant dans un environnement internationalise. La maitrise de l'anglais technique et professionnel permet non seulement de communiquer efficacement avec des partenaires internationaux, mais aussi d'acceder a la documentation technique, aux publications scientifiques et aux normes internationales qui sont quasi exclusivement redigees en anglais.
+
+**Objectifs pedagogiques** :
+- Developper les competences de communication orale en anglais dans un contexte technique et professionnel
+- Maitriser la redaction de documents professionnels en anglais (CV, lettre de motivation, rapports techniques)
+- Preparer et reussir l'examen du TOEIC avec un score competitif
+- Etre capable de presenter et defendre un projet technique en anglais devant un public
+- Renforcer le vocabulaire technique lie aux domaines de l'IoT, des systemes embarques et des reseaux
+- Developper la capacite d'ecriture academique en anglais
+
+<h3 class="section-title">Position dans le cursus</h3>
+
+Ce module de langue s'articule avec l'ensemble de la formation de 5e annee :
+- **Projet Innovant "What a Leak"** : presentations et rapports techniques en anglais
+- **Cours techniques du S9** : acquisition du vocabulaire specialise (IoT, reseaux, systemes embarques, cloud, securite)
+- **Stage a l'international (Roumanie)** : mise en pratique directe des competences linguistiques dans un contexte professionnel reel
+- **Preparation a la vie professionnelle** : CV, lettre de motivation, entretiens en anglais
+
+Le TOEIC est un prerequis pour la validation du diplome d'ingenieur INSA. Un score minimum est exige, et un bon resultat constitue un atout majeur sur le marche de l'emploi international.
+
+---
+
+## PART B - Experience Personnelle et Contexte d'Apprentissage
+
+<h3 class="section-title">Environnement et contexte international</h3>
+
+Le semestre 9 a l'INSA Toulouse dans la specialite ISS offre un environnement particulierement propice a la pratique de l'anglais. Plusieurs cours du programme sont dispenses entierement en anglais par des enseignants internationaux, ce qui constitue une immersion quasi quotidienne dans la langue :
+
+| Cours dispense en anglais | Domaine |
+|---------------------------|---------|
+| Embedded IA for IoT | Intelligence artificielle embarquee |
+| Cloud & Edge Computing | Architectures Cloud |
+| Service Oriented Architecture | Architecture logicielle |
+| Low Power Wireless Networks | Reseaux sans fil basse consommation |
+| Middleware for IoT | Intergiciel pour l'IoT |
+| Security for Connected Objects | Securite des objets connectes |
+| Emerging Networks | Reseaux emergents |
+| Wireless Sensor Networks | Reseaux de capteurs sans fil |
+| Energy for Connected Objects | Energie pour objets connectes |
+
+Cette exposition constante a l'anglais technique tout au long du semestre a considerablement renforce ma comprehension orale et ma capacite a interagir en anglais sur des sujets techniques complexes.
+
+<h3 class="section-title">Organisation du cours</h3>
+
+Le cours d'anglais etait organise autour de plusieurs axes pedagogiques complementaires :
+
+**Sessions de presentation** :
+- Preparation et realisation de presentations orales liees au projet innovant "What a Leak"
+- Exercices de debat et de defense des choix techniques en anglais
+- Travail sur la structure et la coherence des presentations (introduction, developpement, conclusion)
+- Retours et critiques constructives de l'enseignant et des camarades
+
+**Sessions de redaction professionnelle** :
+- Redaction de CV en anglais adaptes au marche international (format anglo-saxon)
+- Redaction de lettres de motivation en anglais pour des postes a l'international
+- Ecriture de rapports techniques detailles en anglais pour le projet "What a Leak"
+
+**Sessions de preparation au TOEIC** :
+- Entrainement specifique aux sections Listening et Reading
+- Examens blancs pour se familiariser avec le format et la gestion du temps
+- Exercices de grammaire et de vocabulaire cibles
+
+<h3 class="section-title">Mon role et mes responsabilites</h3>
+
+Dans le cadre de ce cours, j'ai ete amene a :
+- Presenter et defendre les choix techniques du [projet innovant "What a Leak"](./innovative-project.html) en anglais devant un jury
+- Rediger un rapport technique complet en anglais pour le projet developpe
+- Preparer un CV et une lettre de motivation en anglais pour mes candidatures a l'international
+- Me preparer activement aux differentes sections du TOEIC
+- Participer activement aux discussions et debats en anglais pendant les seances
+
+<h3 class="section-title">Experience internationale en Roumanie</h3>
+
+Un element determinant de mon apprentissage de l'anglais cette annee a ete mon stage a l'international en Roumanie. Cette experience de plusieurs mois dans un environnement professionnel ou l'anglais etait la langue de travail quotidienne a transforme ma pratique de la langue :
+
+- **Communication quotidienne** : echanges avec des collegues et responsables roumains et internationaux exclusivement en anglais
+- **Reunions techniques** : participation a des reunions de projet, presentations d'avancement et revues techniques en anglais
+- **Documentation** : redaction de documents techniques, rapports et emails professionnels en anglais
+- **Integration culturelle** : decouverte d'un environnement de travail multiculturel ou l'anglais sert de langue vehiculaire
+
+Cette immersion a ete un catalyseur majeur pour l'amelioration de ma comprehension orale et de mon aisance a l'oral, competences qui se sont directement refletees dans mes resultats au TOEIC.
+
+---
+
+## PART C - Aspects Techniques Detailles
+
+<h3 class="section-title">1. Vocabulaire technique anglais pour l'IoT et les systemes embarques</h3>
+
+Le semestre 9 en specialite ISS m'a permis d'acquerir un vocabulaire technique riche et specialise en anglais, couvrant plusieurs domaines :
+
+**Internet of Things (IoT)** :
+- Sensor nodes, gateways, actuators, edge devices
+- Data acquisition, telemetry, remote monitoring
+- Publish/subscribe paradigm, message brokers (MQTT, AMQP)
+- Device provisioning, firmware over-the-air (FOTA) updates
+- Digital twins, smart objects, pervasive computing
+
+**Systemes embarques** :
+- Microcontrollers (MCU), System-on-Chip (SoC), FPGA
+- Real-time operating systems (RTOS), bare-metal programming
+- Power management, sleep modes, energy harvesting
+- Interrupt handling, DMA (Direct Memory Access)
+- Embedded AI, TinyML, model quantization, edge inference
+
+**Reseaux et communications** :
+- Low Power Wide Area Networks (LPWAN) : LoRaWAN, Sigfox, NB-IoT
+- Wireless Sensor Networks (WSN), mesh networking
+- Protocol stacks : TCP/IP, UDP, CoAP, 6LoWPAN
+- Network slicing, Software Defined Networking (SDN)
+- 5G NR, millimeter wave, beamforming, massive MIMO
+
+**Cloud et Edge Computing** :
+- Containerization (Docker, Kubernetes), microservices
+- Serverless computing, Function-as-a-Service (FaaS)
+- Edge computing, fog computing, cloudlets
+- Data pipelines, stream processing, batch processing
+
+**Securite** :
+- Encryption (AES, RSA), Public Key Infrastructure (PKI)
+- Authentication, authorization, access control
+- Vulnerability assessment, penetration testing
+- Secure boot, hardware security modules (HSM)
+- Threat modeling, attack surface analysis
+
+La maitrise de ce vocabulaire est indispensable pour lire la documentation technique, les datasheets, les articles de recherche et les normes internationales, qui sont presque exclusivement publies en anglais dans ces domaines.
+
+<h3 class="section-title">2. Redaction de CV et lettre de motivation en anglais</h3>
+
+Le cours a consacre des seances specifiques a la redaction de documents professionnels en anglais, une competence essentielle pour postuler a des postes a l'international.
+
+**CV en anglais (format anglo-saxon)** :
+
+Les differences majeures avec le CV francais ont ete etudiees :
+
+| Aspect | CV francais | CV anglais |
+|--------|------------|------------|
+| Photo | Souvent incluse | Generalement exclue (anti-discrimination) |
+| Informations personnelles | Age, situation familiale parfois | Uniquement nom, contact, localisation |
+| Structure | Chronologique | Competences et realisations mises en avant |
+| Longueur | 1-2 pages | 1 page (entry-level), 2 pages max |
+| Verbes d'action | Peu utilises | Systematiques (designed, developed, implemented, managed) |
+| Quantification | Rare | Essentielle (improved performance by 30%) |
+
+**Principes de redaction appris** :
+- Utiliser des verbes d'action forts au passe (achieved, implemented, designed, optimized, deployed)
+- Quantifier les resultats et realisations chaque fois que possible
+- Adapter le CV a chaque poste vise (tailoring)
+- Privilegier les competences transferables et les realisations concretes
+- Structurer avec des sections claires : Summary, Education, Experience, Skills, Projects
+
+**Lettre de motivation (Cover Letter)** :
+- Structure en trois parties : accroche (pourquoi cette entreprise), corps (competences et experience pertinentes), conclusion (appel a l'action)
+- Ton professionnel mais personnel, montrant la motivation et l'adequation avec le poste
+- Eviter la simple repetition du CV, apporter une valeur ajoutee narrative
+- Adapter chaque lettre au poste et a l'entreprise vises
+
+<h3 class="section-title">3. Presentations professionnelles en anglais</h3>
+
+Les sessions de presentation ont porte sur le developpement de competences orales structurees et efficaces :
+
+**Structure d'une presentation technique** :
+- **Opening** : accroche, presentation du sujet, annonce du plan (outline)
+- **Context** : problematique, etat de l'art, besoin identifie
+- **Solution** : proposition technique, architecture, choix technologiques
+- **Results** : demonstrations, metriques, comparaisons
+- **Conclusion** : resume des apports, perspectives, questions
+
+**Techniques de communication orale** :
+- Maintenir le contact visuel avec l'audience (eye contact)
+- Utiliser un langage corporel ouvert et confiant (body language, posture)
+- Varier le ton et le debit pour maintenir l'attention (intonation, pacing)
+- Gerer les transitions entre les parties (signposting : "Moving on to...", "Let's now look at...", "To summarize...")
+- Repondre aux questions de maniere structuree (acknowledge, answer, confirm)
+
+**Application au projet "What a Leak"** :
+Dans le cadre du projet innovant, j'ai du presenter en anglais :
+- La problematique de detection de fuites d'eau dans les reseaux
+- L'architecture technique du systeme (capteurs accelerometriques, traitement embarque, application mobile)
+- Les choix technologiques (React Native, protocoles de communication, algorithmes de detection)
+- Les resultats obtenus et les perspectives d'amelioration
+- Debattre et defendre les decisions techniques face aux questions du jury
+
+<h3 class="section-title">4. Preparation au TOEIC - Strategies Listening et Reading</h3>
+
+Le TOEIC est un examen standardise evaluant la comprehension orale (Listening) et ecrite (Reading) de l'anglais professionnel. La preparation a ete methodique et structuree.
+
+**Section Listening (495 points)** :
+
+| Partie | Description | Nombre de questions | Strategie |
+|--------|-------------|--------------------:|-----------|
+| Part 1 | Photographs | 6 | Observer attentivement l'image avant d'ecouter, eliminer les distracteurs |
+| Part 2 | Question-Response | 25 | Ecouter attentivement le debut de la question (who, what, where, when, how) |
+| Part 3 | Conversations | 39 | Lire les questions a l'avance, anticiper le contexte |
+| Part 4 | Talks | 30 | Identifier le type de discours (annonce, message, presentation), noter les informations cles |
+
+**Strategies Listening** :
+- Anticiper : lire les questions et les choix de reponses avant l'ecoute
+- Se concentrer sur les mots-cles et les informations essentielles
+- Ne pas s'arreter sur un mot incompris, continuer a ecouter le contexte global
+- Eliminer les reponses manifestement fausses
+- Faire attention aux pieges courants : paraphrases, synonymes, informations negatives
+
+**Section Reading (495 points)** :
+
+| Partie | Description | Nombre de questions | Strategie |
+|--------|-------------|--------------------:|-----------|
+| Part 5 | Incomplete Sentences | 30 | Identifier le type de mot manquant (grammaire vs vocabulaire) |
+| Part 6 | Text Completion | 16 | Comprendre le contexte global du texte avant de repondre |
+| Part 7 | Reading Comprehension | 54 | Scanner le texte pour trouver l'information, lire les questions d'abord |
+
+**Strategies Reading** :
+- Gerer le temps efficacement (la section Reading est souvent plus difficile a terminer)
+- Pour Part 5 : identifier rapidement si c'est un probleme de grammaire (temps, accord, preposition) ou de vocabulaire
+- Pour Part 6 : lire le paragraphe entier pour comprendre le contexte et la coherence
+- Pour Part 7 : utiliser la technique du skimming (lecture rapide pour l'idee generale) et du scanning (recherche d'information specifique)
+- Ne pas passer trop de temps sur une question difficile, y revenir si le temps le permet
+
+**Points de grammaire cles travailles** :
+- Temps verbaux : present perfect vs simple past, conditional, passive voice
+- Articles : a/an/the/zero article dans des contextes specifiques
+- Prepositions : in/on/at/by/for/with dans les expressions idiomatiques
+- Structures de phrases complexes : relative clauses, reported speech, subjunctive
+- Vocabulaire professionnel : termes lies au business, finance, marketing, ressources humaines
+
+<h3 class="section-title">5. Ecriture academique et rapports techniques</h3>
+
+La redaction de rapports techniques en anglais a ete un axe important du cours, en lien direct avec le projet innovant.
+
+**Structure d'un rapport technique** :
+- **Abstract** : resume concis du projet, de la methode et des resultats
+- **Introduction** : contexte, problematique, objectifs, plan du document
+- **State of the Art / Literature Review** : revue des solutions existantes
+- **Methodology** : approche technique, outils utilises, protocole experimental
+- **Implementation** : details techniques, architecture, choix de conception
+- **Results and Discussion** : presentation des resultats, analyse, comparaison
+- **Conclusion and Future Work** : bilan, limites, perspectives
+
+**Conventions d'ecriture academique** :
+- Utiliser la voix passive pour les descriptions de methodes ("The system was designed to...", "Data were collected using...")
+- Employer un registre formel et objectif, eviter les pronoms personnels dans certaines sections
+- Citer correctement les sources (IEEE, APA formats)
+- Structurer avec des sections numerotees et des figures/tableaux references
+- Utiliser des connecteurs logiques pour assurer la coherence du texte (however, moreover, consequently, furthermore)
+
+**Application au projet "What a Leak"** :
+Le rapport technique du projet a ete redige integralement en anglais. Il couvre l'ensemble du systeme de detection de fuites d'eau : capteurs accelerometriques, traitement des donnees embarque, communication sans fil, application mobile React Native et interface web. Ce travail de redaction a permis de mettre en pratique l'ensemble des competences d'ecriture acquises.
+
+<h3 class="section-title">6. Communication orale et competences d'interaction</h3>
+
+Au-dela des presentations formelles, le cours a developpe des competences de communication orale quotidienne en contexte professionnel :
+
+**Vocabulaire de reunion** :
+- Prendre la parole : "I'd like to raise a point...", "If I may add..."
+- Exprimer un desaccord poliment : "I see your point, however...", "I'm not entirely convinced that..."
+- Proposer une solution : "What if we considered...", "One approach could be..."
+- Resumer : "To sum up...", "The key takeaway is..."
+- Conclure : "Let's move forward with...", "The next steps would be..."
+
+**Communication par email professionnel** :
+- Formules d'ouverture et de cloture adaptees au contexte (formel, semi-formel)
+- Structure claire : objet precis, introduction du contexte, demande ou information, conclusion avec action attendue
+- Ton professionnel et concis, phrases courtes et directes
+
+**Discussions techniques** :
+- Expliquer un concept technique de maniere claire et accessible
+- Poser des questions pertinentes pour approfondir la comprehension
+- Reformuler pour verifier la comprehension mutuelle ("So what you're saying is...", "If I understand correctly...")
+- Debattre de choix techniques en argumentant de maniere structuree
+
+<h3 class="section-title">7. Collaboration internationale</h3>
+
+L'environnement multiculturel du semestre 9 et l'experience en Roumanie ont mis en evidence l'importance de la communication interculturelle :
+
+**Competences interculturelles developpees** :
+- Adapter son style de communication selon les interlocuteurs et les cultures
+- Comprendre differents accents anglophones (britannique, americain, accents non natifs)
+- Gerer les differences culturelles dans les modes de travail (prise de decision, hierarchie, rapport au temps)
+- Travailler efficacement dans une equipe internationale avec des membres de nationalites differentes
+
+**Outils de collaboration en anglais** :
+- Redaction de documentation technique partagee (README, wikis, specifications)
+- Utilisation d'outils de gestion de projet en anglais (issues, pull requests, commit messages)
+- Communication asynchrone (emails, messages) et synchrone (visioconferences, reunions)
+- Revues de code et retours techniques en anglais
+
+---
+
+## PART D - Analyse Reflexive et Perspectives
+
+<h3 class="section-title">Resultat au TOEIC</h3>
+
+J'ai obtenu un score de **890/990** au TOEIC, ce qui constitue un resultat significatif et represente un niveau B2+ / C1 selon le cadre europeen (CECRL). Ce score se decompose entre la section Listening et la section Reading.
+
+Ce resultat temoigne de la progression realisee au cours de cette annee, grace a la combinaison de plusieurs facteurs :
+- Les sessions de preparation dediees au TOEIC en cours
+- L'immersion dans un environnement anglophone a travers les cours du S9 dispenses en anglais
+- L'experience professionnelle a l'international en Roumanie, qui a particulierement renforce ma comprehension orale
+- La redaction reguliere de documents techniques en anglais (rapports, CV, emails)
+
+<h3 class="section-title">Competences professionnelles acquises</h3>
+
+**Communication technique** :
+Capacite a presenter, expliquer et defendre des choix techniques en anglais devant un public. Cette competence est essentielle pour tout ingenieur travaillant dans un contexte international ou les reunions, presentations et echanges se deroulent majoritairement en anglais.
+
+**Redaction professionnelle** :
+Maitrise de la redaction de documents professionnels varies en anglais : CV au format anglo-saxon, lettres de motivation adaptees, rapports techniques structures, emails professionnels. Ces competences sont directement transferables au monde professionnel.
+
+**Comprehension et interaction** :
+Amelioration significative de la comprehension orale, notamment dans des contextes techniques et professionnels. Capacite a suivre des reunions, des presentations et des discussions techniques en anglais, ainsi qu'a y participer activement.
+
+**Vocabulaire technique specialise** :
+Acquisition d'un lexique technique etendu dans les domaines de l'IoT, des systemes embarques, des reseaux, du cloud computing et de la securite informatique, indispensable pour la veille technologique et la collaboration internationale.
+
+<h3 class="section-title">Apport de l'experience internationale en Roumanie</h3>
+
+Le stage a l'international en Roumanie a ete un tournant dans ma progression en anglais. Avant cette experience, mes competences orales etaient correctes mais manquaient de fluidite et d'aisance. L'immersion quotidienne dans un environnement professionnel anglophone a radicalement change la donne :
+
+- **Avant** : presentations preparees avec un texte quasi lu, difficulte a improviser, comprehension orale parfois laborieuse lors de discussions rapides
+- **Apres** : presentations plus naturelles et spontanees, capacite a improviser et rebondir, comprehension orale nettement amelioree meme avec des accents varies
+
+Cette experience confirme que l'immersion reste le moyen le plus efficace pour progresser en langue. Elle a directement contribue a mon score au TOEIC, notamment dans la section Listening.
+
+<h3 class="section-title">Auto-evaluation</h3>
+
+En debut d'annee scolaire, je n'etais pas tres confiant dans mes competences de presentation orale, ayant passe plus de six mois sans realiser de presentation formelle. Cependant, la pratique reguliere a travers les presentations du projet innovant et les cours techniques en anglais a permis une progression notable.
+
+Le score de 890 au TOEIC est un resultat dont je suis satisfait. Il valide le niveau requis pour le diplome d'ingenieur et constitue un atout pour les candidatures a l'international. Neanmoins, je suis conscient que la maitrise d'une langue est un processus continu et que je dois maintenir une pratique reguliere pour ne pas perdre les acquis.
+
+**Points forts** :
+- Bonne comprehension ecrite, notamment de la documentation technique
+- Vocabulaire technique etendu grace aux cours du S9
+- Aisance a l'oral amelioree grace au stage en Roumanie
+- Capacite a rediger des documents professionnels de qualite en anglais
+
+**Axes d'amelioration** :
+- Enrichir davantage le vocabulaire idiomatique et les expressions courantes
+- Travailler la prononciation et la fluidite dans les discussions spontanees
+- Developper la redaction academique pour d'eventuelles publications scientifiques
+- S'exposer a davantage d'accents anglophones varies
+
+<h3 class="section-title">Retour d'experience et perspectives</h3>
+
+Le cours d'anglais du S9, combine a l'environnement international de la formation ISS et au stage en Roumanie, a constitue une experience d'apprentissage riche et complete. L'approche du cours, centree sur la pratique professionnelle (presentations, rapports, CV, TOEIC), est particulierement pertinente pour la preparation a la vie d'ingenieur.
+
+J'ai trouve ce cours tres benefique pour ameliorer mes competences en communication dans un contexte professionnel et technique. L'accent mis sur les presentations, la redaction de rapports et la preparation au TOEIC a offert une approche equilibree pour renforcer la maitrise de l'anglais. La pratique reguliere et les retours de l'enseignant ont ete particulierement utiles pour identifier les axes d'amelioration et renforcer la confiance en communication anglaise.
+
+**Perspectives professionnelles** :
+- Utiliser l'anglais quotidiennement dans ma future carriere d'ingenieur
+- Postuler a des postes a l'international avec un CV et une lettre de motivation de qualite
+- Contribuer a des projets open source et a la communaute technique internationale
+- Envisager des certifications complementaires (Cambridge C1 Advanced, IELTS) pour renforcer mon profil
+- Maintenir et ameliorer mon niveau par la lecture d'articles techniques, le visionnage de conferences (TED, IEEE) et la pratique reguliere
+
+L'anglais n'est pas simplement une matiere scolaire : c'est un outil de travail indispensable pour l'ingenieur moderne. La capacite a communiquer efficacement en anglais, a l'oral comme a l'ecrit, est un facteur differentiant majeur sur le marche de l'emploi et un prerequis pour tout poste impliquant une dimension internationale.
+
+---
 
 <div style="text-align: center;">
-    <h1>TOEIC Result</h1>
+    <h1>Resultat TOEIC</h1>
 </div>
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/TOEIC.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/TOEIC.pdf" target="_blank">Download Complete Report</a>
+    <a href="/img/TOEIC.pdf" target="_blank">Telecharger le certificat TOEIC</a>
 </p>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
-    }
-</style>
+---
+
+<div class="back-nav">
+    <a href="./my-courses-2024-2025.html">← Retour aux Cours 2024-2025</a>
+</div>

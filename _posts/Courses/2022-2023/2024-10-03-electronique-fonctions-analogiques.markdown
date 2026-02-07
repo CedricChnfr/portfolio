@@ -449,4 +449,48 @@ Ce cours a permis de comprendre les subtilités des circuits analogiques réels,
 
 ---
 
+## Captures Oscilloscope - TP Électronique Analogique
+
+Les travaux pratiques ont permis de réaliser des mesures à l'oscilloscope sur les filtres actifs et les montages à amplificateurs opérationnels. Voici les captures réalisées lors des séances.
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S6/electronique/scope_3.png" alt="Capture oscilloscope - Mesure 3" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Capture oscilloscope - Mesure 3</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S6/electronique/scope_5.png" alt="Capture oscilloscope - Mesure 5" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Capture oscilloscope - Mesure 5</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S6/electronique/scope_6.png" alt="Capture oscilloscope - Mesure 6" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Capture oscilloscope - Mesure 6</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/assets/images/courses/S6/electronique/scope_7.png" alt="Capture oscilloscope - Mesure 7" style="max-width: 600px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Capture oscilloscope - Mesure 7</p>
+</div>
+
+---
+
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Compte Rendu TP - Électronique et Fonctions Analogiques</h4>
+      <p>Rapport de travaux pratiques sur les défauts d'AOP, les filtres actifs Sallen-Key et les mesures à l'oscilloscope.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S6/Compte_Rendu_TP_Electronique_et_fonctions_analogiques_2 (1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
 *Cours enseigné en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*

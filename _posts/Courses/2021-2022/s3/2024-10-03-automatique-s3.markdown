@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Automatique - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Scientifique
 
 ---
 
@@ -890,5 +903,77 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
 - Synthèse de régulateurs PID
 - Utilisation d'outils professionnels (MATLAB/Simulink)
 - Validation sur systèmes réels
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>Introduction a l'Automatique</h4>
+      <p>Presentation generale du cours d'automatique : definitions, vocabulaire et objectifs.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_00_Introduction (1).pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_00_Introduction (1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Systemes et Reponses</h4>
+      <p>Etude des systemes lineaires et de leurs reponses temporelles et frequentielles.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_01_Système_et_Réponses.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_01_Système_et_Réponses.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Formes Canoniques et Systeme Asservi</h4>
+      <p>Formes canoniques des systemes, schemas-blocs et principe de l'asservissement.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_02_Formes_canoniques_et_Système_asservi.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_02_Formes_canoniques_et_Système_asservi.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Poles et Stabilite</h4>
+      <p>Analyse de stabilite par les poles, criteres de Routh-Hurwitz et marges de stabilite.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_03_Pôles_et_Stabilité.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_03_Pôles_et_Stabilité.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Precision des Systemes Asservis</h4>
+      <p>Etude de la precision en regime permanent, erreur statique et classe des systemes.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_04_Précision.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_04_Précision.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Introduction a la Correction</h4>
+      <p>Correcteurs P, PI, PID : principes, reglage et methodes de Ziegler-Nichols.</p>
+      <embed src="/cours-pdf/S3/Automatique/C_05_Introduction à la correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/Automatique/C_05_Introduction à la correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
 
 

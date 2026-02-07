@@ -5,227 +5,463 @@ date: 2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Culture, Expression, Communication (CEC) - Semestre 2
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
 
-## 📋 Description du cours
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">&larr; Retour a Mes Cours 2020-2021</a>
+</div>
 
-Approfondissement de la communication professionnelle avec des projets thématiques variés. Le semestre inclut l'étude de la science-fiction, un projet de programmation collaboratif et la préparation aux choix de coloration pour la 2ème année.
+# Culture, Expression, Communication (CEC) - S2
 
-## 🎯 Objectifs pédagogiques
+**Annee**: 2020-2021 | **Semestre**: 2 | **Type**: Transversal / Communication
 
-- Développer l'esprit critique et analytique
-- Renforcer les compétences en travail de groupe
-- Préparer les choix d'orientation
-- Améliorer la communication écrite et orale
-- Explorer les liens entre science, technologie et société
+---
 
-## 📚 Contenu du cours
+## PART A : PRESENTATION GENERALE
 
-### Projet Science-fiction
+### Contexte et objectifs
 
-#### Objectifs
-- Analyser les représentations de la technologie dans la SF
-- Comprendre les enjeux éthiques et sociétaux
-- Développer l'imagination et la créativité
-- Réfléchir sur le futur de la technologie
+Le module Culture, Expression, Communication du semestre 2 est un enseignement transversal qui developpe les competences non techniques essentielles pour un ingenieur. Contrairement a un cours de communication classique, le CEC du S2 a l'INSA est organise autour de trois projets concrets et complementaires :
 
-#### Activités
-**Lectures et analyses :**
-- Nouvelles de science-fiction classiques
-- Romans contemporains
-- Scénarios de films et séries
-- Bandes dessinées SF
+1. **Le Projet Science-Fiction** : Une etude thematique de la litterature et du cinema de science-fiction, centree sur les relations entre technologie, societe et ethique. Ce projet developpe l'esprit critique et la capacite d'analyse.
 
-**Thèmes abordés :**
-- Intelligence artificielle et robots
-- Cybernétique et augmentation humaine
-- Drones et surveillance
-- Éthique technologique
-- Dystopies et utopies technologiques
+2. **Le PTUT Programmation** : Un Projet Tuteure (Projet Tutore Universitaire et Technologique) de programmation collaborative. Les etudiants travaillent en equipe sur un projet logiciel (simulation de fourmis), ce qui developpe le travail en equipe, la gestion de projet et la communication technique.
 
-**Productions :**
-- Analyses critiques de nouvelles
-- Débats sur les enjeux technologiques
-- Rédaction de courtes nouvelles (optionnel)
-- Exposés thématiques
+3. **Le Choix de Coloration** : La preparation au choix de specialisation pour la deuxieme annee. Les etudiants decouvrent les differentes colorations proposees et formulent un choix eclaire, notamment la coloration ENOC (Electronique et Objets Connectes).
 
-### Projet tuteuré de programmation
+**Objectifs pedagogiques :**
+- Developper l'esprit critique et analytique a travers l'etude de la science-fiction
+- Renforcer les competences en travail d'equipe et gestion de projet
+- Ameliorer la communication ecrite (rapports, lettres de motivation, CV) et orale (presentations)
+- Preparer le choix d'orientation de maniere reflechie et argumentee
+- Explorer les liens entre science, technologie et societe
+- Produire des livrables professionnels (rapport de projet, presentation, dossier de candidature)
 
-#### Description
-Projet collaboratif de développement logiciel intégrant :
-- Travail en équipe
-- Gestion de projet
-- Programmation collaborative
-- Documentation technique
-- Présentation de résultats
+### Organisation
 
-#### Compétences visées
-- Organisation en équipe
-- Répartition des tâches
-- Communication technique
-- Gestion du temps
-- Résolution de problèmes en groupe
+Le semestre est divise en trois periodes correspondant aux trois projets :
+
+**Periode 1 : Projet Science-Fiction** (environ 6 semaines)
+- Lectures et analyses de textes de SF
+- Debats thematiques en groupe
+- Auto-evaluation des competences
+- Productions ecrites et presentations
+
+**Periode 2 : PTUT Programmation** (environ 6 semaines)
+- Travail en equipe sur le projet de simulation
+- Reunion de suivi hebdomadaire
+- Redaction du rapport final
+- Presentation orale
+
+**Periode 3 : Choix de Coloration** (environ 4 semaines)
+- Presentations des parcours par les enseignants
+- Temoignages d'etudiants de 2eme annee
+- Redaction du CV et de la lettre de motivation
+- Formulation des voeux
+
+### Prerequis
+
+- Competences de base en expression ecrite (S1)
+- Notions de programmation (cours d'Informatique Embarquee S1-S2)
+- Capacite a travailler en groupe (acquise progressivement au S1)
+- Ouverture d'esprit et curiosite intellectuelle
+
+---
+
+## PART B : EXPERIENCE ET CONTEXTE
+
+### Environnement pedagogique
+
+Le CEC du S2 est un module atypique dans un cursus GEII : il ne s'agit pas d'un cours technique, mais d'un espace de reflexion, de creation et de communication. Il est encadre par des enseignants de lettres et de communication qui accompagnent les etudiants dans leur developpement personnel et professionnel.
+
+L'annee 2020-2021, marquee par le contexte sanitaire (COVID-19), a impose des adaptations : les debats de SF se sont tenus en partie en visioconference, le PTUT Programmation a necessite une coordination a distance, et les presentations de coloration ont ete faites en format hybride. Ces contraintes ont paradoxalement renforce les competences de communication numerique.
+
+### Ressources et supports
+
+- **Documents d'organisation** : Planning des activites SF, consignes pour le PTUT, grille d'auto-evaluation
+- **Supports de communication** : Guides de redaction (CV, lettre de motivation, sommaire automatique Word, documents longs)
+- **Rapport PTUT** : Rapport final du projet tuteure de programmation
+- **Presentation PTUT** : Support de la soutenance orale
+- **Dossier de coloration** : CV et lettre de motivation pour le choix de coloration
+
+### Liens avec d'autres cours
+
+- **Informatique Embarquee (IE) et Programmation** : Le PTUT Programmation met en application les competences de programmation acquises en IE. Le projet de simulation (fourmis) necessite des structures de donnees et des algorithmes.
+- **3PE (Projet Professionnel et Personnel de l'Etudiant)** : Le choix de coloration s'inscrit dans la demarche de projet professionnel. Le CV et la lettre de motivation preparent aux stages futurs.
+- **Anglais** : Certains themes de SF (robots, IA, drones) sont partages avec le cours d'anglais.
+- **Cours techniques (SE, OL, Energie)** : Les themes de SF permettent de prendre du recul sur la technologie etudiee en cours et de reflechir a ses implications societales.
+
+### Contexte personnel
+
+L'etudiant Cedric Chanfreau a choisi la coloration **ENOC (Electronique et Objets Connectes)** a l'issue de ce semestre, motivee par l'interet pour les systemes embarques, les telecommunications et l'IoT. Ce choix a oriente la suite du parcours (S3-S4 avec coloration ENOC, puis Master REOC en S9).
+
+---
+
+## PART C : ASPECTS TECHNIQUES
+
+### Projet Science-Fiction
+
+#### Objectifs du projet
+
+Le projet SF a pour but de developper l'esprit critique des etudiants en les confrontant aux representations de la technologie dans la litterature et le cinema de science-fiction. L'objectif n'est pas simplement de lire des livres, mais d'analyser comment la SF anticipe, questionne et critique les evolutions technologiques, et comment ces reflexions eclairent le role de l'ingenieur dans la societe.
+
+#### Organisation du travail
+
+Le projet est organise selon un planning structure, defini par l'enseignant. Chaque seance est consacree a un theme ou a une activite specifique :
+- Lecture individuelle et analyse de textes (nouvelles, extraits de romans)
+- Debats en groupe sur les themes abordes
+- Productions ecrites (fiches de lecture, analyses thematiques)
+- Presentation orale d'un theme choisi
+
+#### Themes abordes
+
+**Intelligence Artificielle et robots** :
+L'IA est un theme central de la SF depuis les robots d'Isaac Asimov. Les trois lois de la robotique (un robot ne peut porter atteinte a un etre humain ; un robot doit obeir aux ordres ; un robot doit proteger son existence) posent la question fondamentale de la coexistence entre humains et machines intelligentes. Les films comme Blade Runner, Ex Machina et la serie Westworld explorent la frontiere entre conscience humaine et conscience artificielle. Pour un etudiant en GEII, ces reflexions sont directement pertinentes : les systemes embarques et les objets connectes qu'il concevra integreront de plus en plus d'intelligence artificielle.
+
+**Surveillance et vie privee** :
+Le 1984 de George Orwell a donne naissance au concept de Big Brother, une societe de surveillance totale. Aujourd'hui, avec les cameras de surveillance, les smartphones et les objets connectes, cette fiction est partiellement devenue realite. La SF interroge l'equilibre entre securite et liberte, entre efficacite technologique et respect de la vie privee. En tant que futur concepteur de systemes connectes, l'ingenieur GEII a une responsabilite directe dans ces questions.
+
+**Transhumanisme et augmentation humaine** :
+Le cyberpunk (William Gibson, Neuromancien) et les films comme Ghost in the Shell explorent l'idee d'augmenter les capacites humaines par la technologie : protheses connectees, implants cerebraux, interfaces cerveau-machine. Ces themes croisent directement les technologies etudiees en GEII : capteurs, systemes embarques, telecommunications.
+
+**Dystopies technologiques** :
+De nombreuses oeuvres de SF presentent des societes ou la technologie a echappe au controle humain. Black Mirror (serie) explore les derives potentielles de technologies actuelles poussees a l'extreme. Ces reflexions sont un rappel que la conception technique doit s'accompagner d'une reflexion ethique.
+
+**Ecologie et technologie** :
+La SF aborde aussi les questions environnementales : peut-on sauver la planete par la technologie (optimisme technologique) ou la technologie est-elle la cause du probleme (decroissance) ? Pour un ingenieur, cette tension est au coeur des choix de conception : efficacite energetique, duree de vie des produits, recyclabilite.
+
+#### Auto-evaluation
+
+Le projet SF inclut une composante d'auto-evaluation ou l'etudiant reflechit a ses propres competences, ses points forts et ses axes d'amelioration. Cette demarche reflexive est une preparation au bilan de competences et au projet professionnel.
+
+### PTUT Programmation : Simulation de fourmis
+
+#### Description du projet
+
+Le PTUT (Projet Tuteure Universitaire et Technologique) Programmation est un projet collaboratif de developpement logiciel realise en equipe de 4 a 5 etudiants. Pour l'annee 2020-2021, le theme etait la **simulation de comportement de fourmis** (simulation multi-agents).
+
+Le projet consiste a creer un programme simulant le comportement collectif de fourmis qui cherchent de la nourriture, communiquent par pheromones et optimisent leurs trajets. Ce type de simulation illustre les concepts d'intelligence collective et d'algorithmes bio-inspires.
+
+#### Objectifs techniques
+
+- Implementer un environnement de simulation 2D (grille ou espace continu)
+- Programmer le comportement individuel de chaque fourmi (deplacement, detection, collecte)
+- Implementer le systeme de pheromones (depot, evaporation, suivi)
+- Gerer les obstacles et les sources de nourriture
+- Visualiser la simulation en temps reel
+- Optimiser les performances pour un grand nombre d'agents
+
+#### Architecture logicielle
+
+Le projet utilise une architecture orientee objet (ou procedurale selon le langage choisi) :
+
+**Entites principales** :
+- **Fourmi** : position (x, y), direction, etat (exploration, retour au nid, collecte), charge
+- **Environnement** : grille 2D, obstacles, sources de nourriture, nid
+- **Pheromone** : intensite, position, taux d'evaporation
+
+**Algorithme principal** :
+1. Initialiser l'environnement (placer le nid, la nourriture, les obstacles)
+2. Creer N fourmis au nid
+3. A chaque pas de temps :
+   a. Pour chaque fourmi : detecter les pheromones, choisir une direction, se deplacer
+   b. Si la fourmi trouve de la nourriture : collecter, deposer une pheromone forte, retourner au nid
+   c. Si la fourmi retourne au nid avec de la nourriture : deposer la nourriture, repartir explorer
+   d. Evaporer les pheromones (reduction progressive de l'intensite)
+4. Afficher l'etat de la simulation
+
+**Comportement emergent** : Avec le temps, les fourmis convergent vers le chemin le plus court entre le nid et la nourriture, grace au renforcement positif des pheromones. C'est le principe de l'algorithme de colonie de fourmis (ACO - Ant Colony Optimization), utilise en optimisation combinatoire.
+
+#### Gestion de projet
+
+Le projet a ete gere selon une approche simplifiee :
+
+**Repartition des taches** :
+- Conception de l'environnement et de l'affichage
+- Programmation du comportement des fourmis
+- Implementation du systeme de pheromones
+- Tests et debogage
+- Redaction du rapport
+
+**Outils utilises** :
+- Langage de programmation (C, Python ou Java selon le choix de l'equipe)
+- Plateforme collaborative pour le code (partage de fichiers ou Git)
+- Traitement de texte pour le rapport (Word avec sommaire automatique)
+- Presentation (PowerPoint)
+
+**Planning** :
+- Semaines 1-2 : Cahier des charges, conception
+- Semaines 3-4 : Developpement des modules de base
+- Semaine 5 : Integration, tests, corrections
+- Semaine 6 : Rapport final et preparation de la soutenance
 
 #### Livrables
-- Code source documenté
-- Rapport de projet
-- Documentation utilisateur
-- Présentation orale
-- Bilan du travail d'équipe
 
-### Choix de coloration
+**Rapport final** : Document complet comprenant :
+- Page de garde, sommaire automatique
+- Introduction et contexte du projet
+- Cahier des charges et specifications
+- Description de l'architecture logicielle
+- Presentation des algorithmes et choix techniques
+- Resultats de la simulation (captures d'ecran, statistiques)
+- Conclusion et perspectives d'amelioration
+- Annexes (code source, references)
 
-#### Présentation des parcours
-**Coloration ENOC (Électronique et Objets Connectés) :**
-- Spécialisation électronique
-- RF et télécommunications
-- Systèmes embarqués
-- IoT et objets connectés
+Le rapport PTUT Programmation final (RAPPORT_PTUT_PROG_FINALLL) a ete redige par l'equipe Gibert-Chanfreau et constitue un livrable majeur de ce semestre.
 
-**Autres colorations :**
-- Automatisme et Informatique Industrielle (A2I)
-- Électronique et Systèmes Embarqués (ESE)
-- (selon l'IUT)
+**Presentation orale** : Soutenance de 15-20 minutes devant le jury comprenant :
+- Presentation du projet et des objectifs
+- Demonstration de la simulation
+- Bilan du travail d'equipe
+- Questions-reponses
 
-#### Activités d'aide au choix
-- Présentation des parcours
-- Témoignages d'étudiants de 2ème année
-- Rencontres avec des enseignants
-- Analyse des débouchés professionnels
-- Bilan personnel et orientation
+#### Competences developpees
 
-#### Démarche de choix
-1. Auto-évaluation des compétences et intérêts
-2. Information sur les parcours
-3. Projections professionnelles
-4. Discussions avec l'équipe pédagogique
-5. Formulation des vœux
+- Programmation collaborative : travailler a plusieurs sur un meme code
+- Gestion de projet : planification, repartition des taches, suivi d'avancement
+- Communication technique : rapport structure, presentation claire
+- Resolution de problemes : debug, optimisation, adaptation
+- Creativite : conception d'algorithmes, amelioration de la simulation
 
-## 📝 Travaux demandés
+### Choix de Coloration
 
-### Analyses de textes SF
-- Fiches de lecture
-- Analyses thématiques
-- Réflexions personnelles
-- Mise en relation avec les cours techniques
+#### Presentation des colorations
 
-### Projet de programmation
-- Cahier des charges
-- Planning de réalisation
-- Code et documentation
-- Rapport final
-- Présentation
+A la fin de la premiere annee (S2), les etudiants GEII doivent choisir une coloration (specialisation) pour leur deuxieme annee (S3-S4). A l'INSA, les colorations proposees sont :
 
-### Dossier d'orientation
-- Synthèse des parcours
+**ENOC - Electronique et Objets Connectes** :
+- Electronique analogique et numerique avancee
+- Systemes embarques et microcontroleurs
+- Telecommunications et reseaux sans fil
+- Internet des Objets (IoT)
+- Capteurs et acquisition de donnees
+- Debouches : conception de systemes embarques, IoT, telecommunications
+
+**A2I - Automatisme et Informatique Industrielle** :
+- Automatismes industriels (automates programmables)
+- Informatique industrielle et supervision
+- Reseaux industriels
+- Robotique industrielle
+- Debouches : automatisation, industrie 4.0, robotique
+
+**ESE - Electronique et Systemes Embarques** (selon les IUT) :
+- Electronique de puissance
+- Systemes embarques temps reel
+- Conception de cartes electroniques
+- Debouches : conception electronique, systemes critiques
+
+#### Demarche de choix
+
+Le processus de choix de coloration est accompagne par l'equipe pedagogique et comprend plusieurs etapes :
+
+**1. Information** :
+- Presentations detaillees de chaque coloration par les enseignants responsables
+- Description des cours, des projets et des debouches
+- Temoignages d'etudiants de 2eme annee et de diplomes
+
+**2. Auto-evaluation** :
+- Bilan des competences et des resultats du S1-S2
+- Identification des matieres preferees et des points forts
+- Reflexion sur les centres d'interet (electronique, informatique, automatisme)
+
+**3. Projection professionnelle** :
+- Analyse des debouches de chaque coloration
+- Reflexion sur le projet professionnel a moyen terme
+- Consultation des offres de stage et d'emploi
+
+**4. Redaction du dossier** :
+- CV adapte a la coloration visee
+- Lettre de motivation argumentee
 - Argumentaire de choix
-- CV et lettre de motivation (préparation)
-- Plan de formation
 
-## 💻 Outils utilisés
+**5. Formulation des voeux** :
+- Classement des colorations par ordre de preference
+- Validation par l'equipe pedagogique
 
-- Traitement de texte pour rédactions
-- Outils de présentation
-- Plateformes collaboratives
-- Outils de gestion de projet
-- Forums de discussion
+#### Choix de Cedric Chanfreau : ENOC
 
-## 📊 Évaluation
+Le choix de la coloration ENOC (Electronique et Objets Connectes) a ete motive par plusieurs facteurs :
 
-- Analyses et réflexions SF (20%)
-- Projet de programmation (30%)
-  - Qualité technique (15%)
-  - Documentation et présentation (15%)
-- Dossier d'orientation (20%)
-- Participation et engagement (15%)
-- Présentation orale (15%)
+**Interet technique** : Passion pour l'electronique, les systemes embarques et les telecommunications. Les cours de SE et d'IE du S1-S2 ont confirme cet interet pour la conception de circuits et la programmation de microcontroleurs.
 
-## 🎓 Compétences développées
+**Vision du futur** : L'Internet des Objets est un domaine en pleine expansion, avec des applications dans la sante, le transport, l'habitat intelligent et l'industrie. La coloration ENOC prepare directement a ces metiers d'avenir.
 
-### Analyse et réflexion
-- Esprit critique
-- Analyse de textes
-- Réflexion sur les enjeux sociétaux
-- Anticipation des évolutions technologiques
+**Coherence du parcours** : La coloration ENOC s'inscrit dans une trajectoire coherente qui mene vers le Master REOC (Reseaux et Objets Connectes) accessible en S9, offrant une specialisation poussee en IoT et telecommunications.
 
-### Travail collaboratif
-- Gestion de projet en équipe
-- Communication interpersonnelle
-- Résolution collective de problèmes
-- Partage de connaissances
+**Projet professionnel** : L'objectif est de travailler dans la conception de systemes embarques connectes, un domaine qui combine electronique, informatique et telecommunications.
 
-### Orientation
-- Connaissance de soi
-- Information sur les parcours
-- Prise de décision
-- Projection professionnelle
+### Competences transversales developpees
 
-## 🔗 Liens avec d'autres cours
+#### Communication ecrite
 
-- **Programmation** : Projet collaboratif
-- **3PE** : Orientation professionnelle
-- **Anglais** : Thèmes communs (robots, drones)
-- **Éthique** : Réflexions sur la technologie
+Le CEC du S2 a permis de developper plusieurs formes de communication ecrite :
 
-## 📚 Œuvres de science-fiction étudiées (exemples)
+**Analyse de texte** : Capacite a lire un texte de SF de maniere critique, a en extraire les themes principaux et a les mettre en relation avec les enjeux technologiques actuels.
 
-### Classiques
-- Isaac Asimov : Les robots, cycles Fondation
-- Philip K. Dick : œuvres diverses
-- Arthur C. Clarke : 2001, L'Odyssée de l'espace
-- Ray Bradbury : Chroniques martiennes
+**Rapport technique** : Le rapport PTUT est un exercice de communication technique : structure claire, introduction-developpement-conclusion, illustrations pertinentes, references bibliographiques.
 
-### Contemporains
-- William Gibson : Neuromancien (cyberpunk)
-- Neal Stephenson : Le Samouraï virtuel
-- Alastair Reynolds : space opera
-- Liu Cixin : Le Problème à trois corps
+**Documents professionnels** : Le CV et la lettre de motivation pour la coloration sont des documents professionnels qui preparent aux futures candidatures de stage et d'emploi.
 
-### Films et séries
-- Blade Runner, Matrix
-- Black Mirror (série)
-- Westworld
-- Ex Machina
+**Presentation de documents longs** : Apprentissage de la mise en page professionnelle (sommaire automatique Word, tabulations, numerotation des pages, en-tetes et pieds de page).
 
-## 💡 Thèmes de réflexion SF/Technologie
+#### Communication orale
 
-### Intelligence Artificielle
-- Les lois de la robotique d'Asimov
-- Conscience artificielle
-- Singularité technologique
-- Éthique de l'IA
+**Soutenance de projet** : Presentation structuree du PTUT devant un jury, avec demonstration du programme et gestion du temps.
 
-### Surveillance et vie privée
-- Big Brother et sociétés de surveillance
-- Drones et vie privée
-- Biométrie et contrôle
-- Liberté vs sécurité
+**Debats** : Participation aux debats sur les themes de SF, argumentation de son point de vue, ecoute des autres.
 
-### Transhumanisme
-- Augmentation humaine
-- Interface cerveau-machine
-- Prothèses et implants
-- Limites de l'humain
+**Presentation de choix** : Capacite a expliquer et argumenter son choix de coloration de maniere claire et convaincante.
 
-### Environnement
-- Technologie et écologie
-- Effondrements civilisationnels
-- Solutions technologiques
-- Développement durable
+#### Travail en equipe
 
-## 🎯 Objectifs du semestre
+**Gestion de projet** : Repartition des taches, suivi d'avancement, gestion des conflits, adaptation au format distanciel.
 
-À l'issue du S2, les étudiants doivent :
-- Avoir développé un esprit critique sur la technologie
-- Savoir travailler efficacement en équipe
-- Avoir fait un choix de coloration éclairé
-- Être capables de communiquer sur des sujets complexes
-- Avoir renforcé leurs compétences transversales
+**Communication au sein de l'equipe** : Reunions regulieres (en presentiel ou en visioconference), partage de documents, revues de code.
 
-## 📖 Ressources complémentaires
+**Responsabilite collective** : Le resultat du PTUT est une production collective ou chaque membre a une responsabilite. La reussite depend de la contribution de tous.
 
-- Bibliothèque (fonds SF)
-- Revues spécialisées (Bifrost, Galaxies)
-- Sites web (Actusf.com)
-- Podcasts (C'est plus que de la SF)
-- Chaînes YouTube d'analyses
+---
+
+## PART D : ANALYSE ET REFLEXION
+
+### Competences acquises
+
+- **Esprit critique** : Capacite a analyser les implications societales et ethiques de la technologie, a travers le prisme de la science-fiction. Cette competence est essentielle pour un ingenieur qui doit prendre en compte les consequences de ses choix techniques.
+- **Communication professionnelle** : Maitrise de differentes formes de communication (rapport technique, presentation orale, CV, lettre de motivation). Ces competences sont directement utilisables en stage et en entreprise.
+- **Travail en equipe et gestion de projet** : Capacite a travailler efficacement en equipe, a repartir les taches, a gerer les delais et a produire un livrable collectif. Le PTUT a ete une experience formatrice en gestion de projet.
+- **Auto-evaluation et orientation** : Capacite a faire un bilan de ses competences, a identifier ses centres d'interet et a formuler un choix d'orientation argumente. Le choix de la coloration ENOC a ete un moment cle du parcours.
+- **Redaction technique** : Capacite a structurer un document long (rapport PTUT), a utiliser les outils de mise en page (sommaire automatique, references croisees) et a presenter des informations techniques de maniere claire.
+
+### Auto-evaluation
+
+Le CEC du S2 est un module souvent sous-estime par les etudiants en GEII, qui ont tendance a privilegier les cours techniques. Pourtant, avec le recul, il s'agit de l'un des modules les plus utiles du cursus, car les competences qu'il developpe (communication, travail en equipe, esprit critique, orientation) sont celles qui font la difference dans la vie professionnelle.
+
+Le projet SF a ete une ouverture intellectuelle bienvenue dans un cursus tres technique. Il a permis de prendre du recul sur la technologie et de reflechir au role de l'ingenieur dans la societe. Les themes abordes (IA, surveillance, transhumanisme) sont aujourd'hui au coeur des debats publics.
+
+Le PTUT Programmation a ete l'experience la plus formatrice en termes de travail en equipe. Coordonner le developpement d'un projet logiciel a plusieurs, gerer les bugs, integrer les contributions de chacun et produire un rapport coherent : c'est exactement ce qu'on fait en entreprise. Le projet de simulation de fourmis etait intellectuellement stimulant car il combine algorithmique, intelligence collective et visualisation.
+
+Le choix de la coloration ENOC a ete un moment determinant du parcours. Il a donne une direction claire a la suite des etudes et a confirme l'interet pour les systemes embarques et les objets connectes. Avec le recul (en M2 REOC aujourd'hui), ce choix s'est revele parfaitement coherent.
+
+### Connexions interdisciplinaires
+
+- **Vers la Programmation** : Le PTUT Programmation prolonge et approfondit les competences de programmation acquises en IE. La simulation multi-agents est une application concrete des algorithmes et des structures de donnees.
+- **Vers le Projet Professionnel** : Le CV et la lettre de motivation prepares pour la coloration sont reutilises et enrichis pour les candidatures de stage en S4 et S6.
+- **Vers l'Ethique de l'ingenieur** : Les reflexions sur la SF et la technologie constituent un socle pour la reflexion ethique qui accompagne l'ingenieur tout au long de sa carriere.
+- **Vers la coloration ENOC** : Le choix fait en S2 determine les cours des S3-S4 (electronique avancee, telecoms, systemes embarques) et, au-dela, le parcours en Master REOC.
+
+### Progression et perspectives
+
+Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et prepare la suite du parcours. Les competences transversales developpees (communication, travail en equipe, esprit critique, orientation) sont des competences durables qui s'enrichissent tout au long du cursus et de la vie professionnelle. Le choix de la coloration ENOC, prepare et argumente dans ce module, a ete le premier pas vers la specialisation en electronique et objets connectes.
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>Organisation du Travail pour le Projet SF</h4>
+      <p>Document definissant le planning, les objectifs et les modalites du projet Science-Fiction : themes a traiter, lectures a faire et productions attendues.</p>
+      <embed src="/cours-pdf/S2/CEC/Organisation du travail pour SF_2021_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/Organisation du travail pour SF_2021_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Auto-evaluation SF</h4>
+      <p>Grille d'auto-evaluation pour le projet Science-Fiction : competences evaluees, criteres et bilan personnel.</p>
+      <embed src="/cours-pdf/S2/CEC/SF_autoeval.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/SF_autoeval.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Rapport PTUT Programmation (Final)</h4>
+      <p>Rapport final du Projet Tuteure de Programmation : simulation de fourmis. Comprend le cahier des charges, l'architecture logicielle, les algorithmes, les resultats et le bilan du travail d'equipe. Redige par l'equipe Gibert-Chanfreau.</p>
+      <embed src="/cours-pdf/S2/CEC/RAPPORT_PTUT_PROG_FINALLL.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/RAPPORT_PTUT_PROG_FINALLL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Presentation PTUT Programmation</h4>
+      <p>Support de la soutenance orale du PTUT Programmation : presentation du projet, demonstration et bilan. Presentation Gibert-Chanfreau.</p>
+      <embed src="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>CV Coloration</h4>
+      <p>CV redige pour le dossier de candidature a la coloration ENOC : formation, competences techniques, projets et centres d'interet.</p>
+      <embed src="/cours-pdf/S2/CEC/CV coloration.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/CV coloration.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Lettre de Motivation Coloration</h4>
+      <p>Lettre de motivation pour la candidature a la coloration ENOC : argumentation du choix, projet professionnel et motivation.</p>
+      <embed src="/cours-pdf/S2/CEC/Lettre de motivation coloration_vc_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/Lettre de motivation coloration_vc_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Comment creer un sommaire automatique Word</h4>
+      <p>Guide pratique pour la creation d'un sommaire automatique dans Word : styles de titres, niveaux, mise a jour automatique. Utile pour la redaction du rapport PTUT.</p>
+      <embed src="/cours-pdf/S2/CEC/Comment créer un sommaire automatique Word.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/Comment créer un sommaire automatique Word.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Comment creer un sommaire avec des tabulations</h4>
+      <p>Guide complementaire sur la creation de sommaires avec tabulations et points de suite dans Word.</p>
+      <embed src="/cours-pdf/S2/CEC/Comment créer un sommaire avec des tabulations.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/Comment créer un sommaire avec des tabulations.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Presenter un document long</h4>
+      <p>Guide de mise en page pour les documents longs : en-tetes, pieds de page, numerotation, sauts de section, pages de garde et annexes.</p>
+      <embed src="/cours-pdf/S2/CEC/PRESENTER UN DOCUMENT LONG Vok.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S2/CEC/PRESENTER UN DOCUMENT LONG Vok.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Rapport PTUT Programmation (copie dans reports/)</h4>
+      <p>Copie du rapport PTUT final egalement disponible dans le repertoire des rapports du portfolio.</p>
+      <embed src="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">&larr; Retour a Mes Cours 2020-2021</a>
+</div>

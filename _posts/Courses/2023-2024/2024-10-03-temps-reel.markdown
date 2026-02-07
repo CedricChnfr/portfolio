@@ -5,7 +5,26 @@ date: 2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-[← Back to My Courses 2023-2024](./my-courses-2023-2024.html)
+<style>
+.back-nav {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.back-nav a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+.back-nav a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html">&larr; Retour aux Cours 2023-2024</a>
+</div>
 
 **🔗 Cours connexes**: 
 - [Commande Numérique - S8](./2024-10-03-commande-numerique.html) - Lois de commande numériques
@@ -501,6 +520,24 @@ L'avenir:
 Les compétences en temps réel resteront critiques. Même avec processeurs plus rapides, les applications deviennent plus complexes et exigeantes.
 
 En conclusion, ce cours sur les systèmes temps réel fournit les bases essentielles pour concevoir des systèmes embarqués fiables respectant des contraintes temporelles strictes. C'est un domaine exigeant, combinant théorie (ordonnancement) et pratique (RTOS, Xenomai), crucial dans de nombreux secteurs industriels.
+
+---
+
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Rapport de Projet Temps Reel</h4>
+      <p>Rapport du projet temps reel : conception et implementation d'un systeme multitaches avec contraintes temporelles strictes, ordonnancement et synchronisation.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S8/Rapport_de_projet_temps_réel_FISA_Paris_Chanfreau.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Telecharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
 ---
 

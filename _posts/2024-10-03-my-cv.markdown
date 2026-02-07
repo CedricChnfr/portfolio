@@ -18,7 +18,7 @@ categories: jekyll update
 
 ## About Me
 
-I am a highly motivated recent graduate with a master's degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, and software development, with hands-on experience in international environments. Actively seeking opportunities in the United States to leverage my technical expertise and teamwork skills in innovative projects.
+I am a highly motivated recent graduate with a master's degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, cybersecurity, and software development, with hands-on experience in international environments. Actively seeking opportunities to leverage my technical expertise and teamwork skills in innovative projects.
 
 ---
 
@@ -46,13 +46,18 @@ I am a highly motivated recent graduate with a master's degree in Automation and
 
 ## Professional Experience
 
-**International Engineering Mobility - Vitesco Technologies, Romania**  
-*Jul 2024 - Sep 2024*  
+**Embedded Software Engineer - Cybersecurity - Schaeffler, France**
+*Oct 2024 - Sep 2025*
+- Developed the Secure Logger, a generic embedded software component for recording and managing security events in automotive ECUs.
+- Performed critical code review and contributed to secure software development practices.
+
+**International Engineering Mobility - Vitesco Technologies, Romania**
+*Jul 2024 - Sep 2024*
 - Studied and implemented Flash memory management solutions on new microcontrollers.
 - Created the environment to automate and optimize tests, using Python and CMM scripts.
 
-**Embedded Software Engineer Apprenticeship - Vitesco Technologies, France**  
-*Sep 2022 - Sep 2025*  
+**Embedded Software Engineer Apprenticeship - Vitesco Technologies, France**
+*Sep 2022 - Sep 2024*  
 - Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT).
 - Tested and debugged code to ensure proper operation and problem resolution.
 - Presented regular project reviews to team members in English.

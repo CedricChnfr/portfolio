@@ -7,19 +7,19 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="IA Automation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video! Détail des modèles d’IA utilisés Voici un récapitulatif des principaux modèles d’IA utilisés dans ce projet, avec leur nom, utilisation, extrait de code, prérequis, fonctionnalités et features : 1. Stable Diffusion (AUTOMATIC1111 WebUI) Nom : Stable Diffusion (WebUI) Utilisation : Génération d’images à partir de prompts textuels (pour les scènes, miniatures, etc.) Extrait de code : # filepath: generate-image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) # ... Pré-requis : Lancer le serveur WebUI : cd stable-diffusion-webui ./webui.sh Modèles .safetensors dans Stable-diffusion LoRA dans Lora Python, dépendances listées dans le README Fonctionnalités / Features : Génération d’images (txt2img, img2img) API REST complète Support LoRA, VAE, upscalers, face restoration, etc. Génération de miniatures, images de scènes, etc. 2. Coqui TTS Nom : Coqui TTS (xtts_v2) Utilisation : Synthèse vocale multilingue, clonage de voix à partir d’un fichier WAV de référence Extrait de code : # filepath: short-end-pub.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=phrase, speaker_wav=speaker_wav_path, file_path=audio_path) Pré-requis : pip install TTS Fichier WAV de référence pour la voix Fonctionnalités / Features : Synthèse vocale multilingue Clonage de voix Génération de fichiers audio pour chaque scène 3. Ollama (LLM : Gemma, Mistral, Deepseek, etc.) Nom : Ollama (modèles : gemma3:12b, ministral-3:14b, deepseek, etc.) Utilisation : Génération de scripts, correction, traduction, vérification de scènes Extrait de code : # filepath: generate-script-actu.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) # ... Pré-requis : Serveur Ollama lancé localement (ollama serve) Modèles téléchargés via Ollama (ollama pull gemma:12b, etc.) pip install ollama Fonctionnalités / Features : Génération de scripts vidéo (scènes, titres, prompts images) Correction et vérification de textes/scènes Traduction automatique (français/anglais) Double validation IA pour la conformité 4. CLIP (OpenAI) Nom : CLIP (openai/clip-vit-base-patch16, patch32) Utilisation : Vérification de la correspondance image/texte (score CLIP), filtrage d’images Extrait de code : # filepath: verify-image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) # ... Pré-requis : pip install transformers GPU recommandé pour rapidité Fonctionnalités / Features : Calcul du score CLIP entre image et prompt Filtrage automatique des images non pertinentes Utilisé dans la vérification et la sélection d’images 5. MoviePy Nom : MoviePy Utilisation : Montage vidéo, animation d’images, ajout d’audio, sous-titres, etc. Extrait de code : # filepath: generate-movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips # ... Pré-requis : pip install moviepy ffmpeg installé sur le système Fonctionnalités / Features : Animation d’images (zoom, slide, crop TikTok/YouTube) Ajout d’audio, sous-titres, musique Génération des vidéos finales 6. Whisper Nom : Whisper (OpenAI) Utilisation : Alignement automatique des sous-titres à partir de l’audio Extrait de code : # filepath: align-subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) # ... Pré-requis : pip install openai-whisper ffmpeg Fonctionnalités / Features : Transcription et alignement des sous-titres Support multilingue 7. MediaPipe (Face Detection) Nom : MediaPipe Utilisation : Détection de visages pour filtrer les images générées Extrait de code : # filepath: verify-image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection # ... Pré-requis : pip install mediapipe Fonctionnalités / Features : Détection de visages dans les images Filtrage automatique des images sans visage 8. Facebook MusicGen Nom : Facebook MusicGen (musicgen-medium) Utilisation : Génération automatique de musique à partir d’un prompt textuel pour accompagner les vidéos Extrait de code : # filepath: generate-music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) # ... Pré-requis : pip install transformers pydub soundfile moviepy Modèle téléchargé automatiquement par HuggingFace Transformers ffmpeg installé sur le système Fonctionnalités / Features : Génération de musique originale à partir d’un prompt textuel Adaptation automatique à la durée de la vidéo Intégration directe dans le pipeline de génération vidéo Pour chaque modèle, tu trouveras les chemins de fichiers et extraits de code dans les fichiers listés ci-dessus. Pour plus de détails sur l’installation et la configuration, consulte la section “Setup &amp; Installation” du README.md. Liens utiles : generate-image.py short-end-pub.py generate-script-actu.py verify-image.py align-subtitles.py generate-movement.py README.md" />
-<meta property="og:description" content="← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video! Détail des modèles d’IA utilisés Voici un récapitulatif des principaux modèles d’IA utilisés dans ce projet, avec leur nom, utilisation, extrait de code, prérequis, fonctionnalités et features : 1. Stable Diffusion (AUTOMATIC1111 WebUI) Nom : Stable Diffusion (WebUI) Utilisation : Génération d’images à partir de prompts textuels (pour les scènes, miniatures, etc.) Extrait de code : # filepath: generate-image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) # ... Pré-requis : Lancer le serveur WebUI : cd stable-diffusion-webui ./webui.sh Modèles .safetensors dans Stable-diffusion LoRA dans Lora Python, dépendances listées dans le README Fonctionnalités / Features : Génération d’images (txt2img, img2img) API REST complète Support LoRA, VAE, upscalers, face restoration, etc. Génération de miniatures, images de scènes, etc. 2. Coqui TTS Nom : Coqui TTS (xtts_v2) Utilisation : Synthèse vocale multilingue, clonage de voix à partir d’un fichier WAV de référence Extrait de code : # filepath: short-end-pub.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=phrase, speaker_wav=speaker_wav_path, file_path=audio_path) Pré-requis : pip install TTS Fichier WAV de référence pour la voix Fonctionnalités / Features : Synthèse vocale multilingue Clonage de voix Génération de fichiers audio pour chaque scène 3. Ollama (LLM : Gemma, Mistral, Deepseek, etc.) Nom : Ollama (modèles : gemma3:12b, ministral-3:14b, deepseek, etc.) Utilisation : Génération de scripts, correction, traduction, vérification de scènes Extrait de code : # filepath: generate-script-actu.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) # ... Pré-requis : Serveur Ollama lancé localement (ollama serve) Modèles téléchargés via Ollama (ollama pull gemma:12b, etc.) pip install ollama Fonctionnalités / Features : Génération de scripts vidéo (scènes, titres, prompts images) Correction et vérification de textes/scènes Traduction automatique (français/anglais) Double validation IA pour la conformité 4. CLIP (OpenAI) Nom : CLIP (openai/clip-vit-base-patch16, patch32) Utilisation : Vérification de la correspondance image/texte (score CLIP), filtrage d’images Extrait de code : # filepath: verify-image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) # ... Pré-requis : pip install transformers GPU recommandé pour rapidité Fonctionnalités / Features : Calcul du score CLIP entre image et prompt Filtrage automatique des images non pertinentes Utilisé dans la vérification et la sélection d’images 5. MoviePy Nom : MoviePy Utilisation : Montage vidéo, animation d’images, ajout d’audio, sous-titres, etc. Extrait de code : # filepath: generate-movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips # ... Pré-requis : pip install moviepy ffmpeg installé sur le système Fonctionnalités / Features : Animation d’images (zoom, slide, crop TikTok/YouTube) Ajout d’audio, sous-titres, musique Génération des vidéos finales 6. Whisper Nom : Whisper (OpenAI) Utilisation : Alignement automatique des sous-titres à partir de l’audio Extrait de code : # filepath: align-subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) # ... Pré-requis : pip install openai-whisper ffmpeg Fonctionnalités / Features : Transcription et alignement des sous-titres Support multilingue 7. MediaPipe (Face Detection) Nom : MediaPipe Utilisation : Détection de visages pour filtrer les images générées Extrait de code : # filepath: verify-image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection # ... Pré-requis : pip install mediapipe Fonctionnalités / Features : Détection de visages dans les images Filtrage automatique des images sans visage 8. Facebook MusicGen Nom : Facebook MusicGen (musicgen-medium) Utilisation : Génération automatique de musique à partir d’un prompt textuel pour accompagner les vidéos Extrait de code : # filepath: generate-music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) # ... Pré-requis : pip install transformers pydub soundfile moviepy Modèle téléchargé automatiquement par HuggingFace Transformers ffmpeg installé sur le système Fonctionnalités / Features : Génération de musique originale à partir d’un prompt textuel Adaptation automatique à la durée de la vidéo Intégration directe dans le pipeline de génération vidéo Pour chaque modèle, tu trouveras les chemins de fichiers et extraits de code dans les fichiers listés ci-dessus. Pour plus de détails sur l’installation et la configuration, consulte la section “Setup &amp; Installation” du README.md. Liens utiles : generate-image.py short-end-pub.py generate-script-actu.py verify-image.py align-subtitles.py generate-movement.py README.md" />
-<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html" />
+<meta name="description" content="← Back to Personal Project IA Automation Project Overview Try the application here: https://video-automation.littlenuage.com/ This project is a fully automated video production platform powered by AI. From a simple text topic, the system generates a structured script, creates images, synthesizes narration, applies camera animations, adds subtitles and background music, and delivers a ready-to-publish video — all orchestrated through a Streamlit web interface with job queue management and Discord notifications. Project Context Developed as a personal project to industrialize video content creation, this platform eliminates the need for manual editing. It supports multiple video categories (celebrity biographies, geography documentaries, news reports, movie analyses, monuments, artworks), multiple languages (French, English, Spanish), and two production modes (short-form and long-form). The application is deployed online and accessible to anyone. Architecture Overview The system follows a modular, service-oriented architecture with clear separation of concerns: User (Streamlit UI) │ ▼ app2.py ──► queue_manager.py ──► run_pipeline.py ──► pipeline_executor.py │ ┌─────────────────────┼─────────────────────┐ ▼ ▼ ▼ services/ scripts/ AI Models (script, image, (generation &amp; (SD, TTS, LLM, audio, video) processing) CLIP, Whisper...) What I Developed 1. Streamlit Web Application (app2.py) The main user interface built with Streamlit, replacing the earlier Flask prototype: Authenticated access via streamlit_authenticator with YAML-based credentials Video configuration: type selection (celebrity, geography, actu, movie, oeuvre, monument), category, entity, mode (short/long), language (FR/EN/ES) Three-tab interface: Generation (step-by-step workflow), Queue (job management), History (past productions) WebUI control: monitor and launch the Stable Diffusion WebUI server directly from the interface User preferences: persistent settings saved between sessions (user_preferences.json) Excel integration: entity lists loaded from category-specific Excel files 2. Pipeline Execution Engine (pipeline_executor.py) The core orchestrator implementing a robust 6-step pipeline: Step Description Script 1 Script Generation generate_script.py / generate_script_actu.py 2 Image Generation generate_image.py / get_image_pexels.py 3 Audio Synthesis generate_audio.py 4 Camera Movement &amp; Animation generate_movement.py / generate_movement_from_db.py 5 Subtitle Alignment align_subtitles.py (short mode) 6 Music Generation generate_music.py (short mode) Key features: Parallel execution: steps 2 (images) and 3 (audio) run concurrently Automatic retry: up to 2 retries per step on failure Process management: kills orphan processes before each step to prevent resource conflicts Execution tracking: full timing metrics per step and total pipeline duration 3. Job Queue System (queue_manager.py) A thread-safe job queue for sequential video production: Persistent state stored in generation_queue.json Job lifecycle: pending → running → completed/failed Retry from failure: restart a failed job from the exact step that failed History: stores the last 50 completed/failed jobs Statistics: real-time counts of pending, running, completed, failed jobs Global worker thread: processes jobs sequentially in the background 4. Service Layer (services/) Four service classes encapsulate file I/O and subprocess execution: script_service.py: load, save, generate, and validate script JSON files image_service.py: manage generated images/videos, scene-level deletion, image retrieval with scene mapping audio_service.py: audio path resolution, existence checks, audio segmentation, generation orchestration video_service.py: movement generation, subtitle alignment, text overlay, music integration, YouTube upload, TikTok cutting All services follow a consistent pattern with organized paths: output/{type}/{video}/{category}/{entity_name}/{mode}/{language_code}/ 5. UI Components (ui/) Modular Streamlit components split for maintainability: generation_tab.py: 9-section progressive workflow (script → images → audio → movement → subtitles → text overlay → music → TikTok → YouTube) queue_tab.py: queue monitoring, job management, retry, history browsing, quick YouTube upload components.py: reusable utilities (process killing, preferences, WebUI control) styles.py: custom CSS for status indicators, buttons, video players, metric cards 6. Infrastructure Modules Cache Manager (cache_manager.py): MD5-based cache key generation per category (scripts, images, audio) Cache index stored in cache/cache_index.json Stale cache cleanup with configurable age Prevents unnecessary regeneration of existing assets Logger (logger.py): Rotating file handlers (10 MB max, 5 backups) Job-specific log files (logs/job_{id}.log) Dedicated loggers for pipeline, queue, and application Structured step lifecycle logging (start, complete, fail) Notifications (notifications.py): Discord webhook integration with rich embeds Color-coded status messages (green=success, red=error, orange=warning, blue=info) Job lifecycle notifications (started, step progress, completed, failed) 7. Scripts Organization (scripts/) All processing scripts are organized by domain: scripts/ ├── script/ # LLM-based script generation &amp; verification │ ├── generate_script.py │ ├── generate_script_actu.py │ ├── verify_script.py │ └── verify_script_actu.py ├── images/ # Image generation, validation &amp; thumbnails │ ├── generate_image.py # Stable Diffusion (celebrity mode) │ ├── get_image_pexels.py # Pexels API (geography/actu/movie) │ ├── generate_mignature.py # Thumbnail generation │ ├── verify_image.py # CLIP score + face detection │ ├── validate_sequential_images.py │ ├── configure_images.py │ └── add_image_details.py ├── audio/ # TTS synthesis &amp; audio processing │ ├── generate_audio.py # XTTS v2 voice cloning │ ├── cut_audio.py │ ├── verify_audio.py │ └── correct_text_aft_verif.py ├── video/ # Video editing, animation &amp; subtitles │ ├── generate_movement.py # Celebrity image animation │ ├── generate_movement_from_db.py # DB-based animation (geography/actu) │ ├── align_subtitles.py # Whisper-based subtitle timing │ ├── generate_text_on_video.py │ ├── cut_txt_video.py # TikTok video cutting │ ├── generate_video_image.py │ └── cut.py ├── music/ # Background music generation │ └── generate_music.py # Facebook MusicGen ├── batch/ # Batch operations │ ├── generate_all_audio.py │ ├── generate_all_image.py │ └── checklist_final.py ├── publishing/ # Publishing &amp; promotion │ ├── send_to_youtube.py │ └── short_end_pub.py └── experimental/ # Experimental features └── (image-to-video, deforum) File Organization . ├── app2.py # Streamlit web application ├── pipeline_executor.py # 6-step pipeline engine ├── queue_manager.py # Job queue management ├── run_pipeline.py # Subprocess launcher ├── utils.py # Configuration &amp; environment utilities ├── cache_manager.py # Intelligent caching system ├── logger.py # Structured logging ├── notifications.py # Discord webhook notifications ├── config.xml # Application configuration (languages, modes, models, paths) ├── services/ │ ├── script_service.py │ ├── image_service.py │ ├── audio_service.py │ └── video_service.py ├── ui/ │ ├── generation_tab.py │ ├── queue_tab.py │ ├── components.py │ └── styles.py ├── scripts/ # Processing scripts (see above) ├── authentification/ # OAuth2 &amp; credentials ├── input/ │ ├── Audio/ # Voice reference files (FR/EN/ES) │ └── Video_List/ # Excel entity lists per category ├── output/ │ ├── Script/ # Generated JSON scripts │ ├── Image/ # Generated scene images │ ├── Audio/ # Synthesized narration audio │ ├── Video/ # Text-overlay videos │ ├── Video_Anime/ # Animated scene videos │ ├── Final-Video/ # Final assembled videos + TikTok cuts │ ├── Music/ # Generated background music │ └── Miniature/ # Video thumbnails ├── logs/ # Rotating log files ├── cache/ # Cache index &amp; metadata └── stable-diffusion-webui/ # AUTOMATIC1111 WebUI (submodule) Automated Pipeline Workflow Full Pipeline (Queue Mode) User configures video type, category, entity, mode, language in the Streamlit UI Job added to the persistent queue via queue_manager.py Worker thread picks up the job and spawns run_pipeline.py as a subprocess PipelineExecutor orchestrates the 6 steps: Step 1: LLM generates a structured JSON script (scenes, prompts, titles) Steps 2-3: Images and audio run in parallel — Stable Diffusion or Pexels for images, XTTS v2 for voice cloning Step 4: Camera movement animation applied to each scene (zoom, pan, slide) Step 5: Whisper-based subtitle alignment (short mode) Step 6: MusicGen background music generation (short mode) Discord notification sent at job start, completion, or failure User reviews the result in the History tab, can upload to YouTube directly Manual Mode (Generation Tab) Each step can also be executed individually with live preview: Edit the script JSON directly in the UI Preview generated images in a grid view Listen to audio per scene with prompt editing Watch animated video previews Edit subtitle JSON with live rendering Cut videos for TikTok with time-based selection Upload to YouTube with thumbnail and metadata Configuration (config.xml) &lt;!-- Languages with voice reference files --&gt; &lt;languages&gt; &lt;language name=&quot;Francais&quot; code=&quot;fr&quot; audio=&quot;Enregistrement-francais.wav&quot; /&gt; &lt;language name=&quot;English&quot; code=&quot;en&quot; audio=&quot;Enregistrement-anglais.wav&quot; /&gt; &lt;language name=&quot;Espanol&quot; code=&quot;es&quot; audio=&quot;Enregistrement-espagnol.wav&quot; /&gt; &lt;/languages&gt; &lt;!-- Production modes --&gt; &lt;modes&gt; &lt;mode name=&quot;short&quot; nb_scenes=&quot;5&quot; nb_images=&quot;3&quot; width=&quot;1024&quot; height=&quot;1024&quot; /&gt; &lt;mode name=&quot;long&quot; nb_scenes=&quot;20&quot; nb_images=&quot;3&quot; width=&quot;1280&quot; height=&quot;720&quot; /&gt; &lt;/modes&gt; &lt;!-- AI Models --&gt; &lt;models&gt; &lt;model name=&quot;juggernaut-xl&quot; type=&quot;image&quot; /&gt; &lt;model name=&quot;xtts_v2&quot; type=&quot;audio&quot; /&gt; &lt;script_models&gt;gemma, deepseek-r1, ministral&lt;/script_models&gt; &lt;/models&gt; Technical Architecture Backend Stack: Python 3.9+: Core language Streamlit: Web framework with authentication XML/YAML/JSON: Configuration management Threading: Parallel execution and queue worker AI Models (8 models integrated): Stable Diffusion (AUTOMATIC1111 WebUI) — Image generation Coqui TTS (XTTS v2) — Multilingual voice cloning Ollama (Gemma, DeepSeek, Ministral) — Script generation via LLM CLIP (OpenAI) — Image-text similarity verification Whisper (OpenAI) — Subtitle alignment from audio MediaPipe — Face detection in generated images Facebook MusicGen — AI-generated background music MoviePy + OpenCV — Video editing, animation, effects External APIs: Stable Diffusion API (http://127.0.0.1:7860) Ollama API (http://localhost:11434) Pexels API (stock images/videos for geography/actu) YouTube Data API v3 (automated uploads) Discord Webhooks (notifications) Processing Categories: Category Image Source Script Model Description Celebrity Stable Diffusion LLM Biography and career videos Geography Pexels API LLM Location and travel documentaries Actu (News) Pexels API LLM (actu variant) Current events reports Movie Pexels API LLM Film analysis and summaries Monument Stable Diffusion LLM Historical and architectural features Oeuvre (Art) Stable Diffusion LLM Artistic works and analysis Development Challenges &amp; Solutions Challenge 1: Pipeline Reliability Problem: Long-running pipelines (5-20 scenes) could fail mid-execution, wasting all prior work Solution: Step-by-step execution with automatic retry (2 attempts per step), process management to kill orphans, and queue-based job restart from the exact failed step Challenge 2: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration across scenes Solution: Dynamic timing calculation, Whisper-based subtitle alignment, and frame rate adjustment with MoviePy Challenge 3: Resource Contention Problem: Multiple AI models (SD, TTS, LLM) competing for GPU and memory Solution: Sequential job execution via queue worker, parallel image/audio steps within a job, and process killing before each step to release resources Challenge 4: Quality Consistency Problem: AI-generated content varies in quality across scenes Solution: Multi-stage verification pipeline (CLIP score for images, face detection via MediaPipe, script validation via LLM), with manual intervention points in the UI Challenge 5: Multi-language Support Problem: Supporting multiple languages for narration, scripts, and subtitles Solution: Language-specific voice reference files, per-language output directories, and LLM prompts adapted for each language Challenge 6: Observability Problem: Debugging failed jobs in an automated pipeline with multiple AI models Solution: Structured logging with rotating files, job-specific log files, step lifecycle tracking, and Discord notifications with error details Prerequisites Python 3.9+ ffmpeg installed on the system GPU recommended (NVIDIA for CUDA support) Python packages: pip install streamlit streamlit-authenticator pip install moviepy requests TTS openai-whisper pip install transformers mediapipe ollama pip install pydub soundfile openpyxl pyyaml pip install -r stable-diffusion-webui/requirements.txt Services to run: # Stable Diffusion WebUI (image generation) cd stable-diffusion-webui &amp;&amp; ./webui.sh --api # Ollama (LLM for script generation) ollama serve ollama pull gemma3:12b # Streamlit application streamlit run app2.py Troubleshooting Stable Diffusion API error: check that the WebUI is running on port 7860 with --api flag Ollama connection refused: ensure ollama serve is running on port 11434 Audio not generated: verify the voice reference WAV file path in config.xml Queue stuck: check logs/queue.log and logs/job_{id}.log for error details Discord notifications not sent: verify the webhook URL in .env Image/audio mismatch: ensure scene numbers match in the script JSON Process conflicts: use the “kill process” button in the UI or check for orphan Python processes Use Cases &amp; Applications Educational Content: Explainer videos on any topic with AI narration Social Media: TikTok-ready short-form content with automatic cutting News: Automated news reports with Pexels stock footage Documentary: Geography and monument documentaries with images Entertainment: Celebrity biographies, movie analyses, art features Marketing: Product presentations with custom voice and music Future Enhancements Real-time video generation preview and streaming Advanced animation effects (3D transitions, particles) Video style transfer and artistic filters Integration with more TTS models (ElevenLabs, Bark) Cloud deployment for horizontal scalability A/B testing for thumbnail and title optimization Analytics dashboard for generated content performance Performance Metrics Script Generation: ~10-30 seconds (LLM-dependent) Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~3-5 seconds per scene Video Animation: ~2-4 seconds per scene Subtitle Alignment: ~5-10 seconds total Music Generation: ~15-30 seconds Total Pipeline (short, 5 scenes): ~3-5 minutes Total Pipeline (long, 20 scenes): ~15-25 minutes Detailed AI Models 1. Stable Diffusion (AUTOMATIC1111 WebUI) Model: Juggernaut-XL with face detail LoRA Usage: Image generation from text prompts (scenes, thumbnails) Code excerpt: # filepath: scripts/images/generate_image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) Prerequisites: WebUI running with --api flag Models .safetensors in models/Stable-diffusion/ LoRA in models/Lora/ Features: txt2img, img2img, LoRA, VAE, upscalers, face restoration 2. Coqui TTS (XTTS v2) Model: tts_models/multilingual/multi-dataset/xtts_v2 Usage: Multilingual voice cloning from a WAV reference file Code excerpt: # filepath: scripts/audio/generate_audio.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=scene_text, speaker_wav=reference_wav, file_path=output_path) Prerequisites: pip install TTS, WAV reference file per language Features: multilingual synthesis (FR/EN/ES), voice cloning, per-scene audio generation 3. Ollama (Gemma, DeepSeek, Ministral) Models: gemma3:12b, deepseek-r1:latest, ministral-3:14b Usage: LLM-based script generation, verification, translation Code excerpt: # filepath: scripts/script/generate_script.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) Prerequisites: Ollama server running, models pulled Features: structured JSON script output, scene/title/prompt generation, double LLM validation 4. CLIP (OpenAI) Model: openai/clip-vit-base-patch32 Usage: Image-text similarity scoring for quality verification Code excerpt: # filepath: scripts/images/verify_image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) Prerequisites: pip install transformers, GPU recommended Features: CLIP score calculation, automatic filtering of low-relevance images 5. Whisper (OpenAI) Model: Whisper base Usage: Automatic subtitle alignment from audio transcription Code excerpt: # filepath: scripts/video/align_subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) Prerequisites: pip install openai-whisper, ffmpeg Features: multilingual transcription, word-level timing, subtitle JSON export 6. MediaPipe (Face Detection) Model: MediaPipe Face Detection Usage: Detect faces in generated images for quality filtering Code excerpt: # filepath: scripts/images/verify_image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection Prerequisites: pip install mediapipe Features: face detection, automatic rejection of images without expected faces 7. Facebook MusicGen Model: facebook/musicgen-medium Usage: AI-generated background music from text prompts Code excerpt: # filepath: scripts/music/generate_music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) Prerequisites: pip install transformers pydub soundfile, ffmpeg Features: original music generation from prompts, automatic duration matching, direct pipeline integration 8. MoviePy + OpenCV Usage: Video editing, camera animation (zoom, pan, slide), audio synchronization, subtitle overlay Code excerpt: # filepath: scripts/video/generate_movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips Prerequisites: pip install moviepy opencv-python, ffmpeg Features: image animation, TikTok/YouTube crop, subtitle rendering, video concatenation, music mixing Resources &amp; Credits Stable Diffusion WebUI Coqui TTS Ollama MoviePy OpenAI Whisper Facebook MusicGen Pexels API Developer: Cedric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Select your video type and category Choose an entity from the list (or add your own) Pick a language and production mode (short/long) Add the job to the queue or generate step-by-step Monitor progress via Discord notifications Download or upload directly to YouTube" />
+<meta property="og:description" content="← Back to Personal Project IA Automation Project Overview Try the application here: https://video-automation.littlenuage.com/ This project is a fully automated video production platform powered by AI. From a simple text topic, the system generates a structured script, creates images, synthesizes narration, applies camera animations, adds subtitles and background music, and delivers a ready-to-publish video — all orchestrated through a Streamlit web interface with job queue management and Discord notifications. Project Context Developed as a personal project to industrialize video content creation, this platform eliminates the need for manual editing. It supports multiple video categories (celebrity biographies, geography documentaries, news reports, movie analyses, monuments, artworks), multiple languages (French, English, Spanish), and two production modes (short-form and long-form). The application is deployed online and accessible to anyone. Architecture Overview The system follows a modular, service-oriented architecture with clear separation of concerns: User (Streamlit UI) │ ▼ app2.py ──► queue_manager.py ──► run_pipeline.py ──► pipeline_executor.py │ ┌─────────────────────┼─────────────────────┐ ▼ ▼ ▼ services/ scripts/ AI Models (script, image, (generation &amp; (SD, TTS, LLM, audio, video) processing) CLIP, Whisper...) What I Developed 1. Streamlit Web Application (app2.py) The main user interface built with Streamlit, replacing the earlier Flask prototype: Authenticated access via streamlit_authenticator with YAML-based credentials Video configuration: type selection (celebrity, geography, actu, movie, oeuvre, monument), category, entity, mode (short/long), language (FR/EN/ES) Three-tab interface: Generation (step-by-step workflow), Queue (job management), History (past productions) WebUI control: monitor and launch the Stable Diffusion WebUI server directly from the interface User preferences: persistent settings saved between sessions (user_preferences.json) Excel integration: entity lists loaded from category-specific Excel files 2. Pipeline Execution Engine (pipeline_executor.py) The core orchestrator implementing a robust 6-step pipeline: Step Description Script 1 Script Generation generate_script.py / generate_script_actu.py 2 Image Generation generate_image.py / get_image_pexels.py 3 Audio Synthesis generate_audio.py 4 Camera Movement &amp; Animation generate_movement.py / generate_movement_from_db.py 5 Subtitle Alignment align_subtitles.py (short mode) 6 Music Generation generate_music.py (short mode) Key features: Parallel execution: steps 2 (images) and 3 (audio) run concurrently Automatic retry: up to 2 retries per step on failure Process management: kills orphan processes before each step to prevent resource conflicts Execution tracking: full timing metrics per step and total pipeline duration 3. Job Queue System (queue_manager.py) A thread-safe job queue for sequential video production: Persistent state stored in generation_queue.json Job lifecycle: pending → running → completed/failed Retry from failure: restart a failed job from the exact step that failed History: stores the last 50 completed/failed jobs Statistics: real-time counts of pending, running, completed, failed jobs Global worker thread: processes jobs sequentially in the background 4. Service Layer (services/) Four service classes encapsulate file I/O and subprocess execution: script_service.py: load, save, generate, and validate script JSON files image_service.py: manage generated images/videos, scene-level deletion, image retrieval with scene mapping audio_service.py: audio path resolution, existence checks, audio segmentation, generation orchestration video_service.py: movement generation, subtitle alignment, text overlay, music integration, YouTube upload, TikTok cutting All services follow a consistent pattern with organized paths: output/{type}/{video}/{category}/{entity_name}/{mode}/{language_code}/ 5. UI Components (ui/) Modular Streamlit components split for maintainability: generation_tab.py: 9-section progressive workflow (script → images → audio → movement → subtitles → text overlay → music → TikTok → YouTube) queue_tab.py: queue monitoring, job management, retry, history browsing, quick YouTube upload components.py: reusable utilities (process killing, preferences, WebUI control) styles.py: custom CSS for status indicators, buttons, video players, metric cards 6. Infrastructure Modules Cache Manager (cache_manager.py): MD5-based cache key generation per category (scripts, images, audio) Cache index stored in cache/cache_index.json Stale cache cleanup with configurable age Prevents unnecessary regeneration of existing assets Logger (logger.py): Rotating file handlers (10 MB max, 5 backups) Job-specific log files (logs/job_{id}.log) Dedicated loggers for pipeline, queue, and application Structured step lifecycle logging (start, complete, fail) Notifications (notifications.py): Discord webhook integration with rich embeds Color-coded status messages (green=success, red=error, orange=warning, blue=info) Job lifecycle notifications (started, step progress, completed, failed) 7. Scripts Organization (scripts/) All processing scripts are organized by domain: scripts/ ├── script/ # LLM-based script generation &amp; verification │ ├── generate_script.py │ ├── generate_script_actu.py │ ├── verify_script.py │ └── verify_script_actu.py ├── images/ # Image generation, validation &amp; thumbnails │ ├── generate_image.py # Stable Diffusion (celebrity mode) │ ├── get_image_pexels.py # Pexels API (geography/actu/movie) │ ├── generate_mignature.py # Thumbnail generation │ ├── verify_image.py # CLIP score + face detection │ ├── validate_sequential_images.py │ ├── configure_images.py │ └── add_image_details.py ├── audio/ # TTS synthesis &amp; audio processing │ ├── generate_audio.py # XTTS v2 voice cloning │ ├── cut_audio.py │ ├── verify_audio.py │ └── correct_text_aft_verif.py ├── video/ # Video editing, animation &amp; subtitles │ ├── generate_movement.py # Celebrity image animation │ ├── generate_movement_from_db.py # DB-based animation (geography/actu) │ ├── align_subtitles.py # Whisper-based subtitle timing │ ├── generate_text_on_video.py │ ├── cut_txt_video.py # TikTok video cutting │ ├── generate_video_image.py │ └── cut.py ├── music/ # Background music generation │ └── generate_music.py # Facebook MusicGen ├── batch/ # Batch operations │ ├── generate_all_audio.py │ ├── generate_all_image.py │ └── checklist_final.py ├── publishing/ # Publishing &amp; promotion │ ├── send_to_youtube.py │ └── short_end_pub.py └── experimental/ # Experimental features └── (image-to-video, deforum) File Organization . ├── app2.py # Streamlit web application ├── pipeline_executor.py # 6-step pipeline engine ├── queue_manager.py # Job queue management ├── run_pipeline.py # Subprocess launcher ├── utils.py # Configuration &amp; environment utilities ├── cache_manager.py # Intelligent caching system ├── logger.py # Structured logging ├── notifications.py # Discord webhook notifications ├── config.xml # Application configuration (languages, modes, models, paths) ├── services/ │ ├── script_service.py │ ├── image_service.py │ ├── audio_service.py │ └── video_service.py ├── ui/ │ ├── generation_tab.py │ ├── queue_tab.py │ ├── components.py │ └── styles.py ├── scripts/ # Processing scripts (see above) ├── authentification/ # OAuth2 &amp; credentials ├── input/ │ ├── Audio/ # Voice reference files (FR/EN/ES) │ └── Video_List/ # Excel entity lists per category ├── output/ │ ├── Script/ # Generated JSON scripts │ ├── Image/ # Generated scene images │ ├── Audio/ # Synthesized narration audio │ ├── Video/ # Text-overlay videos │ ├── Video_Anime/ # Animated scene videos │ ├── Final-Video/ # Final assembled videos + TikTok cuts │ ├── Music/ # Generated background music │ └── Miniature/ # Video thumbnails ├── logs/ # Rotating log files ├── cache/ # Cache index &amp; metadata └── stable-diffusion-webui/ # AUTOMATIC1111 WebUI (submodule) Automated Pipeline Workflow Full Pipeline (Queue Mode) User configures video type, category, entity, mode, language in the Streamlit UI Job added to the persistent queue via queue_manager.py Worker thread picks up the job and spawns run_pipeline.py as a subprocess PipelineExecutor orchestrates the 6 steps: Step 1: LLM generates a structured JSON script (scenes, prompts, titles) Steps 2-3: Images and audio run in parallel — Stable Diffusion or Pexels for images, XTTS v2 for voice cloning Step 4: Camera movement animation applied to each scene (zoom, pan, slide) Step 5: Whisper-based subtitle alignment (short mode) Step 6: MusicGen background music generation (short mode) Discord notification sent at job start, completion, or failure User reviews the result in the History tab, can upload to YouTube directly Manual Mode (Generation Tab) Each step can also be executed individually with live preview: Edit the script JSON directly in the UI Preview generated images in a grid view Listen to audio per scene with prompt editing Watch animated video previews Edit subtitle JSON with live rendering Cut videos for TikTok with time-based selection Upload to YouTube with thumbnail and metadata Configuration (config.xml) &lt;!-- Languages with voice reference files --&gt; &lt;languages&gt; &lt;language name=&quot;Francais&quot; code=&quot;fr&quot; audio=&quot;Enregistrement-francais.wav&quot; /&gt; &lt;language name=&quot;English&quot; code=&quot;en&quot; audio=&quot;Enregistrement-anglais.wav&quot; /&gt; &lt;language name=&quot;Espanol&quot; code=&quot;es&quot; audio=&quot;Enregistrement-espagnol.wav&quot; /&gt; &lt;/languages&gt; &lt;!-- Production modes --&gt; &lt;modes&gt; &lt;mode name=&quot;short&quot; nb_scenes=&quot;5&quot; nb_images=&quot;3&quot; width=&quot;1024&quot; height=&quot;1024&quot; /&gt; &lt;mode name=&quot;long&quot; nb_scenes=&quot;20&quot; nb_images=&quot;3&quot; width=&quot;1280&quot; height=&quot;720&quot; /&gt; &lt;/modes&gt; &lt;!-- AI Models --&gt; &lt;models&gt; &lt;model name=&quot;juggernaut-xl&quot; type=&quot;image&quot; /&gt; &lt;model name=&quot;xtts_v2&quot; type=&quot;audio&quot; /&gt; &lt;script_models&gt;gemma, deepseek-r1, ministral&lt;/script_models&gt; &lt;/models&gt; Technical Architecture Backend Stack: Python 3.9+: Core language Streamlit: Web framework with authentication XML/YAML/JSON: Configuration management Threading: Parallel execution and queue worker AI Models (8 models integrated): Stable Diffusion (AUTOMATIC1111 WebUI) — Image generation Coqui TTS (XTTS v2) — Multilingual voice cloning Ollama (Gemma, DeepSeek, Ministral) — Script generation via LLM CLIP (OpenAI) — Image-text similarity verification Whisper (OpenAI) — Subtitle alignment from audio MediaPipe — Face detection in generated images Facebook MusicGen — AI-generated background music MoviePy + OpenCV — Video editing, animation, effects External APIs: Stable Diffusion API (http://127.0.0.1:7860) Ollama API (http://localhost:11434) Pexels API (stock images/videos for geography/actu) YouTube Data API v3 (automated uploads) Discord Webhooks (notifications) Processing Categories: Category Image Source Script Model Description Celebrity Stable Diffusion LLM Biography and career videos Geography Pexels API LLM Location and travel documentaries Actu (News) Pexels API LLM (actu variant) Current events reports Movie Pexels API LLM Film analysis and summaries Monument Stable Diffusion LLM Historical and architectural features Oeuvre (Art) Stable Diffusion LLM Artistic works and analysis Development Challenges &amp; Solutions Challenge 1: Pipeline Reliability Problem: Long-running pipelines (5-20 scenes) could fail mid-execution, wasting all prior work Solution: Step-by-step execution with automatic retry (2 attempts per step), process management to kill orphans, and queue-based job restart from the exact failed step Challenge 2: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration across scenes Solution: Dynamic timing calculation, Whisper-based subtitle alignment, and frame rate adjustment with MoviePy Challenge 3: Resource Contention Problem: Multiple AI models (SD, TTS, LLM) competing for GPU and memory Solution: Sequential job execution via queue worker, parallel image/audio steps within a job, and process killing before each step to release resources Challenge 4: Quality Consistency Problem: AI-generated content varies in quality across scenes Solution: Multi-stage verification pipeline (CLIP score for images, face detection via MediaPipe, script validation via LLM), with manual intervention points in the UI Challenge 5: Multi-language Support Problem: Supporting multiple languages for narration, scripts, and subtitles Solution: Language-specific voice reference files, per-language output directories, and LLM prompts adapted for each language Challenge 6: Observability Problem: Debugging failed jobs in an automated pipeline with multiple AI models Solution: Structured logging with rotating files, job-specific log files, step lifecycle tracking, and Discord notifications with error details Prerequisites Python 3.9+ ffmpeg installed on the system GPU recommended (NVIDIA for CUDA support) Python packages: pip install streamlit streamlit-authenticator pip install moviepy requests TTS openai-whisper pip install transformers mediapipe ollama pip install pydub soundfile openpyxl pyyaml pip install -r stable-diffusion-webui/requirements.txt Services to run: # Stable Diffusion WebUI (image generation) cd stable-diffusion-webui &amp;&amp; ./webui.sh --api # Ollama (LLM for script generation) ollama serve ollama pull gemma3:12b # Streamlit application streamlit run app2.py Troubleshooting Stable Diffusion API error: check that the WebUI is running on port 7860 with --api flag Ollama connection refused: ensure ollama serve is running on port 11434 Audio not generated: verify the voice reference WAV file path in config.xml Queue stuck: check logs/queue.log and logs/job_{id}.log for error details Discord notifications not sent: verify the webhook URL in .env Image/audio mismatch: ensure scene numbers match in the script JSON Process conflicts: use the “kill process” button in the UI or check for orphan Python processes Use Cases &amp; Applications Educational Content: Explainer videos on any topic with AI narration Social Media: TikTok-ready short-form content with automatic cutting News: Automated news reports with Pexels stock footage Documentary: Geography and monument documentaries with images Entertainment: Celebrity biographies, movie analyses, art features Marketing: Product presentations with custom voice and music Future Enhancements Real-time video generation preview and streaming Advanced animation effects (3D transitions, particles) Video style transfer and artistic filters Integration with more TTS models (ElevenLabs, Bark) Cloud deployment for horizontal scalability A/B testing for thumbnail and title optimization Analytics dashboard for generated content performance Performance Metrics Script Generation: ~10-30 seconds (LLM-dependent) Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~3-5 seconds per scene Video Animation: ~2-4 seconds per scene Subtitle Alignment: ~5-10 seconds total Music Generation: ~15-30 seconds Total Pipeline (short, 5 scenes): ~3-5 minutes Total Pipeline (long, 20 scenes): ~15-25 minutes Detailed AI Models 1. Stable Diffusion (AUTOMATIC1111 WebUI) Model: Juggernaut-XL with face detail LoRA Usage: Image generation from text prompts (scenes, thumbnails) Code excerpt: # filepath: scripts/images/generate_image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) Prerequisites: WebUI running with --api flag Models .safetensors in models/Stable-diffusion/ LoRA in models/Lora/ Features: txt2img, img2img, LoRA, VAE, upscalers, face restoration 2. Coqui TTS (XTTS v2) Model: tts_models/multilingual/multi-dataset/xtts_v2 Usage: Multilingual voice cloning from a WAV reference file Code excerpt: # filepath: scripts/audio/generate_audio.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=scene_text, speaker_wav=reference_wav, file_path=output_path) Prerequisites: pip install TTS, WAV reference file per language Features: multilingual synthesis (FR/EN/ES), voice cloning, per-scene audio generation 3. Ollama (Gemma, DeepSeek, Ministral) Models: gemma3:12b, deepseek-r1:latest, ministral-3:14b Usage: LLM-based script generation, verification, translation Code excerpt: # filepath: scripts/script/generate_script.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) Prerequisites: Ollama server running, models pulled Features: structured JSON script output, scene/title/prompt generation, double LLM validation 4. CLIP (OpenAI) Model: openai/clip-vit-base-patch32 Usage: Image-text similarity scoring for quality verification Code excerpt: # filepath: scripts/images/verify_image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) Prerequisites: pip install transformers, GPU recommended Features: CLIP score calculation, automatic filtering of low-relevance images 5. Whisper (OpenAI) Model: Whisper base Usage: Automatic subtitle alignment from audio transcription Code excerpt: # filepath: scripts/video/align_subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) Prerequisites: pip install openai-whisper, ffmpeg Features: multilingual transcription, word-level timing, subtitle JSON export 6. MediaPipe (Face Detection) Model: MediaPipe Face Detection Usage: Detect faces in generated images for quality filtering Code excerpt: # filepath: scripts/images/verify_image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection Prerequisites: pip install mediapipe Features: face detection, automatic rejection of images without expected faces 7. Facebook MusicGen Model: facebook/musicgen-medium Usage: AI-generated background music from text prompts Code excerpt: # filepath: scripts/music/generate_music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) Prerequisites: pip install transformers pydub soundfile, ffmpeg Features: original music generation from prompts, automatic duration matching, direct pipeline integration 8. MoviePy + OpenCV Usage: Video editing, camera animation (zoom, pan, slide), audio synchronization, subtitle overlay Code excerpt: # filepath: scripts/video/generate_movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips Prerequisites: pip install moviepy opencv-python, ffmpeg Features: image animation, TikTok/YouTube crop, subtitle rendering, video concatenation, music mixing Resources &amp; Credits Stable Diffusion WebUI Coqui TTS Ollama MoviePy OpenAI Whisper Facebook MusicGen Pexels API Developer: Cedric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Select your video type and category Choose an entity from the list (or add your own) Pick a language and production mode (short/long) Add the job to the queue or generate step-by-step Monitor progress via Discord notifications Download or upload directly to YouTube" />
+<link rel="canonical" href="http://0.0.0.0:4000/jekyll/update/2024/10/02/IA-Automation.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/jekyll/update/2024/10/02/IA-Automation.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta property="article:published_time" content="2024-10-02T08:56:03+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="IA Automation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"← Back to Personal Project IA Automation Project Overview 🚀 Try the application here: https://video-automation.littlenuage.com/ This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video. Project Context Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions. Overview The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization). What I Developed Core Features 1. Automated Video Generation Pipeline Script Processing: Parse and structure text into scenes with image prompts AI Image Generation: Integration with Stable Diffusion API for scene visualization Voice Synthesis: Coqui TTS integration with custom voice cloning from reference audio Video Assembly: MoviePy-based animation system with synchronized audio/video 2. Web Application (Flask) User Interface (app.py, app2.py): Web-based interface for script upload and video generation RESTful API: Backend endpoints for processing requests and monitoring progress File Management: Organized input/output system for scripts, images, audio, and videos Multi-category Support: Specialized workflows for celebrities, geography, monuments, movies, etc. 3. Advanced Processing Tools Script Generation &amp; Verification: generate-script.py: Create structured JSON scripts from text generate-script-actu.py: Generate news/current events scripts verify-script.py: Validate script structure and content Image Processing: generate_all_image.py: Batch image generation for multiple scenes generate-mignature.py, generate-mignature2.py: Thumbnail creation verify-image.py: Quality control and validation generate-new-image.py: Regenerate specific scenes Audio Processing: generate_all_audio.py: Batch audio synthesis cut-audio.py: Audio trimming and segmentation verify-audio.py: Audio quality checks extend-audio.py: Audio extension for timing adjustments extract-audio-from-mp4.py: Audio extraction from video files Video Processing: generate-movement.py: Camera movement effects (zoom, pan) generate-text-on-video.py: Subtitle and text overlay cut_txt_video.py: Video segmentation with text sync align-subtitles.py: Subtitle alignment and timing corrected-subtitles-by-words.py: Word-level subtitle correction short-end-pub.py: Add promotional end screens 4. Integration &amp; Deployment send-to-youtube.py: Automated YouTube upload with metadata authentification/: OAuth and API authentication system utils.py: Shared utilities and helper functions main.py: Orchestration script for full pipeline execution 5. Music &amp; Audio Enhancement generate-music.py: Background music generation/selection Audio mixing and volume normalization Multi-track audio synchronization Technical Architecture Backend Stack: Python 3.9+: Core programming language Flask: Web framework for API and UI Stable Diffusion WebUI: Local deployment for image generation Coqui TTS: Neural voice synthesis MoviePy: Video editing and assembly OpenCV: Image processing and effects Key Integrations: Stable Diffusion API (local http://127.0.0.1:7860) YouTube Data API v3 (automated uploads) Custom authentication system (OAuth2) Configuration management (YAML, JSON, XML) Processing Categories: Celebrity: Biography and career videos Geography: Location and travel documentaries Monument: Historical and architectural features Movie: Film analysis and summaries News/Actu: Current events and news reports Art/Oeuvre: Artistic works and analysis Innovation &amp; Features Intelligent Scene Management: Automatic scene detection and splitting Context-aware prompt generation for images Duration optimization based on narration length Quality Control System: Multi-stage verification (script, image, audio) Automated error detection and correction Manual intervention points for quality assurance Scalability: Batch processing for multiple videos Parallel generation of images and audio Caching system for reusable assets Customization: Template system for different video styles Configurable animation parameters Multiple voice profiles and languages File Organization . ├── generate-script.py ├── generate-image.py ├── generate-audio.py ├── generate-animation.py ├── generate-video-image.py ├── input/ │ └── Audio/ │ └── Enregistrement-francais.wav ├── output/ │ ├── Script/ │ ├── Image/ │ ├── Audio/ │ │ └── scenes/ │ ├── Video/ └── stable-diffusion-webui/ input/: source files (text, reference audio) output/: generated results (JSON scripts, images, audios, videos) stable-diffusion-webui/: WebUI and models for Stable Diffusion Workflow 1. Script Preparation Write your script and split it into scenes. Each scene contains text and an image prompt. Save the script as JSON in output/Script/script.json: [ { &quot;scene&quot;: 1, &quot;texte&quot;: &quot;Le soleil se lève sur la ville.&quot;, &quot;prompt_image&quot;: &quot;A beautiful sunrise over a city skyline, vibrant colors.&quot; } ] 2. Image Generation Run generate-image.py to generate one image per scene via Stable Diffusion. Images are saved in output/Image/scene_X.png. 3. Audio Generation Run generate-audio.py to generate narration for each scene with Coqui TTS and a reference audio file. Audio files are saved in output/Audio/scenes/scene_X.wav. 4. Animation &amp; Video Editing Run generate-animation.py to create a video for each scene: animation (slow zoom) and audio synchronization. Videos are saved in output/Video/scene_X.mp4. 5. Final Assembly (Optional) Use generate-video-image.py to merge all scenes into a complete video. Scripts generate-script.py: prepares the JSON script generate-image.py: generates images via Stable Diffusion generate-audio.py: synthesizes voice-over with Coqui TTS generate-animation.py: assembles image and audio into animated video generate-video-image.py: merges scene videos Stable Diffusion WebUI Used for image generation (Stable Diffusion WebUI) Must be run locally (http://127.0.0.1:7860) Place your models and configure the WebUI as needed Prerequisites Python 3.9+ moviepy requests Coqui TTS Stable Diffusion WebUI Dependencies from stable-diffusion-webui/requirements.txt Installation: pip install -r stable-diffusion-webui/requirements.txt pip install moviepy requests TTS Troubleshooting Stable Diffusion API error: check that the WebUI is running and the model is loaded Module not found: install missing Python packages Audio not generated: check the path to the reference WAV file Image/audio mismatch: ensure scene numbers match Development Challenges &amp; Solutions Challenge 1: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration Solution: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment Challenge 2: AI Model Integration Problem: Stable Diffusion and TTS models require significant computational resources Solution: Local GPU deployment, request queuing, and caching mechanisms Challenge 3: Quality Consistency Problem: AI-generated content can vary in quality Solution: Multi-stage verification pipeline with manual review checkpoints Challenge 4: Scalability Problem: Processing multiple videos simultaneously Solution: Asynchronous task processing, batch operations, and resource management Use Cases &amp; Applications Educational Content: Create explainer videos on any topic Social Media: Generate engaging short-form content Marketing: Product presentations and promotional videos Documentation: Tutorial and how-to videos News: Automated news reports with visual support Entertainment: Story-telling and narrative videos Future Enhancements Multi-language support with automatic translation Real-time video generation and streaming Advanced animation effects (3D transitions, particles) AI-powered script writing assistance Video style transfer and artistic filters Integration with more TTS and image generation models Cloud deployment for scalability Performance Metrics Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~2-3 seconds per scene Video Assembly: ~1-2 seconds per scene Total Pipeline: ~2-5 minutes for a 5-scene video Resources &amp; Credits Stable Diffusion WebUI Coqui TTS moviepy Developer: Cédric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Write your script with scene descriptions Provide image prompts for each scene Upload a voice reference (optional) Click generate and wait for your video! Détail des modèles d’IA utilisés Voici un récapitulatif des principaux modèles d’IA utilisés dans ce projet, avec leur nom, utilisation, extrait de code, prérequis, fonctionnalités et features : 1. Stable Diffusion (AUTOMATIC1111 WebUI) Nom : Stable Diffusion (WebUI) Utilisation : Génération d’images à partir de prompts textuels (pour les scènes, miniatures, etc.) Extrait de code : # filepath: generate-image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) # ... Pré-requis : Lancer le serveur WebUI : cd stable-diffusion-webui ./webui.sh Modèles .safetensors dans Stable-diffusion LoRA dans Lora Python, dépendances listées dans le README Fonctionnalités / Features : Génération d’images (txt2img, img2img) API REST complète Support LoRA, VAE, upscalers, face restoration, etc. Génération de miniatures, images de scènes, etc. 2. Coqui TTS Nom : Coqui TTS (xtts_v2) Utilisation : Synthèse vocale multilingue, clonage de voix à partir d’un fichier WAV de référence Extrait de code : # filepath: short-end-pub.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=phrase, speaker_wav=speaker_wav_path, file_path=audio_path) Pré-requis : pip install TTS Fichier WAV de référence pour la voix Fonctionnalités / Features : Synthèse vocale multilingue Clonage de voix Génération de fichiers audio pour chaque scène 3. Ollama (LLM : Gemma, Mistral, Deepseek, etc.) Nom : Ollama (modèles : gemma3:12b, ministral-3:14b, deepseek, etc.) Utilisation : Génération de scripts, correction, traduction, vérification de scènes Extrait de code : # filepath: generate-script-actu.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) # ... Pré-requis : Serveur Ollama lancé localement (ollama serve) Modèles téléchargés via Ollama (ollama pull gemma:12b, etc.) pip install ollama Fonctionnalités / Features : Génération de scripts vidéo (scènes, titres, prompts images) Correction et vérification de textes/scènes Traduction automatique (français/anglais) Double validation IA pour la conformité 4. CLIP (OpenAI) Nom : CLIP (openai/clip-vit-base-patch16, patch32) Utilisation : Vérification de la correspondance image/texte (score CLIP), filtrage d’images Extrait de code : # filepath: verify-image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) # ... Pré-requis : pip install transformers GPU recommandé pour rapidité Fonctionnalités / Features : Calcul du score CLIP entre image et prompt Filtrage automatique des images non pertinentes Utilisé dans la vérification et la sélection d’images 5. MoviePy Nom : MoviePy Utilisation : Montage vidéo, animation d’images, ajout d’audio, sous-titres, etc. Extrait de code : # filepath: generate-movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips # ... Pré-requis : pip install moviepy ffmpeg installé sur le système Fonctionnalités / Features : Animation d’images (zoom, slide, crop TikTok/YouTube) Ajout d’audio, sous-titres, musique Génération des vidéos finales 6. Whisper Nom : Whisper (OpenAI) Utilisation : Alignement automatique des sous-titres à partir de l’audio Extrait de code : # filepath: align-subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) # ... Pré-requis : pip install openai-whisper ffmpeg Fonctionnalités / Features : Transcription et alignement des sous-titres Support multilingue 7. MediaPipe (Face Detection) Nom : MediaPipe Utilisation : Détection de visages pour filtrer les images générées Extrait de code : # filepath: verify-image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection # ... Pré-requis : pip install mediapipe Fonctionnalités / Features : Détection de visages dans les images Filtrage automatique des images sans visage 8. Facebook MusicGen Nom : Facebook MusicGen (musicgen-medium) Utilisation : Génération automatique de musique à partir d’un prompt textuel pour accompagner les vidéos Extrait de code : # filepath: generate-music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) # ... Pré-requis : pip install transformers pydub soundfile moviepy Modèle téléchargé automatiquement par HuggingFace Transformers ffmpeg installé sur le système Fonctionnalités / Features : Génération de musique originale à partir d’un prompt textuel Adaptation automatique à la durée de la vidéo Intégration directe dans le pipeline de génération vidéo Pour chaque modèle, tu trouveras les chemins de fichiers et extraits de code dans les fichiers listés ci-dessus. Pour plus de détails sur l’installation et la configuration, consulte la section “Setup &amp; Installation” du README.md. Liens utiles : generate-image.py short-end-pub.py generate-script-actu.py verify-image.py align-subtitles.py generate-movement.py README.md","headline":"IA Automation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/IA-Automation.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Personal Project IA Automation Project Overview Try the application here: https://video-automation.littlenuage.com/ This project is a fully automated video production platform powered by AI. From a simple text topic, the system generates a structured script, creates images, synthesizes narration, applies camera animations, adds subtitles and background music, and delivers a ready-to-publish video — all orchestrated through a Streamlit web interface with job queue management and Discord notifications. Project Context Developed as a personal project to industrialize video content creation, this platform eliminates the need for manual editing. It supports multiple video categories (celebrity biographies, geography documentaries, news reports, movie analyses, monuments, artworks), multiple languages (French, English, Spanish), and two production modes (short-form and long-form). The application is deployed online and accessible to anyone. Architecture Overview The system follows a modular, service-oriented architecture with clear separation of concerns: User (Streamlit UI) │ ▼ app2.py ──► queue_manager.py ──► run_pipeline.py ──► pipeline_executor.py │ ┌─────────────────────┼─────────────────────┐ ▼ ▼ ▼ services/ scripts/ AI Models (script, image, (generation &amp; (SD, TTS, LLM, audio, video) processing) CLIP, Whisper...) What I Developed 1. Streamlit Web Application (app2.py) The main user interface built with Streamlit, replacing the earlier Flask prototype: Authenticated access via streamlit_authenticator with YAML-based credentials Video configuration: type selection (celebrity, geography, actu, movie, oeuvre, monument), category, entity, mode (short/long), language (FR/EN/ES) Three-tab interface: Generation (step-by-step workflow), Queue (job management), History (past productions) WebUI control: monitor and launch the Stable Diffusion WebUI server directly from the interface User preferences: persistent settings saved between sessions (user_preferences.json) Excel integration: entity lists loaded from category-specific Excel files 2. Pipeline Execution Engine (pipeline_executor.py) The core orchestrator implementing a robust 6-step pipeline: Step Description Script 1 Script Generation generate_script.py / generate_script_actu.py 2 Image Generation generate_image.py / get_image_pexels.py 3 Audio Synthesis generate_audio.py 4 Camera Movement &amp; Animation generate_movement.py / generate_movement_from_db.py 5 Subtitle Alignment align_subtitles.py (short mode) 6 Music Generation generate_music.py (short mode) Key features: Parallel execution: steps 2 (images) and 3 (audio) run concurrently Automatic retry: up to 2 retries per step on failure Process management: kills orphan processes before each step to prevent resource conflicts Execution tracking: full timing metrics per step and total pipeline duration 3. Job Queue System (queue_manager.py) A thread-safe job queue for sequential video production: Persistent state stored in generation_queue.json Job lifecycle: pending → running → completed/failed Retry from failure: restart a failed job from the exact step that failed History: stores the last 50 completed/failed jobs Statistics: real-time counts of pending, running, completed, failed jobs Global worker thread: processes jobs sequentially in the background 4. Service Layer (services/) Four service classes encapsulate file I/O and subprocess execution: script_service.py: load, save, generate, and validate script JSON files image_service.py: manage generated images/videos, scene-level deletion, image retrieval with scene mapping audio_service.py: audio path resolution, existence checks, audio segmentation, generation orchestration video_service.py: movement generation, subtitle alignment, text overlay, music integration, YouTube upload, TikTok cutting All services follow a consistent pattern with organized paths: output/{type}/{video}/{category}/{entity_name}/{mode}/{language_code}/ 5. UI Components (ui/) Modular Streamlit components split for maintainability: generation_tab.py: 9-section progressive workflow (script → images → audio → movement → subtitles → text overlay → music → TikTok → YouTube) queue_tab.py: queue monitoring, job management, retry, history browsing, quick YouTube upload components.py: reusable utilities (process killing, preferences, WebUI control) styles.py: custom CSS for status indicators, buttons, video players, metric cards 6. Infrastructure Modules Cache Manager (cache_manager.py): MD5-based cache key generation per category (scripts, images, audio) Cache index stored in cache/cache_index.json Stale cache cleanup with configurable age Prevents unnecessary regeneration of existing assets Logger (logger.py): Rotating file handlers (10 MB max, 5 backups) Job-specific log files (logs/job_{id}.log) Dedicated loggers for pipeline, queue, and application Structured step lifecycle logging (start, complete, fail) Notifications (notifications.py): Discord webhook integration with rich embeds Color-coded status messages (green=success, red=error, orange=warning, blue=info) Job lifecycle notifications (started, step progress, completed, failed) 7. Scripts Organization (scripts/) All processing scripts are organized by domain: scripts/ ├── script/ # LLM-based script generation &amp; verification │ ├── generate_script.py │ ├── generate_script_actu.py │ ├── verify_script.py │ └── verify_script_actu.py ├── images/ # Image generation, validation &amp; thumbnails │ ├── generate_image.py # Stable Diffusion (celebrity mode) │ ├── get_image_pexels.py # Pexels API (geography/actu/movie) │ ├── generate_mignature.py # Thumbnail generation │ ├── verify_image.py # CLIP score + face detection │ ├── validate_sequential_images.py │ ├── configure_images.py │ └── add_image_details.py ├── audio/ # TTS synthesis &amp; audio processing │ ├── generate_audio.py # XTTS v2 voice cloning │ ├── cut_audio.py │ ├── verify_audio.py │ └── correct_text_aft_verif.py ├── video/ # Video editing, animation &amp; subtitles │ ├── generate_movement.py # Celebrity image animation │ ├── generate_movement_from_db.py # DB-based animation (geography/actu) │ ├── align_subtitles.py # Whisper-based subtitle timing │ ├── generate_text_on_video.py │ ├── cut_txt_video.py # TikTok video cutting │ ├── generate_video_image.py │ └── cut.py ├── music/ # Background music generation │ └── generate_music.py # Facebook MusicGen ├── batch/ # Batch operations │ ├── generate_all_audio.py │ ├── generate_all_image.py │ └── checklist_final.py ├── publishing/ # Publishing &amp; promotion │ ├── send_to_youtube.py │ └── short_end_pub.py └── experimental/ # Experimental features └── (image-to-video, deforum) File Organization . ├── app2.py # Streamlit web application ├── pipeline_executor.py # 6-step pipeline engine ├── queue_manager.py # Job queue management ├── run_pipeline.py # Subprocess launcher ├── utils.py # Configuration &amp; environment utilities ├── cache_manager.py # Intelligent caching system ├── logger.py # Structured logging ├── notifications.py # Discord webhook notifications ├── config.xml # Application configuration (languages, modes, models, paths) ├── services/ │ ├── script_service.py │ ├── image_service.py │ ├── audio_service.py │ └── video_service.py ├── ui/ │ ├── generation_tab.py │ ├── queue_tab.py │ ├── components.py │ └── styles.py ├── scripts/ # Processing scripts (see above) ├── authentification/ # OAuth2 &amp; credentials ├── input/ │ ├── Audio/ # Voice reference files (FR/EN/ES) │ └── Video_List/ # Excel entity lists per category ├── output/ │ ├── Script/ # Generated JSON scripts │ ├── Image/ # Generated scene images │ ├── Audio/ # Synthesized narration audio │ ├── Video/ # Text-overlay videos │ ├── Video_Anime/ # Animated scene videos │ ├── Final-Video/ # Final assembled videos + TikTok cuts │ ├── Music/ # Generated background music │ └── Miniature/ # Video thumbnails ├── logs/ # Rotating log files ├── cache/ # Cache index &amp; metadata └── stable-diffusion-webui/ # AUTOMATIC1111 WebUI (submodule) Automated Pipeline Workflow Full Pipeline (Queue Mode) User configures video type, category, entity, mode, language in the Streamlit UI Job added to the persistent queue via queue_manager.py Worker thread picks up the job and spawns run_pipeline.py as a subprocess PipelineExecutor orchestrates the 6 steps: Step 1: LLM generates a structured JSON script (scenes, prompts, titles) Steps 2-3: Images and audio run in parallel — Stable Diffusion or Pexels for images, XTTS v2 for voice cloning Step 4: Camera movement animation applied to each scene (zoom, pan, slide) Step 5: Whisper-based subtitle alignment (short mode) Step 6: MusicGen background music generation (short mode) Discord notification sent at job start, completion, or failure User reviews the result in the History tab, can upload to YouTube directly Manual Mode (Generation Tab) Each step can also be executed individually with live preview: Edit the script JSON directly in the UI Preview generated images in a grid view Listen to audio per scene with prompt editing Watch animated video previews Edit subtitle JSON with live rendering Cut videos for TikTok with time-based selection Upload to YouTube with thumbnail and metadata Configuration (config.xml) &lt;!-- Languages with voice reference files --&gt; &lt;languages&gt; &lt;language name=&quot;Francais&quot; code=&quot;fr&quot; audio=&quot;Enregistrement-francais.wav&quot; /&gt; &lt;language name=&quot;English&quot; code=&quot;en&quot; audio=&quot;Enregistrement-anglais.wav&quot; /&gt; &lt;language name=&quot;Espanol&quot; code=&quot;es&quot; audio=&quot;Enregistrement-espagnol.wav&quot; /&gt; &lt;/languages&gt; &lt;!-- Production modes --&gt; &lt;modes&gt; &lt;mode name=&quot;short&quot; nb_scenes=&quot;5&quot; nb_images=&quot;3&quot; width=&quot;1024&quot; height=&quot;1024&quot; /&gt; &lt;mode name=&quot;long&quot; nb_scenes=&quot;20&quot; nb_images=&quot;3&quot; width=&quot;1280&quot; height=&quot;720&quot; /&gt; &lt;/modes&gt; &lt;!-- AI Models --&gt; &lt;models&gt; &lt;model name=&quot;juggernaut-xl&quot; type=&quot;image&quot; /&gt; &lt;model name=&quot;xtts_v2&quot; type=&quot;audio&quot; /&gt; &lt;script_models&gt;gemma, deepseek-r1, ministral&lt;/script_models&gt; &lt;/models&gt; Technical Architecture Backend Stack: Python 3.9+: Core language Streamlit: Web framework with authentication XML/YAML/JSON: Configuration management Threading: Parallel execution and queue worker AI Models (8 models integrated): Stable Diffusion (AUTOMATIC1111 WebUI) — Image generation Coqui TTS (XTTS v2) — Multilingual voice cloning Ollama (Gemma, DeepSeek, Ministral) — Script generation via LLM CLIP (OpenAI) — Image-text similarity verification Whisper (OpenAI) — Subtitle alignment from audio MediaPipe — Face detection in generated images Facebook MusicGen — AI-generated background music MoviePy + OpenCV — Video editing, animation, effects External APIs: Stable Diffusion API (http://127.0.0.1:7860) Ollama API (http://localhost:11434) Pexels API (stock images/videos for geography/actu) YouTube Data API v3 (automated uploads) Discord Webhooks (notifications) Processing Categories: Category Image Source Script Model Description Celebrity Stable Diffusion LLM Biography and career videos Geography Pexels API LLM Location and travel documentaries Actu (News) Pexels API LLM (actu variant) Current events reports Movie Pexels API LLM Film analysis and summaries Monument Stable Diffusion LLM Historical and architectural features Oeuvre (Art) Stable Diffusion LLM Artistic works and analysis Development Challenges &amp; Solutions Challenge 1: Pipeline Reliability Problem: Long-running pipelines (5-20 scenes) could fail mid-execution, wasting all prior work Solution: Step-by-step execution with automatic retry (2 attempts per step), process management to kill orphans, and queue-based job restart from the exact failed step Challenge 2: Audio-Visual Synchronization Problem: Ensuring audio narration perfectly matches video duration across scenes Solution: Dynamic timing calculation, Whisper-based subtitle alignment, and frame rate adjustment with MoviePy Challenge 3: Resource Contention Problem: Multiple AI models (SD, TTS, LLM) competing for GPU and memory Solution: Sequential job execution via queue worker, parallel image/audio steps within a job, and process killing before each step to release resources Challenge 4: Quality Consistency Problem: AI-generated content varies in quality across scenes Solution: Multi-stage verification pipeline (CLIP score for images, face detection via MediaPipe, script validation via LLM), with manual intervention points in the UI Challenge 5: Multi-language Support Problem: Supporting multiple languages for narration, scripts, and subtitles Solution: Language-specific voice reference files, per-language output directories, and LLM prompts adapted for each language Challenge 6: Observability Problem: Debugging failed jobs in an automated pipeline with multiple AI models Solution: Structured logging with rotating files, job-specific log files, step lifecycle tracking, and Discord notifications with error details Prerequisites Python 3.9+ ffmpeg installed on the system GPU recommended (NVIDIA for CUDA support) Python packages: pip install streamlit streamlit-authenticator pip install moviepy requests TTS openai-whisper pip install transformers mediapipe ollama pip install pydub soundfile openpyxl pyyaml pip install -r stable-diffusion-webui/requirements.txt Services to run: # Stable Diffusion WebUI (image generation) cd stable-diffusion-webui &amp;&amp; ./webui.sh --api # Ollama (LLM for script generation) ollama serve ollama pull gemma3:12b # Streamlit application streamlit run app2.py Troubleshooting Stable Diffusion API error: check that the WebUI is running on port 7860 with --api flag Ollama connection refused: ensure ollama serve is running on port 11434 Audio not generated: verify the voice reference WAV file path in config.xml Queue stuck: check logs/queue.log and logs/job_{id}.log for error details Discord notifications not sent: verify the webhook URL in .env Image/audio mismatch: ensure scene numbers match in the script JSON Process conflicts: use the “kill process” button in the UI or check for orphan Python processes Use Cases &amp; Applications Educational Content: Explainer videos on any topic with AI narration Social Media: TikTok-ready short-form content with automatic cutting News: Automated news reports with Pexels stock footage Documentary: Geography and monument documentaries with images Entertainment: Celebrity biographies, movie analyses, art features Marketing: Product presentations with custom voice and music Future Enhancements Real-time video generation preview and streaming Advanced animation effects (3D transitions, particles) Video style transfer and artistic filters Integration with more TTS models (ElevenLabs, Bark) Cloud deployment for horizontal scalability A/B testing for thumbnail and title optimization Analytics dashboard for generated content performance Performance Metrics Script Generation: ~10-30 seconds (LLM-dependent) Image Generation: ~5-10 seconds per scene (GPU-dependent) Audio Synthesis: ~3-5 seconds per scene Video Animation: ~2-4 seconds per scene Subtitle Alignment: ~5-10 seconds total Music Generation: ~15-30 seconds Total Pipeline (short, 5 scenes): ~3-5 minutes Total Pipeline (long, 20 scenes): ~15-25 minutes Detailed AI Models 1. Stable Diffusion (AUTOMATIC1111 WebUI) Model: Juggernaut-XL with face detail LoRA Usage: Image generation from text prompts (scenes, thumbnails) Code excerpt: # filepath: scripts/images/generate_image.py STABLE_DIFFUSION_URL = &quot;http://127.0.0.1:7860/sdapi/v1/txt2img&quot; response = requests.post(STABLE_DIFFUSION_URL, json=payload) Prerequisites: WebUI running with --api flag Models .safetensors in models/Stable-diffusion/ LoRA in models/Lora/ Features: txt2img, img2img, LoRA, VAE, upscalers, face restoration 2. Coqui TTS (XTTS v2) Model: tts_models/multilingual/multi-dataset/xtts_v2 Usage: Multilingual voice cloning from a WAV reference file Code excerpt: # filepath: scripts/audio/generate_audio.py from TTS.api import TTS tts = TTS(model_name=&quot;tts_models/multilingual/multi-dataset/xtts_v2&quot;, gpu=False) tts.tts_to_file(text=scene_text, speaker_wav=reference_wav, file_path=output_path) Prerequisites: pip install TTS, WAV reference file per language Features: multilingual synthesis (FR/EN/ES), voice cloning, per-scene audio generation 3. Ollama (Gemma, DeepSeek, Ministral) Models: gemma3:12b, deepseek-r1:latest, ministral-3:14b Usage: LLM-based script generation, verification, translation Code excerpt: # filepath: scripts/script/generate_script.py from ollama import Client client = Client(host=&#39;http://localhost:11434&#39;) response = client.generate(model=&quot;gemma3:12b&quot;, prompt=prompt) Prerequisites: Ollama server running, models pulled Features: structured JSON script output, scene/title/prompt generation, double LLM validation 4. CLIP (OpenAI) Model: openai/clip-vit-base-patch32 Usage: Image-text similarity scoring for quality verification Code excerpt: # filepath: scripts/images/verify_image.py from transformers import CLIPProcessor, CLIPModel clip_model = CLIPModel.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) clip_processor = CLIPProcessor.from_pretrained(&quot;openai/clip-vit-base-patch32&quot;) Prerequisites: pip install transformers, GPU recommended Features: CLIP score calculation, automatic filtering of low-relevance images 5. Whisper (OpenAI) Model: Whisper base Usage: Automatic subtitle alignment from audio transcription Code excerpt: # filepath: scripts/video/align_subtitles.py import whisper model = whisper.load_model(&quot;base&quot;) result = model.transcribe(audio_path) Prerequisites: pip install openai-whisper, ffmpeg Features: multilingual transcription, word-level timing, subtitle JSON export 6. MediaPipe (Face Detection) Model: MediaPipe Face Detection Usage: Detect faces in generated images for quality filtering Code excerpt: # filepath: scripts/images/verify_image.py import mediapipe as mp mp_face_detection = mp.solutions.face_detection Prerequisites: pip install mediapipe Features: face detection, automatic rejection of images without expected faces 7. Facebook MusicGen Model: facebook/musicgen-medium Usage: AI-generated background music from text prompts Code excerpt: # filepath: scripts/music/generate_music.py from transformers import AutoProcessor, MusicgenForConditionalGeneration processor = AutoProcessor.from_pretrained(&quot;facebook/musicgen-medium&quot;) model = MusicgenForConditionalGeneration.from_pretrained(&quot;facebook/musicgen-medium&quot;) Prerequisites: pip install transformers pydub soundfile, ffmpeg Features: original music generation from prompts, automatic duration matching, direct pipeline integration 8. MoviePy + OpenCV Usage: Video editing, camera animation (zoom, pan, slide), audio synchronization, subtitle overlay Code excerpt: # filepath: scripts/video/generate_movement.py from moviepy.editor import ImageSequenceClip, AudioFileClip, VideoFileClip, concatenate_videoclips Prerequisites: pip install moviepy opencv-python, ffmpeg Features: image animation, TikTok/YouTube crop, subtitle rendering, video concatenation, music mixing Resources &amp; Credits Stable Diffusion WebUI Coqui TTS Ollama MoviePy OpenAI Whisper Facebook MusicGen Pexels API Developer: Cedric Chanfreau Web Application: video-automation.littlenuage.com License See stable-diffusion-webui/LICENSE.txt for the WebUI license. Other scripts are under your chosen license. Try It Yourself! Access the application: https://video-automation.littlenuage.com/ Select your video type and category Choose an entity from the list (or add your own) Pick a language and production mode (short/long) Add the job to the queue or generate step-by-step Monitor progress via Discord notifications Download or upload directly to YouTube","headline":"IA Automation","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/jekyll/update/2024/10/02/IA-Automation.html"},"url":"http://0.0.0.0:4000/jekyll/update/2024/10/02/IA-Automation.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
@@ -41,328 +41,653 @@
 
 <h1 id="ia-automation-project-overview">IA Automation Project Overview</h1>
 
-<p><strong>🚀 <a href="https://video-automation.littlenuage.com/">Try the application here: https://video-automation.littlenuage.com/</a></strong></p>
+<p><strong><a href="https://video-automation.littlenuage.com/">Try the application here: https://video-automation.littlenuage.com/</a></strong></p>
 
-<p>This project automates the creation of narrated videos from a script, leveraging AI for image generation, voice synthesis, and video assembly. The workflow is fully automated: you provide a script, and the system generates images, audio, and assembles everything into a video.</p>
+<p>This project is a fully automated video production platform powered by AI. From a simple text topic, the system generates a structured script, creates images, synthesizes narration, applies camera animations, adds subtitles and background music, and delivers a ready-to-publish video — all orchestrated through a Streamlit web interface with job queue management and Discord notifications.</p>
 
 <h2 id="project-context">Project Context</h2>
 
-<p>Developed as a personal project to streamline video content creation, this system enables rapid production of professional-quality narrated videos without manual intervention. The application is deployed online and accessible via a web interface, allowing anyone to generate videos from text descriptions.</p>
+<p>Developed as a personal project to industrialize video content creation, this platform eliminates the need for manual editing. It supports multiple video categories (celebrity biographies, geography documentaries, news reports, movie analyses, monuments, artworks), multiple languages (French, English, Spanish), and two production modes (short-form and long-form). The application is deployed online and accessible to anyone.</p>
 
-<h2 id="overview">Overview</h2>
+<h2 id="architecture-overview">Architecture Overview</h2>
 
-<p>The pipeline takes a written script, splits it into scenes, generates images for each scene using Stable Diffusion, creates narration with Coqui TTS, and then assembles everything into an animated video (slow zoom on each image, audio synchronization).</p>
+<p>The system follows a modular, service-oriented architecture with clear separation of concerns:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User (Streamlit UI)
+    │
+    ▼
+app2.py ──► queue_manager.py ──► run_pipeline.py ──► pipeline_executor.py
+                                                          │
+                                    ┌─────────────────────┼─────────────────────┐
+                                    ▼                     ▼                     ▼
+                              services/             scripts/              AI Models
+                          (script, image,       (generation &amp;          (SD, TTS, LLM,
+                          audio, video)          processing)           CLIP, Whisper...)
+</code></pre></div></div>
 
 <h2 id="what-i-developed">What I Developed</h2>
 
-<h3 id="core-features">Core Features</h3>
+<h3 id="1-streamlit-web-application-app2py">1. Streamlit Web Application (<code class="language-plaintext highlighter-rouge">app2.py</code>)</h3>
 
-<p><strong>1. Automated Video Generation Pipeline</strong></p>
+<p>The main user interface built with Streamlit, replacing the earlier Flask prototype:</p>
+
 <ul>
-  <li><strong>Script Processing</strong>: Parse and structure text into scenes with image prompts</li>
-  <li><strong>AI Image Generation</strong>: Integration with Stable Diffusion API for scene visualization</li>
-  <li><strong>Voice Synthesis</strong>: Coqui TTS integration with custom voice cloning from reference audio</li>
-  <li><strong>Video Assembly</strong>: MoviePy-based animation system with synchronized audio/video</li>
+  <li><strong>Authenticated access</strong> via <code class="language-plaintext highlighter-rouge">streamlit_authenticator</code> with YAML-based credentials</li>
+  <li><strong>Video configuration</strong>: type selection (celebrity, geography, actu, movie, oeuvre, monument), category, entity, mode (short/long), language (FR/EN/ES)</li>
+  <li><strong>Three-tab interface</strong>: Generation (step-by-step workflow), Queue (job management), History (past productions)</li>
+  <li><strong>WebUI control</strong>: monitor and launch the Stable Diffusion WebUI server directly from the interface</li>
+  <li><strong>User preferences</strong>: persistent settings saved between sessions (<code class="language-plaintext highlighter-rouge">user_preferences.json</code>)</li>
+  <li><strong>Excel integration</strong>: entity lists loaded from category-specific Excel files</li>
 </ul>
 
-<p><strong>2. Web Application (Flask)</strong></p>
+<h3 id="2-pipeline-execution-engine-pipeline_executorpy">2. Pipeline Execution Engine (<code class="language-plaintext highlighter-rouge">pipeline_executor.py</code>)</h3>
+
+<p>The core orchestrator implementing a robust 6-step pipeline:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Description</th>
+      <th>Script</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><strong>Script Generation</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">generate_script.py</code> / <code class="language-plaintext highlighter-rouge">generate_script_actu.py</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><strong>Image Generation</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">generate_image.py</code> / <code class="language-plaintext highlighter-rouge">get_image_pexels.py</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><strong>Audio Synthesis</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">generate_audio.py</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><strong>Camera Movement &amp; Animation</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">generate_movement.py</code> / <code class="language-plaintext highlighter-rouge">generate_movement_from_db.py</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><strong>Subtitle Alignment</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">align_subtitles.py</code> (short mode)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><strong>Music Generation</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">generate_music.py</code> (short mode)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Key features:</p>
 <ul>
-  <li><strong>User Interface</strong> (<code class="language-plaintext highlighter-rouge">app.py</code>, <code class="language-plaintext highlighter-rouge">app2.py</code>): Web-based interface for script upload and video generation</li>
-  <li><strong>RESTful API</strong>: Backend endpoints for processing requests and monitoring progress</li>
-  <li><strong>File Management</strong>: Organized input/output system for scripts, images, audio, and videos</li>
-  <li><strong>Multi-category Support</strong>: Specialized workflows for celebrities, geography, monuments, movies, etc.</li>
+  <li><strong>Parallel execution</strong>: steps 2 (images) and 3 (audio) run concurrently</li>
+  <li><strong>Automatic retry</strong>: up to 2 retries per step on failure</li>
+  <li><strong>Process management</strong>: kills orphan processes before each step to prevent resource conflicts</li>
+  <li><strong>Execution tracking</strong>: full timing metrics per step and total pipeline duration</li>
 </ul>
 
-<p><strong>3. Advanced Processing Tools</strong></p>
+<h3 id="3-job-queue-system-queue_managerpy">3. Job Queue System (<code class="language-plaintext highlighter-rouge">queue_manager.py</code>)</h3>
 
-<p><strong>Script Generation &amp; Verification</strong>:</p>
+<p>A thread-safe job queue for sequential video production:</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate-script.py</code>: Create structured JSON scripts from text</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-script-actu.py</code>: Generate news/current events scripts</li>
-  <li><code class="language-plaintext highlighter-rouge">verify-script.py</code>: Validate script structure and content</li>
+  <li><strong>Persistent state</strong> stored in <code class="language-plaintext highlighter-rouge">generation_queue.json</code></li>
+  <li><strong>Job lifecycle</strong>: pending → running → completed/failed</li>
+  <li><strong>Retry from failure</strong>: restart a failed job from the exact step that failed</li>
+  <li><strong>History</strong>: stores the last 50 completed/failed jobs</li>
+  <li><strong>Statistics</strong>: real-time counts of pending, running, completed, failed jobs</li>
+  <li><strong>Global worker thread</strong>: processes jobs sequentially in the background</li>
 </ul>
 
-<p><strong>Image Processing</strong>:</p>
+<h3 id="4-service-layer-services">4. Service Layer (<code class="language-plaintext highlighter-rouge">services/</code>)</h3>
+
+<p>Four service classes encapsulate file I/O and subprocess execution:</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate_all_image.py</code>: Batch image generation for multiple scenes</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-mignature.py</code>, <code class="language-plaintext highlighter-rouge">generate-mignature2.py</code>: Thumbnail creation</li>
-  <li><code class="language-plaintext highlighter-rouge">verify-image.py</code>: Quality control and validation</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-new-image.py</code>: Regenerate specific scenes</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">script_service.py</code></strong>: load, save, generate, and validate script JSON files</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">image_service.py</code></strong>: manage generated images/videos, scene-level deletion, image retrieval with scene mapping</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">audio_service.py</code></strong>: audio path resolution, existence checks, audio segmentation, generation orchestration</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">video_service.py</code></strong>: movement generation, subtitle alignment, text overlay, music integration, YouTube upload, TikTok cutting</li>
 </ul>
 
-<p><strong>Audio Processing</strong>:</p>
+<p>All services follow a consistent pattern with organized paths:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output/{type}/{video}/{category}/{entity_name}/{mode}/{language_code}/
+</code></pre></div></div>
+
+<h3 id="5-ui-components-ui">5. UI Components (<code class="language-plaintext highlighter-rouge">ui/</code>)</h3>
+
+<p>Modular Streamlit components split for maintainability:</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate_all_audio.py</code>: Batch audio synthesis</li>
-  <li><code class="language-plaintext highlighter-rouge">cut-audio.py</code>: Audio trimming and segmentation</li>
-  <li><code class="language-plaintext highlighter-rouge">verify-audio.py</code>: Audio quality checks</li>
-  <li><code class="language-plaintext highlighter-rouge">extend-audio.py</code>: Audio extension for timing adjustments</li>
-  <li><code class="language-plaintext highlighter-rouge">extract-audio-from-mp4.py</code>: Audio extraction from video files</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">generation_tab.py</code></strong>: 9-section progressive workflow (script → images → audio → movement → subtitles → text overlay → music → TikTok → YouTube)</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">queue_tab.py</code></strong>: queue monitoring, job management, retry, history browsing, quick YouTube upload</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">components.py</code></strong>: reusable utilities (process killing, preferences, WebUI control)</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">styles.py</code></strong>: custom CSS for status indicators, buttons, video players, metric cards</li>
 </ul>
 
-<p><strong>Video Processing</strong>:</p>
+<h3 id="6-infrastructure-modules">6. Infrastructure Modules</h3>
+
+<p><strong>Cache Manager (<code class="language-plaintext highlighter-rouge">cache_manager.py</code>)</strong>:</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate-movement.py</code>: Camera movement effects (zoom, pan)</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-text-on-video.py</code>: Subtitle and text overlay</li>
-  <li><code class="language-plaintext highlighter-rouge">cut_txt_video.py</code>: Video segmentation with text sync</li>
-  <li><code class="language-plaintext highlighter-rouge">align-subtitles.py</code>: Subtitle alignment and timing</li>
-  <li><code class="language-plaintext highlighter-rouge">corrected-subtitles-by-words.py</code>: Word-level subtitle correction</li>
-  <li><code class="language-plaintext highlighter-rouge">short-end-pub.py</code>: Add promotional end screens</li>
+  <li>MD5-based cache key generation per category (scripts, images, audio)</li>
+  <li>Cache index stored in <code class="language-plaintext highlighter-rouge">cache/cache_index.json</code></li>
+  <li>Stale cache cleanup with configurable age</li>
+  <li>Prevents unnecessary regeneration of existing assets</li>
 </ul>
 
-<p><strong>4. Integration &amp; Deployment</strong></p>
+<p><strong>Logger (<code class="language-plaintext highlighter-rouge">logger.py</code>)</strong>:</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">send-to-youtube.py</code>: Automated YouTube upload with metadata</li>
-  <li><code class="language-plaintext highlighter-rouge">authentification/</code>: OAuth and API authentication system</li>
-  <li><code class="language-plaintext highlighter-rouge">utils.py</code>: Shared utilities and helper functions</li>
-  <li><code class="language-plaintext highlighter-rouge">main.py</code>: Orchestration script for full pipeline execution</li>
+  <li>Rotating file handlers (10 MB max, 5 backups)</li>
+  <li>Job-specific log files (<code class="language-plaintext highlighter-rouge">logs/job_{id}.log</code>)</li>
+  <li>Dedicated loggers for pipeline, queue, and application</li>
+  <li>Structured step lifecycle logging (start, complete, fail)</li>
 </ul>
 
-<p><strong>5. Music &amp; Audio Enhancement</strong></p>
+<p><strong>Notifications (<code class="language-plaintext highlighter-rouge">notifications.py</code>)</strong>:</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate-music.py</code>: Background music generation/selection</li>
-  <li>Audio mixing and volume normalization</li>
-  <li>Multi-track audio synchronization</li>
+  <li>Discord webhook integration with rich embeds</li>
+  <li>Color-coded status messages (green=success, red=error, orange=warning, blue=info)</li>
+  <li>Job lifecycle notifications (started, step progress, completed, failed)</li>
 </ul>
 
-<h3 id="technical-architecture">Technical Architecture</h3>
+<h3 id="7-scripts-organization-scripts">7. Scripts Organization (<code class="language-plaintext highlighter-rouge">scripts/</code>)</h3>
 
-<p><strong>Backend Stack</strong>:</p>
-<ul>
-  <li><strong>Python 3.9+</strong>: Core programming language</li>
-  <li><strong>Flask</strong>: Web framework for API and UI</li>
-  <li><strong>Stable Diffusion WebUI</strong>: Local deployment for image generation</li>
-  <li><strong>Coqui TTS</strong>: Neural voice synthesis</li>
-  <li><strong>MoviePy</strong>: Video editing and assembly</li>
-  <li><strong>OpenCV</strong>: Image processing and effects</li>
-</ul>
+<p>All processing scripts are organized by domain:</p>
 
-<p><strong>Key Integrations</strong>:</p>
-<ul>
-  <li>Stable Diffusion API (local <code class="language-plaintext highlighter-rouge">http://127.0.0.1:7860</code>)</li>
-  <li>YouTube Data API v3 (automated uploads)</li>
-  <li>Custom authentication system (OAuth2)</li>
-  <li>Configuration management (YAML, JSON, XML)</li>
-</ul>
-
-<p><strong>Processing Categories</strong>:</p>
-<ul>
-  <li><strong>Celebrity</strong>: Biography and career videos</li>
-  <li><strong>Geography</strong>: Location and travel documentaries</li>
-  <li><strong>Monument</strong>: Historical and architectural features</li>
-  <li><strong>Movie</strong>: Film analysis and summaries</li>
-  <li><strong>News/Actu</strong>: Current events and news reports</li>
-  <li><strong>Art/Oeuvre</strong>: Artistic works and analysis</li>
-</ul>
-
-<h3 id="innovation--features">Innovation &amp; Features</h3>
-
-<p><strong>Intelligent Scene Management</strong>:</p>
-<ul>
-  <li>Automatic scene detection and splitting</li>
-  <li>Context-aware prompt generation for images</li>
-  <li>Duration optimization based on narration length</li>
-</ul>
-
-<p><strong>Quality Control System</strong>:</p>
-<ul>
-  <li>Multi-stage verification (script, image, audio)</li>
-  <li>Automated error detection and correction</li>
-  <li>Manual intervention points for quality assurance</li>
-</ul>
-
-<p><strong>Scalability</strong>:</p>
-<ul>
-  <li>Batch processing for multiple videos</li>
-  <li>Parallel generation of images and audio</li>
-  <li>Caching system for reusable assets</li>
-</ul>
-
-<p><strong>Customization</strong>:</p>
-<ul>
-  <li>Template system for different video styles</li>
-  <li>Configurable animation parameters</li>
-  <li>Multiple voice profiles and languages</li>
-</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scripts/
+├── script/           # LLM-based script generation &amp; verification
+│   ├── generate_script.py
+│   ├── generate_script_actu.py
+│   ├── verify_script.py
+│   └── verify_script_actu.py
+├── images/           # Image generation, validation &amp; thumbnails
+│   ├── generate_image.py          # Stable Diffusion (celebrity mode)
+│   ├── get_image_pexels.py        # Pexels API (geography/actu/movie)
+│   ├── generate_mignature.py      # Thumbnail generation
+│   ├── verify_image.py            # CLIP score + face detection
+│   ├── validate_sequential_images.py
+│   ├── configure_images.py
+│   └── add_image_details.py
+├── audio/            # TTS synthesis &amp; audio processing
+│   ├── generate_audio.py          # XTTS v2 voice cloning
+│   ├── cut_audio.py
+│   ├── verify_audio.py
+│   └── correct_text_aft_verif.py
+├── video/            # Video editing, animation &amp; subtitles
+│   ├── generate_movement.py       # Celebrity image animation
+│   ├── generate_movement_from_db.py  # DB-based animation (geography/actu)
+│   ├── align_subtitles.py         # Whisper-based subtitle timing
+│   ├── generate_text_on_video.py
+│   ├── cut_txt_video.py           # TikTok video cutting
+│   ├── generate_video_image.py
+│   └── cut.py
+├── music/            # Background music generation
+│   └── generate_music.py          # Facebook MusicGen
+├── batch/            # Batch operations
+│   ├── generate_all_audio.py
+│   ├── generate_all_image.py
+│   └── checklist_final.py
+├── publishing/       # Publishing &amp; promotion
+│   ├── send_to_youtube.py
+│   └── short_end_pub.py
+└── experimental/     # Experimental features
+    └── (image-to-video, deforum)
+</code></pre></div></div>
 
 <h2 id="file-organization">File Organization</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.
-├── generate-script.py
-├── generate-image.py
-├── generate-audio.py
-├── generate-animation.py
-├── generate-video-image.py
+├── app2.py                    # Streamlit web application
+├── pipeline_executor.py       # 6-step pipeline engine
+├── queue_manager.py           # Job queue management
+├── run_pipeline.py            # Subprocess launcher
+├── utils.py                   # Configuration &amp; environment utilities
+├── cache_manager.py           # Intelligent caching system
+├── logger.py                  # Structured logging
+├── notifications.py           # Discord webhook notifications
+├── config.xml                 # Application configuration (languages, modes, models, paths)
+├── services/
+│   ├── script_service.py
+│   ├── image_service.py
+│   ├── audio_service.py
+│   └── video_service.py
+├── ui/
+│   ├── generation_tab.py
+│   ├── queue_tab.py
+│   ├── components.py
+│   └── styles.py
+├── scripts/                   # Processing scripts (see above)
+├── authentification/          # OAuth2 &amp; credentials
 ├── input/
-│   └── Audio/
-│       └── Enregistrement-francais.wav
+│   ├── Audio/                 # Voice reference files (FR/EN/ES)
+│   └── Video_List/            # Excel entity lists per category
 ├── output/
-│   ├── Script/
-│   ├── Image/
-│   ├── Audio/
-│   │   └── scenes/
-│   ├── Video/
-└── stable-diffusion-webui/
+│   ├── Script/                # Generated JSON scripts
+│   ├── Image/                 # Generated scene images
+│   ├── Audio/                 # Synthesized narration audio
+│   ├── Video/                 # Text-overlay videos
+│   ├── Video_Anime/           # Animated scene videos
+│   ├── Final-Video/           # Final assembled videos + TikTok cuts
+│   ├── Music/                 # Generated background music
+│   └── Miniature/             # Video thumbnails
+├── logs/                      # Rotating log files
+├── cache/                     # Cache index &amp; metadata
+└── stable-diffusion-webui/    # AUTOMATIC1111 WebUI (submodule)
 </code></pre></div></div>
+
+<h2 id="automated-pipeline-workflow">Automated Pipeline Workflow</h2>
+
+<h3 id="full-pipeline-queue-mode">Full Pipeline (Queue Mode)</h3>
+
+<ol>
+  <li><strong>User configures</strong> video type, category, entity, mode, language in the Streamlit UI</li>
+  <li><strong>Job added</strong> to the persistent queue via <code class="language-plaintext highlighter-rouge">queue_manager.py</code></li>
+  <li><strong>Worker thread</strong> picks up the job and spawns <code class="language-plaintext highlighter-rouge">run_pipeline.py</code> as a subprocess</li>
+  <li><strong>PipelineExecutor</strong> orchestrates the 6 steps:
+    <ul>
+      <li>Step 1: LLM generates a structured JSON script (scenes, prompts, titles)</li>
+      <li>Steps 2-3: <strong>Images and audio run in parallel</strong> — Stable Diffusion or Pexels for images, XTTS v2 for voice cloning</li>
+      <li>Step 4: Camera movement animation applied to each scene (zoom, pan, slide)</li>
+      <li>Step 5: Whisper-based subtitle alignment (short mode)</li>
+      <li>Step 6: MusicGen background music generation (short mode)</li>
+    </ul>
+  </li>
+  <li><strong>Discord notification</strong> sent at job start, completion, or failure</li>
+  <li><strong>User reviews</strong> the result in the History tab, can upload to YouTube directly</li>
+</ol>
+
+<h3 id="manual-mode-generation-tab">Manual Mode (Generation Tab)</h3>
+
+<p>Each step can also be executed individually with live preview:</p>
 <ul>
-  <li><strong>input/</strong>: source files (text, reference audio)</li>
-  <li><strong>output/</strong>: generated results (JSON scripts, images, audios, videos)</li>
-  <li><strong>stable-diffusion-webui/</strong>: WebUI and models for Stable Diffusion</li>
+  <li>Edit the script JSON directly in the UI</li>
+  <li>Preview generated images in a grid view</li>
+  <li>Listen to audio per scene with prompt editing</li>
+  <li>Watch animated video previews</li>
+  <li>Edit subtitle JSON with live rendering</li>
+  <li>Cut videos for TikTok with time-based selection</li>
+  <li>Upload to YouTube with thumbnail and metadata</li>
 </ul>
 
-<h2 id="workflow">Workflow</h2>
+<h2 id="configuration-configxml">Configuration (<code class="language-plaintext highlighter-rouge">config.xml</code>)</h2>
 
-<h3 id="1-script-preparation">1. Script Preparation</h3>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Languages with voice reference files --&gt;</span>
+<span class="nt">&lt;languages&gt;</span>
+  <span class="nt">&lt;language</span> <span class="na">name=</span><span class="s">"Francais"</span> <span class="na">code=</span><span class="s">"fr"</span> <span class="na">audio=</span><span class="s">"Enregistrement-francais.wav"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;language</span> <span class="na">name=</span><span class="s">"English"</span> <span class="na">code=</span><span class="s">"en"</span> <span class="na">audio=</span><span class="s">"Enregistrement-anglais.wav"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;language</span> <span class="na">name=</span><span class="s">"Espanol"</span> <span class="na">code=</span><span class="s">"es"</span> <span class="na">audio=</span><span class="s">"Enregistrement-espagnol.wav"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/languages&gt;</span>
 
+<span class="c">&lt;!-- Production modes --&gt;</span>
+<span class="nt">&lt;modes&gt;</span>
+  <span class="nt">&lt;mode</span> <span class="na">name=</span><span class="s">"short"</span> <span class="na">nb_scenes=</span><span class="s">"5"</span> <span class="na">nb_images=</span><span class="s">"3"</span> <span class="na">width=</span><span class="s">"1024"</span> <span class="na">height=</span><span class="s">"1024"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;mode</span> <span class="na">name=</span><span class="s">"long"</span> <span class="na">nb_scenes=</span><span class="s">"20"</span> <span class="na">nb_images=</span><span class="s">"3"</span> <span class="na">width=</span><span class="s">"1280"</span> <span class="na">height=</span><span class="s">"720"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/modes&gt;</span>
+
+<span class="c">&lt;!-- AI Models --&gt;</span>
+<span class="nt">&lt;models&gt;</span>
+  <span class="nt">&lt;model</span> <span class="na">name=</span><span class="s">"juggernaut-xl"</span> <span class="na">type=</span><span class="s">"image"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;model</span> <span class="na">name=</span><span class="s">"xtts_v2"</span> <span class="na">type=</span><span class="s">"audio"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;script_models&gt;</span>gemma, deepseek-r1, ministral<span class="nt">&lt;/script_models&gt;</span>
+<span class="nt">&lt;/models&gt;</span>
+</code></pre></div></div>
+
+<h2 id="technical-architecture">Technical Architecture</h2>
+
+<p><strong>Backend Stack</strong>:</p>
 <ul>
-  <li>Write your script and split it into scenes.</li>
-  <li>Each scene contains text and an image prompt.</li>
-  <li>Save the script as JSON in <code class="language-plaintext highlighter-rouge">output/Script/script.json</code>:</li>
+  <li><strong>Python 3.9+</strong>: Core language</li>
+  <li><strong>Streamlit</strong>: Web framework with authentication</li>
+  <li><strong>XML/YAML/JSON</strong>: Configuration management</li>
+  <li><strong>Threading</strong>: Parallel execution and queue worker</li>
 </ul>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"scene"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"texte"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Le soleil se lève sur la ville."</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"prompt_image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A beautiful sunrise over a city skyline, vibrant colors."</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div></div>
-
-<h3 id="2-image-generation">2. Image Generation</h3>
-
+<p><strong>AI Models</strong> (8 models integrated):</p>
 <ul>
-  <li>Run <code class="language-plaintext highlighter-rouge">generate-image.py</code> to generate one image per scene via Stable Diffusion.</li>
-  <li>Images are saved in <code class="language-plaintext highlighter-rouge">output/Image/scene_X.png</code>.</li>
+  <li><strong>Stable Diffusion</strong> (AUTOMATIC1111 WebUI) — Image generation</li>
+  <li><strong>Coqui TTS</strong> (XTTS v2) — Multilingual voice cloning</li>
+  <li><strong>Ollama</strong> (Gemma, DeepSeek, Ministral) — Script generation via LLM</li>
+  <li><strong>CLIP</strong> (OpenAI) — Image-text similarity verification</li>
+  <li><strong>Whisper</strong> (OpenAI) — Subtitle alignment from audio</li>
+  <li><strong>MediaPipe</strong> — Face detection in generated images</li>
+  <li><strong>Facebook MusicGen</strong> — AI-generated background music</li>
+  <li><strong>MoviePy + OpenCV</strong> — Video editing, animation, effects</li>
 </ul>
 
-<h3 id="3-audio-generation">3. Audio Generation</h3>
-
+<p><strong>External APIs</strong>:</p>
 <ul>
-  <li>Run <code class="language-plaintext highlighter-rouge">generate-audio.py</code> to generate narration for each scene with Coqui TTS and a reference audio file.</li>
-  <li>Audio files are saved in <code class="language-plaintext highlighter-rouge">output/Audio/scenes/scene_X.wav</code>.</li>
+  <li>Stable Diffusion API (<code class="language-plaintext highlighter-rouge">http://127.0.0.1:7860</code>)</li>
+  <li>Ollama API (<code class="language-plaintext highlighter-rouge">http://localhost:11434</code>)</li>
+  <li>Pexels API (stock images/videos for geography/actu)</li>
+  <li>YouTube Data API v3 (automated uploads)</li>
+  <li>Discord Webhooks (notifications)</li>
 </ul>
 
-<h3 id="4-animation--video-editing">4. Animation &amp; Video Editing</h3>
+<p><strong>Processing Categories</strong>:</p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Image Source</th>
+      <th>Script Model</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Celebrity</td>
+      <td>Stable Diffusion</td>
+      <td>LLM</td>
+      <td>Biography and career videos</td>
+    </tr>
+    <tr>
+      <td>Geography</td>
+      <td>Pexels API</td>
+      <td>LLM</td>
+      <td>Location and travel documentaries</td>
+    </tr>
+    <tr>
+      <td>Actu (News)</td>
+      <td>Pexels API</td>
+      <td>LLM (actu variant)</td>
+      <td>Current events reports</td>
+    </tr>
+    <tr>
+      <td>Movie</td>
+      <td>Pexels API</td>
+      <td>LLM</td>
+      <td>Film analysis and summaries</td>
+    </tr>
+    <tr>
+      <td>Monument</td>
+      <td>Stable Diffusion</td>
+      <td>LLM</td>
+      <td>Historical and architectural features</td>
+    </tr>
+    <tr>
+      <td>Oeuvre (Art)</td>
+      <td>Stable Diffusion</td>
+      <td>LLM</td>
+      <td>Artistic works and analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="development-challenges--solutions">Development Challenges &amp; Solutions</h2>
+
+<p><strong>Challenge 1: Pipeline Reliability</strong></p>
 <ul>
-  <li>Run <code class="language-plaintext highlighter-rouge">generate-animation.py</code> to create a video for each scene: animation (slow zoom) and audio synchronization.</li>
-  <li>Videos are saved in <code class="language-plaintext highlighter-rouge">output/Video/scene_X.mp4</code>.</li>
+  <li><strong>Problem</strong>: Long-running pipelines (5-20 scenes) could fail mid-execution, wasting all prior work</li>
+  <li><strong>Solution</strong>: Step-by-step execution with automatic retry (2 attempts per step), process management to kill orphans, and queue-based job restart from the exact failed step</li>
 </ul>
 
-<h3 id="5-final-assembly">5. Final Assembly</h3>
-
+<p><strong>Challenge 2: Audio-Visual Synchronization</strong></p>
 <ul>
-  <li>(Optional) Use <code class="language-plaintext highlighter-rouge">generate-video-image.py</code> to merge all scenes into a complete video.</li>
+  <li><strong>Problem</strong>: Ensuring audio narration perfectly matches video duration across scenes</li>
+  <li><strong>Solution</strong>: Dynamic timing calculation, Whisper-based subtitle alignment, and frame rate adjustment with MoviePy</li>
 </ul>
 
-<h2 id="scripts">Scripts</h2>
-
+<p><strong>Challenge 3: Resource Contention</strong></p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">generate-script.py</code>: prepares the JSON script</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-image.py</code>: generates images via Stable Diffusion</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-audio.py</code>: synthesizes voice-over with Coqui TTS</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-animation.py</code>: assembles image and audio into animated video</li>
-  <li><code class="language-plaintext highlighter-rouge">generate-video-image.py</code>: merges scene videos</li>
+  <li><strong>Problem</strong>: Multiple AI models (SD, TTS, LLM) competing for GPU and memory</li>
+  <li><strong>Solution</strong>: Sequential job execution via queue worker, parallel image/audio steps within a job, and process killing before each step to release resources</li>
 </ul>
 
-<h2 id="stable-diffusion-webui">Stable Diffusion WebUI</h2>
-
+<p><strong>Challenge 4: Quality Consistency</strong></p>
 <ul>
-  <li>Used for image generation (<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a>)</li>
-  <li>Must be run locally (<code class="language-plaintext highlighter-rouge">http://127.0.0.1:7860</code>)</li>
-  <li>Place your models and configure the WebUI as needed</li>
+  <li><strong>Problem</strong>: AI-generated content varies in quality across scenes</li>
+  <li><strong>Solution</strong>: Multi-stage verification pipeline (CLIP score for images, face detection via MediaPipe, script validation via LLM), with manual intervention points in the UI</li>
+</ul>
+
+<p><strong>Challenge 5: Multi-language Support</strong></p>
+<ul>
+  <li><strong>Problem</strong>: Supporting multiple languages for narration, scripts, and subtitles</li>
+  <li><strong>Solution</strong>: Language-specific voice reference files, per-language output directories, and LLM prompts adapted for each language</li>
+</ul>
+
+<p><strong>Challenge 6: Observability</strong></p>
+<ul>
+  <li><strong>Problem</strong>: Debugging failed jobs in an automated pipeline with multiple AI models</li>
+  <li><strong>Solution</strong>: Structured logging with rotating files, job-specific log files, step lifecycle tracking, and Discord notifications with error details</li>
 </ul>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
 <ul>
   <li>Python 3.9+</li>
-  <li><a href="https://pypi.org/project/moviepy/">moviepy</a></li>
-  <li><a href="https://pypi.org/project/requests/">requests</a></li>
-  <li><a href="https://github.com/coqui-ai/TTS">Coqui TTS</a></li>
-  <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a></li>
-  <li>Dependencies from <code class="language-plaintext highlighter-rouge">stable-diffusion-webui/requirements.txt</code></li>
+  <li>ffmpeg installed on the system</li>
+  <li>GPU recommended (NVIDIA for CUDA support)</li>
 </ul>
 
-<p>Installation:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> stable-diffusion-webui/requirements.txt
-pip <span class="nb">install </span>moviepy requests TTS
+<p><strong>Python packages</strong>:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>streamlit streamlit-authenticator
+pip <span class="nb">install </span>moviepy requests TTS openai-whisper
+pip <span class="nb">install </span>transformers mediapipe ollama
+pip <span class="nb">install </span>pydub soundfile openpyxl pyyaml
+pip <span class="nb">install</span> <span class="nt">-r</span> stable-diffusion-webui/requirements.txt
+</code></pre></div></div>
+
+<p><strong>Services to run</strong>:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Stable Diffusion WebUI (image generation)</span>
+<span class="nb">cd </span>stable-diffusion-webui <span class="o">&amp;&amp;</span> ./webui.sh <span class="nt">--api</span>
+
+<span class="c"># Ollama (LLM for script generation)</span>
+ollama serve
+ollama pull gemma3:12b
+
+<span class="c"># Streamlit application</span>
+streamlit run app2.py
 </code></pre></div></div>
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
 <ul>
-  <li><strong>Stable Diffusion API error</strong>: check that the WebUI is running and the model is loaded</li>
-  <li><strong>Module not found</strong>: install missing Python packages</li>
-  <li><strong>Audio not generated</strong>: check the path to the reference WAV file</li>
-  <li><strong>Image/audio mismatch</strong>: ensure scene numbers match</li>
-</ul>
-
-<h2 id="development-challenges--solutions">Development Challenges &amp; Solutions</h2>
-
-<p><strong>Challenge 1: Audio-Visual Synchronization</strong></p>
-<ul>
-  <li><strong>Problem</strong>: Ensuring audio narration perfectly matches video duration</li>
-  <li><strong>Solution</strong>: Dynamic timing calculation, audio stretching/compression, and frame rate adjustment</li>
-</ul>
-
-<p><strong>Challenge 2: AI Model Integration</strong></p>
-<ul>
-  <li><strong>Problem</strong>: Stable Diffusion and TTS models require significant computational resources</li>
-  <li><strong>Solution</strong>: Local GPU deployment, request queuing, and caching mechanisms</li>
-</ul>
-
-<p><strong>Challenge 3: Quality Consistency</strong></p>
-<ul>
-  <li><strong>Problem</strong>: AI-generated content can vary in quality</li>
-  <li><strong>Solution</strong>: Multi-stage verification pipeline with manual review checkpoints</li>
-</ul>
-
-<p><strong>Challenge 4: Scalability</strong></p>
-<ul>
-  <li><strong>Problem</strong>: Processing multiple videos simultaneously</li>
-  <li><strong>Solution</strong>: Asynchronous task processing, batch operations, and resource management</li>
+  <li><strong>Stable Diffusion API error</strong>: check that the WebUI is running on port 7860 with <code class="language-plaintext highlighter-rouge">--api</code> flag</li>
+  <li><strong>Ollama connection refused</strong>: ensure <code class="language-plaintext highlighter-rouge">ollama serve</code> is running on port 11434</li>
+  <li><strong>Audio not generated</strong>: verify the voice reference WAV file path in <code class="language-plaintext highlighter-rouge">config.xml</code></li>
+  <li><strong>Queue stuck</strong>: check <code class="language-plaintext highlighter-rouge">logs/queue.log</code> and <code class="language-plaintext highlighter-rouge">logs/job_{id}.log</code> for error details</li>
+  <li><strong>Discord notifications not sent</strong>: verify the webhook URL in <code class="language-plaintext highlighter-rouge">.env</code></li>
+  <li><strong>Image/audio mismatch</strong>: ensure scene numbers match in the script JSON</li>
+  <li><strong>Process conflicts</strong>: use the “kill process” button in the UI or check for orphan Python processes</li>
 </ul>
 
 <h2 id="use-cases--applications">Use Cases &amp; Applications</h2>
 
 <ul>
-  <li><strong>Educational Content</strong>: Create explainer videos on any topic</li>
-  <li><strong>Social Media</strong>: Generate engaging short-form content</li>
-  <li><strong>Marketing</strong>: Product presentations and promotional videos</li>
-  <li><strong>Documentation</strong>: Tutorial and how-to videos</li>
-  <li><strong>News</strong>: Automated news reports with visual support</li>
-  <li><strong>Entertainment</strong>: Story-telling and narrative videos</li>
+  <li><strong>Educational Content</strong>: Explainer videos on any topic with AI narration</li>
+  <li><strong>Social Media</strong>: TikTok-ready short-form content with automatic cutting</li>
+  <li><strong>News</strong>: Automated news reports with Pexels stock footage</li>
+  <li><strong>Documentary</strong>: Geography and monument documentaries with images</li>
+  <li><strong>Entertainment</strong>: Celebrity biographies, movie analyses, art features</li>
+  <li><strong>Marketing</strong>: Product presentations with custom voice and music</li>
 </ul>
 
 <h2 id="future-enhancements">Future Enhancements</h2>
 
 <ul>
-  <li>Multi-language support with automatic translation</li>
-  <li>Real-time video generation and streaming</li>
+  <li>Real-time video generation preview and streaming</li>
   <li>Advanced animation effects (3D transitions, particles)</li>
-  <li>AI-powered script writing assistance</li>
   <li>Video style transfer and artistic filters</li>
-  <li>Integration with more TTS and image generation models</li>
-  <li>Cloud deployment for scalability</li>
+  <li>Integration with more TTS models (ElevenLabs, Bark)</li>
+  <li>Cloud deployment for horizontal scalability</li>
+  <li>A/B testing for thumbnail and title optimization</li>
+  <li>Analytics dashboard for generated content performance</li>
 </ul>
 
 <h2 id="performance-metrics">Performance Metrics</h2>
 
 <ul>
+  <li><strong>Script Generation</strong>: ~10-30 seconds (LLM-dependent)</li>
   <li><strong>Image Generation</strong>: ~5-10 seconds per scene (GPU-dependent)</li>
-  <li><strong>Audio Synthesis</strong>: ~2-3 seconds per scene</li>
-  <li><strong>Video Assembly</strong>: ~1-2 seconds per scene</li>
-  <li><strong>Total Pipeline</strong>: ~2-5 minutes for a 5-scene video</li>
+  <li><strong>Audio Synthesis</strong>: ~3-5 seconds per scene</li>
+  <li><strong>Video Animation</strong>: ~2-4 seconds per scene</li>
+  <li><strong>Subtitle Alignment</strong>: ~5-10 seconds total</li>
+  <li><strong>Music Generation</strong>: ~15-30 seconds</li>
+  <li><strong>Total Pipeline (short, 5 scenes)</strong>: ~3-5 minutes</li>
+  <li><strong>Total Pipeline (long, 20 scenes)</strong>: ~15-25 minutes</li>
 </ul>
+
+<hr />
+
+<h2 id="detailed-ai-models">Detailed AI Models</h2>
+
+<h3 id="1-stable-diffusion-automatic1111-webui">1. <strong>Stable Diffusion (AUTOMATIC1111 WebUI)</strong></h3>
+<ul>
+  <li><strong>Model</strong>: Juggernaut-XL with face detail LoRA</li>
+  <li><strong>Usage</strong>: Image generation from text prompts (scenes, thumbnails)</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/images/generate_image.py
+</span><span class="n">STABLE_DIFFUSION_URL</span> <span class="o">=</span> <span class="sh">"</span><span class="s">http://127.0.0.1:7860/sdapi/v1/txt2img</span><span class="sh">"</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">STABLE_DIFFUSION_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>:
+    <ul>
+      <li>WebUI running with <code class="language-plaintext highlighter-rouge">--api</code> flag</li>
+      <li>Models <code class="language-plaintext highlighter-rouge">.safetensors</code> in <code class="language-plaintext highlighter-rouge">models/Stable-diffusion/</code></li>
+      <li>LoRA in <code class="language-plaintext highlighter-rouge">models/Lora/</code></li>
+    </ul>
+  </li>
+  <li><strong>Features</strong>: txt2img, img2img, LoRA, VAE, upscalers, face restoration</li>
+</ul>
+
+<hr />
+
+<h3 id="2-coqui-tts-xtts-v2">2. <strong>Coqui TTS (XTTS v2)</strong></h3>
+<ul>
+  <li><strong>Model</strong>: <code class="language-plaintext highlighter-rouge">tts_models/multilingual/multi-dataset/xtts_v2</code></li>
+  <li><strong>Usage</strong>: Multilingual voice cloning from a WAV reference file</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/audio/generate_audio.py
+</span><span class="kn">from</span> <span class="n">TTS.api</span> <span class="kn">import</span> <span class="n">TTS</span>
+<span class="n">tts</span> <span class="o">=</span> <span class="nc">TTS</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="sh">"</span><span class="s">tts_models/multilingual/multi-dataset/xtts_v2</span><span class="sh">"</span><span class="p">,</span> <span class="n">gpu</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">tts</span><span class="p">.</span><span class="nf">tts_to_file</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">scene_text</span><span class="p">,</span> <span class="n">speaker_wav</span><span class="o">=</span><span class="n">reference_wav</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="n">output_path</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install TTS</code>, WAV reference file per language</li>
+  <li><strong>Features</strong>: multilingual synthesis (FR/EN/ES), voice cloning, per-scene audio generation</li>
+</ul>
+
+<hr />
+
+<h3 id="3-ollama-gemma-deepseek-ministral">3. <strong>Ollama (Gemma, DeepSeek, Ministral)</strong></h3>
+<ul>
+  <li><strong>Models</strong>: <code class="language-plaintext highlighter-rouge">gemma3:12b</code>, <code class="language-plaintext highlighter-rouge">deepseek-r1:latest</code>, <code class="language-plaintext highlighter-rouge">ministral-3:14b</code></li>
+  <li><strong>Usage</strong>: LLM-based script generation, verification, translation</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/script/generate_script.py
+</span><span class="kn">from</span> <span class="n">ollama</span> <span class="kn">import</span> <span class="n">Client</span>
+<span class="n">client</span> <span class="o">=</span> <span class="nc">Client</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="sh">'</span><span class="s">http://localhost:11434</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">gemma3:12b</span><span class="sh">"</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: Ollama server running, models pulled</li>
+  <li><strong>Features</strong>: structured JSON script output, scene/title/prompt generation, double LLM validation</li>
+</ul>
+
+<hr />
+
+<h3 id="4-clip-openai">4. <strong>CLIP (OpenAI)</strong></h3>
+<ul>
+  <li><strong>Model</strong>: <code class="language-plaintext highlighter-rouge">openai/clip-vit-base-patch32</code></li>
+  <li><strong>Usage</strong>: Image-text similarity scoring for quality verification</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/images/verify_image.py
+</span><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">CLIPProcessor</span><span class="p">,</span> <span class="n">CLIPModel</span>
+<span class="n">clip_model</span> <span class="o">=</span> <span class="n">CLIPModel</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">openai/clip-vit-base-patch32</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">clip_processor</span> <span class="o">=</span> <span class="n">CLIPProcessor</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">openai/clip-vit-base-patch32</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install transformers</code>, GPU recommended</li>
+  <li><strong>Features</strong>: CLIP score calculation, automatic filtering of low-relevance images</li>
+</ul>
+
+<hr />
+
+<h3 id="5-whisper-openai">5. <strong>Whisper (OpenAI)</strong></h3>
+<ul>
+  <li><strong>Model</strong>: Whisper base</li>
+  <li><strong>Usage</strong>: Automatic subtitle alignment from audio transcription</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/video/align_subtitles.py
+</span><span class="kn">import</span> <span class="n">whisper</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">whisper</span><span class="p">.</span><span class="nf">load_model</span><span class="p">(</span><span class="sh">"</span><span class="s">base</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">transcribe</span><span class="p">(</span><span class="n">audio_path</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install openai-whisper</code>, ffmpeg</li>
+  <li><strong>Features</strong>: multilingual transcription, word-level timing, subtitle JSON export</li>
+</ul>
+
+<hr />
+
+<h3 id="6-mediapipe-face-detection">6. <strong>MediaPipe (Face Detection)</strong></h3>
+<ul>
+  <li><strong>Model</strong>: MediaPipe Face Detection</li>
+  <li><strong>Usage</strong>: Detect faces in generated images for quality filtering</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/images/verify_image.py
+</span><span class="kn">import</span> <span class="n">mediapipe</span> <span class="k">as</span> <span class="n">mp</span>
+<span class="n">mp_face_detection</span> <span class="o">=</span> <span class="n">mp</span><span class="p">.</span><span class="n">solutions</span><span class="p">.</span><span class="n">face_detection</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install mediapipe</code></li>
+  <li><strong>Features</strong>: face detection, automatic rejection of images without expected faces</li>
+</ul>
+
+<hr />
+
+<h3 id="7-facebook-musicgen">7. <strong>Facebook MusicGen</strong></h3>
+<ul>
+  <li><strong>Model</strong>: <code class="language-plaintext highlighter-rouge">facebook/musicgen-medium</code></li>
+  <li><strong>Usage</strong>: AI-generated background music from text prompts</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/music/generate_music.py
+</span><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">AutoProcessor</span><span class="p">,</span> <span class="n">MusicgenForConditionalGeneration</span>
+<span class="n">processor</span> <span class="o">=</span> <span class="n">AutoProcessor</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">facebook/musicgen-medium</span><span class="sh">"</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">MusicgenForConditionalGeneration</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">facebook/musicgen-medium</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install transformers pydub soundfile</code>, ffmpeg</li>
+  <li><strong>Features</strong>: original music generation from prompts, automatic duration matching, direct pipeline integration</li>
+</ul>
+
+<hr />
+
+<h3 id="8-moviepy--opencv">8. <strong>MoviePy + OpenCV</strong></h3>
+<ul>
+  <li><strong>Usage</strong>: Video editing, camera animation (zoom, pan, slide), audio synchronization, subtitle overlay</li>
+  <li><strong>Code excerpt</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: scripts/video/generate_movement.py
+</span><span class="kn">from</span> <span class="n">moviepy.editor</span> <span class="kn">import</span> <span class="n">ImageSequenceClip</span><span class="p">,</span> <span class="n">AudioFileClip</span><span class="p">,</span> <span class="n">VideoFileClip</span><span class="p">,</span> <span class="n">concatenate_videoclips</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Prerequisites</strong>: <code class="language-plaintext highlighter-rouge">pip install moviepy opencv-python</code>, ffmpeg</li>
+  <li><strong>Features</strong>: image animation, TikTok/YouTube crop, subtitle rendering, video concatenation, music mixing</li>
+</ul>
+
+<hr />
 
 <h2 id="resources--credits">Resources &amp; Credits</h2>
 
 <ul>
   <li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion WebUI</a></li>
   <li><a href="https://github.com/coqui-ai/TTS">Coqui TTS</a></li>
-  <li><a href="https://zulko.github.io/moviepy/">moviepy</a></li>
-  <li><strong>Developer</strong>: Cédric Chanfreau</li>
+  <li><a href="https://ollama.ai/">Ollama</a></li>
+  <li><a href="https://zulko.github.io/moviepy/">MoviePy</a></li>
+  <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a></li>
+  <li><a href="https://huggingface.co/facebook/musicgen-medium">Facebook MusicGen</a></li>
+  <li><a href="https://www.pexels.com/api/">Pexels API</a></li>
+  <li><strong>Developer</strong>: Cedric Chanfreau</li>
   <li><strong>Web Application</strong>: <a href="https://video-automation.littlenuage.com/">video-automation.littlenuage.com</a></li>
 </ul>
 
@@ -377,274 +702,15 @@ pip <span class="nb">install </span>moviepy requests TTS
 <p><strong>Access the application</strong>: <a href="https://video-automation.littlenuage.com/">https://video-automation.littlenuage.com/</a></p>
 
 <ol>
-  <li>Write your script with scene descriptions</li>
-  <li>Provide image prompts for each scene</li>
-  <li>Upload a voice reference (optional)</li>
-  <li>Click generate and wait for your video!</li>
+  <li>Select your video type and category</li>
+  <li>Choose an entity from the list (or add your own)</li>
+  <li>Pick a language and production mode (short/long)</li>
+  <li>Add the job to the queue or generate step-by-step</li>
+  <li>Monitor progress via Discord notifications</li>
+  <li>Download or upload directly to YouTube</li>
 </ol>
 
 <p><img src="/img/automation-video/workflow.png" alt="IA Automation Workflow" style="width: 100%;" /></p>
-
-<hr />
-
-<h2 id="détail-des-modèles-dia-utilisés">Détail des modèles d’IA utilisés</h2>
-
-<p>Voici un récapitulatif des principaux modèles d’IA utilisés dans ce projet, avec leur nom, utilisation, extrait de code, prérequis, fonctionnalités et features :</p>
-
-<hr />
-
-<h3 id="1-stable-diffusion-automatic1111-webui">1. <strong>Stable Diffusion (AUTOMATIC1111 WebUI)</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : Stable Diffusion (WebUI)</li>
-  <li><strong>Utilisation</strong> : Génération d’images à partir de prompts textuels (pour les scènes, miniatures, etc.)</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: generate-image.py
-</span><span class="n">STABLE_DIFFUSION_URL</span> <span class="o">=</span> <span class="sh">"</span><span class="s">http://127.0.0.1:7860/sdapi/v1/txt2img</span><span class="sh">"</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">STABLE_DIFFUSION_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li>Lancer le serveur WebUI :
-        <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>stable-diffusion-webui
-./webui.sh
-</code></pre></div>        </div>
-      </li>
-      <li>Modèles <code class="language-plaintext highlighter-rouge">.safetensors</code> dans Stable-diffusion</li>
-      <li>LoRA dans Lora</li>
-      <li>Python, dépendances listées dans le README</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Génération d’images (txt2img, img2img)</li>
-      <li>API REST complète</li>
-      <li>Support LoRA, VAE, upscalers, face restoration, etc.</li>
-      <li>Génération de miniatures, images de scènes, etc.</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="2-coqui-tts">2. <strong>Coqui TTS</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : Coqui TTS (xtts_v2)</li>
-  <li><strong>Utilisation</strong> : Synthèse vocale multilingue, clonage de voix à partir d’un fichier WAV de référence</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: short-end-pub.py
-</span><span class="kn">from</span> <span class="n">TTS.api</span> <span class="kn">import</span> <span class="n">TTS</span>
-<span class="n">tts</span> <span class="o">=</span> <span class="nc">TTS</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="sh">"</span><span class="s">tts_models/multilingual/multi-dataset/xtts_v2</span><span class="sh">"</span><span class="p">,</span> <span class="n">gpu</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-<span class="n">tts</span><span class="p">.</span><span class="nf">tts_to_file</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">phrase</span><span class="p">,</span> <span class="n">speaker_wav</span><span class="o">=</span><span class="n">speaker_wav_path</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="n">audio_path</span><span class="p">)</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install TTS</code></li>
-      <li>Fichier WAV de référence pour la voix</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Synthèse vocale multilingue</li>
-      <li>Clonage de voix</li>
-      <li>Génération de fichiers audio pour chaque scène</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="3-ollama-llm--gemma-mistral-deepseek-etc">3. <strong>Ollama (LLM : Gemma, Mistral, Deepseek, etc.)</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : Ollama (modèles : gemma3:12b, ministral-3:14b, deepseek, etc.)</li>
-  <li><strong>Utilisation</strong> : Génération de scripts, correction, traduction, vérification de scènes</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: generate-script-actu.py
-</span><span class="kn">from</span> <span class="n">ollama</span> <span class="kn">import</span> <span class="n">Client</span>
-<span class="n">client</span> <span class="o">=</span> <span class="nc">Client</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="sh">'</span><span class="s">http://localhost:11434</span><span class="sh">'</span><span class="p">)</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="p">.</span><span class="nf">generate</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="sh">"</span><span class="s">gemma3:12b</span><span class="sh">"</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li>Serveur Ollama lancé localement (<code class="language-plaintext highlighter-rouge">ollama serve</code>)</li>
-      <li>Modèles téléchargés via Ollama (<code class="language-plaintext highlighter-rouge">ollama pull gemma:12b</code>, etc.)</li>
-      <li><code class="language-plaintext highlighter-rouge">pip install ollama</code></li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Génération de scripts vidéo (scènes, titres, prompts images)</li>
-      <li>Correction et vérification de textes/scènes</li>
-      <li>Traduction automatique (français/anglais)</li>
-      <li>Double validation IA pour la conformité</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="4-clip-openai">4. <strong>CLIP (OpenAI)</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : CLIP (openai/clip-vit-base-patch16, patch32)</li>
-  <li><strong>Utilisation</strong> : Vérification de la correspondance image/texte (score CLIP), filtrage d’images</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: verify-image.py
-</span><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">CLIPProcessor</span><span class="p">,</span> <span class="n">CLIPModel</span>
-<span class="n">clip_model</span> <span class="o">=</span> <span class="n">CLIPModel</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">openai/clip-vit-base-patch32</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">clip_processor</span> <span class="o">=</span> <span class="n">CLIPProcessor</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">openai/clip-vit-base-patch32</span><span class="sh">"</span><span class="p">)</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install transformers</code></li>
-      <li>GPU recommandé pour rapidité</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Calcul du score CLIP entre image et prompt</li>
-      <li>Filtrage automatique des images non pertinentes</li>
-      <li>Utilisé dans la vérification et la sélection d’images</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="5-moviepy">5. <strong>MoviePy</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : MoviePy</li>
-  <li><strong>Utilisation</strong> : Montage vidéo, animation d’images, ajout d’audio, sous-titres, etc.</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: generate-movement.py
-</span><span class="kn">from</span> <span class="n">moviepy.editor</span> <span class="kn">import</span> <span class="n">ImageSequenceClip</span><span class="p">,</span> <span class="n">AudioFileClip</span><span class="p">,</span> <span class="n">VideoFileClip</span><span class="p">,</span> <span class="n">concatenate_videoclips</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install moviepy</code></li>
-      <li>ffmpeg installé sur le système</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Animation d’images (zoom, slide, crop TikTok/YouTube)</li>
-      <li>Ajout d’audio, sous-titres, musique</li>
-      <li>Génération des vidéos finales</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="6-whisper">6. <strong>Whisper</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : Whisper (OpenAI)</li>
-  <li><strong>Utilisation</strong> : Alignement automatique des sous-titres à partir de l’audio</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: align-subtitles.py
-</span><span class="kn">import</span> <span class="n">whisper</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">whisper</span><span class="p">.</span><span class="nf">load_model</span><span class="p">(</span><span class="sh">"</span><span class="s">base</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">transcribe</span><span class="p">(</span><span class="n">audio_path</span><span class="p">)</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install openai-whisper</code></li>
-      <li>ffmpeg</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Transcription et alignement des sous-titres</li>
-      <li>Support multilingue</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="7-mediapipe-face-detection">7. <strong>MediaPipe (Face Detection)</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : MediaPipe</li>
-  <li><strong>Utilisation</strong> : Détection de visages pour filtrer les images générées</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: verify-image.py
-</span><span class="kn">import</span> <span class="n">mediapipe</span> <span class="k">as</span> <span class="n">mp</span>
-<span class="n">mp_face_detection</span> <span class="o">=</span> <span class="n">mp</span><span class="p">.</span><span class="n">solutions</span><span class="p">.</span><span class="n">face_detection</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install mediapipe</code></li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Détection de visages dans les images</li>
-      <li>Filtrage automatique des images sans visage</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h3 id="8-facebook-musicgen">8. <strong>Facebook MusicGen</strong></h3>
-<ul>
-  <li><strong>Nom</strong> : Facebook MusicGen (musicgen-medium)</li>
-  <li><strong>Utilisation</strong> : Génération automatique de musique à partir d’un prompt textuel pour accompagner les vidéos</li>
-  <li><strong>Extrait de code</strong> :
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># filepath: generate-music.py
-</span><span class="kn">from</span> <span class="n">transformers</span> <span class="kn">import</span> <span class="n">AutoProcessor</span><span class="p">,</span> <span class="n">MusicgenForConditionalGeneration</span>
-<span class="n">processor</span> <span class="o">=</span> <span class="n">AutoProcessor</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">facebook/musicgen-medium</span><span class="sh">"</span><span class="p">)</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">MusicgenForConditionalGeneration</span><span class="p">.</span><span class="nf">from_pretrained</span><span class="p">(</span><span class="sh">"</span><span class="s">facebook/musicgen-medium</span><span class="sh">"</span><span class="p">)</span>
-<span class="c1"># ...
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Pré-requis</strong> :
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">pip install transformers pydub soundfile moviepy</code></li>
-      <li>Modèle téléchargé automatiquement par HuggingFace Transformers</li>
-      <li>ffmpeg installé sur le système</li>
-    </ul>
-  </li>
-  <li><strong>Fonctionnalités / Features</strong> :
-    <ul>
-      <li>Génération de musique originale à partir d’un prompt textuel</li>
-      <li>Adaptation automatique à la durée de la vidéo</li>
-      <li>Intégration directe dans le pipeline de génération vidéo</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<hr />
-
-<p><strong>Pour chaque modèle, tu trouveras les chemins de fichiers et extraits de code dans les fichiers listés ci-dessus.</strong><br />
-Pour plus de détails sur l’installation et la configuration, consulte la section “Setup &amp; Installation” du <a href="README.md">README.md</a>.</p>
-
-<hr />
-
-<p><strong>Liens utiles :</strong></p>
-<ul>
-  <li><a href="generate-image.py">generate-image.py</a></li>
-  <li><a href="short-end-pub.py">short-end-pub.py</a></li>
-  <li><a href="generate-script-actu.py">generate-script-actu.py</a></li>
-  <li><a href="verify-image.py">verify-image.py</a></li>
-  <li><a href="align-subtitles.py">align-subtitles.py</a></li>
-  <li><a href="generate-movement.py">generate-movement.py</a></li>
-  <li><a href="README.md">README.md</a></li>
-</ul>
-
 
       </div>
     </main><footer class="site-footer h-card">
@@ -1176,9 +1242,15 @@ Pour plus de détails sur l’installation et la configuration, consulte la sect
 - Outils : Git, Docker, Linux, RTOS
 
 **Expérience**
-- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
-  → Développement firmware automotive, tests ISO 26262
-- 15+ projets académiques et personnels
+- Ingénieur Logiciel Embarqué Cybersécurité - Schaeffler (Toulouse, Oct 2024 - Sept 2025)
+  → Secure Logger pour ECUs automobiles, revue de code critique
+- Alternance Ingénieur Logiciel Embarqué - Vitesco Technologies (Toulouse, Sept 2022 - Sept 2024)
+  → Solutions reprogrammation ECU, automatisation tests Python/Jenkins, MISRA/CERT
+- Stage international - Vitesco Technologies (Iasi, Roumanie, Juil - Sept 2024)
+  → Gestion mémoire Flash sur nouveau microcontrôleur
+- Stage - Siemens (Toulouse, Avr - Juil 2022)
+  → Analyse rack frein VAL208NG, banc de tests cartes électroniques
+- 25+ projets académiques et personnels
 
 **Projets clés**
 - Robot autonome avec IA et contrôle moteur
@@ -1188,7 +1260,7 @@ Pour plus de détails sur l’installation et la configuration, consulte la sect
 - Portfolio web avec chatbot IA
 
 **Objectif**
-Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Recherche CDI Ingénieur Systèmes Embarqués / Cybersécurité (dès sept 2025)
 Secteurs : Automobile, Aéronautique, Robotique, IoT
 
 **Liens importants**

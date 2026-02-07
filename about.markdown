@@ -14,7 +14,7 @@ Driven by a passion for electronics, computer science, and embedded systems, I d
 
 INSA Toulouse is a school that offers a wide range of courses in the fields of electronics, computer science, and embedded systems. The school's reputation and the quality of the courses offered are the main reasons why I chose to study there.
 
-During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge an invaluable asset for an engineering career.
+During the open house days at INSA, I was particularly impressed by the quality of education and the teaching approach, which integrates theory with hands-on experience. The apprenticeship program at INSA perfectly aligns with my learning style, offering the opportunity to gain real-world professional experience alongside theoretical knowledge — an invaluable asset for an engineering career.
 
 Joining INSA has allowed me to explore the role of an engineer in a professional environment. It has provided a deeper understanding of the industry and helped me enhance both my technical expertise and confidence in decision-making. The balance between academic studies and real-life project applications is the ideal framework to develop my engineering skills.
 
@@ -68,29 +68,12 @@ The partnership with ENSEEIHT provides access to state-of-the-art resources and 
 
 # After INSA Toulouse
 
-Upon completing my engineering degree, I have three potential paths to consider:
+Having graduated with both my Engineering Diploma from INSA Toulouse and my Master 2 REOC from ENSEEIHT, I am now actively seeking a full-time position as an Embedded Software Engineer. My experience at Schaeffler in automotive cybersecurity, combined with my apprenticeship at Vitesco Technologies and my internship in Romania, has given me a strong foundation in embedded systems, software development, and cybersecurity.
 
-#### Pursue a Master's in Cybersecurity
-
-I plan to pursue a specialized master's degree in cybersecurity, specifically the TLS-SEC program. This master's in cybersecurity will enable me to develop expertise in a critical field in today’s digital world. With the rise of interconnected systems, cybersecurity is a priority for companies, and I aim to contribute to the protection of critical infrastructures against threats.
-
-This master's degree will complement my background in embedded systems and equip me with the tools needed to work on securing intelligent systems, while also enhancing my versatility in advanced technologies. INSA Toulouse, with its focus on innovation and cutting-edge technological challenges, has provided me with a solid foundation to pursue this goal.
-
-#### Start Working in Toulouse
-
-Another option is to start working in Toulouse to gain some professional experience. Toulouse is a hub for technology and engineering, offering numerous opportunities in the field of embedded systems. By working locally, I can build a strong professional network and apply my skills in a dynamic and innovative environment.
-
-#### Go Abroad to the United States
-
-I am also considering going abroad to the United States to gain unique experience and discover new opportunities. The US is known for its advanced technological landscape and innovation-driven culture. Working there would allow me to broaden my horizons, learn from leading experts in the field, and contribute to cutting-edge projects in embedded systems and cybersecurity.
+I am open to opportunities in France and abroad, in sectors such as automotive, aerospace, robotics, and IoT. I am eager to contribute my technical skills and international experience to innovative projects in a dynamic engineering environment.
 
 
 ---
-
-# Conclusion
-
-My journey at INSA Toulouse has been a key stepping stone in fulfilling my passion for electronics and smart systems. The ISS specialization in my final year is an important step toward gaining advanced skills, and pursuing a Master's in cybersecurity (TLS-SEC) is the logical culmination of my professional goals. I am eager to continue learning and contributing to innovative projects in the fields of embedded systems and cybersecurity.
-
 
 #### Summary of my year in ISS
 
@@ -98,9 +81,13 @@ During my year in the ISS specialization, I learned a lot of new concepts that a
 
 One significant positive aspect of the ISS specialization is that it gave me the opportunity to pursue an additional master's degree specialized in Embedded Network and Connected Object. This additional qualification is highly valuable for my CV and has helped me deepen my knowledge of networks.
 
-Moreover, during this year and the two previous ones, I learned many concepts which made my mind a bit disorganized. However, thanks to my perseverance, I know that I can manage every project successfully through my dedication and application.
+Moreover, during this year and the two previous ones, I learned many concepts that covered a broad range of concepts across multiple disciplines. However, thanks to my perseverance, I know that I can manage every project successfully through my dedication and application.
 
-Looking ahead, I have many questions about my future, but I am determined to move forward and make the most of the opportunities that come my way.
+---
+
+# Conclusion
+
+My journey at INSA Toulouse has been a key stepping stone in fulfilling my passion for electronics and smart systems. The ISS specialization in my final year, combined with the Master 2 REOC obtained at ENSEEIHT, has given me advanced skills in embedded systems, IoT, and cybersecurity. I am eager to continue learning and contributing to innovative projects in these fields.
 
 
 <style>

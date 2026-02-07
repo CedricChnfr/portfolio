@@ -7,19 +7,19 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Service Oriented Architecture" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to My Courses 2024-2025 Service Oriented Architecture PART A: GENERALITIES Presentation The Service Oriented Architecture (SOA) course was a guided dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context This course was really useful as the increasing demand for systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies. My Function In this course, I was responsible for: Understanding the principles of service-oriented architectures. Designing and implementing service-oriented systems. Conducting experiments to test the efficiency and scalability of various service architectures. PART C: TECHNICAL PART This section explores the technical aspects of the Service Architecture course mainly learnt during technical labs focusing on SOAP, REST and microservices. Technical Concepts Learned 1. SOAP Architecture I learned about the SOAP (Simple Object Access Protocol) architecture which is a protocol for exchanging structured information in web services. SOAP uses XML for message formatting and relies on other application layer protocols, such as HTTP or SMTP, for message negotiation and transmission. SOAP Request Envelope: The request envelope contains the SOAP message that is sent to the web service. For example, if the chain is “cedric”, the SOAP request envelope would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; SOAP Response: The response is returned by the web service after processing the request. For example, if the response returns 6, the SOAP response would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyResponse&gt; &lt;web:result&gt;6&lt;/web:result&gt; &lt;/web:MyResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; 2. REST Architecture I also learned about REST (Representational State Transfer), an architectural style that uses standard HTTP methods (POST, GET, PUT, DELETE) to interact with resources. POST: Creates a new resource, e.g., POST /users creates a new user. GET: Retrieves a resource, e.g., GET /users/1 retrieves user with ID 1. PUT: Updates a resource, e.g., PUT /users/1 updates user with ID 1. DELETE: Deletes a resource, e.g., DELETE /users/1 deletes user with ID 1. I developed RESTful services for managing user requests using JSON for data interchange and tools like Postman for testing. @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; // Get all users @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } // Get a user by ID @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } // Create a new user @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } // Update an existing user @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } // Delete a user by ID @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } 3. Microservices Development Microservices are an architectural style that structures an application as a collection of coupled services. Each service is independently deployable and scalable. I used Spring Boot to create microservices for user management, volunteer management, request management, and feedback management (refer to Project Report) . PART D: ANALYTICAL PART Knowledge and Skills Mobilized Understanding of service-oriented architecture concepts and features. Development of distributed architectures using web services. Deployment and configuration of SOA using SOAP and REST. Design, development, and deployment of microservice architectures. Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications. Self Evaluation Using all the new concepts learned during the course was at first a bit complicated but fortunately the tutorials were well-structured allowing me to learn step by step. Also, there was a large number of practical sessions to practice and understand all the concepts. As I am not used to Java, I had to relearn the basics of this language which was a bit challenging. I didn’t participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints. My Opinion Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. For example, just by looking into a website network and understanding all the requests in the background. Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I’d prefer to code in C for my professional future, I can now apply for Java positions if needed. Project Report Project Report Open Complete Report Open Lab Subject Open Complete Report" />
-<meta property="og:description" content="← Back to My Courses 2024-2025 Service Oriented Architecture PART A: GENERALITIES Presentation The Service Oriented Architecture (SOA) course was a guided dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context This course was really useful as the increasing demand for systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies. My Function In this course, I was responsible for: Understanding the principles of service-oriented architectures. Designing and implementing service-oriented systems. Conducting experiments to test the efficiency and scalability of various service architectures. PART C: TECHNICAL PART This section explores the technical aspects of the Service Architecture course mainly learnt during technical labs focusing on SOAP, REST and microservices. Technical Concepts Learned 1. SOAP Architecture I learned about the SOAP (Simple Object Access Protocol) architecture which is a protocol for exchanging structured information in web services. SOAP uses XML for message formatting and relies on other application layer protocols, such as HTTP or SMTP, for message negotiation and transmission. SOAP Request Envelope: The request envelope contains the SOAP message that is sent to the web service. For example, if the chain is “cedric”, the SOAP request envelope would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; SOAP Response: The response is returned by the web service after processing the request. For example, if the response returns 6, the SOAP response would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyResponse&gt; &lt;web:result&gt;6&lt;/web:result&gt; &lt;/web:MyResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; 2. REST Architecture I also learned about REST (Representational State Transfer), an architectural style that uses standard HTTP methods (POST, GET, PUT, DELETE) to interact with resources. POST: Creates a new resource, e.g., POST /users creates a new user. GET: Retrieves a resource, e.g., GET /users/1 retrieves user with ID 1. PUT: Updates a resource, e.g., PUT /users/1 updates user with ID 1. DELETE: Deletes a resource, e.g., DELETE /users/1 deletes user with ID 1. I developed RESTful services for managing user requests using JSON for data interchange and tools like Postman for testing. @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; // Get all users @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } // Get a user by ID @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } // Create a new user @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } // Update an existing user @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } // Delete a user by ID @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } 3. Microservices Development Microservices are an architectural style that structures an application as a collection of coupled services. Each service is independently deployable and scalable. I used Spring Boot to create microservices for user management, volunteer management, request management, and feedback management (refer to Project Report) . PART D: ANALYTICAL PART Knowledge and Skills Mobilized Understanding of service-oriented architecture concepts and features. Development of distributed architectures using web services. Deployment and configuration of SOA using SOAP and REST. Design, development, and deployment of microservice architectures. Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications. Self Evaluation Using all the new concepts learned during the course was at first a bit complicated but fortunately the tutorials were well-structured allowing me to learn step by step. Also, there was a large number of practical sessions to practice and understand all the concepts. As I am not used to Java, I had to relearn the basics of this language which was a bit challenging. I didn’t participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints. My Opinion Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. For example, just by looking into a website network and understanding all the requests in the background. Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I’d prefer to code in C for my professional future, I can now apply for Java positions if needed. Project Report Project Report Open Complete Report Open Lab Subject Open Complete Report" />
-<link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" />
+<meta name="description" content="← Retour a Mes Cours 2024-2025 Service Oriented Architecture Annee Academique: 2024-2025 Semestre: 9 (S9) Enseignant: N. Guermouche Categorie: Architectures Logicielles / Services Web PART A: PRESENTATION GENERALE Presentation Le cours d’Architecture Orientee Services (SOA) a constitue une immersion approfondie dans les principes et les pratiques de conception et d’implementation de systemes orientes services. Enseigne par N. Guermouche, ce cours a couvert les architectures de services traditionnelles et modernes, en se concentrant sur la creation de systemes scalables, maintenables et performants. Le programme s’articulait autour de trois grands axes : Les services web traditionnels (SOAP/WSDL) : comprendre les fondements historiques de la SOA, les protocoles d’echange standardises et la description formelle des services. Les services RESTful : maitriser l’approche moderne basee sur les ressources HTTP, les formats de donnees legers (JSON, XML, YAML) et le modele de maturite de Richardson (RMM). Les microservices : apprehender la decomposition d’applications monolithiques en services autonomes, independamment deployables et scalables, avec Spring Boot comme framework de reference. Competences visees Comprendre les principes fondamentaux des architectures orientees services Concevoir et implementer des services web SOAP et REST Maitriser la description de services avec WSDL Developper des API RESTful conformes aux bonnes pratiques Architecturer des applications en microservices Utiliser Maven pour la gestion de projets Java Appliquer les tests unitaires avec JUnit Collaborer avec Git dans un workflow de developpement PART B: EXPERIENCE ET CONTEXTE Details de l’experience Environnement et Contexte Ce cours s’est revele particulierement utile dans un contexte ou la demande industrielle pour des systemes distribues et des architectures de services ne cesse de croitre. L’industrie du logiciel migre massivement des architectures monolithiques vers des architectures en microservices, rendant ces competences essentielles pour tout ingenieur en informatique. Les seances de travaux pratiques m’ont permis d’appliquer les concepts appris en cours a des scenarios concrets, ce qui a ete benefique pour comprendre les differentes methodologies architecturales. Le cours etait structure en progression : des fondamentaux SOA/SOAP vers REST, puis vers les microservices, chaque etape construisant sur la precedente. Ma Fonction Dans le cadre de ce cours, j’ai ete responsable de : Comprendre les principes des architectures orientees services (couplage lache, contrats de service, abstraction) Concevoir et implementer des systemes orientes services avec SOAP et REST Developper un projet complet en microservices avec Spring Boot Rediger un rapport WSDL et des exercices de modelisation de services Mener des experimentations pour tester l’efficacite et la scalabilite des differentes architectures Collaborer en binome (avec T. Bigot) sur le projet final de microservices PART C: ASPECTS TECHNIQUES Cette section explore en detail les aspects techniques du cours d’Architecture Orientee Services, acquis principalement lors des travaux pratiques portant sur SOAP, REST et les microservices. Concepts Techniques 1. Principes fondamentaux de la SOA L’Architecture Orientee Services repose sur plusieurs principes fondamentaux : Couplage lache (Loose Coupling) : Les services sont conçus pour minimiser les dependances entre eux. Chaque service peut evoluer independamment sans impacter les autres. Cela favorise la maintenabilite et la flexibilite du systeme global. Contrats de service : Chaque service expose un contrat formel (WSDL pour SOAP, OpenAPI/Swagger pour REST) decrivant ses operations, ses types de donnees et ses protocoles de communication. Ce contrat sert d’interface entre le fournisseur et le consommateur du service. Abstraction : Les details d’implementation sont caches derriere l’interface du service. Le consommateur n’a pas besoin de connaitre la logique interne, la base de donnees ou le langage de programmation utilise. Reutilisabilite : Les services sont conçus pour etre reutilises dans differents contextes et applications. Un service de gestion d’utilisateurs peut etre utilise par plusieurs applications differentes. Decouverte de services : Les services peuvent etre decouverts dynamiquement via un registre (UDDI pour SOAP, service registry pour microservices), permettant une composition flexible. 2. WSDL - Web Services Description Language Le WSDL est un langage XML utilise pour decrire les services web SOAP. Il definit quatre elements principaux : Types : les types de donnees utilises par le service (schemas XSD) Messages : les messages echanges (entree/sortie) PortType : les operations disponibles (l’interface du service) Binding : le protocole de transport et le format d’encodage Voici un exemple de fichier WSDL que j’ai etudie et produit en TP, decrivant un service de recherche de livres : &lt;wsdl:definitions xmlns:tns=&quot;http://www.example.org/BookService/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; name=&quot;BookService&quot; targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;wsdl:types&gt; &lt;xsd:schema targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;xsd:complexType name=&quot;BookType&quot;&gt; &lt;xsd:sequence&gt; &lt;xsd:element name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;xsd:element name=&quot;author&quot; type=&quot;xsd:int&quot;/&gt; &lt;xsd:element name=&quot;isbn&quot; type=&quot;xsd:string&quot;/&gt; &lt;/xsd:sequence&gt; &lt;/xsd:complexType&gt; &lt;xsd:element name=&quot;book&quot; type=&quot;tns:BookType&quot;/&gt; &lt;/xsd:schema&gt; &lt;/wsdl:types&gt; &lt;wsdl:message name=&quot;searchbookIn&quot;&gt; &lt;wsdl:part name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:message name=&quot;searchbookOut&quot;&gt; &lt;wsdl:part name=&quot;book&quot; element=&quot;tns:book&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:portType name=&quot;Port1&quot;&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input message=&quot;tns:searchbookIn&quot;/&gt; &lt;wsdl:output message=&quot;tns:searchbookOut&quot;/&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:portType&gt; &lt;wsdl:binding name=&quot;BookWSPortBinding&quot; type=&quot;tns:Port1&quot;&gt; &lt;soap:binding style=&quot;document&quot; transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:input&gt; &lt;wsdl:output&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:output&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:binding&gt; &lt;wsdl:service name=&quot;UnivWS&quot;&gt; &lt;wsdl:port name=&quot;UnivWSPort&quot; binding=&quot;tns:BookWSPortBinding&quot;&gt; &lt;soap:address location=&quot;http://localhost:8080/UnivWSApplication/UnivWS&quot;/&gt; &lt;/wsdl:port&gt; &lt;/wsdl:service&gt; &lt;/wsdl:definitions&gt; J’ai egalement developpe des classes Java correspondant aux types WSDL, comme la modelisation d’un systeme de gestion de cours : public class CoursType { private String intitule; private int ects; private String nomResponsable; public CoursType(String intitule, int ects, String nomResponsable) { this.intitule = intitule; this.ects = ects; this.nomResponsable = nomResponsable; } // getters et setters } 3. Protocole SOAP Le protocole SOAP (Simple Object Access Protocol) est un protocole d’echange de messages structures pour les services web. Il utilise XML pour le formatage des messages et s’appuie sur des protocoles de la couche application tels que HTTP ou SMTP pour la transmission. La structure d’un message SOAP comprend trois parties : Envelope : l’element racine qui encapsule l’ensemble du message Header (optionnel) : contient des metadonnees (authentification, routage, etc.) Body : contient le contenu du message (requete ou reponse) Requete SOAP : L’enveloppe de requete contient le message SOAP envoye au service web. Par exemple, si la chaine recherchee est “cedric”, l’enveloppe SOAP ressemble a ceci : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Envoi d&#39;une requete SOAP depuis un client Reponse SOAP : La reponse est retournee par le service web apres traitement de la requete. Par exemple, si la reponse retourne 6 (longueur de la chaine) : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns=&quot;http://www.example.org/BookService/&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;tns:searchBookResponse&gt; &lt;tns:book&gt; &lt;tns:title&gt;Les Miserables&lt;/tns:title&gt; &lt;tns:author&gt;123&lt;/tns:author&gt; &lt;tns:isbn&gt;13.978-2211215350&lt;/tns:isbn&gt; &lt;/tns:book&gt; &lt;/tns:searchBookResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Reception d&#39;une reponse SOAP Les tutoriels SOA nous ont permis de pratiquer deux approches : Bottom-Up (Code First) : on ecrit d’abord le code Java, puis on genere le WSDL automatiquement avec Apache CXF Top-Down (Contract First) : on ecrit d’abord le WSDL, puis on genere les stubs Java avec le plugin cxf-codegen 4. Services RESTful REST (Representational State Transfer) est un style architectural qui utilise les methodes HTTP standard pour interagir avec des ressources. Contrairement a SOAP, REST est sans etat (stateless), plus leger et s’appuie sur les standards du Web. Methodes HTTP : Methode Action Exemple Description GET Lecture GET /users/1 Recupere l’utilisateur avec l’ID 1 POST Creation POST /users Cree un nouvel utilisateur PUT Mise a jour complete PUT /users/1 Remplace l’utilisateur 1 PATCH Mise a jour partielle PATCH /users/1 Modifie partiellement l’utilisateur 1 DELETE Suppression DELETE /users/1 Supprime l’utilisateur 1 Codes de statut HTTP : Code Signification 200 OK - Requete reussie 201 Created - Ressource creee 204 No Content - Succes sans contenu de retour 400 Bad Request - Requete invalide 401 Unauthorized - Authentification requise 403 Forbidden - Acces refuse 404 Not Found - Ressource non trouvee 500 Internal Server Error - Erreur serveur HATEOAS (Hypermedia As The Engine Of Application State) : HATEOAS est un principe REST ou les reponses contiennent des liens hypertextes vers les actions disponibles. Cela permet au client de naviguer dynamiquement dans l’API sans connaitre a l’avance les URLs. Par exemple, une reponse pour un utilisateur pourrait inclure des liens vers ses commandes, son profil, etc. Modele de Maturite de Richardson (RMM) : Le RMM definit quatre niveaux de maturite pour les API REST : Niveau 0 : Un seul point d’entree (type RPC sur HTTP). Toutes les requetes passent par une seule URL. Niveau 1 : Introduction des ressources. Chaque ressource a sa propre URI (par exemple /users, /orders). Niveau 2 : Utilisation correcte des verbes HTTP (GET, POST, PUT, DELETE) et des codes de statut. Niveau 3 : HATEOAS. Les reponses contiennent des liens hypertextes pour guider le client. C’est le niveau le plus mature. J’ai developpe des services RESTful pour la gestion de commandes en utilisant JAX-RS et JSON pour l’echange de donnees : public class OrderService { private static List&lt;Order&gt; orders = new ArrayList&lt;&gt;(); private static int idCounter = 1; @GET @Produces(MediaType.APPLICATION_JSON) public List&lt;Order&gt; getAllOrders() { return orders; } @GET @Path(&quot;/{id}&quot;) @Produces(MediaType.APPLICATION_JSON) public Order getOrder(@PathParam(&quot;id&quot;) int id) { return orders.stream() .filter(order -&gt; order.getId() == id) .findFirst().orElse(null); } @POST @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order createOrder(Order order) { order.setId(idCounter++); orders.add(order); return order; } @PUT @Path(&quot;/{id}&quot;) @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order updateOrder(@PathParam(&quot;id&quot;) int id, Order updatedOrder) { for (Order order : orders) { if (order.getId() == id) { order.setProduct(updatedOrder.getProduct()); order.setQuantity(updatedOrder.getQuantity()); return order; } } return null; } @DELETE @Path(&quot;/{id}&quot;) public void deleteOrder(@PathParam(&quot;id&quot;) int id) { orders.removeIf(order -&gt; order.getId() == id); } } J’ai egalement developpe un controleur REST avec Spring Boot pour la gestion d’utilisateurs : @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } Les outils de test comme Postman ont ete utilises pour valider les endpoints, verifier les codes de statut HTTP et inspecter les corps de requete/reponse en JSON. 5. Formats de donnees : JSON, XML et YAML Les services web utilisent differents formats de serialisation pour l’echange de donnees : JSON (JavaScript Object Notation) : format leger, lisible et largement adopte pour les API REST. { &quot;id&quot;: 1, &quot;product&quot;: &quot;Laptop&quot;, &quot;quantity&quot;: 3 } XML (eXtensible Markup Language) : format historique utilise par SOAP, plus verbeux mais avec un schema de validation fort (XSD). &lt;order&gt; &lt;id&gt;1&lt;/id&gt; &lt;product&gt;Laptop&lt;/product&gt; &lt;quantity&gt;3&lt;/quantity&gt; &lt;/order&gt; YAML (YAML Ain’t Markup Language) : format lisible souvent utilise pour la configuration (fichiers Spring Boot application.yml, Docker Compose, etc.). order: id: 1 product: Laptop quantity: 3 6. Architecture Microservices Les microservices representent un style architectural qui structure une application comme un ensemble de services faiblement couples, chacun deployable et scalable de maniere independante. Patterns de decomposition : Decomposition par domaine metier : chaque microservice correspond a un domaine fonctionnel (utilisateurs, commandes, feedback, etc.) Decomposition par sous-domaine : approche DDD (Domain-Driven Design) pour delimiter les contextes bornes (bounded contexts) Decouverte de services (Service Discovery) : Dans une architecture microservices, les services doivent pouvoir se trouver mutuellement. Des outils comme Eureka (Netflix) ou Consul (HashiCorp) permettent l’enregistrement et la decouverte dynamique des services. API Gateway : Un point d’entree unique qui route les requetes vers les microservices appropries. L’API Gateway gere egalement des preoccupations transversales comme l’authentification, le rate limiting et le load balancing. Dans le cadre du projet, j’ai utilise Spring Boot pour creer plusieurs microservices independants : userManagement : gestion des utilisateurs (CRUD, profils) volunteerManagement : gestion des benevoles volunteerService : logique metier des benevoles userRequestService : gestion des demandes utilisateurs feedbackService : gestion des retours et evaluations AnalyseProject : service d’analyse globale Chaque microservice possede son propre fichier pom.xml, sa propre base de donnees et peut etre deploye independamment. La communication entre les services se fait via des appels REST HTTP. 7. Gestion de projet avec Maven Maven est l’outil de gestion de projet et de build utilise tout au long du cours. Le fichier pom.xml centralise : Les dependances du projet (Spring Boot, CXF, JAX-RS, etc.) Les plugins de build (compilation, tests, packaging) La configuration du projet (version Java, encoding, etc.) Exemple de configuration Maven pour un microservice Spring Boot : &lt;dependencies&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt; &lt;scope&gt;test&lt;/scope&gt; &lt;/dependency&gt; &lt;/dependencies&gt; 8. Workflow Git Le projet de microservices a ete gere avec Git pour le controle de version. Le workflow collaboratif incluait : Branching : une branche par fonctionnalite ou microservice Commits : des commits atomiques et messages descriptifs Merge : integration des branches dans la branche principale Remote : synchronisation avec un depot distant (GitLab INSA) 9. Tests unitaires avec JUnit Les tests unitaires avec JUnit ont permis de valider le bon fonctionnement de chaque composant individuellement. Les tests couvrent les services, les controleurs et la logique metier : @Test public void testCreateUser() { User user = new User(&quot;Cedric&quot;, &quot;cedric@insa.fr&quot;); User created = userService.createUser(user); assertNotNull(created.getId()); assertEquals(&quot;Cedric&quot;, created.getName()); } @Test public void testGetAllOrders() { List&lt;Order&gt; orders = orderService.getAllOrders(); assertNotNull(orders); } 10. Framework Spring Boot Spring Boot a ete le framework principal pour le developpement des microservices. Ses avantages cles : Auto-configuration : configuration automatique basee sur les dependances presentes Serveur embarque : Tomcat integre, pas besoin de deploiement externe Starters : des packages de dependances pre-configures (spring-boot-starter-web, etc.) Actuator : monitoring et metriques de l’application Profils : gestion de configurations multiples (dev, test, prod) PART D: ANALYSE ET REFLEXION Connaissances et Competences Mobilisees Comprehension des concepts et caracteristiques des architectures orientees services Developpement d’architectures distribuees utilisant les services web Deploiement et configuration de SOA avec SOAP et REST Conception, developpement et deploiement d’architectures en microservices Maitrise du langage Java et du framework Spring Boot Gestion de projet avec Maven et Git Tests unitaires avec JUnit Comprehension des formats de donnees (JSON, XML, YAML) Connaissance des niveaux de maturite REST (RMM) et de HATEOAS Auto-evaluation L’utilisation de tous les nouveaux concepts appris pendant le cours etait au debut un peu complexe, mais heureusement les tutoriels etaient bien structures, me permettant d’apprendre etape par etape. De plus, il y avait un grand nombre de seances pratiques pour s’exercer et comprendre tous les concepts. N’etant pas habitue a Java, j’ai du reapprendre les bases de ce langage, ce qui a represente un defi supplementaire. Je n’ai pas beaucoup participe aux TP SOAP car je souhaitais me concentrer davantage sur REST et les microservices en raison de contraintes de temps. Neanmoins, les exercices de modelisation WSDL ont ete tres formateurs pour comprendre la structure formelle des contrats de service. Le projet de microservices a ete l’element le plus enrichissant du cours. Concevoir une architecture complete avec plusieurs services independants, gerer les communications inter-services et deployer le tout m’a donne une vision concrete de ce qu’implique le developpement d’applications distribuees en production. La progression pedagogique du cours – des fondamentaux SOA vers SOAP, puis REST, puis les microservices – etait logique et bien construite. Chaque technologie introduisait des concepts qui preparaient a la suivante. Mon Avis Avant de suivre ce cours, je n’avais entendu parler que de certains concepts lies a l’architecture orientee services. Grace aux seances de travaux pratiques, j’ai maintenant une bien meilleure comprehension de l’architecture des applications web et de la maniere d’interagir avec elles. Par exemple, simplement en observant le reseau d’un site web et en comprenant toutes les requetes en arriere-plan. De plus, developper en Java pendant le cours m’a rappele comment coder dans ce langage, ce qui est important car il est tres utilise dans l’industrie. Meme si je prefererais coder en C pour mon avenir professionnel, je peux desormais postuler a des postes Java si necessaire. La comparaison entre SOAP et REST m’a permis de comprendre pourquoi l’industrie migre vers REST : simplicite, performance et meilleure integration avec les architectures modernes. Cependant, SOAP reste pertinent dans des contextes ou la securite et la fiabilite transactionnelle sont critiques (secteur bancaire, sante). L’apprentissage des microservices a ete une ouverture vers les pratiques DevOps modernes. La decomposition en services independants facilite le deploiement continu, le scaling horizontal et la resilience des systemes. Ce sont des competences tres recherchees sur le marche du travail. Documents de Cours Introduction a la SOA Cours d&#39;introduction aux principes fondamentaux de l&#39;Architecture Orientee Services : couplage lache, contrats de service, abstraction et reutilisabilite. Telecharger Standards WSDL (Partie 1) Web Services Description Language : structure du WSDL, types, messages, portType et binding. Telecharger Standards WSDL (Partie 2) Approfondissement du WSDL : binding SOAP, exemples avancees et generation de code. Telecharger Standards SOAP Protocole SOAP : structure des messages (Envelope, Header, Body), encodage et transport HTTP. Telecharger Introduction a REST Architecture RESTful : principes, methodes HTTP, ressources et representations. Telecharger REST - Formats de Donnees Formats de serialisation pour les API REST : JSON, XML, YAML et leurs cas d&#39;usage. Telecharger REST - Richardson Maturity Model Modele de maturite de Richardson : les 4 niveaux de maturite REST, de RPC sur HTTP a HATEOAS. Telecharger Microservices - Introduction Introduction aux microservices : definition, comparaison avec monolithique, avantages et defis. Telecharger Microservices - Proprietes Proprietes des microservices : independance, scalabilite, resilience et deploiement continu. Telecharger Microservices - Architecture Patterns architecturaux des microservices : API Gateway, service discovery, decomposition et communication. Telecharger Rapports et Projets Rapport de Projet - Architecture de Services Ouvrir le Rapport Complet Rapport de Projet BE Ouvrir le Rapport de BE Rapport de TP Ouvrir le Rapport de TP Sujet de TP Ouvrir le Sujet de TP" />
+<meta property="og:description" content="← Retour a Mes Cours 2024-2025 Service Oriented Architecture Annee Academique: 2024-2025 Semestre: 9 (S9) Enseignant: N. Guermouche Categorie: Architectures Logicielles / Services Web PART A: PRESENTATION GENERALE Presentation Le cours d’Architecture Orientee Services (SOA) a constitue une immersion approfondie dans les principes et les pratiques de conception et d’implementation de systemes orientes services. Enseigne par N. Guermouche, ce cours a couvert les architectures de services traditionnelles et modernes, en se concentrant sur la creation de systemes scalables, maintenables et performants. Le programme s’articulait autour de trois grands axes : Les services web traditionnels (SOAP/WSDL) : comprendre les fondements historiques de la SOA, les protocoles d’echange standardises et la description formelle des services. Les services RESTful : maitriser l’approche moderne basee sur les ressources HTTP, les formats de donnees legers (JSON, XML, YAML) et le modele de maturite de Richardson (RMM). Les microservices : apprehender la decomposition d’applications monolithiques en services autonomes, independamment deployables et scalables, avec Spring Boot comme framework de reference. Competences visees Comprendre les principes fondamentaux des architectures orientees services Concevoir et implementer des services web SOAP et REST Maitriser la description de services avec WSDL Developper des API RESTful conformes aux bonnes pratiques Architecturer des applications en microservices Utiliser Maven pour la gestion de projets Java Appliquer les tests unitaires avec JUnit Collaborer avec Git dans un workflow de developpement PART B: EXPERIENCE ET CONTEXTE Details de l’experience Environnement et Contexte Ce cours s’est revele particulierement utile dans un contexte ou la demande industrielle pour des systemes distribues et des architectures de services ne cesse de croitre. L’industrie du logiciel migre massivement des architectures monolithiques vers des architectures en microservices, rendant ces competences essentielles pour tout ingenieur en informatique. Les seances de travaux pratiques m’ont permis d’appliquer les concepts appris en cours a des scenarios concrets, ce qui a ete benefique pour comprendre les differentes methodologies architecturales. Le cours etait structure en progression : des fondamentaux SOA/SOAP vers REST, puis vers les microservices, chaque etape construisant sur la precedente. Ma Fonction Dans le cadre de ce cours, j’ai ete responsable de : Comprendre les principes des architectures orientees services (couplage lache, contrats de service, abstraction) Concevoir et implementer des systemes orientes services avec SOAP et REST Developper un projet complet en microservices avec Spring Boot Rediger un rapport WSDL et des exercices de modelisation de services Mener des experimentations pour tester l’efficacite et la scalabilite des differentes architectures Collaborer en binome (avec T. Bigot) sur le projet final de microservices PART C: ASPECTS TECHNIQUES Cette section explore en detail les aspects techniques du cours d’Architecture Orientee Services, acquis principalement lors des travaux pratiques portant sur SOAP, REST et les microservices. Concepts Techniques 1. Principes fondamentaux de la SOA L’Architecture Orientee Services repose sur plusieurs principes fondamentaux : Couplage lache (Loose Coupling) : Les services sont conçus pour minimiser les dependances entre eux. Chaque service peut evoluer independamment sans impacter les autres. Cela favorise la maintenabilite et la flexibilite du systeme global. Contrats de service : Chaque service expose un contrat formel (WSDL pour SOAP, OpenAPI/Swagger pour REST) decrivant ses operations, ses types de donnees et ses protocoles de communication. Ce contrat sert d’interface entre le fournisseur et le consommateur du service. Abstraction : Les details d’implementation sont caches derriere l’interface du service. Le consommateur n’a pas besoin de connaitre la logique interne, la base de donnees ou le langage de programmation utilise. Reutilisabilite : Les services sont conçus pour etre reutilises dans differents contextes et applications. Un service de gestion d’utilisateurs peut etre utilise par plusieurs applications differentes. Decouverte de services : Les services peuvent etre decouverts dynamiquement via un registre (UDDI pour SOAP, service registry pour microservices), permettant une composition flexible. 2. WSDL - Web Services Description Language Le WSDL est un langage XML utilise pour decrire les services web SOAP. Il definit quatre elements principaux : Types : les types de donnees utilises par le service (schemas XSD) Messages : les messages echanges (entree/sortie) PortType : les operations disponibles (l’interface du service) Binding : le protocole de transport et le format d’encodage Voici un exemple de fichier WSDL que j’ai etudie et produit en TP, decrivant un service de recherche de livres : &lt;wsdl:definitions xmlns:tns=&quot;http://www.example.org/BookService/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; name=&quot;BookService&quot; targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;wsdl:types&gt; &lt;xsd:schema targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;xsd:complexType name=&quot;BookType&quot;&gt; &lt;xsd:sequence&gt; &lt;xsd:element name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;xsd:element name=&quot;author&quot; type=&quot;xsd:int&quot;/&gt; &lt;xsd:element name=&quot;isbn&quot; type=&quot;xsd:string&quot;/&gt; &lt;/xsd:sequence&gt; &lt;/xsd:complexType&gt; &lt;xsd:element name=&quot;book&quot; type=&quot;tns:BookType&quot;/&gt; &lt;/xsd:schema&gt; &lt;/wsdl:types&gt; &lt;wsdl:message name=&quot;searchbookIn&quot;&gt; &lt;wsdl:part name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:message name=&quot;searchbookOut&quot;&gt; &lt;wsdl:part name=&quot;book&quot; element=&quot;tns:book&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:portType name=&quot;Port1&quot;&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input message=&quot;tns:searchbookIn&quot;/&gt; &lt;wsdl:output message=&quot;tns:searchbookOut&quot;/&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:portType&gt; &lt;wsdl:binding name=&quot;BookWSPortBinding&quot; type=&quot;tns:Port1&quot;&gt; &lt;soap:binding style=&quot;document&quot; transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:input&gt; &lt;wsdl:output&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:output&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:binding&gt; &lt;wsdl:service name=&quot;UnivWS&quot;&gt; &lt;wsdl:port name=&quot;UnivWSPort&quot; binding=&quot;tns:BookWSPortBinding&quot;&gt; &lt;soap:address location=&quot;http://localhost:8080/UnivWSApplication/UnivWS&quot;/&gt; &lt;/wsdl:port&gt; &lt;/wsdl:service&gt; &lt;/wsdl:definitions&gt; J’ai egalement developpe des classes Java correspondant aux types WSDL, comme la modelisation d’un systeme de gestion de cours : public class CoursType { private String intitule; private int ects; private String nomResponsable; public CoursType(String intitule, int ects, String nomResponsable) { this.intitule = intitule; this.ects = ects; this.nomResponsable = nomResponsable; } // getters et setters } 3. Protocole SOAP Le protocole SOAP (Simple Object Access Protocol) est un protocole d’echange de messages structures pour les services web. Il utilise XML pour le formatage des messages et s’appuie sur des protocoles de la couche application tels que HTTP ou SMTP pour la transmission. La structure d’un message SOAP comprend trois parties : Envelope : l’element racine qui encapsule l’ensemble du message Header (optionnel) : contient des metadonnees (authentification, routage, etc.) Body : contient le contenu du message (requete ou reponse) Requete SOAP : L’enveloppe de requete contient le message SOAP envoye au service web. Par exemple, si la chaine recherchee est “cedric”, l’enveloppe SOAP ressemble a ceci : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Envoi d&#39;une requete SOAP depuis un client Reponse SOAP : La reponse est retournee par le service web apres traitement de la requete. Par exemple, si la reponse retourne 6 (longueur de la chaine) : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns=&quot;http://www.example.org/BookService/&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;tns:searchBookResponse&gt; &lt;tns:book&gt; &lt;tns:title&gt;Les Miserables&lt;/tns:title&gt; &lt;tns:author&gt;123&lt;/tns:author&gt; &lt;tns:isbn&gt;13.978-2211215350&lt;/tns:isbn&gt; &lt;/tns:book&gt; &lt;/tns:searchBookResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Reception d&#39;une reponse SOAP Les tutoriels SOA nous ont permis de pratiquer deux approches : Bottom-Up (Code First) : on ecrit d’abord le code Java, puis on genere le WSDL automatiquement avec Apache CXF Top-Down (Contract First) : on ecrit d’abord le WSDL, puis on genere les stubs Java avec le plugin cxf-codegen 4. Services RESTful REST (Representational State Transfer) est un style architectural qui utilise les methodes HTTP standard pour interagir avec des ressources. Contrairement a SOAP, REST est sans etat (stateless), plus leger et s’appuie sur les standards du Web. Methodes HTTP : Methode Action Exemple Description GET Lecture GET /users/1 Recupere l’utilisateur avec l’ID 1 POST Creation POST /users Cree un nouvel utilisateur PUT Mise a jour complete PUT /users/1 Remplace l’utilisateur 1 PATCH Mise a jour partielle PATCH /users/1 Modifie partiellement l’utilisateur 1 DELETE Suppression DELETE /users/1 Supprime l’utilisateur 1 Codes de statut HTTP : Code Signification 200 OK - Requete reussie 201 Created - Ressource creee 204 No Content - Succes sans contenu de retour 400 Bad Request - Requete invalide 401 Unauthorized - Authentification requise 403 Forbidden - Acces refuse 404 Not Found - Ressource non trouvee 500 Internal Server Error - Erreur serveur HATEOAS (Hypermedia As The Engine Of Application State) : HATEOAS est un principe REST ou les reponses contiennent des liens hypertextes vers les actions disponibles. Cela permet au client de naviguer dynamiquement dans l’API sans connaitre a l’avance les URLs. Par exemple, une reponse pour un utilisateur pourrait inclure des liens vers ses commandes, son profil, etc. Modele de Maturite de Richardson (RMM) : Le RMM definit quatre niveaux de maturite pour les API REST : Niveau 0 : Un seul point d’entree (type RPC sur HTTP). Toutes les requetes passent par une seule URL. Niveau 1 : Introduction des ressources. Chaque ressource a sa propre URI (par exemple /users, /orders). Niveau 2 : Utilisation correcte des verbes HTTP (GET, POST, PUT, DELETE) et des codes de statut. Niveau 3 : HATEOAS. Les reponses contiennent des liens hypertextes pour guider le client. C’est le niveau le plus mature. J’ai developpe des services RESTful pour la gestion de commandes en utilisant JAX-RS et JSON pour l’echange de donnees : public class OrderService { private static List&lt;Order&gt; orders = new ArrayList&lt;&gt;(); private static int idCounter = 1; @GET @Produces(MediaType.APPLICATION_JSON) public List&lt;Order&gt; getAllOrders() { return orders; } @GET @Path(&quot;/{id}&quot;) @Produces(MediaType.APPLICATION_JSON) public Order getOrder(@PathParam(&quot;id&quot;) int id) { return orders.stream() .filter(order -&gt; order.getId() == id) .findFirst().orElse(null); } @POST @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order createOrder(Order order) { order.setId(idCounter++); orders.add(order); return order; } @PUT @Path(&quot;/{id}&quot;) @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order updateOrder(@PathParam(&quot;id&quot;) int id, Order updatedOrder) { for (Order order : orders) { if (order.getId() == id) { order.setProduct(updatedOrder.getProduct()); order.setQuantity(updatedOrder.getQuantity()); return order; } } return null; } @DELETE @Path(&quot;/{id}&quot;) public void deleteOrder(@PathParam(&quot;id&quot;) int id) { orders.removeIf(order -&gt; order.getId() == id); } } J’ai egalement developpe un controleur REST avec Spring Boot pour la gestion d’utilisateurs : @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } Les outils de test comme Postman ont ete utilises pour valider les endpoints, verifier les codes de statut HTTP et inspecter les corps de requete/reponse en JSON. 5. Formats de donnees : JSON, XML et YAML Les services web utilisent differents formats de serialisation pour l’echange de donnees : JSON (JavaScript Object Notation) : format leger, lisible et largement adopte pour les API REST. { &quot;id&quot;: 1, &quot;product&quot;: &quot;Laptop&quot;, &quot;quantity&quot;: 3 } XML (eXtensible Markup Language) : format historique utilise par SOAP, plus verbeux mais avec un schema de validation fort (XSD). &lt;order&gt; &lt;id&gt;1&lt;/id&gt; &lt;product&gt;Laptop&lt;/product&gt; &lt;quantity&gt;3&lt;/quantity&gt; &lt;/order&gt; YAML (YAML Ain’t Markup Language) : format lisible souvent utilise pour la configuration (fichiers Spring Boot application.yml, Docker Compose, etc.). order: id: 1 product: Laptop quantity: 3 6. Architecture Microservices Les microservices representent un style architectural qui structure une application comme un ensemble de services faiblement couples, chacun deployable et scalable de maniere independante. Patterns de decomposition : Decomposition par domaine metier : chaque microservice correspond a un domaine fonctionnel (utilisateurs, commandes, feedback, etc.) Decomposition par sous-domaine : approche DDD (Domain-Driven Design) pour delimiter les contextes bornes (bounded contexts) Decouverte de services (Service Discovery) : Dans une architecture microservices, les services doivent pouvoir se trouver mutuellement. Des outils comme Eureka (Netflix) ou Consul (HashiCorp) permettent l’enregistrement et la decouverte dynamique des services. API Gateway : Un point d’entree unique qui route les requetes vers les microservices appropries. L’API Gateway gere egalement des preoccupations transversales comme l’authentification, le rate limiting et le load balancing. Dans le cadre du projet, j’ai utilise Spring Boot pour creer plusieurs microservices independants : userManagement : gestion des utilisateurs (CRUD, profils) volunteerManagement : gestion des benevoles volunteerService : logique metier des benevoles userRequestService : gestion des demandes utilisateurs feedbackService : gestion des retours et evaluations AnalyseProject : service d’analyse globale Chaque microservice possede son propre fichier pom.xml, sa propre base de donnees et peut etre deploye independamment. La communication entre les services se fait via des appels REST HTTP. 7. Gestion de projet avec Maven Maven est l’outil de gestion de projet et de build utilise tout au long du cours. Le fichier pom.xml centralise : Les dependances du projet (Spring Boot, CXF, JAX-RS, etc.) Les plugins de build (compilation, tests, packaging) La configuration du projet (version Java, encoding, etc.) Exemple de configuration Maven pour un microservice Spring Boot : &lt;dependencies&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt; &lt;scope&gt;test&lt;/scope&gt; &lt;/dependency&gt; &lt;/dependencies&gt; 8. Workflow Git Le projet de microservices a ete gere avec Git pour le controle de version. Le workflow collaboratif incluait : Branching : une branche par fonctionnalite ou microservice Commits : des commits atomiques et messages descriptifs Merge : integration des branches dans la branche principale Remote : synchronisation avec un depot distant (GitLab INSA) 9. Tests unitaires avec JUnit Les tests unitaires avec JUnit ont permis de valider le bon fonctionnement de chaque composant individuellement. Les tests couvrent les services, les controleurs et la logique metier : @Test public void testCreateUser() { User user = new User(&quot;Cedric&quot;, &quot;cedric@insa.fr&quot;); User created = userService.createUser(user); assertNotNull(created.getId()); assertEquals(&quot;Cedric&quot;, created.getName()); } @Test public void testGetAllOrders() { List&lt;Order&gt; orders = orderService.getAllOrders(); assertNotNull(orders); } 10. Framework Spring Boot Spring Boot a ete le framework principal pour le developpement des microservices. Ses avantages cles : Auto-configuration : configuration automatique basee sur les dependances presentes Serveur embarque : Tomcat integre, pas besoin de deploiement externe Starters : des packages de dependances pre-configures (spring-boot-starter-web, etc.) Actuator : monitoring et metriques de l’application Profils : gestion de configurations multiples (dev, test, prod) PART D: ANALYSE ET REFLEXION Connaissances et Competences Mobilisees Comprehension des concepts et caracteristiques des architectures orientees services Developpement d’architectures distribuees utilisant les services web Deploiement et configuration de SOA avec SOAP et REST Conception, developpement et deploiement d’architectures en microservices Maitrise du langage Java et du framework Spring Boot Gestion de projet avec Maven et Git Tests unitaires avec JUnit Comprehension des formats de donnees (JSON, XML, YAML) Connaissance des niveaux de maturite REST (RMM) et de HATEOAS Auto-evaluation L’utilisation de tous les nouveaux concepts appris pendant le cours etait au debut un peu complexe, mais heureusement les tutoriels etaient bien structures, me permettant d’apprendre etape par etape. De plus, il y avait un grand nombre de seances pratiques pour s’exercer et comprendre tous les concepts. N’etant pas habitue a Java, j’ai du reapprendre les bases de ce langage, ce qui a represente un defi supplementaire. Je n’ai pas beaucoup participe aux TP SOAP car je souhaitais me concentrer davantage sur REST et les microservices en raison de contraintes de temps. Neanmoins, les exercices de modelisation WSDL ont ete tres formateurs pour comprendre la structure formelle des contrats de service. Le projet de microservices a ete l’element le plus enrichissant du cours. Concevoir une architecture complete avec plusieurs services independants, gerer les communications inter-services et deployer le tout m’a donne une vision concrete de ce qu’implique le developpement d’applications distribuees en production. La progression pedagogique du cours – des fondamentaux SOA vers SOAP, puis REST, puis les microservices – etait logique et bien construite. Chaque technologie introduisait des concepts qui preparaient a la suivante. Mon Avis Avant de suivre ce cours, je n’avais entendu parler que de certains concepts lies a l’architecture orientee services. Grace aux seances de travaux pratiques, j’ai maintenant une bien meilleure comprehension de l’architecture des applications web et de la maniere d’interagir avec elles. Par exemple, simplement en observant le reseau d’un site web et en comprenant toutes les requetes en arriere-plan. De plus, developper en Java pendant le cours m’a rappele comment coder dans ce langage, ce qui est important car il est tres utilise dans l’industrie. Meme si je prefererais coder en C pour mon avenir professionnel, je peux desormais postuler a des postes Java si necessaire. La comparaison entre SOAP et REST m’a permis de comprendre pourquoi l’industrie migre vers REST : simplicite, performance et meilleure integration avec les architectures modernes. Cependant, SOAP reste pertinent dans des contextes ou la securite et la fiabilite transactionnelle sont critiques (secteur bancaire, sante). L’apprentissage des microservices a ete une ouverture vers les pratiques DevOps modernes. La decomposition en services independants facilite le deploiement continu, le scaling horizontal et la resilience des systemes. Ce sont des competences tres recherchees sur le marche du travail. Documents de Cours Introduction a la SOA Cours d&#39;introduction aux principes fondamentaux de l&#39;Architecture Orientee Services : couplage lache, contrats de service, abstraction et reutilisabilite. Telecharger Standards WSDL (Partie 1) Web Services Description Language : structure du WSDL, types, messages, portType et binding. Telecharger Standards WSDL (Partie 2) Approfondissement du WSDL : binding SOAP, exemples avancees et generation de code. Telecharger Standards SOAP Protocole SOAP : structure des messages (Envelope, Header, Body), encodage et transport HTTP. Telecharger Introduction a REST Architecture RESTful : principes, methodes HTTP, ressources et representations. Telecharger REST - Formats de Donnees Formats de serialisation pour les API REST : JSON, XML, YAML et leurs cas d&#39;usage. Telecharger REST - Richardson Maturity Model Modele de maturite de Richardson : les 4 niveaux de maturite REST, de RPC sur HTTP a HATEOAS. Telecharger Microservices - Introduction Introduction aux microservices : definition, comparaison avec monolithique, avantages et defis. Telecharger Microservices - Proprietes Proprietes des microservices : independance, scalabilite, resilience et deploiement continu. Telecharger Microservices - Architecture Patterns architecturaux des microservices : API Gateway, service discovery, decomposition et communication. Telecharger Rapports et Projets Rapport de Projet - Architecture de Services Ouvrir le Rapport Complet Rapport de Projet BE Ouvrir le Rapport de BE Rapport de TP Ouvrir le Rapport de TP Sujet de TP Ouvrir le Sujet de TP" />
+<link rel="canonical" href="http://0.0.0.0:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/jekyll/update/2024/10/02/service-oriented-architecture.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-10-02T10:56:03+02:00" />
+<meta property="article:published_time" content="2024-10-02T08:56:03+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Service Oriented Architecture" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T10:56:03+02:00","datePublished":"2024-10-02T10:56:03+02:00","description":"← Back to My Courses 2024-2025 Service Oriented Architecture PART A: GENERALITIES Presentation The Service Oriented Architecture (SOA) course was a guided dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems. PART B: DESCRIPTIVE PART Experience Details Environment and Context This course was really useful as the increasing demand for systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies. My Function In this course, I was responsible for: Understanding the principles of service-oriented architectures. Designing and implementing service-oriented systems. Conducting experiments to test the efficiency and scalability of various service architectures. PART C: TECHNICAL PART This section explores the technical aspects of the Service Architecture course mainly learnt during technical labs focusing on SOAP, REST and microservices. Technical Concepts Learned 1. SOAP Architecture I learned about the SOAP (Simple Object Access Protocol) architecture which is a protocol for exchanging structured information in web services. SOAP uses XML for message formatting and relies on other application layer protocols, such as HTTP or SMTP, for message negotiation and transmission. SOAP Request Envelope: The request envelope contains the SOAP message that is sent to the web service. For example, if the chain is “cedric”, the SOAP request envelope would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; SOAP Response: The response is returned by the web service after processing the request. For example, if the response returns 6, the SOAP response would look like this: &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyResponse&gt; &lt;web:result&gt;6&lt;/web:result&gt; &lt;/web:MyResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; 2. REST Architecture I also learned about REST (Representational State Transfer), an architectural style that uses standard HTTP methods (POST, GET, PUT, DELETE) to interact with resources. POST: Creates a new resource, e.g., POST /users creates a new user. GET: Retrieves a resource, e.g., GET /users/1 retrieves user with ID 1. PUT: Updates a resource, e.g., PUT /users/1 updates user with ID 1. DELETE: Deletes a resource, e.g., DELETE /users/1 deletes user with ID 1. I developed RESTful services for managing user requests using JSON for data interchange and tools like Postman for testing. @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; // Get all users @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } // Get a user by ID @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } // Create a new user @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } // Update an existing user @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } // Delete a user by ID @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } 3. Microservices Development Microservices are an architectural style that structures an application as a collection of coupled services. Each service is independently deployable and scalable. I used Spring Boot to create microservices for user management, volunteer management, request management, and feedback management (refer to Project Report) . PART D: ANALYTICAL PART Knowledge and Skills Mobilized Understanding of service-oriented architecture concepts and features. Development of distributed architectures using web services. Deployment and configuration of SOA using SOAP and REST. Design, development, and deployment of microservice architectures. Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications. Self Evaluation Using all the new concepts learned during the course was at first a bit complicated but fortunately the tutorials were well-structured allowing me to learn step by step. Also, there was a large number of practical sessions to practice and understand all the concepts. As I am not used to Java, I had to relearn the basics of this language which was a bit challenging. I didn’t participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints. My Opinion Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. For example, just by looking into a website network and understanding all the requests in the background. Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I’d prefer to code in C for my professional future, I can now apply for Java positions if needed. Project Report Project Report Open Complete Report Open Lab Subject Open Complete Report","headline":"Service Oriented Architecture","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Retour a Mes Cours 2024-2025 Service Oriented Architecture Annee Academique: 2024-2025 Semestre: 9 (S9) Enseignant: N. Guermouche Categorie: Architectures Logicielles / Services Web PART A: PRESENTATION GENERALE Presentation Le cours d’Architecture Orientee Services (SOA) a constitue une immersion approfondie dans les principes et les pratiques de conception et d’implementation de systemes orientes services. Enseigne par N. Guermouche, ce cours a couvert les architectures de services traditionnelles et modernes, en se concentrant sur la creation de systemes scalables, maintenables et performants. Le programme s’articulait autour de trois grands axes : Les services web traditionnels (SOAP/WSDL) : comprendre les fondements historiques de la SOA, les protocoles d’echange standardises et la description formelle des services. Les services RESTful : maitriser l’approche moderne basee sur les ressources HTTP, les formats de donnees legers (JSON, XML, YAML) et le modele de maturite de Richardson (RMM). Les microservices : apprehender la decomposition d’applications monolithiques en services autonomes, independamment deployables et scalables, avec Spring Boot comme framework de reference. Competences visees Comprendre les principes fondamentaux des architectures orientees services Concevoir et implementer des services web SOAP et REST Maitriser la description de services avec WSDL Developper des API RESTful conformes aux bonnes pratiques Architecturer des applications en microservices Utiliser Maven pour la gestion de projets Java Appliquer les tests unitaires avec JUnit Collaborer avec Git dans un workflow de developpement PART B: EXPERIENCE ET CONTEXTE Details de l’experience Environnement et Contexte Ce cours s’est revele particulierement utile dans un contexte ou la demande industrielle pour des systemes distribues et des architectures de services ne cesse de croitre. L’industrie du logiciel migre massivement des architectures monolithiques vers des architectures en microservices, rendant ces competences essentielles pour tout ingenieur en informatique. Les seances de travaux pratiques m’ont permis d’appliquer les concepts appris en cours a des scenarios concrets, ce qui a ete benefique pour comprendre les differentes methodologies architecturales. Le cours etait structure en progression : des fondamentaux SOA/SOAP vers REST, puis vers les microservices, chaque etape construisant sur la precedente. Ma Fonction Dans le cadre de ce cours, j’ai ete responsable de : Comprendre les principes des architectures orientees services (couplage lache, contrats de service, abstraction) Concevoir et implementer des systemes orientes services avec SOAP et REST Developper un projet complet en microservices avec Spring Boot Rediger un rapport WSDL et des exercices de modelisation de services Mener des experimentations pour tester l’efficacite et la scalabilite des differentes architectures Collaborer en binome (avec T. Bigot) sur le projet final de microservices PART C: ASPECTS TECHNIQUES Cette section explore en detail les aspects techniques du cours d’Architecture Orientee Services, acquis principalement lors des travaux pratiques portant sur SOAP, REST et les microservices. Concepts Techniques 1. Principes fondamentaux de la SOA L’Architecture Orientee Services repose sur plusieurs principes fondamentaux : Couplage lache (Loose Coupling) : Les services sont conçus pour minimiser les dependances entre eux. Chaque service peut evoluer independamment sans impacter les autres. Cela favorise la maintenabilite et la flexibilite du systeme global. Contrats de service : Chaque service expose un contrat formel (WSDL pour SOAP, OpenAPI/Swagger pour REST) decrivant ses operations, ses types de donnees et ses protocoles de communication. Ce contrat sert d’interface entre le fournisseur et le consommateur du service. Abstraction : Les details d’implementation sont caches derriere l’interface du service. Le consommateur n’a pas besoin de connaitre la logique interne, la base de donnees ou le langage de programmation utilise. Reutilisabilite : Les services sont conçus pour etre reutilises dans differents contextes et applications. Un service de gestion d’utilisateurs peut etre utilise par plusieurs applications differentes. Decouverte de services : Les services peuvent etre decouverts dynamiquement via un registre (UDDI pour SOAP, service registry pour microservices), permettant une composition flexible. 2. WSDL - Web Services Description Language Le WSDL est un langage XML utilise pour decrire les services web SOAP. Il definit quatre elements principaux : Types : les types de donnees utilises par le service (schemas XSD) Messages : les messages echanges (entree/sortie) PortType : les operations disponibles (l’interface du service) Binding : le protocole de transport et le format d’encodage Voici un exemple de fichier WSDL que j’ai etudie et produit en TP, decrivant un service de recherche de livres : &lt;wsdl:definitions xmlns:tns=&quot;http://www.example.org/BookService/&quot; xmlns:wsdl=&quot;http://schemas.xmlsoap.org/wsdl/&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/wsdl/soap/&quot; name=&quot;BookService&quot; targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;wsdl:types&gt; &lt;xsd:schema targetNamespace=&quot;http://www.example.org/BookService/&quot;&gt; &lt;xsd:complexType name=&quot;BookType&quot;&gt; &lt;xsd:sequence&gt; &lt;xsd:element name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;xsd:element name=&quot;author&quot; type=&quot;xsd:int&quot;/&gt; &lt;xsd:element name=&quot;isbn&quot; type=&quot;xsd:string&quot;/&gt; &lt;/xsd:sequence&gt; &lt;/xsd:complexType&gt; &lt;xsd:element name=&quot;book&quot; type=&quot;tns:BookType&quot;/&gt; &lt;/xsd:schema&gt; &lt;/wsdl:types&gt; &lt;wsdl:message name=&quot;searchbookIn&quot;&gt; &lt;wsdl:part name=&quot;title&quot; type=&quot;xsd:string&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:message name=&quot;searchbookOut&quot;&gt; &lt;wsdl:part name=&quot;book&quot; element=&quot;tns:book&quot;/&gt; &lt;/wsdl:message&gt; &lt;wsdl:portType name=&quot;Port1&quot;&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input message=&quot;tns:searchbookIn&quot;/&gt; &lt;wsdl:output message=&quot;tns:searchbookOut&quot;/&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:portType&gt; &lt;wsdl:binding name=&quot;BookWSPortBinding&quot; type=&quot;tns:Port1&quot;&gt; &lt;soap:binding style=&quot;document&quot; transport=&quot;http://schemas.xmlsoap.org/soap/http&quot;/&gt; &lt;wsdl:operation name=&quot;searchBook&quot;&gt; &lt;wsdl:input&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:input&gt; &lt;wsdl:output&gt;&lt;soap:body use=&quot;literal&quot;/&gt;&lt;/wsdl:output&gt; &lt;/wsdl:operation&gt; &lt;/wsdl:binding&gt; &lt;wsdl:service name=&quot;UnivWS&quot;&gt; &lt;wsdl:port name=&quot;UnivWSPort&quot; binding=&quot;tns:BookWSPortBinding&quot;&gt; &lt;soap:address location=&quot;http://localhost:8080/UnivWSApplication/UnivWS&quot;/&gt; &lt;/wsdl:port&gt; &lt;/wsdl:service&gt; &lt;/wsdl:definitions&gt; J’ai egalement developpe des classes Java correspondant aux types WSDL, comme la modelisation d’un systeme de gestion de cours : public class CoursType { private String intitule; private int ects; private String nomResponsable; public CoursType(String intitule, int ects, String nomResponsable) { this.intitule = intitule; this.ects = ects; this.nomResponsable = nomResponsable; } // getters et setters } 3. Protocole SOAP Le protocole SOAP (Simple Object Access Protocol) est un protocole d’echange de messages structures pour les services web. Il utilise XML pour le formatage des messages et s’appuie sur des protocoles de la couche application tels que HTTP ou SMTP pour la transmission. La structure d’un message SOAP comprend trois parties : Envelope : l’element racine qui encapsule l’ensemble du message Header (optionnel) : contient des metadonnees (authentification, routage, etc.) Body : contient le contenu du message (requete ou reponse) Requete SOAP : L’enveloppe de requete contient le message SOAP envoye au service web. Par exemple, si la chaine recherchee est “cedric”, l’enveloppe SOAP ressemble a ceci : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://example.com/webservice&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;web:MyRequest&gt; &lt;web:chain&gt;cedric&lt;/web:chain&gt; &lt;/web:MyRequest&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Envoi d&#39;une requete SOAP depuis un client Reponse SOAP : La reponse est retournee par le service web apres traitement de la requete. Par exemple, si la reponse retourne 6 (longueur de la chaine) : &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns=&quot;http://www.example.org/BookService/&quot;&gt; &lt;soapenv:Header/&gt; &lt;soapenv:Body&gt; &lt;tns:searchBookResponse&gt; &lt;tns:book&gt; &lt;tns:title&gt;Les Miserables&lt;/tns:title&gt; &lt;tns:author&gt;123&lt;/tns:author&gt; &lt;tns:isbn&gt;13.978-2211215350&lt;/tns:isbn&gt; &lt;/tns:book&gt; &lt;/tns:searchBookResponse&gt; &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt; Reception d&#39;une reponse SOAP Les tutoriels SOA nous ont permis de pratiquer deux approches : Bottom-Up (Code First) : on ecrit d’abord le code Java, puis on genere le WSDL automatiquement avec Apache CXF Top-Down (Contract First) : on ecrit d’abord le WSDL, puis on genere les stubs Java avec le plugin cxf-codegen 4. Services RESTful REST (Representational State Transfer) est un style architectural qui utilise les methodes HTTP standard pour interagir avec des ressources. Contrairement a SOAP, REST est sans etat (stateless), plus leger et s’appuie sur les standards du Web. Methodes HTTP : Methode Action Exemple Description GET Lecture GET /users/1 Recupere l’utilisateur avec l’ID 1 POST Creation POST /users Cree un nouvel utilisateur PUT Mise a jour complete PUT /users/1 Remplace l’utilisateur 1 PATCH Mise a jour partielle PATCH /users/1 Modifie partiellement l’utilisateur 1 DELETE Suppression DELETE /users/1 Supprime l’utilisateur 1 Codes de statut HTTP : Code Signification 200 OK - Requete reussie 201 Created - Ressource creee 204 No Content - Succes sans contenu de retour 400 Bad Request - Requete invalide 401 Unauthorized - Authentification requise 403 Forbidden - Acces refuse 404 Not Found - Ressource non trouvee 500 Internal Server Error - Erreur serveur HATEOAS (Hypermedia As The Engine Of Application State) : HATEOAS est un principe REST ou les reponses contiennent des liens hypertextes vers les actions disponibles. Cela permet au client de naviguer dynamiquement dans l’API sans connaitre a l’avance les URLs. Par exemple, une reponse pour un utilisateur pourrait inclure des liens vers ses commandes, son profil, etc. Modele de Maturite de Richardson (RMM) : Le RMM definit quatre niveaux de maturite pour les API REST : Niveau 0 : Un seul point d’entree (type RPC sur HTTP). Toutes les requetes passent par une seule URL. Niveau 1 : Introduction des ressources. Chaque ressource a sa propre URI (par exemple /users, /orders). Niveau 2 : Utilisation correcte des verbes HTTP (GET, POST, PUT, DELETE) et des codes de statut. Niveau 3 : HATEOAS. Les reponses contiennent des liens hypertextes pour guider le client. C’est le niveau le plus mature. J’ai developpe des services RESTful pour la gestion de commandes en utilisant JAX-RS et JSON pour l’echange de donnees : public class OrderService { private static List&lt;Order&gt; orders = new ArrayList&lt;&gt;(); private static int idCounter = 1; @GET @Produces(MediaType.APPLICATION_JSON) public List&lt;Order&gt; getAllOrders() { return orders; } @GET @Path(&quot;/{id}&quot;) @Produces(MediaType.APPLICATION_JSON) public Order getOrder(@PathParam(&quot;id&quot;) int id) { return orders.stream() .filter(order -&gt; order.getId() == id) .findFirst().orElse(null); } @POST @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order createOrder(Order order) { order.setId(idCounter++); orders.add(order); return order; } @PUT @Path(&quot;/{id}&quot;) @Consumes(MediaType.APPLICATION_JSON) @Produces(MediaType.APPLICATION_JSON) public Order updateOrder(@PathParam(&quot;id&quot;) int id, Order updatedOrder) { for (Order order : orders) { if (order.getId() == id) { order.setProduct(updatedOrder.getProduct()); order.setQuantity(updatedOrder.getQuantity()); return order; } } return null; } @DELETE @Path(&quot;/{id}&quot;) public void deleteOrder(@PathParam(&quot;id&quot;) int id) { orders.removeIf(order -&gt; order.getId() == id); } } J’ai egalement developpe un controleur REST avec Spring Boot pour la gestion d’utilisateurs : @RestController @RequestMapping(&quot;/api/users&quot;) public class UserController { @Autowired private UserService userService; @GetMapping public List&lt;User&gt; getAllUsers() { return userService.getAllUsers(); } @GetMapping(&quot;/{id}&quot;) public User getUserById(@PathVariable Long id) { return userService.getUserById(id); } @PostMapping public User createUser(@RequestBody User user) { return userService.createUser(user); } @PutMapping(&quot;/{id}&quot;) public User updateUser(@PathVariable Long id, @RequestBody User userDetails) { return userService.updateUser(id, userDetails); } @DeleteMapping(&quot;/{id}&quot;) public void deleteUser(@PathVariable Long id) { userService.deleteUser(id); } } Les outils de test comme Postman ont ete utilises pour valider les endpoints, verifier les codes de statut HTTP et inspecter les corps de requete/reponse en JSON. 5. Formats de donnees : JSON, XML et YAML Les services web utilisent differents formats de serialisation pour l’echange de donnees : JSON (JavaScript Object Notation) : format leger, lisible et largement adopte pour les API REST. { &quot;id&quot;: 1, &quot;product&quot;: &quot;Laptop&quot;, &quot;quantity&quot;: 3 } XML (eXtensible Markup Language) : format historique utilise par SOAP, plus verbeux mais avec un schema de validation fort (XSD). &lt;order&gt; &lt;id&gt;1&lt;/id&gt; &lt;product&gt;Laptop&lt;/product&gt; &lt;quantity&gt;3&lt;/quantity&gt; &lt;/order&gt; YAML (YAML Ain’t Markup Language) : format lisible souvent utilise pour la configuration (fichiers Spring Boot application.yml, Docker Compose, etc.). order: id: 1 product: Laptop quantity: 3 6. Architecture Microservices Les microservices representent un style architectural qui structure une application comme un ensemble de services faiblement couples, chacun deployable et scalable de maniere independante. Patterns de decomposition : Decomposition par domaine metier : chaque microservice correspond a un domaine fonctionnel (utilisateurs, commandes, feedback, etc.) Decomposition par sous-domaine : approche DDD (Domain-Driven Design) pour delimiter les contextes bornes (bounded contexts) Decouverte de services (Service Discovery) : Dans une architecture microservices, les services doivent pouvoir se trouver mutuellement. Des outils comme Eureka (Netflix) ou Consul (HashiCorp) permettent l’enregistrement et la decouverte dynamique des services. API Gateway : Un point d’entree unique qui route les requetes vers les microservices appropries. L’API Gateway gere egalement des preoccupations transversales comme l’authentification, le rate limiting et le load balancing. Dans le cadre du projet, j’ai utilise Spring Boot pour creer plusieurs microservices independants : userManagement : gestion des utilisateurs (CRUD, profils) volunteerManagement : gestion des benevoles volunteerService : logique metier des benevoles userRequestService : gestion des demandes utilisateurs feedbackService : gestion des retours et evaluations AnalyseProject : service d’analyse globale Chaque microservice possede son propre fichier pom.xml, sa propre base de donnees et peut etre deploye independamment. La communication entre les services se fait via des appels REST HTTP. 7. Gestion de projet avec Maven Maven est l’outil de gestion de projet et de build utilise tout au long du cours. Le fichier pom.xml centralise : Les dependances du projet (Spring Boot, CXF, JAX-RS, etc.) Les plugins de build (compilation, tests, packaging) La configuration du projet (version Java, encoding, etc.) Exemple de configuration Maven pour un microservice Spring Boot : &lt;dependencies&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt; &lt;/dependency&gt; &lt;dependency&gt; &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt; &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt; &lt;scope&gt;test&lt;/scope&gt; &lt;/dependency&gt; &lt;/dependencies&gt; 8. Workflow Git Le projet de microservices a ete gere avec Git pour le controle de version. Le workflow collaboratif incluait : Branching : une branche par fonctionnalite ou microservice Commits : des commits atomiques et messages descriptifs Merge : integration des branches dans la branche principale Remote : synchronisation avec un depot distant (GitLab INSA) 9. Tests unitaires avec JUnit Les tests unitaires avec JUnit ont permis de valider le bon fonctionnement de chaque composant individuellement. Les tests couvrent les services, les controleurs et la logique metier : @Test public void testCreateUser() { User user = new User(&quot;Cedric&quot;, &quot;cedric@insa.fr&quot;); User created = userService.createUser(user); assertNotNull(created.getId()); assertEquals(&quot;Cedric&quot;, created.getName()); } @Test public void testGetAllOrders() { List&lt;Order&gt; orders = orderService.getAllOrders(); assertNotNull(orders); } 10. Framework Spring Boot Spring Boot a ete le framework principal pour le developpement des microservices. Ses avantages cles : Auto-configuration : configuration automatique basee sur les dependances presentes Serveur embarque : Tomcat integre, pas besoin de deploiement externe Starters : des packages de dependances pre-configures (spring-boot-starter-web, etc.) Actuator : monitoring et metriques de l’application Profils : gestion de configurations multiples (dev, test, prod) PART D: ANALYSE ET REFLEXION Connaissances et Competences Mobilisees Comprehension des concepts et caracteristiques des architectures orientees services Developpement d’architectures distribuees utilisant les services web Deploiement et configuration de SOA avec SOAP et REST Conception, developpement et deploiement d’architectures en microservices Maitrise du langage Java et du framework Spring Boot Gestion de projet avec Maven et Git Tests unitaires avec JUnit Comprehension des formats de donnees (JSON, XML, YAML) Connaissance des niveaux de maturite REST (RMM) et de HATEOAS Auto-evaluation L’utilisation de tous les nouveaux concepts appris pendant le cours etait au debut un peu complexe, mais heureusement les tutoriels etaient bien structures, me permettant d’apprendre etape par etape. De plus, il y avait un grand nombre de seances pratiques pour s’exercer et comprendre tous les concepts. N’etant pas habitue a Java, j’ai du reapprendre les bases de ce langage, ce qui a represente un defi supplementaire. Je n’ai pas beaucoup participe aux TP SOAP car je souhaitais me concentrer davantage sur REST et les microservices en raison de contraintes de temps. Neanmoins, les exercices de modelisation WSDL ont ete tres formateurs pour comprendre la structure formelle des contrats de service. Le projet de microservices a ete l’element le plus enrichissant du cours. Concevoir une architecture complete avec plusieurs services independants, gerer les communications inter-services et deployer le tout m’a donne une vision concrete de ce qu’implique le developpement d’applications distribuees en production. La progression pedagogique du cours – des fondamentaux SOA vers SOAP, puis REST, puis les microservices – etait logique et bien construite. Chaque technologie introduisait des concepts qui preparaient a la suivante. Mon Avis Avant de suivre ce cours, je n’avais entendu parler que de certains concepts lies a l’architecture orientee services. Grace aux seances de travaux pratiques, j’ai maintenant une bien meilleure comprehension de l’architecture des applications web et de la maniere d’interagir avec elles. Par exemple, simplement en observant le reseau d’un site web et en comprenant toutes les requetes en arriere-plan. De plus, developper en Java pendant le cours m’a rappele comment coder dans ce langage, ce qui est important car il est tres utilise dans l’industrie. Meme si je prefererais coder en C pour mon avenir professionnel, je peux desormais postuler a des postes Java si necessaire. La comparaison entre SOAP et REST m’a permis de comprendre pourquoi l’industrie migre vers REST : simplicite, performance et meilleure integration avec les architectures modernes. Cependant, SOAP reste pertinent dans des contextes ou la securite et la fiabilite transactionnelle sont critiques (secteur bancaire, sante). L’apprentissage des microservices a ete une ouverture vers les pratiques DevOps modernes. La decomposition en services independants facilite le deploiement continu, le scaling horizontal et la resilience des systemes. Ce sont des competences tres recherchees sur le marche du travail. Documents de Cours Introduction a la SOA Cours d&#39;introduction aux principes fondamentaux de l&#39;Architecture Orientee Services : couplage lache, contrats de service, abstraction et reutilisabilite. Telecharger Standards WSDL (Partie 1) Web Services Description Language : structure du WSDL, types, messages, portType et binding. Telecharger Standards WSDL (Partie 2) Approfondissement du WSDL : binding SOAP, exemples avancees et generation de code. Telecharger Standards SOAP Protocole SOAP : structure des messages (Envelope, Header, Body), encodage et transport HTTP. Telecharger Introduction a REST Architecture RESTful : principes, methodes HTTP, ressources et representations. Telecharger REST - Formats de Donnees Formats de serialisation pour les API REST : JSON, XML, YAML et leurs cas d&#39;usage. Telecharger REST - Richardson Maturity Model Modele de maturite de Richardson : les 4 niveaux de maturite REST, de RPC sur HTTP a HATEOAS. Telecharger Microservices - Introduction Introduction aux microservices : definition, comparaison avec monolithique, avantages et defis. Telecharger Microservices - Proprietes Proprietes des microservices : independance, scalabilite, resilience et deploiement continu. Telecharger Microservices - Architecture Patterns architecturaux des microservices : API Gateway, service discovery, decomposition et communication. Telecharger Rapports et Projets Rapport de Projet - Architecture de Services Ouvrir le Rapport Complet Rapport de Projet BE Ouvrir le Rapport de BE Rapport de TP Ouvrir le Rapport de TP Sujet de TP Ouvrir le Sujet de TP","headline":"Service Oriented Architecture","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"},"url":"http://0.0.0.0:4000/jekyll/update/2024/10/02/service-oriented-architecture.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
@@ -37,77 +37,477 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-courses-2024-2025.html">← Back to My Courses 2024-2025</a></p>
+        <style>
+.back-nav {
+  margin-bottom: 20px;
+}
+.back-nav a {
+  text-decoration: none;
+  color: #2a7ae2;
+  font-weight: 600;
+}
+.back-nav a:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: #2a7ae2;
+  border-bottom: 2px solid #2a7ae2;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+h2, h3, h4 {
+    color: #007BFF;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+.styled-button {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #66B2FF;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.styled-button:hover {
+    background-color: #3399FF;
+    transform: scale(1.05);
+}
+p {
+    text-align: justify;
+}
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2024-2025.html">← Retour a Mes Cours 2024-2025</a>
+</div>
 
 <h1 id="service-oriented-architecture">Service Oriented Architecture</h1>
 
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+<p><strong>Annee Academique</strong>: 2024-2025
+<strong>Semestre</strong>: 9 (S9)
+<strong>Enseignant</strong>: N. Guermouche
+<strong>Categorie</strong>: Architectures Logicielles / Services Web</p>
+
+<hr />
+
+<h2 class="section-title" id="part-a-presentation-generale">PART A: PRESENTATION GENERALE</h2>
 
 <h3 id="presentation">Presentation</h3>
-<p>The Service Oriented Architecture (SOA) course was a guided dive into the principles and practices of designing and implementing service-oriented systems. Taught by N. Guermouche, the course covered legacy and modern service architectures focusing on how to create scalable, maintainable, and efficient systems.</p>
 
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+<p>Le cours d’Architecture Orientee Services (SOA) a constitue une immersion approfondie dans les principes et les pratiques de conception et d’implementation de systemes orientes services. Enseigne par N. Guermouche, ce cours a couvert les architectures de services traditionnelles et modernes, en se concentrant sur la creation de systemes scalables, maintenables et performants.</p>
 
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-
-<p>This course was really useful as the increasing demand for systems in the industry that highlights the relevance of this subject. The labs sessions allowed me to apply the concepts learned in class to real-world scenarios which was beneficial to understand different architecture methodologies.</p>
-
-<h4 id="my-function">My Function</h4>
-
-<p>In this course, I was responsible for:</p>
+<p>Le programme s’articulait autour de trois grands axes :</p>
 <ul>
-  <li>Understanding the principles of service-oriented architectures.</li>
-  <li>Designing and implementing service-oriented systems.</li>
-  <li>Conducting experiments to test the efficiency and scalability of various service architectures.</li>
+  <li><strong>Les services web traditionnels (SOAP/WSDL)</strong> : comprendre les fondements historiques de la SOA, les protocoles d’echange standardises et la description formelle des services.</li>
+  <li><strong>Les services RESTful</strong> : maitriser l’approche moderne basee sur les ressources HTTP, les formats de donnees legers (JSON, XML, YAML) et le modele de maturite de Richardson (RMM).</li>
+  <li><strong>Les microservices</strong> : apprehender la decomposition d’applications monolithiques en services autonomes, independamment deployables et scalables, avec Spring Boot comme framework de reference.</li>
 </ul>
 
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of the Service Architecture course mainly learnt during technical labs focusing on SOAP, REST and microservices.</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h4 id="1-soap-architecture">1. SOAP Architecture</h4>
-<p>I learned about the SOAP (Simple Object Access Protocol) architecture which is a protocol for exchanging structured information in web services. SOAP uses XML for message formatting and relies on other application layer protocols, such as HTTP or SMTP, for message negotiation and transmission.</p>
-
-<ol>
-  <li><strong>SOAP Request Envelope</strong>: The request envelope contains the SOAP message that is sent to the web service. For example, if the chain is “cedric”, the SOAP request envelope would look like this:
-    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span> <span class="na">xmlns:web=</span><span class="s">"http://example.com/webservice"</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;soapenv:Header/&gt;</span>
-     <span class="nt">&lt;soapenv:Body&gt;</span>
-         <span class="nt">&lt;web:MyRequest&gt;</span>
-             <span class="nt">&lt;web:chain&gt;</span>cedric<span class="nt">&lt;/web:chain&gt;</span>
-         <span class="nt">&lt;/web:MyRequest&gt;</span>
-     <span class="nt">&lt;/soapenv:Body&gt;</span>
- <span class="nt">&lt;/soapenv:Envelope&gt;</span>
-</code></pre></div>    </div>
-  </li>
-  <li><strong>SOAP Response</strong>: The response is returned by the web service after processing the request. For example, if the response returns 6, the SOAP response would look like this:
-    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span> <span class="na">xmlns:web=</span><span class="s">"http://example.com/webservice"</span><span class="nt">&gt;</span>
-     <span class="nt">&lt;soapenv:Header/&gt;</span>
-     <span class="nt">&lt;soapenv:Body&gt;</span>
-         <span class="nt">&lt;web:MyResponse&gt;</span>
-             <span class="nt">&lt;web:result&gt;</span>6<span class="nt">&lt;/web:result&gt;</span>
-         <span class="nt">&lt;/web:MyResponse&gt;</span>
-     <span class="nt">&lt;/soapenv:Body&gt;</span>
- <span class="nt">&lt;/soapenv:Envelope&gt;</span>
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h4 id="2-rest-architecture">2. REST Architecture</h4>
-<p>I also learned about REST (Representational State Transfer), an architectural style that uses standard HTTP methods (POST, GET, PUT, DELETE) to interact with resources.</p>
+<h3 id="competences-visees">Competences visees</h3>
 
 <ul>
-  <li><strong>POST</strong>: Creates a new resource, e.g., <code class="language-plaintext highlighter-rouge">POST /users</code> creates a new user.</li>
-  <li><strong>GET</strong>: Retrieves a resource, e.g., <code class="language-plaintext highlighter-rouge">GET /users/1</code> retrieves user with ID 1.</li>
-  <li><strong>PUT</strong>: Updates a resource, e.g., <code class="language-plaintext highlighter-rouge">PUT /users/1</code> updates user with ID 1.</li>
-  <li><strong>DELETE</strong>: Deletes a resource, e.g., <code class="language-plaintext highlighter-rouge">DELETE /users/1</code> deletes user with ID 1.</li>
+  <li>Comprendre les principes fondamentaux des architectures orientees services</li>
+  <li>Concevoir et implementer des services web SOAP et REST</li>
+  <li>Maitriser la description de services avec WSDL</li>
+  <li>Developper des API RESTful conformes aux bonnes pratiques</li>
+  <li>Architecturer des applications en microservices</li>
+  <li>Utiliser Maven pour la gestion de projets Java</li>
+  <li>Appliquer les tests unitaires avec JUnit</li>
+  <li>Collaborer avec Git dans un workflow de developpement</li>
 </ul>
 
-<p>I developed RESTful services for managing user requests using JSON for data interchange and tools like Postman for testing.</p>
+<hr />
+
+<h2 class="section-title" id="part-b-experience-et-contexte">PART B: EXPERIENCE ET CONTEXTE</h2>
+
+<h3 id="details-de-lexperience">Details de l’experience</h3>
+
+<h4 id="environnement-et-contexte">Environnement et Contexte</h4>
+
+<p>Ce cours s’est revele particulierement utile dans un contexte ou la demande industrielle pour des systemes distribues et des architectures de services ne cesse de croitre. L’industrie du logiciel migre massivement des architectures monolithiques vers des architectures en microservices, rendant ces competences essentielles pour tout ingenieur en informatique.</p>
+
+<p>Les seances de travaux pratiques m’ont permis d’appliquer les concepts appris en cours a des scenarios concrets, ce qui a ete benefique pour comprendre les differentes methodologies architecturales. Le cours etait structure en progression : des fondamentaux SOA/SOAP vers REST, puis vers les microservices, chaque etape construisant sur la precedente.</p>
+
+<h4 id="ma-fonction">Ma Fonction</h4>
+
+<p>Dans le cadre de ce cours, j’ai ete responsable de :</p>
+<ul>
+  <li>Comprendre les principes des architectures orientees services (couplage lache, contrats de service, abstraction)</li>
+  <li>Concevoir et implementer des systemes orientes services avec SOAP et REST</li>
+  <li>Developper un projet complet en microservices avec Spring Boot</li>
+  <li>Rediger un rapport WSDL et des exercices de modelisation de services</li>
+  <li>Mener des experimentations pour tester l’efficacite et la scalabilite des differentes architectures</li>
+  <li>Collaborer en binome (avec T. Bigot) sur le projet final de microservices</li>
+</ul>
+
+<hr />
+
+<h2 class="section-title" id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+
+<p>Cette section explore en detail les aspects techniques du cours d’Architecture Orientee Services, acquis principalement lors des travaux pratiques portant sur SOAP, REST et les microservices.</p>
+
+<h3 id="concepts-techniques">Concepts Techniques</h3>
+
+<h4 id="1-principes-fondamentaux-de-la-soa">1. Principes fondamentaux de la SOA</h4>
+
+<p>L’Architecture Orientee Services repose sur plusieurs principes fondamentaux :</p>
+
+<p><strong>Couplage lache (Loose Coupling)</strong> :
+Les services sont conçus pour minimiser les dependances entre eux. Chaque service peut evoluer independamment sans impacter les autres. Cela favorise la maintenabilite et la flexibilite du systeme global.</p>
+
+<p><strong>Contrats de service</strong> :
+Chaque service expose un contrat formel (WSDL pour SOAP, OpenAPI/Swagger pour REST) decrivant ses operations, ses types de donnees et ses protocoles de communication. Ce contrat sert d’interface entre le fournisseur et le consommateur du service.</p>
+
+<p><strong>Abstraction</strong> :
+Les details d’implementation sont caches derriere l’interface du service. Le consommateur n’a pas besoin de connaitre la logique interne, la base de donnees ou le langage de programmation utilise.</p>
+
+<p><strong>Reutilisabilite</strong> :
+Les services sont conçus pour etre reutilises dans differents contextes et applications. Un service de gestion d’utilisateurs peut etre utilise par plusieurs applications differentes.</p>
+
+<p><strong>Decouverte de services</strong> :
+Les services peuvent etre decouverts dynamiquement via un registre (UDDI pour SOAP, service registry pour microservices), permettant une composition flexible.</p>
+
+<h4 id="2-wsdl---web-services-description-language">2. WSDL - Web Services Description Language</h4>
+
+<p>Le WSDL est un langage XML utilise pour decrire les services web SOAP. Il definit quatre elements principaux :</p>
+
+<ul>
+  <li><strong>Types</strong> : les types de donnees utilises par le service (schemas XSD)</li>
+  <li><strong>Messages</strong> : les messages echanges (entree/sortie)</li>
+  <li><strong>PortType</strong> : les operations disponibles (l’interface du service)</li>
+  <li><strong>Binding</strong> : le protocole de transport et le format d’encodage</li>
+</ul>
+
+<p>Voici un exemple de fichier WSDL que j’ai etudie et produit en TP, decrivant un service de recherche de livres :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;wsdl:definitions</span> <span class="na">xmlns:tns=</span><span class="s">"http://www.example.org/BookService/"</span>
+                  <span class="na">xmlns:wsdl=</span><span class="s">"http://schemas.xmlsoap.org/wsdl/"</span>
+                  <span class="na">xmlns:xsd=</span><span class="s">"http://www.w3.org/2001/XMLSchema"</span>
+                  <span class="na">xmlns:soap=</span><span class="s">"http://schemas.xmlsoap.org/wsdl/soap/"</span>
+                  <span class="na">name=</span><span class="s">"BookService"</span>
+                  <span class="na">targetNamespace=</span><span class="s">"http://www.example.org/BookService/"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;wsdl:types&gt;</span>
+        <span class="nt">&lt;xsd:schema</span> <span class="na">targetNamespace=</span><span class="s">"http://www.example.org/BookService/"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;xsd:complexType</span> <span class="na">name=</span><span class="s">"BookType"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;xsd:sequence&gt;</span>
+                    <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">"title"</span> <span class="na">type=</span><span class="s">"xsd:string"</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">"author"</span> <span class="na">type=</span><span class="s">"xsd:int"</span><span class="nt">/&gt;</span>
+                    <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">"isbn"</span> <span class="na">type=</span><span class="s">"xsd:string"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/xsd:sequence&gt;</span>
+            <span class="nt">&lt;/xsd:complexType&gt;</span>
+            <span class="nt">&lt;xsd:element</span> <span class="na">name=</span><span class="s">"book"</span> <span class="na">type=</span><span class="s">"tns:BookType"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/xsd:schema&gt;</span>
+    <span class="nt">&lt;/wsdl:types&gt;</span>
+
+    <span class="nt">&lt;wsdl:message</span> <span class="na">name=</span><span class="s">"searchbookIn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;wsdl:part</span> <span class="na">name=</span><span class="s">"title"</span> <span class="na">type=</span><span class="s">"xsd:string"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/wsdl:message&gt;</span>
+    <span class="nt">&lt;wsdl:message</span> <span class="na">name=</span><span class="s">"searchbookOut"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;wsdl:part</span> <span class="na">name=</span><span class="s">"book"</span> <span class="na">element=</span><span class="s">"tns:book"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/wsdl:message&gt;</span>
+
+    <span class="nt">&lt;wsdl:portType</span> <span class="na">name=</span><span class="s">"Port1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;wsdl:operation</span> <span class="na">name=</span><span class="s">"searchBook"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;wsdl:input</span> <span class="na">message=</span><span class="s">"tns:searchbookIn"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;wsdl:output</span> <span class="na">message=</span><span class="s">"tns:searchbookOut"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/wsdl:operation&gt;</span>
+    <span class="nt">&lt;/wsdl:portType&gt;</span>
+
+    <span class="nt">&lt;wsdl:binding</span> <span class="na">name=</span><span class="s">"BookWSPortBinding"</span> <span class="na">type=</span><span class="s">"tns:Port1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;soap:binding</span> <span class="na">style=</span><span class="s">"document"</span>
+                      <span class="na">transport=</span><span class="s">"http://schemas.xmlsoap.org/soap/http"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;wsdl:operation</span> <span class="na">name=</span><span class="s">"searchBook"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;wsdl:input&gt;&lt;soap:body</span> <span class="na">use=</span><span class="s">"literal"</span><span class="nt">/&gt;&lt;/wsdl:input&gt;</span>
+            <span class="nt">&lt;wsdl:output&gt;&lt;soap:body</span> <span class="na">use=</span><span class="s">"literal"</span><span class="nt">/&gt;&lt;/wsdl:output&gt;</span>
+        <span class="nt">&lt;/wsdl:operation&gt;</span>
+    <span class="nt">&lt;/wsdl:binding&gt;</span>
+
+    <span class="nt">&lt;wsdl:service</span> <span class="na">name=</span><span class="s">"UnivWS"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;wsdl:port</span> <span class="na">name=</span><span class="s">"UnivWSPort"</span> <span class="na">binding=</span><span class="s">"tns:BookWSPortBinding"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;soap:address</span> <span class="na">location=</span><span class="s">"http://localhost:8080/UnivWSApplication/UnivWS"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/wsdl:port&gt;</span>
+    <span class="nt">&lt;/wsdl:service&gt;</span>
+<span class="nt">&lt;/wsdl:definitions&gt;</span>
+</code></pre></div></div>
+
+<p>J’ai egalement developpe des classes Java correspondant aux types WSDL, comme la modelisation d’un systeme de gestion de cours :</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CoursType</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">intitule</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">ects</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="n">nomResponsable</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">CoursType</span><span class="o">(</span><span class="nc">String</span> <span class="n">intitule</span><span class="o">,</span> <span class="kt">int</span> <span class="n">ects</span><span class="o">,</span> <span class="nc">String</span> <span class="n">nomResponsable</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">intitule</span> <span class="o">=</span> <span class="n">intitule</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ects</span> <span class="o">=</span> <span class="n">ects</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">nomResponsable</span> <span class="o">=</span> <span class="n">nomResponsable</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// getters et setters</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="3-protocole-soap">3. Protocole SOAP</h4>
+
+<p>Le protocole SOAP (Simple Object Access Protocol) est un protocole d’echange de messages structures pour les services web. Il utilise XML pour le formatage des messages et s’appuie sur des protocoles de la couche application tels que HTTP ou SMTP pour la transmission.</p>
+
+<p>La structure d’un message SOAP comprend trois parties :</p>
+<ul>
+  <li><strong>Envelope</strong> : l’element racine qui encapsule l’ensemble du message</li>
+  <li><strong>Header</strong> (optionnel) : contient des metadonnees (authentification, routage, etc.)</li>
+  <li><strong>Body</strong> : contient le contenu du message (requete ou reponse)</li>
+</ul>
+
+<p><strong>Requete SOAP</strong> : L’enveloppe de requete contient le message SOAP envoye au service web. Par exemple, si la chaine recherchee est “cedric”, l’enveloppe SOAP ressemble a ceci :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span>
+                  <span class="na">xmlns:web=</span><span class="s">"http://example.com/webservice"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;soapenv:Header/&gt;</span>
+    <span class="nt">&lt;soapenv:Body&gt;</span>
+        <span class="nt">&lt;web:MyRequest&gt;</span>
+            <span class="nt">&lt;web:chain&gt;</span>cedric<span class="nt">&lt;/web:chain&gt;</span>
+        <span class="nt">&lt;/web:MyRequest&gt;</span>
+    <span class="nt">&lt;/soapenv:Body&gt;</span>
+<span class="nt">&lt;/soapenv:Envelope&gt;</span>
+</code></pre></div></div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_MOOC/SOAP_send.png" alt="Envoi d'une requete SOAP" style="width: 70%; border: 1px solid #ddd; border-radius: 5px; padding: 5px;" />
+</div>
+<p style="text-align: center; font-style: italic;">Envoi d'une requete SOAP depuis un client</p>
+<p><br /></p>
+
+<p><strong>Reponse SOAP</strong> : La reponse est retournee par le service web apres traitement de la requete. Par exemple, si la reponse retourne 6 (longueur de la chaine) :</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;soapenv:Envelope</span> <span class="na">xmlns:soapenv=</span><span class="s">"http://schemas.xmlsoap.org/soap/envelope/"</span>
+                  <span class="na">xmlns:tns=</span><span class="s">"http://www.example.org/BookService/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;soapenv:Header/&gt;</span>
+    <span class="nt">&lt;soapenv:Body&gt;</span>
+        <span class="nt">&lt;tns:searchBookResponse&gt;</span>
+            <span class="nt">&lt;tns:book&gt;</span>
+                <span class="nt">&lt;tns:title&gt;</span>Les Miserables<span class="nt">&lt;/tns:title&gt;</span>
+                <span class="nt">&lt;tns:author&gt;</span>123<span class="nt">&lt;/tns:author&gt;</span>
+                <span class="nt">&lt;tns:isbn&gt;</span>13.978-2211215350<span class="nt">&lt;/tns:isbn&gt;</span>
+            <span class="nt">&lt;/tns:book&gt;</span>
+        <span class="nt">&lt;/tns:searchBookResponse&gt;</span>
+    <span class="nt">&lt;/soapenv:Body&gt;</span>
+<span class="nt">&lt;/soapenv:Envelope&gt;</span>
+</code></pre></div></div>
+
+<div style="display: flex; justify-content: center;">
+    <img src="/img/BE_MOOC/SOAP_receive.png" alt="Reception d'une reponse SOAP" style="width: 70%; border: 1px solid #ddd; border-radius: 5px; padding: 5px;" />
+</div>
+<p style="text-align: center; font-style: italic;">Reception d'une reponse SOAP</p>
+<p><br /></p>
+
+<p>Les tutoriels SOA nous ont permis de pratiquer deux approches :</p>
+<ul>
+  <li><strong>Bottom-Up (Code First)</strong> : on ecrit d’abord le code Java, puis on genere le WSDL automatiquement avec Apache CXF</li>
+  <li><strong>Top-Down (Contract First)</strong> : on ecrit d’abord le WSDL, puis on genere les stubs Java avec le plugin cxf-codegen</li>
+</ul>
+
+<h4 id="4-services-restful">4. Services RESTful</h4>
+
+<p>REST (Representational State Transfer) est un style architectural qui utilise les methodes HTTP standard pour interagir avec des ressources. Contrairement a SOAP, REST est sans etat (stateless), plus leger et s’appuie sur les standards du Web.</p>
+
+<p><strong>Methodes HTTP</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Methode</th>
+      <th>Action</th>
+      <th>Exemple</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>GET</strong></td>
+      <td>Lecture</td>
+      <td><code class="language-plaintext highlighter-rouge">GET /users/1</code></td>
+      <td>Recupere l’utilisateur avec l’ID 1</td>
+    </tr>
+    <tr>
+      <td><strong>POST</strong></td>
+      <td>Creation</td>
+      <td><code class="language-plaintext highlighter-rouge">POST /users</code></td>
+      <td>Cree un nouvel utilisateur</td>
+    </tr>
+    <tr>
+      <td><strong>PUT</strong></td>
+      <td>Mise a jour complete</td>
+      <td><code class="language-plaintext highlighter-rouge">PUT /users/1</code></td>
+      <td>Remplace l’utilisateur 1</td>
+    </tr>
+    <tr>
+      <td><strong>PATCH</strong></td>
+      <td>Mise a jour partielle</td>
+      <td><code class="language-plaintext highlighter-rouge">PATCH /users/1</code></td>
+      <td>Modifie partiellement l’utilisateur 1</td>
+    </tr>
+    <tr>
+      <td><strong>DELETE</strong></td>
+      <td>Suppression</td>
+      <td><code class="language-plaintext highlighter-rouge">DELETE /users/1</code></td>
+      <td>Supprime l’utilisateur 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Codes de statut HTTP</strong> :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Signification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>OK - Requete reussie</td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>Created - Ressource creee</td>
+    </tr>
+    <tr>
+      <td>204</td>
+      <td>No Content - Succes sans contenu de retour</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Bad Request - Requete invalide</td>
+    </tr>
+    <tr>
+      <td>401</td>
+      <td>Unauthorized - Authentification requise</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>Forbidden - Acces refuse</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>Not Found - Ressource non trouvee</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>Internal Server Error - Erreur serveur</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>HATEOAS (Hypermedia As The Engine Of Application State)</strong> :
+HATEOAS est un principe REST ou les reponses contiennent des liens hypertextes vers les actions disponibles. Cela permet au client de naviguer dynamiquement dans l’API sans connaitre a l’avance les URLs. Par exemple, une reponse pour un utilisateur pourrait inclure des liens vers ses commandes, son profil, etc.</p>
+
+<p><strong>Modele de Maturite de Richardson (RMM)</strong> :
+Le RMM definit quatre niveaux de maturite pour les API REST :</p>
+
+<ul>
+  <li><strong>Niveau 0</strong> : Un seul point d’entree (type RPC sur HTTP). Toutes les requetes passent par une seule URL.</li>
+  <li><strong>Niveau 1</strong> : Introduction des ressources. Chaque ressource a sa propre URI (par exemple <code class="language-plaintext highlighter-rouge">/users</code>, <code class="language-plaintext highlighter-rouge">/orders</code>).</li>
+  <li><strong>Niveau 2</strong> : Utilisation correcte des verbes HTTP (GET, POST, PUT, DELETE) et des codes de statut.</li>
+  <li><strong>Niveau 3</strong> : HATEOAS. Les reponses contiennent des liens hypertextes pour guider le client. C’est le niveau le plus mature.</li>
+</ul>
+
+<p>J’ai developpe des services RESTful pour la gestion de commandes en utilisant JAX-RS et JSON pour l’echange de donnees :</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">OrderService</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Order</span><span class="o">&gt;</span> <span class="n">orders</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">idCounter</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+
+    <span class="nd">@GET</span>
+    <span class="nd">@Produces</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Order</span><span class="o">&gt;</span> <span class="nf">getAllOrders</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">orders</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@GET</span>
+    <span class="nd">@Path</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="nd">@Produces</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">Order</span> <span class="nf">getOrder</span><span class="o">(</span><span class="nd">@PathParam</span><span class="o">(</span><span class="s">"id"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">orders</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">order</span> <span class="o">-&gt;</span> <span class="n">order</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">==</span> <span class="n">id</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">findFirst</span><span class="o">().</span><span class="na">orElse</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@POST</span>
+    <span class="nd">@Consumes</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="nd">@Produces</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">Order</span> <span class="nf">createOrder</span><span class="o">(</span><span class="nc">Order</span> <span class="n">order</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">order</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="n">idCounter</span><span class="o">++);</span>
+        <span class="n">orders</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">order</span><span class="o">);</span>
+        <span class="k">return</span> <span class="n">order</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@PUT</span>
+    <span class="nd">@Path</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="nd">@Consumes</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="nd">@Produces</span><span class="o">(</span><span class="nc">MediaType</span><span class="o">.</span><span class="na">APPLICATION_JSON</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="nc">Order</span> <span class="nf">updateOrder</span><span class="o">(</span><span class="nd">@PathParam</span><span class="o">(</span><span class="s">"id"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="nc">Order</span> <span class="n">updatedOrder</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="nc">Order</span> <span class="n">order</span> <span class="o">:</span> <span class="n">orders</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">order</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">==</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">order</span><span class="o">.</span><span class="na">setProduct</span><span class="o">(</span><span class="n">updatedOrder</span><span class="o">.</span><span class="na">getProduct</span><span class="o">());</span>
+                <span class="n">order</span><span class="o">.</span><span class="na">setQuantity</span><span class="o">(</span><span class="n">updatedOrder</span><span class="o">.</span><span class="na">getQuantity</span><span class="o">());</span>
+                <span class="k">return</span> <span class="n">order</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@DELETE</span>
+    <span class="nd">@Path</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">deleteOrder</span><span class="o">(</span><span class="nd">@PathParam</span><span class="o">(</span><span class="s">"id"</span><span class="o">)</span> <span class="kt">int</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">orders</span><span class="o">.</span><span class="na">removeIf</span><span class="o">(</span><span class="n">order</span> <span class="o">-&gt;</span> <span class="n">order</span><span class="o">.</span><span class="na">getId</span><span class="o">()</span> <span class="o">==</span> <span class="n">id</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>J’ai egalement developpe un controleur REST avec Spring Boot pour la gestion d’utilisateurs :</p>
 
 <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@RestController</span>
 <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/api/users"</span><span class="o">)</span>
@@ -116,31 +516,26 @@
     <span class="nd">@Autowired</span>
     <span class="kd">private</span> <span class="nc">UserService</span> <span class="n">userService</span><span class="o">;</span>
 
-    <span class="c1">// Get all users</span>
     <span class="nd">@GetMapping</span>
     <span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">User</span><span class="o">&gt;</span> <span class="nf">getAllUsers</span><span class="o">()</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">getAllUsers</span><span class="o">();</span>
     <span class="o">}</span>
 
-    <span class="c1">// Get a user by ID</span>
     <span class="nd">@GetMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
     <span class="kd">public</span> <span class="nc">User</span> <span class="nf">getUserById</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">getUserById</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="c1">// Create a new user</span>
     <span class="nd">@PostMapping</span>
     <span class="kd">public</span> <span class="nc">User</span> <span class="nf">createUser</span><span class="o">(</span><span class="nd">@RequestBody</span> <span class="nc">User</span> <span class="n">user</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">createUser</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="c1">// Update an existing user</span>
     <span class="nd">@PutMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
     <span class="kd">public</span> <span class="nc">User</span> <span class="nf">updateUser</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">,</span> <span class="nd">@RequestBody</span> <span class="nc">User</span> <span class="n">userDetails</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">userService</span><span class="o">.</span><span class="na">updateUser</span><span class="o">(</span><span class="n">id</span><span class="o">,</span> <span class="n">userDetails</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="c1">// Delete a user by ID</span>
     <span class="nd">@DeleteMapping</span><span class="o">(</span><span class="s">"/{id}"</span><span class="o">)</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">deleteUser</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="nc">Long</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">userService</span><span class="o">.</span><span class="na">deleteUser</span><span class="o">(</span><span class="n">id</span><span class="o">);</span>
@@ -148,96 +543,272 @@
 <span class="o">}</span>
 </code></pre></div></div>
 
-<h4 id="3-microservices-development">3. Microservices Development</h4>
-<p>Microservices are an architectural style that structures an application as a collection of coupled services. Each service is independently deployable and scalable. I used Spring Boot to create microservices for user management, volunteer management, request management, and feedback management (refer to <a href="#project-report">Project Report</a>) .</p>
+<p>Les outils de test comme Postman ont ete utilises pour valider les endpoints, verifier les codes de statut HTTP et inspecter les corps de requete/reponse en JSON.</p>
 
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+<h4 id="5-formats-de-donnees--json-xml-et-yaml">5. Formats de donnees : JSON, XML et YAML</h4>
 
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
+<p>Les services web utilisent differents formats de serialisation pour l’echange de donnees :</p>
+
+<p><strong>JSON (JavaScript Object Notation)</strong> : format leger, lisible et largement adopte pour les API REST.</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"product"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laptop"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>XML (eXtensible Markup Language)</strong> : format historique utilise par SOAP, plus verbeux mais avec un schema de validation fort (XSD).</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;order&gt;</span>
+    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+    <span class="nt">&lt;product&gt;</span>Laptop<span class="nt">&lt;/product&gt;</span>
+    <span class="nt">&lt;quantity&gt;</span>3<span class="nt">&lt;/quantity&gt;</span>
+<span class="nt">&lt;/order&gt;</span>
+</code></pre></div></div>
+
+<p><strong>YAML (YAML Ain’t Markup Language)</strong> : format lisible souvent utilise pour la configuration (fichiers Spring Boot <code class="language-plaintext highlighter-rouge">application.yml</code>, Docker Compose, etc.).</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">order</span><span class="pi">:</span>
+  <span class="na">id</span><span class="pi">:</span> <span class="m">1</span>
+  <span class="na">product</span><span class="pi">:</span> <span class="s">Laptop</span>
+  <span class="na">quantity</span><span class="pi">:</span> <span class="m">3</span>
+</code></pre></div></div>
+
+<h4 id="6-architecture-microservices">6. Architecture Microservices</h4>
+
+<p>Les microservices representent un style architectural qui structure une application comme un ensemble de services faiblement couples, chacun deployable et scalable de maniere independante.</p>
+
+<p><strong>Patterns de decomposition</strong> :</p>
 <ul>
-  <li>Understanding of service-oriented architecture concepts and features.</li>
-  <li>Development of distributed architectures using web services.</li>
-  <li>Deployment and configuration of SOA using SOAP and REST.</li>
-  <li>Design, development, and deployment of microservice architectures.</li>
-  <li>Mastering the architecture of energy management systems, simple storage, energy recovery, and sizing storage elements according to specifications.</li>
+  <li><strong>Decomposition par domaine metier</strong> : chaque microservice correspond a un domaine fonctionnel (utilisateurs, commandes, feedback, etc.)</li>
+  <li><strong>Decomposition par sous-domaine</strong> : approche DDD (Domain-Driven Design) pour delimiter les contextes bornes (bounded contexts)</li>
 </ul>
 
-<h3 id="self-evaluation">Self Evaluation</h3>
-<p>Using all the new concepts learned during the course was at first a bit complicated but fortunately the tutorials were well-structured allowing me to learn step by step. Also, there was a large number of practical sessions to practice and understand all the concepts. As I am not used to Java, I had to relearn the basics of this language which was a bit challenging.</p>
+<p><strong>Decouverte de services (Service Discovery)</strong> :
+Dans une architecture microservices, les services doivent pouvoir se trouver mutuellement. Des outils comme Eureka (Netflix) ou Consul (HashiCorp) permettent l’enregistrement et la decouverte dynamique des services.</p>
 
-<p>I didn’t participate much in the SOAP concept labs because I wanted to focus more on REST and microservices due to time constraints.</p>
+<p><strong>API Gateway</strong> :
+Un point d’entree unique qui route les requetes vers les microservices appropries. L’API Gateway gere egalement des preoccupations transversales comme l’authentification, le rate limiting et le load balancing.</p>
 
-<h3 id="my-opinion">My Opinion</h3>
-<p>Before taking this course, I had only heard about some of the concepts related to service-oriented architecture. Thanks to the lab sessions, I now have a much better understanding of the architecture of web applications and how to interact with them. For example, just by looking into a website network and understanding all the requests in the background.</p>
+<p>Dans le cadre du projet, j’ai utilise Spring Boot pour creer plusieurs microservices independants :</p>
+<ul>
+  <li><strong>userManagement</strong> : gestion des utilisateurs (CRUD, profils)</li>
+  <li><strong>volunteerManagement</strong> : gestion des benevoles</li>
+  <li><strong>volunteerService</strong> : logique metier des benevoles</li>
+  <li><strong>userRequestService</strong> : gestion des demandes utilisateurs</li>
+  <li><strong>feedbackService</strong> : gestion des retours et evaluations</li>
+  <li><strong>AnalyseProject</strong> : service d’analyse globale</li>
+</ul>
 
-<p>Additionally, developing in Java during the course reminded me of how to code in this language which is important as it is use in lot of companies industry. Even if I’d prefer to code in C for my professional future, I can now apply for Java positions if needed.</p>
+<p>Chaque microservice possede son propre fichier <code class="language-plaintext highlighter-rouge">pom.xml</code>, sa propre base de donnees et peut etre deploye independamment. La communication entre les services se fait via des appels REST HTTP.</p>
 
-<div style="text-align: center;">
-    <h1>Project Report</h1>
+<h4 id="7-gestion-de-projet-avec-maven">7. Gestion de projet avec Maven</h4>
+
+<p>Maven est l’outil de gestion de projet et de build utilise tout au long du cours. Le fichier <code class="language-plaintext highlighter-rouge">pom.xml</code> centralise :</p>
+<ul>
+  <li>Les dependances du projet (Spring Boot, CXF, JAX-RS, etc.)</li>
+  <li>Les plugins de build (compilation, tests, packaging)</li>
+  <li>La configuration du projet (version Java, encoding, etc.)</li>
+</ul>
+
+<p>Exemple de configuration Maven pour un microservice Spring Boot :</p>
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-test<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
+</code></pre></div></div>
+
+<h4 id="8-workflow-git">8. Workflow Git</h4>
+
+<p>Le projet de microservices a ete gere avec Git pour le controle de version. Le workflow collaboratif incluait :</p>
+<ul>
+  <li><strong>Branching</strong> : une branche par fonctionnalite ou microservice</li>
+  <li><strong>Commits</strong> : des commits atomiques et messages descriptifs</li>
+  <li><strong>Merge</strong> : integration des branches dans la branche principale</li>
+  <li><strong>Remote</strong> : synchronisation avec un depot distant (GitLab INSA)</li>
+</ul>
+
+<h4 id="9-tests-unitaires-avec-junit">9. Tests unitaires avec JUnit</h4>
+
+<p>Les tests unitaires avec JUnit ont permis de valider le bon fonctionnement de chaque composant individuellement. Les tests couvrent les services, les controleurs et la logique metier :</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Test</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">testCreateUser</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">User</span> <span class="n">user</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">User</span><span class="o">(</span><span class="s">"Cedric"</span><span class="o">,</span> <span class="s">"cedric@insa.fr"</span><span class="o">);</span>
+    <span class="nc">User</span> <span class="n">created</span> <span class="o">=</span> <span class="n">userService</span><span class="o">.</span><span class="na">createUser</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">created</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+    <span class="n">assertEquals</span><span class="o">(</span><span class="s">"Cedric"</span><span class="o">,</span> <span class="n">created</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+<span class="o">}</span>
+
+<span class="nd">@Test</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">testGetAllOrders</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nc">List</span><span class="o">&lt;</span><span class="nc">Order</span><span class="o">&gt;</span> <span class="n">orders</span> <span class="o">=</span> <span class="n">orderService</span><span class="o">.</span><span class="na">getAllOrders</span><span class="o">();</span>
+    <span class="n">assertNotNull</span><span class="o">(</span><span class="n">orders</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h4 id="10-framework-spring-boot">10. Framework Spring Boot</h4>
+
+<p>Spring Boot a ete le framework principal pour le developpement des microservices. Ses avantages cles :</p>
+<ul>
+  <li><strong>Auto-configuration</strong> : configuration automatique basee sur les dependances presentes</li>
+  <li><strong>Serveur embarque</strong> : Tomcat integre, pas besoin de deploiement externe</li>
+  <li><strong>Starters</strong> : des packages de dependances pre-configures (spring-boot-starter-web, etc.)</li>
+  <li><strong>Actuator</strong> : monitoring et metriques de l’application</li>
+  <li><strong>Profils</strong> : gestion de configurations multiples (dev, test, prod)</li>
+</ul>
+
+<hr />
+
+<h2 class="section-title" id="part-d-analyse-et-reflexion">PART D: ANALYSE ET REFLEXION</h2>
+
+<h3 id="connaissances-et-competences-mobilisees">Connaissances et Competences Mobilisees</h3>
+
+<ul>
+  <li>Comprehension des concepts et caracteristiques des architectures orientees services</li>
+  <li>Developpement d’architectures distribuees utilisant les services web</li>
+  <li>Deploiement et configuration de SOA avec SOAP et REST</li>
+  <li>Conception, developpement et deploiement d’architectures en microservices</li>
+  <li>Maitrise du langage Java et du framework Spring Boot</li>
+  <li>Gestion de projet avec Maven et Git</li>
+  <li>Tests unitaires avec JUnit</li>
+  <li>Comprehension des formats de donnees (JSON, XML, YAML)</li>
+  <li>Connaissance des niveaux de maturite REST (RMM) et de HATEOAS</li>
+</ul>
+
+<h3 id="auto-evaluation">Auto-evaluation</h3>
+
+<p>L’utilisation de tous les nouveaux concepts appris pendant le cours etait au debut un peu complexe, mais heureusement les tutoriels etaient bien structures, me permettant d’apprendre etape par etape. De plus, il y avait un grand nombre de seances pratiques pour s’exercer et comprendre tous les concepts. N’etant pas habitue a Java, j’ai du reapprendre les bases de ce langage, ce qui a represente un defi supplementaire.</p>
+
+<p>Je n’ai pas beaucoup participe aux TP SOAP car je souhaitais me concentrer davantage sur REST et les microservices en raison de contraintes de temps. Neanmoins, les exercices de modelisation WSDL ont ete tres formateurs pour comprendre la structure formelle des contrats de service.</p>
+
+<p>Le projet de microservices a ete l’element le plus enrichissant du cours. Concevoir une architecture complete avec plusieurs services independants, gerer les communications inter-services et deployer le tout m’a donne une vision concrete de ce qu’implique le developpement d’applications distribuees en production.</p>
+
+<p>La progression pedagogique du cours – des fondamentaux SOA vers SOAP, puis REST, puis les microservices – etait logique et bien construite. Chaque technologie introduisait des concepts qui preparaient a la suivante.</p>
+
+<h3 id="mon-avis">Mon Avis</h3>
+
+<p>Avant de suivre ce cours, je n’avais entendu parler que de certains concepts lies a l’architecture orientee services. Grace aux seances de travaux pratiques, j’ai maintenant une bien meilleure comprehension de l’architecture des applications web et de la maniere d’interagir avec elles. Par exemple, simplement en observant le reseau d’un site web et en comprenant toutes les requetes en arriere-plan.</p>
+
+<p>De plus, developper en Java pendant le cours m’a rappele comment coder dans ce langage, ce qui est important car il est tres utilise dans l’industrie. Meme si je prefererais coder en C pour mon avenir professionnel, je peux desormais postuler a des postes Java si necessaire.</p>
+
+<p>La comparaison entre SOAP et REST m’a permis de comprendre pourquoi l’industrie migre vers REST : simplicite, performance et meilleure integration avec les architectures modernes. Cependant, SOAP reste pertinent dans des contextes ou la securite et la fiabilite transactionnelle sont critiques (secteur bancaire, sante).</p>
+
+<p>L’apprentissage des microservices a ete une ouverture vers les pratiques DevOps modernes. La decomposition en services independants facilite le deploiement continu, le scaling horizontal et la resilience des systemes. Ce sont des competences tres recherchees sur le marche du travail.</p>
+
+<hr />
+
+<h2 class="section-title" id="documents-de-cours">Documents de Cours</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Introduction a la SOA</h4>
+      <p>Cours d'introduction aux principes fondamentaux de l'Architecture Orientee Services : couplage lache, contrats de service, abstraction et reutilisabilite.</p>
+      <embed src="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Standards WSDL (Partie 1)</h4>
+      <p>Web Services Description Language : structure du WSDL, types, messages, portType et binding.</p>
+      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1 .pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1 .pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Standards WSDL (Partie 2)</h4>
+      <p>Approfondissement du WSDL : binding SOAP, exemples avancees et generation de code.</p>
+      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Standards SOAP</h4>
+      <p>Protocole SOAP : structure des messages (Envelope, Header, Body), encodage et transport HTTP.</p>
+      <embed src="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Introduction a REST</h4>
+      <p>Architecture RESTful : principes, methodes HTTP, ressources et representations.</p>
+      <embed src="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>REST - Formats de Donnees</h4>
+      <p>Formats de serialisation pour les API REST : JSON, XML, YAML et leurs cas d'usage.</p>
+      <embed src="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>REST - Richardson Maturity Model</h4>
+      <p>Modele de maturite de Richardson : les 4 niveaux de maturite REST, de RPC sur HTTP a HATEOAS.</p>
+      <embed src="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Microservices - Introduction</h4>
+      <p>Introduction aux microservices : definition, comparaison avec monolithique, avantages et defis.</p>
+      <embed src="/cours-pdf/S9/SOA/4-1-Microservices.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/4-1-Microservices.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Microservices - Proprietes</h4>
+      <p>Proprietes des microservices : independance, scalabilite, resilience et deploiement continu.</p>
+      <embed src="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Microservices - Architecture</h4>
+      <p>Patterns architecturaux des microservices : API Gateway, service discovery, decomposition et communication.</p>
+      <embed src="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" target="_blank">Telecharger</a></p>
+    </div>
+  </div>
 </div>
 
-<h3 id="project-report">Project Report</h3>
+<hr />
+
+<h2 class="section-title" id="rapports-et-projets">Rapports et Projets</h2>
+
+<h3 id="rapport-de-projet---architecture-de-services">Rapport de Projet - Architecture de Services</h3>
+
+<div style="display: flex; justify-content: center;">
+    <iframe src="/file/reports/S9/Bigot_Chanfreau_Service_Architecture_Rapport.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
+</div>
+
+<p style="text-align: center;">
+    <a href="/file/reports/S9/Bigot_Chanfreau_Service_Architecture_Rapport.pdf" target="_blank">Ouvrir le Rapport Complet</a>
+</p>
+
+<h3 id="rapport-de-projet-be">Rapport de Projet BE</h3>
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Service_Archi/BE_service_architecture.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Service_Archi/BE_service_architecture.pdf" target="_blank">Open Complete Report</a>
+    <a href="/img/BE_Service_Archi/BE_service_architecture.pdf" target="_blank">Ouvrir le Rapport de BE</a>
 </p>
 
-<p style="text-align: center;">
-    <a href="/img/BE_Service_Archi/Lab_Subject_service.pdf" target="_blank">Open Lab Subject</a>
-</p>
+<h3 id="rapport-de-tp">Rapport de TP</h3>
 
 <div style="display: flex; justify-content: center;">
     <iframe src="/img/BE_Service_Archi/Bigot_Chanfreau_Service_Architecture_Rapport_TP.pdf" width="100%" height="800px" style="overflow: auto;" frameborder="0"></iframe>
 </div>
 
 <p style="text-align: center;">
-    <a href="/img/BE_Service_Archi/Bigot_Chanfreau_Service_Architecture_Rapport_TP.pdf" target="_blank">Open Complete Report</a>
+    <a href="/img/BE_Service_Archi/Bigot_Chanfreau_Service_Architecture_Rapport_TP.pdf" target="_blank">Ouvrir le Rapport de TP</a>
 </p>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
-    .footer-section {
-        flex: 1;
-        text-align: center;
-    }
-    .styled-button {
-        display: inline-block;
-        width: 100px;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        color: white;
-        background-color: #66B2FF;
-        text-decoration: none;
-        border-radius: 25px;
-        transition: background-color 0.3s, transform 0.3s;
-    }
-    .styled-button:hover {
-        background-color: #3399FF;
-        transform: scale(1.05);
-    }
-    p {
-    text-align: justify;
-    }
-</style>
+<h3 id="sujet-de-tp">Sujet de TP</h3>
 
+<p style="text-align: center;">
+    <a href="/img/BE_Service_Archi/Lab_Subject_service.pdf" target="_blank">Ouvrir le Sujet de TP</a>
+</p>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -769,9 +1340,15 @@
 - Outils : Git, Docker, Linux, RTOS
 
 **Expérience**
-- Stage 6 mois chez Vitesco Technologies (Allemagne, 2024)
-  → Développement firmware automotive, tests ISO 26262
-- 15+ projets académiques et personnels
+- Ingénieur Logiciel Embarqué Cybersécurité - Schaeffler (Toulouse, Oct 2024 - Sept 2025)
+  → Secure Logger pour ECUs automobiles, revue de code critique
+- Alternance Ingénieur Logiciel Embarqué - Vitesco Technologies (Toulouse, Sept 2022 - Sept 2024)
+  → Solutions reprogrammation ECU, automatisation tests Python/Jenkins, MISRA/CERT
+- Stage international - Vitesco Technologies (Iasi, Roumanie, Juil - Sept 2024)
+  → Gestion mémoire Flash sur nouveau microcontrôleur
+- Stage - Siemens (Toulouse, Avr - Juil 2022)
+  → Analyse rack frein VAL208NG, banc de tests cartes électroniques
+- 25+ projets académiques et personnels
 
 **Projets clés**
 - Robot autonome avec IA et contrôle moteur
@@ -781,7 +1358,7 @@
 - Portfolio web avec chatbot IA
 
 **Objectif**
-Recherche CDI Ingénieur Systèmes Embarqués (dès sept 2025)
+Recherche CDI Ingénieur Systèmes Embarqués / Cybersécurité (dès sept 2025)
 Secteurs : Automobile, Aéronautique, Robotique, IoT
 
 **Liens importants**

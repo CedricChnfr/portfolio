@@ -1,199 +1,653 @@
 ---
 layout: default
-title: "Physique: Thermique, Capteurs, Mécanique - S2"
+title: "Physique: Thermique, Capteurs, Mecanique - S2"
 date: 2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Physique: Thermique, Capteurs, Mécanique - Semestre 2
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
 
-## 📋 Description du cours
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">← Retour a Mes Cours 2020-2021</a>
+</div>
 
-Cours de physique appliquée couvrant trois domaines essentiels pour l'ingénieur électricien : la thermique, les capteurs et la mécanique. Ces connaissances sont indispensables pour comprendre les systèmes physiques et leur instrumentation.
+# Physique: Thermique, Capteurs, Mecanique - S2
 
-## 🎯 Objectifs pédagogiques
+**Annee**: 2020-2021 | **Semestre**: 2 | **Type**: Physique Appliquee
 
-- Comprendre les phénomènes thermiques
-- Maîtriser les principes de fonctionnement des capteurs
-- Appréhender les bases de la mécanique
-- Choisir et utiliser des capteurs adaptés
-- Dimensionner des systèmes physiques simples
+---
 
-## 📚 Contenu du cours
+## PART A : PRESENTATION GENERALE
 
-### Thermique
-#### Transferts thermiques
-- Conduction thermique (loi de Fourier)
-- Convection (naturelle et forcée)
-- Rayonnement thermique
-- Résistance et capacité thermiques
-- Analogie électrique-thermique
+### Contexte et objectifs
 
-#### Applications
-- Refroidissement de composants électroniques
-- Dissipateurs thermiques
-- Isolation thermique
-- Régulation thermique
-- Mesure de température
+Ce module de physique appliquee du semestre 2 couvre trois domaines essentiels pour l'ingenieur en genie electrique et informatique industrielle : les capteurs, la mecanique et la thermique. Ces trois disciplines sont intimement liees dans les systemes industriels, ou les grandeurs physiques (temperature, force, position, acceleration) doivent etre mesurees par des capteurs, et ou les phenomenes thermiques et mecaniques conditionnent le fonctionnement des equipements.
 
-### Capteurs et instrumentation
-#### Principes de capteurs
-- Définitions (capteur, transducteur, transmetteur)
-- Caractéristiques métrologiques
-  - Étendue de mesure
-  - Sensibilité
-  - Linéarité
-  - Précision et exactitude
-  - Répétabilité
-  - Hystérésis
+**Objectifs pedagogiques :**
+- Comprendre les principes de fonctionnement des principaux types de capteurs
+- Maitriser les caracteristiques metrologiques d'un capteur (sensibilite, linearite, etendue de mesure, precision)
+- Connaitre les capteurs de temperature, de position, de force et de pression
+- Apprehender les bases de la mecanique (statique, cinematique, dynamique)
+- Comprendre les modes de transfert thermique (conduction, convection, rayonnement)
+- Dimensionner des dissipateurs thermiques pour composants electroniques
 
-#### Types de capteurs
+### Organisation du cours
 
-**Capteurs de température**
-- Thermocouples (effet Seebeck)
-- Thermistances (CTN, CTP)
-- Sondes PT100/PT1000
-- Capteurs à semi-conducteurs
-- Pyromètres infrarouges
+Le module est divise en trois parties distinctes mais complementaires :
 
-**Capteurs de position et déplacement**
-- Potentiomètres
-- LVDT (Linear Variable Differential Transformer)
-- Codeurs incrémentaux et absolus
-- Capteurs inductifs, capacitifs
-- Capteurs à effet Hall
+1. **Capteurs et instrumentation** (partie principale) : 3 chapitres couvrant les definitions, les capteurs de temperature/position, et les capteurs de force/pression
+2. **Mecanique** : Statique, cinematique et dynamique appliquees aux systemes electriques
+3. **Thermique** : Transferts thermiques et applications au refroidissement des composants electroniques
 
-**Capteurs de force et pression**
-- Jauges de contrainte
-- Pont de Wheatstone
-- Capteurs piézoélectriques
-- Capteurs de pression (relatifs, absolus)
-- Cellules de charge
+### Competences visees (BUT GEII)
 
-**Capteurs de vitesse et accélération**
-- Tachymètres
-- Accéléromètres (piézo, MEMS)
-- Gyroscopes
-- Capteurs de vibration
+Ce module contribue au bloc de competences "Physique Appliquee" du BUT GEII :
+- Choisir un capteur adapte a une application donnee
+- Dimensionner un systeme de mesure avec conditionnement de signal
+- Analyser les forces et mouvements dans un systeme electromecanique
+- Evaluer les contraintes thermiques dans un systeme electronique
 
-**Autres capteurs**
-- Capteurs optiques (photodiodes, phototransistors)
-- Capteurs de proximité
-- Capteurs de niveau
-- Capteurs chimiques (pH, gaz)
+---
 
-### Mécanique
+## PART B : EXPERIENCE ET CONTEXTE
+
+### Environnement pedagogique
+
+L'enseignement de physique appliquee se deroule en cours magistraux, travaux diriges et travaux pratiques. Les TP sont realises dans les laboratoires de physique de l'IUT, equipes de bancs de mesure, de capteurs et d'instruments de precision. Le contexte sanitaire 2020-2021 a impose quelques adaptations, mais les TP ont ete maintenus autant que possible.
+
+### Deroulement du semestre
+
+Le semestre s'organise autour des trois modules :
+- Les premieres semaines sont consacrees aux **capteurs** : definitions generales, puis etude detaillee des differents types de capteurs
+- La partie **mecanique** couvre les lois fondamentales de la statique et de la dynamique, avec applications aux systemes motorises
+- La partie **thermique** traite des transferts de chaleur et de leur gestion dans les equipements electroniques
+
+### Outils et instruments utilises
+
+- **Multimetres de precision** : Mesures de tensions, courants et resistances dans les circuits de capteurs
+- **Oscilloscopes** : Visualisation des signaux issus des capteurs
+- **Bancs de capteurs** : Bancs dedies pour la caracterisation de thermocouples, PT100, jauges de contrainte
+- **Pont de Wheatstone** : Montage de mesure pour jauges de contrainte et capteurs resistifs
+- **Thermometre infrarouge** : Mesures de temperature sans contact
+- **Logiciels** : Python et MATLAB pour le traitement des donnees de mesure
+
+### Liens avec d'autres cours
+
+- **SE (Systemes Electroniques)** : Les capteurs fournissent les signaux d'entree des chaines d'acquisition etudiees en SE
+- **Electronique (ER)** : Circuits de conditionnement pour capteurs
+- **TL (Travaux de Laboratoire)** : Mesures experimentales avec des capteurs
+- **Mathematiques** : Modelisation mathematique des phenomenes physiques
+- **Informatique Embarquee** : Acquisition numerique de signaux de capteurs par microcontroleur
+
+---
+
+## PART C : ASPECTS TECHNIQUES
+
+### Module 1 : Capteurs et Instrumentation
+
+#### Chapitre 1 : Definitions et Caracteristiques Generales des Capteurs
+
+Un **capteur** est un dispositif qui convertit une grandeur physique (temperature, pression, deplacement, force, etc.) en un signal electrique exploitable (tension, courant, resistance, frequence).
+
+**Chaine de mesure complete :**
+```
+Grandeur physique --> Capteur --> Conditionnement --> Conversion A/N --> Traitement
+```
+
+**Terminologie :**
+- **Capteur** : Element sensible qui detecte la grandeur physique
+- **Transducteur** : Dispositif qui convertit une forme d'energie en une autre
+- **Transmetteur** : Dispositif qui transmet le signal de mesure a distance (ex: 4-20 mA)
+
+**Caracteristiques metrologiques d'un capteur :**
+
+L'**etendue de mesure** (ou plage de mesure) est l'intervalle entre la valeur minimale et maximale que le capteur peut mesurer :
+```
+EM = Xmax - Xmin
+```
+
+La **sensibilite** S est le rapport entre la variation de la sortie et la variation de l'entree :
+```
+S = dY / dX    (en unite de sortie / unite d'entree)
+
+Exemple : capteur de temperature avec S = 10 mV/degC
+signifie que pour chaque degre de variation, la tension varie de 10 mV
+```
+
+La **linearite** exprime l'ecart entre la courbe reelle du capteur et la droite ideale. Un capteur parfaitement lineaire suit la relation :
+```
+Y = S * X + Y0
+
+avec Y0 : offset (valeur de sortie quand X = 0)
+```
+
+L'ecart de linearite est souvent exprime en pourcentage de l'etendue de mesure :
+```
+Erreur de linearite (%) = (ecart_max / EM) * 100
+```
+
+La **precision** (ou exactitude) est l'ecart entre la valeur mesuree et la valeur vraie de la grandeur. Elle combine :
+- L'erreur de justesse (erreur systematique, corrigeable par calibration)
+- L'erreur de fidelite (erreur aleatoire, liee a la repetabilite)
+
+```
+Precision = +/- (erreur_justesse + erreur_fidelite)
+```
+
+La **repetabilite** est la capacite du capteur a fournir la meme valeur de sortie pour la meme valeur d'entree, dans les memes conditions.
+
+L'**hysteresis** est la difference de reponse du capteur selon que la grandeur mesuree augmente ou diminue. Elle est due aux proprietes physiques du capteur (frottements, effets magnetiques).
+
+Le **temps de reponse** est le temps necessaire pour que la sortie du capteur atteigne un pourcentage donne de sa valeur finale (generalement 63% pour le temps de reponse a tau, ou 95% pour le temps de reponse a 3*tau).
+
+#### Chapitre 2 : Capteurs de Temperature et de Position
+
+**Capteurs de temperature :**
+
+Les **thermocouples** exploitent l'effet Seebeck : lorsque deux metaux differents sont en contact, une difference de potentiel proportionnelle a la difference de temperature apparait :
+
+```
+V = alpha * (T1 - T2)
+
+avec :
+- alpha : coefficient de Seebeck (en microV/degC)
+- T1 : temperature de la jonction de mesure (jonction chaude)
+- T2 : temperature de la jonction de reference (jonction froide)
+```
+
+Types courants de thermocouples :
+- **Type K** (Chromel-Alumel) : alpha environ 41 microV/degC, plage -200 a +1250 degC
+- **Type J** (Fer-Constantan) : alpha environ 52 microV/degC, plage -210 a +760 degC
+- **Type T** (Cuivre-Constantan) : alpha environ 43 microV/degC, plage -270 a +370 degC
+
+Les **sondes a resistance (RTD)** utilisent la variation de resistance d'un metal pur avec la temperature. La sonde PT100 (platine, 100 ohms a 0 degC) est la plus courante :
+
+```
+R(T) = R0 * (1 + alpha*T + beta*T^2)
+
+avec :
+- R0 = 100 ohms (a 0 degC pour une PT100)
+- alpha = 3.85 * 10^(-3) /degC (coefficient de temperature du platine)
+- beta : terme du second ordre (souvent neglige pour T < 200 degC)
+
+Approximation lineaire : R(T) = R0 * (1 + alpha*T)
+```
+
+Avantages des RTD : grande precision, excellente stabilite a long terme, bonne linearite.
+Inconvenients : temps de reponse plus lent que les thermocouples, auto-echauffement par le courant de mesure.
+
+Les **thermistances** sont des semi-conducteurs dont la resistance varie fortement avec la temperature :
+- **CTN** (Coefficient de Temperature Negatif) : la resistance diminue quand la temperature augmente
+- **CTP** (Coefficient de Temperature Positif) : la resistance augmente quand la temperature augmente
+
+Pour une CTN :
+```
+R(T) = R0 * exp(B * (1/T - 1/T0))
+
+avec :
+- R0 : resistance a la temperature de reference T0 (en Kelvin)
+- B : constante du materiau (en Kelvin, typiquement 2000 a 5000 K)
+```
+
+**Capteurs de position :**
+
+Le **potentiometre** est un capteur de position resistif :
+```
+Vs = Valimentation * (x / L)
+
+avec x : position du curseur, L : longueur totale de la piste
+Sensibilite : S = Valimentation / L  (en V/m)
+```
+
+Le **LVDT** (Linear Variable Differential Transformer) est un capteur de deplacement inductif. Il se compose d'un transformateur avec un noyau mobile :
+- Une bobine primaire alimentee en courant alternatif
+- Deux bobines secondaires symetriques
+- Un noyau ferromagnetique mobile lie a l'objet dont on mesure le deplacement
+
+```
+Vs = S * x    (tension de sortie proportionnelle au deplacement)
+```
+
+Les **codeurs** mesurent la position angulaire :
+- Codeur incremental : genere N impulsions par tour, resolution = 360/N degres
+- Codeur absolu : fournit directement la position absolue en code binaire (Gray)
+
+```
+Resolution d'un codeur incremental :
+theta_min = 360 / N  (degres par impulsion)
+
+Avec comptage sur fronts montants et descendants (quadrature) :
+theta_min = 360 / (4*N)
+```
+
+#### Chapitre 3 : Capteurs de Force et de Pression
+
+**Jauges de contrainte :**
+
+Une jauge de contrainte est une resistance qui varie proportionnellement a la deformation mecanique qu'elle subit :
+
+```
+dR/R = K * epsilon
+
+avec :
+- K : facteur de jauge (typiquement 2 pour les jauges metalliques)
+- epsilon : deformation relative (sans dimension) = dL/L
+```
+
+La variation de resistance est tres faible (de l'ordre du milliohm), d'ou la necessite d'utiliser un montage en pont de Wheatstone pour la mesurer.
+
+**Pont de Wheatstone :**
+
+Le pont de Wheatstone est un circuit en pont utilise pour mesurer de faibles variations de resistance :
+
+```
+        R1          R2
+Valim --/\/\/\--+--/\/\/\-- Valim
+                |
+               DeltaV
+                |
+  GND --/\/\/\--+--/\/\/\-- GND
+        R3          R4
+```
+
+**Condition d'equilibre :**
+```
+R1 * R4 = R2 * R3    (quand DeltaV = 0)
+```
+
+**Tension de desequilibre pour une jauge active (R1 = R + dR) :**
+
+Pour un quart de pont (une seule jauge active) :
+```
+DeltaV = Valim * (dR / (4*R + 2*dR))
+
+Pour de petites variations (dR << R) :
+DeltaV = Valim * (dR / (4*R))
+       = Valim * (K * epsilon / 4)
+```
+
+Pour un demi-pont (deux jauges actives, une en traction et une en compression) :
+```
+DeltaV = Valim * (dR / (2*R))
+       = Valim * (K * epsilon / 2)
+```
+
+Pour un pont complet (quatre jauges actives) :
+```
+DeltaV = Valim * (dR / R)
+       = Valim * K * epsilon
+```
+
+Le pont complet offre la meilleure sensibilite (4 fois celle du quart de pont) et compense automatiquement les effets de temperature.
+
+**Accelerometres :**
+
+Un accelerometre mesure l'acceleration en detectant la force d'inertie exercee sur une masse d'epreuve :
+
+```
+F = m * a    (force d'inertie)
+```
+
+Types d'accelerometres :
+- Piezoelectrique : la force d'inertie deforme un cristal piezoelectrique qui genere une charge proportionnelle
+- MEMS capacitif : la masse d'epreuve est suspendue par des ressorts microscopiques, et son deplacement modifie la capacite d'un condensateur
+- Piezoresistif : des jauges de contrainte mesurent la deformation des ressorts de suspension
+
+Pour un accelerometre MEMS :
+```
+Deplacement de la masse : x = m * a / k  (avec k : raideur du ressort)
+Variation de capacite : dC = epsilon_0 * A * x / d^2
+Signal de sortie : V = S * a  (S : sensibilite en mV/g)
+```
+
+### Module 2 : Mecanique
+
 #### Statique
-- Forces et moments
-- Équilibre des solides
-- Centre de gravité
-- Liaisons mécaniques
 
-#### Cinématique
-- Mouvement rectiligne
-- Mouvement circulaire
-- Vitesse et accélération
-- Transmission de mouvement
+La statique etudie les conditions d'equilibre des corps au repos. Un corps est en equilibre si et seulement si :
+
+**Condition d'equilibre en translation :**
+```
+Somme des forces = 0
+F1 + F2 + ... + Fn = 0  (somme vectorielle)
+```
+
+**Condition d'equilibre en rotation :**
+```
+Somme des moments par rapport a un point O = 0
+M_O(F1) + M_O(F2) + ... + M_O(Fn) = 0
+```
+
+**Moment d'une force par rapport a un point :**
+```
+M_O(F) = r x F  (produit vectoriel)
+|M_O(F)| = F * d  (avec d : bras de levier)
+```
+
+#### Cinematique
+
+La cinematique decrit le mouvement sans se preoccuper des forces qui le causent.
+
+**Mouvement rectiligne :**
+```
+Position : x(t)
+Vitesse : v(t) = dx/dt
+Acceleration : a(t) = dv/dt = d^2x/dt^2
+```
+
+**Mouvement rectiligne uniforme (MRU) :**
+```
+a = 0
+v = v0 = constante
+x(t) = x0 + v0 * t
+```
+
+**Mouvement rectiligne uniformement accelere (MRUA) :**
+```
+a = constante
+v(t) = v0 + a * t
+x(t) = x0 + v0*t + (1/2)*a*t^2
+v^2 = v0^2 + 2*a*(x - x0)
+```
+
+**Mouvement circulaire :**
+```
+Position angulaire : theta(t) (en radians)
+Vitesse angulaire : omega(t) = d(theta)/dt  (en rad/s)
+Acceleration angulaire : alpha_ang = d(omega)/dt  (en rad/s^2)
+
+Relations entre grandeurs lineaires et angulaires :
+v = R * omega
+a_tangentielle = R * alpha_ang
+a_centripete = R * omega^2 = v^2 / R
+```
 
 #### Dynamique
-- Lois de Newton
-- Énergie cinétique et potentielle
-- Travail et puissance
-- Moment d'inertie
-- Applications aux systèmes motorisés
 
-## 🛠️ Travaux pratiques
+La dynamique relie les forces aux mouvements qu'elles produisent.
 
-### TP Thermique
-- Mesure de résistance thermique
-- Étude de dissipateurs
-- Régulation thermique PID
-- Caractérisation de capteurs de température
+**Deuxieme loi de Newton (principe fondamental de la dynamique) :**
+```
+F = m * a
 
-### TP Capteurs
-- Étalonnage de capteurs
-- Pont de Wheatstone et jauges de contrainte
-- Mesure avec thermocouples et PT100
-- Conditionnement de signaux de capteurs
-- Capteurs de position et déplacement
+avec :
+- F : somme des forces appliquees (en N)
+- m : masse du corps (en kg)
+- a : acceleration resultante (en m/s^2)
+```
 
-### TP Mécanique
-- Mesures de forces et couples
-- Transmission de puissance
-- Caractérisation d'un moteur
-- Mesure d'inertie
+**Energie cinetique :**
+```
+Ec = (1/2) * m * v^2    (translation)
+Ec = (1/2) * J * omega^2  (rotation)
+```
 
-## 💻 Outils utilisés
+**Energie potentielle gravitationnelle :**
+```
+Ep = m * g * h    (avec g = 9.81 m/s^2)
+```
 
-- **Multimètres et oscilloscopes** : Mesures électriques
-- **Bancs de caractérisation** : Tests de capteurs
-- **Logiciels d'acquisition** : LabVIEW, Python
-- **Simulation thermique** : COMSOL (éventuellement)
-- **Thermomètres infrarouges** : Mesures sans contact
+**Theoreme de l'energie cinetique :**
+```
+Delta(Ec) = W(forces)
+(1/2)*m*v2^2 - (1/2)*m*v1^2 = somme des travaux des forces
+```
 
-## 📊 Évaluation
+**Puissance :**
+```
+P = F * v    (translation)
+P = tau * omega  (rotation, avec tau : couple)
+```
 
-- Travaux pratiques (40%)
-- Comptes-rendus (20%)
-- Contrôle continu (20%)
-- Examen final (20%)
+**Moment d'inertie :**
 
-## 🔗 Liens avec d'autres cours
+Le moment d'inertie J est l'equivalent rotatif de la masse :
+```
+J * d(omega)/dt = Somme(tau)  (equation fondamentale de la rotation)
 
-- **SE (Systèmes Électroniques)** : Chaînes d'acquisition
-- **ER** : Interface électronique-physique
-- **Automatique** : Systèmes physiques à commander
-- **Mathématiques** : Modélisation de phénomènes physiques
+Moments d'inertie courants :
+- Cylindre plein : J = (1/2) * m * R^2
+- Cylindre creux : J = (1/2) * m * (R_ext^2 + R_int^2)
+- Sphere pleine : J = (2/5) * m * R^2
+- Tige mince (axe central) : J = (1/12) * m * L^2
+```
 
-## 📐 Choix et mise en œuvre de capteurs
+### Module 3 : Thermique
 
-### Critères de choix
-- Grandeur à mesurer
-- Étendue de mesure
-- Précision requise
-- Environnement (température, humidité, etc.)
-- Contraintes électriques (alimentation, sortie)
-- Coût et disponibilité
+#### Modes de transfert thermique
 
-### Mise en œuvre
-- Alimentation du capteur
-- Conditionnement du signal
-- Linéarisation si nécessaire
-- Calibration
-- Protection et filtrage
+Il existe trois modes de transfert de chaleur :
 
-## 💡 Applications pratiques
+**1. Conduction thermique (loi de Fourier) :**
 
-- Contrôle de processus industriels
-- Instrumentation de laboratoire
-- Automobile et aéronautique
-- Domotique et bâtiment intelligent
-- Robotique et automatisation
-- Électronique médicale
+La conduction est le transfert de chaleur au sein d'un materiau solide, sans deplacement de matiere.
 
-## 📖 Compétences développées
+```
+Flux thermique : Phi = -lambda * S * (dT/dx)
 
-- Lecture de documentations techniques (datasheets)
-- Dimensionnement thermique
-- Sélection de capteurs appropriés
-- Analyse de chaînes d'acquisition
-- Étalonnage et validation
-- Interprétation de mesures physiques
+avec :
+- Phi : flux thermique (en W)
+- lambda : conductivite thermique du materiau (en W/(m.K))
+- S : surface de la section traversee (en m^2)
+- dT/dx : gradient de temperature (en K/m)
 
-## ⚠️ Points d'attention
+En regime permanent, pour un mur plan d'epaisseur e :
+Phi = lambda * S * (T1 - T2) / e
+```
 
-### Thermique
-- Ne pas sous-estimer les problèmes thermiques
-- Importance de la gestion thermique en électronique
-- Fiabilité liée à la température
+**Resistance thermique de conduction :**
+```
+Rth = e / (lambda * S)    (en K/W)
 
-### Capteurs
-- Importance de l'étalonnage
-- Gestion des dérives et vieillissement
-- Conditionnement adapté
-- Influence de l'environnement
+avec :
+- e : epaisseur du materiau (en m)
+- lambda : conductivite thermique (en W/(m.K))
+- S : surface (en m^2)
 
-### Mécanique
-- Sécurité avec les pièces en mouvement
-- Importance du dimensionnement
-- Couplage mécanique-électrique
+Le flux thermique s'ecrit alors :
+Phi = (T1 - T2) / Rth    (analogue a la loi d'Ohm : I = V/R)
+```
+
+Conductivites thermiques de materiaux courants :
+- Cuivre : lambda = 390 W/(m.K)
+- Aluminium : lambda = 237 W/(m.K)
+- Fer : lambda = 80 W/(m.K)
+- Verre : lambda = 1.0 W/(m.K)
+- Air : lambda = 0.025 W/(m.K)
+
+**2. Convection :**
+
+La convection est le transfert de chaleur entre un solide et un fluide en mouvement.
+
+```
+Phi = h * S * (Ts - Tf)
+
+avec :
+- h : coefficient de convection (en W/(m^2.K))
+- S : surface d'echange (en m^2)
+- Ts : temperature de la surface
+- Tf : temperature du fluide loin de la surface
+
+Resistance thermique de convection :
+Rth_conv = 1 / (h * S)
+```
+
+Ordres de grandeur du coefficient h :
+- Convection naturelle (air) : h = 5 a 25 W/(m^2.K)
+- Convection forcee (air) : h = 25 a 250 W/(m^2.K)
+- Convection forcee (eau) : h = 100 a 20000 W/(m^2.K)
+
+**3. Rayonnement (loi de Stefan-Boltzmann) :**
+
+Le rayonnement est le transfert de chaleur par emission d'ondes electromagnetiques.
+
+```
+Phi = epsilon * sigma * S * (T1^4 - T2^4)
+
+avec :
+- epsilon : emissivite de la surface (0 a 1, sans dimension)
+- sigma = 5.67 * 10^(-8) W/(m^2.K^4) (constante de Stefan-Boltzmann)
+- T1, T2 : temperatures en Kelvin
+```
+
+#### Analogie electrique-thermique
+
+L'analogie entre les grandeurs thermiques et electriques simplifie les calculs :
+
+```
+Grandeur electrique    |  Grandeur thermique
+-----------------------|--------------------
+Tension V (V)          |  Temperature T (K)
+Courant I (A)          |  Flux thermique Phi (W)
+Resistance R (Ohm)     |  Resistance thermique Rth (K/W)
+Loi d'Ohm : V = R*I   |  T = Rth * Phi
+```
+
+Les resistances thermiques se combinent comme les resistances electriques :
+- En serie (couches successives) : Rth_total = Rth1 + Rth2 + ... + Rthn
+- En parallele (chemins thermiques paralleles) : 1/Rth_total = 1/Rth1 + 1/Rth2 + ...
+
+#### Application : Dissipateur thermique pour composants electroniques
+
+Le dimensionnement d'un dissipateur thermique suit le modele de la chaine thermique :
+
+```
+                 Rth_jc        Rth_cd         Rth_da
+  Tj ----/\/\/\----+----/\/\/\----+----/\/\/\---- Ta
+         jonction  |    boitier   |  dissipateur
+         -boitier  |   -dissip.   |    -air
+                   Tc             Td
+
+Tj : temperature de jonction du composant
+Tc : temperature du boitier
+Td : temperature du dissipateur
+Ta : temperature ambiante
+```
+
+**Equation fondamentale :**
+```
+Tj = Ta + P * (Rth_jc + Rth_cd + Rth_da)
+
+avec :
+- P : puissance dissipee par le composant (en W)
+- Rth_jc : resistance thermique jonction-boitier (donnee constructeur)
+- Rth_cd : resistance thermique boitier-dissipateur (depend de l'interface)
+- Rth_da : resistance thermique dissipateur-air (a determiner)
+```
+
+**Dimensionnement du dissipateur :**
+```
+Rth_da = (Tj_max - Ta) / P - Rth_jc - Rth_cd
+
+avec Tj_max : temperature maximale de jonction admissible (datasheet)
+```
+
+Exemple : Un transistor dissipe P = 10 W, Rth_jc = 1.5 K/W, Rth_cd = 0.5 K/W, Tj_max = 150 degC, Ta = 40 degC.
+
+```
+Rth_da = (150 - 40) / 10 - 1.5 - 0.5
+       = 110 / 10 - 2.0
+       = 11.0 - 2.0
+       = 9.0 K/W
+
+Il faut choisir un dissipateur avec Rth_da <= 9.0 K/W.
+```
+
+### Travaux pratiques remarquables
+
+#### TP Capteurs : Pont de Wheatstone avec jauge de contrainte
+
+Le TP de pont de Wheatstone met en pratique les concepts de mesure de deformation :
+1. Montage du pont avec une jauge de contrainte collee sur une poutre en flexion
+2. Equilibrage du pont a vide (sans charge)
+3. Application de charges connues et mesure de la tension de desequilibre
+4. Trace de la courbe DeltaV = f(F) et determination de la sensibilite
+5. Verification du facteur de jauge K par comparaison calcul/mesure
+
+#### TP Temperature : Thermocouple et PT100
+
+Ce TP compare les performances de differents capteurs de temperature :
+1. Etalonnage d'un thermocouple type K par rapport a un thermometre de reference
+2. Mesure de la courbe R(T) d'une sonde PT100
+3. Determination du coefficient alpha par regression lineaire
+4. Mesure du temps de reponse des capteurs (immersion dans un bain chaud)
+5. Comparaison des avantages/inconvenients de chaque technologie
+
+---
+
+## PART D : ANALYSE ET REFLEXION
+
+### Competences acquises
+
+- Comprehension des principes de fonctionnement des capteurs industriels
+- Capacite a choisir un capteur adapte a une application en fonction des contraintes (plage, precision, environnement)
+- Maitrise du pont de Wheatstone et de ses applications
+- Comprehension des modes de transfert thermique et de leur modelisation
+- Capacite a dimensionner un dissipateur thermique
+- Application des lois de la mecanique aux systemes electriques (moteurs, actionneurs)
+
+### Points forts du module
+
+Le module de physique S2 etablit un pont essentiel entre le monde physique et le monde electronique. Les capteurs sont au coeur de toute chaine de mesure et de tout systeme de controle-commande. La partie thermique est directement applicable au dimensionnement des systemes electroniques de puissance. La mecanique fournit les bases pour comprendre les actionneurs et les systemes motorises.
+
+### Difficultes rencontrees
+
+La diversite des types de capteurs a necessite un effort de memorisation important. Les formules de thermique, bien que fondees sur des analogies electriques simples, demandent de la rigueur dans les calculs de chaines de resistances thermiques. En mecanique, le passage des forces aux moments d'inertie et aux equations differentielles du mouvement a necessite une bonne maitrise mathematique.
+
+### Connexions interdisciplinaires
+
+- **Systemes Electroniques S2** : Les capteurs fournissent les signaux d'entree des systemes etudies en SE. La comprehension des capteurs permet de mieux apprehender les chaines d'acquisition.
+- **Travaux de Laboratoire S2** : Les TP de TL utilisent directement les capteurs etudies (pont de Wheatstone, thermocouples).
+- **Electronique S3+** : Le conditionnement des signaux de capteurs (amplification, filtrage, linearisation) est approfondi dans les semestres suivants.
+- **Informatique Embarquee** : L'acquisition des signaux de capteurs par microcontroleur (CAN) est etudiee en IE.
+- **Automatique** : Les capteurs sont des elements essentiels des boucles de regulation.
+
+### Auto-evaluation
+
+Ce module a ete enrichissant par sa dimension tres concrete : chaque concept theorique trouve une application directe et tangible. La partie capteurs est particulierement utile car elle intervient dans presque tous les projets des semestres suivants. Le dimensionnement thermique est une competence pratique que j'ai reemployee lors de projets d'electronique de puissance. Les bases de mecanique, bien que moins directement liees a mon parcours GEII, fournissent un socle solide pour comprendre les systemes electromecaniques.
+
+---
+
+## Documents de Cours
+
+### Capteurs - Chapitres de cours
+
+<div class="pdf-item">
+  <h4>Chapitre 1 : Definitions et Caracteristiques Generales des Capteurs</h4>
+  <p>Introduction aux capteurs : definitions (capteur, transducteur, transmetteur), caracteristiques metrologiques (sensibilite, linearite, precision, etendue de mesure, repetabilite, hysteresis), classification des capteurs.</p>
+  <embed src="/cours-pdf/S2/Physique/1_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/Physique/1_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+  </p>
+</div>
+
+<div class="pdf-item">
+  <h4>Chapitre 2 : Capteurs de Temperature et de Position</h4>
+  <p>Etude detaillee des capteurs de temperature (thermocouples, RTD/PT100, thermistances CTN/CTP) et des capteurs de position (potentiometres, LVDT, codeurs incrementaux et absolus). Principes physiques, formules, avantages et limitations de chaque technologie.</p>
+  <embed src="/cours-pdf/S2/Physique/2_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/Physique/2_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+  </p>
+</div>
+
+<div class="pdf-item">
+  <h4>Chapitre 3 : Capteurs de Force, de Pression et Accelerometres</h4>
+  <p>Capteurs de force (jauges de contrainte, facteur de jauge), pont de Wheatstone (quart, demi et pont complet), capteurs de pression (piezoelectriques, piezoresistifs), accelerometres MEMS. Applications industrielles et dimensionnement.</p>
+  <embed src="/cours-pdf/S2/Physique/3_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/Physique/3_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+  </p>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2020-2021.html">← Retour a Mes Cours 2020-2021</a>
+</div>

@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Systèmes Électroniques (SE) - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Technique
 
 ---
 
@@ -378,3 +391,66 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
 - Débordements arithmétiques
 - Latence de traitement
 - Précision des coefficients
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>Cours DDS (Direct Digital Synthesis)</h4>
+      <p>Synthese numerique directe : principes, architecture DDS, generation de signaux et applications.</p>
+      <embed src="/cours-pdf/S3/SE/Cours_DDS_2020_Etudiant.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/SE/Cours_DDS_2020_Etudiant.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Cours Filtrage - Systemes Electroniques</h4>
+      <p>Theorie et conception de filtres analogiques et numeriques : Butterworth, Chebyshev, FIR, IIR.</p>
+      <embed src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Cours Filtrage - Version Complete</h4>
+      <p>Version complete du cours de filtrage avec corrections et exemples supplementaires.</p>
+      <embed src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020_prof.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020_prof.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Cours Oscillateurs Sinusoidaux</h4>
+      <p>Etude des oscillateurs sinusoidaux : conditions d'oscillation, oscillateurs Wien, Colpitts, a quartz.</p>
+      <embed src="/cours-pdf/S3/SE/Cours_Oscillateurs_sinusoïdaux_Etudiant_2021sans_trous.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/SE/Cours_Oscillateurs_sinusoïdaux_Etudiant_2021sans_trous.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Cours PLL (Phase-Locked Loop)</h4>
+      <p>Boucle a verrouillage de phase : principe, composants, applications en synthese de frequence et demodulation.</p>
+      <embed src="/cours-pdf/S3/SE/Cours_PLL_2021_sans_TROUS.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/SE/Cours_PLL_2021_sans_TROUS.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>

@@ -680,6 +680,50 @@ En conclusion, ce cours fournit des bases solides en électronique analogique qu
 
 ---
 
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Compte Rendu TP - Circuits et Filtres Analogiques</h4>
+      <p>Rapport de travaux pratiques sur les cellules CR/RC et les filtres Sallen-Key : mesures, simulations LTspice et analyse fréquentielle.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/Compte_rendu_Chanfreau_Jumin.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+---
+
+<style>
+    .pdf-container {
+        margin: 40px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .pdf-viewer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .pdf-item {
+        flex: 1;
+        min-width: 400px;
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .pdf-item h4 {
+        color: #2a7ae2;
+        margin-top: 0;
+    }
+</style>
+
 <style>
     body {
         font-family: Arial, sans-serif;

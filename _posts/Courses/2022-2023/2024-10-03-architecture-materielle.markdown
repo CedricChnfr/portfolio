@@ -947,6 +947,22 @@ Vers plus de:
     }
 </style>
 
+## Rapports et Projets
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Compte Rendu TP - Architecture Matérielle</h4>
+      <p>Rapport de travaux pratiques sur la comparaison des architectures ARM et x86/x64, la programmation assembleur et l'analyse de performances.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S6/Compte rendu Architecture MatÚrielle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Télécharger le rapport PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">

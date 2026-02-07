@@ -5,7 +5,20 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
+<style>
+.back-nav { margin-bottom: 20px; }
+.back-nav a { text-decoration: none; color: #2a7ae2; font-weight: 600; }
+.back-nav a:hover { text-decoration: underline; }
+.section-title { color: #2a7ae2; border-bottom: 2px solid #2a7ae2; padding-bottom: 10px; margin-top: 30px; margin-bottom: 20px; }
+</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
+
 # Outils Logiciels (OL) - Semestre 3
+
+**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Scientifique
 
 ---
 
@@ -451,3 +464,39 @@ end
 - NumPy/SciPy documentation
 - Tutoriels en ligne
 - Forums de discussion (Stack Overflow)
+
+---
+
+## Documents de Cours
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+
+    <div class="pdf-item">
+      <h4>Polycopie de Cours OL S3</h4>
+      <p>Support de cours complet : calcul matriciel, convolution, transformee de Fourier, modulations et outils MATLAB/Python.</p>
+      <embed src="/cours-pdf/S3/OL/poly_S3_2021_2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/OL/poly_S3_2021_2022.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>Transformation en Z et Resolution d'Equations de Recurrence</h4>
+      <p>Cours sur la transformee en Z, ses proprietes et la resolution d'equations aux differences.</p>
+      <embed src="/cours-pdf/S3/OL/Transformation en z-resolution_equa_recuurence.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S3/OL/Transformation en z-resolution_equa_recuurence.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+---
+
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
+
+<div class="back-nav">
+  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+</div>
