@@ -119,8 +119,8 @@ categories: jekyll update
   <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-# My Courses - 2021-2022
-## DUT GEII - Deuxième Année
+<h1 data-i18n="courses-title-2021-2022">My Courses - 2021-2022</h1>
+<h2 data-i18n="dut-geii-2nd-year">DUT GEII - Deuxième Année</h2>
 
 <p style="text-align: center; font-size: 1.2em; color: #4a5568; margin: 20px 0;">
   🎓 <strong>Diplôme Universitaire de Technologie</strong><br>
@@ -130,70 +130,70 @@ categories: jekyll update
 
 ---
 
-## Semestre 3 (S3) - Spécialisation ENOC
+<h2 data-i18n="semester-3-enoc">Semestre 3 (S3) - Spécialisation ENOC</h2>
 
 <p style="text-align: center; font-style: italic; color: #4a5568; margin-bottom: 30px;">
   🔌 Parcours Électronique et Objets Connectés
 </p>
 
 ### [🎛️ Automatique](./automatique-s3.html)
-**Contenu**: Systèmes asservis, régulation, transformée de Laplace, stabilité.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Systèmes asservis, régulation, transformée de Laplace, stabilité.</span><span class="lang-en">Feedback systems, regulation, Laplace transform, stability.</span>
 
 ### [🔧 Automatisme](./automatisme-s3.html)
-**Contenu**: Automates programmables industriels, GRAFCET, logique séquentielle appliquée.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Automates programmables industriels, GRAFCET, logique séquentielle appliquée.</span><span class="lang-en">Programmable logic controllers, GRAFCET, applied sequential logic.</span>
 
 ### [⚡ Énergie](./energie-s3.html)
-**Contenu**: Électronique de puissance avancée, convertisseurs, onduleurs.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Électronique de puissance avancée, convertisseurs, onduleurs.</span><span class="lang-en">Advanced power electronics, converters, inverters.</span>
 
 ### [🔌 Étude et Réalisation (ER)](./etude-realisation-s3.html)
-**Contenu**: Conception de systèmes électroniques complexes, PCB, prototypage.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Conception de systèmes électroniques complexes, PCB, prototypage.</span><span class="lang-en">Complex electronic systems design, PCB, prototyping.</span>
 
 ### [💻 Informatique Embarquée (IE)](./informatique-embarquee-s3.html)
-**Contenu**: Programmation avancée de microcontrôleurs, RTOS, périphériques.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Programmation avancée de microcontrôleurs, RTOS, périphériques.</span><span class="lang-en">Advanced microcontroller programming, RTOS, peripherals.</span>
 
 ### [🖥️ Systèmes Électroniques (SE)](./systemes-electroniques-s3.html)
-**Contenu**: Traitement numérique du signal, architectures électroniques.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Traitement numérique du signal, architectures électroniques.</span><span class="lang-en">Digital signal processing, electronic architectures.</span>
 
 ### [🛠️ Outils Logiciels (OL)](./outils-logiciels-s3.html)
-**Contenu**: Outils de CAO professionnels, simulation avancée.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Outils de CAO professionnels, simulation avancée.</span><span class="lang-en">Professional CAD tools, advanced simulation.</span>
 
 ### [📡 Télécommunications](./telecommunications-s3.html)
-**Contenu**: Principes des télécommunications, modulation, transmission.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Principes des télécommunications, modulation, transmission.</span><span class="lang-en">Telecommunications principles, modulation, transmission.</span>
 
 ### [📶 Propagation et Hyperfréquences](./propagation-hyperfrequences-s3.html)
-**Contenu**: Ondes électromagnétiques, lignes de transmission, antennes.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Ondes électromagnétiques, lignes de transmission, antennes.</span><span class="lang-en">Electromagnetic waves, transmission lines, antennas.</span>
 
 ### [🌐 Circuits Hyperfréquences](./circuits-hyperfrequences-s3.html)
-**Contenu**: Conception de circuits RF, adaptation d'impédance, Smith chart.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Conception de circuits RF, adaptation d'impédance, Smith chart.</span><span class="lang-en">RF circuit design, impedance matching, Smith chart.</span>
 
 ### [⚙️ Électronique Numérique et Conception (ENC)](./electronique-numerique-conception-s3.html)
-**Contenu**: VHDL avancé, conception de systèmes sur FPGA.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">VHDL avancé, conception de systèmes sur FPGA.</span><span class="lang-en">Advanced VHDL, FPGA system design.</span>
 
 ---
 
-## Semestre 4 (S4) - Spécialisation ENOC
+<h2 data-i18n="semester-4-enoc">Semestre 4 (S4) - Spécialisation ENOC</h2>
 
 <p style="text-align: center; font-style: italic; color: #4a5568; margin-bottom: 30px;">
   🔌 Parcours Électronique et Objets Connectés - Approfondissement
 </p>
 
 ### [📡 Antennes et Propagation](./antennes-propagation-s4.html)
-**Contenu**: Conception d'antennes, rayonnement, diagrammes.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Conception d'antennes, rayonnement, diagrammes.</span><span class="lang-en">Antenna design, radiation, diagrams.</span>
 
 ### [🎛️ Filtrage Numérique](./filtrage-numerique-s4.html)
-**Contenu**: Filtres FIR/IIR, transformée en Z, traitement numérique du signal.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Filtres FIR/IIR, transformée en Z, traitement numérique du signal.</span><span class="lang-en">FIR/IIR filters, Z-transform, digital signal processing.</span>
 
 ### [🧮 Mathématiques](./mathematiques-s4.html)
-**Contenu**: Mathématiques appliquées avancées, analyse numérique.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Mathématiques appliquées avancées, analyse numérique.</span><span class="lang-en">Advanced applied mathematics, numerical analysis.</span>
 
 ### [🛠️ Outils Logiciels (OL)](./outils-logiciels-s4.html)
-**Contenu**: Outils de développement avancés, environnements professionnels.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Outils de développement avancés, environnements professionnels.</span><span class="lang-en">Advanced development tools, professional environments.</span>
 
 ### [🌐 Réseau et Télécommunications](./reseau-telecommunications-s4.html)
-**Contenu**: Réseaux informatiques, protocoles TCP/IP, architectures réseau.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Réseaux informatiques, protocoles TCP/IP, architectures réseau.</span><span class="lang-en">Computer networks, TCP/IP protocols, network architectures.</span>
 
 ### [📶 Télécommunications Numériques - Modulation](./telecommunications-numeriques-s4.html)
-**Contenu**: Modulations numériques (PSK, QAM, FSK), codage canal.
+<strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Modulations numériques (PSK, QAM, FSK), codage canal.</span><span class="lang-en">Digital modulations (PSK, QAM, FSK), channel coding.</span>
 
 ---
 

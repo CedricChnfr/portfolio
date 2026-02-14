@@ -122,8 +122,8 @@ footer {
 
 **Cours connexes** :
 - [Machine Learning - S8](../2023-2024/2024-10-03-machine-learning-s8.html) - Fondamentaux du Machine Learning
-- [Cloud & Edge Computing - S9](./2024-10-03-cloud-edge.html) - Architectures Edge pour l'IA
-- [Energy for Connected Objects - S9](./2024-10-03-energy-connected-object.html) - Optimisation energetique
+- [Cloud & Edge Computing - S9](./cloud-edge.html) - Architectures Edge pour l'IA
+- [Energy for Connected Objects - S9](./energy-connected-object.html) - Optimisation energetique
 
 ---
 
@@ -660,10 +660,10 @@ A l'avenir, j'espere rencontrer l'IA dans ma carriere professionnelle car c'est 
 </p>
 
 <div class="pdf-container">
-     <iframe src="/cours-pdf/S9/Embedded-IA/5-NN_optimization.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
+     <iframe src="/cours-pdf/S9/Embedded-IA/5NNoptimization.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
 </div>
 <p style="text-align: center;">
-     <a href="/cours-pdf/S9/Embedded-IA/5-NN_optimization.pdf" target="_blank">5 - Optimisation de reseaux de neurones</a>
+     <a href="/cours-pdf/S9/Embedded-IA/5NNoptimization.pdf" target="_blank">5 - Optimisation de reseaux de neurones</a>
 </p>
 
 ---

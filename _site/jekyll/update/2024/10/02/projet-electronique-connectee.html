@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Connected Electronics System (RF Communication)" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project" />
-<meta property="og:description" content="← Back to Academic Project" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Connected Electronics System (RF Communication)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project","headline":"Connected Electronics System (RF Communication)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Connected Electronics System (RF Communication)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-connectee.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,161 +36,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
-
-<h1 id="introduction">Introduction</h1>
-<p>This comprehensive synthesis project involved designing and implementing a complete RF wireless communication system from scratch. The system featured separate transmitter and receiver modules, integrating analog sensor conditioning, microcontroller data processing, digital modulation (FSK/ASK), RF amplification, and custom antennas to achieve reliable wireless data transmission over 50-100 meters.</p>
-
-<h1 id="project-overview">Project Overview</h1>
-<p>Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.</p>
-
-<h2 id="system-architecture">System Architecture</h2>
-
-<h3 id="transmitter-chain">Transmitter Chain</h3>
-<ol>
-  <li><strong>Data Acquisition:</strong> Sensors (temperature, pressure, accelerometer) with analog conditioning</li>
-  <li><strong>Processing:</strong> STM32 microcontroller for data framing (preamble + data + CRC)</li>
-  <li><strong>Modulation:</strong> FSK (Frequency Shift Keying) or ASK (Amplitude Shift Keying) implementation</li>
-  <li><strong>RF Amplification:</strong> Power amplifier delivering +10 to +20 dBm</li>
-  <li><strong>Antenna:</strong> Matched monopole or patch antenna (50Ω)</li>
-</ol>
-
-<h3 id="receiver-chain">Receiver Chain</h3>
-<ol>
-  <li><strong>Antenna:</strong> Receiving antenna with 50Ω impedance matching</li>
-  <li><strong>LNA:</strong> Low Noise Amplifier (15-20 dB gain, NF &lt; 3 dB)</li>
-  <li><strong>Demodulation:</strong> FSK/ASK detector with threshold comparator</li>
-  <li><strong>Processing:</strong> STM32 for frame synchronization and CRC validation</li>
-  <li><strong>Display:</strong> LCD/OLED or UART output to PC</li>
-</ol>
-
-<h1 id="design-and-implementation">Design and Implementation</h1>
-
-<h2 id="rf-link-budget">RF Link Budget</h2>
-<p>Calculated using Friis transmission formula:</p>
-<ul>
-  <li>Transmit power: +10 dBm (10 mW)</li>
-  <li>Frequency: 433 MHz or 868 MHz</li>
-  <li>Antenna gains: ~2 dBi each</li>
-  <li>Target range: &gt; 50 m outdoor</li>
-  <li>Data rate: 1-10 kbps</li>
-</ul>
-
-<h2 id="modulation-schemes">Modulation Schemes</h2>
-
-<p><strong>FSK (Frequency Shift Keying):</strong></p>
-<ul>
-  <li>Binary 0 → frequency f₁</li>
-  <li>Binary 1 → frequency f₂</li>
-  <li>Frequency deviation: ±25 kHz</li>
-  <li>Generated using MCU PWM or dedicated modulator IC (RFM69)</li>
-</ul>
-
-<p><strong>ASK (Amplitude Shift Keying):</strong></p>
-<ul>
-  <li>Binary 0 → amplitude A₀ (low/off)</li>
-  <li>Binary 1 → amplitude A₁ (high)</li>
-  <li>Simpler implementation but more susceptible to noise</li>
-</ul>
-
-<h2 id="pcb-design">PCB Design</h2>
-<p>Fabricated two separate PCBs:</p>
-
-<p><strong>Transmitter PCB:</strong></p>
-<ul>
-  <li>Sensor inputs and conditioning circuits</li>
-  <li>STM32 microcontroller</li>
-  <li>Modulator stage</li>
-  <li>RF power amplifier</li>
-  <li>Antenna matching network</li>
-</ul>
-
-<p><strong>Receiver PCB:</strong></p>
-<ul>
-  <li>Antenna input with protection</li>
-  <li>LNA and band-pass filter</li>
-  <li>Demodulator circuit</li>
-  <li>STM32 microcontroller</li>
-  <li>Display interface</li>
-</ul>
-
-<h2 id="software-implementation">Software Implementation</h2>
-
-<p><strong>Transmitter Firmware:</strong></p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Data frame structure</span>
-<span class="k">struct</span> <span class="n">Packet</span> <span class="p">{</span>
-    <span class="kt">uint8_t</span> <span class="n">preamble</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>    <span class="c1">// Sync pattern</span>
-    <span class="kt">uint8_t</span> <span class="n">data</span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>       <span class="c1">// Payload</span>
-    <span class="kt">uint16_t</span> <span class="n">crc</span><span class="p">;</span>           <span class="c1">// Error detection</span>
-<span class="p">};</span>
-
-<span class="c1">// Transmit function</span>
-<span class="kt">void</span> <span class="nf">transmit_packet</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">prepare_frame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
-    <span class="n">modulate_and_send</span><span class="p">();</span>
-    <span class="n">wait_for_ack</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Receiver Firmware:</strong></p>
-<ul>
-  <li>Preamble detection for synchronization</li>
-  <li>CRC verification</li>
-  <li>Error handling and retransmission requests</li>
-</ul>
-
-<h1 id="testing-and-validation">Testing and Validation</h1>
-
-<h2 id="unit-testing">Unit Testing</h2>
-<ul>
-  <li>Power supply voltages and ripple</li>
-  <li>Modulation signal quality (oscilloscope)</li>
-  <li>RF output power and spectrum (spectrum analyzer)</li>
-  <li>Demodulator threshold levels</li>
-</ul>
-
-<h2 id="system-integration">System Integration</h2>
-<ul>
-  <li>Short-range testing (1 m) for initial validation</li>
-  <li>Progressive distance testing up to 100 m</li>
-  <li>RSSI (Received Signal Strength Indicator) measurements</li>
-  <li>Bit Error Rate (BER) characterization</li>
-  <li>Performance in noisy environments</li>
-</ul>
-
-<h2 id="results">Results</h2>
-<p>Successfully achieved:</p>
-<ul>
-  <li>Reliable communication at 50+ meters outdoor</li>
-  <li>Data rate of 9600 bps</li>
-  <li>BER &lt; 10⁻³ under normal conditions</li>
-  <li>Power consumption optimized for battery operation</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>This project provided invaluable hands-on experience in designing complete RF communication systems. We successfully integrated multiple engineering disciplines to create a functional wireless link, demonstrating the importance of systematic design, careful testing, and iterative optimization in complex electronic systems.</p>
-
-<style>
+        <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -214,6 +89,234 @@ p {
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet de synthese complet a consiste a concevoir et implementer un systeme de communication sans fil RF de A a Z. Le systeme comprenait des modules emetteur et recepteur separes, integrant le conditionnement de capteurs analogiques, le traitement de donnees par microcontroleur, la modulation numerique (FSK/ASK), l'amplification RF et des antennes personnalisees pour realiser une transmission de donnees sans fil fiable sur 50 a 100 metres.</p>
+
+<h1>Vue d'ensemble du projet</h1>
+<p>En travaillant en binome sur 60 heures, nous avons developpe une liaison sans fil full-duplex ou half-duplex operant dans la bande ISM (433 ou 868 MHz). Le projet a synthetise les connaissances en electronique analogique, systemes numeriques, circuits RF, telecommunications et programmation embarquee.</p>
+
+<h2>Architecture du systeme</h2>
+
+<h3>Chaine d'emission</h3>
+<ol>
+<li><strong>Acquisition de donnees :</strong> Capteurs (temperature, pression, accelerometre) avec conditionnement analogique</li>
+<li><strong>Traitement :</strong> Microcontroleur STM32 pour la mise en trame des donnees (preambule + donnees + CRC)</li>
+<li><strong>Modulation :</strong> Implementation FSK (Frequency Shift Keying) ou ASK (Amplitude Shift Keying)</li>
+<li><strong>Amplification RF :</strong> Amplificateur de puissance delivrant +10 a +20 dBm</li>
+<li><strong>Antenne :</strong> Monopole ou patch adapte a 50 ohms</li>
+</ol>
+
+<h3>Chaine de reception</h3>
+<ol>
+<li><strong>Antenne :</strong> Antenne de reception adaptee a 50 ohms</li>
+<li><strong>LNA :</strong> Amplificateur faible bruit (gain 15-20 dB, facteur de bruit &lt; 3 dB)</li>
+<li><strong>Demodulation :</strong> Detecteur FSK/ASK avec comparateur a seuil</li>
+<li><strong>Traitement :</strong> STM32 pour la synchronisation de trame et la validation CRC</li>
+<li><strong>Affichage :</strong> Sortie LCD/OLED ou UART vers PC</li>
+</ol>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This comprehensive synthesis project involved designing and implementing a complete RF wireless communication system from scratch. The system featured separate transmitter and receiver modules, integrating analog sensor conditioning, microcontroller data processing, digital modulation (FSK/ASK), RF amplification, and custom antennas to achieve reliable wireless data transmission over 50-100 meters.</p>
+
+<h1>Project Overview</h1>
+<p>Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.</p>
+
+<h2>System Architecture</h2>
+
+<h3>Transmitter Chain</h3>
+<ol>
+<li><strong>Data Acquisition:</strong> Sensors (temperature, pressure, accelerometer) with analog conditioning</li>
+<li><strong>Processing:</strong> STM32 microcontroller for data framing (preamble + data + CRC)</li>
+<li><strong>Modulation:</strong> FSK (Frequency Shift Keying) or ASK (Amplitude Shift Keying) implementation</li>
+<li><strong>RF Amplification:</strong> Power amplifier delivering +10 to +20 dBm</li>
+<li><strong>Antenna:</strong> Matched monopole or patch antenna (50 ohm)</li>
+</ol>
+
+<h3>Receiver Chain</h3>
+<ol>
+<li><strong>Antenna:</strong> Receiving antenna with 50 ohm impedance matching</li>
+<li><strong>LNA:</strong> Low Noise Amplifier (15-20 dB gain, NF &lt; 3 dB)</li>
+<li><strong>Demodulation:</strong> FSK/ASK detector with threshold comparator</li>
+<li><strong>Processing:</strong> STM32 for frame synchronization and CRC validation</li>
+<li><strong>Display:</strong> LCD/OLED or UART output to PC</li>
+</ol>
+</div>
+
+<div class="lang-fr">
+<h1>Conception et implementation</h1>
+
+<h2>Bilan de liaison RF</h2>
+<p>Calcul a l'aide de la formule de transmission de Friis :</p>
+<ul>
+<li>Puissance d'emission : +10 dBm (10 mW)</li>
+<li>Frequence : 433 MHz ou 868 MHz</li>
+<li>Gains d'antenne : environ 2 dBi chacun</li>
+<li>Portee cible : &gt; 50 m en exterieur</li>
+<li>Debit : 1-10 kbps</li>
+</ul>
+
+<h2>Schemas de modulation</h2>
+<p><strong>FSK (Frequency Shift Keying) :</strong></p>
+<ul>
+<li>Binaire 0 : frequence f1</li>
+<li>Binaire 1 : frequence f2</li>
+<li>Deviation de frequence : +/-25 kHz</li>
+<li>Genere par PWM du MCU ou modulateur dedie (RFM69)</li>
+</ul>
+
+<p><strong>ASK (Amplitude Shift Keying) :</strong></p>
+<ul>
+<li>Binaire 0 : amplitude A0 (faible/eteint)</li>
+<li>Binaire 1 : amplitude A1 (elevee)</li>
+<li>Implementation plus simple mais plus sensible au bruit</li>
+</ul>
+
+<h2>Conception du PCB</h2>
+<p>Fabrication de deux PCB separes :</p>
+
+<p><strong>PCB emetteur :</strong></p>
+<ul>
+<li>Entrees capteurs et circuits de conditionnement</li>
+<li>Microcontroleur STM32</li>
+<li>Etage de modulation</li>
+<li>Amplificateur de puissance RF</li>
+<li>Reseau d'adaptation d'antenne</li>
+</ul>
+
+<p><strong>PCB recepteur :</strong></p>
+<ul>
+<li>Entree antenne avec protection</li>
+<li>LNA et filtre passe-bande</li>
+<li>Circuit demodulateur</li>
+<li>Microcontroleur STM32</li>
+<li>Interface d'affichage</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Design and Implementation</h1>
+
+<h2>RF Link Budget</h2>
+<p>Calculated using Friis transmission formula:</p>
+<ul>
+<li>Transmit power: +10 dBm (10 mW)</li>
+<li>Frequency: 433 MHz or 868 MHz</li>
+<li>Antenna gains: ~2 dBi each</li>
+<li>Target range: &gt; 50 m outdoor</li>
+<li>Data rate: 1-10 kbps</li>
+</ul>
+
+<h2>Modulation Schemes</h2>
+<p><strong>FSK (Frequency Shift Keying):</strong></p>
+<ul>
+<li>Binary 0: frequency f1</li>
+<li>Binary 1: frequency f2</li>
+<li>Frequency deviation: +/-25 kHz</li>
+<li>Generated using MCU PWM or dedicated modulator IC (RFM69)</li>
+</ul>
+
+<p><strong>ASK (Amplitude Shift Keying):</strong></p>
+<ul>
+<li>Binary 0: amplitude A0 (low/off)</li>
+<li>Binary 1: amplitude A1 (high)</li>
+<li>Simpler implementation but more susceptible to noise</li>
+</ul>
+
+<h2>PCB Design</h2>
+<p>Fabricated two separate PCBs:</p>
+
+<p><strong>Transmitter PCB:</strong></p>
+<ul>
+<li>Sensor inputs and conditioning circuits</li>
+<li>STM32 microcontroller</li>
+<li>Modulator stage</li>
+<li>RF power amplifier</li>
+<li>Antenna matching network</li>
+</ul>
+
+<p><strong>Receiver PCB:</strong></p>
+<ul>
+<li>Antenna input with protection</li>
+<li>LNA and band-pass filter</li>
+<li>Demodulator circuit</li>
+<li>STM32 microcontroller</li>
+<li>Display interface</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Tests et validation</h1>
+
+<h2>Tests unitaires</h2>
+<ul>
+<li>Tensions et ondulations de l'alimentation</li>
+<li>Qualite du signal de modulation (oscilloscope)</li>
+<li>Puissance et spectre RF en sortie (analyseur de spectre)</li>
+<li>Niveaux de seuil du demodulateur</li>
+</ul>
+
+<h2>Integration systeme</h2>
+<ul>
+<li>Tests courte portee (1 m) pour validation initiale</li>
+<li>Tests de distance progressifs jusqu'a 100 m</li>
+<li>Mesures RSSI (indicateur de puissance du signal recu)</li>
+<li>Caracterisation du taux d'erreur binaire (BER)</li>
+<li>Performances en environnement bruite</li>
+</ul>
+
+<h2>Resultats</h2>
+<p>Nous avons atteint avec succes :</p>
+<ul>
+<li>Communication fiable a plus de 50 metres en exterieur</li>
+<li>Debit de 9600 bps</li>
+<li>BER &lt; 10^-3 en conditions normales</li>
+<li>Consommation optimisee pour fonctionnement sur batterie</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>Ce projet a fourni une experience pratique inestimable dans la conception de systemes de communication RF complets. Nous avons integre avec succes plusieurs disciplines d'ingenierie pour creer une liaison sans fil fonctionnelle, demontrant l'importance d'une conception systematique, de tests rigoureux et d'une optimisation iterative dans les systemes electroniques complexes.</p>
+</div>
+
+<div class="lang-en">
+<h1>Testing and Validation</h1>
+
+<h2>Unit Testing</h2>
+<ul>
+<li>Power supply voltages and ripple</li>
+<li>Modulation signal quality (oscilloscope)</li>
+<li>RF output power and spectrum (spectrum analyzer)</li>
+<li>Demodulator threshold levels</li>
+</ul>
+
+<h2>System Integration</h2>
+<ul>
+<li>Short-range testing (1 m) for initial validation</li>
+<li>Progressive distance testing up to 100 m</li>
+<li>RSSI (Received Signal Strength Indicator) measurements</li>
+<li>Bit Error Rate (BER) characterization</li>
+<li>Performance in noisy environments</li>
+</ul>
+
+<h2>Results</h2>
+<p>Successfully achieved:</p>
+<ul>
+<li>Reliable communication at 50+ meters outdoor</li>
+<li>Data rate of 9600 bps</li>
+<li>BER &lt; 10^-3 under normal conditions</li>
+<li>Power consumption optimized for battery operation</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>This project provided invaluable hands-on experience in designing complete RF communication systems. We successfully integrated multiple engineering disciplines to create a functional wireless link, demonstrating the importance of systematic design, careful testing, and iterative optimization in complex electronic systems.</p>
+</div>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -234,830 +337,6 @@ function closeModal() {
 }
 </script>
 
-<hr />
-
-<h2 id="part-b-expérience-contexte-et-fonction-architecture-système">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION (Architecture système)</h2>
-
-<h3 id="chaîne-démission">Chaîne d’émission</h3>
-
-<p><strong>Bloc 1 : Acquisition :</strong></p>
-<ul>
-  <li>Capteur (température, pression, accéléromètre)</li>
-  <li>Conditionnement analogique (ampli, filtrage)</li>
-  <li>ADC microcontrôleur</li>
-</ul>
-
-<p><strong>Bloc 2 : Traitement et codage :</strong></p>
-<ul>
-  <li>MCU (STM32, Arduino)</li>
-  <li>Mise en forme données (trame : préambule, data, CRC)</li>
-  <li>Codage source (compression si besoin)</li>
-</ul>
-
-<p><strong>Bloc 3 : Modulation :</strong></p>
-<ul>
-  <li><strong>FSK</strong> (Frequency Shift Keying) : 0→f1, 1→f2</li>
-  <li><strong>ASK</strong> (Amplitude Shift Keying) : 0→A0, 1→A1</li>
-  <li>Génération MCU (PWM, DAC) ou CI modulateur (ex: RFM69)</li>
-</ul>
-
-<p><strong>Bloc 4 : Amplification RF :</strong></p>
-<ul>
-  <li>PA (Power Amplifier) : +10 à +20 dBm</li>
-  <li>Transistor (BFG, 2N2222) ou CI (RFX2401)</li>
-  <li>Adaptation impédance</li>
-</ul>
-
-<p><strong>Bloc 5 : Antenne TX :</strong></p>
-<ul>
-  <li>Monopole, patch, ou dipole</li>
-  <li>Adaptation 50Ω</li>
-</ul>
-
-<h3 id="chaîne-de-réception">Chaîne de réception</h3>
-
-<p><strong>Bloc 1 : Antenne RX</strong></p>
-
-<p><strong>Bloc 2 : Préamplification :</strong></p>
-<ul>
-  <li>LNA (Low Noise Amplifier) : gain 15-20 dB, NF &lt;3 dB</li>
-  <li>Filtrage passe-bande (rejet hors-bande)</li>
-</ul>
-
-<p><strong>Bloc 3 : Démodulation :</strong></p>
-<ul>
-  <li>Détecteur FSK/ASK</li>
-  <li>Comparateur à seuil → signal TTL</li>
-</ul>
-
-<p><strong>Bloc 4 : Traitement numérique :</strong></p>
-<ul>
-  <li>MCU réception</li>
-  <li>Détection préambule (synchronisation)</li>
-  <li>Vérification CRC</li>
-  <li>Extraction données</li>
-</ul>
-
-<p><strong>Bloc 5 : Affichage :</strong></p>
-<ul>
-  <li>LCD, OLED, ou UART PC</li>
-</ul>
-
-<hr />
-
-<h2 id="part-c-aspects-techniques-réalisation">PART C: ASPECTS TECHNIQUES (Réalisation)</h2>
-
-<h3 id="phase-1--conception-20h">Phase 1 : Conception (20h)</h3>
-
-<p><strong>Spécifications :</strong></p>
-<ul>
-  <li>Fréquence : 433 MHz ou 868 MHz (ISM)</li>
-  <li>Débit : 1-10 kbps</li>
-  <li>Portée : &gt;50 m (extérieur)</li>
-  <li>Puissance TX : +10 dBm (10 mW)</li>
-</ul>
-
-<p><strong>Schéma fonctionnel :</strong></p>
-<ul>
-  <li>Blocs détaillés</li>
-  <li>Calcul bilan de liaison (Friis)</li>
-  <li>Choix composants</li>
-</ul>
-
-<h3 id="phase-2--simulation-10h">Phase 2 : Simulation (10h)</h3>
-
-<p><strong>Analogique (LTSpice) :</strong></p>
-<ul>
-  <li>Amplis RF (PA, LNA)</li>
-  <li>Filtres passe-bande</li>
-</ul>
-
-<p><strong>Numérique (MATLAB) :</strong></p>
-<ul>
-  <li>Modulation FSK/ASK</li>
-  <li>BER vs SNR</li>
-</ul>
-
-<h3 id="phase-3--réalisation-pcb-15h">Phase 3 : Réalisation PCB (15h)</h3>
-
-<p><strong>2 cartes :</strong></p>
-<ul>
-  <li><strong>Carte TX</strong> : capteur + MCU + modulateur + PA + antenne</li>
-  <li><strong>Carte RX</strong> : antenne + LNA + démodulateur + MCU + affichage</li>
-</ul>
-
-<p><strong>Conception :</strong></p>
-<ul>
-  <li>Schémas KiCad/Altium</li>
-  <li>PCB 2-4 couches</li>
-  <li>Séparation analog/RF/digital</li>
-  <li>Via stitching GND</li>
-  <li>Fabrication + assemblage</li>
-</ul>
-
-<h3 id="phase-4--tests-et-validation-15h">Phase 4 : Tests et validation (15h)</h3>
-
-<p><strong>Tests unitaires :</strong></p>
-<ul>
-  <li>Alimentation (tensions, ondulations)</li>
-  <li>Génération modulation (oscillo)</li>
-  <li>Amplification RF (analyseur spectre)</li>
-  <li>Réception signal (démodulation)</li>
-</ul>
-
-<p><strong>Tests système :</strong></p>
-<ul>
-  <li>Liaison courte distance (1 m)</li>
-  <li>Liaison longue distance (50-100 m)</li>
-  <li>Mesure RSSI, BER</li>
-  <li>Test en environnement bruité</li>
-</ul>
-
-<hr />
-
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
-
-<h3 id="livrables">Livrables</h3>
-<ul>
-  <li>Rapport technique (40 pages) : conception, simulations, réalisation, tests</li>
-  <li>Schémas et PCB</li>
-  <li>Code source (MCU TX/RX)</li>
-  <li>Présentation + démonstration</li>
-</ul>
-
-<h3 id="évaluation">Évaluation</h3>
-<ul>
-  <li>Conception système (20%)</li>
-  <li>Réalisation matérielle (25%)</li>
-  <li>Programmation (15%)</li>
-  <li>Tests et validation (20%)</li>
-  <li>Rapport (15%)</li>
-  <li>Présentation (5%)</li>
-</ul>
-
-<h3 id="compétences-acquises">Compétences acquises</h3>
-<ul>
-  <li>Conception systèmes RF complets</li>
-  <li>Intégration analogique-numérique-RF</li>
-  <li>Modulation/démodulation pratique</li>
-  <li>Gestion projet complexe en binome</li>
-  <li>Tests et validation systématiques</li>
-</ul>
-
-<h3 id="applications-professionnelles">Applications professionnelles</h3>
-<ul>
-  <li>Ingénieur systèmes IoT</li>
-  <li>Concepteur électronique RF</li>
-  <li>R&amp;D télécommunications</li>
-</ul>
-
-<h2 id="-contexte-du-projet">📚 Contexte du projet</h2>
-
-<h3 id="chaîne-de-communication-complète">Chaîne de communication complète</h3>
-
-<p><strong>Architecture générale :</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Capteur] → [Conditionnement] → [MCU] → [Modulation] 
-    → [Amplification RF] → [Antenne TX]
-    
-        ~~~ Canal radio ~~~
-        
-[Antenne RX] → [Amplification RF] → [Démodulation] 
-    → [MCU] → [Traitement] → [Affichage/Transmission]
-</code></pre></div></div>
-
-<h3 id="projets-types">Projets types</h3>
-
-<h4 id="liaison-audio-sans-fil">Liaison audio sans fil</h4>
-<ul>
-  <li>Émetteur audio FM/FSK</li>
-  <li>Récepteur avec démodulation</li>
-  <li>Modulation analogique ou numérique</li>
-  <li>Bande ISM (2.4 GHz ou 433/868 MHz)</li>
-</ul>
-
-<h4 id="télémétrie-capteurs">Télémétrie capteurs</h4>
-<ul>
-  <li>Émetteur multi-capteurs (T°, P, humidité)</li>
-  <li>Modulation numérique (FSK, PSK)</li>
-  <li>Récepteur avec décodage</li>
-  <li>Affichage temps réel</li>
-  <li>Stockage données</li>
-</ul>
-
-<h4 id="commande-à-distance">Commande à distance</h4>
-<ul>
-  <li>Émetteur (télécommande)</li>
-  <li>Codage sécurisé</li>
-  <li>Récepteur</li>
-  <li>Actions sur actuateurs</li>
-  <li>Feedback</li>
-</ul>
-
-<h2 id="️-exemple-détaillé--système-de-communication-rf">🛠️ Exemple détaillé : Système de communication RF</h2>
-
-<h3 id="cahier-des-charges">Cahier des charges</h3>
-
-<h4 id="spécifications-système">Spécifications système</h4>
-
-<p><strong>Fréquence :</strong></p>
-<ul>
-  <li>Bande ISM : 433 MHz ou 868 MHz (Europe)</li>
-  <li>Alternative : 2.4 GHz (WiFi/BT)</li>
-  <li>Largeur de bande : 200 kHz</li>
-</ul>
-
-<p><strong>Modulation :</strong></p>
-<ul>
-  <li>FSK (Frequency Shift Keying)</li>
-  <li>Débit : 9600 bps minimum</li>
-  <li>Déviation : ±25 kHz</li>
-</ul>
-
-<p><strong>Puissance :</strong></p>
-<ul>
-  <li>Émetteur : 10 mW (10 dBm)</li>
-  <li>Portée : 100m en champ libre</li>
-  <li>Respect réglementation ETSI</li>
-</ul>
-
-<p><strong>Communication :</strong></p>
-<ul>
-  <li>Liaison half-duplex</li>
-  <li>Protocole simple (préambule + données + CRC)</li>
-  <li>Acquittements</li>
-</ul>
-
-<h3 id="conception-émetteur">Conception émetteur</h3>
-
-<h4 id="architecture-émetteur">Architecture émetteur</h4>
-
-<p><strong>Blocs fonctionnels :</strong></p>
-
-<ol>
-  <li><strong>Acquisition données :</strong>
-    <ul>
-      <li>Microcontrôleur (STM32)</li>
-      <li>Interface capteurs ou audio</li>
-      <li>Échantillonnage et conversion A/N</li>
-    </ul>
-  </li>
-  <li><strong>Codage et mise en forme :</strong>
-    <ul>
-      <li>Codage source (compression optionnelle)</li>
-      <li>Codage canal (détection erreurs)</li>
-      <li>Mise en paquet</li>
-      <li>Ajout CRC</li>
-    </ul>
-  </li>
-  <li><strong>Modulation :</strong>
-    <ul>
-      <li>Génération FSK</li>
-      <li>VCO (Voltage Controlled Oscillator)</li>
-      <li>Ou module RF intégré</li>
-    </ul>
-  </li>
-  <li><strong>Émission RF :</strong>
-    <ul>
-      <li>Amplification PA (Power Amplifier)</li>
-      <li>Filtrage passe-bande</li>
-      <li>Adaptation d’impédance</li>
-      <li>Antenne</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="schémas-émetteur">Schémas émetteur</h4>
-
-<p><strong>Option 1 : Module RF intégré</strong></p>
-
-<p>Utilisation module type RFM69, SX1276 (LoRa), nRF24L01, etc.</p>
-
-<p><em>Avantages :</em></p>
-<ul>
-  <li>Simple à intégrer</li>
-  <li>Fiable</li>
-  <li>Homologué</li>
-  <li>Communication SPI avec MCU</li>
-</ul>
-
-<p><em>Exemple avec RFM69 :</em></p>
-<ul>
-  <li>Fréquence : 433/868/915 MHz</li>
-  <li>Modulation FSK/GFSK</li>
-  <li>Puissance : jusqu’à +20 dBm</li>
-  <li>Sensibilité : -120 dBm</li>
-  <li>Interface SPI</li>
-  <li>Configuration par registres</li>
-</ul>
-
-<p><strong>Connexions :</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>STM32 (SPI) ↔ RFM69
-    MOSI → MOSI
-    MISO → MISO
-    SCK  → SCK
-    NSS  → NSS
-    DIO0 → GPIO (interruption)
-</code></pre></div></div>
-
-<p><strong>Option 2 : Conception discrète</strong></p>
-
-<p><em>Blocs à concevoir :</em></p>
-
-<p><strong>VCO (Oscillateur) :</strong></p>
-<ul>
-  <li>Générateur 433/868 MHz</li>
-  <li>Modulation FM par tension</li>
-  <li>Stabilité en fréquence (PLL + quartz)</li>
-</ul>
-
-<p><strong>Amplificateur de puissance :</strong></p>
-<ul>
-  <li>Classe C ou E (efficacité)</li>
-  <li>Gain : 10-20 dB</li>
-  <li>P out : 10 mW (+10 dBm)</li>
-  <li>Transistor RF (BFR93, 2N3904, etc.)</li>
-</ul>
-
-<p><strong>Filtrage :</strong></p>
-<ul>
-  <li>Filtre passe-bande centré sur fo</li>
-  <li>Rejection harmoniques</li>
-  <li>Topologie LC ou SAW</li>
-</ul>
-
-<p><strong>Adaptation et antenne :</strong></p>
-<ul>
-  <li>Réseau L, π ou stub</li>
-  <li>Smith chart</li>
-  <li>Mesure S11 &lt; -10 dB</li>
-</ul>
-
-<h4 id="logiciel-émetteur">Logiciel émetteur</h4>
-
-<p><strong>Structure code :</strong></p>
-
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">transmit_packet</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">length</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 1. Préparation paquet</span>
-    <span class="n">packet</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">PREAMBLE</span><span class="p">;</span>     <span class="c1">// 0xAA (synchronisation)</span>
-    <span class="n">packet</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">SYNC_WORD</span><span class="p">;</span>    <span class="c1">// 0x2D (identification)</span>
-    <span class="n">packet</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">length</span><span class="p">;</span>       <span class="c1">// Longueur données</span>
-    <span class="n">memcpy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">packet</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">data</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
-    
-    <span class="c1">// 2. Calcul CRC</span>
-    <span class="kt">uint16_t</span> <span class="n">crc</span> <span class="o">=</span> <span class="n">calculate_crc16</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
-    <span class="n">packet</span><span class="p">[</span><span class="mi">3</span> <span class="o">+</span> <span class="n">length</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">crc</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">;</span>
-    <span class="n">packet</span><span class="p">[</span><span class="mi">4</span> <span class="o">+</span> <span class="n">length</span><span class="p">]</span> <span class="o">=</span> <span class="n">crc</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">;</span>
-    
-    <span class="c1">// 3. Émission via module RF</span>
-    <span class="n">RFM69_send</span><span class="p">(</span><span class="n">packet</span><span class="p">,</span> <span class="mi">5</span> <span class="o">+</span> <span class="n">length</span><span class="p">);</span>
-    
-    <span class="c1">// 4. Attente acquittement (optionnel)</span>
-    <span class="n">wait_for_ack</span><span class="p">(</span><span class="n">TIMEOUT_MS</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Gestion protocole :</strong></p>
-<ul>
-  <li>Détection de collision (CSMA)</li>
-  <li>Retransmissions automatiques</li>
-  <li>Horodatage</li>
-  <li>Numéro de séquence</li>
-</ul>
-
-<h3 id="conception-récepteur">Conception récepteur</h3>
-
-<h4 id="architecture-récepteur">Architecture récepteur</h4>
-
-<p><strong>Blocs fonctionnels :</strong></p>
-
-<ol>
-  <li><strong>Réception RF :</strong>
-    <ul>
-      <li>Antenne</li>
-      <li>Filtre passe-bande</li>
-      <li>LNA (Low Noise Amplifier)</li>
-      <li>Mélangeur (down-conversion)</li>
-    </ul>
-  </li>
-  <li><strong>Démodulation :</strong>
-    <ul>
-      <li>Discriminateur FM</li>
-      <li>Ou démodulateur numérique (DSP)</li>
-      <li>Récupération d’horloge</li>
-    </ul>
-  </li>
-  <li><strong>Décodage :</strong>
-    <ul>
-      <li>Synchronisation (préambule)</li>
-      <li>Récupération des données</li>
-      <li>Vérification CRC</li>
-      <li>Détection et correction d’erreurs</li>
-    </ul>
-  </li>
-  <li><strong>Traitement :</strong>
-    <ul>
-      <li>MCU (STM32)</li>
-      <li>Interprétation données</li>
-      <li>Actions ou affichage</li>
-      <li>Transmission vers PC (USB/UART)</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="schémas-récepteur">Schémas récepteur</h4>
-
-<p><strong>Option 1 : Module RF intégré</strong></p>
-
-<p>Même module que l’émetteur (RFM69, etc.) en mode RX</p>
-
-<p><em>Configuration réception :</em></p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">RFM69_setMode</span><span class="p">(</span><span class="n">RX_MODE</span><span class="p">);</span>
-<span class="n">RFM69_setFrequency</span><span class="p">(</span><span class="mi">433</span><span class="p">.</span><span class="mi">92</span> <span class="n">MHz</span><span class="p">);</span>
-<span class="n">RFM69_setBitrate</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="n">RFM69_setRxBandwidth</span><span class="p">(</span><span class="mi">50</span> <span class="n">kHz</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p><em>Interruption sur réception :</em></p>
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">RFM69_IRQ_Handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">packet_received</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">uint8_t</span> <span class="n">length</span> <span class="o">=</span> <span class="n">RFM69_read_FIFO</span><span class="p">(</span><span class="n">rx_buffer</span><span class="p">);</span>
-        <span class="n">process_packet</span><span class="p">(</span><span class="n">rx_buffer</span><span class="p">,</span> <span class="n">length</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Option 2 : Conception discrète</strong></p>
-
-<p><strong>LNA (Low Noise Amplifier) :</strong></p>
-<ul>
-  <li>Faible bruit (NF &lt; 2 dB)</li>
-  <li>Gain : 15-20 dB</li>
-  <li>Transistor faible bruit (ATF-531P8, etc.)</li>
-</ul>
-
-<p><strong>Mélangeur et FI (Fréquence Intermédiaire) :</strong></p>
-<ul>
-  <li>Down-conversion vers FI (10.7 MHz typique)</li>
-  <li>Oscillateur local (LO)</li>
-  <li>Filtre FI</li>
-</ul>
-
-<p><strong>Démodulateur FM :</strong></p>
-<ul>
-  <li>Discriminateur (quadrature detector)</li>
-  <li>PLL (CD4046, NE565)</li>
-  <li>Sortie bande de base</li>
-</ul>
-
-<p><strong>Comparateur :</strong></p>
-<ul>
-  <li>Conversion analogique → numérique</li>
-  <li>Seuil ajustable</li>
-  <li>Hystérésis</li>
-</ul>
-
-<h4 id="logiciel-récepteur">Logiciel récepteur</h4>
-
-<p><strong>Structure code :</strong></p>
-
-<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">receive_handler</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">uint8_t</span> <span class="n">rx_buffer</span><span class="p">[</span><span class="n">MAX_PACKET_SIZE</span><span class="p">];</span>
-    
-    <span class="c1">// 1. Attente données</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">RFM69_available</span><span class="p">())</span> <span class="p">{</span>
-        <span class="kt">uint8_t</span> <span class="n">length</span> <span class="o">=</span> <span class="n">RFM69_receive</span><span class="p">(</span><span class="n">rx_buffer</span><span class="p">);</span>
-        
-        <span class="c1">// 2. Vérification préambule et sync</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">rx_buffer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">PREAMBLE</span> <span class="o">&amp;&amp;</span> 
-            <span class="n">rx_buffer</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">SYNC_WORD</span><span class="p">)</span> <span class="p">{</span>
-            
-            <span class="c1">// 3. Extraction données</span>
-            <span class="kt">uint8_t</span> <span class="n">data_length</span> <span class="o">=</span> <span class="n">rx_buffer</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
-            <span class="kt">uint8_t</span> <span class="o">*</span><span class="n">data</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">rx_buffer</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
-            
-            <span class="c1">// 4. Vérification CRC</span>
-            <span class="kt">uint16_t</span> <span class="n">crc_received</span> <span class="o">=</span> <span class="p">(</span><span class="n">rx_buffer</span><span class="p">[</span><span class="mi">3</span><span class="o">+</span><span class="n">data_length</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span> 
-                                     <span class="n">rx_buffer</span><span class="p">[</span><span class="mi">4</span><span class="o">+</span><span class="n">data_length</span><span class="p">];</span>
-            <span class="kt">uint16_t</span> <span class="n">crc_calculated</span> <span class="o">=</span> <span class="n">calculate_crc16</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data_length</span><span class="p">);</span>
-            
-            <span class="k">if</span> <span class="p">(</span><span class="n">crc_received</span> <span class="o">==</span> <span class="n">crc_calculated</span><span class="p">)</span> <span class="p">{</span>
-                <span class="c1">// 5. Traitement données</span>
-                <span class="n">process_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data_length</span><span class="p">);</span>
-                
-                <span class="c1">// 6. Envoi acquittement</span>
-                <span class="n">send_ack</span><span class="p">();</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="c1">// Erreur CRC</span>
-                <span class="n">error_count</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Traitement données :</strong></p>
-<ul>
-  <li>Affichage LCD/OLED</li>
-  <li>Transmission UART vers PC</li>
-  <li>Enregistrement sur SD</li>
-  <li>Actions sur sorties</li>
-</ul>
-
-<h3 id="antennes">Antennes</h3>
-
-<h4 id="design-antennes">Design antennes</h4>
-
-<p><strong>Émetteur et récepteur :</strong></p>
-<ul>
-  <li>Antennes identiques (réciprocité)</li>
-  <li>Monopole λ/4 sur plan de masse</li>
-  <li>Ou antenne fouet accordée</li>
-  <li>Ou antenne PCB (économique)</li>
-</ul>
-
-<p><strong>Dimensionnement 433 MHz :</strong></p>
-<ul>
-  <li>λ = 69 cm</li>
-  <li>λ/4 = 17.3 cm</li>
-  <li>Avec plan de masse 20×20 cm minimum</li>
-</ul>
-
-<p><strong>Dimensionnement 868 MHz :</strong></p>
-<ul>
-  <li>λ = 34.5 cm</li>
-  <li>λ/4 = 8.6 cm</li>
-  <li>Plus compact</li>
-</ul>
-
-<p><strong>Optimisations :</strong></p>
-<ul>
-  <li>Simulation MMANA-GAL ou CST</li>
-  <li>Mesure S11 avec VNA</li>
-  <li>Ajustement longueur</li>
-</ul>
-
-<h3 id="tests-et-validation">Tests et validation</h3>
-
-<h4 id="tests-unitaires">Tests unitaires</h4>
-
-<p><strong>Émetteur :</strong></p>
-<ul>
-  <li>Fréquence porteuse (analyseur de spectre)</li>
-  <li>Puissance émise (wattmètre RF)</li>
-  <li>Déviation fréquence (FSK)</li>
-  <li>Spectre (largeur bande, harmoniques)</li>
-  <li>Modulation visualisée</li>
-</ul>
-
-<p><strong>Récepteur :</strong></p>
-<ul>
-  <li>Sensibilité (puissance minimum détectable)</li>
-  <li>Sélectivité (bande passante)</li>
-  <li>Démodulation correcte</li>
-  <li>Taux d’erreur sans bruit</li>
-</ul>
-
-<h4 id="tests-dintégration">Tests d’intégration</h4>
-
-<p><strong>Liaison complète :</strong></p>
-<ul>
-  <li>Émission → réception</li>
-  <li>Distance variable</li>
-  <li>Environnements différents (indoor/outdoor)</li>
-  <li>Obstacles</li>
-</ul>
-
-<p><strong>Mesures de performances :</strong></p>
-
-<p><strong>Portée :</strong></p>
-<ul>
-  <li>Distance max pour BER acceptable</li>
-  <li>Selon environnement</li>
-  <li>Comparaison avec théorie (Friis)</li>
-</ul>
-
-<p><strong>Taux d’erreur binaire (BER) :</strong>
-\(BER = \frac{\text{Bits erronés}}{\text{Bits totaux}}\)</p>
-
-<p>Objectif : BER &lt; 10^-3 à 10^-5</p>
-
-<p><strong>Débit effectif :</strong></p>
-<ul>
-  <li>Avec entêtes et CRC</li>
-  <li>Avec retransmissions</li>
-  <li>Débit utile vs débit brut</li>
-</ul>
-
-<p><strong>Latence :</strong></p>
-<ul>
-  <li>Temps émission → réception</li>
-  <li>Temps de traitement</li>
-  <li>Bout en bout</li>
-</ul>
-
-<h4 id="tests-en-conditions-réelles">Tests en conditions réelles</h4>
-
-<p><strong>Scénarios d’usage :</strong></p>
-<ul>
-  <li>Intérieur bâtiment</li>
-  <li>Extérieur champ libre</li>
-  <li>Avec interférences (WiFi, BT)</li>
-  <li>Mobilité (véhicule)</li>
-</ul>
-
-<p><strong>Robustesse :</strong></p>
-<ul>
-  <li>Variation température</li>
-  <li>Alimentation variable</li>
-  <li>Durée continue</li>
-  <li>Stress test</li>
-</ul>
-
-<h3 id="améliorations-possibles">Améliorations possibles</h3>
-
-<h4 id="hardware">Hardware</h4>
-<ul>
-  <li>Amplification adaptative (AGC)</li>
-  <li>Filtres adaptatifs</li>
-  <li>Diversité d’antennes</li>
-  <li>Meilleure sensibilité (LNA optimisé)</li>
-</ul>
-
-<h4 id="software">Software</h4>
-<ul>
-  <li>FEC (Forward Error Correction)</li>
-  <li>ARQ (Automatic Repeat Request)</li>
-  <li>Codage convolutif ou Turbo</li>
-  <li>Compression données</li>
-  <li>Chiffrement (AES)</li>
-</ul>
-
-<h4 id="protocole">Protocole</h4>
-<ul>
-  <li>CSMA/CA (éviter collisions)</li>
-  <li>Multi-canaux</li>
-  <li>Time-slotting (TDMA)</li>
-  <li>Mesh networking</li>
-</ul>
-
-<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
-
-<h3 id="conception-rf">Conception RF</h3>
-<ul>
-  <li><strong>AWR Microwave Office</strong> : Circuits RF</li>
-  <li><strong>Qucs</strong> : Open source simulation RF</li>
-  <li><strong>LTspice</strong> : Circuits RF simples</li>
-</ul>
-
-<h3 id="simulation-antennes">Simulation antennes</h3>
-<ul>
-  <li><strong>MMANA-GAL</strong> : Antennes filaires</li>
-  <li><strong>CST/HFSS</strong> : 3D EM</li>
-</ul>
-
-<h3 id="pcb">PCB</h3>
-<ul>
-  <li><strong>Altium/KiCad</strong> : Design RF</li>
-</ul>
-
-<h3 id="mesure-rf">Mesure RF</h3>
-<ul>
-  <li><strong>Analyseur de spectre</strong> : Fréquence, puissance, spectre</li>
-  <li><strong>VNA</strong> : S-paramètres, adaptation</li>
-  <li><strong>Wattmètre RF</strong> : Puissance</li>
-  <li><strong>Générateur RF</strong> : Tests</li>
-</ul>
-
-<h3 id="software-1">Software</h3>
-<ul>
-  <li><strong>STM32CubeIDE</strong> / <strong>PlatformIO</strong></li>
-  <li><strong>GNU Radio</strong> : Prototypage SDR</li>
-  <li><strong>Python</strong> : Post-traitement, GUI</li>
-</ul>
-
-<h2 id="-livrables">📊 Livrables</h2>
-
-<h3 id="documentation">Documentation</h3>
-<ul>
-  <li>Cahier des charges</li>
-  <li>Architecture système</li>
-  <li>Schémas émetteur et récepteur</li>
-  <li>PCB et layout</li>
-  <li>Logiciels (code source commenté)</li>
-  <li>Calculs de bilans de liaison</li>
-  <li>Résultats de simulations</li>
-  <li>Protocole de communication</li>
-  <li>Tests et mesures</li>
-  <li>Rapport technique complet (60-100 pages)</li>
-</ul>
-
-<h3 id="réalisations">Réalisations</h3>
-<ul>
-  <li>Émetteur fonctionnel</li>
-  <li>Récepteur fonctionnel</li>
-  <li>Antennes</li>
-  <li>Démonstration liaison</li>
-  <li>Interface utilisateur (PC ou LCD)</li>
-</ul>
-
-<h3 id="présentation">Présentation</h3>
-<ul>
-  <li>Soutenance avec démo live</li>
-  <li>Vidéo de démonstration</li>
-  <li>Poster technique</li>
-</ul>
-
-<h2 id="-liens-avec-les-cours">🔗 Liens avec les cours</h2>
-
-<ul>
-  <li><strong>Télécommunications (S3, S4)</strong> : Modulation</li>
-  <li><strong>Antennes et Propagation (S4)</strong> : Conception antennes</li>
-  <li><strong>Circuits Hyperfréquences (S3)</strong> : Circuits RF</li>
-  <li><strong>Filtrage Numérique (S4)</strong> : Traitement signal</li>
-  <li><strong>IE</strong> : Programmation embarquée</li>
-  <li><strong>ER</strong> : Conception PCB RF</li>
-</ul>
-
-<h2 id="-compétences-développées">📖 Compétences développées</h2>
-
-<ul>
-  <li>Conception de systèmes RF complets</li>
-  <li>Modulation et démodulation</li>
-  <li>Protocoles de communication</li>
-  <li>Design d’antennes</li>
-  <li>PCB RF (impédance contrôlée)</li>
-  <li>Mesures RF</li>
-  <li>Programmation communication</li>
-  <li>Bilans de liaison</li>
-  <li>Gestion de projet complexe</li>
-  <li>Travail en équipe</li>
-</ul>
-
-<h2 id="-extensions-possibles">💡 Extensions possibles</h2>
-
-<h3 id="fonctionnalités-avancées">Fonctionnalités avancées</h3>
-<ul>
-  <li>Liaison bidirectionnelle (full-duplex)</li>
-  <li>Multiple émetteurs (réseau)</li>
-  <li>Routage multi-hop</li>
-  <li>Localisation (RSSI, TOA)</li>
-  <li>Adaptive data rate</li>
-</ul>
-
-<h3 id="applications">Applications</h3>
-<ul>
-  <li>Réseau de capteurs (WSN)</li>
-  <li>Domotique sans fil</li>
-  <li>Télémétrie véhicules</li>
-  <li>Commande drone</li>
-  <li>Audio streaming</li>
-</ul>
-
-<h2 id="️-conformité-réglementaire">⚠️ Conformité réglementaire</h2>
-
-<h3 id="puissance-et-fréquence">Puissance et fréquence</h3>
-<ul>
-  <li>Respecter limites ETSI EN 300 220</li>
-  <li>Bandes ISM : 433.05-434.79 MHz, 863-870 MHz</li>
-  <li>Puissance max : 10 mW (433 MHz), 25 mW (868 MHz)</li>
-  <li>Duty cycle parfois limité</li>
-</ul>
-
-<h3 id="homologation">Homologation</h3>
-<ul>
-  <li>Tests EMC nécessaires pour commercialisation</li>
-  <li>Marquage CE</li>
-  <li>FCC (États-Unis) si export</li>
-</ul>
-
-<h3 id="sécurité">Sécurité</h3>
-<ul>
-  <li>Pas d’interférences avec services critiques</li>
-  <li>Tests en environnement contrôlé</li>
-</ul>
-
-<h2 id="-critères-dévaluation">🎯 Critères d’évaluation</h2>
-
-<ul>
-  <li>Conception système (20%)</li>
-  <li>Réalisation émetteur (15%)</li>
-  <li>Réalisation récepteur (15%)</li>
-  <li>Liaison fonctionnelle (20%)</li>
-  <li>Tests et performances (15%)</li>
-  <li>Documentation (10%)</li>
-  <li>Soutenance et démo (5%)</li>
-</ul>
-
-<h2 id="-ressources">📚 Ressources</h2>
-
-<ul>
-  <li>“RF Circuit Design” - Chris Bowick</li>
-  <li>“Wireless Communications” - Andrea Goldsmith</li>
-  <li>Application notes Analog Devices, Texas Instruments</li>
-  <li>Datasheets modules RF (RFM69, SX1276, nRF24)</li>
-  <li>Forums RF (edaboard, electronics.stackexchange)</li>
-  <li>Standards ETSI EN 300 220</li>
-</ul>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -1088,6 +367,117 @@ function closeModal() {
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1106,8 +496,8 @@ function closeModal() {
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1129,6 +519,7 @@ function closeModal() {
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1639,11 +1030,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1843,14 +1232,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1861,6 +1250,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

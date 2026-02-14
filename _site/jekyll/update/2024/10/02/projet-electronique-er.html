@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Advanced Electronics System Design" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project" />
-<meta property="og:description" content="← Back to Academic Project" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Advanced Electronics System Design" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project","headline":"Advanced Electronics System Design","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Advanced Electronics System Design","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-electronique-er.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,201 +36,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
-
-<h1 id="introduction">Introduction</h1>
-<p>This open-ended project provided complete autonomy to design and build a complex electronic system from concept to working prototype. Working in pairs over 60 hours, we could choose from various applications: multi-sensor datalogger, USB oscilloscope, programmable laboratory power supply, or other custom electronic instruments. The project synthesized knowledge from analog circuits, digital systems, embedded programming, and professional PCB design.</p>
-
-<h1 id="project-overview">Project Overview</h1>
-<p>This project represented the culmination of our electrical engineering training, requiring us to manage every aspect: specifications definition, component selection, schematic design, PCB layout, firmware development, and comprehensive testing. The emphasis was on professional-grade implementation and autonomous project management.</p>
-
-<h2 id="example-project-types">Example Project Types</h2>
-
-<h3 id="data-acquisition-systems">Data Acquisition Systems</h3>
-<p><strong>Multi-Sensor Datalogger:</strong></p>
-<ul>
-  <li>Multiple sensor inputs (temperature, pressure, humidity)</li>
-  <li>Instrumentation amplifiers and filtering</li>
-  <li>12-16 bit ADC (STM32 or ADS1115)</li>
-  <li>SD card storage via SPI</li>
-  <li>OLED/LCD display</li>
-  <li>Li-Ion battery with charging circuit</li>
-</ul>
-
-<p><strong>USB Oscilloscope (1 MHz bandwidth):</strong></p>
-<ul>
-  <li>Switchable input attenuator (1x, 10x)</li>
-  <li>Differential amplifier with ±50V protection</li>
-  <li>Fast ADC (MSPS sampling)</li>
-  <li>USB interface to PC</li>
-  <li>Python GUI for visualization</li>
-  <li>Analog trigger circuit</li>
-</ul>
-
-<h3 id="power-electronics">Power Electronics</h3>
-<p><strong>Programmable Laboratory Power Supply:</strong></p>
-<ul>
-  <li>Dual output: 0-30V, 0-3A per channel</li>
-  <li>Linear or switching regulation</li>
-  <li>Microcontroller control with DAC setpoints</li>
-  <li>LCD display for voltage/current</li>
-  <li>Overvoltage and overcurrent protection</li>
-  <li>UART interface for PC control</li>
-</ul>
-
-<h3 id="embedded-systems">Embedded Systems</h3>
-<p><strong>Autonomous Weather Station:</strong></p>
-<ul>
-  <li>Environmental sensors (T°, pressure, humidity, wind, rain)</li>
-  <li>ESP32 microcontroller with WiFi</li>
-  <li>MQTT data transmission to cloud</li>
-  <li>Solar panel + battery power system</li>
-  <li>IP65 outdoor enclosure</li>
-  <li>Low-power operation for extended autonomy</li>
-</ul>
-
-<h1 id="design-methodology">Design Methodology</h1>
-
-<h2 id="phase-1-specifications-and-planning">Phase 1: Specifications and Planning</h2>
-<p><strong>Requirements Definition:</strong></p>
-<ul>
-  <li>Detailed functional specifications</li>
-  <li>Performance targets (accuracy, speed, autonomy)</li>
-  <li>Constraints (cost, size, power budget)</li>
-</ul>
-
-<p><strong>Feasibility Study:</strong></p>
-<ul>
-  <li>Component research and selection</li>
-  <li>Technical solution evaluation</li>
-  <li>Cost estimation and BOM planning</li>
-</ul>
-
-<h2 id="phase-2-electronic-design">Phase 2: Electronic Design</h2>
-
-<p><strong>Functional Block Diagram:</strong></p>
-<ul>
-  <li>System architecture decomposition</li>
-  <li>Interface definitions between blocks</li>
-  <li>Signal flow analysis</li>
-</ul>
-
-<p><strong>Schematic Design (KiCad/Altium):</strong></p>
-<ul>
-  <li>Power supply section (regulators, decoupling)</li>
-  <li>Analog conditioning circuits</li>
-  <li>Microcontroller and peripherals</li>
-  <li>Connectors and interfaces</li>
-  <li>Component selection with verified part numbers (Mouser/Digi-Key)</li>
-</ul>
-
-<p><strong>Circuit Simulations:</strong></p>
-<ul>
-  <li>LTspice for analog circuits</li>
-  <li>Proteus for MCU co-simulation</li>
-  <li>Validation of critical parameters</li>
-</ul>
-
-<h2 id="phase-3-pcb-design">Phase 3: PCB Design</h2>
-
-<p><strong>Layout Strategy:</strong></p>
-<ul>
-  <li>2 or 4-layer PCB depending on complexity</li>
-  <li>Component placement (thermal, EMC considerations)</li>
-  <li>Trace routing: width for current capacity, spacing for voltage</li>
-  <li>Ground and power planes</li>
-  <li>Design Rule Check (DRC) validation</li>
-</ul>
-
-<p><strong>Manufacturing:</strong></p>
-<ul>
-  <li>Gerber file generation</li>
-  <li>Order from PCB fabricator (3-7 day turnaround)</li>
-  <li>Inspection upon reception</li>
-  <li>SMD and through-hole component assembly</li>
-  <li>Soldering with iron, hot air, or reflow oven</li>
-</ul>
-
-<h2 id="phase-4-firmware-development">Phase 4: Firmware Development</h2>
-
-<p><strong>Embedded Software:</strong></p>
-<ul>
-  <li>Peripheral configuration (ADC, I2C, UART, SPI)</li>
-  <li>Data acquisition and processing</li>
-  <li>Calibration algorithms</li>
-  <li>User interface (buttons, LCD)</li>
-  <li>Communication protocols</li>
-</ul>
-
-<p><strong>PC Interface (if applicable):</strong></p>
-<ul>
-  <li>Python/Qt GUI development</li>
-  <li>Serial communication (UART/USB)</li>
-  <li>Data visualization and logging</li>
-</ul>
-
-<h2 id="phase-5-testing-and-validation">Phase 5: Testing and Validation</h2>
-
-<p><strong>Unit Testing:</strong></p>
-<ul>
-  <li>Power supply verification (voltages, ripple)</li>
-  <li>Analog conditioning (gain, offset, noise)</li>
-  <li>Digital communication (I2C, SPI, UART)</li>
-  <li>Individual subsystem validation</li>
-</ul>
-
-<p><strong>Functional Testing:</strong></p>
-<ul>
-  <li>Specifications compliance verification</li>
-  <li>Accuracy and repeatability measurements</li>
-  <li>Calibration procedures</li>
-  <li>Performance characterization</li>
-</ul>
-
-<p><strong>Documentation:</strong></p>
-<ul>
-  <li>Test protocols and procedures</li>
-  <li>Results tables and graphs</li>
-  <li>Deviation analysis</li>
-  <li>Final validation report</li>
-</ul>
-
-<h1 id="results-and-analysis">Results and Analysis</h1>
-
-<p>The completed system met or exceeded design specifications, demonstrating successful integration of analog and digital subsystems. Key challenges included minimizing noise in sensitive analog circuits, optimizing power consumption for battery operation, and achieving reliable communication between subsystems.</p>
-
-<p>Performance validation confirmed:</p>
-<ul>
-  <li>Measurement accuracy within design targets</li>
-  <li>Stable operation across specified conditions</li>
-  <li>Reliable data acquisition and storage</li>
-  <li>User-friendly interface operation</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>This project provided comprehensive experience in professional electronic system development, from concept through validated prototype. The autonomous nature of the work developed critical project management skills including planning, problem-solving, and technical documentation. The working prototype demonstrates our ability to deliver complete, functional electronic systems meeting real-world requirements.</p>
-
-<style>
+        <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -254,6 +89,254 @@ p {
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet ouvert offrait une autonomie complete pour concevoir et construire un systeme electronique complexe, du concept au prototype fonctionnel. En travaillant en binome sur 60 heures, nous pouvions choisir parmi differentes applications : enregistreur de donnees multi-capteurs, oscilloscope USB, alimentation de laboratoire programmable ou autres instruments electroniques personnalises. Le projet a synthetise les connaissances en circuits analogiques, systemes numeriques, programmation embarquee et conception de PCB professionnelle.</p>
+
+<h1>Vue d'ensemble du projet</h1>
+<p>Ce projet representait l'aboutissement de notre formation en genie electrique, nous imposant de gerer tous les aspects : definition des specifications, selection des composants, conception du schema, routage du PCB, developpement firmware et tests complets. L'accent etait mis sur une implementation de qualite professionnelle et une gestion de projet autonome.</p>
+
+<h2>Types de projets possibles</h2>
+
+<h3>Systemes d'acquisition de donnees</h3>
+<p><strong>Enregistreur de donnees multi-capteurs :</strong></p>
+<ul>
+<li>Entrees capteurs multiples (temperature, pression, humidite)</li>
+<li>Amplificateurs d'instrumentation et filtrage</li>
+<li>ADC 12-16 bits (STM32 ou ADS1115)</li>
+<li>Stockage sur carte SD via SPI</li>
+<li>Affichage OLED/LCD</li>
+<li>Batterie Li-Ion avec circuit de charge</li>
+</ul>
+
+<p><strong>Oscilloscope USB (bande passante 1 MHz) :</strong></p>
+<ul>
+<li>Attenuateur d'entree commutable (1x, 10x)</li>
+<li>Amplificateur differentiel avec protection +/-50V</li>
+<li>ADC rapide (echantillonnage MSPS)</li>
+<li>Interface USB vers PC</li>
+<li>Interface graphique Python pour la visualisation</li>
+<li>Circuit de declenchement analogique</li>
+</ul>
+
+<h3>Electronique de puissance</h3>
+<p><strong>Alimentation de laboratoire programmable :</strong></p>
+<ul>
+<li>Double sortie : 0-30V, 0-3A par canal</li>
+<li>Regulation lineaire ou a decoupage</li>
+<li>Controle par microcontroleur avec consigne DAC</li>
+<li>Affichage LCD tension/courant</li>
+<li>Protection surtension et surintensité</li>
+<li>Interface UART pour controle PC</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This open-ended project provided complete autonomy to design and build a complex electronic system from concept to working prototype. Working in pairs over 60 hours, we could choose from various applications: multi-sensor datalogger, USB oscilloscope, programmable laboratory power supply, or other custom electronic instruments. The project synthesized knowledge from analog circuits, digital systems, embedded programming, and professional PCB design.</p>
+
+<h1>Project Overview</h1>
+<p>This project represented the culmination of our electrical engineering training, requiring us to manage every aspect: specifications definition, component selection, schematic design, PCB layout, firmware development, and comprehensive testing. The emphasis was on professional-grade implementation and autonomous project management.</p>
+
+<h2>Example Project Types</h2>
+
+<h3>Data Acquisition Systems</h3>
+<p><strong>Multi-Sensor Datalogger:</strong></p>
+<ul>
+<li>Multiple sensor inputs (temperature, pressure, humidity)</li>
+<li>Instrumentation amplifiers and filtering</li>
+<li>12-16 bit ADC (STM32 or ADS1115)</li>
+<li>SD card storage via SPI</li>
+<li>OLED/LCD display</li>
+<li>Li-Ion battery with charging circuit</li>
+</ul>
+
+<p><strong>USB Oscilloscope (1 MHz bandwidth):</strong></p>
+<ul>
+<li>Switchable input attenuator (1x, 10x)</li>
+<li>Differential amplifier with +/-50V protection</li>
+<li>Fast ADC (MSPS sampling)</li>
+<li>USB interface to PC</li>
+<li>Python GUI for visualization</li>
+<li>Analog trigger circuit</li>
+</ul>
+
+<h3>Power Electronics</h3>
+<p><strong>Programmable Laboratory Power Supply:</strong></p>
+<ul>
+<li>Dual output: 0-30V, 0-3A per channel</li>
+<li>Linear or switching regulation</li>
+<li>Microcontroller control with DAC setpoints</li>
+<li>LCD display for voltage/current</li>
+<li>Overvoltage and overcurrent protection</li>
+<li>UART interface for PC control</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Methodologie de conception</h1>
+
+<h2>Phase 1 : Specifications et planification</h2>
+<p><strong>Definition des exigences :</strong></p>
+<ul>
+<li>Specifications fonctionnelles detaillees</li>
+<li>Objectifs de performance (precision, vitesse, autonomie)</li>
+<li>Contraintes (cout, taille, budget energetique)</li>
+</ul>
+
+<p><strong>Etude de faisabilite :</strong></p>
+<ul>
+<li>Recherche et selection de composants</li>
+<li>Evaluation des solutions techniques</li>
+<li>Estimation des couts et planification de la nomenclature</li>
+</ul>
+
+<h2>Phase 2 : Conception electronique</h2>
+<p><strong>Schema fonctionnel :</strong></p>
+<ul>
+<li>Decomposition de l'architecture systeme</li>
+<li>Definitions des interfaces entre blocs</li>
+<li>Analyse des flux de signaux</li>
+</ul>
+
+<p><strong>Conception du schema (KiCad/Altium) :</strong></p>
+<ul>
+<li>Section alimentation (regulateurs, decouplage)</li>
+<li>Circuits de conditionnement analogique</li>
+<li>Microcontroleur et peripheriques</li>
+<li>Connecteurs et interfaces</li>
+<li>Selection de composants avec references verifiees (Mouser/Digi-Key)</li>
+</ul>
+
+<h2>Phase 3 : Conception du PCB</h2>
+<p><strong>Strategie de layout :</strong></p>
+<ul>
+<li>PCB 2 ou 4 couches selon la complexite</li>
+<li>Placement des composants (considerations thermiques, CEM)</li>
+<li>Routage des pistes : largeur pour capacite en courant, espacement pour la tension</li>
+<li>Plans de masse et d'alimentation</li>
+<li>Validation par Design Rule Check (DRC)</li>
+</ul>
+
+<h2>Phase 4 : Developpement firmware</h2>
+<p><strong>Logiciel embarque :</strong></p>
+<ul>
+<li>Configuration des peripheriques (ADC, I2C, UART, SPI)</li>
+<li>Acquisition et traitement de donnees</li>
+<li>Algorithmes de calibration</li>
+<li>Interface utilisateur (boutons, LCD)</li>
+<li>Protocoles de communication</li>
+</ul>
+
+<h2>Phase 5 : Tests et validation</h2>
+<p><strong>Tests unitaires :</strong></p>
+<ul>
+<li>Verification de l'alimentation (tensions, ondulation)</li>
+<li>Conditionnement analogique (gain, offset, bruit)</li>
+<li>Communication numerique (I2C, SPI, UART)</li>
+<li>Validation individuelle des sous-systemes</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Design Methodology</h1>
+
+<h2>Phase 1: Specifications and Planning</h2>
+<p><strong>Requirements Definition:</strong></p>
+<ul>
+<li>Detailed functional specifications</li>
+<li>Performance targets (accuracy, speed, autonomy)</li>
+<li>Constraints (cost, size, power budget)</li>
+</ul>
+
+<p><strong>Feasibility Study:</strong></p>
+<ul>
+<li>Component research and selection</li>
+<li>Technical solution evaluation</li>
+<li>Cost estimation and BOM planning</li>
+</ul>
+
+<h2>Phase 2: Electronic Design</h2>
+<p><strong>Functional Block Diagram:</strong></p>
+<ul>
+<li>System architecture decomposition</li>
+<li>Interface definitions between blocks</li>
+<li>Signal flow analysis</li>
+</ul>
+
+<p><strong>Schematic Design (KiCad/Altium):</strong></p>
+<ul>
+<li>Power supply section (regulators, decoupling)</li>
+<li>Analog conditioning circuits</li>
+<li>Microcontroller and peripherals</li>
+<li>Connectors and interfaces</li>
+<li>Component selection with verified part numbers (Mouser/Digi-Key)</li>
+</ul>
+
+<h2>Phase 3: PCB Design</h2>
+<p><strong>Layout Strategy:</strong></p>
+<ul>
+<li>2 or 4-layer PCB depending on complexity</li>
+<li>Component placement (thermal, EMC considerations)</li>
+<li>Trace routing: width for current capacity, spacing for voltage</li>
+<li>Ground and power planes</li>
+<li>Design Rule Check (DRC) validation</li>
+</ul>
+
+<h2>Phase 4: Firmware Development</h2>
+<p><strong>Embedded Software:</strong></p>
+<ul>
+<li>Peripheral configuration (ADC, I2C, UART, SPI)</li>
+<li>Data acquisition and processing</li>
+<li>Calibration algorithms</li>
+<li>User interface (buttons, LCD)</li>
+<li>Communication protocols</li>
+</ul>
+
+<h2>Phase 5: Testing and Validation</h2>
+<p><strong>Unit Testing:</strong></p>
+<ul>
+<li>Power supply verification (voltages, ripple)</li>
+<li>Analog conditioning (gain, offset, noise)</li>
+<li>Digital communication (I2C, SPI, UART)</li>
+<li>Individual subsystem validation</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Resultats et analyse</h1>
+<p>Le systeme acheve a atteint ou depasse les specifications de conception, demontrant une integration reussie des sous-systemes analogiques et numeriques. Les principaux defis comprenaient la minimisation du bruit dans les circuits analogiques sensibles, l'optimisation de la consommation pour le fonctionnement sur batterie et l'obtention d'une communication fiable entre sous-systemes.</p>
+<p>La validation des performances a confirme :</p>
+<ul>
+<li>Precision de mesure conforme aux objectifs de conception</li>
+<li>Fonctionnement stable dans les conditions specifiees</li>
+<li>Acquisition et stockage de donnees fiables</li>
+<li>Interface utilisateur conviviale</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>Ce projet a fourni une experience complete dans le developpement de systemes electroniques professionnels, du concept au prototype valide. La nature autonome du travail a developpe des competences critiques en gestion de projet, incluant la planification, la resolution de problemes et la documentation technique. Le prototype fonctionnel demontre notre capacite a livrer des systemes electroniques complets et fonctionnels repondant aux exigences du monde reel.</p>
+</div>
+
+<div class="lang-en">
+<h1>Results and Analysis</h1>
+<p>The completed system met or exceeded design specifications, demonstrating successful integration of analog and digital subsystems. Key challenges included minimizing noise in sensitive analog circuits, optimizing power consumption for battery operation, and achieving reliable communication between subsystems.</p>
+<p>Performance validation confirmed:</p>
+<ul>
+<li>Measurement accuracy within design targets</li>
+<li>Stable operation across specified conditions</li>
+<li>Reliable data acquisition and storage</li>
+<li>User-friendly interface operation</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>This project provided comprehensive experience in professional electronic system development, from concept through validated prototype. The autonomous nature of the work developed critical project management skills including planning, problem-solving, and technical documentation. The working prototype demonstrates our ability to deliver complete, functional electronic systems meeting real-world requirements.</p>
+</div>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -274,787 +357,6 @@ function closeModal() {
 }
 </script>
 
-<hr />
-
-<h2 id="part-b-expérience-contexte-et-fonction-exemples-projets">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION (Exemples projets)</h2>
-
-<h3 id="systèmes-dacquisition">Systèmes d’acquisition</h3>
-
-<p><strong>Datalogger multi-capteurs :</strong></p>
-<ul>
-  <li>Capteurs : température (NTC, LM35), pression (BMP280), humidité (DHT22)</li>
-  <li>Conditionnement : amplis instrumentations, filtrage</li>
-  <li>ADC 12-16 bits (STM32 ou ADS1115)</li>
-  <li>Stockage : carte SD (SPI)</li>
-  <li>Affichage : OLED I2C</li>
-  <li>Alimentation : batterie Li-Ion + chargeur</li>
-</ul>
-
-<p><strong>Oscilloscope USB 1 MHz :</strong></p>
-<ul>
-  <li>Entrée : atténuateur commutable (1x, 10x)</li>
-  <li>Ampli différentiel (protection ±50V)</li>
-  <li>ADC rapide (MSPS) ou STM32F4 (2 MSPS)</li>
-  <li>FPGA pour buffer (optionnel)</li>
-  <li>USB vers PC (interface Python)</li>
-  <li>Trigger analogique (comparateur)</li>
-</ul>
-
-<h3 id="systèmes-de-puissance">Systèmes de puissance</h3>
-
-<p><strong>Alimentation de laboratoire programmable :</strong></p>
-<ul>
-  <li>Double sortie 0-30V, 0-3A</li>
-  <li>Régulation linéaire ou à découpage</li>
-  <li>Contrôle MCU (DAC pour consigne)</li>
-  <li>Affichage LCD : tension, courant</li>
-  <li>Protection : surtension, surintensité</li>
-  <li>Interface UART (commande PC)</li>
-</ul>
-
-<h3 id="systèmes-embarqués">Systèmes embarqués</h3>
-
-<p><strong>Station météo connectée :</strong></p>
-<ul>
-  <li>Capteurs : T°, P, humidité, vent (anémomètre), pluie</li>
-  <li>MCU : ESP32 (WiFi)</li>
-  <li>Transmission : MQTT vers serveur</li>
-  <li>Alimentation : solaire + batterie</li>
-  <li>Boîtier extérieur IP65</li>
-</ul>
-
-<hr />
-
-<h2 id="part-c-aspects-techniques-méthodologie">PART C: ASPECTS TECHNIQUES (Méthodologie)</h2>
-
-<h3 id="phase-1--cahier-des-charges-5h">Phase 1 : Cahier des charges (5h)</h3>
-
-<p><strong>Spécifications :</strong></p>
-<ul>
-  <li>Fonctionnalités précises</li>
-  <li>Performances attendues (précision, vitesse, autonomie)</li>
-  <li>Contraintes (coût, taille, alimentation)</li>
-</ul>
-
-<p><strong>Analyse faisabilité :</strong></p>
-<ul>
-  <li>Recherche composants</li>
-  <li>Étude solutions techniques</li>
-  <li>Estimation coût</li>
-</ul>
-
-<h3 id="phase-2--conception-20h">Phase 2 : Conception (20h)</h3>
-
-<p><strong>Schéma fonctionnel :</strong></p>
-<ul>
-  <li>Blocs principaux</li>
-  <li>Interfaces</li>
-</ul>
-
-<p><strong>Schéma électrique (KiCad/Altium) :</strong></p>
-<ul>
-  <li>Alimentation (régulateurs, découplage)</li>
-  <li>Conditionnement analogique</li>
-  <li>MCU et périphériques</li>
-  <li>Connecteurs</li>
-  <li>Choix composants (Références Mouser/Digi-Key)</li>
-</ul>
-
-<p><strong>Simulations :</strong></p>
-<ul>
-  <li>LTSpice (circuits analogiques)</li>
-  <li>Proteus (co-simulation MCU)</li>
-</ul>
-
-<h3 id="phase-3--pcb-15h">Phase 3 : PCB (15h)</h3>
-
-<p><strong>Layout :</strong></p>
-<ul>
-  <li>2 ou 4 couches selon complexité</li>
-  <li>Placement composants (thermique, CEM)</li>
-  <li>Routage : largeur pistes (courant), espacement</li>
-  <li>Plans de masse et alimentation</li>
-  <li>DRC (Design Rule Check)</li>
-</ul>
-
-<p><strong>Fabrication :</strong></p>
-<ul>
-  <li>Génération Gerber</li>
-  <li>Commande fabricant (3-7 jours)</li>
-  <li>Réception et inspection</li>
-</ul>
-
-<p><strong>Assemblage :</strong></p>
-<ul>
-  <li>Soudure CMS (fer, air chaud, four)</li>
-  <li>Soudure traversants</li>
-  <li>Inspection visuelle et électrique</li>
-</ul>
-
-<h3 id="phase-4--programmation-10h">Phase 4 : Programmation (10h)</h3>
-
-<p><strong>Firmware MCU :</strong></p>
-<ul>
-  <li>Configuration périphériques (ADC, I2C, UART, etc.)</li>
-  <li>Acquisition données</li>
-  <li>Traitements (moyennage, calibration)</li>
-  <li>Interface utilisateur (boutons, LCD)</li>
-</ul>
-
-<p><strong>Interface PC (si applicable) :</strong></p>
-<ul>
-  <li>Python/Qt pour GUI</li>
-  <li>Communication série (UART, USB)</li>
-</ul>
-
-<h3 id="phase-5--tests-et-validation-10h">Phase 5 : Tests et validation (10h)</h3>
-
-<p><strong>Tests unitaires :</strong></p>
-<ul>
-  <li>Alimentation (tensions, ondulations)</li>
-  <li>Conditionnement analogique (gain, offset, bruit)</li>
-  <li>Communication (I2C, SPI, UART)</li>
-</ul>
-
-<p><strong>Tests fonctionnels :</strong></p>
-<ul>
-  <li>Validation cahier des charges</li>
-  <li>Mesure précision, répétabilité</li>
-  <li>Calibration si nécessaire</li>
-</ul>
-
-<p><strong>Documentation tests :</strong></p>
-<ul>
-  <li>Protocoles</li>
-  <li>Résultats (tableaux, courbes)</li>
-  <li>Analyse écarts</li>
-</ul>
-
-<hr />
-
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
-
-<h3 id="livrables">Livrables</h3>
-<ul>
-  <li>Rapport technique (35 pages) : cahier des charges, conception, réalisation, tests</li>
-  <li>Schémas et PCB (fichiers sources)</li>
-  <li>Code source (commenté)</li>
-  <li>Présentation orale + démonstration fonctionnelle</li>
-</ul>
-
-<h3 id="évaluation">Évaluation</h3>
-<ul>
-  <li>Cahier des charges et conception (20%)</li>
-  <li>Réalisation PCB et assemblage (25%)</li>
-  <li>Programmation (15%)</li>
-  <li>Tests et validation (20%)</li>
-  <li>Rapport (15%)</li>
-  <li>Présentation (5%)</li>
-</ul>
-
-<h3 id="compétences-acquises">Compétences acquises</h3>
-<ul>
-  <li>Gestion projet électronique complet</li>
-  <li>Conception multi-domaines (analogique, numérique, puissance)</li>
-  <li>PCB professionnel</li>
-  <li>Tests et validation systématiques</li>
-  <li>Autonomie et organisation</li>
-</ul>
-
-<h3 id="débouchés">Débouchés</h3>
-<ul>
-  <li>Ingénieur conception électronique</li>
-  <li>Chef de projet systèmes embarqués</li>
-  <li>R&amp;D instrumentation</li>
-</ul>
-
-<h2 id="-types-de-projets-possibles">📚 Types de projets possibles</h2>
-
-<h3 id="systèmes-dacquisition-1">Systèmes d’acquisition</h3>
-
-<p><strong>Enregistreur de données (datalogger) :</strong></p>
-<ul>
-  <li>Capteurs multiples (T°, P, humidité, etc.)</li>
-  <li>Conditionnement analogique</li>
-  <li>Conversion A/N haute résolution</li>
-  <li>Microcontrôleur</li>
-  <li>Stockage (SD card, EEPROM)</li>
-  <li>Interface (LCD, Bluetooth)</li>
-  <li>Autonomie sur batterie</li>
-</ul>
-
-<h3 id="instrumentation">Instrumentation</h3>
-
-<p><strong>Oscilloscope numérique simplifié :</strong></p>
-<ul>
-  <li>Étage d’entrée (atténuation, protection)</li>
-  <li>Amplification variable</li>
-  <li>ADC rapide (MSPS)</li>
-  <li>FPGA pour acquisition</li>
-  <li>Interface USB vers PC</li>
-  <li>Software de visualisation</li>
-</ul>
-
-<p><strong>Multimètre intelligent :</strong></p>
-<ul>
-  <li>Mesures V, I, R, C</li>
-  <li>Autorange</li>
-  <li>Affichage graphique</li>
-  <li>Enregistrement</li>
-  <li>Communication PC</li>
-</ul>
-
-<h3 id="électronique-de-puissance">Électronique de puissance</h3>
-
-<p><strong>Onduleur basse puissance :</strong></p>
-<ul>
-  <li>DC/AC conversion</li>
-  <li>Modulation PWM (sinus)</li>
-  <li>Driver de MOSFETs</li>
-  <li>Filtrage LC</li>
-  <li>Protection</li>
-  <li>Contrôle numérique</li>
-</ul>
-
-<p><strong>Chargeur de batterie intelligent :</strong></p>
-<ul>
-  <li>Buck/Boost converter</li>
-  <li>Gestion multi-chimies (Li-ion, NiMH)</li>
-  <li>Mesure V, I, T°</li>
-  <li>Algorithmes de charge</li>
-  <li>Affichage état</li>
-  <li>Sécurités</li>
-</ul>
-
-<h3 id="communication">Communication</h3>
-
-<p><strong>Émetteur-récepteur RF simple :</strong></p>
-<ul>
-  <li>Modulation FSK ou ASK</li>
-  <li>Circuits RF (VCO, mélangeurs)</li>
-  <li>Amplification</li>
-  <li>Antenne intégrée</li>
-  <li>Démodulation</li>
-  <li>Interface série</li>
-</ul>
-
-<p><strong>Modem acoustique :</strong></p>
-<ul>
-  <li>Génération signaux audio</li>
-  <li>DAC/ADC</li>
-  <li>Filtrage analogique</li>
-  <li>Modulation AFSK</li>
-  <li>Démodulation</li>
-  <li>Communication via jack audio</li>
-</ul>
-
-<h2 id="️-méthodologie-de-projet">🛠️ Méthodologie de projet</h2>
-
-<h3 id="phase-1--spécifications-semaine-1-2">Phase 1 : Spécifications (Semaine 1-2)</h3>
-
-<h4 id="définition-du-besoin">Définition du besoin</h4>
-<ul>
-  <li>Analyse du problème</li>
-  <li>Fonctions principales</li>
-  <li>Performances attendues</li>
-  <li>Contraintes</li>
-</ul>
-
-<h4 id="cahier-des-charges-fonctionnel">Cahier des charges fonctionnel</h4>
-<ul>
-  <li>Fonctions de service</li>
-  <li>Critères de performance</li>
-  <li>Niveaux requis</li>
-  <li>Flexibilité</li>
-</ul>
-
-<h4 id="cahier-des-charges-technique">Cahier des charges technique</h4>
-<ul>
-  <li>Spécifications électriques</li>
-  <li>Spécifications mécaniques</li>
-  <li>Contraintes environnementales</li>
-  <li>Normes et certifications</li>
-</ul>
-
-<h3 id="phase-2--conception-semaine-3-6">Phase 2 : Conception (Semaine 3-6)</h3>
-
-<h4 id="architecture-système">Architecture système</h4>
-<ul>
-  <li>Décomposition en blocs</li>
-  <li>Interfaces entre blocs</li>
-  <li>Choix technologiques</li>
-  <li>Budgets (puissance, timing, coût)</li>
-</ul>
-
-<h4 id="conception-par-blocs">Conception par blocs</h4>
-
-<p><strong>Analogique :</strong></p>
-<ul>
-  <li>Schémas de principe</li>
-  <li>Calcul des composants</li>
-  <li>Simulation SPICE</li>
-  <li>Validation performances</li>
-</ul>
-
-<p><strong>Numérique :</strong></p>
-<ul>
-  <li>Choix microcontrôleur/FPGA</li>
-  <li>Architecture logicielle</li>
-  <li>Périphériques nécessaires</li>
-  <li>Timings et ressources</li>
-</ul>
-
-<p><strong>Alimentation :</strong></p>
-<ul>
-  <li>Tensions requises</li>
-  <li>Consommation estimée</li>
-  <li>Topologie convertisseurs</li>
-  <li>Dimensionnement</li>
-</ul>
-
-<p><strong>Mécanique :</strong></p>
-<ul>
-  <li>Dimensions PCB</li>
-  <li>Connecteurs et interfaces</li>
-  <li>Boîtier</li>
-  <li>Dissipation thermique</li>
-</ul>
-
-<h4 id="simulations">Simulations</h4>
-<ul>
-  <li>Circuits analogiques (LTspice, PSpice)</li>
-  <li>Circuits de puissance</li>
-  <li>Signaux numériques</li>
-  <li>Co-simulation si nécessaire</li>
-</ul>
-
-<h4 id="sélection-des-composants">Sélection des composants</h4>
-<ul>
-  <li>Caractéristiques électriques</li>
-  <li>Disponibilité et coût</li>
-  <li>Packaging (CMS vs traversant)</li>
-  <li>Alternatives et second sources</li>
-</ul>
-
-<h3 id="phase-3--réalisation-pcb-semaine-7-9">Phase 3 : Réalisation PCB (Semaine 7-9)</h3>
-
-<h4 id="schémas-électroniques">Schémas électroniques</h4>
-
-<p><strong>Règles de conception :</strong></p>
-<ul>
-  <li>Hiérarchie et modularité</li>
-  <li>Symboles normalisés</li>
-  <li>Annotations claires</li>
-  <li>Valeurs et références</li>
-</ul>
-
-<p><strong>Sections :</strong></p>
-<ul>
-  <li>Page d’accueil (infos projet)</li>
-  <li>Alimentation</li>
-  <li>Microcontrôleur et horloge</li>
-  <li>Interfaces et capteurs</li>
-  <li>Conditionnement analogique</li>
-  <li>Puissance</li>
-  <li>Connecteurs</li>
-</ul>
-
-<h4 id="layout-pcb">Layout PCB</h4>
-
-<p><strong>Stratégie multicouches (4 couches typ.) :</strong></p>
-<ul>
-  <li>Layer 1 (Top) : Composants et signaux</li>
-  <li>Layer 2 : Plan de masse (GND)</li>
-  <li>Layer 3 : Plan d’alimentation (VCC)</li>
-  <li>Layer 4 (Bottom) : Signaux et composants</li>
-</ul>
-
-<p><strong>Routage :</strong></p>
-
-<p><em>Analogique :</em></p>
-<ul>
-  <li>Pistes larges pour courants</li>
-  <li>Éviter boucles de masse</li>
-  <li>Garde autour des signaux sensibles</li>
-  <li>Découplage local</li>
-</ul>
-
-<p><em>Numérique :</em></p>
-<ul>
-  <li>Respect des contraintes d’impédance si nécessaire</li>
-  <li>Longueurs égalisées (bus rapides)</li>
-  <li>Via stitching (masse)</li>
-  <li>Séparation zones bruyantes/sensibles</li>
-</ul>
-
-<p><em>Puissance :</em></p>
-<ul>
-  <li>Pistes larges (calcul section)</li>
-  <li>Plans de cuivre</li>
-  <li>Dissipation thermique (vias thermiques)</li>
-  <li>Découplage massif</li>
-</ul>
-
-<p><strong>DFM et DFT :</strong></p>
-<ul>
-  <li>Espacement minimum respecté</li>
-  <li>Accessibilité pour soudure</li>
-  <li>Points de test</li>
-  <li>Sérigraphie lisible</li>
-</ul>
-
-<h4 id="vérifications">Vérifications</h4>
-<ul>
-  <li>DRC (Design Rule Check)</li>
-  <li>ERC (Electrical Rule Check)</li>
-  <li>Simulation de l’intégrité du signal</li>
-  <li>Revue de conception (peer review)</li>
-</ul>
-
-<h4 id="génération-fichiers-de-fabrication">Génération fichiers de fabrication</h4>
-<ul>
-  <li>Gerber RS-274X</li>
-  <li>Excellon (drill)</li>
-  <li>Pick&amp;Place</li>
-  <li>BOM (Bill of Materials)</li>
-</ul>
-
-<h3 id="phase-4--fabrication-et-assemblage-semaine-10-11">Phase 4 : Fabrication et assemblage (Semaine 10-11)</h3>
-
-<h4 id="fabrication-pcb">Fabrication PCB</h4>
-<ul>
-  <li>Choix fabricant (qualité/coût/délai)</li>
-  <li>Spécifications : épaisseur, finition, couleur</li>
-  <li>Délai : 1-2 semaines</li>
-  <li>Réception et contrôle qualité</li>
-</ul>
-
-<h4 id="approvisionnement-composants">Approvisionnement composants</h4>
-<ul>
-  <li>Commande fournisseurs (Mouser, Digikey, Farnell)</li>
-  <li>Vérification références</li>
-  <li>Stock tampon pour dépannage</li>
-</ul>
-
-<h4 id="assemblage">Assemblage</h4>
-<ul>
-  <li>Programmation du stencil (pâte à souder)</li>
-  <li>Placement CMS</li>
-  <li>Refusion (four ou plaque chauffante)</li>
-  <li>Soudure traversants</li>
-  <li>Inspection visuelle et microscopie</li>
-</ul>
-
-<h4 id="nettoyage-et-finition">Nettoyage et finition</h4>
-<ul>
-  <li>Nettoyage flux</li>
-  <li>Application vernis (si requis)</li>
-  <li>Installation dans boîtier</li>
-</ul>
-
-<h3 id="phase-5--tests-et-validation-semaine-12-14">Phase 5 : Tests et validation (Semaine 12-14)</h3>
-
-<h4 id="tests-unitaires-par-blocs">Tests unitaires par blocs</h4>
-
-<p><strong>Alimentation :</strong></p>
-<ul>
-  <li>Tensions sorties</li>
-  <li>Ondulation (ripple)</li>
-  <li>Régulation de charge</li>
-  <li>Efficacité</li>
-  <li>Protections</li>
-</ul>
-
-<p><strong>Analogique :</strong></p>
-<ul>
-  <li>Points de polarisation</li>
-  <li>Gains d’amplificateurs</li>
-  <li>Bandes passantes de filtres</li>
-  <li>Linéarité</li>
-  <li>Bruit</li>
-</ul>
-
-<p><strong>Numérique :</strong></p>
-<ul>
-  <li>Programmation MCU/FPGA</li>
-  <li>Test périphériques (I2C, SPI, UART)</li>
-  <li>Fréquences horloges</li>
-  <li>Timings</li>
-</ul>
-
-<h4 id="tests-dintégration">Tests d’intégration</h4>
-<ul>
-  <li>Communication entre blocs</li>
-  <li>Fonctions complètes</li>
-  <li>Cas d’usage réels</li>
-  <li>Cas limites</li>
-</ul>
-
-<h4 id="caractérisation-performances">Caractérisation performances</h4>
-<ul>
-  <li>Mesures vs spécifications</li>
-  <li>Tableaux de résultats</li>
-  <li>Graphiques</li>
-  <li>Écarts et explications</li>
-</ul>
-
-<h4 id="débogage">Débogage</h4>
-<ul>
-  <li>Identification problèmes</li>
-  <li>Analyse racine (root cause)</li>
-  <li>Corrections (fils volants, composants)</li>
-  <li>Tests de non-régression</li>
-</ul>
-
-<h3 id="phase-6--documentation-et-présentation-semaine-15">Phase 6 : Documentation et présentation (Semaine 15)</h3>
-
-<h4 id="documentation-technique">Documentation technique</h4>
-
-<p><strong>Manuel utilisateur :</strong></p>
-<ul>
-  <li>Description fonctionnalités</li>
-  <li>Instructions utilisation</li>
-  <li>Spécifications</li>
-  <li>Avertissements</li>
-</ul>
-
-<p><strong>Documentation technique :</strong></p>
-<ul>
-  <li>Architecture détaillée</li>
-  <li>Schémas commentés</li>
-  <li>Layout PCB</li>
-  <li>Code source documenté</li>
-  <li>Procédures de test</li>
-</ul>
-
-<p><strong>Rapport de projet :</strong></p>
-<ol>
-  <li>Introduction et contexte</li>
-  <li>Spécifications et cahier des charges</li>
-  <li>Conception (architecture, schémas, calculs)</li>
-  <li>Simulations</li>
-  <li>Réalisation (PCB, assemblage)</li>
-  <li>Tests et validation</li>
-  <li>Résultats et analyse</li>
-  <li>Difficultés rencontrées et solutions</li>
-  <li>Améliorations possibles</li>
-  <li>Conclusion</li>
-  <li>Annexes (datasheets, codes, mesures)</li>
-</ol>
-
-<h4 id="soutenance-finale">Soutenance finale</h4>
-<ul>
-  <li>Présentation 20 minutes</li>
-  <li>Démonstration live du système</li>
-  <li>Questions jury</li>
-  <li>Évaluation</li>
-</ul>
-
-<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
-
-<h3 id="cao-électronique">CAO Électronique</h3>
-<ul>
-  <li><strong>Altium Designer</strong> : Professionnel complet</li>
-  <li><strong>KiCad</strong> : Open source performant</li>
-  <li><strong>Eagle</strong> : Populaire</li>
-  <li><strong>OrCAD/Allegro</strong> : Industrie</li>
-</ul>
-
-<h3 id="simulation">Simulation</h3>
-<ul>
-  <li><strong>LTspice</strong> : Circuits analogiques</li>
-  <li><strong>PSpice</strong> : Simulation avancée</li>
-  <li><strong>Proteus</strong> : Co-simulation MCU</li>
-  <li><strong>MATLAB/Simulink</strong> : Systèmes</li>
-</ul>
-
-<h3 id="programmation">Programmation</h3>
-<ul>
-  <li><strong>STM32CubeIDE</strong> : STM32</li>
-  <li><strong>Quartus</strong> : FPGA Intel</li>
-  <li><strong>Vivado</strong> : FPGA Xilinx</li>
-  <li><strong>MPLAB</strong> : Microchip</li>
-</ul>
-
-<h3 id="test-et-mesure">Test et mesure</h3>
-<ul>
-  <li>Oscilloscope</li>
-  <li>Analyseur de spectre</li>
-  <li>Multimètre de précision</li>
-  <li>Générateur de fonctions</li>
-  <li>Alimentation de laboratoire</li>
-  <li>Charge électronique</li>
-</ul>
-
-<h2 id="-livrables">📊 Livrables</h2>
-
-<h3 id="documents">Documents</h3>
-<ul>
-  <li>Cahier des charges</li>
-  <li>Schémas électroniques</li>
-  <li>PCB (layout + Gerber)</li>
-  <li>Nomenclature (BOM)</li>
-  <li>Code source documenté</li>
-  <li>Procédures de test</li>
-  <li>Résultats de mesures</li>
-  <li>Rapport final (50-80 pages)</li>
-</ul>
-
-<h3 id="réalisations">Réalisations</h3>
-<ul>
-  <li>Prototype fonctionnel</li>
-  <li>PCB assemblé</li>
-  <li>Boîtier (optionnel)</li>
-  <li>Démonstration</li>
-</ul>
-
-<h3 id="présentation">Présentation</h3>
-<ul>
-  <li>Support PowerPoint/PDF</li>
-  <li>Poster A1</li>
-  <li>Vidéo de démonstration</li>
-  <li>Soutenance orale</li>
-</ul>
-
-<h2 id="-liens-avec-les-cours">🔗 Liens avec les cours</h2>
-
-<ul>
-  <li><strong>ER (S3)</strong> : Conception électronique</li>
-  <li><strong>IE (S3)</strong> : Programmation embarquée</li>
-  <li><strong>Énergie</strong> : Convertisseurs</li>
-  <li><strong>SE</strong> : Traitement du signal</li>
-  <li><strong>OL</strong> : Outils de simulation</li>
-</ul>
-
-<h2 id="-compétences-développées">📖 Compétences développées</h2>
-
-<ul>
-  <li>Gestion de projet technique</li>
-  <li>Conception électronique complète</li>
-  <li>Design de PCB professionnels</li>
-  <li>Simulation multi-domaines</li>
-  <li>Tests et validation systématiques</li>
-  <li>Débogage méthodique</li>
-  <li>Documentation technique</li>
-  <li>Travail en équipe</li>
-  <li>Présentation de résultats</li>
-</ul>
-
-<h2 id="-exemples-de-projets-réalisés">💡 Exemples de projets réalisés</h2>
-
-<h3 id="station-météo-connectée">Station météo connectée</h3>
-<ul>
-  <li>Capteurs T°, P, humidité, vent</li>
-  <li>Acquisition STM32</li>
-  <li>Affichage LCD</li>
-  <li>Enregistrement sur SD</li>
-  <li>Transmission WiFi</li>
-  <li>Interface web</li>
-  <li>Autonomie solaire</li>
-</ul>
-
-<h3 id="convertisseur-dcdc-bidirectionnel">Convertisseur DC/DC bidirectionnel</h3>
-<ul>
-  <li>12V ↔ 48V</li>
-  <li>Puissance 100W</li>
-  <li>Contrôle numérique</li>
-  <li>Synchronous rectification</li>
-  <li>Efficacité &gt;90%</li>
-  <li>Protection complète</li>
-</ul>
-
-<h3 id="analyseur-de-protocole-i2cspi">Analyseur de protocole I2C/SPI</h3>
-<ul>
-  <li>Capture haute vitesse</li>
-  <li>FPGA pour décodage</li>
-  <li>Affichage LCD</li>
-  <li>Mémoire tampon</li>
-  <li>Interface USB</li>
-  <li>Logiciel PC</li>
-</ul>
-
-<h2 id="️-pièges-à-éviter">⚠️ Pièges à éviter</h2>
-
-<h3 id="spécifications">Spécifications</h3>
-<ul>
-  <li>Cahier des charges trop vague</li>
-  <li>Objectifs irréalistes</li>
-  <li>Sous-estimation de la complexité</li>
-</ul>
-
-<h3 id="conception">Conception</h3>
-<ul>
-  <li>Choix de composants obsolètes</li>
-  <li>Négliger les marges de sécurité</li>
-  <li>Oublier les protections</li>
-  <li>Découp lage insuffisant</li>
-</ul>
-
-<h3 id="pcb">PCB</h3>
-<ul>
-  <li>Routage trop serré</li>
-  <li>Vias insuffisants (masse)</li>
-  <li>Pas de points de test</li>
-  <li>Oubli de composants de débogage</li>
-</ul>
-
-<h3 id="planning">Planning</h3>
-<ul>
-  <li>Démarrage tardif</li>
-  <li>Pas de jalons intermédiaires</li>
-  <li>Délais de fabrication sous-estimés</li>
-  <li>Tests à la dernière minute</li>
-</ul>
-
-<h2 id="-critères-dévaluation">🎯 Critères d’évaluation</h2>
-
-<ul>
-  <li>Respect du cahier des charges (20%)</li>
-  <li>Qualité de la conception (25%)</li>
-  <li>Réalisation PCB (20%)</li>
-  <li>Tests et validation (15%)</li>
-  <li>Documentation (10%)</li>
-  <li>Soutenance et démo (10%)</li>
-</ul>
-
-<h2 id="-méthodologie-recommandée">📚 Méthodologie recommandée</h2>
-
-<h3 id="organisation">Organisation</h3>
-<ul>
-  <li>Réunions hebdomadaires</li>
-  <li>Répartition des tâches</li>
-  <li>Outils collaboratifs (Git, Trello)</li>
-  <li>Revues de conception</li>
-</ul>
-
-<h3 id="gestion-des-risques">Gestion des risques</h3>
-<ul>
-  <li>Identifier risques techniques</li>
-  <li>Plan B pour points critiques</li>
-  <li>Tests progressifs</li>
-  <li>Validation par étapes</li>
-</ul>
-
-<h3 id="documentation-continue">Documentation continue</h3>
-<ul>
-  <li>Cahier de laboratoire</li>
-  <li>Wiki de projet</li>
-  <li>Commentaires dans le code</li>
-  <li>Photos et captures d’écran</li>
-</ul>
-
-<h2 id="-conseils-pratiques">🔧 Conseils pratiques</h2>
-
-<ol>
-  <li><strong>Commencer tôt</strong> : 15 semaines passent vite</li>
-  <li><strong>Valider par étapes</strong> : Simulations avant PCB</li>
-  <li><strong>Prévoir du temps</strong> : Fabrication, livraison, débogage</li>
-  <li><strong>Documenter en continu</strong> : Pas tout à la fin</li>
-  <li><strong>Tester méthodiquement</strong> : Bloc par bloc</li>
-  <li><strong>Communiquer</strong> : Dans l’équipe et avec tuteur</li>
-  <li><strong>Avoir un plan B</strong> : Backup pour fonctions critiques</li>
-  <li><strong>Soigner la démo</strong> : Préparer scénarios de test</li>
-</ol>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -1085,6 +387,117 @@ function closeModal() {
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1103,8 +516,8 @@ function closeModal() {
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1126,6 +539,7 @@ function closeModal() {
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1636,11 +1050,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1840,14 +1252,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1858,6 +1270,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Modélisation et Commande des Systèmes Linéaires Continus - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/systemes-lineaires-continus.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/systemes-lineaires-continus.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -77,246 +88,231 @@ tr:nth-child(even) {
   <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
 </div>
 
-<h1 id="️-modélisation-et-commande-des-systèmes-linéaires-continus---s5">🎚️ Modélisation et Commande des Systèmes Linéaires Continus - S5</h1>
+<div class="lang-fr">
 
-<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
-<strong>Crédits</strong>: 3 ECTS<br />
-<strong>Type</strong>: Automatique et Systèmes<br />
+<h1>Modelisation et Commande des Systemes Lineaires Continus - S5</h1>
+
+<p><strong>Annee</strong>: 2022-2023 (Semestre 5)<br />
+<strong>Credits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Automatique et Systemes<br />
 <strong>Enseignant</strong>: Subias</p>
 
 <hr />
 
-<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+<h2>PART A: PRESENTATION GENERALE</h2>
 
-<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+<h3>Objectifs du cours</h3>
 
-<p>Ce cours approfondit la commande des systèmes linéaires continus avec une approche complémentaire au cours de représentation d’état. Il se concentre sur les techniques de commande classiques (PID, correcteurs fréquentiels) et leur application pratique sur des systèmes réels. Le cours couvre la modélisation de systèmes physiques, l’analyse de stabilité et de performances, ainsi que la conception de lois de commande adaptées.</p>
+<p>Ce cours approfondit la commande des systemes lineaires continus avec une approche complementaire au cours de representation d'etat. Il se concentre sur les techniques de commande classiques (PID, correcteurs frequentiels) et leur application pratique sur des systemes reels. Le cours couvre la modelisation de systemes physiques, l'analyse de stabilite et de performances, ainsi que la conception de lois de commande adaptees.</p>
 
-<h3 id="compétences-visées">Compétences visées</h3>
+<h3>Competences visees</h3>
 
 <ul>
-  <li>Modéliser des systèmes physiques continus (mécaniques, électriques, thermiques)</li>
-  <li>Concevoir et régler des correcteurs PID pour des applications industrielles</li>
-  <li>Analyser la stabilité par méthodes fréquentielles (Bode, Nyquist)</li>
+  <li>Modeliser des systemes physiques continus (mecaniques, electriques, thermiques)</li>
+  <li>Concevoir et regler des correcteurs PID pour des applications industrielles</li>
+  <li>Analyser la stabilite par methodes frequentielles (Bode, Nyquist)</li>
   <li>Dimensionner des compensateurs (avance, retard de phase)</li>
-  <li>Utiliser MATLAB/Simulink pour la simulation et l’analyse</li>
-  <li>Évaluer les performances temporelles et fréquentielles</li>
-  <li>Implémenter des lois de commande sur systèmes réels</li>
+  <li>Utiliser MATLAB/Simulink pour la simulation et l'analyse</li>
+  <li>Evaluer les performances temporelles et frequentielles</li>
+  <li>Implementer des lois de commande sur systemes reels</li>
 </ul>
 
-<h3 id="organisation">Organisation</h3>
+<h3>Organisation</h3>
 
 <ul>
   <li><strong>Volume horaire</strong>: Cours magistraux, TD et TP MATLAB/Simulink</li>
-  <li><strong>Évaluation</strong>: Examen écrit, TPs notés, Projet robot</li>
+  <li><strong>Evaluation</strong>: Examen ecrit, TPs notes, Projet robot</li>
   <li><strong>Semestre</strong>: 5 (2022-2023)</li>
-  <li><strong>Prérequis</strong>: Transformée de Laplace, systèmes du 1er et 2nd ordre, algèbre</li>
+  <li><strong>Prerequis</strong>: Transformee de Laplace, systemes du 1er et 2nd ordre, algebre</li>
 </ul>
 
 <hr />
 
-<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+<h2>PART B: EXPERIENCE, CONTEXTE ET FONCTION</h2>
 
-<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+<h3>Contenu pedagogique</h3>
 
-<p>Le cours se structure autour de la modélisation, l’analyse et la commande de systèmes continus.</p>
+<p>Le cours se structure autour de la modelisation, l'analyse et la commande de systemes continus.</p>
 
-<h4 id="1-modélisation-de-systèmes-physiques">1. Modélisation de Systèmes Physiques</h4>
+<h4>1. Modelisation de Systemes Physiques</h4>
 
-<p><strong>Systèmes mécaniques</strong>:</p>
+<p><strong>Systemes mecaniques</strong>:</p>
 
-<p>Système masse-ressort-amortisseur:</p>
+<p>Systeme masse-ressort-amortisseur:</p>
 <ul>
   <li>m : masse</li>
   <li>k : raideur du ressort</li>
-  <li>f : coefficient d’amortissement</li>
+  <li>f : coefficient d'amortissement</li>
 </ul>
 
-<p>Équation: m × d²x/dt² + f × dx/dt + k × x = F(t)</p>
+<p>Equation: m x d²x/dt² + f x dx/dt + k x x = F(t)</p>
 
-<p>Fonction de transfert: H(s) = 1 / (m×s² + f×s + k)</p>
+<p>Fonction de transfert: H(s) = 1 / (m x s² + f x s + k)</p>
 
-<p><strong>Systèmes électriques (circuit RLC)</strong>:</p>
+<p><strong>Systemes electriques (circuit RLC)</strong>:</p>
 
-<p>Équation: L × d²i/dt² + R × di/dt + i/C = dV/dt</p>
+<p>Equation: L x d²i/dt² + R x di/dt + i/C = dV/dt</p>
 
-<p>Similitude avec système mécanique (L ↔ m, R ↔ f, 1/C ↔ k).</p>
+<p>Similitude avec systeme mecanique (L &harr; m, R &harr; f, 1/C &harr; k).</p>
 
-<p><strong>Moteur à courant continu</strong>:</p>
+<p><strong>Moteur a courant continu</strong>:</p>
 
-<p>Modèle simplifié du TP:</p>
+<p>Modele simplifie du TP:</p>
 <ul>
   <li>Constante de temps: Tm = 0.3s</li>
   <li>Gain: Km = 47.8</li>
-  <li>Fonction de transfert: H(s) = Km / (Tm×s + 1)</li>
+  <li>Fonction de transfert: H(s) = Km / (Tm x s + 1)</li>
 </ul>
 
-<h4 id="2-analyse-temporelle">2. Analyse Temporelle</h4>
+<h4>2. Analyse Temporelle</h4>
 
-<p><strong>Réponse indicielle d’un système du 2nd ordre</strong>:</p>
+<p><strong>Reponse indicielle d'un systeme du 2nd ordre</strong>:</p>
 
-<p>Paramètres caractéristiques:</p>
+<p>Parametres caracteristiques:</p>
 <ul>
-  <li>Temps de montée (rise time)</li>
-  <li>Dépassement (overshoot): D = exp(-π×ζ / sqrt(1-ζ²))</li>
-  <li>Temps de réponse à 5% (settling time)</li>
+  <li>Temps de montee (rise time)</li>
+  <li>Depassement (overshoot): D = exp(-pi x zeta / sqrt(1-zeta²))</li>
+  <li>Temps de reponse a 5% (settling time)</li>
   <li>Erreur statique</li>
 </ul>
 
-<p>Pour un système bien amorti: ζ = 0.7 donne D ≈ 5%.</p>
+<p>Pour un systeme bien amorti: zeta = 0.7 donne D &approx; 5%.</p>
 
-<p><strong>Classe d’un système</strong>:</p>
+<p><strong>Classe d'un systeme</strong>:</p>
 
-<p>Détermine l’erreur statique selon le type d’entrée:</p>
+<p>Determine l'erreur statique selon le type d'entree:</p>
 <ul>
-  <li>Classe 0: erreur pour échelon</li>
+  <li>Classe 0: erreur pour echelon</li>
   <li>Classe 1: erreur pour rampe</li>
   <li>Classe 2: erreur pour parabole</li>
 </ul>
 
-<h4 id="3-analyse-fréquentielle">3. Analyse Fréquentielle</h4>
+<h4>3. Analyse Frequentielle</h4>
 
 <p><strong>Diagrammes de Bode (TP1)</strong>:</p>
 
-<p>Représentation du gain et de la phase en fonction de la fréquence.</p>
+<p>Representation du gain et de la phase en fonction de la frequence.</p>
 
-<p>Système identifié expérimentalement: H(s) = 0.717 / (0.0033×s + 1)</p>
+<p>Systeme identifie experimentalement: H(s) = 0.717 / (0.0033 x s + 1)</p>
 
-<p>Mesures réalisées:</p>
+<p>Mesures realisees:</p>
 <ul>
-  <li>Fréquences: 0.05 Hz à 10 Hz</li>
-  <li>Gain: de -3.5 dB à -24 dB</li>
-  <li>Phase: de -2.2° à -90°</li>
+  <li>Frequences: 0.05 Hz a 10 Hz</li>
+  <li>Gain: de -3.5 dB a -24 dB</li>
+  <li>Phase: de -2.2 deg a -90 deg</li>
 </ul>
 
-<p><strong>Marges de stabilité (TP2)</strong>:</p>
+<p><strong>Marges de stabilite (TP2)</strong>:</p>
 
-<p><strong>Marge de gain (Gm)</strong>: gain supplémentaire avant instabilité.</p>
+<p><strong>Marge de gain (Gm)</strong>: gain supplementaire avant instabilite.</p>
 
-<p><strong>Marge de phase (Pm)</strong>: phase supplémentaire avant instabilité.</p>
+<p><strong>Marge de phase (Pm)</strong>: phase supplementaire avant instabilite.</p>
 
-<p>Critères de robustesse:</p>
+<p>Criteres de robustesse:</p>
 <ul>
-  <li>Pm &gt; 45° : bon amortissement</li>
+  <li>Pm &gt; 45 deg : bon amortissement</li>
   <li>Gm &gt; 6 dB : bonne marge</li>
 </ul>
 
 <p>Commande MATLAB:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="n">Gm</span><span class="p">,</span> <span class="n">Pm</span><span class="p">,</span> <span class="n">Wcg</span><span class="p">,</span> <span class="n">Wcp</span><span class="p">]</span> <span class="o">=</span> <span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
-</code></pre></div></div>
+<pre><code>[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
 
-<p>Résultats typiques du TP: Pm ≈ 60° (système robuste).</p>
+<p>Resultats typiques du TP: Pm &approx; 60 deg (systeme robuste).</p>
 
 <p><strong>Diagramme de Nyquist</strong>:</p>
 
-<p>Tracé de H(jω) dans le plan complexe.</p>
+<p>Trace de H(j&omega;) dans le plan complexe.</p>
 
-<p>Critère de Nyquist: nombre d’encerclements du point critique (-1, 0) détermine la stabilité.</p>
+<p>Critere de Nyquist: nombre d'encerclements du point critique (-1, 0) determine la stabilite.</p>
 
-<h4 id="4-commande-pid">4. Commande PID</h4>
+<h4>4. Commande PID</h4>
 
 <p><strong>Structure du PID</strong>:</p>
 
-<p>Correcteur Proportionnel-Intégral-Dérivé:</p>
+<p>Correcteur Proportionnel-Integral-Derive:</p>
 
-<p>u(t) = Kp × e(t) + Ki × ∫e(t)dt + Kd × de(t)/dt</p>
+<p>u(t) = Kp x e(t) + Ki x &int;e(t)dt + Kd x de(t)/dt</p>
 
-<p>En transfert: C(s) = Kp + Ki/s + Kd×s</p>
+<p>En transfert: C(s) = Kp + Ki/s + Kd x s</p>
 
 <p><strong>Actions du PID</strong>:</p>
 
 <table>
   <thead>
-    <tr>
-      <th>Action</th>
-      <th>Effet</th>
-      <th>Utilisation</th>
-    </tr>
+    <tr><th>Action</th><th>Effet</th><th>Utilisation</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td>P (Proportionnel)</td>
-      <td>Réduit l’erreur, augmente rapidité</td>
-      <td>Toujours présent</td>
-    </tr>
-    <tr>
-      <td>I (Intégral)</td>
-      <td>Annule erreur statique</td>
-      <td>Erreur permanente</td>
-    </tr>
-    <tr>
-      <td>D (Dérivé)</td>
-      <td>Réduit dépassement, améliore stabilité</td>
-      <td>Systèmes oscillants</td>
-    </tr>
+    <tr><td>P (Proportionnel)</td><td>Reduit l'erreur, augmente rapidite</td><td>Toujours present</td></tr>
+    <tr><td>I (Integral)</td><td>Annule erreur statique</td><td>Erreur permanente</td></tr>
+    <tr><td>D (Derive)</td><td>Reduit depassement, ameliore stabilite</td><td>Systemes oscillants</td></tr>
   </tbody>
 </table>
 
-<p><strong>Réglage par Ziegler-Nichols</strong>:</p>
+<p><strong>Reglage par Ziegler-Nichols</strong>:</p>
 
-<p>Méthode empirique pour déterminer Kp, Ki, Kd:</p>
+<p>Methode empirique pour determiner Kp, Ki, Kd:</p>
 <ol>
   <li>Mettre Ki = 0, Kd = 0</li>
-  <li>Augmenter Kp jusqu’à oscillations (Kp critique)</li>
-  <li>Mesurer période d’oscillation Tu</li>
-  <li>Appliquer les formules de réglage</li>
+  <li>Augmenter Kp jusqu'a oscillations (Kp critique)</li>
+  <li>Mesurer periode d'oscillation Tu</li>
+  <li>Appliquer les formules de reglage</li>
 </ol>
 
-<p>Pour PID: Kp = 0.6×Kpcritique, Ti = 0.5×Tu, Td = 0.125×Tu.</p>
+<p>Pour PID: Kp = 0.6 x Kpcritique, Ti = 0.5 x Tu, Td = 0.125 x Tu.</p>
 
 <p><strong>Limitation anti-windup</strong>:</p>
 
-<p>Problème: l’intégrale continue à s’accumuler même si la commande sature.</p>
+<p>Probleme: l'integrale continue a s'accumuler meme si la commande sature.</p>
 
-<p>Solution: limiter l’intégrateur quand la sortie sature.</p>
+<p>Solution: limiter l'integrateur quand la sortie sature.</p>
 
-<h4 id="5-correcteurs-fréquentiels">5. Correcteurs Fréquentiels</h4>
+<h4>5. Correcteurs Frequentiels</h4>
 
-<p><strong>Correcteur à avance de phase</strong>:</p>
+<p><strong>Correcteur a avance de phase</strong>:</p>
 
-<p>Forme: C(s) = K × (1 + a×T×s) / (1 + T×s) avec a &gt; 1</p>
+<p>Forme: C(s) = K x (1 + a x T x s) / (1 + T x s) avec a &gt; 1</p>
 
-<p>Effet: augmente la marge de phase, améliore rapidité.</p>
+<p>Effet: augmente la marge de phase, ameliore rapidite.</p>
 
-<p>Utilisé quand: système trop lent ou marge de phase insuffisante.</p>
+<p>Utilise quand: systeme trop lent ou marge de phase insuffisante.</p>
 
-<p><strong>Correcteur à retard de phase</strong>:</p>
+<p><strong>Correcteur a retard de phase</strong>:</p>
 
-<p>Forme: C(s) = K × (1 + T×s) / (1 + a×T×s) avec a &gt; 1</p>
+<p>Forme: C(s) = K x (1 + T x s) / (1 + a x T x s) avec a &gt; 1</p>
 
-<p>Effet: augmente la marge de gain, réduit erreur statique.</p>
+<p>Effet: augmente la marge de gain, reduit erreur statique.</p>
 
-<p>Utilisé quand: erreur statique trop importante.</p>
+<p>Utilise quand: erreur statique trop importante.</p>
 
 <p><strong>Correcteur avance-retard</strong>:</p>
 
-<p>Combinaison des deux pour améliorer simultanément rapidité et précision.</p>
+<p>Combinaison des deux pour ameliorer simultanement rapidite et precision.</p>
 
-<h4 id="6-projet-robot-auto-équilibré">6. Projet Robot Auto-Équilibré</h4>
+<h4>6. Projet Robot Auto-Equilibre</h4>
 
-<p><strong>Système du pendule inversé</strong>:</p>
+<p><strong>Systeme du pendule inverse</strong>:</p>
 
-<p>Modélisation du robot NXT Way (Lego Mindstorms):</p>
+<p>Modelisation du robot NXT Way (Lego Mindstorms):</p>
 
-<p>Paramètres physiques:</p>
+<p>Parametres physiques:</p>
 <ul>
   <li>Masse roues: m = 0.03 kg</li>
   <li>Rayon roues: R = 0.042 m</li>
   <li>Masse corps: M = 0.67 kg</li>
   <li>Hauteur: H = 0.152 m</li>
-  <li>Gravité: g = 9.81 m/s²</li>
+  <li>Gravite: g = 9.81 m/s²</li>
 </ul>
 
-<p><strong>Objectif</strong>: maintenir le robot en équilibre vertical (angle θ = 0°).</p>
+<p><strong>Objectif</strong>: maintenir le robot en equilibre vertical (angle &theta; = 0 deg).</p>
 
-<p><strong>Stratégie de commande</strong>:</p>
+<p><strong>Strategie de commande</strong>:</p>
 
-<p>Système instable en boucle ouverte → nécessite commande active.</p>
+<p>Systeme instable en boucle ouverte &rarr; necessite commande active.</p>
 
 <p>Approches possibles:</p>
 <ul>
-  <li>Retour d’état (placement de pôles)</li>
-  <li>Correcteur PID sur l’angle</li>
+  <li>Retour d'etat (placement de poles)</li>
+  <li>Correcteur PID sur l'angle</li>
   <li>Observateur pour estimer vitesse angulaire</li>
 </ul>
 
@@ -324,275 +320,725 @@ tr:nth-child(even) {
 
 <p>Fichiers du projet:</p>
 <ul>
-  <li>NXTwaySim.slx: modèle complet du robot</li>
-  <li>NXP_robot_parameters.m: paramètres physiques</li>
+  <li>NXTwaySim.slx: modele complet du robot</li>
+  <li>NXP_robot_parameters.m: parametres physiques</li>
   <li>PlayAnimation.m: visualisation 3D</li>
 </ul>
 
-<p>Tests effectués:</p>
+<p>Tests effectues:</p>
 <ul>
-  <li>Stabilisation après perturbation</li>
-  <li>Robustesse aux variations de paramètres</li>
+  <li>Stabilisation apres perturbation</li>
+  <li>Robustesse aux variations de parametres</li>
   <li>Rejection de perturbations externes</li>
 </ul>
 
 <hr />
 
-<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-<h3 id="travaux-pratiques-matlab">Travaux Pratiques MATLAB</h3>
+<h3>Travaux Pratiques MATLAB</h3>
 
-<p><strong>TP1: Identification expérimentale</strong>:</p>
+<p><strong>TP1: Identification experimentale</strong>:</p>
 
-<p>Objectif: déterminer la fonction de transfert d’un système réel à partir de mesures fréquentielles.</p>
+<p>Objectif: determiner la fonction de transfert d'un systeme reel a partir de mesures frequentielles.</p>
 
-<p>Données mesurées (gains et phases à différentes fréquences):</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">freq</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="mi">10</span><span class="p">];</span>
-<span class="n">G</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.669</span><span class="p">,</span> <span class="mf">0.659</span><span class="p">,</span> <span class="mf">0.609</span><span class="p">,</span> <span class="mf">0.528</span><span class="p">,</span> <span class="mf">0.396</span><span class="p">,</span> <span class="mf">0.242</span><span class="p">,</span> <span class="mf">0.119</span><span class="p">,</span> <span class="mf">0.083</span><span class="p">,</span> <span class="mf">0.061</span><span class="p">];</span>
-</code></pre></div></div>
+<p>Donnees mesurees (gains et phases a differentes frequences):</p>
+<pre><code>freq = [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 7.5, 10];
+G = [0.669, 0.659, 0.609, 0.528, 0.396, 0.242, 0.119, 0.083, 0.061];</code></pre>
 
-<p>Tracé du diagramme de Bode:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">G_dB</span> <span class="o">=</span> <span class="mi">20</span><span class="o">*</span><span class="nb">log10</span><span class="p">(</span><span class="n">G</span><span class="p">);</span>
-<span class="nb">semilogx</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">G_dB</span><span class="p">);</span>
-<span class="nb">xlabel</span><span class="p">(</span><span class="s1">'Fréquence (Hz)'</span><span class="p">);</span>
-<span class="nb">ylabel</span><span class="p">(</span><span class="s1">'Gain (dB)'</span><span class="p">);</span>
-</code></pre></div></div>
+<p>Trace du diagramme de Bode:</p>
+<pre><code>G_dB = 20*log10(G);
+semilogx(freq, G_dB);
+xlabel('Frequence (Hz)');
+ylabel('Gain (dB)');</code></pre>
 
-<p>Modèle identifié: système du 1er ordre avec gain 0.717 et constante de temps 3.3 ms.</p>
+<p>Modele identifie: systeme du 1er ordre avec gain 0.717 et constante de temps 3.3 ms.</p>
 
-<p><strong>TP2: Analyse de stabilité</strong>:</p>
+<p><strong>TP2: Analyse de stabilite</strong>:</p>
 
-<p>Système en boucle fermée avec capteur et moteur:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Ks</span> <span class="o">=</span> <span class="mf">1.55</span><span class="p">;</span>   <span class="c1">% Gain capteur</span>
-<span class="n">Km</span> <span class="o">=</span> <span class="mf">47.8</span><span class="p">;</span>   <span class="c1">% Gain moteur</span>
-<span class="n">Tm</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">;</span>    <span class="c1">% Constante de temps</span>
+<p>Systeme en boucle fermee avec capteur et moteur:</p>
+<pre><code>Ks = 1.55;   % Gain capteur
+Km = 47.8;   % Gain moteur
+Tm = 0.3;    % Constante de temps
 
-<span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="n">Km</span><span class="o">*</span><span class="n">K</span><span class="p">/</span><span class="mi">9</span><span class="p">];</span>
-<span class="n">den</span> <span class="o">=</span> <span class="p">[</span><span class="n">Tm</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Km</span><span class="o">*</span><span class="n">K</span><span class="o">*</span><span class="n">Ks</span><span class="p">/</span><span class="mi">9</span><span class="p">];</span>
-<span class="n">sys</span> <span class="o">=</span> <span class="n">tf</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">);</span>
+num = [Km*K/9];
+den = [Tm, 1, Km*K*Ks/9];
+sys = tf(num, den);
 
-<span class="p">[</span><span class="n">Gm</span><span class="p">,</span> <span class="n">Pm</span><span class="p">,</span> <span class="n">Wcg</span><span class="p">,</span> <span class="n">Wcp</span><span class="p">]</span> <span class="o">=</span> <span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
-</code></pre></div></div>
+[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
 
-<p>Analyse des pôles:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">P</span> <span class="o">=</span> <span class="n">pole</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>
-</code></pre></div></div>
+<p>Analyse des poles:</p>
+<pre><code>P = pole(sys);</code></pre>
 
-<p>Si partie réelle négative → système stable.</p>
+<p>Si partie reelle negative &rarr; systeme stable.</p>
 
-<p><strong>TP3: Commande par retour d’état</strong>:</p>
+<p><strong>TP3: Commande par retour d'etat</strong>:</p>
 
-<p>Système d’ordre 2:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">1</span><span class="p">;</span> <span class="o">-</span><span class="mi">10</span> <span class="o">-</span><span class="mf">6.316</span><span class="p">];</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">;</span> <span class="mi">1</span><span class="p">];</span>
-<span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="p">/</span><span class="mf">0.1001</span> <span class="mi">0</span><span class="p">];</span>
+<p>Systeme d'ordre 2:</p>
+<pre><code>A = [0 1; -10 -6.316];
+B = [0; 1];
+C = [k/0.1001 0];
 
-<span class="c1">% Placement de pôles</span>
-<span class="n">poles_desired</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="n">i</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="n">i</span><span class="p">];</span>
-<span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">poles_desired</span><span class="p">);</span>
+% Placement de poles
+poles_desired = [-2+2i, -2-2i];
+K = place(A, B, poles_desired);
 
-<span class="c1">% Simulation</span>
-<span class="n">sys_cl</span> <span class="o">=</span> <span class="n">ss</span><span class="p">(</span><span class="n">A</span><span class="o">-</span><span class="n">B</span><span class="o">*</span><span class="n">K</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-<span class="nb">step</span><span class="p">(</span><span class="n">sys_cl</span><span class="p">);</span>
-</code></pre></div></div>
+% Simulation
+sys_cl = ss(A-B*K, B, C, 0);
+step(sys_cl);</code></pre>
 
-<p>Choix des pôles selon performances souhaitées:</p>
+<p>Choix des poles selon performances souhaitees:</p>
 <ul>
-  <li>Partie réelle: rapidité</li>
+  <li>Partie reelle: rapidite</li>
   <li>Partie imaginaire: oscillations</li>
 </ul>
 
-<h3 id="outils-matlab-essentiels">Outils MATLAB Essentiels</h3>
+<h3>Outils MATLAB Essentiels</h3>
 
-<p><strong>Création de modèles</strong>:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sys</span> <span class="o">=</span> <span class="n">tf</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">den</span><span class="p">);</span>        <span class="c1">% Fonction de transfert</span>
-<span class="n">sys</span> <span class="o">=</span> <span class="n">ss</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">);</span>      <span class="c1">% Représentation d'état</span>
-</code></pre></div></div>
+<p><strong>Creation de modeles</strong>:</p>
+<pre><code>sys = tf(num, den);        % Fonction de transfert
+sys = ss(A, B, C, D);      % Representation d'etat</code></pre>
 
 <p><strong>Analyse</strong>:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pole</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                 <span class="c1">% Pôles</span>
-<span class="n">zero</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                 <span class="c1">% Zéros</span>
-<span class="nb">step</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                 <span class="c1">% Réponse indicielle</span>
-<span class="n">bode</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>                 <span class="c1">% Diagramme de Bode</span>
-<span class="n">nyquist</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>              <span class="c1">% Diagramme de Nyquist</span>
-<span class="n">margin</span><span class="p">(</span><span class="n">sys</span><span class="p">);</span>               <span class="c1">% Marges de stabilité</span>
-</code></pre></div></div>
+<pre><code>pole(sys);                 % Poles
+zero(sys);                 % Zeros
+step(sys);                 % Reponse indicielle
+bode(sys);                 % Diagramme de Bode
+nyquist(sys);              % Diagramme de Nyquist
+margin(sys);               % Marges de stabilite</code></pre>
 
 <p><strong>Conception</strong>:</p>
-<div class="language-matlab highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">K</span> <span class="o">=</span> <span class="n">place</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">poles</span><span class="p">);</span>    <span class="c1">% Placement de pôles</span>
-<span class="n">pidtune</span><span class="p">(</span><span class="n">sys</span><span class="p">,</span> <span class="s1">'PID'</span><span class="p">);</span>       <span class="c1">% Réglage PID automatique</span>
-</code></pre></div></div>
+<pre><code>K = place(A, B, poles);    % Placement de poles
+pidtune(sys, 'PID');       % Reglage PID automatique</code></pre>
 
-<h3 id="méthodologie-de-conception">Méthodologie de Conception</h3>
+<h3>Methodologie de Conception</h3>
 
-<p><strong>Étapes de conception d’un asservissement</strong>:</p>
+<p><strong>Etapes de conception d'un asservissement</strong>:</p>
 
 <ol>
-  <li><strong>Modélisation</strong>: obtenir H(s) du système</li>
-  <li><strong>Analyse BO</strong>: stabilité, performances en boucle ouverte</li>
-  <li><strong>Spécifications</strong>: définir dépassement, temps de réponse, erreur admissible</li>
+  <li><strong>Modelisation</strong>: obtenir H(s) du systeme</li>
+  <li><strong>Analyse BO</strong>: stabilite, performances en boucle ouverte</li>
+  <li><strong>Specifications</strong>: definir depassement, temps de reponse, erreur admissible</li>
   <li><strong>Choix correcteur</strong>: PID, avance/retard selon besoins</li>
-  <li><strong>Réglage</strong>: calcul des paramètres (Kp, Ki, Kd)</li>
+  <li><strong>Reglage</strong>: calcul des parametres (Kp, Ki, Kd)</li>
   <li><strong>Simulation</strong>: validation avec Simulink</li>
-  <li><strong>Tests</strong>: robustesse, perturbations, variations paramètres</li>
+  <li><strong>Tests</strong>: robustesse, perturbations, variations parametres</li>
 </ol>
 
-<p><strong>Compromis à gérer</strong>:</p>
+<p><strong>Compromis a gerer</strong>:</p>
 <ul>
-  <li>Rapidité vs stabilité</li>
-  <li>Précision vs robustesse</li>
-  <li>Complexité vs performances</li>
+  <li>Rapidite vs stabilite</li>
+  <li>Precision vs robustesse</li>
+  <li>Complexite vs performances</li>
 </ul>
 
 <hr />
 
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+<h2>PART D: ANALYSE ET REFLEXION</h2>
 
-<h3 id="compétences-acquises">Compétences acquises</h3>
+<h3>Competences acquises</h3>
 
-<p><strong>Modélisation</strong>:</p>
+<p><strong>Modelisation</strong>:</p>
 <ul>
-  <li>Passage du système physique au modèle mathématique</li>
-  <li>Identification expérimentale de paramètres</li>
+  <li>Passage du systeme physique au modele mathematique</li>
+  <li>Identification experimentale de parametres</li>
   <li>Validation par comparaison mesures/simulation</li>
 </ul>
 
 <p><strong>Analyse</strong>:</p>
 <ul>
-  <li>Stabilité par Routh, Bode, Nyquist</li>
-  <li>Performances temporelles et fréquentielles</li>
-  <li>Évaluation de robustesse (marges)</li>
+  <li>Stabilite par Routh, Bode, Nyquist</li>
+  <li>Performances temporelles et frequentielles</li>
+  <li>Evaluation de robustesse (marges)</li>
 </ul>
 
 <p><strong>Commande</strong>:</p>
 <ul>
   <li>Conception de correcteurs PID</li>
-  <li>Réglage par méthodes empiriques et théoriques</li>
-  <li>Placement de pôles pour spécifications données</li>
+  <li>Reglage par methodes empiriques et theoriques</li>
+  <li>Placement de poles pour specifications donnees</li>
 </ul>
 
 <p><strong>Outils</strong>:</p>
 <ul>
-  <li>Maîtrise de MATLAB/Simulink</li>
-  <li>Interprétation de diagrammes (Bode, Nyquist)</li>
+  <li>Maitrise de MATLAB/Simulink</li>
+  <li>Interpretation de diagrammes (Bode, Nyquist)</li>
   <li>Simulation et validation</li>
 </ul>
 
-<h3 id="applications-pratiques">Applications pratiques</h3>
+<h3>Applications pratiques</h3>
 
-<p>Les techniques de ce cours s’appliquent à de nombreux domaines:</p>
+<p>Les techniques de ce cours s'appliquent a de nombreux domaines:</p>
 
 <p><strong>Industrie</strong>:</p>
 <ul>
-  <li>Régulation de température, pression, débit</li>
-  <li>Contrôle de vitesse de moteurs</li>
-  <li>Positionnement de systèmes mécaniques</li>
+  <li>Regulation de temperature, pression, debit</li>
+  <li>Controle de vitesse de moteurs</li>
+  <li>Positionnement de systemes mecaniques</li>
 </ul>
 
 <p><strong>Robotique</strong>:</p>
 <ul>
-  <li>Stabilisation (pendule inversé, robot équilibré)</li>
+  <li>Stabilisation (pendule inverse, robot equilibre)</li>
   <li>Suivi de trajectoire</li>
-  <li>Contrôle de force</li>
+  <li>Controle de force</li>
 </ul>
 
-<p><strong>Aéronautique</strong>:</p>
+<p><strong>Aeronautique</strong>:</p>
 <ul>
   <li>Pilote automatique</li>
-  <li>Stabilisation d’attitude</li>
-  <li>Contrôle de vol</li>
+  <li>Stabilisation d'attitude</li>
+  <li>Controle de vol</li>
 </ul>
 
 <p><strong>Automobile</strong>:</p>
 <ul>
-  <li>Régulateur de vitesse (cruise control)</li>
+  <li>Regulateur de vitesse (cruise control)</li>
   <li>Suspension active</li>
-  <li>Contrôle de moteur</li>
+  <li>Controle de moteur</li>
 </ul>
 
-<h3 id="liens-avec-autres-cours">Liens avec autres cours</h3>
+<h3>Liens avec autres cours</h3>
 
 <table>
   <thead>
-    <tr>
-      <th>Cours</th>
-      <th>Lien</th>
-    </tr>
+    <tr><th>Cours</th><th>Lien</th></tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Circuits et Filtres Analogiques (S5)</td>
-      <td>Analyse fréquentielle, Bode</td>
-    </tr>
-    <tr>
-      <td>Modélisation Systèmes Linéaires (S5)</td>
-      <td>Représentation d’état</td>
-    </tr>
-    <tr>
-      <td>Systèmes Bouclés (S5)</td>
-      <td>Asservissements</td>
-    </tr>
-    <tr>
-      <td>Commande Numérique (S8)</td>
-      <td>Discrétisation, PID numérique</td>
-    </tr>
-    <tr>
-      <td>Temps Réel (S8)</td>
-      <td>Implémentation des lois de commande</td>
-    </tr>
+    <tr><td>Circuits et Filtres Analogiques (S5)</td><td>Analyse frequentielle, Bode</td></tr>
+    <tr><td>Modelisation Systemes Lineaires (S5)</td><td>Representation d'etat</td></tr>
+    <tr><td>Systemes Boucles (S5)</td><td>Asservissements</td></tr>
+    <tr><td>Commande Numerique (S8)</td><td>Discretisation, PID numerique</td></tr>
+    <tr><td>Temps Reel (S8)</td><td>Implementation des lois de commande</td></tr>
   </tbody>
 </table>
 
-<h3 id="mon-opinion">Mon opinion</h3>
+<h3>Mon opinion</h3>
 
-<p>Ce cours est complémentaire au cours de représentation d’état en apportant les outils classiques de l’automatique industrielle.</p>
+<p>Ce cours est complementaire au cours de representation d'etat en apportant les outils classiques de l'automatique industrielle.</p>
 
 <p><strong>Points forts</strong>:</p>
 <ul>
-  <li>Approche très pratique (PID, réglages empiriques)</li>
+  <li>Approche tres pratique (PID, reglages empiriques)</li>
   <li>Outils directement utilisables en industrie</li>
   <li>TPs concrets avec identification et commande</li>
   <li>Projet robot motivant et formateur</li>
 </ul>
 
-<p><strong>Complémentarité</strong>:
-Le PID reste le correcteur le plus utilisé industriellement (&gt;90% des boucles de régulation). La représentation d’état apporte la théorie moderne, le PID apporte la pratique immédiate.</p>
+<p><strong>Complementarite</strong>:</p>
+<p>Le PID reste le correcteur le plus utilise industriellement (&gt;90% des boucles de regulation). La representation d'etat apporte la theorie moderne, le PID apporte la pratique immediate.</p>
 
-<p><strong>Importance professionnelle</strong>:
-Compétences très recherchées dans l’automatisation industrielle, la robotique et les systèmes embarqués. Le réglage de PID est une compétence de base pour tout ingénieur en automatique.</p>
-
-<hr />
-
-<p><strong>Bilan personnel</strong>: Ce cours a apporté les techniques classiques et éprouvées de l’automatique. La complémentarité avec l’approche moderne (état) offre une boîte à outils complète. Les TPs MATLAB et le projet robot ont permis d’appliquer concrètement ces concepts sur des systèmes réels, préparant bien aux applications industrielles.</p>
+<p><strong>Importance professionnelle</strong>:</p>
+<p>Competences tres recherchees dans l'automatisation industrielle, la robotique et les systemes embarques. Le reglage de PID est une competence de base pour tout ingenieur en automatique.</p>
 
 <hr />
 
-<h2 id="rapports-et-projets">Rapports et Projets</h2>
+<p><strong>Bilan personnel</strong>: Ce cours a apporte les techniques classiques et eprouvees de l'automatique. La complementarite avec l'approche moderne (etat) offre une boite a outils complete. Les TPs MATLAB et le projet robot ont permis d'appliquer concretement ces concepts sur des systemes reels, preparant bien aux applications industrielles.</p>
+
+<hr />
+
+<h2>Rapports et Projets</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>Compte Rendu TP1 - Identification et Analyse Fréquentielle</h4>
-      <p>Rapport de TP sur l'identification expérimentale de systèmes, tracé de diagrammes de Bode et analyse de stabilité avec MATLAB.</p>
+      <h4>Compte Rendu TP1 - Identification et Analyse Frequentielle</h4>
+      <p>Rapport de TP sur l'identification experimentale de systemes, trace de diagrammes de Bode et analyse de stabilite avec MATLAB.</p>
       <p style="text-align: center;">
         <a href="/file/reports/S5/CHANFREAU_JUMIN_Compte_rendu_TP1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          Télécharger le rapport PDF
+          Telecharger le rapport PDF
         </a>
       </p>
     </div>
     <div class="pdf-item">
-      <h4>Compte Rendu TP3 - Commande par Retour d'État</h4>
-      <p>Rapport de TP sur la commande de systèmes linéaires continus : placement de pôles, simulation Simulink et validation expérimentale.</p>
+      <h4>Compte Rendu TP3 - Commande par Retour d'Etat</h4>
+      <p>Rapport de TP sur la commande de systemes lineaires continus : placement de poles, simulation Simulink et validation experimentale.</p>
       <p style="text-align: center;">
         <a href="/file/reports/S5/Compte_Rendu_TP3_Commande_JUMIN_CHANFREAU.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          Télécharger le rapport PDF
+          Telecharger le rapport PDF
         </a>
       </p>
     </div>
   </div>
 </div>
 
+</div>
+
+<div class="lang-en">
+
+<h1>Modeling and Control of Continuous Linear Systems - S5</h1>
+
+<p><strong>Year</strong>: 2022-2023 (Semester 5)<br />
+<strong>Credits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Control Systems and Automation<br />
+<strong>Instructor</strong>: Subias</p>
+
 <hr />
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3>Course Objectives</h3>
+
+<p>This course deepens the study of continuous linear system control with an approach complementary to the state-space representation course. It focuses on classical control techniques (PID, frequency-domain controllers) and their practical application to real systems. The course covers physical system modeling, stability and performance analysis, as well as the design of suitable control laws.</p>
+
+<h3>Target Skills</h3>
+
+<ul>
+  <li>Model continuous physical systems (mechanical, electrical, thermal)</li>
+  <li>Design and tune PID controllers for industrial applications</li>
+  <li>Analyze stability using frequency-domain methods (Bode, Nyquist)</li>
+  <li>Size compensators (lead, lag phase)</li>
+  <li>Use MATLAB/Simulink for simulation and analysis</li>
+  <li>Evaluate time-domain and frequency-domain performance</li>
+  <li>Implement control laws on real systems</li>
+</ul>
+
+<h3>Organization</h3>
+
+<ul>
+  <li><strong>Hours</strong>: Lectures, tutorials and MATLAB/Simulink lab sessions</li>
+  <li><strong>Assessment</strong>: Written exam, graded lab sessions, Robot project</li>
+  <li><strong>Semester</strong>: 5 (2022-2023)</li>
+  <li><strong>Prerequisites</strong>: Laplace transform, 1st and 2nd order systems, algebra</li>
+</ul>
+
+<hr />
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Pedagogical Content</h3>
+
+<p>The course is structured around modeling, analysis and control of continuous systems.</p>
+
+<h4>1. Physical System Modeling</h4>
+
+<p><strong>Mechanical systems</strong>:</p>
+
+<p>Mass-spring-damper system:</p>
+<ul>
+  <li>m: mass</li>
+  <li>k: spring stiffness</li>
+  <li>f: damping coefficient</li>
+</ul>
+
+<p>Equation: m x d²x/dt² + f x dx/dt + k x x = F(t)</p>
+
+<p>Transfer function: H(s) = 1 / (m x s² + f x s + k)</p>
+
+<p><strong>Electrical systems (RLC circuit)</strong>:</p>
+
+<p>Equation: L x d²i/dt² + R x di/dt + i/C = dV/dt</p>
+
+<p>Analogy with mechanical system (L &harr; m, R &harr; f, 1/C &harr; k).</p>
+
+<p><strong>DC motor</strong>:</p>
+
+<p>Simplified lab model:</p>
+<ul>
+  <li>Time constant: Tm = 0.3s</li>
+  <li>Gain: Km = 47.8</li>
+  <li>Transfer function: H(s) = Km / (Tm x s + 1)</li>
+</ul>
+
+<h4>2. Time-Domain Analysis</h4>
+
+<p><strong>Step response of a 2nd order system</strong>:</p>
+
+<p>Characteristic parameters:</p>
+<ul>
+  <li>Rise time</li>
+  <li>Overshoot: D = exp(-pi x zeta / sqrt(1-zeta²))</li>
+  <li>5% settling time</li>
+  <li>Steady-state error</li>
+</ul>
+
+<p>For a well-damped system: zeta = 0.7 gives D &approx; 5%.</p>
+
+<p><strong>System type</strong>:</p>
+
+<p>Determines the steady-state error depending on input type:</p>
+<ul>
+  <li>Type 0: error for step input</li>
+  <li>Type 1: error for ramp input</li>
+  <li>Type 2: error for parabolic input</li>
+</ul>
+
+<h4>3. Frequency-Domain Analysis</h4>
+
+<p><strong>Bode diagrams (Lab 1)</strong>:</p>
+
+<p>Representation of gain and phase as a function of frequency.</p>
+
+<p>Experimentally identified system: H(s) = 0.717 / (0.0033 x s + 1)</p>
+
+<p>Measurements taken:</p>
+<ul>
+  <li>Frequencies: 0.05 Hz to 10 Hz</li>
+  <li>Gain: from -3.5 dB to -24 dB</li>
+  <li>Phase: from -2.2 deg to -90 deg</li>
+</ul>
+
+<p><strong>Stability margins (Lab 2)</strong>:</p>
+
+<p><strong>Gain margin (Gm)</strong>: additional gain before instability.</p>
+
+<p><strong>Phase margin (Pm)</strong>: additional phase before instability.</p>
+
+<p>Robustness criteria:</p>
+<ul>
+  <li>Pm &gt; 45 deg: good damping</li>
+  <li>Gm &gt; 6 dB: good margin</li>
+</ul>
+
+<p>MATLAB command:</p>
+<pre><code>[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
+
+<p>Typical lab results: Pm &approx; 60 deg (robust system).</p>
+
+<p><strong>Nyquist diagram</strong>:</p>
+
+<p>Plot of H(j&omega;) in the complex plane.</p>
+
+<p>Nyquist criterion: the number of encirclements of the critical point (-1, 0) determines stability.</p>
+
+<h4>4. PID Control</h4>
+
+<p><strong>PID structure</strong>:</p>
+
+<p>Proportional-Integral-Derivative controller:</p>
+
+<p>u(t) = Kp x e(t) + Ki x &int;e(t)dt + Kd x de(t)/dt</p>
+
+<p>Transfer form: C(s) = Kp + Ki/s + Kd x s</p>
+
+<p><strong>PID actions</strong>:</p>
+
+<table>
+  <thead>
+    <tr><th>Action</th><th>Effect</th><th>Usage</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P (Proportional)</td><td>Reduces error, increases speed</td><td>Always present</td></tr>
+    <tr><td>I (Integral)</td><td>Eliminates steady-state error</td><td>Permanent error</td></tr>
+    <tr><td>D (Derivative)</td><td>Reduces overshoot, improves stability</td><td>Oscillating systems</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Ziegler-Nichols tuning</strong>:</p>
+
+<p>Empirical method to determine Kp, Ki, Kd:</p>
+<ol>
+  <li>Set Ki = 0, Kd = 0</li>
+  <li>Increase Kp until oscillations (critical Kp)</li>
+  <li>Measure oscillation period Tu</li>
+  <li>Apply tuning formulas</li>
+</ol>
+
+<p>For PID: Kp = 0.6 x Kp_critical, Ti = 0.5 x Tu, Td = 0.125 x Tu.</p>
+
+<p><strong>Anti-windup limitation</strong>:</p>
+
+<p>Problem: the integral keeps accumulating even when the control signal saturates.</p>
+
+<p>Solution: limit the integrator when the output saturates.</p>
+
+<h4>5. Frequency-Domain Controllers</h4>
+
+<p><strong>Lead compensator</strong>:</p>
+
+<p>Form: C(s) = K x (1 + a x T x s) / (1 + T x s) with a &gt; 1</p>
+
+<p>Effect: increases phase margin, improves speed.</p>
+
+<p>Used when: system is too slow or phase margin is insufficient.</p>
+
+<p><strong>Lag compensator</strong>:</p>
+
+<p>Form: C(s) = K x (1 + T x s) / (1 + a x T x s) with a &gt; 1</p>
+
+<p>Effect: increases gain margin, reduces steady-state error.</p>
+
+<p>Used when: steady-state error is too large.</p>
+
+<p><strong>Lead-lag compensator</strong>:</p>
+
+<p>Combination of both to simultaneously improve speed and precision.</p>
+
+<h4>6. Self-Balancing Robot Project</h4>
+
+<p><strong>Inverted pendulum system</strong>:</p>
+
+<p>Modeling of the NXT Way robot (Lego Mindstorms):</p>
+
+<p>Physical parameters:</p>
+<ul>
+  <li>Wheel mass: m = 0.03 kg</li>
+  <li>Wheel radius: R = 0.042 m</li>
+  <li>Body mass: M = 0.67 kg</li>
+  <li>Height: H = 0.152 m</li>
+  <li>Gravity: g = 9.81 m/s²</li>
+</ul>
+
+<p><strong>Objective</strong>: keep the robot in vertical balance (angle &theta; = 0 deg).</p>
+
+<p><strong>Control strategy</strong>:</p>
+
+<p>Open-loop unstable system &rarr; requires active control.</p>
+
+<p>Possible approaches:</p>
+<ul>
+  <li>State feedback (pole placement)</li>
+  <li>PID controller on the angle</li>
+  <li>Observer to estimate angular velocity</li>
+</ul>
+
+<p><strong>Simulink simulation</strong>:</p>
+
+<p>Project files:</p>
+<ul>
+  <li>NXTwaySim.slx: complete robot model</li>
+  <li>NXP_robot_parameters.m: physical parameters</li>
+  <li>PlayAnimation.m: 3D visualization</li>
+</ul>
+
+<p>Tests performed:</p>
+<ul>
+  <li>Stabilization after perturbation</li>
+  <li>Robustness to parameter variations</li>
+  <li>External disturbance rejection</li>
+</ul>
+
+<hr />
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>MATLAB Lab Sessions</h3>
+
+<p><strong>Lab 1: Experimental identification</strong>:</p>
+
+<p>Objective: determine the transfer function of a real system from frequency measurements.</p>
+
+<p>Measured data (gains and phases at various frequencies):</p>
+<pre><code>freq = [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 7.5, 10];
+G = [0.669, 0.659, 0.609, 0.528, 0.396, 0.242, 0.119, 0.083, 0.061];</code></pre>
+
+<p>Bode diagram plot:</p>
+<pre><code>G_dB = 20*log10(G);
+semilogx(freq, G_dB);
+xlabel('Frequency (Hz)');
+ylabel('Gain (dB)');</code></pre>
+
+<p>Identified model: 1st order system with gain 0.717 and time constant 3.3 ms.</p>
+
+<p><strong>Lab 2: Stability analysis</strong>:</p>
+
+<p>Closed-loop system with sensor and motor:</p>
+<pre><code>Ks = 1.55;   % Sensor gain
+Km = 47.8;   % Motor gain
+Tm = 0.3;    % Time constant
+
+num = [Km*K/9];
+den = [Tm, 1, Km*K*Ks/9];
+sys = tf(num, den);
+
+[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
+
+<p>Pole analysis:</p>
+<pre><code>P = pole(sys);</code></pre>
+
+<p>If real part is negative &rarr; system is stable.</p>
+
+<p><strong>Lab 3: State feedback control</strong>:</p>
+
+<p>2nd order system:</p>
+<pre><code>A = [0 1; -10 -6.316];
+B = [0; 1];
+C = [k/0.1001 0];
+
+% Pole placement
+poles_desired = [-2+2i, -2-2i];
+K = place(A, B, poles_desired);
+
+% Simulation
+sys_cl = ss(A-B*K, B, C, 0);
+step(sys_cl);</code></pre>
+
+<p>Pole selection based on desired performance:</p>
+<ul>
+  <li>Real part: speed</li>
+  <li>Imaginary part: oscillations</li>
+</ul>
+
+<h3>Essential MATLAB Tools</h3>
+
+<p><strong>Model creation</strong>:</p>
+<pre><code>sys = tf(num, den);        % Transfer function
+sys = ss(A, B, C, D);      % State-space representation</code></pre>
+
+<p><strong>Analysis</strong>:</p>
+<pre><code>pole(sys);                 % Poles
+zero(sys);                 % Zeros
+step(sys);                 % Step response
+bode(sys);                 % Bode diagram
+nyquist(sys);              % Nyquist diagram
+margin(sys);               % Stability margins</code></pre>
+
+<p><strong>Design</strong>:</p>
+<pre><code>K = place(A, B, poles);    % Pole placement
+pidtune(sys, 'PID');       % Automatic PID tuning</code></pre>
+
+<h3>Design Methodology</h3>
+
+<p><strong>Steps for designing a control system</strong>:</p>
+
+<ol>
+  <li><strong>Modeling</strong>: obtain H(s) of the system</li>
+  <li><strong>Open-loop analysis</strong>: stability, open-loop performance</li>
+  <li><strong>Specifications</strong>: define overshoot, settling time, allowable error</li>
+  <li><strong>Controller selection</strong>: PID, lead/lag as needed</li>
+  <li><strong>Tuning</strong>: parameter calculation (Kp, Ki, Kd)</li>
+  <li><strong>Simulation</strong>: validation with Simulink</li>
+  <li><strong>Testing</strong>: robustness, disturbances, parameter variations</li>
+</ol>
+
+<p><strong>Trade-offs to manage</strong>:</p>
+<ul>
+  <li>Speed vs stability</li>
+  <li>Precision vs robustness</li>
+  <li>Complexity vs performance</li>
+</ul>
+
+<hr />
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Acquired Skills</h3>
+
+<p><strong>Modeling</strong>:</p>
+<ul>
+  <li>Going from physical system to mathematical model</li>
+  <li>Experimental parameter identification</li>
+  <li>Validation through measurement/simulation comparison</li>
+</ul>
+
+<p><strong>Analysis</strong>:</p>
+<ul>
+  <li>Stability via Routh, Bode, Nyquist</li>
+  <li>Time-domain and frequency-domain performance</li>
+  <li>Robustness evaluation (margins)</li>
+</ul>
+
+<p><strong>Control</strong>:</p>
+<ul>
+  <li>PID controller design</li>
+  <li>Tuning via empirical and theoretical methods</li>
+  <li>Pole placement for given specifications</li>
+</ul>
+
+<p><strong>Tools</strong>:</p>
+<ul>
+  <li>Proficiency in MATLAB/Simulink</li>
+  <li>Interpretation of diagrams (Bode, Nyquist)</li>
+  <li>Simulation and validation</li>
+</ul>
+
+<h3>Practical Applications</h3>
+
+<p>The techniques from this course apply to many fields:</p>
+
+<p><strong>Industry</strong>:</p>
+<ul>
+  <li>Temperature, pressure, and flow regulation</li>
+  <li>Motor speed control</li>
+  <li>Mechanical system positioning</li>
+</ul>
+
+<p><strong>Robotics</strong>:</p>
+<ul>
+  <li>Stabilization (inverted pendulum, balanced robot)</li>
+  <li>Trajectory tracking</li>
+  <li>Force control</li>
+</ul>
+
+<p><strong>Aerospace</strong>:</p>
+<ul>
+  <li>Autopilot</li>
+  <li>Attitude stabilization</li>
+  <li>Flight control</li>
+</ul>
+
+<p><strong>Automotive</strong>:</p>
+<ul>
+  <li>Cruise control</li>
+  <li>Active suspension</li>
+  <li>Engine control</li>
+</ul>
+
+<h3>Links with Other Courses</h3>
+
+<table>
+  <thead>
+    <tr><th>Course</th><th>Link</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Analog Circuits and Filters (S5)</td><td>Frequency analysis, Bode</td></tr>
+    <tr><td>Linear System Modeling (S5)</td><td>State-space representation</td></tr>
+    <tr><td>Feedback Systems (S5)</td><td>Servo control</td></tr>
+    <tr><td>Digital Control (S8)</td><td>Discretization, digital PID</td></tr>
+    <tr><td>Real-Time Systems (S8)</td><td>Control law implementation</td></tr>
+  </tbody>
+</table>
+
+<h3>My Opinion</h3>
+
+<p>This course complements the state-space representation course by providing the classical tools of industrial control.</p>
+
+<p><strong>Strengths</strong>:</p>
+<ul>
+  <li>Very practical approach (PID, empirical tuning)</li>
+  <li>Tools directly usable in industry</li>
+  <li>Hands-on lab sessions with identification and control</li>
+  <li>Motivating and educational robot project</li>
+</ul>
+
+<p><strong>Complementarity</strong>:</p>
+<p>The PID remains the most widely used controller in industry (&gt;90% of regulation loops). State-space representation provides modern theory, while PID provides immediate practice.</p>
+
+<p><strong>Professional importance</strong>:</p>
+<p>Highly sought-after skills in industrial automation, robotics and embedded systems. PID tuning is a fundamental skill for any control engineer.</p>
+
+<hr />
+
+<p><strong>Personal assessment</strong>: This course provided the classical and proven techniques of control engineering. The complementarity with the modern approach (state-space) offers a complete toolbox. The MATLAB labs and robot project allowed for concrete application of these concepts on real systems, providing good preparation for industrial applications.</p>
+
+<hr />
+
+<h2>Reports and Projects</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Lab Report 1 - Identification and Frequency Analysis</h4>
+      <p>Lab report on experimental system identification, Bode diagram plotting and stability analysis with MATLAB.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/CHANFREAU_JUMIN_Compte_rendu_TP1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF report
+        </a>
+      </p>
+    </div>
+    <div class="pdf-item">
+      <h4>Lab Report 3 - State Feedback Control</h4>
+      <p>Lab report on continuous linear system control: pole placement, Simulink simulation and experimental validation.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/Compte_Rendu_TP3_Commande_JUMIN_CHANFREAU.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF report
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
 
 <style>
     .pdf-container {
@@ -677,6 +1123,117 @@ Compétences très recherchées dans l’automatisation industrielle, la robotiq
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -695,8 +1252,8 @@ Compétences très recherchées dans l’automatisation industrielle, la robotiq
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -718,6 +1275,7 @@ Compétences très recherchées dans l’automatisation industrielle, la robotiq
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1228,11 +1786,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1432,14 +1988,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1450,6 +2006,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

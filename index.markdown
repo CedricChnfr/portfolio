@@ -977,11 +977,12 @@ layout: default
     <div class="search-box" onclick="event.stopPropagation()">
         <button class="search-close" onclick="closeSearch()">&times;</button>
         <div class="search-input-wrapper">
-            <input 
-                type="text" 
-                class="search-input" 
-                id="searchInput" 
+            <input
+                type="text"
+                class="search-input"
+                id="searchInput"
                 placeholder="Search courses, projects, topics..."
+                data-i18n-placeholder="search-placeholder"
                 autocomplete="off"
             >
             <button class="search-clear" id="searchClear" onclick="clearSearch()">&times;</button>
@@ -989,7 +990,7 @@ layout: default
         <div class="search-results" id="searchResults">
             <div class="search-no-results">
                 <div class="search-no-results-icon">🔍</div>
-                <p>Start typing to search through all courses and content...</p>
+                <p data-i18n="search-default-message">Start typing to search through all courses and content...</p>
             </div>
         </div>
     </div>
@@ -1031,10 +1032,11 @@ function clearSearch() {
     const input = document.getElementById('searchInput');
     input.value = '';
     document.getElementById('searchClear').classList.remove('visible');
+    var defaultMsg = window.i18n ? window.i18n.t('search-default-message') : 'Start typing to search through all courses and content...';
     document.getElementById('searchResults').innerHTML = `
         <div class="search-no-results">
             <div class="search-no-results-icon">🔍</div>
-            <p>Start typing to search through all courses and content...</p>
+            <p>${defaultMsg}</p>
         </div>
     `;
 }
@@ -1066,10 +1068,11 @@ function displayResults(results, query) {
     const resultsContainer = document.getElementById('searchResults');
     
     if (results.length === 0) {
+        var noResultsMsg = window.i18n ? window.i18n.t('search-no-results') : 'No results found for';
         resultsContainer.innerHTML = `
             <div class="search-no-results">
                 <div class="search-no-results-icon">😕</div>
-                <p>No results found for "<strong>${escapeHtml(query)}</strong>"</p>
+                <p>${noResultsMsg} "<strong>${escapeHtml(query)}</strong>"</p>
             </div>
         `;
         return;
@@ -1139,25 +1142,25 @@ document.addEventListener('keydown', function(e) {
         
         <div class="hero-text">
             <h1 class="hero-title">Cédric Chanfreau</h1>
-            <p class="hero-subtitle">Ingénieur Diplômé INSA Toulouse • Automatique & Électronique</p>
-            <p class="hero-description">
-                            Diplômé 2025 d'un Diplôme d'Ingénieur INSA Toulouse et d'un Master 2 ENSEEIHT, 
-                            spécialisé en développement logiciel et systèmes embarqués. 
+            <p class="hero-subtitle" data-i18n="hero-subtitle">Ingénieur Diplômé INSA Toulouse • Automatique & Électronique</p>
+            <p class="hero-description" data-i18n="hero-description">
+                            Diplômé 2025 d'un Diplôme d'Ingénieur INSA Toulouse et d'un Master 2 ENSEEIHT,
+                            spécialisé en développement logiciel et systèmes embarqués.
                             Passionné par la réalisation de projets innovants, je suis actuellement ouvert aux opportunités professionnelles.
                         </p>
                         
             <div class="hero-stats">
                 <div class="stat-item">
                     <span class="stat-number">5</span>
-                    <span class="stat-label">Ans d'études ingénieur</span>
+                    <span class="stat-label" data-i18n="stat-label-studies">Ans d'études ingénieur</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">25+</span>
-                    <span class="stat-label">Projets techniques</span>
+                    <span class="stat-label" data-i18n="stat-label-projects">Projets techniques</span>
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">3</span>
-                    <span class="stat-label">Ans d'alternance</span>
+                    <span class="stat-label" data-i18n="stat-label-alternance">Ans d'alternance</span>
                 </div>
             </div>
         </div>
@@ -1169,8 +1172,8 @@ document.addEventListener('keydown', function(e) {
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">📚</div>
-            <h3>Mes Cours</h3>
-            <p>Découvrez mon parcours académique complet et les compétences techniques acquises</p>
+            <h3 data-i18n="nav-courses-title">Mes Cours</h3>
+            <p data-i18n="nav-courses-desc">Découvrez mon parcours académique complet et les compétences techniques acquises</p>
             <span class="card-arrow">→</span>
         </div>
     </a>
@@ -1179,8 +1182,8 @@ document.addEventListener('keydown', function(e) {
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">🎓</div>
-            <h3>Projets Académiques</h3>
-            <p>Explorez mes réalisations techniques et projets d'études</p>
+            <h3 data-i18n="nav-projects-title">Projets Académiques</h3>
+            <p data-i18n="nav-projects-desc">Explorez mes réalisations techniques et projets d'études</p>
             <span class="card-arrow">→</span>
         </div>
     </a>
@@ -1189,8 +1192,8 @@ document.addEventListener('keydown', function(e) {
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">💡</div>
-            <h3>Projets Personnels</h3>
-            <p>Découvrez mes créations personnelles et expérimentations</p>
+            <h3 data-i18n="nav-perso-title">Projets Personnels</h3>
+            <p data-i18n="nav-perso-desc">Découvrez mes créations personnelles et expérimentations</p>
             <span class="card-arrow">→</span>
         </div>
     </a>
@@ -1199,8 +1202,8 @@ document.addEventListener('keydown', function(e) {
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">📄</div>
-            <h3>Mon CV</h3>
-            <p>Consultez mon parcours professionnel et mes compétences</p>
+            <h3 data-i18n="nav-cv-title">Mon CV</h3>
+            <p data-i18n="nav-cv-desc">Consultez mon parcours professionnel et mes compétences</p>
             <span class="card-arrow">→</span>
         </div>
     </a>
@@ -1208,14 +1211,14 @@ document.addEventListener('keydown', function(e) {
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1400px; margin: 80px auto; padding: 0 20px;">
     <div class="experience-section" style="margin: 0;">
-        <h2 class="section-title">Parcours Professionnel</h2>
+        <h2 class="section-title" data-i18n="experience-title">Parcours Professionnel</h2>
         <div class="experience-timeline">
             <div class="experience-item" style="--delay: 0s">
                 <div class="experience-icon">🔒</div>
                 <div class="experience-content">
-                    <h3>Ingénieur Logiciel Embarqué - Cybersécurité</h3>
+                    <h3 data-i18n="exp1-title">Ingénieur Logiciel Embarqué - Cybersécurité</h3>
                     <h4><a href="https://www.schaeffler.fr/fr/" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Schaeffler</a> • Oct. 2024 - Sept. 2025</h4>
-                    <p>Développement du Secure Logger, un composant logiciel embarqué générique pour l'enregistrement et la gestion des événements de sécurité dans les calculateurs automobiles (ECUs). Revue de code et développement de logiciels critiques.</p>
+                    <p data-i18n="exp1-desc">Développement du Secure Logger, un composant logiciel embarqué générique pour l'enregistrement et la gestion des événements de sécurité dans les calculateurs automobiles (ECUs). Revue de code et développement de logiciels critiques.</p>
                     <div class="experience-tags">
                         <span class="tag">Cybersécurité</span>
                         <span class="tag">C/C++</span>
@@ -1228,9 +1231,9 @@ document.addEventListener('keydown', function(e) {
             <div class="experience-item" style="--delay: 0.15s">
                 <div class="experience-icon">🌍</div>
                 <div class="experience-content">
-                    <h3>Stage Mobilité Internationale Ingénierie</h3>
+                    <h3 data-i18n="exp2-title">Stage Mobilité Internationale Ingénierie</h3>
                     <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • Juil. - Sept. 2024 • Iasi, Roumanie</h4>
-                    <p>Étude et implémentation de solutions pour la gestion de la mémoire Flash sur un nouveau microcontrôleur. Test et validation des fonctionnalités pour garantir la fiabilité et la performance de la nouvelle plateforme.</p>
+                    <p data-i18n="exp2-desc">Étude et implémentation de solutions pour la gestion de la mémoire Flash sur un nouveau microcontrôleur. Test et validation des fonctionnalités pour garantir la fiabilité et la performance de la nouvelle plateforme.</p>
                     <div class="experience-tags">
                         <span class="tag">Microcontrôleurs</span>
                         <span class="tag">Flash Memory</span>
@@ -1243,9 +1246,9 @@ document.addEventListener('keydown', function(e) {
             <div class="experience-item" style="--delay: 0.3s">
                 <div class="experience-icon">🚀</div>
                 <div class="experience-content">
-                    <h3>Ingénieur Logiciel Embarqué</h3>
+                    <h3 data-i18n="exp3-title">Ingénieur Logiciel Embarqué</h3>
                     <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • Sept. 2022 - Sept. 2024</h4>
-                    <p>Développement de solutions génériques embarquées pour la reprogrammation des ECUs. Création d'environnements d'automatisation des tests avec Python et Jenkins. Correction de code conforme aux standards MISRA et CERT pour garantir la sécurité et la qualité.</p>
+                    <p data-i18n="exp3-desc">Développement de solutions génériques embarquées pour la reprogrammation des ECUs. Création d'environnements d'automatisation des tests avec Python et Jenkins. Correction de code conforme aux standards MISRA et CERT pour garantir la sécurité et la qualité.</p>
                     <div class="experience-tags">
                         <span class="tag">C/C++</span>
                         <span class="tag">Python</span>
@@ -1258,9 +1261,9 @@ document.addEventListener('keydown', function(e) {
             <div class="experience-item experience-hidden" style="--delay: 0.45s">
                 <div class="experience-icon">⚙️</div>
                 <div class="experience-content">
-                    <h3>Technicien Méthodes Électroniques</h3>
+                    <h3 data-i18n="exp4-title">Technicien Méthodes Électroniques</h3>
                     <h4><a href="https://www.siemens.com/fr/fr.html" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Siemens</a> • Avr. - Juil. 2022 • Stage</h4>
-                    <p>Analyse complète du système de rack frein VAL208NG. Réalisation de tests fonctionnels sur les cartes électroniques pour garantir des performances optimales. Développement d'un banc de tests pour la carte entrées-sorties, assurant des évaluations complètes.</p>
+                    <p data-i18n="exp4-desc">Analyse complète du système de rack frein VAL208NG. Réalisation de tests fonctionnels sur les cartes électroniques pour garantir des performances optimales. Développement d'un banc de tests pour la carte entrées-sorties, assurant des évaluations complètes.</p>
                     <div class="experience-tags">
                         <span class="tag">Tests Électroniques</span>
                         <span class="tag">Cartes PCB</span>
@@ -1272,20 +1275,20 @@ document.addEventListener('keydown', function(e) {
         </div>
         
         <button class="show-more-btn" onclick="toggleExperiences()" id="experienceToggle">
-            <span id="experienceToggleText">Voir plus</span>
+            <span id="experienceToggleText" data-i18n="show-more">Voir plus</span>
             <span class="arrow">▼</span>
         </button>
     </div>
 
     <div class="formation-section" style="margin: 0;">
-        <h2 class="section-title">Formation</h2>
+        <h2 class="section-title" data-i18n="formation-title">Formation</h2>
         <div class="formation-timeline">
             <div class="formation-item" style="--delay: 0s">
                 <div class="formation-icon">🎓</div>
                 <div class="formation-content">
-                    <h3><a href="https://formations.enseeiht.fr/enseeiht/fr/index/master-lmd-XB/master-reseaux-embarques-et-objets-connectes-M3XKUK0T.html" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">Master 2 Réseaux Embarqués et Objets Connectés (REOC)</a></h3>
+                    <h3><a href="https://formations.enseeiht.fr/enseeiht/fr/index/master-lmd-XB/master-reseaux-embarques-et-objets-connectes-M3XKUK0T.html" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'" data-i18n="formation1-title">Master 2 Réseaux Embarqués et Objets Connectés (REOC)</a></h3>
                     <h4>ENSEEIHT • Sept. 2024 - Sept. 2025</h4>
-                    <p>Formation spécialisée en systèmes embarqués et objets connectés avec un focus sur l'intégration des technologies de communication, le traitement des données et l'interconnexion des dispositifs. Développement de compétences avancées en IoT, protocoles de communication et sécurité des réseaux.</p>
+                    <p data-i18n="formation1-desc">Formation spécialisée en systèmes embarqués et objets connectés avec un focus sur l'intégration des technologies de communication, le traitement des données et l'interconnexion des dispositifs. Développement de compétences avancées en IoT, protocoles de communication et sécurité des réseaux.</p>
                     <div class="formation-tags">
                         <span class="tag">IoT</span>
                         <span class="tag">QoS</span>
@@ -1298,9 +1301,9 @@ document.addEventListener('keydown', function(e) {
             <div class="formation-item" style="--delay: 0.2s">
                 <div class="formation-icon">🏛️</div>
                 <div class="formation-content">
-                    <h3><a href="https://www.insa-toulouse.fr/formation/ingenieur-specialite-automatique-electronique/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">Diplôme d'Ingénieur - Automatique Électronique</a></h3>
+                    <h3><a href="https://www.insa-toulouse.fr/formation/ingenieur-specialite-automatique-electronique/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'" data-i18n="formation2-title">Diplôme d'Ingénieur - Automatique Électronique</a></h3>
                     <h4>INSA Toulouse • Sept. 2022 - Sept. 2025</h4>
-                    <p>Formation d'ingénieur experts en technologies intelligentes pour les systèmes connectés. Compétences en conception de dispositifs intelligents (microcontrôleurs, IA embarquée, capteurs), sécurité des systèmes, réseaux de capteurs sans fil, 5G, architectures middleware et cloud/edge computing.</p>
+                    <p data-i18n="formation2-desc">Formation d'ingénieur experts en technologies intelligentes pour les systèmes connectés. Compétences en conception de dispositifs intelligents (microcontrôleurs, IA embarquée, capteurs), sécurité des systèmes, réseaux de capteurs sans fil, 5G, architectures middleware et cloud/edge computing.</p>
                     <div class="formation-tags">
                         <span class="tag">Systèmes Embarqués</span>
                         <span class="tag">IA Embarquée</span>
@@ -1314,9 +1317,9 @@ document.addEventListener('keydown', function(e) {
             <div class="formation-item" style="--delay: 0.4s">
                 <div class="formation-icon">🔌</div>
                 <div class="formation-content">
-                    <h3><a href="https://iut.univ-tlse3.fr/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'">DUT GEII - Génie Électrique et Informatique Industrielle</a></h3>
+                    <h3><a href="https://iut.univ-tlse3.fr/" target="_blank" style="color: #2d3748; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#667eea'" onmouseout="this.style.color='#2d3748'" data-i18n="formation3-title">DUT GEII - Génie Électrique et Informatique Industrielle</a></h3>
                     <h4>IUT Paul Sabatier - Toulouse, Auch, Castres • 2020 - 2022</h4>
-                    <p>Formation technique approfondie en génie électrique et électronique. Acquisition de compétences pratiques en électronique, automatisme, informatique industrielle et systèmes embarqués. Projets concrets en électronique de puissance, traitement du signal et automatique.</p>
+                    <p data-i18n="formation3-desc">Formation technique approfondie en génie électrique et électronique. Acquisition de compétences pratiques en électronique, automatisme, informatique industrielle et systèmes embarqués. Projets concrets en électronique de puissance, traitement du signal et automatique.</p>
                     <div class="formation-tags">
                         <span class="tag">Électronique</span>
                         <span class="tag">Automatisme</span>
@@ -1338,11 +1341,11 @@ document.addEventListener('keydown', function(e) {
 </style>
 
 <div class="skills-section">
-    <h2 class="section-title">Domaines d'Expertise</h2>
+    <h2 class="section-title" data-i18n="skills-title">Domaines d'Expertise</h2>
     <div class="skills-grid">
         <div class="skill-card" style="--delay: 0s">
             <div class="skill-icon">💻</div>
-            <h4>Développement Logiciel</h4>
+            <h4 data-i18n="skill-dev">Développement Logiciel</h4>
             <p>C/C++, Python, Java, JavaScript, MATLAB, SQL</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 92%"></div>
@@ -1350,7 +1353,7 @@ document.addEventListener('keydown', function(e) {
         </div>
         <div class="skill-card" style="--delay: 0.1s">
             <div class="skill-icon">🤖</div>
-            <h4>Intelligence Artificielle</h4>
+            <h4 data-i18n="skill-ai">Intelligence Artificielle</h4>
             <p>Machine Learning, Deep Learning, TensorFlow, PyTorch</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 85%"></div>
@@ -1358,7 +1361,7 @@ document.addEventListener('keydown', function(e) {
         </div>
         <div class="skill-card" style="--delay: 0.2s">
             <div class="skill-icon">🌐</div>
-            <h4>IoT & Edge Computing</h4>
+            <h4 data-i18n="skill-iot">IoT & Edge Computing</h4>
             <p>5G, LoRa, MQTT, Cloud Computing, Architectures distribuées</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 88%"></div>
@@ -1366,7 +1369,7 @@ document.addEventListener('keydown', function(e) {
         </div>
         <div class="skill-card" style="--delay: 0.3s">
             <div class="skill-icon">🔧</div>
-            <h4>Systèmes Embarqués</h4>
+            <h4 data-i18n="skill-embedded">Systèmes Embarqués</h4>
             <p>STM32, Arduino, VHDL, PCB Design, Temps Réel</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 87%"></div>
@@ -1374,7 +1377,7 @@ document.addEventListener('keydown', function(e) {
         </div>
         <div class="skill-card" style="--delay: 0.4s">
             <div class="skill-icon">🔐</div>
-            <h4>Cybersécurité Embarquée</h4>
+            <h4 data-i18n="skill-cyber">Cybersécurité Embarquée</h4>
             <p>Sécurité ECU, AUTOSAR, Secure Logger, Standards ISO 21434</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 82%"></div>
@@ -1382,7 +1385,7 @@ document.addEventListener('keydown', function(e) {
         </div>
         <div class="skill-card" style="--delay: 0.5s">
             <div class="skill-icon">⚡</div>
-            <h4>Automatique & Contrôle</h4>
+            <h4 data-i18n="skill-control">Automatique & Contrôle</h4>
             <p>Systèmes linéaires/non-linéaires, Robotique, Modélisation</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 90%"></div>
@@ -1397,20 +1400,30 @@ function toggleExperiences() {
     const button = document.getElementById('experienceToggle');
     const buttonText = document.getElementById('experienceToggleText');
     const isExpanded = button.classList.contains('expanded');
-    
+
     if (isExpanded) {
         hiddenItems.forEach(item => {
             item.classList.remove('show');
         });
         button.classList.remove('expanded');
-        buttonText.textContent = 'Voir plus';
+        buttonText.textContent = window.i18n ? window.i18n.t('show-more') : 'Voir plus';
     } else {
         hiddenItems.forEach(item => {
             item.classList.add('show');
         });
         button.classList.add('expanded');
-        buttonText.textContent = 'Voir moins';
+        buttonText.textContent = window.i18n ? window.i18n.t('show-less') : 'Voir moins';
     }
 }
+
+// Update button text when language changes
+document.addEventListener('langChanged', function() {
+    var button = document.getElementById('experienceToggle');
+    var buttonText = document.getElementById('experienceToggleText');
+    if (button && buttonText && window.i18n) {
+        var isExpanded = button.classList.contains('expanded');
+        buttonText.textContent = isExpanded ? window.i18n.t('show-less') : window.i18n.t('show-more');
+    }
+});
 </script>
 

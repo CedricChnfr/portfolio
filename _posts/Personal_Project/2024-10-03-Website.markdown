@@ -5,403 +5,612 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-# Documentation de Déploiement - Portfolio avec Nginx
+<style>
+p {
+  text-align: justify;
+}
+</style>
 
-## 📋 Table des matières
+<div class="back-nav">
+    <a href="./my-perso-projects.html" data-i18n-html="back-perso-projects">&larr; Retour aux Projets Personnels</a>
+</div>
 
-- [Vue d'ensemble](#vue-densemble)
-- [Prérequis](#prérequis)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Configuration Nginx](#configuration-nginx)
-- [Déploiement](#déploiement)
-- [Dépannage](#dépannage)
-- [Maintenance](#maintenance)
+<div class="lang-fr">
+<h1>Documentation de Deploiement - Portfolio avec Nginx</h1>
 
----
+<h2>Table des matieres</h2>
+<ul>
+<li><a href="#vue-densemble">Vue d'ensemble</a></li>
+<li><a href="#prerequis">Prerequis</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#configuration-nginx">Configuration Nginx</a></li>
+<li><a href="#deploiement">Deploiement</a></li>
+<li><a href="#depannage">Depannage</a></li>
+<li><a href="#maintenance">Maintenance</a></li>
+</ul>
 
-## 🎯 Vue d'ensemble
+<hr/>
 
-Ce document décrit le processus de déploiement du portfolio statique sur un serveur utilisant Nginx comme serveur web. Le site est accessible via l'adresse IP `192.168.X.X` sur le port `3000`.
+<h2 id="vue-densemble">Vue d'ensemble</h2>
 
-### Informations du projet
+<p>Ce document decrit le processus de deploiement du portfolio statique sur un serveur utilisant Nginx comme serveur web. Le site est accessible via l'adresse IP <code>192.168.X.X</code> sur le port <code>3000</code>.</p>
 
-- **Nom du projet** : Mon Portfolio
-- **Type** : Site statique
-- **Serveur Web** : Nginx
-- **Adresse IP** : 192.168.X.X
-- **Port** : 3000
-- **Chemin source** : `/home/cedric/portfolio/_site`
-- **Domaine** : cedric.littlenuage.com
+<h3>Informations du projet</h3>
+<ul>
+<li><strong>Nom du projet</strong> : Mon Portfolio</li>
+<li><strong>Type</strong> : Site statique</li>
+<li><strong>Serveur Web</strong> : Nginx</li>
+<li><strong>Adresse IP</strong> : 192.168.X.X</li>
+<li><strong>Port</strong> : 3000</li>
+<li><strong>Chemin source</strong> : <code>/home/cedric/portfolio/_site</code></li>
+<li><strong>Domaine</strong> : cedric.littlenuage.com</li>
+</ul>
 
----
+<hr/>
 
-## ✅ Prérequis
+<h2 id="prerequis">Prerequis</h2>
 
-Avant de commencer, assurez-vous d'avoir :
+<p>Avant de commencer, assurez-vous d'avoir :</p>
+<ul>
+<li>Un serveur Linux (Ubuntu/Debian recommande)</li>
+<li>Acces root ou sudo</li>
+<li>Nginx installe</li>
+<li>Les fichiers du site dans <code>/home/cedric/portfolio/_site</code></li>
+</ul>
 
-- Un serveur Linux (Ubuntu/Debian recommandé)
-- Accès root ou sudo
-- Nginx installé
-- Les fichiers du site dans `/home/cedric/portfolio/_site`
+<hr/>
 
----
+<h2 id="architecture">Architecture</h2>
+</div>
 
-## 🏗️ Architecture
+<div class="lang-en">
+<h1>Deployment Documentation - Portfolio with Nginx</h1>
 
-```
-┌─────────────────┐
-│   Client Web    │
-│  192.168.X.X   │
-└────────┬────────┘
-         │ Port 3000
-         │
-┌────────▼────────┐
-│     Nginx       │
-│  Serveur Web    │
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│  Fichiers HTML  │
-│    _site/       │
-└─────────────────┘
-```
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#architecture">Architecture</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#nginx-configuration">Nginx Configuration</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#maintenance">Maintenance</a></li>
+</ul>
 
-**Flux de requête** :
-1. L'utilisateur accède à `http://192.168.X.X:3000`
-2. Nginx reçoit la requête sur le port 3000
-3. Nginx sert les fichiers statiques depuis `/home/cedric/portfolio/_site`
-4. Le navigateur affiche le site
+<hr/>
 
----
+<h2 id="overview">Overview</h2>
 
-## 🔧 Installation
+<p>This document describes the deployment process of the static portfolio on a server using Nginx as the web server. The site is accessible via the IP address <code>192.168.X.X</code> on port <code>3000</code>.</p>
 
-### Étape 1 : Installer Nginx
+<h3>Project Information</h3>
+<ul>
+<li><strong>Project Name</strong>: My Portfolio</li>
+<li><strong>Type</strong>: Static website</li>
+<li><strong>Web Server</strong>: Nginx</li>
+<li><strong>IP Address</strong>: 192.168.X.X</li>
+<li><strong>Port</strong>: 3000</li>
+<li><strong>Source Path</strong>: <code>/home/cedric/portfolio/_site</code></li>
+<li><strong>Domain</strong>: cedric.littlenuage.com</li>
+</ul>
 
-```bash
-# Mettre à jour les paquets
+<hr/>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before starting, make sure you have:</p>
+<ul>
+<li>A Linux server (Ubuntu/Debian recommended)</li>
+<li>Root or sudo access</li>
+<li>Nginx installed</li>
+<li>Site files in <code>/home/cedric/portfolio/_site</code></li>
+</ul>
+
+<hr/>
+
+<h2 id="architecture">Architecture</h2>
+</div>
+
+<pre><code>+-------------------+
+|   Client Web      |
+|  192.168.X.X      |
++--------+----------+
+         | Port 3000
+         |
++--------v----------+
+|     Nginx          |
+|  Web Server        |
++--------+-----------+
+         |
++--------v----------+
+|  HTML Files        |
+|    _site/          |
++--------------------+
+</code></pre>
+
+<div class="lang-fr">
+<p><strong>Flux de requete</strong> :</p>
+<ol>
+<li>L'utilisateur accede a <code>http://192.168.X.X:3000</code></li>
+<li>Nginx recoit la requete sur le port 3000</li>
+<li>Nginx sert les fichiers statiques depuis <code>/home/cedric/portfolio/_site</code></li>
+<li>Le navigateur affiche le site</li>
+</ol>
+
+<hr/>
+
+<h2 id="installation">Installation</h2>
+
+<h3>Etape 1 : Installer Nginx</h3>
+</div>
+
+<div class="lang-en">
+<p><strong>Request Flow</strong>:</p>
+<ol>
+<li>User accesses <code>http://192.168.X.X:3000</code></li>
+<li>Nginx receives the request on port 3000</li>
+<li>Nginx serves static files from <code>/home/cedric/portfolio/_site</code></li>
+<li>The browser displays the site</li>
+</ol>
+
+<hr/>
+
+<h2 id="installation">Installation</h2>
+
+<h3>Step 1: Install Nginx</h3>
+</div>
+
+<pre><code class="language-bash"># Update packages / Mettre a jour les paquets
 sudo apt update
 
-# Installer Nginx
+# Install Nginx / Installer Nginx
 sudo apt install nginx -y
 
-# Vérifier l'installation
+# Verify installation / Verifier l'installation
 nginx -v
-```
+</code></pre>
 
-### Étape 2 : Vérifier le statut de Nginx
+<div class="lang-fr">
+<h3>Etape 2 : Verifier le statut de Nginx</h3>
+</div>
 
-```bash
-# Vérifier que Nginx est actif
+<div class="lang-en">
+<h3>Step 2: Verify Nginx Status</h3>
+</div>
+
+<pre><code class="language-bash"># Check that Nginx is active / Verifier que Nginx est actif
 sudo systemctl status nginx
 
-# Démarrer Nginx si nécessaire
+# Start Nginx if needed / Demarrer Nginx si necessaire
 sudo systemctl start nginx
 
-# Activer Nginx au démarrage
+# Enable Nginx at startup / Activer Nginx au demarrage
 sudo systemctl enable nginx
-```
+</code></pre>
 
----
+<div class="lang-fr">
+<hr/>
 
-## ⚙️ Configuration Nginx
+<h2 id="configuration-nginx">Configuration Nginx</h2>
 
-### Créer le fichier de configuration
+<h3>Creer le fichier de configuration</h3>
+</div>
 
-```bash
-sudo nano /etc/nginx/sites-available/mon-portfolio
-```
+<div class="lang-en">
+<hr/>
 
-### Configuration du site
+<h2 id="nginx-configuration">Nginx Configuration</h2>
 
-Ajoutez cette configuration :
+<h3>Create the Configuration File</h3>
+</div>
 
-```nginx
-server {
-    # Port d'écoute
+<pre><code class="language-bash">sudo nano /etc/nginx/sites-available/mon-portfolio</code></pre>
+
+<div class="lang-fr">
+<h3>Configuration du site</h3>
+<p>Ajoutez cette configuration :</p>
+</div>
+
+<div class="lang-en">
+<h3>Site Configuration</h3>
+<p>Add this configuration:</p>
+</div>
+
+<pre><code class="language-nginx">server {
+    # Listening port / Port d'ecoute
     listen 3000;
-    
-    # Noms de serveur acceptés
+
+    # Accepted server names / Noms de serveur acceptes
     server_name 192.168.X.X cedric.littlenuage.com www.cedric.littlenuage.com;
 
-    # Répertoire racine du site
+    # Site root directory / Repertoire racine du site
     root /home/cedric/portfolio/_site;
-    
-    # Fichiers index par défaut
+
+    # Default index files / Fichiers index par defaut
     index index.html index.htm;
 
-    # Gestion des requêtes
+    # Request handling / Gestion des requetes
     location / {
         try_files $uri $uri/ =404;
     }
-    
-    # Logs (optionnel)
+
+    # Logs (optional / optionnel)
     access_log /var/log/nginx/portfolio_access.log;
     error_log /var/log/nginx/portfolio_error.log;
 }
-```
+</code></pre>
 
-### Activer le site
+<div class="lang-fr">
+<h3>Activer le site</h3>
+</div>
 
-```bash
-# Créer un lien symbolique vers sites-enabled
+<div class="lang-en">
+<h3>Enable the Site</h3>
+</div>
+
+<pre><code class="language-bash"># Create symbolic link / Creer un lien symbolique
 sudo ln -s /etc/nginx/sites-available/mon-portfolio /etc/nginx/sites-enabled/
 
-# Vérifier la configuration
+# Verify configuration / Verifier la configuration
 sudo nginx -t
 
-# Recharger Nginx
+# Reload Nginx / Recharger Nginx
 sudo systemctl reload nginx
-```
+</code></pre>
 
----
+<div class="lang-fr">
+<hr/>
 
-## 🚀 Déploiement
+<h2 id="deploiement">Deploiement</h2>
 
-### Étape 1 : Préparer les fichiers du site
+<h3>Etape 1 : Preparer les fichiers du site</h3>
+</div>
 
-```bash
-# Créer le répertoire si nécessaire
+<div class="lang-en">
+<hr/>
+
+<h2 id="deployment">Deployment</h2>
+
+<h3>Step 1: Prepare Site Files</h3>
+</div>
+
+<pre><code class="language-bash"># Create directory if needed / Creer le repertoire si necessaire
 mkdir -p /home/cedric/portfolio/_site
 
-# Vérifier que les fichiers existent
+# Verify files exist / Verifier que les fichiers existent
 ls -la /home/cedric/portfolio/_site
-```
+</code></pre>
 
-### Étape 2 : Configurer les permissions
+<div class="lang-fr">
+<h3>Etape 2 : Configurer les permissions</h3>
+</div>
 
-```bash
-# Donner les bonnes permissions
+<div class="lang-en">
+<h3>Step 2: Configure Permissions</h3>
+</div>
+
+<pre><code class="language-bash"># Set proper permissions / Donner les bonnes permissions
 sudo chmod -R 755 /home/cedric/portfolio/_site
 
-# Changer le propriétaire (optionnel)
+# Change owner (optional) / Changer le proprietaire (optionnel)
 sudo chown -R www-data:www-data /home/cedric/portfolio/_site
-```
+</code></pre>
 
-### Étape 3 : Configurer le pare-feu
+<div class="lang-fr">
+<h3>Etape 3 : Configurer le pare-feu</h3>
+</div>
 
-```bash
-# Autoriser le port 3000
+<div class="lang-en">
+<h3>Step 3: Configure the Firewall</h3>
+</div>
+
+<pre><code class="language-bash"># Allow port 3000 / Autoriser le port 3000
 sudo ufw allow 3000
 
-# Autoriser Nginx
+# Allow Nginx / Autoriser Nginx
 sudo ufw allow 'Nginx Full'
 
-# Vérifier le statut
+# Check status / Verifier le statut
 sudo ufw status
-```
+</code></pre>
 
-### Étape 4 : Redémarrer Nginx
+<div class="lang-fr">
+<h3>Etape 4 : Redemarrer Nginx</h3>
+</div>
 
-```bash
-# Tester la configuration
+<div class="lang-en">
+<h3>Step 4: Restart Nginx</h3>
+</div>
+
+<pre><code class="language-bash"># Test configuration / Tester la configuration
 sudo nginx -t
 
-# Redémarrer Nginx
+# Restart Nginx / Redemarrer Nginx
 sudo systemctl restart nginx
 
-# Vérifier que Nginx écoute sur le port 3000
+# Verify Nginx is listening on port 3000
 sudo netstat -tlnp | grep 3000
-```
+</code></pre>
 
-### Étape 5 : Tester le site
+<div class="lang-fr">
+<h3>Etape 5 : Tester le site</h3>
+</div>
 
-```bash
-# Test en local
+<div class="lang-en">
+<h3>Step 5: Test the Site</h3>
+</div>
+
+<pre><code class="language-bash"># Local test / Test en local
 curl http://localhost:3000
 
-# Test avec l'IP
+# Test with IP / Test avec l'IP
 curl http://192.168.X.X:3000
-```
+</code></pre>
 
-Ouvrez votre navigateur et accédez à : **http://192.168.X.X:3000**
+<div class="lang-fr">
+<p>Ouvrez votre navigateur et accedez a : <strong>http://192.168.X.X:3000</strong></p>
 
----
+<hr/>
 
-## 🔍 Dépannage
+<h2 id="depannage">Depannage</h2>
 
-### Le site ne s'ouvre pas
+<h3>Le site ne s'ouvre pas</h3>
 
-#### 1. Vérifier que Nginx tourne
+<h4>1. Verifier que Nginx tourne</h4>
+<p><strong>Solution</strong> : Si inactif, demarrer Nginx avec <code>sudo systemctl start nginx</code></p>
 
-```bash
-sudo systemctl status nginx
-```
+<h4>2. Verifier que le port 3000 est ouvert</h4>
+<p><strong>Solution</strong> : Si le port n'est pas liste, verifier la configuration Nginx</p>
 
-**Solution** : Si inactif, démarrer Nginx
-```bash
-sudo systemctl start nginx
-```
+<h4>3. Consulter les logs d'erreur</h4>
+</div>
 
-#### 2. Vérifier que le port 3000 est ouvert
+<div class="lang-en">
+<p>Open your browser and navigate to: <strong>http://192.168.X.X:3000</strong></p>
 
-```bash
-sudo netstat -tlnp | grep 3000
-```
+<hr/>
 
-**Solution** : Si le port n'est pas listé, vérifier la configuration Nginx
+<h2 id="troubleshooting">Troubleshooting</h2>
 
-#### 3. Consulter les logs d'erreur
+<h3>The Site Won't Open</h3>
 
-```bash
-# Logs Nginx
+<h4>1. Verify Nginx is Running</h4>
+<p><strong>Solution</strong>: If inactive, start Nginx with <code>sudo systemctl start nginx</code></p>
+
+<h4>2. Verify Port 3000 is Open</h4>
+<p><strong>Solution</strong>: If the port is not listed, check the Nginx configuration</p>
+
+<h4>3. Check Error Logs</h4>
+</div>
+
+<pre><code class="language-bash"># Nginx logs
 sudo tail -50 /var/log/nginx/error.log
 
-# Logs du site
+# Site logs / Logs du site
 sudo tail -50 /var/log/nginx/portfolio_error.log
-```
+</code></pre>
 
-#### 4. Vérifier les permissions
+<div class="lang-fr">
+<h4>4. Verifier les permissions</h4>
+<p><strong>Solution</strong> : Corriger les permissions avec <code>sudo chmod -R 755 /home/cedric/portfolio/_site</code></p>
 
-```bash
-ls -la /home/cedric/portfolio/_site
-```
+<h4>5. Tester la configuration Nginx</h4>
+<p><strong>Solution</strong> : Si erreur de syntaxe, corriger le fichier de configuration</p>
 
-**Solution** : Corriger les permissions
-```bash
-sudo chmod -R 755 /home/cedric/portfolio/_site
-```
+<h4>6. Verifier le pare-feu</h4>
+<p><strong>Solution</strong> : Ouvrir le port 3000 avec <code>sudo ufw allow 3000</code></p>
 
-#### 5. Tester la configuration Nginx
+<h3>Erreur 404 Not Found</h3>
+<ul>
+<li>Verifier que <code>index.html</code> existe dans <code>/home/cedric/portfolio/_site</code></li>
+<li>Verifier le chemin <code>root</code> dans la configuration Nginx</li>
+</ul>
 
-```bash
-sudo nginx -t
-```
+<h3>Erreur 403 Forbidden</h3>
+<p>Probleme de permissions. Solution :</p>
+</div>
 
-**Solution** : Si erreur de syntaxe, corriger le fichier de configuration
+<div class="lang-en">
+<h4>4. Verify Permissions</h4>
+<p><strong>Solution</strong>: Fix permissions with <code>sudo chmod -R 755 /home/cedric/portfolio/_site</code></p>
 
-#### 6. Vérifier le pare-feu
+<h4>5. Test Nginx Configuration</h4>
+<p><strong>Solution</strong>: If syntax error, fix the configuration file</p>
 
-```bash
-sudo ufw status
-```
+<h4>6. Check the Firewall</h4>
+<p><strong>Solution</strong>: Open port 3000 with <code>sudo ufw allow 3000</code></p>
 
-**Solution** : Ouvrir le port 3000
-```bash
-sudo ufw allow 3000
-```
+<h3>404 Not Found Error</h3>
+<ul>
+<li>Verify that <code>index.html</code> exists in <code>/home/cedric/portfolio/_site</code></li>
+<li>Check the <code>root</code> path in the Nginx configuration</li>
+</ul>
 
-### Erreur 404 Not Found
+<h3>403 Forbidden Error</h3>
+<p>Permission issue. Solution:</p>
+</div>
 
-- Vérifier que `index.html` existe dans `/home/cedric/portfolio/_site`
-- Vérifier le chemin `root` dans la configuration Nginx
-
-### Erreur 403 Forbidden
-
-- Problème de permissions
-- Solution :
-```bash
-sudo chmod -R 755 /home/cedric/portfolio/_site
+<pre><code class="language-bash">sudo chmod -R 755 /home/cedric/portfolio/_site
 sudo chown -R www-data:www-data /home/cedric/portfolio/_site
-```
+</code></pre>
 
----
+<div class="lang-fr">
+<hr/>
 
-## 🛠️ Maintenance
+<h2 id="maintenance">Maintenance</h2>
 
-### Mettre à jour le site
+<h3>Mettre a jour le site</h3>
+</div>
 
-```bash
-# 1. Placer les nouveaux fichiers dans _site
-cp -r /chemin/vers/nouveaux/fichiers/* /home/cedric/portfolio/_site/
+<div class="lang-en">
+<hr/>
 
-# 2. Vérifier les permissions
+<h2 id="maintenance">Maintenance</h2>
+
+<h3>Update the Site</h3>
+</div>
+
+<pre><code class="language-bash"># 1. Place new files in _site / Placer les nouveaux fichiers dans _site
+cp -r /path/to/new/files/* /home/cedric/portfolio/_site/
+
+# 2. Verify permissions / Verifier les permissions
 sudo chmod -R 755 /home/cedric/portfolio/_site
 
-# 3. Recharger Nginx (optionnel pour les fichiers statiques)
+# 3. Reload Nginx (optional for static files) / Recharger Nginx (optionnel)
 sudo systemctl reload nginx
-```
+</code></pre>
 
-### Commandes utiles
+<div class="lang-fr">
+<h3>Commandes utiles</h3>
+</div>
 
-```bash
-# Redémarrer Nginx
+<div class="lang-en">
+<h3>Useful Commands</h3>
+</div>
+
+<pre><code class="language-bash"># Restart Nginx / Redemarrer Nginx
 sudo systemctl restart nginx
 
-# Recharger la configuration sans interruption
+# Reload configuration without interruption / Recharger sans interruption
 sudo systemctl reload nginx
 
-# Arrêter Nginx
+# Stop Nginx / Arreter Nginx
 sudo systemctl stop nginx
 
-# Voir les logs en temps réel
+# View real-time logs / Voir les logs en temps reel
 sudo tail -f /var/log/nginx/error.log
 sudo tail -f /var/log/nginx/portfolio_access.log
 
-# Tester la configuration
+# Test configuration / Tester la configuration
 sudo nginx -t
 
-# Voir les connexions actives
+# View active connections / Voir les connexions actives
 sudo netstat -tlnp | grep nginx
-```
+</code></pre>
 
-### Sauvegardes
+<div class="lang-fr">
+<h3>Sauvegardes</h3>
+</div>
 
-```bash
-# Sauvegarder la configuration Nginx
+<div class="lang-en">
+<h3>Backups</h3>
+</div>
+
+<pre><code class="language-bash"># Backup Nginx configuration / Sauvegarder la configuration Nginx
 sudo cp /etc/nginx/sites-available/mon-portfolio /etc/nginx/sites-available/mon-portfolio.bak
 
-# Sauvegarder les fichiers du site
+# Backup site files / Sauvegarder les fichiers du site
 tar -czf portfolio-backup-$(date +%Y%m%d).tar.gz /home/cedric/portfolio/_site
-```
+</code></pre>
 
----
+<div class="lang-fr">
+<hr/>
 
-## 📊 Checklist de déploiement
+<h2>Checklist de deploiement</h2>
+<ul>
+<li>Nginx installe et actif</li>
+<li>Fichier de configuration cree dans <code>/etc/nginx/sites-available/</code></li>
+<li>Lien symbolique cree dans <code>/etc/nginx/sites-enabled/</code></li>
+<li>Configuration Nginx testee (<code>nginx -t</code>)</li>
+<li>Fichiers du site presents dans <code>/home/cedric/portfolio/_site</code></li>
+<li>Permissions correctes (755)</li>
+<li>Port 3000 ouvert dans le pare-feu</li>
+<li>Nginx redemarre</li>
+<li>Site accessible via <code>http://192.168.X.X:3000</code></li>
+</ul>
 
-- [ ] Nginx installé et actif
-- [ ] Fichier de configuration créé dans `/etc/nginx/sites-available/`
-- [ ] Lien symbolique créé dans `/etc/nginx/sites-enabled/`
-- [ ] Configuration Nginx testée (`nginx -t`)
-- [ ] Fichiers du site présents dans `/home/cedric/portfolio/_site`
-- [ ] Permissions correctes (755)
-- [ ] Port 3000 ouvert dans le pare-feu
-- [ ] Nginx redémarré
-- [ ] Site accessible via `http://192.168.X.X:3000`
+<hr/>
 
----
+<h2>Notes supplementaires</h2>
 
-## 📝 Notes supplémentaires
+<h3>Pour passer en production sur le port 80</h3>
+<p>Si vous souhaitez rendre le site accessible sans specifier le port :</p>
+</div>
 
-### Pour passer en production sur le port 80
+<div class="lang-en">
+<hr/>
 
-Si vous souhaitez rendre le site accessible sans spécifier le port :
+<h2>Deployment Checklist</h2>
+<ul>
+<li>Nginx installed and active</li>
+<li>Configuration file created in <code>/etc/nginx/sites-available/</code></li>
+<li>Symbolic link created in <code>/etc/nginx/sites-enabled/</code></li>
+<li>Nginx configuration tested (<code>nginx -t</code>)</li>
+<li>Site files present in <code>/home/cedric/portfolio/_site</code></li>
+<li>Correct permissions (755)</li>
+<li>Port 3000 open in the firewall</li>
+<li>Nginx restarted</li>
+<li>Site accessible via <code>http://192.168.X.X:3000</code></li>
+</ul>
 
-```nginx
-server {
+<hr/>
+
+<h2>Additional Notes</h2>
+
+<h3>Switch to Production on Port 80</h3>
+<p>If you want to make the site accessible without specifying the port:</p>
+</div>
+
+<pre><code class="language-nginx">server {
     listen 80;
     server_name cedric.littlenuage.com www.cedric.littlenuage.com;
-    
+
     root /home/cedric/portfolio/_site;
     index index.html index.htm;
-    
+
     location / {
         try_files $uri $uri/ =404;
     }
 }
-```
+</code></pre>
 
-### Ajouter HTTPS avec Let's Encrypt
+<div class="lang-fr">
+<h3>Ajouter HTTPS avec Let's Encrypt</h3>
+</div>
 
-```bash
-# Installer Certbot
+<div class="lang-en">
+<h3>Add HTTPS with Let's Encrypt</h3>
+</div>
+
+<pre><code class="language-bash"># Install Certbot / Installer Certbot
 sudo apt install certbot python3-certbot-nginx
 
-# Obtenir un certificat SSL
+# Obtain an SSL certificate / Obtenir un certificat SSL
 sudo certbot --nginx -d cedric.littlenuage.com -d www.cedric.littlenuage.com
-```
+</code></pre>
 
----
+<div class="lang-fr">
+<hr/>
 
-## 📚 Ressources
+<h2>Ressources</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/">Documentation Nginx</a></li>
+<li><a href="https://nginx.org/en/docs/beginners_guide.html">Nginx Beginner's Guide</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/examples/full/">Configuration Nginx pour sites statiques</a></li>
+</ul>
 
-- [Documentation Nginx](https://nginx.org/en/docs/)
-- [Nginx Beginner's Guide](https://nginx.org/en/docs/beginners_guide.html)
-- [Configuration Nginx pour sites statiques](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
+<hr/>
 
----
+<p><strong>Derniere mise a jour</strong> : 2025-01-01<br/>
+<strong>Auteur</strong> : Cedric<br/>
+<strong>Version</strong> : 1.0</p>
+</div>
 
-**Dernière mise à jour** : 2025-01-01  
-**Auteur** : Cédric  
-**Version** : 1.0
+<div class="lang-en">
+<hr/>
+
+<h2>Resources</h2>
+<ul>
+<li><a href="https://nginx.org/en/docs/">Nginx Documentation</a></li>
+<li><a href="https://nginx.org/en/docs/beginners_guide.html">Nginx Beginner's Guide</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/examples/full/">Nginx Configuration for Static Sites</a></li>
+</ul>
+
+<hr/>
+
+<p><strong>Last Updated</strong>: 2025-01-01<br/>
+<strong>Author</strong>: Cedric<br/>
+<strong>Version</strong>: 1.0</p>
+</div>

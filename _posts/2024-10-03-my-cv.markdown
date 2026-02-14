@@ -7,68 +7,141 @@ categories: jekyll update
 
 # Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)
 
-**Phone** : +(33) 679 791 782  
-**Address** : Rue du libre-échange, 31500 Toulouse, France  
-**Email** : cedric.chanfreau@gmail.com  
+**Phone** : +(33) 679 791 782
+**Address** : Rue du libre-échange, 31500 Toulouse, France
+**Email** : cedric.chanfreau@gmail.com
 
-## [Open my French CV (PDF)](/file/CV_Cédric_Chanfreau_FR.pdf){:target="_blank"}
-## [Open my English CV (PDF)](/file/CV_Cedric_Chanfreau_USA.pdf){:target="_blank"}
-
----
-
-## About Me
-
-I am a highly motivated recent graduate with a master's degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, cybersecurity, and software development, with hands-on experience in international environments. Actively seeking opportunities to leverage my technical expertise and teamwork skills in innovative projects.
+## <a href="/file/CV_Cédric_Chanfreau_FR.pdf" target="_blank" data-i18n="cv-open-fr">Open my French CV (PDF)</a>
+## <a href="/file/CV_Cedric_Chanfreau_USA.pdf" target="_blank" data-i18n="cv-open-en">Open my English CV (PDF)</a>
 
 ---
 
-## Technical Skills
+<h2 data-i18n="cv-about-title">About Me</h2>
 
-- **Programming & Embedded Systems**: C, Python, Java, C++, Assembly, VHDL, PLC (Ladder, ST, FBD)
-- **Software & Tools**: Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git
-- **Communication & APIs**: RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C
-- **Frontend & Visualization**: HTML, CSS, JavaScript, Node-RED, React Native
-- **Languages**: French (native), English (advanced), Spanish (intermediate)
-
----
-
-## Education
-
-**2024 - 2025**: Master 2 (M2) in Embedded Networks and Connected Objects (REOC), ENSEEIHT, Toulouse  
-- Specialized in IoT systems: communication technologies, data processing, and network security.
-- Developed a software-defined communication infrastructure (SDCI) for managing and controlling network traffic using Docker and REST APIs.
-
-**2022 - 2025**: Master’s degree in Automation and Electrical Engineering, National Institute of Applied Sciences (INSA), Toulouse  
-- Key areas: Embedded Systems, Machine Learning, Computer Security, and Electronic Circuit Design.
-- Designed and developed a gas sensor: component creation, electronic board design and programming, mobile app and website development, MQTT integration, Node-RED dashboard, and datasheet creation.
+<div class="lang-fr">
+<p>Je suis un jeune diplômé très motivé, titulaire d'un diplôme d'ingénieur en Automatique et Électronique. Spécialisé en IoT, systèmes embarqués, cybersécurité et développement logiciel, avec une expérience pratique dans des environnements internationaux. Je recherche activement des opportunités pour mettre à profit mon expertise technique et mes compétences en travail d'équipe dans des projets innovants.</p>
+</div>
+<div class="lang-en">
+<p>I am a highly motivated recent graduate with a master's degree in Automation and Electrical Computer Engineering. Specialized in IoT, embedded systems, cybersecurity, and software development, with hands-on experience in international environments. Actively seeking opportunities to leverage my technical expertise and teamwork skills in innovative projects.</p>
+</div>
 
 ---
 
-## Professional Experience
+<h2 data-i18n="cv-skills-title">Technical Skills</h2>
 
-**Embedded Software Engineer - Cybersecurity - Schaeffler, France**
-*Oct 2024 - Sep 2025*
-- Developed the Secure Logger, a generic embedded software component for recording and managing security events in automotive ECUs.
-- Performed critical code review and contributed to secure software development practices.
-
-**International Engineering Mobility - Vitesco Technologies, Romania**
-*Jul 2024 - Sep 2024*
-- Studied and implemented Flash memory management solutions on new microcontrollers.
-- Created the environment to automate and optimize tests, using Python and CMM scripts.
-
-**Embedded Software Engineer Apprenticeship - Vitesco Technologies, France**
-*Sep 2022 - Sep 2024*  
-- Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT).
-- Tested and debugged code to ensure proper operation and problem resolution.
-- Presented regular project reviews to team members in English.
+<div class="lang-fr">
+<ul>
+<li><strong>Programmation &amp; Systèmes Embarqués</strong> : C, Python, Java, C++, Assembleur, VHDL, API (Ladder, ST, FBD)</li>
+<li><strong>Logiciels &amp; Outils</strong> : Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git</li>
+<li><strong>Communication &amp; APIs</strong> : RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C</li>
+<li><strong>Frontend &amp; Visualisation</strong> : HTML, CSS, JavaScript, Node-RED, React Native</li>
+<li><strong>Langues</strong> : Français (natif), Anglais (avancé), Espagnol (intermédiaire)</li>
+</ul>
+</div>
+<div class="lang-en">
+<ul>
+<li><strong>Programming &amp; Embedded Systems</strong>: C, Python, Java, C++, Assembly, VHDL, PLC (Ladder, ST, FBD)</li>
+<li><strong>Software &amp; Tools</strong>: Eclipse, Keil, Docker, VirtualBox, OpenStack, SolidWorks, Proteus, Altium, Git</li>
+<li><strong>Communication &amp; APIs</strong>: RESTful APIs, MQTT, OM2M, CAN Bus, SPI, I2C</li>
+<li><strong>Frontend &amp; Visualization</strong>: HTML, CSS, JavaScript, Node-RED, React Native</li>
+<li><strong>Languages</strong>: French (native), English (advanced), Spanish (intermediate)</li>
+</ul>
+</div>
 
 ---
 
-## Extracurricular Activities
+<h2 data-i18n="cv-education-title">Education</h2>
 
-- **Rugby Player**: Scrum-half since 2007 at Federal 1 level. Achieved 3rd place in French championships.
-- **Volunteering**: Assessor of a polling station for the regional and departmental elections.
-- **Independent Travel**: Explored destinations across Europe (Italy, England, Spain, etc.) and beyond, gaining diverse cultural insights.
+<div class="lang-fr">
+<p><strong>2024 - 2025</strong> : Master 2 (M2) en Réseaux Embarqués et Objets Connectés (REOC), ENSEEIHT, Toulouse</p>
+<ul>
+<li>Spécialisation en systèmes IoT : technologies de communication, traitement de données et sécurité réseau.</li>
+<li>Développement d'une infrastructure de communication définie par logiciel (SDCI) pour la gestion et le contrôle du trafic réseau avec Docker et REST APIs.</li>
+</ul>
+<p><strong>2022 - 2025</strong> : Diplôme d'ingénieur en Automatique et Électronique, Institut National des Sciences Appliquées (INSA), Toulouse</p>
+<ul>
+<li>Domaines clés : Systèmes Embarqués, Machine Learning, Sécurité Informatique et Conception de Circuits Électroniques.</li>
+<li>Conception et développement d'un capteur de gaz : création du composant, conception et programmation de la carte électronique, développement d'application mobile et site web, intégration MQTT, tableau de bord Node-RED et création de datasheet.</li>
+</ul>
+</div>
+<div class="lang-en">
+<p><strong>2024 - 2025</strong>: Master 2 (M2) in Embedded Networks and Connected Objects (REOC), ENSEEIHT, Toulouse</p>
+<ul>
+<li>Specialized in IoT systems: communication technologies, data processing, and network security.</li>
+<li>Developed a software-defined communication infrastructure (SDCI) for managing and controlling network traffic using Docker and REST APIs.</li>
+</ul>
+<p><strong>2022 - 2025</strong>: Master's degree in Automation and Electrical Engineering, National Institute of Applied Sciences (INSA), Toulouse</p>
+<ul>
+<li>Key areas: Embedded Systems, Machine Learning, Computer Security, and Electronic Circuit Design.</li>
+<li>Designed and developed a gas sensor: component creation, electronic board design and programming, mobile app and website development, MQTT integration, Node-RED dashboard, and datasheet creation.</li>
+</ul>
+</div>
+
+---
+
+<h2 data-i18n="cv-experience-title">Professional Experience</h2>
+
+<div class="lang-fr">
+<p><strong>Ingénieur Logiciel Embarqué - Cybersécurité - Schaeffler, France</strong><br>
+<em>Oct 2024 - Sep 2025</em></p>
+<ul>
+<li>Développement du Secure Logger, un composant logiciel embarqué générique pour l'enregistrement et la gestion des événements de sécurité dans les calculateurs automobiles.</li>
+<li>Revue de code critique et contribution aux pratiques de développement logiciel sécurisé.</li>
+</ul>
+<p><strong>Mobilité Internationale en Ingénierie - Vitesco Technologies, Roumanie</strong><br>
+<em>Juil 2024 - Sep 2024</em></p>
+<ul>
+<li>Étude et implémentation de solutions de gestion de mémoire Flash sur de nouveaux microcontrôleurs.</li>
+<li>Création de l'environnement pour automatiser et optimiser les tests, avec Python et scripts CMM.</li>
+</ul>
+<p><strong>Apprenti Ingénieur Logiciel Embarqué - Vitesco Technologies, France</strong><br>
+<em>Sep 2022 - Sep 2024</em></p>
+<ul>
+<li>Développement de solutions embarquées pour la reprogrammation de calculateurs et assurance qualité du code (MISRA, CERT).</li>
+<li>Tests et débogage du code pour assurer le bon fonctionnement et la résolution des problèmes.</li>
+<li>Présentation régulière de revues de projet aux membres de l'équipe en anglais.</li>
+</ul>
+</div>
+<div class="lang-en">
+<p><strong>Embedded Software Engineer - Cybersecurity - Schaeffler, France</strong><br>
+<em>Oct 2024 - Sep 2025</em></p>
+<ul>
+<li>Developed the Secure Logger, a generic embedded software component for recording and managing security events in automotive ECUs.</li>
+<li>Performed critical code review and contributed to secure software development practices.</li>
+</ul>
+<p><strong>International Engineering Mobility - Vitesco Technologies, Romania</strong><br>
+<em>Jul 2024 - Sep 2024</em></p>
+<ul>
+<li>Studied and implemented Flash memory management solutions on new microcontrollers.</li>
+<li>Created the environment to automate and optimize tests, using Python and CMM scripts.</li>
+</ul>
+<p><strong>Embedded Software Engineer Apprenticeship - Vitesco Technologies, France</strong><br>
+<em>Sep 2022 - Sep 2024</em></p>
+<ul>
+<li>Developed embedded solutions for ECU reprogramming and ensured code quality (MISRA, CERT).</li>
+<li>Tested and debugged code to ensure proper operation and problem resolution.</li>
+<li>Presented regular project reviews to team members in English.</li>
+</ul>
+</div>
+
+---
+
+<h2 data-i18n="cv-extracurricular-title">Extracurricular Activities</h2>
+
+<div class="lang-fr">
+<ul>
+<li><strong>Joueur de Rugby</strong> : Demi de mêlée depuis 2007 au niveau Fédérale 1. 3ème place aux championnats de France.</li>
+<li><strong>Bénévolat</strong> : Assesseur de bureau de vote pour les élections régionales et départementales.</li>
+<li><strong>Voyages Indépendants</strong> : Exploration de destinations à travers l'Europe (Italie, Angleterre, Espagne, etc.) et au-delà, acquérant diverses perspectives culturelles.</li>
+</ul>
+</div>
+<div class="lang-en">
+<ul>
+<li><strong>Rugby Player</strong>: Scrum-half since 2007 at Federal 1 level. Achieved 3rd place in French championships.</li>
+<li><strong>Volunteering</strong>: Assessor of a polling station for the regional and departmental elections.</li>
+<li><strong>Independent Travel</strong>: Explored destinations across Europe (Italy, England, Spain, etc.) and beyond, gaining diverse cultural insights.</li>
+</ul>
+</div>
 
 ---
 

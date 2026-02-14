@@ -70,82 +70,82 @@ categories: jekyll update
     <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-# My Courses - 2022-2023
+<h1 data-i18n="courses-title-2022-2023">My Courses - 2022-2023</h1>
 
 ---
 
-## Semester 5 (S5)
+<h2 data-i18n="semester-5">Semester 5 (S5)</h2>
 
 ### [💻 Architecture Informatique Matérielle](./architecture-informatique-materielle.html)
-**Content**: Computer hardware architecture fundamentals and design.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux et conception de l'architecture matérielle informatique.</span><span class="lang-en">Computer hardware architecture fundamentals and design.</span>
 
 ### [🔌 Circuits et Filtres Analogiques](./circuits-filtres-analogiques.html)
-**Content**: Analog circuits design and filter theory.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Conception de circuits analogiques et théorie des filtres.</span><span class="lang-en">Analog circuits design and filter theory.</span>
 
 ### [⚡ Composants et Notions de Puissance](./composants-puissance.html)
-**Content**: Power components and power electronics fundamentals.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Composants de puissance et fondamentaux de l'électronique de puissance.</span><span class="lang-en">Power components and power electronics fundamentals.</span>
 
 ### [📟 Fondements Électronique Numérique](./fondements-electronique-numerique.html)
-**Content**: Digital electronics fundamentals and logic design.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux de l'électronique numérique et conception logique.</span><span class="lang-en">Digital electronics fundamentals and logic design.</span>
 
 ### [🖥️ Langage C](./langage-c.html)
-**Content**: C programming language and system programming.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Langage de programmation C et programmation système.</span><span class="lang-en">C programming language and system programming.</span>
 
 ### [🔄 Logique Séquentielle](./logique-sequentielle.html)
-**Content**: Sequential logic circuits and finite state machines.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Circuits logiques séquentiels et machines à états finis.</span><span class="lang-en">Sequential logic circuits and finite state machines.</span>
 
 ### [📊 Modélisation et Analyse des Systèmes Linéaires et Représentation d'État](./modelisation-systemes-lineaires.html)
-**Content**: Linear systems modeling and state-space representation.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation des systèmes linéaires et représentation d'état.</span><span class="lang-en">Linear systems modeling and state-space representation.</span>
 
 ### [🎮 Modélisation et Commande des Systèmes à Événements Discrets](./systemes-evenements-discrets.html)
-**Content**: Discrete event systems modeling and control.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et commande des systèmes à événements discrets.</span><span class="lang-en">Discrete event systems modeling and control.</span>
 
 ### [🎛️ Modélisation et Commande des Systèmes Linéaires Continus](./systemes-lineaires-continus.html)
-**Content**: Continuous linear systems modeling and control.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et commande des systèmes linéaires continus.</span><span class="lang-en">Continuous linear systems modeling and control.</span>
 
 ### [🌐 Réseau](./reseau-s5.html)
-**Content**: Computer networks fundamentals and protocols.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux des réseaux informatiques et protocoles.</span><span class="lang-en">Computer networks fundamentals and protocols.</span>
 
 ### [📡 Signal](./signal.html)
-**Content**: Signal processing and analysis fundamentals.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux du traitement et de l'analyse du signal.</span><span class="lang-en">Signal processing and analysis fundamentals.</span>
 
 ### [🐧 Système Unix](./systeme-unix.html)
-**Content**: Unix/Linux system administration and shell programming.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Administration système Unix/Linux et programmation shell.</span><span class="lang-en">Unix/Linux system administration and shell programming.</span>
 
 ### [🔁 Systèmes Bouclés](./systemes-boucles.html)
-**Content**: Feedback control systems and closed-loop analysis.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Systèmes de commande à rétroaction et analyse en boucle fermée.</span><span class="lang-en">Feedback control systems and closed-loop analysis.</span>
 
 ### [⚙️ Systèmes d'Exploitation](./systemes-exploitation.html)
-**Content**: Operating systems principles and implementation.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes des systèmes d'exploitation et implémentation.</span><span class="lang-en">Operating systems principles and implementation.</span>
 
 ---
 
-## Semester 6 (S6)
+<h2 data-i18n="semester-6">Semester 6 (S6)</h2>
 
 ### [🖥️ Architecture Matérielle](./architecture-materielle.html)
-**Content**: Advanced computer hardware architecture concepts.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Concepts avancés d'architecture matérielle informatique.</span><span class="lang-en">Advanced computer hardware architecture concepts.</span>
 
 ### [🔊 Électronique Fonctions Analogiques](./electronique-fonctions-analogiques.html)
-**Content**: Analog electronic functions and applications.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fonctions électroniques analogiques et applications.</span><span class="lang-en">Analog electronic functions and applications.</span>
 
 ### [💾 Électronique Fonctions Numériques](./electronique-fonctions-numeriques.html)
-**Content**: Digital electronic functions and design.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fonctions électroniques numériques et conception.</span><span class="lang-en">Digital electronic functions and design.</span>
 
 ### [📊 Filtrage Numérique](./filtrage-numerique.html)
-**Content**: Digital signal processing and filtering techniques.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Traitement numérique du signal et techniques de filtrage.</span><span class="lang-en">Digital signal processing and filtering techniques.</span>
 
 ### [💼 Gestion](./gestion.html)
-**Content**: Management principles and project management.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de gestion et management de projet.</span><span class="lang-en">Management principles and project management.</span>
 
 ### [⚙️ Langage d'Assemblage ARM CORTEX](./assemblage-arm-cortex.html)
-**Content**: ARM CORTEX assembly language programming.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation en langage d'assemblage ARM CORTEX.</span><span class="lang-en">ARM CORTEX assembly language programming.</span>
 
 ### [🔌 Microcontrôleur](./microcontroleur.html)
-**Content**: Microcontroller programming and embedded systems.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation de microcontrôleurs et systèmes embarqués.</span><span class="lang-en">Microcontroller programming and embedded systems.</span>
 
 ### [🌍 Qualité Sécurité Environnement](./qualite-securite-environnement.html)
-**Content**: Quality, safety, and environmental management.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Gestion de la qualité, de la sécurité et de l'environnement.</span><span class="lang-en">Quality, safety, and environmental management.</span>
 
 ### [📈 Signaux Aléatoires](./signaux-aleatoires.html)
-**Content**: Random signals and stochastic processes.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Signaux aléatoires et processus stochastiques.</span><span class="lang-en">Random signals and stochastic processes.</span>
 

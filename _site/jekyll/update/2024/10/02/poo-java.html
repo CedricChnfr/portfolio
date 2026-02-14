@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Programmation Orientée Objets Java - S7" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to My Courses 2023-2024" />
-<meta property="og:description" content="← Back to My Courses 2023-2024" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/poo-java.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/poo-java.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Programmation Orientée Objets Java - S7" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to My Courses 2023-2024","headline":"Programmation Orientée Objets Java - S7","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/poo-java.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/poo-java.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Programmation Orientée Objets Java - S7","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/poo-java.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/poo-java.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,647 +36,17 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-courses-2023-2024.html">← Back to My Courses 2023-2024</a></p>
-
-<h1 id="programmation-orientée-objets-java">Programmation Orientée Objets Java</h1>
-
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
-
-<h3 id="presentation">Presentation</h3>
-<p>The “Programmation Orientée Objets Java” course provided comprehensive training in object-oriented programming using Java. As one of the most popular programming languages for enterprise applications, web services, and Android development, Java’s platform independence and extensive ecosystem make it essential for modern software development.</p>
-
-<p><strong>Academic Year</strong>: 2023-2024<br />
-<strong>Semester</strong>: 7<br />
-<strong>Category</strong>: Programming</p>
-
-<hr />
-
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
-
-<h3 id="experience-details">Experience Details</h3>
-
-<h4 id="environment-and-context">Environment and Context</h4>
-<p>The course covered Java fundamentals through advanced topics including object-oriented principles, exception handling, collections framework, multithreading, and GUI development. We used industry-standard IDEs like Eclipse and IntelliJ IDEA for development and practiced Test-Driven Development (TDD) principles.</p>
-
-<h4 id="my-function">My Function</h4>
-<p>In this course, I was responsible for:</p>
-<ul>
-  <li>Understanding Java syntax and object-oriented concepts</li>
-  <li>Implementing classes, interfaces, and inheritance hierarchies</li>
-  <li>Using Java Collections Framework effectively</li>
-  <li>Developing multithreaded applications</li>
-  <li>Creating graphical user interfaces with Swing/JavaFX</li>
-  <li>Handling exceptions and managing resources</li>
-  <li>Writing unit tests with JUnit</li>
-  <li>Working with Java I/O and networking APIs</li>
-</ul>
-
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
-
-<p>This section explores the technical aspects of Java programming and object-oriented development.</p>
-
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
-
-<h4 id="1-java-fundamentals-and-oop-basics">1. Java Fundamentals and OOP Basics</h4>
-
-<p><strong>Class Structure</strong>:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BankAccount</span> <span class="o">{</span>
-    <span class="c1">// Instance variables (private for encapsulation)</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">accountNumber</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">balance</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">owner</span><span class="o">;</span>
-    
-    <span class="c1">// Constructor</span>
-    <span class="kd">public</span> <span class="nf">BankAccount</span><span class="o">(</span><span class="nc">String</span> <span class="n">accountNumber</span><span class="o">,</span> <span class="nc">String</span> <span class="n">owner</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">accountNumber</span> <span class="o">=</span> <span class="n">accountNumber</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">owner</span> <span class="o">=</span> <span class="n">owner</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">balance</span> <span class="o">=</span> <span class="mf">0.0</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="c1">// Methods</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">deposit</span><span class="o">(</span><span class="kt">double</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">amount</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">balance</span> <span class="o">+=</span> <span class="n">amount</span><span class="o">;</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Deposited: "</span> <span class="o">+</span> <span class="n">amount</span><span class="o">);</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">withdraw</span><span class="o">(</span><span class="kt">double</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">amount</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">amount</span> <span class="o">&lt;=</span> <span class="n">balance</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span><span class="o">;</span>
-            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
-        <span class="o">}</span>
-        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="c1">// Getters</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getBalance</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">balance</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getAccountNumber</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">accountNumber</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<p><strong>Key OOP Principles</strong>:</p>
-<ul>
-  <li><strong>Encapsulation</strong>: Data hiding using private fields and public methods</li>
-  <li><strong>Inheritance</strong>: Code reuse through class hierarchies</li>
-  <li><strong>Polymorphism</strong>: Dynamic method dispatch</li>
-  <li><strong>Abstraction</strong>: Hiding implementation details</li>
-</ul>
-
-<div style="text-align: center; display: flex; justify-content: center;">
-    <img src="/img/S7/java_oop.png" style="width: 65%;" />
-</div>
-<p><br /></p>
-
-<h4 id="2-inheritance-and-interfaces">2. Inheritance and Interfaces</h4>
-
-<p><strong>Inheritance Example</strong>:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
-    <span class="kd">protected</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="nf">Animal</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="c1">// Abstract method (must be implemented by subclasses)</span>
-    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">();</span>
-    
-    <span class="c1">// Concrete method</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sleep</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">" is sleeping"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="nc">Animal</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">breed</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="nf">Dog</span><span class="o">(</span><span class="nc">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">,</span> <span class="nc">String</span> <span class="n">breed</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">(</span><span class="n">name</span><span class="o">,</span> <span class="n">age</span><span class="o">);</span>  <span class="c1">// Call parent constructor</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">breed</span> <span class="o">=</span> <span class="n">breed</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">makeSound</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Woof! Woof!"</span><span class="o">);</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">fetch</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">" is fetching"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<p><strong>Interfaces</strong>:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Drawable</span> <span class="o">{</span>
-    <span class="kt">void</span> <span class="nf">draw</span><span class="o">();</span>
-    <span class="k">default</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">()</span> <span class="o">{</span>  <span class="c1">// Default method (Java 8+)</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Displaying drawable object"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Resizable</span> <span class="o">{</span>
-    <span class="kt">void</span> <span class="nf">resize</span><span class="o">(</span><span class="kt">double</span> <span class="n">factor</span><span class="o">);</span>
-<span class="o">}</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">implements</span> <span class="nc">Drawable</span><span class="o">,</span> <span class="nc">Resizable</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">radius</span><span class="o">;</span>
-    
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Drawing a circle"</span><span class="o">);</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">resize</span><span class="o">(</span><span class="kt">double</span> <span class="n">factor</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">radius</span> <span class="o">*=</span> <span class="n">factor</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<p><strong>Interface vs Abstract Class</strong>:</p>
-<ul>
-  <li>Interfaces: Multiple inheritance, contract definition</li>
-  <li>Abstract classes: Partial implementation, shared state</li>
-</ul>
-
-<h4 id="3-exception-handling">3. Exception Handling</h4>
-
-<p>Robust error management in Java:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">FileProcessor</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">readFile</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
-        <span class="nc">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-        <span class="k">try</span> <span class="o">{</span>
-            <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="n">filename</span><span class="o">));</span>
-            <span class="nc">StringBuilder</span> <span class="n">content</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
-            <span class="nc">String</span> <span class="n">line</span><span class="o">;</span>
-            
-            <span class="k">while</span> <span class="o">((</span><span class="n">line</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">content</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">line</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>
-            <span class="o">}</span>
-            
-            <span class="k">return</span> <span class="n">content</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
-            
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">FileNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"File not found: "</span> <span class="o">+</span> <span class="n">filename</span><span class="o">);</span>
-            <span class="k">throw</span> <span class="n">e</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Error reading file: "</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
-            <span class="k">throw</span> <span class="n">e</span><span class="o">;</span>
-        <span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
-            <span class="c1">// Always executed, even if exception occurs</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">reader</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">try</span> <span class="o">{</span>
-                    <span class="n">reader</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-                <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-                    <span class="nc">System</span><span class="o">.</span><span class="na">err</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Error closing file"</span><span class="o">);</span>
-                <span class="o">}</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    
-    <span class="c1">// Try-with-resources (Java 7+)</span>
-    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">readFileModern</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
-        <span class="k">try</span> <span class="o">(</span><span class="nc">BufferedReader</span> <span class="n">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="n">filename</span><span class="o">)))</span> <span class="o">{</span>
-            <span class="nc">StringBuilder</span> <span class="n">content</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
-            <span class="nc">String</span> <span class="n">line</span><span class="o">;</span>
-            
-            <span class="k">while</span> <span class="o">((</span><span class="n">line</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">content</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">line</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="s">"\n"</span><span class="o">);</span>
-            <span class="o">}</span>
-            
-            <span class="k">return</span> <span class="n">content</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
-        <span class="o">}</span>
-        <span class="c1">// reader.close() called automatically</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="c1">// Custom exception</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">InsufficientFundsException</span> <span class="kd">extends</span> <span class="nc">Exception</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">amount</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="nf">InsufficientFundsException</span><span class="o">(</span><span class="kt">double</span> <span class="n">amount</span><span class="o">)</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">(</span><span class="s">"Insufficient funds: "</span> <span class="o">+</span> <span class="n">amount</span><span class="o">);</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">amount</span> <span class="o">=</span> <span class="n">amount</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getAmount</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">amount</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h4 id="4-collections-framework">4. Collections Framework</h4>
-
-<p>Powerful data structures and algorithms:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CollectionsDemo</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">demonstrateCollections</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// List (ordered, allows duplicates)</span>
-        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">arrayList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
-        <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>
-        <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Banana"</span><span class="o">);</span>
-        <span class="n">arrayList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>  <span class="c1">// Duplicate allowed</span>
-        
-        <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
-        
-        <span class="c1">// Set (no duplicates)</span>
-        <span class="nc">Set</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">hashSet</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashSet</span><span class="o">&lt;&gt;();</span>
-        <span class="n">hashSet</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>
-        <span class="n">hashSet</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Banana"</span><span class="o">);</span>
-        <span class="n">hashSet</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"Apple"</span><span class="o">);</span>  <span class="c1">// Ignored</span>
-        <span class="c1">// Size will be 2</span>
-        
-        <span class="nc">Set</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">treeSet</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TreeSet</span><span class="o">&lt;&gt;();</span>  <span class="c1">// Sorted</span>
-        
-        <span class="c1">// Map (key-value pairs)</span>
-        <span class="nc">Map</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">hashMap</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">HashMap</span><span class="o">&lt;&gt;();</span>
-        <span class="n">hashMap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"Alice"</span><span class="o">,</span> <span class="mi">25</span><span class="o">);</span>
-        <span class="n">hashMap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"Bob"</span><span class="o">,</span> <span class="mi">30</span><span class="o">);</span>
-        <span class="n">hashMap</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"Charlie"</span><span class="o">,</span> <span class="mi">28</span><span class="o">);</span>
-        
-        <span class="c1">// Iteration</span>
-        <span class="k">for</span> <span class="o">(</span><span class="nc">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">,</span> <span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">entry</span> <span class="o">:</span> <span class="n">hashMap</span><span class="o">.</span><span class="na">entrySet</span><span class="o">())</span> <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">entry</span><span class="o">.</span><span class="na">getKey</span><span class="o">()</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">entry</span><span class="o">.</span><span class="na">getValue</span><span class="o">());</span>
-        <span class="o">}</span>
-        
-        <span class="c1">// Queue</span>
-        <span class="nc">Queue</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">LinkedList</span><span class="o">&lt;&gt;();</span>
-        <span class="n">queue</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"First"</span><span class="o">);</span>
-        <span class="n">queue</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="s">"Second"</span><span class="o">);</span>
-        <span class="nc">String</span> <span class="n">first</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="na">poll</span><span class="o">();</span>  <span class="c1">// Removes and returns "First"</span>
-        
-        <span class="c1">// Priority Queue</span>
-        <span class="nc">PriorityQueue</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">pq</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PriorityQueue</span><span class="o">&lt;&gt;();</span>
-        <span class="n">pq</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
-        <span class="n">pq</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
-        <span class="n">pq</span><span class="o">.</span><span class="na">offer</span><span class="o">(</span><span class="mi">8</span><span class="o">);</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">pq</span><span class="o">.</span><span class="na">poll</span><span class="o">());</span>  <span class="c1">// Returns 2 (smallest)</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<p><strong>Comparators and Sorting</strong>:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">gpa</span><span class="o">;</span>
-    
-    <span class="c1">// Constructor, getters, setters...</span>
-<span class="o">}</span>
-
-<span class="c1">// Sorting with Comparator</span>
-<span class="nc">List</span><span class="o">&lt;</span><span class="nc">Student</span><span class="o">&gt;</span> <span class="n">students</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
-<span class="c1">// Add students...</span>
-
-<span class="c1">// Sort by GPA (descending)</span>
-<span class="n">students</span><span class="o">.</span><span class="na">sort</span><span class="o">((</span><span class="n">s1</span><span class="o">,</span> <span class="n">s2</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="nc">Double</span><span class="o">.</span><span class="na">compare</span><span class="o">(</span><span class="n">s2</span><span class="o">.</span><span class="na">getGpa</span><span class="o">(),</span> <span class="n">s1</span><span class="o">.</span><span class="na">getGpa</span><span class="o">()));</span>
-
-<span class="c1">// Or using Comparator</span>
-<span class="n">students</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="nc">Comparator</span><span class="o">.</span><span class="na">comparingDouble</span><span class="o">(</span><span class="nl">Student:</span><span class="o">:</span><span class="n">getGpa</span><span class="o">).</span><span class="na">reversed</span><span class="o">());</span>
-</code></pre></div></div>
-
-<h4 id="5-generics">5. Generics</h4>
-
-<p>Type-safe programming:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Box</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="no">T</span> <span class="n">content</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">set</span><span class="o">(</span><span class="no">T</span> <span class="n">content</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">;</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="no">T</span> <span class="nf">get</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">content</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="c1">// Usage</span>
-<span class="nc">Box</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">stringBox</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Box</span><span class="o">&lt;&gt;();</span>
-<span class="n">stringBox</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
-<span class="nc">String</span> <span class="n">value</span> <span class="o">=</span> <span class="n">stringBox</span><span class="o">.</span><span class="na">get</span><span class="o">();</span>  <span class="c1">// No casting needed</span>
-
-<span class="c1">// Generic method</span>
-<span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="o">(</span><span class="no">T</span><span class="o">[]</span> <span class="n">array</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">for</span> <span class="o">(</span><span class="no">T</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">element</span> <span class="o">+</span> <span class="s">" "</span><span class="o">);</span>
-    <span class="o">}</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
-<span class="o">}</span>
-
-<span class="c1">// Bounded type parameters</span>
-<span class="kd">public</span> <span class="o">&lt;</span><span class="no">T</span> <span class="kd">extends</span> <span class="nc">Comparable</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;&gt;</span> <span class="no">T</span> <span class="nf">findMax</span><span class="o">(</span><span class="no">T</span><span class="o">[]</span> <span class="n">array</span><span class="o">)</span> <span class="o">{</span>
-    <span class="no">T</span> <span class="n">max</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
-    <span class="k">for</span> <span class="o">(</span><span class="no">T</span> <span class="n">element</span> <span class="o">:</span> <span class="n">array</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">element</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">max</span><span class="o">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">max</span> <span class="o">=</span> <span class="n">element</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    <span class="k">return</span> <span class="n">max</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h4 id="6-multithreading">6. Multithreading</h4>
-
-<p>Concurrent programming in Java:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Extending Thread class</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyThread</span> <span class="kd">extends</span> <span class="nc">Thread</span> <span class="o">{</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="nc">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
-            <span class="k">try</span> <span class="o">{</span>
-                <span class="nc">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span>
-            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">InterruptedException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-            <span class="o">}</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="c1">// Implementing Runnable interface</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyRunnable</span> <span class="kd">implements</span> <span class="nc">Runnable</span> <span class="o">{</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// Task code</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="c1">// Using ExecutorService</span>
-<span class="nc">ExecutorService</span> <span class="n">executor</span> <span class="o">=</span> <span class="nc">Executors</span><span class="o">.</span><span class="na">newFixedThreadPool</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
-<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-    <span class="n">executor</span><span class="o">.</span><span class="na">submit</span><span class="o">(</span><span class="k">new</span> <span class="nc">MyRunnable</span><span class="o">());</span>
-<span class="o">}</span>
-<span class="n">executor</span><span class="o">.</span><span class="na">shutdown</span><span class="o">();</span>
-</code></pre></div></div>
-
-<p><strong>Synchronization</strong>:</p>
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-    
-    <span class="c1">// Synchronized method</span>
-    <span class="kd">public</span> <span class="kd">synchronized</span> <span class="kt">void</span> <span class="nf">increment</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">count</span><span class="o">++;</span>
-    <span class="o">}</span>
-    
-    <span class="c1">// Synchronized block</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">incrementBlock</span><span class="o">()</span> <span class="o">{</span>
-        <span class="kd">synchronized</span><span class="o">(</span><span class="k">this</span><span class="o">)</span> <span class="o">{</span>
-            <span class="n">count</span><span class="o">++;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getCount</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="n">count</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h4 id="7-lambda-expressions-and-streams-java-8">7. Lambda Expressions and Streams (Java 8+)</h4>
-
-<p>Functional programming features:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Lambda expressions</span>
-<span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">names</span> <span class="o">=</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">"Alice"</span><span class="o">,</span> <span class="s">"Bob"</span><span class="o">,</span> <span class="s">"Charlie"</span><span class="o">,</span> <span class="s">"David"</span><span class="o">);</span>
-
-<span class="c1">// Old way</span>
-<span class="k">for</span> <span class="o">(</span><span class="nc">String</span> <span class="n">name</span> <span class="o">:</span> <span class="n">names</span><span class="o">)</span> <span class="o">{</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
-<span class="o">}</span>
-
-<span class="c1">// With lambda</span>
-<span class="n">names</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">name</span> <span class="o">-&gt;</span> <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">name</span><span class="o">));</span>
-<span class="c1">// Or method reference</span>
-<span class="n">names</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
-
-<span class="c1">// Streams</span>
-<span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="nc">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">10</span><span class="o">);</span>
-
-<span class="c1">// Filter, map, and collect</span>
-<span class="nc">List</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">&gt;</span> <span class="n">evenSquares</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-    <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">n</span> <span class="o">-&gt;</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">n</span> <span class="o">-&gt;</span> <span class="n">n</span> <span class="o">*</span> <span class="n">n</span><span class="o">)</span>
-    <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="nc">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
-<span class="c1">// Result: [4, 16, 36, 64, 100]</span>
-
-<span class="c1">// Sum with reduce</span>
-<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-    <span class="o">.</span><span class="na">reduce</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
-
-<span class="c1">// Group by</span>
-<span class="nc">Map</span><span class="o">&lt;</span><span class="nc">Integer</span><span class="o">,</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;&gt;</span> <span class="n">groupedByLength</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-    <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="nc">Collectors</span><span class="o">.</span><span class="na">groupingBy</span><span class="o">(</span><span class="nl">String:</span><span class="o">:</span><span class="n">length</span><span class="o">));</span>
-</code></pre></div></div>
-
-<h4 id="8-file-io-and-serialization">8. File I/O and Serialization</h4>
-
-<p>Working with files and data persistence:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">java.io.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.nio.file.*</span><span class="o">;</span>
-
-<span class="c1">// Reading from file</span>
-<span class="kd">public</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="nf">readLines</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
-    <span class="k">return</span> <span class="nc">Files</span><span class="o">.</span><span class="na">readAllLines</span><span class="o">(</span><span class="nc">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">filename</span><span class="o">));</span>
-<span class="o">}</span>
-
-<span class="c1">// Writing to file</span>
-<span class="kd">public</span> <span class="kt">void</span> <span class="nf">writeLines</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">,</span> <span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">lines</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
-    <span class="nc">Files</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="nc">Paths</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">filename</span><span class="o">),</span> <span class="n">lines</span><span class="o">);</span>
-<span class="o">}</span>
-
-<span class="c1">// Serialization</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="kd">implements</span> <span class="nc">Serializable</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">long</span> <span class="n">serialVersionUID</span> <span class="o">=</span> <span class="mi">1L</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
-    
-    <span class="c1">// Constructor, getters, setters...</span>
-<span class="o">}</span>
-
-<span class="c1">// Save object</span>
-<span class="kd">public</span> <span class="kt">void</span> <span class="nf">saveObject</span><span class="o">(</span><span class="nc">Person</span> <span class="n">person</span><span class="o">,</span> <span class="nc">String</span> <span class="n">filename</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
-    <span class="k">try</span> <span class="o">(</span><span class="nc">ObjectOutputStream</span> <span class="n">oos</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectOutputStream</span><span class="o">(</span>
-            <span class="k">new</span> <span class="nf">FileOutputStream</span><span class="o">(</span><span class="n">filename</span><span class="o">)))</span> <span class="o">{</span>
-        <span class="n">oos</span><span class="o">.</span><span class="na">writeObject</span><span class="o">(</span><span class="n">person</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-
-<span class="c1">// Load object</span>
-<span class="kd">public</span> <span class="nc">Person</span> <span class="nf">loadObject</span><span class="o">(</span><span class="nc">String</span> <span class="n">filename</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span><span class="o">,</span> <span class="nc">ClassNotFoundException</span> <span class="o">{</span>
-    <span class="k">try</span> <span class="o">(</span><span class="nc">ObjectInputStream</span> <span class="n">ois</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ObjectInputStream</span><span class="o">(</span>
-            <span class="k">new</span> <span class="nf">FileInputStream</span><span class="o">(</span><span class="n">filename</span><span class="o">)))</span> <span class="o">{</span>
-        <span class="k">return</span> <span class="o">(</span><span class="nc">Person</span><span class="o">)</span> <span class="n">ois</span><span class="o">.</span><span class="na">readObject</span><span class="o">();</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h4 id="9-gui-development-with-swing">9. GUI Development with Swing</h4>
-
-<p>Creating graphical user interfaces:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">javax.swing.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.awt.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.awt.event.*</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SimpleCalculator</span> <span class="kd">extends</span> <span class="nc">JFrame</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="nc">JTextField</span> <span class="n">display</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="nc">String</span> <span class="n">operator</span> <span class="o">=</span> <span class="s">"="</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">boolean</span> <span class="n">startNewNumber</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
-    
-    <span class="kd">public</span> <span class="nf">SimpleCalculator</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">setTitle</span><span class="o">(</span><span class="s">"Calculator"</span><span class="o">);</span>
-        <span class="n">setSize</span><span class="o">(</span><span class="mi">300</span><span class="o">,</span> <span class="mi">400</span><span class="o">);</span>
-        <span class="n">setDefaultCloseOperation</span><span class="o">(</span><span class="nc">JFrame</span><span class="o">.</span><span class="na">EXIT_ON_CLOSE</span><span class="o">);</span>
-        
-        <span class="c1">// Create display</span>
-        <span class="n">display</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JTextField</span><span class="o">(</span><span class="s">"0"</span><span class="o">);</span>
-        <span class="n">display</span><span class="o">.</span><span class="na">setEditable</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
-        <span class="n">display</span><span class="o">.</span><span class="na">setHorizontalAlignment</span><span class="o">(</span><span class="nc">JTextField</span><span class="o">.</span><span class="na">RIGHT</span><span class="o">);</span>
-        <span class="n">add</span><span class="o">(</span><span class="n">display</span><span class="o">,</span> <span class="nc">BorderLayout</span><span class="o">.</span><span class="na">NORTH</span><span class="o">);</span>
-        
-        <span class="c1">// Create button panel</span>
-        <span class="nc">JPanel</span> <span class="n">buttonPanel</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JPanel</span><span class="o">(</span><span class="k">new</span> <span class="nc">GridLayout</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="mi">4</span><span class="o">));</span>
-        <span class="nc">String</span><span class="o">[]</span> <span class="n">buttons</span> <span class="o">=</span> <span class="o">{</span>
-            <span class="s">"7"</span><span class="o">,</span> <span class="s">"8"</span><span class="o">,</span> <span class="s">"9"</span><span class="o">,</span> <span class="s">"/"</span><span class="o">,</span>
-            <span class="s">"4"</span><span class="o">,</span> <span class="s">"5"</span><span class="o">,</span> <span class="s">"6"</span><span class="o">,</span> <span class="s">"*"</span><span class="o">,</span>
-            <span class="s">"1"</span><span class="o">,</span> <span class="s">"2"</span><span class="o">,</span> <span class="s">"3"</span><span class="o">,</span> <span class="s">"-"</span><span class="o">,</span>
-            <span class="s">"0"</span><span class="o">,</span> <span class="s">"."</span><span class="o">,</span> <span class="s">"="</span><span class="o">,</span> <span class="s">"+"</span>
-        <span class="o">};</span>
-        
-        <span class="k">for</span> <span class="o">(</span><span class="nc">String</span> <span class="n">text</span> <span class="o">:</span> <span class="n">buttons</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nc">JButton</span> <span class="n">button</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JButton</span><span class="o">(</span><span class="n">text</span><span class="o">);</span>
-            <span class="n">button</span><span class="o">.</span><span class="na">addActionListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ButtonClickListener</span><span class="o">());</span>
-            <span class="n">buttonPanel</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">button</span><span class="o">);</span>
-        <span class="o">}</span>
-        
-        <span class="n">add</span><span class="o">(</span><span class="n">buttonPanel</span><span class="o">,</span> <span class="nc">BorderLayout</span><span class="o">.</span><span class="na">CENTER</span><span class="o">);</span>
-    <span class="o">}</span>
-    
-    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">ButtonClickListener</span> <span class="kd">implements</span> <span class="nc">ActionListener</span> <span class="o">{</span>
-        <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="o">(</span><span class="nc">ActionEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-            <span class="nc">String</span> <span class="n">command</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="na">getActionCommand</span><span class="o">();</span>
-            <span class="c1">// Handle button click logic...</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="nc">SwingUtilities</span><span class="o">.</span><span class="na">invokeLater</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="o">{</span>
-            <span class="nc">SimpleCalculator</span> <span class="n">calc</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">SimpleCalculator</span><span class="o">();</span>
-            <span class="n">calc</span><span class="o">.</span><span class="na">setVisible</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
-        <span class="o">});</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h4 id="10-unit-testing-with-junit">10. Unit Testing with JUnit</h4>
-
-<p>Test-driven development:</p>
-
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">org.junit.jupiter.api.*</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">static</span> <span class="n">org</span><span class="o">.</span><span class="na">junit</span><span class="o">.</span><span class="na">jupiter</span><span class="o">.</span><span class="na">api</span><span class="o">.</span><span class="na">Assertions</span><span class="o">.*;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CalculatorTest</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="nc">Calculator</span> <span class="n">calculator</span><span class="o">;</span>
-    
-    <span class="nd">@BeforeEach</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setUp</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">calculator</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Calculator</span><span class="o">();</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testAddition</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">assertEquals</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="n">calculator</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">));</span>
-        <span class="n">assertEquals</span><span class="o">(-</span><span class="mi">1</span><span class="o">,</span> <span class="n">calculator</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">));</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDivision</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">assertEquals</span><span class="o">(</span><span class="mf">2.0</span><span class="o">,</span> <span class="n">calculator</span><span class="o">.</span><span class="na">divide</span><span class="o">(</span><span class="mi">6</span><span class="o">,</span> <span class="mi">3</span><span class="o">),</span> <span class="mf">0.001</span><span class="o">);</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@Test</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testDivisionByZero</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">assertThrows</span><span class="o">(</span><span class="nc">ArithmeticException</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
-            <span class="n">calculator</span><span class="o">.</span><span class="na">divide</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
-        <span class="o">});</span>
-    <span class="o">}</span>
-    
-    <span class="nd">@AfterEach</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tearDown</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">calculator</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div></div>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
-
-<ul>
-  <li>Understanding Java syntax and OOP principles</li>
-  <li>Implementing class hierarchies and interfaces</li>
-  <li>Using Collections Framework effectively</li>
-  <li>Writing exception-safe code</li>
-  <li>Developing multithreaded applications</li>
-  <li>Creating graphical user interfaces</li>
-  <li>Applying functional programming with lambdas and streams</li>
-  <li>Writing unit tests</li>
-  <li>Working with file I/O and serialization</li>
-  <li>Using Java development tools (IDE, debugger, profiler)</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-
-<p>Learning Java after C and C++ was relatively smooth, as many concepts were familiar. However, Java’s automatic memory management (garbage collection) was a significant paradigm shift. Not having to manually manage memory was liberating but also meant less control over performance.</p>
-
-<p>The Collections Framework is one of Java’s strongest features. Learning when to use ArrayList vs LinkedList, HashMap vs TreeMap, etc., required understanding time complexity trade-offs. The Stream API and lambda expressions made code more concise and readable.</p>
-
-<p>Multithreading in Java was challenging. Understanding thread synchronization, deadlocks, and race conditions required careful thinking. The java.util.concurrent package provided powerful tools but had a steep learning curve.</p>
-
-<p>GUI development with Swing was interesting but felt somewhat dated compared to modern UI frameworks. Event-driven programming required a different mindset. Building responsive UIs while avoiding freezing the main thread was a valuable lesson.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-
-<p>Java is an excellent language for learning OOP and building enterprise applications. Its “write once, run anywhere” philosophy is powerful, though in practice, platform differences can still cause issues. The extensive standard library and ecosystem of third-party libraries make Java very productive.</p>
-
-<p>The course provided solid foundations in Java development. What I particularly appreciated:</p>
-<ul>
-  <li>Strong type system preventing many runtime errors</li>
-  <li>Comprehensive documentation and large community</li>
-  <li>Excellent tooling (IDEs, profilers, debuggers)</li>
-  <li>Platform independence</li>
-</ul>
-
-<p>Areas for improvement:</p>
-<ul>
-  <li>More coverage of modern Java features (Java 11+)</li>
-  <li>Design patterns and architectural principles</li>
-  <li>Build tools (Maven, Gradle)</li>
-  <li>Spring Framework introduction</li>
-  <li>Android development basics</li>
-</ul>
-
-<p>Java’s verbosity compared to modern languages can be tedious (lots of boilerplate), but this is improving with newer Java versions. Overall, Java remains relevant and valuable for professional software development, particularly in enterprise and Android development.</p>
-
-<style>
+        <style>
     body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f9;
@@ -687,6 +61,1257 @@
     }
 </style>
 
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
+</div>
+
+<div class="lang-fr">
+
+<h1>Programmation Orientee Objets Java</h1>
+
+<h2>PARTIE A : GENERALITES</h2>
+
+<h3>Presentation</h3>
+<p>Le cours de "Programmation Orientee Objets Java" a fourni une formation complete en programmation orientee objet avec Java. En tant que l'un des langages de programmation les plus populaires pour les applications d'entreprise, les services web et le developpement Android, l'independance de plateforme de Java et son ecosysteme etendu en font un langage essentiel pour le developpement logiciel moderne.</p>
+
+<p><strong>Annee Universitaire</strong> : 2023-2024<br />
+<strong>Semestre</strong> : 7<br />
+<strong>Categorie</strong> : Programmation</p>
+
+<hr />
+
+<h2>PARTIE B : PARTIE DESCRIPTIVE</h2>
+
+<h3>Details de l'experience</h3>
+
+<h4>Environnement et contexte</h4>
+<p>Le cours couvrait les fondamentaux de Java jusqu'aux sujets avances, incluant les principes orientes objet, la gestion des exceptions, le framework de collections, le multithreading et le developpement d'interfaces graphiques. Nous avons utilise des IDE professionnels comme Eclipse et IntelliJ IDEA pour le developpement et pratique les principes du developpement dirige par les tests (TDD).</p>
+
+<h4>Ma fonction</h4>
+<p>Dans ce cours, j'etais responsable de :</p>
+<ul>
+<li>Comprendre la syntaxe Java et les concepts orientes objet</li>
+<li>Implementer des classes, interfaces et hierarchies d'heritage</li>
+<li>Utiliser efficacement le Java Collections Framework</li>
+<li>Developper des applications multithreadees</li>
+<li>Creer des interfaces graphiques avec Swing/JavaFX</li>
+<li>Gerer les exceptions et les ressources</li>
+<li>Ecrire des tests unitaires avec JUnit</li>
+<li>Travailler avec les API d'E/S et de reseau Java</li>
+</ul>
+
+<h2>PARTIE C : PARTIE TECHNIQUE</h2>
+
+<p>Cette section explore les aspects techniques de la programmation Java et du developpement oriente objet.</p>
+
+<h3>Concepts techniques appris</h3>
+
+<h4>1. Fondamentaux Java et bases de la POO</h4>
+
+<p><strong>Structure de classe</strong> :</p>
+<pre><code class="language-java">public class BankAccount {
+    // Variables d'instance (private pour l'encapsulation)
+    private String accountNumber;
+    private double balance;
+    private String owner;
+
+    // Constructeur
+    public BankAccount(String accountNumber, String owner) {
+        this.accountNumber = accountNumber;
+        this.owner = owner;
+        this.balance = 0.0;
+    }
+
+    // Methodes
+    public void deposit(double amount) {
+        if (amount &gt; 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        }
+    }
+
+    public boolean withdraw(double amount) {
+        if (amount &gt; 0 &amp;&amp; amount &lt;= balance) {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    // Getters
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+}</code></pre>
+
+<p><strong>Principes cles de la POO</strong> :</p>
+<ul>
+<li><strong>Encapsulation</strong> : Masquage des donnees avec des champs prives et des methodes publiques</li>
+<li><strong>Heritage</strong> : Reutilisation du code par des hierarchies de classes</li>
+<li><strong>Polymorphisme</strong> : Dispatch dynamique de methodes</li>
+<li><strong>Abstraction</strong> : Masquage des details d'implementation</li>
+</ul>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/S7/java_oop.png" style="width: 65%;" />
+</div>
+<br />
+
+<h4>2. Heritage et interfaces</h4>
+
+<p><strong>Exemple d'heritage</strong> :</p>
+<pre><code class="language-java">public abstract class Animal {
+    protected String name;
+    protected int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Methode abstraite (doit etre implementee par les sous-classes)
+    public abstract void makeSound();
+
+    // Methode concrete
+    public void sleep() {
+        System.out.println(name + " is sleeping");
+    }
+}
+
+public class Dog extends Animal {
+    private String breed;
+
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Appel au constructeur parent
+        this.breed = breed;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+
+    public void fetch() {
+        System.out.println(name + " is fetching");
+    }
+}</code></pre>
+
+<p><strong>Interfaces</strong> :</p>
+<pre><code class="language-java">public interface Drawable {
+    void draw();
+    default void display() {  // Methode par defaut (Java 8+)
+        System.out.println("Displaying drawable object");
+    }
+}
+
+public interface Resizable {
+    void resize(double factor);
+}
+
+public class Circle implements Drawable, Resizable {
+    private double radius;
+
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+
+    @Override
+    public void resize(double factor) {
+        radius *= factor;
+    }
+}</code></pre>
+
+<p><strong>Interface vs Classe abstraite</strong> :</p>
+<ul>
+<li>Interfaces : Heritage multiple, definition de contrat</li>
+<li>Classes abstraites : Implementation partielle, etat partage</li>
+</ul>
+
+<h4>3. Gestion des exceptions</h4>
+
+<p>Gestion robuste des erreurs en Java :</p>
+
+<pre><code class="language-java">public class FileProcessor {
+    public String readFile(String filename) throws IOException {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            StringBuilder content = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+
+            return content.toString();
+
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found: " + filename);
+            throw e;
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+            throw e;
+        } finally {
+            // Toujours execute, meme si une exception survient
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    System.err.println("Error closing file");
+                }
+            }
+        }
+    }
+
+    // Try-with-resources (Java 7+)
+    public String readFileModern(String filename) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            StringBuilder content = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+
+            return content.toString();
+        }
+        // reader.close() appele automatiquement
+    }
+}
+
+// Exception personnalisee
+public class InsufficientFundsException extends Exception {
+    private double amount;
+
+    public InsufficientFundsException(double amount) {
+        super("Insufficient funds: " + amount);
+        this.amount = amount;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+}</code></pre>
+
+<h4>4. Framework de collections</h4>
+
+<p>Structures de donnees et algorithmes puissants :</p>
+
+<pre><code class="language-java">import java.util.*;
+
+public class CollectionsDemo {
+    public void demonstrateCollections() {
+        // List (ordonnee, autorise les doublons)
+        List&lt;String&gt; arrayList = new ArrayList&lt;&gt;();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Apple");  // Doublon autorise
+
+        List&lt;String&gt; linkedList = new LinkedList&lt;&gt;();
+
+        // Set (pas de doublons)
+        Set&lt;String&gt; hashSet = new HashSet&lt;&gt;();
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Apple");  // Ignore
+        // La taille sera 2
+
+        Set&lt;String&gt; treeSet = new TreeSet&lt;&gt;();  // Trie
+
+        // Map (paires cle-valeur)
+        Map&lt;String, Integer&gt; hashMap = new HashMap&lt;&gt;();
+        hashMap.put("Alice", 25);
+        hashMap.put("Bob", 30);
+        hashMap.put("Charlie", 28);
+
+        // Iteration
+        for (Map.Entry&lt;String, Integer&gt; entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        // Queue (file d'attente)
+        Queue&lt;String&gt; queue = new LinkedList&lt;&gt;();
+        queue.offer("First");
+        queue.offer("Second");
+        String first = queue.poll();  // Retire et retourne "First"
+
+        // File de priorite
+        PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;();
+        pq.offer(5);
+        pq.offer(2);
+        pq.offer(8);
+        System.out.println(pq.poll());  // Retourne 2 (le plus petit)
+    }
+}</code></pre>
+
+<p><strong>Comparateurs et tri</strong> :</p>
+<pre><code class="language-java">public class Student {
+    private String name;
+    private double gpa;
+
+    // Constructeur, getters, setters...
+}
+
+// Tri avec Comparator
+List&lt;Student&gt; students = new ArrayList&lt;&gt;();
+// Ajouter des etudiants...
+
+// Trier par GPA (decroissant)
+students.sort((s1, s2) -&gt; Double.compare(s2.getGpa(), s1.getGpa()));
+
+// Ou en utilisant Comparator
+students.sort(Comparator.comparingDouble(Student::getGpa).reversed());</code></pre>
+
+<h4>5. Generiques</h4>
+
+<p>Programmation type-safe :</p>
+
+<pre><code class="language-java">public class Box&lt;T&gt; {
+    private T content;
+
+    public void set(T content) {
+        this.content = content;
+    }
+
+    public T get() {
+        return content;
+    }
+}
+
+// Utilisation
+Box&lt;String&gt; stringBox = new Box&lt;&gt;();
+stringBox.set("Hello");
+String value = stringBox.get();  // Pas de cast necessaire
+
+// Methode generique
+public &lt;T&gt; void printArray(T[] array) {
+    for (T element : array) {
+        System.out.print(element + " ");
+    }
+    System.out.println();
+}
+
+// Parametres de type bornes
+public &lt;T extends Comparable&lt;T&gt;&gt; T findMax(T[] array) {
+    T max = array[0];
+    for (T element : array) {
+        if (element.compareTo(max) &gt; 0) {
+            max = element;
+        }
+    }
+    return max;
+}</code></pre>
+
+<h4>6. Multithreading</h4>
+
+<p>Programmation concurrente en Java :</p>
+
+<pre><code class="language-java">// Extension de la classe Thread
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i &lt; 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+// Implementation de l'interface Runnable
+public class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // Code de la tache
+    }
+}
+
+// Utilisation d'ExecutorService
+ExecutorService executor = Executors.newFixedThreadPool(5);
+for (int i = 0; i &lt; 10; i++) {
+    executor.submit(new MyRunnable());
+}
+executor.shutdown();</code></pre>
+
+<p><strong>Synchronisation</strong> :</p>
+<pre><code class="language-java">public class Counter {
+    private int count = 0;
+
+    // Methode synchronisee
+    public synchronized void increment() {
+        count++;
+    }
+
+    // Bloc synchronise
+    public void incrementBlock() {
+        synchronized(this) {
+            count++;
+        }
+    }
+
+    public int getCount() {
+        return count;
+    }
+}</code></pre>
+
+<h4>7. Expressions lambda et Streams (Java 8+)</h4>
+
+<p>Fonctionnalites de programmation fonctionnelle :</p>
+
+<pre><code class="language-java">// Expressions lambda
+List&lt;String&gt; names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+
+// Ancienne methode
+for (String name : names) {
+    System.out.println(name);
+}
+
+// Avec lambda
+names.forEach(name -&gt; System.out.println(name));
+// Ou reference de methode
+names.forEach(System.out::println);
+
+// Streams
+List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// Filtrer, transformer et collecter
+List&lt;Integer&gt; evenSquares = numbers.stream()
+    .filter(n -&gt; n % 2 == 0)
+    .map(n -&gt; n * n)
+    .collect(Collectors.toList());
+// Resultat : [4, 16, 36, 64, 100]
+
+// Somme avec reduce
+int sum = numbers.stream()
+    .reduce(0, (a, b) -&gt; a + b);
+
+// Grouper par
+Map&lt;Integer, List&lt;String&gt;&gt; groupedByLength = names.stream()
+    .collect(Collectors.groupingBy(String::length));</code></pre>
+
+<h4>8. E/S de fichiers et serialisation</h4>
+
+<p>Travail avec les fichiers et la persistance des donnees :</p>
+
+<pre><code class="language-java">import java.io.*;
+import java.nio.file.*;
+
+// Lecture depuis un fichier
+public List&lt;String&gt; readLines(String filename) throws IOException {
+    return Files.readAllLines(Paths.get(filename));
+}
+
+// Ecriture dans un fichier
+public void writeLines(String filename, List&lt;String&gt; lines) throws IOException {
+    Files.write(Paths.get(filename), lines);
+}
+
+// Serialisation
+public class Person implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String name;
+    private int age;
+
+    // Constructeur, getters, setters...
+}
+
+// Sauvegarder un objet
+public void saveObject(Person person, String filename) throws IOException {
+    try (ObjectOutputStream oos = new ObjectOutputStream(
+            new FileOutputStream(filename))) {
+        oos.writeObject(person);
+    }
+}
+
+// Charger un objet
+public Person loadObject(String filename) throws IOException, ClassNotFoundException {
+    try (ObjectInputStream ois = new ObjectInputStream(
+            new FileInputStream(filename))) {
+        return (Person) ois.readObject();
+    }
+}</code></pre>
+
+<h4>9. Developpement d'interfaces graphiques avec Swing</h4>
+
+<p>Creation d'interfaces utilisateur graphiques :</p>
+
+<pre><code class="language-java">import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class SimpleCalculator extends JFrame {
+    private JTextField display;
+    private double result = 0;
+    private String operator = "=";
+    private boolean startNewNumber = true;
+
+    public SimpleCalculator() {
+        setTitle("Calculator");
+        setSize(300, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Creer l'affichage
+        display = new JTextField("0");
+        display.setEditable(false);
+        display.setHorizontalAlignment(JTextField.RIGHT);
+        add(display, BorderLayout.NORTH);
+
+        // Creer le panneau de boutons
+        JPanel buttonPanel = new JPanel(new GridLayout(4, 4));
+        String[] buttons = {
+            "7", "8", "9", "/",
+            "4", "5", "6", "*",
+            "1", "2", "3", "-",
+            "0", ".", "=", "+"
+        };
+
+        for (String text : buttons) {
+            JButton button = new JButton(text);
+            button.addActionListener(new ButtonClickListener());
+            buttonPanel.add(button);
+        }
+
+        add(buttonPanel, BorderLayout.CENTER);
+    }
+
+    private class ButtonClickListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String command = e.getActionCommand();
+            // Logique de gestion du clic...
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -&gt; {
+            SimpleCalculator calc = new SimpleCalculator();
+            calc.setVisible(true);
+        });
+    }
+}</code></pre>
+
+<h4>10. Tests unitaires avec JUnit</h4>
+
+<p>Developpement dirige par les tests :</p>
+
+<pre><code class="language-java">import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+    private Calculator calculator;
+
+    @BeforeEach
+    public void setUp() {
+        calculator = new Calculator();
+    }
+
+    @Test
+    public void testAddition() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(-1, calculator.add(2, -3));
+    }
+
+    @Test
+    public void testDivision() {
+        assertEquals(2.0, calculator.divide(6, 3), 0.001);
+    }
+
+    @Test
+    public void testDivisionByZero() {
+        assertThrows(ArithmeticException.class, () -&gt; {
+            calculator.divide(5, 0);
+        });
+    }
+
+    @AfterEach
+    public void tearDown() {
+        calculator = null;
+    }
+}</code></pre>
+
+<h2>PARTIE D : PARTIE ANALYTIQUE</h2>
+
+<h3>Connaissances et competences mobilisees</h3>
+
+<ul>
+<li>Comprehension de la syntaxe Java et des principes de la POO</li>
+<li>Implementation de hierarchies de classes et d'interfaces</li>
+<li>Utilisation efficace du Collections Framework</li>
+<li>Ecriture de code resistant aux exceptions</li>
+<li>Developpement d'applications multithreadees</li>
+<li>Creation d'interfaces utilisateur graphiques</li>
+<li>Application de la programmation fonctionnelle avec les lambdas et les streams</li>
+<li>Ecriture de tests unitaires</li>
+<li>Travail avec les E/S de fichiers et la serialisation</li>
+<li>Utilisation des outils de developpement Java (IDE, debogueur, profileur)</li>
+</ul>
+
+<h3>Auto-evaluation</h3>
+
+<p>Apprendre Java apres le C et le C++ s'est fait relativement en douceur, car de nombreux concepts etaient familiers. Cependant, la gestion automatique de la memoire de Java (ramasse-miettes) constituait un changement de paradigme significatif. Ne pas avoir a gerer manuellement la memoire etait liberateur mais impliquait aussi moins de controle sur les performances.</p>
+
+<p>Le Collections Framework est l'une des fonctionnalites les plus puissantes de Java. Apprendre quand utiliser ArrayList vs LinkedList, HashMap vs TreeMap, etc., necessitait de comprendre les compromis de complexite temporelle. L'API Stream et les expressions lambda ont rendu le code plus concis et lisible.</p>
+
+<p>Le multithreading en Java etait un defi. Comprendre la synchronisation des threads, les interblocages et les conditions de concurrence necessitait une reflexion approfondie. Le package java.util.concurrent fournissait des outils puissants mais avait une courbe d'apprentissage abrupte.</p>
+
+<p>Le developpement d'interfaces graphiques avec Swing etait interessant mais semblait quelque peu date compare aux frameworks UI modernes. La programmation evenementielle necessitait un etat d'esprit different. Construire des interfaces reactives tout en evitant de bloquer le thread principal etait une lecon precieuse.</p>
+
+<h3>Mon avis</h3>
+
+<p>Java est un excellent langage pour apprendre la POO et construire des applications d'entreprise. Sa philosophie "ecrire une fois, executer partout" est puissante, bien qu'en pratique, les differences de plateforme puissent encore causer des problemes. La bibliotheque standard etendue et l'ecosysteme de bibliotheques tierces rendent Java tres productif.</p>
+
+<p>Le cours a fourni des bases solides en developpement Java. Ce que j'ai particulierement apprecie :</p>
+<ul>
+<li>Systeme de types fort empechant de nombreuses erreurs d'execution</li>
+<li>Documentation complete et grande communaute</li>
+<li>Excellent outillage (IDE, profileurs, debogueurs)</li>
+<li>Independance de plateforme</li>
+</ul>
+
+<p>Axes d'amelioration :</p>
+<ul>
+<li>Plus de couverture des fonctionnalites modernes de Java (Java 11+)</li>
+<li>Patrons de conception et principes architecturaux</li>
+<li>Outils de build (Maven, Gradle)</li>
+<li>Introduction au Spring Framework</li>
+<li>Bases du developpement Android</li>
+</ul>
+
+<p>La verbosite de Java comparee aux langages modernes peut etre fastidieuse (beaucoup de code boilerplate), mais cela s'ameliore avec les nouvelles versions de Java. Dans l'ensemble, Java reste pertinent et precieux pour le developpement logiciel professionnel, en particulier dans le developpement d'entreprise et Android.</p>
+
+</div>
+
+<div class="lang-en">
+
+<h1>Object-Oriented Programming Java</h1>
+
+<h2>PART A: GENERALITIES</h2>
+
+<h3>Presentation</h3>
+<p>The "Programmation Orientee Objets Java" course provided comprehensive training in object-oriented programming using Java. As one of the most popular programming languages for enterprise applications, web services, and Android development, Java's platform independence and extensive ecosystem make it essential for modern software development.</p>
+
+<p><strong>Academic Year</strong>: 2023-2024<br />
+<strong>Semester</strong>: 7<br />
+<strong>Category</strong>: Programming</p>
+
+<hr />
+
+<h2>PART B: DESCRIPTIVE PART</h2>
+
+<h3>Experience Details</h3>
+
+<h4>Environment and Context</h4>
+<p>The course covered Java fundamentals through advanced topics including object-oriented principles, exception handling, collections framework, multithreading, and GUI development. We used industry-standard IDEs like Eclipse and IntelliJ IDEA for development and practiced Test-Driven Development (TDD) principles.</p>
+
+<h4>My Function</h4>
+<p>In this course, I was responsible for:</p>
+<ul>
+<li>Understanding Java syntax and object-oriented concepts</li>
+<li>Implementing classes, interfaces, and inheritance hierarchies</li>
+<li>Using Java Collections Framework effectively</li>
+<li>Developing multithreaded applications</li>
+<li>Creating graphical user interfaces with Swing/JavaFX</li>
+<li>Handling exceptions and managing resources</li>
+<li>Writing unit tests with JUnit</li>
+<li>Working with Java I/O and networking APIs</li>
+</ul>
+
+<h2>PART C: TECHNICAL PART</h2>
+
+<p>This section explores the technical aspects of Java programming and object-oriented development.</p>
+
+<h3>Technical Concepts Learned</h3>
+
+<h4>1. Java Fundamentals and OOP Basics</h4>
+
+<p><strong>Class Structure</strong>:</p>
+<pre><code class="language-java">public class BankAccount {
+    // Instance variables (private for encapsulation)
+    private String accountNumber;
+    private double balance;
+    private String owner;
+
+    // Constructor
+    public BankAccount(String accountNumber, String owner) {
+        this.accountNumber = accountNumber;
+        this.owner = owner;
+        this.balance = 0.0;
+    }
+
+    // Methods
+    public void deposit(double amount) {
+        if (amount &gt; 0) {
+            balance += amount;
+            System.out.println("Deposited: " + amount);
+        }
+    }
+
+    public boolean withdraw(double amount) {
+        if (amount &gt; 0 &amp;&amp; amount &lt;= balance) {
+            balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+    // Getters
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+}</code></pre>
+
+<p><strong>Key OOP Principles</strong>:</p>
+<ul>
+<li><strong>Encapsulation</strong>: Data hiding using private fields and public methods</li>
+<li><strong>Inheritance</strong>: Code reuse through class hierarchies</li>
+<li><strong>Polymorphism</strong>: Dynamic method dispatch</li>
+<li><strong>Abstraction</strong>: Hiding implementation details</li>
+</ul>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/S7/java_oop.png" style="width: 65%;" />
+</div>
+<br />
+
+<h4>2. Inheritance and Interfaces</h4>
+
+<p><strong>Inheritance Example</strong>:</p>
+<pre><code class="language-java">public abstract class Animal {
+    protected String name;
+    protected int age;
+
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Abstract method (must be implemented by subclasses)
+    public abstract void makeSound();
+
+    // Concrete method
+    public void sleep() {
+        System.out.println(name + " is sleeping");
+    }
+}
+
+public class Dog extends Animal {
+    private String breed;
+
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Woof! Woof!");
+    }
+
+    public void fetch() {
+        System.out.println(name + " is fetching");
+    }
+}</code></pre>
+
+<p><strong>Interfaces</strong>:</p>
+<pre><code class="language-java">public interface Drawable {
+    void draw();
+    default void display() {  // Default method (Java 8+)
+        System.out.println("Displaying drawable object");
+    }
+}
+
+public interface Resizable {
+    void resize(double factor);
+}
+
+public class Circle implements Drawable, Resizable {
+    private double radius;
+
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+
+    @Override
+    public void resize(double factor) {
+        radius *= factor;
+    }
+}</code></pre>
+
+<p><strong>Interface vs Abstract Class</strong>:</p>
+<ul>
+<li>Interfaces: Multiple inheritance, contract definition</li>
+<li>Abstract classes: Partial implementation, shared state</li>
+</ul>
+
+<h4>3. Exception Handling</h4>
+
+<p>Robust error management in Java:</p>
+
+<pre><code class="language-java">public class FileProcessor {
+    public String readFile(String filename) throws IOException {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            StringBuilder content = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+
+            return content.toString();
+
+        } catch (FileNotFoundException e) {
+            System.err.println("File not found: " + filename);
+            throw e;
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+            throw e;
+        } finally {
+            // Always executed, even if exception occurs
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    System.err.println("Error closing file");
+                }
+            }
+        }
+    }
+
+    // Try-with-resources (Java 7+)
+    public String readFileModern(String filename) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            StringBuilder content = new StringBuilder();
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+
+            return content.toString();
+        }
+        // reader.close() called automatically
+    }
+}
+
+// Custom exception
+public class InsufficientFundsException extends Exception {
+    private double amount;
+
+    public InsufficientFundsException(double amount) {
+        super("Insufficient funds: " + amount);
+        this.amount = amount;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+}</code></pre>
+
+<h4>4. Collections Framework</h4>
+
+<p>Powerful data structures and algorithms:</p>
+
+<pre><code class="language-java">import java.util.*;
+
+public class CollectionsDemo {
+    public void demonstrateCollections() {
+        // List (ordered, allows duplicates)
+        List&lt;String&gt; arrayList = new ArrayList&lt;&gt;();
+        arrayList.add("Apple");
+        arrayList.add("Banana");
+        arrayList.add("Apple");  // Duplicate allowed
+
+        List&lt;String&gt; linkedList = new LinkedList&lt;&gt;();
+
+        // Set (no duplicates)
+        Set&lt;String&gt; hashSet = new HashSet&lt;&gt;();
+        hashSet.add("Apple");
+        hashSet.add("Banana");
+        hashSet.add("Apple");  // Ignored
+        // Size will be 2
+
+        Set&lt;String&gt; treeSet = new TreeSet&lt;&gt;();  // Sorted
+
+        // Map (key-value pairs)
+        Map&lt;String, Integer&gt; hashMap = new HashMap&lt;&gt;();
+        hashMap.put("Alice", 25);
+        hashMap.put("Bob", 30);
+        hashMap.put("Charlie", 28);
+
+        // Iteration
+        for (Map.Entry&lt;String, Integer&gt; entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        // Queue
+        Queue&lt;String&gt; queue = new LinkedList&lt;&gt;();
+        queue.offer("First");
+        queue.offer("Second");
+        String first = queue.poll();  // Removes and returns "First"
+
+        // Priority Queue
+        PriorityQueue&lt;Integer&gt; pq = new PriorityQueue&lt;&gt;();
+        pq.offer(5);
+        pq.offer(2);
+        pq.offer(8);
+        System.out.println(pq.poll());  // Returns 2 (smallest)
+    }
+}</code></pre>
+
+<p><strong>Comparators and Sorting</strong>:</p>
+<pre><code class="language-java">public class Student {
+    private String name;
+    private double gpa;
+
+    // Constructor, getters, setters...
+}
+
+// Sorting with Comparator
+List&lt;Student&gt; students = new ArrayList&lt;&gt;();
+// Add students...
+
+// Sort by GPA (descending)
+students.sort((s1, s2) -&gt; Double.compare(s2.getGpa(), s1.getGpa()));
+
+// Or using Comparator
+students.sort(Comparator.comparingDouble(Student::getGpa).reversed());</code></pre>
+
+<h4>5. Generics</h4>
+
+<p>Type-safe programming:</p>
+
+<pre><code class="language-java">public class Box&lt;T&gt; {
+    private T content;
+
+    public void set(T content) {
+        this.content = content;
+    }
+
+    public T get() {
+        return content;
+    }
+}
+
+// Usage
+Box&lt;String&gt; stringBox = new Box&lt;&gt;();
+stringBox.set("Hello");
+String value = stringBox.get();  // No casting needed
+
+// Generic method
+public &lt;T&gt; void printArray(T[] array) {
+    for (T element : array) {
+        System.out.print(element + " ");
+    }
+    System.out.println();
+}
+
+// Bounded type parameters
+public &lt;T extends Comparable&lt;T&gt;&gt; T findMax(T[] array) {
+    T max = array[0];
+    for (T element : array) {
+        if (element.compareTo(max) &gt; 0) {
+            max = element;
+        }
+    }
+    return max;
+}</code></pre>
+
+<h4>6. Multithreading</h4>
+
+<p>Concurrent programming in Java:</p>
+
+<pre><code class="language-java">// Extending Thread class
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i &lt; 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+// Implementing Runnable interface
+public class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+        // Task code
+    }
+}
+
+// Using ExecutorService
+ExecutorService executor = Executors.newFixedThreadPool(5);
+for (int i = 0; i &lt; 10; i++) {
+    executor.submit(new MyRunnable());
+}
+executor.shutdown();</code></pre>
+
+<p><strong>Synchronization</strong>:</p>
+<pre><code class="language-java">public class Counter {
+    private int count = 0;
+
+    // Synchronized method
+    public synchronized void increment() {
+        count++;
+    }
+
+    // Synchronized block
+    public void incrementBlock() {
+        synchronized(this) {
+            count++;
+        }
+    }
+
+    public int getCount() {
+        return count;
+    }
+}</code></pre>
+
+<h4>7. Lambda Expressions and Streams (Java 8+)</h4>
+
+<p>Functional programming features:</p>
+
+<pre><code class="language-java">// Lambda expressions
+List&lt;String&gt; names = Arrays.asList("Alice", "Bob", "Charlie", "David");
+
+// Old way
+for (String name : names) {
+    System.out.println(name);
+}
+
+// With lambda
+names.forEach(name -&gt; System.out.println(name));
+// Or method reference
+names.forEach(System.out::println);
+
+// Streams
+List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// Filter, map, and collect
+List&lt;Integer&gt; evenSquares = numbers.stream()
+    .filter(n -&gt; n % 2 == 0)
+    .map(n -&gt; n * n)
+    .collect(Collectors.toList());
+// Result: [4, 16, 36, 64, 100]
+
+// Sum with reduce
+int sum = numbers.stream()
+    .reduce(0, (a, b) -&gt; a + b);
+
+// Group by
+Map&lt;Integer, List&lt;String&gt;&gt; groupedByLength = names.stream()
+    .collect(Collectors.groupingBy(String::length));</code></pre>
+
+<h4>8. File I/O and Serialization</h4>
+
+<p>Working with files and data persistence:</p>
+
+<pre><code class="language-java">import java.io.*;
+import java.nio.file.*;
+
+// Reading from file
+public List&lt;String&gt; readLines(String filename) throws IOException {
+    return Files.readAllLines(Paths.get(filename));
+}
+
+// Writing to file
+public void writeLines(String filename, List&lt;String&gt; lines) throws IOException {
+    Files.write(Paths.get(filename), lines);
+}
+
+// Serialization
+public class Person implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String name;
+    private int age;
+
+    // Constructor, getters, setters...
+}
+
+// Save object
+public void saveObject(Person person, String filename) throws IOException {
+    try (ObjectOutputStream oos = new ObjectOutputStream(
+            new FileOutputStream(filename))) {
+        oos.writeObject(person);
+    }
+}
+
+// Load object
+public Person loadObject(String filename) throws IOException, ClassNotFoundException {
+    try (ObjectInputStream ois = new ObjectInputStream(
+            new FileInputStream(filename))) {
+        return (Person) ois.readObject();
+    }
+}</code></pre>
+
+<h4>9. GUI Development with Swing</h4>
+
+<p>Creating graphical user interfaces:</p>
+
+<pre><code class="language-java">import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class SimpleCalculator extends JFrame {
+    private JTextField display;
+    private double result = 0;
+    private String operator = "=";
+    private boolean startNewNumber = true;
+
+    public SimpleCalculator() {
+        setTitle("Calculator");
+        setSize(300, 400);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Create display
+        display = new JTextField("0");
+        display.setEditable(false);
+        display.setHorizontalAlignment(JTextField.RIGHT);
+        add(display, BorderLayout.NORTH);
+
+        // Create button panel
+        JPanel buttonPanel = new JPanel(new GridLayout(4, 4));
+        String[] buttons = {
+            "7", "8", "9", "/",
+            "4", "5", "6", "*",
+            "1", "2", "3", "-",
+            "0", ".", "=", "+"
+        };
+
+        for (String text : buttons) {
+            JButton button = new JButton(text);
+            button.addActionListener(new ButtonClickListener());
+            buttonPanel.add(button);
+        }
+
+        add(buttonPanel, BorderLayout.CENTER);
+    }
+
+    private class ButtonClickListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String command = e.getActionCommand();
+            // Handle button click logic...
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -&gt; {
+            SimpleCalculator calc = new SimpleCalculator();
+            calc.setVisible(true);
+        });
+    }
+}</code></pre>
+
+<h4>10. Unit Testing with JUnit</h4>
+
+<p>Test-driven development:</p>
+
+<pre><code class="language-java">import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+    private Calculator calculator;
+
+    @BeforeEach
+    public void setUp() {
+        calculator = new Calculator();
+    }
+
+    @Test
+    public void testAddition() {
+        assertEquals(5, calculator.add(2, 3));
+        assertEquals(-1, calculator.add(2, -3));
+    }
+
+    @Test
+    public void testDivision() {
+        assertEquals(2.0, calculator.divide(6, 3), 0.001);
+    }
+
+    @Test
+    public void testDivisionByZero() {
+        assertThrows(ArithmeticException.class, () -&gt; {
+            calculator.divide(5, 0);
+        });
+    }
+
+    @AfterEach
+    public void tearDown() {
+        calculator = null;
+    }
+}</code></pre>
+
+<h2>PART D: ANALYTICAL PART</h2>
+
+<h3>Knowledge and Skills Mobilized</h3>
+
+<ul>
+<li>Understanding Java syntax and OOP principles</li>
+<li>Implementing class hierarchies and interfaces</li>
+<li>Using Collections Framework effectively</li>
+<li>Writing exception-safe code</li>
+<li>Developing multithreaded applications</li>
+<li>Creating graphical user interfaces</li>
+<li>Applying functional programming with lambdas and streams</li>
+<li>Writing unit tests</li>
+<li>Working with file I/O and serialization</li>
+<li>Using Java development tools (IDE, debugger, profiler)</li>
+</ul>
+
+<h3>Self Evaluation</h3>
+
+<p>Learning Java after C and C++ was relatively smooth, as many concepts were familiar. However, Java's automatic memory management (garbage collection) was a significant paradigm shift. Not having to manually manage memory was liberating but also meant less control over performance.</p>
+
+<p>The Collections Framework is one of Java's strongest features. Learning when to use ArrayList vs LinkedList, HashMap vs TreeMap, etc., required understanding time complexity trade-offs. The Stream API and lambda expressions made code more concise and readable.</p>
+
+<p>Multithreading in Java was challenging. Understanding thread synchronization, deadlocks, and race conditions required careful thinking. The java.util.concurrent package provided powerful tools but had a steep learning curve.</p>
+
+<p>GUI development with Swing was interesting but felt somewhat dated compared to modern UI frameworks. Event-driven programming required a different mindset. Building responsive UIs while avoiding freezing the main thread was a valuable lesson.</p>
+
+<h3>My Opinion</h3>
+
+<p>Java is an excellent language for learning OOP and building enterprise applications. Its "write once, run anywhere" philosophy is powerful, though in practice, platform differences can still cause issues. The extensive standard library and ecosystem of third-party libraries make Java very productive.</p>
+
+<p>The course provided solid foundations in Java development. What I particularly appreciated:</p>
+<ul>
+<li>Strong type system preventing many runtime errors</li>
+<li>Comprehensive documentation and large community</li>
+<li>Excellent tooling (IDEs, profilers, debuggers)</li>
+<li>Platform independence</li>
+</ul>
+
+<p>Areas for improvement:</p>
+<ul>
+<li>More coverage of modern Java features (Java 11+)</li>
+<li>Design patterns and architectural principles</li>
+<li>Build tools (Maven, Gradle)</li>
+<li>Spring Framework introduction</li>
+<li>Android development basics</li>
+</ul>
+
+<p>Java's verbosity compared to modern languages can be tedious (lots of boilerplate), but this is improving with newer Java versions. Overall, Java remains relevant and valuable for professional software development, particularly in enterprise and Android development.</p>
+
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -717,6 +1342,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -735,8 +1471,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -758,6 +1494,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1268,11 +2005,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1472,14 +2207,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1490,6 +2225,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

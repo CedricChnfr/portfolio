@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"My Courses - 2020-2021","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2020-2021.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2020-2021.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -149,8 +160,8 @@
   <a href="./my-courses-2020-2021.html" class="active">2020-2021</a>
 </div>
 
-<h1 id="my-courses---2020-2021">My Courses - 2020-2021</h1>
-<h2 id="dut-geii---première-année">DUT GEII - Première Année</h2>
+<h1 data-i18n="courses-title-2020-2021">My Courses - 2020-2021</h1>
+<h2 data-i18n="dut-geii-1st-year">DUT GEII - Première Année</h2>
 
 <p style="text-align: center; font-size: 1.2em; color: #4a5568; margin: 20px 0;">
   🎓 <strong>Diplôme Universitaire de Technologie</strong><br />
@@ -160,71 +171,71 @@
 
 <hr />
 
-<h2 id="semestre-1-s1">Semestre 1 (S1)</h2>
+<h2 data-i18n="semester-1">Semestre 1 (S1)</h2>
 
 <h3 id="-électronique-et-réalisation-er"><a href="./electronique-realisation-s1.html">🔌 Électronique et Réalisation (ER)</a></h3>
-<p><strong>Contenu</strong>: Introduction aux circuits électroniques, composants passifs et actifs, simulations sous Proteus.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Introduction aux circuits électroniques, composants passifs et actifs, simulations sous Proteus.</span><span class="lang-en">Introduction to electronic circuits, passive and active components, Proteus simulations.</span></p>
 
 <h3 id="-énergie"><a href="./energie-s1.html">⚡ Énergie</a></h3>
-<p><strong>Contenu</strong>: Électrotechnique de base, circuits électriques, lois fondamentales (Ohm, Kirchhoff).</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Électrotechnique de base, circuits électriques, lois fondamentales (Ohm, Kirchhoff).</span><span class="lang-en">Basic electrical engineering, electrical circuits, fundamental laws (Ohm, Kirchhoff).</span></p>
 
 <h3 id="-programmation"><a href="./programmation-s1.html">💻 Programmation</a></h3>
-<p><strong>Contenu</strong>: Initiation au C++, structures de données, algorithmes fondamentaux.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Initiation au C++, structures de données, algorithmes fondamentaux.</span><span class="lang-en">Introduction to C++, data structures, fundamental algorithms.</span></p>
 
 <h3 id="-systèmes-numériques-sin"><a href="./systemes-numeriques-s1.html">📊 Systèmes Numériques (SIN)</a></h3>
-<p><strong>Contenu</strong>: Logique combinatoire et séquentielle, circuits numériques, introduction au VHDL avec Quartus.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Logique combinatoire et séquentielle, circuits numériques, introduction au VHDL avec Quartus.</span><span class="lang-en">Combinational and sequential logic, digital circuits, introduction to VHDL with Quartus.</span></p>
 
 <h3 id="️-systèmes-dexploitation-se"><a href="./systemes-exploitation-s1.html">🖥️ Systèmes d’Exploitation (SE)</a></h3>
-<p><strong>Contenu</strong>: Fondamentaux des systèmes d’exploitation, gestion de processus, mémoire.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Fondamentaux des systèmes d’exploitation, gestion de processus, mémoire.</span><span class="lang-en">Operating system fundamentals, process management, memory.</span></p>
 
 <h3 id="-mathématiques"><a href="./mathematiques-s1.html">🧮 Mathématiques</a></h3>
-<p><strong>Contenu</strong>: Analyse, algèbre linéaire, nombres complexes, transformations.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Analyse, algèbre linéaire, nombres complexes, transformations.</span><span class="lang-en">Calculus, linear algebra, complex numbers, transformations.</span></p>
 
 <h3 id="️-outils-logiciels-ol"><a href="./outils-logiciels-s1.html">🛠️ Outils Logiciels (OL)</a></h3>
-<p><strong>Contenu</strong>: Maîtrise des outils bureautiques, documentation technique.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Maîtrise des outils bureautiques, documentation technique.</span><span class="lang-en">Office tools proficiency, technical documentation.</span></p>
 
 <h3 id="-travaux-de-laboratoire-tl"><a href="./travaux-laboratoire-s1.html">🔬 Travaux de Laboratoire (TL)</a></h3>
-<p><strong>Contenu</strong>: Manipulation pratique des concepts théoriques en électronique.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Manipulation pratique des concepts théoriques en électronique.</span><span class="lang-en">Hands-on practice of theoretical electronics concepts.</span></p>
 
 <h3 id="-culture-expression-communication-cec"><a href="./cec-s1.html">💼 Culture, Expression, Communication (CEC)</a></h3>
-<p><strong>Contenu</strong>: Communication professionnelle, expression écrite et orale.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Communication professionnelle, expression écrite et orale.</span><span class="lang-en">Professional communication, written and oral expression.</span></p>
 
 <hr />
 
-<h2 id="semestre-2-s2">Semestre 2 (S2)</h2>
+<h2 data-i18n="semester-2">Semestre 2 (S2)</h2>
 
 <h3 id="-énergie-1"><a href="./energie-s2.html">⚡ Énergie</a></h3>
-<p><strong>Contenu</strong>: Conversion d’énergie, machines électriques, électronique de puissance.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Conversion d’énergie, machines électriques, électronique de puissance.</span><span class="lang-en">Energy conversion, electrical machines, power electronics.</span></p>
 
 <h3 id="-étude-et-réalisation-er"><a href="./etude-realisation-s2.html">🔌 Étude et Réalisation (ER)</a></h3>
-<p><strong>Contenu</strong>: Conception et réalisation de cartes électroniques complètes.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Conception et réalisation de cartes électroniques complètes.</span><span class="lang-en">Design and fabrication of complete electronic boards.</span></p>
 
 <h3 id="-informatique-embarquée-ie"><a href="./informatique-embarquee-s2.html">🤖 Informatique Embarquée (IE)</a></h3>
-<p><strong>Contenu</strong>: Programmation de microcontrôleurs, systèmes embarqués.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Programmation de microcontrôleurs, systèmes embarqués.</span><span class="lang-en">Microcontroller programming, embedded systems.</span></p>
 
 <h3 id="-programmation-1"><a href="./programmation-s2.html">💻 Programmation</a></h3>
-<p><strong>Contenu</strong>: Programmation avancée en C++, structures de données complexes.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Programmation avancée en C++, structures de données complexes.</span><span class="lang-en">Advanced C++ programming, complex data structures.</span></p>
 
 <h3 id="️-systèmes-électroniques-se"><a href="./systemes-electroniques-s2.html">🖥️ Systèmes Électroniques (SE)</a></h3>
-<p><strong>Contenu</strong>: Analyse de systèmes électroniques complexes, traitement du signal.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Analyse de systèmes électroniques complexes, traitement du signal.</span><span class="lang-en">Complex electronic systems analysis, signal processing.</span></p>
 
 <h3 id="️-physique-thermique-capteurs-mécanique"><a href="./physique-s2.html">🌡️ Physique: Thermique, Capteurs, Mécanique</a></h3>
-<p><strong>Contenu</strong>: Principes physiques appliqués, capteurs et instrumentation.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Principes physiques appliqués, capteurs et instrumentation.</span><span class="lang-en">Applied physics principles, sensors and instrumentation.</span></p>
 
 <h3 id="-mathématiques-1"><a href="./mathematiques-s2.html">🧮 Mathématiques</a></h3>
-<p><strong>Contenu</strong>: Mathématiques avancées pour l’ingénieur, transformées, analyse fréquentielle.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Mathématiques avancées pour l’ingénieur, transformées, analyse fréquentielle.</span><span class="lang-en">Advanced engineering mathematics, transforms, frequency analysis.</span></p>
 
 <h3 id="️-outils-logiciels-ol-1"><a href="./outils-logiciels-s2.html">🛠️ Outils Logiciels (OL)</a></h3>
-<p><strong>Contenu</strong>: Approfondissement des outils professionnels.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Approfondissement des outils professionnels.</span><span class="lang-en">Advanced professional tools.</span></p>
 
 <h3 id="-travaux-de-laboratoire-tl-1"><a href="./travaux-laboratoire-s2.html">🔬 Travaux de Laboratoire (TL)</a></h3>
-<p><strong>Contenu</strong>: Manipulations pratiques avancées.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Manipulations pratiques avancées.</span><span class="lang-en">Advanced hands-on lab work.</span></p>
 
 <h3 id="-culture-expression-communication-cec-1"><a href="./cec-s2.html">💼 Culture, Expression, Communication (CEC)</a></h3>
-<p><strong>Contenu</strong>: Communication professionnelle avancée, projet tuteuré.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Communication professionnelle avancée, projet tuteuré.</span><span class="lang-en">Advanced professional communication, tutored project.</span></p>
 
 <h3 id="-coloration-enoc"><a href="./coloration-enoc.html">🎨 Coloration ENOC</a></h3>
-<p><strong>Contenu</strong>: Module de spécialisation choisi.</p>
+<p><strong data-i18n="label-content">Contenu</strong>: <span class="lang-fr">Module de spécialisation choisi.</span><span class="lang-en">Chosen specialization module.</span></p>
 
 <hr />
 
@@ -268,8 +279,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -286,7 +297,7 @@
         
         <!-- Input -->
         <div class="chatbot-input-container">
-            <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Posez votre question sur mon profil..." autocomplete="off" />
+            <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Posez votre question sur mon profil..." data-i18n-placeholder="chatbot-placeholder" autocomplete="off" />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
@@ -795,11 +806,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -999,14 +1008,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1017,6 +1026,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
@@ -1056,6 +1075,117 @@ Question du recruteur :`;
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1074,8 +1204,8 @@ Question du recruteur :`;
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1097,6 +1227,7 @@ Question du recruteur :`;
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1607,11 +1738,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1811,14 +1940,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1829,6 +1958,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

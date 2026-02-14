@@ -49,547 +49,1222 @@ tr:nth-child(even) {
     margin: 15px 0;
     font-family: 'Courier New', monospace;
 }
+
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
 </div>
 
-# 💼 Gestion - Semestre 6
+<!-- ==================== FRENCH VERSION ==================== -->
+<div class="lang-fr">
 
-**Année Universitaire** : 2022-2023  
-**Semestre** : 6  
-**Crédits** : 2 ECTS  
-**Spécialité** : Management et Gestion d'Entreprise
+<h1>Gestion - Semestre 6</h1>
 
----
+<p><strong>Annee Universitaire</strong> : 2022-2023<br/>
+<strong>Semestre</strong> : 6<br/>
+<strong>Credits</strong> : 2 ECTS<br/>
+<strong>Specialite</strong> : Management et Gestion d'Entreprise</p>
 
-## PART A - Présentation Générale du Cours
+<hr/>
+
+<h2>PART A - Presentation Generale du Cours</h2>
 
 <h3 class="section-title">Vue d'ensemble</h3>
 
-Ce cours introduit les bases de la gestion d'entreprise pour ingénieurs, avec un focus sur la gestion financière, la comptabilité et la prise de décision managériale. Le point fort du cours est le jeu SIMGEST, une simulation de gestion d'entreprise où les étudiants gèrent une société virtuelle en équipe pendant plusieurs périodes.
+<p>Ce cours introduit les bases de la gestion d'entreprise pour ingenieurs, avec un focus sur la gestion financiere, la comptabilite et la prise de decision manageriale. Le point fort du cours est le jeu SIMGEST, une simulation de gestion d'entreprise ou les etudiants gerent une societe virtuelle en equipe pendant plusieurs periodes.</p>
 
-**Objectifs pédagogiques** :
-- Comprendre les documents comptables (bilan, compte de résultat)
-- Maîtriser les indicateurs financiers (seuil de rentabilité, CAF, ratios)
-- Analyser la performance d'une entreprise
-- Prendre des décisions managériales stratégiques
-- Simuler la gestion réelle d'une entreprise avec SIMGEST
+<p><strong>Objectifs pedagogiques</strong> :</p>
+<ul>
+<li>Comprendre les documents comptables (bilan, compte de resultat)</li>
+<li>Maitriser les indicateurs financiers (seuil de rentabilite, CAF, ratios)</li>
+<li>Analyser la performance d'une entreprise</li>
+<li>Prendre des decisions manageriales strategiques</li>
+<li>Simuler la gestion reelle d'une entreprise avec SIMGEST</li>
+</ul>
 
 <h3 class="section-title">Position dans le cursus</h3>
 
-Ce cours complète et approfondit :
-- **Entreprise (S5)** : notions de base sur l'entreprise et son environnement
-- **Finance (S7)** : approfondissement des aspects financiers et investissement
+<p>Ce cours complete et approfondit :</p>
+<ul>
+<li><strong>Entreprise (S5)</strong> : notions de base sur l'entreprise et son environnement</li>
+<li><strong>Finance (S7)</strong> : approfondissement des aspects financiers et investissement</li>
+</ul>
 
-Il prépare aux compétences transversales :
-- **Gestion de projets** : budgets, planification, ressources
-- **Stage et vie professionnelle** : compréhension des enjeux business
-- **Entrepreneuriat** : outils pour créer et gérer une entreprise
+<p>Il prepare aux competences transversales :</p>
+<ul>
+<li><strong>Gestion de projets</strong> : budgets, planification, ressources</li>
+<li><strong>Stage et vie professionnelle</strong> : comprehension des enjeux business</li>
+<li><strong>Entrepreneuriat</strong> : outils pour creer et gerer une entreprise</li>
+</ul>
 
----
+<hr/>
 
-## PART B - Expérience Personnelle et Contexte d'Apprentissage
+<h2>PART B - Experience Personnelle et Contexte d'Apprentissage</h2>
 
 <h3 class="section-title">Organisation et ressources</h3>
 
-Le module était structuré en trois volets :
+<p>Le module etait structure en trois volets :</p>
 
-**1. Cours magistraux** :
-- Comptabilité générale et documents de synthèse
-- Calculs de coûts et seuil de rentabilité
-- Gestion de trésorerie et financement
-- Ratios financiers et analyse de performance
+<p><strong>1. Cours magistraux</strong> :</p>
+<ul>
+<li>Comptabilite generale et documents de synthese</li>
+<li>Calculs de couts et seuil de rentabilite</li>
+<li>Gestion de tresorerie et financement</li>
+<li>Ratios financiers et analyse de performance</li>
+</ul>
 
-**2. Travaux dirigés** :
-- Exercices de comptabilité (bilan, compte de résultat)
-- Calculs de coûts de revient et marges
-- Études de cas d'entreprises réelles
-- Analyse d'états financiers
+<p><strong>2. Travaux diriges</strong> :</p>
+<ul>
+<li>Exercices de comptabilite (bilan, compte de resultat)</li>
+<li>Calculs de couts de revient et marges</li>
+<li>Etudes de cas d'entreprises reelles</li>
+<li>Analyse d'etats financiers</li>
+</ul>
 
-**3. Jeu SIMGEST** :
-- Simulation de gestion d'entreprise en équipe (4-5 personnes)
-- Prise de décisions sur 6-8 périodes (trimestres)
-- Compétition entre équipes sur un même marché
-- Analyse des résultats et stratégies
+<p><strong>3. Jeu SIMGEST</strong> :</p>
+<ul>
+<li>Simulation de gestion d'entreprise en equipe (4-5 personnes)</li>
+<li>Prise de decisions sur 6-8 periodes (trimestres)</li>
+<li>Competition entre equipes sur un meme marche</li>
+<li>Analyse des resultats et strategies</li>
+</ul>
 
 <h3 class="section-title">Le jeu SIMGEST</h3>
 
-**Principe** :
+<p><strong>Principe</strong> :</p>
 
-SIMGEST est une simulation où chaque équipe gère une entreprise de production et vente de produits. À chaque période (trimestre), l'équipe doit prendre des décisions dans plusieurs domaines :
+<p>SIMGEST est une simulation ou chaque equipe gere une entreprise de production et vente de produits. A chaque periode (trimestre), l'equipe doit prendre des decisions dans plusieurs domaines :</p>
 
-**Décisions à prendre** :
+<p><strong>Decisions a prendre</strong> :</p>
 
-| Domaine | Décisions |
-|---------|-----------|
-| Production | Quantités à produire, embauches/licenciements, heures supplémentaires |
-| Commercial | Prix de vente, budget publicité, force de vente |
-| Investissement | Achat de machines, extension capacité de production |
-| Financier | Emprunts, remboursements, dividendes |
-| Stocks | Gestion matières premières et produits finis |
+<table>
+<thead>
+<tr><th>Domaine</th><th>Decisions</th></tr>
+</thead>
+<tbody>
+<tr><td>Production</td><td>Quantites a produire, embauches/licenciements, heures supplementaires</td></tr>
+<tr><td>Commercial</td><td>Prix de vente, budget publicite, force de vente</td></tr>
+<tr><td>Investissement</td><td>Achat de machines, extension capacite de production</td></tr>
+<tr><td>Financier</td><td>Emprunts, remboursements, dividendes</td></tr>
+<tr><td>Stocks</td><td>Gestion matieres premieres et produits finis</td></tr>
+</tbody>
+</table>
 
-**Déroulement typique d'une période** :
+<p><strong>Deroulement typique d'une periode</strong> :</p>
 
-1. **Analyse de la période précédente** :
-   - Résultats commerciaux (ventes réalisées vs prévues)
-   - État financier (trésorerie, rentabilité)
-   - Position par rapport aux concurrents
+<p><strong>1. Analyse de la periode precedente</strong> :</p>
+<ul>
+<li>Resultats commerciaux (ventes realisees vs prevues)</li>
+<li>Etat financier (tresorerie, rentabilite)</li>
+<li>Position par rapport aux concurrents</li>
+</ul>
 
-2. **Prévisions** :
-   - Estimation de la demande du marché
-   - Anticipation des actions des concurrents
-   - Calcul du seuil de rentabilité
+<p><strong>2. Previsions</strong> :</p>
+<ul>
+<li>Estimation de la demande du marche</li>
+<li>Anticipation des actions des concurrents</li>
+<li>Calcul du seuil de rentabilite</li>
+</ul>
 
-3. **Prise de décision** :
-   - Ajustement des prix
-   - Budget marketing et commercial
-   - Plan de production
-   - Investissements éventuels
+<p><strong>3. Prise de decision</strong> :</p>
+<ul>
+<li>Ajustement des prix</li>
+<li>Budget marketing et commercial</li>
+<li>Plan de production</li>
+<li>Investissements eventuels</li>
+</ul>
 
-4. **Saisie des décisions** :
-   - Formulaire de décision à remplir
-   - Cohérence entre production, ventes et finance
+<p><strong>4. Saisie des decisions</strong> :</p>
+<ul>
+<li>Formulaire de decision a remplir</li>
+<li>Coherence entre production, ventes et finance</li>
+</ul>
 
-5. **Simulation et résultats** :
-   - Le logiciel calcule les résultats du trimestre
-   - Réception du bilan, compte de résultat, tableaux de bord
+<p><strong>5. Simulation et resultats</strong> :</p>
+<ul>
+<li>Le logiciel calcule les resultats du trimestre</li>
+<li>Reception du bilan, compte de resultat, tableaux de bord</li>
+</ul>
 
-**Indicateurs de performance** :
+<p><strong>Indicateurs de performance</strong> :</p>
+<ul>
+<li><strong>Part de marche</strong> : pourcentage des ventes totales</li>
+<li><strong>Rentabilite</strong> : resultat net / chiffre d'affaires</li>
+<li><strong>Tresorerie</strong> : disponibilites en banque</li>
+<li><strong>Cours de l'action</strong> : valorisation de l'entreprise (critere de classement)</li>
+</ul>
 
-- **Part de marché** : pourcentage des ventes totales
-- **Rentabilité** : résultat net / chiffre d'affaires
-- **Trésorerie** : disponibilités en banque
-- **Cours de l'action** : valorisation de l'entreprise (critère de classement)
+<p><strong>Strategies observees</strong> :</p>
 
-**Stratégies observées** :
+<p>Differentes approches etaient possibles :</p>
 
-Différentes approches étaient possibles :
+<p><strong>Strategie de domination par les couts</strong> :</p>
+<ul>
+<li>Prix bas pour conquerir des parts de marche</li>
+<li>Production en grandes series</li>
+<li>Limitation des couts marketing</li>
+<li>Risque : guerre des prix, marges faibles</li>
+</ul>
 
-**Stratégie de domination par les coûts** :
-- Prix bas pour conquérir des parts de marché
-- Production en grandes séries
-- Limitation des coûts marketing
-- Risque : guerre des prix, marges faibles
+<p><strong>Strategie de differenciation</strong> :</p>
+<ul>
+<li>Prix eleves, qualite percue superieure</li>
+<li>Investissement fort en publicite</li>
+<li>Marges importantes</li>
+<li>Risque : volume de ventes limite</li>
+</ul>
 
-**Stratégie de différenciation** :
-- Prix élevés, qualité perçue supérieure
-- Investissement fort en publicité
-- Marges importantes
-- Risque : volume de ventes limité
+<p><strong>Strategie d'equilibre</strong> :</p>
+<ul>
+<li>Prix moyens, marketing modere</li>
+<li>Production flexible</li>
+<li>Recherche d'efficacite operationnelle</li>
+</ul>
 
-**Stratégie d'équilibre** :
-- Prix moyens, marketing modéré
-- Production flexible
-- Recherche d'efficacité opérationnelle
+<h3 class="section-title">Difficultes et apprentissages</h3>
 
-<h3 class="section-title">Difficultés et apprentissages</h3>
+<p><strong>Gestion de la tresorerie</strong> :<br/>
+Probleme majeur pour beaucoup d'equipes : rupture de tresorerie due a des investissements trop lourds ou a des stocks excessifs. Il faut equilibrer croissance et sante financiere.</p>
 
-**Gestion de la trésorerie** :
-Problème majeur pour beaucoup d'équipes : rupture de trésorerie due à des investissements trop lourds ou à des stocks excessifs. Il faut équilibrer croissance et santé financière.
+<p><strong>Prevision de la demande</strong> :<br/>
+Difficile d'anticiper les ventes, surtout avec la concurrence. Surproduction = stocks couteux, sous-production = ventes manquees.</p>
 
-**Prévision de la demande** :
-Difficile d'anticiper les ventes, surtout avec la concurrence. Surproduction = stocks coûteux, sous-production = ventes manquées.
+<p><strong>Coordination d'equipe</strong> :<br/>
+Les decisions dans un domaine impactent les autres (ex : publicite augmente les ventes, donc besoin de plus de production). Communication essentielle.</p>
 
-**Coordination d'équipe** :
-Les décisions dans un domaine impactent les autres (ex : publicité augmente les ventes, donc besoin de plus de production). Communication essentielle.
+<p><strong>Pression du temps</strong> :<br/>
+Decisions a prendre en temps limite, necessite de s'organiser et de deleguer.</p>
 
-**Pression du temps** :
-Décisions à prendre en temps limité, nécessité de s'organiser et de déléguer.
+<hr/>
 
----
-
-## PART C - Aspects Techniques Détaillés
+<h2>PART C - Aspects Techniques Detailles</h2>
 
 <h3 class="section-title">1. Documents Comptables Fondamentaux</h3>
 
-**Le Bilan** :
+<p><strong>Le Bilan</strong> :</p>
 
-Photo du patrimoine de l'entreprise à un instant T.
+<p>Photo du patrimoine de l'entreprise a un instant T.</p>
 
-Structure :
+<p>Structure :</p>
 
-**ACTIF** (emplois, ce que possède l'entreprise) :
-- Actif immobilisé : terrains, bâtiments, machines, brevets
-- Actif circulant : stocks, créances clients, disponibilités (banque, caisse)
+<p><strong>ACTIF</strong> (emplois, ce que possede l'entreprise) :</p>
+<ul>
+<li>Actif immobilise : terrains, batiments, machines, brevets</li>
+<li>Actif circulant : stocks, creances clients, disponibilites (banque, caisse)</li>
+</ul>
 
-**PASSIF** (ressources, origine des financements) :
-- Capitaux propres : capital social, réserves, résultat de l'exercice
-- Dettes : emprunts bancaires, dettes fournisseurs, dettes fiscales
+<p><strong>PASSIF</strong> (ressources, origine des financements) :</p>
+<ul>
+<li>Capitaux propres : capital social, reserves, resultat de l'exercice</li>
+<li>Dettes : emprunts bancaires, dettes fournisseurs, dettes fiscales</li>
+</ul>
 
-**Principe de base** : Actif = Passif (équilibre comptable)
+<p><strong>Principe de base</strong> : Actif = Passif (equilibre comptable)</p>
 
-**Exemple simplifié de bilan** :
+<p><strong>Exemple simplifie de bilan</strong> :</p>
 
-| ACTIF | Montant | PASSIF | Montant |
-|-------|---------|--------|---------|
-| Immobilisations | 500 000 € | Capital social | 300 000 € |
-| Stocks | 150 000 € | Réserves | 100 000 € |
-| Créances clients | 80 000 € | Résultat | 50 000 € |
-| Banque | 70 000 € | Emprunts | 250 000 € |
-| | | Dettes fournisseurs | 100 000 € |
-| **Total** | **800 000 €** | **Total** | **800 000 €** |
+<table>
+<thead>
+<tr><th>ACTIF</th><th>Montant</th><th>PASSIF</th><th>Montant</th></tr>
+</thead>
+<tbody>
+<tr><td>Immobilisations</td><td>500 000 &euro;</td><td>Capital social</td><td>300 000 &euro;</td></tr>
+<tr><td>Stocks</td><td>150 000 &euro;</td><td>Reserves</td><td>100 000 &euro;</td></tr>
+<tr><td>Creances clients</td><td>80 000 &euro;</td><td>Resultat</td><td>50 000 &euro;</td></tr>
+<tr><td>Banque</td><td>70 000 &euro;</td><td>Emprunts</td><td>250 000 &euro;</td></tr>
+<tr><td></td><td></td><td>Dettes fournisseurs</td><td>100 000 &euro;</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>800 000 &euro;</strong></td><td><strong>Total</strong></td><td><strong>800 000 &euro;</strong></td></tr>
+</tbody>
+</table>
 
-**Le Compte de Résultat** :
+<p><strong>Le Compte de Resultat</strong> :</p>
 
-Film de l'activité sur une période (exercice comptable, généralement un an).
+<p>Film de l'activite sur une periode (exercice comptable, generalement un an).</p>
 
-Structure :
+<p>Structure :</p>
 
-**CHARGES** (dépenses) :
-- Achats de matières premières
-- Charges de personnel (salaires + charges sociales)
-- Charges externes (loyers, assurances, publicité)
-- Dotations aux amortissements (usure des équipements)
-- Charges financières (intérêts d'emprunts)
+<p><strong>CHARGES</strong> (depenses) :</p>
+<ul>
+<li>Achats de matieres premieres</li>
+<li>Charges de personnel (salaires + charges sociales)</li>
+<li>Charges externes (loyers, assurances, publicite)</li>
+<li>Dotations aux amortissements (usure des equipements)</li>
+<li>Charges financieres (interets d'emprunts)</li>
+</ul>
 
-**PRODUITS** (recettes) :
-- Ventes de marchandises ou produits finis
-- Production stockée (variation de stocks)
-- Produits financiers (intérêts perçus)
+<p><strong>PRODUITS</strong> (recettes) :</p>
+<ul>
+<li>Ventes de marchandises ou produits finis</li>
+<li>Production stockee (variation de stocks)</li>
+<li>Produits financiers (interets percus)</li>
+</ul>
 
-**Résultat** = Produits - Charges
+<p><strong>Resultat</strong> = Produits - Charges</p>
 
-Si positif : bénéfice, si négatif : perte
+<p>Si positif : benefice, si negatif : perte</p>
 
-**Exemple simplifié de compte de résultat** :
+<p><strong>Exemple simplifie de compte de resultat</strong> :</p>
 
-| Charges | Montant | Produits | Montant |
-|---------|---------|----------|---------|
-| Achats matières | 200 000 € | Ventes | 500 000 € |
-| Salaires | 150 000 € | | |
-| Loyers | 30 000 € | | |
-| Publicité | 40 000 € | | |
-| Amortissements | 25 000 € | | |
-| Intérêts emprunts | 15 000 € | | |
-| **Total charges** | **460 000 €** | **Total produits** | **500 000 €** |
-| | | **Résultat (bénéfice)** | **40 000 €** |
+<table>
+<thead>
+<tr><th>Charges</th><th>Montant</th><th>Produits</th><th>Montant</th></tr>
+</thead>
+<tbody>
+<tr><td>Achats matieres</td><td>200 000 &euro;</td><td>Ventes</td><td>500 000 &euro;</td></tr>
+<tr><td>Salaires</td><td>150 000 &euro;</td><td></td><td></td></tr>
+<tr><td>Loyers</td><td>30 000 &euro;</td><td></td><td></td></tr>
+<tr><td>Publicite</td><td>40 000 &euro;</td><td></td><td></td></tr>
+<tr><td>Amortissements</td><td>25 000 &euro;</td><td></td><td></td></tr>
+<tr><td>Interets emprunts</td><td>15 000 &euro;</td><td></td><td></td></tr>
+<tr><td><strong>Total charges</strong></td><td><strong>460 000 &euro;</strong></td><td><strong>Total produits</strong></td><td><strong>500 000 &euro;</strong></td></tr>
+<tr><td></td><td></td><td><strong>Resultat (benefice)</strong></td><td><strong>40 000 &euro;</strong></td></tr>
+</tbody>
+</table>
 
-<h3 class="section-title">2. Calculs de Coûts et Seuil de Rentabilité</h3>
+<h3 class="section-title">2. Calculs de Couts et Seuil de Rentabilite</h3>
 
-**Coût de revient** :
+<p><strong>Cout de revient</strong> :</p>
 
-Somme de tous les coûts pour produire et vendre un produit.
+<p>Somme de tous les couts pour produire et vendre un produit.</p>
 
-Coût de revient = Coût d'achat des matières + Coût de production + Coût de distribution
+<p>Cout de revient = Cout d'achat des matieres + Cout de production + Cout de distribution</p>
 
-**Marge** :
+<p><strong>Marge</strong> :</p>
 
-Marge unitaire = Prix de vente - Coût de revient unitaire
+<p>Marge unitaire = Prix de vente - Cout de revient unitaire</p>
 
-Taux de marge = Marge / Prix de vente × 100
+<p>Taux de marge = Marge / Prix de vente &times; 100</p>
 
-**Seuil de rentabilité (point mort)** :
+<p><strong>Seuil de rentabilite (point mort)</strong> :</p>
 
-Niveau de chiffre d'affaires à partir duquel l'entreprise ne fait ni bénéfice ni perte.
+<p>Niveau de chiffre d'affaires a partir duquel l'entreprise ne fait ni benefice ni perte.</p>
 
-**Charges fixes** : charges qui ne varient pas avec le volume de production (loyers, amortissements, salaires fixes).
+<p><strong>Charges fixes</strong> : charges qui ne varient pas avec le volume de production (loyers, amortissements, salaires fixes).</p>
 
-**Charges variables** : charges proportionnelles au volume (matières premières, énergie).
+<p><strong>Charges variables</strong> : charges proportionnelles au volume (matieres premieres, energie).</p>
 
-Calcul simplifié :
+<p>Calcul simplifie :</p>
 
-Seuil de rentabilité = Charges fixes / Taux de marge sur coût variable
+<p>Seuil de rentabilite = Charges fixes / Taux de marge sur cout variable</p>
 
-où Taux de marge sur coût variable = (CA - Charges variables) / CA
+<p>ou Taux de marge sur cout variable = (CA - Charges variables) / CA</p>
 
-**Exemple** :
+<p><strong>Exemple</strong> :</p>
 
-Entreprise avec :
-- Charges fixes : 100 000 €/an
-- Prix de vente unitaire : 50 €
-- Coût variable unitaire : 30 €
+<p>Entreprise avec :</p>
+<ul>
+<li>Charges fixes : 100 000 &euro;/an</li>
+<li>Prix de vente unitaire : 50 &euro;</li>
+<li>Cout variable unitaire : 30 &euro;</li>
+</ul>
 
-Marge unitaire = 50 - 30 = 20 €
+<p>Marge unitaire = 50 - 30 = 20 &euro;</p>
 
-Quantité seuil = Charges fixes / Marge unitaire = 100 000 / 20 = 5 000 unités
+<p>Quantite seuil = Charges fixes / Marge unitaire = 100 000 / 20 = 5 000 unites</p>
 
-CA seuil = 5 000 × 50 = 250 000 €
+<p>CA seuil = 5 000 &times; 50 = 250 000 &euro;</p>
 
-Au-delà de 5 000 unités vendues, l'entreprise est bénéficiaire.
+<p>Au-dela de 5 000 unites vendues, l'entreprise est beneficiaire.</p>
 
-<h3 class="section-title">3. Gestion de Trésorerie</h3>
+<h3 class="section-title">3. Gestion de Tresorerie</h3>
 
-**Trésorerie** = Disponibilités (banque + caisse)
+<p><strong>Tresorerie</strong> = Disponibilites (banque + caisse)</p>
 
-**Flux de trésorerie** :
+<p><strong>Flux de tresorerie</strong> :</p>
 
-**Encaissements** (entrées) :
-- Paiements clients
-- Emprunts obtenus
-- Apports en capital
+<p><strong>Encaissements</strong> (entrees) :</p>
+<ul>
+<li>Paiements clients</li>
+<li>Emprunts obtenus</li>
+<li>Apports en capital</li>
+</ul>
 
-**Décaissements** (sorties) :
-- Paiements fournisseurs
-- Salaires et charges sociales
-- Investissements
-- Remboursements d'emprunts
-- Impôts et taxes
+<p><strong>Decaissements</strong> (sorties) :</p>
+<ul>
+<li>Paiements fournisseurs</li>
+<li>Salaires et charges sociales</li>
+<li>Investissements</li>
+<li>Remboursements d'emprunts</li>
+<li>Impots et taxes</li>
+</ul>
 
-**Principe** : Trésorerie fin de période = Trésorerie début + Encaissements - Décaissements
+<p><strong>Principe</strong> : Tresorerie fin de periode = Tresorerie debut + Encaissements - Decaissements</p>
 
-**Problèmes de trésorerie** :
+<p><strong>Problemes de tresorerie</strong> :</p>
 
-Rupture de trésorerie = trésorerie négative, impossibilité de payer les fournisseurs ou salaires.
+<p>Rupture de tresorerie = tresorerie negative, impossibilite de payer les fournisseurs ou salaires.</p>
 
-Causes fréquentes :
-- Décalage entre ventes (à crédit) et achats (à payer)
-- Investissements trop lourds
-- Stocks excessifs qui immobilisent de l'argent
-- Prévisions de ventes trop optimistes
+<p>Causes frequentes :</p>
+<ul>
+<li>Decalage entre ventes (a credit) et achats (a payer)</li>
+<li>Investissements trop lourds</li>
+<li>Stocks excessifs qui immobilisent de l'argent</li>
+<li>Previsions de ventes trop optimistes</li>
+</ul>
 
-**Solutions** :
-- Négocier des délais de paiement avec fournisseurs
-- Réduire les délais de paiement clients
-- Obtenir un emprunt ou découvert bancaire
-- Diminuer les stocks
-- Reporter des investissements
+<p><strong>Solutions</strong> :</p>
+<ul>
+<li>Negocier des delais de paiement avec fournisseurs</li>
+<li>Reduire les delais de paiement clients</li>
+<li>Obtenir un emprunt ou decouvert bancaire</li>
+<li>Diminuer les stocks</li>
+<li>Reporter des investissements</li>
+</ul>
 
-**Capacité d'autofinancement (CAF)** :
+<p><strong>Capacite d'autofinancement (CAF)</strong> :</p>
 
-Mesure des ressources générées par l'activité.
+<p>Mesure des ressources generees par l'activite.</p>
 
-CAF = Résultat net + Dotations aux amortissements
+<p>CAF = Resultat net + Dotations aux amortissements</p>
 
-Les amortissements ne sont pas des sorties de trésorerie (dépense passée lors de l'achat), donc on les rajoute.
+<p>Les amortissements ne sont pas des sorties de tresorerie (depense passee lors de l'achat), donc on les rajoute.</p>
 
 <h3 class="section-title">4. Ratios Financiers</h3>
 
-Les ratios permettent d'analyser rapidement la santé financière d'une entreprise.
+<p>Les ratios permettent d'analyser rapidement la sante financiere d'une entreprise.</p>
 
-**Ratios de rentabilité** :
+<p><strong>Ratios de rentabilite</strong> :</p>
 
-Taux de marge nette = Résultat net / CA × 100
+<p>Taux de marge nette = Resultat net / CA &times; 100</p>
 
-Rentabilité des capitaux propres (ROE) = Résultat net / Capitaux propres × 100
+<p>Rentabilite des capitaux propres (ROE) = Resultat net / Capitaux propres &times; 100</p>
 
-Rentabilité économique (ROA) = Résultat d'exploitation / Actif total × 100
+<p>Rentabilite economique (ROA) = Resultat d'exploitation / Actif total &times; 100</p>
 
-**Ratios de liquidité** :
+<p><strong>Ratios de liquidite</strong> :</p>
 
-Ratio de liquidité générale = Actif circulant / Dettes à court terme
+<p>Ratio de liquidite generale = Actif circulant / Dettes a court terme</p>
 
-Mesure la capacité à payer les dettes à court terme. Idéalement > 1.
+<p>Mesure la capacite a payer les dettes a court terme. Idealement &gt; 1.</p>
 
-**Ratios d'endettement** :
+<p><strong>Ratios d'endettement</strong> :</p>
 
-Taux d'endettement = Dettes financières / Capitaux propres × 100
+<p>Taux d'endettement = Dettes financieres / Capitaux propres &times; 100</p>
 
-Mesure le niveau de dépendance aux emprunts. Trop élevé = risque financier.
+<p>Mesure le niveau de dependance aux emprunts. Trop eleve = risque financier.</p>
 
-**Ratios de rotation** :
+<p><strong>Ratios de rotation</strong> :</p>
 
-Rotation des stocks = CA / Stock moyen
+<p>Rotation des stocks = CA / Stock moyen</p>
 
-Nombre de fois où le stock est renouvelé dans l'année. Élevé = bonne gestion des stocks.
+<p>Nombre de fois ou le stock est renouvele dans l'annee. Eleve = bonne gestion des stocks.</p>
 
-Délai moyen de paiement clients = (Créances clients / CA TTC) × 360 jours
+<p>Delai moyen de paiement clients = (Creances clients / CA TTC) &times; 360 jours</p>
 
-Temps moyen avant encaissement des ventes.
+<p>Temps moyen avant encaissement des ventes.</p>
 
-<h3 class="section-title">5. Décisions d'Investissement</h3>
+<h3 class="section-title">5. Decisions d'Investissement</h3>
 
-**Investissement** : dépense immédiate pour obtenir des bénéfices futurs.
+<p><strong>Investissement</strong> : depense immediate pour obtenir des benefices futurs.</p>
 
-**Amortissement** :
+<p><strong>Amortissement</strong> :</p>
 
-Mécanisme comptable qui répartit le coût d'un investissement sur sa durée d'utilisation.
+<p>Mecanisme comptable qui repartit le cout d'un investissement sur sa duree d'utilisation.</p>
 
-Exemple : machine achetée 100 000 €, durée de vie 5 ans.
+<p>Exemple : machine achetee 100 000 &euro;, duree de vie 5 ans.</p>
 
-Amortissement linéaire : 100 000 / 5 = 20 000 €/an
+<p>Amortissement lineaire : 100 000 / 5 = 20 000 &euro;/an</p>
 
-Chaque année, on constate une charge de 20 000 € (qui réduit le résultat) sans sortie de trésorerie.
+<p>Chaque annee, on constate une charge de 20 000 &euro; (qui reduit le resultat) sans sortie de tresorerie.</p>
 
-**Valeur nette comptable (VNC)** :
+<p><strong>Valeur nette comptable (VNC)</strong> :</p>
 
-VNC = Valeur d'origine - Amortissements cumulés
+<p>VNC = Valeur d'origine - Amortissements cumules</p>
 
-Après 3 ans : VNC = 100 000 - (3 × 20 000) = 40 000 €
+<p>Apres 3 ans : VNC = 100 000 - (3 &times; 20 000) = 40 000 &euro;</p>
 
-**Évaluation d'un investissement** :
+<p><strong>Evaluation d'un investissement</strong> :</p>
 
-Critères de décision :
+<p>Criteres de decision :</p>
 
-**Valeur actuelle nette (VAN)** :
-Somme des flux de trésorerie futurs actualisés - Investissement initial.
-Si VAN > 0 : investissement rentable.
+<p><strong>Valeur actuelle nette (VAN)</strong> :<br/>
+Somme des flux de tresorerie futurs actualises - Investissement initial.<br/>
+Si VAN &gt; 0 : investissement rentable.</p>
 
-**Délai de récupération** :
-Temps nécessaire pour récupérer l'investissement initial par les flux générés.
+<p><strong>Delai de recuperation</strong> :<br/>
+Temps necessaire pour recuperer l'investissement initial par les flux generes.</p>
 
-**Taux de rentabilité interne (TRI)** :
-Taux d'actualisation qui annule la VAN. Plus il est élevé, meilleur est l'investissement.
+<p><strong>Taux de rentabilite interne (TRI)</strong> :<br/>
+Taux d'actualisation qui annule la VAN. Plus il est eleve, meilleur est l'investissement.</p>
 
-<h3 class="section-title">6. Stratégie et Analyse Concurrentielle</h3>
+<h3 class="section-title">6. Strategie et Analyse Concurrentielle</h3>
 
-**Analyse SWOT** :
+<p><strong>Analyse SWOT</strong> :</p>
 
-Outil d'analyse stratégique.
+<p>Outil d'analyse strategique.</p>
 
-| Interne | Externe |
-|---------|---------|
-| **Strengths (Forces)** : atouts internes (technologie, compétences, marque) | **Opportunities (Opportunités)** : facteurs externes favorables (marché croissant, nouvelle technologie) |
-| **Weaknesses (Faiblesses)** : limites internes (manque de ressources, image) | **Threats (Menaces)** : facteurs externes défavorables (concurrence, réglementation) |
+<table>
+<thead>
+<tr><th>Interne</th><th>Externe</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Strengths (Forces)</strong> : atouts internes (technologie, competences, marque)</td><td><strong>Opportunities (Opportunites)</strong> : facteurs externes favorables (marche croissant, nouvelle technologie)</td></tr>
+<tr><td><strong>Weaknesses (Faiblesses)</strong> : limites internes (manque de ressources, image)</td><td><strong>Threats (Menaces)</strong> : facteurs externes defavorables (concurrence, reglementation)</td></tr>
+</tbody>
+</table>
 
-**Stratégies génériques de Porter** :
+<p><strong>Strategies generiques de Porter</strong> :</p>
+<ol>
+<li><strong>Domination par les couts</strong> : etre le moins cher</li>
+<li><strong>Differenciation</strong> : offrir un produit unique justifiant un prix eleve</li>
+<li><strong>Focalisation</strong> : se concentrer sur un segment de marche specifique</li>
+</ol>
 
-1. **Domination par les coûts** : être le moins cher
-2. **Différenciation** : offrir un produit unique justifiant un prix élevé
-3. **Focalisation** : se concentrer sur un segment de marché spécifique
+<p><strong>Positionnement prix-qualite</strong> :</p>
 
-**Positionnement prix-qualité** :
+<p>Matrice permettant de situer son offre par rapport aux concurrents selon deux axes : prix et qualite percue.</p>
 
-Matrice permettant de situer son offre par rapport aux concurrents selon deux axes : prix et qualité perçue.
+<hr/>
 
----
+<h2>PART D - Analyse Reflexive et Perspectives</h2>
 
-## PART D - Analyse Réflexive et Perspectives
+<h3 class="section-title">Competences acquises</h3>
 
-<h3 class="section-title">Compétences acquises</h3>
+<p><strong>Lecture et comprehension des documents financiers</strong> :<br/>
+Capacite a analyser un bilan et un compte de resultat, identifier les points forts et faibles d'une entreprise, detecter des problemes de tresorerie ou d'endettement.</p>
 
-**Lecture et compréhension des documents financiers** :
-Capacité à analyser un bilan et un compte de résultat, identifier les points forts et faibles d'une entreprise, détecter des problèmes de trésorerie ou d'endettement.
+<p><strong>Prise de decision manageriale</strong> :<br/>
+Le jeu SIMGEST a developpe la capacite a prendre des decisions sous contraintes (temps, informations limitees, incertitude), a arbitrer entre objectifs contradictoires (croissance vs rentabilite).</p>
 
-**Prise de décision managériale** :
-Le jeu SIMGEST a développé la capacité à prendre des décisions sous contraintes (temps, informations limitées, incertitude), à arbitrer entre objectifs contradictoires (croissance vs rentabilité).
+<p><strong>Travail en equipe</strong> :<br/>
+Coordination, delegation, communication, gestion de desaccords. Essentiel dans tout environnement professionnel.</p>
 
-**Travail en équipe** :
-Coordination, délégation, communication, gestion de désaccords. Essentiel dans tout environnement professionnel.
+<p><strong>Vision globale de l'entreprise</strong> :<br/>
+Comprehension des interactions entre fonctions (production, commercial, finance). Une decision dans un domaine impacte les autres.</p>
 
-**Vision globale de l'entreprise** :
-Compréhension des interactions entre fonctions (production, commercial, finance). Une décision dans un domaine impacte les autres.
+<h3 class="section-title">Points cles a retenir</h3>
 
-<h3 class="section-title">Points clés à retenir</h3>
+<p><strong>1. La tresorerie est reine</strong> :<br/>
+Une entreprise peut etre rentable sur le papier mais faire faillite par manque de liquidites. Surveiller constamment les flux de tresorerie.</p>
 
-**1. La trésorerie est reine** :
-Une entreprise peut être rentable sur le papier mais faire faillite par manque de liquidités. Surveiller constamment les flux de trésorerie.
+<p><strong>2. Benefice &ne; Tresorerie</strong> :<br/>
+Le resultat comptable ne reflete pas les mouvements d'argent reels. Tenir compte des delais de paiement, stocks, investissements.</p>
 
-**2. Bénéfice ≠ Trésorerie** :
-Le résultat comptable ne reflète pas les mouvements d'argent réels. Tenir compte des délais de paiement, stocks, investissements.
+<p><strong>3. Equilibre croissance-rentabilite</strong> :<br/>
+Croitre trop vite peut tuer une entreprise (besoins de financement, stocks, recrutements). Privilegier une croissance maitrisee.</p>
 
-**3. Équilibre croissance-rentabilité** :
-Croître trop vite peut tuer une entreprise (besoins de financement, stocks, recrutements). Privilégier une croissance maîtrisée.
+<p><strong>4. Importance de la prevision</strong> :<br/>
+Anticiper les ventes, les couts, les besoins de tresorerie. Construire des scenarios (optimiste, pessimiste, realiste).</p>
 
-**4. Importance de la prévision** :
-Anticiper les ventes, les coûts, les besoins de trésorerie. Construire des scénarios (optimiste, pessimiste, réaliste).
-
-**5. Analyse avant action** :
-Toujours analyser les résultats passés avant de décider. Comprendre pourquoi les objectifs n'ont pas été atteints.
+<p><strong>5. Analyse avant action</strong> :<br/>
+Toujours analyser les resultats passes avant de decider. Comprendre pourquoi les objectifs n'ont pas ete atteints.</p>
 
 <h3 class="section-title">Applications pratiques</h3>
 
-**Projets étudiants** :
-Les compétences en gestion de budget et planification sont utiles pour tous les projets d'école (PPI, projets techniques). Savoir estimer les coûts, gérer un budget.
+<p><strong>Projets etudiants</strong> :<br/>
+Les competences en gestion de budget et planification sont utiles pour tous les projets d'ecole (PPI, projets techniques). Savoir estimer les couts, gerer un budget.</p>
 
-**Stage et entreprise** :
-Compréhension du langage et des enjeux business. Capacité à dialoguer avec les services financiers, marketing, production. Justifier des investissements techniques.
+<p><strong>Stage et entreprise</strong> :<br/>
+Comprehension du langage et des enjeux business. Capacite a dialoguer avec les services financiers, marketing, production. Justifier des investissements techniques.</p>
 
-**Entrepreneuriat** :
-Outils essentiels pour créer une entreprise : business plan, prévisions financières, seuil de rentabilité, gestion de trésorerie.
+<p><strong>Entrepreneuriat</strong> :<br/>
+Outils essentiels pour creer une entreprise : business plan, previsions financieres, seuil de rentabilite, gestion de tresorerie.</p>
 
-**Gestion de carrière** :
-Comprendre comment fonctionne l'entreprise qui vous emploie. Évaluer sa santé financière. Négocier salaires et budgets.
+<p><strong>Gestion de carriere</strong> :<br/>
+Comprendre comment fonctionne l'entreprise qui vous emploie. Evaluer sa sante financiere. Negocier salaires et budgets.</p>
 
-<h3 class="section-title">Retour d'expérience SIMGEST</h3>
+<h3 class="section-title">Retour d'experience SIMGEST</h3>
 
-**Apprentissages concrets** :
+<p><strong>Apprentissages concrets</strong> :</p>
 
-Le jeu SIMGEST a permis de vivre les conséquences de nos décisions :
-- Une guerre des prix mal gérée a détruit nos marges
-- Un investissement massif sans financement adapté a créé une crise de trésorerie
-- L'importance de se différencier plutôt que de copier les concurrents
+<p>Le jeu SIMGEST a permis de vivre les consequences de nos decisions :</p>
+<ul>
+<li>Une guerre des prix mal geree a detruit nos marges</li>
+<li>Un investissement massif sans financement adapte a cree une crise de tresorerie</li>
+<li>L'importance de se differencier plutot que de copier les concurrents</li>
+</ul>
 
-**Aspects ludiques et pédagogiques** :
-La compétition entre équipes crée une émulation. On apprend beaucoup des erreurs (les siennes et celles des autres). Le débriefing après chaque période est crucial pour comprendre.
+<p><strong>Aspects ludiques et pedagogiques</strong> :<br/>
+La competition entre equipes cree une emulation. On apprend beaucoup des erreurs (les siennes et celles des autres). Le debriefing apres chaque periode est crucial pour comprendre.</p>
 
-**Limites du jeu** :
-Simplification de la réalité (pas de problèmes RH, qualité produit fixe, pas d'innovation). Mais l'essentiel de la logique de gestion est là.
+<p><strong>Limites du jeu</strong> :<br/>
+Simplification de la realite (pas de problemes RH, qualite produit fixe, pas d'innovation). Mais l'essentiel de la logique de gestion est la.</p>
 
 <h3 class="section-title">Limites et ouvertures</h3>
 
-**Limites du cours** :
-- Peu de comptabilité analytique (calculs de coûts détaillés)
-- Peu de marketing opérationnel
-- Pas de gestion des ressources humaines en profondeur
-- Peu d'aspects juridiques et fiscaux
+<p><strong>Limites du cours</strong> :</p>
+<ul>
+<li>Peu de comptabilite analytique (calculs de couts detailles)</li>
+<li>Peu de marketing operationnel</li>
+<li>Pas de gestion des ressources humaines en profondeur</li>
+<li>Peu d'aspects juridiques et fiscaux</li>
+</ul>
 
-**Ouvertures vers** :
-- **Finance d'entreprise** : évaluation, investissement, marchés financiers
-- **Contrôle de gestion** : tableaux de bord, indicateurs de performance
-- **Gestion de projet** : méthodes agiles, planning, ressources
-- **Marketing stratégique** : études de marché, positionnement
-- **Entrepreneuriat** : création de startup, levée de fonds, pitch
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+<li><strong>Finance d'entreprise</strong> : evaluation, investissement, marches financiers</li>
+<li><strong>Controle de gestion</strong> : tableaux de bord, indicateurs de performance</li>
+<li><strong>Gestion de projet</strong> : methodes agiles, planning, ressources</li>
+<li><strong>Marketing strategique</strong> : etudes de marche, positionnement</li>
+<li><strong>Entrepreneuriat</strong> : creation de startup, levee de fonds, pitch</li>
+</ul>
 
 <h3 class="section-title">Conclusion</h3>
 
-Le cours de Gestion apporte des compétences complémentaires indispensables à la formation d'ingénieur. Trop souvent, les ingénieurs se concentrent sur les aspects techniques et négligent les dimensions économiques et managériales.
+<p>Le cours de Gestion apporte des competences complementaires indispensables a la formation d'ingenieur. Trop souvent, les ingenieurs se concentrent sur les aspects techniques et negligent les dimensions economiques et manageriales.</p>
 
-Ce cours donne les clés pour comprendre le langage de l'entreprise, analyser sa santé financière, et prendre des décisions éclairées. Le jeu SIMGEST est une expérience marquante qui simule la complexité de la gestion réelle.
+<p>Ce cours donne les cles pour comprendre le langage de l'entreprise, analyser sa sante financiere, et prendre des decisions eclairees. Le jeu SIMGEST est une experience marquante qui simule la complexite de la gestion reelle.</p>
 
-**Évolution des compétences requises** :
-Dans un environnement de plus en plus contraint (budgets, délais, concurrence), l'ingénieur doit justifier économiquement ses choix techniques. Comprendre les enjeux financiers devient un atout majeur.
+<p><strong>Evolution des competences requises</strong> :<br/>
+Dans un environnement de plus en plus contraint (budgets, delais, concurrence), l'ingenieur doit justifier economiquement ses choix techniques. Comprendre les enjeux financiers devient un atout majeur.</p>
 
-**Recommandations** :
-- Participer activement au jeu SIMGEST (maximum d'apprentissage)
-- Analyser les états financiers d'entreprises réelles (rapports annuels)
-- Lire la presse économique pour comprendre les enjeux business
-- Appliquer les outils de gestion dans les projets étudiants
+<p><strong>Recommandations</strong> :</p>
+<ul>
+<li>Participer activement au jeu SIMGEST (maximum d'apprentissage)</li>
+<li>Analyser les etats financiers d'entreprises reelles (rapports annuels)</li>
+<li>Lire la presse economique pour comprendre les enjeux business</li>
+<li>Appliquer les outils de gestion dans les projets etudiants</li>
+</ul>
 
-**Liens avec les autres cours** :
-- [Entreprise - S5](./entreprise.html) : fondamentaux de l'entreprise
-- [Finance - S7](./finance.html) : approfondissement financier
-- [Droit - S8](./droit.html) : aspects juridiques de l'entreprise
-- [Gestion de projet (PPI)](./ppi.html) : application pratique
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+<li><a href="./finance.html">Finance - S7</a> : approfondissement financier</li>
+<li><a href="./droit.html">Droit - S8</a> : aspects juridiques de l'entreprise</li>
+</ul>
 
----
+<hr/>
 
-## 📚 Documents de Cours
-
-<style>
-    .pdf-container {
-        margin: 40px 0;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-    .pdf-viewer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .pdf-item {
-        flex: 1;
-        min-width: 400px;
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .pdf-item h4 {
-        color: #2a7ae2;
-        margin-top: 0;
-    }
-</style>
+<h2>Documents de Cours</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Synthèse Gestion Financière</h4>
-      <p>Cours de synthèse couvrant la comptabilité, l'analyse financière, les ratios et l'interprétation des documents comptables.</p>
+      <h4>Synthese Gestion Financiere</h4>
+      <p>Cours de synthese couvrant la comptabilite, l'analyse financiere, les ratios et l'interpretation des documents comptables.</p>
       <embed src="/cours-pdf/S6/Gestion/synthese-gestion-financiere.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Gestion/synthese-gestion-financiere.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Gestion/synthese-gestion-financiere.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Livret SIMGEST</h4>
-      <p>Guide complet du jeu de simulation de gestion d'entreprise SIMGEST avec règles, stratégies et conseils.</p>
+      <h4>Livret SIMGEST</h4>
+      <p>Guide complet du jeu de simulation de gestion d'entreprise SIMGEST avec regles, strategies et conseils.</p>
       <embed src="/cours-pdf/S6/Gestion/livret-simgest.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Gestion/livret-simgest.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Gestion/livret-simgest.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
 </div>
 
----
+<hr/>
 
-*Cours enseigné en 2022-2023 à l'INSA Toulouse, formation Génie Électrique et Informatique.*
+</div>
+
+<!-- ==================== ENGLISH VERSION ==================== -->
+<div class="lang-en">
+
+<h1>Management - Semester 6</h1>
+
+<p><strong>Academic Year</strong>: 2022-2023<br/>
+<strong>Semester</strong>: 6<br/>
+<strong>Credits</strong>: 2 ECTS<br/>
+<strong>Specialization</strong>: Business Management and Administration</p>
+
+<hr/>
+
+<h2>PART A - General Course Overview</h2>
+
+<h3 class="section-title">Overview</h3>
+
+<p>This course introduces the fundamentals of business management for engineers, focusing on financial management, accounting, and managerial decision-making. The highlight of the course is the SIMGEST game, a business management simulation where students manage a virtual company as a team over several periods.</p>
+
+<p><strong>Learning objectives</strong>:</p>
+<ul>
+<li>Understand accounting documents (balance sheet, income statement)</li>
+<li>Master financial indicators (break-even point, self-financing capacity, ratios)</li>
+<li>Analyze company performance</li>
+<li>Make strategic managerial decisions</li>
+<li>Simulate real business management with SIMGEST</li>
+</ul>
+
+<h3 class="section-title">Position in the curriculum</h3>
+
+<p>This course builds upon and deepens:</p>
+<ul>
+<li><strong>Business Studies (S5)</strong>: fundamentals of companies and their environment</li>
+<li><strong>Finance (S7)</strong>: deeper exploration of financial aspects and investment</li>
+</ul>
+
+<p>It prepares for cross-disciplinary skills:</p>
+<ul>
+<li><strong>Project management</strong>: budgets, planning, resources</li>
+<li><strong>Internships and professional life</strong>: understanding business challenges</li>
+<li><strong>Entrepreneurship</strong>: tools for creating and managing a business</li>
+</ul>
+
+<hr/>
+
+<h2>PART B - Personal Experience and Learning Context</h2>
+
+<h3 class="section-title">Organization and resources</h3>
+
+<p>The module was structured in three components:</p>
+
+<p><strong>1. Lectures</strong>:</p>
+<ul>
+<li>General accounting and summary documents</li>
+<li>Cost calculations and break-even point</li>
+<li>Cash flow management and financing</li>
+<li>Financial ratios and performance analysis</li>
+</ul>
+
+<p><strong>2. Tutorials</strong>:</p>
+<ul>
+<li>Accounting exercises (balance sheet, income statement)</li>
+<li>Cost price and margin calculations</li>
+<li>Real company case studies</li>
+<li>Financial statement analysis</li>
+</ul>
+
+<p><strong>3. SIMGEST Game</strong>:</p>
+<ul>
+<li>Team-based business management simulation (4-5 people)</li>
+<li>Decision-making over 6-8 periods (quarters)</li>
+<li>Competition between teams on the same market</li>
+<li>Analysis of results and strategies</li>
+</ul>
+
+<h3 class="section-title">The SIMGEST Game</h3>
+
+<p><strong>Principle</strong>:</p>
+
+<p>SIMGEST is a simulation where each team manages a manufacturing and sales company. Each period (quarter), the team must make decisions across several domains:</p>
+
+<p><strong>Decisions to make</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Domain</th><th>Decisions</th></tr>
+</thead>
+<tbody>
+<tr><td>Production</td><td>Quantities to produce, hiring/layoffs, overtime</td></tr>
+<tr><td>Commercial</td><td>Selling price, advertising budget, sales force</td></tr>
+<tr><td>Investment</td><td>Machine purchases, production capacity expansion</td></tr>
+<tr><td>Financial</td><td>Loans, repayments, dividends</td></tr>
+<tr><td>Inventory</td><td>Raw materials and finished goods management</td></tr>
+</tbody>
+</table>
+
+<p><strong>Typical period workflow</strong>:</p>
+
+<p><strong>1. Previous period analysis</strong>:</p>
+<ul>
+<li>Sales results (actual vs. forecast)</li>
+<li>Financial status (cash flow, profitability)</li>
+<li>Position relative to competitors</li>
+</ul>
+
+<p><strong>2. Forecasting</strong>:</p>
+<ul>
+<li>Market demand estimation</li>
+<li>Anticipating competitor actions</li>
+<li>Break-even point calculation</li>
+</ul>
+
+<p><strong>3. Decision-making</strong>:</p>
+<ul>
+<li>Price adjustments</li>
+<li>Marketing and sales budget</li>
+<li>Production plan</li>
+<li>Potential investments</li>
+</ul>
+
+<p><strong>4. Decision entry</strong>:</p>
+<ul>
+<li>Decision form to fill out</li>
+<li>Consistency between production, sales, and finance</li>
+</ul>
+
+<p><strong>5. Simulation and results</strong>:</p>
+<ul>
+<li>The software computes the quarter's results</li>
+<li>Receipt of balance sheet, income statement, dashboards</li>
+</ul>
+
+<p><strong>Performance indicators</strong>:</p>
+<ul>
+<li><strong>Market share</strong>: percentage of total sales</li>
+<li><strong>Profitability</strong>: net income / revenue</li>
+<li><strong>Cash position</strong>: available bank balance</li>
+<li><strong>Share price</strong>: company valuation (ranking criterion)</li>
+</ul>
+
+<p><strong>Observed strategies</strong>:</p>
+
+<p>Different approaches were possible:</p>
+
+<p><strong>Cost leadership strategy</strong>:</p>
+<ul>
+<li>Low prices to capture market share</li>
+<li>Large-scale production</li>
+<li>Limited marketing costs</li>
+<li>Risk: price war, low margins</li>
+</ul>
+
+<p><strong>Differentiation strategy</strong>:</p>
+<ul>
+<li>High prices, higher perceived quality</li>
+<li>Heavy investment in advertising</li>
+<li>Significant margins</li>
+<li>Risk: limited sales volume</li>
+</ul>
+
+<p><strong>Balanced strategy</strong>:</p>
+<ul>
+<li>Average prices, moderate marketing</li>
+<li>Flexible production</li>
+<li>Focus on operational efficiency</li>
+</ul>
+
+<h3 class="section-title">Challenges and lessons learned</h3>
+
+<p><strong>Cash flow management</strong>:<br/>
+A major issue for many teams: cash shortfalls due to overly heavy investments or excessive inventory. Balancing growth and financial health is essential.</p>
+
+<p><strong>Demand forecasting</strong>:<br/>
+Difficult to anticipate sales, especially with competition. Overproduction = costly inventory, underproduction = missed sales.</p>
+
+<p><strong>Team coordination</strong>:<br/>
+Decisions in one area impact others (e.g., advertising increases sales, requiring more production). Communication is essential.</p>
+
+<p><strong>Time pressure</strong>:<br/>
+Decisions must be made under time constraints, requiring organization and delegation.</p>
+
+<hr/>
+
+<h2>PART C - Detailed Technical Aspects</h2>
+
+<h3 class="section-title">1. Fundamental Accounting Documents</h3>
+
+<p><strong>The Balance Sheet</strong>:</p>
+
+<p>A snapshot of the company's assets at a given point in time.</p>
+
+<p>Structure:</p>
+
+<p><strong>ASSETS</strong> (uses of funds, what the company owns):</p>
+<ul>
+<li>Fixed assets: land, buildings, machinery, patents</li>
+<li>Current assets: inventory, accounts receivable, cash (bank, petty cash)</li>
+</ul>
+
+<p><strong>LIABILITIES</strong> (sources of funding):</p>
+<ul>
+<li>Shareholders' equity: share capital, reserves, net income</li>
+<li>Debts: bank loans, accounts payable, tax liabilities</li>
+</ul>
+
+<p><strong>Fundamental principle</strong>: Assets = Liabilities (accounting balance)</p>
+
+<p><strong>Simplified balance sheet example</strong>:</p>
+
+<table>
+<thead>
+<tr><th>ASSETS</th><th>Amount</th><th>LIABILITIES</th><th>Amount</th></tr>
+</thead>
+<tbody>
+<tr><td>Fixed assets</td><td>&euro;500,000</td><td>Share capital</td><td>&euro;300,000</td></tr>
+<tr><td>Inventory</td><td>&euro;150,000</td><td>Reserves</td><td>&euro;100,000</td></tr>
+<tr><td>Accounts receivable</td><td>&euro;80,000</td><td>Net income</td><td>&euro;50,000</td></tr>
+<tr><td>Bank</td><td>&euro;70,000</td><td>Loans</td><td>&euro;250,000</td></tr>
+<tr><td></td><td></td><td>Accounts payable</td><td>&euro;100,000</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>&euro;800,000</strong></td><td><strong>Total</strong></td><td><strong>&euro;800,000</strong></td></tr>
+</tbody>
+</table>
+
+<p><strong>The Income Statement</strong>:</p>
+
+<p>A record of business activity over a period (fiscal year, typically one year).</p>
+
+<p>Structure:</p>
+
+<p><strong>EXPENSES</strong>:</p>
+<ul>
+<li>Raw material purchases</li>
+<li>Personnel costs (salaries + social charges)</li>
+<li>External charges (rent, insurance, advertising)</li>
+<li>Depreciation allowances (equipment wear)</li>
+<li>Financial charges (loan interest)</li>
+</ul>
+
+<p><strong>REVENUE</strong>:</p>
+<ul>
+<li>Sales of goods or finished products</li>
+<li>Stored production (inventory variation)</li>
+<li>Financial income (interest received)</li>
+</ul>
+
+<p><strong>Result</strong> = Revenue - Expenses</p>
+
+<p>If positive: profit; if negative: loss</p>
+
+<p><strong>Simplified income statement example</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Expenses</th><th>Amount</th><th>Revenue</th><th>Amount</th></tr>
+</thead>
+<tbody>
+<tr><td>Raw materials</td><td>&euro;200,000</td><td>Sales</td><td>&euro;500,000</td></tr>
+<tr><td>Salaries</td><td>&euro;150,000</td><td></td><td></td></tr>
+<tr><td>Rent</td><td>&euro;30,000</td><td></td><td></td></tr>
+<tr><td>Advertising</td><td>&euro;40,000</td><td></td><td></td></tr>
+<tr><td>Depreciation</td><td>&euro;25,000</td><td></td><td></td></tr>
+<tr><td>Loan interest</td><td>&euro;15,000</td><td></td><td></td></tr>
+<tr><td><strong>Total expenses</strong></td><td><strong>&euro;460,000</strong></td><td><strong>Total revenue</strong></td><td><strong>&euro;500,000</strong></td></tr>
+<tr><td></td><td></td><td><strong>Result (profit)</strong></td><td><strong>&euro;40,000</strong></td></tr>
+</tbody>
+</table>
+
+<h3 class="section-title">2. Cost Calculations and Break-Even Point</h3>
+
+<p><strong>Cost price</strong>:</p>
+
+<p>Sum of all costs to produce and sell a product.</p>
+
+<p>Cost price = Material purchase cost + Production cost + Distribution cost</p>
+
+<p><strong>Margin</strong>:</p>
+
+<p>Unit margin = Selling price - Unit cost price</p>
+
+<p>Margin rate = Margin / Selling price &times; 100</p>
+
+<p><strong>Break-even point</strong>:</p>
+
+<p>The level of revenue at which the company makes neither profit nor loss.</p>
+
+<p><strong>Fixed costs</strong>: costs that do not vary with production volume (rent, depreciation, fixed salaries).</p>
+
+<p><strong>Variable costs</strong>: costs proportional to volume (raw materials, energy).</p>
+
+<p>Simplified calculation:</p>
+
+<p>Break-even point = Fixed costs / Contribution margin ratio</p>
+
+<p>where Contribution margin ratio = (Revenue - Variable costs) / Revenue</p>
+
+<p><strong>Example</strong>:</p>
+
+<p>Company with:</p>
+<ul>
+<li>Fixed costs: &euro;100,000/year</li>
+<li>Unit selling price: &euro;50</li>
+<li>Unit variable cost: &euro;30</li>
+</ul>
+
+<p>Unit margin = 50 - 30 = &euro;20</p>
+
+<p>Break-even quantity = Fixed costs / Unit margin = 100,000 / 20 = 5,000 units</p>
+
+<p>Break-even revenue = 5,000 &times; 50 = &euro;250,000</p>
+
+<p>Beyond 5,000 units sold, the company is profitable.</p>
+
+<h3 class="section-title">3. Cash Flow Management</h3>
+
+<p><strong>Cash</strong> = Available funds (bank + petty cash)</p>
+
+<p><strong>Cash flows</strong>:</p>
+
+<p><strong>Inflows</strong> (receipts):</p>
+<ul>
+<li>Customer payments</li>
+<li>Loans obtained</li>
+<li>Capital contributions</li>
+</ul>
+
+<p><strong>Outflows</strong> (disbursements):</p>
+<ul>
+<li>Supplier payments</li>
+<li>Salaries and social charges</li>
+<li>Investments</li>
+<li>Loan repayments</li>
+<li>Taxes</li>
+</ul>
+
+<p><strong>Principle</strong>: End-of-period cash = Beginning cash + Inflows - Outflows</p>
+
+<p><strong>Cash flow problems</strong>:</p>
+
+<p>Cash shortfall = negative cash, inability to pay suppliers or salaries.</p>
+
+<p>Common causes:</p>
+<ul>
+<li>Timing mismatch between sales (on credit) and purchases (to be paid)</li>
+<li>Overly heavy investments</li>
+<li>Excessive inventory tying up capital</li>
+<li>Overly optimistic sales forecasts</li>
+</ul>
+
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Negotiate payment terms with suppliers</li>
+<li>Reduce customer payment delays</li>
+<li>Obtain a loan or bank overdraft</li>
+<li>Reduce inventory</li>
+<li>Postpone investments</li>
+</ul>
+
+<p><strong>Self-financing capacity (CAF)</strong>:</p>
+
+<p>Measure of resources generated by operations.</p>
+
+<p>CAF = Net income + Depreciation allowances</p>
+
+<p>Depreciation is not a cash outflow (the expense occurred at the time of purchase), so it is added back.</p>
+
+<h3 class="section-title">4. Financial Ratios</h3>
+
+<p>Ratios enable quick analysis of a company's financial health.</p>
+
+<p><strong>Profitability ratios</strong>:</p>
+
+<p>Net profit margin = Net income / Revenue &times; 100</p>
+
+<p>Return on Equity (ROE) = Net income / Shareholders' equity &times; 100</p>
+
+<p>Return on Assets (ROA) = Operating income / Total assets &times; 100</p>
+
+<p><strong>Liquidity ratios</strong>:</p>
+
+<p>Current ratio = Current assets / Short-term liabilities</p>
+
+<p>Measures the ability to pay short-term debts. Ideally &gt; 1.</p>
+
+<p><strong>Debt ratios</strong>:</p>
+
+<p>Debt-to-equity ratio = Financial debts / Shareholders' equity &times; 100</p>
+
+<p>Measures the level of dependence on borrowing. Too high = financial risk.</p>
+
+<p><strong>Turnover ratios</strong>:</p>
+
+<p>Inventory turnover = Revenue / Average inventory</p>
+
+<p>Number of times inventory is renewed per year. High = good inventory management.</p>
+
+<p>Average customer payment period = (Accounts receivable / Revenue incl. tax) &times; 360 days</p>
+
+<p>Average time before sales are collected.</p>
+
+<h3 class="section-title">5. Investment Decisions</h3>
+
+<p><strong>Investment</strong>: an immediate expenditure to obtain future benefits.</p>
+
+<p><strong>Depreciation</strong>:</p>
+
+<p>An accounting mechanism that spreads the cost of an investment over its useful life.</p>
+
+<p>Example: machine purchased for &euro;100,000, useful life of 5 years.</p>
+
+<p>Straight-line depreciation: 100,000 / 5 = &euro;20,000/year</p>
+
+<p>Each year, a charge of &euro;20,000 is recorded (reducing the result) without any cash outflow.</p>
+
+<p><strong>Net book value (NBV)</strong>:</p>
+
+<p>NBV = Original value - Accumulated depreciation</p>
+
+<p>After 3 years: NBV = 100,000 - (3 &times; 20,000) = &euro;40,000</p>
+
+<p><strong>Investment evaluation</strong>:</p>
+
+<p>Decision criteria:</p>
+
+<p><strong>Net Present Value (NPV)</strong>:<br/>
+Sum of discounted future cash flows - Initial investment.<br/>
+If NPV &gt; 0: the investment is profitable.</p>
+
+<p><strong>Payback period</strong>:<br/>
+Time required to recoup the initial investment through generated cash flows.</p>
+
+<p><strong>Internal Rate of Return (IRR)</strong>:<br/>
+The discount rate that makes NPV equal to zero. The higher it is, the better the investment.</p>
+
+<h3 class="section-title">6. Strategy and Competitive Analysis</h3>
+
+<p><strong>SWOT Analysis</strong>:</p>
+
+<p>A strategic analysis tool.</p>
+
+<table>
+<thead>
+<tr><th>Internal</th><th>External</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Strengths</strong>: internal advantages (technology, skills, brand)</td><td><strong>Opportunities</strong>: favorable external factors (growing market, new technology)</td></tr>
+<tr><td><strong>Weaknesses</strong>: internal limitations (lack of resources, image)</td><td><strong>Threats</strong>: unfavorable external factors (competition, regulation)</td></tr>
+</tbody>
+</table>
+
+<p><strong>Porter's generic strategies</strong>:</p>
+<ol>
+<li><strong>Cost leadership</strong>: being the cheapest</li>
+<li><strong>Differentiation</strong>: offering a unique product justifying a premium price</li>
+<li><strong>Focus</strong>: concentrating on a specific market segment</li>
+</ol>
+
+<p><strong>Price-quality positioning</strong>:</p>
+
+<p>A matrix used to position one's offering relative to competitors along two axes: price and perceived quality.</p>
+
+<hr/>
+
+<h2>PART D - Reflective Analysis and Perspectives</h2>
+
+<h3 class="section-title">Skills acquired</h3>
+
+<p><strong>Reading and understanding financial documents</strong>:<br/>
+Ability to analyze a balance sheet and income statement, identify a company's strengths and weaknesses, and detect cash flow or debt issues.</p>
+
+<p><strong>Managerial decision-making</strong>:<br/>
+The SIMGEST game developed the ability to make decisions under constraints (time, limited information, uncertainty) and to arbitrate between conflicting objectives (growth vs. profitability).</p>
+
+<p><strong>Teamwork</strong>:<br/>
+Coordination, delegation, communication, conflict management. Essential in any professional environment.</p>
+
+<p><strong>Holistic business vision</strong>:<br/>
+Understanding interactions between functions (production, sales, finance). A decision in one area impacts the others.</p>
+
+<h3 class="section-title">Key takeaways</h3>
+
+<p><strong>1. Cash is king</strong>:<br/>
+A company can be profitable on paper but go bankrupt due to lack of liquidity. Constantly monitor cash flows.</p>
+
+<p><strong>2. Profit &ne; Cash</strong>:<br/>
+Accounting results do not reflect actual money movements. Consider payment terms, inventory, and investments.</p>
+
+<p><strong>3. Growth-profitability balance</strong>:<br/>
+Growing too fast can kill a company (financing needs, inventory, hiring). Favor controlled growth.</p>
+
+<p><strong>4. Importance of forecasting</strong>:<br/>
+Anticipate sales, costs, and cash requirements. Build scenarios (optimistic, pessimistic, realistic).</p>
+
+<p><strong>5. Analysis before action</strong>:<br/>
+Always analyze past results before making decisions. Understand why objectives were not met.</p>
+
+<h3 class="section-title">Practical applications</h3>
+
+<p><strong>Student projects</strong>:<br/>
+Budget management and planning skills are useful for all school projects (PPI, technical projects). Knowing how to estimate costs and manage a budget.</p>
+
+<p><strong>Internships and companies</strong>:<br/>
+Understanding business language and challenges. Ability to communicate with finance, marketing, and production departments. Justifying technical investments.</p>
+
+<p><strong>Entrepreneurship</strong>:<br/>
+Essential tools for starting a business: business plan, financial forecasts, break-even point, cash flow management.</p>
+
+<p><strong>Career management</strong>:<br/>
+Understanding how your employer's company operates. Evaluating its financial health. Negotiating salaries and budgets.</p>
+
+<h3 class="section-title">SIMGEST feedback</h3>
+
+<p><strong>Concrete lessons learned</strong>:</p>
+
+<p>The SIMGEST game allowed us to experience the consequences of our decisions:</p>
+<ul>
+<li>A poorly managed price war destroyed our margins</li>
+<li>A massive investment without adequate financing created a cash crisis</li>
+<li>The importance of differentiating rather than copying competitors</li>
+</ul>
+
+<p><strong>Fun and educational aspects</strong>:<br/>
+Competition between teams creates healthy emulation. You learn a lot from mistakes (your own and others'). The debriefing after each period is crucial for understanding.</p>
+
+<p><strong>Game limitations</strong>:<br/>
+Simplification of reality (no HR problems, fixed product quality, no innovation). But the core logic of management is there.</p>
+
+<h3 class="section-title">Limitations and further directions</h3>
+
+<p><strong>Course limitations</strong>:</p>
+<ul>
+<li>Limited cost accounting (detailed cost calculations)</li>
+<li>Limited operational marketing</li>
+<li>No in-depth human resource management</li>
+<li>Limited legal and tax aspects</li>
+</ul>
+
+<p><strong>Further directions</strong>:</p>
+<ul>
+<li><strong>Corporate finance</strong>: valuation, investment, financial markets</li>
+<li><strong>Management control</strong>: dashboards, performance indicators</li>
+<li><strong>Project management</strong>: agile methods, planning, resources</li>
+<li><strong>Strategic marketing</strong>: market research, positioning</li>
+<li><strong>Entrepreneurship</strong>: startup creation, fundraising, pitching</li>
+</ul>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>The Management course provides essential complementary skills for engineering education. Too often, engineers focus on technical aspects and neglect economic and managerial dimensions.</p>
+
+<p>This course provides the keys to understanding business language, analyzing financial health, and making informed decisions. The SIMGEST game is a memorable experience that simulates the complexity of real management.</p>
+
+<p><strong>Evolution of required skills</strong>:<br/>
+In an increasingly constrained environment (budgets, deadlines, competition), engineers must economically justify their technical choices. Understanding financial issues becomes a major asset.</p>
+
+<p><strong>Recommendations</strong>:</p>
+<ul>
+<li>Actively participate in the SIMGEST game (maximum learning)</li>
+<li>Analyze the financial statements of real companies (annual reports)</li>
+<li>Read the business press to understand business challenges</li>
+<li>Apply management tools to student projects</li>
+</ul>
+
+<p><strong>Links to other courses</strong>:</p>
+<ul>
+<li><a href="./finance.html">Finance - S7</a>: deeper financial knowledge</li>
+<li><a href="./droit.html">Law - S8</a>: legal aspects of business</li>
+</ul>
+
+<hr/>
+
+<h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Financial Management Summary</h4>
+      <p>Summary course covering accounting, financial analysis, ratios, and the interpretation of accounting documents.</p>
+      <embed src="/cours-pdf/S6/Gestion/synthese-gestion-financiere.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Gestion/synthese-gestion-financiere.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>SIMGEST Booklet</h4>
+      <p>Complete guide to the SIMGEST business management simulation game with rules, strategies, and tips.</p>
+      <embed src="/cours-pdf/S6/Gestion/livret-simgest.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Gestion/livret-simgest.pdf" target="_blank">Download</a></p>
+    </div>
+  </div>
+</div>
+
+<hr/>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
+</div>
+
+<em class="lang-fr">Cours enseigne en 2022-2023 a l'INSA Toulouse, formation Genie Electrique et Informatique.</em><em class="lang-en">Course taught in 2022-2023 at INSA Toulouse, Electrical and Computer Engineering program.</em>

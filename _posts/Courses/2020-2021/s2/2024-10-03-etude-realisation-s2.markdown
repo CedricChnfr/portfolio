@@ -13,103 +13,118 @@ categories: jekyll update
 </style>
 
 <div class="back-nav">
-  <a href="./my-courses-2020-2021.html">&larr; Retour a Mes Cours 2020-2021</a>
+  <a href="./my-courses-2020-2021.html">&larr; <span data-i18n="back_to_courses_2020_2021">Retour a Mes Cours 2020-2021</span></a>
 </div>
 
-# Etude et Realisation (ER) - S2
+<div class="lang-fr">
 
-**Annee**: 2020-2021 | **Semestre**: 2 | **Type**: Projet et Realisation
+<h1>Etude et Realisation (ER) - S2</h1>
 
----
+<p><strong>Annee</strong>: 2020-2021 | <strong>Semestre</strong>: 2 | <strong>Type</strong>: Projet et Realisation</p>
 
-## PART A : PRESENTATION GENERALE
+<hr/>
 
-### Contexte et objectifs
+<h2>PART A : PRESENTATION GENERALE</h2>
 
-Le module Etude et Realisation au semestre 2 du DUT GEII est un enseignement transversal qui integre trois sous-modules complementaires : **ER FPGA**, **ER Interface** et **ER Microcontroleur**. Ce cours met l'accent sur la realisation pratique de systemes electroniques complets, depuis la conception logique (FPGA), en passant par la conception de circuits imprimes (PCB), jusqu'a la programmation embarquee (microcontroleur). C'est un cours fondamentalement pratique ou les etudiants concoivent, assemblent et testent des systemes reels.
+<h3>Contexte et objectifs</h3>
 
-**Objectifs pedagogiques :**
-- Concevoir des circuits logiques en VHDL et les implementer sur FPGA (Cyclone II d'Altera)
-- Maitriser la conception de circuits imprimes (PCB) avec le logiciel Proteus (ISIS pour la schemathique, ARES pour le routage)
-- Programmer le microcontroleur C167 pour interfacer des capteurs et des actionneurs
-- Integrer les trois domaines (logique, electronique, logiciel) dans un systeme complet
-- Documenter et presenter les realisations techniques
+<p>Le module Etude et Realisation au semestre 2 du DUT GEII est un enseignement transversal qui integre trois sous-modules complementaires : <strong>ER FPGA</strong>, <strong>ER Interface</strong> et <strong>ER Microcontroleur</strong>. Ce cours met l'accent sur la realisation pratique de systemes electroniques complets, depuis la conception logique (FPGA), en passant par la conception de circuits imprimes (PCB), jusqu'a la programmation embarquee (microcontroleur). C'est un cours fondamentalement pratique ou les etudiants concoivent, assemblent et testent des systemes reels.</p>
 
-### Organisation
+<p><strong>Objectifs pedagogiques :</strong></p>
+<ul>
+  <li>Concevoir des circuits logiques en VHDL et les implementer sur FPGA (Cyclone II d'Altera)</li>
+  <li>Maitriser la conception de circuits imprimes (PCB) avec le logiciel Proteus (ISIS pour la schemathique, ARES pour le routage)</li>
+  <li>Programmer le microcontroleur C167 pour interfacer des capteurs et des actionneurs</li>
+  <li>Integrer les trois domaines (logique, electronique, logiciel) dans un systeme complet</li>
+  <li>Documenter et presenter les realisations techniques</li>
+</ul>
 
-Le cours est organise en trois sous-modules qui se deroulent en parallele au long du semestre :
+<h3>Organisation</h3>
 
-1. **ER FPGA** : conception et implementation de circuits logiques sur FPGA Altera Cyclone II, avec utilisation de Quartus II et programmation en VHDL
-2. **ER Interface** : conception de cartes electroniques (schemathique et PCB) avec Proteus ISIS/ARES, puis fabrication et assemblage
-3. **ER Microcontroleur** : programmation du C167 en C via Keil uVision, avec integration de peripheriques (LEDs, boutons, capteurs, afficheurs)
+<p>Le cours est organise en trois sous-modules qui se deroulent en parallele au long du semestre :</p>
 
-Chaque sous-module comprend des seances de TP encadrees, avec des livrables progressifs (comptes-rendus, fichiers de conception, demonstrations).
+<ol>
+  <li><strong>ER FPGA</strong> : conception et implementation de circuits logiques sur FPGA Altera Cyclone II, avec utilisation de Quartus II et programmation en VHDL</li>
+  <li><strong>ER Interface</strong> : conception de cartes electroniques (schemathique et PCB) avec Proteus ISIS/ARES, puis fabrication et assemblage</li>
+  <li><strong>ER Microcontroleur</strong> : programmation du C167 en C via Keil uVision, avec integration de peripheriques (LEDs, boutons, capteurs, afficheurs)</li>
+</ol>
 
----
+<p>Chaque sous-module comprend des seances de TP encadrees, avec des livrables progressifs (comptes-rendus, fichiers de conception, demonstrations).</p>
 
-## PART B : EXPERIENCE ET CONTEXTE
+<hr/>
 
-### Environnement pedagogique
+<h2>PART B : EXPERIENCE ET CONTEXTE</h2>
 
-L'annee 2020-2021 a vu une adaptation des methodes d'enseignement en raison du contexte sanitaire. Neanmoins, les seances de TP en presentiel ont pu etre maintenues pour la plupart, ce qui etait essentiel pour ce module tres pratique. Les etudiants travaillaient en binome sur les postes de travail equipes des logiciels et du materiel necessaire.
+<h3>Environnement pedagogique</h3>
 
-### Plateformes et outils
+<p>L'annee 2020-2021 a vu une adaptation des methodes d'enseignement en raison du contexte sanitaire. Neanmoins, les seances de TP en presentiel ont pu etre maintenues pour la plupart, ce qui etait essentiel pour ce module tres pratique. Les etudiants travaillaient en binome sur les postes de travail equipes des logiciels et du materiel necessaire.</p>
 
-**ER FPGA :**
-- **FPGA** : Altera Cyclone II (EP2C20) sur carte de developpement DE1
-- **IDE** : Quartus II (Altera/Intel) pour la synthese, le placement-routage et la programmation
-- **Langage** : VHDL (VHSIC Hardware Description Language)
-- **Peripheriques sur la carte DE1** : 10 LEDs, 4 afficheurs 7-segments, 10 interrupteurs, 4 boutons-poussoirs, oscillateur 50 MHz
+<h3>Plateformes et outils</h3>
 
-**ER Interface :**
-- **Schemathique** : Proteus ISIS (simulation de circuits electroniques)
-- **Routage PCB** : Proteus ARES (conception de circuits imprimes)
-- **Fabrication** : machine a graver, perceuse, station de soudage
-- **Composants** : traversants et CMS (resistances, condensateurs, circuits integres, connecteurs)
+<p><strong>ER FPGA :</strong></p>
+<ul>
+  <li><strong>FPGA</strong> : Altera Cyclone II (EP2C20) sur carte de developpement DE1</li>
+  <li><strong>IDE</strong> : Quartus II (Altera/Intel) pour la synthese, le placement-routage et la programmation</li>
+  <li><strong>Langage</strong> : VHDL (VHSIC Hardware Description Language)</li>
+  <li><strong>Peripheriques sur la carte DE1</strong> : 10 LEDs, 4 afficheurs 7-segments, 10 interrupteurs, 4 boutons-poussoirs, oscillateur 50 MHz</li>
+</ul>
 
-**ER Microcontroleur :**
-- **Microcontroleur** : Infineon C167 (meme plateforme que le cours d'Informatique Embarquee)
-- **IDE** : Keil uVision
-- **Interface** : carte d'interface reliant le C167 aux capteurs et actionneurs (platine d'interface)
-- **Peripheriques** : LEDs, boutons, potentiometres, capteurs de temperature, afficheurs LCD
+<p><strong>ER Interface :</strong></p>
+<ul>
+  <li><strong>Schemathique</strong> : Proteus ISIS (simulation de circuits electroniques)</li>
+  <li><strong>Routage PCB</strong> : Proteus ARES (conception de circuits imprimes)</li>
+  <li><strong>Fabrication</strong> : machine a graver, perceuse, station de soudage</li>
+  <li><strong>Composants</strong> : traversants et CMS (resistances, condensateurs, circuits integres, connecteurs)</li>
+</ul>
 
-### Liens avec d'autres cours
+<p><strong>ER Microcontroleur :</strong></p>
+<ul>
+  <li><strong>Microcontroleur</strong> : Infineon C167 (meme plateforme que le cours d'Informatique Embarquee)</li>
+  <li><strong>IDE</strong> : Keil uVision</li>
+  <li><strong>Interface</strong> : carte d'interface reliant le C167 aux capteurs et actionneurs (platine d'interface)</li>
+  <li><strong>Peripheriques</strong> : LEDs, boutons, potentiometres, capteurs de temperature, afficheurs LCD</li>
+</ul>
 
-Ce module est au carrefour de plusieurs enseignements :
-- **Informatique Embarquee (IE)** : le sous-module ER Microcontroleur utilise la meme plateforme C167 et les memes concepts (GPIO, timers, interruptions)
-- **Systemes Electroniques (SE)** : les connaissances en circuits analogiques et numeriques sont appliquees dans la conception des cartes d'interface
-- **Outils Logiciels (OL)** : la comprehension des signaux et des systemes aide a la simulation sous Proteus
-- **Energie** : les notions d'alimentation et de protection sont utilisees dans la conception des PCB
+<h3>Liens avec d'autres cours</h3>
+
+<p>Ce module est au carrefour de plusieurs enseignements :</p>
+<ul>
+  <li><strong>Informatique Embarquee (IE)</strong> : le sous-module ER Microcontroleur utilise la meme plateforme C167 et les memes concepts (GPIO, timers, interruptions)</li>
+  <li><strong>Systemes Electroniques (SE)</strong> : les connaissances en circuits analogiques et numeriques sont appliquees dans la conception des cartes d'interface</li>
+  <li><strong>Outils Logiciels (OL)</strong> : la comprehension des signaux et des systemes aide a la simulation sous Proteus</li>
+  <li><strong>Energie</strong> : les notions d'alimentation et de protection sont utilisees dans la conception des PCB</li>
+</ul>
 
 <img src="/assets/images/courses/S2/ER/organigramme1.png" alt="Organigramme ER" style="max-width: 100%; height: auto; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px; padding: 10px;">
 
----
+<hr/>
 
-## PART C : ASPECTS TECHNIQUES
+<h2>PART C : ASPECTS TECHNIQUES</h2>
 
-### Module 1 : ER FPGA - Logique programmable en VHDL
+<h3>Module 1 : ER FPGA - Logique programmable en VHDL</h3>
 
-#### 1.1 Introduction aux FPGA
+<h4>1.1 Introduction aux FPGA</h4>
 
-Un FPGA (Field-Programmable Gate Array) est un circuit integre dont la logique interne peut etre configuree par l'utilisateur apres fabrication. Contrairement a un microcontroleur qui execute des instructions sequentiellement, un FPGA implemente des circuits logiques qui fonctionnent en parallele.
+<p>Un FPGA (Field-Programmable Gate Array) est un circuit integre dont la logique interne peut etre configuree par l'utilisateur apres fabrication. Contrairement a un microcontroleur qui execute des instructions sequentiellement, un FPGA implemente des circuits logiques qui fonctionnent en parallele.</p>
 
-Le FPGA Cyclone II utilise dans ce cours contient :
-- 18 752 elements logiques (LE)
-- 239 616 bits de memoire embarquee
-- 26 multiplieurs 18x18 bits
-- 4 PLL (Phase-Locked Loop)
-- 315 broches d'I/O utilisateur
+<p>Le FPGA Cyclone II utilise dans ce cours contient :</p>
+<ul>
+  <li>18 752 elements logiques (LE)</li>
+  <li>239 616 bits de memoire embarquee</li>
+  <li>26 multiplieurs 18x18 bits</li>
+  <li>4 PLL (Phase-Locked Loop)</li>
+  <li>315 broches d'I/O utilisateur</li>
+</ul>
 
-#### 1.2 Structure du VHDL
+<h4>1.2 Structure du VHDL</h4>
 
-Un programme VHDL est compose de deux parties principales :
+<p>Un programme VHDL est compose de deux parties principales :</p>
 
-**La declaration d'entite (entity)** : definit l'interface du composant (ports d'entree/sortie).
+<p><strong>La declaration d'entite (entity)</strong> : definit l'interface du composant (ports d'entree/sortie).</p>
 
-**Le corps d'architecture (architecture)** : definit le comportement interne du composant.
+<p><strong>Le corps d'architecture (architecture)</strong> : definit le comportement interne du composant.</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 
 entity exemple is
@@ -122,21 +137,22 @@ end exemple;
 
 architecture comportementale of exemple is
 begin
-  sortie <= entree_a and entree_b;
+  sortie &lt;= entree_a and entree_b;
 end comportementale;
-```
+</code></pre>
 
-Les types fondamentaux en VHDL :
-- `std_logic` : signal logique a un bit (valeurs '0', '1', 'Z', 'X', etc.)
-- `std_logic_vector(N-1 downto 0)` : bus de N bits
-- `natural`, `integer` : types numeriques pour les generiques et les constantes
+<p>Les types fondamentaux en VHDL :</p>
+<ul>
+  <li><code>std_logic</code> : signal logique a un bit (valeurs '0', '1', 'Z', 'X', etc.)</li>
+  <li><code>std_logic_vector(N-1 downto 0)</code> : bus de N bits</li>
+  <li><code>natural</code>, <code>integer</code> : types numeriques pour les generiques et les constantes</li>
+</ul>
 
-#### 1.3 Prediviseur d'horloge
+<h4>1.3 Prediviseur d'horloge</h4>
 
-Le FPGA Cyclone II sur la carte DE1 dispose d'un oscillateur a 50 MHz. Pour obtenir des frequences plus basses (visibles a l'oeil nu sur les LEDs), il faut diviser cette horloge :
+<p>Le FPGA Cyclone II sur la carte DE1 dispose d'un oscillateur a 50 MHz. Pour obtenir des frequences plus basses (visibles a l'oeil nu sur les LEDs), il faut diviser cette horloge :</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
@@ -155,33 +171,31 @@ begin
   process(ck, arazb)
   begin
     if arazb = '0' then
-      compteur <= (others => '0');
+      compteur &lt;= (others =&gt; '0');
     elsif rising_edge(ck) then
-      compteur <= compteur + 1;
+      compteur &lt;= compteur + 1;
     end if;
   end process;
 
-  ck_out <= compteur(N-1);  -- MSB du compteur
+  ck_out &lt;= compteur(N-1);  -- MSB du compteur
 end arch;
-```
+</code></pre>
 
-**Calcul de la frequence de sortie** :
+<p><strong>Calcul de la frequence de sortie</strong> :</p>
 
-```
-f_sortie = f_entree / 2^N
+<pre><code>f_sortie = f_entree / 2^N
 
 Exemples :
 N = 25 : f = 50 000 000 / 2^25 = 50 000 000 / 33 554 432 = 1.49 Hz
 N = 24 : f = 50 000 000 / 2^24 = 50 000 000 / 16 777 216 = 2.98 Hz
 N = 1  : f = 50 000 000 / 2^1  = 25 000 000 Hz = 25 MHz
-```
+</code></pre>
 
-#### 1.4 Compteur generique
+<h4>1.4 Compteur generique</h4>
 
-Un compteur parametrable est un composant fondamental en logique numerique :
+<p>Un compteur parametrable est un composant fondamental en logique numerique :</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
@@ -198,32 +212,31 @@ end compteur;
 
 architecture arch of compteur is
   signal cnt : std_logic_vector(N-1 downto 0);
-  constant MAX_VAL : std_logic_vector(N-1 downto 0) := (others => '1');
+  constant MAX_VAL : std_logic_vector(N-1 downto 0) := (others =&gt; '1');
 begin
   process(ck, arazb)
   begin
     if arazb = '0' then
-      cnt <= (others => '0');
+      cnt &lt;= (others =&gt; '0');
     elsif rising_edge(ck) then
       if enable = '1' then
-        cnt <= cnt + 1;
+        cnt &lt;= cnt + 1;
       end if;
     end if;
   end process;
 
-  sortie <= cnt;
-  tc <= '1' when cnt = MAX_VAL else '0';
+  sortie &lt;= cnt;
+  tc &lt;= '1' when cnt = MAX_VAL else '0';
 end arch;
-```
+</code></pre>
 
-Ce compteur utilise un **generic** `N` qui permet de definir le nombre de bits a l'instanciation. Le signal `tc` (Terminal Count) passe a '1' lorsque le compteur atteint sa valeur maximale, ce qui permet de chainer des compteurs ou de generer des signaux periodiques.
+<p>Ce compteur utilise un <strong>generic</strong> <code>N</code> qui permet de definir le nombre de bits a l'instanciation. Le signal <code>tc</code> (Terminal Count) passe a '1' lorsque le compteur atteint sa valeur maximale, ce qui permet de chainer des compteurs ou de generer des signaux periodiques.</p>
 
-#### 1.5 Generateur PWM en VHDL
+<h4>1.5 Generateur PWM en VHDL</h4>
 
-Le generateur PWM est un composant cle pour le controle de puissance (variation de luminosite de LEDs, commande de moteurs). Le principe repose sur la comparaison entre un compteur et une valeur de seuil (rapport cyclique) :
+<p>Le generateur PWM est un composant cle pour le controle de puissance (variation de luminosite de LEDs, commande de moteurs). Le principe repose sur la comparaison entre un compteur et une valeur de seuil (rapport cyclique) :</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
@@ -247,61 +260,61 @@ begin
   process(ck, arazb)
   begin
     if arazb = '0' then
-      cnt_prediv <= (others => '0');
+      cnt_prediv &lt;= (others =&gt; '0');
     elsif rising_edge(ck) then
       if cnt_prediv = e_prediv then
-        cnt_prediv <= (others => '0');
+        cnt_prediv &lt;= (others =&gt; '0');
       else
-        cnt_prediv <= cnt_prediv + 1;
+        cnt_prediv &lt;= cnt_prediv + 1;
       end if;
     end if;
   end process;
 
-  ck_prediv <= '1' when cnt_prediv = e_prediv else '0';
+  ck_prediv &lt;= '1' when cnt_prediv = e_prediv else '0';
 
   -- Compteur de periode PWM
   process(ck, arazb)
   begin
     if arazb = '0' then
-      cnt_pwm <= (others => '0');
+      cnt_pwm &lt;= (others =&gt; '0');
     elsif rising_edge(ck) then
       if ck_prediv = '1' then
         if cnt_pwm = periode then
-          cnt_pwm <= (others => '0');
+          cnt_pwm &lt;= (others =&gt; '0');
         else
-          cnt_pwm <= cnt_pwm + 1;
+          cnt_pwm &lt;= cnt_pwm + 1;
         end if;
       end if;
     end if;
   end process;
 
   -- Comparaison pour la sortie PWM
-  pwm_out <= '1' when (en_pwm = '1' and cnt_pwm < ton) else '0';
+  pwm_out &lt;= '1' when (en_pwm = '1' and cnt_pwm &lt; ton) else '0';
 
 end arch;
-```
+</code></pre>
 
-**Principe de fonctionnement** :
-1. Le prediviseur divise l'horloge d'entree par (e_prediv + 1)
-2. Le compteur PWM compte de 0 a la valeur `periode` sur l'horloge predivisee
-3. La sortie est a '1' tant que le compteur est inferieur a `ton`, et a '0' sinon
-4. Le rapport cyclique est : `alpha = ton / (periode + 1)`
+<p><strong>Principe de fonctionnement</strong> :</p>
+<ol>
+  <li>Le prediviseur divise l'horloge d'entree par (e_prediv + 1)</li>
+  <li>Le compteur PWM compte de 0 a la valeur <code>periode</code> sur l'horloge predivisee</li>
+  <li>La sortie est a '1' tant que le compteur est inferieur a <code>ton</code>, et a '0' sinon</li>
+  <li>Le rapport cyclique est : <code>alpha = ton / (periode + 1)</code></li>
+</ol>
 
-**Calcul de la frequence PWM** :
+<p><strong>Calcul de la frequence PWM</strong> :</p>
 
-```
-f_PWM = f_ck / ((e_prediv + 1) * (periode + 1))
+<pre><code>f_PWM = f_ck / ((e_prediv + 1) * (periode + 1))
 
 Exemple : f_ck = 50 MHz, e_prediv = 3, periode = 7
 f_PWM = 50 000 000 / (4 * 8) = 1 562 500 Hz = 1.56 MHz
-```
+</code></pre>
 
-#### 1.6 Frequencemetre numerique
+<h4>1.6 Frequencemetre numerique</h4>
 
-Un frequencemetre mesure la frequence d'un signal en comptant le nombre d'impulsions pendant un intervalle de temps connu (porte de mesure) :
+<p>Un frequencemetre mesure la frequence d'un signal en comptant le nombre d'impulsions pendant un intervalle de temps connu (porte de mesure) :</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
@@ -323,27 +336,27 @@ architecture arch of frequencemetre is
   signal freq_latch  : std_logic_vector(N_compteur-1 downto 0);
 begin
 
-  -- Generation de la porte de mesure (1 seconde avec N_porte=25 et ck=50MHz)
+  -- Generation de la porte de mesure
   process(ck_ref, arazb)
   begin
     if arazb = '0' then
-      cnt_porte <= (others => '0');
+      cnt_porte &lt;= (others =&gt; '0');
     elsif rising_edge(ck_ref) then
-      cnt_porte <= cnt_porte + 1;
+      cnt_porte &lt;= cnt_porte + 1;
     end if;
   end process;
 
-  porte <= cnt_porte(N_porte-1);
+  porte &lt;= cnt_porte(N_porte-1);
 
-  -- Compteur de frequence (compte les fronts du signal d'entree pendant la porte)
+  -- Compteur de frequence
   process(signal_in, arazb, porte)
   begin
     if arazb = '0' then
-      cnt_freq <= (others => '0');
+      cnt_freq &lt;= (others =&gt; '0');
     elsif porte = '0' then
-      cnt_freq <= (others => '0');     -- RAZ pendant la demi-periode basse de la porte
+      cnt_freq &lt;= (others =&gt; '0');
     elsif rising_edge(signal_in) then
-      cnt_freq <= cnt_freq + 1;        -- Compte pendant la demi-periode haute
+      cnt_freq &lt;= cnt_freq + 1;
     end if;
   end process;
 
@@ -351,22 +364,21 @@ begin
   process(porte, arazb)
   begin
     if arazb = '0' then
-      freq_latch <= (others => '0');
+      freq_latch &lt;= (others =&gt; '0');
     elsif falling_edge(porte) then
-      freq_latch <= cnt_freq;
+      freq_latch &lt;= cnt_freq;
     end if;
   end process;
 
-  freq_out <= freq_latch;
+  freq_out &lt;= freq_latch;
 end arch;
-```
+</code></pre>
 
-#### 1.7 Decodeur 7 segments
+<h4>1.7 Decodeur 7 segments</h4>
 
-L'affichage sur les 7 segments de la carte DE1 necessite un decodeur BCD vers 7 segments :
+<p>L'affichage sur les 7 segments de la carte DE1 necessite un decodeur BCD vers 7 segments :</p>
 
-```vhdl
-library ieee;
+<pre><code>library ieee;
 use ieee.std_logic_1164.all;
 
 entity dec7seg is
@@ -379,7 +391,7 @@ end dec7seg;
 architecture arch of dec7seg is
 begin
   with bcd select
-    seg <= "1000000" when "0000",  -- 0
+    seg &lt;= "1000000" when "0000",  -- 0
            "1111001" when "0001",  -- 1
            "0100100" when "0010",  -- 2
            "0110000" when "0011",  -- 3
@@ -391,102 +403,112 @@ begin
            "0010000" when "1001",  -- 9
            "1111111" when others;  -- Eteint
 end arch;
-```
+</code></pre>
 
-### Module 2 : ER Interface - Conception de PCB avec Proteus
+<h3>Module 2 : ER Interface - Conception de PCB avec Proteus</h3>
 
-#### 2.1 Presentation de Proteus ISIS/ARES
+<h4>2.1 Presentation de Proteus ISIS/ARES</h4>
 
-Le logiciel Proteus est un outil de CAO (Conception Assistee par Ordinateur) electronique compose de deux modules complementaires :
+<p>Le logiciel Proteus est un outil de CAO (Conception Assistee par Ordinateur) electronique compose de deux modules complementaires :</p>
 
-- **ISIS** (Intelligent Schematic Input System) : editeur de schemathique et simulateur de circuits. Il permet de dessiner le schema electrique d'un circuit et de le simuler pour valider son fonctionnement avant la realisation.
+<ul>
+  <li><strong>ISIS</strong> (Intelligent Schematic Input System) : editeur de schemathique et simulateur de circuits. Il permet de dessiner le schema electrique d'un circuit et de le simuler pour valider son fonctionnement avant la realisation.</li>
+  <li><strong>ARES</strong> (Advanced Routing and Editing Software) : editeur de circuits imprimes. Il permet de placer les composants sur la carte, de router les pistes et de generer les fichiers de fabrication (Gerber).</li>
+</ul>
 
-- **ARES** (Advanced Routing and Editing Software) : editeur de circuits imprimes. Il permet de placer les composants sur la carte, de router les pistes et de generer les fichiers de fabrication (Gerber).
+<h4>2.2 Etapes de conception d'un PCB</h4>
 
-#### 2.2 Etapes de conception d'un PCB
+<p>La conception d'un circuit imprime suit un processus methodique :</p>
 
-La conception d'un circuit imprime suit un processus methodique :
+<p><strong>Etape 1 : Schemathique (ISIS)</strong></p>
+<ol>
+  <li>Placement des composants sur le schema (resistances, condensateurs, circuits integres, connecteurs)</li>
+  <li>Cablage des composants (fils et bus)</li>
+  <li>Attribution des references et des valeurs</li>
+  <li>Verification electrique (ERC - Electrical Rules Check) : detecte les court-circuits, les broches non connectees, etc.</li>
+  <li>Simulation du circuit pour valider le fonctionnement</li>
+</ol>
 
-**Etape 1 : Schemathique (ISIS)**
-1. Placement des composants sur le schema (resistances, condensateurs, circuits integres, connecteurs)
-2. Cablage des composants (fils et bus)
-3. Attribution des references et des valeurs
-4. Verification electrique (ERC - Electrical Rules Check) : detecte les court-circuits, les broches non connectees, etc.
-5. Simulation du circuit pour valider le fonctionnement
+<p><strong>Etape 2 : Netlist</strong></p>
+<ul>
+  <li>Generation de la netlist : fichier qui decrit toutes les connexions electriques entre les composants</li>
+  <li>Transfert de la netlist d'ISIS vers ARES</li>
+</ul>
 
-**Etape 2 : Netlist**
-- Generation de la netlist : fichier qui decrit toutes les connexions electriques entre les composants
-- Transfert de la netlist d'ISIS vers ARES
+<p><strong>Etape 3 : Placement-routage (ARES)</strong></p>
+<ol>
+  <li>Definition du contour de la carte (board outline)</li>
+  <li>Placement des composants en respectant les contraintes mecaniques et thermiques</li>
+  <li>Routage des pistes : connexion physique des broches selon la netlist</li>
+  <li>Verification des regles de conception (DRC - Design Rules Check) : largeur de pistes, espacement, taille des pastilles</li>
+  <li>Ajout du plan de masse (ground plane) pour ameliorer la CEM</li>
+</ol>
 
-**Etape 3 : Placement-routage (ARES)**
-1. Definition du contour de la carte (board outline)
-2. Placement des composants en respectant les contraintes mecaniques et thermiques
-3. Routage des pistes : connexion physique des broches selon la netlist
-4. Verification des regles de conception (DRC - Design Rules Check) : largeur de pistes, espacement, taille des pastilles
-5. Ajout du plan de masse (ground plane) pour ameliorer la CEM
+<p><strong>Etape 4 : Fabrication</strong></p>
+<ol>
+  <li>Generation des fichiers Gerber (format standard pour la fabrication industrielle)</li>
+  <li>Gravure du circuit (chimique ou mecanique)</li>
+  <li>Percage des trous</li>
+  <li>Soudure des composants</li>
+</ol>
 
-**Etape 4 : Fabrication**
-1. Generation des fichiers Gerber (format standard pour la fabrication industrielle)
-2. Gravure du circuit (chimique ou mecanique)
-3. Percage des trous
-4. Soudure des composants
+<h4>2.3 Regles de conception PCB</h4>
 
-#### 2.3 Regles de conception PCB
+<p>Les regles de conception sont essentielles pour garantir la fabricabilite et la fiabilite du circuit :</p>
 
-Les regles de conception sont essentielles pour garantir la fabricabilite et la fiabilite du circuit :
-
-```
-Largeur de piste minimale : 0.25 mm (signal), 0.5 mm (alimentation)
+<pre><code>Largeur de piste minimale : 0.25 mm (signal), 0.5 mm (alimentation)
 Espacement minimal entre pistes : 0.25 mm
-Taille de pastille (pad) : > 1.8 * diametre du trou
+Taille de pastille (pad) : &gt; 1.8 * diametre du trou
 Diametre de trou : 0.8 mm (composants traversants standard)
-Largeur d'anneau (annular ring) : >= 0.3 mm
-Clearance composant-bord de carte : >= 2 mm
-```
+Largeur d'anneau (annular ring) : &gt;= 0.3 mm
+Clearance composant-bord de carte : &gt;= 2 mm
+</code></pre>
 
-#### 2.4 Platine d'interface
+<h4>2.4 Platine d'interface</h4>
 
-La platine d'interface est un PCB concu pour connecter le microcontroleur C167 aux peripheriques externes. Elle comprend :
+<p>La platine d'interface est un PCB concu pour connecter le microcontroleur C167 aux peripheriques externes. Elle comprend :</p>
 
-- **Connecteurs** : liaison vers la carte C167 (bus de donnees, bus d'adresses, signaux de controle)
-- **Buffers/Drivers** : circuits tampons pour proteger les ports du microcontroleur
-- **Circuits de conditionnement** : diviseurs de tension, filtres, amplificateurs pour adapter les signaux des capteurs
-- **Indicateurs** : LEDs de diagnostic, points de test
-- **Alimentation** : regulateurs de tension, filtrage des alimentations
+<ul>
+  <li><strong>Connecteurs</strong> : liaison vers la carte C167 (bus de donnees, bus d'adresses, signaux de controle)</li>
+  <li><strong>Buffers/Drivers</strong> : circuits tampons pour proteger les ports du microcontroleur</li>
+  <li><strong>Circuits de conditionnement</strong> : diviseurs de tension, filtres, amplificateurs pour adapter les signaux des capteurs</li>
+  <li><strong>Indicateurs</strong> : LEDs de diagnostic, points de test</li>
+  <li><strong>Alimentation</strong> : regulateurs de tension, filtrage des alimentations</li>
+</ul>
 
-La conception de cette platine a ete realisee en TP avec Proteus ARES, en suivant le schema fourni dans les supports de cours.
+<p>La conception de cette platine a ete realisee en TP avec Proteus ARES, en suivant le schema fourni dans les supports de cours.</p>
 
-#### 2.5 Composants et empreintes (footprints)
+<h4>2.5 Composants et empreintes (footprints)</h4>
 
-Chaque composant physique possede une empreinte qui definit son occupation sur le PCB :
+<p>Chaque composant physique possede une empreinte qui definit son occupation sur le PCB :</p>
 
-```
-Resistance traversante (axiale) : empreinte RES40 (10.16 mm entre pattes)
+<pre><code>Resistance traversante (axiale) : empreinte RES40 (10.16 mm entre pattes)
 Condensateur ceramique         : empreinte CAP_DISC (5.08 mm entre pattes)
 Circuit integre DIP-14         : empreinte DIP14 (7.62 mm entre rangees)
 Connecteur HE10 (2x5)         : empreinte HE10_2x5 (2.54 mm de pas)
 LED 3mm                        : empreinte LED3MM
-```
+</code></pre>
 
-Le choix de l'empreinte est critique : une erreur d'empreinte rend la carte infabricable ou impossible a assembler.
+<p>Le choix de l'empreinte est critique : une erreur d'empreinte rend la carte infabricable ou impossible a assembler.</p>
 
-### Module 3 : ER Microcontroleur - Programmation C167 appliquee
+<h3>Module 3 : ER Microcontroleur - Programmation C167 appliquee</h3>
 
-#### 3.1 Architecture materielle du systeme
+<h4>3.1 Architecture materielle du systeme</h4>
 
-Le systeme complet ER Microcontroleur comprend :
-- La carte de developpement C167 (processeur, memoire, ports serie)
-- La platine d'interface (concue en ER Interface)
-- Les peripheriques (LEDs, boutons, capteurs, afficheurs)
+<p>Le systeme complet ER Microcontroleur comprend :</p>
+<ul>
+  <li>La carte de developpement C167 (processeur, memoire, ports serie)</li>
+  <li>La platine d'interface (concue en ER Interface)</li>
+  <li>Les peripheriques (LEDs, boutons, capteurs, afficheurs)</li>
+</ul>
 
-L'objectif est d'integrer les connaissances de programmation du C167 (acquises en Informatique Embarquee) avec la conception materielle (ER Interface) pour realiser un systeme embarque fonctionnel.
+<p>L'objectif est d'integrer les connaissances de programmation du C167 (acquises en Informatique Embarquee) avec la conception materielle (ER Interface) pour realiser un systeme embarque fonctionnel.</p>
 
-#### 3.2 Gestion des LEDs et afficheurs
+<h4>3.2 Gestion des LEDs et afficheurs</h4>
 
-L'affichage sur les LEDs et les afficheurs 7 segments connectes via la platine d'interface :
+<p>L'affichage sur les LEDs et les afficheurs 7 segments connectes via la platine d'interface :</p>
 
-```c
-#include <reg167.h>
+<pre><code>#include &lt;reg167.h&gt;
 #include "IUT_C167_2019.h"
 
 /* Codes 7 segments (cathode commune) */
@@ -513,14 +535,13 @@ void afficher_nombre(unsigned int valeur) {
     P8 = code7seg[unite];
     /* Selection de l'afficheur par multiplexage */
 }
-```
+</code></pre>
 
-#### 3.3 Acquisition analogique et traitement
+<h4>3.3 Acquisition analogique et traitement</h4>
 
-Le systeme peut lire des capteurs analogiques via le CAN du C167 et afficher les resultats :
+<p>Le systeme peut lire des capteurs analogiques via le CAN du C167 et afficher les resultats :</p>
 
-```c
-#include <reg167.h>
+<pre><code>#include &lt;reg167.h&gt;
 #include "IUT_C167_2019.h"
 
 void init_adc(void) {
@@ -534,7 +555,7 @@ unsigned int lire_temperature(void) {
     /* Lecture du CAN sur le canal 0 */
     ADCON = 0x0000;           /* Canal 0 */
     ADCON |= 0x0100;          /* Start conversion */
-    while (ADCON & 0x0800);   /* Attente fin de conversion */
+    while (ADCON &amp; 0x0800);   /* Attente fin de conversion */
     valeur_brute = ADDAT;     /* Lecture resultat 10 bits */
 
     /* Conversion en tension (Vref = 5V, 10 bits) */
@@ -558,14 +579,13 @@ void main(void) {
         tempo_ms(1000);   /* Mesure toutes les secondes */
     } while(1);
 }
-```
+</code></pre>
 
-#### 3.4 Generation de signaux avec timer et platine d'interface
+<h4>3.4 Generation de signaux avec timer et platine d'interface</h4>
 
-En combinant les timers du C167 et la platine d'interface, on peut generer des signaux de frequence et de rapport cyclique programmables :
+<p>En combinant les timers du C167 et la platine d'interface, on peut generer des signaux de frequence et de rapport cyclique programmables :</p>
 
-```c
-#include <reg167.h>
+<pre><code>#include &lt;reg167.h&gt;
 #include "IUT_C167_2019.h"
 
 void init_pwm_hardware(unsigned int periode, unsigned int ton) {
@@ -605,14 +625,13 @@ void main(void) {
         }
     } while(1);
 }
-```
+</code></pre>
 
-#### 3.5 Machine a etats en C
+<h4>3.5 Machine a etats en C</h4>
 
-Pour les systemes plus complexes, on utilise une architecture de machine a etats :
+<p>Pour les systemes plus complexes, on utilise une architecture de machine a etats :</p>
 
-```c
-#include <reg167.h>
+<pre><code>#include &lt;reg167.h&gt;
 #include "IUT_C167_2019.h"
 
 typedef enum {
@@ -637,14 +656,14 @@ void machine_a_etats(void) {
             break;
 
         case ETAT_ATTENTE:
-            if (P7 & 0x01) {       /* Bouton appuye */
+            if (P7 &amp; 0x01) {       /* Bouton appuye */
                 etat_courant = ETAT_ACQUISITION;
             }
             break;
 
         case ETAT_ACQUISITION:
             ADCON = 0x0100;         /* Lance conversion ADC */
-            while (ADCON & 0x0800); /* Attend fin */
+            while (ADCON &amp; 0x0800); /* Attend fin */
             donnee = ADDAT;
             etat_courant = ETAT_TRAITEMENT;
             break;
@@ -656,7 +675,7 @@ void machine_a_etats(void) {
 
         case ETAT_AFFICHAGE:
             printf("Tension = %d mV\r\n", donnee);
-            P8 = (unsigned char)(donnee >> 2);  /* Affichage 8 bits */
+            P8 = (unsigned char)(donnee &gt;&gt; 2);  /* Affichage 8 bits */
             tempo_ms(500);
             etat_courant = ETAT_ATTENTE;
             break;
@@ -669,55 +688,59 @@ void main(void) {
         machine_a_etats();
     } while(1);
 }
-```
+</code></pre>
 
-Cette architecture de machine a etats est fondamentale pour structurer les programmes embarques complexes. Elle permet de separer clairement les differentes phases du traitement et de gerer les transitions de maniere explicite.
+<p>Cette architecture de machine a etats est fondamentale pour structurer les programmes embarques complexes. Elle permet de separer clairement les differentes phases du traitement et de gerer les transitions de maniere explicite.</p>
 
-### Integration des trois modules
+<h3>Integration des trois modules</h3>
 
-L'objectif final du module ER est l'integration :
+<p>L'objectif final du module ER est l'integration :</p>
 
-1. **Conception FPGA** : implementation d'un prediviseur et d'un generateur PWM en VHDL sur le Cyclone II
-2. **Conception PCB** : realisation de la platine d'interface qui connecte le FPGA et le C167 aux peripheriques
-3. **Programmation C167** : logiciel embarque qui communique avec le FPGA via les ports et qui controle les peripheriques via la platine d'interface
+<ol>
+  <li><strong>Conception FPGA</strong> : implementation d'un prediviseur et d'un generateur PWM en VHDL sur le Cyclone II</li>
+  <li><strong>Conception PCB</strong> : realisation de la platine d'interface qui connecte le FPGA et le C167 aux peripheriques</li>
+  <li><strong>Programmation C167</strong> : logiciel embarque qui communique avec le FPGA via les ports et qui controle les peripheriques via la platine d'interface</li>
+</ol>
 
-Cette approche systeme est representative de la realite industrielle ou un produit electronique combine souvent un FPGA (pour le traitement rapide des signaux), un microcontroleur (pour la logique applicative) et une carte electronique (pour l'interface avec le monde physique).
+<p>Cette approche systeme est representative de la realite industrielle ou un produit electronique combine souvent un FPGA (pour le traitement rapide des signaux), un microcontroleur (pour la logique applicative) et une carte electronique (pour l'interface avec le monde physique).</p>
 
----
+<hr/>
 
-## PART D : ANALYSE ET REFLEXION
+<h2>PART D : ANALYSE ET REFLEXION</h2>
 
-### Competences acquises
+<h3>Competences acquises</h3>
 
-Le module ER S2 m'a permis de developper des competences dans trois domaines complementaires :
+<p>Le module ER S2 m'a permis de developper des competences dans trois domaines complementaires :</p>
 
-- **Logique programmable (FPGA/VHDL)** : la programmation en VHDL m'a appris a penser en parallelisme materiel, ce qui est fondamentalement different de la programmation sequentielle classique. La conception de prediviseurs, compteurs et generateurs PWM m'a donne une comprehension pratique de la logique synchrone. L'utilisation des generiques VHDL pour creer des composants parametrables est une bonne pratique de conception reutilisable.
+<ul>
+  <li><strong>Logique programmable (FPGA/VHDL)</strong> : la programmation en VHDL m'a appris a penser en parallelisme materiel, ce qui est fondamentalement different de la programmation sequentielle classique. La conception de prediviseurs, compteurs et generateurs PWM m'a donne une comprehension pratique de la logique synchrone. L'utilisation des generiques VHDL pour creer des composants parametrables est une bonne pratique de conception reutilisable.</li>
+  <li><strong>Conception PCB</strong> : la maitrise de Proteus ISIS/ARES m'a initie a la conception de circuits imprimes, depuis la schemathique jusqu'au routage. Les regles de conception (largeur de piste, espacement, plan de masse) sont des connaissances directement applicables en milieu industriel. La realisation physique de la platine d'interface (gravure, percage, soudure) m'a confronte aux contraintes de fabrication.</li>
+  <li><strong>Integration systeme</strong> : la capacite a combiner un FPGA, un microcontroleur et une carte electronique dans un systeme coherent est une competence tres recherchee en electronique embarquee. Cela necessite de maitriser a la fois le materiel et le logiciel, et de comprendre les interfaces entre les differents sous-systemes.</li>
+</ul>
 
-- **Conception PCB** : la maitrise de Proteus ISIS/ARES m'a initie a la conception de circuits imprimes, depuis la schemathique jusqu'au routage. Les regles de conception (largeur de piste, espacement, plan de masse) sont des connaissances directement applicables en milieu industriel. La realisation physique de la platine d'interface (gravure, percage, soudure) m'a confronte aux contraintes de fabrication.
+<h3>Auto-evaluation</h3>
 
-- **Integration systeme** : la capacite a combiner un FPGA, un microcontroleur et une carte electronique dans un systeme coherent est une competence tres recherchee en electronique embarquee. Cela necessite de maitriser a la fois le materiel et le logiciel, et de comprendre les interfaces entre les differents sous-systemes.
+<p>La partie FPGA/VHDL a ete la plus desorientante au debut, car le paradigme de programmation est radicalement different du C. La notion que toutes les instructions s'executent simultanement (et non sequentiellement) demande un changement de mentalite. Cependant, une fois ce paradigme assimile, la conception de circuits logiques en VHDL devient tres logique et methodique.</p>
 
-### Auto-evaluation
+<p>La conception PCB avec Proteus a ete agreable car les outils sont visuels et le resultat concret (on obtient une vraie carte electronique a la fin). La difficulte principale reside dans le routage, ou il faut trouver un chemin pour toutes les pistes sans croisement (sur un PCB simple face).</p>
 
-La partie FPGA/VHDL a ete la plus desorientante au debut, car le paradigme de programmation est radicalement different du C. La notion que toutes les instructions s'executent simultanement (et non sequentiellement) demande un changement de mentalite. Cependant, une fois ce paradigme assimile, la conception de circuits logiques en VHDL devient tres logique et methodique.
+<p>La partie microcontroleur etait la plus familiere grace au cours d'Informatique Embarquee qui se deroule en parallele. L'apport specifique de l'ER est l'integration avec le materiel : on ne programme plus dans le vide, mais on interagit avec de vrais capteurs et actionneurs.</p>
 
-La conception PCB avec Proteus a ete agreable car les outils sont visuels et le resultat concret (on obtient une vraie carte electronique a la fin). La difficulte principale reside dans le routage, ou il faut trouver un chemin pour toutes les pistes sans croisement (sur un PCB simple face).
+<h3>Connexions et perspectives</h3>
 
-La partie microcontroleur etait la plus familiere grace au cours d'Informatique Embarquee qui se deroule en parallele. L'apport specifique de l'ER est l'integration avec le materiel : on ne programme plus dans le vide, mais on interagit avec de vrais capteurs et actionneurs.
+<p>Les competences acquises en ER S2 sont fondamentales pour la suite du cursus :</p>
+<ul>
+  <li><strong>S3-S4</strong> : les cours d'electronique numerique et de VHDL approfondissent la conception sur FPGA</li>
+  <li><strong>S5</strong> : le cours d'architecture materielle utilise les concepts de logique programmable</li>
+  <li><strong>Projet de fin d'etudes</strong> : la capacite a concevoir un systeme complet (materiel + logiciel) est au coeur du projet</li>
+  <li><strong>Master REOC</strong> : la specialisation en objets connectes repose sur l'integration de microcontroleurs, de circuits de communication et de capteurs dans des systemes embarques</li>
+</ul>
 
-### Connexions et perspectives
+<p>Ce module est l'un des plus formateurs du DUT GEII car il oblige a manipuler l'ensemble de la chaine de conception electronique, depuis l'idee jusqu'au prototype fonctionnel.</p>
 
-Les competences acquises en ER S2 sont fondamentales pour la suite du cursus :
-- **S3-S4** : les cours d'electronique numerique et de VHDL approfondissent la conception sur FPGA
-- **S5** : le cours d'architecture materielle utilise les concepts de logique programmable
-- **Projet de fin d'etudes** : la capacite a concevoir un systeme complet (materiel + logiciel) est au coeur du projet
-- **Master REOC** : la specialisation en objets connectes repose sur l'integration de microcontroleurs, de circuits de communication et de capteurs dans des systemes embarques
+<hr/>
 
-Ce module est l'un des plus formateurs du DUT GEII car il oblige a manipuler l'ensemble de la chaine de conception electronique, depuis l'idee jusqu'au prototype fonctionnel.
-
----
-
-## Documents de Cours
+<h2>Documents de Cours</h2>
 
 <div class="pdf-item">
   <h4>ER FPGA S2 2020-2021</h4>
@@ -755,10 +778,395 @@ Ce module est l'un des plus formateurs du DUT GEII car il oblige a manipuler l'e
   </p>
 </div>
 
----
+</div>
+
+<div class="lang-en">
+
+<h1>Design and Implementation (ER) - S2</h1>
+
+<p><strong>Year</strong>: 2020-2021 | <strong>Semester</strong>: 2 | <strong>Type</strong>: Project and Implementation</p>
+
+<hr/>
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3>Context and objectives</h3>
+
+<p>The Design and Implementation (ER) module in semester 2 of the DUT GEII is a cross-disciplinary course that integrates three complementary sub-modules: <strong>ER FPGA</strong>, <strong>ER Interface</strong>, and <strong>ER Microcontroller</strong>. This course focuses on the practical realization of complete electronic systems, from logic design (FPGA), through printed circuit board design (PCB), to embedded programming (microcontroller). It is a fundamentally hands-on course where students design, assemble, and test real systems.</p>
+
+<p><strong>Learning objectives:</strong></p>
+<ul>
+  <li>Design logic circuits in VHDL and implement them on FPGA (Altera Cyclone II)</li>
+  <li>Master printed circuit board (PCB) design with Proteus software (ISIS for schematics, ARES for routing)</li>
+  <li>Program the C167 microcontroller to interface sensors and actuators</li>
+  <li>Integrate the three domains (logic, electronics, software) into a complete system</li>
+  <li>Document and present technical achievements</li>
+</ul>
+
+<h3>Organization</h3>
+
+<p>The course is organized into three sub-modules that run in parallel throughout the semester:</p>
+
+<ol>
+  <li><strong>ER FPGA</strong>: design and implementation of logic circuits on Altera Cyclone II FPGA, using Quartus II and VHDL programming</li>
+  <li><strong>ER Interface</strong>: electronic board design (schematic and PCB) with Proteus ISIS/ARES, followed by fabrication and assembly</li>
+  <li><strong>ER Microcontroller</strong>: C167 programming in C via Keil uVision, with peripheral integration (LEDs, buttons, sensors, displays)</li>
+</ol>
+
+<p>Each sub-module includes supervised lab sessions with progressive deliverables (reports, design files, demonstrations).</p>
+
+<hr/>
+
+<h2>PART B: EXPERIENCE AND CONTEXT</h2>
+
+<h3>Educational environment</h3>
+
+<p>The 2020-2021 academic year saw adaptations in teaching methods due to the health crisis. Nevertheless, in-person lab sessions were maintained for the most part, which was essential for this highly practical module. Students worked in pairs on workstations equipped with the necessary software and hardware.</p>
+
+<h3>Platforms and tools</h3>
+
+<p><strong>ER FPGA:</strong></p>
+<ul>
+  <li><strong>FPGA</strong>: Altera Cyclone II (EP2C20) on DE1 development board</li>
+  <li><strong>IDE</strong>: Quartus II (Altera/Intel) for synthesis, place-and-route, and programming</li>
+  <li><strong>Language</strong>: VHDL (VHSIC Hardware Description Language)</li>
+  <li><strong>DE1 board peripherals</strong>: 10 LEDs, 4 seven-segment displays, 10 switches, 4 push buttons, 50 MHz oscillator</li>
+</ul>
+
+<p><strong>ER Interface:</strong></p>
+<ul>
+  <li><strong>Schematic</strong>: Proteus ISIS (electronic circuit simulation)</li>
+  <li><strong>PCB routing</strong>: Proteus ARES (printed circuit board design)</li>
+  <li><strong>Fabrication</strong>: etching machine, drill press, soldering station</li>
+  <li><strong>Components</strong>: through-hole and SMD (resistors, capacitors, integrated circuits, connectors)</li>
+</ul>
+
+<p><strong>ER Microcontroller:</strong></p>
+<ul>
+  <li><strong>Microcontroller</strong>: Infineon C167 (same platform as the Embedded Computing course)</li>
+  <li><strong>IDE</strong>: Keil uVision</li>
+  <li><strong>Interface</strong>: interface board connecting the C167 to sensors and actuators</li>
+  <li><strong>Peripherals</strong>: LEDs, buttons, potentiometers, temperature sensors, LCD displays</li>
+</ul>
+
+<h3>Links with other courses</h3>
+
+<p>This module stands at the crossroads of several courses:</p>
+<ul>
+  <li><strong>Embedded Computing (IE)</strong>: the ER Microcontroller sub-module uses the same C167 platform and the same concepts (GPIO, timers, interrupts)</li>
+  <li><strong>Electronic Systems (SE)</strong>: knowledge of analog and digital circuits is applied in interface board design</li>
+  <li><strong>Software Tools (OL)</strong>: understanding signals and systems helps with Proteus simulation</li>
+  <li><strong>Energy</strong>: power supply and protection concepts are used in PCB design</li>
+</ul>
+
+<img src="/assets/images/courses/S2/ER/organigramme1.png" alt="ER Flowchart" style="max-width: 100%; height: auto; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px; padding: 10px;">
+
+<hr/>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>Module 1: ER FPGA - Programmable logic in VHDL</h3>
+
+<h4>1.1 Introduction to FPGAs</h4>
+
+<p>An FPGA (Field-Programmable Gate Array) is an integrated circuit whose internal logic can be configured by the user after manufacturing. Unlike a microcontroller that executes instructions sequentially, an FPGA implements logic circuits that operate in parallel.</p>
+
+<p>The Cyclone II FPGA used in this course contains:</p>
+<ul>
+  <li>18,752 logic elements (LE)</li>
+  <li>239,616 bits of embedded memory</li>
+  <li>26 18x18-bit multipliers</li>
+  <li>4 PLLs (Phase-Locked Loop)</li>
+  <li>315 user I/O pins</li>
+</ul>
+
+<h4>1.2 VHDL structure</h4>
+
+<p>A VHDL program consists of two main parts:</p>
+
+<p><strong>The entity declaration</strong>: defines the component interface (input/output ports).</p>
+
+<p><strong>The architecture body</strong>: defines the internal behavior of the component.</p>
+
+<pre><code>library ieee;
+use ieee.std_logic_1164.all;
+
+entity example is
+  port (
+    input_a : in  std_logic;
+    input_b : in  std_logic;
+    output  : out std_logic
+  );
+end example;
+
+architecture behavioral of example is
+begin
+  output &lt;= input_a and input_b;
+end behavioral;
+</code></pre>
+
+<p>Fundamental VHDL types:</p>
+<ul>
+  <li><code>std_logic</code>: single-bit logic signal (values '0', '1', 'Z', 'X', etc.)</li>
+  <li><code>std_logic_vector(N-1 downto 0)</code>: N-bit bus</li>
+  <li><code>natural</code>, <code>integer</code>: numeric types for generics and constants</li>
+</ul>
+
+<h4>1.3 Clock prescaler</h4>
+
+<p>The Cyclone II FPGA on the DE1 board has a 50 MHz oscillator. To obtain lower frequencies (visible to the naked eye on LEDs), this clock must be divided:</p>
+
+<pre><code>-- (Same VHDL code as French version - hardware description is universal)
+-- See French section for full prescaler code
+</code></pre>
+
+<p><strong>Output frequency calculation</strong>:</p>
+
+<pre><code>f_output = f_input / 2^N
+
+Examples:
+N = 25: f = 50,000,000 / 2^25 = 50,000,000 / 33,554,432 = 1.49 Hz
+N = 24: f = 50,000,000 / 2^24 = 50,000,000 / 16,777,216 = 2.98 Hz
+N = 1 : f = 50,000,000 / 2^1  = 25,000,000 Hz = 25 MHz
+</code></pre>
+
+<h4>1.4 Generic counter</h4>
+
+<p>A parameterizable counter is a fundamental component in digital logic. It uses a <strong>generic</strong> <code>N</code> that allows defining the number of bits at instantiation. The <code>tc</code> signal (Terminal Count) goes high when the counter reaches its maximum value, enabling counter chaining or periodic signal generation.</p>
+
+<h4>1.5 VHDL PWM generator</h4>
+
+<p>The PWM generator is a key component for power control (LED brightness variation, motor control). The principle relies on comparison between a counter and a threshold value (duty cycle).</p>
+
+<p><strong>Operating principle</strong>:</p>
+<ol>
+  <li>The prescaler divides the input clock by (e_prediv + 1)</li>
+  <li>The PWM counter counts from 0 to the <code>period</code> value on the prescaled clock</li>
+  <li>The output is '1' as long as the counter is less than <code>ton</code>, and '0' otherwise</li>
+  <li>The duty cycle is: <code>alpha = ton / (period + 1)</code></li>
+</ol>
+
+<p><strong>PWM frequency calculation</strong>:</p>
+
+<pre><code>f_PWM = f_ck / ((e_prediv + 1) * (period + 1))
+
+Example: f_ck = 50 MHz, e_prediv = 3, period = 7
+f_PWM = 50,000,000 / (4 * 8) = 1,562,500 Hz = 1.56 MHz
+</code></pre>
+
+<h4>1.6 Digital frequency meter</h4>
+
+<p>A frequency meter measures a signal's frequency by counting the number of pulses during a known time interval (measurement gate).</p>
+
+<h4>1.7 Seven-segment decoder</h4>
+
+<p>Displaying on the DE1 board's seven-segment displays requires a BCD to seven-segment decoder.</p>
+
+<h3>Module 2: ER Interface - PCB design with Proteus</h3>
+
+<h4>2.1 Proteus ISIS/ARES overview</h4>
+
+<p>The Proteus software is an electronic CAD (Computer-Aided Design) tool composed of two complementary modules:</p>
+
+<ul>
+  <li><strong>ISIS</strong> (Intelligent Schematic Input System): schematic editor and circuit simulator. It allows drawing the electrical schematic of a circuit and simulating it to validate operation before fabrication.</li>
+  <li><strong>ARES</strong> (Advanced Routing and Editing Software): PCB editor. It allows placing components on the board, routing traces, and generating fabrication files (Gerber).</li>
+</ul>
+
+<h4>2.2 PCB design steps</h4>
+
+<p>Printed circuit board design follows a methodical process:</p>
+
+<p><strong>Step 1: Schematic (ISIS)</strong></p>
+<ol>
+  <li>Component placement on the schematic (resistors, capacitors, ICs, connectors)</li>
+  <li>Component wiring (wires and buses)</li>
+  <li>Reference and value assignment</li>
+  <li>Electrical verification (ERC - Electrical Rules Check): detects short circuits, unconnected pins, etc.</li>
+  <li>Circuit simulation to validate operation</li>
+</ol>
+
+<p><strong>Step 2: Netlist</strong></p>
+<ul>
+  <li>Netlist generation: a file describing all electrical connections between components</li>
+  <li>Netlist transfer from ISIS to ARES</li>
+</ul>
+
+<p><strong>Step 3: Place and route (ARES)</strong></p>
+<ol>
+  <li>Board outline definition</li>
+  <li>Component placement respecting mechanical and thermal constraints</li>
+  <li>Trace routing: physical connection of pins according to the netlist</li>
+  <li>Design rules verification (DRC - Design Rules Check): trace width, spacing, pad size</li>
+  <li>Ground plane addition to improve EMC</li>
+</ol>
+
+<p><strong>Step 4: Fabrication</strong></p>
+<ol>
+  <li>Gerber file generation (standard format for industrial manufacturing)</li>
+  <li>Circuit etching (chemical or mechanical)</li>
+  <li>Hole drilling</li>
+  <li>Component soldering</li>
+</ol>
+
+<h4>2.3 PCB design rules</h4>
+
+<p>Design rules are essential to ensure manufacturability and reliability:</p>
+
+<pre><code>Minimum trace width: 0.25 mm (signal), 0.5 mm (power)
+Minimum trace spacing: 0.25 mm
+Pad size: &gt; 1.8 * hole diameter
+Hole diameter: 0.8 mm (standard through-hole components)
+Annular ring width: &gt;= 0.3 mm
+Component-to-board-edge clearance: &gt;= 2 mm
+</code></pre>
+
+<h4>2.4 Interface board</h4>
+
+<p>The interface board is a PCB designed to connect the C167 microcontroller to external peripherals. It includes:</p>
+
+<ul>
+  <li><strong>Connectors</strong>: link to the C167 board (data bus, address bus, control signals)</li>
+  <li><strong>Buffers/Drivers</strong>: buffer circuits to protect microcontroller ports</li>
+  <li><strong>Signal conditioning circuits</strong>: voltage dividers, filters, amplifiers to adapt sensor signals</li>
+  <li><strong>Indicators</strong>: diagnostic LEDs, test points</li>
+  <li><strong>Power supply</strong>: voltage regulators, power filtering</li>
+</ul>
+
+<p>This board was designed during lab sessions with Proteus ARES, following the schematic provided in the course materials.</p>
+
+<h4>2.5 Components and footprints</h4>
+
+<p>Each physical component has a footprint that defines its occupation on the PCB:</p>
+
+<pre><code>Through-hole resistor (axial): footprint RES40 (10.16 mm between pads)
+Ceramic capacitor            : footprint CAP_DISC (5.08 mm between pads)
+DIP-14 integrated circuit    : footprint DIP14 (7.62 mm between rows)
+HE10 connector (2x5)        : footprint HE10_2x5 (2.54 mm pitch)
+3mm LED                      : footprint LED3MM
+</code></pre>
+
+<p>Footprint selection is critical: a footprint error makes the board unfabricable or impossible to assemble.</p>
+
+<h3>Module 3: ER Microcontroller - Applied C167 programming</h3>
+
+<h4>3.1 System hardware architecture</h4>
+
+<p>The complete ER Microcontroller system includes:</p>
+<ul>
+  <li>The C167 development board (processor, memory, serial ports)</li>
+  <li>The interface board (designed in ER Interface)</li>
+  <li>Peripherals (LEDs, buttons, sensors, displays)</li>
+</ul>
+
+<p>The goal is to integrate C167 programming knowledge (acquired in Embedded Computing) with hardware design (ER Interface) to create a functional embedded system.</p>
+
+<h4>3.2 LED and display management</h4>
+
+<p>Display on LEDs and seven-segment displays connected via the interface board uses multiplexing and 7-segment encoding tables in C.</p>
+
+<h4>3.3 Analog acquisition and processing</h4>
+
+<p>The system can read analog sensors via the C167's ADC and display results. Temperature reading uses the LM35 sensor (10 mV/degree) with 10-bit ADC conversion.</p>
+
+<h4>3.4 Signal generation with timer and interface board</h4>
+
+<p>By combining C167 timers and the interface board, programmable frequency and duty cycle signals can be generated. Timer 3 in down-counter mode with toggle output and Timer 2 for automatic reload.</p>
+
+<h4>3.5 State machine in C</h4>
+
+<p>For more complex systems, a state machine architecture is used. This architecture is fundamental for structuring complex embedded programs. It clearly separates the different processing phases and manages transitions explicitly.</p>
+
+<h3>Integration of the three modules</h3>
+
+<p>The final objective of the ER module is integration:</p>
+
+<ol>
+  <li><strong>FPGA design</strong>: implementation of a prescaler and PWM generator in VHDL on the Cyclone II</li>
+  <li><strong>PCB design</strong>: fabrication of the interface board connecting the FPGA and C167 to peripherals</li>
+  <li><strong>C167 programming</strong>: embedded software communicating with the FPGA via ports and controlling peripherals via the interface board</li>
+</ol>
+
+<p>This system-level approach is representative of industrial reality where an electronic product often combines an FPGA (for fast signal processing), a microcontroller (for application logic), and an electronic board (for interfacing with the physical world).</p>
+
+<hr/>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Skills acquired</h3>
+
+<p>The ER S2 module allowed me to develop skills in three complementary areas:</p>
+
+<ul>
+  <li><strong>Programmable logic (FPGA/VHDL)</strong>: VHDL programming taught me to think in terms of hardware parallelism, which is fundamentally different from classical sequential programming. Designing prescalers, counters, and PWM generators gave me practical understanding of synchronous logic. Using VHDL generics to create parameterizable components is a good practice for reusable design.</li>
+  <li><strong>PCB design</strong>: mastering Proteus ISIS/ARES introduced me to printed circuit board design, from schematic to routing. Design rules (trace width, spacing, ground plane) are directly applicable knowledge in an industrial setting. Physically fabricating the interface board (etching, drilling, soldering) exposed me to manufacturing constraints.</li>
+  <li><strong>System integration</strong>: the ability to combine an FPGA, a microcontroller, and an electronic board into a coherent system is a highly sought-after skill in embedded electronics. It requires mastering both hardware and software, and understanding the interfaces between different subsystems.</li>
+</ul>
+
+<h3>Self-assessment</h3>
+
+<p>The FPGA/VHDL part was the most disorienting at first, as the programming paradigm is radically different from C. The concept that all instructions execute simultaneously (not sequentially) requires a mindset shift. However, once this paradigm is internalized, designing logic circuits in VHDL becomes very logical and methodical.</p>
+
+<p>PCB design with Proteus was enjoyable because the tools are visual and the result is tangible (you get a real electronic board at the end). The main difficulty lies in routing, where you must find a path for all traces without crossing (on a single-layer PCB).</p>
+
+<p>The microcontroller part was the most familiar thanks to the Embedded Computing course running in parallel. The specific contribution of ER is integration with hardware: you no longer program in a vacuum, but interact with real sensors and actuators.</p>
+
+<h3>Connections and perspectives</h3>
+
+<p>Skills acquired in ER S2 are fundamental for the rest of the curriculum:</p>
+<ul>
+  <li><strong>S3-S4</strong>: digital electronics and VHDL courses deepen FPGA design</li>
+  <li><strong>S5</strong>: the hardware architecture course uses programmable logic concepts</li>
+  <li><strong>Final year project</strong>: the ability to design a complete system (hardware + software) is at the heart of the project</li>
+  <li><strong>Master REOC</strong>: the connected objects specialization relies on integrating microcontrollers, communication circuits, and sensors in embedded systems</li>
+</ul>
+
+<p>This module is one of the most formative in the DUT GEII as it requires handling the entire electronic design chain, from idea to functional prototype.</p>
+
+<hr/>
+
+<h2>Course Documents</h2>
+
+<div class="pdf-item">
+  <h4>ER FPGA S2 2020-2021</h4>
+  <p>Complete ER FPGA sub-module materials: introduction to Cyclone II FPGAs, VHDL language, prescalers, counters, PWM generators, frequency meter. Includes lab assignments.</p>
+  <embed src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
+  </p>
+</div>
+
+<div class="pdf-item">
+  <h4>Interface Course S2</h4>
+  <p>Course on interface board design: schematics, components, design rules, connectivity between microcontroller and peripherals.</p>
+  <embed src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/ER/COURS_interface_S2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
+  </p>
+</div>
+
+<div class="pdf-item">
+  <h4>Interfacing Course 2021 - Solutions</h4>
+  <p>Interfacing course with exercise solutions: buffers, drivers, signal conditioning, port protection.</p>
+  <embed src="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
+  </p>
+</div>
+
+<div class="pdf-item">
+  <h4>Interface Board Handout 2021</h4>
+  <p>Complete interface board documentation: electrical schematic, bill of materials, assembly and testing procedures.</p>
+  <embed src="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <p style="text-align: center; margin-top: 10px;">
+    <a href="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
+  </p>
+</div>
+
+</div>
 
 <style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
 
 <div class="back-nav">
-  <a href="./my-courses-2020-2021.html">&larr; Retour a Mes Cours 2020-2021</a>
+  <a href="./my-courses-2020-2021.html">&larr; <span data-i18n="back_to_courses_2020_2021">Retour a Mes Cours 2020-2021</span></a>
 </div>

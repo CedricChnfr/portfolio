@@ -70,75 +70,75 @@ categories: jekyll update
   <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-# My Courses - 2023-2024
+<h1 data-i18n="courses-title-2023-2024">My Courses - 2023-2024</h1>
 
 ---
 
-## Semester 7 (S7)
+<h2 data-i18n="semester-7">Semester 7 (S7)</h2>
 
 ### [📊 Analyse des Systèmes Non Linéaires](./analyse-systemes-non-lineaires.html)
-**Content**: Study of non-linear systems analysis and control methods.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Étude de l'analyse des systèmes non linéaires et des méthodes de commande.</span><span class="lang-en">Study of non-linear systems analysis and control methods.</span>
 
 ### [📡 Architectures Analogiques Transmission Information](./architectures-analogiques-transmission.html)
-**Content**: Analog architectures for information transmission systems.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures analogiques pour les systèmes de transmission de l'information.</span><span class="lang-en">Analog architectures for information transmission systems.</span>
 
 ### [🔌 Architectures Analogiques Systèmes Embarqués](./architectures-analogiques-embarques.html)
-**Content**: Analog architectures for embedded systems.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures analogiques pour les systèmes embarqués.</span><span class="lang-en">Analog architectures for embedded systems.</span>
 
 ### [💻 Architectures Numériques Avancées VHDL](./architectures-numeriques-vhdl.html)
-**Content**: Advanced digital architectures and VHDL programming.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures numériques avancées et programmation VHDL.</span><span class="lang-en">Advanced digital architectures and VHDL programming.</span>
 
 ### [🎨 Conception Orientée Objet UML](./conception-uml.html)
-**Content**: Object-oriented design principles and UML modeling.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de conception orientée objet et modélisation UML.</span><span class="lang-en">Object-oriented design principles and UML modeling.</span>
 
 ### [⚡ Étude et Modélisation des Composants Actifs](./etude-composants-actifs.html)
-**Content**: Study and modeling of active electronic components.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Étude et modélisation des composants électroniques actifs.</span><span class="lang-en">Study and modeling of active electronic components.</span>
 
 ### [🔊 Filtrage Actif et Modélisation Sources Bruit](./filtrage-actif-bruit.html)
-**Content**: Active filtering and noise source modeling.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Filtrage actif et modélisation des sources de bruit.</span><span class="lang-en">Active filtering and noise source modeling.</span>
 
 ### [💰 Finance](./finance.html)
-**Content**: Financial principles and management for engineers.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes financiers et gestion pour les ingénieurs.</span><span class="lang-en">Financial principles and management for engineers.</span>
 
 ### [🖥️ Programmation Orientée Objets C++](./poo-cpp.html)
-**Content**: Object-oriented programming with C++.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation orientée objet en C++.</span><span class="lang-en">Object-oriented programming with C++.</span>
 
 ### [☕ Programmation Orientée Objets Java](./poo-java.html)
-**Content**: Object-oriented programming with Java.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation orientée objet en Java.</span><span class="lang-en">Object-oriented programming with Java.</span>
 
 ### [🔐 Sécurité Matérielle](./securite-materielle.html)
-**Content**: Hardware security principles and implementations.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de sécurité matérielle et implémentations.</span><span class="lang-en">Hardware security principles and implementations.</span>
 
 ### [🎛️ Systèmes Multivariables](./systemes-multivariables.html)
-**Content**: Multivariable control systems analysis and design.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Analyse et conception des systèmes de commande multivariables.</span><span class="lang-en">Multivariable control systems analysis and design.</span>
 
 ---
 
-## Semester 8 (S8)
+<h2 data-i18n="semester-8">Semester 8 (S8)</h2>
 
 ### [🔗 Chaînes Électroniques d'Acquisition de l'Information](./chaines-acquisition.html)
-**Content**: Electronic chains for information acquisition systems.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Chaînes électroniques pour les systèmes d'acquisition de l'information.</span><span class="lang-en">Electronic chains for information acquisition systems.</span>
 
 ### [🎮 Commande Numérique](./commande-numerique.html)
-**Content**: Digital control systems and algorithms.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Systèmes de commande numérique et algorithmes.</span><span class="lang-en">Digital control systems and algorithms.</span>
 
 ### [⚖️ Droit](./droit.html)
-**Content**: Legal fundamentals for engineers and business.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux juridiques pour les ingénieurs et les entreprises.</span><span class="lang-en">Legal fundamentals for engineers and business.</span>
 
 ### [📈 Graphes et Programmation Linéaire](./graphes-programmation-lineaire.html)
-**Content**: Graph theory and linear programming methods.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Théorie des graphes et méthodes de programmation linéaire.</span><span class="lang-en">Graph theory and linear programming methods.</span>
 
 ### [🌐 Interconnexion Réseau](./interconnexion-reseau.html)
-**Content**: Network interconnection protocols and technologies.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Protocoles et technologies d'interconnexion réseau.</span><span class="lang-en">Network interconnection protocols and technologies.</span>
 
 ### [🤖 Machine Learning](./machine-learning-s8.html)
-**Content**: Introduction to machine learning algorithms and applications.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Introduction aux algorithmes d'apprentissage automatique et leurs applications.</span><span class="lang-en">Introduction to machine learning algorithms and applications.</span>
 
 ### [📊 Processus Stochastiques et Files d'Attentes](./processus-stochastiques.html)
-**Content**: Stochastic processes and queuing theory.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Processus stochastiques et théorie des files d'attente.</span><span class="lang-en">Stochastic processes and queuing theory.</span>
 
 ### [🔷 Réseaux de Pétri](./reseaux-petri.html)
-**Content**: Petri nets modeling and analysis for discrete event systems.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et analyse par réseaux de Pétri pour les systèmes à événements discrets.</span><span class="lang-en">Petri nets modeling and analysis for discrete event systems.</span>
 
 ### [⏱️ Temps Réel](./temps-reel.html)
-**Content**: Real-time systems design and implementation.
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Conception et implémentation de systèmes temps réel.</span><span class="lang-en">Real-time systems design and implementation.</span>

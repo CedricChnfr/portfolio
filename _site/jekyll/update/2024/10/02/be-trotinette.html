@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="BE Trotinette" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regim In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems." />
-<meta property="og:description" content="← Back to Academic Project Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regim In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems." />
+<meta name="description" content="&larr; Retour aux Projets Introduction Cette partie presente l&#39;etude et la modelisation d&#39;un systeme de commande en boucle fermee pour un moteur a courant continu, avec un accent sur la conception et l&#39;implementation d&#39;un correcteur numerique. Le systeme etudie comprend plusieurs composants cles : le correcteur, le hacheur, le moteur, un transducteur et un conditionneur de signal. L&#39;objectif principal de ce projet est de concevoir un correcteur numerique pour assurer un controle precis et stable du moteur en courant afin de garantir son couple. Cela implique la modelisation de chaque composant du systeme, la synthese du correcteur et la verification de la stabilite et des performances de la boucle fermee. Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Developpement du projet Modelisation du systeme Le projet commence par la modelisation du moteur a courant continu et de ses composants associes, y compris le transducteur et le conditionneur de signal. Le moteur est represente par son modele electrique et sa fonction de transfert, tandis que le transducteur est modelise a partir des donnees de sa fiche technique. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. La phase suivante implique la conception du correcteur PI (Proportionnel Integral), qui est utilise pour assurer la stabilite et la precision de la commande. Le systeme en boucle ouverte est analyse pour determiner les marges de phase et les constantes de temps, assurant ainsi une reponse dynamique optimale. Simulation et implementation Des simulations sont realisees a l&#39;aide de Simulink pour verifier les performances du correcteur et du systeme en boucle fermee. Une transformation bilineaire est appliquee pour modeliser le comportement discret du correcteur lors de son implementation sur un microcontroleur STM32. Une attention particuliere est portee aux temps de reaction, a la protection du systeme contre les surcharges et a l&#39;optimisation des reglages du correcteur. Regime libre The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regime En vert la consigne a appliquer, en jaune le courant dans le moteur. Deux phases : Phase un : Le systeme est dans la boucle de regulation, il est en saturation. Phase deux : La commande ne peut pas atteindre le courant demande car elle ne dispose pas d&#39;une charge suffisante. Le moteur fonctionne donc a une tension de 24 V avec son propre rapport tension/courant. Reponse indicielle In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response Cela donne un temps de montee d&#39;environ 1.3ms, ce qui est coherent avec les simulations Simulink. Conception du correcteur PI Le coeur du systeme de commande est le correcteur proportionnel-integral (PI). La conception du correcteur en boucle ouverte visait a garantir une marge de phase de plus de 45 degres pour assurer la stabilite du systeme. Un modele simple a ete etabli en utilisant la constante de temps electrique et mecanique du moteur, avec des simulations confirmant que les criteres de performance etaient respectes. Transformation bilineaire Nous avons ensuite applique une transformation bilineaire pour convertir ce correcteur en une version discrete, puisque le correcteur serait implemente sur un microcontroleur STM32. La frequence de discretisation a ete calculee pour minimiser la perte de marge de phase et s&#39;assurer que les performances en temps discret etaient comparables a la version analogique. This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45 degrees to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion Le projet a permis de developper un systeme de commande fiable et efficace pour un moteur a courant continu, integrant un correcteur numerique qui a ete simule puis implemente sur un microcontroleur. La validation des performances, tant en simulation qu&#39;en implementation reelle, montre que le systeme est capable de reguler precisement le moteur, tout en respectant les contraintes imposees par l&#39;environnement d&#39;implementation. Ce projet ouvre la voie a des applications industrielles ou un controle precis des systemes electrmecaniques est necessaire, et fournit une base solide pour de futurs developpements vers des systemes plus complexes ou plus optimises. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems." />
+<meta property="og:description" content="&larr; Retour aux Projets Introduction Cette partie presente l&#39;etude et la modelisation d&#39;un systeme de commande en boucle fermee pour un moteur a courant continu, avec un accent sur la conception et l&#39;implementation d&#39;un correcteur numerique. Le systeme etudie comprend plusieurs composants cles : le correcteur, le hacheur, le moteur, un transducteur et un conditionneur de signal. L&#39;objectif principal de ce projet est de concevoir un correcteur numerique pour assurer un controle precis et stable du moteur en courant afin de garantir son couple. Cela implique la modelisation de chaque composant du systeme, la synthese du correcteur et la verification de la stabilite et des performances de la boucle fermee. Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Developpement du projet Modelisation du systeme Le projet commence par la modelisation du moteur a courant continu et de ses composants associes, y compris le transducteur et le conditionneur de signal. Le moteur est represente par son modele electrique et sa fonction de transfert, tandis que le transducteur est modelise a partir des donnees de sa fiche technique. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. La phase suivante implique la conception du correcteur PI (Proportionnel Integral), qui est utilise pour assurer la stabilite et la precision de la commande. Le systeme en boucle ouverte est analyse pour determiner les marges de phase et les constantes de temps, assurant ainsi une reponse dynamique optimale. Simulation et implementation Des simulations sont realisees a l&#39;aide de Simulink pour verifier les performances du correcteur et du systeme en boucle fermee. Une transformation bilineaire est appliquee pour modeliser le comportement discret du correcteur lors de son implementation sur un microcontroleur STM32. Une attention particuliere est portee aux temps de reaction, a la protection du systeme contre les surcharges et a l&#39;optimisation des reglages du correcteur. Regime libre The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regime En vert la consigne a appliquer, en jaune le courant dans le moteur. Deux phases : Phase un : Le systeme est dans la boucle de regulation, il est en saturation. Phase deux : La commande ne peut pas atteindre le courant demande car elle ne dispose pas d&#39;une charge suffisante. Le moteur fonctionne donc a une tension de 24 V avec son propre rapport tension/courant. Reponse indicielle In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response Cela donne un temps de montee d&#39;environ 1.3ms, ce qui est coherent avec les simulations Simulink. Conception du correcteur PI Le coeur du systeme de commande est le correcteur proportionnel-integral (PI). La conception du correcteur en boucle ouverte visait a garantir une marge de phase de plus de 45 degres pour assurer la stabilite du systeme. Un modele simple a ete etabli en utilisant la constante de temps electrique et mecanique du moteur, avec des simulations confirmant que les criteres de performance etaient respectes. Transformation bilineaire Nous avons ensuite applique une transformation bilineaire pour convertir ce correcteur en une version discrete, puisque le correcteur serait implemente sur un microcontroleur STM32. La frequence de discretisation a ete calculee pour minimiser la perte de marge de phase et s&#39;assurer que les performances en temps discret etaient comparables a la version analogique. This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45 degrees to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion Le projet a permis de developper un systeme de commande fiable et efficace pour un moteur a courant continu, integrant un correcteur numerique qui a ete simule puis implemente sur un microcontroleur. La validation des performances, tant en simulation qu&#39;en implementation reelle, montre que le systeme est capable de reguler precisement le moteur, tout en respectant les contraintes imposees par l&#39;environnement d&#39;implementation. Ce projet ouvre la voie a des applications industrielles ou un controle precis des systemes electrmecaniques est necessaire, et fournit une base solide pour de futurs developpements vers des systemes plus complexes ou plus optimises. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems." />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +17,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="BE Trotinette" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regim In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.","headline":"BE Trotinette","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"&larr; Retour aux Projets Introduction Cette partie presente l&#39;etude et la modelisation d&#39;un systeme de commande en boucle fermee pour un moteur a courant continu, avec un accent sur la conception et l&#39;implementation d&#39;un correcteur numerique. Le systeme etudie comprend plusieurs composants cles : le correcteur, le hacheur, le moteur, un transducteur et un conditionneur de signal. L&#39;objectif principal de ce projet est de concevoir un correcteur numerique pour assurer un controle precis et stable du moteur en courant afin de garantir son couple. Cela implique la modelisation de chaque composant du systeme, la synthese du correcteur et la verification de la stabilite et des performances de la boucle fermee. Introduction This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop. Developpement du projet Modelisation du systeme Le projet commence par la modelisation du moteur a courant continu et de ses composants associes, y compris le transducteur et le conditionneur de signal. Le moteur est represente par son modele electrique et sa fonction de transfert, tandis que le transducteur est modelise a partir des donnees de sa fiche technique. Project Development System Modeling The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet. La phase suivante implique la conception du correcteur PI (Proportionnel Integral), qui est utilise pour assurer la stabilite et la precision de la commande. Le systeme en boucle ouverte est analyse pour determiner les marges de phase et les constantes de temps, assurant ainsi une reponse dynamique optimale. Simulation et implementation Des simulations sont realisees a l&#39;aide de Simulink pour verifier les performances du correcteur et du systeme en boucle fermee. Une transformation bilineaire est appliquee pour modeliser le comportement discret du correcteur lors de son implementation sur un microcontroleur STM32. Une attention particuliere est portee aux temps de reaction, a la protection du systeme contre les surcharges et a l&#39;optimisation des reglages du correcteur. Regime libre The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response. Simulation and Implementation Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings. Free Regime En vert la consigne a appliquer, en jaune le courant dans le moteur. Deux phases : Phase un : Le systeme est dans la boucle de regulation, il est en saturation. Phase deux : La commande ne peut pas atteindre le courant demande car elle ne dispose pas d&#39;une charge suffisante. Le moteur fonctionne donc a une tension de 24 V avec son propre rapport tension/courant. Reponse indicielle In green the instruction to apply, in yellow the current in the motor. Two phases: Phase one: The system is in the control loop, it is in saturation. Phase two: The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio. Step Response Cela donne un temps de montee d&#39;environ 1.3ms, ce qui est coherent avec les simulations Simulink. Conception du correcteur PI Le coeur du systeme de commande est le correcteur proportionnel-integral (PI). La conception du correcteur en boucle ouverte visait a garantir une marge de phase de plus de 45 degres pour assurer la stabilite du systeme. Un modele simple a ete etabli en utilisant la constante de temps electrique et mecanique du moteur, avec des simulations confirmant que les criteres de performance etaient respectes. Transformation bilineaire Nous avons ensuite applique une transformation bilineaire pour convertir ce correcteur en une version discrete, puisque le correcteur serait implemente sur un microcontroleur STM32. La frequence de discretisation a ete calculee pour minimiser la perte de marge de phase et s&#39;assurer que les performances en temps discret etaient comparables a la version analogique. This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations. PI Corrector Design The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45 degrees to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met. Bilinear Transform We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version. Conclusion Le projet a permis de developper un systeme de commande fiable et efficace pour un moteur a courant continu, integrant un correcteur numerique qui a ete simule puis implemente sur un microcontroleur. La validation des performances, tant en simulation qu&#39;en implementation reelle, montre que le systeme est capable de reguler precisement le moteur, tout en respectant les contraintes imposees par l&#39;environnement d&#39;implementation. Ce projet ouvre la voie a des applications industrielles ou un controle precis des systemes electrmecaniques est necessaire, et fournit une base solide pour de futurs developpements vers des systemes plus complexes ou plus optimises. Conclusion The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment. This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.","headline":"BE Trotinette","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/be-trotinette.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,52 +38,123 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
+        <style>
+p {
+  text-align: justify;
+}
+</style>
 
-<h1 id="introduction">Introduction</h1>
-<p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner. 
-The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
 
-<h1 id="project-development">Project Development</h1>
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Cette partie presente l'etude et la modelisation d'un systeme de commande en boucle fermee pour un moteur a courant continu, avec un accent sur la conception et l'implementation d'un correcteur numerique. Le systeme etudie comprend plusieurs composants cles : le correcteur, le hacheur, le moteur, un transducteur et un conditionneur de signal.</p>
+<p>L'objectif principal de ce projet est de concevoir un correcteur numerique pour assurer un controle precis et stable du moteur en courant afin de garantir son couple. Cela implique la modelisation de chaque composant du systeme, la synthese du correcteur et la verification de la stabilite et des performances de la boucle fermee.</p>
+</div>
 
-<h2 id="system-modeling">System Modeling</h2>
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This part presents the study and modeling of a closed-loop control system for a DC motor, with emphasis on the design and implementation of a digital corrector. The studied system includes several key components: the corrector, the chopper, the motor, a transducer, and a signal conditioner.</p>
+<p>The main objective of this project is to design a digital corrector to ensure precise and stable control of the motor in current to ensure its torque. This involves the modeling of each component of the system, the synthesis of the corrector, and the verification of the stability and performance of the closed loop.</p>
+</div>
+
+<div class="lang-fr">
+<h1>Developpement du projet</h1>
+<h2>Modelisation du systeme</h2>
+<p>Le projet commence par la modelisation du moteur a courant continu et de ses composants associes, y compris le transducteur et le conditionneur de signal. Le moteur est represente par son modele electrique et sa fonction de transfert, tandis que le transducteur est modelise a partir des donnees de sa fiche technique.</p>
+</div>
+
+<div class="lang-en">
+<h1>Project Development</h1>
+<h2>System Modeling</h2>
 <p>The project starts with the modeling of the DC motor and its associated components, including the transducer and the signal conditioner. The motor is represented by its electrical model and transfer function, while the transducer is modeled based on data from its datasheet.</p>
+</div>
 
-<p><img src="/img/BE_Trotinette/Chaine_Acq.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" /></p>
+<p><img src="/img/BE_Trotinette/Chaine_Acq.png" alt="Acquisition Chain" style="width: 100%;" onclick="openModal(this.src)" /></p>
 
+<div class="lang-fr">
+<p>La phase suivante implique la conception du correcteur PI (Proportionnel Integral), qui est utilise pour assurer la stabilite et la precision de la commande. Le systeme en boucle ouverte est analyse pour determiner les marges de phase et les constantes de temps, assurant ainsi une reponse dynamique optimale.</p>
+
+<h2>Simulation et implementation</h2>
+<p>Des simulations sont realisees a l'aide de Simulink pour verifier les performances du correcteur et du systeme en boucle fermee. Une transformation bilineaire est appliquee pour modeliser le comportement discret du correcteur lors de son implementation sur un microcontroleur STM32. Une attention particuliere est portee aux temps de reaction, a la protection du systeme contre les surcharges et a l'optimisation des reglages du correcteur.</p>
+
+<h3>Regime libre</h3>
+</div>
+
+<div class="lang-en">
 <p>The next phase involves the design of the PI (Proportional Integral) corrector, which is used to ensure the stability and accuracy of the control. The open-loop system is analyzed to determine the phase margins and time constants, thus ensuring an optimal dynamic response.</p>
 
-<h2 id="simulation-and-implementation">Simulation and Implementation</h2>
+<h2>Simulation and Implementation</h2>
 <p>Simulations are performed using Simulink to verify the performance of the corrector and the closed-loop system. A bilinear transformation is applied to model the discrete behavior of the corrector when implemented on an STM32 microcontroller. Particular attention is paid to reaction times, system protection against overloads, and optimization of corrector settings.</p>
 
-<h3 id="free-regim">Free Regim</h3>
-<p><img src="/img/BE_Trotinette/Graphe_sat.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
-In green the instruction to apply, in yellow the current in the motor.
-Two phases:
-Phase one:
-The system is in the control loop, it is in saturation.
-Phase two:
-The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio.</p>
+<h3>Free Regime</h3>
+</div>
 
-<h3 id="step-response">Step Response</h3>
-<p><img src="/img/BE_Trotinette/Graphe_response.png" alt="Graphe du Projet Robot" style="width: 100%;" onclick="openModal(this.src)" />
-This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations.</p>
+<p><img src="/img/BE_Trotinette/Graphe_sat.png" alt="Saturation Graph" style="width: 100%;" onclick="openModal(this.src)" /></p>
 
-<h2 id="pi-corrector-design">PI Corrector Design</h2>
-<p>The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45° to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met.</p>
+<div class="lang-fr">
+<p>En vert la consigne a appliquer, en jaune le courant dans le moteur.</p>
+<p>Deux phases :</p>
+<p><strong>Phase un :</strong> Le systeme est dans la boucle de regulation, il est en saturation.</p>
+<p><strong>Phase deux :</strong> La commande ne peut pas atteindre le courant demande car elle ne dispose pas d'une charge suffisante. Le moteur fonctionne donc a une tension de 24 V avec son propre rapport tension/courant.</p>
 
-<h2 id="bilinear-transform">Bilinear Transform</h2>
+<h3>Reponse indicielle</h3>
+</div>
+
+<div class="lang-en">
+<p>In green the instruction to apply, in yellow the current in the motor.</p>
+<p>Two phases:</p>
+<p><strong>Phase one:</strong> The system is in the control loop, it is in saturation.</p>
+<p><strong>Phase two:</strong> The control cannot reach the requested current because it does not have sufficient charge. The motor therefore operates at a voltage of 24 V with its own voltage/current ratio.</p>
+
+<h3>Step Response</h3>
+</div>
+
+<p><img src="/img/BE_Trotinette/Graphe_response.png" alt="Step Response Graph" style="width: 100%;" onclick="openModal(this.src)" /></p>
+
+<div class="lang-fr">
+<p>Cela donne un temps de montee d'environ 1.3ms, ce qui est coherent avec les simulations Simulink.</p>
+
+<h2>Conception du correcteur PI</h2>
+<p>Le coeur du systeme de commande est le correcteur proportionnel-integral (PI). La conception du correcteur en boucle ouverte visait a garantir une marge de phase de plus de 45 degres pour assurer la stabilite du systeme. Un modele simple a ete etabli en utilisant la constante de temps electrique et mecanique du moteur, avec des simulations confirmant que les criteres de performance etaient respectes.</p>
+
+<h2>Transformation bilineaire</h2>
+<p>Nous avons ensuite applique une transformation bilineaire pour convertir ce correcteur en une version discrete, puisque le correcteur serait implemente sur un microcontroleur STM32. La frequence de discretisation a ete calculee pour minimiser la perte de marge de phase et s'assurer que les performances en temps discret etaient comparables a la version analogique.</p>
+</div>
+
+<div class="lang-en">
+<p>This gives a rise time of approximately 1.3ms, which is consistent with the Simulink simulations.</p>
+
+<h2>PI Corrector Design</h2>
+<p>The heart of the control system is the proportional-integral (PI) corrector. The open-loop corrector design aimed to guarantee a phase margin of more than 45 degrees to ensure system stability. A simple model was established using the electrical and mechanical time constant of the motor, with simulations confirming that the performance criteria were met.</p>
+
+<h2>Bilinear Transform</h2>
 <p>We then applied a bilinear transform to convert this corrector into a discrete version, since the corrector would be implemented on an STM32 microcontroller. The discretization frequency was calculated to minimize the phase margin loss and ensure that the discrete-time performance was comparable to the analog version.</p>
+</div>
 
-<h1 id="conclusion">Conclusion</h1>
+<div class="lang-fr">
+<h1>Conclusion</h1>
+<p>Le projet a permis de developper un systeme de commande fiable et efficace pour un moteur a courant continu, integrant un correcteur numerique qui a ete simule puis implemente sur un microcontroleur. La validation des performances, tant en simulation qu'en implementation reelle, montre que le systeme est capable de reguler precisement le moteur, tout en respectant les contraintes imposees par l'environnement d'implementation.</p>
+<p>Ce projet ouvre la voie a des applications industrielles ou un controle precis des systemes electrmecaniques est necessaire, et fournit une base solide pour de futurs developpements vers des systemes plus complexes ou plus optimises.</p>
+</div>
+
+<div class="lang-en">
+<h1>Conclusion</h1>
 <p>The project has developed a reliable and efficient control system for a DC motor, integrating a digital corrector that has been simulated and then implemented on a microcontroller. The validation of the performances, both in simulation and in real implementation, shows that the system is able to precisely regulate the motor, while respecting the constraints imposed by the implementation environment.</p>
-
 <p>This project paves the way for industrial applications where precise control of electromechanical systems is necessary, and provides a solid basis for future developments towards more complex or more optimized systems.</p>
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -108,6 +185,117 @@ This gives a rise time of approximately 1.3ms, which is consistent with the Simu
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -126,8 +314,8 @@ This gives a rise time of approximately 1.3ms, which is consistent with the Simu
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -149,6 +337,7 @@ This gives a rise time of approximately 1.3ms, which is consistent with the Simu
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -659,11 +848,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -863,14 +1050,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -881,6 +1068,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

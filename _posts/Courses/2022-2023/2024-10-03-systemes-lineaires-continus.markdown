@@ -47,250 +47,276 @@ tr:nth-child(even) {
   <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
 </div>
 
-# 🎚️ Modélisation et Commande des Systèmes Linéaires Continus - S5
+<div class="lang-fr">
 
-**Année**: 2022-2023 (Semestre 5)  
-**Crédits**: 3 ECTS  
-**Type**: Automatique et Systèmes  
-**Enseignant**: Subias
+<h1>Modelisation et Commande des Systemes Lineaires Continus - S5</h1>
 
----
+<p><strong>Annee</strong>: 2022-2023 (Semestre 5)<br/>
+<strong>Credits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Automatique et Systemes<br/>
+<strong>Enseignant</strong>: Subias</p>
 
-## PART A: PRÉSENTATION GÉNÉRALE
+<hr/>
 
-### Objectifs du cours
+<h2>PART A: PRESENTATION GENERALE</h2>
 
-Ce cours approfondit la commande des systèmes linéaires continus avec une approche complémentaire au cours de représentation d'état. Il se concentre sur les techniques de commande classiques (PID, correcteurs fréquentiels) et leur application pratique sur des systèmes réels. Le cours couvre la modélisation de systèmes physiques, l'analyse de stabilité et de performances, ainsi que la conception de lois de commande adaptées.
+<h3>Objectifs du cours</h3>
 
-### Compétences visées
+<p>Ce cours approfondit la commande des systemes lineaires continus avec une approche complementaire au cours de representation d'etat. Il se concentre sur les techniques de commande classiques (PID, correcteurs frequentiels) et leur application pratique sur des systemes reels. Le cours couvre la modelisation de systemes physiques, l'analyse de stabilite et de performances, ainsi que la conception de lois de commande adaptees.</p>
 
-- Modéliser des systèmes physiques continus (mécaniques, électriques, thermiques)
-- Concevoir et régler des correcteurs PID pour des applications industrielles
-- Analyser la stabilité par méthodes fréquentielles (Bode, Nyquist)
-- Dimensionner des compensateurs (avance, retard de phase)
-- Utiliser MATLAB/Simulink pour la simulation et l'analyse
-- Évaluer les performances temporelles et fréquentielles
-- Implémenter des lois de commande sur systèmes réels
+<h3>Competences visees</h3>
 
-### Organisation
+<ul>
+  <li>Modeliser des systemes physiques continus (mecaniques, electriques, thermiques)</li>
+  <li>Concevoir et regler des correcteurs PID pour des applications industrielles</li>
+  <li>Analyser la stabilite par methodes frequentielles (Bode, Nyquist)</li>
+  <li>Dimensionner des compensateurs (avance, retard de phase)</li>
+  <li>Utiliser MATLAB/Simulink pour la simulation et l'analyse</li>
+  <li>Evaluer les performances temporelles et frequentielles</li>
+  <li>Implementer des lois de commande sur systemes reels</li>
+</ul>
 
-- **Volume horaire**: Cours magistraux, TD et TP MATLAB/Simulink
-- **Évaluation**: Examen écrit, TPs notés, Projet robot
-- **Semestre**: 5 (2022-2023)
-- **Prérequis**: Transformée de Laplace, systèmes du 1er et 2nd ordre, algèbre
+<h3>Organisation</h3>
 
----
+<ul>
+  <li><strong>Volume horaire</strong>: Cours magistraux, TD et TP MATLAB/Simulink</li>
+  <li><strong>Evaluation</strong>: Examen ecrit, TPs notes, Projet robot</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prerequis</strong>: Transformee de Laplace, systemes du 1er et 2nd ordre, algebre</li>
+</ul>
 
-## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+<hr/>
 
-### Contenu pédagogique
+<h2>PART B: EXPERIENCE, CONTEXTE ET FONCTION</h2>
 
-Le cours se structure autour de la modélisation, l'analyse et la commande de systèmes continus.
+<h3>Contenu pedagogique</h3>
 
-#### 1. Modélisation de Systèmes Physiques
+<p>Le cours se structure autour de la modelisation, l'analyse et la commande de systemes continus.</p>
 
-**Systèmes mécaniques**:
+<h4>1. Modelisation de Systemes Physiques</h4>
 
-Système masse-ressort-amortisseur:
-- m : masse
-- k : raideur du ressort
-- f : coefficient d'amortissement
+<p><strong>Systemes mecaniques</strong>:</p>
 
-Équation: m × d²x/dt² + f × dx/dt + k × x = F(t)
+<p>Systeme masse-ressort-amortisseur:</p>
+<ul>
+  <li>m : masse</li>
+  <li>k : raideur du ressort</li>
+  <li>f : coefficient d'amortissement</li>
+</ul>
 
-Fonction de transfert: H(s) = 1 / (m×s² + f×s + k)
+<p>Equation: m x d²x/dt² + f x dx/dt + k x x = F(t)</p>
 
-**Systèmes électriques (circuit RLC)**:
+<p>Fonction de transfert: H(s) = 1 / (m x s² + f x s + k)</p>
 
-Équation: L × d²i/dt² + R × di/dt + i/C = dV/dt
+<p><strong>Systemes electriques (circuit RLC)</strong>:</p>
 
-Similitude avec système mécanique (L ↔ m, R ↔ f, 1/C ↔ k).
+<p>Equation: L x d²i/dt² + R x di/dt + i/C = dV/dt</p>
 
-**Moteur à courant continu**:
+<p>Similitude avec systeme mecanique (L &harr; m, R &harr; f, 1/C &harr; k).</p>
 
-Modèle simplifié du TP:
-- Constante de temps: Tm = 0.3s
-- Gain: Km = 47.8
-- Fonction de transfert: H(s) = Km / (Tm×s + 1)
+<p><strong>Moteur a courant continu</strong>:</p>
 
-#### 2. Analyse Temporelle
+<p>Modele simplifie du TP:</p>
+<ul>
+  <li>Constante de temps: Tm = 0.3s</li>
+  <li>Gain: Km = 47.8</li>
+  <li>Fonction de transfert: H(s) = Km / (Tm x s + 1)</li>
+</ul>
 
-**Réponse indicielle d'un système du 2nd ordre**:
+<h4>2. Analyse Temporelle</h4>
 
-Paramètres caractéristiques:
-- Temps de montée (rise time)
-- Dépassement (overshoot): D = exp(-π×ζ / sqrt(1-ζ²))
-- Temps de réponse à 5% (settling time)
-- Erreur statique
+<p><strong>Reponse indicielle d'un systeme du 2nd ordre</strong>:</p>
 
-Pour un système bien amorti: ζ = 0.7 donne D ≈ 5%.
+<p>Parametres caracteristiques:</p>
+<ul>
+  <li>Temps de montee (rise time)</li>
+  <li>Depassement (overshoot): D = exp(-pi x zeta / sqrt(1-zeta²))</li>
+  <li>Temps de reponse a 5% (settling time)</li>
+  <li>Erreur statique</li>
+</ul>
 
-**Classe d'un système**:
+<p>Pour un systeme bien amorti: zeta = 0.7 donne D &approx; 5%.</p>
 
-Détermine l'erreur statique selon le type d'entrée:
-- Classe 0: erreur pour échelon
-- Classe 1: erreur pour rampe
-- Classe 2: erreur pour parabole
+<p><strong>Classe d'un systeme</strong>:</p>
 
-#### 3. Analyse Fréquentielle
+<p>Determine l'erreur statique selon le type d'entree:</p>
+<ul>
+  <li>Classe 0: erreur pour echelon</li>
+  <li>Classe 1: erreur pour rampe</li>
+  <li>Classe 2: erreur pour parabole</li>
+</ul>
 
-**Diagrammes de Bode (TP1)**:
+<h4>3. Analyse Frequentielle</h4>
 
-Représentation du gain et de la phase en fonction de la fréquence.
+<p><strong>Diagrammes de Bode (TP1)</strong>:</p>
 
-Système identifié expérimentalement: H(s) = 0.717 / (0.0033×s + 1)
+<p>Representation du gain et de la phase en fonction de la frequence.</p>
 
-Mesures réalisées:
-- Fréquences: 0.05 Hz à 10 Hz
-- Gain: de -3.5 dB à -24 dB
-- Phase: de -2.2° à -90°
+<p>Systeme identifie experimentalement: H(s) = 0.717 / (0.0033 x s + 1)</p>
 
-**Marges de stabilité (TP2)**:
+<p>Mesures realisees:</p>
+<ul>
+  <li>Frequences: 0.05 Hz a 10 Hz</li>
+  <li>Gain: de -3.5 dB a -24 dB</li>
+  <li>Phase: de -2.2 deg a -90 deg</li>
+</ul>
 
-**Marge de gain (Gm)**: gain supplémentaire avant instabilité.
+<p><strong>Marges de stabilite (TP2)</strong>:</p>
 
-**Marge de phase (Pm)**: phase supplémentaire avant instabilité.
+<p><strong>Marge de gain (Gm)</strong>: gain supplementaire avant instabilite.</p>
 
-Critères de robustesse:
-- Pm > 45° : bon amortissement
-- Gm > 6 dB : bonne marge
+<p><strong>Marge de phase (Pm)</strong>: phase supplementaire avant instabilite.</p>
 
-Commande MATLAB:
-```matlab
-[Gm, Pm, Wcg, Wcp] = margin(sys);
-```
+<p>Criteres de robustesse:</p>
+<ul>
+  <li>Pm &gt; 45 deg : bon amortissement</li>
+  <li>Gm &gt; 6 dB : bonne marge</li>
+</ul>
 
-Résultats typiques du TP: Pm ≈ 60° (système robuste).
+<p>Commande MATLAB:</p>
+<pre><code>[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
 
-**Diagramme de Nyquist**:
+<p>Resultats typiques du TP: Pm &approx; 60 deg (systeme robuste).</p>
 
-Tracé de H(jω) dans le plan complexe.
+<p><strong>Diagramme de Nyquist</strong>:</p>
 
-Critère de Nyquist: nombre d'encerclements du point critique (-1, 0) détermine la stabilité.
+<p>Trace de H(j&omega;) dans le plan complexe.</p>
 
-#### 4. Commande PID
+<p>Critere de Nyquist: nombre d'encerclements du point critique (-1, 0) determine la stabilite.</p>
 
-**Structure du PID**:
+<h4>4. Commande PID</h4>
 
-Correcteur Proportionnel-Intégral-Dérivé:
+<p><strong>Structure du PID</strong>:</p>
 
-u(t) = Kp × e(t) + Ki × ∫e(t)dt + Kd × de(t)/dt
+<p>Correcteur Proportionnel-Integral-Derive:</p>
 
-En transfert: C(s) = Kp + Ki/s + Kd×s
+<p>u(t) = Kp x e(t) + Ki x &int;e(t)dt + Kd x de(t)/dt</p>
 
-**Actions du PID**:
+<p>En transfert: C(s) = Kp + Ki/s + Kd x s</p>
 
-| Action | Effet | Utilisation |
-|--------|-------|-------------|
-| P (Proportionnel) | Réduit l'erreur, augmente rapidité | Toujours présent |
-| I (Intégral) | Annule erreur statique | Erreur permanente |
-| D (Dérivé) | Réduit dépassement, améliore stabilité | Systèmes oscillants |
+<p><strong>Actions du PID</strong>:</p>
 
-**Réglage par Ziegler-Nichols**:
+<table>
+  <thead>
+    <tr><th>Action</th><th>Effet</th><th>Utilisation</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P (Proportionnel)</td><td>Reduit l'erreur, augmente rapidite</td><td>Toujours present</td></tr>
+    <tr><td>I (Integral)</td><td>Annule erreur statique</td><td>Erreur permanente</td></tr>
+    <tr><td>D (Derive)</td><td>Reduit depassement, ameliore stabilite</td><td>Systemes oscillants</td></tr>
+  </tbody>
+</table>
 
-Méthode empirique pour déterminer Kp, Ki, Kd:
-1. Mettre Ki = 0, Kd = 0
-2. Augmenter Kp jusqu'à oscillations (Kp critique)
-3. Mesurer période d'oscillation Tu
-4. Appliquer les formules de réglage
+<p><strong>Reglage par Ziegler-Nichols</strong>:</p>
 
-Pour PID: Kp = 0.6×Kpcritique, Ti = 0.5×Tu, Td = 0.125×Tu.
+<p>Methode empirique pour determiner Kp, Ki, Kd:</p>
+<ol>
+  <li>Mettre Ki = 0, Kd = 0</li>
+  <li>Augmenter Kp jusqu'a oscillations (Kp critique)</li>
+  <li>Mesurer periode d'oscillation Tu</li>
+  <li>Appliquer les formules de reglage</li>
+</ol>
 
-**Limitation anti-windup**:
+<p>Pour PID: Kp = 0.6 x Kpcritique, Ti = 0.5 x Tu, Td = 0.125 x Tu.</p>
 
-Problème: l'intégrale continue à s'accumuler même si la commande sature.
+<p><strong>Limitation anti-windup</strong>:</p>
 
-Solution: limiter l'intégrateur quand la sortie sature.
+<p>Probleme: l'integrale continue a s'accumuler meme si la commande sature.</p>
 
-#### 5. Correcteurs Fréquentiels
+<p>Solution: limiter l'integrateur quand la sortie sature.</p>
 
-**Correcteur à avance de phase**:
+<h4>5. Correcteurs Frequentiels</h4>
 
-Forme: C(s) = K × (1 + a×T×s) / (1 + T×s) avec a > 1
+<p><strong>Correcteur a avance de phase</strong>:</p>
 
-Effet: augmente la marge de phase, améliore rapidité.
+<p>Forme: C(s) = K x (1 + a x T x s) / (1 + T x s) avec a &gt; 1</p>
 
-Utilisé quand: système trop lent ou marge de phase insuffisante.
+<p>Effet: augmente la marge de phase, ameliore rapidite.</p>
 
-**Correcteur à retard de phase**:
+<p>Utilise quand: systeme trop lent ou marge de phase insuffisante.</p>
 
-Forme: C(s) = K × (1 + T×s) / (1 + a×T×s) avec a > 1
+<p><strong>Correcteur a retard de phase</strong>:</p>
 
-Effet: augmente la marge de gain, réduit erreur statique.
+<p>Forme: C(s) = K x (1 + T x s) / (1 + a x T x s) avec a &gt; 1</p>
 
-Utilisé quand: erreur statique trop importante.
+<p>Effet: augmente la marge de gain, reduit erreur statique.</p>
 
-**Correcteur avance-retard**:
+<p>Utilise quand: erreur statique trop importante.</p>
 
-Combinaison des deux pour améliorer simultanément rapidité et précision.
+<p><strong>Correcteur avance-retard</strong>:</p>
 
-#### 6. Projet Robot Auto-Équilibré
+<p>Combinaison des deux pour ameliorer simultanement rapidite et precision.</p>
 
-**Système du pendule inversé**:
+<h4>6. Projet Robot Auto-Equilibre</h4>
 
-Modélisation du robot NXT Way (Lego Mindstorms):
+<p><strong>Systeme du pendule inverse</strong>:</p>
 
-Paramètres physiques:
-- Masse roues: m = 0.03 kg
-- Rayon roues: R = 0.042 m
-- Masse corps: M = 0.67 kg
-- Hauteur: H = 0.152 m
-- Gravité: g = 9.81 m/s²
+<p>Modelisation du robot NXT Way (Lego Mindstorms):</p>
 
-**Objectif**: maintenir le robot en équilibre vertical (angle θ = 0°).
+<p>Parametres physiques:</p>
+<ul>
+  <li>Masse roues: m = 0.03 kg</li>
+  <li>Rayon roues: R = 0.042 m</li>
+  <li>Masse corps: M = 0.67 kg</li>
+  <li>Hauteur: H = 0.152 m</li>
+  <li>Gravite: g = 9.81 m/s²</li>
+</ul>
 
-**Stratégie de commande**:
+<p><strong>Objectif</strong>: maintenir le robot en equilibre vertical (angle &theta; = 0 deg).</p>
 
-Système instable en boucle ouverte → nécessite commande active.
+<p><strong>Strategie de commande</strong>:</p>
 
-Approches possibles:
-- Retour d'état (placement de pôles)
-- Correcteur PID sur l'angle
-- Observateur pour estimer vitesse angulaire
+<p>Systeme instable en boucle ouverte &rarr; necessite commande active.</p>
 
-**Simulation Simulink**:
+<p>Approches possibles:</p>
+<ul>
+  <li>Retour d'etat (placement de poles)</li>
+  <li>Correcteur PID sur l'angle</li>
+  <li>Observateur pour estimer vitesse angulaire</li>
+</ul>
 
-Fichiers du projet:
-- NXTwaySim.slx: modèle complet du robot
-- NXP_robot_parameters.m: paramètres physiques
-- PlayAnimation.m: visualisation 3D
+<p><strong>Simulation Simulink</strong>:</p>
 
-Tests effectués:
-- Stabilisation après perturbation
-- Robustesse aux variations de paramètres
-- Rejection de perturbations externes
+<p>Fichiers du projet:</p>
+<ul>
+  <li>NXTwaySim.slx: modele complet du robot</li>
+  <li>NXP_robot_parameters.m: parametres physiques</li>
+  <li>PlayAnimation.m: visualisation 3D</li>
+</ul>
 
----
+<p>Tests effectues:</p>
+<ul>
+  <li>Stabilisation apres perturbation</li>
+  <li>Robustesse aux variations de parametres</li>
+  <li>Rejection de perturbations externes</li>
+</ul>
 
-## PART C: ASPECTS TECHNIQUES
+<hr/>
 
-### Travaux Pratiques MATLAB
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-**TP1: Identification expérimentale**:
+<h3>Travaux Pratiques MATLAB</h3>
 
-Objectif: déterminer la fonction de transfert d'un système réel à partir de mesures fréquentielles.
+<p><strong>TP1: Identification experimentale</strong>:</p>
 
-Données mesurées (gains et phases à différentes fréquences):
-```matlab
-freq = [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 7.5, 10];
-G = [0.669, 0.659, 0.609, 0.528, 0.396, 0.242, 0.119, 0.083, 0.061];
-```
+<p>Objectif: determiner la fonction de transfert d'un systeme reel a partir de mesures frequentielles.</p>
 
-Tracé du diagramme de Bode:
-```matlab
-G_dB = 20*log10(G);
+<p>Donnees mesurees (gains et phases a differentes frequences):</p>
+<pre><code>freq = [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 7.5, 10];
+G = [0.669, 0.659, 0.609, 0.528, 0.396, 0.242, 0.119, 0.083, 0.061];</code></pre>
+
+<p>Trace du diagramme de Bode:</p>
+<pre><code>G_dB = 20*log10(G);
 semilogx(freq, G_dB);
-xlabel('Fréquence (Hz)');
-ylabel('Gain (dB)');
-```
+xlabel('Frequence (Hz)');
+ylabel('Gain (dB)');</code></pre>
 
-Modèle identifié: système du 1er ordre avec gain 0.717 et constante de temps 3.3 ms.
+<p>Modele identifie: systeme du 1er ordre avec gain 0.717 et constante de temps 3.3 ms.</p>
 
-**TP2: Analyse de stabilité**:
+<p><strong>TP2: Analyse de stabilite</strong>:</p>
 
-Système en boucle fermée avec capteur et moteur:
-```matlab
-Ks = 1.55;   % Gain capteur
+<p>Systeme en boucle fermee avec capteur et moteur:</p>
+<pre><code>Ks = 1.55;   % Gain capteur
 Km = 47.8;   % Gain moteur
 Tm = 0.3;    % Constante de temps
 
@@ -298,186 +324,680 @@ num = [Km*K/9];
 den = [Tm, 1, Km*K*Ks/9];
 sys = tf(num, den);
 
-[Gm, Pm, Wcg, Wcp] = margin(sys);
-```
+[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
 
-Analyse des pôles:
-```matlab
-P = pole(sys);
-```
+<p>Analyse des poles:</p>
+<pre><code>P = pole(sys);</code></pre>
 
-Si partie réelle négative → système stable.
+<p>Si partie reelle negative &rarr; systeme stable.</p>
 
-**TP3: Commande par retour d'état**:
+<p><strong>TP3: Commande par retour d'etat</strong>:</p>
 
-Système d'ordre 2:
-```matlab
-A = [0 1; -10 -6.316];
+<p>Systeme d'ordre 2:</p>
+<pre><code>A = [0 1; -10 -6.316];
 B = [0; 1];
 C = [k/0.1001 0];
 
-% Placement de pôles
+% Placement de poles
 poles_desired = [-2+2i, -2-2i];
 K = place(A, B, poles_desired);
 
 % Simulation
 sys_cl = ss(A-B*K, B, C, 0);
-step(sys_cl);
-```
+step(sys_cl);</code></pre>
 
-Choix des pôles selon performances souhaitées:
-- Partie réelle: rapidité
-- Partie imaginaire: oscillations
+<p>Choix des poles selon performances souhaitees:</p>
+<ul>
+  <li>Partie reelle: rapidite</li>
+  <li>Partie imaginaire: oscillations</li>
+</ul>
 
-### Outils MATLAB Essentiels
+<h3>Outils MATLAB Essentiels</h3>
 
-**Création de modèles**:
-```matlab
-sys = tf(num, den);        % Fonction de transfert
-sys = ss(A, B, C, D);      % Représentation d'état
-```
+<p><strong>Creation de modeles</strong>:</p>
+<pre><code>sys = tf(num, den);        % Fonction de transfert
+sys = ss(A, B, C, D);      % Representation d'etat</code></pre>
 
-**Analyse**:
-```matlab
-pole(sys);                 % Pôles
-zero(sys);                 % Zéros
-step(sys);                 % Réponse indicielle
+<p><strong>Analyse</strong>:</p>
+<pre><code>pole(sys);                 % Poles
+zero(sys);                 % Zeros
+step(sys);                 % Reponse indicielle
 bode(sys);                 % Diagramme de Bode
 nyquist(sys);              % Diagramme de Nyquist
-margin(sys);               % Marges de stabilité
-```
+margin(sys);               % Marges de stabilite</code></pre>
 
-**Conception**:
-```matlab
-K = place(A, B, poles);    % Placement de pôles
-pidtune(sys, 'PID');       % Réglage PID automatique
-```
+<p><strong>Conception</strong>:</p>
+<pre><code>K = place(A, B, poles);    % Placement de poles
+pidtune(sys, 'PID');       % Reglage PID automatique</code></pre>
 
-### Méthodologie de Conception
+<h3>Methodologie de Conception</h3>
 
-**Étapes de conception d'un asservissement**:
+<p><strong>Etapes de conception d'un asservissement</strong>:</p>
 
-1. **Modélisation**: obtenir H(s) du système
-2. **Analyse BO**: stabilité, performances en boucle ouverte
-3. **Spécifications**: définir dépassement, temps de réponse, erreur admissible
-4. **Choix correcteur**: PID, avance/retard selon besoins
-5. **Réglage**: calcul des paramètres (Kp, Ki, Kd)
-6. **Simulation**: validation avec Simulink
-7. **Tests**: robustesse, perturbations, variations paramètres
+<ol>
+  <li><strong>Modelisation</strong>: obtenir H(s) du systeme</li>
+  <li><strong>Analyse BO</strong>: stabilite, performances en boucle ouverte</li>
+  <li><strong>Specifications</strong>: definir depassement, temps de reponse, erreur admissible</li>
+  <li><strong>Choix correcteur</strong>: PID, avance/retard selon besoins</li>
+  <li><strong>Reglage</strong>: calcul des parametres (Kp, Ki, Kd)</li>
+  <li><strong>Simulation</strong>: validation avec Simulink</li>
+  <li><strong>Tests</strong>: robustesse, perturbations, variations parametres</li>
+</ol>
 
-**Compromis à gérer**:
-- Rapidité vs stabilité
-- Précision vs robustesse
-- Complexité vs performances
+<p><strong>Compromis a gerer</strong>:</p>
+<ul>
+  <li>Rapidite vs stabilite</li>
+  <li>Precision vs robustesse</li>
+  <li>Complexite vs performances</li>
+</ul>
 
----
+<hr/>
 
-## PART D: ANALYSE ET RÉFLEXION
+<h2>PART D: ANALYSE ET REFLEXION</h2>
 
-### Compétences acquises
+<h3>Competences acquises</h3>
 
-**Modélisation**:
-- Passage du système physique au modèle mathématique
-- Identification expérimentale de paramètres
-- Validation par comparaison mesures/simulation
+<p><strong>Modelisation</strong>:</p>
+<ul>
+  <li>Passage du systeme physique au modele mathematique</li>
+  <li>Identification experimentale de parametres</li>
+  <li>Validation par comparaison mesures/simulation</li>
+</ul>
 
-**Analyse**:
-- Stabilité par Routh, Bode, Nyquist
-- Performances temporelles et fréquentielles
-- Évaluation de robustesse (marges)
+<p><strong>Analyse</strong>:</p>
+<ul>
+  <li>Stabilite par Routh, Bode, Nyquist</li>
+  <li>Performances temporelles et frequentielles</li>
+  <li>Evaluation de robustesse (marges)</li>
+</ul>
 
-**Commande**:
-- Conception de correcteurs PID
-- Réglage par méthodes empiriques et théoriques
-- Placement de pôles pour spécifications données
+<p><strong>Commande</strong>:</p>
+<ul>
+  <li>Conception de correcteurs PID</li>
+  <li>Reglage par methodes empiriques et theoriques</li>
+  <li>Placement de poles pour specifications donnees</li>
+</ul>
 
-**Outils**:
-- Maîtrise de MATLAB/Simulink
-- Interprétation de diagrammes (Bode, Nyquist)
-- Simulation et validation
+<p><strong>Outils</strong>:</p>
+<ul>
+  <li>Maitrise de MATLAB/Simulink</li>
+  <li>Interpretation de diagrammes (Bode, Nyquist)</li>
+  <li>Simulation et validation</li>
+</ul>
 
-### Applications pratiques
+<h3>Applications pratiques</h3>
 
-Les techniques de ce cours s'appliquent à de nombreux domaines:
+<p>Les techniques de ce cours s'appliquent a de nombreux domaines:</p>
 
-**Industrie**:
-- Régulation de température, pression, débit
-- Contrôle de vitesse de moteurs
-- Positionnement de systèmes mécaniques
+<p><strong>Industrie</strong>:</p>
+<ul>
+  <li>Regulation de temperature, pression, debit</li>
+  <li>Controle de vitesse de moteurs</li>
+  <li>Positionnement de systemes mecaniques</li>
+</ul>
 
-**Robotique**:
-- Stabilisation (pendule inversé, robot équilibré)
-- Suivi de trajectoire
-- Contrôle de force
+<p><strong>Robotique</strong>:</p>
+<ul>
+  <li>Stabilisation (pendule inverse, robot equilibre)</li>
+  <li>Suivi de trajectoire</li>
+  <li>Controle de force</li>
+</ul>
 
-**Aéronautique**:
-- Pilote automatique
-- Stabilisation d'attitude
-- Contrôle de vol
+<p><strong>Aeronautique</strong>:</p>
+<ul>
+  <li>Pilote automatique</li>
+  <li>Stabilisation d'attitude</li>
+  <li>Controle de vol</li>
+</ul>
 
-**Automobile**:
-- Régulateur de vitesse (cruise control)
-- Suspension active
-- Contrôle de moteur
+<p><strong>Automobile</strong>:</p>
+<ul>
+  <li>Regulateur de vitesse (cruise control)</li>
+  <li>Suspension active</li>
+  <li>Controle de moteur</li>
+</ul>
 
-### Liens avec autres cours
+<h3>Liens avec autres cours</h3>
 
-| Cours | Lien |
-|-------|------|
-| Circuits et Filtres Analogiques (S5) | Analyse fréquentielle, Bode |
-| Modélisation Systèmes Linéaires (S5) | Représentation d'état |
-| Systèmes Bouclés (S5) | Asservissements |
-| Commande Numérique (S8) | Discrétisation, PID numérique |
-| Temps Réel (S8) | Implémentation des lois de commande |
+<table>
+  <thead>
+    <tr><th>Cours</th><th>Lien</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Circuits et Filtres Analogiques (S5)</td><td>Analyse frequentielle, Bode</td></tr>
+    <tr><td>Modelisation Systemes Lineaires (S5)</td><td>Representation d'etat</td></tr>
+    <tr><td>Systemes Boucles (S5)</td><td>Asservissements</td></tr>
+    <tr><td>Commande Numerique (S8)</td><td>Discretisation, PID numerique</td></tr>
+    <tr><td>Temps Reel (S8)</td><td>Implementation des lois de commande</td></tr>
+  </tbody>
+</table>
 
-### Mon opinion
+<h3>Mon opinion</h3>
 
-Ce cours est complémentaire au cours de représentation d'état en apportant les outils classiques de l'automatique industrielle.
+<p>Ce cours est complementaire au cours de representation d'etat en apportant les outils classiques de l'automatique industrielle.</p>
 
-**Points forts**:
-- Approche très pratique (PID, réglages empiriques)
-- Outils directement utilisables en industrie
-- TPs concrets avec identification et commande
-- Projet robot motivant et formateur
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Approche tres pratique (PID, reglages empiriques)</li>
+  <li>Outils directement utilisables en industrie</li>
+  <li>TPs concrets avec identification et commande</li>
+  <li>Projet robot motivant et formateur</li>
+</ul>
 
-**Complémentarité**:
-Le PID reste le correcteur le plus utilisé industriellement (>90% des boucles de régulation). La représentation d'état apporte la théorie moderne, le PID apporte la pratique immédiate.
+<p><strong>Complementarite</strong>:</p>
+<p>Le PID reste le correcteur le plus utilise industriellement (&gt;90% des boucles de regulation). La representation d'etat apporte la theorie moderne, le PID apporte la pratique immediate.</p>
 
-**Importance professionnelle**:
-Compétences très recherchées dans l'automatisation industrielle, la robotique et les systèmes embarqués. Le réglage de PID est une compétence de base pour tout ingénieur en automatique.
+<p><strong>Importance professionnelle</strong>:</p>
+<p>Competences tres recherchees dans l'automatisation industrielle, la robotique et les systemes embarques. Le reglage de PID est une competence de base pour tout ingenieur en automatique.</p>
 
----
+<hr/>
 
-**Bilan personnel**: Ce cours a apporté les techniques classiques et éprouvées de l'automatique. La complémentarité avec l'approche moderne (état) offre une boîte à outils complète. Les TPs MATLAB et le projet robot ont permis d'appliquer concrètement ces concepts sur des systèmes réels, préparant bien aux applications industrielles.
+<p><strong>Bilan personnel</strong>: Ce cours a apporte les techniques classiques et eprouvees de l'automatique. La complementarite avec l'approche moderne (etat) offre une boite a outils complete. Les TPs MATLAB et le projet robot ont permis d'appliquer concretement ces concepts sur des systemes reels, preparant bien aux applications industrielles.</p>
 
----
+<hr/>
 
-## Rapports et Projets
+<h2>Rapports et Projets</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>Compte Rendu TP1 - Identification et Analyse Fréquentielle</h4>
-      <p>Rapport de TP sur l'identification expérimentale de systèmes, tracé de diagrammes de Bode et analyse de stabilité avec MATLAB.</p>
+      <h4>Compte Rendu TP1 - Identification et Analyse Frequentielle</h4>
+      <p>Rapport de TP sur l'identification experimentale de systemes, trace de diagrammes de Bode et analyse de stabilite avec MATLAB.</p>
       <p style="text-align: center;">
         <a href="/file/reports/S5/CHANFREAU_JUMIN_Compte_rendu_TP1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          Télécharger le rapport PDF
+          Telecharger le rapport PDF
         </a>
       </p>
     </div>
     <div class="pdf-item">
-      <h4>Compte Rendu TP3 - Commande par Retour d'État</h4>
-      <p>Rapport de TP sur la commande de systèmes linéaires continus : placement de pôles, simulation Simulink et validation expérimentale.</p>
+      <h4>Compte Rendu TP3 - Commande par Retour d'Etat</h4>
+      <p>Rapport de TP sur la commande de systemes lineaires continus : placement de poles, simulation Simulink et validation experimentale.</p>
       <p style="text-align: center;">
         <a href="/file/reports/S5/Compte_Rendu_TP3_Commande_JUMIN_CHANFREAU.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          Télécharger le rapport PDF
+          Telecharger le rapport PDF
         </a>
       </p>
     </div>
   </div>
 </div>
 
----
+</div>
+
+<div class="lang-en">
+
+<h1>Modeling and Control of Continuous Linear Systems - S5</h1>
+
+<p><strong>Year</strong>: 2022-2023 (Semester 5)<br/>
+<strong>Credits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Control Systems and Automation<br/>
+<strong>Instructor</strong>: Subias</p>
+
+<hr/>
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3>Course Objectives</h3>
+
+<p>This course deepens the study of continuous linear system control with an approach complementary to the state-space representation course. It focuses on classical control techniques (PID, frequency-domain controllers) and their practical application to real systems. The course covers physical system modeling, stability and performance analysis, as well as the design of suitable control laws.</p>
+
+<h3>Target Skills</h3>
+
+<ul>
+  <li>Model continuous physical systems (mechanical, electrical, thermal)</li>
+  <li>Design and tune PID controllers for industrial applications</li>
+  <li>Analyze stability using frequency-domain methods (Bode, Nyquist)</li>
+  <li>Size compensators (lead, lag phase)</li>
+  <li>Use MATLAB/Simulink for simulation and analysis</li>
+  <li>Evaluate time-domain and frequency-domain performance</li>
+  <li>Implement control laws on real systems</li>
+</ul>
+
+<h3>Organization</h3>
+
+<ul>
+  <li><strong>Hours</strong>: Lectures, tutorials and MATLAB/Simulink lab sessions</li>
+  <li><strong>Assessment</strong>: Written exam, graded lab sessions, Robot project</li>
+  <li><strong>Semester</strong>: 5 (2022-2023)</li>
+  <li><strong>Prerequisites</strong>: Laplace transform, 1st and 2nd order systems, algebra</li>
+</ul>
+
+<hr/>
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Pedagogical Content</h3>
+
+<p>The course is structured around modeling, analysis and control of continuous systems.</p>
+
+<h4>1. Physical System Modeling</h4>
+
+<p><strong>Mechanical systems</strong>:</p>
+
+<p>Mass-spring-damper system:</p>
+<ul>
+  <li>m: mass</li>
+  <li>k: spring stiffness</li>
+  <li>f: damping coefficient</li>
+</ul>
+
+<p>Equation: m x d²x/dt² + f x dx/dt + k x x = F(t)</p>
+
+<p>Transfer function: H(s) = 1 / (m x s² + f x s + k)</p>
+
+<p><strong>Electrical systems (RLC circuit)</strong>:</p>
+
+<p>Equation: L x d²i/dt² + R x di/dt + i/C = dV/dt</p>
+
+<p>Analogy with mechanical system (L &harr; m, R &harr; f, 1/C &harr; k).</p>
+
+<p><strong>DC motor</strong>:</p>
+
+<p>Simplified lab model:</p>
+<ul>
+  <li>Time constant: Tm = 0.3s</li>
+  <li>Gain: Km = 47.8</li>
+  <li>Transfer function: H(s) = Km / (Tm x s + 1)</li>
+</ul>
+
+<h4>2. Time-Domain Analysis</h4>
+
+<p><strong>Step response of a 2nd order system</strong>:</p>
+
+<p>Characteristic parameters:</p>
+<ul>
+  <li>Rise time</li>
+  <li>Overshoot: D = exp(-pi x zeta / sqrt(1-zeta²))</li>
+  <li>5% settling time</li>
+  <li>Steady-state error</li>
+</ul>
+
+<p>For a well-damped system: zeta = 0.7 gives D &approx; 5%.</p>
+
+<p><strong>System type</strong>:</p>
+
+<p>Determines the steady-state error depending on input type:</p>
+<ul>
+  <li>Type 0: error for step input</li>
+  <li>Type 1: error for ramp input</li>
+  <li>Type 2: error for parabolic input</li>
+</ul>
+
+<h4>3. Frequency-Domain Analysis</h4>
+
+<p><strong>Bode diagrams (Lab 1)</strong>:</p>
+
+<p>Representation of gain and phase as a function of frequency.</p>
+
+<p>Experimentally identified system: H(s) = 0.717 / (0.0033 x s + 1)</p>
+
+<p>Measurements taken:</p>
+<ul>
+  <li>Frequencies: 0.05 Hz to 10 Hz</li>
+  <li>Gain: from -3.5 dB to -24 dB</li>
+  <li>Phase: from -2.2 deg to -90 deg</li>
+</ul>
+
+<p><strong>Stability margins (Lab 2)</strong>:</p>
+
+<p><strong>Gain margin (Gm)</strong>: additional gain before instability.</p>
+
+<p><strong>Phase margin (Pm)</strong>: additional phase before instability.</p>
+
+<p>Robustness criteria:</p>
+<ul>
+  <li>Pm &gt; 45 deg: good damping</li>
+  <li>Gm &gt; 6 dB: good margin</li>
+</ul>
+
+<p>MATLAB command:</p>
+<pre><code>[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
+
+<p>Typical lab results: Pm &approx; 60 deg (robust system).</p>
+
+<p><strong>Nyquist diagram</strong>:</p>
+
+<p>Plot of H(j&omega;) in the complex plane.</p>
+
+<p>Nyquist criterion: the number of encirclements of the critical point (-1, 0) determines stability.</p>
+
+<h4>4. PID Control</h4>
+
+<p><strong>PID structure</strong>:</p>
+
+<p>Proportional-Integral-Derivative controller:</p>
+
+<p>u(t) = Kp x e(t) + Ki x &int;e(t)dt + Kd x de(t)/dt</p>
+
+<p>Transfer form: C(s) = Kp + Ki/s + Kd x s</p>
+
+<p><strong>PID actions</strong>:</p>
+
+<table>
+  <thead>
+    <tr><th>Action</th><th>Effect</th><th>Usage</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>P (Proportional)</td><td>Reduces error, increases speed</td><td>Always present</td></tr>
+    <tr><td>I (Integral)</td><td>Eliminates steady-state error</td><td>Permanent error</td></tr>
+    <tr><td>D (Derivative)</td><td>Reduces overshoot, improves stability</td><td>Oscillating systems</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Ziegler-Nichols tuning</strong>:</p>
+
+<p>Empirical method to determine Kp, Ki, Kd:</p>
+<ol>
+  <li>Set Ki = 0, Kd = 0</li>
+  <li>Increase Kp until oscillations (critical Kp)</li>
+  <li>Measure oscillation period Tu</li>
+  <li>Apply tuning formulas</li>
+</ol>
+
+<p>For PID: Kp = 0.6 x Kp_critical, Ti = 0.5 x Tu, Td = 0.125 x Tu.</p>
+
+<p><strong>Anti-windup limitation</strong>:</p>
+
+<p>Problem: the integral keeps accumulating even when the control signal saturates.</p>
+
+<p>Solution: limit the integrator when the output saturates.</p>
+
+<h4>5. Frequency-Domain Controllers</h4>
+
+<p><strong>Lead compensator</strong>:</p>
+
+<p>Form: C(s) = K x (1 + a x T x s) / (1 + T x s) with a &gt; 1</p>
+
+<p>Effect: increases phase margin, improves speed.</p>
+
+<p>Used when: system is too slow or phase margin is insufficient.</p>
+
+<p><strong>Lag compensator</strong>:</p>
+
+<p>Form: C(s) = K x (1 + T x s) / (1 + a x T x s) with a &gt; 1</p>
+
+<p>Effect: increases gain margin, reduces steady-state error.</p>
+
+<p>Used when: steady-state error is too large.</p>
+
+<p><strong>Lead-lag compensator</strong>:</p>
+
+<p>Combination of both to simultaneously improve speed and precision.</p>
+
+<h4>6. Self-Balancing Robot Project</h4>
+
+<p><strong>Inverted pendulum system</strong>:</p>
+
+<p>Modeling of the NXT Way robot (Lego Mindstorms):</p>
+
+<p>Physical parameters:</p>
+<ul>
+  <li>Wheel mass: m = 0.03 kg</li>
+  <li>Wheel radius: R = 0.042 m</li>
+  <li>Body mass: M = 0.67 kg</li>
+  <li>Height: H = 0.152 m</li>
+  <li>Gravity: g = 9.81 m/s²</li>
+</ul>
+
+<p><strong>Objective</strong>: keep the robot in vertical balance (angle &theta; = 0 deg).</p>
+
+<p><strong>Control strategy</strong>:</p>
+
+<p>Open-loop unstable system &rarr; requires active control.</p>
+
+<p>Possible approaches:</p>
+<ul>
+  <li>State feedback (pole placement)</li>
+  <li>PID controller on the angle</li>
+  <li>Observer to estimate angular velocity</li>
+</ul>
+
+<p><strong>Simulink simulation</strong>:</p>
+
+<p>Project files:</p>
+<ul>
+  <li>NXTwaySim.slx: complete robot model</li>
+  <li>NXP_robot_parameters.m: physical parameters</li>
+  <li>PlayAnimation.m: 3D visualization</li>
+</ul>
+
+<p>Tests performed:</p>
+<ul>
+  <li>Stabilization after perturbation</li>
+  <li>Robustness to parameter variations</li>
+  <li>External disturbance rejection</li>
+</ul>
+
+<hr/>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>MATLAB Lab Sessions</h3>
+
+<p><strong>Lab 1: Experimental identification</strong>:</p>
+
+<p>Objective: determine the transfer function of a real system from frequency measurements.</p>
+
+<p>Measured data (gains and phases at various frequencies):</p>
+<pre><code>freq = [0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 7.5, 10];
+G = [0.669, 0.659, 0.609, 0.528, 0.396, 0.242, 0.119, 0.083, 0.061];</code></pre>
+
+<p>Bode diagram plot:</p>
+<pre><code>G_dB = 20*log10(G);
+semilogx(freq, G_dB);
+xlabel('Frequency (Hz)');
+ylabel('Gain (dB)');</code></pre>
+
+<p>Identified model: 1st order system with gain 0.717 and time constant 3.3 ms.</p>
+
+<p><strong>Lab 2: Stability analysis</strong>:</p>
+
+<p>Closed-loop system with sensor and motor:</p>
+<pre><code>Ks = 1.55;   % Sensor gain
+Km = 47.8;   % Motor gain
+Tm = 0.3;    % Time constant
+
+num = [Km*K/9];
+den = [Tm, 1, Km*K*Ks/9];
+sys = tf(num, den);
+
+[Gm, Pm, Wcg, Wcp] = margin(sys);</code></pre>
+
+<p>Pole analysis:</p>
+<pre><code>P = pole(sys);</code></pre>
+
+<p>If real part is negative &rarr; system is stable.</p>
+
+<p><strong>Lab 3: State feedback control</strong>:</p>
+
+<p>2nd order system:</p>
+<pre><code>A = [0 1; -10 -6.316];
+B = [0; 1];
+C = [k/0.1001 0];
+
+% Pole placement
+poles_desired = [-2+2i, -2-2i];
+K = place(A, B, poles_desired);
+
+% Simulation
+sys_cl = ss(A-B*K, B, C, 0);
+step(sys_cl);</code></pre>
+
+<p>Pole selection based on desired performance:</p>
+<ul>
+  <li>Real part: speed</li>
+  <li>Imaginary part: oscillations</li>
+</ul>
+
+<h3>Essential MATLAB Tools</h3>
+
+<p><strong>Model creation</strong>:</p>
+<pre><code>sys = tf(num, den);        % Transfer function
+sys = ss(A, B, C, D);      % State-space representation</code></pre>
+
+<p><strong>Analysis</strong>:</p>
+<pre><code>pole(sys);                 % Poles
+zero(sys);                 % Zeros
+step(sys);                 % Step response
+bode(sys);                 % Bode diagram
+nyquist(sys);              % Nyquist diagram
+margin(sys);               % Stability margins</code></pre>
+
+<p><strong>Design</strong>:</p>
+<pre><code>K = place(A, B, poles);    % Pole placement
+pidtune(sys, 'PID');       % Automatic PID tuning</code></pre>
+
+<h3>Design Methodology</h3>
+
+<p><strong>Steps for designing a control system</strong>:</p>
+
+<ol>
+  <li><strong>Modeling</strong>: obtain H(s) of the system</li>
+  <li><strong>Open-loop analysis</strong>: stability, open-loop performance</li>
+  <li><strong>Specifications</strong>: define overshoot, settling time, allowable error</li>
+  <li><strong>Controller selection</strong>: PID, lead/lag as needed</li>
+  <li><strong>Tuning</strong>: parameter calculation (Kp, Ki, Kd)</li>
+  <li><strong>Simulation</strong>: validation with Simulink</li>
+  <li><strong>Testing</strong>: robustness, disturbances, parameter variations</li>
+</ol>
+
+<p><strong>Trade-offs to manage</strong>:</p>
+<ul>
+  <li>Speed vs stability</li>
+  <li>Precision vs robustness</li>
+  <li>Complexity vs performance</li>
+</ul>
+
+<hr/>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Acquired Skills</h3>
+
+<p><strong>Modeling</strong>:</p>
+<ul>
+  <li>Going from physical system to mathematical model</li>
+  <li>Experimental parameter identification</li>
+  <li>Validation through measurement/simulation comparison</li>
+</ul>
+
+<p><strong>Analysis</strong>:</p>
+<ul>
+  <li>Stability via Routh, Bode, Nyquist</li>
+  <li>Time-domain and frequency-domain performance</li>
+  <li>Robustness evaluation (margins)</li>
+</ul>
+
+<p><strong>Control</strong>:</p>
+<ul>
+  <li>PID controller design</li>
+  <li>Tuning via empirical and theoretical methods</li>
+  <li>Pole placement for given specifications</li>
+</ul>
+
+<p><strong>Tools</strong>:</p>
+<ul>
+  <li>Proficiency in MATLAB/Simulink</li>
+  <li>Interpretation of diagrams (Bode, Nyquist)</li>
+  <li>Simulation and validation</li>
+</ul>
+
+<h3>Practical Applications</h3>
+
+<p>The techniques from this course apply to many fields:</p>
+
+<p><strong>Industry</strong>:</p>
+<ul>
+  <li>Temperature, pressure, and flow regulation</li>
+  <li>Motor speed control</li>
+  <li>Mechanical system positioning</li>
+</ul>
+
+<p><strong>Robotics</strong>:</p>
+<ul>
+  <li>Stabilization (inverted pendulum, balanced robot)</li>
+  <li>Trajectory tracking</li>
+  <li>Force control</li>
+</ul>
+
+<p><strong>Aerospace</strong>:</p>
+<ul>
+  <li>Autopilot</li>
+  <li>Attitude stabilization</li>
+  <li>Flight control</li>
+</ul>
+
+<p><strong>Automotive</strong>:</p>
+<ul>
+  <li>Cruise control</li>
+  <li>Active suspension</li>
+  <li>Engine control</li>
+</ul>
+
+<h3>Links with Other Courses</h3>
+
+<table>
+  <thead>
+    <tr><th>Course</th><th>Link</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Analog Circuits and Filters (S5)</td><td>Frequency analysis, Bode</td></tr>
+    <tr><td>Linear System Modeling (S5)</td><td>State-space representation</td></tr>
+    <tr><td>Feedback Systems (S5)</td><td>Servo control</td></tr>
+    <tr><td>Digital Control (S8)</td><td>Discretization, digital PID</td></tr>
+    <tr><td>Real-Time Systems (S8)</td><td>Control law implementation</td></tr>
+  </tbody>
+</table>
+
+<h3>My Opinion</h3>
+
+<p>This course complements the state-space representation course by providing the classical tools of industrial control.</p>
+
+<p><strong>Strengths</strong>:</p>
+<ul>
+  <li>Very practical approach (PID, empirical tuning)</li>
+  <li>Tools directly usable in industry</li>
+  <li>Hands-on lab sessions with identification and control</li>
+  <li>Motivating and educational robot project</li>
+</ul>
+
+<p><strong>Complementarity</strong>:</p>
+<p>The PID remains the most widely used controller in industry (&gt;90% of regulation loops). State-space representation provides modern theory, while PID provides immediate practice.</p>
+
+<p><strong>Professional importance</strong>:</p>
+<p>Highly sought-after skills in industrial automation, robotics and embedded systems. PID tuning is a fundamental skill for any control engineer.</p>
+
+<hr/>
+
+<p><strong>Personal assessment</strong>: This course provided the classical and proven techniques of control engineering. The complementarity with the modern approach (state-space) offers a complete toolbox. The MATLAB labs and robot project allowed for concrete application of these concepts on real systems, providing good preparation for industrial applications.</p>
+
+<hr/>
+
+<h2>Reports and Projects</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Lab Report 1 - Identification and Frequency Analysis</h4>
+      <p>Lab report on experimental system identification, Bode diagram plotting and stability analysis with MATLAB.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/CHANFREAU_JUMIN_Compte_rendu_TP1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF report
+        </a>
+      </p>
+    </div>
+    <div class="pdf-item">
+      <h4>Lab Report 3 - State Feedback Control</h4>
+      <p>Lab report on continuous linear system control: pole placement, Simulink simulation and experimental validation.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S5/Compte_Rendu_TP3_Commande_JUMIN_CHANFREAU.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF report
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
 
 <style>
     .pdf-container {

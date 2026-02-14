@@ -27,200 +27,203 @@ categories: jekyll update
 </style>
 
 <div class="back-nav">
-  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+  <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">← Retour aux Cours 2022-2023</a>
 </div>
 
-# 💻 Langage C - S5
+<div class="lang-fr">
 
-**Année**: 2022-2023 (Semestre 5)  
-**Crédits**: 3 ECTS  
-**Type**: Programmation Système
+<h1>💻 Langage C - S5</h1>
 
----
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br/>
+<strong>Crédits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Programmation Système</p>
 
-## PART A: PRÉSENTATION GÉNÉRALE
+<hr/>
 
-### Objectifs du cours
+<h2>PART A: PRÉSENTATION GÉNÉRALE</h2>
 
-Le cours de Langage C fournit une formation complète à la programmation système en C, langage fondamental pour le développement de systèmes embarqués, systèmes d'exploitation et applications nécessitant des performances optimales. Le cours couvre les concepts fondamentaux (pointeurs, tableaux, structures) ainsi que les aspects avancés (allocation dynamique, manipulation de bits, structures de données complexes).
+<h3>Objectifs du cours</h3>
 
-### Compétences visées
+<p>Le cours de Langage C fournit une formation complète à la programmation système en C, langage fondamental pour le développement de systèmes embarqués, systèmes d'exploitation et applications nécessitant des performances optimales. Le cours couvre les concepts fondamentaux (pointeurs, tableaux, structures) ainsi que les aspects avancés (allocation dynamique, manipulation de bits, structures de données complexes).</p>
 
-- Maîtriser la syntaxe C et les types de données
-- Comprendre les pointeurs et l'arithmétique des pointeurs
-- Gérer la mémoire dynamique (malloc, free)
-- Manipuler les structures de données (listes chaînées, arbres)
-- Réaliser des opérations bit à bit pour le bas niveau
-- Créer des programmes modulaires avec fichiers multiples
-- Déboguer et optimiser du code C
+<h3>Compétences visées</h3>
 
-### Organisation
+<ul>
+  <li>Maîtriser la syntaxe C et les types de données</li>
+  <li>Comprendre les pointeurs et l'arithmétique des pointeurs</li>
+  <li>Gérer la mémoire dynamique (malloc, free)</li>
+  <li>Manipuler les structures de données (listes chaînées, arbres)</li>
+  <li>Réaliser des opérations bit à bit pour le bas niveau</li>
+  <li>Créer des programmes modulaires avec fichiers multiples</li>
+  <li>Déboguer et optimiser du code C</li>
+</ul>
 
-- **Volume horaire**: 48h (CM: 24h, TD/TP: 24h)
-- **Évaluation**: Examens écrits (60%) + TPs et projets (40%)
-- **Semestre**: 5 (2022-2023)
-- **Prérequis**: Algorithmique de base, notions de programmation
+<h3>Organisation</h3>
 
----
+<ul>
+  <li><strong>Volume horaire</strong>: 48h (CM: 24h, TD/TP: 24h)</li>
+  <li><strong>Évaluation</strong>: Examens écrits (60%) + TPs et projets (40%)</li>
+  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
+  <li><strong>Prérequis</strong>: Algorithmique de base, notions de programmation</li>
+</ul>
 
-## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+<hr/>
 
-### Contenu pédagogique
+<h2>PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
 
-#### 1. Fondamentaux du C
+<h3>Contenu pédagogique</h3>
 
-**Types de données et opérateurs**:
+<h4>1. Fondamentaux du C</h4>
 
-Le C propose des types primitifs de tailles fixes:
-- `char`: 1 octet (8 bits)
-- `int`: 4 octets sur systèmes 32/64 bits
-- `float`: 4 octets (simple précision)
-- `double`: 8 octets (double précision)
+<p><strong>Types de données et opérateurs</strong>:</p>
 
-**Modificateurs**: `signed`, `unsigned`, `short`, `long`
+<p>Le C propose des types primitifs de tailles fixes:</p>
+<ul>
+  <li><code>char</code>: 1 octet (8 bits)</li>
+  <li><code>int</code>: 4 octets sur systèmes 32/64 bits</li>
+  <li><code>float</code>: 4 octets (simple précision)</li>
+  <li><code>double</code>: 8 octets (double précision)</li>
+</ul>
 
-Exemple de déclarations:
-```c
-int nombre = 42;
+<p><strong>Modificateurs</strong>: <code>signed</code>, <code>unsigned</code>, <code>short</code>, <code>long</code></p>
+
+<p>Exemple de déclarations:</p>
+<pre><code class="language-c">int nombre = 42;
 unsigned int positif = 100;
 char lettre = 'A';
 float pi = 3.14f;
-```
+</code></pre>
 
-**Opérateurs bit à bit**:
+<p><strong>Opérateurs bit à bit</strong>:</p>
 
-Essentiels pour la manipulation bas niveau:
-- `&` (AND), `|` (OR), `^` (XOR), `~` (NOT)
-- `<<` (décalage gauche), `>>` (décalage droite)
+<p>Essentiels pour la manipulation bas niveau:</p>
+<ul>
+  <li><code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>~</code> (NOT)</li>
+  <li><code>&lt;&lt;</code> (décalage gauche), <code>&gt;&gt;</code> (décalage droite)</li>
+</ul>
 
-**Application TD1**: Compter les bits à 1 dans un entier:
+<p><strong>Application TD1</strong>: Compter les bits à 1 dans un entier:</p>
 
-```c
-int bitcount(int n) {
+<pre><code class="language-c">int bitcount(int n) {
     int count = 0;
     while (n) {
-        count += n & 1;  // Teste le bit de poids faible
-        n >>= 1;         // Décale d'un bit à droite
+        count += n &amp; 1;  // Teste le bit de poids faible
+        n &gt;&gt;= 1;         // Décale d'un bit à droite
     }
     return count;
 }
-```
+</code></pre>
 
-Pour `0xF0000F00`, résultat: 8 bits à 1.
+<p>Pour <code>0xF0000F00</code>, résultat: 8 bits à 1.</p>
 
-**Structures de contrôle**:
+<p><strong>Structures de contrôle</strong>:</p>
 
-Boucles et conditionnelles standard:
-```c
-// Tri à bulles (TD1)
-for (int j = 0; j < TAILLE-1; j++) {
-    for (int i = 0; i < TAILLE-j-1; i++) {
-        if (tab[i+1] < tab[i]) {
+<p>Boucles et conditionnelles standard:</p>
+<pre><code class="language-c">// Tri à bulles (TD1)
+for (int j = 0; j &lt; TAILLE-1; j++) {
+    for (int i = 0; i &lt; TAILLE-j-1; i++) {
+        if (tab[i+1] &lt; tab[i]) {
             int temp = tab[i];
             tab[i] = tab[i+1];
             tab[i+1] = temp;
         }
     }
 }
-```
+</code></pre>
 
-#### 2. Pointeurs et Gestion Mémoire
+<h4>2. Pointeurs et Gestion Mémoire</h4>
 
-**Les pointeurs**:
+<p><strong>Les pointeurs</strong>:</p>
 
-Concept fondamental du C: variable contenant une adresse mémoire.
+<p>Concept fondamental du C: variable contenant une adresse mémoire.</p>
 
-Déclaration et utilisation:
-```c
-int x = 10;
-int *ptr = &x;  // ptr pointe vers x
+<p>Déclaration et utilisation:</p>
+<pre><code class="language-c">int x = 10;
+int *ptr = &amp;x;  // ptr pointe vers x
 *ptr = 20;      // Modifie x via le pointeur
-```
+</code></pre>
 
-**Arithmétique des pointeurs**:
+<p><strong>Arithmétique des pointeurs</strong>:</p>
 
-```c
-int tab[5] = {1, 2, 3, 4, 5};
+<pre><code class="language-c">int tab[5] = {1, 2, 3, 4, 5};
 int *p = tab;  // Pointe vers tab[0]
 p++;           // Pointe vers tab[1]
 *p = 100;      // tab[1] = 100
-```
+</code></pre>
 
-**Permutation par pointeurs (TD2)**:
+<p><strong>Permutation par pointeurs (TD2)</strong>:</p>
 
-```c
-int Permute(int* a, int* b) {
+<pre><code class="language-c">int Permute(int* a, int* b) {
     int temp = *a;
     *a = *b;
     *b = temp;
     return 0;
 }
-```
+</code></pre>
 
-**Allocation dynamique**:
+<p><strong>Allocation dynamique</strong>:</p>
 
-Fonctions essentielles:
-- `malloc(size)`: alloue size octets
-- `calloc(n, size)`: alloue et initialise à 0
-- `free(ptr)`: libère la mémoire
+<p>Fonctions essentielles:</p>
+<ul>
+  <li><code>malloc(size)</code>: alloue size octets</li>
+  <li><code>calloc(n, size)</code>: alloue et initialise à 0</li>
+  <li><code>free(ptr)</code>: libère la mémoire</li>
+</ul>
 
-Exemple TD2:
-```c
-char* chaine = calloc(10, sizeof(char));
+<p>Exemple TD2:</p>
+<pre><code class="language-c">char* chaine = calloc(10, sizeof(char));
 int* tab = calloc(10, sizeof(int));
 
 // Utilisation...
 
 free(chaine);
 free(tab);
-```
+</code></pre>
 
-**Risques**:
-- Fuite mémoire si oubli de `free`
-- Double free (libérer deux fois)
-- Accès après free (use-after-free)
-- Dépassement de buffer
+<p><strong>Risques</strong>:</p>
+<ul>
+  <li>Fuite mémoire si oubli de <code>free</code></li>
+  <li>Double free (libérer deux fois)</li>
+  <li>Accès après free (use-after-free)</li>
+  <li>Dépassement de buffer</li>
+</ul>
 
-#### 3. Structures et Types Composés
+<h4>3. Structures et Types Composés</h4>
 
-**Définition de structures (TD3)**:
+<p><strong>Définition de structures (TD3)</strong>:</p>
 
-```c
-struct Etudiant {
+<pre><code class="language-c">struct Etudiant {
     char nom[50];
     int naissance;
     int notes[10];
     int nb_notes;
 };
-```
+</code></pre>
 
-**Utilisation**:
+<p><strong>Utilisation</strong>:</p>
 
-```c
-struct Etudiant cedric;
+<pre><code class="language-c">struct Etudiant cedric;
 strcpy(cedric.nom, "Chanfreau");
 cedric.naissance = 2000;
 cedric.notes[0] = 15;
-```
+</code></pre>
 
-**Pointeurs vers structures**:
+<p><strong>Pointeurs vers structures</strong>:</p>
 
-```c
-struct Etudiant *ptr = &cedric;
-ptr->naissance = 2001;  // Équivalent à (*ptr).naissance
-```
+<pre><code class="language-c">struct Etudiant *ptr = &amp;cedric;
+ptr-&gt;naissance = 2001;  // Équivalent à (*ptr).naissance
+</code></pre>
 
 <div style="text-align: center; margin: 30px 0;">
   <img src="/assets/images/courses/S5/langage-c/pointeurs.svg" alt="Illustration des pointeurs en C" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
   <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Concept des pointeurs - Un pointeur stocke l'adresse mémoire d'une variable</p>
 </div>
 
-**Copie de structures**:
+<p><strong>Copie de structures</strong>:</p>
 
-Attention aux pointeurs dans les structures:
+<p>Attention aux pointeurs dans les structures:</p>
 
-```c
-struct S1 {
+<pre><code class="language-c">struct S1 {
     int a;
     char* ch;  // Pointeur
 };
@@ -230,17 +233,16 @@ v1.ch = calloc(10, sizeof(char));
 strcpy(v1.ch, "Test");
 
 v2 = v1;  // Copie superficielle: v2.ch pointe vers la même zone!
-```
+</code></pre>
 
-Solution: copie profonde manuelle ou allocation séparée.
+<p>Solution: copie profonde manuelle ou allocation séparée.</p>
 
-#### 4. Structures de Données Dynamiques
+<h4>4. Structures de Données Dynamiques</h4>
 
-**Listes chaînées (TP principal)**:
+<p><strong>Listes chaînées (TP principal)</strong>:</p>
 
-Structure d'un élément:
-```c
-struct element {
+<p>Structure d'un élément:</p>
+<pre><code class="language-c">struct element {
     struct Coureur* coureur;
     struct element* suiv;
 };
@@ -250,72 +252,67 @@ struct liste {
     struct element* dernier;
     struct element* courant;
 };
-```
+</code></pre>
 
-**Initialisation**:
-```c
-int init_liste(struct liste* liste) {
-    liste->premier = NULL;
-    liste->dernier = NULL;
+<p><strong>Initialisation</strong>:</p>
+<pre><code class="language-c">int init_liste(struct liste* liste) {
+    liste-&gt;premier = NULL;
+    liste-&gt;dernier = NULL;
     return 0;
 }
-```
+</code></pre>
 
-**Ajout en queue (file)**:
-```c
-int ajout_file(struct liste* der, struct Coureur* coureur) {
-    if (der->dernier == NULL) {
+<p><strong>Ajout en queue (file)</strong>:</p>
+<pre><code class="language-c">int ajout_file(struct liste* der, struct Coureur* coureur) {
+    if (der-&gt;dernier == NULL) {
         // Liste vide
-        der->dernier = malloc(sizeof(struct element));
-        der->dernier->coureur = coureur;
-        der->premier = der->dernier;
-        der->dernier->suiv = NULL;
+        der-&gt;dernier = malloc(sizeof(struct element));
+        der-&gt;dernier-&gt;coureur = coureur;
+        der-&gt;premier = der-&gt;dernier;
+        der-&gt;dernier-&gt;suiv = NULL;
     } else {
         // Ajout en fin
-        der->dernier->suiv = malloc(sizeof(struct element));
-        der->dernier = der->dernier->suiv;
-        der->dernier->coureur = coureur;
-        der->dernier->suiv = NULL;
+        der-&gt;dernier-&gt;suiv = malloc(sizeof(struct element));
+        der-&gt;dernier = der-&gt;dernier-&gt;suiv;
+        der-&gt;dernier-&gt;coureur = coureur;
+        der-&gt;dernier-&gt;suiv = NULL;
     }
     return 0;
 }
-```
+</code></pre>
 
-**Parcours de liste**:
-```c
-int Aller_Debut(struct liste* liste) {
-    liste->courant = liste->premier;
+<p><strong>Parcours de liste</strong>:</p>
+<pre><code class="language-c">int Aller_Debut(struct liste* liste) {
+    liste-&gt;courant = liste-&gt;premier;
     return 0;
 }
 
 int Avancer(struct liste* liste) {
-    liste->courant = liste->courant->suiv;
+    liste-&gt;courant = liste-&gt;courant-&gt;suiv;
     return 0;
 }
 
 int Fin(struct liste liste) {
     return (liste.courant == NULL);
 }
-```
+</code></pre>
 
-**Comptage d'éléments**:
-```c
-int nbElement(struct liste liste) {
+<p><strong>Comptage d'éléments</strong>:</p>
+<pre><code class="language-c">int nbElement(struct liste liste) {
     int count = 0;
     while (!Fin(liste)) {
-        Avancer(&liste);
+        Avancer(&amp;liste);
         count++;
     }
     return count;
 }
-```
+</code></pre>
 
-#### 5. Fichiers et Arguments
+<h4>5. Fichiers et Arguments</h4>
 
-**Arguments de ligne de commande (TD2)**:
+<p><strong>Arguments de ligne de commande (TD2)</strong>:</p>
 
-```c
-int main(int argc, char* argv[]) {
+<pre><code class="language-c">int main(int argc, char* argv[]) {
     printf("Nombre d'arguments: %d\n", argc);
     if (argc == 3) {
         printf("Programme: %s\n", argv[0]);
@@ -324,15 +321,14 @@ int main(int argc, char* argv[]) {
     }
     return 0;
 }
-```
+</code></pre>
 
-Exécution: `./programme arg1 arg2`
+<p>Exécution: <code>./programme arg1 arg2</code></p>
 
-**Manipulation de fichiers**:
+<p><strong>Manipulation de fichiers</strong>:</p>
 
-Ouverture et lecture:
-```c
-FILE* fichier = fopen("data.txt", "r");
+<p>Ouverture et lecture:</p>
+<pre><code class="language-c">FILE* fichier = fopen("data.txt", "r");
 if (fichier == NULL) {
     perror("Erreur ouverture");
     return -1;
@@ -344,17 +340,16 @@ while (fgets(buffer, 256, fichier) != NULL) {
 }
 
 fclose(fichier);
-```
+</code></pre>
 
-Modes d'ouverture: `"r"` (lecture), `"w"` (écriture), `"a"` (ajout), `"rb"` (binaire)
+<p>Modes d'ouverture: <code>"r"</code> (lecture), <code>"w"</code> (écriture), <code>"a"</code> (ajout), <code>"rb"</code> (binaire)</p>
 
-#### 6. Programmation Modulaire
+<h4>6. Programmation Modulaire</h4>
 
-**Projet TP: Structure modulaire**
+<p><strong>Projet TP: Structure modulaire</strong></p>
 
-Fichier `coureur.h`:
-```c
-#ifndef _COUREUR_H
+<p>Fichier <code>coureur.h</code>:</p>
+<pre><code class="language-c">#ifndef _COUREUR_H
 #define _COUREUR_H
 
 struct Coureur {
@@ -365,131 +360,146 @@ struct Coureur {
     int temps_etapes;
 };
 
-struct Coureur* Creer_Coureur(char nom[], char prenom[], 
+struct Coureur* Creer_Coureur(char nom[], char prenom[],
                                int dossard, char equipe[], int temps);
 int Ajouter_Temps(struct Coureur* coureur, int temps_jour);
 int Afficher_Coureur(struct Coureur* coureur);
 
 #endif
-```
+</code></pre>
 
-**Guards d'inclusion**: `#ifndef`, `#define`, `#endif` évitent les inclusions multiples.
+<p><strong>Guards d'inclusion</strong>: <code>#ifndef</code>, <code>#define</code>, <code>#endif</code> évitent les inclusions multiples.</p>
 
-**Compilation modulaire**:
-```bash
-gcc -Wall -c coureur.c -o coureur.o
+<p><strong>Compilation modulaire</strong>:</p>
+<pre><code class="language-bash">gcc -Wall -c coureur.c -o coureur.o
 gcc -Wall -c liste.c -o liste.o
 gcc -Wall -c test_coureur.c -o test_coureur.o
 gcc coureur.o liste.o test_coureur.o -o programme
-```
+</code></pre>
 
----
+<hr/>
 
-## PART C: ASPECTS TECHNIQUES
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-### Exercices de TD
+<h3>Exercices de TD</h3>
 
-**TD1: Manipulation de tableaux et bits**
+<p><strong>TD1: Manipulation de tableaux et bits</strong></p>
 
-Objectifs:
-- Tri à bulles d'un tableau
-- Multiplication sans opérateur *
-- Opérations bit à bit (masquage, comptage)
+<p>Objectifs:</p>
+<ul>
+  <li>Tri à bulles d'un tableau</li>
+  <li>Multiplication sans opérateur *</li>
+  <li>Opérations bit à bit (masquage, comptage)</li>
+</ul>
 
-**TD2: Pointeurs et allocation dynamique**
+<p><strong>TD2: Pointeurs et allocation dynamique</strong></p>
 
-Exercices:
-- Fonction Permute avec pointeurs
-- Allocation dynamique avec calloc
-- Arguments de ligne de commande
+<p>Exercices:</p>
+<ul>
+  <li>Fonction Permute avec pointeurs</li>
+  <li>Allocation dynamique avec calloc</li>
+  <li>Arguments de ligne de commande</li>
+</ul>
 
-**TD3: Structures et copie**
+<p><strong>TD3: Structures et copie</strong></p>
 
-Problématiques:
-- Structures avec pointeurs vs tableaux
-- Copie superficielle vs profonde
-- Gestion mémoire dans structures
+<p>Problématiques:</p>
+<ul>
+  <li>Structures avec pointeurs vs tableaux</li>
+  <li>Copie superficielle vs profonde</li>
+  <li>Gestion mémoire dans structures</li>
+</ul>
 
-**TD4-TD5: Fichiers et structures avancées**
+<p><strong>TD4-TD5: Fichiers et structures avancées</strong></p>
 
-Applications pratiques de manipulation de données.
+<p>Applications pratiques de manipulation de données.</p>
 
-### Travaux Pratiques
+<h3>Travaux Pratiques</h3>
 
-**TP: Gestion de liste de coureurs**
+<p><strong>TP: Gestion de liste de coureurs</strong></p>
 
-Application complète avec:
-- Structure `Coureur` avec allocation dynamique de chaînes
-- Liste chaînée pour gérer plusieurs coureurs
-- Opérations: création, ajout, parcours, suppression
-- Affichage et calcul de statistiques
+<p>Application complète avec:</p>
+<ul>
+  <li>Structure <code>Coureur</code> avec allocation dynamique de chaînes</li>
+  <li>Liste chaînée pour gérer plusieurs coureurs</li>
+  <li>Opérations: création, ajout, parcours, suppression</li>
+  <li>Affichage et calcul de statistiques</li>
+</ul>
 
-**Fonctionnalités implémentées**:
-- Création de coureurs avec malloc pour les strings
-- Ajout en file (FIFO)
-- Parcours avec pointeur courant
-- Suppression d'élément à position donnée
-- Comptage d'éléments
-- Libération mémoire complète
+<p><strong>Fonctionnalités implémentées</strong>:</p>
+<ul>
+  <li>Création de coureurs avec malloc pour les strings</li>
+  <li>Ajout en file (FIFO)</li>
+  <li>Parcours avec pointeur courant</li>
+  <li>Suppression d'élément à position donnée</li>
+  <li>Comptage d'éléments</li>
+  <li>Libération mémoire complète</li>
+</ul>
 
-**TP_bis: Extensions**
+<p><strong>TP_bis: Extensions</strong></p>
 
-Versions avancées avec:
-- Tri de listes
-- Recherche par critères
-- Fusion de listes
-- Optimisations mémoire
+<p>Versions avancées avec:</p>
+<ul>
+  <li>Tri de listes</li>
+  <li>Recherche par critères</li>
+  <li>Fusion de listes</li>
+  <li>Optimisations mémoire</li>
+</ul>
 
-### Outils de Développement
+<h3>Outils de Développement</h3>
 
-**GCC (GNU Compiler Collection)**:
+<p><strong>GCC (GNU Compiler Collection)</strong>:</p>
 
-Compilation de base:
-```bash
-gcc -Wall -o programme source.c
-```
+<p>Compilation de base:</p>
+<pre><code class="language-bash">gcc -Wall -o programme source.c
+</code></pre>
 
-Options utiles:
-- `-Wall`: affiche tous les warnings
-- `-g`: ajoute symboles de debug
-- `-O2`: optimisation niveau 2
-- `-std=c99`: standard C99
+<p>Options utiles:</p>
+<ul>
+  <li><code>-Wall</code>: affiche tous les warnings</li>
+  <li><code>-g</code>: ajoute symboles de debug</li>
+  <li><code>-O2</code>: optimisation niveau 2</li>
+  <li><code>-std=c99</code>: standard C99</li>
+</ul>
 
-**GDB (GNU Debugger)**:
+<p><strong>GDB (GNU Debugger)</strong>:</p>
 
-```bash
-gcc -g -o programme source.c
+<pre><code class="language-bash">gcc -g -o programme source.c
 gdb ./programme
-```
+</code></pre>
 
-Commandes GDB:
-- `break main`: point d'arrêt
-- `run`: exécution
-- `next`: ligne suivante
-- `print var`: afficher variable
-- `backtrace`: pile d'appels
+<p>Commandes GDB:</p>
+<ul>
+  <li><code>break main</code>: point d'arrêt</li>
+  <li><code>run</code>: exécution</li>
+  <li><code>next</code>: ligne suivante</li>
+  <li><code>print var</code>: afficher variable</li>
+  <li><code>backtrace</code>: pile d'appels</li>
+</ul>
 
-**Valgrind (détection fuites mémoire)**:
+<p><strong>Valgrind (détection fuites mémoire)</strong>:</p>
 
-```bash
-valgrind --leak-check=full ./programme
-```
+<pre><code class="language-bash">valgrind --leak-check=full ./programme
+</code></pre>
 
-Détecte:
-- Fuites mémoire (malloc sans free)
-- Accès mémoire invalides
-- Utilisation de mémoire non initialisée
+<p>Détecte:</p>
+<ul>
+  <li>Fuites mémoire (malloc sans free)</li>
+  <li>Accès mémoire invalides</li>
+  <li>Utilisation de mémoire non initialisée</li>
+</ul>
 
-### Bonnes Pratiques
+<h3>Bonnes Pratiques</h3>
 
-**Gestion mémoire**:
-- Toujours libérer ce qui est alloué
-- Vérifier le retour de malloc
-- Mettre les pointeurs à NULL après free
+<p><strong>Gestion mémoire</strong>:</p>
+<ul>
+  <li>Toujours libérer ce qui est alloué</li>
+  <li>Vérifier le retour de malloc</li>
+  <li>Mettre les pointeurs à NULL après free</li>
+</ul>
 
-**Code sûr**:
-```c
-char* str = malloc(100);
+<p><strong>Code sûr</strong>:</p>
+<pre><code class="language-c">char* str = malloc(100);
 if (str == NULL) {
     fprintf(stderr, "Erreur allocation\n");
     return -1;
@@ -499,277 +509,128 @@ if (str == NULL) {
 
 free(str);
 str = NULL;  // Évite double free
-```
+</code></pre>
 
-**Organisation code**:
-- Fichiers .h pour déclarations
-- Fichiers .c pour implémentations
-- Guards d'inclusion systématiques
-- Commentaires pour fonctions complexes
+<p><strong>Organisation code</strong>:</p>
+<ul>
+  <li>Fichiers .h pour déclarations</li>
+  <li>Fichiers .c pour implémentations</li>
+  <li>Guards d'inclusion systématiques</li>
+  <li>Commentaires pour fonctions complexes</li>
+</ul>
 
----
+<hr/>
 
-## PART D: ANALYSE ET RÉFLEXION
+<h2>PART D: ANALYSE ET RÉFLEXION</h2>
 
-### Compétences acquises
+<h3>Compétences acquises</h3>
 
-**Techniques**:
-- Maîtrise des pointeurs et gestion mémoire
-- Implémentation de structures de données complexes
-- Débogage avec GDB et Valgrind
-- Compilation modulaire et organisation projet
-- Manipulation bit à bit pour le bas niveau
+<p><strong>Techniques</strong>:</p>
+<ul>
+  <li>Maîtrise des pointeurs et gestion mémoire</li>
+  <li>Implémentation de structures de données complexes</li>
+  <li>Débogage avec GDB et Valgrind</li>
+  <li>Compilation modulaire et organisation projet</li>
+  <li>Manipulation bit à bit pour le bas niveau</li>
+</ul>
 
-**Méthodologiques**:
-- Rigueur dans la gestion mémoire
-- Tests systématiques des allocations
-- Documentation et organisation du code
-- Résolution méthodique des bugs
+<p><strong>Méthodologiques</strong>:</p>
+<ul>
+  <li>Rigueur dans la gestion mémoire</li>
+  <li>Tests systématiques des allocations</li>
+  <li>Documentation et organisation du code</li>
+  <li>Résolution méthodique des bugs</li>
+</ul>
 
-### Auto-évaluation
+<h3>Auto-évaluation</h3>
 
-**Points forts**:
-- Compréhension solide des pointeurs
-- Capacité à créer structures de données dynamiques
-- Bonne pratique de la compilation modulaire
-- Maîtrise des outils (GCC, GDB)
+<p><strong>Points forts</strong>:</p>
+<ul>
+  <li>Compréhension solide des pointeurs</li>
+  <li>Capacité à créer structures de données dynamiques</li>
+  <li>Bonne pratique de la compilation modulaire</li>
+  <li>Maîtrise des outils (GCC, GDB)</li>
+</ul>
 
-**Défis**:
-- Complexité initiale des pointeurs de pointeurs
-- Gestion rigoureuse de la mémoire (fuites)
-- Debugging de segmentation faults
-- Compréhension fine des copies de structures
+<p><strong>Défis</strong>:</p>
+<ul>
+  <li>Complexité initiale des pointeurs de pointeurs</li>
+  <li>Gestion rigoureuse de la mémoire (fuites)</li>
+  <li>Debugging de segmentation faults</li>
+  <li>Compréhension fine des copies de structures</li>
+</ul>
 
-### Applications pratiques
+<h3>Applications pratiques</h3>
 
-Le C est utilisé dans:
-- **Systèmes embarqués**: microcontrôleurs (Arduino, STM32)
-- **Systèmes d'exploitation**: Linux kernel, drivers
-- **Temps réel**: applications critiques
-- **Performances**: calcul scientifique, traitement signal
-- **Réseaux**: protocoles, serveurs
-- **Bases de données**: PostgreSQL, SQLite
+<p>Le C est utilisé dans:</p>
+<ul>
+  <li><strong>Systèmes embarqués</strong>: microcontrôleurs (Arduino, STM32)</li>
+  <li><strong>Systèmes d'exploitation</strong>: Linux kernel, drivers</li>
+  <li><strong>Temps réel</strong>: applications critiques</li>
+  <li><strong>Performances</strong>: calcul scientifique, traitement signal</li>
+  <li><strong>Réseaux</strong>: protocoles, serveurs</li>
+  <li><strong>Bases de données</strong>: PostgreSQL, SQLite</li>
+</ul>
 
-### Connexions avec autres cours
+<h3>Connexions avec autres cours</h3>
 
-- **Microcontrôleurs** (S6): programmation STM32 en C
-- **Systèmes d'exploitation** (S6): appels système en C
-- **Temps Réel** (S8): FreeRTOS programmé en C
-- **Réseaux** (S6): sockets et protocoles en C
-- **Architecture** (S5): compréhension assembleur depuis C
+<ul>
+  <li><strong>Microcontrôleurs</strong> (S6): programmation STM32 en C</li>
+  <li><strong>Systèmes d'exploitation</strong> (S6): appels système en C</li>
+  <li><strong>Temps Réel</strong> (S8): FreeRTOS programmé en C</li>
+  <li><strong>Réseaux</strong> (S6): sockets et protocoles en C</li>
+  <li><strong>Architecture</strong> (S5): compréhension assembleur depuis C</li>
+</ul>
 
-### Perspectives
+<h3>Perspectives</h3>
 
-**Évolution du langage**:
-- C11, C17, C23: standards modernes
-- Outils statiques: Clang, sanitizers
-- Intégration IDE: VS Code, CLion
+<p><strong>Évolution du langage</strong>:</p>
+<ul>
+  <li>C11, C17, C23: standards modernes</li>
+  <li>Outils statiques: Clang, sanitizers</li>
+  <li>Intégration IDE: VS Code, CLion</li>
+</ul>
 
-**Alternatives modernes**:
-- Rust: sécurité mémoire garantie
-- C++: orienté objet avec compatibilité C
-- Zig: modernisation du C
+<p><strong>Alternatives modernes</strong>:</p>
+<ul>
+  <li>Rust: sécurité mémoire garantie</li>
+  <li>C++: orienté objet avec compatibilité C</li>
+  <li>Zig: modernisation du C</li>
+</ul>
 
-Mais le C reste incontournable pour:
-- Systèmes embarqués contraints
-- Interfaces hardware
-- Performance maximale
-- Legacy code (Linux, UNIX)
+<p>Mais le C reste incontournable pour:</p>
+<ul>
+  <li>Systèmes embarqués contraints</li>
+  <li>Interfaces hardware</li>
+  <li>Performance maximale</li>
+  <li>Legacy code (Linux, UNIX)</li>
+</ul>
 
-### Recommandations
+<h3>Recommandations</h3>
 
-1. **Pratiquer régulièrement**: coder chaque jour
-2. **Lire du code**: projets open source (Git, SQLite)
-3. **Utiliser Valgrind**: systématiquement
-4. **Tester rigoureusement**: cas limites, gestion erreurs
-5. **Documenter**: fonctions et algorithmes complexes
+<ol>
+  <li><strong>Pratiquer régulièrement</strong>: coder chaque jour</li>
+  <li><strong>Lire du code</strong>: projets open source (Git, SQLite)</li>
+  <li><strong>Utiliser Valgrind</strong>: systématiquement</li>
+  <li><strong>Tester rigoureusement</strong>: cas limites, gestion erreurs</li>
+  <li><strong>Documenter</strong>: fonctions et algorithmes complexes</li>
+</ol>
 
-**Ressources**:
-- K&R: "The C Programming Language" (référence)
-- Beej's Guide: tutoriels réseau et sockets
-- Linux kernel source: exemples réels
-- Stack Overflow: résolution problèmes
+<p><strong>Ressources</strong>:</p>
+<ul>
+  <li>K&amp;R: "The C Programming Language" (référence)</li>
+  <li>Beej's Guide: tutoriels réseau et sockets</li>
+  <li>Linux kernel source: exemples réels</li>
+  <li>Stack Overflow: résolution problèmes</li>
+</ul>
 
-En conclusion, le C reste le langage fondamental pour comprendre le fonctionnement bas niveau des ordinateurs et programmer efficacement les systèmes embarqués. La rigueur acquise en C est bénéfique pour tous les autres langages.
+<p>En conclusion, le C reste le langage fondamental pour comprendre le fonctionnement bas niveau des ordinateurs et programmer efficacement les systèmes embarqués. La rigueur acquise en C est bénéfique pour tous les autres langages.</p>
 
----
+<hr/>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4, h5 {
-        color: #2a7ae2;
-    }
-    p {
-        text-align: justify;
-    }
-    code {
-        background-color: #f5f5f5;
-        padding: 2px 6px;
-        border-radius: 3px;
-        font-family: 'Courier New', monospace;
-    }
-    pre {
-        background-color: #f5f5f5;
-        padding: 15px;
-        border-radius: 5px;
-        overflow-x: auto;
-    }
-</style>
+<h2>📚 Documents de Cours</h2>
 
-<div class="back-nav">
-  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
-</div>
-
-### Environnement de développement
-
-**Outils utilisés**:
-- **GCC** (GNU Compiler Collection): Compilateur principal
-- **GDB** (GNU Debugger): Débogueur en ligne de commande
-- **Make et Makefiles**: Automatisation de compilation
-- **Valgrind**: Débogage et détection de fuites mémoire
-- **Éditeurs**: VS Code, Vim, Emacs
-
-### Organisation mémoire
-
-**Layout mémoire**:
-- Stack (pile) vs Heap (tas)
-- Segments mémoire (text, data, BSS)
-- Stack frames et call stack
-- Alignement mémoire
-- Gestion automatique vs manuelle
-
-### Processus de compilation
-
-1. **Préprocessing**: Traitement des directives #
-2. **Compilation**: Traduction en assembleur
-3. **Assembly**: Génération du code machine
-4. **Linking**: Édition de liens
-5. **Exécutable**: Fichier final
-
-### Structures de données implémentées
-
-- Listes chaînées (simples, doubles, circulaires)
-- Piles et files
-- Arbres binaires
-- Tables de hachage
-- Graphes
-
-### Bonnes pratiques enseignées
-
-- Organisation et structure du code
-- Conventions de nommage
-- Commentaires et documentation
-- Stratégies de gestion d'erreurs
-- Sécurité mémoire
-- Portabilité du code
-- Optimisation des performances
-
-### Concepts de programmation système
-
-- Appels système
-- Gestion de processus
-- Communication inter-processus
-- Signaux
-- Threads (introduction)
-- Programmation réseau (sockets)
-
----
-
-## PART D: COMPÉTENCES ACQUISES, AUTO-ÉVALUATION, AVIS
-
-### Compétences développées
-
-**Compétences techniques**:
-- Maîtrise solide de la programmation C
-- Débogage systématique et tests
-- Gestion efficace de la mémoire
-- Compétences en programmation bas niveau
-- Pensée algorithmique en C
-
-**Compétences transversales**:
-- Rigueur et précision dans le code
-- Résolution méthodique de problèmes
-- Analyse et optimisation de performances
-- Lecture et compréhension de code existant
-- Documentation technique
-
-### Auto-évaluation
-
-**Points forts**:
-- Compréhension approfondie des pointeurs et de la mémoire
-- Capacité à écrire du code C efficace et optimisé
-- Maîtrise des outils de développement (GCC, GDB, Make)
-- Solide fondation pour la programmation système
-- Expérience pratique avec projets réels
-
-**Défis rencontrés**:
-- Complexité initiale des pointeurs et de l'arithmétique pointeurs
-- Gestion des fuites mémoire et bugs subtils
-- Débogage de problèmes de segmentation fault
-- Compréhension fine du cycle de compilation
-- Optimisation mémoire et performances
-
-### Apports pour le parcours
-
-Ce cours a été fondamental pour:
-- **Systèmes embarqués**: Base essentielle pour la programmation microcontrôleurs
-- **Systèmes d'exploitation**: Compréhension des mécanismes bas niveau
-- **Performance**: Capacité à écrire du code efficace
-- **Projets techniques**: Langage utilisé dans de nombreux projets d'école
-- **Employabilité**: Compétence très recherchée en industrie
-
-### Applications pratiques
-
-Les compétences acquises sont directement utilisées dans:
-- Développement de systèmes d'exploitation
-- Programmation de systèmes embarqués
-- Développement de drivers et pilotes
-- Utilitaires système
-- Calcul haute performance
-- Systèmes temps réel
-- Programmation réseau
-
-### Projets marquants
-
-**Gestion de structures de données**:
-- Implémentation complète de listes chaînées avec gestion mémoire
-- Création de structures de données réutilisables
-
-**Manipulation de fichiers**:
-- Développement d'utilitaires de traitement de fichiers
-- Gestion d'erreurs robuste
-
-**Programmation système**:
-- Simulateurs de bas niveau
-- Interfaces avec le système
-
-### Ressources et documentation
-
-- Notes de cours complètes
-- Exercices TD avec solutions détaillées
-- Supports TP laboratoire
-- Exercices complémentaires (TP_bis)
-- Manuels de référence C
-- Documentation en ligne (GNU, C standard)
-
-### Évolution des compétences
-
-- **Début**: Syntaxe de base, types simples
-- **Milieu**: Pointeurs, structures, allocation dynamique
-- **Fin**: Programmation système, optimisation, projets complexes
-
-**Recommandation**: Le langage C est fondamental en ingénierie électronique et informatique embarquée. Ce cours établit des bases solides pour tous les cours de systèmes embarqués, microcontrôleurs et systèmes d'exploitation à venir. La pratique régulière et la lecture de code source sont essentielles pour consolider ces compétences.
-
----
-
-## 📚 Documents de Cours
-
-Voici les supports de cours en PDF pour approfondir les différents aspects de la programmation C :
+<p>Voici les supports de cours en PDF pour approfondir les différents aspects de la programmation C :</p>
 
 <style>
     .pdf-container {
@@ -812,7 +673,7 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
         </a>
       </p>
     </div>
-    
+
     <div class="pdf-item">
       <h4>🏗️ Structures et Types Composés</h4>
       <p>Définition et utilisation des structures, unions, énumérations et types définis par l'utilisateur.</p>
@@ -823,7 +684,7 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
         </a>
       </p>
     </div>
-    
+
     <div class="pdf-item">
       <h4>💾 Gestion de la Mémoire</h4>
       <p>Allocation dynamique, gestion du heap, détection de fuites mémoire et bonnes pratiques.</p>
@@ -834,7 +695,7 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
         </a>
       </p>
     </div>
-    
+
     <div class="pdf-item">
       <h4>⚙️ Compilation et Linking</h4>
       <p>Processus de compilation, préprocesseur, linkage, bibliothèques statiques et dynamiques.</p>
@@ -845,7 +706,7 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
         </a>
       </p>
     </div>
-    
+
     <div class="pdf-item">
       <h4>📁 Entrées/Sorties et Fichiers</h4>
       <p>Manipulation de fichiers en C, flux standard, fonctions de lecture/écriture et gestion d'erreurs.</p>
@@ -856,7 +717,7 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
         </a>
       </p>
     </div>
-    
+
     <div class="pdf-item">
       <h4>🏃 TP: Gestion de Coureurs</h4>
       <p>Travail pratique complet sur les listes chaînées avec gestion dynamique de structures de coureurs.</p>
@@ -870,6 +731,682 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
   </div>
 </div>
 
----
+</div>
 
-[← Back to My Courses 2022-2023](./my-courses-2022-2023.html)
+<div class="lang-en">
+
+<h1>💻 C Language - S5</h1>
+
+<p><strong>Year</strong>: 2022-2023 (Semester 5)<br/>
+<strong>Credits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Systems Programming</p>
+
+<hr/>
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3>Course Objectives</h3>
+
+<p>The C Language course provides comprehensive training in systems programming with C, a fundamental language for developing embedded systems, operating systems, and applications requiring optimal performance. The course covers fundamental concepts (pointers, arrays, structures) as well as advanced topics (dynamic memory allocation, bit manipulation, complex data structures).</p>
+
+<h3>Target Skills</h3>
+
+<ul>
+  <li>Master C syntax and data types</li>
+  <li>Understand pointers and pointer arithmetic</li>
+  <li>Manage dynamic memory (malloc, free)</li>
+  <li>Manipulate data structures (linked lists, trees)</li>
+  <li>Perform bitwise operations for low-level programming</li>
+  <li>Create modular programs with multiple files</li>
+  <li>Debug and optimize C code</li>
+</ul>
+
+<h3>Organization</h3>
+
+<ul>
+  <li><strong>Course hours</strong>: 48h (Lectures: 24h, Tutorials/Labs: 24h)</li>
+  <li><strong>Assessment</strong>: Written exams (60%) + Labs and projects (40%)</li>
+  <li><strong>Semester</strong>: 5 (2022-2023)</li>
+  <li><strong>Prerequisites</strong>: Basic algorithms, programming fundamentals</li>
+</ul>
+
+<hr/>
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Course Content</h3>
+
+<h4>1. C Fundamentals</h4>
+
+<p><strong>Data Types and Operators</strong>:</p>
+
+<p>C provides fixed-size primitive types:</p>
+<ul>
+  <li><code>char</code>: 1 byte (8 bits)</li>
+  <li><code>int</code>: 4 bytes on 32/64-bit systems</li>
+  <li><code>float</code>: 4 bytes (single precision)</li>
+  <li><code>double</code>: 8 bytes (double precision)</li>
+</ul>
+
+<p><strong>Modifiers</strong>: <code>signed</code>, <code>unsigned</code>, <code>short</code>, <code>long</code></p>
+
+<p>Declaration examples:</p>
+<pre><code class="language-c">int nombre = 42;
+unsigned int positif = 100;
+char lettre = 'A';
+float pi = 3.14f;
+</code></pre>
+
+<p><strong>Bitwise Operators</strong>:</p>
+
+<p>Essential for low-level manipulation:</p>
+<ul>
+  <li><code>&amp;</code> (AND), <code>|</code> (OR), <code>^</code> (XOR), <code>~</code> (NOT)</li>
+  <li><code>&lt;&lt;</code> (left shift), <code>&gt;&gt;</code> (right shift)</li>
+</ul>
+
+<p><strong>TD1 Application</strong>: Count the number of 1-bits in an integer:</p>
+
+<pre><code class="language-c">int bitcount(int n) {
+    int count = 0;
+    while (n) {
+        count += n &amp; 1;  // Test the least significant bit
+        n &gt;&gt;= 1;         // Shift one bit to the right
+    }
+    return count;
+}
+</code></pre>
+
+<p>For <code>0xF0000F00</code>, result: 8 bits set to 1.</p>
+
+<p><strong>Control Structures</strong>:</p>
+
+<p>Standard loops and conditionals:</p>
+<pre><code class="language-c">// Bubble sort (TD1)
+for (int j = 0; j &lt; TAILLE-1; j++) {
+    for (int i = 0; i &lt; TAILLE-j-1; i++) {
+        if (tab[i+1] &lt; tab[i]) {
+            int temp = tab[i];
+            tab[i] = tab[i+1];
+            tab[i+1] = temp;
+        }
+    }
+}
+</code></pre>
+
+<h4>2. Pointers and Memory Management</h4>
+
+<p><strong>Pointers</strong>:</p>
+
+<p>A fundamental concept in C: a variable that holds a memory address.</p>
+
+<p>Declaration and usage:</p>
+<pre><code class="language-c">int x = 10;
+int *ptr = &amp;x;  // ptr points to x
+*ptr = 20;      // Modifies x through the pointer
+</code></pre>
+
+<p><strong>Pointer Arithmetic</strong>:</p>
+
+<pre><code class="language-c">int tab[5] = {1, 2, 3, 4, 5};
+int *p = tab;  // Points to tab[0]
+p++;           // Points to tab[1]
+*p = 100;      // tab[1] = 100
+</code></pre>
+
+<p><strong>Swap via Pointers (TD2)</strong>:</p>
+
+<pre><code class="language-c">int Permute(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    return 0;
+}
+</code></pre>
+
+<p><strong>Dynamic Allocation</strong>:</p>
+
+<p>Essential functions:</p>
+<ul>
+  <li><code>malloc(size)</code>: allocates size bytes</li>
+  <li><code>calloc(n, size)</code>: allocates and initializes to 0</li>
+  <li><code>free(ptr)</code>: frees the memory</li>
+</ul>
+
+<p>TD2 example:</p>
+<pre><code class="language-c">char* chaine = calloc(10, sizeof(char));
+int* tab = calloc(10, sizeof(int));
+
+// Usage...
+
+free(chaine);
+free(tab);
+</code></pre>
+
+<p><strong>Risks</strong>:</p>
+<ul>
+  <li>Memory leak if <code>free</code> is forgotten</li>
+  <li>Double free (freeing twice)</li>
+  <li>Access after free (use-after-free)</li>
+  <li>Buffer overflow</li>
+</ul>
+
+<h4>3. Structures and Composite Types</h4>
+
+<p><strong>Structure Definition (TD3)</strong>:</p>
+
+<pre><code class="language-c">struct Etudiant {
+    char nom[50];
+    int naissance;
+    int notes[10];
+    int nb_notes;
+};
+</code></pre>
+
+<p><strong>Usage</strong>:</p>
+
+<pre><code class="language-c">struct Etudiant cedric;
+strcpy(cedric.nom, "Chanfreau");
+cedric.naissance = 2000;
+cedric.notes[0] = 15;
+</code></pre>
+
+<p><strong>Pointers to Structures</strong>:</p>
+
+<pre><code class="language-c">struct Etudiant *ptr = &amp;cedric;
+ptr-&gt;naissance = 2001;  // Equivalent to (*ptr).naissance
+</code></pre>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/langage-c/pointeurs.svg" alt="Illustration of pointers in C" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Pointer concept - A pointer stores the memory address of a variable</p>
+</div>
+
+<p><strong>Structure Copying</strong>:</p>
+
+<p>Beware of pointers inside structures:</p>
+
+<pre><code class="language-c">struct S1 {
+    int a;
+    char* ch;  // Pointer
+};
+
+struct S1 v1, v2;
+v1.ch = calloc(10, sizeof(char));
+strcpy(v1.ch, "Test");
+
+v2 = v1;  // Shallow copy: v2.ch points to the same memory!
+</code></pre>
+
+<p>Solution: manual deep copy or separate allocation.</p>
+
+<h4>4. Dynamic Data Structures</h4>
+
+<p><strong>Linked Lists (Main Lab Project)</strong>:</p>
+
+<p>Element structure:</p>
+<pre><code class="language-c">struct element {
+    struct Coureur* coureur;
+    struct element* suiv;
+};
+
+struct liste {
+    struct element* premier;
+    struct element* dernier;
+    struct element* courant;
+};
+</code></pre>
+
+<p><strong>Initialization</strong>:</p>
+<pre><code class="language-c">int init_liste(struct liste* liste) {
+    liste-&gt;premier = NULL;
+    liste-&gt;dernier = NULL;
+    return 0;
+}
+</code></pre>
+
+<p><strong>Enqueue (Queue Insertion)</strong>:</p>
+<pre><code class="language-c">int ajout_file(struct liste* der, struct Coureur* coureur) {
+    if (der-&gt;dernier == NULL) {
+        // Empty list
+        der-&gt;dernier = malloc(sizeof(struct element));
+        der-&gt;dernier-&gt;coureur = coureur;
+        der-&gt;premier = der-&gt;dernier;
+        der-&gt;dernier-&gt;suiv = NULL;
+    } else {
+        // Append at end
+        der-&gt;dernier-&gt;suiv = malloc(sizeof(struct element));
+        der-&gt;dernier = der-&gt;dernier-&gt;suiv;
+        der-&gt;dernier-&gt;coureur = coureur;
+        der-&gt;dernier-&gt;suiv = NULL;
+    }
+    return 0;
+}
+</code></pre>
+
+<p><strong>List Traversal</strong>:</p>
+<pre><code class="language-c">int Aller_Debut(struct liste* liste) {
+    liste-&gt;courant = liste-&gt;premier;
+    return 0;
+}
+
+int Avancer(struct liste* liste) {
+    liste-&gt;courant = liste-&gt;courant-&gt;suiv;
+    return 0;
+}
+
+int Fin(struct liste liste) {
+    return (liste.courant == NULL);
+}
+</code></pre>
+
+<p><strong>Element Counting</strong>:</p>
+<pre><code class="language-c">int nbElement(struct liste liste) {
+    int count = 0;
+    while (!Fin(liste)) {
+        Avancer(&amp;liste);
+        count++;
+    }
+    return count;
+}
+</code></pre>
+
+<h4>5. Files and Arguments</h4>
+
+<p><strong>Command-Line Arguments (TD2)</strong>:</p>
+
+<pre><code class="language-c">int main(int argc, char* argv[]) {
+    printf("Number of arguments: %d\n", argc);
+    if (argc == 3) {
+        printf("Program: %s\n", argv[0]);
+        printf("Arg1: %s\n", argv[1]);
+        printf("Arg2: %s\n", argv[2]);
+    }
+    return 0;
+}
+</code></pre>
+
+<p>Execution: <code>./programme arg1 arg2</code></p>
+
+<p><strong>File Manipulation</strong>:</p>
+
+<p>Opening and reading:</p>
+<pre><code class="language-c">FILE* fichier = fopen("data.txt", "r");
+if (fichier == NULL) {
+    perror("Open error");
+    return -1;
+}
+
+char buffer[256];
+while (fgets(buffer, 256, fichier) != NULL) {
+    printf("%s", buffer);
+}
+
+fclose(fichier);
+</code></pre>
+
+<p>Open modes: <code>"r"</code> (read), <code>"w"</code> (write), <code>"a"</code> (append), <code>"rb"</code> (binary)</p>
+
+<h4>6. Modular Programming</h4>
+
+<p><strong>Lab Project: Modular Structure</strong></p>
+
+<p>File <code>coureur.h</code>:</p>
+<pre><code class="language-c">#ifndef _COUREUR_H
+#define _COUREUR_H
+
+struct Coureur {
+    char* nom;
+    char* prenom;
+    int num_dossard;
+    char* nom_equipe;
+    int temps_etapes;
+};
+
+struct Coureur* Creer_Coureur(char nom[], char prenom[],
+                               int dossard, char equipe[], int temps);
+int Ajouter_Temps(struct Coureur* coureur, int temps_jour);
+int Afficher_Coureur(struct Coureur* coureur);
+
+#endif
+</code></pre>
+
+<p><strong>Include Guards</strong>: <code>#ifndef</code>, <code>#define</code>, <code>#endif</code> prevent multiple inclusions.</p>
+
+<p><strong>Modular Compilation</strong>:</p>
+<pre><code class="language-bash">gcc -Wall -c coureur.c -o coureur.o
+gcc -Wall -c liste.c -o liste.o
+gcc -Wall -c test_coureur.c -o test_coureur.o
+gcc coureur.o liste.o test_coureur.o -o programme
+</code></pre>
+
+<hr/>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>Tutorial Exercises</h3>
+
+<p><strong>TD1: Array and Bit Manipulation</strong></p>
+
+<p>Objectives:</p>
+<ul>
+  <li>Bubble sort on an array</li>
+  <li>Multiplication without the * operator</li>
+  <li>Bitwise operations (masking, counting)</li>
+</ul>
+
+<p><strong>TD2: Pointers and Dynamic Allocation</strong></p>
+
+<p>Exercises:</p>
+<ul>
+  <li>Swap function using pointers</li>
+  <li>Dynamic allocation with calloc</li>
+  <li>Command-line arguments</li>
+</ul>
+
+<p><strong>TD3: Structures and Copying</strong></p>
+
+<p>Key issues:</p>
+<ul>
+  <li>Structures with pointers vs arrays</li>
+  <li>Shallow copy vs deep copy</li>
+  <li>Memory management within structures</li>
+</ul>
+
+<p><strong>TD4-TD5: Files and Advanced Structures</strong></p>
+
+<p>Practical data manipulation applications.</p>
+
+<h3>Lab Work</h3>
+
+<p><strong>Lab: Runner List Management</strong></p>
+
+<p>Complete application with:</p>
+<ul>
+  <li><code>Coureur</code> (Runner) structure with dynamic string allocation</li>
+  <li>Linked list to manage multiple runners</li>
+  <li>Operations: creation, insertion, traversal, deletion</li>
+  <li>Display and statistics computation</li>
+</ul>
+
+<p><strong>Implemented Features</strong>:</p>
+<ul>
+  <li>Runner creation with malloc for strings</li>
+  <li>Queue insertion (FIFO)</li>
+  <li>Traversal with current pointer</li>
+  <li>Element deletion at a given position</li>
+  <li>Element counting</li>
+  <li>Full memory deallocation</li>
+</ul>
+
+<p><strong>Lab Extension</strong></p>
+
+<p>Advanced versions with:</p>
+<ul>
+  <li>List sorting</li>
+  <li>Criteria-based search</li>
+  <li>List merging</li>
+  <li>Memory optimizations</li>
+</ul>
+
+<h3>Development Tools</h3>
+
+<p><strong>GCC (GNU Compiler Collection)</strong>:</p>
+
+<p>Basic compilation:</p>
+<pre><code class="language-bash">gcc -Wall -o programme source.c
+</code></pre>
+
+<p>Useful options:</p>
+<ul>
+  <li><code>-Wall</code>: display all warnings</li>
+  <li><code>-g</code>: add debug symbols</li>
+  <li><code>-O2</code>: optimization level 2</li>
+  <li><code>-std=c99</code>: C99 standard</li>
+</ul>
+
+<p><strong>GDB (GNU Debugger)</strong>:</p>
+
+<pre><code class="language-bash">gcc -g -o programme source.c
+gdb ./programme
+</code></pre>
+
+<p>GDB commands:</p>
+<ul>
+  <li><code>break main</code>: set breakpoint</li>
+  <li><code>run</code>: execute</li>
+  <li><code>next</code>: next line</li>
+  <li><code>print var</code>: display variable</li>
+  <li><code>backtrace</code>: call stack</li>
+</ul>
+
+<p><strong>Valgrind (memory leak detection)</strong>:</p>
+
+<pre><code class="language-bash">valgrind --leak-check=full ./programme
+</code></pre>
+
+<p>Detects:</p>
+<ul>
+  <li>Memory leaks (malloc without free)</li>
+  <li>Invalid memory accesses</li>
+  <li>Use of uninitialized memory</li>
+</ul>
+
+<h3>Best Practices</h3>
+
+<p><strong>Memory Management</strong>:</p>
+<ul>
+  <li>Always free what is allocated</li>
+  <li>Check the return value of malloc</li>
+  <li>Set pointers to NULL after free</li>
+</ul>
+
+<p><strong>Safe Code</strong>:</p>
+<pre><code class="language-c">char* str = malloc(100);
+if (str == NULL) {
+    fprintf(stderr, "Allocation error\n");
+    return -1;
+}
+
+// Usage...
+
+free(str);
+str = NULL;  // Prevents double free
+</code></pre>
+
+<p><strong>Code Organization</strong>:</p>
+<ul>
+  <li>.h files for declarations</li>
+  <li>.c files for implementations</li>
+  <li>Systematic include guards</li>
+  <li>Comments for complex functions</li>
+</ul>
+
+<hr/>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Acquired Skills</h3>
+
+<p><strong>Technical</strong>:</p>
+<ul>
+  <li>Mastery of pointers and memory management</li>
+  <li>Implementation of complex data structures</li>
+  <li>Debugging with GDB and Valgrind</li>
+  <li>Modular compilation and project organization</li>
+  <li>Bitwise manipulation for low-level programming</li>
+</ul>
+
+<p><strong>Methodological</strong>:</p>
+<ul>
+  <li>Rigor in memory management</li>
+  <li>Systematic testing of allocations</li>
+  <li>Code documentation and organization</li>
+  <li>Methodical bug resolution</li>
+</ul>
+
+<h3>Self-Assessment</h3>
+
+<p><strong>Strengths</strong>:</p>
+<ul>
+  <li>Solid understanding of pointers</li>
+  <li>Ability to create dynamic data structures</li>
+  <li>Good modular compilation practices</li>
+  <li>Proficiency with tools (GCC, GDB)</li>
+</ul>
+
+<p><strong>Challenges</strong>:</p>
+<ul>
+  <li>Initial complexity of pointer-to-pointer concepts</li>
+  <li>Rigorous memory management (leaks)</li>
+  <li>Debugging segmentation faults</li>
+  <li>Deep understanding of structure copying</li>
+</ul>
+
+<h3>Practical Applications</h3>
+
+<p>C is used in:</p>
+<ul>
+  <li><strong>Embedded systems</strong>: microcontrollers (Arduino, STM32)</li>
+  <li><strong>Operating systems</strong>: Linux kernel, drivers</li>
+  <li><strong>Real-time</strong>: safety-critical applications</li>
+  <li><strong>Performance</strong>: scientific computing, signal processing</li>
+  <li><strong>Networking</strong>: protocols, servers</li>
+  <li><strong>Databases</strong>: PostgreSQL, SQLite</li>
+</ul>
+
+<h3>Connections with Other Courses</h3>
+
+<ul>
+  <li><strong>Microcontrollers</strong> (S6): STM32 programming in C</li>
+  <li><strong>Operating Systems</strong> (S6): system calls in C</li>
+  <li><strong>Real-Time Systems</strong> (S8): FreeRTOS programmed in C</li>
+  <li><strong>Networking</strong> (S6): sockets and protocols in C</li>
+  <li><strong>Architecture</strong> (S5): understanding assembly from C</li>
+</ul>
+
+<h3>Outlook</h3>
+
+<p><strong>Language Evolution</strong>:</p>
+<ul>
+  <li>C11, C17, C23: modern standards</li>
+  <li>Static analysis tools: Clang, sanitizers</li>
+  <li>IDE integration: VS Code, CLion</li>
+</ul>
+
+<p><strong>Modern Alternatives</strong>:</p>
+<ul>
+  <li>Rust: guaranteed memory safety</li>
+  <li>C++: object-oriented with C compatibility</li>
+  <li>Zig: modernization of C</li>
+</ul>
+
+<p>But C remains essential for:</p>
+<ul>
+  <li>Resource-constrained embedded systems</li>
+  <li>Hardware interfaces</li>
+  <li>Maximum performance</li>
+  <li>Legacy code (Linux, UNIX)</li>
+</ul>
+
+<h3>Recommendations</h3>
+
+<ol>
+  <li><strong>Practice regularly</strong>: code every day</li>
+  <li><strong>Read code</strong>: open source projects (Git, SQLite)</li>
+  <li><strong>Use Valgrind</strong>: systematically</li>
+  <li><strong>Test rigorously</strong>: edge cases, error handling</li>
+  <li><strong>Document</strong>: complex functions and algorithms</li>
+</ol>
+
+<p><strong>Resources</strong>:</p>
+<ul>
+  <li>K&amp;R: "The C Programming Language" (reference)</li>
+  <li>Beej's Guide: networking and sockets tutorials</li>
+  <li>Linux kernel source: real-world examples</li>
+  <li>Stack Overflow: problem solving</li>
+</ul>
+
+<p>In conclusion, C remains the fundamental language for understanding the low-level workings of computers and for efficiently programming embedded systems. The rigor acquired through C is beneficial for all other programming languages.</p>
+
+<hr/>
+
+<h2>📚 Course Documents</h2>
+
+<p>Here are the course materials in PDF format to deepen your understanding of the various aspects of C programming:</p>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>🎯 Pointers</h4>
+      <p>Complete course on pointers, pointer arithmetic, and memory manipulation in C.</p>
+      <embed src="/cours-pdf/S5/Langage-C/pointeurs.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/pointeurs.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>🏗️ Structures and Composite Types</h4>
+      <p>Definition and use of structures, unions, enumerations and user-defined types.</p>
+      <embed src="/cours-pdf/S5/Langage-C/structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>💾 Memory Management</h4>
+      <p>Dynamic allocation, heap management, memory leak detection and best practices.</p>
+      <embed src="/cours-pdf/S5/Langage-C/memorisation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/memorisation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>⚙️ Compilation and Linking</h4>
+      <p>Compilation process, preprocessor, linking, static and dynamic libraries.</p>
+      <embed src="/cours-pdf/S5/Langage-C/compilation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/compilation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>📁 Input/Output and Files</h4>
+      <p>File manipulation in C, standard streams, read/write functions and error handling.</p>
+      <embed src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/io_fichiers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+
+    <div class="pdf-item">
+      <h4>🏃 Lab: Runner Management</h4>
+      <p>Complete lab on linked lists with dynamic management of runner structures.</p>
+      <embed src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Langage-C/tp_coureur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          📥 Download PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">← Retour aux Cours 2022-2023</a>
+</div>

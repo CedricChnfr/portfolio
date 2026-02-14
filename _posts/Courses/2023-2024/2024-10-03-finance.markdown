@@ -49,1155 +49,1632 @@ tr:nth-child(even) {
     margin: 15px 0;
     font-family: 'Courier New', monospace;
 }
+
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
 </div>
 
-# 💰 Finance - Semestre 7
+<div class="lang-fr">
 
-**Année Universitaire** : 2023-2024  
-**Semestre** : 7  
-**Crédits** : 2 ECTS  
-**Spécialité** : Gestion et Économie d'Entreprise
+<h1>Finance - Semestre 7</h1>
 
----
+<p><strong>Annee Universitaire</strong> : 2023-2024<br/>
+<strong>Semestre</strong> : 7<br/>
+<strong>Credits</strong> : 2 ECTS<br/>
+<strong>Specialite</strong> : Gestion et Economie d'Entreprise</p>
 
-## PART A - Présentation Générale du Module
+<hr/>
+
+<h2>PART A - Presentation Generale du Module</h2>
 
 <h3 class="section-title">Vue d'ensemble</h3>
 
-Ce cours fournit aux ingénieurs les fondamentaux de la finance d'entreprise et de l'analyse économique. Il couvre les concepts essentiels pour comprendre la valeur temporelle de l'argent, évaluer des investissements, analyser la performance financière d'une entreprise, et prendre des décisions éclairées intégrant la dimension économique.
+<p>Ce cours fournit aux ingenieurs les fondamentaux de la finance d'entreprise et de l'analyse economique. Il couvre les concepts essentiels pour comprendre la valeur temporelle de l'argent, evaluer des investissements, analyser la performance financiere d'une entreprise, et prendre des decisions eclairees integrant la dimension economique.</p>
 
-**Objectifs pédagogiques** :
-- Maîtriser les calculs d'actualisation et de capitalisation
-- Évaluer la rentabilité de projets d'investissement (VAN, TRI)
-- Analyser des documents comptables (bilan, compte de résultat)
-- Comprendre les mécanismes de création de valeur
-- Appréhender les marchés financiers et instruments
-- Dialoguer efficacement avec les services financiers
+<p><strong>Objectifs pedagogiques</strong> :</p>
+<ul>
+<li>Maitriser les calculs d'actualisation et de capitalisation</li>
+<li>Evaluer la rentabilite de projets d'investissement (VAN, TRI)</li>
+<li>Analyser des documents comptables (bilan, compte de resultat)</li>
+<li>Comprendre les mecanismes de creation de valeur</li>
+<li>Apprehender les marches financiers et instruments</li>
+<li>Dialoguer efficacement avec les services financiers</li>
+</ul>
 
 <h3 class="section-title">Position dans le cursus</h3>
 
-Ce module complète la formation d'ingénieur en ajoutant :
-- **Gestion (S8)** : stratégie d'entreprise, management
-- **Droit (S8)** : cadre juridique des entreprises
-- **Entreprise (S5, S7)** : fonctionnement des organisations
+<p>Ce module complete la formation d'ingenieur en ajoutant :</p>
+<ul>
+<li><strong>Gestion (S8)</strong> : strategie d'entreprise, management</li>
+<li><strong>Droit (S8)</strong> : cadre juridique des entreprises</li>
+<li><strong>Entreprise (S5, S7)</strong> : fonctionnement des organisations</li>
+</ul>
 
-Il prépare à :
-- **Création d'entreprise** : business plan, levée de fonds
-- **Gestion de projets** : justification économique d'investissements
-- **Carrière professionnelle** : compréhension des enjeux financiers
-- **Entrepreneuriat** : valorisation, trésorerie, stratégie de financement
+<p>Il prepare a :</p>
+<ul>
+<li><strong>Creation d'entreprise</strong> : business plan, levee de fonds</li>
+<li><strong>Gestion de projets</strong> : justification economique d'investissements</li>
+<li><strong>Carriere professionnelle</strong> : comprehension des enjeux financiers</li>
+<li><strong>Entrepreneuriat</strong> : valorisation, tresorerie, strategie de financement</li>
+</ul>
 
----
+<hr/>
 
-## PART B - Expérience Personnelle et Contexte d'Apprentissage
+<h2>PART B - Experience Personnelle et Contexte d'Apprentissage</h2>
 
 <h3 class="section-title">Organisation et ressources</h3>
 
-Le module était organisé en cours magistraux avec exercices pratiques :
+<p>Le module etait organise en cours magistraux avec exercices pratiques :</p>
 
-**Cours magistraux (18h)** :
-- Comptabilité générale (bilan, compte de résultat)
-- Analyse financière et ratios
-- Valeur temporelle de l'argent et actualisation
-- Évaluation de projets d'investissement (VAN, TRI)
-- Coût du capital et structure financière
-- Marchés financiers et instruments
-- Gestion du risque financier
+<p><strong>Cours magistraux (18h)</strong> :</p>
+<ul>
+<li>Comptabilite generale (bilan, compte de resultat)</li>
+<li>Analyse financiere et ratios</li>
+<li>Valeur temporelle de l'argent et actualisation</li>
+<li>Evaluation de projets d'investissement (VAN, TRI)</li>
+<li>Cout du capital et structure financiere</li>
+<li>Marches financiers et instruments</li>
+<li>Gestion du risque financier</li>
+</ul>
 
-**Travaux dirigés et exercices** :
-- Calculs d'actualisation et capitalisation
-- Analyse de comptes de résultat (script Python disponible)
-- Études de cas d'investissement
-- Calculs de ratios financiers
-- Modélisation avec Excel/tableurs
+<p><strong>Travaux diriges et exercices</strong> :</p>
+<ul>
+<li>Calculs d'actualisation et capitalisation</li>
+<li>Analyse de comptes de resultat (script Python disponible)</li>
+<li>Etudes de cas d'investissement</li>
+<li>Calculs de ratios financiers</li>
+<li>Modelisation avec Excel/tableurs</li>
+</ul>
 
-**Outils utilisés** :
-- Excel pour modélisation financière
-- Python pour calculs automatisés (script Finance.py)
-- Études de cas d'entreprises réelles
-- Simulateurs de bourse (optionnel)
+<p><strong>Outils utilises</strong> :</p>
+<ul>
+<li>Excel pour modelisation financiere</li>
+<li>Python pour calculs automatises (script Finance.py)</li>
+<li>Etudes de cas d'entreprises reelles</li>
+<li>Simulateurs de bourse (optionnel)</li>
+</ul>
 
-<h3 class="section-title">Méthodologie d'étude</h3>
+<h3 class="section-title">Methodologie d'etude</h3>
 
-**Phase 1 : Comprendre les concepts** :
-Assimiler les principes fondamentaux (valeur temporelle, risque/rendement, création de valeur).
+<p><strong>Phase 1 : Comprendre les concepts</strong> :</p>
+<p>Assimiler les principes fondamentaux (valeur temporelle, risque/rendement, creation de valeur).</p>
 
-**Phase 2 : Maîtriser les calculs** :
-Pratiquer les formules d'actualisation, VAN, TRI, ratios financiers jusqu'à les maîtriser.
+<p><strong>Phase 2 : Maitriser les calculs</strong> :</p>
+<p>Pratiquer les formules d'actualisation, VAN, TRI, ratios financiers jusqu'a les maitriser.</p>
 
-**Phase 3 : Analyser des cas réels** :
-Étudier des bilans d'entreprises, évaluer des projets d'investissement concrets.
+<p><strong>Phase 3 : Analyser des cas reels</strong> :</p>
+<p>Etudier des bilans d'entreprises, evaluer des projets d'investissement concrets.</p>
 
-**Phase 4 : Modéliser sur tableur** :
-Construire des modèles Excel pour automatiser calculs et analyses de sensibilité.
+<p><strong>Phase 4 : Modeliser sur tableur</strong> :</p>
+<p>Construire des modeles Excel pour automatiser calculs et analyses de sensibilite.</p>
 
-**Phase 5 : Développer le jugement** :
-Au-delà des calculs, comprendre les limites des modèles et développer l'intuition économique.
+<p><strong>Phase 5 : Developper le jugement</strong> :</p>
+<p>Au-dela des calculs, comprendre les limites des modeles et developper l'intuition economique.</p>
 
-<h3 class="section-title">Difficultés rencontrées</h3>
+<h3 class="section-title">Difficultes rencontrees</h3>
 
-**Multiplicité des concepts** :
-Finance couvre un large spectre : comptabilité, évaluation, marchés, risque. Nécessite de relier tous ces éléments.
+<p><strong>Multiplicite des concepts</strong> :</p>
+<p>Finance couvre un large spectre : comptabilite, evaluation, marches, risque. Necessite de relier tous ces elements.</p>
 
-**Formules nombreuses** :
-Beaucoup de formules à mémoriser (VAN, TRI, ratios). L'important est de comprendre la logique sous-jacente.
+<p><strong>Formules nombreuses</strong> :</p>
+<p>Beaucoup de formules a memoriser (VAN, TRI, ratios). L'important est de comprendre la logique sous-jacente.</p>
 
-**Subjectivité** :
-Certains paramètres (taux d'actualisation, prévisions de cash-flows) sont subjectifs. Plusieurs réponses possibles selon hypothèses.
+<p><strong>Subjectivite</strong> :</p>
+<p>Certains parametres (taux d'actualisation, previsions de cash-flows) sont subjectifs. Plusieurs reponses possibles selon hypotheses.</p>
 
-**Jargon financier** :
-Vocabulaire spécifique (WACC, EBITDA, FCF, ROE) à assimiler pour dialoguer avec financiers.
+<p><strong>Jargon financier</strong> :</p>
+<p>Vocabulaire specifique (WACC, EBITDA, FCF, ROE) a assimiler pour dialoguer avec financiers.</p>
 
----
+<hr/>
 
-## PART C - Aspects Techniques Détaillés
+<h2>PART C - Aspects Techniques Detailles</h2>
 
 <h3 class="section-title">1. Valeur temporelle de l'argent</h3>
 
-**Principe fondamental** :
+<p><strong>Principe fondamental</strong> :</p>
+<p>Un euro aujourd'hui vaut plus qu'un euro demain.</p>
 
-Un euro aujourd'hui vaut plus qu'un euro demain.
+<p>Raisons :</p>
+<ul>
+<li><strong>Inflation</strong> : pouvoir d'achat diminue avec le temps</li>
+<li><strong>Cout d'opportunite</strong> : on pourrait investir cet euro et obtenir un rendement</li>
+<li><strong>Risque</strong> : l'incertitude augmente avec le temps</li>
+</ul>
 
-Raisons :
-- **Inflation** : pouvoir d'achat diminue avec le temps
-- **Coût d'opportunité** : on pourrait investir cet euro et obtenir un rendement
-- **Risque** : l'incertitude augmente avec le temps
+<p><strong>Actualisation</strong> :</p>
+<p>Calculer la valeur presente d'un montant futur.</p>
 
-**Actualisation** :
+<p>Formule :<br/>
+VA = VF / (1 + r)^n</p>
 
-Calculer la valeur présente d'un montant futur.
+<p>avec :</p>
+<ul>
+<li>VA : valeur actuelle (presente)</li>
+<li>VF : valeur future</li>
+<li>r : taux d'actualisation (taux de rendement requis)</li>
+<li>n : nombre de periodes (annees)</li>
+</ul>
 
-Formule :
-VA = VF / (1 + r)^n
+<p><strong>Exemple</strong> :<br/>
+Quelle est la valeur actuelle de 1000&euro; recus dans 5 ans, avec un taux d'actualisation de 8% ?</p>
 
-avec :
-- VA : valeur actuelle (présente)
-- VF : valeur future
-- r : taux d'actualisation (taux de rendement requis)
-- n : nombre de périodes (années)
+<p>VA = 1000 / (1.08)^5 = 1000 / 1.469 = 681&euro;</p>
 
-**Exemple** :
-Quelle est la valeur actuelle de 1000€ reçus dans 5 ans, avec un taux d'actualisation de 8% ?
+<p><strong>Capitalisation</strong> :</p>
+<p>Calculer la valeur future d'un montant present.</p>
 
-VA = 1000 / (1.08)^5 = 1000 / 1.469 = 681€
+<p>Formule :<br/>
+VF = VA &times; (1 + r)^n</p>
 
-**Capitalisation** :
+<p><strong>Exemple</strong> :<br/>
+Combien vaudront 1000&euro; investis aujourd'hui dans 5 ans a 8% ?</p>
 
-Calculer la valeur future d'un montant présent.
+<p>VF = 1000 &times; (1.08)^5 = 1000 &times; 1.469 = 1469&euro;</p>
 
-Formule :
-VF = VA × (1 + r)^n
+<p><strong>Annuites</strong> :</p>
+<p>Serie de flux constants (ex : mensualites de pret, rente).</p>
 
-**Exemple** :
-Combien vaudront 1000€ investis aujourd'hui dans 5 ans à 8% ?
+<p>Valeur actuelle d'une annuite :<br/>
+VA = A &times; [(1 - (1+r)^-n) / r]</p>
 
-VF = 1000 × (1.08)^5 = 1000 × 1.469 = 1469€
-
-**Annuités** :
-
-Série de flux constants (ex : mensualités de prêt, rente).
-
-Valeur actuelle d'une annuité :
-VA = A × [(1 - (1+r)^-n) / r]
-
-avec A : montant de l'annuité.
+<p>avec A : montant de l'annuite.</p>
 
 <h3 class="section-title">2. Documents comptables</h3>
 
-**Bilan** :
+<p><strong>Bilan</strong> :</p>
+<p>Photographie du patrimoine de l'entreprise a un instant donne.</p>
+
+<table>
+  <tr><th>ACTIF (Emplois)</th><th>PASSIF (Ressources)</th></tr>
+  <tr><td>Actif immobilise (long terme)</td><td>Capitaux propres</td></tr>
+  <tr><td>- Immobilisations incorporelles</td><td>- Capital social</td></tr>
+  <tr><td>- Immobilisations corporelles</td><td>- Reserves</td></tr>
+  <tr><td>- Immobilisations financieres</td><td>- Resultat net</td></tr>
+  <tr><td>Actif circulant (court terme)</td><td>Dettes</td></tr>
+  <tr><td>- Stocks</td><td>- Dettes financieres</td></tr>
+  <tr><td>- Creances clients</td><td>- Dettes fournisseurs</td></tr>
+  <tr><td>- Tresorerie</td><td>- Dettes fiscales</td></tr>
+</table>
+
+<p>Equation fondamentale :<br/>
+<strong>ACTIF = PASSIF</strong></p>
+
+<p><strong>Compte de resultat</strong> :</p>
+<p>Film de l'activite sur une periode (generalement un an).</p>
+
+<p>Structure simplifiee :</p>
+<ul>
+<li><strong>Chiffre d'affaires</strong> (ventes)</li>
+<li>- Cout des ventes</li>
+<li>= <strong>Marge commerciale</strong></li>
+<li>+ Production de l'exercice</li>
+<li>- Consommations intermediaires</li>
+<li>= <strong>Valeur ajoutee (VA)</strong></li>
+<li>+ Subventions d'exploitation</li>
+<li>- Impots et taxes</li>
+<li>- Charges de personnel</li>
+<li>= <strong>Excedent Brut d'Exploitation (EBE)</strong></li>
+<li>+ Autres produits d'exploitation</li>
+<li>- Autres charges d'exploitation</li>
+<li>- Dotations aux amortissements</li>
+<li>= <strong>Resultat d'exploitation</strong></li>
+<li>+ Produits financiers</li>
+<li>- Charges financieres</li>
+<li>= <strong>Resultat Courant Avant Impots (RCAI)</strong></li>
+<li>+ Resultat exceptionnel</li>
+<li>- Participation des salaries</li>
+<li>- Impots sur les benefices</li>
+<li>= <strong>Resultat net</strong></li>
+</ul>
+
+<p><strong>Script Python Finance.py</strong> :</p>
+<p>Le script automatise le calcul de tous ces indicateurs :</p>
+<ul>
+<li>Fonctions pour chaque etape (marge commerciale, VA, EBE, resultat d'exploitation, RCAI, resultat net)</li>
+<li>Saisie interactive des donnees</li>
+<li>Affichage des resultats intermediaires et finaux</li>
+</ul>
+
+<h3 class="section-title">3. Analyse financiere et ratios</h3>
+
+<p><strong>Ratios de rentabilite</strong> :</p>
+
+<p><strong>Rentabilite des Actifs (ROA)</strong> :<br/>
+ROA = Resultat Net / Actif Total &times; 100%</p>
+<p>Mesure l'efficacite d'utilisation des actifs.</p>
+
+<p><strong>Rentabilite des Capitaux Propres (ROE)</strong> :<br/>
+ROE = Resultat Net / Capitaux Propres &times; 100%</p>
+<p>Mesure le rendement pour les actionnaires.</p>
+
+<p><strong>Marge nette</strong> :<br/>
+Marge nette = Resultat Net / Chiffre d'Affaires &times; 100%</p>
+
+<p><strong>Ratios de liquidite</strong> :</p>
+
+<p><strong>Liquidite generale</strong> :<br/>
+Ratio = Actif Circulant / Passif Circulant</p>
+<p>Si &gt; 1 : entreprise peut payer ses dettes court terme.</p>
+
+<p><strong>Liquidite immediate (quick ratio)</strong> :<br/>
+Ratio = (Actif Circulant - Stocks) / Passif Circulant</p>
+<p>Plus conservateur (stocks parfois difficiles a vendre rapidement).</p>
+
+<p><strong>Ratios d'endettement</strong> :</p>
+
+<p><strong>Taux d'endettement</strong> :<br/>
+Ratio = Dettes Totales / Capitaux Propres</p>
+<p>Mesure le levier financier.</p>
+
+<p><strong>Ratio de couverture des interets</strong> :<br/>
+Ratio = EBIT / Charges d'Interets</p>
+<p>Capacite a payer les interets de la dette.</p>
+
+<p><strong>Ratios d'activite</strong> :</p>
+
+<p><strong>Rotation des stocks</strong> :<br/>
+Ratio = Cout des Ventes / Stock Moyen</p>
+<p>Nombre de fois ou le stock est renouvele dans l'annee.</p>
+
+<p><strong>Delai de paiement clients</strong> :<br/>
+Delai = (Creances Clients / CA TTC) &times; 365 jours</p>
+
+<p><strong>Delai de paiement fournisseurs</strong> :<br/>
+Delai = (Dettes Fournisseurs / Achats TTC) &times; 365 jours</p>
+
+<h3 class="section-title">4. Evaluation de projets d'investissement</h3>
+
+<p><strong>Valeur Actuelle Nette (VAN)</strong> :</p>
+<p>Indicateur principal pour evaluer la rentabilite d'un investissement.</p>
+
+<p>Formule :<br/>
+VAN = -I0 + somme(CFt / (1+r)^t)</p>
+
+<p>avec :</p>
+<ul>
+<li>I0 : investissement initial</li>
+<li>CFt : cash-flow a la periode t</li>
+<li>r : taux d'actualisation</li>
+</ul>
+
+<p><strong>Regle de decision</strong> :</p>
+<ul>
+<li>VAN &gt; 0 : projet rentable (cree de la valeur)</li>
+<li>VAN &lt; 0 : projet non rentable (detruit de la valeur)</li>
+<li>VAN = 0 : projet neutre</li>
+</ul>
+
+<p><strong>Exemple</strong> :<br/>
+Investissement de 10000&euro;, cash-flows annuels de 3000&euro; pendant 5 ans, taux d'actualisation 10%.</p>
+
+<p>VAN = -10000 + 3000/(1.1) + 3000/(1.1)^2 + 3000/(1.1)^3 + 3000/(1.1)^4 + 3000/(1.1)^5<br/>
+VAN = -10000 + 2727 + 2479 + 2254 + 2049 + 1863 = 1372&euro;</p>
 
-Photographie du patrimoine de l'entreprise à un instant donné.
+<p>VAN positive &rarr; projet rentable.</p>
 
-| ACTIF (Emplois) | PASSIF (Ressources) |
-|-----------------|---------------------|
-| Actif immobilisé (long terme) | Capitaux propres |
-| - Immobilisations incorporelles | - Capital social |
-| - Immobilisations corporelles | - Réserves |
-| - Immobilisations financières | - Résultat net |
-| Actif circulant (court terme) | Dettes |
-| - Stocks | - Dettes financières |
-| - Créances clients | - Dettes fournisseurs |
-| - Trésorerie | - Dettes fiscales |
+<p><strong>Taux de Rentabilite Interne (TRI)</strong> :</p>
+<p>Taux d'actualisation qui annule la VAN.</p>
 
-Équation fondamentale :
-**ACTIF = PASSIF**
+<p>Equation :<br/>
+-I0 + somme(CFt / (1+TRI)^t) = 0</p>
 
-**Compte de résultat** :
+<p><strong>Regle de decision</strong> :</p>
+<ul>
+<li>TRI &gt; taux de rendement requis : accepter projet</li>
+<li>TRI &lt; taux de rendement requis : rejeter projet</li>
+</ul>
+
+<p>Interpretation : rendement effectif du projet.</p>
+
+<p><strong>Methodes de calcul</strong> :</p>
+<ul>
+<li>Iteration (essai-erreur)</li>
+<li>Fonction TRI dans Excel</li>
+<li>Resolution numerique (Newton-Raphson)</li>
+</ul>
 
-Film de l'activité sur une période (généralement un an).
+<p><strong>Delai de recuperation (Payback)</strong> :</p>
+<p>Temps necessaire pour recuperer l'investissement initial.</p>
 
-Structure simplifiée :
-- **Chiffre d'affaires** (ventes)
-- - Coût des ventes
-- = **Marge commerciale**
-- + Production de l'exercice
-- - Consommations intermédiaires
-- = **Valeur ajoutée (VA)**
-- + Subventions d'exploitation
-- - Impôts et taxes
-- - Charges de personnel
-- = **Excédent Brut d'Exploitation (EBE)**
-- + Autres produits d'exploitation
-- - Autres charges d'exploitation
-- - Dotations aux amortissements
-- = **Résultat d'exploitation**
-- + Produits financiers
-- - Charges financières
-- = **Résultat Courant Avant Impôts (RCAI)**
-- + Résultat exceptionnel
-- - Participation des salariés
-- - Impôts sur les bénéfices
-- = **Résultat net**
+<p><strong>Avantages</strong> :</p>
+<ul>
+<li>Simple et intuitif</li>
+<li>Mesure du risque (plus court = moins risque)</li>
+</ul>
 
-**Script Python Finance.py** :
+<p><strong>Inconvenients</strong> :</p>
+<ul>
+<li>Ignore valeur temporelle de l'argent (version simple)</li>
+<li>Ignore cash-flows apres recuperation</li>
+</ul>
 
-Le script automatise le calcul de tous ces indicateurs :
-- Fonctions pour chaque étape (marge commerciale, VA, EBE, résultat d'exploitation, RCAI, résultat net)
-- Saisie interactive des données
-- Affichage des résultats intermédiaires et finaux
+<p><strong>Indice de Profitabilite (IP)</strong> :</p>
+<p>IP = VAN / I0</p>
+<p>ou</p>
+<p>IP = Somme(VA des CF) / I0</p>
+<p>Utile pour comparer des projets de tailles differentes.</p>
+<p>Si IP &gt; 1 : projet rentable.</p>
 
-<h3 class="section-title">3. Analyse financière et ratios</h3>
+<h3 class="section-title">5. Cout du capital</h3>
 
-**Ratios de rentabilité** :
+<p><strong>Cout des fonds propres</strong> :</p>
+<p>Rendement exige par les actionnaires.</p>
 
-**Rentabilité des Actifs (ROA)** :
-ROA = Résultat Net / Actif Total × 100%
+<p><strong>Modele CAPM (Capital Asset Pricing Model)</strong> :</p>
+<p>re = rf + &beta; &times; (rm - rf)</p>
 
-Mesure l'efficacité d'utilisation des actifs.
+<p>avec :</p>
+<ul>
+<li>re : cout des fonds propres</li>
+<li>rf : taux sans risque (obligations d'Etat)</li>
+<li>&beta; : coefficient beta (risque systematique de l'action)</li>
+<li>rm : rendement espere du marche</li>
+<li>(rm - rf) : prime de risque de marche</li>
+</ul>
 
-**Rentabilité des Capitaux Propres (ROE)** :
-ROE = Résultat Net / Capitaux Propres × 100%
+<p><strong>Exemple</strong> :<br/>
+rf = 3%, &beta; = 1.2, rm = 10%</p>
+<p>re = 3% + 1.2 &times; (10% - 3%) = 3% + 8.4% = 11.4%</p>
 
-Mesure le rendement pour les actionnaires.
+<p><strong>Cout de la dette</strong> :</p>
+<p>rd = taux d'interet &times; (1 - taux d'imposition)</p>
+<p>L'economie d'impot (tax shield) reduit le cout effectif.</p>
 
-**Marge nette** :
-Marge nette = Résultat Net / Chiffre d'Affaires × 100%
+<p><strong>Exemple</strong> :<br/>
+Taux d'interet 5%, taux d'imposition 30%</p>
+<p>rd = 5% &times; (1 - 0.30) = 3.5%</p>
 
-**Ratios de liquidité** :
+<p><strong>Cout Moyen Pondere du Capital (CMPC ou WACC)</strong> :</p>
+<p>WACC = (E/V) &times; re + (D/V) &times; rd &times; (1 - T)</p>
 
-**Liquidité générale** :
-Ratio = Actif Circulant / Passif Circulant
+<p>avec :</p>
+<ul>
+<li>E : valeur des fonds propres (equity)</li>
+<li>D : valeur de la dette (debt)</li>
+<li>V = E + D : valeur totale de l'entreprise</li>
+<li>T : taux d'imposition</li>
+</ul>
 
-Si > 1 : entreprise peut payer ses dettes court terme.
+<p>Le WACC represente le cout moyen de financement de l'entreprise et sert de taux d'actualisation pour evaluer les projets.</p>
 
-**Liquidité immédiate (quick ratio)** :
-Ratio = (Actif Circulant - Stocks) / Passif Circulant
+<h3 class="section-title">6. Structure financiere</h3>
 
-Plus conservateur (stocks parfois difficiles à vendre rapidement).
+<p><strong>Theoreme de Modigliani-Miller</strong> :</p>
 
-**Ratios d'endettement** :
+<p><strong>Proposition I (sans impots)</strong> :<br/>
+La valeur d'une entreprise est independante de sa structure de capital (dette vs fonds propres).</p>
 
-**Taux d'endettement** :
-Ratio = Dettes Totales / Capitaux Propres
+<p><strong>Proposition II (avec impots)</strong> :<br/>
+L'endettement cree de la valeur grace a l'economie d'impot sur les interets.</p>
 
-Mesure le levier financier.
+<p>Valeur entreprise endettee = Valeur entreprise non endettee + T &times; Dette</p>
 
-**Ratio de couverture des intérêts** :
-Ratio = EBIT / Charges d'Intérêts
+<p><strong>Effet de levier</strong> :</p>
+<p>L'endettement amplifie les rendements pour les actionnaires (positifs ou negatifs).</p>
 
-Capacité à payer les intérêts de la dette.
+<p><strong>Avantages de la dette</strong> :</p>
+<ul>
+<li>Cout inferieur aux fonds propres</li>
+<li>Economie d'impot (interets deductibles)</li>
+<li>Discipline de gestion (obligation de payer)</li>
+</ul>
 
-**Ratios d'activité** :
+<p><strong>Inconvenients de la dette</strong> :</p>
+<ul>
+<li>Risque de faillite si incapacite a rembourser</li>
+<li>Couts de detresse financiere</li>
+<li>Perte de flexibilite</li>
+</ul>
 
-**Rotation des stocks** :
-Ratio = Coût des Ventes / Stock Moyen
+<p><strong>Structure optimale</strong> :</p>
+<p>Compromis entre avantages fiscaux et couts de detresse.</p>
 
-Nombre de fois où le stock est renouvelé dans l'année.
+<h3 class="section-title">7. Flux de tresorerie (Cash-Flow)</h3>
 
-**Délai de paiement clients** :
-Délai = (Créances Clients / CA TTC) × 365 jours
+<p><strong>Cash-Flow Operationnel (CFO)</strong> :</p>
+<p>Tresorerie generee par l'activite.</p>
 
-**Délai de paiement fournisseurs** :
-Délai = (Dettes Fournisseurs / Achats TTC) × 365 jours
+<p>CFO = EBIT &times; (1 - T) + Amortissements - Variation BFR</p>
 
-<h3 class="section-title">4. Évaluation de projets d'investissement</h3>
+<p>avec :</p>
+<ul>
+<li>EBIT : resultat d'exploitation</li>
+<li>T : taux d'imposition</li>
+<li>BFR : Besoin en Fonds de Roulement</li>
+</ul>
 
-**Valeur Actuelle Nette (VAN)** :
+<p><strong>Free Cash-Flow (FCF)</strong> :</p>
+<p>Tresorerie disponible apres financement des investissements.</p>
 
-Indicateur principal pour évaluer la rentabilité d'un investissement.
+<p>FCF = CFO - CAPEX</p>
+<p>avec CAPEX : depenses d'investissement.</p>
 
-Formule :
-VAN = -I0 + somme(CFt / (1+r)^t)
+<p>Le FCF sert a remunerer actionnaires (dividendes) et creanciers (remboursement dette).</p>
 
-avec :
-- I0 : investissement initial
-- CFt : cash-flow à la période t
-- r : taux d'actualisation
-
-**Règle de décision** :
-- VAN > 0 : projet rentable (crée de la valeur)
-- VAN < 0 : projet non rentable (détruit de la valeur)
-- VAN = 0 : projet neutre
-
-**Exemple** :
-Investissement de 10000€, cash-flows annuels de 3000€ pendant 5 ans, taux d'actualisation 10%.
-
-VAN = -10000 + 3000/(1.1) + 3000/(1.1)^2 + 3000/(1.1)^3 + 3000/(1.1)^4 + 3000/(1.1)^5
-VAN = -10000 + 2727 + 2479 + 2254 + 2049 + 1863 = 1372€
-
-VAN positive → projet rentable.
-
-**Taux de Rentabilité Interne (TRI)** :
-
-Taux d'actualisation qui annule la VAN.
-
-Équation :
--I0 + somme(CFt / (1+TRI)^t) = 0
-
-**Règle de décision** :
-- TRI > taux de rendement requis : accepter projet
-- TRI < taux de rendement requis : rejeter projet
-
-Interprétation : rendement effectif du projet.
-
-**Méthodes de calcul** :
-- Itération (essai-erreur)
-- Fonction TRI dans Excel
-- Résolution numérique (Newton-Raphson)
-
-**Délai de récupération (Payback)** :
-
-Temps nécessaire pour récupérer l'investissement initial.
-
-**Avantages** :
-- Simple et intuitif
-- Mesure du risque (plus court = moins risqué)
-
-**Inconvénients** :
-- Ignore valeur temporelle de l'argent (version simple)
-- Ignore cash-flows après récupération
-
-**Indice de Profitabilité (IP)** :
-
-IP = VAN / I0
-
-ou
-
-IP = Somme(VA des CF) / I0
-
-Utile pour comparer des projets de tailles différentes.
-
-Si IP > 1 : projet rentable.
-
-<h3 class="section-title">5. Coût du capital</h3>
-
-**Coût des fonds propres** :
-
-Rendement exigé par les actionnaires.
-
-**Modèle CAPM (Capital Asset Pricing Model)** :
-
-re = rf + β × (rm - rf)
-
-avec :
-- re : coût des fonds propres
-- rf : taux sans risque (obligations d'État)
-- β : coefficient bêta (risque systématique de l'action)
-- rm : rendement espéré du marché
-- (rm - rf) : prime de risque de marché
-
-**Exemple** :
-rf = 3%, β = 1.2, rm = 10%
-
-re = 3% + 1.2 × (10% - 3%) = 3% + 8.4% = 11.4%
-
-**Coût de la dette** :
-
-rd = taux d'intérêt × (1 - taux d'imposition)
-
-L'économie d'impôt (tax shield) réduit le coût effectif.
-
-**Exemple** :
-Taux d'intérêt 5%, taux d'imposition 30%
-
-rd = 5% × (1 - 0.30) = 3.5%
-
-**Coût Moyen Pondéré du Capital (CMPC ou WACC)** :
-
-WACC = (E/V) × re + (D/V) × rd × (1 - T)
-
-avec :
-- E : valeur des fonds propres (equity)
-- D : valeur de la dette (debt)
-- V = E + D : valeur totale de l'entreprise
-- T : taux d'imposition
-
-Le WACC représente le coût moyen de financement de l'entreprise et sert de taux d'actualisation pour évaluer les projets.
-
-<h3 class="section-title">6. Structure financière</h3>
-
-**Théorème de Modigliani-Miller** :
-
-**Proposition I (sans impôts)** :
-La valeur d'une entreprise est indépendante de sa structure de capital (dette vs fonds propres).
-
-**Proposition II (avec impôts)** :
-L'endettement crée de la valeur grâce à l'économie d'impôt sur les intérêts.
-
-Valeur entreprise endettée = Valeur entreprise non endettée + T × Dette
-
-**Effet de levier** :
-
-L'endettement amplifie les rendements pour les actionnaires (positifs ou négatifs).
-
-**Avantages de la dette** :
-- Coût inférieur aux fonds propres
-- Économie d'impôt (intérêts déductibles)
-- Discipline de gestion (obligation de payer)
-
-**Inconvénients de la dette** :
-- Risque de faillite si incapacité à rembourser
-- Coûts de détresse financière
-- Perte de flexibilité
-
-**Structure optimale** :
-
-Compromis entre avantages fiscaux et coûts de détresse.
-
-<h3 class="section-title">7. Flux de trésorerie (Cash-Flow)</h3>
-
-**Cash-Flow Opérationnel (CFO)** :
-
-Trésorerie générée par l'activité.
-
-CFO = EBIT × (1 - T) + Amortissements - Variation BFR
-
-avec :
-- EBIT : résultat d'exploitation
-- T : taux d'imposition
-- BFR : Besoin en Fonds de Roulement
-
-**Free Cash-Flow (FCF)** :
-
-Trésorerie disponible après financement des investissements.
-
-FCF = CFO - CAPEX
-
-avec CAPEX : dépenses d'investissement.
-
-Le FCF sert à rémunérer actionnaires (dividendes) et créanciers (remboursement dette).
-
-**Besoin en Fonds de Roulement (BFR)** :
-
-BFR = Stocks + Créances Clients - Dettes Fournisseurs
-
-Une augmentation du BFR consomme de la trésorerie (immobilisation dans le cycle d'exploitation).
+<p><strong>Besoin en Fonds de Roulement (BFR)</strong> :</p>
+<p>BFR = Stocks + Creances Clients - Dettes Fournisseurs</p>
+<p>Une augmentation du BFR consomme de la tresorerie (immobilisation dans le cycle d'exploitation).</p>
 
 <h3 class="section-title">8. Valorisation d'entreprise</h3>
 
-**Méthode des flux actualisés (DCF)** :
+<p><strong>Methode des flux actualises (DCF)</strong> :</p>
+<p>Valeur entreprise = Somme(FCF actualises) + Valeur terminale</p>
+<p>Valeur terminale = FCF(n+1) / (WACC - g)</p>
+<p>avec g : taux de croissance perpetuelle (typiquement 2-3%).</p>
 
-Valeur entreprise = Somme(FCF actualisés) + Valeur terminale
+<p><strong>Methode des comparables</strong> :</p>
+<p>Valorisation relative par rapport a entreprises similaires.</p>
 
-Valeur terminale = FCF(n+1) / (WACC - g)
+<p><strong>Multiples courants</strong> :</p>
+<ul>
+<li>P/E (Price/Earnings) : Capitalisation / Resultat Net</li>
+<li>EV/EBITDA : Valeur d'Entreprise / EBITDA</li>
+<li>P/B (Price/Book) : Capitalisation / Capitaux Propres</li>
+</ul>
 
-avec g : taux de croissance perpétuelle (typiquement 2-3%).
+<p><strong>Exemple</strong> :<br/>
+Entreprises du secteur : P/E moyen = 15<br/>
+Notre entreprise : Resultat Net = 5M&euro;<br/>
+Valorisation = 15 &times; 5M = 75M&euro;</p>
 
-**Méthode des comparables** :
+<p><strong>Methode patrimoniale</strong> :</p>
+<p>Valeur = Actifs - Dettes</p>
+<p>Approche comptable, pertinente pour holdings ou liquidation.</p>
 
-Valorisation relative par rapport à entreprises similaires.
+<h3 class="section-title">9. Marches financiers</h3>
 
-**Multiples courants** :
-- P/E (Price/Earnings) : Capitalisation / Résultat Net
-- EV/EBITDA : Valeur d'Entreprise / EBITDA
-- P/B (Price/Book) : Capitalisation / Capitaux Propres
+<p><strong>Marche primaire</strong> :</p>
+<p>Emission de nouveaux titres (actions, obligations).</p>
+<ul>
+<li>Introduction en bourse (IPO)</li>
+<li>Augmentation de capital</li>
+<li>Emission obligataire</li>
+</ul>
 
-**Exemple** :
-Entreprises du secteur : P/E moyen = 15
-Notre entreprise : Résultat Net = 5M€
-Valorisation = 15 × 5M = 75M€
+<p><strong>Marche secondaire</strong> :</p>
+<p>Echange de titres existants (bourses : Euronext, NYSE, NASDAQ).</p>
 
-**Méthode patrimoniale** :
+<p><strong>Actions</strong> :</p>
+<ul>
+<li>Propriete d'une fraction de l'entreprise</li>
+<li>Droit aux dividendes</li>
+<li>Droit de vote (assemblees generales)</li>
+<li>Rendement : dividendes + plus-values</li>
+<li>Risque eleve</li>
+</ul>
 
-Valeur = Actifs - Dettes
+<p><strong>Obligations</strong> :</p>
+<ul>
+<li>Titre de creance (pret a l'entreprise ou Etat)</li>
+<li>Paiement d'interets periodiques (coupons)</li>
+<li>Remboursement du principal a echeance</li>
+<li>Risque plus faible que actions</li>
+</ul>
 
-Approche comptable, pertinente pour holdings ou liquidation.
+<p><strong>Produits derives</strong> :</p>
+<ul>
+<li>Options (call : droit d'acheter, put : droit de vendre)</li>
+<li>Futures et forwards (contrats a terme)</li>
+<li>Swaps (echange de flux financiers)</li>
+</ul>
 
-<h3 class="section-title">9. Marchés financiers</h3>
-
-**Marché primaire** :
-
-Émission de nouveaux titres (actions, obligations).
-- Introduction en bourse (IPO)
-- Augmentation de capital
-- Émission obligataire
-
-**Marché secondaire** :
-
-Échange de titres existants (bourses : Euronext, NYSE, NASDAQ).
-
-**Actions** :
-
-- Propriété d'une fraction de l'entreprise
-- Droit aux dividendes
-- Droit de vote (assemblées générales)
-- Rendement : dividendes + plus-values
-- Risque élevé
-
-**Obligations** :
-
-- Titre de créance (prêt à l'entreprise ou État)
-- Paiement d'intérêts périodiques (coupons)
-- Remboursement du principal à échéance
-- Risque plus faible que actions
-
-**Produits dérivés** :
-
-- Options (call : droit d'acheter, put : droit de vendre)
-- Futures et forwards (contrats à terme)
-- Swaps (échange de flux financiers)
-
-Utilisés pour couverture (hedging) ou spéculation.
+<p>Utilises pour couverture (hedging) ou speculation.</p>
 
 <h3 class="section-title">10. Gestion du risque financier</h3>
 
-**Types de risques** :
+<p><strong>Types de risques</strong> :</p>
 
-| Risque | Description | Exemple |
-|--------|-------------|---------|
-| Marché | Fluctuations cours (actions, devises, matières premières) | Chute du cours de l'action |
-| Crédit | Défaut de paiement d'un débiteur | Client ne paie pas |
-| Liquidité | Incapacité à vendre rapidement un actif | Actif immobilier difficilement vendable |
-| Opérationnel | Défaillances internes (processus, systèmes, humaines) | Panne informatique, fraude |
-| Taux d'intérêt | Variation des taux impactant dettes | Hausse des taux → coût dette augmente |
-| Change | Variation des taux de change | Export en USD, € s'apprécie → perte |
+<table>
+  <tr><th>Risque</th><th>Description</th><th>Exemple</th></tr>
+  <tr><td>Marche</td><td>Fluctuations cours (actions, devises, matieres premieres)</td><td>Chute du cours de l'action</td></tr>
+  <tr><td>Credit</td><td>Defaut de paiement d'un debiteur</td><td>Client ne paie pas</td></tr>
+  <tr><td>Liquidite</td><td>Incapacite a vendre rapidement un actif</td><td>Actif immobilier difficilement vendable</td></tr>
+  <tr><td>Operationnel</td><td>Defaillances internes (processus, systemes, humaines)</td><td>Panne informatique, fraude</td></tr>
+  <tr><td>Taux d'interet</td><td>Variation des taux impactant dettes</td><td>Hausse des taux &rarr; cout dette augmente</td></tr>
+  <tr><td>Change</td><td>Variation des taux de change</td><td>Export en USD, &euro; s'apprecie &rarr; perte</td></tr>
+</table>
 
-**Instruments de couverture** :
+<p><strong>Instruments de couverture</strong> :</p>
+<ul>
+<li><strong>Forwards/Futures</strong> : fixer un prix futur</li>
+<li><strong>Options</strong> : droit (pas obligation) d'acheter/vendre a un prix fixe</li>
+<li><strong>Swaps</strong> : echange de flux (taux fixe contre taux variable)</li>
+</ul>
 
-- **Forwards/Futures** : fixer un prix futur
-- **Options** : droit (pas obligation) d'acheter/vendre à un prix fixé
-- **Swaps** : échange de flux (taux fixe contre taux variable)
+<h3 class="section-title">11. Decisions de financement</h3>
 
-<h3 class="section-title">11. Décisions de financement</h3>
+<p><strong>Sources de financement</strong> :</p>
 
-**Sources de financement** :
+<p><strong>Fonds propres</strong> :</p>
+<ul>
+<li>Autofinancement (benefices reinvestis)</li>
+<li>Augmentation de capital (emission d'actions)</li>
+<li>Capital-risque, business angels (startups)</li>
+</ul>
 
-**Fonds propres** :
-- Autofinancement (bénéfices réinvestis)
-- Augmentation de capital (émission d'actions)
-- Capital-risque, business angels (startups)
+<p><strong>Dette</strong> :</p>
+<ul>
+<li>Emprunts bancaires</li>
+<li>Obligations (corporate bonds)</li>
+<li>Credit-bail (leasing)</li>
+<li>Affacturage (cession creances clients)</li>
+</ul>
 
-**Dette** :
-- Emprunts bancaires
-- Obligations (corporate bonds)
-- Crédit-bail (leasing)
-- Affacturage (cession créances clients)
+<p><strong>Criteres de choix</strong> :</p>
 
-**Critères de choix** :
+<table>
+  <tr><th>Critere</th><th>Fonds propres</th><th>Dette</th></tr>
+  <tr><td>Cout</td><td>Eleve (exigence actionnaires)</td><td>Plus faible (interets)</td></tr>
+  <tr><td>Risque</td><td>Pas d'obligation de remboursement</td><td>Obligation de paiement</td></tr>
+  <tr><td>Controle</td><td>Dilution capital</td><td>Pas de dilution</td></tr>
+  <tr><td>Flexibilite</td><td>Flexible</td><td>Contraintes (covenants)</td></tr>
+  <tr><td>Fiscalite</td><td>Pas d'avantage fiscal</td><td>Interets deductibles</td></tr>
+</table>
 
-| Critère | Fonds propres | Dette |
-|---------|---------------|-------|
-| Coût | Élevé (exigence actionnaires) | Plus faible (intérêts) |
-| Risque | Pas d'obligation de remboursement | Obligation de paiement |
-| Contrôle | Dilution capital | Pas de dilution |
-| Flexibilité | Flexible | Contraintes (covenants) |
-| Fiscalité | Pas d'avantage fiscal | Intérêts déductibles |
+<h3 class="section-title">12. Analyse de sensibilite</h3>
 
-<h3 class="section-title">12. Analyse de sensibilité</h3>
+<p><strong>Objectif</strong> :</p>
+<p>Mesurer l'impact des variations de parametres sur la VAN (ou TRI).</p>
 
-**Objectif** :
+<p><strong>Parametres testes</strong> :</p>
+<ul>
+<li>Chiffre d'affaires (volume, prix)</li>
+<li>Couts (matieres premieres, personnel)</li>
+<li>Taux d'actualisation</li>
+<li>Investissement initial</li>
+<li>Duree du projet</li>
+</ul>
 
-Mesurer l'impact des variations de paramètres sur la VAN (ou TRI).
+<p><strong>Exemple</strong> :</p>
+<p>Projet avec VAN de base = 1000&euro;.</p>
+<p>Variation du CA de &plusmn;10% :</p>
+<ul>
+<li>CA +10% &rarr; VAN = 1500&euro;</li>
+<li>CA -10% &rarr; VAN = 500&euro;</li>
+</ul>
 
-**Paramètres testés** :
-- Chiffre d'affaires (volume, prix)
-- Coûts (matières premières, personnel)
-- Taux d'actualisation
-- Investissement initial
-- Durée du projet
+<p><strong>Analyse de scenarios</strong> :</p>
+<p>Definir plusieurs scenarios complets :</p>
+<ul>
+<li><strong>Optimiste</strong> : hypotheses favorables</li>
+<li><strong>Base</strong> : hypotheses realistes</li>
+<li><strong>Pessimiste</strong> : hypotheses defavorables</li>
+</ul>
 
-**Exemple** :
+<p>Calculer VAN pour chaque scenario et evaluer le risque.</p>
 
-Projet avec VAN de base = 1000€.
+<p><strong>Simulation Monte Carlo</strong> :</p>
+<p>Generer aleatoirement des milliers de scenarios pour obtenir une distribution de probabilite de la VAN.</p>
+<p>Permet d'estimer la probabilite que VAN soit positive.</p>
 
-Variation du CA de ±10% :
-- CA +10% → VAN = 1500€
-- CA -10% → VAN = 500€
+<hr/>
 
-**Analyse de scénarios** :
+<h2>PART D - Analyse Reflexive et Perspectives</h2>
 
-Définir plusieurs scénarios complets :
-- **Optimiste** : hypothèses favorables
-- **Base** : hypothèses réalistes
-- **Pessimiste** : hypothèses défavorables
+<h3 class="section-title">Competences acquises</h3>
 
-Calculer VAN pour chaque scénario et évaluer le risque.
+<p><strong>Maitrise des concepts financiers</strong> :</p>
+<p>Capacite a comprendre et appliquer les principes fondamentaux : valeur temporelle, actualisation, evaluation d'investissements.</p>
 
-**Simulation Monte Carlo** :
+<p><strong>Analyse de documents comptables</strong> :</p>
+<p>Aptitude a lire et interpreter bilans et comptes de resultat, calculer et analyser ratios financiers.</p>
 
-Générer aléatoirement des milliers de scénarios pour obtenir une distribution de probabilité de la VAN.
+<p><strong>Evaluation de projets</strong> :</p>
+<p>Competence a evaluer la rentabilite d'investissements avec VAN, TRI, et analyser la sensibilite aux hypotheses.</p>
 
-Permet d'estimer la probabilité que VAN soit positive.
+<p><strong>Vision economique</strong> :</p>
+<p>Developpement d'une comprehension des mecanismes de creation de valeur et des enjeux financiers d'une entreprise.</p>
 
----
+<p><strong>Dialogue avec financiers</strong> :</p>
+<p>Capacite a communiquer efficacement avec directions financieres, investisseurs, banques.</p>
 
-## PART D - Analyse Réflexive et Perspectives
+<h3 class="section-title">Points cles a retenir</h3>
 
-<h3 class="section-title">Compétences acquises</h3>
+<p><strong>1. Valeur temporelle = fondation</strong> :</p>
+<p>Toute decision financiere repose sur le principe qu'un euro aujourd'hui vaut plus qu'un euro demain. L'actualisation en decoule.</p>
 
-**Maîtrise des concepts financiers** :
-Capacité à comprendre et appliquer les principes fondamentaux : valeur temporelle, actualisation, évaluation d'investissements.
+<p><strong>2. VAN = indicateur cle</strong> :</p>
+<p>La VAN est le critere principal pour evaluer un investissement. Elle mesure directement la creation (ou destruction) de valeur.</p>
 
-**Analyse de documents comptables** :
-Aptitude à lire et interpréter bilans et comptes de résultat, calculer et analyser ratios financiers.
+<p><strong>3. Risque et rendement lies</strong> :</p>
+<p>Plus le risque est eleve, plus le rendement exige est eleve (prime de risque). Inevitable trade-off.</p>
 
-**Évaluation de projets** :
-Compétence à évaluer la rentabilité d'investissements avec VAN, TRI, et analyser la sensibilité aux hypothèses.
+<p><strong>4. Cash is king</strong> :</p>
+<p>La tresorerie (cash-flow) est plus importante que le resultat comptable. Une entreprise peut etre profitable sur papier mais en faillite si pas de tresorerie.</p>
 
-**Vision économique** :
-Développement d'une compréhension des mécanismes de création de valeur et des enjeux financiers d'une entreprise.
+<p><strong>5. Pas de recette magique</strong> :</p>
+<p>Les modeles financiers reposent sur des hypotheses. Le jugement et l'experience sont essentiels pour interpreter les resultats.</p>
 
-**Dialogue avec financiers** :
-Capacité à communiquer efficacement avec directions financières, investisseurs, banques.
+<h3 class="section-title">Retour d'experience</h3>
 
-<h3 class="section-title">Points clés à retenir</h3>
+<p><strong>Utilite pour ingenieur</strong> :</p>
+<p>Ce cours, bien que non-technique, est fondamental. Les ingenieurs doivent justifier economiquement leurs choix techniques (investissements, R&amp;D, nouveaux produits).</p>
 
-**1. Valeur temporelle = fondation** :
-Toute décision financière repose sur le principe qu'un euro aujourd'hui vaut plus qu'un euro demain. L'actualisation en découle.
+<p><strong>Pratique avec outils</strong> :</p>
+<p>L'utilisation d'Excel et du script Python a rendu les calculs concrets. Automatiser les analyses financieres est une competence precieuse.</p>
 
-**2. VAN = indicateur clé** :
-La VAN est le critère principal pour évaluer un investissement. Elle mesure directement la création (ou destruction) de valeur.
+<p><strong>Complexite cachee</strong> :</p>
+<p>Les formules semblent simples, mais leur application demande jugement (choix du taux d'actualisation, estimation des cash-flows futurs).</p>
 
-**3. Risque et rendement liés** :
-Plus le risque est élevé, plus le rendement exigé est élevé (prime de risque). Inévitable trade-off.
-
-**4. Cash is king** :
-La trésorerie (cash-flow) est plus importante que le résultat comptable. Une entreprise peut être profitable sur papier mais en faillite si pas de trésorerie.
-
-**5. Pas de recette magique** :
-Les modèles financiers reposent sur des hypothèses. Le jugement et l'expérience sont essentiels pour interpréter les résultats.
-
-<h3 class="section-title">Retour d'expérience</h3>
-
-**Utilité pour ingénieur** :
-Ce cours, bien que non-technique, est fondamental. Les ingénieurs doivent justifier économiquement leurs choix techniques (investissements, R&D, nouveaux produits).
-
-**Pratique avec outils** :
-L'utilisation d'Excel et du script Python a rendu les calculs concrets. Automatiser les analyses financières est une compétence précieuse.
-
-**Complexité cachée** :
-Les formules semblent simples, mais leur application demande jugement (choix du taux d'actualisation, estimation des cash-flows futurs).
-
-**Lien avec réalité** :
-Les études de cas ont montré l'importance de la finance dans les décisions stratégiques : lancer un produit, investir dans une usine, acquérir une entreprise.
+<p><strong>Lien avec realite</strong> :</p>
+<p>Les etudes de cas ont montre l'importance de la finance dans les decisions strategiques : lancer un produit, investir dans une usine, acquerir une entreprise.</p>
 
 <h3 class="section-title">Applications pratiques</h3>
 
-**Pour ingénieur en entreprise** :
-- Justifier un investissement (nouvel équipement, projet R&D)
-- Comprendre les contraintes budgétaires
-- Dialoguer avec direction financière
-- Optimiser les coûts de projets
+<p><strong>Pour ingenieur en entreprise</strong> :</p>
+<ul>
+<li>Justifier un investissement (nouvel equipement, projet R&amp;D)</li>
+<li>Comprendre les contraintes budgetaires</li>
+<li>Dialoguer avec direction financiere</li>
+<li>Optimiser les couts de projets</li>
+</ul>
 
-**Pour entrepreneur** :
-- Élaborer un business plan crédible
-- Lever des fonds (pitch investisseurs)
-- Gérer la trésorerie (éviter faillite malgré croissance)
-- Valoriser son entreprise (négociations)
+<p><strong>Pour entrepreneur</strong> :</p>
+<ul>
+<li>Elaborer un business plan credible</li>
+<li>Lever des fonds (pitch investisseurs)</li>
+<li>Gerer la tresorerie (eviter faillite malgre croissance)</li>
+<li>Valoriser son entreprise (negociations)</li>
+</ul>
 
-**Pour investisseur** :
-- Évaluer des opportunités d'investissement
-- Analyser la santé financière d'entreprises
-- Construire un portefeuille diversifié
-- Gérer le risque
+<p><strong>Pour investisseur</strong> :</p>
+<ul>
+<li>Evaluer des opportunites d'investissement</li>
+<li>Analyser la sante financiere d'entreprises</li>
+<li>Construire un portefeuille diversifie</li>
+<li>Gerer le risque</li>
+</ul>
 
-**Dans la vie personnelle** :
-- Évaluer un investissement immobilier
-- Comparer des offres de prêt
-- Planifier sa retraite (épargne, placements)
-- Optimiser sa fiscalité
+<p><strong>Dans la vie personnelle</strong> :</p>
+<ul>
+<li>Evaluer un investissement immobilier</li>
+<li>Comparer des offres de pret</li>
+<li>Planifier sa retraite (epargne, placements)</li>
+<li>Optimiser sa fiscalite</li>
+</ul>
 
 <h3 class="section-title">Limites et ouvertures</h3>
 
-**Limites du module** :
-- Peu d'approfondissement sur finance internationale (change, fiscalité)
-- Aspects avancés non traités (options réelles, private equity)
-- Finance comportementale peu abordée
+<p><strong>Limites du module</strong> :</p>
+<ul>
+<li>Peu d'approfondissement sur finance internationale (change, fiscalite)</li>
+<li>Aspects avances non traites (options reelles, private equity)</li>
+<li>Finance comportementale peu abordee</li>
+</ul>
 
-**Ouvertures vers** :
-- **Finance de marché** : trading, gestion de portefeuille, produits dérivés
-- **Finance d'entreprise avancée** : LBO, M&A, restructurations
-- **Fintech** : blockchain, cryptomonnaies, crowdfunding
-- **Finance durable** : critères ESG, green bonds, impact investing
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+<li><strong>Finance de marche</strong> : trading, gestion de portefeuille, produits derives</li>
+<li><strong>Finance d'entreprise avancee</strong> : LBO, M&amp;A, restructurations</li>
+<li><strong>Fintech</strong> : blockchain, cryptomonnaies, crowdfunding</li>
+<li><strong>Finance durable</strong> : criteres ESG, green bonds, impact investing</li>
+</ul>
 
-<h3 class="section-title">Évolutions récentes</h3>
+<h3 class="section-title">Evolutions recentes</h3>
 
-**Fintech et disruption** :
+<p><strong>Fintech et disruption</strong> :</p>
+<p>Technologies bouleversent la finance traditionnelle :</p>
+<ul>
+<li>Paiements mobiles (Apple Pay, PayPal)</li>
+<li>Prets peer-to-peer (Lending Club)</li>
+<li>Robo-advisors (gestion automatisee de portefeuille)</li>
+<li>Neobanques (N26, Revolut)</li>
+</ul>
 
-Technologies bouleversent la finance traditionnelle :
-- Paiements mobiles (Apple Pay, PayPal)
-- Prêts peer-to-peer (Lending Club)
-- Robo-advisors (gestion automatisée de portefeuille)
-- Néobanques (N26, Revolut)
+<p><strong>Blockchain et cryptomonnaies</strong> :</p>
+<p>Bitcoin, Ethereum : monnaies decentralisees, smart contracts.</p>
+<p>Applications potentielles : transferts internationaux, tracabilite, levees de fonds (ICO).</p>
 
-**Blockchain et cryptomonnaies** :
+<p><strong>Finance durable</strong> :</p>
+<p>Criteres ESG (Environnement, Social, Gouvernance) integres dans decisions d'investissement.</p>
+<p>Green bonds : financement de projets environnementaux.</p>
 
-Bitcoin, Ethereum : monnaies décentralisées, smart contracts.
+<p><strong>Intelligence artificielle</strong> :</p>
+<ul>
+<li>Trading algorithmique haute frequence</li>
+<li>Detection de fraudes</li>
+<li>Notation de credit amelioree</li>
+<li>Conseil financier personnalise</li>
+</ul>
 
-Applications potentielles : transferts internationaux, traçabilité, levées de fonds (ICO).
+<h3 class="section-title">Conseils pour reussir</h3>
 
-**Finance durable** :
+<p><strong>1. Comprendre avant de calculer</strong> :</p>
+<p>Savoir d'ou viennent les formules et ce qu'elles representent. Ne pas appliquer mecaniquement.</p>
 
-Critères ESG (Environnement, Social, Gouvernance) intégrés dans décisions d'investissement.
+<p><strong>2. Pratiquer avec Excel</strong> :</p>
+<p>Construire ses propres modeles financiers. Maitriser fonctions VAN(), TRI(), tableaux d'amortissement.</p>
 
-Green bonds : financement de projets environnementaux.
+<p><strong>3. Penser en cash-flow</strong> :</p>
+<p>Toujours raisonner en flux de tresorerie, pas en resultat comptable. La tresorerie est la realite economique.</p>
 
-**Intelligence artificielle** :
+<p><strong>4. Analyser la sensibilite</strong> :</p>
+<p>Un seul calcul de VAN ne suffit pas. Tester differents scenarios pour evaluer le risque.</p>
 
-- Trading algorithmique haute fréquence
-- Détection de fraudes
-- Notation de crédit améliorée
-- Conseil financier personnalisé
+<p><strong>5. Developper l'intuition</strong> :</p>
+<p>Avec la pratique, developper un sens des ordres de grandeur (taux d'actualisation typiques, ratios normaux selon secteurs).</p>
 
-<h3 class="section-title">Conseils pour réussir</h3>
-
-**1. Comprendre avant de calculer** :
-Savoir d'où viennent les formules et ce qu'elles représentent. Ne pas appliquer mécaniquement.
-
-**2. Pratiquer avec Excel** :
-Construire ses propres modèles financiers. Maîtriser fonctions VAN(), TRI(), tableaux d'amortissement.
-
-**3. Penser en cash-flow** :
-Toujours raisonner en flux de trésorerie, pas en résultat comptable. La trésorerie est la réalité économique.
-
-**4. Analyser la sensibilité** :
-Un seul calcul de VAN ne suffit pas. Tester différents scénarios pour évaluer le risque.
-
-**5. Développer l'intuition** :
-Avec la pratique, développer un sens des ordres de grandeur (taux d'actualisation typiques, ratios normaux selon secteurs).
-
-**6. Suivre l'actualité économique** :
-Lire la presse financière (Les Échos, Financial Times) pour comprendre applications réelles des concepts.
+<p><strong>6. Suivre l'actualite economique</strong> :</p>
+<p>Lire la presse financiere (Les Echos, Financial Times) pour comprendre applications reelles des concepts.</p>
 
 <h3 class="section-title">Conclusion</h3>
 
-Ce module est essentiel pour tout ingénieur, qu'il travaille en entreprise ou souhaite entreprendre. La finance n'est pas réservée aux financiers : elle concerne toutes les décisions impliquant des ressources et des choix d'allocation.
-
-**Compétences transférables** :
-- Raisonnement économique et création de valeur
-- Évaluation rigoureuse de projets
-- Compréhension du fonctionnement des entreprises
-- Communication avec acteurs financiers
-
-**Pertinence professionnelle** :
-Ces compétences sont recherchées dans tous les secteurs. Un ingénieur capable de justifier économiquement ses propositions a un avantage compétitif.
-
-**Message principal** :
-La finance n'est pas qu'affaire de chiffres. C'est un outil d'aide à la décision qui, combiné à l'expertise technique de l'ingénieur, permet de créer de la valeur durablement.
-
-**Recommandations** :
-- Approfondir par lectures (livres de référence : Brealey & Myers, Vernimmen)
-- Suivre des cours en ligne (Coursera, edX : finance d'entreprise, valorisation)
-- Pratiquer avec des cas réels (analyser bilans d'entreprises cotées)
-- S'initier aux outils professionnels (Bloomberg Terminal si accès, Google Finance)
-- Pour entrepreneurs : se former au business plan, pitch investisseurs, levée de fonds
-
-**Liens avec les autres cours** :
-- [Gestion - S8](./gestion.html) : stratégie d'entreprise
-- [Droit - S8](./droit.html) : cadre juridique
-- [Entreprise - S5/S7](./entreprise.html) : organisation et management
-- [Graphes et Programmation Linéaire - S8](./graphes-programmation-lineaire.html) : optimisation
-
----
-
-*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
-
-<div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
-</div>
-
-#### 2. Critères d'Évaluation d'Investissements
-
-**Valeur Actuelle Nette (VAN / NPV)**:
-```
-VAN = -I₀ + Σ(CFₜ / (1+r)ᵗ)
-
-où:
-- I₀: investissement initial
-- CFₜ: cash-flow à la période t
-- r: taux d'actualisation
-```
-
-Décision:
-- VAN > 0: projet rentable
-- VAN < 0: projet non rentable
-
-**Taux de Rentabilité Interne (TRI / IRR)**:
-Taux r tel que VAN = 0:
-```
--I₀ + Σ(CFₜ / (1+TRI)ᵗ) = 0
-```
-
-Décision:
-- TRI > taux de rendement requis: accepter
-- TRI < taux de rendement requis: rejeter
-
-**Délai de Récupération (Payback Period)**:
-Temps nécessaire pour récupérer l'investissement initial.
-
-Avantage: simple et intuitif
-Inconvénient: ignore valeur temporelle et flux après récupération
-
-**Indice de Profitabilité (PI)**:
-```
-PI = VAN / I₀
-```
-
-Utile pour comparer projets de tailles différentes.
-
-#### 3. Coût du Capital
-
-**Coût des Fonds Propres (CAPM)**:
-```
-re = rf + β × (rm - rf)
-
-où:
-- re: coût des fonds propres
-- rf: taux sans risque
-- β: coefficient bêta (risque systématique)
-- rm: rendement du marché
-```
-
-**Coût de la Dette**:
-```
-rd = taux d'intérêt × (1 - taux d'imposition)
-```
-
-L'effet fiscal (tax shield) réduit le coût effectif.
-
-**Coût Moyen Pondéré du Capital (WACC)**:
-```
-WACC = (E/V) × re + (D/V) × rd × (1-T)
-
-où:
-- E: valeur des fonds propres
-- D: valeur de la dette
-- V = E + D: valeur totale
-- T: taux d'imposition
-```
-
-Le WACC est utilisé comme taux d'actualisation pour évaluer les projets.
-
-#### 4. Structure Financière
-
-**Théorème de Modigliani-Miller (M&M)**:
-
-**Proposition I** (sans impôts):
-La valeur d'une entreprise est indépendante de sa structure de capital.
-
-**Proposition II** (avec impôts):
-```
-VL = VU + T × D
-
-où:
-- VL: valeur de l'entreprise endettée
-- VU: valeur de l'entreprise non endettée
-- T: taux d'imposition
-- D: dette
-```
-
-L'endettement crée de la valeur via l'économie d'impôt.
-
-**Effet de levier**:
-L'endettement amplifie les rendements (positifs ou négatifs) pour les actionnaires.
-
-#### 5. Analyse Financière
-
-**Ratios de Liquidité**:
-
-**Ratio de liquidité générale**:
-```
-Actif circulant / Passif circulant
-```
-
-**Ratio de liquidité immédiate (quick ratio)**:
-```
-(Actif circulant - Stocks) / Passif circulant
-```
-
-**Ratios de Rentabilité**:
-
-**Rentabilité des Actifs (ROA)**:
-```
-ROA = Résultat Net / Actif Total
-```
-
-**Rentabilité des Fonds Propres (ROE)**:
-```
-ROE = Résultat Net / Fonds Propres
-```
-
-**Marge Nette**:
-```
-Marge Nette = Résultat Net / Chiffre d'Affaires
-```
-
-**Ratios d'Endettement**:
-
-**Taux d'endettement**:
-```
-Dette Totale / Fonds Propres
-```
-
-**Ratio de couverture des intérêts**:
-```
-EBIT / Charges d'Intérêts
-```
-
-#### 6. Flux de Trésorerie (Cash Flow)
-
-**Cash Flow Opérationnel (CFO)**:
-```
-CFO = EBIT × (1-T) + Amortissements - ΔBesoin en Fonds de Roulement
-```
-
-**Free Cash Flow (FCF)**:
-```
-FCF = CFO - Investissements (CAPEX)
-```
-
-Le FCF représente la trésorerie disponible pour rémunérer investisseurs.
-
-**Besoin en Fonds de Roulement (BFR)**:
-```
-BFR = Stocks + Créances Clients - Dettes Fournisseurs
-```
-
-Une augmentation du BFR consomme de la trésorerie.
-
-#### 7. Valorisation d'Entreprise
-
-**Méthode des Flux de Trésorerie Actualisés (DCF)**:
-```
-Valeur = Σ(FCFₜ / (1+WACC)ᵗ) + Valeur Terminale / (1+WACC)ⁿ
-
-Valeur Terminale = FCFₙ₊₁ / (WACC - g)
-où g est le taux de croissance perpétuelle
-```
-
-**Méthode des Comparables**:
-- P/E ratio (Price/Earnings)
-- EV/EBITDA (Enterprise Value / EBITDA)
-- P/B ratio (Price/Book)
-
-Valorisation relative par rapport à entreprises similaires.
-
-**Méthode Patrimoniale**:
-Valeur = Actifs - Passifs (approche comptable)
-
-#### 8. Gestion du Risque Financier
-
-**Types de Risques**:
-
-**Risque de Marché**:
-- Fluctuations des cours (actions, devises, matières premières)
-
-**Risque de Crédit**:
-- Défaut de paiement d'un débiteur
-
-**Risque de Liquidité**:
-- Incapacité à vendre un actif rapidement sans perte
-
-**Risque Opérationnel**:
-- Défaillances processus internes, humaines, systèmes
-
-**Instruments de Couverture**:
-- Futures et Forwards
-- Options (call, put)
-- Swaps (taux, devises)
-
-#### 9. Décisions de Financement
-
-**Sources de Financement**:
-
-**Fonds Propres**:
-- Autofinancement (bénéfices réinvestis)
-- Augmentation de capital
-- Capital-risque (startups)
-
-**Dette**:
-- Emprunts bancaires
-- Obligations (corporate bonds)
-- Crédit-bail (leasing)
-
-**Critères de Choix**:
-- Coût
-- Flexibilité
-- Impact sur la structure financière
-- Contraintes (covenants)
-
-#### 10. Marchés Financiers
-
-**Marché Primaire**:
-Émission de nouveaux titres (actions, obligations)
-
-**Marché Secondaire**:
-Échange de titres existants (bourses)
-
-**Efficience des Marchés**:
-- Forme faible: prix reflète historique
-- Forme semi-forte: prix reflète info publique
-- Forme forte: prix reflète toute information
-
-**Instruments Financiers**:
-
-**Actions**:
-- Propriété d'une part de l'entreprise
-- Droit aux dividendes et plus-values
-- Risque élevé, rendement potentiel élevé
-
-**Obligations**:
-- Titre de créance
-- Paiements d'intérêts fixes (coupons)
-- Risque plus faible que actions
-
-**Produits Dérivés**:
-- Valeur dérivée d'un actif sous-jacent
-- Utilisés pour couverture ou spéculation
-
-#### 11. Analyse de Sensibilité et Scénarios
-
-**Analyse de Sensibilité**:
-Impact de la variation d'un paramètre sur la VAN:
-- Variation du chiffre d'affaires
-- Variation des coûts
-- Variation du taux d'actualisation
-
-**Analyse de Scénarios**:
-- Scénario optimiste
-- Scénario de base
-- Scénario pessimiste
-
-Calcul de VAN pour chaque scénario.
-
-**Simulation Monte Carlo**:
-Génération aléatoire de milliers de scénarios pour estimer distribution de probabilité de la VAN.
-
-#### 12. Éthique et Gouvernance
-
-**Gouvernance d'Entreprise**:
-- Conseil d'administration
-- Comités (audit, rémunération, stratégie)
-- Séparation propriété/gestion
-
-**Conflits d'Intérêts**:
-- Problème principal-agent
-- Alignement des intérêts (stock-options, bonus)
-
-**Responsabilité Sociale**:
-- Critères ESG (Environnement, Social, Gouvernance)
-- Finance durable et investissement responsable
-
-## PART D: ANALYTICAL PART
-
-### Knowledge and Skills Mobilized
-
-- Calculs d'actualisation et de capitalisation
-- Évaluation de projets d'investissement (VAN, TRI)
-- Analyse de documents comptables (bilan, compte de résultat)
-- Calcul et interprétation de ratios financiers
-- Compréhension des marchés financiers
-- Évaluation du risque et du rendement
-- Utilisation de tableurs pour modélisation financière
-- Prise de décision sous incertitude
-- Compréhension de la création de valeur
-
-### Self Evaluation
-
-Ce cours de finance, bien que destiné à des ingénieurs, couvrait un large spectre de concepts financiers. La notion de valeur temporelle de l'argent, bien que simple en principe, a des implications profondes dans toutes les décisions d'investissement.
-
-Les calculs de VAN et TRI sont devenus familiers avec la pratique, bien que la détermination du taux d'actualisation approprié reste souvent subjective et dépende de nombreux facteurs. L'utilisation d'Excel pour construire des modèles financiers a été très formateur.
-
-L'analyse financière via les ratios permet de diagnostiquer rapidement la santé d'une entreprise. Cependant, l'interprétation des ratios doit toujours être contextualisée (secteur, taille, phase de croissance).
-
-Le WACC est un concept central mais sa mise en œuvre pratique peut être complexe, notamment pour l'estimation du bêta et du coût des fonds propres. La structure de capital optimale reste un sujet débattu malgré les travaux théoriques de Modigliani-Miller.
-
-La partie sur les marchés financiers et instruments a été intéressante mais aurait mérité plus d'approfondissement, notamment sur les produits dérivés qui peuvent être complexes.
-
-### My Opinion
-
-Ce cours est indispensable pour tout ingénieur, qu'il travaille en startup, grande entreprise, ou souhaite entreprendre. Comprendre les mécanismes financiers permet de:
-- Justifier économiquement des choix techniques
-- Dialoguer efficacement avec les directions financières
-- Évaluer la viabilité de projets
-- Comprendre les contraintes budgétaires
-
-Points forts:
-- Couverture complète des fondamentaux
-- Exercices pratiques et études de cas
-- Lien avec des situations réelles d'entreprise
-- Utilisation d'outils (Excel) directement transférables
-
-Points à améliorer:
-- Plus d'exemples tirés de l'industrie technologique
-- Approfondissement sur le financement de l'innovation
-- Aspects internationaux (risque de change, fiscalité)
-
-La finance n'est pas qu'une affaire de chiffres: elle intègre jugement, incertitude, et comportement humain. Les modèles théoriques fournissent un cadre de réflexion, mais les décisions réelles nécessitent aussi intuition et expérience.
-
-Pour un ingénieur entrepreneur, ces connaissances sont cruciales pour:
-- Lever des fonds (pitch auprès d'investisseurs)
-- Gérer la trésorerie (éviter la faillite malgré croissance)
-- Valoriser son entreprise lors de négociations
-
-En conclusion, ce cours élargit la perspective de l'ingénieur au-delà du technique pour embrasser la dimension économique, essentielle à la pérennité de tout projet.
-
----
-
-## 📚 Documents de Cours
-
-<style>
-    .pdf-container {
-        margin: 40px 0;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-    .pdf-viewer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .pdf-item {
-        flex: 1;
-        min-width: 400px;
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .pdf-item h4 {
-        color: #2a7ae2;
-        margin-top: 0;
-    }
-</style>
+<p>Ce module est essentiel pour tout ingenieur, qu'il travaille en entreprise ou souhaite entreprendre. La finance n'est pas reservee aux financiers : elle concerne toutes les decisions impliquant des ressources et des choix d'allocation.</p>
+
+<p><strong>Competences transferables</strong> :</p>
+<ul>
+<li>Raisonnement economique et creation de valeur</li>
+<li>Evaluation rigoureuse de projets</li>
+<li>Comprehension du fonctionnement des entreprises</li>
+<li>Communication avec acteurs financiers</li>
+</ul>
+
+<p><strong>Pertinence professionnelle</strong> :</p>
+<p>Ces competences sont recherchees dans tous les secteurs. Un ingenieur capable de justifier economiquement ses propositions a un avantage competitif.</p>
+
+<p><strong>Message principal</strong> :</p>
+<p>La finance n'est pas qu'affaire de chiffres. C'est un outil d'aide a la decision qui, combine a l'expertise technique de l'ingenieur, permet de creer de la valeur durablement.</p>
+
+<p><strong>Recommandations</strong> :</p>
+<ul>
+<li>Approfondir par lectures (livres de reference : Brealey &amp; Myers, Vernimmen)</li>
+<li>Suivre des cours en ligne (Coursera, edX : finance d'entreprise, valorisation)</li>
+<li>Pratiquer avec des cas reels (analyser bilans d'entreprises cotees)</li>
+<li>S'initier aux outils professionnels (Bloomberg Terminal si acces, Google Finance)</li>
+<li>Pour entrepreneurs : se former au business plan, pitch investisseurs, levee de fonds</li>
+</ul>
+
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+<li><a href="./gestion.html">Gestion - S8</a> : strategie d'entreprise</li>
+<li><a href="./droit.html">Droit - S8</a> : cadre juridique</li>
+<li><a href="./graphes-programmation-lineaire.html">Graphes et Programmation Lineaire - S8</a> : optimisation</li>
+</ul>
+
+<hr/>
+
+<h2>Documents de Cours</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Cours de Finance</h4>
-      <p>Cours complet de finance d'entreprise : marchés financiers, valorisation d'actifs, MEDAF, options et gestion de portefeuille.</p>
+      <h4>Cours de Finance</h4>
+      <p>Cours complet de finance d'entreprise : marches financiers, valorisation d'actifs, MEDAF, options et gestion de portefeuille.</p>
       <embed src="/cours-pdf/S7/Finance/cours-finance.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
 </div>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        line-height: 1.6;
-    }
-    h2, h3, h4 {
-        color: #007BFF;
-    }
-    p {
-        text-align: justify;
-    }
-</style>
+<hr/>
+
+<p><em>Cours suivi en 2023-2024 a l'INSA Toulouse, Departement Genie Electrique et Informatique.</em></p>
+
+</div>
+
+<div class="lang-en">
+
+<h1>Finance - Semester 7</h1>
+
+<p><strong>Academic Year</strong>: 2023-2024<br/>
+<strong>Semester</strong>: 7<br/>
+<strong>Credits</strong>: 2 ECTS<br/>
+<strong>Specialty</strong>: Business Management and Economics</p>
+
+<hr/>
+
+<h2>PART A - General Module Presentation</h2>
+
+<h3 class="section-title">Overview</h3>
+
+<p>This course provides engineers with the fundamentals of corporate finance and economic analysis. It covers the essential concepts for understanding the time value of money, evaluating investments, analyzing a company's financial performance, and making informed decisions that integrate the economic dimension.</p>
+
+<p><strong>Learning objectives</strong>:</p>
+<ul>
+<li>Master discounting and compounding calculations</li>
+<li>Evaluate the profitability of investment projects (NPV, IRR)</li>
+<li>Analyze financial statements (balance sheet, income statement)</li>
+<li>Understand value creation mechanisms</li>
+<li>Grasp financial markets and instruments</li>
+<li>Communicate effectively with financial departments</li>
+</ul>
+
+<h3 class="section-title">Position in the Curriculum</h3>
+
+<p>This module complements the engineering curriculum by adding:</p>
+<ul>
+<li><strong>Management (S8)</strong>: business strategy, management</li>
+<li><strong>Law (S8)</strong>: legal framework for businesses</li>
+<li><strong>Business (S5, S7)</strong>: how organizations operate</li>
+</ul>
+
+<p>It prepares for:</p>
+<ul>
+<li><strong>Business creation</strong>: business plan, fundraising</li>
+<li><strong>Project management</strong>: economic justification of investments</li>
+<li><strong>Professional career</strong>: understanding financial challenges</li>
+<li><strong>Entrepreneurship</strong>: valuation, cash management, financing strategy</li>
+</ul>
+
+<hr/>
+
+<h2>PART B - Personal Experience and Learning Context</h2>
+
+<h3 class="section-title">Organization and Resources</h3>
+
+<p>The module was organized as lectures with practical exercises:</p>
+
+<p><strong>Lectures (18h)</strong>:</p>
+<ul>
+<li>General accounting (balance sheet, income statement)</li>
+<li>Financial analysis and ratios</li>
+<li>Time value of money and discounting</li>
+<li>Investment project evaluation (NPV, IRR)</li>
+<li>Cost of capital and financial structure</li>
+<li>Financial markets and instruments</li>
+<li>Financial risk management</li>
+</ul>
+
+<p><strong>Tutorials and exercises</strong>:</p>
+<ul>
+<li>Discounting and compounding calculations</li>
+<li>Income statement analysis (Python script available)</li>
+<li>Investment case studies</li>
+<li>Financial ratio calculations</li>
+<li>Modeling with Excel/spreadsheets</li>
+</ul>
+
+<p><strong>Tools used</strong>:</p>
+<ul>
+<li>Excel for financial modeling</li>
+<li>Python for automated calculations (Finance.py script)</li>
+<li>Real company case studies</li>
+<li>Stock market simulators (optional)</li>
+</ul>
+
+<h3 class="section-title">Study Methodology</h3>
+
+<p><strong>Phase 1: Understanding the concepts</strong>:</p>
+<p>Assimilating the fundamental principles (time value, risk/return, value creation).</p>
+
+<p><strong>Phase 2: Mastering the calculations</strong>:</p>
+<p>Practicing discounting formulas, NPV, IRR, financial ratios until mastery.</p>
+
+<p><strong>Phase 3: Analyzing real cases</strong>:</p>
+<p>Studying company balance sheets, evaluating concrete investment projects.</p>
+
+<p><strong>Phase 4: Spreadsheet modeling</strong>:</p>
+<p>Building Excel models to automate calculations and sensitivity analyses.</p>
+
+<p><strong>Phase 5: Developing judgment</strong>:</p>
+<p>Beyond calculations, understanding the limitations of models and developing economic intuition.</p>
+
+<h3 class="section-title">Difficulties Encountered</h3>
+
+<p><strong>Multiplicity of concepts</strong>:</p>
+<p>Finance covers a broad spectrum: accounting, valuation, markets, risk. It requires connecting all these elements together.</p>
+
+<p><strong>Numerous formulas</strong>:</p>
+<p>Many formulas to memorize (NPV, IRR, ratios). The important thing is to understand the underlying logic.</p>
+
+<p><strong>Subjectivity</strong>:</p>
+<p>Some parameters (discount rate, cash-flow forecasts) are subjective. Multiple answers are possible depending on assumptions.</p>
+
+<p><strong>Financial jargon</strong>:</p>
+<p>Specific vocabulary (WACC, EBITDA, FCF, ROE) to assimilate in order to communicate with financial professionals.</p>
+
+<hr/>
+
+<h2>PART C - Detailed Technical Aspects</h2>
+
+<h3 class="section-title">1. Time Value of Money</h3>
+
+<p><strong>Fundamental principle</strong>:</p>
+<p>One euro today is worth more than one euro tomorrow.</p>
+
+<p>Reasons:</p>
+<ul>
+<li><strong>Inflation</strong>: purchasing power decreases over time</li>
+<li><strong>Opportunity cost</strong>: one could invest that euro and earn a return</li>
+<li><strong>Risk</strong>: uncertainty increases over time</li>
+</ul>
+
+<p><strong>Discounting</strong>:</p>
+<p>Calculating the present value of a future amount.</p>
+
+<p>Formula:<br/>
+PV = FV / (1 + r)^n</p>
+
+<p>where:</p>
+<ul>
+<li>PV: present value</li>
+<li>FV: future value</li>
+<li>r: discount rate (required rate of return)</li>
+<li>n: number of periods (years)</li>
+</ul>
+
+<p><strong>Example</strong>:<br/>
+What is the present value of &euro;1,000 received in 5 years, with a discount rate of 8%?</p>
+
+<p>PV = 1000 / (1.08)^5 = 1000 / 1.469 = &euro;681</p>
+
+<p><strong>Compounding</strong>:</p>
+<p>Calculating the future value of a present amount.</p>
+
+<p>Formula:<br/>
+FV = PV &times; (1 + r)^n</p>
+
+<p><strong>Example</strong>:<br/>
+How much will &euro;1,000 invested today be worth in 5 years at 8%?</p>
+
+<p>FV = 1000 &times; (1.08)^5 = 1000 &times; 1.469 = &euro;1,469</p>
+
+<p><strong>Annuities</strong>:</p>
+<p>Series of constant cash flows (e.g., loan installments, pensions).</p>
+
+<p>Present value of an annuity:<br/>
+PV = A &times; [(1 - (1+r)^-n) / r]</p>
+
+<p>where A: annuity amount.</p>
+
+<h3 class="section-title">2. Financial Statements</h3>
+
+<p><strong>Balance Sheet</strong>:</p>
+<p>A snapshot of the company's assets and liabilities at a given point in time.</p>
+
+<table>
+  <tr><th>ASSETS (Uses)</th><th>LIABILITIES (Sources)</th></tr>
+  <tr><td>Non-current assets (long-term)</td><td>Shareholders' equity</td></tr>
+  <tr><td>- Intangible assets</td><td>- Share capital</td></tr>
+  <tr><td>- Tangible assets</td><td>- Reserves</td></tr>
+  <tr><td>- Financial assets</td><td>- Net income</td></tr>
+  <tr><td>Current assets (short-term)</td><td>Liabilities</td></tr>
+  <tr><td>- Inventories</td><td>- Financial liabilities</td></tr>
+  <tr><td>- Trade receivables</td><td>- Trade payables</td></tr>
+  <tr><td>- Cash</td><td>- Tax liabilities</td></tr>
+</table>
+
+<p>Fundamental equation:<br/>
+<strong>ASSETS = LIABILITIES + EQUITY</strong></p>
+
+<p><strong>Income Statement</strong>:</p>
+<p>A record of business activity over a period (typically one year).</p>
+
+<p>Simplified structure:</p>
+<ul>
+<li><strong>Revenue</strong> (sales)</li>
+<li>- Cost of goods sold</li>
+<li>= <strong>Gross margin</strong></li>
+<li>+ Production output</li>
+<li>- Intermediate consumption</li>
+<li>= <strong>Value added (VA)</strong></li>
+<li>+ Operating subsidies</li>
+<li>- Taxes and duties</li>
+<li>- Personnel costs</li>
+<li>= <strong>Gross Operating Surplus (EBITDA)</strong></li>
+<li>+ Other operating income</li>
+<li>- Other operating expenses</li>
+<li>- Depreciation and amortization</li>
+<li>= <strong>Operating income</strong></li>
+<li>+ Financial income</li>
+<li>- Financial expenses</li>
+<li>= <strong>Earnings Before Tax (EBT)</strong></li>
+<li>+ Exceptional items</li>
+<li>- Employee profit-sharing</li>
+<li>- Income tax</li>
+<li>= <strong>Net income</strong></li>
+</ul>
+
+<p><strong>Python Script Finance.py</strong>:</p>
+<p>The script automates the calculation of all these indicators:</p>
+<ul>
+<li>Functions for each step (gross margin, VA, EBITDA, operating income, EBT, net income)</li>
+<li>Interactive data entry</li>
+<li>Display of intermediate and final results</li>
+</ul>
+
+<h3 class="section-title">3. Financial Analysis and Ratios</h3>
+
+<p><strong>Profitability ratios</strong>:</p>
+
+<p><strong>Return on Assets (ROA)</strong>:<br/>
+ROA = Net Income / Total Assets &times; 100%</p>
+<p>Measures the efficiency of asset utilization.</p>
+
+<p><strong>Return on Equity (ROE)</strong>:<br/>
+ROE = Net Income / Shareholders' Equity &times; 100%</p>
+<p>Measures the return for shareholders.</p>
+
+<p><strong>Net margin</strong>:<br/>
+Net margin = Net Income / Revenue &times; 100%</p>
+
+<p><strong>Liquidity ratios</strong>:</p>
+
+<p><strong>Current ratio</strong>:<br/>
+Ratio = Current Assets / Current Liabilities</p>
+<p>If &gt; 1: the company can pay its short-term debts.</p>
+
+<p><strong>Quick ratio</strong>:<br/>
+Ratio = (Current Assets - Inventories) / Current Liabilities</p>
+<p>More conservative (inventories can sometimes be difficult to sell quickly).</p>
+
+<p><strong>Leverage ratios</strong>:</p>
+
+<p><strong>Debt-to-equity ratio</strong>:<br/>
+Ratio = Total Debt / Shareholders' Equity</p>
+<p>Measures financial leverage.</p>
+
+<p><strong>Interest coverage ratio</strong>:<br/>
+Ratio = EBIT / Interest Expenses</p>
+<p>Ability to pay interest on debt.</p>
+
+<p><strong>Activity ratios</strong>:</p>
+
+<p><strong>Inventory turnover</strong>:<br/>
+Ratio = Cost of Goods Sold / Average Inventory</p>
+<p>Number of times inventory is renewed during the year.</p>
+
+<p><strong>Days sales outstanding</strong>:<br/>
+DSO = (Trade Receivables / Revenue incl. tax) &times; 365 days</p>
+
+<p><strong>Days payable outstanding</strong>:<br/>
+DPO = (Trade Payables / Purchases incl. tax) &times; 365 days</p>
+
+<h3 class="section-title">4. Investment Project Evaluation</h3>
+
+<p><strong>Net Present Value (NPV)</strong>:</p>
+<p>The primary indicator for evaluating investment profitability.</p>
+
+<p>Formula:<br/>
+NPV = -I0 + sum(CFt / (1+r)^t)</p>
+
+<p>where:</p>
+<ul>
+<li>I0: initial investment</li>
+<li>CFt: cash flow at period t</li>
+<li>r: discount rate</li>
+</ul>
+
+<p><strong>Decision rule</strong>:</p>
+<ul>
+<li>NPV &gt; 0: profitable project (creates value)</li>
+<li>NPV &lt; 0: unprofitable project (destroys value)</li>
+<li>NPV = 0: neutral project</li>
+</ul>
+
+<p><strong>Example</strong>:<br/>
+Investment of &euro;10,000, annual cash flows of &euro;3,000 for 5 years, discount rate 10%.</p>
+
+<p>NPV = -10000 + 3000/(1.1) + 3000/(1.1)^2 + 3000/(1.1)^3 + 3000/(1.1)^4 + 3000/(1.1)^5<br/>
+NPV = -10000 + 2727 + 2479 + 2254 + 2049 + 1863 = &euro;1,372</p>
+
+<p>Positive NPV &rarr; profitable project.</p>
+
+<p><strong>Internal Rate of Return (IRR)</strong>:</p>
+<p>The discount rate that makes the NPV equal to zero.</p>
+
+<p>Equation:<br/>
+-I0 + sum(CFt / (1+IRR)^t) = 0</p>
+
+<p><strong>Decision rule</strong>:</p>
+<ul>
+<li>IRR &gt; required rate of return: accept the project</li>
+<li>IRR &lt; required rate of return: reject the project</li>
+</ul>
+
+<p>Interpretation: effective return of the project.</p>
+
+<p><strong>Calculation methods</strong>:</p>
+<ul>
+<li>Iteration (trial and error)</li>
+<li>IRR function in Excel</li>
+<li>Numerical resolution (Newton-Raphson)</li>
+</ul>
+
+<p><strong>Payback Period</strong>:</p>
+<p>Time required to recover the initial investment.</p>
+
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Simple and intuitive</li>
+<li>Risk measure (shorter = less risky)</li>
+</ul>
+
+<p><strong>Disadvantages</strong>:</p>
+<ul>
+<li>Ignores time value of money (simple version)</li>
+<li>Ignores cash flows after recovery</li>
+</ul>
+
+<p><strong>Profitability Index (PI)</strong>:</p>
+<p>PI = NPV / I0</p>
+<p>or</p>
+<p>PI = Sum(PV of CFs) / I0</p>
+<p>Useful for comparing projects of different sizes.</p>
+<p>If PI &gt; 1: profitable project.</p>
+
+<h3 class="section-title">5. Cost of Capital</h3>
+
+<p><strong>Cost of equity</strong>:</p>
+<p>Return required by shareholders.</p>
+
+<p><strong>CAPM Model (Capital Asset Pricing Model)</strong>:</p>
+<p>re = rf + &beta; &times; (rm - rf)</p>
+
+<p>where:</p>
+<ul>
+<li>re: cost of equity</li>
+<li>rf: risk-free rate (government bonds)</li>
+<li>&beta;: beta coefficient (systematic risk of the stock)</li>
+<li>rm: expected market return</li>
+<li>(rm - rf): market risk premium</li>
+</ul>
+
+<p><strong>Example</strong>:<br/>
+rf = 3%, &beta; = 1.2, rm = 10%</p>
+<p>re = 3% + 1.2 &times; (10% - 3%) = 3% + 8.4% = 11.4%</p>
+
+<p><strong>Cost of debt</strong>:</p>
+<p>rd = interest rate &times; (1 - tax rate)</p>
+<p>The tax shield reduces the effective cost.</p>
+
+<p><strong>Example</strong>:<br/>
+Interest rate 5%, tax rate 30%</p>
+<p>rd = 5% &times; (1 - 0.30) = 3.5%</p>
+
+<p><strong>Weighted Average Cost of Capital (WACC)</strong>:</p>
+<p>WACC = (E/V) &times; re + (D/V) &times; rd &times; (1 - T)</p>
+
+<p>where:</p>
+<ul>
+<li>E: value of equity</li>
+<li>D: value of debt</li>
+<li>V = E + D: total enterprise value</li>
+<li>T: tax rate</li>
+</ul>
+
+<p>The WACC represents the company's average cost of financing and serves as the discount rate for evaluating projects.</p>
+
+<h3 class="section-title">6. Financial Structure</h3>
+
+<p><strong>Modigliani-Miller Theorem</strong>:</p>
+
+<p><strong>Proposition I (without taxes)</strong>:<br/>
+The value of a company is independent of its capital structure (debt vs. equity).</p>
+
+<p><strong>Proposition II (with taxes)</strong>:<br/>
+Debt creates value through the tax shield on interest payments.</p>
+
+<p>Levered firm value = Unlevered firm value + T &times; Debt</p>
+
+<p><strong>Leverage effect</strong>:</p>
+<p>Debt amplifies returns for shareholders (both positive and negative).</p>
+
+<p><strong>Advantages of debt</strong>:</p>
+<ul>
+<li>Lower cost than equity</li>
+<li>Tax shield (deductible interest)</li>
+<li>Management discipline (obligation to pay)</li>
+</ul>
+
+<p><strong>Disadvantages of debt</strong>:</p>
+<ul>
+<li>Bankruptcy risk if unable to repay</li>
+<li>Financial distress costs</li>
+<li>Loss of flexibility</li>
+</ul>
+
+<p><strong>Optimal structure</strong>:</p>
+<p>Trade-off between tax advantages and distress costs.</p>
+
+<h3 class="section-title">7. Cash Flow</h3>
+
+<p><strong>Operating Cash Flow (OCF)</strong>:</p>
+<p>Cash generated by operations.</p>
+
+<p>OCF = EBIT &times; (1 - T) + Depreciation - Change in Working Capital</p>
+
+<p>where:</p>
+<ul>
+<li>EBIT: operating income</li>
+<li>T: tax rate</li>
+<li>Working Capital: net working capital requirements</li>
+</ul>
+
+<p><strong>Free Cash Flow (FCF)</strong>:</p>
+<p>Cash available after financing investments.</p>
+
+<p>FCF = OCF - CAPEX</p>
+<p>where CAPEX: capital expenditures.</p>
+
+<p>FCF is used to pay shareholders (dividends) and creditors (debt repayment).</p>
+
+<p><strong>Working Capital Requirements</strong>:</p>
+<p>WCR = Inventories + Trade Receivables - Trade Payables</p>
+<p>An increase in WCR consumes cash (tied up in the operating cycle).</p>
+
+<h3 class="section-title">8. Company Valuation</h3>
+
+<p><strong>Discounted Cash Flow (DCF) method</strong>:</p>
+<p>Enterprise value = Sum(Discounted FCFs) + Terminal Value</p>
+<p>Terminal Value = FCF(n+1) / (WACC - g)</p>
+<p>where g: perpetual growth rate (typically 2-3%).</p>
+
+<p><strong>Comparable method</strong>:</p>
+<p>Relative valuation compared to similar companies.</p>
+
+<p><strong>Common multiples</strong>:</p>
+<ul>
+<li>P/E (Price/Earnings): Market Cap / Net Income</li>
+<li>EV/EBITDA: Enterprise Value / EBITDA</li>
+<li>P/B (Price/Book): Market Cap / Shareholders' Equity</li>
+</ul>
+
+<p><strong>Example</strong>:<br/>
+Industry peers: average P/E = 15<br/>
+Our company: Net Income = &euro;5M<br/>
+Valuation = 15 &times; 5M = &euro;75M</p>
+
+<p><strong>Asset-based method</strong>:</p>
+<p>Value = Assets - Liabilities</p>
+<p>Accounting approach, relevant for holding companies or liquidation.</p>
+
+<h3 class="section-title">9. Financial Markets</h3>
+
+<p><strong>Primary market</strong>:</p>
+<p>Issuance of new securities (stocks, bonds).</p>
+<ul>
+<li>Initial Public Offering (IPO)</li>
+<li>Capital increase</li>
+<li>Bond issuance</li>
+</ul>
+
+<p><strong>Secondary market</strong>:</p>
+<p>Trading of existing securities (exchanges: Euronext, NYSE, NASDAQ).</p>
+
+<p><strong>Stocks</strong>:</p>
+<ul>
+<li>Ownership of a fraction of the company</li>
+<li>Right to dividends</li>
+<li>Voting rights (general assemblies)</li>
+<li>Return: dividends + capital gains</li>
+<li>High risk</li>
+</ul>
+
+<p><strong>Bonds</strong>:</p>
+<ul>
+<li>Debt instrument (loan to a company or government)</li>
+<li>Periodic interest payments (coupons)</li>
+<li>Principal repayment at maturity</li>
+<li>Lower risk than stocks</li>
+</ul>
+
+<p><strong>Derivatives</strong>:</p>
+<ul>
+<li>Options (call: right to buy, put: right to sell)</li>
+<li>Futures and forwards (forward contracts)</li>
+<li>Swaps (exchange of financial flows)</li>
+</ul>
+
+<p>Used for hedging or speculation.</p>
+
+<h3 class="section-title">10. Financial Risk Management</h3>
+
+<p><strong>Types of risks</strong>:</p>
+
+<table>
+  <tr><th>Risk</th><th>Description</th><th>Example</th></tr>
+  <tr><td>Market</td><td>Price fluctuations (stocks, currencies, commodities)</td><td>Stock price crash</td></tr>
+  <tr><td>Credit</td><td>Default by a debtor</td><td>Customer does not pay</td></tr>
+  <tr><td>Liquidity</td><td>Inability to sell an asset quickly</td><td>Real estate asset hard to sell</td></tr>
+  <tr><td>Operational</td><td>Internal failures (processes, systems, human)</td><td>IT failure, fraud</td></tr>
+  <tr><td>Interest rate</td><td>Rate changes impacting debt</td><td>Rate increase &rarr; debt cost rises</td></tr>
+  <tr><td>Currency</td><td>Exchange rate fluctuations</td><td>Exports in USD, &euro; appreciates &rarr; loss</td></tr>
+</table>
+
+<p><strong>Hedging instruments</strong>:</p>
+<ul>
+<li><strong>Forwards/Futures</strong>: lock in a future price</li>
+<li><strong>Options</strong>: right (not obligation) to buy/sell at a fixed price</li>
+<li><strong>Swaps</strong>: exchange of flows (fixed rate vs. variable rate)</li>
+</ul>
+
+<h3 class="section-title">11. Financing Decisions</h3>
+
+<p><strong>Sources of financing</strong>:</p>
+
+<p><strong>Equity</strong>:</p>
+<ul>
+<li>Self-financing (reinvested profits)</li>
+<li>Capital increase (share issuance)</li>
+<li>Venture capital, business angels (startups)</li>
+</ul>
+
+<p><strong>Debt</strong>:</p>
+<ul>
+<li>Bank loans</li>
+<li>Bonds (corporate bonds)</li>
+<li>Leasing</li>
+<li>Factoring (assignment of trade receivables)</li>
+</ul>
+
+<p><strong>Selection criteria</strong>:</p>
+
+<table>
+  <tr><th>Criterion</th><th>Equity</th><th>Debt</th></tr>
+  <tr><td>Cost</td><td>High (shareholder expectations)</td><td>Lower (interest)</td></tr>
+  <tr><td>Risk</td><td>No repayment obligation</td><td>Payment obligation</td></tr>
+  <tr><td>Control</td><td>Capital dilution</td><td>No dilution</td></tr>
+  <tr><td>Flexibility</td><td>Flexible</td><td>Constraints (covenants)</td></tr>
+  <tr><td>Tax treatment</td><td>No tax advantage</td><td>Deductible interest</td></tr>
+</table>
+
+<h3 class="section-title">12. Sensitivity Analysis</h3>
+
+<p><strong>Objective</strong>:</p>
+<p>Measure the impact of parameter variations on NPV (or IRR).</p>
+
+<p><strong>Parameters tested</strong>:</p>
+<ul>
+<li>Revenue (volume, price)</li>
+<li>Costs (raw materials, personnel)</li>
+<li>Discount rate</li>
+<li>Initial investment</li>
+<li>Project duration</li>
+</ul>
+
+<p><strong>Example</strong>:</p>
+<p>Project with base NPV = &euro;1,000.</p>
+<p>Revenue variation of &plusmn;10%:</p>
+<ul>
+<li>Revenue +10% &rarr; NPV = &euro;1,500</li>
+<li>Revenue -10% &rarr; NPV = &euro;500</li>
+</ul>
+
+<p><strong>Scenario analysis</strong>:</p>
+<p>Define several complete scenarios:</p>
+<ul>
+<li><strong>Optimistic</strong>: favorable assumptions</li>
+<li><strong>Base</strong>: realistic assumptions</li>
+<li><strong>Pessimistic</strong>: unfavorable assumptions</li>
+</ul>
+
+<p>Calculate NPV for each scenario and assess risk.</p>
+
+<p><strong>Monte Carlo Simulation</strong>:</p>
+<p>Randomly generate thousands of scenarios to obtain a probability distribution of NPV.</p>
+<p>Allows estimating the probability that NPV is positive.</p>
+
+<hr/>
+
+<h2>PART D - Reflective Analysis and Perspectives</h2>
+
+<h3 class="section-title">Skills Acquired</h3>
+
+<p><strong>Mastery of financial concepts</strong>:</p>
+<p>Ability to understand and apply fundamental principles: time value, discounting, investment evaluation.</p>
+
+<p><strong>Financial statement analysis</strong>:</p>
+<p>Ability to read and interpret balance sheets and income statements, calculate and analyze financial ratios.</p>
+
+<p><strong>Project evaluation</strong>:</p>
+<p>Competence in evaluating investment profitability with NPV, IRR, and analyzing sensitivity to assumptions.</p>
+
+<p><strong>Economic vision</strong>:</p>
+<p>Development of an understanding of value creation mechanisms and a company's financial challenges.</p>
+
+<p><strong>Communication with financial professionals</strong>:</p>
+<p>Ability to communicate effectively with financial management, investors, and banks.</p>
+
+<h3 class="section-title">Key Takeaways</h3>
+
+<p><strong>1. Time value = foundation</strong>:</p>
+<p>Every financial decision rests on the principle that one euro today is worth more than one euro tomorrow. Discounting follows from this.</p>
+
+<p><strong>2. NPV = key indicator</strong>:</p>
+<p>NPV is the primary criterion for evaluating an investment. It directly measures value creation (or destruction).</p>
+
+<p><strong>3. Risk and return are linked</strong>:</p>
+<p>The higher the risk, the higher the required return (risk premium). An inevitable trade-off.</p>
+
+<p><strong>4. Cash is king</strong>:</p>
+<p>Cash flow is more important than accounting profit. A company can be profitable on paper but bankrupt if it has no cash.</p>
+
+<p><strong>5. No magic formula</strong>:</p>
+<p>Financial models rest on assumptions. Judgment and experience are essential for interpreting results.</p>
+
+<h3 class="section-title">Feedback</h3>
+
+<p><strong>Usefulness for engineers</strong>:</p>
+<p>This course, although non-technical, is fundamental. Engineers must economically justify their technical choices (investments, R&amp;D, new products).</p>
+
+<p><strong>Practice with tools</strong>:</p>
+<p>Using Excel and the Python script made calculations concrete. Automating financial analyses is a valuable skill.</p>
+
+<p><strong>Hidden complexity</strong>:</p>
+<p>The formulas seem simple, but their application requires judgment (choosing the discount rate, estimating future cash flows).</p>
+
+<p><strong>Connection with reality</strong>:</p>
+<p>Case studies showed the importance of finance in strategic decisions: launching a product, investing in a factory, acquiring a company.</p>
+
+<h3 class="section-title">Practical Applications</h3>
+
+<p><strong>For engineers in companies</strong>:</p>
+<ul>
+<li>Justify an investment (new equipment, R&amp;D project)</li>
+<li>Understand budget constraints</li>
+<li>Communicate with financial management</li>
+<li>Optimize project costs</li>
+</ul>
+
+<p><strong>For entrepreneurs</strong>:</p>
+<ul>
+<li>Develop a credible business plan</li>
+<li>Raise funds (investor pitch)</li>
+<li>Manage cash flow (avoid bankruptcy despite growth)</li>
+<li>Value the company (negotiations)</li>
+</ul>
+
+<p><strong>For investors</strong>:</p>
+<ul>
+<li>Evaluate investment opportunities</li>
+<li>Analyze companies' financial health</li>
+<li>Build a diversified portfolio</li>
+<li>Manage risk</li>
+</ul>
+
+<p><strong>In personal life</strong>:</p>
+<ul>
+<li>Evaluate a real estate investment</li>
+<li>Compare loan offers</li>
+<li>Plan for retirement (savings, investments)</li>
+<li>Optimize personal taxation</li>
+</ul>
+
+<h3 class="section-title">Limitations and Openings</h3>
+
+<p><strong>Module limitations</strong>:</p>
+<ul>
+<li>Limited depth on international finance (currency, taxation)</li>
+<li>Advanced topics not covered (real options, private equity)</li>
+<li>Behavioral finance barely addressed</li>
+</ul>
+
+<p><strong>Openings toward</strong>:</p>
+<ul>
+<li><strong>Market finance</strong>: trading, portfolio management, derivatives</li>
+<li><strong>Advanced corporate finance</strong>: LBO, M&amp;A, restructuring</li>
+<li><strong>Fintech</strong>: blockchain, cryptocurrencies, crowdfunding</li>
+<li><strong>Sustainable finance</strong>: ESG criteria, green bonds, impact investing</li>
+</ul>
+
+<h3 class="section-title">Recent Developments</h3>
+
+<p><strong>Fintech and disruption</strong>:</p>
+<p>Technologies are transforming traditional finance:</p>
+<ul>
+<li>Mobile payments (Apple Pay, PayPal)</li>
+<li>Peer-to-peer lending (Lending Club)</li>
+<li>Robo-advisors (automated portfolio management)</li>
+<li>Neobanks (N26, Revolut)</li>
+</ul>
+
+<p><strong>Blockchain and cryptocurrencies</strong>:</p>
+<p>Bitcoin, Ethereum: decentralized currencies, smart contracts.</p>
+<p>Potential applications: international transfers, traceability, fundraising (ICO).</p>
+
+<p><strong>Sustainable finance</strong>:</p>
+<p>ESG criteria (Environmental, Social, Governance) integrated into investment decisions.</p>
+<p>Green bonds: financing environmental projects.</p>
+
+<p><strong>Artificial intelligence</strong>:</p>
+<ul>
+<li>High-frequency algorithmic trading</li>
+<li>Fraud detection</li>
+<li>Improved credit scoring</li>
+<li>Personalized financial advice</li>
+</ul>
+
+<h3 class="section-title">Tips for Success</h3>
+
+<p><strong>1. Understand before calculating</strong>:</p>
+<p>Know where the formulas come from and what they represent. Do not apply them mechanically.</p>
+
+<p><strong>2. Practice with Excel</strong>:</p>
+<p>Build your own financial models. Master NPV(), IRR() functions, amortization tables.</p>
+
+<p><strong>3. Think in cash flow</strong>:</p>
+<p>Always reason in terms of cash flow, not accounting profit. Cash is the economic reality.</p>
+
+<p><strong>4. Analyze sensitivity</strong>:</p>
+<p>A single NPV calculation is not enough. Test different scenarios to assess risk.</p>
+
+<p><strong>5. Develop intuition</strong>:</p>
+<p>With practice, develop a sense of orders of magnitude (typical discount rates, normal ratios by sector).</p>
+
+<p><strong>6. Follow economic news</strong>:</p>
+<p>Read financial press (Les Echos, Financial Times) to understand real-world applications of concepts.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>This module is essential for every engineer, whether working in a company or seeking to start a business. Finance is not reserved for financial professionals: it concerns all decisions involving resources and allocation choices.</p>
+
+<p><strong>Transferable skills</strong>:</p>
+<ul>
+<li>Economic reasoning and value creation</li>
+<li>Rigorous project evaluation</li>
+<li>Understanding how businesses operate</li>
+<li>Communication with financial stakeholders</li>
+</ul>
+
+<p><strong>Professional relevance</strong>:</p>
+<p>These skills are sought after in all sectors. An engineer capable of economically justifying their proposals has a competitive advantage.</p>
+
+<p><strong>Key message</strong>:</p>
+<p>Finance is not just about numbers. It is a decision-making tool that, combined with the engineer's technical expertise, enables sustainable value creation.</p>
+
+<p><strong>Recommendations</strong>:</p>
+<ul>
+<li>Deepen knowledge through reading (reference books: Brealey &amp; Myers, Vernimmen)</li>
+<li>Take online courses (Coursera, edX: corporate finance, valuation)</li>
+<li>Practice with real cases (analyze balance sheets of listed companies)</li>
+<li>Get started with professional tools (Bloomberg Terminal if available, Google Finance)</li>
+<li>For entrepreneurs: learn business planning, investor pitching, fundraising</li>
+</ul>
+
+<p><strong>Links with other courses</strong>:</p>
+<ul>
+<li><a href="./gestion.html">Management - S8</a>: business strategy</li>
+<li><a href="./droit.html">Law - S8</a>: legal framework</li>
+<li><a href="./graphes-programmation-lineaire.html">Graphs and Linear Programming - S8</a>: optimization</li>
+</ul>
+
+<hr/>
+
+<h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Finance Course</h4>
+      <p>Complete corporate finance course: financial markets, asset valuation, CAPM, options and portfolio management.</p>
+      <embed src="/cours-pdf/S7/Finance/cours-finance.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">Download</a></p>
+    </div>
+  </div>
+</div>
+
+<hr/>
+
+<p><em>Course taken in 2023-2024 at INSA Toulouse, Department of Electrical Engineering and Computer Science.</em></p>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
+</div>

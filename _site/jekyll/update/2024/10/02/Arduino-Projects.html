@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Arduino Robotics Projects" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Personal Projects" />
-<meta property="og:description" content="← Back to Personal Projects" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Arduino Robotics Projects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Personal Projects","headline":"Arduino Robotics Projects","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Arduino Robotics Projects","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/Arduino-Projects.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,462 +36,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-personal-projects.html">← Back to Personal Projects</a></p>
-
-<h1 id="introduction">Introduction</h1>
-<p>This collection showcases various Arduino-based robotics and electronics projects developed over time, ranging from simple LED control to complex robotic arms and remote-controlled vehicles. These projects demonstrate practical applications of microcontroller programming, motor control, sensor integration, and wireless communication using Arduino platforms.</p>
-
-<h1 id="project-overview">Project Overview</h1>
-<p>The projects span multiple domains including:</p>
-<ul>
-  <li>Remote-controlled vehicles with Bluetooth control</li>
-  <li>Robotic arm prototypes with servo control</li>
-  <li>Sensor integration (ultrasonic, infrared, vibration)</li>
-  <li>Wireless communication (Bluetooth, ESP32)</li>
-  <li>Display interfaces (LCD screens)</li>
-  <li>Motor control systems (H-bridge, L298N driver)</li>
-</ul>
-
-<h2 id="key-technologies">Key Technologies</h2>
-<ul>
-  <li><strong>Microcontrollers:</strong> Arduino Uno, Arduino Nano, ESP32-CAM</li>
-  <li><strong>Communication:</strong> Bluetooth HC-05/HC-06, WiFi (ESP32)</li>
-  <li><strong>Sensors:</strong> Ultrasonic HC-SR04, infrared sensors, vibration sensors</li>
-  <li><strong>Actuators:</strong> DC motors, servo motors, LEDs, buzzers</li>
-  <li><strong>Motor Drivers:</strong> L298N H-Bridge, relay modules</li>
-  <li><strong>Displays:</strong> LCD 16×2 with I2C interface</li>
-</ul>
-
-<h1 id="featured-projects">Featured Projects</h1>
-
-<h2 id="1-bluetooth-controlled-remote-car">1. Bluetooth-Controlled Remote Car</h2>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/Arduino_Projects/Bras1_model.png" alt="Robotic Arm Model" style="width: 60%;" onclick="openModal(this.src)" />
-</div>
-
-<h3 id="project-description">Project Description</h3>
-<p>Development of a remote-controlled vehicle controlled via Bluetooth from a smartphone. The car features:</p>
-<ul>
-  <li><strong>Four-wheel drive</strong> with DC motors</li>
-  <li><strong>L298N H-Bridge</strong> for bidirectional motor control</li>
-  <li><strong>Bluetooth module</strong> (HC-05) for wireless communication</li>
-  <li><strong>Ultrasonic sensor</strong> for obstacle detection</li>
-  <li><strong>LED headlights</strong> for visibility</li>
-  <li><strong>Android app</strong> for intuitive control</li>
-</ul>
-
-<h3 id="hardware-components">Hardware Components</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Components List:
-- Arduino Uno microcontroller
-- L298N motor driver module
-- 4× DC motors (6V)
-- HC-05 Bluetooth module
-- HC-SR04 ultrasonic sensor
-- 2× LED headlights
-- 7.4V Li-Po battery
-- Chassis and wheels
-</code></pre></div></div>
-
-<h3 id="software-implementation">Software Implementation</h3>
-
-<p><strong>Motor Control Functions:</strong></p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Forward motion</span>
-<span class="kt">void</span> <span class="nf">avancer</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// Reverse motion</span>
-<span class="kt">void</span> <span class="nf">reculer</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// Turn right</span>
-<span class="kt">void</span> <span class="nf">droite</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward2</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// Turn left</span>
-<span class="kt">void</span> <span class="nf">gauche</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorForward1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">MotorReverse1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="c1">// Stop all motors</span>
-<span class="kt">void</span> <span class="nf">stopp</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">enableBridge2</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p><strong>Bluetooth Command Processing:</strong></p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">Serial</span><span class="p">.</span><span class="n">available</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Bluetooth</span> <span class="o">=</span> <span class="n">Serial</span><span class="p">.</span><span class="n">read</span><span class="p">();</span>
-        
-        <span class="k">switch</span><span class="p">(</span><span class="n">Bluetooth</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">case</span> <span class="sc">'F'</span><span class="p">:</span> <span class="n">avancer</span><span class="p">();</span> <span class="k">break</span><span class="p">;</span>     <span class="c1">// Forward</span>
-            <span class="k">case</span> <span class="sc">'B'</span><span class="p">:</span> <span class="n">reculer</span><span class="p">();</span> <span class="k">break</span><span class="p">;</span>     <span class="c1">// Backward</span>
-            <span class="k">case</span> <span class="sc">'R'</span><span class="p">:</span> <span class="n">droite</span><span class="p">();</span> <span class="k">break</span><span class="p">;</span>      <span class="c1">// Right</span>
-            <span class="k">case</span> <span class="sc">'L'</span><span class="p">:</span> <span class="n">gauche</span><span class="p">();</span> <span class="k">break</span><span class="p">;</span>      <span class="c1">// Left</span>
-            <span class="k">case</span> <span class="sc">'S'</span><span class="p">:</span> <span class="n">stopp</span><span class="p">();</span> <span class="k">break</span><span class="p">;</span>       <span class="c1">// Stop</span>
-            <span class="k">case</span> <span class="sc">'W'</span><span class="p">:</span> <span class="n">digitalWrite</span><span class="p">(</span><span class="n">phare1</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>  <span class="c1">// Lights ON</span>
-            <span class="k">case</span> <span class="sc">'w'</span><span class="p">:</span> <span class="n">digitalWrite</span><span class="p">(</span><span class="n">phare1</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span> <span class="k">break</span><span class="p">;</span>   <span class="c1">// Lights OFF</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="features-implemented">Features Implemented</h3>
-<ul>
-  <li><strong>Directional control:</strong> Forward, backward, left, right</li>
-  <li><strong>Speed control:</strong> Variable PWM duty cycle (0-255)</li>
-  <li><strong>Obstacle avoidance:</strong> Ultrasonic sensor integration</li>
-  <li><strong>Lighting system:</strong> LED headlights toggle</li>
-  <li><strong>Emergency stop:</strong> Immediate motor shutdown</li>
-  <li><strong>Range:</strong> ~10 meters Bluetooth range</li>
-</ul>
-
-<h2 id="2-robotic-arm-with-servo-control">2. Robotic Arm with Servo Control</h2>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/Arduino_Projects/Bras2_model1.jpg" alt="Robotic Arm Design" style="width: 45%;" onclick="openModal(this.src)" />
-  <img src="/img/Arduino_Projects/Petit_bras_model.jpg" alt="Small Robotic Arm" style="width: 45%;" onclick="openModal(this.src)" />
-</div>
-
-<h3 id="project-description-1">Project Description</h3>
-<p>Design and development of 3D-printed robotic arms with multiple degrees of freedom, controlled by servo motors and Arduino. The project included:</p>
-<ul>
-  <li><strong>3D modeling</strong> in CAD software</li>
-  <li><strong>STL file generation</strong> for 3D printing</li>
-  <li><strong>Multi-servo coordination</strong> (4-6 servos)</li>
-  <li><strong>Gripper mechanism</strong> with gear system</li>
-  <li><strong>Position control</strong> via serial commands or potentiometers</li>
-</ul>
-
-<h3 id="mechanical-design">Mechanical Design</h3>
-<p>The robotic arms were designed with:</p>
-<ul>
-  <li><strong>Base rotation:</strong> 360° continuous rotation</li>
-  <li><strong>Shoulder joint:</strong> Vertical movement arm</li>
-  <li><strong>Elbow joint:</strong> Forward drive arm extension</li>
-  <li><strong>Wrist rotation:</strong> Horizontal arm orientation</li>
-  <li><strong>Gripper:</strong> Two-finger claw with gear drive</li>
-  <li><strong>Materials:</strong> PLA 3D-printed parts, M3 screws, servo brackets</li>
-</ul>
-
-<h3 id="servo-control-system">Servo Control System</h3>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;</span><span class="cp">
-</span>
-<span class="n">Servo</span> <span class="n">servoBase</span><span class="p">;</span>
-<span class="n">Servo</span> <span class="n">servoShoulder</span><span class="p">;</span>
-<span class="n">Servo</span> <span class="n">servoElbow</span><span class="p">;</span>
-<span class="n">Servo</span> <span class="n">servoWrist</span><span class="p">;</span>
-<span class="n">Servo</span> <span class="n">servoGripper</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">servoBase</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-    <span class="n">servoShoulder</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="n">servoElbow</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">6</span><span class="p">);</span>
-    <span class="n">servoWrist</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">9</span><span class="p">);</span>
-    <span class="n">servoGripper</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    
-    <span class="c1">// Initialize to neutral position</span>
-    <span class="n">servoBase</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
-    <span class="n">servoShoulder</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
-    <span class="n">servoElbow</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
-    <span class="n">servoWrist</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
-    <span class="n">servoGripper</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">45</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">moveToPosition</span><span class="p">(</span><span class="kt">int</span> <span class="n">base</span><span class="p">,</span> <span class="kt">int</span> <span class="n">shoulder</span><span class="p">,</span> <span class="kt">int</span> <span class="n">elbow</span><span class="p">,</span> <span class="kt">int</span> <span class="n">wrist</span><span class="p">,</span> <span class="kt">int</span> <span class="n">grip</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">servoBase</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">base</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
-    <span class="n">servoShoulder</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">shoulder</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
-    <span class="n">servoElbow</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">elbow</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
-    <span class="n">servoWrist</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">wrist</span><span class="p">);</span>
-    <span class="n">delay</span><span class="p">(</span><span class="mi">15</span><span class="p">);</span>
-    <span class="n">servoGripper</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">grip</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="applications">Applications</h3>
-<ul>
-  <li><strong>Pick and place operations</strong></li>
-  <li><strong>Automated sorting</strong></li>
-  <li><strong>Educational robotics demonstrations</strong></li>
-  <li><strong>Object manipulation experiments</strong></li>
-</ul>
-
-<h2 id="3-sensor-integration-modules">3. Sensor Integration Modules</h2>
-
-<h3 id="ultrasonic-distance-measurement">Ultrasonic Distance Measurement</h3>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">pinTrig</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
-<span class="k">const</span> <span class="kt">int</span> <span class="n">pinEcho</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
-<span class="kt">long</span> <span class="n">temps</span><span class="p">;</span>
-<span class="kt">float</span> <span class="n">distance</span><span class="p">;</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">pinMode</span><span class="p">(</span><span class="n">pinTrig</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>
-    <span class="n">pinMode</span><span class="p">(</span><span class="n">pinEcho</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pinTrig</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">mesureDistance</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pinTrig</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">pinTrig</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>
-    
-    <span class="n">temps</span> <span class="o">=</span> <span class="n">pulseIn</span><span class="p">(</span><span class="n">pinEcho</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>
-    <span class="n">distance</span> <span class="o">=</span> <span class="n">temps</span> <span class="o">*</span> <span class="mf">0.034</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>  <span class="c1">// Speed of sound: 340 m/s</span>
-    
-    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Distance: "</span><span class="p">);</span>
-    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
-    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">" cm"</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="infrared-sensor-integration">Infrared Sensor Integration</h3>
-<ul>
-  <li><strong>Obstacle detection</strong> for line-following robots</li>
-  <li><strong>Proximity sensing</strong> for collision avoidance</li>
-  <li><strong>Digital/analog output</strong> processing</li>
-  <li><strong>Threshold adjustment</strong> for different environments</li>
-</ul>
-
-<h3 id="vibration-sensor">Vibration Sensor</h3>
-<ul>
-  <li><strong>Shock detection</strong> for security systems</li>
-  <li><strong>Impact monitoring</strong> in mechanical systems</li>
-  <li><strong>Digital signal processing</strong> with interrupt handling</li>
-</ul>
-
-<h2 id="4-esp32-cam-streaming-project">4. ESP32-CAM Streaming Project</h2>
-
-<h3 id="project-description-2">Project Description</h3>
-<p>Implementation of a WiFi-enabled camera system using the ESP32-CAM module:</p>
-<ul>
-  <li><strong>Live video streaming</strong> over WiFi</li>
-  <li><strong>Web server interface</strong> for camera control</li>
-  <li><strong>Image capture</strong> and storage</li>
-  <li><strong>Motion detection</strong> capabilities</li>
-  <li><strong>Low-power modes</strong> for battery operation</li>
-</ul>
-
-<h3 id="features">Features</h3>
-<ul>
-  <li><strong>Resolution:</strong> Up to 2MP (1600×1200)</li>
-  <li><strong>Frame rate:</strong> 10-15 FPS for streaming</li>
-  <li><strong>WiFi protocols:</strong> 802.11 b/g/n</li>
-  <li><strong>Web interface:</strong> Real-time video display</li>
-  <li><strong>Remote control:</strong> Pan/tilt with servos (optional)</li>
-</ul>
-
-<h2 id="5-lcd-display-integration">5. LCD Display Integration</h2>
-
-<h3 id="162-lcd-with-i2c-interface">16×2 LCD with I2C Interface</h3>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;LiquidCrystal_I2C.h&gt;</span><span class="cp">
-</span>
-<span class="n">LiquidCrystal_I2C</span> <span class="nf">lcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>  <span class="c1">// Address 0x27, 16 columns, 2 rows</span>
-
-<span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Arduino Project"</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Ready!"</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">displayMessage</span><span class="p">(</span><span class="n">String</span> <span class="n">line1</span><span class="p">,</span> <span class="n">String</span> <span class="n">line2</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">line1</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="n">lcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">line2</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="applications-1">Applications</h3>
-<ul>
-  <li><strong>System status display</strong></li>
-  <li><strong>Sensor data visualization</strong></li>
-  <li><strong>User input confirmation</strong></li>
-  <li><strong>Menu navigation systems</strong></li>
-</ul>
-
-<h1 id="technical-challenges-and-solutions">Technical Challenges and Solutions</h1>
-
-<h2 id="challenge-1-motor-control-precision">Challenge 1: Motor Control Precision</h2>
-<p><strong>Problem:</strong> Inconsistent motor speeds due to battery voltage variations.</p>
-
-<p><strong>Solution:</strong> Implemented PWM speed control with voltage monitoring and compensation:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">compensatedSpeed</span><span class="p">(</span><span class="kt">int</span> <span class="n">desiredSpeed</span><span class="p">,</span> <span class="kt">float</span> <span class="n">batteryVoltage</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">float</span> <span class="n">nominalVoltage</span> <span class="o">=</span> <span class="mf">7.4</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">compensated</span> <span class="o">=</span> <span class="n">desiredSpeed</span> <span class="o">*</span> <span class="p">(</span><span class="n">nominalVoltage</span> <span class="o">/</span> <span class="n">batteryVoltage</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">constrain</span><span class="p">(</span><span class="n">compensated</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="challenge-2-bluetooth-communication-reliability">Challenge 2: Bluetooth Communication Reliability</h2>
-<p><strong>Problem:</strong> Command loss and delayed responses in Bluetooth communication.</p>
-
-<p><strong>Solution:</strong></p>
-<ul>
-  <li>Implemented command acknowledgment system</li>
-  <li>Added command buffer with FIFO queue</li>
-  <li>Increased baud rate to 9600 for stability</li>
-  <li>Added error checking and retry mechanism</li>
-</ul>
-
-<h2 id="challenge-3-servo-jitter-and-noise">Challenge 3: Servo Jitter and Noise</h2>
-<p><strong>Problem:</strong> Servo motors exhibited jittering during hold position.</p>
-
-<p><strong>Solution:</strong></p>
-<ul>
-  <li>Added capacitors (100µF) across servo power lines</li>
-  <li>Implemented separate power supply for servos</li>
-  <li>Used <code class="language-plaintext highlighter-rouge">servo.write()</code> only when position changes</li>
-  <li>Applied software filtering for smooth transitions</li>
-</ul>
-
-<h2 id="challenge-4-power-management">Challenge 4: Power Management</h2>
-<p><strong>Problem:</strong> Battery drain and insufficient current for all motors simultaneously.</p>
-
-<p><strong>Solution:</strong></p>
-<ul>
-  <li>Calculated total current requirements</li>
-  <li>Selected appropriate battery capacity (2200 mAh)</li>
-  <li>Implemented staged motor startup</li>
-  <li>Added low-voltage cutoff protection</li>
-</ul>
-
-<h1 id="development-tools-and-workflow">Development Tools and Workflow</h1>
-
-<h2 id="software-tools">Software Tools</h2>
-<ul>
-  <li><strong>Arduino IDE:</strong> Primary development environment</li>
-  <li><strong>PlatformIO:</strong> Advanced project management</li>
-  <li><strong>Serial Monitor:</strong> Debugging and testing</li>
-  <li><strong>Fritzing:</strong> Circuit diagram creation</li>
-  <li><strong>Fusion 360:</strong> 3D modeling for mechanical parts</li>
-</ul>
-
-<h2 id="hardware-tools">Hardware Tools</h2>
-<ul>
-  <li><strong>Multimeter:</strong> Voltage and current measurements</li>
-  <li><strong>Oscilloscope:</strong> Signal analysis and debugging</li>
-  <li><strong>Soldering station:</strong> Circuit assembly</li>
-  <li><strong>3D printer:</strong> Mechanical part fabrication</li>
-  <li><strong>Power supply:</strong> Testing with stable voltage</li>
-</ul>
-
-<h2 id="development-process">Development Process</h2>
-<ol>
-  <li><strong>Concept and planning:</strong> Define project requirements</li>
-  <li><strong>Circuit design:</strong> Create schematic and breadboard prototype</li>
-  <li><strong>Code development:</strong> Write and test firmware incrementally</li>
-  <li><strong>Integration testing:</strong> Combine hardware and software</li>
-  <li><strong>Mechanical assembly:</strong> 3D print and assemble parts</li>
-  <li><strong>System testing:</strong> Validate all functions</li>
-  <li><strong>Optimization:</strong> Improve performance and reliability</li>
-  <li><strong>Documentation:</strong> Record specifications and usage</li>
-</ol>
-
-<h1 id="lessons-learned">Lessons Learned</h1>
-
-<h2 id="technical-skills-developed">Technical Skills Developed</h2>
-<ul>
-  <li><strong>Microcontroller programming:</strong> Arduino C/C++ proficiency</li>
-  <li><strong>Hardware interfacing:</strong> Sensor and actuator integration</li>
-  <li><strong>Communication protocols:</strong> UART, I2C, SPI implementation</li>
-  <li><strong>Motor control:</strong> PWM, H-bridge driver operation</li>
-  <li><strong>Mechanical design:</strong> CAD modeling and 3D printing</li>
-  <li><strong>Debugging techniques:</strong> Systematic troubleshooting approach</li>
-</ul>
-
-<h2 id="best-practices-established">Best Practices Established</h2>
-<ul>
-  <li><strong>Modular code structure:</strong> Reusable functions and libraries</li>
-  <li><strong>Proper documentation:</strong> Comments and function descriptions</li>
-  <li><strong>Version control:</strong> Incremental development with backups</li>
-  <li><strong>Power considerations:</strong> Separate logic and motor power</li>
-  <li><strong>Safety features:</strong> Emergency stops and voltage protection</li>
-  <li><strong>Testing methodology:</strong> Unit tests before system integration</li>
-</ul>
-
-<h2 id="areas-for-future-improvement">Areas for Future Improvement</h2>
-<ul>
-  <li><strong>Advanced control algorithms:</strong> PID implementation for precise movement</li>
-  <li><strong>Sensor fusion:</strong> Combining multiple sensors for better accuracy</li>
-  <li><strong>Wireless protocols:</strong> Transition to WiFi or LoRa for extended range</li>
-  <li><strong>Autonomous navigation:</strong> Implement pathfinding algorithms</li>
-  <li><strong>Computer vision:</strong> Integrate OpenCV with ESP32-CAM</li>
-  <li><strong>PCB design:</strong> Create custom boards for compact integration</li>
-</ul>
-
-<h1 id="future-project-ideas">Future Project Ideas</h1>
-
-<h2 id="short-term-goals">Short-term Goals</h2>
-<ul>
-  <li><strong>Line-following robot</strong> with PID control</li>
-  <li><strong>Obstacle-avoiding car</strong> with multiple sensors</li>
-  <li><strong>Bluetooth-controlled robotic arm</strong> with position memory</li>
-  <li><strong>Weather station</strong> with multiple environmental sensors</li>
-  <li><strong>Home automation system</strong> with relay control</li>
-</ul>
-
-<h2 id="long-term-aspirations">Long-term Aspirations</h2>
-<ul>
-  <li><strong>Autonomous delivery robot</strong> with GPS navigation</li>
-  <li><strong>Quadcopter drone</strong> with Arduino flight controller</li>
-  <li><strong>Bipedal walking robot</strong> with servo coordination</li>
-  <li><strong>IoT sensor network</strong> with cloud data logging</li>
-  <li><strong>Robot swarm coordination</strong> with inter-robot communication</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>These Arduino projects represent a journey from basic electronics to complex robotic systems. Each project provided valuable hands-on experience in embedded programming, hardware integration, and system design. The iterative development process, troubleshooting challenges, and continuous learning have built a strong foundation in robotics and electronics.</p>
-
-<p>The skills acquired through these projects are directly applicable to professional embedded systems development, IoT devices, and autonomous robotics. Future projects will build upon this foundation, incorporating more advanced sensors, machine learning algorithms, and sophisticated mechanical designs.</p>
-
-<style>
+        <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -514,6 +88,751 @@ p {
   cursor: pointer;
 }
 </style>
+
+<div class="back-nav">
+    <a href="./my-perso-projects.html" data-i18n-html="back-perso-projects">&larr; Retour aux Projets Personnels</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Cette collection presente divers projets de robotique et d'electronique bases sur Arduino, developpes au fil du temps, allant du simple controle de LED a des bras robotiques complexes et des vehicules teleccommandes. Ces projets demontrent des applications pratiques de la programmation de microcontroleurs, du controle de moteurs, de l'integration de capteurs et de la communication sans fil sur les plateformes Arduino.</p>
+
+<h1>Vue d'ensemble des projets</h1>
+<p>Les projets couvrent plusieurs domaines :</p>
+<ul>
+<li>Vehicules teleccommandes avec controle Bluetooth</li>
+<li>Prototypes de bras robotiques avec controle par servomoteurs</li>
+<li>Integration de capteurs (ultrasonique, infrarouge, vibration)</li>
+<li>Communication sans fil (Bluetooth, ESP32)</li>
+<li>Interfaces d'affichage (ecrans LCD)</li>
+<li>Systemes de controle de moteurs (pont en H, driver L298N)</li>
+</ul>
+
+<h2>Technologies cles</h2>
+<ul>
+<li><strong>Microcontroleurs :</strong> Arduino Uno, Arduino Nano, ESP32-CAM</li>
+<li><strong>Communication :</strong> Bluetooth HC-05/HC-06, WiFi (ESP32)</li>
+<li><strong>Capteurs :</strong> Ultrasonique HC-SR04, capteurs infrarouges, capteurs de vibration</li>
+<li><strong>Actionneurs :</strong> Moteurs DC, servomoteurs, LEDs, buzzers</li>
+<li><strong>Drivers moteurs :</strong> Pont en H L298N, modules relais</li>
+<li><strong>Afficheurs :</strong> LCD 16x2 avec interface I2C</li>
+</ul>
+
+<h1>Projets phares</h1>
+
+<h2>1. Voiture telecommandee Bluetooth</h2>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This collection showcases various Arduino-based robotics and electronics projects developed over time, ranging from simple LED control to complex robotic arms and remote-controlled vehicles. These projects demonstrate practical applications of microcontroller programming, motor control, sensor integration, and wireless communication using Arduino platforms.</p>
+
+<h1>Project Overview</h1>
+<p>The projects span multiple domains including:</p>
+<ul>
+<li>Remote-controlled vehicles with Bluetooth control</li>
+<li>Robotic arm prototypes with servo control</li>
+<li>Sensor integration (ultrasonic, infrared, vibration)</li>
+<li>Wireless communication (Bluetooth, ESP32)</li>
+<li>Display interfaces (LCD screens)</li>
+<li>Motor control systems (H-bridge, L298N driver)</li>
+</ul>
+
+<h2>Key Technologies</h2>
+<ul>
+<li><strong>Microcontrollers:</strong> Arduino Uno, Arduino Nano, ESP32-CAM</li>
+<li><strong>Communication:</strong> Bluetooth HC-05/HC-06, WiFi (ESP32)</li>
+<li><strong>Sensors:</strong> Ultrasonic HC-SR04, infrared sensors, vibration sensors</li>
+<li><strong>Actuators:</strong> DC motors, servo motors, LEDs, buzzers</li>
+<li><strong>Motor Drivers:</strong> L298N H-Bridge, relay modules</li>
+<li><strong>Displays:</strong> LCD 16x2 with I2C interface</li>
+</ul>
+
+<h1>Featured Projects</h1>
+
+<h2>1. Bluetooth-Controlled Remote Car</h2>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/Arduino_Projects/Bras1_model.png" alt="Robotic Arm Model" style="width: 60%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<h3>Description du projet</h3>
+<p>Developpement d'un vehicule telecommande controle via Bluetooth depuis un smartphone. La voiture comprend :</p>
+<ul>
+<li><strong>Quatre roues motrices</strong> avec moteurs DC</li>
+<li><strong>Pont en H L298N</strong> pour le controle bidirectionnel des moteurs</li>
+<li><strong>Module Bluetooth</strong> (HC-05) pour la communication sans fil</li>
+<li><strong>Capteur ultrasonique</strong> pour la detection d'obstacles</li>
+<li><strong>Phares LED</strong> pour la visibilite</li>
+<li><strong>Application Android</strong> pour le controle intuitif</li>
+</ul>
+
+<h3>Composants materiels</h3>
+</div>
+
+<div class="lang-en">
+<h3>Project Description</h3>
+<p>Development of a remote-controlled vehicle controlled via Bluetooth from a smartphone. The car features:</p>
+<ul>
+<li><strong>Four-wheel drive</strong> with DC motors</li>
+<li><strong>L298N H-Bridge</strong> for bidirectional motor control</li>
+<li><strong>Bluetooth module</strong> (HC-05) for wireless communication</li>
+<li><strong>Ultrasonic sensor</strong> for obstacle detection</li>
+<li><strong>LED headlights</strong> for visibility</li>
+<li><strong>Android app</strong> for intuitive control</li>
+</ul>
+
+<h3>Hardware Components</h3>
+</div>
+
+<pre><code>Components List:
+- Arduino Uno microcontroller
+- L298N motor driver module
+- 4x DC motors (6V)
+- HC-05 Bluetooth module
+- HC-SR04 ultrasonic sensor
+- 2x LED headlights
+- 7.4V Li-Po battery
+- Chassis and wheels
+</code></pre>
+
+<div class="lang-fr">
+<h3>Implementation logicielle</h3>
+<p><strong>Fonctions de controle des moteurs :</strong></p>
+</div>
+
+<div class="lang-en">
+<h3>Software Implementation</h3>
+<p><strong>Motor Control Functions:</strong></p>
+</div>
+
+<pre><code class="language-cpp">// Forward motion
+void avancer() {
+    digitalWrite(enableBridge1, HIGH);
+    digitalWrite(MotorForward1, HIGH);
+    digitalWrite(MotorReverse1, LOW);
+    digitalWrite(enableBridge2, HIGH);
+    digitalWrite(MotorForward2, HIGH);
+    digitalWrite(MotorReverse2, LOW);
+}
+
+// Reverse motion
+void reculer() {
+    digitalWrite(enableBridge1, HIGH);
+    digitalWrite(MotorForward1, LOW);
+    digitalWrite(MotorReverse1, HIGH);
+    digitalWrite(enableBridge2, HIGH);
+    digitalWrite(MotorForward2, LOW);
+    digitalWrite(MotorReverse2, HIGH);
+}
+
+// Turn right
+void droite() {
+    digitalWrite(enableBridge2, HIGH);
+    digitalWrite(MotorForward2, HIGH);
+    digitalWrite(MotorReverse2, LOW);
+}
+
+// Turn left
+void gauche() {
+    digitalWrite(enableBridge1, HIGH);
+    digitalWrite(MotorForward1, HIGH);
+    digitalWrite(MotorReverse1, LOW);
+}
+
+// Stop all motors
+void stopp() {
+    digitalWrite(enableBridge1, LOW);
+    digitalWrite(enableBridge2, LOW);
+}
+</code></pre>
+
+<div class="lang-fr">
+<p><strong>Traitement des commandes Bluetooth :</strong></p>
+</div>
+
+<div class="lang-en">
+<p><strong>Bluetooth Command Processing:</strong></p>
+</div>
+
+<pre><code class="language-cpp">void loop() {
+    if (Serial.available() &gt; 0) {
+        Bluetooth = Serial.read();
+
+        switch(Bluetooth) {
+            case 'F': avancer(); break;     // Forward
+            case 'B': reculer(); break;     // Backward
+            case 'R': droite(); break;      // Right
+            case 'L': gauche(); break;      // Left
+            case 'S': stopp(); break;       // Stop
+            case 'W': digitalWrite(phare1, HIGH); break;  // Lights ON
+            case 'w': digitalWrite(phare1, LOW); break;   // Lights OFF
+        }
+    }
+}
+</code></pre>
+
+<div class="lang-fr">
+<h3>Fonctionnalites implementees</h3>
+<ul>
+<li><strong>Controle directionnel :</strong> Avant, arriere, gauche, droite</li>
+<li><strong>Controle de vitesse :</strong> Rapport cyclique PWM variable (0-255)</li>
+<li><strong>Evitement d'obstacles :</strong> Integration du capteur ultrasonique</li>
+<li><strong>Systeme d'eclairage :</strong> Commutation des phares LED</li>
+<li><strong>Arret d'urgence :</strong> Coupure immediate des moteurs</li>
+<li><strong>Portee :</strong> ~10 metres en Bluetooth</li>
+</ul>
+
+<h2>2. Bras robotique avec controle par servomoteurs</h2>
+</div>
+
+<div class="lang-en">
+<h3>Features Implemented</h3>
+<ul>
+<li><strong>Directional control:</strong> Forward, backward, left, right</li>
+<li><strong>Speed control:</strong> Variable PWM duty cycle (0-255)</li>
+<li><strong>Obstacle avoidance:</strong> Ultrasonic sensor integration</li>
+<li><strong>Lighting system:</strong> LED headlights toggle</li>
+<li><strong>Emergency stop:</strong> Immediate motor shutdown</li>
+<li><strong>Range:</strong> ~10 meters Bluetooth range</li>
+</ul>
+
+<h2>2. Robotic Arm with Servo Control</h2>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/Arduino_Projects/Bras2_model1.jpg" alt="Robotic Arm Design" style="width: 45%;" onclick="openModal(this.src)" />
+  <img src="/img/Arduino_Projects/Petit_bras_model.jpg" alt="Small Robotic Arm" style="width: 45%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<h3>Description du projet</h3>
+<p>Conception et developpement de bras robotiques imprimes en 3D avec plusieurs degres de liberte, controles par des servomoteurs et Arduino. Le projet comprend :</p>
+<ul>
+<li><strong>Modelisation 3D</strong> en logiciel CAO</li>
+<li><strong>Generation de fichiers STL</strong> pour l'impression 3D</li>
+<li><strong>Coordination multi-servos</strong> (4-6 servomoteurs)</li>
+<li><strong>Mecanisme de pince</strong> avec systeme d'engrenages</li>
+<li><strong>Controle de position</strong> via commandes serie ou potentiometres</li>
+</ul>
+
+<h3>Conception mecanique</h3>
+<p>Les bras robotiques ont ete concus avec :</p>
+<ul>
+<li><strong>Rotation de la base :</strong> Rotation continue a 360 degres</li>
+<li><strong>Articulation de l'epaule :</strong> Mouvement vertical du bras</li>
+<li><strong>Articulation du coude :</strong> Extension du bras vers l'avant</li>
+<li><strong>Rotation du poignet :</strong> Orientation horizontale du bras</li>
+<li><strong>Pince :</strong> Griffe a deux doigts avec entrainement par engrenage</li>
+<li><strong>Materiaux :</strong> Pieces imprimees en PLA 3D, vis M3, supports de servomoteurs</li>
+</ul>
+
+<h3>Systeme de controle des servomoteurs</h3>
+</div>
+
+<div class="lang-en">
+<h3>Project Description</h3>
+<p>Design and development of 3D-printed robotic arms with multiple degrees of freedom, controlled by servo motors and Arduino. The project included:</p>
+<ul>
+<li><strong>3D modeling</strong> in CAD software</li>
+<li><strong>STL file generation</strong> for 3D printing</li>
+<li><strong>Multi-servo coordination</strong> (4-6 servos)</li>
+<li><strong>Gripper mechanism</strong> with gear system</li>
+<li><strong>Position control</strong> via serial commands or potentiometers</li>
+</ul>
+
+<h3>Mechanical Design</h3>
+<p>The robotic arms were designed with:</p>
+<ul>
+<li><strong>Base rotation:</strong> 360 degree continuous rotation</li>
+<li><strong>Shoulder joint:</strong> Vertical movement arm</li>
+<li><strong>Elbow joint:</strong> Forward drive arm extension</li>
+<li><strong>Wrist rotation:</strong> Horizontal arm orientation</li>
+<li><strong>Gripper:</strong> Two-finger claw with gear drive</li>
+<li><strong>Materials:</strong> PLA 3D-printed parts, M3 screws, servo brackets</li>
+</ul>
+
+<h3>Servo Control System</h3>
+</div>
+
+<pre><code class="language-cpp">#include &lt;Servo.h&gt;
+
+Servo servoBase;
+Servo servoShoulder;
+Servo servoElbow;
+Servo servoWrist;
+Servo servoGripper;
+
+void setup() {
+    servoBase.attach(3);
+    servoShoulder.attach(5);
+    servoElbow.attach(6);
+    servoWrist.attach(9);
+    servoGripper.attach(10);
+
+    // Initialize to neutral position
+    servoBase.write(90);
+    servoShoulder.write(90);
+    servoElbow.write(90);
+    servoWrist.write(90);
+    servoGripper.write(45);
+}
+
+void moveToPosition(int base, int shoulder, int elbow, int wrist, int grip) {
+    servoBase.write(base);
+    delay(15);
+    servoShoulder.write(shoulder);
+    delay(15);
+    servoElbow.write(elbow);
+    delay(15);
+    servoWrist.write(wrist);
+    delay(15);
+    servoGripper.write(grip);
+}
+</code></pre>
+
+<div class="lang-fr">
+<h3>Applications</h3>
+<ul>
+<li><strong>Operations de pick and place</strong></li>
+<li><strong>Tri automatise</strong></li>
+<li><strong>Demonstrations de robotique pedagogique</strong></li>
+<li><strong>Experiences de manipulation d'objets</strong></li>
+</ul>
+
+<h2>3. Modules d'integration de capteurs</h2>
+
+<h3>Mesure de distance ultrasonique</h3>
+</div>
+
+<div class="lang-en">
+<h3>Applications</h3>
+<ul>
+<li><strong>Pick and place operations</strong></li>
+<li><strong>Automated sorting</strong></li>
+<li><strong>Educational robotics demonstrations</strong></li>
+<li><strong>Object manipulation experiments</strong></li>
+</ul>
+
+<h2>3. Sensor Integration Modules</h2>
+
+<h3>Ultrasonic Distance Measurement</h3>
+</div>
+
+<pre><code class="language-cpp">const int pinTrig = 6;
+const int pinEcho = 7;
+long temps;
+float distance;
+
+void setup() {
+    pinMode(pinTrig, OUTPUT);
+    pinMode(pinEcho, INPUT);
+    digitalWrite(pinTrig, LOW);
+    Serial.begin(9600);
+}
+
+void mesureDistance() {
+    digitalWrite(pinTrig, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(pinTrig, LOW);
+
+    temps = pulseIn(pinEcho, HIGH);
+    distance = temps * 0.034 / 2;  // Speed of sound: 340 m/s
+
+    Serial.print("Distance: ");
+    Serial.print(distance);
+    Serial.println(" cm");
+}
+</code></pre>
+
+<div class="lang-fr">
+<h3>Integration de capteurs infrarouges</h3>
+<ul>
+<li><strong>Detection d'obstacles</strong> pour robots suiveurs de ligne</li>
+<li><strong>Detection de proximite</strong> pour l'evitement de collision</li>
+<li><strong>Traitement de sortie numerique/analogique</strong></li>
+<li><strong>Ajustement du seuil</strong> pour differents environnements</li>
+</ul>
+
+<h3>Capteur de vibration</h3>
+<ul>
+<li><strong>Detection de chocs</strong> pour systemes de securite</li>
+<li><strong>Surveillance d'impacts</strong> dans les systemes mecaniques</li>
+<li><strong>Traitement de signal numerique</strong> avec gestion d'interruptions</li>
+</ul>
+
+<h2>4. Projet de streaming ESP32-CAM</h2>
+
+<h3>Description du projet</h3>
+<p>Implementation d'un systeme de camera WiFi utilisant le module ESP32-CAM :</p>
+<ul>
+<li><strong>Streaming video en direct</strong> via WiFi</li>
+<li><strong>Interface serveur web</strong> pour le controle de la camera</li>
+<li><strong>Capture d'images</strong> et stockage</li>
+<li><strong>Detection de mouvement</strong></li>
+<li><strong>Modes basse consommation</strong> pour fonctionnement sur batterie</li>
+</ul>
+
+<h3>Caracteristiques</h3>
+<ul>
+<li><strong>Resolution :</strong> Jusqu'a 2MP (1600x1200)</li>
+<li><strong>Debit d'images :</strong> 10-15 FPS en streaming</li>
+<li><strong>Protocoles WiFi :</strong> 802.11 b/g/n</li>
+<li><strong>Interface web :</strong> Affichage video en temps reel</li>
+<li><strong>Controle a distance :</strong> Pan/tilt avec servomoteurs (optionnel)</li>
+</ul>
+
+<h2>5. Integration d'ecran LCD</h2>
+
+<h3>LCD 16x2 avec interface I2C</h3>
+</div>
+
+<div class="lang-en">
+<h3>Infrared Sensor Integration</h3>
+<ul>
+<li><strong>Obstacle detection</strong> for line-following robots</li>
+<li><strong>Proximity sensing</strong> for collision avoidance</li>
+<li><strong>Digital/analog output</strong> processing</li>
+<li><strong>Threshold adjustment</strong> for different environments</li>
+</ul>
+
+<h3>Vibration Sensor</h3>
+<ul>
+<li><strong>Shock detection</strong> for security systems</li>
+<li><strong>Impact monitoring</strong> in mechanical systems</li>
+<li><strong>Digital signal processing</strong> with interrupt handling</li>
+</ul>
+
+<h2>4. ESP32-CAM Streaming Project</h2>
+
+<h3>Project Description</h3>
+<p>Implementation of a WiFi-enabled camera system using the ESP32-CAM module:</p>
+<ul>
+<li><strong>Live video streaming</strong> over WiFi</li>
+<li><strong>Web server interface</strong> for camera control</li>
+<li><strong>Image capture</strong> and storage</li>
+<li><strong>Motion detection</strong> capabilities</li>
+<li><strong>Low-power modes</strong> for battery operation</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+<li><strong>Resolution:</strong> Up to 2MP (1600x1200)</li>
+<li><strong>Frame rate:</strong> 10-15 FPS for streaming</li>
+<li><strong>WiFi protocols:</strong> 802.11 b/g/n</li>
+<li><strong>Web interface:</strong> Real-time video display</li>
+<li><strong>Remote control:</strong> Pan/tilt with servos (optional)</li>
+</ul>
+
+<h2>5. LCD Display Integration</h2>
+
+<h3>16x2 LCD with I2C Interface</h3>
+</div>
+
+<pre><code class="language-cpp">#include &lt;LiquidCrystal_I2C.h&gt;
+
+LiquidCrystal_I2C lcd(0x27, 16, 2);  // Address 0x27, 16 columns, 2 rows
+
+void setup() {
+    lcd.init();
+    lcd.backlight();
+    lcd.setCursor(0, 0);
+    lcd.print("Arduino Project");
+    lcd.setCursor(0, 1);
+    lcd.print("Ready!");
+}
+
+void displayMessage(String line1, String line2) {
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    lcd.print(line1);
+    lcd.setCursor(0, 1);
+    lcd.print(line2);
+}
+</code></pre>
+
+<div class="lang-fr">
+<h3>Applications</h3>
+<ul>
+<li><strong>Affichage de l'etat du systeme</strong></li>
+<li><strong>Visualisation des donnees des capteurs</strong></li>
+<li><strong>Confirmation des entrees utilisateur</strong></li>
+<li><strong>Systemes de navigation par menus</strong></li>
+</ul>
+
+<h1>Defis techniques et solutions</h1>
+
+<h2>Defi 1 : Precision du controle moteur</h2>
+<p><strong>Probleme :</strong> Vitesses de moteur incoherentes dues aux variations de tension de la batterie.</p>
+<p><strong>Solution :</strong> Implementation d'un controle de vitesse PWM avec surveillance et compensation de tension :</p>
+</div>
+
+<div class="lang-en">
+<h3>Applications</h3>
+<ul>
+<li><strong>System status display</strong></li>
+<li><strong>Sensor data visualization</strong></li>
+<li><strong>User input confirmation</strong></li>
+<li><strong>Menu navigation systems</strong></li>
+</ul>
+
+<h1>Technical Challenges and Solutions</h1>
+
+<h2>Challenge 1: Motor Control Precision</h2>
+<p><strong>Problem:</strong> Inconsistent motor speeds due to battery voltage variations.</p>
+<p><strong>Solution:</strong> Implemented PWM speed control with voltage monitoring and compensation:</p>
+</div>
+
+<pre><code class="language-cpp">int compensatedSpeed(int desiredSpeed, float batteryVoltage) {
+    float nominalVoltage = 7.4;
+    int compensated = desiredSpeed * (nominalVoltage / batteryVoltage);
+    return constrain(compensated, 0, 255);
+}
+</code></pre>
+
+<div class="lang-fr">
+<h2>Defi 2 : Fiabilite de la communication Bluetooth</h2>
+<p><strong>Probleme :</strong> Perte de commandes et reponses retardees dans la communication Bluetooth.</p>
+<p><strong>Solution :</strong></p>
+<ul>
+<li>Implementation d'un systeme d'acquittement de commandes</li>
+<li>Ajout d'un tampon de commandes avec file FIFO</li>
+<li>Augmentation du debit en bauds a 9600 pour la stabilite</li>
+<li>Ajout de verification d'erreurs et mecanisme de reessai</li>
+</ul>
+
+<h2>Defi 3 : Tremblements et bruit des servomoteurs</h2>
+<p><strong>Probleme :</strong> Les servomoteurs presentaient des tremblements en position maintenue.</p>
+<p><strong>Solution :</strong></p>
+<ul>
+<li>Ajout de condensateurs (100 uF) sur les lignes d'alimentation des servos</li>
+<li>Implementation d'une alimentation separee pour les servomoteurs</li>
+<li>Utilisation de <code>servo.write()</code> uniquement lors des changements de position</li>
+<li>Application d'un filtrage logiciel pour des transitions fluides</li>
+</ul>
+
+<h2>Defi 4 : Gestion de l'alimentation</h2>
+<p><strong>Probleme :</strong> Decharge de la batterie et courant insuffisant pour tous les moteurs simultanement.</p>
+<p><strong>Solution :</strong></p>
+<ul>
+<li>Calcul des besoins totaux en courant</li>
+<li>Selection d'une capacite de batterie appropriee (2200 mAh)</li>
+<li>Implementation d'un demarrage progressif des moteurs</li>
+<li>Ajout d'une protection contre la basse tension</li>
+</ul>
+
+<h1>Outils de developpement et flux de travail</h1>
+
+<h2>Outils logiciels</h2>
+<ul>
+<li><strong>Arduino IDE :</strong> Environnement de developpement principal</li>
+<li><strong>PlatformIO :</strong> Gestion avancee de projets</li>
+<li><strong>Moniteur serie :</strong> Debogage et tests</li>
+<li><strong>Fritzing :</strong> Creation de schemas de circuits</li>
+<li><strong>Fusion 360 :</strong> Modelisation 3D pour les pieces mecaniques</li>
+</ul>
+
+<h2>Outils materiels</h2>
+<ul>
+<li><strong>Multimetre :</strong> Mesures de tension et de courant</li>
+<li><strong>Oscilloscope :</strong> Analyse et debogage de signaux</li>
+<li><strong>Station de soudage :</strong> Assemblage de circuits</li>
+<li><strong>Imprimante 3D :</strong> Fabrication de pieces mecaniques</li>
+<li><strong>Alimentation de laboratoire :</strong> Tests avec tension stable</li>
+</ul>
+
+<h2>Processus de developpement</h2>
+<ol>
+<li><strong>Concept et planification :</strong> Definir les exigences du projet</li>
+<li><strong>Conception du circuit :</strong> Creer le schema et le prototype sur breadboard</li>
+<li><strong>Developpement du code :</strong> Ecrire et tester le firmware de maniere incrementale</li>
+<li><strong>Tests d'integration :</strong> Combiner materiel et logiciel</li>
+<li><strong>Assemblage mecanique :</strong> Imprimer en 3D et assembler les pieces</li>
+<li><strong>Tests systeme :</strong> Valider toutes les fonctions</li>
+<li><strong>Optimisation :</strong> Ameliorer les performances et la fiabilite</li>
+<li><strong>Documentation :</strong> Enregistrer les specifications et l'utilisation</li>
+</ol>
+
+<h1>Lecons apprises</h1>
+
+<h2>Competences techniques developpees</h2>
+<ul>
+<li><strong>Programmation de microcontroleurs :</strong> Maitrise du C/C++ Arduino</li>
+<li><strong>Interfacage materiel :</strong> Integration de capteurs et actionneurs</li>
+<li><strong>Protocoles de communication :</strong> Implementation UART, I2C, SPI</li>
+<li><strong>Controle de moteurs :</strong> PWM, fonctionnement du driver pont en H</li>
+<li><strong>Conception mecanique :</strong> Modelisation CAO et impression 3D</li>
+<li><strong>Techniques de debogage :</strong> Approche systematique de resolution de problemes</li>
+</ul>
+
+<h2>Bonnes pratiques etablies</h2>
+<ul>
+<li><strong>Structure de code modulaire :</strong> Fonctions et bibliotheques reutilisables</li>
+<li><strong>Documentation appropriee :</strong> Commentaires et descriptions de fonctions</li>
+<li><strong>Controle de version :</strong> Developpement incremental avec sauvegardes</li>
+<li><strong>Considerations d'alimentation :</strong> Separation de l'alimentation logique et moteur</li>
+<li><strong>Fonctions de securite :</strong> Arrets d'urgence et protection contre la tension</li>
+<li><strong>Methodologie de test :</strong> Tests unitaires avant integration systeme</li>
+</ul>
+
+<h2>Pistes d'amelioration future</h2>
+<ul>
+<li><strong>Algorithmes de controle avances :</strong> Implementation PID pour des mouvements precis</li>
+<li><strong>Fusion de capteurs :</strong> Combinaison de plusieurs capteurs pour une meilleure precision</li>
+<li><strong>Protocoles sans fil :</strong> Transition vers WiFi ou LoRa pour une portee etendue</li>
+<li><strong>Navigation autonome :</strong> Implementation d'algorithmes de recherche de chemin</li>
+<li><strong>Vision par ordinateur :</strong> Integration d'OpenCV avec ESP32-CAM</li>
+<li><strong>Conception de PCB :</strong> Creation de cartes personnalisees pour une integration compacte</li>
+</ul>
+
+<h1>Idees de projets futurs</h1>
+
+<h2>Objectifs a court terme</h2>
+<ul>
+<li><strong>Robot suiveur de ligne</strong> avec controle PID</li>
+<li><strong>Voiture eviteur d'obstacles</strong> avec capteurs multiples</li>
+<li><strong>Bras robotique controle par Bluetooth</strong> avec memoire de position</li>
+<li><strong>Station meteo</strong> avec capteurs environnementaux multiples</li>
+<li><strong>Systeme de domotique</strong> avec controle par relais</li>
+</ul>
+
+<h2>Aspirations a long terme</h2>
+<ul>
+<li><strong>Robot de livraison autonome</strong> avec navigation GPS</li>
+<li><strong>Drone quadricoptere</strong> avec controleur de vol Arduino</li>
+<li><strong>Robot bipede marchant</strong> avec coordination de servomoteurs</li>
+<li><strong>Reseau de capteurs IoT</strong> avec journalisation de donnees cloud</li>
+<li><strong>Coordination d'essaim de robots</strong> avec communication inter-robots</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>Ces projets Arduino representent un parcours de l'electronique de base aux systemes robotiques complexes. Chaque projet a fourni une experience pratique precieuse en programmation embarquee, integration materielle et conception de systemes. Le processus de developpement iteratif, la resolution de defis et l'apprentissage continu ont construit une base solide en robotique et electronique.</p>
+
+<p>Les competences acquises a travers ces projets sont directement applicables au developpement professionnel de systemes embarques, aux dispositifs IoT et a la robotique autonome. Les projets futurs s'appuieront sur cette base, integrant des capteurs plus avances, des algorithmes d'apprentissage automatique et des conceptions mecaniques plus sophistiquees.</p>
+</div>
+
+<div class="lang-en">
+<h2>Challenge 2: Bluetooth Communication Reliability</h2>
+<p><strong>Problem:</strong> Command loss and delayed responses in Bluetooth communication.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Implemented command acknowledgment system</li>
+<li>Added command buffer with FIFO queue</li>
+<li>Increased baud rate to 9600 for stability</li>
+<li>Added error checking and retry mechanism</li>
+</ul>
+
+<h2>Challenge 3: Servo Jitter and Noise</h2>
+<p><strong>Problem:</strong> Servo motors exhibited jittering during hold position.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Added capacitors (100 uF) across servo power lines</li>
+<li>Implemented separate power supply for servos</li>
+<li>Used <code>servo.write()</code> only when position changes</li>
+<li>Applied software filtering for smooth transitions</li>
+</ul>
+
+<h2>Challenge 4: Power Management</h2>
+<p><strong>Problem:</strong> Battery drain and insufficient current for all motors simultaneously.</p>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Calculated total current requirements</li>
+<li>Selected appropriate battery capacity (2200 mAh)</li>
+<li>Implemented staged motor startup</li>
+<li>Added low-voltage cutoff protection</li>
+</ul>
+
+<h1>Development Tools and Workflow</h1>
+
+<h2>Software Tools</h2>
+<ul>
+<li><strong>Arduino IDE:</strong> Primary development environment</li>
+<li><strong>PlatformIO:</strong> Advanced project management</li>
+<li><strong>Serial Monitor:</strong> Debugging and testing</li>
+<li><strong>Fritzing:</strong> Circuit diagram creation</li>
+<li><strong>Fusion 360:</strong> 3D modeling for mechanical parts</li>
+</ul>
+
+<h2>Hardware Tools</h2>
+<ul>
+<li><strong>Multimeter:</strong> Voltage and current measurements</li>
+<li><strong>Oscilloscope:</strong> Signal analysis and debugging</li>
+<li><strong>Soldering station:</strong> Circuit assembly</li>
+<li><strong>3D printer:</strong> Mechanical part fabrication</li>
+<li><strong>Power supply:</strong> Testing with stable voltage</li>
+</ul>
+
+<h2>Development Process</h2>
+<ol>
+<li><strong>Concept and planning:</strong> Define project requirements</li>
+<li><strong>Circuit design:</strong> Create schematic and breadboard prototype</li>
+<li><strong>Code development:</strong> Write and test firmware incrementally</li>
+<li><strong>Integration testing:</strong> Combine hardware and software</li>
+<li><strong>Mechanical assembly:</strong> 3D print and assemble parts</li>
+<li><strong>System testing:</strong> Validate all functions</li>
+<li><strong>Optimization:</strong> Improve performance and reliability</li>
+<li><strong>Documentation:</strong> Record specifications and usage</li>
+</ol>
+
+<h1>Lessons Learned</h1>
+
+<h2>Technical Skills Developed</h2>
+<ul>
+<li><strong>Microcontroller programming:</strong> Arduino C/C++ proficiency</li>
+<li><strong>Hardware interfacing:</strong> Sensor and actuator integration</li>
+<li><strong>Communication protocols:</strong> UART, I2C, SPI implementation</li>
+<li><strong>Motor control:</strong> PWM, H-bridge driver operation</li>
+<li><strong>Mechanical design:</strong> CAD modeling and 3D printing</li>
+<li><strong>Debugging techniques:</strong> Systematic troubleshooting approach</li>
+</ul>
+
+<h2>Best Practices Established</h2>
+<ul>
+<li><strong>Modular code structure:</strong> Reusable functions and libraries</li>
+<li><strong>Proper documentation:</strong> Comments and function descriptions</li>
+<li><strong>Version control:</strong> Incremental development with backups</li>
+<li><strong>Power considerations:</strong> Separate logic and motor power</li>
+<li><strong>Safety features:</strong> Emergency stops and voltage protection</li>
+<li><strong>Testing methodology:</strong> Unit tests before system integration</li>
+</ul>
+
+<h2>Areas for Future Improvement</h2>
+<ul>
+<li><strong>Advanced control algorithms:</strong> PID implementation for precise movement</li>
+<li><strong>Sensor fusion:</strong> Combining multiple sensors for better accuracy</li>
+<li><strong>Wireless protocols:</strong> Transition to WiFi or LoRa for extended range</li>
+<li><strong>Autonomous navigation:</strong> Implement pathfinding algorithms</li>
+<li><strong>Computer vision:</strong> Integrate OpenCV with ESP32-CAM</li>
+<li><strong>PCB design:</strong> Create custom boards for compact integration</li>
+</ul>
+
+<h1>Future Project Ideas</h1>
+
+<h2>Short-term Goals</h2>
+<ul>
+<li><strong>Line-following robot</strong> with PID control</li>
+<li><strong>Obstacle-avoiding car</strong> with multiple sensors</li>
+<li><strong>Bluetooth-controlled robotic arm</strong> with position memory</li>
+<li><strong>Weather station</strong> with multiple environmental sensors</li>
+<li><strong>Home automation system</strong> with relay control</li>
+</ul>
+
+<h2>Long-term Aspirations</h2>
+<ul>
+<li><strong>Autonomous delivery robot</strong> with GPS navigation</li>
+<li><strong>Quadcopter drone</strong> with Arduino flight controller</li>
+<li><strong>Bipedal walking robot</strong> with servo coordination</li>
+<li><strong>IoT sensor network</strong> with cloud data logging</li>
+<li><strong>Robot swarm coordination</strong> with inter-robot communication</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>These Arduino projects represent a journey from basic electronics to complex robotic systems. Each project provided valuable hands-on experience in embedded programming, hardware integration, and system design. The iterative development process, troubleshooting challenges, and continuous learning have built a strong foundation in robotics and electronics.</p>
+
+<p>The skills acquired through these projects are directly applicable to professional embedded systems development, IoT devices, and autonomous robotics. Future projects will build upon this foundation, incorporating more advanced sensors, machine learning algorithms, and sophisticated mechanical designs.</p>
+</div>
 
 <!-- Modal -->
 <div id="myModal" class="modal">
@@ -565,6 +884,117 @@ function closeModal() {
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -583,8 +1013,8 @@ function closeModal() {
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -606,6 +1036,7 @@ function closeModal() {
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1116,11 +1547,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1320,14 +1749,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1338,6 +1767,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

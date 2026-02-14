@@ -5,135 +5,22 @@ date:   2024-10-02 10:56:03 +0200
 categories: jekyll update
 ---
 
-[← Back to Academic Project](./my-projects.html)
-
-# Introduction
-This comprehensive synthesis project involved designing and implementing a complete RF wireless communication system from scratch. The system featured separate transmitter and receiver modules, integrating analog sensor conditioning, microcontroller data processing, digital modulation (FSK/ASK), RF amplification, and custom antennas to achieve reliable wireless data transmission over 50-100 meters.
-
-# Project Overview
-Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.
-
-## System Architecture
-
-### Transmitter Chain
-1. **Data Acquisition:** Sensors (temperature, pressure, accelerometer) with analog conditioning
-2. **Processing:** STM32 microcontroller for data framing (preamble + data + CRC)
-3. **Modulation:** FSK (Frequency Shift Keying) or ASK (Amplitude Shift Keying) implementation
-4. **RF Amplification:** Power amplifier delivering +10 to +20 dBm
-5. **Antenna:** Matched monopole or patch antenna (50Ω)
-
-### Receiver Chain
-1. **Antenna:** Receiving antenna with 50Ω impedance matching
-2. **LNA:** Low Noise Amplifier (15-20 dB gain, NF < 3 dB)
-3. **Demodulation:** FSK/ASK detector with threshold comparator
-4. **Processing:** STM32 for frame synchronization and CRC validation
-5. **Display:** LCD/OLED or UART output to PC
-
-# Design and Implementation
-
-## RF Link Budget
-Calculated using Friis transmission formula:
-- Transmit power: +10 dBm (10 mW)
-- Frequency: 433 MHz or 868 MHz
-- Antenna gains: ~2 dBi each
-- Target range: > 50 m outdoor
-- Data rate: 1-10 kbps
-
-## Modulation Schemes
-
-**FSK (Frequency Shift Keying):**
-- Binary 0 → frequency f₁
-- Binary 1 → frequency f₂
-- Frequency deviation: ±25 kHz
-- Generated using MCU PWM or dedicated modulator IC (RFM69)
-
-**ASK (Amplitude Shift Keying):**
-- Binary 0 → amplitude A₀ (low/off)
-- Binary 1 → amplitude A₁ (high)
-- Simpler implementation but more susceptible to noise
-
-## PCB Design
-Fabricated two separate PCBs:
-
-**Transmitter PCB:**
-- Sensor inputs and conditioning circuits
-- STM32 microcontroller
-- Modulator stage
-- RF power amplifier
-- Antenna matching network
-
-**Receiver PCB:**
-- Antenna input with protection
-- LNA and band-pass filter
-- Demodulator circuit
-- STM32 microcontroller
-- Display interface
-
-## Software Implementation
-
-**Transmitter Firmware:**
-```c
-// Data frame structure
-struct Packet {
-    uint8_t preamble[4];    // Sync pattern
-    uint8_t data[32];       // Payload
-    uint16_t crc;           // Error detection
-};
-
-// Transmit function
-void transmit_packet(uint8_t *data, uint8_t length) {
-    prepare_frame(data, length);
-    modulate_and_send();
-    wait_for_ack();
-}
-```
-
-**Receiver Firmware:**
-- Preamble detection for synchronization
-- CRC verification
-- Error handling and retransmission requests
-
-# Testing and Validation
-
-## Unit Testing
-- Power supply voltages and ripple
-- Modulation signal quality (oscilloscope)
-- RF output power and spectrum (spectrum analyzer)
-- Demodulator threshold levels
-
-## System Integration
-- Short-range testing (1 m) for initial validation
-- Progressive distance testing up to 100 m
-- RSSI (Received Signal Strength Indicator) measurements
-- Bit Error Rate (BER) characterization
-- Performance in noisy environments
-
-## Results
-Successfully achieved:
-- Reliable communication at 50+ meters outdoor
-- Data rate of 9600 bps
-- BER < 10⁻³ under normal conditions
-- Power consumption optimized for battery operation
-
-# Conclusion
-This project provided invaluable hands-on experience in designing complete RF communication systems. We successfully integrated multiple engineering disciplines to create a functional wireless link, demonstrating the importance of systematic design, careful testing, and iterative optimization in complex electronic systems.
-
 <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -161,6 +48,234 @@ p {
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet de synthese complet a consiste a concevoir et implementer un systeme de communication sans fil RF de A a Z. Le systeme comprenait des modules emetteur et recepteur separes, integrant le conditionnement de capteurs analogiques, le traitement de donnees par microcontroleur, la modulation numerique (FSK/ASK), l'amplification RF et des antennes personnalisees pour realiser une transmission de donnees sans fil fiable sur 50 a 100 metres.</p>
+
+<h1>Vue d'ensemble du projet</h1>
+<p>En travaillant en binome sur 60 heures, nous avons developpe une liaison sans fil full-duplex ou half-duplex operant dans la bande ISM (433 ou 868 MHz). Le projet a synthetise les connaissances en electronique analogique, systemes numeriques, circuits RF, telecommunications et programmation embarquee.</p>
+
+<h2>Architecture du systeme</h2>
+
+<h3>Chaine d'emission</h3>
+<ol>
+<li><strong>Acquisition de donnees :</strong> Capteurs (temperature, pression, accelerometre) avec conditionnement analogique</li>
+<li><strong>Traitement :</strong> Microcontroleur STM32 pour la mise en trame des donnees (preambule + donnees + CRC)</li>
+<li><strong>Modulation :</strong> Implementation FSK (Frequency Shift Keying) ou ASK (Amplitude Shift Keying)</li>
+<li><strong>Amplification RF :</strong> Amplificateur de puissance delivrant +10 a +20 dBm</li>
+<li><strong>Antenne :</strong> Monopole ou patch adapte a 50 ohms</li>
+</ol>
+
+<h3>Chaine de reception</h3>
+<ol>
+<li><strong>Antenne :</strong> Antenne de reception adaptee a 50 ohms</li>
+<li><strong>LNA :</strong> Amplificateur faible bruit (gain 15-20 dB, facteur de bruit &lt; 3 dB)</li>
+<li><strong>Demodulation :</strong> Detecteur FSK/ASK avec comparateur a seuil</li>
+<li><strong>Traitement :</strong> STM32 pour la synchronisation de trame et la validation CRC</li>
+<li><strong>Affichage :</strong> Sortie LCD/OLED ou UART vers PC</li>
+</ol>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This comprehensive synthesis project involved designing and implementing a complete RF wireless communication system from scratch. The system featured separate transmitter and receiver modules, integrating analog sensor conditioning, microcontroller data processing, digital modulation (FSK/ASK), RF amplification, and custom antennas to achieve reliable wireless data transmission over 50-100 meters.</p>
+
+<h1>Project Overview</h1>
+<p>Working in pairs over 60 hours, we developed a full duplex or half-duplex wireless link operating in the ISM band (433 or 868 MHz). The project synthesized knowledge from analog electronics, digital systems, RF circuits, telecommunications, and embedded programming.</p>
+
+<h2>System Architecture</h2>
+
+<h3>Transmitter Chain</h3>
+<ol>
+<li><strong>Data Acquisition:</strong> Sensors (temperature, pressure, accelerometer) with analog conditioning</li>
+<li><strong>Processing:</strong> STM32 microcontroller for data framing (preamble + data + CRC)</li>
+<li><strong>Modulation:</strong> FSK (Frequency Shift Keying) or ASK (Amplitude Shift Keying) implementation</li>
+<li><strong>RF Amplification:</strong> Power amplifier delivering +10 to +20 dBm</li>
+<li><strong>Antenna:</strong> Matched monopole or patch antenna (50 ohm)</li>
+</ol>
+
+<h3>Receiver Chain</h3>
+<ol>
+<li><strong>Antenna:</strong> Receiving antenna with 50 ohm impedance matching</li>
+<li><strong>LNA:</strong> Low Noise Amplifier (15-20 dB gain, NF &lt; 3 dB)</li>
+<li><strong>Demodulation:</strong> FSK/ASK detector with threshold comparator</li>
+<li><strong>Processing:</strong> STM32 for frame synchronization and CRC validation</li>
+<li><strong>Display:</strong> LCD/OLED or UART output to PC</li>
+</ol>
+</div>
+
+<div class="lang-fr">
+<h1>Conception et implementation</h1>
+
+<h2>Bilan de liaison RF</h2>
+<p>Calcul a l'aide de la formule de transmission de Friis :</p>
+<ul>
+<li>Puissance d'emission : +10 dBm (10 mW)</li>
+<li>Frequence : 433 MHz ou 868 MHz</li>
+<li>Gains d'antenne : environ 2 dBi chacun</li>
+<li>Portee cible : &gt; 50 m en exterieur</li>
+<li>Debit : 1-10 kbps</li>
+</ul>
+
+<h2>Schemas de modulation</h2>
+<p><strong>FSK (Frequency Shift Keying) :</strong></p>
+<ul>
+<li>Binaire 0 : frequence f1</li>
+<li>Binaire 1 : frequence f2</li>
+<li>Deviation de frequence : +/-25 kHz</li>
+<li>Genere par PWM du MCU ou modulateur dedie (RFM69)</li>
+</ul>
+
+<p><strong>ASK (Amplitude Shift Keying) :</strong></p>
+<ul>
+<li>Binaire 0 : amplitude A0 (faible/eteint)</li>
+<li>Binaire 1 : amplitude A1 (elevee)</li>
+<li>Implementation plus simple mais plus sensible au bruit</li>
+</ul>
+
+<h2>Conception du PCB</h2>
+<p>Fabrication de deux PCB separes :</p>
+
+<p><strong>PCB emetteur :</strong></p>
+<ul>
+<li>Entrees capteurs et circuits de conditionnement</li>
+<li>Microcontroleur STM32</li>
+<li>Etage de modulation</li>
+<li>Amplificateur de puissance RF</li>
+<li>Reseau d'adaptation d'antenne</li>
+</ul>
+
+<p><strong>PCB recepteur :</strong></p>
+<ul>
+<li>Entree antenne avec protection</li>
+<li>LNA et filtre passe-bande</li>
+<li>Circuit demodulateur</li>
+<li>Microcontroleur STM32</li>
+<li>Interface d'affichage</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Design and Implementation</h1>
+
+<h2>RF Link Budget</h2>
+<p>Calculated using Friis transmission formula:</p>
+<ul>
+<li>Transmit power: +10 dBm (10 mW)</li>
+<li>Frequency: 433 MHz or 868 MHz</li>
+<li>Antenna gains: ~2 dBi each</li>
+<li>Target range: &gt; 50 m outdoor</li>
+<li>Data rate: 1-10 kbps</li>
+</ul>
+
+<h2>Modulation Schemes</h2>
+<p><strong>FSK (Frequency Shift Keying):</strong></p>
+<ul>
+<li>Binary 0: frequency f1</li>
+<li>Binary 1: frequency f2</li>
+<li>Frequency deviation: +/-25 kHz</li>
+<li>Generated using MCU PWM or dedicated modulator IC (RFM69)</li>
+</ul>
+
+<p><strong>ASK (Amplitude Shift Keying):</strong></p>
+<ul>
+<li>Binary 0: amplitude A0 (low/off)</li>
+<li>Binary 1: amplitude A1 (high)</li>
+<li>Simpler implementation but more susceptible to noise</li>
+</ul>
+
+<h2>PCB Design</h2>
+<p>Fabricated two separate PCBs:</p>
+
+<p><strong>Transmitter PCB:</strong></p>
+<ul>
+<li>Sensor inputs and conditioning circuits</li>
+<li>STM32 microcontroller</li>
+<li>Modulator stage</li>
+<li>RF power amplifier</li>
+<li>Antenna matching network</li>
+</ul>
+
+<p><strong>Receiver PCB:</strong></p>
+<ul>
+<li>Antenna input with protection</li>
+<li>LNA and band-pass filter</li>
+<li>Demodulator circuit</li>
+<li>STM32 microcontroller</li>
+<li>Display interface</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Tests et validation</h1>
+
+<h2>Tests unitaires</h2>
+<ul>
+<li>Tensions et ondulations de l'alimentation</li>
+<li>Qualite du signal de modulation (oscilloscope)</li>
+<li>Puissance et spectre RF en sortie (analyseur de spectre)</li>
+<li>Niveaux de seuil du demodulateur</li>
+</ul>
+
+<h2>Integration systeme</h2>
+<ul>
+<li>Tests courte portee (1 m) pour validation initiale</li>
+<li>Tests de distance progressifs jusqu'a 100 m</li>
+<li>Mesures RSSI (indicateur de puissance du signal recu)</li>
+<li>Caracterisation du taux d'erreur binaire (BER)</li>
+<li>Performances en environnement bruite</li>
+</ul>
+
+<h2>Resultats</h2>
+<p>Nous avons atteint avec succes :</p>
+<ul>
+<li>Communication fiable a plus de 50 metres en exterieur</li>
+<li>Debit de 9600 bps</li>
+<li>BER &lt; 10^-3 en conditions normales</li>
+<li>Consommation optimisee pour fonctionnement sur batterie</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>Ce projet a fourni une experience pratique inestimable dans la conception de systemes de communication RF complets. Nous avons integre avec succes plusieurs disciplines d'ingenierie pour creer une liaison sans fil fonctionnelle, demontrant l'importance d'une conception systematique, de tests rigoureux et d'une optimisation iterative dans les systemes electroniques complexes.</p>
+</div>
+
+<div class="lang-en">
+<h1>Testing and Validation</h1>
+
+<h2>Unit Testing</h2>
+<ul>
+<li>Power supply voltages and ripple</li>
+<li>Modulation signal quality (oscilloscope)</li>
+<li>RF output power and spectrum (spectrum analyzer)</li>
+<li>Demodulator threshold levels</li>
+</ul>
+
+<h2>System Integration</h2>
+<ul>
+<li>Short-range testing (1 m) for initial validation</li>
+<li>Progressive distance testing up to 100 m</li>
+<li>RSSI (Received Signal Strength Indicator) measurements</li>
+<li>Bit Error Rate (BER) characterization</li>
+<li>Performance in noisy environments</li>
+</ul>
+
+<h2>Results</h2>
+<p>Successfully achieved:</p>
+<ul>
+<li>Reliable communication at 50+ meters outdoor</li>
+<li>Data rate of 9600 bps</li>
+<li>BER &lt; 10^-3 under normal conditions</li>
+<li>Power consumption optimized for battery operation</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>This project provided invaluable hands-on experience in designing complete RF communication systems. We successfully integrated multiple engineering disciplines to create a functional wireless link, demonstrating the importance of systematic design, careful testing, and iterative optimization in complex electronic systems.</p>
+</div>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -180,668 +295,3 @@ function closeModal() {
   modal.style.display = "none";
 }
 </script>
-
----
-
-## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION (Architecture système)
-
-### Chaîne d'émission
-
-**Bloc 1 : Acquisition :**
-- Capteur (température, pression, accéléromètre)
-- Conditionnement analogique (ampli, filtrage)
-- ADC microcontrôleur
-
-**Bloc 2 : Traitement et codage :**
-- MCU (STM32, Arduino)
-- Mise en forme données (trame : préambule, data, CRC)
-- Codage source (compression si besoin)
-
-**Bloc 3 : Modulation :**
-- **FSK** (Frequency Shift Keying) : 0→f1, 1→f2
-- **ASK** (Amplitude Shift Keying) : 0→A0, 1→A1
-- Génération MCU (PWM, DAC) ou CI modulateur (ex: RFM69)
-
-**Bloc 4 : Amplification RF :**
-- PA (Power Amplifier) : +10 à +20 dBm
-- Transistor (BFG, 2N2222) ou CI (RFX2401)
-- Adaptation impédance
-
-**Bloc 5 : Antenne TX :**
-- Monopole, patch, ou dipole
-- Adaptation 50Ω
-
-### Chaîne de réception
-
-**Bloc 1 : Antenne RX**
-
-**Bloc 2 : Préamplification :**
-- LNA (Low Noise Amplifier) : gain 15-20 dB, NF <3 dB
-- Filtrage passe-bande (rejet hors-bande)
-
-**Bloc 3 : Démodulation :**
-- Détecteur FSK/ASK
-- Comparateur à seuil → signal TTL
-
-**Bloc 4 : Traitement numérique :**
-- MCU réception
-- Détection préambule (synchronisation)
-- Vérification CRC
-- Extraction données
-
-**Bloc 5 : Affichage :**
-- LCD, OLED, ou UART PC
-
----
-
-## PART C: ASPECTS TECHNIQUES (Réalisation)
-
-### Phase 1 : Conception (20h)
-
-**Spécifications :**
-- Fréquence : 433 MHz ou 868 MHz (ISM)
-- Débit : 1-10 kbps
-- Portée : >50 m (extérieur)
-- Puissance TX : +10 dBm (10 mW)
-
-**Schéma fonctionnel :**
-- Blocs détaillés
-- Calcul bilan de liaison (Friis)
-- Choix composants
-
-### Phase 2 : Simulation (10h)
-
-**Analogique (LTSpice) :**
-- Amplis RF (PA, LNA)
-- Filtres passe-bande
-
-**Numérique (MATLAB) :**
-- Modulation FSK/ASK
-- BER vs SNR
-
-### Phase 3 : Réalisation PCB (15h)
-
-**2 cartes :**
-- **Carte TX** : capteur + MCU + modulateur + PA + antenne
-- **Carte RX** : antenne + LNA + démodulateur + MCU + affichage
-
-**Conception :**
-- Schémas KiCad/Altium
-- PCB 2-4 couches
-- Séparation analog/RF/digital
-- Via stitching GND
-- Fabrication + assemblage
-
-### Phase 4 : Tests et validation (15h)
-
-**Tests unitaires :**
-- Alimentation (tensions, ondulations)
-- Génération modulation (oscillo)
-- Amplification RF (analyseur spectre)
-- Réception signal (démodulation)
-
-**Tests système :**
-- Liaison courte distance (1 m)
-- Liaison longue distance (50-100 m)
-- Mesure RSSI, BER
-- Test en environnement bruité
-
----
-
-## PART D: ANALYSE ET RÉFLEXION
-
-### Livrables
-- Rapport technique (40 pages) : conception, simulations, réalisation, tests
-- Schémas et PCB
-- Code source (MCU TX/RX)
-- Présentation + démonstration
-
-### Évaluation
-- Conception système (20%)
-- Réalisation matérielle (25%)
-- Programmation (15%)
-- Tests et validation (20%)
-- Rapport (15%)
-- Présentation (5%)
-
-### Compétences acquises
-- Conception systèmes RF complets
-- Intégration analogique-numérique-RF
-- Modulation/démodulation pratique
-- Gestion projet complexe en binome
-- Tests et validation systématiques
-
-### Applications professionnelles
-- Ingénieur systèmes IoT
-- Concepteur électronique RF
-- R&D télécommunications
-
-## 📚 Contexte du projet
-
-### Chaîne de communication complète
-
-**Architecture générale :**
-```
-[Capteur] → [Conditionnement] → [MCU] → [Modulation] 
-    → [Amplification RF] → [Antenne TX]
-    
-        ~~~ Canal radio ~~~
-        
-[Antenne RX] → [Amplification RF] → [Démodulation] 
-    → [MCU] → [Traitement] → [Affichage/Transmission]
-```
-
-### Projets types
-
-#### Liaison audio sans fil
-- Émetteur audio FM/FSK
-- Récepteur avec démodulation
-- Modulation analogique ou numérique
-- Bande ISM (2.4 GHz ou 433/868 MHz)
-
-#### Télémétrie capteurs
-- Émetteur multi-capteurs (T°, P, humidité)
-- Modulation numérique (FSK, PSK)
-- Récepteur avec décodage
-- Affichage temps réel
-- Stockage données
-
-#### Commande à distance
-- Émetteur (télécommande)
-- Codage sécurisé
-- Récepteur
-- Actions sur actuateurs
-- Feedback
-
-## 🛠️ Exemple détaillé : Système de communication RF
-
-### Cahier des charges
-
-#### Spécifications système
-
-**Fréquence :**
-- Bande ISM : 433 MHz ou 868 MHz (Europe)
-- Alternative : 2.4 GHz (WiFi/BT)
-- Largeur de bande : 200 kHz
-
-**Modulation :**
-- FSK (Frequency Shift Keying)
-- Débit : 9600 bps minimum
-- Déviation : ±25 kHz
-
-**Puissance :**
-- Émetteur : 10 mW (10 dBm)
-- Portée : 100m en champ libre
-- Respect réglementation ETSI
-
-**Communication :**
-- Liaison half-duplex
-- Protocole simple (préambule + données + CRC)
-- Acquittements
-
-### Conception émetteur
-
-#### Architecture émetteur
-
-**Blocs fonctionnels :**
-
-1. **Acquisition données :**
-   - Microcontrôleur (STM32)
-   - Interface capteurs ou audio
-   - Échantillonnage et conversion A/N
-
-2. **Codage et mise en forme :**
-   - Codage source (compression optionnelle)
-   - Codage canal (détection erreurs)
-   - Mise en paquet
-   - Ajout CRC
-
-3. **Modulation :**
-   - Génération FSK
-   - VCO (Voltage Controlled Oscillator)
-   - Ou module RF intégré
-
-4. **Émission RF :**
-   - Amplification PA (Power Amplifier)
-   - Filtrage passe-bande
-   - Adaptation d'impédance
-   - Antenne
-
-#### Schémas émetteur
-
-**Option 1 : Module RF intégré**
-
-Utilisation module type RFM69, SX1276 (LoRa), nRF24L01, etc.
-
-*Avantages :*
-- Simple à intégrer
-- Fiable
-- Homologué
-- Communication SPI avec MCU
-
-*Exemple avec RFM69 :*
-- Fréquence : 433/868/915 MHz
-- Modulation FSK/GFSK
-- Puissance : jusqu'à +20 dBm
-- Sensibilité : -120 dBm
-- Interface SPI
-- Configuration par registres
-
-**Connexions :**
-```
-STM32 (SPI) ↔ RFM69
-    MOSI → MOSI
-    MISO → MISO
-    SCK  → SCK
-    NSS  → NSS
-    DIO0 → GPIO (interruption)
-```
-
-**Option 2 : Conception discrète**
-
-*Blocs à concevoir :*
-
-**VCO (Oscillateur) :**
-- Générateur 433/868 MHz
-- Modulation FM par tension
-- Stabilité en fréquence (PLL + quartz)
-
-**Amplificateur de puissance :**
-- Classe C ou E (efficacité)
-- Gain : 10-20 dB
-- P out : 10 mW (+10 dBm)
-- Transistor RF (BFR93, 2N3904, etc.)
-
-**Filtrage :**
-- Filtre passe-bande centré sur fo
-- Rejection harmoniques
-- Topologie LC ou SAW
-
-**Adaptation et antenne :**
-- Réseau L, π ou stub
-- Smith chart
-- Mesure S11 < -10 dB
-
-#### Logiciel émetteur
-
-**Structure code :**
-
-```c
-void transmit_packet(uint8_t *data, uint8_t length) {
-    // 1. Préparation paquet
-    packet[0] = PREAMBLE;     // 0xAA (synchronisation)
-    packet[1] = SYNC_WORD;    // 0x2D (identification)
-    packet[2] = length;       // Longueur données
-    memcpy(&packet[3], data, length);
-    
-    // 2. Calcul CRC
-    uint16_t crc = calculate_crc16(data, length);
-    packet[3 + length] = (crc >> 8) & 0xFF;
-    packet[4 + length] = crc & 0xFF;
-    
-    // 3. Émission via module RF
-    RFM69_send(packet, 5 + length);
-    
-    // 4. Attente acquittement (optionnel)
-    wait_for_ack(TIMEOUT_MS);
-}
-```
-
-**Gestion protocole :**
-- Détection de collision (CSMA)
-- Retransmissions automatiques
-- Horodatage
-- Numéro de séquence
-
-### Conception récepteur
-
-#### Architecture récepteur
-
-**Blocs fonctionnels :**
-
-1. **Réception RF :**
-   - Antenne
-   - Filtre passe-bande
-   - LNA (Low Noise Amplifier)
-   - Mélangeur (down-conversion)
-
-2. **Démodulation :**
-   - Discriminateur FM
-   - Ou démodulateur numérique (DSP)
-   - Récupération d'horloge
-
-3. **Décodage :**
-   - Synchronisation (préambule)
-   - Récupération des données
-   - Vérification CRC
-   - Détection et correction d'erreurs
-
-4. **Traitement :**
-   - MCU (STM32)
-   - Interprétation données
-   - Actions ou affichage
-   - Transmission vers PC (USB/UART)
-
-#### Schémas récepteur
-
-**Option 1 : Module RF intégré**
-
-Même module que l'émetteur (RFM69, etc.) en mode RX
-
-*Configuration réception :*
-```c
-RFM69_setMode(RX_MODE);
-RFM69_setFrequency(433.92 MHz);
-RFM69_setBitrate(9600);
-RFM69_setRxBandwidth(50 kHz);
-```
-
-*Interruption sur réception :*
-```c
-void RFM69_IRQ_Handler(void) {
-    if (packet_received) {
-        uint8_t length = RFM69_read_FIFO(rx_buffer);
-        process_packet(rx_buffer, length);
-    }
-}
-```
-
-**Option 2 : Conception discrète**
-
-**LNA (Low Noise Amplifier) :**
-- Faible bruit (NF < 2 dB)
-- Gain : 15-20 dB
-- Transistor faible bruit (ATF-531P8, etc.)
-
-**Mélangeur et FI (Fréquence Intermédiaire) :**
-- Down-conversion vers FI (10.7 MHz typique)
-- Oscillateur local (LO)
-- Filtre FI
-
-**Démodulateur FM :**
-- Discriminateur (quadrature detector)
-- PLL (CD4046, NE565)
-- Sortie bande de base
-
-**Comparateur :**
-- Conversion analogique → numérique
-- Seuil ajustable
-- Hystérésis
-
-#### Logiciel récepteur
-
-**Structure code :**
-
-```c
-void receive_handler(void) {
-    uint8_t rx_buffer[MAX_PACKET_SIZE];
-    
-    // 1. Attente données
-    if (RFM69_available()) {
-        uint8_t length = RFM69_receive(rx_buffer);
-        
-        // 2. Vérification préambule et sync
-        if (rx_buffer[0] == PREAMBLE && 
-            rx_buffer[1] == SYNC_WORD) {
-            
-            // 3. Extraction données
-            uint8_t data_length = rx_buffer[2];
-            uint8_t *data = &rx_buffer[3];
-            
-            // 4. Vérification CRC
-            uint16_t crc_received = (rx_buffer[3+data_length] << 8) | 
-                                     rx_buffer[4+data_length];
-            uint16_t crc_calculated = calculate_crc16(data, data_length);
-            
-            if (crc_received == crc_calculated) {
-                // 5. Traitement données
-                process_data(data, data_length);
-                
-                // 6. Envoi acquittement
-                send_ack();
-            } else {
-                // Erreur CRC
-                error_count++;
-            }
-        }
-    }
-}
-```
-
-**Traitement données :**
-- Affichage LCD/OLED
-- Transmission UART vers PC
-- Enregistrement sur SD
-- Actions sur sorties
-
-### Antennes
-
-#### Design antennes
-
-**Émetteur et récepteur :**
-- Antennes identiques (réciprocité)
-- Monopole λ/4 sur plan de masse
-- Ou antenne fouet accordée
-- Ou antenne PCB (économique)
-
-**Dimensionnement 433 MHz :**
-- λ = 69 cm
-- λ/4 = 17.3 cm
-- Avec plan de masse 20×20 cm minimum
-
-**Dimensionnement 868 MHz :**
-- λ = 34.5 cm
-- λ/4 = 8.6 cm
-- Plus compact
-
-**Optimisations :**
-- Simulation MMANA-GAL ou CST
-- Mesure S11 avec VNA
-- Ajustement longueur
-
-### Tests et validation
-
-#### Tests unitaires
-
-**Émetteur :**
-- Fréquence porteuse (analyseur de spectre)
-- Puissance émise (wattmètre RF)
-- Déviation fréquence (FSK)
-- Spectre (largeur bande, harmoniques)
-- Modulation visualisée
-
-**Récepteur :**
-- Sensibilité (puissance minimum détectable)
-- Sélectivité (bande passante)
-- Démodulation correcte
-- Taux d'erreur sans bruit
-
-#### Tests d'intégration
-
-**Liaison complète :**
-- Émission → réception
-- Distance variable
-- Environnements différents (indoor/outdoor)
-- Obstacles
-
-**Mesures de performances :**
-
-**Portée :**
-- Distance max pour BER acceptable
-- Selon environnement
-- Comparaison avec théorie (Friis)
-
-**Taux d'erreur binaire (BER) :**
-$$BER = \frac{\text{Bits erronés}}{\text{Bits totaux}}$$
-
-Objectif : BER < 10^-3 à 10^-5
-
-**Débit effectif :**
-- Avec entêtes et CRC
-- Avec retransmissions
-- Débit utile vs débit brut
-
-**Latence :**
-- Temps émission → réception
-- Temps de traitement
-- Bout en bout
-
-#### Tests en conditions réelles
-
-**Scénarios d'usage :**
-- Intérieur bâtiment
-- Extérieur champ libre
-- Avec interférences (WiFi, BT)
-- Mobilité (véhicule)
-
-**Robustesse :**
-- Variation température
-- Alimentation variable
-- Durée continue
-- Stress test
-
-### Améliorations possibles
-
-#### Hardware
-- Amplification adaptative (AGC)
-- Filtres adaptatifs
-- Diversité d'antennes
-- Meilleure sensibilité (LNA optimisé)
-
-#### Software
-- FEC (Forward Error Correction)
-- ARQ (Automatic Repeat Request)
-- Codage convolutif ou Turbo
-- Compression données
-- Chiffrement (AES)
-
-#### Protocole
-- CSMA/CA (éviter collisions)
-- Multi-canaux
-- Time-slotting (TDMA)
-- Mesh networking
-
-## 💻 Outils utilisés
-
-### Conception RF
-- **AWR Microwave Office** : Circuits RF
-- **Qucs** : Open source simulation RF
-- **LTspice** : Circuits RF simples
-
-### Simulation antennes
-- **MMANA-GAL** : Antennes filaires
-- **CST/HFSS** : 3D EM
-
-### PCB
-- **Altium/KiCad** : Design RF
-
-### Mesure RF
-- **Analyseur de spectre** : Fréquence, puissance, spectre
-- **VNA** : S-paramètres, adaptation
-- **Wattmètre RF** : Puissance
-- **Générateur RF** : Tests
-
-### Software
-- **STM32CubeIDE** / **PlatformIO**
-- **GNU Radio** : Prototypage SDR
-- **Python** : Post-traitement, GUI
-
-## 📊 Livrables
-
-### Documentation
-- Cahier des charges
-- Architecture système
-- Schémas émetteur et récepteur
-- PCB et layout
-- Logiciels (code source commenté)
-- Calculs de bilans de liaison
-- Résultats de simulations
-- Protocole de communication
-- Tests et mesures
-- Rapport technique complet (60-100 pages)
-
-### Réalisations
-- Émetteur fonctionnel
-- Récepteur fonctionnel
-- Antennes
-- Démonstration liaison
-- Interface utilisateur (PC ou LCD)
-
-### Présentation
-- Soutenance avec démo live
-- Vidéo de démonstration
-- Poster technique
-
-## 🔗 Liens avec les cours
-
-- **Télécommunications (S3, S4)** : Modulation
-- **Antennes et Propagation (S4)** : Conception antennes
-- **Circuits Hyperfréquences (S3)** : Circuits RF
-- **Filtrage Numérique (S4)** : Traitement signal
-- **IE** : Programmation embarquée
-- **ER** : Conception PCB RF
-
-## 📖 Compétences développées
-
-- Conception de systèmes RF complets
-- Modulation et démodulation
-- Protocoles de communication
-- Design d'antennes
-- PCB RF (impédance contrôlée)
-- Mesures RF
-- Programmation communication
-- Bilans de liaison
-- Gestion de projet complexe
-- Travail en équipe
-
-## 💡 Extensions possibles
-
-### Fonctionnalités avancées
-- Liaison bidirectionnelle (full-duplex)
-- Multiple émetteurs (réseau)
-- Routage multi-hop
-- Localisation (RSSI, TOA)
-- Adaptive data rate
-
-### Applications
-- Réseau de capteurs (WSN)
-- Domotique sans fil
-- Télémétrie véhicules
-- Commande drone
-- Audio streaming
-
-## ⚠️ Conformité réglementaire
-
-### Puissance et fréquence
-- Respecter limites ETSI EN 300 220
-- Bandes ISM : 433.05-434.79 MHz, 863-870 MHz
-- Puissance max : 10 mW (433 MHz), 25 mW (868 MHz)
-- Duty cycle parfois limité
-
-### Homologation
-- Tests EMC nécessaires pour commercialisation
-- Marquage CE
-- FCC (États-Unis) si export
-
-### Sécurité
-- Pas d'interférences avec services critiques
-- Tests en environnement contrôlé
-
-## 🎯 Critères d'évaluation
-
-- Conception système (20%)
-- Réalisation émetteur (15%)
-- Réalisation récepteur (15%)
-- Liaison fonctionnelle (20%)
-- Tests et performances (15%)
-- Documentation (10%)
-- Soutenance et démo (5%)
-
-## 📚 Ressources
-
-- "RF Circuit Design" - Chris Bowick
-- "Wireless Communications" - Andrea Goldsmith
-- Application notes Analog Devices, Texas Instruments
-- Datasheets modules RF (RFM69, SX1276, nRF24)
-- Forums RF (edaboard, electronics.stackexchange)
-- Standards ETSI EN 300 220

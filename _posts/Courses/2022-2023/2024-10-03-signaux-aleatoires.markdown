@@ -49,795 +49,1585 @@ tr:nth-child(even) {
     margin: 15px 0;
     font-family: 'Courier New', monospace;
 }
+
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2022-2023.html">← Retour aux Cours 2022-2023</a>
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
 </div>
 
-# 🎲 Signaux Aléatoires - Semestre 6
+<!-- ============================================ -->
+<!--              FRENCH VERSION                  -->
+<!-- ============================================ -->
+<div class="lang-fr">
 
-**Année Universitaire** : 2022-2023  
-**Semestre** : 6  
-**Crédits** : 2.5 ECTS  
-**Spécialité** : Traitement du Signal et Probabilités
+<h1>&#x1F3B2; Signaux Al&eacute;atoires - Semestre 6</h1>
 
----
+<p><strong>Ann&eacute;e Universitaire</strong> : 2022-2023<br>
+<strong>Semestre</strong> : 6<br>
+<strong>Cr&eacute;dits</strong> : 2.5 ECTS<br>
+<strong>Sp&eacute;cialit&eacute;</strong> : Traitement du Signal et Probabilit&eacute;s</p>
 
-## PART A - Présentation Générale du Module
+<hr>
+
+<h2>PART A - Pr&eacute;sentation G&eacute;n&eacute;rale du Module</h2>
 
 <h3 class="section-title">Vue d'ensemble</h3>
 
-Les signaux aléatoires sont omniprésents en ingénierie : bruit dans les circuits électroniques, perturbations dans les télécommunications, mesures avec incertitudes. Ce cours introduit les outils mathématiques pour modéliser, analyser et traiter ces signaux aléatoires en utilisant la théorie des probabilités et les processus stochastiques.
-**Objectifs pédagogiques** :
-- Maîtriser les concepts de probabilités et variables aléatoires
-- Comprendre les processus stochastiques et leur caractérisation
-- Analyser statistiquement les signaux bruités
-- Modéliser le bruit dans les systèmes de communication
-- Appliquer le filtrage optimal (Wiener, corrélation)
+<p>Les signaux al&eacute;atoires sont omnipr&eacute;sents en ing&eacute;nierie : bruit dans les circuits &eacute;lectroniques, perturbations dans les t&eacute;l&eacute;communications, mesures avec incertitudes. Ce cours introduit les outils math&eacute;matiques pour mod&eacute;liser, analyser et traiter ces signaux al&eacute;atoires en utilisant la th&eacute;orie des probabilit&eacute;s et les processus stochastiques.</p>
+
+<p><strong>Objectifs p&eacute;dagogiques</strong> :</p>
+<ul>
+<li>Ma&icirc;triser les concepts de probabilit&eacute;s et variables al&eacute;atoires</li>
+<li>Comprendre les processus stochastiques et leur caract&eacute;risation</li>
+<li>Analyser statistiquement les signaux bruit&eacute;s</li>
+<li>Mod&eacute;liser le bruit dans les syst&egrave;mes de communication</li>
+<li>Appliquer le filtrage optimal (Wiener, corr&eacute;lation)</li>
+</ul>
 
 <h3 class="section-title">Position dans le cursus</h3>
 
-Ce module s'appuie sur :
-- **Signal (S5)** : transformée de Fourier, systèmes linéaires
-- **Mathématiques** : probabilités, intégrales, séries
-- **Filtrage Numérique (S6)** : filtres, traitement du signal
+<p>Ce module s'appuie sur :</p>
+<ul>
+<li><strong>Signal (S5)</strong> : transform&eacute;e de Fourier, syst&egrave;mes lin&eacute;aires</li>
+<li><strong>Math&eacute;matiques</strong> : probabilit&eacute;s, int&eacute;grales, s&eacute;ries</li>
+<li><strong>Filtrage Num&eacute;rique (S6)</strong> : filtres, traitement du signal</li>
+</ul>
 
-Il prépare aux applications :
-- **Télécommunications** : analyse des canaux bruités, BER
-- **Traitement du signal** : débruitage, estimation
-- **Systèmes embarqués** : mesures avec incertitudes, capteurs
+<p>Il pr&eacute;pare aux applications :</p>
+<ul>
+<li><strong>T&eacute;l&eacute;communications</strong> : analyse des canaux bruit&eacute;s, BER</li>
+<li><strong>Traitement du signal</strong> : d&eacute;bruitage, estimation</li>
+<li><strong>Syst&egrave;mes embarqu&eacute;s</strong> : mesures avec incertitudes, capteurs</li>
+</ul>
 
----
+<hr>
 
-## PART B - Expérience Personnelle et Contexte d'Apprentissage
+<h2>PART B - Exp&eacute;rience Personnelle et Contexte d'Apprentissage</h2>
 
 <h3 class="section-title">Organisation et ressources</h3>
 
-Le module était organisé en cours magistraux et travaux dirigés sur le semestre :
+<p>Le module &eacute;tait organis&eacute; en cours magistraux et travaux dirig&eacute;s sur le semestre :</p>
 
-**Cours magistraux (20h)** :
-Structuré en 4 chapitres (ChapterI à ChapterIV) :
-- Chapitre I : Rappels de probabilités et variables aléatoires
-- Chapitre II : Couples et vecteurs aléatoires
-- Chapitre III : Processus stochastiques
-- Chapitre IV : Filtrage linéaire des signaux aléatoires
+<p><strong>Cours magistraux (20h)</strong> :<br>
+Structur&eacute; en 4 chapitres (ChapterI &agrave; ChapterIV) :</p>
+<ul>
+<li>Chapitre I : Rappels de probabilit&eacute;s et variables al&eacute;atoires</li>
+<li>Chapitre II : Couples et vecteurs al&eacute;atoires</li>
+<li>Chapitre III : Processus stochastiques</li>
+<li>Chapitre IV : Filtrage lin&eacute;aire des signaux al&eacute;atoires</li>
+</ul>
 
-**Travaux dirigés (16h)** :
-Exercices d'application avec corrections disponibles :
-- TD 1.1, 1.2, 1.3 : variables aléatoires
-- TD 2.1, 2.3 : couples aléatoires
-- TD 3.1 : processus stochastiques
+<p><strong>Travaux dirig&eacute;s (16h)</strong> :<br>
+Exercices d'application avec corrections disponibles :</p>
+<ul>
+<li>TD 1.1, 1.2, 1.3 : variables al&eacute;atoires</li>
+<li>TD 2.1, 2.3 : couples al&eacute;atoires</li>
+<li>TD 3.1 : processus stochastiques</li>
+</ul>
 
-**Supports pédagogiques** :
-- Fascicules de cours (4 chapitres en PDF)
-- Énoncés de TD avec corrections
-- Annales d'examens de 2014 à 2017 avec corrigés
+<p><strong>Supports p&eacute;dagogiques</strong> :</p>
+<ul>
+<li>Fascicules de cours (4 chapitres en PDF)</li>
+<li>&Eacute;nonc&eacute;s de TD avec corrections</li>
+<li>Annales d'examens de 2014 &agrave; 2017 avec corrig&eacute;s</li>
+</ul>
 
-<h3 class="section-title">Méthode de travail</h3>
+<h3 class="section-title">M&eacute;thode de travail</h3>
 
-**Cours théorique** :
-Beaucoup de définitions mathématiques et de démonstrations. Nécessité de bien assimiler les concepts fondamentaux (densité de probabilité, fonction de répartition, espérance) avant d'aborder les processus stochastiques.
+<p><strong>Cours th&eacute;orique</strong> :<br>
+Beaucoup de d&eacute;finitions math&eacute;matiques et de d&eacute;monstrations. N&eacute;cessit&eacute; de bien assimiler les concepts fondamentaux (densit&eacute; de probabilit&eacute;, fonction de r&eacute;partition, esp&eacute;rance) avant d'aborder les processus stochastiques.</p>
 
-**TD pratiques** :
-Exercices d'application directe puis problèmes plus complexes. Les corrections détaillées permettent de vérifier sa compréhension.
+<p><strong>TD pratiques</strong> :<br>
+Exercices d'application directe puis probl&egrave;mes plus complexes. Les corrections d&eacute;taill&eacute;es permettent de v&eacute;rifier sa compr&eacute;hension.</p>
 
-**Annales** :
-Entraînement sur les sujets d'examens passés (2014-2017) pour se familiariser avec le type de questions posées.
+<p><strong>Annales</strong> :<br>
+Entra&icirc;nement sur les sujets d'examens pass&eacute;s (2014-2017) pour se familiariser avec le type de questions pos&eacute;es.</p>
 
-<h3 class="section-title">Difficultés rencontrées</h3>
+<h3 class="section-title">Difficult&eacute;s rencontr&eacute;es</h3>
 
-**Abstraction mathématique** :
-Les processus stochastiques sont des objets mathématiques abstraits. Visualiser ce qu'est un processus aléatoire (famille infinie de variables aléatoires) demande un effort d'abstraction.
+<p><strong>Abstraction math&eacute;matique</strong> :<br>
+Les processus stochastiques sont des objets math&eacute;matiques abstraits. Visualiser ce qu'est un processus al&eacute;atoire (famille infinie de variables al&eacute;atoires) demande un effort d'abstraction.</p>
 
-**Manipulation des densités de probabilité** :
-Calculs avec densités conjointes, marginales, conditionnelles. Beaucoup d'intégrales et de changements de variables.
+<p><strong>Manipulation des densit&eacute;s de probabilit&eacute;</strong> :<br>
+Calculs avec densit&eacute;s conjointes, marginales, conditionnelles. Beaucoup d'int&eacute;grales et de changements de variables.</p>
 
-**Lien théorie/pratique** :
-Le cours est très théorique. Le lien avec les applications concrètes (bruit dans les circuits, canaux de communication) n'est pas toujours évident.
+<p><strong>Lien th&eacute;orie/pratique</strong> :<br>
+Le cours est tr&egrave;s th&eacute;orique. Le lien avec les applications concr&egrave;tes (bruit dans les circuits, canaux de communication) n'est pas toujours &eacute;vident.</p>
 
----
+<hr>
 
-## PART C - Aspects Techniques Détaillés
+<h2>PART C - Aspects Techniques D&eacute;taill&eacute;s</h2>
 
-<h3 class="section-title">1. Rappels de probabilités</h3>
+<h3 class="section-title">1. Rappels de probabilit&eacute;s</h3>
 
-**Espace probabilisé** :
+<p><strong>Espace probabilis&eacute;</strong> :</p>
 
-Un espace probabilisé est défini par trois éléments :
-- Oméga : ensemble des éventualités (univers)
-- A : ensemble des événements (sigma-algèbre)
-- P : probabilité (mesure sur A)
+<p>Un espace probabilis&eacute; est d&eacute;fini par trois &eacute;l&eacute;ments :</p>
+<ul>
+<li>Om&eacute;ga : ensemble des &eacute;ventualit&eacute;s (univers)</li>
+<li>A : ensemble des &eacute;v&eacute;nements (sigma-alg&egrave;bre)</li>
+<li>P : probabilit&eacute; (mesure sur A)</li>
+</ul>
 
 <div style="text-align: center; margin: 30px 0;">
   <img src="/assets/images/courses/S6/signaux-aleatoires/pdf-gaussienne.svg" alt="Distribution gaussienne" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
-  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Fonction de densité de probabilité (PDF) - Loi normale (gaussienne)</p>
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Fonction de densit&eacute; de probabilit&eacute; (PDF) - Loi normale (gaussienne)</p>
 </div>
 
-**Propriétés de la probabilité** :
-- 0 <= P(A) <= 1
-- P(Oméga) = 1
-- P(A ou B) = P(A) + P(B) - P(A et B)
+<p><strong>Propri&eacute;t&eacute;s de la probabilit&eacute;</strong> :</p>
+<ul>
+<li>0 &lt;= P(A) &lt;= 1</li>
+<li>P(Om&eacute;ga) = 1</li>
+<li>P(A ou B) = P(A) + P(B) - P(A et B)</li>
+</ul>
 
-**Probabilité conditionnelle** :
+<p><strong>Probabilit&eacute; conditionnelle</strong> :</p>
+<p>P(A sachant B) = P(A et B) / P(B) si P(B) &gt; 0</p>
 
-P(A sachant B) = P(A et B) / P(B) si P(B) > 0
+<p><strong>Formule des probabilit&eacute;s totales</strong> :</p>
+<p>Si B1, B2, ..., Bn forment une partition de Om&eacute;ga :<br>
+P(A) = somme sur i de P(A sachant Bi) &times; P(Bi)</p>
 
-**Formule des probabilités totales** :
+<p><strong>Th&eacute;or&egrave;me de Bayes</strong> :</p>
+<p>P(B sachant A) = P(A sachant B) &times; P(B) / P(A)</p>
+<p>Application : inf&eacute;rence, diagnostic, filtrage de Kalman.</p>
 
-Si B1, B2, ..., Bn forment une partition de Oméga :
-P(A) = somme sur i de P(A sachant Bi) × P(Bi)
+<p><strong>Ind&eacute;pendance</strong> :</p>
+<p>Deux &eacute;v&eacute;nements A et B sont ind&eacute;pendants si :<br>
+P(A et B) = P(A) &times; P(B)</p>
+<p>&Eacute;quivalent &agrave; : P(A sachant B) = P(A)</p>
 
-**Théorème de Bayes** :
+<h3 class="section-title">2. Variables al&eacute;atoires</h3>
 
-P(B sachant A) = P(A sachant B) × P(B) / P(A)
+<p><strong>D&eacute;finition</strong> :<br>
+Une variable al&eacute;atoire X est une fonction de Om&eacute;ga vers les r&eacute;els qui associe &agrave; chaque &eacute;ventualit&eacute; une valeur num&eacute;rique.</p>
 
-Application : inférence, diagnostic, filtrage de Kalman.
+<p><strong>Variable al&eacute;atoire discr&egrave;te</strong> :</p>
+<p>Prend un nombre fini ou d&eacute;nombrable de valeurs.</p>
 
-**Indépendance** :
+<p><strong>Fonction de masse (PMF)</strong> :<br>
+p(xi) = P(X = xi)</p>
 
-Deux événements A et B sont indépendants si :
-P(A et B) = P(A) × P(B)
+<p>Propri&eacute;t&eacute;s :</p>
+<ul>
+<li>p(xi) &gt;= 0</li>
+<li>somme sur i de p(xi) = 1</li>
+</ul>
 
-Équivalent à : P(A sachant B) = P(A)
+<p><strong>Lois discr&egrave;tes classiques</strong> :</p>
 
-<h3 class="section-title">2. Variables aléatoires</h3>
+<table>
+<thead>
+<tr><th>Loi</th><th>Param&egrave;tres</th><th>Usage</th><th>Esp&eacute;rance</th><th>Variance</th></tr>
+</thead>
+<tbody>
+<tr><td>Bernoulli</td><td>p</td><td>succ&egrave;s/&eacute;chec</td><td>p</td><td>p(1-p)</td></tr>
+<tr><td>Binomiale</td><td>n, p</td><td>nombre de succ&egrave;s sur n essais</td><td>np</td><td>np(1-p)</td></tr>
+<tr><td>Poisson</td><td>lambda</td><td>&eacute;v&eacute;nements rares</td><td>lambda</td><td>lambda</td></tr>
+<tr><td>G&eacute;om&eacute;trique</td><td>p</td><td>nombre d'essais avant 1er succ&egrave;s</td><td>1/p</td><td>(1-p)/p&sup2;</td></tr>
+</tbody>
+</table>
 
-**Définition** :
-Une variable aléatoire X est une fonction de Oméga vers les réels qui associe à chaque éventualité une valeur numérique.
+<p><strong>Variable al&eacute;atoire continue</strong> :</p>
+<p>Prend ses valeurs dans un intervalle continu.</p>
 
-**Variable aléatoire discrète** :
+<p><strong>Fonction de densit&eacute; (PDF)</strong> :<br>
+Fonction f(x) telle que :<br>
+P(a &lt; X &lt; b) = int&eacute;grale de a &agrave; b de f(x) dx</p>
 
-Prend un nombre fini ou dénombrable de valeurs.
+<p>Propri&eacute;t&eacute;s :</p>
+<ul>
+<li>f(x) &gt;= 0</li>
+<li>int&eacute;grale de -infini &agrave; +infini de f(x) dx = 1</li>
+</ul>
 
-**Fonction de masse (PMF)** :
-p(xi) = P(X = xi)
+<p><strong>Fonction de r&eacute;partition (CDF)</strong> :<br>
+F(x) = P(X &lt;= x) = int&eacute;grale de -infini &agrave; x de f(t) dt</p>
 
-Propriétés :
-- p(xi) >= 0
-- somme sur i de p(xi) = 1
+<p>Propri&eacute;t&eacute;s :</p>
+<ul>
+<li>F est croissante</li>
+<li>F(-infini) = 0, F(+infini) = 1</li>
+<li>f(x) = dF(x)/dx</li>
+</ul>
 
-**Lois discrètes classiques** :
+<p><strong>Lois continues classiques</strong> :</p>
 
-| Loi | Paramètres | Usage | Espérance | Variance |
-|-----|------------|-------|-----------|----------|
-| Bernoulli | p | succès/échec | p | p(1-p) |
-| Binomiale | n, p | nombre de succès sur n essais | np | np(1-p) |
-| Poisson | lambda | événements rares | lambda | lambda |
-| Géométrique | p | nombre d'essais avant 1er succès | 1/p | (1-p)/p² |
+<table>
+<thead>
+<tr><th>Loi</th><th>Densit&eacute;</th><th>Usage</th><th>Esp&eacute;rance</th><th>Variance</th></tr>
+</thead>
+<tbody>
+<tr><td>Uniforme [a,b]</td><td>1/(b-a) sur [a,b]</td><td>&eacute;quiprobabilit&eacute;</td><td>(a+b)/2</td><td>(b-a)&sup2;/12</td></tr>
+<tr><td>Exponentielle</td><td>lambda &times; exp(-lambda &times; x)</td><td>dur&eacute;e de vie</td><td>1/lambda</td><td>1/lambda&sup2;</td></tr>
+<tr><td>Gaussienne</td><td>(1/racine(2&pi;)&sigma;) exp(-(x-m)&sup2;/(2&sigma;&sup2;))</td><td>bruit, mesures</td><td>m</td><td>&sigma;&sup2;</td></tr>
+<tr><td>Rayleigh</td><td>(x/&sigma;&sup2;) exp(-x&sup2;/(2&sigma;&sup2;))</td><td>enveloppe signal Gaussien</td><td>&sigma; racine(&pi;/2)</td><td>&sigma;&sup2;(4-&pi;)/2</td></tr>
+</tbody>
+</table>
 
-**Variable aléatoire continue** :
+<p><strong>Moments d'une variable al&eacute;atoire</strong> :</p>
 
-Prend ses valeurs dans un intervalle continu.
+<p><strong>Esp&eacute;rance (moyenne)</strong> :<br>
+E[X] = int&eacute;grale de x f(x) dx (cas continu)<br>
+E[X] = somme de xi p(xi) (cas discret)</p>
 
-**Fonction de densité (PDF)** :
-Fonction f(x) telle que :
-P(a < X < b) = intégrale de a à b de f(x) dx
+<p><strong>Variance</strong> :<br>
+Var(X) = E[(X - E[X])&sup2;] = E[X&sup2;] - (E[X])&sup2;</p>
 
-Propriétés :
-- f(x) >= 0
-- intégrale de -infini à +infini de f(x) dx = 1
+<p><strong>&Eacute;cart-type</strong> :<br>
+sigma = racine(Var(X))</p>
 
-**Fonction de répartition (CDF)** :
-F(x) = P(X <= x) = intégrale de -infini à x de f(t) dt
+<p><strong>Propri&eacute;t&eacute;s de l'esp&eacute;rance</strong> :</p>
+<ul>
+<li>E[aX + b] = a E[X] + b</li>
+<li>E[X + Y] = E[X] + E[Y] (toujours)</li>
+<li>E[XY] = E[X] E[Y] (si X et Y ind&eacute;pendantes)</li>
+</ul>
 
-Propriétés :
-- F est croissante
-- F(-infini) = 0, F(+infini) = 1
-- f(x) = dF(x)/dx
-
-**Lois continues classiques** :
-
-| Loi | Densité | Usage | Espérance | Variance |
-|-----|---------|-------|-----------|----------|
-| Uniforme [a,b] | 1/(b-a) sur [a,b] | équiprobabilité | (a+b)/2 | (b-a)²/12 |
-| Exponentielle | lambda × exp(-lambda × x) | durée de vie | 1/lambda | 1/lambda² |
-| Gaussienne | (1/racine(2π)σ) exp(-(x-m)²/(2σ²)) | bruit, mesures | m | σ² |
-| Rayleigh | (x/σ²) exp(-x²/(2σ²)) | enveloppe signal Gaussien | σ racine(π/2) | σ²(4-π)/2 |
-
-**Moments d'une variable aléatoire** :
-
-**Espérance (moyenne)** :
-E[X] = intégrale de x f(x) dx (cas continu)
-E[X] = somme de xi p(xi) (cas discret)
-
-**Variance** :
-Var(X) = E[(X - E[X])²] = E[X²] - (E[X])²
-
-**Écart-type** :
-sigma = racine(Var(X))
-
-**Propriétés de l'espérance** :
-- E[aX + b] = a E[X] + b
-- E[X + Y] = E[X] + E[Y] (toujours)
-- E[XY] = E[X] E[Y] (si X et Y indépendantes)
-
-**Propriétés de la variance** :
-- Var(aX + b) = a² Var(X)
-- Var(X + Y) = Var(X) + Var(Y) (si X et Y indépendantes)
+<p><strong>Propri&eacute;t&eacute;s de la variance</strong> :</p>
+<ul>
+<li>Var(aX + b) = a&sup2; Var(X)</li>
+<li>Var(X + Y) = Var(X) + Var(Y) (si X et Y ind&eacute;pendantes)</li>
+</ul>
 
 <h3 class="section-title">3. Loi gaussienne (loi normale)</h3>
 
-**Importance fondamentale** :
-La loi gaussienne est la plus importante en ingénierie car :
-- Modélise le bruit dans les circuits (bruit thermique)
-- Résultat du Théorème Central Limite
-- Propriétés mathématiques remarquables
+<p><strong>Importance fondamentale</strong> :<br>
+La loi gaussienne est la plus importante en ing&eacute;nierie car :</p>
+<ul>
+<li>Mod&eacute;lise le bruit dans les circuits (bruit thermique)</li>
+<li>R&eacute;sultat du Th&eacute;or&egrave;me Central Limite</li>
+<li>Propri&eacute;t&eacute;s math&eacute;matiques remarquables</li>
+</ul>
 
-**Densité de probabilité** :
+<p><strong>Densit&eacute; de probabilit&eacute;</strong> :</p>
+<p>f(x) = (1 / (sigma racine(2&pi;))) exp(-(x - m)&sup2; / (2 sigma&sup2;))</p>
 
-f(x) = (1 / (sigma racine(2π))) exp(-(x - m)² / (2 sigma²))
+<p>Param&egrave;tres :</p>
+<ul>
+<li>m : moyenne</li>
+<li>sigma&sup2; : variance</li>
+</ul>
 
-Paramètres :
-- m : moyenne
-- sigma² : variance
+<p>Notation : X suit N(m, sigma&sup2;)</p>
 
-Notation : X suit N(m, sigma²)
+<p><strong>Loi gaussienne centr&eacute;e r&eacute;duite</strong> :</p>
+<p>Cas particulier avec m = 0 et sigma = 1 : N(0, 1)</p>
+<p>Densit&eacute; : &phi;(x) = (1/racine(2&pi;)) exp(-x&sup2;/2)</p>
 
-**Loi gaussienne centrée réduite** :
+<p><strong>Standardisation</strong> :</p>
+<p>Si X suit N(m, sigma&sup2;), alors Z = (X - m) / sigma suit N(0, 1)</p>
+<p>Permet d'utiliser les tables de la loi normale standard.</p>
 
-Cas particulier avec m = 0 et sigma = 1 : N(0, 1)
+<p><strong>R&egrave;gle des 3 sigma</strong> :</p>
+<p>Pour une loi gaussienne N(m, sigma&sup2;) :</p>
+<ul>
+<li>68% des valeurs dans [m - sigma, m + sigma]</li>
+<li>95% des valeurs dans [m - 2sigma, m + 2sigma]</li>
+<li>99,7% des valeurs dans [m - 3sigma, m + 3sigma]</li>
+</ul>
 
-Densité : φ(x) = (1/racine(2π)) exp(-x²/2)
+<p><strong>Propri&eacute;t&eacute;s remarquables</strong> :</p>
+<ul>
+<li>Somme de gaussiennes est gaussienne</li>
+<li>Transformation lin&eacute;aire d'une gaussienne est gaussienne</li>
+<li>Maximise l'entropie &agrave; variance donn&eacute;e</li>
+</ul>
 
-**Standardisation** :
+<h3 class="section-title">4. Couples et vecteurs al&eacute;atoires</h3>
 
-Si X suit N(m, sigma²), alors Z = (X - m) / sigma suit N(0, 1)
+<p><strong>Couple al&eacute;atoire</strong> :</p>
+<p>Paire (X, Y) de variables al&eacute;atoires.</p>
 
-Permet d'utiliser les tables de la loi normale standard.
+<p><strong>Densit&eacute; conjointe</strong> :<br>
+f(x, y) telle que P((X, Y) dans D) = int&eacute;grale double sur D de f(x, y) dx dy</p>
 
-**Règle des 3 sigma** :
+<p><strong>Densit&eacute;s marginales</strong> :<br>
+Densit&eacute; de X seule : f_X(x) = int&eacute;grale de f(x, y) dy<br>
+Densit&eacute; de Y seule : f_Y(y) = int&eacute;grale de f(x, y) dx</p>
 
-Pour une loi gaussienne N(m, sigma²) :
-- 68% des valeurs dans [m - sigma, m + sigma]
-- 95% des valeurs dans [m - 2sigma, m + 2sigma]
-- 99,7% des valeurs dans [m - 3sigma, m + 3sigma]
+<p><strong>Densit&eacute; conditionnelle</strong> :<br>
+f(x sachant y) = f(x, y) / f_Y(y)</p>
 
-**Propriétés remarquables** :
-- Somme de gaussiennes est gaussienne
-- Transformation linéaire d'une gaussienne est gaussienne
-- Maximise l'entropie à variance donnée
+<p><strong>Ind&eacute;pendance</strong> :</p>
+<p>X et Y ind&eacute;pendantes si et seulement si :<br>
+f(x, y) = f_X(x) &times; f_Y(y)</p>
 
-<h3 class="section-title">4. Couples et vecteurs aléatoires</h3>
+<p><strong>Corr&eacute;lation et covariance</strong> :</p>
 
-**Couple aléatoire** :
+<p><strong>Esp&eacute;rance d'un couple</strong> :<br>
+E[g(X, Y)] = int&eacute;grale double de g(x, y) f(x, y) dx dy</p>
 
-Paire (X, Y) de variables aléatoires.
+<p><strong>Covariance</strong> :<br>
+Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X] E[Y]</p>
 
-**Densité conjointe** :
-f(x, y) telle que P((X, Y) dans D) = intégrale double sur D de f(x, y) dx dy
+<p><strong>Coefficient de corr&eacute;lation</strong> :<br>
+rho = Cov(X, Y) / (sigma_X sigma_Y)</p>
 
-**Densités marginales** :
-Densité de X seule : f_X(x) = intégrale de f(x, y) dy
-Densité de Y seule : f_Y(y) = intégrale de f(x, y) dx
+<p>Propri&eacute;t&eacute;s :</p>
+<ul>
+<li>-1 &lt;= rho &lt;= 1</li>
+<li>rho = 0 : variables non corr&eacute;l&eacute;es</li>
+<li>rho = &plusmn;1 : relation lin&eacute;aire</li>
+</ul>
 
-**Densité conditionnelle** :
-f(x sachant y) = f(x, y) / f_Y(y)
+<p><strong>Remarque importante</strong> :</p>
+<ul>
+<li>Ind&eacute;pendantes =&gt; non corr&eacute;l&eacute;es</li>
+<li>Non corr&eacute;l&eacute;es =/=&gt; ind&eacute;pendantes (sauf cas gaussien)</li>
+</ul>
 
-**Indépendance** :
+<p><strong>Couple gaussien</strong> :</p>
+<p>(X, Y) suit une loi gaussienne bidimensionnelle si leur densit&eacute; conjointe est de la forme gaussienne &agrave; 2 dimensions.</p>
 
-X et Y indépendantes si et seulement si :
-f(x, y) = f_X(x) × f_Y(y)
+<p><strong>Propri&eacute;t&eacute; remarquable</strong> :<br>
+Pour un couple gaussien : non corr&eacute;l&eacute;es &lt;=&gt; ind&eacute;pendantes</p>
 
-**Corrélation et covariance** :
+<h3 class="section-title">5. Th&eacute;or&egrave;mes limites</h3>
 
-**Espérance d'un couple** :
-E[g(X, Y)] = intégrale double de g(x, y) f(x, y) dx dy
+<p><strong>Loi des grands nombres</strong> :</p>
+<p>Moyenne empirique converge vers l'esp&eacute;rance th&eacute;orique.</p>
+<p>Si X1, X2, ..., Xn variables ind&eacute;pendantes de m&ecirc;me loi, d'esp&eacute;rance m :<br>
+(X1 + X2 + ... + Xn) / n tend vers m quand n tend vers infini</p>
 
-**Covariance** :
-Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X] E[Y]
+<p><strong>Th&eacute;or&egrave;me Central Limite (TCL)</strong> :</p>
+<p>Somme de variables al&eacute;atoires suit approximativement une loi gaussienne.</p>
+<p>Si X1, X2, ..., Xn variables ind&eacute;pendantes de m&ecirc;me loi, d'esp&eacute;rance m et variance sigma&sup2; :<br>
+(X1 + X2 + ... + Xn - n&times;m) / (sigma racine(n)) tend vers N(0, 1)</p>
 
-**Coefficient de corrélation** :
-rho = Cov(X, Y) / (sigma_X sigma_Y)
+<p><strong>Cons&eacute;quence importante</strong> :<br>
+Explique pourquoi tant de ph&eacute;nom&egrave;nes naturels suivent une loi gaussienne : r&eacute;sultat de nombreuses petites causes ind&eacute;pendantes.</p>
 
-Propriétés :
-- -1 <= rho <= 1
-- rho = 0 : variables non corrélées
-- rho = ±1 : relation linéaire
-
-**Remarque importante** :
-- Indépendantes => non corrélées
-- Non corrélées =/=> indépendantes (sauf cas gaussien)
-
-**Couple gaussien** :
-
-(X, Y) suit une loi gaussienne bidimensionnelle si leur densité conjointe est de la forme gaussienne à 2 dimensions.
-
-**Propriété remarquable** :
-Pour un couple gaussien : non corrélées <=> indépendantes
-
-<h3 class="section-title">5. Théorèmes limites</h3>
-
-**Loi des grands nombres** :
-
-Moyenne empirique converge vers l'espérance théorique.
-
-Si X1, X2, ..., Xn variables indépendantes de même loi, d'espérance m :
-(X1 + X2 + ... + Xn) / n tend vers m quand n tend vers infini
-
-**Théorème Central Limite (TCL)** :
-
-Somme de variables aléatoires suit approximativement une loi gaussienne.
-
-Si X1, X2, ..., Xn variables indépendantes de même loi, d'espérance m et variance sigma² :
-(X1 + X2 + ... + Xn - n×m) / (sigma racine(n)) tend vers N(0, 1)
-
-**Conséquence importante** :
-Explique pourquoi tant de phénomènes naturels suivent une loi gaussienne : résultat de nombreuses petites causes indépendantes.
-
-**Applications** :
-- Modélisation du bruit (somme de nombreuses perturbations)
-- Approximation binomiale par gaussienne (si n grand)
-- Estimation statistique
+<p><strong>Applications</strong> :</p>
+<ul>
+<li>Mod&eacute;lisation du bruit (somme de nombreuses perturbations)</li>
+<li>Approximation binomiale par gaussienne (si n grand)</li>
+<li>Estimation statistique</li>
+</ul>
 
 <h3 class="section-title">6. Processus stochastiques</h3>
 
-**Définition** :
+<p><strong>D&eacute;finition</strong> :</p>
+<p>Un processus stochastique X(t) est une famille de variables al&eacute;atoires index&eacute;es par le temps t.</p>
+<p>Pour chaque instant t, X(t) est une variable al&eacute;atoire.</p>
 
-Un processus stochastique X(t) est une famille de variables aléatoires indexées par le temps t.
+<p><strong>Visualisations</strong> :</p>
+<ul>
+<li>R&eacute;alisation : courbe X(t, omega) pour un omega fix&eacute;</li>
+<li>Distribution : distribution de probabilit&eacute; &agrave; un instant t fix&eacute;</li>
+<li>Statistiques : esp&eacute;rance E[X(t)], variance Var[X(t)]</li>
+</ul>
 
-Pour chaque instant t, X(t) est une variable aléatoire.
+<p><strong>Types de processus</strong> :</p>
 
-**Visualisations** :
-- Réalisation : courbe X(t, omega) pour un omega fixé
-- Distribution : distribution de probabilité à un instant t fixé
-- Statistiques : espérance E[X(t)], variance Var[X(t)]
+<table>
+<thead>
+<tr><th>Type</th><th>Temps</th><th>Valeurs</th><th>Exemple</th></tr>
+</thead>
+<tbody>
+<tr><td>Discret-Discret</td><td>discret</td><td>discr&egrave;tes</td><td>Marche al&eacute;atoire</td></tr>
+<tr><td>Continu-Discret</td><td>continu</td><td>discr&egrave;tes</td><td>Processus de Poisson</td></tr>
+<tr><td>Discret-Continu</td><td>discret</td><td>continues</td><td>Suite de mesures</td></tr>
+<tr><td>Continu-Continu</td><td>continu</td><td>continues</td><td>Bruit thermique</td></tr>
+</tbody>
+</table>
 
-**Types de processus** :
+<p><strong>Moyenne et autocorr&eacute;lation</strong> :</p>
 
-| Type | Temps | Valeurs | Exemple |
-|------|-------|---------|---------|
-| Discret-Discret | discret | discrètes | Marche aléatoire |
-| Continu-Discret | continu | discrètes | Processus de Poisson |
-| Discret-Continu | discret | continues | Suite de mesures |
-| Continu-Continu | continu | continues | Bruit thermique |
+<p><strong>Moyenne</strong> :<br>
+m_X(t) = E[X(t)]</p>
+<p>Fonction du temps (en g&eacute;n&eacute;ral).</p>
 
-**Moyenne et autocorrélation** :
+<p><strong>Fonction d'autocorr&eacute;lation</strong> :<br>
+R_X(t1, t2) = E[X(t1) X(t2)]</p>
+<p>Mesure la corr&eacute;lation entre les valeurs du processus &agrave; deux instants diff&eacute;rents.</p>
 
-**Moyenne** :
-m_X(t) = E[X(t)]
-
-Fonction du temps (en général).
-
-**Fonction d'autocorrélation** :
-R_X(t1, t2) = E[X(t1) X(t2)]
-
-Mesure la corrélation entre les valeurs du processus à deux instants différents.
-
-**Fonction d'autocovariance** :
-C_X(t1, t2) = E[(X(t1) - m_X(t1))(X(t2) - m_X(t2))]
-C_X(t1, t2) = R_X(t1, t2) - m_X(t1) m_X(t2)
+<p><strong>Fonction d'autocovariance</strong> :<br>
+C_X(t1, t2) = E[(X(t1) - m_X(t1))(X(t2) - m_X(t2))]<br>
+C_X(t1, t2) = R_X(t1, t2) - m_X(t1) m_X(t2)</p>
 
 <h3 class="section-title">7. Processus stationnaires</h3>
 
-**Stationnarité stricte** :
+<p><strong>Stationnarit&eacute; stricte</strong> :</p>
+<p>Toutes les statistiques du processus sont invariantes par translation dans le temps.</p>
+<p>Difficile &agrave; v&eacute;rifier en pratique.</p>
 
-Toutes les statistiques du processus sont invariantes par translation dans le temps.
+<p><strong>Stationnarit&eacute; au sens large (WSS - Wide Sense Stationary)</strong> :</p>
+<p>Deux conditions suffisent :</p>
+<ol>
+<li>Moyenne constante : m_X(t) = m (ind&eacute;pendant de t)</li>
+<li>Autocorr&eacute;lation d&eacute;pend seulement de l'&eacute;cart : R_X(t1, t2) = R_X(tau) avec tau = t2 - t1</li>
+</ol>
 
-Difficile à vérifier en pratique.
+<p><strong>Propri&eacute;t&eacute;s de R_X(tau)</strong> :</p>
+<ul>
+<li>R_X(0) = E[X&sup2;(t)] = puissance moyenne</li>
+<li>R_X(tau) = R_X(-tau) (fonction paire)</li>
+<li>|R_X(tau)| &lt;= R_X(0)</li>
+<li>R_X(tau) maximum en tau = 0</li>
+</ul>
 
-**Stationnarité au sens large (WSS - Wide Sense Stationary)** :
+<p><strong>Ergodicit&eacute;</strong> :</p>
+<p>Un processus stationnaire est ergodique si les moyennes temporelles (sur une r&eacute;alisation) convergent vers les moyennes d'ensemble.</p>
+<p>Moyenne temporelle = limite quand T tend vers infini de (1/T) int&eacute;grale de 0 &agrave; T de x(t) dt</p>
+<p>Si ergodique :</p>
+<ul>
+<li>Moyenne temporelle = moyenne th&eacute;orique E[X]</li>
+<li>Permet d'estimer les statistiques sur une seule r&eacute;alisation</li>
+</ul>
 
-Deux conditions suffisent :
-1. Moyenne constante : m_X(t) = m (indépendant de t)
-2. Autocorrélation dépend seulement de l'écart : R_X(t1, t2) = R_X(tau) avec tau = t2 - t1
+<h3 class="section-title">8. Densit&eacute; spectrale de puissance (DSP)</h3>
 
-**Propriétés de R_X(tau)** :
-- R_X(0) = E[X²(t)] = puissance moyenne
-- R_X(tau) = R_X(-tau) (fonction paire)
-- |R_X(tau)| <= R_X(0)
-- R_X(tau) maximum en tau = 0
+<p><strong>Th&eacute;or&egrave;me de Wiener-Khinchin</strong> :</p>
+<p>Pour un processus WSS, la densit&eacute; spectrale de puissance S_X(f) est la transform&eacute;e de Fourier de l'autocorr&eacute;lation R_X(tau) :</p>
+<p>S_X(f) = TF[R_X(tau)]</p>
+<p>R&eacute;ciproquement :<br>
+R_X(tau) = TF&sup1;[S_X(f)]</p>
 
-**Ergodicité** :
+<p><strong>Interpr&eacute;tation</strong> :<br>
+S_X(f) repr&eacute;sente la r&eacute;partition de la puissance du signal en fonction de la fr&eacute;quence.</p>
 
-Un processus stationnaire est ergodique si les moyennes temporelles (sur une réalisation) convergent vers les moyennes d'ensemble.
+<p><strong>Propri&eacute;t&eacute;s</strong> :</p>
+<ul>
+<li>S_X(f) &gt;= 0 (fonction positive)</li>
+<li>S_X(f) = S_X(-f) (fonction paire, si X r&eacute;el)</li>
+<li>Puissance totale = R_X(0) = int&eacute;grale de S_X(f) df</li>
+</ul>
 
-Moyenne temporelle = limite quand T tend vers infini de (1/T) intégrale de 0 à T de x(t) dt
-
-Si ergodique :
-- Moyenne temporelle = moyenne théorique E[X]
-- Permet d'estimer les statistiques sur une seule réalisation
-
-<h3 class="section-title">8. Densité spectrale de puissance (DSP)</h3>
-
-**Théorème de Wiener-Khinchin** :
-
-Pour un processus WSS, la densité spectrale de puissance S_X(f) est la transformée de Fourier de l'autocorrélation R_X(tau) :
-
-S_X(f) = TF[R_X(tau)]
-
-Réciproquement :
-R_X(tau) = TF⁻¹[S_X(f)]
-
-**Interprétation** :
-S_X(f) représente la répartition de la puissance du signal en fonction de la fréquence.
-
-**Propriétés** :
-- S_X(f) >= 0 (fonction positive)
-- S_X(f) = S_X(-f) (fonction paire, si X réel)
-- Puissance totale = R_X(0) = intégrale de S_X(f) df
-
-**Puissance dans une bande** :
-
-Puissance entre f1 et f2 = intégrale de f1 à f2 de S_X(f) df
+<p><strong>Puissance dans une bande</strong> :</p>
+<p>Puissance entre f1 et f2 = int&eacute;grale de f1 &agrave; f2 de S_X(f) df</p>
 
 <h3 class="section-title">9. Bruit blanc</h3>
 
-**Définition** :
+<p><strong>D&eacute;finition</strong> :</p>
+<p>Processus dont la DSP est constante sur toutes les fr&eacute;quences :<br>
+S_X(f) = N0/2</p>
+<p>Autocorr&eacute;lation :<br>
+R_X(tau) = (N0/2) delta(tau)</p>
+<p>o&ugrave; delta est la distribution de Dirac.</p>
 
-Processus dont la DSP est constante sur toutes les fréquences :
-S_X(f) = N0/2
+<p><strong>Interpr&eacute;tation</strong> :</p>
+<ul>
+<li>Puissance r&eacute;partie uniform&eacute;ment sur toutes les fr&eacute;quences</li>
+<li>Valeurs &agrave; deux instants diff&eacute;rents non corr&eacute;l&eacute;es (delta de Dirac)</li>
+</ul>
 
-Autocorrélation :
-R_X(tau) = (N0/2) delta(tau)
+<p><strong>Bruit blanc gaussien</strong> :</p>
+<p>Processus gaussien avec spectre plat. Not&eacute; AWGN (Additive White Gaussian Noise).</p>
+<p>Mod&egrave;le standard du bruit dans les t&eacute;l&eacute;communications.</p>
 
-où delta est la distribution de Dirac.
+<p><strong>Bruit blanc en pratique</strong> :</p>
+<p>Le bruit blanc id&eacute;al n'existe pas (puissance infinie). En pratique :</p>
+<ul>
+<li>Bruit blanc dans une bande limit&eacute;e</li>
+<li>DSP plate sur la bande d'int&eacute;r&ecirc;t</li>
+</ul>
 
-**Interprétation** :
-- Puissance répartie uniformément sur toutes les fréquences
-- Valeurs à deux instants différents non corrélées (delta de Dirac)
+<p><strong>Bruit thermique</strong> :</p>
+<p>Bruit dans les r&eacute;sistances d&ucirc; &agrave; l'agitation thermique (Johnson-Nyquist).</p>
+<p>DSP : S_V(f) = 4 k T R</p>
+<p>o&ugrave; k = constante de Boltzmann, T = temp&eacute;rature (Kelvin), R = r&eacute;sistance.</p>
+<p>Approximation de bruit blanc dans une large bande.</p>
 
-**Bruit blanc gaussien** :
+<h3 class="section-title">10. Filtrage lin&eacute;aire des signaux al&eacute;atoires</h3>
 
-Processus gaussien avec spectre plat. Noté AWGN (Additive White Gaussian Noise).
+<p><strong>Syst&egrave;me lin&eacute;aire invariant (SLI)</strong> :</p>
+<p>Caract&eacute;ris&eacute; par sa r&eacute;ponse impulsionnelle h(t) ou sa fonction de transfert H(f).</p>
 
-Modèle standard du bruit dans les télécommunications.
+<p><strong>Entr&eacute;e al&eacute;atoire X(t), sortie Y(t)</strong> :</p>
+<p>Si X(t) est WSS, alors Y(t) est aussi WSS.</p>
 
-**Bruit blanc en pratique** :
+<p><strong>Relations entr&eacute;e-sortie</strong> :</p>
 
-Le bruit blanc idéal n'existe pas (puissance infinie). En pratique :
-- Bruit blanc dans une bande limitée
-- DSP plate sur la bande d'intérêt
+<p><strong>Moyenne</strong> :<br>
+m_Y = m_X &times; H(0)</p>
+<p>o&ugrave; H(0) est le gain DC du filtre.</p>
 
-**Bruit thermique** :
+<p><strong>Autocorr&eacute;lation</strong> :<br>
+R_Y(tau) = R_X(tau) * h(tau) * h(-tau)</p>
+<p>o&ugrave; * est la convolution.</p>
 
-Bruit dans les résistances dû à l'agitation thermique (Johnson-Nyquist).
+<p><strong>DSP</strong> :<br>
+S_Y(f) = S_X(f) &times; |H(f)|&sup2;</p>
 
-DSP : S_V(f) = 4 k T R
+<p><strong>Formule fondamentale</strong> : la DSP de sortie est la DSP d'entr&eacute;e multipli&eacute;e par le carr&eacute; du module de la fonction de transfert.</p>
 
-où k = constante de Boltzmann, T = température (Kelvin), R = résistance.
+<p><strong>Variance de la sortie</strong> :<br>
+Var(Y) = R_Y(0) = int&eacute;grale de S_Y(f) df = int&eacute;grale de S_X(f) |H(f)|&sup2; df</p>
 
-Approximation de bruit blanc dans une large bande.
-
-<h3 class="section-title">10. Filtrage linéaire des signaux aléatoires</h3>
-
-**Système linéaire invariant (SLI)** :
-
-Caractérisé par sa réponse impulsionnelle h(t) ou sa fonction de transfert H(f).
-
-**Entrée aléatoire X(t), sortie Y(t)** :
-
-Si X(t) est WSS, alors Y(t) est aussi WSS.
-
-**Relations entrée-sortie** :
-
-**Moyenne** :
-m_Y = m_X × H(0)
-
-où H(0) est le gain DC du filtre.
-
-**Autocorrélation** :
-R_Y(tau) = R_X(tau) * h(tau) * h(-tau)
-
-où * est la convolution.
-
-**DSP** :
-S_Y(f) = S_X(f) × |H(f)|²
-
-**Formule fondamentale** : la DSP de sortie est la DSP d'entrée multipliée par le carré du module de la fonction de transfert.
-
-**Variance de la sortie** :
-Var(Y) = R_Y(0) = intégrale de S_Y(f) df = intégrale de S_X(f) |H(f)|² df
-
-**Exemple : bruit blanc filtré**
-
-Entrée : bruit blanc de DSP N0/2
-Filtre : passe-bas de bande B
-Sortie : DSP S_Y(f) = (N0/2) |H(f)|²
-
-Puissance de sortie : (N0/2) × 2B = N0 B
-
-(approximation si filtre idéal)
+<p><strong>Exemple : bruit blanc filtr&eacute;</strong></p>
+<p>Entr&eacute;e : bruit blanc de DSP N0/2<br>
+Filtre : passe-bas de bande B<br>
+Sortie : DSP S_Y(f) = (N0/2) |H(f)|&sup2;</p>
+<p>Puissance de sortie : (N0/2) &times; 2B = N0 B</p>
+<p>(approximation si filtre id&eacute;al)</p>
 
 <h3 class="section-title">11. Rapport signal sur bruit (SNR)</h3>
 
-**Définition** :
+<p><strong>D&eacute;finition</strong> :</p>
+<p>SNR = Puissance du signal / Puissance du bruit</p>
+<p>En d&eacute;cibels : SNR_dB = 10 log10(SNR)</p>
 
-SNR = Puissance du signal / Puissance du bruit
+<p><strong>Signal dans le bruit</strong> :</p>
+<p>Signal utile : s(t) de puissance P_s<br>
+Bruit : n(t) de puissance P_n<br>
+Signal re&ccedil;u : r(t) = s(t) + n(t)</p>
+<p>SNR = P_s / P_n</p>
 
-En décibels : SNR_dB = 10 log10(SNR)
+<p><strong>Am&eacute;lioration du SNR par filtrage</strong> :</p>
+<p>Filtre adapt&eacute; maximise le SNR en sortie.</p>
 
-**Signal dans le bruit** :
+<p><strong>Filtre de Wiener</strong> :</p>
+<p>Filtre optimal au sens de l'erreur quadratique moyenne minimale (MMSE).</p>
+<p>Fonction de transfert optimale :<br>
+H_opt(f) = S_XY(f) / (S_X(f) + S_N(f))</p>
+<p>o&ugrave; S_XY est l'intercorr&eacute;lation signal-observation, S_X spectre du signal, S_N spectre du bruit.</p>
 
-Signal utile : s(t) de puissance P_s
-Bruit : n(t) de puissance P_n
-Signal reçu : r(t) = s(t) + n(t)
+<p><strong>Filtre adapt&eacute;</strong> :</p>
+<p>Pour d&eacute;tecter un signal connu s(t) dans du bruit blanc, le filtre optimal a :<br>
+h(t) = s(T - t)</p>
+<p>o&ugrave; T est l'instant de d&eacute;cision.</p>
+<p>Maximise le SNR &agrave; l'instant d'&eacute;chantillonnage.</p>
 
-SNR = P_s / P_n
+<h3 class="section-title">12. Applications en t&eacute;l&eacute;communications</h3>
 
-**Amélioration du SNR par filtrage** :
+<p><strong>Canal AWGN (Additive White Gaussian Noise)</strong> :</p>
+<p>Mod&egrave;le standard de canal de communication.</p>
+<p>Signal re&ccedil;u : r(t) = s(t) + n(t)</p>
+<p>o&ugrave; n(t) est un bruit blanc gaussien.</p>
 
-Filtre adapté maximise le SNR en sortie.
+<p><strong>Taux d'erreur binaire (BER)</strong> :</p>
+<p>Probabilit&eacute; d'erreur sur un bit en fonction du SNR.</p>
+<p>Pour une modulation binaire simple :<br>
+BER = fonction du rapport Eb/N0</p>
+<p>o&ugrave; Eb est l'&eacute;nergie par bit, N0 la DSP du bruit.</p>
 
-**Filtre de Wiener** :
+<p><strong>Capacit&eacute; de Shannon</strong> :</p>
+<p>D&eacute;bit maximal th&eacute;orique d'un canal :<br>
+C = B log2(1 + SNR)</p>
+<p>o&ugrave; B est la bande passante, C la capacit&eacute; en bits/s.</p>
 
-Filtre optimal au sens de l'erreur quadratique moyenne minimale (MMSE).
+<p><strong>Th&eacute;or&egrave;me de Shannon</strong> :<br>
+On peut transmettre &agrave; un d&eacute;bit &lt; C avec une probabilit&eacute; d'erreur arbitrairement faible (gr&acirc;ce au codage canal).</p>
 
-Fonction de transfert optimale :
-H_opt(f) = S_XY(f) / (S_X(f) + S_N(f))
+<h3 class="section-title">13. Estimation et d&eacute;tection</h3>
 
-où S_XY est l'intercorrélation signal-observation, S_X spectre du signal, S_N spectre du bruit.
+<p><strong>Estimation de param&egrave;tres</strong> :</p>
+<p>&Agrave; partir d'observations bruit&eacute;es, estimer un param&egrave;tre inconnu.</p>
 
-**Filtre adapté** :
+<p><strong>Estimateur du maximum de vraisemblance (MLE)</strong> :</p>
+<p>Choisir la valeur du param&egrave;tre qui maximise la probabilit&eacute; d'observer les donn&eacute;es.</p>
+<p>Principe : theta_MLE = argmax de la vraisemblance L(theta)</p>
 
-Pour détecter un signal connu s(t) dans du bruit blanc, le filtre optimal a :
-h(t) = s(T - t)
+<p><strong>Estimateur MMSE</strong> :</p>
+<p>Minimise l'erreur quadratique moyenne.</p>
+<p>E[(theta - theta_estim&eacute;)&sup2;] minimale</p>
 
-où T est l'instant de décision.
+<p><strong>D&eacute;tection d'hypoth&egrave;ses</strong> :</p>
+<p>D&eacute;cider entre plusieurs hypoth&egrave;ses (H0 ou H1) &agrave; partir d'observations.</p>
 
-Maximise le SNR à l'instant d'échantillonnage.
+<p><strong>Crit&egrave;re de Neyman-Pearson</strong> :</p>
+<p>Maximiser la probabilit&eacute; de d&eacute;tection pour une probabilit&eacute; de fausse alarme donn&eacute;e.</p>
 
-<h3 class="section-title">12. Applications en télécommunications</h3>
+<p><strong>Courbe ROC (Receiver Operating Characteristic)</strong> :</p>
+<p>Probabilit&eacute; de d&eacute;tection en fonction de la probabilit&eacute; de fausse alarme.</p>
+<p>Permet de comparer les performances de diff&eacute;rents d&eacute;tecteurs.</p>
 
-**Canal AWGN (Additive White Gaussian Noise)** :
+<hr>
 
-Modèle standard de canal de communication.
+<h2>PART D - Analyse R&eacute;flexive et Perspectives</h2>
 
-Signal reçu : r(t) = s(t) + n(t)
+<h3 class="section-title">Comp&eacute;tences acquises</h3>
 
-où n(t) est un bruit blanc gaussien.
+<p><strong>Rigueur math&eacute;matique</strong> :<br>
+Le cours d&eacute;veloppe une approche rigoureuse des probabilit&eacute;s et des processus stochastiques. Les d&eacute;monstrations math&eacute;matiques renforcent la compr&eacute;hension profonde des concepts.</p>
 
-**Taux d'erreur binaire (BER)** :
+<p><strong>Mod&eacute;lisation de l'al&eacute;atoire</strong> :<br>
+Capacit&eacute; &agrave; mod&eacute;liser des ph&eacute;nom&egrave;nes al&eacute;atoires r&eacute;els (bruit, mesures, signaux) par des lois de probabilit&eacute; et des processus stochastiques appropri&eacute;s.</p>
 
-Probabilité d'erreur sur un bit en fonction du SNR.
+<p><strong>Analyse spectrale</strong> :<br>
+Ma&icirc;trise de la densit&eacute; spectrale de puissance comme outil d'analyse des signaux al&eacute;atoires, compl&eacute;ment essentiel &agrave; la transform&eacute;e de Fourier classique.</p>
 
-Pour une modulation binaire simple :
-BER = fonction du rapport Eb/N0
+<h3 class="section-title">Points cl&eacute;s &agrave; retenir</h3>
 
-où Eb est l'énergie par bit, N0 la DSP du bruit.
+<p><strong>1. Loi gaussienne centrale</strong> :<br>
+La loi gaussienne est omnipr&eacute;sente gr&acirc;ce au Th&eacute;or&egrave;me Central Limite. Comprendre ses propri&eacute;t&eacute;s est essentiel pour l'ing&eacute;nieur.</p>
 
-**Capacité de Shannon** :
+<p><strong>2. Corr&eacute;lation vs ind&eacute;pendance</strong> :<br>
+Non corr&eacute;lation n'implique pas ind&eacute;pendance (sauf cas gaussien). Distinction fondamentale souvent source d'erreurs.</p>
 
-Débit maximal théorique d'un canal :
-C = B log2(1 + SNR)
+<p><strong>3. Stationnarit&eacute; = simplicit&eacute;</strong> :<br>
+Les processus stationnaires sont beaucoup plus simples &agrave; analyser. En pratique, on suppose souvent la stationnarit&eacute; (au moins localement).</p>
 
-où B est la bande passante, C la capacité en bits/s.
+<p><strong>4. DSP = outil de choix</strong> :<br>
+La densit&eacute; spectrale de puissance est l'outil principal pour analyser et filtrer les signaux al&eacute;atoires. Th&eacute;or&egrave;me de Wiener-Khinchin est fondamental.</p>
 
-**Théorème de Shannon** :
-On peut transmettre à un débit < C avec une probabilité d'erreur arbitrairement faible (grâce au codage canal).
-
-<h3 class="section-title">13. Estimation et détection</h3>
-
-**Estimation de paramètres** :
-
-À partir d'observations bruitées, estimer un paramètre inconnu.
-
-**Estimateur du maximum de vraisemblance (MLE)** :
-
-Choisir la valeur du paramètre qui maximise la probabilité d'observer les données.
-
-Principe : theta_MLE = argmax de la vraisemblance L(theta)
-
-**Estimateur MMSE** :
-
-Minimise l'erreur quadratique moyenne.
-
-E[(theta - theta_estimé)²] minimale
-
-**Détection d'hypothèses** :
-
-Décider entre plusieurs hypothèses (H0 ou H1) à partir d'observations.
-
-**Critère de Neyman-Pearson** :
-
-Maximiser la probabilité de détection pour une probabilité de fausse alarme donnée.
-
-**Courbe ROC (Receiver Operating Characteristic)** :
-
-Probabilité de détection en fonction de la probabilité de fausse alarme.
-
-Permet de comparer les performances de différents détecteurs.
-
----
-
-## PART D - Analyse Réflexive et Perspectives
-
-<h3 class="section-title">Compétences acquises</h3>
-
-**Rigueur mathématique** :
-Le cours développe une approche rigoureuse des probabilités et des processus stochastiques. Les démonstrations mathématiques renforcent la compréhension profonde des concepts.
-
-**Modélisation de l'aléatoire** :
-Capacité à modéliser des phénomènes aléatoires réels (bruit, mesures, signaux) par des lois de probabilité et des processus stochastiques appropriés.
-
-**Analyse spectrale** :
-Maîtrise de la densité spectrale de puissance comme outil d'analyse des signaux aléatoires, complément essentiel à la transformée de Fourier classique.
-
-<h3 class="section-title">Points clés à retenir</h3>
-
-**1. Loi gaussienne centrale** :
-La loi gaussienne est omniprésente grâce au Théorème Central Limite. Comprendre ses propriétés est essentiel pour l'ingénieur.
-
-**2. Corrélation vs indépendance** :
-Non corrélation n'implique pas indépendance (sauf cas gaussien). Distinction fondamentale souvent source d'erreurs.
-
-**3. Stationnarité = simplicité** :
-Les processus stationnaires sont beaucoup plus simples à analyser. En pratique, on suppose souvent la stationnarité (au moins localement).
-
-**4. DSP = outil de choix** :
-La densité spectrale de puissance est l'outil principal pour analyser et filtrer les signaux aléatoires. Théorème de Wiener-Khinchin est fondamental.
-
-**5. Filtrage optimal** :
-Le filtre de Wiener et le filtre adapté sont des résultats théoriques importants qui guident la conception de systèmes réels.
+<p><strong>5. Filtrage optimal</strong> :<br>
+Le filtre de Wiener et le filtre adapt&eacute; sont des r&eacute;sultats th&eacute;oriques importants qui guident la conception de syst&egrave;mes r&eacute;els.</p>
 
 <h3 class="section-title">Applications pratiques</h3>
 
-**Télécommunications** :
-- Modélisation du canal (bruit AWGN, évanouissements)
-- Calcul du BER en fonction du SNR
-- Conception de récepteurs optimaux
-- Égalisation, débruitage
+<p><strong>T&eacute;l&eacute;communications</strong> :</p>
+<ul>
+<li>Mod&eacute;lisation du canal (bruit AWGN, &eacute;vanouissements)</li>
+<li>Calcul du BER en fonction du SNR</li>
+<li>Conception de r&eacute;cepteurs optimaux</li>
+<li>&Eacute;galisation, d&eacute;bruitage</li>
+</ul>
 
-**Traitement du signal** :
-- Estimation de paramètres (fréquence, phase, amplitude)
-- Détection de signaux noyés dans le bruit
-- Filtrage optimal (Wiener)
-- Analyse spectrale (estimation de DSP)
+<p><strong>Traitement du signal</strong> :</p>
+<ul>
+<li>Estimation de param&egrave;tres (fr&eacute;quence, phase, amplitude)</li>
+<li>D&eacute;tection de signaux noy&eacute;s dans le bruit</li>
+<li>Filtrage optimal (Wiener)</li>
+<li>Analyse spectrale (estimation de DSP)</li>
+</ul>
 
-**Systèmes de mesure** :
-- Quantification de l'incertitude
-- Amélioration du SNR par moyennage
-- Conception de capteurs
-- Traitement statistique des mesures
+<p><strong>Syst&egrave;mes de mesure</strong> :</p>
+<ul>
+<li>Quantification de l'incertitude</li>
+<li>Am&eacute;lioration du SNR par moyennage</li>
+<li>Conception de capteurs</li>
+<li>Traitement statistique des mesures</li>
+</ul>
 
-**Radar et sonar** :
-- Détection de cibles
-- Estimation de distance, vitesse
-- Filtrage adapté pour maximiser le SNR
+<p><strong>Radar et sonar</strong> :</p>
+<ul>
+<li>D&eacute;tection de cibles</li>
+<li>Estimation de distance, vitesse</li>
+<li>Filtrage adapt&eacute; pour maximiser le SNR</li>
+</ul>
 
-<h3 class="section-title">Retour d'expérience</h3>
+<h3 class="section-title">Retour d'exp&eacute;rience</h3>
 
-**Cours théorique** :
-Le cours est dense et mathématique. La maîtrise des concepts demande du temps et de la pratique sur des exercices variés. Les TD sont essentiels pour assimiler la théorie.
+<p><strong>Cours th&eacute;orique</strong> :<br>
+Le cours est dense et math&eacute;matique. La ma&icirc;trise des concepts demande du temps et de la pratique sur des exercices vari&eacute;s. Les TD sont essentiels pour assimiler la th&eacute;orie.</p>
 
-**Annales précieuses** :
-Les annales de 2014 à 2017 avec corrections sont une ressource importante pour se préparer à l'examen et comprendre les attentes.
+<p><strong>Annales pr&eacute;cieuses</strong> :<br>
+Les annales de 2014 &agrave; 2017 avec corrections sont une ressource importante pour se pr&eacute;parer &agrave; l'examen et comprendre les attentes.</p>
 
-**Difficulté progressive** :
-- Chapitre I (probabilités et variables aléatoires) : relativement accessible
-- Chapitre II (couples aléatoires) : plus technique (intégrales doubles)
-- Chapitre III (processus stochastiques) : abstrait
-- Chapitre IV (filtrage) : applications concrètes, plus motivant
+<p><strong>Difficult&eacute; progressive</strong> :</p>
+<ul>
+<li>Chapitre I (probabilit&eacute;s et variables al&eacute;atoires) : relativement accessible</li>
+<li>Chapitre II (couples al&eacute;atoires) : plus technique (int&eacute;grales doubles)</li>
+<li>Chapitre III (processus stochastiques) : abstrait</li>
+<li>Chapitre IV (filtrage) : applications concr&egrave;tes, plus motivant</li>
+</ul>
 
 <h3 class="section-title">Limites et ouvertures</h3>
 
-**Limites du module** :
-- Peu d'applications pratiques (simulations MATLAB)
-- Traitement limité de l'estimation (pas de Kalman détaillé)
-- Pas de processus non-stationnaires (signaux transitoires)
+<p><strong>Limites du module</strong> :</p>
+<ul>
+<li>Peu d'applications pratiques (simulations MATLAB)</li>
+<li>Traitement limit&eacute; de l'estimation (pas de Kalman d&eacute;taill&eacute;)</li>
+<li>Pas de processus non-stationnaires (signaux transitoires)</li>
+</ul>
 
-**Ouvertures vers** :
-- **Traitement statistique du signal** : estimation spectrale, analyse temps-fréquence
-- **Communications numériques** : modulations, codage canal, égalisation
-- **Filtrage de Kalman** : estimation récursive, systèmes dynamiques
-- **Apprentissage automatique** : modèles probabilistes, inférence bayésienne
-- **Traitement d'image** : bruit dans les images, restauration
-- **Finance** : modélisation des marchés (mouvement brownien, processus stochastiques)
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+<li><strong>Traitement statistique du signal</strong> : estimation spectrale, analyse temps-fr&eacute;quence</li>
+<li><strong>Communications num&eacute;riques</strong> : modulations, codage canal, &eacute;galisation</li>
+<li><strong>Filtrage de Kalman</strong> : estimation r&eacute;cursive, syst&egrave;mes dynamiques</li>
+<li><strong>Apprentissage automatique</strong> : mod&egrave;les probabilistes, inf&eacute;rence bay&eacute;sienne</li>
+<li><strong>Traitement d'image</strong> : bruit dans les images, restauration</li>
+<li><strong>Finance</strong> : mod&eacute;lisation des march&eacute;s (mouvement brownien, processus stochastiques)</li>
+</ul>
 
 <h3 class="section-title">Liens avec d'autres domaines</h3>
 
-**Théorie de l'information** :
-Entropie, information mutuelle, capacité de canal (Shannon).
+<p><strong>Th&eacute;orie de l'information</strong> :<br>
+Entropie, information mutuelle, capacit&eacute; de canal (Shannon).</p>
 
-**Statistiques** :
-Tests d'hypothèses, estimation, intervalles de confiance.
+<p><strong>Statistiques</strong> :<br>
+Tests d'hypoth&egrave;ses, estimation, intervalles de confiance.</p>
 
-**Contrôle stochastique** :
-Systèmes dynamiques avec incertitudes, commande optimale.
+<p><strong>Contr&ocirc;le stochastique</strong> :<br>
+Syst&egrave;mes dynamiques avec incertitudes, commande optimale.</p>
 
-**Apprentissage automatique** :
-Modèles génératifs probabilistes, réseaux bayésiens, processus gaussiens.
+<p><strong>Apprentissage automatique</strong> :<br>
+Mod&egrave;les g&eacute;n&eacute;ratifs probabilistes, r&eacute;seaux bay&eacute;siens, processus gaussiens.</p>
 
-<h3 class="section-title">Conseils pour réussir</h3>
+<h3 class="section-title">Conseils pour r&eacute;ussir</h3>
 
-**1. Maîtriser les bases** :
-Assurer les fondamentaux (probabilités, densités, espérance, variance) avant d'aborder les processus stochastiques.
+<p><strong>1. Ma&icirc;triser les bases</strong> :<br>
+Assurer les fondamentaux (probabilit&eacute;s, densit&eacute;s, esp&eacute;rance, variance) avant d'aborder les processus stochastiques.</p>
 
-**2. Faire les TD** :
-Les exercices sont essentiels. Refaire les TD sans regarder les corrections pour tester sa compréhension.
+<p><strong>2. Faire les TD</strong> :<br>
+Les exercices sont essentiels. Refaire les TD sans regarder les corrections pour tester sa compr&eacute;hension.</p>
 
-**3. Utiliser les annales** :
-S'entraîner sur les examens passés pour se familiariser avec le format et identifier les points importants.
+<p><strong>3. Utiliser les annales</strong> :<br>
+S'entra&icirc;ner sur les examens pass&eacute;s pour se familiariser avec le format et identifier les points importants.</p>
 
-**4. Visualiser** :
-Essayer de visualiser les concepts (courbes de densité, réalisations de processus) plutôt que rester dans l'abstraction pure.
+<p><strong>4. Visualiser</strong> :<br>
+Essayer de visualiser les concepts (courbes de densit&eacute;, r&eacute;alisations de processus) plut&ocirc;t que rester dans l'abstraction pure.</p>
 
-**5. Comprendre les théorèmes** :
-Théorème Central Limite, Wiener-Khinchin sont fondamentaux. Bien comprendre leurs hypothèses et conséquences.
+<p><strong>5. Comprendre les th&eacute;or&egrave;mes</strong> :<br>
+Th&eacute;or&egrave;me Central Limite, Wiener-Khinchin sont fondamentaux. Bien comprendre leurs hypoth&egrave;ses et cons&eacute;quences.</p>
 
 <h3 class="section-title">Conclusion</h3>
 
-Le module Signaux Aléatoires apporte les fondements mathématiques indispensables pour traiter les signaux bruités et les phénomènes aléatoires omniprésents en ingénierie. La théorie des probabilités et des processus stochastiques, bien que parfois abstraite, fournit des outils puissants et rigoureux.
+<p>Le module Signaux Al&eacute;atoires apporte les fondements math&eacute;matiques indispensables pour traiter les signaux bruit&eacute;s et les ph&eacute;nom&egrave;nes al&eacute;atoires omnipr&eacute;sents en ing&eacute;nierie. La th&eacute;orie des probabilit&eacute;s et des processus stochastiques, bien que parfois abstraite, fournit des outils puissants et rigoureux.</p>
 
-**Impact sur la formation** :
-Ce cours change la vision des signaux : tout signal réel contient de l'aléatoire (bruit, incertitudes). Savoir modéliser et traiter cet aléatoire est essentiel pour l'ingénieur.
+<p><strong>Impact sur la formation</strong> :<br>
+Ce cours change la vision des signaux : tout signal r&eacute;el contient de l'al&eacute;atoire (bruit, incertitudes). Savoir mod&eacute;liser et traiter cet al&eacute;atoire est essentiel pour l'ing&eacute;nieur.</p>
 
-**Complémentarité** :
-En complément du traitement du signal déterministe (Fourier, filtres), le traitement statistique des signaux aléatoires permet d'aborder des problèmes réels (estimation, détection, débruitage).
+<p><strong>Compl&eacute;mentarit&eacute;</strong> :<br>
+En compl&eacute;ment du traitement du signal d&eacute;terministe (Fourier, filtres), le traitement statistique des signaux al&eacute;atoires permet d'aborder des probl&egrave;mes r&eacute;els (estimation, d&eacute;tection, d&eacute;bruitage).</p>
 
-**Message principal** :
-L'aléatoire n'est pas l'ennemi de l'ingénieur. Avec les bons outils (probabilités, processus stochastiques, DSP, filtrage optimal), on peut analyser, modéliser et traiter efficacement les signaux aléatoires.
+<p><strong>Message principal</strong> :<br>
+L'al&eacute;atoire n'est pas l'ennemi de l'ing&eacute;nieur. Avec les bons outils (probabilit&eacute;s, processus stochastiques, DSP, filtrage optimal), on peut analyser, mod&eacute;liser et traiter efficacement les signaux al&eacute;atoires.</p>
 
-**Recommandations** :
-- Approfondir avec des simulations (MATLAB, Python) pour visualiser les concepts
-- Lire des articles sur applications concrètes (radar, télécommunications)
-- Se former au filtrage de Kalman (extension naturelle)
-- Explorer les liens avec l'apprentissage automatique (modèles probabilistes)
+<p><strong>Recommandations</strong> :</p>
+<ul>
+<li>Approfondir avec des simulations (MATLAB, Python) pour visualiser les concepts</li>
+<li>Lire des articles sur applications concr&egrave;tes (radar, t&eacute;l&eacute;communications)</li>
+<li>Se former au filtrage de Kalman (extension naturelle)</li>
+<li>Explorer les liens avec l'apprentissage automatique (mod&egrave;les probabilistes)</li>
+</ul>
 
-**Liens avec les autres cours** :
-- [Signal - S5](./signal.html) : transformée de Fourier, systèmes linéaires
-- [Filtrage Numérique - S6](./filtrage-numerique.html) : filtres numériques FIR/IIR
-- [Électronique Fonctions Numériques - S6](./electronique-fonctions-numeriques.html) : bruit dans les circuits
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+<li><a href="./signal.html">Signal - S5</a> : transform&eacute;e de Fourier, syst&egrave;mes lin&eacute;aires</li>
+<li><a href="./filtrage-numerique.html">Filtrage Num&eacute;rique - S6</a> : filtres num&eacute;riques FIR/IIR</li>
+<li><a href="./electronique-fonctions-numeriques.html">&Eacute;lectronique Fonctions Num&eacute;riques - S6</a> : bruit dans les circuits</li>
+</ul>
 
----
+<hr>
 
-## 📚 Documents de Cours
-
-<style>
-    .pdf-container {
-        margin: 40px 0;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-    .pdf-viewer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .pdf-item {
-        flex: 1;
-        min-width: 400px;
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .pdf-item h4 {
-        color: #2a7ae2;
-        margin-top: 0;
-    }
-</style>
+<h2>&#x1F4DA; Documents de Cours</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Chapitre I - Probabilités</h4>
-      <p>Introduction aux probabilités : espérances mathématiques, axiomes, probabilités conditionnelles et théorème de Bayes.</p>
+      <h4>&#x1F4D6; Chapitre I - Probabilit&eacute;s</h4>
+      <p>Introduction aux probabilit&eacute;s : esp&eacute;rances math&eacute;matiques, axiomes, probabilit&eacute;s conditionnelles et th&eacute;or&egrave;me de Bayes.</p>
       <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Chapitre II - Variables Aléatoires</h4>
-      <p>Variables aléatoires discrètes et continues : lois de probabilité, moments, fonction caractéristique et espérance.</p>
+      <h4>&#x1F4D6; Chapitre II - Variables Al&eacute;atoires</h4>
+      <p>Variables al&eacute;atoires discr&egrave;tes et continues : lois de probabilit&eacute;, moments, fonction caract&eacute;ristique et esp&eacute;rance.</p>
       <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Chapitre III - Processus Stochastiques</h4>
-      <p>Processus aléatoires : stationnarité, ergodicité, autocorrélation et propriétés des processus stationnaires.</p>
+      <h4>&#x1F4D6; Chapitre III - Processus Stochastiques</h4>
+      <p>Processus al&eacute;atoires : stationnarit&eacute;, ergodicit&eacute;, autocorr&eacute;lation et propri&eacute;t&eacute;s des processus stationnaires.</p>
       <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Chapitre IV - Analyse Spectrale</h4>
-      <p>Densité spectrale de puissance (DSP), théorème de Wiener-Khintchine et filtrage linéaire des processus aléatoires.</p>
+      <h4>&#x1F4D6; Chapitre IV - Analyse Spectrale</h4>
+      <p>Densit&eacute; spectrale de puissance (DSP), th&eacute;or&egrave;me de Wiener-Khintchine et filtrage lin&eacute;aire des processus al&eacute;atoires.</p>
       <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
   </div>
 </div>
 
----
+</div>
 
-*Cours suivi en 2022-2023 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+<!-- ============================================ -->
+<!--              ENGLISH VERSION                 -->
+<!-- ============================================ -->
+<div class="lang-en">
+
+<h1>&#x1F3B2; Random Signals - Semester 6</h1>
+
+<p><strong>Academic Year</strong>: 2022-2023<br>
+<strong>Semester</strong>: 6<br>
+<strong>Credits</strong>: 2.5 ECTS<br>
+<strong>Specialization</strong>: Signal Processing and Probability</p>
+
+<hr>
+
+<h2>PART A - General Module Overview</h2>
+
+<h3 class="section-title">Overview</h3>
+
+<p>Random signals are ubiquitous in engineering: noise in electronic circuits, disturbances in telecommunications, measurements with uncertainties. This course introduces the mathematical tools to model, analyze, and process these random signals using probability theory and stochastic processes.</p>
+
+<p><strong>Learning objectives</strong>:</p>
+<ul>
+<li>Master the concepts of probability and random variables</li>
+<li>Understand stochastic processes and their characterization</li>
+<li>Statistically analyze noisy signals</li>
+<li>Model noise in communication systems</li>
+<li>Apply optimal filtering (Wiener, correlation)</li>
+</ul>
+
+<h3 class="section-title">Position in the curriculum</h3>
+
+<p>This module builds upon:</p>
+<ul>
+<li><strong>Signal Processing (S5)</strong>: Fourier transform, linear systems</li>
+<li><strong>Mathematics</strong>: probability, integrals, series</li>
+<li><strong>Digital Filtering (S6)</strong>: filters, signal processing</li>
+</ul>
+
+<p>It prepares for applications in:</p>
+<ul>
+<li><strong>Telecommunications</strong>: noisy channel analysis, BER</li>
+<li><strong>Signal processing</strong>: denoising, estimation</li>
+<li><strong>Embedded systems</strong>: measurements with uncertainties, sensors</li>
+</ul>
+
+<hr>
+
+<h2>PART B - Personal Experience and Learning Context</h2>
+
+<h3 class="section-title">Organization and resources</h3>
+
+<p>The module was organized into lectures and tutorials throughout the semester:</p>
+
+<p><strong>Lectures (20h)</strong>:<br>
+Structured in 4 chapters (Chapter I to Chapter IV):</p>
+<ul>
+<li>Chapter I: Probability review and random variables</li>
+<li>Chapter II: Random pairs and random vectors</li>
+<li>Chapter III: Stochastic processes</li>
+<li>Chapter IV: Linear filtering of random signals</li>
+</ul>
+
+<p><strong>Tutorials (16h)</strong>:<br>
+Application exercises with available solutions:</p>
+<ul>
+<li>TD 1.1, 1.2, 1.3: random variables</li>
+<li>TD 2.1, 2.3: random pairs</li>
+<li>TD 3.1: stochastic processes</li>
+</ul>
+
+<p><strong>Teaching materials</strong>:</p>
+<ul>
+<li>Course booklets (4 chapters in PDF)</li>
+<li>Tutorial problem sets with solutions</li>
+<li>Past exam papers from 2014 to 2017 with answer keys</li>
+</ul>
+
+<h3 class="section-title">Working method</h3>
+
+<p><strong>Theoretical lectures</strong>:<br>
+Many mathematical definitions and proofs. It is necessary to fully grasp the fundamental concepts (probability density, cumulative distribution function, expectation) before tackling stochastic processes.</p>
+
+<p><strong>Practical tutorials</strong>:<br>
+Direct application exercises followed by more complex problems. Detailed solutions allow verification of understanding.</p>
+
+<p><strong>Past exams</strong>:<br>
+Practice on past exam papers (2014-2017) to become familiar with the types of questions asked.</p>
+
+<h3 class="section-title">Difficulties encountered</h3>
+
+<p><strong>Mathematical abstraction</strong>:<br>
+Stochastic processes are abstract mathematical objects. Visualizing what a random process is (an infinite family of random variables) requires a significant effort of abstraction.</p>
+
+<p><strong>Manipulating probability densities</strong>:<br>
+Calculations with joint, marginal, and conditional densities. Many integrals and variable substitutions.</p>
+
+<p><strong>Theory-practice connection</strong>:<br>
+The course is very theoretical. The link with concrete applications (noise in circuits, communication channels) is not always obvious.</p>
+
+<hr>
+
+<h2>PART C - Detailed Technical Aspects</h2>
+
+<h3 class="section-title">1. Probability review</h3>
+
+<p><strong>Probability space</strong>:</p>
+
+<p>A probability space is defined by three elements:</p>
+<ul>
+<li>Omega: set of outcomes (sample space)</li>
+<li>A: set of events (sigma-algebra)</li>
+<li>P: probability (measure on A)</li>
+</ul>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S6/signaux-aleatoires/pdf-gaussienne.svg" alt="Gaussian distribution" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Probability Density Function (PDF) - Normal (Gaussian) distribution</p>
+</div>
+
+<p><strong>Properties of probability</strong>:</p>
+<ul>
+<li>0 &lt;= P(A) &lt;= 1</li>
+<li>P(Omega) = 1</li>
+<li>P(A or B) = P(A) + P(B) - P(A and B)</li>
+</ul>
+
+<p><strong>Conditional probability</strong>:</p>
+<p>P(A given B) = P(A and B) / P(B) if P(B) &gt; 0</p>
+
+<p><strong>Law of total probability</strong>:</p>
+<p>If B1, B2, ..., Bn form a partition of Omega:<br>
+P(A) = sum over i of P(A given Bi) &times; P(Bi)</p>
+
+<p><strong>Bayes' theorem</strong>:</p>
+<p>P(B given A) = P(A given B) &times; P(B) / P(A)</p>
+<p>Applications: inference, diagnostics, Kalman filtering.</p>
+
+<p><strong>Independence</strong>:</p>
+<p>Two events A and B are independent if:<br>
+P(A and B) = P(A) &times; P(B)</p>
+<p>Equivalent to: P(A given B) = P(A)</p>
+
+<h3 class="section-title">2. Random variables</h3>
+
+<p><strong>Definition</strong>:<br>
+A random variable X is a function from Omega to the real numbers that associates a numerical value with each outcome.</p>
+
+<p><strong>Discrete random variable</strong>:</p>
+<p>Takes a finite or countable number of values.</p>
+
+<p><strong>Probability Mass Function (PMF)</strong>:<br>
+p(xi) = P(X = xi)</p>
+
+<p>Properties:</p>
+<ul>
+<li>p(xi) &gt;= 0</li>
+<li>sum over i of p(xi) = 1</li>
+</ul>
+
+<p><strong>Classical discrete distributions</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Distribution</th><th>Parameters</th><th>Usage</th><th>Expectation</th><th>Variance</th></tr>
+</thead>
+<tbody>
+<tr><td>Bernoulli</td><td>p</td><td>success/failure</td><td>p</td><td>p(1-p)</td></tr>
+<tr><td>Binomial</td><td>n, p</td><td>number of successes in n trials</td><td>np</td><td>np(1-p)</td></tr>
+<tr><td>Poisson</td><td>lambda</td><td>rare events</td><td>lambda</td><td>lambda</td></tr>
+<tr><td>Geometric</td><td>p</td><td>number of trials before 1st success</td><td>1/p</td><td>(1-p)/p&sup2;</td></tr>
+</tbody>
+</table>
+
+<p><strong>Continuous random variable</strong>:</p>
+<p>Takes values in a continuous interval.</p>
+
+<p><strong>Probability Density Function (PDF)</strong>:<br>
+Function f(x) such that:<br>
+P(a &lt; X &lt; b) = integral from a to b of f(x) dx</p>
+
+<p>Properties:</p>
+<ul>
+<li>f(x) &gt;= 0</li>
+<li>integral from -infinity to +infinity of f(x) dx = 1</li>
+</ul>
+
+<p><strong>Cumulative Distribution Function (CDF)</strong>:<br>
+F(x) = P(X &lt;= x) = integral from -infinity to x of f(t) dt</p>
+
+<p>Properties:</p>
+<ul>
+<li>F is non-decreasing</li>
+<li>F(-infinity) = 0, F(+infinity) = 1</li>
+<li>f(x) = dF(x)/dx</li>
+</ul>
+
+<p><strong>Classical continuous distributions</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Distribution</th><th>Density</th><th>Usage</th><th>Expectation</th><th>Variance</th></tr>
+</thead>
+<tbody>
+<tr><td>Uniform [a,b]</td><td>1/(b-a) on [a,b]</td><td>equal probability</td><td>(a+b)/2</td><td>(b-a)&sup2;/12</td></tr>
+<tr><td>Exponential</td><td>lambda &times; exp(-lambda &times; x)</td><td>lifetime</td><td>1/lambda</td><td>1/lambda&sup2;</td></tr>
+<tr><td>Gaussian</td><td>(1/sqrt(2&pi;)&sigma;) exp(-(x-m)&sup2;/(2&sigma;&sup2;))</td><td>noise, measurements</td><td>m</td><td>&sigma;&sup2;</td></tr>
+<tr><td>Rayleigh</td><td>(x/&sigma;&sup2;) exp(-x&sup2;/(2&sigma;&sup2;))</td><td>Gaussian signal envelope</td><td>&sigma; sqrt(&pi;/2)</td><td>&sigma;&sup2;(4-&pi;)/2</td></tr>
+</tbody>
+</table>
+
+<p><strong>Moments of a random variable</strong>:</p>
+
+<p><strong>Expectation (mean)</strong>:<br>
+E[X] = integral of x f(x) dx (continuous case)<br>
+E[X] = sum of xi p(xi) (discrete case)</p>
+
+<p><strong>Variance</strong>:<br>
+Var(X) = E[(X - E[X])&sup2;] = E[X&sup2;] - (E[X])&sup2;</p>
+
+<p><strong>Standard deviation</strong>:<br>
+sigma = sqrt(Var(X))</p>
+
+<p><strong>Properties of expectation</strong>:</p>
+<ul>
+<li>E[aX + b] = a E[X] + b</li>
+<li>E[X + Y] = E[X] + E[Y] (always)</li>
+<li>E[XY] = E[X] E[Y] (if X and Y are independent)</li>
+</ul>
+
+<p><strong>Properties of variance</strong>:</p>
+<ul>
+<li>Var(aX + b) = a&sup2; Var(X)</li>
+<li>Var(X + Y) = Var(X) + Var(Y) (if X and Y are independent)</li>
+</ul>
+
+<h3 class="section-title">3. Gaussian distribution (normal distribution)</h3>
+
+<p><strong>Fundamental importance</strong>:<br>
+The Gaussian distribution is the most important in engineering because:</p>
+<ul>
+<li>It models noise in circuits (thermal noise)</li>
+<li>It is the result of the Central Limit Theorem</li>
+<li>It has remarkable mathematical properties</li>
+</ul>
+
+<p><strong>Probability density</strong>:</p>
+<p>f(x) = (1 / (sigma sqrt(2&pi;))) exp(-(x - m)&sup2; / (2 sigma&sup2;))</p>
+
+<p>Parameters:</p>
+<ul>
+<li>m: mean</li>
+<li>sigma&sup2;: variance</li>
+</ul>
+
+<p>Notation: X follows N(m, sigma&sup2;)</p>
+
+<p><strong>Standard normal distribution</strong>:</p>
+<p>Special case with m = 0 and sigma = 1: N(0, 1)</p>
+<p>Density: &phi;(x) = (1/sqrt(2&pi;)) exp(-x&sup2;/2)</p>
+
+<p><strong>Standardization</strong>:</p>
+<p>If X follows N(m, sigma&sup2;), then Z = (X - m) / sigma follows N(0, 1)</p>
+<p>Allows use of the standard normal tables.</p>
+
+<p><strong>The 3-sigma rule</strong>:</p>
+<p>For a Gaussian distribution N(m, sigma&sup2;):</p>
+<ul>
+<li>68% of values within [m - sigma, m + sigma]</li>
+<li>95% of values within [m - 2sigma, m + 2sigma]</li>
+<li>99.7% of values within [m - 3sigma, m + 3sigma]</li>
+</ul>
+
+<p><strong>Remarkable properties</strong>:</p>
+<ul>
+<li>The sum of Gaussians is Gaussian</li>
+<li>A linear transformation of a Gaussian is Gaussian</li>
+<li>Maximizes entropy for a given variance</li>
+</ul>
+
+<h3 class="section-title">4. Random pairs and random vectors</h3>
+
+<p><strong>Random pair</strong>:</p>
+<p>A pair (X, Y) of random variables.</p>
+
+<p><strong>Joint density</strong>:<br>
+f(x, y) such that P((X, Y) in D) = double integral over D of f(x, y) dx dy</p>
+
+<p><strong>Marginal densities</strong>:<br>
+Density of X alone: f_X(x) = integral of f(x, y) dy<br>
+Density of Y alone: f_Y(y) = integral of f(x, y) dx</p>
+
+<p><strong>Conditional density</strong>:<br>
+f(x given y) = f(x, y) / f_Y(y)</p>
+
+<p><strong>Independence</strong>:</p>
+<p>X and Y are independent if and only if:<br>
+f(x, y) = f_X(x) &times; f_Y(y)</p>
+
+<p><strong>Correlation and covariance</strong>:</p>
+
+<p><strong>Expectation of a pair</strong>:<br>
+E[g(X, Y)] = double integral of g(x, y) f(x, y) dx dy</p>
+
+<p><strong>Covariance</strong>:<br>
+Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X] E[Y]</p>
+
+<p><strong>Correlation coefficient</strong>:<br>
+rho = Cov(X, Y) / (sigma_X sigma_Y)</p>
+
+<p>Properties:</p>
+<ul>
+<li>-1 &lt;= rho &lt;= 1</li>
+<li>rho = 0: uncorrelated variables</li>
+<li>rho = &plusmn;1: linear relationship</li>
+</ul>
+
+<p><strong>Important remark</strong>:</p>
+<ul>
+<li>Independent =&gt; uncorrelated</li>
+<li>Uncorrelated =/=&gt; independent (except in the Gaussian case)</li>
+</ul>
+
+<p><strong>Gaussian pair</strong>:</p>
+<p>(X, Y) follows a bivariate Gaussian distribution if their joint density has the 2-dimensional Gaussian form.</p>
+
+<p><strong>Remarkable property</strong>:<br>
+For a Gaussian pair: uncorrelated &lt;=&gt; independent</p>
+
+<h3 class="section-title">5. Limit theorems</h3>
+
+<p><strong>Law of large numbers</strong>:</p>
+<p>The sample mean converges to the theoretical expectation.</p>
+<p>If X1, X2, ..., Xn are independent and identically distributed random variables with expectation m:<br>
+(X1 + X2 + ... + Xn) / n tends to m as n tends to infinity</p>
+
+<p><strong>Central Limit Theorem (CLT)</strong>:</p>
+<p>The sum of random variables approximately follows a Gaussian distribution.</p>
+<p>If X1, X2, ..., Xn are independent and identically distributed random variables with expectation m and variance sigma&sup2;:<br>
+(X1 + X2 + ... + Xn - n&times;m) / (sigma sqrt(n)) tends to N(0, 1)</p>
+
+<p><strong>Important consequence</strong>:<br>
+Explains why so many natural phenomena follow a Gaussian distribution: the result of many small independent causes.</p>
+
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>Noise modeling (sum of many disturbances)</li>
+<li>Binomial-to-Gaussian approximation (for large n)</li>
+<li>Statistical estimation</li>
+</ul>
+
+<h3 class="section-title">6. Stochastic processes</h3>
+
+<p><strong>Definition</strong>:</p>
+<p>A stochastic process X(t) is a family of random variables indexed by time t.</p>
+<p>For each time instant t, X(t) is a random variable.</p>
+
+<p><strong>Visualizations</strong>:</p>
+<ul>
+<li>Realization: curve X(t, omega) for a fixed omega</li>
+<li>Distribution: probability distribution at a fixed time t</li>
+<li>Statistics: expectation E[X(t)], variance Var[X(t)]</li>
+</ul>
+
+<p><strong>Types of processes</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Type</th><th>Time</th><th>Values</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>Discrete-Discrete</td><td>discrete</td><td>discrete</td><td>Random walk</td></tr>
+<tr><td>Continuous-Discrete</td><td>continuous</td><td>discrete</td><td>Poisson process</td></tr>
+<tr><td>Discrete-Continuous</td><td>discrete</td><td>continuous</td><td>Measurement series</td></tr>
+<tr><td>Continuous-Continuous</td><td>continuous</td><td>continuous</td><td>Thermal noise</td></tr>
+</tbody>
+</table>
+
+<p><strong>Mean and autocorrelation</strong>:</p>
+
+<p><strong>Mean</strong>:<br>
+m_X(t) = E[X(t)]</p>
+<p>A function of time (in general).</p>
+
+<p><strong>Autocorrelation function</strong>:<br>
+R_X(t1, t2) = E[X(t1) X(t2)]</p>
+<p>Measures the correlation between the process values at two different time instants.</p>
+
+<p><strong>Autocovariance function</strong>:<br>
+C_X(t1, t2) = E[(X(t1) - m_X(t1))(X(t2) - m_X(t2))]<br>
+C_X(t1, t2) = R_X(t1, t2) - m_X(t1) m_X(t2)</p>
+
+<h3 class="section-title">7. Stationary processes</h3>
+
+<p><strong>Strict stationarity</strong>:</p>
+<p>All statistics of the process are invariant under time translation.</p>
+<p>Difficult to verify in practice.</p>
+
+<p><strong>Wide Sense Stationarity (WSS)</strong>:</p>
+<p>Two conditions suffice:</p>
+<ol>
+<li>Constant mean: m_X(t) = m (independent of t)</li>
+<li>Autocorrelation depends only on the lag: R_X(t1, t2) = R_X(tau) with tau = t2 - t1</li>
+</ol>
+
+<p><strong>Properties of R_X(tau)</strong>:</p>
+<ul>
+<li>R_X(0) = E[X&sup2;(t)] = average power</li>
+<li>R_X(tau) = R_X(-tau) (even function)</li>
+<li>|R_X(tau)| &lt;= R_X(0)</li>
+<li>R_X(tau) is maximum at tau = 0</li>
+</ul>
+
+<p><strong>Ergodicity</strong>:</p>
+<p>A stationary process is ergodic if time averages (over a single realization) converge to ensemble averages.</p>
+<p>Time average = limit as T tends to infinity of (1/T) integral from 0 to T of x(t) dt</p>
+<p>If ergodic:</p>
+<ul>
+<li>Time average = theoretical mean E[X]</li>
+<li>Allows estimating statistics from a single realization</li>
+</ul>
+
+<h3 class="section-title">8. Power Spectral Density (PSD)</h3>
+
+<p><strong>Wiener-Khinchin theorem</strong>:</p>
+<p>For a WSS process, the power spectral density S_X(f) is the Fourier transform of the autocorrelation R_X(tau):</p>
+<p>S_X(f) = FT[R_X(tau)]</p>
+<p>Conversely:<br>
+R_X(tau) = FT&sup1;[S_X(f)]</p>
+
+<p><strong>Interpretation</strong>:<br>
+S_X(f) represents the distribution of signal power as a function of frequency.</p>
+
+<p><strong>Properties</strong>:</p>
+<ul>
+<li>S_X(f) &gt;= 0 (non-negative function)</li>
+<li>S_X(f) = S_X(-f) (even function, if X is real)</li>
+<li>Total power = R_X(0) = integral of S_X(f) df</li>
+</ul>
+
+<p><strong>Power in a band</strong>:</p>
+<p>Power between f1 and f2 = integral from f1 to f2 of S_X(f) df</p>
+
+<h3 class="section-title">9. White noise</h3>
+
+<p><strong>Definition</strong>:</p>
+<p>A process whose PSD is constant across all frequencies:<br>
+S_X(f) = N0/2</p>
+<p>Autocorrelation:<br>
+R_X(tau) = (N0/2) delta(tau)</p>
+<p>where delta is the Dirac delta distribution.</p>
+
+<p><strong>Interpretation</strong>:</p>
+<ul>
+<li>Power is uniformly distributed across all frequencies</li>
+<li>Values at two different instants are uncorrelated (Dirac delta)</li>
+</ul>
+
+<p><strong>Gaussian white noise</strong>:</p>
+<p>A Gaussian process with a flat spectrum. Denoted AWGN (Additive White Gaussian Noise).</p>
+<p>Standard noise model in telecommunications.</p>
+
+<p><strong>White noise in practice</strong>:</p>
+<p>Ideal white noise does not exist (infinite power). In practice:</p>
+<ul>
+<li>Band-limited white noise</li>
+<li>Flat PSD over the band of interest</li>
+</ul>
+
+<p><strong>Thermal noise</strong>:</p>
+<p>Noise in resistors due to thermal agitation (Johnson-Nyquist).</p>
+<p>PSD: S_V(f) = 4 k T R</p>
+<p>where k = Boltzmann constant, T = temperature (Kelvin), R = resistance.</p>
+<p>White noise approximation over a wide bandwidth.</p>
+
+<h3 class="section-title">10. Linear filtering of random signals</h3>
+
+<p><strong>Linear Time-Invariant (LTI) system</strong>:</p>
+<p>Characterized by its impulse response h(t) or its transfer function H(f).</p>
+
+<p><strong>Random input X(t), output Y(t)</strong>:</p>
+<p>If X(t) is WSS, then Y(t) is also WSS.</p>
+
+<p><strong>Input-output relationships</strong>:</p>
+
+<p><strong>Mean</strong>:<br>
+m_Y = m_X &times; H(0)</p>
+<p>where H(0) is the DC gain of the filter.</p>
+
+<p><strong>Autocorrelation</strong>:<br>
+R_Y(tau) = R_X(tau) * h(tau) * h(-tau)</p>
+<p>where * denotes convolution.</p>
+
+<p><strong>PSD</strong>:<br>
+S_Y(f) = S_X(f) &times; |H(f)|&sup2;</p>
+
+<p><strong>Fundamental formula</strong>: the output PSD is the input PSD multiplied by the squared magnitude of the transfer function.</p>
+
+<p><strong>Output variance</strong>:<br>
+Var(Y) = R_Y(0) = integral of S_Y(f) df = integral of S_X(f) |H(f)|&sup2; df</p>
+
+<p><strong>Example: filtered white noise</strong></p>
+<p>Input: white noise with PSD N0/2<br>
+Filter: low-pass with bandwidth B<br>
+Output: PSD S_Y(f) = (N0/2) |H(f)|&sup2;</p>
+<p>Output power: (N0/2) &times; 2B = N0 B</p>
+<p>(approximation for an ideal filter)</p>
+
+<h3 class="section-title">11. Signal-to-Noise Ratio (SNR)</h3>
+
+<p><strong>Definition</strong>:</p>
+<p>SNR = Signal power / Noise power</p>
+<p>In decibels: SNR_dB = 10 log10(SNR)</p>
+
+<p><strong>Signal in noise</strong>:</p>
+<p>Useful signal: s(t) with power P_s<br>
+Noise: n(t) with power P_n<br>
+Received signal: r(t) = s(t) + n(t)</p>
+<p>SNR = P_s / P_n</p>
+
+<p><strong>SNR improvement through filtering</strong>:</p>
+<p>The matched filter maximizes the output SNR.</p>
+
+<p><strong>Wiener filter</strong>:</p>
+<p>Optimal filter in the minimum mean square error (MMSE) sense.</p>
+<p>Optimal transfer function:<br>
+H_opt(f) = S_XY(f) / (S_X(f) + S_N(f))</p>
+<p>where S_XY is the signal-observation cross-correlation, S_X is the signal spectrum, S_N is the noise spectrum.</p>
+
+<p><strong>Matched filter</strong>:</p>
+<p>To detect a known signal s(t) in white noise, the optimal filter has:<br>
+h(t) = s(T - t)</p>
+<p>where T is the decision instant.</p>
+<p>Maximizes the SNR at the sampling instant.</p>
+
+<h3 class="section-title">12. Telecommunications applications</h3>
+
+<p><strong>AWGN channel (Additive White Gaussian Noise)</strong>:</p>
+<p>Standard communication channel model.</p>
+<p>Received signal: r(t) = s(t) + n(t)</p>
+<p>where n(t) is Gaussian white noise.</p>
+
+<p><strong>Bit Error Rate (BER)</strong>:</p>
+<p>Probability of a bit error as a function of SNR.</p>
+<p>For a simple binary modulation:<br>
+BER = function of the Eb/N0 ratio</p>
+<p>where Eb is the energy per bit, N0 is the noise PSD.</p>
+
+<p><strong>Shannon capacity</strong>:</p>
+<p>Maximum theoretical data rate of a channel:<br>
+C = B log2(1 + SNR)</p>
+<p>where B is the bandwidth, C is the capacity in bits/s.</p>
+
+<p><strong>Shannon's theorem</strong>:<br>
+It is possible to transmit at a rate &lt; C with an arbitrarily low error probability (thanks to channel coding).</p>
+
+<h3 class="section-title">13. Estimation and detection</h3>
+
+<p><strong>Parameter estimation</strong>:</p>
+<p>From noisy observations, estimate an unknown parameter.</p>
+
+<p><strong>Maximum Likelihood Estimator (MLE)</strong>:</p>
+<p>Choose the parameter value that maximizes the probability of observing the data.</p>
+<p>Principle: theta_MLE = argmax of the likelihood L(theta)</p>
+
+<p><strong>MMSE estimator</strong>:</p>
+<p>Minimizes the mean square error.</p>
+<p>E[(theta - theta_estimated)&sup2;] is minimized</p>
+
+<p><strong>Hypothesis testing</strong>:</p>
+<p>Decide between several hypotheses (H0 or H1) based on observations.</p>
+
+<p><strong>Neyman-Pearson criterion</strong>:</p>
+<p>Maximize the detection probability for a given false alarm probability.</p>
+
+<p><strong>ROC curve (Receiver Operating Characteristic)</strong>:</p>
+<p>Detection probability as a function of false alarm probability.</p>
+<p>Allows comparison of the performance of different detectors.</p>
+
+<hr>
+
+<h2>PART D - Reflective Analysis and Perspectives</h2>
+
+<h3 class="section-title">Skills acquired</h3>
+
+<p><strong>Mathematical rigor</strong>:<br>
+The course develops a rigorous approach to probability and stochastic processes. Mathematical proofs reinforce deep understanding of the concepts.</p>
+
+<p><strong>Modeling randomness</strong>:<br>
+Ability to model real random phenomena (noise, measurements, signals) using appropriate probability distributions and stochastic processes.</p>
+
+<p><strong>Spectral analysis</strong>:<br>
+Mastery of the power spectral density as a tool for analyzing random signals, an essential complement to the classical Fourier transform.</p>
+
+<h3 class="section-title">Key takeaways</h3>
+
+<p><strong>1. The central Gaussian distribution</strong>:<br>
+The Gaussian distribution is ubiquitous thanks to the Central Limit Theorem. Understanding its properties is essential for the engineer.</p>
+
+<p><strong>2. Correlation vs independence</strong>:<br>
+Lack of correlation does not imply independence (except in the Gaussian case). A fundamental distinction that is often a source of errors.</p>
+
+<p><strong>3. Stationarity = simplicity</strong>:<br>
+Stationary processes are much simpler to analyze. In practice, stationarity is often assumed (at least locally).</p>
+
+<p><strong>4. PSD = the tool of choice</strong>:<br>
+The power spectral density is the main tool for analyzing and filtering random signals. The Wiener-Khinchin theorem is fundamental.</p>
+
+<p><strong>5. Optimal filtering</strong>:<br>
+The Wiener filter and the matched filter are important theoretical results that guide the design of real systems.</p>
+
+<h3 class="section-title">Practical applications</h3>
+
+<p><strong>Telecommunications</strong>:</p>
+<ul>
+<li>Channel modeling (AWGN noise, fading)</li>
+<li>BER calculation as a function of SNR</li>
+<li>Optimal receiver design</li>
+<li>Equalization, denoising</li>
+</ul>
+
+<p><strong>Signal processing</strong>:</p>
+<ul>
+<li>Parameter estimation (frequency, phase, amplitude)</li>
+<li>Detection of signals buried in noise</li>
+<li>Optimal filtering (Wiener)</li>
+<li>Spectral analysis (PSD estimation)</li>
+</ul>
+
+<p><strong>Measurement systems</strong>:</p>
+<ul>
+<li>Uncertainty quantification</li>
+<li>SNR improvement through averaging</li>
+<li>Sensor design</li>
+<li>Statistical processing of measurements</li>
+</ul>
+
+<p><strong>Radar and sonar</strong>:</p>
+<ul>
+<li>Target detection</li>
+<li>Distance and velocity estimation</li>
+<li>Matched filtering to maximize SNR</li>
+</ul>
+
+<h3 class="section-title">Feedback on experience</h3>
+
+<p><strong>Theoretical course</strong>:<br>
+The course is dense and mathematical. Mastering the concepts requires time and practice on varied exercises. The tutorials are essential for assimilating the theory.</p>
+
+<p><strong>Valuable past exams</strong>:<br>
+The past exam papers from 2014 to 2017 with solutions are an important resource for exam preparation and understanding expectations.</p>
+
+<p><strong>Progressive difficulty</strong>:</p>
+<ul>
+<li>Chapter I (probability and random variables): relatively accessible</li>
+<li>Chapter II (random pairs): more technical (double integrals)</li>
+<li>Chapter III (stochastic processes): abstract</li>
+<li>Chapter IV (filtering): concrete applications, more motivating</li>
+</ul>
+
+<h3 class="section-title">Limitations and further directions</h3>
+
+<p><strong>Module limitations</strong>:</p>
+<ul>
+<li>Few practical applications (MATLAB simulations)</li>
+<li>Limited treatment of estimation (no detailed Kalman filter)</li>
+<li>No non-stationary processes (transient signals)</li>
+</ul>
+
+<p><strong>Further directions</strong>:</p>
+<ul>
+<li><strong>Statistical signal processing</strong>: spectral estimation, time-frequency analysis</li>
+<li><strong>Digital communications</strong>: modulations, channel coding, equalization</li>
+<li><strong>Kalman filtering</strong>: recursive estimation, dynamic systems</li>
+<li><strong>Machine learning</strong>: probabilistic models, Bayesian inference</li>
+<li><strong>Image processing</strong>: image noise, restoration</li>
+<li><strong>Finance</strong>: market modeling (Brownian motion, stochastic processes)</li>
+</ul>
+
+<h3 class="section-title">Links to other fields</h3>
+
+<p><strong>Information theory</strong>:<br>
+Entropy, mutual information, channel capacity (Shannon).</p>
+
+<p><strong>Statistics</strong>:<br>
+Hypothesis testing, estimation, confidence intervals.</p>
+
+<p><strong>Stochastic control</strong>:<br>
+Dynamic systems with uncertainties, optimal control.</p>
+
+<p><strong>Machine learning</strong>:<br>
+Probabilistic generative models, Bayesian networks, Gaussian processes.</p>
+
+<h3 class="section-title">Tips for success</h3>
+
+<p><strong>1. Master the fundamentals</strong>:<br>
+Ensure a solid grasp of the basics (probability, densities, expectation, variance) before tackling stochastic processes.</p>
+
+<p><strong>2. Do the tutorials</strong>:<br>
+The exercises are essential. Redo the tutorials without looking at the solutions to test your understanding.</p>
+
+<p><strong>3. Use past exams</strong>:<br>
+Practice on past exam papers to become familiar with the format and identify key topics.</p>
+
+<p><strong>4. Visualize</strong>:<br>
+Try to visualize the concepts (density curves, process realizations) rather than staying in pure abstraction.</p>
+
+<p><strong>5. Understand the theorems</strong>:<br>
+The Central Limit Theorem and Wiener-Khinchin theorem are fundamental. Thoroughly understand their assumptions and consequences.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>The Random Signals module provides the essential mathematical foundations for processing noisy signals and the random phenomena that are ubiquitous in engineering. Probability theory and stochastic processes, although sometimes abstract, provide powerful and rigorous tools.</p>
+
+<p><strong>Impact on training</strong>:<br>
+This course changes the way we view signals: every real signal contains randomness (noise, uncertainties). Knowing how to model and process this randomness is essential for the engineer.</p>
+
+<p><strong>Complementarity</strong>:<br>
+As a complement to deterministic signal processing (Fourier, filters), statistical processing of random signals enables tackling real-world problems (estimation, detection, denoising).</p>
+
+<p><strong>Main message</strong>:<br>
+Randomness is not the enemy of the engineer. With the right tools (probability, stochastic processes, PSD, optimal filtering), one can effectively analyze, model, and process random signals.</p>
+
+<p><strong>Recommendations</strong>:</p>
+<ul>
+<li>Deepen understanding with simulations (MATLAB, Python) to visualize concepts</li>
+<li>Read articles on concrete applications (radar, telecommunications)</li>
+<li>Learn Kalman filtering (a natural extension)</li>
+<li>Explore connections with machine learning (probabilistic models)</li>
+</ul>
+
+<p><strong>Links to other courses</strong>:</p>
+<ul>
+<li><a href="./signal.html">Signal Processing - S5</a>: Fourier transform, linear systems</li>
+<li><a href="./filtrage-numerique.html">Digital Filtering - S6</a>: FIR/IIR digital filters</li>
+<li><a href="./electronique-fonctions-numeriques.html">Digital Electronics Functions - S6</a>: noise in circuits</li>
+</ul>
+
+<hr>
+
+<h2>&#x1F4DA; Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>&#x1F4D6; Chapter I - Probability</h4>
+      <p>Introduction to probability: mathematical expectations, axioms, conditional probabilities, and Bayes' theorem.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">&#x1F4E5; Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>&#x1F4D6; Chapter II - Random Variables</h4>
+      <p>Discrete and continuous random variables: probability distributions, moments, characteristic function, and expectation.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">&#x1F4E5; Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>&#x1F4D6; Chapter III - Stochastic Processes</h4>
+      <p>Random processes: stationarity, ergodicity, autocorrelation, and properties of stationary processes.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">&#x1F4E5; Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>&#x1F4D6; Chapter IV - Spectral Analysis</h4>
+      <p>Power spectral density (PSD), Wiener-Khinchin theorem, and linear filtering of random processes.</p>
+      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">&#x1F4E5; Download</a></p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
+</div>
+
+<hr>
+
+<em class="lang-fr">Cours suivi en 2022-2023 &agrave; l'INSA Toulouse, D&eacute;partement G&eacute;nie &Eacute;lectrique et Informatique.</em>
+<em class="lang-en">Course taken in 2022-2023 at INSA Toulouse, Department of Electrical and Computer Engineering.</em>

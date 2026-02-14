@@ -70,86 +70,86 @@ categories: jekyll update
   <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-# My Courses - 2024-2025
+<h1 data-i18n="courses-title-2024-2025">My Courses - 2024-2025</h1>
 
 ---
 
 ## [📁 Portfolio](./portfolio.html)
-**Duration**: 30 hours  
-**Dates**: 01/10/2024 - 30/01/2025  
-**Content**: Compilation of projects and assignments completed throughout the course.
+<strong data-i18n="label-duration">Duration</strong>: 30 hours  
+<strong data-i18n="label-dates">Dates</strong>: 01/10/2024 - 30/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Compilation des projets et travaux réalisés tout au long du cursus.</span><span class="lang-en">Compilation of projects and assignments completed throughout the course.</span>
 
 ## [☁️ Cloud Edge Computing](./cloud-edge.html)
-**Duration**: 16.25 hours  
-**Dates**: 30/09/2024 - 14/10/2024  
-**Content**: Learn and practice about virtualization techniques such as VMs and containers.
+<strong data-i18n="label-duration">Duration</strong>: 16.25 hours  
+<strong data-i18n="label-dates">Dates</strong>: 30/09/2024 - 14/10/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Apprentissage et pratique des techniques de virtualisation telles que les machines virtuelles et les conteneurs.</span><span class="lang-en">Learn and practice about virtualization techniques such as VMs and containers.</span>
 
 ## [🔋 Energy for Connected Object](./energy-connected-object.html)
-**Duration**: 10.5 hours  
-**Dates**: 07/10/2024 - 15/10/2024  
-**Content**: Introduction to the different methods to power Energy for Connected Objects.
+<strong data-i18n="label-duration">Duration</strong>: 10.5 hours  
+<strong data-i18n="label-dates">Dates</strong>: 07/10/2024 - 15/10/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Introduction aux différentes méthodes d'alimentation énergétique des objets connectés.</span><span class="lang-en">Introduction to the different methods to power Energy for Connected Objects.</span>
 
 ## [📚 Service Oriented Architecture MOOC](./service-oriented-architecture.html)
-**Duration**: 31 hours  
-**Dates**: 04/10/2024 - 14/01/2025  
-**Content**: Learn about legacy and actual architectures service oriented for software engineering.
+<strong data-i18n="label-duration">Duration</strong>: 31 hours  
+<strong data-i18n="label-dates">Dates</strong>: 04/10/2024 - 14/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte des architectures orientées services, anciennes et actuelles, pour le génie logiciel.</span><span class="lang-en">Learn about legacy and actual architectures service oriented for software engineering.</span>
 
 ## [📶 5G Technologies](./5G-Technologies.html)
-**Duration**: 7.5 hours  
-**Dates**: 30/09/2024 - 21/11/2024  
-**Content**: Learn about 5G and more generally topics related to cellular networks.
+<strong data-i18n="label-duration">Duration</strong>: 7.5 hours  
+<strong data-i18n="label-dates">Dates</strong>: 30/09/2024 - 21/11/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte de la 5G et plus généralement des sujets liés aux réseaux cellulaires.</span><span class="lang-en">Learn about 5G and more generally topics related to cellular networks.</span>
 
 ## [🔗 Wireless Sensor Networks and Localization (WSNL)](./wireless-sensors.html)
-**Duration**: 33.25 hours  
-**Dates**: 07/10/2024 - 20/12/2024  
-**Content**: Learn about wireless sensor networks technologies.
+<strong data-i18n="label-duration">Duration</strong>: 33.25 hours  
+<strong data-i18n="label-dates">Dates</strong>: 07/10/2024 - 20/12/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte des technologies de réseaux de capteurs sans fil.</span><span class="lang-en">Learn about wireless sensor networks technologies.</span>
 
 ## [📡 Middleware for IoT](./middleware-iot.html)
-**Duration**: 14.75 hours  
-**Dates**: 15/11/2024 - 20/12/2024  
-**Content**: Discover communication protocols for IoT.
+<strong data-i18n="label-duration">Duration</strong>: 14.75 hours  
+<strong data-i18n="label-dates">Dates</strong>: 15/11/2024 - 20/12/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte des protocoles de communication pour l'IoT.</span><span class="lang-en">Discover communication protocols for IoT.</span>
 
 ## [🌐 Emerging Network](./emerging-network.html)
-**Duration**: 10.5 hours  
-**Dates**: 08/01/2025 - 24/01/2025  
-**Content**: Discovery of emerging network paradigms.
+<strong data-i18n="label-duration">Duration</strong>: 10.5 hours  
+<strong data-i18n="label-dates">Dates</strong>: 08/01/2025 - 24/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte des paradigmes de réseaux émergents.</span><span class="lang-en">Discovery of emerging network paradigms.</span>
 
 ## [📡 Low Power Wireless Personal Area Network](./low-power-wireless.html)
-**Duration**: 7.5 hours  
-**Dates**: 04/12/2024 - 07/01/2025  
-**Content**: Definition of a TCP/IP protocol stack for a LP-WPAN network.
+<strong data-i18n="label-duration">Duration</strong>: 7.5 hours  
+<strong data-i18n="label-dates">Dates</strong>: 04/12/2024 - 07/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Définition d'une pile protocolaire TCP/IP pour un réseau LP-WPAN.</span><span class="lang-en">Definition of a TCP/IP protocol stack for a LP-WPAN network.</span>
 
 ## [🔒 Security Connected Object](./security-object.html)
-**Duration**: 13 hours  
-**Dates**: 15/10/2024 - 22/01/2025  
-**Content**: Discussion about the need and how to secure protocols for IoT.
+<strong data-i18n="label-duration">Duration</strong>: 13 hours  
+<strong data-i18n="label-dates">Dates</strong>: 15/10/2024 - 22/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Discussion sur la nécessité et les moyens de sécuriser les protocoles pour l'IoT.</span><span class="lang-en">Discussion about the need and how to secure protocols for IoT.</span>
 
 ## [🧠 Embedded IA for IOT](./embedded-ia-iot.html)
-**Duration**: 15.75 hours  
-**Dates**: 04/12/2024 - 24/01/2025  
-**Content**: Introduction to the concepts of AI applied to an IoT context.
+<strong data-i18n="label-duration">Duration</strong>: 15.75 hours  
+<strong data-i18n="label-dates">Dates</strong>: 04/12/2024 - 24/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Introduction aux concepts de l'IA appliqués au contexte de l'IoT.</span><span class="lang-en">Introduction to the concepts of AI applied to an IoT context.</span>
 
 ## [🤖 AIME - Sensors](./aime.html)
-**Duration**: 13.75 hours  
-**Dates**: 04/11/2024 - 08/11/2024  
-**Content**: Discover the creation of a sensor.
+<strong data-i18n="label-duration">Duration</strong>: 13.75 hours  
+<strong data-i18n="label-dates">Dates</strong>: 04/11/2024 - 08/11/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Découverte de la création d'un capteur.</span><span class="lang-en">Discover the creation of a sensor.</span>
 
 ## [🔌 Microcontroller Open Source Hardware and Sensors](./microcontroleur_hardware.html)
-**Duration**: 39 hours  
-**Dates**: 28/11/2024 - 18/12/2024  
-**Content**: Introduction to microcontrollers programming and implementation of our sensor in a complex circuit.
+<strong data-i18n="label-duration">Duration</strong>: 39 hours  
+<strong data-i18n="label-dates">Dates</strong>: 28/11/2024 - 18/12/2024  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Introduction à la programmation de microcontrôleurs et intégration de notre capteur dans un circuit complexe.</span><span class="lang-en">Introduction to microcontrollers programming and implementation of our sensor in a complex circuit.</span>
 
 ## [🇬🇧 English](./english.html)
-**Duration**: 30 hours  
-**Dates**: 01/10/2024 - 30/01/2025  
-**Content**: Improve English language skills with a focus on technical and professional communication.
+<strong data-i18n="label-duration">Duration</strong>: 30 hours  
+<strong data-i18n="label-dates">Dates</strong>: 01/10/2024 - 30/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Amélioration des compétences en anglais avec un accent sur la communication technique et professionnelle.</span><span class="lang-en">Improve English language skills with a focus on technical and professional communication.</span>
 
 ## [💧 Innovative Project: Water Leak Detection](./innovative-project.html)
-**Duration**: 76.75 hours  
-**Dates**: 30/09/2024 - 29/01/2025  
-**Content**: The guideline industrial project of our year.
+<strong data-i18n="label-duration">Duration</strong>: 76.75 hours  
+<strong data-i18n="label-dates">Dates</strong>: 30/09/2024 - 29/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Le projet industriel fil rouge de notre année.</span><span class="lang-en">The guideline industrial project of our year.</span>
 
 ## [🎓 Master REOC](./master-reoc.html)
-**Duration**: 60 hours  
-**Dates**: 07/11/2024 - 29/01/2025  
-**Content**: Comprehensive study of embedded networks and connected objects.
+<strong data-i18n="label-duration">Duration</strong>: 60 hours  
+<strong data-i18n="label-dates">Dates</strong>: 07/11/2024 - 29/01/2025  
+<strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Étude approfondie des réseaux embarqués et des objets connectés.</span><span class="lang-en">Comprehensive study of embedded networks and connected objects.</span>

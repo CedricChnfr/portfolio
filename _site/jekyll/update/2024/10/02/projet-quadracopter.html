@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Quadcopter Design and Development" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project" />
-<meta property="og:description" content="← Back to Academic Project" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Quadcopter Design and Development" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project","headline":"Quadcopter Design and Development","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Quadcopter Design and Development","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-quadracopter.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,321 +36,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
-
-<h1 id="introduction">Introduction</h1>
-<p>This comprehensive multidisciplinary project involved designing, building, and programming a functional quadcopter from scratch. The project integrated electronics (power systems, motor control, sensors), embedded programming (flight controller firmware, sensor fusion), control theory (PID tuning, stabilization), and mechanical design (frame, propulsion system). This synthesis project applied all skills acquired during the first year, culminating in a flying autonomous drone.</p>
-
-<h1 id="project-overview">Project Overview</h1>
-<p>Working in teams, we developed a complete quadcopter system capable of stable flight with multiple flight modes. The project spanned requirements definition, component selection, assembly, programming, PID tuning, and extensive flight testing. Safety protocols were paramount throughout all development phases.</p>
-
-<h2 id="system-architecture">System Architecture</h2>
-
-<h3 id="electronic-subsystems">Electronic Subsystems</h3>
-<p><strong>Power Management:</strong></p>
-<ul>
-  <li>LiPo battery (3S or 4S, 2200+ mAh)</li>
-  <li>Power Distribution Board (PDB)</li>
-  <li>Voltage regulators (5V, 3.3V)</li>
-  <li>Battery monitoring and protection</li>
-  <li>Autonomy calculation and optimization</li>
-</ul>
-
-<p><strong>Motor Control:</strong></p>
-<ul>
-  <li>4× Brushless DC motors</li>
-  <li>4× Electronic Speed Controllers (ESC)</li>
-  <li>PWM control signals (1000-2000 μs)</li>
-  <li>ESC calibration procedures</li>
-  <li>Motor-propeller matching for efficiency</li>
-</ul>
-
-<p><strong>Sensor Suite:</strong></p>
-<ul>
-  <li>IMU (Inertial Measurement Unit):
-    <ul>
-      <li>3-axis gyroscope (angular velocity)</li>
-      <li>3-axis accelerometer (linear acceleration)</li>
-      <li>3-axis magnetometer (compass heading)</li>
-    </ul>
-  </li>
-  <li>Barometer (altitude estimation)</li>
-  <li>GPS module (position, velocity)</li>
-  <li>Ultrasonic rangefinder (ground proximity)</li>
-  <li>Telemetry radio link</li>
-</ul>
-
-<h3 id="flight-controller">Flight Controller</h3>
-<p><strong>Hardware:</strong></p>
-<ul>
-  <li>Microcontroller: STM32F4 or similar high-performance MCU</li>
-  <li>Commercial options: Pixhawk, Naze32, F4 flight controller</li>
-  <li>High-speed sensor sampling (&gt;1 kHz)</li>
-  <li>Multiple timer channels for ESC control</li>
-  <li>Communication interfaces (UART, I2C, SPI)</li>
-</ul>
-
-<p><strong>Firmware Options:</strong></p>
-<ul>
-  <li>Betaflight (popular for racing/acro)</li>
-  <li>Cleanflight (open-source, customizable)</li>
-  <li>ArduPilot (feature-rich, autonomous missions)</li>
-  <li>Custom firmware development</li>
-</ul>
-
-<h3 id="communication">Communication</h3>
-<p><strong>Radio Control:</strong></p>
-<ul>
-  <li>RC transmitter/receiver (8+ channels)</li>
-  <li>Protocols: SBUS, PPM, CRSF</li>
-  <li>Range: 500+ meters</li>
-  <li>Failsafe configuration</li>
-</ul>
-
-<p><strong>Telemetry:</strong></p>
-<ul>
-  <li>Real-time data downlink</li>
-  <li>Battery voltage, GPS position, altitude</li>
-  <li>MAVLink protocol standard</li>
-  <li>Ground control station software</li>
-</ul>
-
-<h1 id="control-system-design">Control System Design</h1>
-
-<h2 id="mathematical-modeling">Mathematical Modeling</h2>
-<p><strong>6 Degree-of-Freedom Dynamics:</strong></p>
-<ul>
-  <li>Translation: x, y, z position</li>
-  <li>Rotation: roll (φ), pitch (θ), yaw (ψ)</li>
-  <li>Forces and torques from four rotors</li>
-  <li>Aerodynamic effects and disturbances</li>
-</ul>
-
-<p><strong>Linearization:</strong></p>
-<ul>
-  <li>Small-angle approximation for hover</li>
-  <li>State-space representation</li>
-  <li>Stability analysis</li>
-</ul>
-
-<h2 id="pid-control-implementation">PID Control Implementation</h2>
-<p><strong>Cascade Control Architecture:</strong></p>
-<ol>
-  <li><strong>Inner Loop (Rate Control):</strong>
-    <ul>
-      <li>Fast response (~1 kHz)</li>
-      <li>Gyroscope feedback</li>
-      <li>Controls angular velocities</li>
-    </ul>
-  </li>
-  <li><strong>Outer Loop (Angle Control):</strong>
-    <ul>
-      <li>Slower response (~100 Hz)</li>
-      <li>Accelerometer/magnetometer feedback</li>
-      <li>Maintains desired attitude</li>
-    </ul>
-  </li>
-</ol>
-
-<p><strong>PID Tuning Process:</strong></p>
-<ul>
-  <li>Start with low gains</li>
-  <li>Increase P gain until oscillation</li>
-  <li>Add D gain to dampen oscillations</li>
-  <li>Add I gain to eliminate steady-state error</li>
-  <li>Iterative testing and refinement</li>
-</ul>
-
-<h2 id="flight-modes">Flight Modes</h2>
-<p><strong>Manual (Acro/Rate):</strong></p>
-<ul>
-  <li>Direct angular velocity control</li>
-  <li>No self-leveling</li>
-  <li>For experienced pilots</li>
-</ul>
-
-<p><strong>Stabilized (Angle):</strong></p>
-<ul>
-  <li>Automatic self-leveling</li>
-  <li>Maintains horizontal attitude</li>
-  <li>Returns to level when sticks centered</li>
-</ul>
-
-<p><strong>Altitude Hold:</strong></p>
-<ul>
-  <li>Barometer-based altitude lock</li>
-  <li>Automatic throttle adjustment</li>
-  <li>Simplifies piloting</li>
-</ul>
-
-<p><strong>Position Hold (GPS):</strong></p>
-<ul>
-  <li>GPS-based position lock</li>
-  <li>Resists wind drift</li>
-  <li>Enables waypoint navigation</li>
-</ul>
-
-<h1 id="mechanical-design">Mechanical Design</h1>
-
-<h2 id="frame-selection">Frame Selection</h2>
-<p><strong>Materials:</strong></p>
-<ul>
-  <li>Carbon fiber (strong, lightweight)</li>
-  <li>Aluminum arms</li>
-  <li>3D printed mounts</li>
-</ul>
-
-<p><strong>Configuration:</strong></p>
-<ul>
-  <li>X or + frame geometry</li>
-  <li>Size: 250mm to 450mm diagonal</li>
-  <li>Center of gravity considerations</li>
-  <li>Component mounting points</li>
-</ul>
-
-<h2 id="propulsion-system">Propulsion System</h2>
-<p><strong>Motor-Propeller Matching:</strong></p>
-<ul>
-  <li>Thrust-to-weight ratio &gt; 2:1 for acrobatics</li>
-  <li>KV rating selection (RPM/volt)</li>
-  <li>Propeller pitch and diameter</li>
-  <li>Efficiency vs. performance tradeoffs</li>
-</ul>
-
-<p><strong>Thrust Testing:</strong></p>
-<ul>
-  <li>Bench measurements</li>
-  <li>Power consumption analysis</li>
-  <li>Efficiency curves</li>
-  <li>Vibration assessment</li>
-</ul>
-
-<h1 id="development-process">Development Process</h1>
-
-<h2 id="phase-1-design-and-component-selection-3-weeks">Phase 1: Design and Component Selection (3 weeks)</h2>
-<ul>
-  <li>Requirements specification</li>
-  <li>Research and benchmarking</li>
-  <li>Component selection and compatibility</li>
-  <li>Budget planning</li>
-  <li>CAD modeling (if custom parts)</li>
-</ul>
-
-<h2 id="phase-2-assembly-and-integration-3-weeks">Phase 2: Assembly and Integration (3 weeks)</h2>
-<ul>
-  <li>Frame assembly</li>
-  <li>Electronics installation and wiring</li>
-  <li>Cable management (minimize vibration transmission)</li>
-  <li>Weight distribution optimization</li>
-  <li>Pre-flight electrical checks</li>
-</ul>
-
-<h2 id="phase-3-configuration-and-ground-testing-3-weeks">Phase 3: Configuration and Ground Testing (3 weeks)</h2>
-<ul>
-  <li>Flight controller setup and configuration</li>
-  <li>Sensor calibration (accelerometer, magnetometer, gyro)</li>
-  <li>ESC calibration</li>
-  <li>Radio setup and failsafe configuration</li>
-  <li>Motor direction verification</li>
-  <li>Propeller-off testing of all functions</li>
-</ul>
-
-<h2 id="phase-4-flight-testing-and-tuning-3-weeks">Phase 4: Flight Testing and Tuning (3 weeks)</h2>
-<p><strong>Progressive Testing:</strong></p>
-<ol>
-  <li>Tethered hover test</li>
-  <li>Low-altitude hover (1m)</li>
-  <li>Basic maneuvers (forward, backward, turns)</li>
-  <li>Altitude testing</li>
-  <li>GPS and autonomous features</li>
-</ol>
-
-<p><strong>Safety Protocols:</strong></p>
-<ul>
-  <li>Propeller guards for initial tests</li>
-  <li>Large open testing area</li>
-  <li>Safety observer</li>
-  <li>Emergency kill switch configured</li>
-  <li>Pre-flight checklist every flight</li>
-</ul>
-
-<p><strong>PID Tuning Flights:</strong></p>
-<ul>
-  <li>Record flight data (logs)</li>
-  <li>Analyze oscillations and response</li>
-  <li>Adjust gains incrementally</li>
-  <li>Retest after each change</li>
-</ul>
-
-<h1 id="testing-results">Testing Results</h1>
-
-<h2 id="performance-metrics">Performance Metrics</h2>
-<p>Successfully achieved:</p>
-<ul>
-  <li>Stable hover with minimal drift</li>
-  <li>Responsive control across all axes</li>
-  <li>Flight time: 8-12 minutes (depending on battery)</li>
-  <li>Maximum altitude tested: 50m</li>
-  <li>Smooth transitions between flight modes</li>
-  <li>Reliable GPS hold and return-to-home</li>
-</ul>
-
-<h2 id="challenges-overcome">Challenges Overcome</h2>
-<ul>
-  <li>Motor vibrations affecting sensors (solved with vibration dampers)</li>
-  <li>PID oscillations (tuned through iterative testing)</li>
-  <li>GPS acquisition time (antenna placement optimization)</li>
-  <li>Battery voltage sag under load (appropriate C-rating selection)</li>
-</ul>
-
-<h1 id="safety-and-regulations">Safety and Regulations</h1>
-
-<h2 id="safety-measures">Safety Measures</h2>
-<ul>
-  <li>Pre-flight inspection checklist</li>
-  <li>Emergency stop (kill switch) always accessible</li>
-  <li>No flight with propellers until fully tested</li>
-  <li>Eye protection during all tests</li>
-  <li>Clear communication in team</li>
-  <li>Weather conditions assessment</li>
-</ul>
-
-<h2 id="regulatory-compliance">Regulatory Compliance</h2>
-<ul>
-  <li>Drone registration (if &gt;250g)</li>
-  <li>Pilot training/certification requirements</li>
-  <li>Insurance (liability coverage)</li>
-  <li>Authorized flight zones</li>
-  <li>Maximum altitude limit (150m)</li>
-  <li>Privacy regulations compliance</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>This project provided comprehensive hands-on experience in mechatronic system development, from initial concept through fully functional flying vehicle. We successfully integrated complex subsystems, developed robust control algorithms, and achieved stable autonomous flight. The iterative design-test-refine process taught valuable lessons in systematic engineering problem-solving and the critical importance of safety in unmanned aerial vehicle development.</p>
-
-<p>The completed quadcopter demonstrates our ability to manage complex multidisciplinary projects and deliver functional engineered systems meeting real-world performance and safety requirements.</p>
-
-<style>
+        <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -374,6 +89,288 @@ p {
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet multidisciplinaire complet a consiste a concevoir, construire et programmer un quadricoptere fonctionnel de A a Z. Le projet a integre l'electronique (systemes de puissance, controle moteur, capteurs), la programmation embarquee (firmware du controleur de vol, fusion de capteurs), la theorie du controle (reglage PID, stabilisation) et la conception mecanique (chassis, systeme de propulsion). Ce projet de synthese a applique toutes les competences acquises durant la premiere annee, aboutissant a un drone volant autonome.</p>
+
+<h1>Vue d'ensemble du projet</h1>
+<p>En travaillant en equipe, nous avons developpe un systeme de quadricoptere complet capable de vol stable avec plusieurs modes de vol. Le projet a couvert la definition des exigences, la selection des composants, l'assemblage, la programmation, le reglage PID et des tests de vol approfondis. Les protocoles de securite etaient primordiaux tout au long des phases de developpement.</p>
+
+<h2>Architecture du systeme</h2>
+
+<h3>Sous-systemes electroniques</h3>
+<p><strong>Gestion de l'alimentation :</strong></p>
+<ul>
+<li>Batterie LiPo (3S ou 4S, 2200+ mAh)</li>
+<li>Carte de distribution de puissance (PDB)</li>
+<li>Regulateurs de tension (5V, 3.3V)</li>
+<li>Surveillance et protection de la batterie</li>
+<li>Calcul et optimisation de l'autonomie</li>
+</ul>
+
+<p><strong>Controle des moteurs :</strong></p>
+<ul>
+<li>4 moteurs brushless DC</li>
+<li>4 controleurs de vitesse electroniques (ESC)</li>
+<li>Signaux de commande PWM (1000-2000 us)</li>
+<li>Procedures de calibration des ESC</li>
+<li>Appariement moteur-helice pour l'efficacite</li>
+</ul>
+
+<p><strong>Suite de capteurs :</strong></p>
+<ul>
+<li>IMU (Unite de mesure inertielle) : gyroscope, accelerometre et magnetometre 3 axes</li>
+<li>Barometre (estimation d'altitude)</li>
+<li>Module GPS (position, vitesse)</li>
+<li>Telemetre ultrasonique (proximite sol)</li>
+<li>Liaison radio telemetrique</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This comprehensive multidisciplinary project involved designing, building, and programming a functional quadcopter from scratch. The project integrated electronics (power systems, motor control, sensors), embedded programming (flight controller firmware, sensor fusion), control theory (PID tuning, stabilization), and mechanical design (frame, propulsion system). This synthesis project applied all skills acquired during the first year, culminating in a flying autonomous drone.</p>
+
+<h1>Project Overview</h1>
+<p>Working in teams, we developed a complete quadcopter system capable of stable flight with multiple flight modes. The project spanned requirements definition, component selection, assembly, programming, PID tuning, and extensive flight testing. Safety protocols were paramount throughout all development phases.</p>
+
+<h2>System Architecture</h2>
+
+<h3>Electronic Subsystems</h3>
+<p><strong>Power Management:</strong></p>
+<ul>
+<li>LiPo battery (3S or 4S, 2200+ mAh)</li>
+<li>Power Distribution Board (PDB)</li>
+<li>Voltage regulators (5V, 3.3V)</li>
+<li>Battery monitoring and protection</li>
+<li>Autonomy calculation and optimization</li>
+</ul>
+
+<p><strong>Motor Control:</strong></p>
+<ul>
+<li>4x Brushless DC motors</li>
+<li>4x Electronic Speed Controllers (ESC)</li>
+<li>PWM control signals (1000-2000 us)</li>
+<li>ESC calibration procedures</li>
+<li>Motor-propeller matching for efficiency</li>
+</ul>
+
+<p><strong>Sensor Suite:</strong></p>
+<ul>
+<li>IMU (Inertial Measurement Unit): 3-axis gyroscope, accelerometer, and magnetometer</li>
+<li>Barometer (altitude estimation)</li>
+<li>GPS module (position, velocity)</li>
+<li>Ultrasonic rangefinder (ground proximity)</li>
+<li>Telemetry radio link</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Conception du systeme de controle</h1>
+
+<h2>Modelisation mathematique</h2>
+<p><strong>Dynamique a 6 degres de liberte :</strong></p>
+<ul>
+<li>Translation : position x, y, z</li>
+<li>Rotation : roulis, tangage, lacet</li>
+<li>Forces et couples des quatre rotors</li>
+<li>Effets aerodynamiques et perturbations</li>
+</ul>
+
+<h2>Implementation du controle PID</h2>
+<p><strong>Architecture de controle en cascade :</strong></p>
+<ol>
+<li><strong>Boucle interne (controle de vitesse angulaire) :</strong> Reponse rapide (~1 kHz), retour gyroscopique, controle des vitesses angulaires</li>
+<li><strong>Boucle externe (controle d'angle) :</strong> Reponse plus lente (~100 Hz), retour accelerometre/magnetometre, maintien de l'attitude desiree</li>
+</ol>
+
+<p><strong>Processus de reglage PID :</strong></p>
+<ul>
+<li>Commencer avec des gains faibles</li>
+<li>Augmenter le gain P jusqu'a oscillation</li>
+<li>Ajouter le gain D pour amortir les oscillations</li>
+<li>Ajouter le gain I pour eliminer l'erreur statique</li>
+<li>Tests iteratifs et affinement</li>
+</ul>
+
+<h2>Modes de vol</h2>
+<ul>
+<li><strong>Manuel (Acro) :</strong> Controle direct de la vitesse angulaire, pas d'auto-stabilisation</li>
+<li><strong>Stabilise (Angle) :</strong> Auto-stabilisation automatique, maintien de l'attitude horizontale</li>
+<li><strong>Maintien d'altitude :</strong> Verrouillage d'altitude par barometre, ajustement automatique des gaz</li>
+<li><strong>Maintien de position (GPS) :</strong> Verrouillage de position par GPS, resistance au vent</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Control System Design</h1>
+
+<h2>Mathematical Modeling</h2>
+<p><strong>6 Degree-of-Freedom Dynamics:</strong></p>
+<ul>
+<li>Translation: x, y, z position</li>
+<li>Rotation: roll, pitch, yaw</li>
+<li>Forces and torques from four rotors</li>
+<li>Aerodynamic effects and disturbances</li>
+</ul>
+
+<h2>PID Control Implementation</h2>
+<p><strong>Cascade Control Architecture:</strong></p>
+<ol>
+<li><strong>Inner Loop (Rate Control):</strong> Fast response (~1 kHz), gyroscope feedback, controls angular velocities</li>
+<li><strong>Outer Loop (Angle Control):</strong> Slower response (~100 Hz), accelerometer/magnetometer feedback, maintains desired attitude</li>
+</ol>
+
+<p><strong>PID Tuning Process:</strong></p>
+<ul>
+<li>Start with low gains</li>
+<li>Increase P gain until oscillation</li>
+<li>Add D gain to dampen oscillations</li>
+<li>Add I gain to eliminate steady-state error</li>
+<li>Iterative testing and refinement</li>
+</ul>
+
+<h2>Flight Modes</h2>
+<ul>
+<li><strong>Manual (Acro):</strong> Direct angular velocity control, no self-leveling</li>
+<li><strong>Stabilized (Angle):</strong> Automatic self-leveling, maintains horizontal attitude</li>
+<li><strong>Altitude Hold:</strong> Barometer-based altitude lock, automatic throttle adjustment</li>
+<li><strong>Position Hold (GPS):</strong> GPS-based position lock, resists wind drift</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Processus de developpement</h1>
+
+<h2>Phase 1 : Conception et selection des composants (3 semaines)</h2>
+<ul>
+<li>Specification des exigences</li>
+<li>Recherche et benchmarking</li>
+<li>Selection et compatibilite des composants</li>
+<li>Planification budgetaire</li>
+</ul>
+
+<h2>Phase 2 : Assemblage et integration (3 semaines)</h2>
+<ul>
+<li>Assemblage du chassis</li>
+<li>Installation et cablage de l'electronique</li>
+<li>Gestion des cables (minimiser la transmission des vibrations)</li>
+<li>Optimisation de la distribution du poids</li>
+</ul>
+
+<h2>Phase 3 : Configuration et tests au sol (3 semaines)</h2>
+<ul>
+<li>Configuration du controleur de vol</li>
+<li>Calibration des capteurs (accelerometre, magnetometre, gyroscope)</li>
+<li>Calibration des ESC</li>
+<li>Configuration radio et failsafe</li>
+</ul>
+
+<h2>Phase 4 : Tests de vol et reglage (3 semaines)</h2>
+<p><strong>Tests progressifs :</strong></p>
+<ol>
+<li>Test de vol attache</li>
+<li>Vol stationnaire basse altitude (1 m)</li>
+<li>Manoeuvres de base (avant, arriere, virages)</li>
+<li>Tests d'altitude</li>
+<li>Fonctionnalites GPS et autonomes</li>
+</ol>
+</div>
+
+<div class="lang-en">
+<h1>Development Process</h1>
+
+<h2>Phase 1: Design and Component Selection (3 weeks)</h2>
+<ul>
+<li>Requirements specification</li>
+<li>Research and benchmarking</li>
+<li>Component selection and compatibility</li>
+<li>Budget planning</li>
+</ul>
+
+<h2>Phase 2: Assembly and Integration (3 weeks)</h2>
+<ul>
+<li>Frame assembly</li>
+<li>Electronics installation and wiring</li>
+<li>Cable management (minimize vibration transmission)</li>
+<li>Weight distribution optimization</li>
+</ul>
+
+<h2>Phase 3: Configuration and Ground Testing (3 weeks)</h2>
+<ul>
+<li>Flight controller setup and configuration</li>
+<li>Sensor calibration (accelerometer, magnetometer, gyro)</li>
+<li>ESC calibration</li>
+<li>Radio setup and failsafe configuration</li>
+</ul>
+
+<h2>Phase 4: Flight Testing and Tuning (3 weeks)</h2>
+<p><strong>Progressive Testing:</strong></p>
+<ol>
+<li>Tethered hover test</li>
+<li>Low-altitude hover (1 m)</li>
+<li>Basic maneuvers (forward, backward, turns)</li>
+<li>Altitude testing</li>
+<li>GPS and autonomous features</li>
+</ol>
+</div>
+
+<div class="lang-fr">
+<h1>Resultats des tests</h1>
+
+<h2>Metriques de performance</h2>
+<p>Resultats obtenus avec succes :</p>
+<ul>
+<li>Vol stationnaire stable avec derive minimale</li>
+<li>Controle reactif sur tous les axes</li>
+<li>Temps de vol : 8-12 minutes (selon la batterie)</li>
+<li>Altitude maximale testee : 50 m</li>
+<li>Transitions fluides entre les modes de vol</li>
+<li>Maintien GPS et retour au point de depart fiables</li>
+</ul>
+
+<h2>Defis surmontes</h2>
+<ul>
+<li>Vibrations des moteurs affectant les capteurs (resolu avec des amortisseurs)</li>
+<li>Oscillations PID (reglees par tests iteratifs)</li>
+<li>Temps d'acquisition GPS (optimisation du placement de l'antenne)</li>
+<li>Chute de tension de la batterie sous charge (selection appropriee du taux C)</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>Ce projet a fourni une experience pratique complete dans le developpement de systemes mecatroniques, du concept initial au vehicule volant entierement fonctionnel. Nous avons integre avec succes des sous-systemes complexes, developpe des algorithmes de controle robustes et atteint un vol autonome stable. Le processus iteratif de conception-test-affinement a enseigne des lecons precieuses en resolution systematique de problemes d'ingenierie et l'importance critique de la securite dans le developpement de vehicules aeriens sans pilote.</p>
+</div>
+
+<div class="lang-en">
+<h1>Testing Results</h1>
+
+<h2>Performance Metrics</h2>
+<p>Successfully achieved:</p>
+<ul>
+<li>Stable hover with minimal drift</li>
+<li>Responsive control across all axes</li>
+<li>Flight time: 8-12 minutes (depending on battery)</li>
+<li>Maximum altitude tested: 50 m</li>
+<li>Smooth transitions between flight modes</li>
+<li>Reliable GPS hold and return-to-home</li>
+</ul>
+
+<h2>Challenges Overcome</h2>
+<ul>
+<li>Motor vibrations affecting sensors (solved with vibration dampers)</li>
+<li>PID oscillations (tuned through iterative testing)</li>
+<li>GPS acquisition time (antenna placement optimization)</li>
+<li>Battery voltage sag under load (appropriate C-rating selection)</li>
+</ul>
+
+<h1>Conclusion</h1>
+<p>This project provided comprehensive hands-on experience in mechatronic system development, from initial concept through fully functional flying vehicle. We successfully integrated complex subsystems, developed robust control algorithms, and achieved stable autonomous flight. The iterative design-test-refine process taught valuable lessons in systematic engineering problem-solving and the critical importance of safety in unmanned aerial vehicle development.</p>
+</div>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -394,377 +391,6 @@ function closeModal() {
 }
 </script>
 
-<ul>
-  <li>Mener un projet technique complexe de A à Z</li>
-  <li>Travailler en équipe sur un système complet</li>
-  <li>Intégrer les connaissances multidisciplinaires</li>
-  <li>Gérer un projet avec contraintes temps/budget</li>
-  <li>Documenter et présenter un projet technique</li>
-</ul>
-
-<h2 id="-aspects-techniques">📚 Aspects techniques</h2>
-
-<h3 id="électronique">Électronique</h3>
-<h4 id="alimentation-et-gestion-de-lénergie">Alimentation et gestion de l’énergie</h4>
-<ul>
-  <li>Batteries LiPo (choix, caractéristiques)</li>
-  <li>Système de distribution d’énergie (PDB)</li>
-  <li>Régulateurs de tension (5V, 3.3V)</li>
-  <li>Protection et monitoring batterie</li>
-  <li>Autonomie et consommation</li>
-</ul>
-
-<h4 id="contrôle-des-moteurs">Contrôle des moteurs</h4>
-<ul>
-  <li>Moteurs brushless</li>
-  <li>ESC (Electronic Speed Controllers)</li>
-  <li>PWM et protocoles de commande</li>
-  <li>Calibration des ESC</li>
-  <li>Sécurités et failsafe</li>
-</ul>
-
-<h4 id="capteurs">Capteurs</h4>
-<ul>
-  <li>IMU (Inertial Measurement Unit)
-    <ul>
-      <li>Gyroscope 3 axes</li>
-      <li>Accéléromètre 3 axes</li>
-      <li>Magnétomètre (compass)</li>
-    </ul>
-  </li>
-  <li>Baromètre (altitude)</li>
-  <li>GPS (position)</li>
-  <li>Capteur ultrason (proximité sol)</li>
-  <li>Télémétrie</li>
-</ul>
-
-<h3 id="informatique-embarquée">Informatique embarquée</h3>
-<h4 id="flight-controller-1">Flight Controller</h4>
-<ul>
-  <li>Choix du contrôleur (Pixhawk, Naze32, F4, etc.)</li>
-  <li>Microcontrôleur (STM32 généralement)</li>
-  <li>Firmware (Betaflight, Cleanflight, ArduPilot)</li>
-  <li>Configuration logicielle</li>
-  <li>Modes de vol</li>
-</ul>
-
-<h4 id="traitement-des-données-capteurs">Traitement des données capteurs</h4>
-<ul>
-  <li>Fusion de capteurs</li>
-  <li>Filtrage (Kalman, complémentaire)</li>
-  <li>Estimation d’attitude</li>
-  <li>Stabilisation</li>
-  <li>Navigation</li>
-</ul>
-
-<h4 id="communication-1">Communication</h4>
-<ul>
-  <li>Protocoles radio (SBUS, PPM, CRSF)</li>
-  <li>Telemetry (MAVLink)</li>
-  <li>Interface configuration (MSP)</li>
-  <li>FPV (optionnel)</li>
-</ul>
-
-<h3 id="automatique-et-contrôle">Automatique et contrôle</h3>
-<h4 id="modélisation">Modélisation</h4>
-<ul>
-  <li>Modèle dynamique du quadricoptère</li>
-  <li>6 degrés de liberté</li>
-  <li>Forces et moments</li>
-  <li>Linéarisation autour d’un point</li>
-</ul>
-
-<h4 id="asservissement">Asservissement</h4>
-<ul>
-  <li>Contrôle de l’attitude (roll, pitch, yaw)</li>
-  <li>PID (réglage des gains)</li>
-  <li>Contrôle en cascade</li>
-  <li>Stabilité du système</li>
-</ul>
-
-<h4 id="modes-de-vol">Modes de vol</h4>
-<ul>
-  <li>Manuel (Acro)</li>
-  <li>Stabilisé (Angle mode)</li>
-  <li>Altitude hold</li>
-  <li>Position hold (GPS)</li>
-  <li>Waypoints (optionnel)</li>
-</ul>
-
-<h3 id="mécanique">Mécanique</h3>
-<h4 id="structure">Structure</h4>
-<ul>
-  <li>Frame (châssis)</li>
-  <li>Matériaux (fibres de carbone, etc.)</li>
-  <li>Poids et centre de gravité</li>
-  <li>Protection des composants</li>
-</ul>
-
-<h4 id="propulsion">Propulsion</h4>
-<ul>
-  <li>Choix moteurs/hélices</li>
-  <li>Rapport poussée/poids</li>
-  <li>Couple et vibrations</li>
-  <li>Efficacité propulsive</li>
-</ul>
-
-<h2 id="️-réalisation-du-projet">🛠️ Réalisation du projet</h2>
-
-<h3 id="phase-1--étude-et-conception-3-semaines">Phase 1 : Étude et conception (3 semaines)</h3>
-<p><strong>Activités :</strong></p>
-<ul>
-  <li>Recherche documentaire</li>
-  <li>Définition des spécifications</li>
-  <li>Choix des composants</li>
-  <li>Estimation budgétaire</li>
-  <li>Schémas et architecture</li>
-</ul>
-
-<p><strong>Livrables :</strong></p>
-<ul>
-  <li>Cahier des charges</li>
-  <li>Liste de composants</li>
-  <li>Schémas électroniques</li>
-  <li>Planning prévisionnel</li>
-</ul>
-
-<h3 id="phase-2--assemblage-et-intégration-3-semaines">Phase 2 : Assemblage et intégration (3 semaines)</h3>
-<p><strong>Activités :</strong></p>
-<ul>
-  <li>Assemblage de la structure</li>
-  <li>Câblage électronique</li>
-  <li>Montage des composants</li>
-  <li>Vérifications électriques</li>
-  <li>Premiers tests au sol</li>
-</ul>
-
-<p><strong>Livrables :</strong></p>
-<ul>
-  <li>Drone assemblé</li>
-  <li>Tests de continuité</li>
-  <li>Calibrations préliminaires</li>
-</ul>
-
-<h3 id="phase-3--configuration-et-tests-3-semaines">Phase 3 : Configuration et tests (3 semaines)</h3>
-<p><strong>Activités :</strong></p>
-<ul>
-  <li>Configuration du flight controller</li>
-  <li>Calibration des capteurs</li>
-  <li>Réglage des PID</li>
-  <li>Tests progressifs (sol → vol)</li>
-  <li>Optimisations</li>
-</ul>
-
-<p><strong>Livrables :</strong></p>
-<ul>
-  <li>Configuration logicielle documentée</li>
-  <li>Résultats de tests</li>
-  <li>Vidéos de vol</li>
-</ul>
-
-<h3 id="phase-4--finalisation-et-présentation-2-semaines">Phase 4 : Finalisation et présentation (2 semaines)</h3>
-<p><strong>Activités :</strong></p>
-<ul>
-  <li>Finitions mécaniques</li>
-  <li>Documentation complète</li>
-  <li>Préparation de la présentation</li>
-  <li>Démonstrations de vol</li>
-  <li>Bilan du projet</li>
-</ul>
-
-<p><strong>Livrables :</strong></p>
-<ul>
-  <li>Drone fonctionnel</li>
-  <li>Rapport technique complet</li>
-  <li>Documentation utilisateur</li>
-  <li>Présentation orale</li>
-  <li>Vidéo démonstrative</li>
-</ul>
-
-<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
-
-<h3 id="logiciels">Logiciels</h3>
-<ul>
-  <li><strong>Betaflight Configurator / Mission Planner</strong> : Configuration FC</li>
-  <li><strong>Proteus</strong> : Schémas électroniques (si circuits custom)</li>
-  <li><strong>SolidWorks / Fusion 360</strong> : Conception 3D (supports)</li>
-  <li><strong>MATLAB/Python</strong> : Simulations de contrôle</li>
-</ul>
-
-<h3 id="équipements">Équipements</h3>
-<ul>
-  <li>Station de soudage</li>
-  <li>Multimètres et testeurs</li>
-  <li>Chargeur de batteries LiPo</li>
-  <li>Émetteur RC (radiocommande)</li>
-  <li>Ordinateur de configuration</li>
-</ul>
-
-<h2 id="-évaluation">📊 Évaluation</h2>
-
-<ul>
-  <li>Gestion de projet et organisation (20%)</li>
-  <li>Réalisation technique (30%)</li>
-  <li>Fonctionnalité et performances (20%)</li>
-  <li>Documentation (20%)</li>
-  <li>Présentation orale (10%)</li>
-</ul>
-
-<h2 id="-sécurité">🔒 Sécurité</h2>
-
-<h3 id="règles-essentielles">Règles essentielles</h3>
-<ul>
-  <li><strong>JAMAIS</strong> tester avec hélices en intérieur sans protection</li>
-  <li>Protection des yeux obligatoire lors des tests</li>
-  <li>Zone de test sécurisée et dégagée</li>
-  <li>Respect de la réglementation sur les drones</li>
-  <li>Procédure d’arrêt d’urgence (kill switch)</li>
-  <li>Batterie débranchée lors des manipulations</li>
-</ul>
-
-<h3 id="réglementation">Réglementation</h3>
-<ul>
-  <li>Déclaration du drone (selon poids)</li>
-  <li>Formation pilote (si &gt;250g)</li>
-  <li>Assurance responsabilité civile</li>
-  <li>Zones de vol autorisées</li>
-  <li>Altitude maximale 150m</li>
-  <li>Respect de la vie privée</li>
-</ul>
-
-<h2 id="-défis-techniques">🎯 Défis techniques</h2>
-
-<h3 id="principaux-challenges">Principaux challenges</h3>
-<ol>
-  <li><strong>Équilibrage</strong> : Centre de gravité et répartition des masses</li>
-  <li><strong>Vibrations</strong> : Filtrage et isolation des capteurs</li>
-  <li><strong>Stabilité</strong> : Réglage des PID</li>
-  <li><strong>Autonomie</strong> : Optimisation énergie/performances</li>
-  <li><strong>Fiabilité</strong> : Gestion des pannes et failsafe</li>
-</ol>
-
-<h3 id="problèmes-courants">Problèmes courants</h3>
-<ul>
-  <li>Oscillations lors du vol</li>
-  <li>Dérive (drift)</li>
-  <li>Décalibration des capteurs</li>
-  <li>Interférences électromagnétiques</li>
-  <li>Problèmes de portée radio</li>
-</ul>
-
-<h2 id="-liens-avec-les-cours">🔗 Liens avec les cours</h2>
-
-<ul>
-  <li><strong>ER</strong> : Circuits électroniques, PCB</li>
-  <li><strong>IE</strong> : Programmation embarquée, capteurs</li>
-  <li><strong>Énergie</strong> : Motorisation, batteries</li>
-  <li><strong>Automatique</strong> : Asservissement PID</li>
-  <li><strong>Prog</strong> : Traitement de données</li>
-  <li><strong>Physique</strong> : Mécanique du vol</li>
-</ul>
-
-<h2 id="-compétences-développées">📖 Compétences développées</h2>
-
-<h3 id="techniques">Techniques</h3>
-<ul>
-  <li>Conception de systèmes complexes</li>
-  <li>Intégration multidisciplinaire</li>
-  <li>Programmation de systèmes embarqués</li>
-  <li>Asservissement et régulation</li>
-  <li>Diagnostic et résolution de problèmes</li>
-</ul>
-
-<h3 id="gestion-de-projet">Gestion de projet</h3>
-<ul>
-  <li>Planification et organisation</li>
-  <li>Travail en équipe</li>
-  <li>Gestion des ressources</li>
-  <li>Respect des délais</li>
-  <li>Communication</li>
-</ul>
-
-<h3 id="documentation">Documentation</h3>
-<ul>
-  <li>Rédaction technique</li>
-  <li>Schémas et diagrammes</li>
-  <li>Manuel utilisateur</li>
-  <li>Présentation professionnelle</li>
-</ul>
-
-<h2 id="-conseils-pratiques">💡 Conseils pratiques</h2>
-
-<h3 id="conception">Conception</h3>
-<ul>
-  <li>Commencer simple, complexifier progressivement</li>
-  <li>Prévoir des marges (poids, puissance)</li>
-  <li>Penser à la maintenance et aux réparations</li>
-  <li>Documenter tous les choix</li>
-</ul>
-
-<h3 id="réalisation">Réalisation</h3>
-<ul>
-  <li>Tester chaque sous-système séparément</li>
-  <li>Câblage propre et organisé</li>
-  <li>Étiquetage des connexions</li>
-  <li>Photos à chaque étape</li>
-</ul>
-
-<h3 id="tests">Tests</h3>
-<ul>
-  <li>Progressivité : tests au sol avant de voler</li>
-  <li>Hélices enlevées pour les premiers tests moteurs</li>
-  <li>Zone de test sécurisée</li>
-  <li>Toujours un plan B</li>
-</ul>
-
-<h2 id="-ressources">📚 Ressources</h2>
-
-<h3 id="documentation-1">Documentation</h3>
-<ul>
-  <li>Datasheets des composants</li>
-  <li>Documentation firmware (Betaflight, etc.)</li>
-  <li>Forums communautaires (Oscar Liang, RCGroups)</li>
-  <li>Chaînes YouTube techniques</li>
-</ul>
-
-<h3 id="communauté">Communauté</h3>
-<ul>
-  <li>Forums FPV et drones</li>
-  <li>Clubs de modélisme</li>
-  <li>Groupes Facebook spécialisés</li>
-  <li>Discord communities</li>
-</ul>
-
-<h2 id="-résultats-attendus">🎓 Résultats attendus</h2>
-
-<h3 id="fonctionnalités-minimales">Fonctionnalités minimales</h3>
-<ul>
-  <li>Décollage et atterrissage contrôlés</li>
-  <li>Stabilisation en vol stationnaire</li>
-  <li>Déplacements contrôlés (avant/arrière, gauche/droite)</li>
-  <li>Rotations (yaw)</li>
-  <li>Autonomie minimum 5 minutes</li>
-</ul>
-
-<h3 id="fonctionnalités-avancées-bonus">Fonctionnalités avancées (bonus)</h3>
-<ul>
-  <li>Hold d’altitude</li>
-  <li>Retour automatique au point de départ (RTH)</li>
-  <li>Enregistrement télémétrie</li>
-  <li>FPV avec caméra</li>
-  <li>Modes de vol avancés</li>
-</ul>
-
-<h2 id="-valorisation-du-projet">🏆 Valorisation du projet</h2>
-
-<p>Ce projet peut être :</p>
-<ul>
-  <li>Présenté lors de forums et salons</li>
-  <li>Utilisé pour le portfolio personnel</li>
-  <li>Démonstré lors de journées portes ouvertes</li>
-  <li>Point fort dans le CV</li>
-  <li>Base pour des projets personnels futurs</li>
-</ul>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -795,6 +421,117 @@ function closeModal() {
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -813,8 +550,8 @@ function closeModal() {
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -836,6 +573,7 @@ function closeModal() {
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1346,11 +1084,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1550,14 +1286,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1568,6 +1304,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

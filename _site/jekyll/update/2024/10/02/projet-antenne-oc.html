@@ -7,8 +7,6 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Antenna Design for Connected Objects" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project" />
-<meta property="og:description" content="← Back to Academic Project" />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +15,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Antenna Design for Connected Objects" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project","headline":"Antenna Design for Connected Objects","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Antenna Design for Connected Objects","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/projet-antenne-oc.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,169 +36,32 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
-
-<h1 id="introduction">Introduction</h1>
-<p>This tutored project focused on designing and optimizing an antenna for IoT applications operating in ISM bands (433/868 MHz or 2.4 GHz). The project encompassed the complete design cycle from theoretical calculations and electromagnetic simulations to PCB fabrication and professional characterization using VNA and anechoic chamber measurements.</p>
-
-<h1 id="project-overview">Project Overview</h1>
-<p>The goal was to develop a compact, efficient antenna for LoRa, Sigfox, WiFi, or Bluetooth applications. Key specifications included S11 &lt; -10 dB, omnidirectional gain &gt; 0 dBi, and 50Ω impedance matching.</p>
-
-<h2 id="design-specifications">Design Specifications</h2>
-
-<p><strong>Target Frequencies:</strong></p>
-<ul>
-  <li>433 MHz or 868 MHz (LoRa/Sigfox)</li>
-  <li>2.4 GHz (WiFi/Bluetooth)</li>
-  <li>Bandwidth: ±10 MHz minimum</li>
-</ul>
-
-<p><strong>Performance Requirements:</strong></p>
-<ul>
-  <li>Return Loss: S11 &lt; -10 dB</li>
-  <li>Gain: &gt; 0 dBi (omnidirectional)</li>
-  <li>Impedance: 50Ω</li>
-  <li>Efficiency: &gt; 70%</li>
-</ul>
-
-<h2 id="antenna-topologies-studied">Antenna Topologies Studied</h2>
-
-<h3 id="for-433868-mhz">For 433/868 MHz:</h3>
-<ul>
-  <li>Quarter-wave monopole (λ/4: 7-17 cm)</li>
-  <li>Folded dipole</li>
-  <li>Helical antenna (compact)</li>
-  <li>PIFA (Planar Inverted-F Antenna)</li>
-</ul>
-
-<h3 id="for-24-ghz">For 2.4 GHz:</h3>
-<ul>
-  <li>Rectangular patch (3×4 cm)</li>
-  <li>Printed dipole</li>
-  <li>Meandered antenna (compact)</li>
-  <li>Yagi (high gain)</li>
-</ul>
-
-<h1 id="design-and-simulation">Design and Simulation</h1>
-
-<h2 id="electromagnetic-modeling">Electromagnetic Modeling</h2>
-<p>We used CST Studio or HFSS for 3D electromagnetic simulation. The design process included:</p>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_Antenne/Antenne-phase-1_page1_img1.png" alt="Antenna Design Phase 1" style="width: 45%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Antenne/Antenne-phase-1_page2_img1.png" alt="Antenna Specifications" style="width: 45%;" onclick="openModal(this.src)" />
-</div>
-
-<p><strong>Initial Dimensioning:</strong></p>
-<ul>
-  <li>Analytical formulas for patch/monopole dimensions</li>
-  <li>Example: 2.4 GHz patch on FR-4 substrate (εr=4.4): L ≈ 3 cm, W ≈ 4 cm</li>
-</ul>
-
-<p><strong>Optimization:</strong></p>
-<ul>
-  <li>Parametric sweeps on critical dimensions</li>
-  <li>S11 optimization at center frequency</li>
-  <li>Radiation pattern analysis</li>
-  <li>Impedance matching network design (stub, L-match)</li>
-</ul>
-
-<div style="text-align: center; margin: 30px 0;">
-  <img src="/img/BE_Antenne/Antenne-phase-1_page3_img1.png" alt="Simulation Setup" style="width: 60%;" onclick="openModal(this.src)" />
-</div>
-
-<p><strong>Simulation Results:</strong></p>
-<ul>
-  <li>S11 &lt; -15 dB at f₀</li>
-  <li>Gain: 6-8 dBi (patch), 2 dBi (monopole)</li>
-  <li>3D radiation pattern</li>
-  <li>Input impedance: Z = 50 + j0 Ω</li>
-</ul>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img1.jpeg" alt="Simulation Results" style="width: 45%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img2.jpeg" alt="Radiation Pattern" style="width: 45%;" onclick="openModal(this.src)" />
-</div>
-
-<h1 id="pcb-fabrication">PCB Fabrication</h1>
-
-<h2 id="design-and-manufacturing">Design and Manufacturing</h2>
-<ul>
-  <li>Designed in KiCad/Altium Designer</li>
-  <li>Precise layout matching optimized dimensions</li>
-  <li>Substrate: FR-4 (εr=4.4) or Rogers for better performance</li>
-  <li>Manufactured by PCBWay/JLCPCB</li>
-  <li>SMA connector soldering</li>
-  <li>Visual inspection and continuity testing</li>
-</ul>
-
-<h1 id="characterization-and-testing">Characterization and Testing</h1>
-
-<h2 id="vna-measurements">VNA Measurements</h2>
-<p>Using Vector Network Analyzer with SOLT calibration:</p>
-<ul>
-  <li>S11 parameter (reflection coefficient) vs frequency</li>
-  <li>Smith chart for impedance analysis</li>
-  <li>Comparison simulation vs measurement</li>
-  <li>Bandwidth verification</li>
-</ul>
-
-<div style="text-align: center; margin: 30px 0;">
-  <img src="/img/BE_Antenne/Antenne-phase-3_page1_img1.png" alt="VNA Measurements" style="width: 70%;" onclick="openModal(this.src)" />
-</div>
-
-<h2 id="anechoic-chamber-testing">Anechoic Chamber Testing</h2>
-<p>Professional RF chamber measurements:</p>
-<ul>
-  <li>Radiation patterns (E-plane, H-plane)</li>
-  <li>Absolute gain measurement</li>
-  <li>Polarization characteristics</li>
-  <li>Cross-polarization levels</li>
-</ul>
-
-<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
-  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img1.png" alt="Anechoic Chamber Setup" style="width: 45%;" onclick="openModal(this.src)" />
-  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img2.png" alt="Measurement Results" style="width: 45%;" onclick="openModal(this.src)" />
-</div>
-
-<h2 id="real-world-link-testing">Real-World Link Testing</h2>
-<ul>
-  <li>Connected to LoRa/WiFi module</li>
-  <li>Range testing with RSSI measurements</li>
-  <li>Comparison with commercial antenna</li>
-  <li>Performance validation in operating environment</li>
-</ul>
-
-<h1 id="results-and-analysis">Results and Analysis</h1>
-
-<p>The fabricated antenna met specifications with S11 &lt; -12 dB at the target frequency. Measured gain matched simulations within ±1 dB. Real-world link tests demonstrated effective communication range for the target IoT application.</p>
-
-<p>Key learnings included the impact of substrate properties on performance, importance of precise manufacturing tolerances, and ground plane effects on radiation patterns.</p>
-
-<h1 id="conclusion">Conclusion</h1>
-<p>This project provided comprehensive hands-on experience in RF antenna design, from theoretical analysis through professional characterization. We successfully designed, fabricated, and validated a functional antenna for IoT applications, demonstrating the complete engineering workflow for wireless communication systems.</p>
-
-<style>
+        <style>
 p {
   text-align: justify;
 }
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 60px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
@@ -222,6 +89,329 @@ p {
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet tutore portait sur la conception et l'optimisation d'une antenne pour des applications IoT fonctionnant dans les bandes ISM (433/868 MHz ou 2.4 GHz). Le projet englobait le cycle complet de conception, des calculs theoriques et simulations electromagnetiques a la fabrication du PCB et a la caracterisation professionnelle par des mesures VNA et en chambre anechoique.</p>
+
+<h1>Vue d'ensemble du projet</h1>
+<p>L'objectif etait de developper une antenne compacte et efficace pour des applications LoRa, Sigfox, WiFi ou Bluetooth. Les specifications cles comprenaient un S11 &lt; -10 dB, un gain omnidirectionnel &gt; 0 dBi et une adaptation d'impedance a 50 ohms.</p>
+
+<h2>Specifications de conception</h2>
+
+<p><strong>Frequences cibles :</strong></p>
+<ul>
+<li>433 MHz ou 868 MHz (LoRa/Sigfox)</li>
+<li>2.4 GHz (WiFi/Bluetooth)</li>
+<li>Bande passante : +/-10 MHz minimum</li>
+</ul>
+
+<p><strong>Exigences de performance :</strong></p>
+<ul>
+<li>Coefficient de reflexion : S11 &lt; -10 dB</li>
+<li>Gain : &gt; 0 dBi (omnidirectionnel)</li>
+<li>Impedance : 50 ohms</li>
+<li>Efficacite : &gt; 70%</li>
+</ul>
+
+<h2>Topologies d'antennes etudiees</h2>
+
+<h3>Pour 433/868 MHz :</h3>
+<ul>
+<li>Monopole quart d'onde (lambda/4 : 7-17 cm)</li>
+<li>Dipole replie</li>
+<li>Antenne helicoidale (compacte)</li>
+<li>PIFA (Planar Inverted-F Antenna)</li>
+</ul>
+
+<h3>Pour 2.4 GHz :</h3>
+<ul>
+<li>Patch rectangulaire (3x4 cm)</li>
+<li>Dipole imprime</li>
+<li>Antenne meandre (compacte)</li>
+<li>Yagi (gain eleve)</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
+<p>This tutored project focused on designing and optimizing an antenna for IoT applications operating in ISM bands (433/868 MHz or 2.4 GHz). The project encompassed the complete design cycle from theoretical calculations and electromagnetic simulations to PCB fabrication and professional characterization using VNA and anechoic chamber measurements.</p>
+
+<h1>Project Overview</h1>
+<p>The goal was to develop a compact, efficient antenna for LoRa, Sigfox, WiFi, or Bluetooth applications. Key specifications included S11 &lt; -10 dB, omnidirectional gain &gt; 0 dBi, and 50 ohm impedance matching.</p>
+
+<h2>Design Specifications</h2>
+
+<p><strong>Target Frequencies:</strong></p>
+<ul>
+<li>433 MHz or 868 MHz (LoRa/Sigfox)</li>
+<li>2.4 GHz (WiFi/Bluetooth)</li>
+<li>Bandwidth: +/-10 MHz minimum</li>
+</ul>
+
+<p><strong>Performance Requirements:</strong></p>
+<ul>
+<li>Return Loss: S11 &lt; -10 dB</li>
+<li>Gain: &gt; 0 dBi (omnidirectional)</li>
+<li>Impedance: 50 ohm</li>
+<li>Efficiency: &gt; 70%</li>
+</ul>
+
+<h2>Antenna Topologies Studied</h2>
+
+<h3>For 433/868 MHz:</h3>
+<ul>
+<li>Quarter-wave monopole (lambda/4: 7-17 cm)</li>
+<li>Folded dipole</li>
+<li>Helical antenna (compact)</li>
+<li>PIFA (Planar Inverted-F Antenna)</li>
+</ul>
+
+<h3>For 2.4 GHz:</h3>
+<ul>
+<li>Rectangular patch (3x4 cm)</li>
+<li>Printed dipole</li>
+<li>Meandered antenna (compact)</li>
+<li>Yagi (high gain)</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h1>Conception et simulation</h1>
+
+<h2>Modelisation electromagnetique</h2>
+<p>Nous avons utilise CST Studio ou HFSS pour la simulation electromagnetique 3D. Le processus de conception comprenait :</p>
+</div>
+
+<div class="lang-en">
+<h1>Design and Simulation</h1>
+
+<h2>Electromagnetic Modeling</h2>
+<p>We used CST Studio or HFSS for 3D electromagnetic simulation. The design process included:</p>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-1_page1_img1.png" alt="Antenna Design Phase 1" style="width: 45%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Antenne/Antenne-phase-1_page2_img1.png" alt="Antenna Specifications" style="width: 45%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<p><strong>Dimensionnement initial :</strong></p>
+<ul>
+<li>Formules analytiques pour les dimensions du patch/monopole</li>
+<li>Exemple : patch 2.4 GHz sur substrat FR-4 (epsilon_r=4.4) : L environ 3 cm, W environ 4 cm</li>
+</ul>
+
+<p><strong>Optimisation :</strong></p>
+<ul>
+<li>Balayages parametriques sur les dimensions critiques</li>
+<li>Optimisation du S11 a la frequence centrale</li>
+<li>Analyse du diagramme de rayonnement</li>
+<li>Conception du reseau d'adaptation d'impedance (stub, L-match)</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<p><strong>Initial Dimensioning:</strong></p>
+<ul>
+<li>Analytical formulas for patch/monopole dimensions</li>
+<li>Example: 2.4 GHz patch on FR-4 substrate (epsilon_r=4.4): L approx. 3 cm, W approx. 4 cm</li>
+</ul>
+
+<p><strong>Optimization:</strong></p>
+<ul>
+<li>Parametric sweeps on critical dimensions</li>
+<li>S11 optimization at center frequency</li>
+<li>Radiation pattern analysis</li>
+<li>Impedance matching network design (stub, L-match)</li>
+</ul>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_Antenne/Antenne-phase-1_page3_img1.png" alt="Simulation Setup" style="width: 60%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<p><strong>Resultats de simulation :</strong></p>
+<ul>
+<li>S11 &lt; -15 dB a f0</li>
+<li>Gain : 6-8 dBi (patch), 2 dBi (monopole)</li>
+<li>Diagramme de rayonnement 3D</li>
+<li>Impedance d'entree : Z = 50 + j0 ohms</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<p><strong>Simulation Results:</strong></p>
+<ul>
+<li>S11 &lt; -15 dB at f0</li>
+<li>Gain: 6-8 dBi (patch), 2 dBi (monopole)</li>
+<li>3D radiation pattern</li>
+<li>Input impedance: Z = 50 + j0 ohm</li>
+</ul>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img1.jpeg" alt="Simulation Results" style="width: 45%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Antenne/Antenne-phase-2_page4_img2.jpeg" alt="Radiation Pattern" style="width: 45%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<h1>Fabrication du PCB</h1>
+
+<h2>Conception et fabrication</h2>
+<ul>
+<li>Conception sous KiCad/Altium Designer</li>
+<li>Layout precis correspondant aux dimensions optimisees</li>
+<li>Substrat : FR-4 (epsilon_r=4.4) ou Rogers pour de meilleures performances</li>
+<li>Fabrication par PCBWay/JLCPCB</li>
+<li>Soudure du connecteur SMA</li>
+<li>Inspection visuelle et test de continuite</li>
+</ul>
+
+<h1>Caracterisation et tests</h1>
+
+<h2>Mesures au VNA</h2>
+<p>Utilisation d'un analyseur de reseau vectoriel avec calibration SOLT :</p>
+<ul>
+<li>Parametre S11 (coefficient de reflexion) en fonction de la frequence</li>
+<li>Abaque de Smith pour l'analyse d'impedance</li>
+<li>Comparaison simulation vs mesure</li>
+<li>Verification de la bande passante</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h1>PCB Fabrication</h1>
+
+<h2>Design and Manufacturing</h2>
+<ul>
+<li>Designed in KiCad/Altium Designer</li>
+<li>Precise layout matching optimized dimensions</li>
+<li>Substrate: FR-4 (epsilon_r=4.4) or Rogers for better performance</li>
+<li>Manufactured by PCBWay/JLCPCB</li>
+<li>SMA connector soldering</li>
+<li>Visual inspection and continuity testing</li>
+</ul>
+
+<h1>Characterization and Testing</h1>
+
+<h2>VNA Measurements</h2>
+<p>Using Vector Network Analyzer with SOLT calibration:</p>
+<ul>
+<li>S11 parameter (reflection coefficient) vs frequency</li>
+<li>Smith chart for impedance analysis</li>
+<li>Comparison simulation vs measurement</li>
+<li>Bandwidth verification</li>
+</ul>
+</div>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/img/BE_Antenne/Antenne-phase-3_page1_img1.png" alt="VNA Measurements" style="width: 70%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<h2>Tests en chambre anechoique</h2>
+<p>Mesures professionnelles en chambre RF :</p>
+<ul>
+<li>Diagrammes de rayonnement (plan E, plan H)</li>
+<li>Mesure du gain absolu</li>
+<li>Caracteristiques de polarisation</li>
+<li>Niveaux de polarisation croisee</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h2>Anechoic Chamber Testing</h2>
+<p>Professional RF chamber measurements:</p>
+<ul>
+<li>Radiation patterns (E-plane, H-plane)</li>
+<li>Absolute gain measurement</li>
+<li>Polarization characteristics</li>
+<li>Cross-polarization levels</li>
+</ul>
+</div>
+
+<div style="display: flex; justify-content: center; gap: 15px; margin: 30px 0; flex-wrap: wrap;">
+  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img1.png" alt="Anechoic Chamber Setup" style="width: 45%;" onclick="openModal(this.src)" />
+  <img src="/img/BE_Antenne/Antenne-phase-3_page2_img2.png" alt="Measurement Results" style="width: 45%;" onclick="openModal(this.src)" />
+</div>
+
+<div class="lang-fr">
+<h2>Tests de liaison en conditions reelles</h2>
+<ul>
+<li>Connexion a un module LoRa/WiFi</li>
+<li>Tests de portee avec mesures RSSI</li>
+<li>Comparaison avec une antenne commerciale</li>
+<li>Validation des performances en environnement reel</li>
+</ul>
+
+<h1>Resultats et analyse</h1>
+<p>L'antenne fabriquee a respecte les specifications avec un S11 &lt; -12 dB a la frequence cible. Le gain mesure correspondait aux simulations a +/-1 dB pres. Les tests de liaison en conditions reelles ont demontre une portee de communication efficace pour l'application IoT visee.</p>
+<p>Les enseignements cles comprenaient l'impact des proprietes du substrat sur les performances, l'importance des tolerances de fabrication precises et les effets du plan de masse sur les diagrammes de rayonnement.</p>
+
+<h1>Conclusion</h1>
+<p>Ce projet a fourni une experience pratique complete en conception d'antennes RF, de l'analyse theorique a la caracterisation professionnelle. Nous avons concu, fabrique et valide avec succes une antenne fonctionnelle pour des applications IoT, demonstrant le flux de travail complet d'ingenierie pour les systemes de communication sans fil.</p>
+</div>
+
+<div class="lang-en">
+<h2>Real-World Link Testing</h2>
+<ul>
+<li>Connected to LoRa/WiFi module</li>
+<li>Range testing with RSSI measurements</li>
+<li>Comparison with commercial antenna</li>
+<li>Performance validation in operating environment</li>
+</ul>
+
+<h1>Results and Analysis</h1>
+<p>The fabricated antenna met specifications with S11 &lt; -12 dB at the target frequency. Measured gain matched simulations within +/-1 dB. Real-world link tests demonstrated effective communication range for the target IoT application.</p>
+<p>Key learnings included the impact of substrate properties on performance, importance of precise manufacturing tolerances, and ground plane effects on radiation patterns.</p>
+
+<h1>Conclusion</h1>
+<p>This project provided comprehensive hands-on experience in RF antenna design, from theoretical analysis through professional characterization. We successfully designed, fabricated, and validated a functional antenna for IoT applications, demonstrating the complete engineering workflow for wireless communication systems.</p>
+</div>
+
+<div class="lang-fr">
+<h1>Documentation du projet</h1>
+<p>Ci-dessous se trouvent les trois phases de la documentation du projet d'antenne. Vous pouvez faire defiler chaque PDF cote a cote.</p>
+</div>
+
+<div class="lang-en">
+<h1>Project Documentation</h1>
+<p>Below are the three phases of the antenna project documentation. You can scroll through each PDF side by side.</p>
+</div>
+
+<div style="display: flex; gap: 15px; margin: 40px 0; overflow-x: auto; padding-bottom: 20px;">
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 1</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-1.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 2</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-2.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+
+  <div style="flex: 1; min-width: 400px;">
+    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 3</h3>
+    <embed src="/cours-pdf/projet/antenne/Antenne-phase-3.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
+  </div>
+</div>
+
+<style>
+@media (max-width: 1200px) {
+  div[style*="display: flex"] {
+    flex-direction: column;
+  }
+  div[style*="min-width: 400px"] {
+    min-width: 100%;
+  }
+}
+</style>
+
 <!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
@@ -241,818 +431,6 @@ function closeModal() {
   modal.style.display = "none";
 }
 </script>
-
-<hr />
-
-<h2 id="part-b-expérience-contexte-et-fonction-cahier-des-charges">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION (Cahier des charges)</h2>
-
-<h3 id="spécifications-techniques">Spécifications techniques</h3>
-
-<p><strong>Fréquence :</strong></p>
-<ul>
-  <li><strong>433 MHz</strong> (LoRa EU)</li>
-  <li><strong>868 MHz</strong> (Sigfox, LoRa EU)</li>
-  <li><strong>2.4 GHz</strong> (WiFi, Bluetooth, Zigbee)</li>
-  <li>Bande passante : ≥10 MHz</li>
-</ul>
-
-<p><strong>Performances :</strong></p>
-<ul>
-  <li>Adaptation : S11 &lt; -10 dB</li>
-  <li>Gain : &gt;0 dBi (omnidirectionnel) ou &gt;5 dBi (directif)</li>
-  <li>Polarisation : linéaire verticale (ou circulaire si GNSS)</li>
-  <li>Impédance : 50Ω</li>
-</ul>
-
-<p><strong>Contraintes :</strong></p>
-<ul>
-  <li>Compact (IoT portable)</li>
-  <li>Faible coût (PCB FR-4 acceptable)</li>
-  <li>Fabrication simple</li>
-</ul>
-
-<h3 id="types-dantennes-possibles">Types d’antennes possibles</h3>
-
-<p><strong>433/868 MHz :</strong></p>
-<ul>
-  <li>Monopole λ/4 (7-17 cm)</li>
-  <li>Dipole replié</li>
-  <li>Hélice (compacte)</li>
-  <li>PIFA (Planar Inverted-F Antenna)</li>
-</ul>
-
-<p><strong>2.4 GHz :</strong></p>
-<ul>
-  <li>Patch rectangulaire (3×4 cm)</li>
-  <li>Dipole imprimé</li>
-  <li>Antenne méandre (compacte)</li>
-  <li>Yagi (gain élevé)</li>
-</ul>
-
-<hr />
-
-<h2 id="part-c-aspects-techniques-méthodologie">PART C: ASPECTS TECHNIQUES (Méthodologie)</h2>
-
-<h3 id="phase-1--étude-et-conception-15h">Phase 1 : Étude et conception (15h)</h3>
-
-<p><strong>Recherche bibliographique :</strong></p>
-<ul>
-  <li>État de l’art antennes IoT</li>
-  <li>Choix topologie (patch, monopole, etc.)</li>
-</ul>
-
-<p><strong>Dimensionnement théorique :</strong></p>
-<ul>
-  <li>Formules analytiques (longueur λ)</li>
-  <li>Calcul dimensions initiales</li>
-  <li>Exemple patch 2.4 GHz : L ≈ 3 cm, W ≈ 4 cm sur FR-4</li>
-</ul>
-
-<p><strong>Adaptation :</strong></p>
-<ul>
-  <li>Design matching network (stub, L-match)</li>
-  <li>Calcul Smith chart</li>
-</ul>
-
-<h3 id="phase-2--simulation-em-15h">Phase 2 : Simulation EM (15h)</h3>
-
-<p><strong>Modélisation 3D :</strong></p>
-<ul>
-  <li>Logiciel : CST, HFSS, ou MMANA (Yagi)</li>
-  <li>Géométrie complète (substrat, plan de masse)</li>
-  <li>Maillage adapté</li>
-</ul>
-
-<p><strong>Optimisation :</strong></p>
-<ul>
-  <li>Paramétrage dimensions</li>
-  <li>Sweep fréquentiel</li>
-  <li>Optimisation S11, gain, diagramme</li>
-</ul>
-
-<p><strong>Résultats simulation :</strong></p>
-<ul>
-  <li>S11 &lt; -15 dB à f₀</li>
-  <li>Gain 6-8 dBi (patch), 2 dBi (monopole)</li>
-  <li>Diagramme rayonnement 3D</li>
-  <li>Impédance Z = 50 + j0 Ω</li>
-</ul>
-
-<h3 id="phase-3--réalisation-10h">Phase 3 : Réalisation (10h)</h3>
-
-<p><strong>PCB :</strong></p>
-<ul>
-  <li>Schéma KiCad/Altium</li>
-  <li>Layout précis (dimensions optimisées)</li>
-  <li>Fabrication (PCBWay, JLCPCB)</li>
-  <li>Substrat : FR-4 (εr=4.4) ou Rogers (meilleur)</li>
-</ul>
-
-<p><strong>Assemblage :</strong></p>
-<ul>
-  <li>Soudure connecteur SMA</li>
-  <li>Vérification continuités</li>
-  <li>Inspection visuelle</li>
-</ul>
-
-<h3 id="phase-4--caractérisation-10h">Phase 4 : Caractérisation (10h)</h3>
-
-<p><strong>Mesures VNA :</strong></p>
-<ul>
-  <li>Calibration SOLT</li>
-  <li>S11 : adaptation vs fréquence</li>
-  <li>Smith chart : impédance</li>
-  <li>Comparaison simulation vs mesure</li>
-</ul>
-
-<p><strong>Chambre anéchoïque :</strong></p>
-<ul>
-  <li>Diagramme rayonnement (plan E, H)</li>
-  <li>Gain absolu</li>
-  <li>Polarisation</li>
-</ul>
-
-<p><strong>Tests liaison :</strong></p>
-<ul>
-  <li>Module LoRa/WiFi connecté</li>
-  <li>Mesure portée (RSSI)</li>
-  <li>Comparaison antenne commercial</li>
-</ul>
-
-<hr />
-
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
-
-<h3 id="livrables">Livrables</h3>
-<ul>
-  <li>Rapport technique (30 pages) : étude, simulations, réalisation, mesures</li>
-  <li>Fichiers simulation (CST/HFSS)</li>
-  <li>Fichiers PCB (Gerber)</li>
-  <li>Présentation orale (20 min)</li>
-  <li>Démonstration liaison radio</li>
-</ul>
-
-<h3 id="évaluation">Évaluation</h3>
-<ul>
-  <li>Qualité conception et simulation (25%)</li>
-  <li>Réalisation PCB (20%)</li>
-  <li>Mesures et validation (25%)</li>
-  <li>Rapport et documentation (20%)</li>
-  <li>Présentation orale (10%)</li>
-</ul>
-
-<h3 id="compétences-acquises">Compétences acquises</h3>
-<ul>
-  <li>Conception antennes RF professionnelle</li>
-  <li>Simulation EM 3D</li>
-  <li>Mesures VNA et chambre anéchoïque</li>
-  <li>Gestion projet en autonomie</li>
-  <li>Documentation technique</li>
-</ul>
-
-<h3 id="débouchés">Débouchés</h3>
-<ul>
-  <li>Ingénieur antennes (IoT, télécom)</li>
-  <li>Concepteur RF</li>
-  <li>R&amp;D objets connectés</li>
-</ul>
-
-<h2 id="-cahier-des-charges">📚 Cahier des charges</h2>
-
-<h3 id="spécifications-techniques-1">Spécifications techniques</h3>
-
-<p><strong>Fréquence de travail :</strong></p>
-<ul>
-  <li>Options : 433 MHz, 868 MHz, 2.4 GHz</li>
-  <li>Selon application IoT choisie</li>
-  <li>Bande passante : ±10 MHz minimum</li>
-</ul>
-
-<p><strong>Performances :</strong></p>
-<ul>
-  <li>Adaptation : S11 &lt; -10 dB</li>
-  <li>Gain : &gt; 0 dBi (omnidirectionnelle)</li>
-  <li>Polarisation : linéaire (typiquement)</li>
-  <li>Efficacité : &gt; 70%</li>
-</ul>
-
-<p><strong>Contraintes :</strong></p>
-<ul>
-  <li>Compacte pour objets connectés</li>
-  <li>Fabrication PCB standard</li>
-  <li>Coût réduit</li>
-  <li>Robustesse mécanique</li>
-</ul>
-
-<h3 id="applications-visées">Applications visées</h3>
-
-<p><strong>IoT basse consommation :</strong></p>
-<ul>
-  <li>LoRa (868 MHz Europe, 915 MHz US)</li>
-  <li>Sigfox (868 MHz Europe)</li>
-  <li>WiFi 2.4 GHz</li>
-  <li>Zigbee 2.4 GHz</li>
-  <li>Bluetooth 2.4 GHz</li>
-</ul>
-
-<p><strong>Cas d’usage :</strong></p>
-<ul>
-  <li>Capteurs environnementaux</li>
-  <li>Smart agriculture</li>
-  <li>Smart city</li>
-  <li>Wearables</li>
-  <li>Asset tracking</li>
-</ul>
-
-<h2 id="️-réalisation-du-projet">🛠️ Réalisation du projet</h2>
-
-<h3 id="phase-1--étude-et-choix-de-conception">Phase 1 : Étude et choix de conception</h3>
-
-<h4 id="analyse-des-besoins">Analyse des besoins</h4>
-<ul>
-  <li>Définir l’application cible</li>
-  <li>Contraintes mécaniques</li>
-  <li>Environnement d’utilisation</li>
-  <li>Budget</li>
-</ul>
-
-<h4 id="choix-du-type-dantenne">Choix du type d’antenne</h4>
-
-<p><strong>Options étudiées :</strong></p>
-
-<ol>
-  <li><strong>Antenne patch (microstrip) :</strong>
-    <ul>
-      <li>Compacte, planaire</li>
-      <li>Fabrication PCB facile</li>
-      <li>Bande passante limitée</li>
-      <li>Gain moyen (5-7 dBi)</li>
-    </ul>
-  </li>
-  <li><strong>Antenne monopole λ/4 :</strong>
-    <ul>
-      <li>Omnidirectionnelle</li>
-      <li>Simple</li>
-      <li>Nécessite plan de masse</li>
-      <li>Gain ~2 dBi</li>
-    </ul>
-  </li>
-  <li><strong>Antenne IFA (Inverted-F) :</strong>
-    <ul>
-      <li>Très compacte</li>
-      <li>Bonne pour GSM/WiFi</li>
-      <li>Accordable</li>
-      <li>Largeur de bande ajustable</li>
-    </ul>
-  </li>
-  <li><strong>Antenne dipôle plié :</strong>
-    <ul>
-      <li>Bande passante améliorée</li>
-      <li>Fabrication PCB</li>
-      <li>Omnidirectionnelle</li>
-    </ul>
-  </li>
-  <li><strong>Antenne PIFA (Planar IFA) :</strong>
-    <ul>
-      <li>Très compacte</li>
-      <li>Multi-bande possible</li>
-      <li>Intégration facile</li>
-      <li>Smartphones, IoT</li>
-    </ul>
-  </li>
-</ol>
-
-<p><strong>Choix justifié :</strong>
-Sélection basée sur compromis :</p>
-<ul>
-  <li>Performances RF</li>
-  <li>Encombrement</li>
-  <li>Facilité de fabrication</li>
-  <li>Coût</li>
-</ul>
-
-<h3 id="phase-2--dimensionnement-théorique">Phase 2 : Dimensionnement théorique</h3>
-
-<h4 id="calculs-de-base">Calculs de base</h4>
-
-<p><strong>Longueur d’onde :</strong>
-\(\lambda = \frac{c}{f} = \frac{3 \times 10^8}{f}\)</p>
-
-<p><strong>Exemples :</strong></p>
-<ul>
-  <li>433 MHz : λ ≈ 69 cm</li>
-  <li>868 MHz : λ ≈ 34.5 cm</li>
-  <li>2.4 GHz : λ ≈ 12.5 cm</li>
-</ul>
-
-<p><strong>Dimensions antenne :</strong>
-Selon type choisi (λ/4, λ/2, patch, etc.)</p>
-
-<p><strong>Substrat PCB :</strong></p>
-<ul>
-  <li>FR-4 (εr ≈ 4.3) : économique</li>
-  <li>Rogers (εr stable) : performances</li>
-  <li>Épaisseur : 0.8, 1.6 mm typique</li>
-</ul>
-
-<p><strong>Longueur d’onde guidée :</strong>
-\(\lambda_g = \frac{\lambda_0}{\sqrt{\varepsilon_{reff}}}\)</p>
-
-<h4 id="adaptation-dimpédance">Adaptation d’impédance</h4>
-
-<p><strong>Objectif :</strong> 50Ω</p>
-<ul>
-  <li>Ligne microstrip 50Ω</li>
-  <li>Stub d’adaptation si nécessaire</li>
-  <li>Connecteur SMA ou U.FL</li>
-</ul>
-
-<h3 id="phase-3--simulation-em">Phase 3 : Simulation EM</h3>
-
-<h4 id="logiciels-utilisés">Logiciels utilisés</h4>
-
-<p><strong>MMANA-GAL :</strong></p>
-<ul>
-  <li>Antennes filaires (dipôle, Yagi)</li>
-  <li>Méthode des moments</li>
-  <li>Gratuit</li>
-  <li>Rapide</li>
-</ul>
-
-<p><strong>CST Microwave Studio :</strong></p>
-<ul>
-  <li>Simulation 3D complète</li>
-  <li>Temps domaine ou fréquentiel</li>
-  <li>Précis</li>
-  <li>Professionnel</li>
-</ul>
-
-<p><strong>HFSS :</strong></p>
-<ul>
-  <li>Méthode éléments finis (FEM)</li>
-  <li>Haute précision</li>
-  <li>Standard industrie</li>
-</ul>
-
-<p><strong>AWR (Applied Wave Research) :</strong></p>
-<ul>
-  <li>Suite complète RF</li>
-  <li>Antenne + circuit</li>
-  <li>Momentum (EM planar)</li>
-</ul>
-
-<h4 id="paramètres-simulés">Paramètres simulés</h4>
-
-<p><strong>Adaptation (S11) :</strong></p>
-<ul>
-  <li>Fréquence de résonance</li>
-  <li>Bande passante -10 dB</li>
-  <li>TOS (VSWR)</li>
-</ul>
-
-<p><strong>Diagramme de rayonnement :</strong></p>
-<ul>
-  <li>2D (plans E et H)</li>
-  <li>3D</li>
-  <li>Gain maximum</li>
-  <li>Ouverture à -3 dB</li>
-</ul>
-
-<p><strong>Impédance d’entrée :</strong></p>
-<ul>
-  <li>Partie réelle et imaginaire</li>
-  <li>Smith chart</li>
-  <li>Évolution fréquentielle</li>
-</ul>
-
-<p><strong>Efficacité :</strong></p>
-<ul>
-  <li>Pertes diélectriques</li>
-  <li>Pertes ohmiques</li>
-  <li>Efficacité de rayonnement</li>
-</ul>
-
-<h4 id="optimisation">Optimisation</h4>
-
-<p><strong>Variables ajustables :</strong></p>
-<ul>
-  <li>Dimensions géométriques</li>
-  <li>Position stub d’adaptation</li>
-  <li>Largeur de lignes</li>
-  <li>Plan de masse</li>
-</ul>
-
-<p><strong>Objectif :</strong></p>
-<ul>
-  <li>S11 &lt; -10 dB sur bande</li>
-  <li>Gain maximum</li>
-  <li>Diagramme adapté à l’application</li>
-</ul>
-
-<h3 id="phase-4--réalisation-pcb">Phase 4 : Réalisation PCB</h3>
-
-<h4 id="design-du-pcb">Design du PCB</h4>
-
-<p><strong>Logiciel CAO :</strong></p>
-<ul>
-  <li>Altium Designer</li>
-  <li>KiCad</li>
-  <li>Eagle</li>
-</ul>
-
-<p><strong>Couches :</strong></p>
-<ul>
-  <li>Top : antenne + lignes RF</li>
-  <li>Bottom : plan de masse</li>
-  <li>2 couches typiquement</li>
-</ul>
-
-<p><strong>Éléments :</strong></p>
-<ul>
-  <li>Antenne dimensionnée</li>
-  <li>Ligne 50Ω vers connecteur</li>
-  <li>Connecteur SMA ou U.FL</li>
-  <li>Points de test</li>
-  <li>Découplage si électronique intégrée</li>
-</ul>
-
-<p><strong>Fabrication :</strong></p>
-<ul>
-  <li>Génération Gerber</li>
-  <li>Fabricant (JLCPCB, PCBWay, etc.)</li>
-  <li>Délai : 1-2 semaines</li>
-  <li>Coût : quelques euros</li>
-</ul>
-
-<h4 id="assemblage">Assemblage</h4>
-
-<p><strong>Composants :</strong></p>
-<ul>
-  <li>Connecteur SMA</li>
-  <li>Composants d’accord (si nécessaire)</li>
-</ul>
-
-<p><strong>Soudure :</strong></p>
-<ul>
-  <li>Fer à souder température contrôlée</li>
-  <li>Flux</li>
-  <li>Inspection visuelle</li>
-</ul>
-
-<p><strong>Mécanique :</strong></p>
-<ul>
-  <li>Support si nécessaire</li>
-  <li>Boîtier de protection</li>
-  <li>Câble d’alimentation</li>
-</ul>
-
-<h3 id="phase-5--caractérisation">Phase 5 : Caractérisation</h3>
-
-<h4 id="mesures-au-vna-analyseur-de-réseau-vectoriel">Mesures au VNA (Analyseur de Réseau Vectoriel)</h4>
-
-<p><strong>Calibration :</strong></p>
-<ul>
-  <li>SOLT (Short, Open, Load, Thru)</li>
-  <li>Au plan du connecteur de l’antenne</li>
-</ul>
-
-<p><strong>Paramètres S11 :</strong></p>
-<ul>
-  <li>Fréquence de résonance réelle</li>
-  <li>Bande passante mesurée</li>
-  <li>TOS (VSWR)</li>
-  <li>Comparaison simulation/mesure</li>
-</ul>
-
-<p><strong>Smith chart :</strong></p>
-<ul>
-  <li>Impédance d’entrée</li>
-  <li>Évolution fréquentielle</li>
-  <li>Validation adaptation</li>
-</ul>
-
-<h4 id="mesures-en-chambre-anéchoïque">Mesures en chambre anéchoïque</h4>
-
-<p><strong>Diagramme de rayonnement :</strong></p>
-<ul>
-  <li>Setup antenne sous test + antenne référence</li>
-  <li>Rotation 360° (plan H et E)</li>
-  <li>Mesure puissance reçue</li>
-  <li>Tracé du diagramme</li>
-</ul>
-
-<p><strong>Gain absolu :</strong></p>
-<ul>
-  <li>Méthode de substitution</li>
-  <li>Comparaison avec antenne étalon</li>
-  <li>Calcul du gain</li>
-</ul>
-
-<p><strong>Polarisation :</strong></p>
-<ul>
-  <li>Mesure composantes H et V</li>
-  <li>Rapport axial (si circulaire)</li>
-</ul>
-
-<h4 id="tests-en-conditions-réelles">Tests en conditions réelles</h4>
-
-<p><strong>Bilan de liaison radio :</strong></p>
-<ul>
-  <li>Émetteur à puissance connue</li>
-  <li>Distance variable</li>
-  <li>Mesure RSSI</li>
-  <li>Comparaison avec théorie</li>
-</ul>
-
-<p><strong>Portée effective :</strong></p>
-<ul>
-  <li>Module LoRa/WiFi/BT</li>
-  <li>Environnement indoor/outdoor</li>
-  <li>Obstacles</li>
-  <li>Validation cahier des charges</li>
-</ul>
-
-<h3 id="phase-6--analyse-et-optimisation">Phase 6 : Analyse et optimisation</h3>
-
-<h4 id="comparaison-simulationmesure">Comparaison simulation/mesure</h4>
-
-<p><strong>Écarts typiques :</strong></p>
-<ul>
-  <li>Décalage fréquentiel (εr imprécis)</li>
-  <li>Différences de gain (pertes réelles)</li>
-  <li>Diagramme (influence environnement)</li>
-</ul>
-
-<p><strong>Corrections possibles :</strong></p>
-<ul>
-  <li>Ajustement dimensionnel</li>
-  <li>Stub d’adaptation</li>
-  <li>Optimisation mécanique</li>
-</ul>
-
-<h4 id="améliorations">Améliorations</h4>
-
-<p><strong>Si performances insuffisantes :</strong></p>
-<ul>
-  <li>Tuning par stub variable</li>
-  <li>Modification dimensions</li>
-  <li>Changement de substrat</li>
-  <li>Nouvelle itération</li>
-</ul>
-
-<p><strong>Si performances OK :</strong></p>
-<ul>
-  <li>Miniaturisation</li>
-  <li>Multi-bande</li>
-  <li>Polarisation circulaire</li>
-</ul>
-
-<h2 id="-livrables-du-projet">📊 Livrables du projet</h2>
-
-<h3 id="documentation-technique">Documentation technique</h3>
-
-<ol>
-  <li><strong>Cahier des charges :</strong>
-    <ul>
-      <li>Spécifications</li>
-      <li>Contraintes</li>
-      <li>Application visée</li>
-    </ul>
-  </li>
-  <li><strong>Étude théorique :</strong>
-    <ul>
-      <li>Calculs dimensionnels</li>
-      <li>Choix justifiés</li>
-      <li>État de l’art</li>
-    </ul>
-  </li>
-  <li><strong>Simulations :</strong>
-    <ul>
-      <li>Screenshots CST/HFSS</li>
-      <li>Paramètres S11</li>
-      <li>Diagrammes de rayonnement</li>
-      <li>Courbes de gain</li>
-    </ul>
-  </li>
-  <li><strong>Design PCB :</strong>
-    <ul>
-      <li>Schémas</li>
-      <li>Layout</li>
-      <li>Fichiers Gerber</li>
-      <li>Nomenclature</li>
-    </ul>
-  </li>
-  <li><strong>Mesures :</strong>
-    <ul>
-      <li>Protocoles</li>
-      <li>Résultats VNA</li>
-      <li>Diagrammes mesurés</li>
-      <li>Tests de portée</li>
-    </ul>
-  </li>
-  <li><strong>Analyse :</strong>
-    <ul>
-      <li>Comparaison simulation/mesure</li>
-      <li>Validation cahier des charges</li>
-      <li>Améliorations proposées</li>
-    </ul>
-  </li>
-  <li><strong>Rapport final :</strong>
-    <ul>
-      <li>30-50 pages</li>
-      <li>Structuré et illustré</li>
-      <li>Bibliographie</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="réalisations-pratiques">Réalisations pratiques</h3>
-
-<ul>
-  <li>PCB d’antenne fonctionnel</li>
-  <li>Prototype assemblé</li>
-  <li>Démonstration de liaison</li>
-  <li>Poster de présentation</li>
-</ul>
-
-<h3 id="soutenance">Soutenance</h3>
-
-<ul>
-  <li>Présentation 15-20 minutes</li>
-  <li>Support PowerPoint</li>
-  <li>Démonstration live</li>
-  <li>Questions jury</li>
-</ul>
-
-<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
-
-<h3 id="simulation">Simulation</h3>
-<ul>
-  <li><strong>MMANA-GAL</strong> : Filaires</li>
-  <li><strong>CST Microwave Studio</strong> : 3D EM</li>
-  <li><strong>HFSS</strong> : FEM précision</li>
-  <li><strong>AWR</strong> : Suite RF complète</li>
-</ul>
-
-<h3 id="planification">Planification</h3>
-<ul>
-  <li><strong>Radio Mobile</strong> : Couverture</li>
-  <li><strong>Google Earth</strong> : Terrain 3D</li>
-  <li><strong>SPLAT!</strong> : Open source</li>
-</ul>
-
-<h3 id="conception-pcb">Conception PCB</h3>
-<ul>
-  <li><strong>Altium Designer</strong></li>
-  <li><strong>KiCad</strong></li>
-  <li><strong>Eagle</strong></li>
-</ul>
-
-<h3 id="mesure">Mesure</h3>
-<ul>
-  <li><strong>Analyseur de réseau vectoriel (VNA)</strong></li>
-  <li><strong>Chambre anéchoïque</strong></li>
-  <li><strong>Générateur RF</strong></li>
-  <li><strong>Analyseur de spectre</strong></li>
-</ul>
-
-<h2 id="-liens-avec-les-cours">🔗 Liens avec les cours</h2>
-
-<ul>
-  <li><strong>Antennes et Propagation (S4)</strong> : Base théorique</li>
-  <li><strong>Propagation Hyperfréquences (S3)</strong> : Adaptation</li>
-  <li><strong>Circuits Hyperfréquences (S3)</strong> : Conception RF</li>
-  <li><strong>ER</strong> : Réalisation PCB</li>
-</ul>
-
-<h2 id="-exemples-de-réalisations">💡 Exemples de réalisations</h2>
-
-<h3 id="antenne-patch-24-ghz">Antenne patch 2.4 GHz</h3>
-<ul>
-  <li>Substrat FR-4, 1.6 mm</li>
-  <li>Dimensions : 38×30 mm</li>
-  <li>Gain : 6 dBi</li>
-  <li>S11 &lt; -15 dB @ 2.44 GHz</li>
-  <li>Application : WiFi, Zigbee</li>
-</ul>
-
-<h3 id="antenne-monopole-868-mhz">Antenne monopole 868 MHz</h3>
-<ul>
-  <li>λ/4 sur PCB</li>
-  <li>Longueur : 8.2 cm</li>
-  <li>Plan de masse 10×10 cm</li>
-  <li>Omnidirectionnelle</li>
-  <li>Application : LoRa, Sigfox</li>
-</ul>
-
-<h3 id="antenne-ifa-24-ghz">Antenne IFA 2.4 GHz</h3>
-<ul>
-  <li>Compacte : 25×8 mm</li>
-  <li>Intégrée dans boîtier</li>
-  <li>Bande passante 2.4-2.5 GHz</li>
-  <li>Application : Bluetooth, WiFi</li>
-</ul>
-
-<h2 id="-compétences-développées">📖 Compétences développées</h2>
-
-<ul>
-  <li>Conception d’antennes RF</li>
-  <li>Simulation électromagnétique 3D</li>
-  <li>Design de PCB RF</li>
-  <li>Mesure avec VNA</li>
-  <li>Analyse de performances</li>
-  <li>Optimisation itérative</li>
-  <li>Gestion de projet technique</li>
-  <li>Rédaction de documentation</li>
-</ul>
-
-<h2 id="️-points-dattention">⚠️ Points d’attention</h2>
-
-<h3 id="simulation-1">Simulation</h3>
-<ul>
-  <li>Modèle de substrat précis</li>
-  <li>Maillage suffisant</li>
-  <li>Conditions aux limites</li>
-  <li>Temps de calcul</li>
-</ul>
-
-<h3 id="fabrication">Fabrication</h3>
-<ul>
-  <li>Précision dimensionnelle</li>
-  <li>Qualité du substrat</li>
-  <li>Soudure propre du connecteur</li>
-  <li>Protection mécanique</li>
-</ul>
-
-<h3 id="mesures">Mesures</h3>
-<ul>
-  <li>Calibration VNA cruciale</li>
-  <li>Environnement sans réflexions</li>
-  <li>Câbles de qualité</li>
-  <li>Connectique serrée</li>
-</ul>
-
-<h3 id="validation">Validation</h3>
-<ul>
-  <li>Tests multiples</li>
-  <li>Environnements variés</li>
-  <li>Comparaison avec théorie</li>
-  <li>Reproductibilité</li>
-</ul>
-
-<h2 id="-critères-dévaluation">🎯 Critères d’évaluation</h2>
-
-<ul>
-  <li>Respect du cahier des charges (25%)</li>
-  <li>Qualité des simulations (20%)</li>
-  <li>Réalisation pratique (20%)</li>
-  <li>Mesures et validation (20%)</li>
-  <li>Rapport et présentation (15%)</li>
-</ul>
-
-<h2 id="-ressources">📚 Ressources</h2>
-
-<ul>
-  <li>Balanis “Antenna Theory”</li>
-  <li>Application notes fabricants</li>
-  <li>IEEE Antennas and Propagation Magazine</li>
-  <li>Tutoriels CST/HFSS</li>
-  <li>Forums RF (edaboard, etc.)</li>
-</ul>
-
-<hr />
-
-<h1 id="project-documentation">Project Documentation</h1>
-
-<p>Below are the three phases of the antenna project documentation. You can scroll through each PDF side by side.</p>
-
-<div style="display: flex; gap: 15px; margin: 40px 0; overflow-x: auto; padding-bottom: 20px;">
-  <div style="flex: 1; min-width: 400px;">
-    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 1: Design &amp; Specifications</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-1.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
-  </div>
-  
-  <div style="flex: 1; min-width: 400px;">
-    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 2: Simulation &amp; Optimization</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-2.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
-  </div>
-  
-  <div style="flex: 1; min-width: 400px;">
-    <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">📄 Phase 3: Fabrication &amp; Testing</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-3.pdf" type="application/pdf" width="100%" height="800px" style="border: 2px solid #667eea; border-radius: 8px;" />
-  </div>
-</div>
-
-<style>
-@media (max-width: 1200px) {
-  div[style*="display: flex"] {
-    flex-direction: column;
-  }
-  div[style*="min-width: 400px"] {
-    min-width: 100%;
-  }
-}
-</style>
 
 
       </div>
@@ -1084,6 +462,117 @@ Selon type choisi (λ/4, λ/2, patch, etc.)</p>
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1102,8 +591,8 @@ Selon type choisi (λ/4, λ/2, patch, etc.)</p>
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1125,6 +614,7 @@ Selon type choisi (λ/4, λ/2, patch, etc.)</p>
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1635,11 +1125,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1839,14 +1327,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1857,6 +1345,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

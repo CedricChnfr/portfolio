@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"My Courses 2022-2023","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2022-2023.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2022-2023.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -100,84 +111,84 @@
     <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-<h1 id="my-courses---2022-2023">My Courses - 2022-2023</h1>
+<h1 data-i18n="courses-title-2022-2023">My Courses - 2022-2023</h1>
 
 <hr />
 
-<h2 id="semester-5-s5">Semester 5 (S5)</h2>
+<h2 data-i18n="semester-5">Semester 5 (S5)</h2>
 
 <h3 id="-architecture-informatique-matérielle"><a href="./architecture-informatique-materielle.html">💻 Architecture Informatique Matérielle</a></h3>
-<p><strong>Content</strong>: Computer hardware architecture fundamentals and design.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux et conception de l’architecture matérielle informatique.</span><span class="lang-en">Computer hardware architecture fundamentals and design.</span></p>
 
 <h3 id="-circuits-et-filtres-analogiques"><a href="./circuits-filtres-analogiques.html">🔌 Circuits et Filtres Analogiques</a></h3>
-<p><strong>Content</strong>: Analog circuits design and filter theory.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Conception de circuits analogiques et théorie des filtres.</span><span class="lang-en">Analog circuits design and filter theory.</span></p>
 
 <h3 id="-composants-et-notions-de-puissance"><a href="./composants-puissance.html">⚡ Composants et Notions de Puissance</a></h3>
-<p><strong>Content</strong>: Power components and power electronics fundamentals.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Composants de puissance et fondamentaux de l’électronique de puissance.</span><span class="lang-en">Power components and power electronics fundamentals.</span></p>
 
 <h3 id="-fondements-électronique-numérique"><a href="./fondements-electronique-numerique.html">📟 Fondements Électronique Numérique</a></h3>
-<p><strong>Content</strong>: Digital electronics fundamentals and logic design.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux de l’électronique numérique et conception logique.</span><span class="lang-en">Digital electronics fundamentals and logic design.</span></p>
 
 <h3 id="️-langage-c"><a href="./langage-c.html">🖥️ Langage C</a></h3>
-<p><strong>Content</strong>: C programming language and system programming.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Langage de programmation C et programmation système.</span><span class="lang-en">C programming language and system programming.</span></p>
 
 <h3 id="-logique-séquentielle"><a href="./logique-sequentielle.html">🔄 Logique Séquentielle</a></h3>
-<p><strong>Content</strong>: Sequential logic circuits and finite state machines.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Circuits logiques séquentiels et machines à états finis.</span><span class="lang-en">Sequential logic circuits and finite state machines.</span></p>
 
 <h3 id="-modélisation-et-analyse-des-systèmes-linéaires-et-représentation-détat"><a href="./modelisation-systemes-lineaires.html">📊 Modélisation et Analyse des Systèmes Linéaires et Représentation d’État</a></h3>
-<p><strong>Content</strong>: Linear systems modeling and state-space representation.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation des systèmes linéaires et représentation d’état.</span><span class="lang-en">Linear systems modeling and state-space representation.</span></p>
 
 <h3 id="-modélisation-et-commande-des-systèmes-à-événements-discrets"><a href="./systemes-evenements-discrets.html">🎮 Modélisation et Commande des Systèmes à Événements Discrets</a></h3>
-<p><strong>Content</strong>: Discrete event systems modeling and control.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et commande des systèmes à événements discrets.</span><span class="lang-en">Discrete event systems modeling and control.</span></p>
 
 <h3 id="️-modélisation-et-commande-des-systèmes-linéaires-continus"><a href="./systemes-lineaires-continus.html">🎛️ Modélisation et Commande des Systèmes Linéaires Continus</a></h3>
-<p><strong>Content</strong>: Continuous linear systems modeling and control.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et commande des systèmes linéaires continus.</span><span class="lang-en">Continuous linear systems modeling and control.</span></p>
 
 <h3 id="-réseau"><a href="./reseau-s5.html">🌐 Réseau</a></h3>
-<p><strong>Content</strong>: Computer networks fundamentals and protocols.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux des réseaux informatiques et protocoles.</span><span class="lang-en">Computer networks fundamentals and protocols.</span></p>
 
 <h3 id="-signal"><a href="./signal.html">📡 Signal</a></h3>
-<p><strong>Content</strong>: Signal processing and analysis fundamentals.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux du traitement et de l’analyse du signal.</span><span class="lang-en">Signal processing and analysis fundamentals.</span></p>
 
 <h3 id="-système-unix"><a href="./systeme-unix.html">🐧 Système Unix</a></h3>
-<p><strong>Content</strong>: Unix/Linux system administration and shell programming.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Administration système Unix/Linux et programmation shell.</span><span class="lang-en">Unix/Linux system administration and shell programming.</span></p>
 
 <h3 id="-systèmes-bouclés"><a href="./systemes-boucles.html">🔁 Systèmes Bouclés</a></h3>
-<p><strong>Content</strong>: Feedback control systems and closed-loop analysis.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Systèmes de commande à rétroaction et analyse en boucle fermée.</span><span class="lang-en">Feedback control systems and closed-loop analysis.</span></p>
 
 <h3 id="️-systèmes-dexploitation"><a href="./systemes-exploitation.html">⚙️ Systèmes d’Exploitation</a></h3>
-<p><strong>Content</strong>: Operating systems principles and implementation.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes des systèmes d’exploitation et implémentation.</span><span class="lang-en">Operating systems principles and implementation.</span></p>
 
 <hr />
 
-<h2 id="semester-6-s6">Semester 6 (S6)</h2>
+<h2 data-i18n="semester-6">Semester 6 (S6)</h2>
 
 <h3 id="️-architecture-matérielle"><a href="./architecture-materielle.html">🖥️ Architecture Matérielle</a></h3>
-<p><strong>Content</strong>: Advanced computer hardware architecture concepts.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Concepts avancés d’architecture matérielle informatique.</span><span class="lang-en">Advanced computer hardware architecture concepts.</span></p>
 
 <h3 id="-électronique-fonctions-analogiques"><a href="./electronique-fonctions-analogiques.html">🔊 Électronique Fonctions Analogiques</a></h3>
-<p><strong>Content</strong>: Analog electronic functions and applications.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fonctions électroniques analogiques et applications.</span><span class="lang-en">Analog electronic functions and applications.</span></p>
 
 <h3 id="-électronique-fonctions-numériques"><a href="./electronique-fonctions-numeriques.html">💾 Électronique Fonctions Numériques</a></h3>
-<p><strong>Content</strong>: Digital electronic functions and design.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fonctions électroniques numériques et conception.</span><span class="lang-en">Digital electronic functions and design.</span></p>
 
 <h3 id="-filtrage-numérique"><a href="./filtrage-numerique.html">📊 Filtrage Numérique</a></h3>
-<p><strong>Content</strong>: Digital signal processing and filtering techniques.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Traitement numérique du signal et techniques de filtrage.</span><span class="lang-en">Digital signal processing and filtering techniques.</span></p>
 
 <h3 id="-gestion"><a href="./gestion.html">💼 Gestion</a></h3>
-<p><strong>Content</strong>: Management principles and project management.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de gestion et management de projet.</span><span class="lang-en">Management principles and project management.</span></p>
 
 <h3 id="️-langage-dassemblage-arm-cortex"><a href="./assemblage-arm-cortex.html">⚙️ Langage d’Assemblage ARM CORTEX</a></h3>
-<p><strong>Content</strong>: ARM CORTEX assembly language programming.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation en langage d’assemblage ARM CORTEX.</span><span class="lang-en">ARM CORTEX assembly language programming.</span></p>
 
 <h3 id="-microcontrôleur"><a href="./microcontroleur.html">🔌 Microcontrôleur</a></h3>
-<p><strong>Content</strong>: Microcontroller programming and embedded systems.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation de microcontrôleurs et systèmes embarqués.</span><span class="lang-en">Microcontroller programming and embedded systems.</span></p>
 
 <h3 id="-qualité-sécurité-environnement"><a href="./qualite-securite-environnement.html">🌍 Qualité Sécurité Environnement</a></h3>
-<p><strong>Content</strong>: Quality, safety, and environmental management.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Gestion de la qualité, de la sécurité et de l’environnement.</span><span class="lang-en">Quality, safety, and environmental management.</span></p>
 
 <h3 id="-signaux-aléatoires"><a href="./signaux-aleatoires.html">📈 Signaux Aléatoires</a></h3>
-<p><strong>Content</strong>: Random signals and stochastic processes.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Signaux aléatoires et processus stochastiques.</span><span class="lang-en">Random signals and stochastic processes.</span></p>
 
 
       </div>
@@ -209,6 +220,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -227,8 +349,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -250,6 +372,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -760,11 +883,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -964,14 +1085,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -982,6 +1103,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

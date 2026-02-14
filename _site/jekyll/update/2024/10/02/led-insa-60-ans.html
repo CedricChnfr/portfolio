@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="LED 60 ans INSA" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Results and Analysis The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse." />
-<meta property="og:description" content="← Back to Academic Project Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Results and Analysis The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse." />
+<meta name="description" content="&larr; Retour aux Projets Projet Altium : LED 60 ans INSA Introduction Dans le cadre de notre cursus a l&#39;INSA Toulouse en specialite Automatique et Electronique, nous avons realise un projet complet de conception electronique avec Altium Designer. Le projet, intitule &quot;LED 60 ans INSA&quot;, visait a celebrer le 60e anniversaire de l&#39;ecole avec un dispositif d&#39;eclairage innovant et esthetique, comprenant des LEDs RGB controlees via un microcontroleur STM32. Ce projet couvrait de nombreux aspects techniques, de la conception du PCB a la conception mecanique et logicielle, nous permettant de pratiquer des competences cles en ingenierie electronique et systemes embarques. Objectifs du projet Les objectifs de ce projet etaient multiples : Concevoir un circuit electronique capable de controler des LEDs RGB suivant un diagramme fonctionnel specifique. Creer un PCB avec Altium Designer repondant aux contraintes electriques et mecaniques tout en optimisant le routage. Concevoir un boitier 3D pour abriter le circuit imprime et les composants electroniques avec Fusion 360. Programmer un microcontroleur STM32 pour controler les LEDs RGB via un bus SPI. Assurer l&#39;integration de l&#39;ensemble en un systeme robuste, fonctionnel et esthetique. Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled &quot;LED 60 Years INSA,&quot; aimed to celebrate the school&#39;s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Conception et routage avec Altium Designer Selection des composants La premiere etape du projet etait de selectionner les composants appropries pour la conception. Nous avons choisi : LEDs WS2812B : LEDs RGB adressables pouvant etre controlees individuellement via un bus SPI. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6 : Un microcontroleur base sur ARM Cortex-M3, compatible avec le protocole SPI et offrant de bonnes performances pour les applications embarquees. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Composants d&#39;alimentation, notamment des regulateurs de tension et des convertisseurs DC-DC pour gerer les differentes alimentations (USB et batteries). Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Schema du circuit L&#39;etape suivante etait de creer les schemas electroniques dans Altium Designer. Les principaux sous-systemes du circuit comprennent : Alimentation : Gestion de differentes sources d&#39;energie (USB ou batteries) et regulation de la tension pour alimenter les LEDs et le microcontroleur. Commande des LEDs : Utilisation du bus SPI pour envoyer des donnees aux LEDs afin de gerer leur couleur et leur intensite. Gestion de la programmation : Integration d&#39;une interface pour programmer le STM32 via un bootloader USB. Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routage et optimisation Apres la conception des schemas, nous avons route le PCB dans Altium Designer, en tenant compte du placement des composants et des contraintes de pistes. Les etapes cles du processus de routage comprennent : Placement strategique des composants : Positionnement des LEDs pres des bords pour une diffusion uniforme de la lumiere et du microcontroleur au centre pour faciliter les connexions. Minimisation des interferences : Suivi des bonnes pratiques de routage pour eviter les interferences electromagnetiques, comme l&#39;optimisation de la largeur des pistes d&#39;alimentation et des pistes de donnees du bus SPI. Respect des contraintes mecaniques : Optimisation du placement des connecteurs d&#39;alimentation et de programmation pour correspondre aux ouvertures du boitier 3D. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Resultats du routage Le routage final a ete realise sur une carte double couche, permettant la separation des signaux critiques (bus SPI) et des alimentations pour reduire les interferences. Le respect des contraintes de fabrication etait essentiel, avec des pistes suffisamment larges pour supporter le courant requis par les LEDs RGB. Conception mecanique avec Fusion 360 Modelisation du boitier Le boitier, concu avec Fusion 360, etait destine a proteger et mettre en valeur l&#39;electronique. Les caracteristiques principales comprennent : Corps principal : Supporte le PCB et offre de l&#39;espace pour les batteries et l&#39;alimentation USB. Couvercle transparent : Un panneau en plexiglas pour exposer les LEDs tout en les protegeant des elements exterieurs. Compartiment batterie : Une section amovible pour un acces facile aux batteries. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. Nous avons utilise l&#39;impression 3D pour creer le boitier, en tenant compte de tolerances precises pour assurer un assemblage sans friction. Assemblage du systeme Une fois le boitier imprime, nous avons assemble les differentes parties du projet. Le PCB a ete solidement fixe au boitier, les connexions electriques ont ete verifiees et les LEDs ont ete testees pour s&#39;assurer qu&#39;elles repondaient correctement aux signaux SPI envoyes par le STM32. Programmation du microcontroleur STM32 Utilisation du bus SPI pour controler les LEDs Le STM32F103 a ete programme pour controler les LEDs WS2812B via le bus SPI. Ce protocole de communication permet d&#39;envoyer des donnees RGB pour chaque LED, controlant individuellement leur couleur et leur intensite. L&#39;algorithme que nous avons implemente prend en charge la conversion des donnees RGB dans un format comprehensible par les LEDs. Nous avons utilise les interruptions SPI du STM32 pour gerer efficacement la transmission des donnees, obtenant un eclairage fluide et sans decalage. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32&#39;s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Fonctionnalites ajoutees En plus du controle de base des LEDs, nous avons ajoute plusieurs modes d&#39;affichage : Mode degrade de couleurs : Les LEDs changent progressivement de couleur. Mode clignotement : Les LEDs s&#39;allument et s&#39;eteignent de maniere rythmique. Mode interaction : Les LEDs reagissent en fonction des donnees recues par le microcontroleur, simulant des evenements dynamiques (ex : changement de couleur sur appui de bouton). Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Resultats et analyse Le projet &quot;LED 60 ans INSA&quot; a ete un succes technique et esthetique. Nous avons concu un systeme electronique robuste, entierement controle par un microcontroleur STM32 et presente dans un boitier concu sur mesure. L&#39;utilisation d&#39;Altium Designer nous a permis de produire un PCB fonctionnel et optimise, tandis que la programmation du microcontroleur a offert une large gamme de fonctionnalites pour les LEDs RGB. Ameliorations futures Quelques pistes d&#39;amelioration pourraient etre explorees : Optimisation du routage : Reduction de la longueur des pistes SPI pour une communication plus rapide. Ajout de capteurs : Inclusion de capteurs de lumiere pour ajuster l&#39;intensite des LEDs en fonction de l&#39;environnement. Mises a jour logicielles : Developpement de modes d&#39;affichage supplementaires et amelioration de l&#39;efficacite de la gestion des interruptions. Conclusion Ce projet nous a permis de developper des competences essentielles en conception de PCB avec Altium Designer, modelisation 3D avec Fusion 360 et programmation embarquee avec le STM32. Grace a une approche pluridisciplinaire, nous avons cree un produit fonctionnel, robuste et esthetique qui repond aux objectifs du projet tout en celebrant le 60e anniversaire de l&#39;INSA Toulouse. Results and Analysis The &quot;LED 60 Years INSA&quot; project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project&#39;s objectives while celebrating the 60th anniversary of INSA Toulouse." />
+<meta property="og:description" content="&larr; Retour aux Projets Projet Altium : LED 60 ans INSA Introduction Dans le cadre de notre cursus a l&#39;INSA Toulouse en specialite Automatique et Electronique, nous avons realise un projet complet de conception electronique avec Altium Designer. Le projet, intitule &quot;LED 60 ans INSA&quot;, visait a celebrer le 60e anniversaire de l&#39;ecole avec un dispositif d&#39;eclairage innovant et esthetique, comprenant des LEDs RGB controlees via un microcontroleur STM32. Ce projet couvrait de nombreux aspects techniques, de la conception du PCB a la conception mecanique et logicielle, nous permettant de pratiquer des competences cles en ingenierie electronique et systemes embarques. Objectifs du projet Les objectifs de ce projet etaient multiples : Concevoir un circuit electronique capable de controler des LEDs RGB suivant un diagramme fonctionnel specifique. Creer un PCB avec Altium Designer repondant aux contraintes electriques et mecaniques tout en optimisant le routage. Concevoir un boitier 3D pour abriter le circuit imprime et les composants electroniques avec Fusion 360. Programmer un microcontroleur STM32 pour controler les LEDs RGB via un bus SPI. Assurer l&#39;integration de l&#39;ensemble en un systeme robuste, fonctionnel et esthetique. Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled &quot;LED 60 Years INSA,&quot; aimed to celebrate the school&#39;s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Conception et routage avec Altium Designer Selection des composants La premiere etape du projet etait de selectionner les composants appropries pour la conception. Nous avons choisi : LEDs WS2812B : LEDs RGB adressables pouvant etre controlees individuellement via un bus SPI. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6 : Un microcontroleur base sur ARM Cortex-M3, compatible avec le protocole SPI et offrant de bonnes performances pour les applications embarquees. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Composants d&#39;alimentation, notamment des regulateurs de tension et des convertisseurs DC-DC pour gerer les differentes alimentations (USB et batteries). Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Schema du circuit L&#39;etape suivante etait de creer les schemas electroniques dans Altium Designer. Les principaux sous-systemes du circuit comprennent : Alimentation : Gestion de differentes sources d&#39;energie (USB ou batteries) et regulation de la tension pour alimenter les LEDs et le microcontroleur. Commande des LEDs : Utilisation du bus SPI pour envoyer des donnees aux LEDs afin de gerer leur couleur et leur intensite. Gestion de la programmation : Integration d&#39;une interface pour programmer le STM32 via un bootloader USB. Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routage et optimisation Apres la conception des schemas, nous avons route le PCB dans Altium Designer, en tenant compte du placement des composants et des contraintes de pistes. Les etapes cles du processus de routage comprennent : Placement strategique des composants : Positionnement des LEDs pres des bords pour une diffusion uniforme de la lumiere et du microcontroleur au centre pour faciliter les connexions. Minimisation des interferences : Suivi des bonnes pratiques de routage pour eviter les interferences electromagnetiques, comme l&#39;optimisation de la largeur des pistes d&#39;alimentation et des pistes de donnees du bus SPI. Respect des contraintes mecaniques : Optimisation du placement des connecteurs d&#39;alimentation et de programmation pour correspondre aux ouvertures du boitier 3D. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Resultats du routage Le routage final a ete realise sur une carte double couche, permettant la separation des signaux critiques (bus SPI) et des alimentations pour reduire les interferences. Le respect des contraintes de fabrication etait essentiel, avec des pistes suffisamment larges pour supporter le courant requis par les LEDs RGB. Conception mecanique avec Fusion 360 Modelisation du boitier Le boitier, concu avec Fusion 360, etait destine a proteger et mettre en valeur l&#39;electronique. Les caracteristiques principales comprennent : Corps principal : Supporte le PCB et offre de l&#39;espace pour les batteries et l&#39;alimentation USB. Couvercle transparent : Un panneau en plexiglas pour exposer les LEDs tout en les protegeant des elements exterieurs. Compartiment batterie : Une section amovible pour un acces facile aux batteries. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. Nous avons utilise l&#39;impression 3D pour creer le boitier, en tenant compte de tolerances precises pour assurer un assemblage sans friction. Assemblage du systeme Une fois le boitier imprime, nous avons assemble les differentes parties du projet. Le PCB a ete solidement fixe au boitier, les connexions electriques ont ete verifiees et les LEDs ont ete testees pour s&#39;assurer qu&#39;elles repondaient correctement aux signaux SPI envoyes par le STM32. Programmation du microcontroleur STM32 Utilisation du bus SPI pour controler les LEDs Le STM32F103 a ete programme pour controler les LEDs WS2812B via le bus SPI. Ce protocole de communication permet d&#39;envoyer des donnees RGB pour chaque LED, controlant individuellement leur couleur et leur intensite. L&#39;algorithme que nous avons implemente prend en charge la conversion des donnees RGB dans un format comprehensible par les LEDs. Nous avons utilise les interruptions SPI du STM32 pour gerer efficacement la transmission des donnees, obtenant un eclairage fluide et sans decalage. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32&#39;s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Fonctionnalites ajoutees En plus du controle de base des LEDs, nous avons ajoute plusieurs modes d&#39;affichage : Mode degrade de couleurs : Les LEDs changent progressivement de couleur. Mode clignotement : Les LEDs s&#39;allument et s&#39;eteignent de maniere rythmique. Mode interaction : Les LEDs reagissent en fonction des donnees recues par le microcontroleur, simulant des evenements dynamiques (ex : changement de couleur sur appui de bouton). Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Resultats et analyse Le projet &quot;LED 60 ans INSA&quot; a ete un succes technique et esthetique. Nous avons concu un systeme electronique robuste, entierement controle par un microcontroleur STM32 et presente dans un boitier concu sur mesure. L&#39;utilisation d&#39;Altium Designer nous a permis de produire un PCB fonctionnel et optimise, tandis que la programmation du microcontroleur a offert une large gamme de fonctionnalites pour les LEDs RGB. Ameliorations futures Quelques pistes d&#39;amelioration pourraient etre explorees : Optimisation du routage : Reduction de la longueur des pistes SPI pour une communication plus rapide. Ajout de capteurs : Inclusion de capteurs de lumiere pour ajuster l&#39;intensite des LEDs en fonction de l&#39;environnement. Mises a jour logicielles : Developpement de modes d&#39;affichage supplementaires et amelioration de l&#39;efficacite de la gestion des interruptions. Conclusion Ce projet nous a permis de developper des competences essentielles en conception de PCB avec Altium Designer, modelisation 3D avec Fusion 360 et programmation embarquee avec le STM32. Grace a une approche pluridisciplinaire, nous avons cree un produit fonctionnel, robuste et esthetique qui repond aux objectifs du projet tout en celebrant le 60e anniversaire de l&#39;INSA Toulouse. Results and Analysis The &quot;LED 60 Years INSA&quot; project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project&#39;s objectives while celebrating the 60th anniversary of INSA Toulouse." />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +17,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="LED 60 ans INSA" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Results and Analysis The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse.","headline":"LED 60 ans INSA","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"&larr; Retour aux Projets Projet Altium : LED 60 ans INSA Introduction Dans le cadre de notre cursus a l&#39;INSA Toulouse en specialite Automatique et Electronique, nous avons realise un projet complet de conception electronique avec Altium Designer. Le projet, intitule &quot;LED 60 ans INSA&quot;, visait a celebrer le 60e anniversaire de l&#39;ecole avec un dispositif d&#39;eclairage innovant et esthetique, comprenant des LEDs RGB controlees via un microcontroleur STM32. Ce projet couvrait de nombreux aspects techniques, de la conception du PCB a la conception mecanique et logicielle, nous permettant de pratiquer des competences cles en ingenierie electronique et systemes embarques. Objectifs du projet Les objectifs de ce projet etaient multiples : Concevoir un circuit electronique capable de controler des LEDs RGB suivant un diagramme fonctionnel specifique. Creer un PCB avec Altium Designer repondant aux contraintes electriques et mecaniques tout en optimisant le routage. Concevoir un boitier 3D pour abriter le circuit imprime et les composants electroniques avec Fusion 360. Programmer un microcontroleur STM32 pour controler les LEDs RGB via un bus SPI. Assurer l&#39;integration de l&#39;ensemble en un systeme robuste, fonctionnel et esthetique. Altium Project: LED 60 Years INSA Introduction As part of our curriculum at INSA Toulouse in the Automatic and Electronic specialty, we completed a comprehensive electronic design project using Altium Designer. The project, titled &quot;LED 60 Years INSA,&quot; aimed to celebrate the school&#39;s 60th anniversary with an innovative and aesthetic lighting device, featuring RGB LEDs controlled via an STM32 microcontroller. This project covered many technical aspects, from PCB routing to mechanical and software design, allowing us to practice key skills in electronic engineering and embedded systems. Project Objectives The objectives of this project were multiple: Design an electronic circuit capable of controlling RGB LEDs following a specific functional diagram. Create a PCB with Altium Designer that meets electrical and mechanical constraints while optimizing routing. Design a 3D enclosure to house the printed circuit board and electronic components using Fusion 360. Program an STM32 microcontroller to control the RGB LEDs via an SPI bus. Ensure the integration of the whole system into a robust, functional, and aesthetically pleasing system. Conception et routage avec Altium Designer Selection des composants La premiere etape du projet etait de selectionner les composants appropries pour la conception. Nous avons choisi : LEDs WS2812B : LEDs RGB adressables pouvant etre controlees individuellement via un bus SPI. Design and Routing with Altium Designer Component Selection The first step of the project was to select the appropriate components for the design. We chose: WS2812B LEDs: Addressable RGB LEDs that can be individually controlled via an SPI bus. STM32F103C8T6 : Un microcontroleur base sur ARM Cortex-M3, compatible avec le protocole SPI et offrant de bonnes performances pour les applications embarquees. STM32F103C8T6: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications. Composants d&#39;alimentation, notamment des regulateurs de tension et des convertisseurs DC-DC pour gerer les differentes alimentations (USB et batteries). Power supply components, including voltage regulators and DC-DC converters to manage different power supplies (USB and batteries). Schema du circuit L&#39;etape suivante etait de creer les schemas electroniques dans Altium Designer. Les principaux sous-systemes du circuit comprennent : Alimentation : Gestion de differentes sources d&#39;energie (USB ou batteries) et regulation de la tension pour alimenter les LEDs et le microcontroleur. Commande des LEDs : Utilisation du bus SPI pour envoyer des donnees aux LEDs afin de gerer leur couleur et leur intensite. Gestion de la programmation : Integration d&#39;une interface pour programmer le STM32 via un bootloader USB. Circuit Schematic The next step was to create the electronic schematics in Altium Designer. The main subsystems of the circuit include: Power supply: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller. LED control: Using the SPI bus to send data to the LEDs to manage their color and intensity. Programming management: Integrating an interface to program the STM32 via a USB bootloader. Routage et optimisation Apres la conception des schemas, nous avons route le PCB dans Altium Designer, en tenant compte du placement des composants et des contraintes de pistes. Les etapes cles du processus de routage comprennent : Placement strategique des composants : Positionnement des LEDs pres des bords pour une diffusion uniforme de la lumiere et du microcontroleur au centre pour faciliter les connexions. Minimisation des interferences : Suivi des bonnes pratiques de routage pour eviter les interferences electromagnetiques, comme l&#39;optimisation de la largeur des pistes d&#39;alimentation et des pistes de donnees du bus SPI. Respect des contraintes mecaniques : Optimisation du placement des connecteurs d&#39;alimentation et de programmation pour correspondre aux ouvertures du boitier 3D. Routing and Optimization After designing the schematics, we routed the PCB in Altium Designer, considering component placement and track constraints. Key steps in the routing process include: Strategic component placement: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections. Minimizing interference: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks. Meeting mechanical constraints: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure. Resultats du routage Le routage final a ete realise sur une carte double couche, permettant la separation des signaux critiques (bus SPI) et des alimentations pour reduire les interferences. Le respect des contraintes de fabrication etait essentiel, avec des pistes suffisamment larges pour supporter le courant requis par les LEDs RGB. Conception mecanique avec Fusion 360 Modelisation du boitier Le boitier, concu avec Fusion 360, etait destine a proteger et mettre en valeur l&#39;electronique. Les caracteristiques principales comprennent : Corps principal : Supporte le PCB et offre de l&#39;espace pour les batteries et l&#39;alimentation USB. Couvercle transparent : Un panneau en plexiglas pour exposer les LEDs tout en les protegeant des elements exterieurs. Compartiment batterie : Une section amovible pour un acces facile aux batteries. Routing Results The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs. Mechanical Design with Fusion 360 Enclosure Modeling The enclosure, designed with Fusion 360, was intended to protect and showcase the electronics. Key features include: Main body: Supports the PCB and provides space for batteries and USB power. Transparent cover: A plexiglass panel to expose the LEDs while protecting them from external elements. Battery compartment: A removable section for easy access to the batteries. Nous avons utilise l&#39;impression 3D pour creer le boitier, en tenant compte de tolerances precises pour assurer un assemblage sans friction. Assemblage du systeme Une fois le boitier imprime, nous avons assemble les differentes parties du projet. Le PCB a ete solidement fixe au boitier, les connexions electriques ont ete verifiees et les LEDs ont ete testees pour s&#39;assurer qu&#39;elles repondaient correctement aux signaux SPI envoyes par le STM32. Programmation du microcontroleur STM32 Utilisation du bus SPI pour controler les LEDs Le STM32F103 a ete programme pour controler les LEDs WS2812B via le bus SPI. Ce protocole de communication permet d&#39;envoyer des donnees RGB pour chaque LED, controlant individuellement leur couleur et leur intensite. L&#39;algorithme que nous avons implemente prend en charge la conversion des donnees RGB dans un format comprehensible par les LEDs. Nous avons utilise les interruptions SPI du STM32 pour gerer efficacement la transmission des donnees, obtenant un eclairage fluide et sans decalage. We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly. System Assembly Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32. STM32 Microcontroller Programming Using the SPI Bus to Control the LEDs The STM32F103 was programmed to control the WS2812B LEDs via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity. The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32&#39;s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting. Fonctionnalites ajoutees En plus du controle de base des LEDs, nous avons ajoute plusieurs modes d&#39;affichage : Mode degrade de couleurs : Les LEDs changent progressivement de couleur. Mode clignotement : Les LEDs s&#39;allument et s&#39;eteignent de maniere rythmique. Mode interaction : Les LEDs reagissent en fonction des donnees recues par le microcontroleur, simulant des evenements dynamiques (ex : changement de couleur sur appui de bouton). Added Features In addition to basic LED control, we added several display modes: Color gradient mode: LEDs gradually change color. Blinking mode: LEDs turn on and off rhythmically. Interaction mode: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press). Resultats et analyse Le projet &quot;LED 60 ans INSA&quot; a ete un succes technique et esthetique. Nous avons concu un systeme electronique robuste, entierement controle par un microcontroleur STM32 et presente dans un boitier concu sur mesure. L&#39;utilisation d&#39;Altium Designer nous a permis de produire un PCB fonctionnel et optimise, tandis que la programmation du microcontroleur a offert une large gamme de fonctionnalites pour les LEDs RGB. Ameliorations futures Quelques pistes d&#39;amelioration pourraient etre explorees : Optimisation du routage : Reduction de la longueur des pistes SPI pour une communication plus rapide. Ajout de capteurs : Inclusion de capteurs de lumiere pour ajuster l&#39;intensite des LEDs en fonction de l&#39;environnement. Mises a jour logicielles : Developpement de modes d&#39;affichage supplementaires et amelioration de l&#39;efficacite de la gestion des interruptions. Conclusion Ce projet nous a permis de developper des competences essentielles en conception de PCB avec Altium Designer, modelisation 3D avec Fusion 360 et programmation embarquee avec le STM32. Grace a une approche pluridisciplinaire, nous avons cree un produit fonctionnel, robuste et esthetique qui repond aux objectifs du projet tout en celebrant le 60e anniversaire de l&#39;INSA Toulouse. Results and Analysis The &quot;LED 60 Years INSA&quot; project was a technical and aesthetic success. We designed a robust electronic system, fully controlled by an STM32 microcontroller and showcased in a custom-designed enclosure. Using Altium Designer allowed us to produce a functional and optimized PCB, while microcontroller programming provided a wide range of features for the RGB LEDs. Future Improvements Some areas for improvement could be explored: Routing optimization: Reducing the length of SPI tracks for faster communication. Adding sensors: Including light sensors to adjust LED intensity based on the environment. Software updates: Developing additional display modes and improving interrupt management efficiency. Conclusion This project allowed us to develop essential skills in PCB design with Altium Designer, 3D modeling with Fusion 360, and embedded programming with the STM32. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project&#39;s objectives while celebrating the 60th anniversary of INSA Toulouse.","headline":"LED 60 ans INSA","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/led-insa-60-ans.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,150 +38,277 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
-
-<h1 id="altium-project-led-60-years-insa">Altium Project: LED 60 Years INSA</h1>
-
-<h2 id="introduction">Introduction</h2>
-<p>As part of our curriculum at INSA Toulouse in the <strong>Automatic and Electronic</strong> specialty, we completed a comprehensive electronic design project using <strong>Altium Designer</strong>. The project, titled “LED 60 Years INSA,” aimed to celebrate the school’s 60th anniversary with an innovative and aesthetic lighting device, featuring <strong>RGB LEDs</strong> controlled via an <strong>STM32</strong> microcontroller.</p>
-
-<p>This project covered many technical aspects, from <strong>PCB routing</strong> to <strong>mechanical and software design</strong>, allowing us to practice key skills in electronic engineering and embedded systems.</p>
-
-<h2 id="project-objectives">Project Objectives</h2>
-
-<p>The objectives of this project were multiple:</p>
-<ol>
-  <li><strong>Design an electronic circuit</strong> capable of controlling RGB LEDs following a specific functional diagram.</li>
-  <li><strong>Create a PCB with Altium Designer</strong> that meets electrical and mechanical constraints while optimizing routing.</li>
-  <li><strong>Design a 3D enclosure</strong> to house the printed circuit board and electronic components using <strong>Fusion 360</strong>.</li>
-  <li><strong>Program an STM32 microcontroller</strong> to control the RGB LEDs via an SPI bus.</li>
-  <li><strong>Ensure the integration of the whole system</strong> into a robust, functional, and aesthetically pleasing system.</li>
-</ol>
-
-<h2 id="design-and-routing-with-altium-designer">Design and Routing with Altium Designer</h2>
-
-<h3 id="component-selection">Component Selection</h3>
-<p>The first step of the project was to select the appropriate components for the design. We chose:</p>
-<ul>
-  <li><strong>WS2812B LEDs</strong>: Addressable RGB LEDs that can be individually controlled via an SPI bus.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/LEDs.png" style="width: 100%;" />
-</div>
-
-<ul>
-  <li><strong>STM32F103C8T6</strong>: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/STM32.png" style="width: 80%;" />
-</div>
-
-<ul>
-  <li>Power supply components, including <strong>voltage regulators</strong> and <strong>DC-DC converters</strong> to manage different power supplies (USB and batteries).</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/USB.png" style="width: 80%;" />
-</div>
-
-<h3 id="circuit-schematic">Circuit Schematic</h3>
-<p>The next step was to create the electronic schematics in <strong>Altium Designer</strong>. The main subsystems of the circuit include:</p>
-<ul>
-  <li><strong>Power supply</strong>: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller.</li>
-  <li><strong>LED control</strong>: Using the SPI bus to send data to the LEDs to manage their color and intensity.</li>
-  <li><strong>Programming management</strong>: Integrating an interface to program the STM32 via a <strong>USB bootloader</strong>.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/Schéma_Block.png" style="width: 80%;" />
-</div>
-
-<h3 id="routing-and-optimization">Routing and Optimization</h3>
-<p>After designing the schematics, we routed the PCB in <strong>Altium Designer</strong>, considering component placement and track constraints. Key steps in the routing process include:</p>
-<ol>
-  <li><strong>Strategic component placement</strong>: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections.</li>
-  <li><strong>Minimizing interference</strong>: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks.</li>
-  <li><strong>Meeting mechanical constraints</strong>: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure.</li>
-</ol>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/Composants.png" style="width: 80%;" />
-</div>
-
-<h3 id="routing-results">Routing Results</h3>
-<p>The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs.</p>
-
-<h2 id="mechanical-design-with-fusion-360">Mechanical Design with Fusion 360</h2>
-
-<h3 id="enclosure-modeling">Enclosure Modeling</h3>
-<p>The enclosure, designed with <strong>Fusion 360</strong>, was intended to protect and showcase the electronics. Key features include:</p>
-<ul>
-  <li><strong>Main body</strong>: Supports the PCB and provides space for batteries and USB power.</li>
-  <li><strong>Transparent cover</strong>: A plexiglass panel to expose the LEDs while protecting them from external elements.</li>
-  <li><strong>Battery compartment</strong>: A removable section for easy access to the batteries.</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/Fusion.png" style="width: 80%;" />
-</div>
-
-<p>We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly.</p>
-
-<h3 id="system-assembly">System Assembly</h3>
-<p>Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32.</p>
-
-<h2 id="stm32-microcontroller-programming">STM32 Microcontroller Programming</h2>
-
-<h3 id="using-the-spi-bus-to-control-the-leds">Using the SPI Bus to Control the LEDs</h3>
-<p>The <strong>STM32F103</strong> was programmed to control the <strong>WS2812B LEDs</strong> via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity.</p>
-
-<p>The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32’s SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting.</p>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/Code.png" style="width: 100%;" />
-</div>
-
-<h3 id="added-features">Added Features</h3>
-<p>In addition to basic LED control, we added several display modes:</p>
-<ul>
-  <li><strong>Color gradient mode</strong>: LEDs gradually change color.</li>
-  <li><strong>Blinking mode</strong>: LEDs turn on and off rhythmically.</li>
-  <li><strong>Interaction mode</strong>: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press).</li>
-</ul>
-
-<div style="text-align: center;">
-    <img src="/img/BE_LED/LED.png" style="width: 40%;" />
-</div>
-
-<h2 id="results-and-analysis">Results and Analysis</h2>
-
-<p>The “LED 60 Years INSA” project was a technical and aesthetic success. We designed a <strong>robust electronic system</strong>, fully controlled by an <strong>STM32 microcontroller</strong> and showcased in a custom-designed enclosure. Using <strong>Altium Designer</strong> allowed us to produce a <strong>functional and optimized PCB</strong>, while <strong>microcontroller programming</strong> provided a wide range of features for the RGB LEDs.</p>
-
-<h3 id="future-improvements">Future Improvements</h3>
-<p>Some areas for improvement could be explored:</p>
-<ul>
-  <li><strong>Routing optimization</strong>: Reducing the length of SPI tracks for faster communication.</li>
-  <li><strong>Adding sensors</strong>: Including light sensors to adjust LED intensity based on the environment.</li>
-  <li><strong>Software updates</strong>: Developing additional display modes and improving interrupt management efficiency.</li>
-</ul>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>This project allowed us to develop essential skills in PCB design with <strong>Altium Designer</strong>, 3D modeling with <strong>Fusion 360</strong>, and <strong>embedded programming</strong> with the <strong>STM32</strong>. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project’s objectives while celebrating the 60th anniversary of INSA Toulouse.</p>
-
-<style>
+        <style>
 p {
     text-align: justify;
 }
 </style>
 
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Projet Altium : LED 60 ans INSA</h1>
+<h2>Introduction</h2>
+<p>Dans le cadre de notre cursus a l'INSA Toulouse en specialite <strong>Automatique et Electronique</strong>, nous avons realise un projet complet de conception electronique avec <strong>Altium Designer</strong>. Le projet, intitule "LED 60 ans INSA", visait a celebrer le 60e anniversaire de l'ecole avec un dispositif d'eclairage innovant et esthetique, comprenant des <strong>LEDs RGB</strong> controlees via un microcontroleur <strong>STM32</strong>.</p>
+<p>Ce projet couvrait de nombreux aspects techniques, de la <strong>conception du PCB</strong> a la <strong>conception mecanique et logicielle</strong>, nous permettant de pratiquer des competences cles en ingenierie electronique et systemes embarques.</p>
+
+<h2>Objectifs du projet</h2>
+<p>Les objectifs de ce projet etaient multiples :</p>
+<ol>
+<li><strong>Concevoir un circuit electronique</strong> capable de controler des LEDs RGB suivant un diagramme fonctionnel specifique.</li>
+<li><strong>Creer un PCB avec Altium Designer</strong> repondant aux contraintes electriques et mecaniques tout en optimisant le routage.</li>
+<li><strong>Concevoir un boitier 3D</strong> pour abriter le circuit imprime et les composants electroniques avec <strong>Fusion 360</strong>.</li>
+<li><strong>Programmer un microcontroleur STM32</strong> pour controler les LEDs RGB via un bus SPI.</li>
+<li><strong>Assurer l'integration de l'ensemble</strong> en un systeme robuste, fonctionnel et esthetique.</li>
+</ol>
+</div>
+
+<div class="lang-en">
+<h1>Altium Project: LED 60 Years INSA</h1>
+<h2>Introduction</h2>
+<p>As part of our curriculum at INSA Toulouse in the <strong>Automatic and Electronic</strong> specialty, we completed a comprehensive electronic design project using <strong>Altium Designer</strong>. The project, titled "LED 60 Years INSA," aimed to celebrate the school's 60th anniversary with an innovative and aesthetic lighting device, featuring <strong>RGB LEDs</strong> controlled via an <strong>STM32</strong> microcontroller.</p>
+<p>This project covered many technical aspects, from <strong>PCB routing</strong> to <strong>mechanical and software design</strong>, allowing us to practice key skills in electronic engineering and embedded systems.</p>
+
+<h2>Project Objectives</h2>
+<p>The objectives of this project were multiple:</p>
+<ol>
+<li><strong>Design an electronic circuit</strong> capable of controlling RGB LEDs following a specific functional diagram.</li>
+<li><strong>Create a PCB with Altium Designer</strong> that meets electrical and mechanical constraints while optimizing routing.</li>
+<li><strong>Design a 3D enclosure</strong> to house the printed circuit board and electronic components using <strong>Fusion 360</strong>.</li>
+<li><strong>Program an STM32 microcontroller</strong> to control the RGB LEDs via an SPI bus.</li>
+<li><strong>Ensure the integration of the whole system</strong> into a robust, functional, and aesthetically pleasing system.</li>
+</ol>
+</div>
+
+<div class="lang-fr">
+<h2>Conception et routage avec Altium Designer</h2>
+<h3>Selection des composants</h3>
+<p>La premiere etape du projet etait de selectionner les composants appropries pour la conception. Nous avons choisi :</p>
+<ul>
+<li><strong>LEDs WS2812B</strong> : LEDs RGB adressables pouvant etre controlees individuellement via un bus SPI.</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h2>Design and Routing with Altium Designer</h2>
+<h3>Component Selection</h3>
+<p>The first step of the project was to select the appropriate components for the design. We chose:</p>
+<ul>
+<li><strong>WS2812B LEDs</strong>: Addressable RGB LEDs that can be individually controlled via an SPI bus.</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/LEDs.png" style="width: 100%;" />
+</div>
+
+<div class="lang-fr">
+<ul>
+<li><strong>STM32F103C8T6</strong> : Un microcontroleur base sur ARM Cortex-M3, compatible avec le protocole SPI et offrant de bonnes performances pour les applications embarquees.</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<ul>
+<li><strong>STM32F103C8T6</strong>: An ARM Cortex-M3 based microcontroller, compatible with the SPI protocol and offering good performance for embedded applications.</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/STM32.png" style="width: 80%;" />
+</div>
+
+<div class="lang-fr">
+<ul>
+<li>Composants d'alimentation, notamment des <strong>regulateurs de tension</strong> et des <strong>convertisseurs DC-DC</strong> pour gerer les differentes alimentations (USB et batteries).</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<ul>
+<li>Power supply components, including <strong>voltage regulators</strong> and <strong>DC-DC converters</strong> to manage different power supplies (USB and batteries).</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/USB.png" style="width: 80%;" />
+</div>
+
+<div class="lang-fr">
+<h3>Schema du circuit</h3>
+<p>L'etape suivante etait de creer les schemas electroniques dans <strong>Altium Designer</strong>. Les principaux sous-systemes du circuit comprennent :</p>
+<ul>
+<li><strong>Alimentation</strong> : Gestion de differentes sources d'energie (USB ou batteries) et regulation de la tension pour alimenter les LEDs et le microcontroleur.</li>
+<li><strong>Commande des LEDs</strong> : Utilisation du bus SPI pour envoyer des donnees aux LEDs afin de gerer leur couleur et leur intensite.</li>
+<li><strong>Gestion de la programmation</strong> : Integration d'une interface pour programmer le STM32 via un <strong>bootloader USB</strong>.</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h3>Circuit Schematic</h3>
+<p>The next step was to create the electronic schematics in <strong>Altium Designer</strong>. The main subsystems of the circuit include:</p>
+<ul>
+<li><strong>Power supply</strong>: Managing different energy sources (USB or batteries) and regulating the voltage to power the LEDs and the microcontroller.</li>
+<li><strong>LED control</strong>: Using the SPI bus to send data to the LEDs to manage their color and intensity.</li>
+<li><strong>Programming management</strong>: Integrating an interface to program the STM32 via a <strong>USB bootloader</strong>.</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Schéma_Block.png" style="width: 80%;" />
+</div>
+
+<div class="lang-fr">
+<h3>Routage et optimisation</h3>
+<p>Apres la conception des schemas, nous avons route le PCB dans <strong>Altium Designer</strong>, en tenant compte du placement des composants et des contraintes de pistes. Les etapes cles du processus de routage comprennent :</p>
+<ol>
+<li><strong>Placement strategique des composants</strong> : Positionnement des LEDs pres des bords pour une diffusion uniforme de la lumiere et du microcontroleur au centre pour faciliter les connexions.</li>
+<li><strong>Minimisation des interferences</strong> : Suivi des bonnes pratiques de routage pour eviter les interferences electromagnetiques, comme l'optimisation de la largeur des pistes d'alimentation et des pistes de donnees du bus SPI.</li>
+<li><strong>Respect des contraintes mecaniques</strong> : Optimisation du placement des connecteurs d'alimentation et de programmation pour correspondre aux ouvertures du boitier 3D.</li>
+</ol>
+</div>
+
+<div class="lang-en">
+<h3>Routing and Optimization</h3>
+<p>After designing the schematics, we routed the PCB in <strong>Altium Designer</strong>, considering component placement and track constraints. Key steps in the routing process include:</p>
+<ol>
+<li><strong>Strategic component placement</strong>: Positioning the LEDs near the edges for uniform light diffusion and the microcontroller in the center for easy connections.</li>
+<li><strong>Minimizing interference</strong>: Following best practices in routing to avoid electromagnetic interference, such as optimizing the width of power tracks and SPI bus data tracks.</li>
+<li><strong>Meeting mechanical constraints</strong>: Optimizing the placement of power and programming connectors to match the openings in the 3D enclosure.</li>
+</ol>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Composants.png" style="width: 80%;" />
+</div>
+
+<div class="lang-fr">
+<h3>Resultats du routage</h3>
+<p>Le routage final a ete realise sur une carte double couche, permettant la separation des signaux critiques (bus SPI) et des alimentations pour reduire les interferences. Le respect des contraintes de fabrication etait essentiel, avec des pistes suffisamment larges pour supporter le courant requis par les LEDs RGB.</p>
+
+<h2>Conception mecanique avec Fusion 360</h2>
+<h3>Modelisation du boitier</h3>
+<p>Le boitier, concu avec <strong>Fusion 360</strong>, etait destine a proteger et mettre en valeur l'electronique. Les caracteristiques principales comprennent :</p>
+<ul>
+<li><strong>Corps principal</strong> : Supporte le PCB et offre de l'espace pour les batteries et l'alimentation USB.</li>
+<li><strong>Couvercle transparent</strong> : Un panneau en plexiglas pour exposer les LEDs tout en les protegeant des elements exterieurs.</li>
+<li><strong>Compartiment batterie</strong> : Une section amovible pour un acces facile aux batteries.</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h3>Routing Results</h3>
+<p>The final routing was done on a double-layer board, allowing separation of critical signals (SPI bus) and power supplies to reduce interference. Adhering to manufacturing constraints was essential, with tracks wide enough to support the current required by the RGB LEDs.</p>
+
+<h2>Mechanical Design with Fusion 360</h2>
+<h3>Enclosure Modeling</h3>
+<p>The enclosure, designed with <strong>Fusion 360</strong>, was intended to protect and showcase the electronics. Key features include:</p>
+<ul>
+<li><strong>Main body</strong>: Supports the PCB and provides space for batteries and USB power.</li>
+<li><strong>Transparent cover</strong>: A plexiglass panel to expose the LEDs while protecting them from external elements.</li>
+<li><strong>Battery compartment</strong>: A removable section for easy access to the batteries.</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Fusion.png" style="width: 80%;" />
+</div>
+
+<div class="lang-fr">
+<p>Nous avons utilise l'impression 3D pour creer le boitier, en tenant compte de tolerances precises pour assurer un assemblage sans friction.</p>
+
+<h3>Assemblage du systeme</h3>
+<p>Une fois le boitier imprime, nous avons assemble les differentes parties du projet. Le PCB a ete solidement fixe au boitier, les connexions electriques ont ete verifiees et les LEDs ont ete testees pour s'assurer qu'elles repondaient correctement aux signaux SPI envoyes par le STM32.</p>
+
+<h2>Programmation du microcontroleur STM32</h2>
+<h3>Utilisation du bus SPI pour controler les LEDs</h3>
+<p>Le <strong>STM32F103</strong> a ete programme pour controler les <strong>LEDs WS2812B</strong> via le bus SPI. Ce protocole de communication permet d'envoyer des donnees RGB pour chaque LED, controlant individuellement leur couleur et leur intensite.</p>
+<p>L'algorithme que nous avons implemente prend en charge la conversion des donnees RGB dans un format comprehensible par les LEDs. Nous avons utilise les interruptions SPI du STM32 pour gerer efficacement la transmission des donnees, obtenant un eclairage fluide et sans decalage.</p>
+</div>
+
+<div class="lang-en">
+<p>We used 3D printing to create the enclosure, considering precise tolerances to ensure a frictionless assembly.</p>
+
+<h3>System Assembly</h3>
+<p>Once the enclosure was printed, we assembled the different parts of the project. The PCB was securely fixed to the enclosure, electrical connections were verified, and the LEDs were tested to ensure they responded correctly to SPI signals sent by the STM32.</p>
+
+<h2>STM32 Microcontroller Programming</h2>
+<h3>Using the SPI Bus to Control the LEDs</h3>
+<p>The <strong>STM32F103</strong> was programmed to control the <strong>WS2812B LEDs</strong> via the SPI bus. This communication protocol allows sending RGB data for each LED, individually controlling their color and intensity.</p>
+<p>The algorithm we implemented supports converting RGB data into a format understandable by the LEDs. We used the STM32's SPI interrupts to efficiently manage data transmission, achieving smooth and lag-free lighting.</p>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/Code.png" style="width: 100%;" />
+</div>
+
+<div class="lang-fr">
+<h3>Fonctionnalites ajoutees</h3>
+<p>En plus du controle de base des LEDs, nous avons ajoute plusieurs modes d'affichage :</p>
+<ul>
+<li><strong>Mode degrade de couleurs</strong> : Les LEDs changent progressivement de couleur.</li>
+<li><strong>Mode clignotement</strong> : Les LEDs s'allument et s'eteignent de maniere rythmique.</li>
+<li><strong>Mode interaction</strong> : Les LEDs reagissent en fonction des donnees recues par le microcontroleur, simulant des evenements dynamiques (ex : changement de couleur sur appui de bouton).</li>
+</ul>
+</div>
+
+<div class="lang-en">
+<h3>Added Features</h3>
+<p>In addition to basic LED control, we added several display modes:</p>
+<ul>
+<li><strong>Color gradient mode</strong>: LEDs gradually change color.</li>
+<li><strong>Blinking mode</strong>: LEDs turn on and off rhythmically.</li>
+<li><strong>Interaction mode</strong>: LEDs react based on data received by the microcontroller, simulating dynamic events (e.g., color change on button press).</li>
+</ul>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_LED/LED.png" style="width: 40%;" />
+</div>
+
+<div class="lang-fr">
+<h2>Resultats et analyse</h2>
+<p>Le projet "LED 60 ans INSA" a ete un succes technique et esthetique. Nous avons concu un <strong>systeme electronique robuste</strong>, entierement controle par un <strong>microcontroleur STM32</strong> et presente dans un boitier concu sur mesure. L'utilisation d'<strong>Altium Designer</strong> nous a permis de produire un <strong>PCB fonctionnel et optimise</strong>, tandis que la <strong>programmation du microcontroleur</strong> a offert une large gamme de fonctionnalites pour les LEDs RGB.</p>
+
+<h3>Ameliorations futures</h3>
+<p>Quelques pistes d'amelioration pourraient etre explorees :</p>
+<ul>
+<li><strong>Optimisation du routage</strong> : Reduction de la longueur des pistes SPI pour une communication plus rapide.</li>
+<li><strong>Ajout de capteurs</strong> : Inclusion de capteurs de lumiere pour ajuster l'intensite des LEDs en fonction de l'environnement.</li>
+<li><strong>Mises a jour logicielles</strong> : Developpement de modes d'affichage supplementaires et amelioration de l'efficacite de la gestion des interruptions.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Ce projet nous a permis de developper des competences essentielles en conception de PCB avec <strong>Altium Designer</strong>, modelisation 3D avec <strong>Fusion 360</strong> et <strong>programmation embarquee</strong> avec le <strong>STM32</strong>. Grace a une approche pluridisciplinaire, nous avons cree un produit fonctionnel, robuste et esthetique qui repond aux objectifs du projet tout en celebrant le 60e anniversaire de l'INSA Toulouse.</p>
+</div>
+
+<div class="lang-en">
+<h2>Results and Analysis</h2>
+<p>The "LED 60 Years INSA" project was a technical and aesthetic success. We designed a <strong>robust electronic system</strong>, fully controlled by an <strong>STM32 microcontroller</strong> and showcased in a custom-designed enclosure. Using <strong>Altium Designer</strong> allowed us to produce a <strong>functional and optimized PCB</strong>, while <strong>microcontroller programming</strong> provided a wide range of features for the RGB LEDs.</p>
+
+<h3>Future Improvements</h3>
+<p>Some areas for improvement could be explored:</p>
+<ul>
+<li><strong>Routing optimization</strong>: Reducing the length of SPI tracks for faster communication.</li>
+<li><strong>Adding sensors</strong>: Including light sensors to adjust LED intensity based on the environment.</li>
+<li><strong>Software updates</strong>: Developing additional display modes and improving interrupt management efficiency.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>This project allowed us to develop essential skills in PCB design with <strong>Altium Designer</strong>, 3D modeling with <strong>Fusion 360</strong>, and <strong>embedded programming</strong> with the <strong>STM32</strong>. Through a multidisciplinary approach, we created a functional, robust, and aesthetically pleasing product that meets the project's objectives while celebrating the 60th anniversary of INSA Toulouse.</p>
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -206,6 +339,117 @@ p {
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -224,8 +468,8 @@ p {
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -247,6 +491,7 @@ p {
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -757,11 +1002,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -961,14 +1204,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -979,6 +1222,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

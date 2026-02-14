@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Énergie - S3","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/energie-s3.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/energie-s3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -43,220 +54,212 @@
 </style>
 
 <div class="back-nav">
-  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+  <a href="./my-courses-2021-2022.html" data-i18n-html="back-courses-2021-2022">&larr; Retour aux Cours 2021-2022</a>
 </div>
 
-<h1 id="énergie---semestre-3">Énergie - Semestre 3</h1>
+<div class="lang-fr">
 
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Annee</strong>: 2021-2022</td>
-      <td><strong>Semestre</strong>: 3</td>
-      <td><strong>Type</strong>: Technique</td>
-    </tr>
-  </tbody>
-</table>
+<h1>Energie - Semestre 3</h1>
+
+<p><strong>Annee</strong>: 2021-2022 | <strong>Semestre</strong>: 3 | <strong>Type</strong>: Technique</p>
 
 <hr />
 
-<h2 id="part-a---présentation-générale-du-cours">PART A - Présentation Générale du Cours</h2>
+<h2>PART A - Presentation Generale du Cours</h2>
 
-<h3 id="contexte-et-objectifs">Contexte et objectifs</h3>
+<h3>Contexte et objectifs</h3>
 
-<p>Approfondissement de l’électronique de puissance (suite S1) avec convertisseurs avancés, machines électriques AC, variateurs de vitesse et énergies renouvelables. Applications aux systèmes modernes (véhicules électriques, énergies vertes, industrie 4.0).</p>
+<p>Approfondissement de l'electronique de puissance (suite S1) avec convertisseurs avances, machines electriques AC, variateurs de vitesse et energies renouvelables. Applications aux systemes modernes (vehicules electriques, energies vertes, industrie 4.0).</p>
 
 <p><strong>Objectifs :</strong></p>
 <ul>
-  <li>Maîtriser hacheurs (Buck, Boost, Buck-Boost), onduleurs, redresseurs</li>
-  <li>Étudier machines asynchrones et synchrones</li>
+  <li>Maitriser hacheurs (Buck, Boost, Buck-Boost), onduleurs, redresseurs</li>
+  <li>Etudier machines asynchrones et synchrones</li>
   <li>Concevoir variateurs de vitesse</li>
   <li>Comprendre CEM et composants Wide Bandgap (SiC, GaN)</li>
-  <li>Appréhender systèmes photovoltaïques et éoliens</li>
+  <li>Apprehender systemes photovoltaiques et eoliens</li>
 </ul>
 
-<h3 id="prérequis">Prérequis</h3>
+<h3>Prerequis</h3>
 <ul>
-  <li>Électronique de puissance S1 (redresseurs, hacheurs de base)</li>
-  <li>Circuits AC (impédances complexes)</li>
+  <li>Electronique de puissance S1 (redresseurs, hacheurs de base)</li>
+  <li>Circuits AC (impedances complexes)</li>
   <li>Machines DC</li>
 </ul>
 
 <hr />
 
-<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+<h2>PART B: EXPERIENCE, CONTEXTE ET FONCTION</h2>
 
-<h3 id="module-1--convertisseurs-dc-dc-avancés">Module 1 : Convertisseurs DC-DC avancés</h3>
+<h3>Module 1 : Convertisseurs DC-DC avances</h3>
 
 <p><strong>Hacheurs :</strong></p>
 <ul>
-  <li>Buck (abaisseur) : Vout = α·Vin, mode CCM/DCM</li>
-  <li>Boost (élévateur) : Vout = Vin/(1-α)</li>
-  <li>Buck-Boost : Vout = -α·Vin/(1-α)</li>
-  <li>Ćuk, SEPIC : isolation, low ripple</li>
-  <li>Dimensionnement L, C (ondulation ΔI, ΔV)</li>
+  <li>Buck (abaisseur) : Vout = a*Vin, mode CCM/DCM</li>
+  <li>Boost (elevateur) : Vout = Vin/(1-a)</li>
+  <li>Buck-Boost : Vout = -a*Vin/(1-a)</li>
+  <li>Cuk, SEPIC : isolation, low ripple</li>
+  <li>Dimensionnement L, C (ondulation dI, dV)</li>
 </ul>
 
-<p><strong>Régulation :</strong></p>
+<p><strong>Regulation :</strong></p>
 <ul>
-  <li>PWM à fréquence fixe (20-100 kHz)</li>
-  <li>Contrôle en mode tension ou courant</li>
-  <li>Boucle de rétroaction (TL431, optocoupleur)</li>
+  <li>PWM a frequence fixe (20-100 kHz)</li>
+  <li>Controle en mode tension ou courant</li>
+  <li>Boucle de retroaction (TL431, optocoupleur)</li>
 </ul>
 
-<h3 id="module-2--onduleurs">Module 2 : Onduleurs</h3>
+<h3>Module 2 : Onduleurs</h3>
 
-<p><strong>Onduleurs monophasés :</strong></p>
+<p><strong>Onduleurs monophases :</strong></p>
 <ul>
-  <li>Demi-pont : Vout = ±Vdc/2</li>
-  <li>Pont complet (H-bridge) : Vout = ±Vdc</li>
-  <li>MLI sinusoïdale : commande complémentaire avec temps mort</li>
+  <li>Demi-pont : Vout = +/-Vdc/2</li>
+  <li>Pont complet (H-bridge) : Vout = +/-Vdc</li>
+  <li>MLI sinusoidale : commande complementaire avec temps mort</li>
   <li>Filtrage LC (harmoniques)</li>
   <li>THD (Total Harmonic Distortion)</li>
 </ul>
 
-<p><strong>Onduleurs triphasés :</strong></p>
+<p><strong>Onduleurs triphases :</strong></p>
 <ul>
   <li>6 interrupteurs (IGBT)</li>
   <li>MLI sinus (modulation chaque phase)</li>
   <li>MLI vectorielle (SVM) : meilleure utilisation Vdc</li>
-  <li>Applications : variateurs, onduleurs solaires/éoliens</li>
+  <li>Applications : variateurs, onduleurs solaires/eoliens</li>
 </ul>
 
-<h3 id="module-3--machines-électriques-ac">Module 3 : Machines électriques AC</h3>
+<h3>Module 3 : Machines electriques AC</h3>
 
 <p><strong>Machine asynchrone (MAS) :</strong></p>
 <ul>
   <li>Principe : champ tournant, glissement s = (ns - n)/ns</li>
-  <li>Schéma équivalent (résistances, réactances)</li>
-  <li>Couple : Tmax au glissement s ≈ 10-20%</li>
-  <li>Démarrage : direct (I=6-8 In), étoile-triangle, variateur</li>
+  <li>Schema equivalent (resistances, reactances)</li>
+  <li>Couple : Tmax au glissement s = 10-20%</li>
+  <li>Demarrage : direct (I=6-8 In), etoile-triangle, variateur</li>
 </ul>
 
 <p><strong>Machine synchrone :</strong></p>
 <ul>
-  <li>Rotor : aimants permanents (PMSM) ou bobiné</li>
+  <li>Rotor : aimants permanents (PMSM) ou bobine</li>
   <li>Synchronisme : n = f/p (pas de glissement)</li>
-  <li>Moteur brushless (BLDC) : commutation électronique</li>
-  <li>Applications : VE, robotique, éolien</li>
+  <li>Moteur brushless (BLDC) : commutation electronique</li>
+  <li>Applications : VE, robotique, eolien</li>
 </ul>
 
 <p><strong>Variateurs de vitesse :</strong></p>
 <ul>
-  <li>Contrôle scalaire MAS : loi V/f constante</li>
-  <li>Contrôle vectoriel (FOC) : découplage flux/couple</li>
-  <li>Régulation en boucle fermée (encodeur)</li>
-  <li>Économie d’énergie (adaptation charge)</li>
+  <li>Controle scalaire MAS : loi V/f constante</li>
+  <li>Controle vectoriel (FOC) : decouplage flux/couple</li>
+  <li>Regulation en boucle fermee (encodeur)</li>
+  <li>Economie d'energie (adaptation charge)</li>
 </ul>
 
-<h3 id="module-4--énergies-renouvelables">Module 4 : Énergies renouvelables</h3>
+<h3>Module 4 : Energies renouvelables</h3>
 
-<p><strong>Photovoltaïque :</strong></p>
+<p><strong>Photovoltaique :</strong></p>
 <ul>
-  <li>Caractéristique I-V panneau (Isc, Voc, Pmax)</li>
+  <li>Caracteristique I-V panneau (Isc, Voc, Pmax)</li>
   <li>MPPT (Maximum Power Point Tracking) : Perturb &amp; Observe, Incremental Conductance</li>
-  <li>Onduleurs grid-tie (injection réseau)</li>
+  <li>Onduleurs grid-tie (injection reseau)</li>
   <li>Stockage batteries (Li-Ion, LiFePO4)</li>
 </ul>
 
-<p><strong>Éolien :</strong></p>
+<p><strong>Eolien :</strong></p>
 <ul>
-  <li>Turbine → génératrice (asynchrone ou synchrone à aimants)</li>
-  <li>Redresseur + bus DC + onduleur réseau</li>
+  <li>Turbine &rarr; generatrice (asynchrone ou synchrone a aimants)</li>
+  <li>Redresseur + bus DC + onduleur reseau</li>
   <li>Pitch control (orientation pales)</li>
 </ul>
 
 <p><strong>Stockage :</strong></p>
 <ul>
   <li>Batteries : chimies (Lithium, Plomb), BMS (Battery Management System)</li>
-  <li>Supercapacités : forte puissance, faible énergie</li>
-  <li>Hydrogène : électrolyseur, pile à combustible</li>
+  <li>Supercapacites : forte puissance, faible energie</li>
+  <li>Hydrogene : electrolyseur, pile a combustible</li>
 </ul>
 
 <hr />
 
-<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-<h3 id="tp-convertisseurs">TP Convertisseurs</h3>
+<h3>TP Convertisseurs</h3>
 
 <p><strong>TP1 : Hacheur Boost :</strong></p>
 <ul>
   <li>Montage : MOSFET, diode Schottky, L, C</li>
-  <li>Tests : α variable, mesure Vout, rendement</li>
-  <li>Ondulations ΔIL, ΔVout</li>
+  <li>Tests : a variable, mesure Vout, rendement</li>
+  <li>Ondulations dIL, dVout</li>
 </ul>
 
-<p><strong>TP2 : Onduleur monophasé MLI :</strong></p>
+<p><strong>TP2 : Onduleur monophase MLI :</strong></p>
 <ul>
   <li>H-bridge IGBT</li>
-  <li>Commande MLI (Arduino/STM32 ou CI dédié)</li>
+  <li>Commande MLI (Arduino/STM32 ou CI dedie)</li>
   <li>Charge RL : mesure THD</li>
 </ul>
 
-<p><strong>TP3 : MPPT photovoltaïque :</strong></p>
+<p><strong>TP3 : MPPT photovoltaique :</strong></p>
 <ul>
-  <li>Panneau PV simulé (source + résistance)</li>
+  <li>Panneau PV simule (source + resistance)</li>
   <li>Hacheur Boost avec MPPT P&amp;O</li>
   <li>Mesure point de puissance maximale</li>
 </ul>
 
-<h3 id="tp-machines">TP Machines</h3>
+<h3>TP Machines</h3>
 
 <p><strong>TP Variateur MAS :</strong></p>
 <ul>
   <li>Moteur asynchrone 0.5-1 kW</li>
   <li>Variateur industriel (Schneider ATV, Siemens)</li>
-  <li>Programmation : fréquence, rampes, protections</li>
+  <li>Programmation : frequence, rampes, protections</li>
   <li>Mesure couple-vitesse</li>
-  <li>Économie énergie vs démarrage direct</li>
+  <li>Economie energie vs demarrage direct</li>
 </ul>
 
 <hr />
 
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+<h2>PART D: ANALYSE ET REFLEXION</h2>
 
-<h3 id="évaluation">Évaluation</h3>
+<h3>Evaluation</h3>
 <ul>
   <li>TP et comptes-rendus (35%)</li>
-  <li>Projet énergie renouvelable (20%)</li>
-  <li>Contrôles continus (25%)</li>
+  <li>Projet energie renouvelable (20%)</li>
+  <li>Controles continus (25%)</li>
   <li>Examen final (20%)</li>
 </ul>
 
-<h3 id="compétences-acquises">Compétences acquises</h3>
+<h3>Competences acquises</h3>
 <ul>
   <li>Dimensionnement convertisseurs de puissance</li>
-  <li>Commande de machines électriques</li>
-  <li>Conception systèmes énergies renouvelables</li>
+  <li>Commande de machines electriques</li>
+  <li>Conception systemes energies renouvelables</li>
   <li>Analyse CEM et thermique</li>
   <li>Utilisation outils simulation (PSIM, PLECS)</li>
 </ul>
 
-<h3 id="applications-professionnelles">Applications professionnelles</h3>
+<h3>Applications professionnelles</h3>
 <ul>
-  <li>Véhicules électriques/hybrides</li>
-  <li>Énergies renouvelables (solaire, éolien)</li>
+  <li>Vehicules electriques/hybrides</li>
+  <li>Energies renouvelables (solaire, eolien)</li>
   <li>Variateurs industriels</li>
-  <li>Alimentations DC (serveurs, télécom)</li>
+  <li>Alimentations DC (serveurs, telecom)</li>
   <li>Smart grids</li>
 </ul>
 
-<h2 id="-contenu-du-cours">📚 Contenu du cours</h2>
+<h3>Convertisseurs statiques avances</h3>
 
-<h3 id="convertisseurs-statiques-avancés">Convertisseurs statiques avancés</h3>
-
-<h4 id="hacheurs-approfondissement">Hacheurs (approfondissement)</h4>
+<h4>Hacheurs (approfondissement)</h4>
 <ul>
   <li>Hacheur Buck (abaisseur)</li>
-  <li>Hacheur Boost (élévateur)</li>
+  <li>Hacheur Boost (elevateur)</li>
   <li>Hacheur Buck-Boost</li>
-  <li>Hacheur Ćuk et SEPIC</li>
+  <li>Hacheur Cuk et SEPIC</li>
   <li>Mode de conduction continu et discontinu</li>
   <li>Ondulation et dimensionnement</li>
 </ul>
 
-<h4 id="onduleurs">Onduleurs</h4>
-<p><strong>Onduleurs monophasés :</strong></p>
+<h4>Onduleurs</h4>
+<p><strong>Onduleurs monophases :</strong></p>
 <ul>
   <li>Onduleur en demi-pont</li>
   <li>Onduleur en pont complet (H-bridge)</li>
@@ -265,55 +268,55 @@
   <li>Distorsion harmonique</li>
 </ul>
 
-<p><strong>Onduleurs triphasés :</strong></p>
+<p><strong>Onduleurs triphases :</strong></p>
 <ul>
-  <li>Structure à 6 interrupteurs</li>
-  <li>MLI sinusoïdale</li>
+  <li>Structure a 6 interrupteurs</li>
+  <li>MLI sinusoidale</li>
   <li>MLI vectorielle (SVM)</li>
   <li>Applications (variateurs, onduleurs solaires)</li>
 </ul>
 
-<h4 id="redresseurs-commandés">Redresseurs commandés</h4>
+<h4>Redresseurs commandes</h4>
 <ul>
-  <li>Redresseurs à thyristors</li>
+  <li>Redresseurs a thyristors</li>
   <li>Redresseurs mixtes</li>
   <li>Facteur de puissance</li>
-  <li>Harmoniques réseau</li>
+  <li>Harmoniques reseau</li>
   <li>Correction du facteur de puissance (PFC)</li>
 </ul>
 
-<h3 id="machines-électriques-avancées">Machines électriques avancées</h3>
+<h3>Machines electriques avancees</h3>
 
-<h4 id="machines-asynchrones">Machines asynchrones</h4>
+<h4>Machines asynchrones</h4>
 <ul>
   <li>Principe et constitution</li>
-  <li>Schéma équivalent</li>
+  <li>Schema equivalent</li>
   <li>Couple et glissement</li>
   <li>Bilan de puissance</li>
-  <li>Démarrage (direct, étoile-triangle, variateur)</li>
+  <li>Demarrage (direct, etoile-triangle, variateur)</li>
   <li>Freinage</li>
 </ul>
 
-<h4 id="machines-synchrones">Machines synchrones</h4>
+<h4>Machines synchrones</h4>
 <ul>
-  <li>Types (aimants permanents, rotor bobiné)</li>
+  <li>Types (aimants permanents, rotor bobine)</li>
   <li>Diagramme de Behn-Eschenburg</li>
   <li>Alternateur synchrone</li>
-  <li>Moteur synchrone autopilot é</li>
-  <li>Machines à aimants (PMSM, BLDC)</li>
+  <li>Moteur synchrone autopilote</li>
+  <li>Machines a aimants (PMSM, BLDC)</li>
 </ul>
 
-<h4 id="variateurs-de-vitesse">Variateurs de vitesse</h4>
+<h4>Variateurs de vitesse</h4>
 <ul>
-  <li>Variateur pour MAS (contrôle scalaire, vectoriel)</li>
+  <li>Variateur pour MAS (controle scalaire, vectoriel)</li>
   <li>Variateur pour machines synchrones</li>
-  <li>Régulation de vitesse</li>
-  <li>Optimisation énergétique</li>
+  <li>Regulation de vitesse</li>
+  <li>Optimisation energetique</li>
 </ul>
 
-<h3 id="électronique-de-puissance-moderne">Électronique de puissance moderne</h3>
+<h3>Electronique de puissance moderne</h3>
 
-<h4 id="composants-avancés">Composants avancés</h4>
+<h4>Composants avances</h4>
 <ul>
   <li>IGBT (structure, commande, protection)</li>
   <li>MOSFET SiC et GaN (Wide Bandgap)</li>
@@ -322,221 +325,640 @@
   <li>Protection et diagnostic</li>
 </ul>
 
-<h4 id="cem-compatibilité-électromagnétique">CEM (Compatibilité ÉlectroMagnétique)</h4>
+<h4>CEM (Compatibilite ElectroMagnetique)</h4>
 <ul>
   <li>Sources de perturbations</li>
-  <li>Modes commun et différentiel</li>
-  <li>Techniques de réduction (filtrage, blindage)</li>
+  <li>Modes commun et differentiel</li>
+  <li>Techniques de reduction (filtrage, blindage)</li>
   <li>Normes CEM</li>
-  <li>Mesures et conformité</li>
+  <li>Mesures et conformite</li>
 </ul>
 
-<h3 id="énergies-renouvelables">Énergies renouvelables</h3>
+<h3>Energies renouvelables</h3>
 
-<h4 id="énergie-solaire-photovoltaïque">Énergie solaire photovoltaïque</h4>
+<h4>Energie solaire photovoltaique</h4>
 <ul>
   <li>Cellules et panneaux PV</li>
-  <li>Caractéristique I-V</li>
+  <li>Caracteristique I-V</li>
   <li>MPPT (Maximum Power Point Tracking)</li>
   <li>Onduleurs solaires</li>
-  <li>Stockage d’énergie</li>
+  <li>Stockage d'energie</li>
 </ul>
 
-<h4 id="énergie-éolienne">Énergie éolienne</h4>
+<h4>Energie eolienne</h4>
 <ul>
-  <li>Turbines éoliennes</li>
-  <li>Génératrices (asynchrone, synchrone)</li>
-  <li>Conversion d’énergie</li>
-  <li>Raccordement au réseau</li>
+  <li>Turbines eoliennes</li>
+  <li>Generatrices (asynchrone, synchrone)</li>
+  <li>Conversion d'energie</li>
+  <li>Raccordement au reseau</li>
 </ul>
 
-<h4 id="stockage-dénergie">Stockage d’énergie</h4>
+<h4>Stockage d'energie</h4>
 <ul>
   <li>Batteries (Lithium-Ion, LiFePO4)</li>
   <li>BMS (Battery Management System)</li>
-  <li>Supercapacités</li>
-  <li>Hydrogène et piles à combustible</li>
+  <li>Supercapacites</li>
+  <li>Hydrogene et piles a combustible</li>
 </ul>
 
-<h2 id="️-travaux-pratiques">🛠️ Travaux pratiques</h2>
+<h3>Travaux pratiques</h3>
 
-<h3 id="tp-convertisseurs-1">TP Convertisseurs</h3>
+<h4>TP Convertisseurs</h4>
 <ul>
   <li>Hacheur Buck avec charge RL</li>
-  <li>Onduleur monophasé MLI</li>
+  <li>Onduleur monophase MLI</li>
   <li>Redresseur PFC</li>
   <li>Mesure de rendement</li>
 </ul>
 
-<h3 id="tp-machines-1">TP Machines</h3>
+<h4>TP Machines</h4>
 <ul>
-  <li>Caractérisation de MAS</li>
+  <li>Caracterisation de MAS</li>
   <li>Variateur de vitesse</li>
-  <li>Machine synchrone à aimants</li>
+  <li>Machine synchrone a aimants</li>
   <li>Mesures de couple et rendement</li>
 </ul>
 
-<h3 id="tp-énergies-renouvelables">TP Énergies renouvelables</h3>
+<h4>TP Energies renouvelables</h4>
 <ul>
-  <li>Caractérisation de panneau PV</li>
+  <li>Caracterisation de panneau PV</li>
   <li>MPPT algorithmique</li>
   <li>Onduleur grid-tie</li>
-  <li>Système de stockage</li>
+  <li>Systeme de stockage</li>
 </ul>
 
-<h2 id="-outils-utilisés">💻 Outils utilisés</h2>
-
+<h3>Outils utilises</h3>
 <ul>
   <li><strong>PSIM / PLECS</strong> : Simulation power electronics</li>
-  <li><strong>MATLAB/Simulink</strong> : Modélisation systèmes</li>
+  <li><strong>MATLAB/Simulink</strong> : Modelisation systemes</li>
   <li><strong>LTspice</strong> : Simulation rapide</li>
-  <li><strong>Analyseur de puissance</strong> : Mesures précises</li>
-  <li><strong>Oscilloscope</strong> : Visualisation formes d’ondes</li>
-  <li><strong>Bancs machines</strong> : Tests réels</li>
+  <li><strong>Analyseur de puissance</strong> : Mesures precises</li>
+  <li><strong>Oscilloscope</strong> : Visualisation formes d'ondes</li>
+  <li><strong>Bancs machines</strong> : Tests reels</li>
 </ul>
 
-<h2 id="-évaluation">📊 Évaluation</h2>
+<h3>Applications pratiques</h3>
 
+<h4>Mobilite electrique</h4>
 <ul>
-  <li>Travaux pratiques (35%)</li>
-  <li>Contrôles continus (25%)</li>
-  <li>Projet d’énergie (20%)</li>
-  <li>Examen final (20%)</li>
-</ul>
-
-<h2 id="-liens-avec-dautres-cours">🔗 Liens avec d’autres cours</h2>
-
-<ul>
-  <li><strong>Automatique</strong> : Régulation de machines</li>
-  <li><strong>IE</strong> : Commande numérique de convertisseurs</li>
-  <li><strong>Composants Actifs</strong> : Transistors de puissance</li>
-  <li><strong>CEM</strong> : Perturbations et compatibilité</li>
-</ul>
-
-<h2 id="-applications-pratiques">📐 Applications pratiques</h2>
-
-<h3 id="mobilité-électrique">Mobilité électrique</h3>
-<ul>
-  <li>Véhicules électriques et hybrides</li>
-  <li>Chargeurs embarqués</li>
+  <li>Vehicules electriques et hybrides</li>
+  <li>Chargeurs embarques</li>
   <li>Stations de recharge</li>
-  <li>Traction électrique</li>
+  <li>Traction electrique</li>
 </ul>
 
-<h3 id="smart-grids">Smart Grids</h3>
+<h4>Smart Grids</h4>
 <ul>
-  <li>Gestion intelligente de l’énergie</li>
-  <li>Micro-réseaux</li>
+  <li>Gestion intelligente de l'energie</li>
+  <li>Micro-reseaux</li>
   <li>Vehicle-to-Grid (V2G)</li>
-  <li>Stockage distribué</li>
+  <li>Stockage distribue</li>
 </ul>
 
-<h3 id="industrie">Industrie</h3>
+<h4>Industrie</h4>
 <ul>
   <li>Variateurs de vitesse</li>
   <li>Alimentation sans interruption (UPS)</li>
-  <li>Qualité de l’énergie</li>
-  <li>Efficacité énergétique</li>
+  <li>Qualite de l'energie</li>
+  <li>Efficacite energetique</li>
 </ul>
 
-<h2 id="-concepts-avancés">💡 Concepts avancés</h2>
+<h3>Concepts avances</h3>
 
-<h3 id="modulation-mli">Modulation MLI</h3>
+<h4>Modulation MLI</h4>
 <ul>
-  <li>PWM sinusoïdale</li>
+  <li>PWM sinusoidale</li>
   <li>Space Vector Modulation (SVM)</li>
-  <li>Fréquence de commutation</li>
+  <li>Frequence de commutation</li>
   <li>Harmoniques et THD</li>
 </ul>
 
-<h3 id="contrôle-de-machines">Contrôle de machines</h3>
+<h4>Controle de machines</h4>
 <ul>
-  <li>Contrôle scalaire (V/f)</li>
-  <li>Contrôle vectoriel (FOC)</li>
+  <li>Controle scalaire (V/f)</li>
+  <li>Controle vectoriel (FOC)</li>
   <li>Direct Torque Control (DTC)</li>
   <li>Sensorless control</li>
 </ul>
 
-<h2 id="️-contraintes-de-conception">⚠️ Contraintes de conception</h2>
+<h3>Contraintes de conception</h3>
 
-<h3 id="thermique">Thermique</h3>
+<h4>Thermique</h4>
 <ul>
   <li>Dissipation dans les semiconducteurs</li>
   <li>Dimensionnement des dissipateurs</li>
   <li>Gestion thermique</li>
-  <li>Fiabilité</li>
+  <li>Fiabilite</li>
 </ul>
 
-<h3 id="cem">CEM</h3>
+<h4>CEM</h4>
 <ul>
   <li>Filtrage des perturbations</li>
   <li>Layout de PCB</li>
   <li>Blindage</li>
-  <li>Conformité normative</li>
+  <li>Conformite normative</li>
 </ul>
 
-<h3 id="sécurité">Sécurité</h3>
+<h4>Securite</h4>
 <ul>
   <li>Isolation galvanique</li>
-  <li>Protection contre les surintensités</li>
-  <li>Détection de défauts</li>
-  <li>Norme sécurité électrique</li>
+  <li>Protection contre les surintensites</li>
+  <li>Detection de defauts</li>
+  <li>Norme securite electrique</li>
 </ul>
 
-<h2 id="-compétences-développées">📖 Compétences développées</h2>
-
+<h3>Competences developpees</h3>
 <ul>
   <li>Conception de convertisseurs de puissance</li>
-  <li>Dimensionnement de systèmes énergétiques</li>
-  <li>Commande de machines électriques</li>
+  <li>Dimensionnement de systemes energetiques</li>
+  <li>Commande de machines electriques</li>
   <li>Analyse CEM</li>
-  <li>Intégration d’énergies renouvelables</li>
-  <li>Optimisation énergétique</li>
+  <li>Integration d'energies renouvelables</li>
+  <li>Optimisation energetique</li>
 </ul>
 
-<h2 id="-enjeux-énergétiques">🌍 Enjeux énergétiques</h2>
+<h3>Enjeux energetiques</h3>
 
-<h3 id="transition-énergétique">Transition énergétique</h3>
+<h4>Transition energetique</h4>
 <ul>
-  <li>Décarbonation</li>
-  <li>Mix énergétique</li>
-  <li>Stockage d’énergie</li>
-  <li>Efficacité énergétique</li>
+  <li>Decarbonation</li>
+  <li>Mix energetique</li>
+  <li>Stockage d'energie</li>
+  <li>Efficacite energetique</li>
 </ul>
 
-<h3 id="smart-energy">Smart Energy</h3>
+<h4>Smart Energy</h4>
 <ul>
   <li>Gestion intelligente</li>
-  <li>Prédiction de production</li>
+  <li>Prediction de production</li>
   <li>Optimisation de consommation</li>
-  <li>Flexibilité du réseau</li>
+  <li>Flexibilite du reseau</li>
+</ul>
+
+</div>
+
+<div class="lang-en">
+
+<h1>Energy - Semester 3</h1>
+
+<p><strong>Year</strong>: 2021-2022 | <strong>Semester</strong>: 3 | <strong>Type</strong>: Technical</p>
+
+<hr />
+
+<h2>PART A - General Course Overview</h2>
+
+<h3>Context and objectives</h3>
+
+<p>Advanced power electronics (following S1) with advanced converters, AC electrical machines, variable speed drives and renewable energies. Applications to modern systems (electric vehicles, green energies, Industry 4.0).</p>
+
+<p><strong>Objectives:</strong></p>
+<ul>
+  <li>Master choppers (Buck, Boost, Buck-Boost), inverters, rectifiers</li>
+  <li>Study asynchronous and synchronous machines</li>
+  <li>Design variable speed drives</li>
+  <li>Understand EMC and Wide Bandgap components (SiC, GaN)</li>
+  <li>Understand photovoltaic and wind systems</li>
+</ul>
+
+<h3>Prerequisites</h3>
+<ul>
+  <li>Power electronics S1 (rectifiers, basic choppers)</li>
+  <li>AC circuits (complex impedances)</li>
+  <li>DC machines</li>
 </ul>
 
 <hr />
 
-<h2 id="documents-de-cours">Documents de Cours</h2>
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Module 1: Advanced DC-DC converters</h3>
+
+<p><strong>Choppers:</strong></p>
+<ul>
+  <li>Buck (step-down): Vout = a*Vin, CCM/DCM mode</li>
+  <li>Boost (step-up): Vout = Vin/(1-a)</li>
+  <li>Buck-Boost: Vout = -a*Vin/(1-a)</li>
+  <li>Cuk, SEPIC: isolation, low ripple</li>
+  <li>L, C sizing (ripple dI, dV)</li>
+</ul>
+
+<p><strong>Regulation:</strong></p>
+<ul>
+  <li>Fixed frequency PWM (20-100 kHz)</li>
+  <li>Voltage or current mode control</li>
+  <li>Feedback loop (TL431, optocoupler)</li>
+</ul>
+
+<h3>Module 2: Inverters</h3>
+
+<p><strong>Single-phase inverters:</strong></p>
+<ul>
+  <li>Half-bridge: Vout = +/-Vdc/2</li>
+  <li>Full bridge (H-bridge): Vout = +/-Vdc</li>
+  <li>Sinusoidal PWM: complementary drive with dead-time</li>
+  <li>LC filtering (harmonics)</li>
+  <li>THD (Total Harmonic Distortion)</li>
+</ul>
+
+<p><strong>Three-phase inverters:</strong></p>
+<ul>
+  <li>6 switches (IGBT)</li>
+  <li>Sinusoidal PWM (per-phase modulation)</li>
+  <li>Space Vector Modulation (SVM): better Vdc utilization</li>
+  <li>Applications: drives, solar/wind inverters</li>
+</ul>
+
+<h3>Module 3: AC electrical machines</h3>
+
+<p><strong>Asynchronous machine (induction motor):</strong></p>
+<ul>
+  <li>Principle: rotating field, slip s = (ns - n)/ns</li>
+  <li>Equivalent circuit (resistances, reactances)</li>
+  <li>Torque: Tmax at slip s = 10-20%</li>
+  <li>Starting: direct (I=6-8 In), star-delta, drive</li>
+</ul>
+
+<p><strong>Synchronous machine:</strong></p>
+<ul>
+  <li>Rotor: permanent magnets (PMSM) or wound</li>
+  <li>Synchronism: n = f/p (no slip)</li>
+  <li>Brushless motor (BLDC): electronic commutation</li>
+  <li>Applications: EV, robotics, wind</li>
+</ul>
+
+<p><strong>Variable speed drives:</strong></p>
+<ul>
+  <li>Scalar control for induction motor: V/f constant law</li>
+  <li>Vector control (FOC): flux/torque decoupling</li>
+  <li>Closed-loop regulation (encoder)</li>
+  <li>Energy savings (load adaptation)</li>
+</ul>
+
+<h3>Module 4: Renewable energies</h3>
+
+<p><strong>Photovoltaics:</strong></p>
+<ul>
+  <li>Panel I-V characteristic (Isc, Voc, Pmax)</li>
+  <li>MPPT (Maximum Power Point Tracking): Perturb &amp; Observe, Incremental Conductance</li>
+  <li>Grid-tie inverters (grid injection)</li>
+  <li>Battery storage (Li-Ion, LiFePO4)</li>
+</ul>
+
+<p><strong>Wind energy:</strong></p>
+<ul>
+  <li>Turbine &rarr; generator (asynchronous or permanent magnet synchronous)</li>
+  <li>Rectifier + DC bus + grid inverter</li>
+  <li>Pitch control (blade orientation)</li>
+</ul>
+
+<p><strong>Storage:</strong></p>
+<ul>
+  <li>Batteries: chemistries (Lithium, Lead), BMS (Battery Management System)</li>
+  <li>Supercapacitors: high power, low energy</li>
+  <li>Hydrogen: electrolyzer, fuel cell</li>
+</ul>
+
+<hr />
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>Converter labs</h3>
+
+<p><strong>Lab 1: Boost chopper:</strong></p>
+<ul>
+  <li>Setup: MOSFET, Schottky diode, L, C</li>
+  <li>Tests: variable duty cycle, Vout measurement, efficiency</li>
+  <li>Ripples dIL, dVout</li>
+</ul>
+
+<p><strong>Lab 2: Single-phase PWM inverter:</strong></p>
+<ul>
+  <li>H-bridge IGBT</li>
+  <li>PWM control (Arduino/STM32 or dedicated IC)</li>
+  <li>RL load: THD measurement</li>
+</ul>
+
+<p><strong>Lab 3: Photovoltaic MPPT:</strong></p>
+<ul>
+  <li>Simulated PV panel (source + resistor)</li>
+  <li>Boost chopper with P&amp;O MPPT</li>
+  <li>Maximum power point measurement</li>
+</ul>
+
+<h3>Machine labs</h3>
+
+<p><strong>Induction motor drive lab:</strong></p>
+<ul>
+  <li>0.5-1 kW asynchronous motor</li>
+  <li>Industrial drive (Schneider ATV, Siemens)</li>
+  <li>Programming: frequency, ramps, protections</li>
+  <li>Torque-speed measurement</li>
+  <li>Energy saving vs direct start</li>
+</ul>
+
+<hr />
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Assessment</h3>
+<ul>
+  <li>Lab work and reports (35%)</li>
+  <li>Renewable energy project (20%)</li>
+  <li>Continuous assessments (25%)</li>
+  <li>Final exam (20%)</li>
+</ul>
+
+<h3>Skills acquired</h3>
+<ul>
+  <li>Power converter sizing</li>
+  <li>Electrical machine control</li>
+  <li>Renewable energy systems design</li>
+  <li>EMC and thermal analysis</li>
+  <li>Use of simulation tools (PSIM, PLECS)</li>
+</ul>
+
+<h3>Professional applications</h3>
+<ul>
+  <li>Electric/hybrid vehicles</li>
+  <li>Renewable energies (solar, wind)</li>
+  <li>Industrial drives</li>
+  <li>DC power supplies (servers, telecom)</li>
+  <li>Smart grids</li>
+</ul>
+
+<h3>Advanced static converters</h3>
+
+<h4>Choppers (advanced)</h4>
+<ul>
+  <li>Buck chopper (step-down)</li>
+  <li>Boost chopper (step-up)</li>
+  <li>Buck-Boost chopper</li>
+  <li>Cuk and SEPIC choppers</li>
+  <li>Continuous and discontinuous conduction mode</li>
+  <li>Ripple and sizing</li>
+</ul>
+
+<h4>Inverters</h4>
+<p><strong>Single-phase inverters:</strong></p>
+<ul>
+  <li>Half-bridge inverter</li>
+  <li>Full-bridge inverter (H-bridge)</li>
+  <li>PWM control</li>
+  <li>Output filtering</li>
+  <li>Harmonic distortion</li>
+</ul>
+
+<p><strong>Three-phase inverters:</strong></p>
+<ul>
+  <li>6-switch structure</li>
+  <li>Sinusoidal PWM</li>
+  <li>Space Vector Modulation (SVM)</li>
+  <li>Applications (drives, solar inverters)</li>
+</ul>
+
+<h4>Controlled rectifiers</h4>
+<ul>
+  <li>Thyristor rectifiers</li>
+  <li>Mixed rectifiers</li>
+  <li>Power factor</li>
+  <li>Grid harmonics</li>
+  <li>Power Factor Correction (PFC)</li>
+</ul>
+
+<h3>Advanced electrical machines</h3>
+
+<h4>Asynchronous machines</h4>
+<ul>
+  <li>Principle and construction</li>
+  <li>Equivalent circuit</li>
+  <li>Torque and slip</li>
+  <li>Power balance</li>
+  <li>Starting (direct, star-delta, drive)</li>
+  <li>Braking</li>
+</ul>
+
+<h4>Synchronous machines</h4>
+<ul>
+  <li>Types (permanent magnets, wound rotor)</li>
+  <li>Behn-Eschenburg diagram</li>
+  <li>Synchronous alternator</li>
+  <li>Self-piloted synchronous motor</li>
+  <li>Permanent magnet machines (PMSM, BLDC)</li>
+</ul>
+
+<h4>Variable speed drives</h4>
+<ul>
+  <li>Induction motor drive (scalar, vector control)</li>
+  <li>Synchronous machine drive</li>
+  <li>Speed regulation</li>
+  <li>Energy optimization</li>
+</ul>
+
+<h3>Modern power electronics</h3>
+
+<h4>Advanced components</h4>
+<ul>
+  <li>IGBT (structure, drive, protection)</li>
+  <li>SiC and GaN MOSFETs (Wide Bandgap)</li>
+  <li>Intelligent power modules</li>
+  <li>Gate drivers</li>
+  <li>Protection and diagnostics</li>
+</ul>
+
+<h4>EMC (Electromagnetic Compatibility)</h4>
+<ul>
+  <li>Perturbation sources</li>
+  <li>Common and differential modes</li>
+  <li>Reduction techniques (filtering, shielding)</li>
+  <li>EMC standards</li>
+  <li>Measurements and compliance</li>
+</ul>
+
+<h3>Renewable energies</h3>
+
+<h4>Solar photovoltaic energy</h4>
+<ul>
+  <li>PV cells and panels</li>
+  <li>I-V characteristic</li>
+  <li>MPPT (Maximum Power Point Tracking)</li>
+  <li>Solar inverters</li>
+  <li>Energy storage</li>
+</ul>
+
+<h4>Wind energy</h4>
+<ul>
+  <li>Wind turbines</li>
+  <li>Generators (asynchronous, synchronous)</li>
+  <li>Energy conversion</li>
+  <li>Grid connection</li>
+</ul>
+
+<h4>Energy storage</h4>
+<ul>
+  <li>Batteries (Lithium-Ion, LiFePO4)</li>
+  <li>BMS (Battery Management System)</li>
+  <li>Supercapacitors</li>
+  <li>Hydrogen and fuel cells</li>
+</ul>
+
+<h3>Practical work</h3>
+
+<h4>Converter labs</h4>
+<ul>
+  <li>Buck chopper with RL load</li>
+  <li>Single-phase PWM inverter</li>
+  <li>PFC rectifier</li>
+  <li>Efficiency measurement</li>
+</ul>
+
+<h4>Machine labs</h4>
+<ul>
+  <li>Induction motor characterization</li>
+  <li>Variable speed drive</li>
+  <li>Permanent magnet synchronous machine</li>
+  <li>Torque and efficiency measurements</li>
+</ul>
+
+<h4>Renewable energy labs</h4>
+<ul>
+  <li>PV panel characterization</li>
+  <li>Algorithmic MPPT</li>
+  <li>Grid-tie inverter</li>
+  <li>Storage system</li>
+</ul>
+
+<h3>Tools used</h3>
+<ul>
+  <li><strong>PSIM / PLECS</strong>: Power electronics simulation</li>
+  <li><strong>MATLAB/Simulink</strong>: System modeling</li>
+  <li><strong>LTspice</strong>: Fast simulation</li>
+  <li><strong>Power analyzer</strong>: Precise measurements</li>
+  <li><strong>Oscilloscope</strong>: Waveform visualization</li>
+  <li><strong>Machine test benches</strong>: Real tests</li>
+</ul>
+
+<h3>Practical applications</h3>
+
+<h4>Electric mobility</h4>
+<ul>
+  <li>Electric and hybrid vehicles</li>
+  <li>On-board chargers</li>
+  <li>Charging stations</li>
+  <li>Electric traction</li>
+</ul>
+
+<h4>Smart Grids</h4>
+<ul>
+  <li>Intelligent energy management</li>
+  <li>Microgrids</li>
+  <li>Vehicle-to-Grid (V2G)</li>
+  <li>Distributed storage</li>
+</ul>
+
+<h4>Industry</h4>
+<ul>
+  <li>Variable speed drives</li>
+  <li>Uninterruptible Power Supply (UPS)</li>
+  <li>Power quality</li>
+  <li>Energy efficiency</li>
+</ul>
+
+<h3>Advanced concepts</h3>
+
+<h4>PWM modulation</h4>
+<ul>
+  <li>Sinusoidal PWM</li>
+  <li>Space Vector Modulation (SVM)</li>
+  <li>Switching frequency</li>
+  <li>Harmonics and THD</li>
+</ul>
+
+<h4>Machine control</h4>
+<ul>
+  <li>Scalar control (V/f)</li>
+  <li>Vector control (FOC)</li>
+  <li>Direct Torque Control (DTC)</li>
+  <li>Sensorless control</li>
+</ul>
+
+<h3>Design constraints</h3>
+
+<h4>Thermal</h4>
+<ul>
+  <li>Semiconductor dissipation</li>
+  <li>Heat sink sizing</li>
+  <li>Thermal management</li>
+  <li>Reliability</li>
+</ul>
+
+<h4>EMC</h4>
+<ul>
+  <li>Perturbation filtering</li>
+  <li>PCB layout</li>
+  <li>Shielding</li>
+  <li>Regulatory compliance</li>
+</ul>
+
+<h4>Safety</h4>
+<ul>
+  <li>Galvanic isolation</li>
+  <li>Overcurrent protection</li>
+  <li>Fault detection</li>
+  <li>Electrical safety standards</li>
+</ul>
+
+<h3>Skills developed</h3>
+<ul>
+  <li>Power converter design</li>
+  <li>Energy system sizing</li>
+  <li>Electrical machine control</li>
+  <li>EMC analysis</li>
+  <li>Renewable energy integration</li>
+  <li>Energy optimization</li>
+</ul>
+
+<h3>Energy challenges</h3>
+
+<h4>Energy transition</h4>
+<ul>
+  <li>Decarbonization</li>
+  <li>Energy mix</li>
+  <li>Energy storage</li>
+  <li>Energy efficiency</li>
+</ul>
+
+<h4>Smart Energy</h4>
+<ul>
+  <li>Intelligent management</li>
+  <li>Production forecasting</li>
+  <li>Consumption optimization</li>
+  <li>Grid flexibility</li>
+</ul>
+
+</div>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
 
     <div class="pdf-item">
-      <h4>Polycopie de Cours Energie S3</h4>
-      <p>Support de cours complet : conversion d'energie, machines electriques, electronique de puissance et energies renouvelables.</p>
+      <h4 class="lang-fr">Polycopie de Cours Energie S3</h4>
+      <h4 class="lang-en">Energy S3 Course Booklet</h4>
+      <p class="lang-fr">Support de cours complet : conversion d'energie, machines electriques, electronique de puissance et energies renouvelables.</p>
+      <p class="lang-en">Complete course material: energy conversion, electrical machines, power electronics and renewable energies.</p>
       <embed src="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
-        <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-fr">Telecharger le PDF</a>
+        <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-en">Download PDF</a>
       </p>
     </div>
 
   </div>
 </div>
 
-<hr />
-
 <style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
 
 <div class="back-nav">
-  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+  <a href="./my-courses-2021-2022.html" data-i18n-html="back-courses-2021-2022">&larr; Retour aux Cours 2021-2022</a>
 </div>
 
       </div>
@@ -568,6 +990,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -586,8 +1119,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -609,6 +1142,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1119,11 +1653,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1323,14 +1855,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1341,6 +1873,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

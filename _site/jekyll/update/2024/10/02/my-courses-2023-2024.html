@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"My Courses 2023-2024","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2023-2024.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/my-courses-2023-2024.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -100,78 +111,78 @@
   <a href="./my-courses-2020-2021.html">2020-2021</a>
 </div>
 
-<h1 id="my-courses---2023-2024">My Courses - 2023-2024</h1>
+<h1 data-i18n="courses-title-2023-2024">My Courses - 2023-2024</h1>
 
 <hr />
 
-<h2 id="semester-7-s7">Semester 7 (S7)</h2>
+<h2 data-i18n="semester-7">Semester 7 (S7)</h2>
 
 <h3 id="-analyse-des-systèmes-non-linéaires"><a href="./analyse-systemes-non-lineaires.html">📊 Analyse des Systèmes Non Linéaires</a></h3>
-<p><strong>Content</strong>: Study of non-linear systems analysis and control methods.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Étude de l’analyse des systèmes non linéaires et des méthodes de commande.</span><span class="lang-en">Study of non-linear systems analysis and control methods.</span></p>
 
 <h3 id="-architectures-analogiques-transmission-information"><a href="./architectures-analogiques-transmission.html">📡 Architectures Analogiques Transmission Information</a></h3>
-<p><strong>Content</strong>: Analog architectures for information transmission systems.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures analogiques pour les systèmes de transmission de l’information.</span><span class="lang-en">Analog architectures for information transmission systems.</span></p>
 
 <h3 id="-architectures-analogiques-systèmes-embarqués"><a href="./architectures-analogiques-embarques.html">🔌 Architectures Analogiques Systèmes Embarqués</a></h3>
-<p><strong>Content</strong>: Analog architectures for embedded systems.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures analogiques pour les systèmes embarqués.</span><span class="lang-en">Analog architectures for embedded systems.</span></p>
 
 <h3 id="-architectures-numériques-avancées-vhdl"><a href="./architectures-numeriques-vhdl.html">💻 Architectures Numériques Avancées VHDL</a></h3>
-<p><strong>Content</strong>: Advanced digital architectures and VHDL programming.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Architectures numériques avancées et programmation VHDL.</span><span class="lang-en">Advanced digital architectures and VHDL programming.</span></p>
 
 <h3 id="-conception-orientée-objet-uml"><a href="./conception-uml.html">🎨 Conception Orientée Objet UML</a></h3>
-<p><strong>Content</strong>: Object-oriented design principles and UML modeling.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de conception orientée objet et modélisation UML.</span><span class="lang-en">Object-oriented design principles and UML modeling.</span></p>
 
 <h3 id="-étude-et-modélisation-des-composants-actifs"><a href="./etude-composants-actifs.html">⚡ Étude et Modélisation des Composants Actifs</a></h3>
-<p><strong>Content</strong>: Study and modeling of active electronic components.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Étude et modélisation des composants électroniques actifs.</span><span class="lang-en">Study and modeling of active electronic components.</span></p>
 
 <h3 id="-filtrage-actif-et-modélisation-sources-bruit"><a href="./filtrage-actif-bruit.html">🔊 Filtrage Actif et Modélisation Sources Bruit</a></h3>
-<p><strong>Content</strong>: Active filtering and noise source modeling.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Filtrage actif et modélisation des sources de bruit.</span><span class="lang-en">Active filtering and noise source modeling.</span></p>
 
 <h3 id="-finance"><a href="./finance.html">💰 Finance</a></h3>
-<p><strong>Content</strong>: Financial principles and management for engineers.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes financiers et gestion pour les ingénieurs.</span><span class="lang-en">Financial principles and management for engineers.</span></p>
 
 <h3 id="️-programmation-orientée-objets-c"><a href="./poo-cpp.html">🖥️ Programmation Orientée Objets C++</a></h3>
-<p><strong>Content</strong>: Object-oriented programming with C++.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation orientée objet en C++.</span><span class="lang-en">Object-oriented programming with C++.</span></p>
 
 <h3 id="-programmation-orientée-objets-java"><a href="./poo-java.html">☕ Programmation Orientée Objets Java</a></h3>
-<p><strong>Content</strong>: Object-oriented programming with Java.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Programmation orientée objet en Java.</span><span class="lang-en">Object-oriented programming with Java.</span></p>
 
 <h3 id="-sécurité-matérielle"><a href="./securite-materielle.html">🔐 Sécurité Matérielle</a></h3>
-<p><strong>Content</strong>: Hardware security principles and implementations.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Principes de sécurité matérielle et implémentations.</span><span class="lang-en">Hardware security principles and implementations.</span></p>
 
 <h3 id="️-systèmes-multivariables"><a href="./systemes-multivariables.html">🎛️ Systèmes Multivariables</a></h3>
-<p><strong>Content</strong>: Multivariable control systems analysis and design.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Analyse et conception des systèmes de commande multivariables.</span><span class="lang-en">Multivariable control systems analysis and design.</span></p>
 
 <hr />
 
-<h2 id="semester-8-s8">Semester 8 (S8)</h2>
+<h2 data-i18n="semester-8">Semester 8 (S8)</h2>
 
 <h3 id="-chaînes-électroniques-dacquisition-de-linformation"><a href="./chaines-acquisition.html">🔗 Chaînes Électroniques d’Acquisition de l’Information</a></h3>
-<p><strong>Content</strong>: Electronic chains for information acquisition systems.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Chaînes électroniques pour les systèmes d’acquisition de l’information.</span><span class="lang-en">Electronic chains for information acquisition systems.</span></p>
 
 <h3 id="-commande-numérique"><a href="./commande-numerique.html">🎮 Commande Numérique</a></h3>
-<p><strong>Content</strong>: Digital control systems and algorithms.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Systèmes de commande numérique et algorithmes.</span><span class="lang-en">Digital control systems and algorithms.</span></p>
 
 <h3 id="️-droit"><a href="./droit.html">⚖️ Droit</a></h3>
-<p><strong>Content</strong>: Legal fundamentals for engineers and business.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Fondamentaux juridiques pour les ingénieurs et les entreprises.</span><span class="lang-en">Legal fundamentals for engineers and business.</span></p>
 
 <h3 id="-graphes-et-programmation-linéaire"><a href="./graphes-programmation-lineaire.html">📈 Graphes et Programmation Linéaire</a></h3>
-<p><strong>Content</strong>: Graph theory and linear programming methods.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Théorie des graphes et méthodes de programmation linéaire.</span><span class="lang-en">Graph theory and linear programming methods.</span></p>
 
 <h3 id="-interconnexion-réseau"><a href="./interconnexion-reseau.html">🌐 Interconnexion Réseau</a></h3>
-<p><strong>Content</strong>: Network interconnection protocols and technologies.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Protocoles et technologies d’interconnexion réseau.</span><span class="lang-en">Network interconnection protocols and technologies.</span></p>
 
 <h3 id="-machine-learning"><a href="./machine-learning-s8.html">🤖 Machine Learning</a></h3>
-<p><strong>Content</strong>: Introduction to machine learning algorithms and applications.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Introduction aux algorithmes d’apprentissage automatique et leurs applications.</span><span class="lang-en">Introduction to machine learning algorithms and applications.</span></p>
 
 <h3 id="-processus-stochastiques-et-files-dattentes"><a href="./processus-stochastiques.html">📊 Processus Stochastiques et Files d’Attentes</a></h3>
-<p><strong>Content</strong>: Stochastic processes and queuing theory.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Processus stochastiques et théorie des files d’attente.</span><span class="lang-en">Stochastic processes and queuing theory.</span></p>
 
 <h3 id="-réseaux-de-pétri"><a href="./reseaux-petri.html">🔷 Réseaux de Pétri</a></h3>
-<p><strong>Content</strong>: Petri nets modeling and analysis for discrete event systems.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Modélisation et analyse par réseaux de Pétri pour les systèmes à événements discrets.</span><span class="lang-en">Petri nets modeling and analysis for discrete event systems.</span></p>
 
 <h3 id="️-temps-réel"><a href="./temps-reel.html">⏱️ Temps Réel</a></h3>
-<p><strong>Content</strong>: Real-time systems design and implementation.</p>
+<p><strong data-i18n="label-content">Content</strong>: <span class="lang-fr">Conception et implémentation de systèmes temps réel.</span><span class="lang-en">Real-time systems design and implementation.</span></p>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -202,6 +213,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -220,8 +342,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -243,6 +365,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -753,11 +876,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -957,14 +1078,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -975,6 +1096,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

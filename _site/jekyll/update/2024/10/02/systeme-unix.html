@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Système Unix - S5","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/systeme-unix.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/systeme-unix.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -71,990 +82,931 @@ th {
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+h2, h3, h4, h5 {
+    color: #2a7ae2;
+}
+p {
+    text-align: justify;
+}
+code {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    margin-top: 0;
+    color: #2a7ae2;
+    border-bottom: 2px solid #2a7ae2;
+    padding-bottom: 10px;
+}
 </style>
 
 <div class="back-nav">
-  <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+  <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
 </div>
 
-<h1 id="-système-unix---s5">🐧 Système Unix - S5</h1>
+<!-- ===================== FRENCH VERSION ===================== -->
+<div class="lang-fr">
 
-<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br />
-<strong>Crédits</strong>: 3 ECTS<br />
-<strong>Type</strong>: Systèmes d’Exploitation</p>
+<h1>Systeme Unix - S5</h1>
+
+<p><strong>Annee</strong> : 2022-2023 (Semestre 5)<br />
+<strong>Credits</strong> : 3 ECTS<br />
+<strong>Type</strong> : Systemes d'Exploitation</p>
 
 <hr />
 
-<h2 id="part-a-présentation-générale">PART A: PRÉSENTATION GÉNÉRALE</h2>
+<h2>PART A : PRESENTATION GENERALE</h2>
 
-<h3 id="objectifs-du-cours">Objectifs du cours</h3>
+<h3 class="section-title">Objectifs du cours</h3>
 
-<p>Ce cours introduit les systèmes d’exploitation Unix/Linux en se concentrant sur l’utilisation pratique de la ligne de commande, la programmation shell, et l’administration système de base. L’accent est mis sur la maîtrise des outils essentiels pour le développement et l’exploitation de systèmes embarqués.</p>
+<p>Ce cours introduit les systemes d'exploitation Unix/Linux en se concentrant sur l'utilisation pratique de la ligne de commande, la programmation shell, et l'administration systeme de base. L'accent est mis sur la maitrise des outils essentiels pour le developpement et l'exploitation de systemes embarques.</p>
 
-<h3 id="compétences-visées">Compétences visées</h3>
+<h3 class="section-title">Competences visees</h3>
 
 <ul>
-  <li>Maîtriser la ligne de commande Unix/Linux</li>
-  <li>Programmer des scripts shell pour l’automatisation</li>
-  <li>Gérer les fichiers, processus et permissions</li>
+  <li>Maitriser la ligne de commande Unix/Linux</li>
+  <li>Programmer des scripts shell pour l'automatisation</li>
+  <li>Gerer les fichiers, processus et permissions</li>
   <li>Utiliser les outils de traitement de texte (grep, sed, awk)</li>
-  <li>Comprendre l’architecture du système de fichiers</li>
-  <li>Effectuer des tâches d’administration système basiques</li>
+  <li>Comprendre l'architecture du systeme de fichiers</li>
+  <li>Effectuer des taches d'administration systeme basiques</li>
   <li>Combiner les commandes avec pipes et redirections</li>
-  <li>Résoudre des problèmes pratiques avec les outils Unix</li>
+  <li>Resoudre des problemes pratiques avec les outils Unix</li>
 </ul>
 
-<h3 id="organisation">Organisation</h3>
+<h3 class="section-title">Organisation</h3>
 
 <ul>
-  <li><strong>Volume horaire</strong>: Cours, TD et vidéos pédagogiques</li>
-  <li><strong>Évaluation</strong>: Examen écrit + exercices pratiques</li>
-  <li><strong>Semestre</strong>: 5 (2022-2023)</li>
-  <li><strong>Prérequis</strong>: Notions d’informatique de base</li>
+  <li><strong>Volume horaire</strong> : Cours, TD et videos pedagogiques</li>
+  <li><strong>Evaluation</strong> : Examen ecrit + exercices pratiques</li>
+  <li><strong>Semestre</strong> : 5 (2022-2023)</li>
+  <li><strong>Prerequis</strong> : Notions d'informatique de base</li>
 </ul>
 
 <hr />
 
-<h2 id="part-b-expérience-contexte-et-fonction">PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
+<h2>PART B : EXPERIENCE, CONTEXTE ET FONCTION</h2>
 
-<h3 id="contenu-pédagogique">Contenu pédagogique</h3>
+<h3 class="section-title">Contenu pedagogique</h3>
 
-<p>Le cours couvre les fondamentaux d’Unix à travers une approche pratique.</p>
+<p>Le cours couvre les fondamentaux d'Unix a travers une approche pratique.</p>
 
-<h4 id="1-fondamentaux-unix">1. Fondamentaux Unix</h4>
+<h4>1. Fondamentaux Unix</h4>
 
-<p><strong>Philosophie Unix</strong>:</p>
+<p><strong>Philosophie Unix</strong> :</p>
 
-<p>Principes de conception:</p>
+<p>Principes de conception :</p>
 <ul>
-  <li>Tout est fichier (périphériques, sockets, processus)</li>
+  <li>Tout est fichier (peripheriques, sockets, processus)</li>
   <li>Programmes simples faisant une seule chose bien</li>
-  <li>Combinaison d’outils avec pipes</li>
-  <li>Interfaces textuelles pour faciliter l’automatisation</li>
-  <li>Système multi-utilisateurs et multi-tâches</li>
+  <li>Combinaison d'outils avec pipes</li>
+  <li>Interfaces textuelles pour faciliter l'automatisation</li>
+  <li>Systeme multi-utilisateurs et multi-taches</li>
 </ul>
 
-<p><strong>Architecture système</strong>:</p>
+<p><strong>Architecture systeme</strong> :</p>
 
 <div style="text-align: center; margin: 30px 0;">
   <img src="/assets/images/courses/S5/unix/architecture-unix.svg" alt="Architecture Unix/Linux" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
-  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture en couches d'un système Unix/Linux</p>
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Architecture en couches d'un systeme Unix/Linux</p>
 </div>
 
 <table>
-  <thead>
-    <tr>
-      <th>Composant</th>
-      <th>Fonction</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Noyau (kernel)</td>
-      <td>Gestion matérielle, processus, mémoire</td>
-    </tr>
-    <tr>
-      <td>Shell</td>
-      <td>Interpréteur de commandes</td>
-    </tr>
-    <tr>
-      <td>Programmes système</td>
-      <td>Utilitaires de base</td>
-    </tr>
-    <tr>
-      <td>Applications</td>
-      <td>Logiciels utilisateur</td>
-    </tr>
-  </tbody>
+  <tr><th>Composant</th><th>Fonction</th></tr>
+  <tr><td>Noyau (kernel)</td><td>Gestion materielle, processus, memoire</td></tr>
+  <tr><td>Shell</td><td>Interpreteur de commandes</td></tr>
+  <tr><td>Programmes systeme</td><td>Utilitaires de base</td></tr>
+  <tr><td>Applications</td><td>Logiciels utilisateur</td></tr>
 </table>
 
-<p><strong>Shells disponibles</strong>:</p>
+<p><strong>Shells disponibles</strong> :</p>
 <ul>
-  <li><strong>bash</strong> (Bourne Again Shell): le plus répandu</li>
-  <li>sh (Bourne Shell): shell historique</li>
-  <li>zsh (Z Shell): shell avancé avec auto-complétion</li>
-  <li>csh/tcsh (C Shell): syntaxe proche du C</li>
+  <li><strong>bash</strong> (Bourne Again Shell) : le plus repandu</li>
+  <li>sh (Bourne Shell) : shell historique</li>
+  <li>zsh (Z Shell) : shell avance avec auto-completion</li>
+  <li>csh/tcsh (C Shell) : syntaxe proche du C</li>
 </ul>
 
-<h4 id="2-système-de-fichiers">2. Système de fichiers</h4>
+<h4>2. Systeme de fichiers</h4>
 
-<p><strong>Arborescence standard</strong>:</p>
+<p><strong>Arborescence standard</strong> :</p>
 
-<p>Structure hiérarchique partant de la racine (/).</p>
+<p>Structure hierarchique partant de la racine (/).</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Répertoire</th>
-      <th>Contenu</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>/bin</td>
-      <td>Commandes essentielles (ls, cp, mv)</td>
-    </tr>
-    <tr>
-      <td>/etc</td>
-      <td>Fichiers de configuration</td>
-    </tr>
-    <tr>
-      <td>/home</td>
-      <td>Répertoires personnels des utilisateurs</td>
-    </tr>
-    <tr>
-      <td>/usr</td>
-      <td>Applications et utilitaires</td>
-    </tr>
-    <tr>
-      <td>/var</td>
-      <td>Données variables (logs, caches)</td>
-    </tr>
-    <tr>
-      <td>/tmp</td>
-      <td>Fichiers temporaires</td>
-    </tr>
-    <tr>
-      <td>/dev</td>
-      <td>Fichiers de périphériques</td>
-    </tr>
-    <tr>
-      <td>/proc</td>
-      <td>Informations du système et processus</td>
-    </tr>
-  </tbody>
+  <tr><th>Repertoire</th><th>Contenu</th></tr>
+  <tr><td>/bin</td><td>Commandes essentielles (ls, cp, mv)</td></tr>
+  <tr><td>/etc</td><td>Fichiers de configuration</td></tr>
+  <tr><td>/home</td><td>Repertoires personnels des utilisateurs</td></tr>
+  <tr><td>/usr</td><td>Applications et utilitaires</td></tr>
+  <tr><td>/var</td><td>Donnees variables (logs, caches)</td></tr>
+  <tr><td>/tmp</td><td>Fichiers temporaires</td></tr>
+  <tr><td>/dev</td><td>Fichiers de peripheriques</td></tr>
+  <tr><td>/proc</td><td>Informations du systeme et processus</td></tr>
 </table>
 
-<p><strong>Types de fichiers</strong>:</p>
-
+<p><strong>Types de fichiers</strong> :</p>
 <ul>
-  <li><strong>Fichier régulier</strong> (-): fichier normal</li>
-  <li><strong>Répertoire</strong> (d): dossier</li>
-  <li><strong>Lien symbolique</strong> (l): raccourci vers un autre fichier</li>
-  <li><strong>Périphérique bloc</strong> (b): disque dur, USB</li>
-  <li><strong>Périphérique caractère</strong> (c): terminal, imprimante</li>
-  <li><strong>Socket</strong> (s): communication inter-processus</li>
-  <li><strong>Pipe nommé</strong> (p): canal de communication</li>
+  <li><strong>Fichier regulier</strong> (-) : fichier normal</li>
+  <li><strong>Repertoire</strong> (d) : dossier</li>
+  <li><strong>Lien symbolique</strong> (l) : raccourci vers un autre fichier</li>
+  <li><strong>Peripherique bloc</strong> (b) : disque dur, USB</li>
+  <li><strong>Peripherique caractere</strong> (c) : terminal, imprimante</li>
+  <li><strong>Socket</strong> (s) : communication inter-processus</li>
+  <li><strong>Pipe nomme</strong> (p) : canal de communication</li>
 </ul>
 
-<p><strong>Commandes de navigation</strong>:</p>
+<p><strong>Commandes de navigation</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">pwd</span>                    <span class="c"># Afficher répertoire courant</span>
-<span class="nb">cd</span> /chemin/vers/dir    <span class="c"># Changer de répertoire</span>
-<span class="nb">cd</span> ..                  <span class="c"># Remonter d'un niveau</span>
-<span class="nb">cd</span> ~                   <span class="c"># Aller au home</span>
-<span class="nb">cd</span> -                   <span class="c"># Revenir au répertoire précédent</span>
-<span class="nb">ls</span>                     <span class="c"># Lister fichiers</span>
-<span class="nb">ls</span> <span class="nt">-l</span>                  <span class="c"># Liste détaillée</span>
-<span class="nb">ls</span> <span class="nt">-a</span>                  <span class="c"># Afficher fichiers cachés</span>
-<span class="nb">ls</span> <span class="nt">-lh</span>                 <span class="c"># Tailles lisibles (KB, MB)</span>
-</code></pre></div></div>
+<pre><code class="language-bash">pwd                    # Afficher repertoire courant
+cd /chemin/vers/dir    # Changer de repertoire
+cd ..                  # Remonter d'un niveau
+cd ~                   # Aller au home
+cd -                   # Revenir au repertoire precedent
+ls                     # Lister fichiers
+ls -l                  # Liste detaillee
+ls -a                  # Afficher fichiers caches
+ls -lh                 # Tailles lisibles (KB, MB)</code></pre>
 
-<p><strong>Manipulation de fichiers</strong>:</p>
+<p><strong>Manipulation de fichiers</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Création</span>
-<span class="nb">touch </span>fichier.txt      <span class="c"># Créer fichier vide</span>
-<span class="nb">mkdir </span>dossier          <span class="c"># Créer répertoire</span>
-<span class="nb">mkdir</span> <span class="nt">-p</span> a/b/c         <span class="c"># Créer arborescence</span>
+<pre><code class="language-bash"># Creation
+touch fichier.txt      # Creer fichier vide
+mkdir dossier          # Creer repertoire
+mkdir -p a/b/c         # Creer arborescence
 
-<span class="c"># Copie et déplacement</span>
-<span class="nb">cp source </span>dest         <span class="c"># Copier fichier</span>
-<span class="nb">cp</span> <span class="nt">-r</span> dir1 dir2        <span class="c"># Copier répertoire récursivement</span>
-<span class="nb">mv </span>ancien nouveau      <span class="c"># Renommer/déplacer</span>
+# Copie et deplacement
+cp source dest         # Copier fichier
+cp -r dir1 dir2        # Copier repertoire recursivement
+mv ancien nouveau      # Renommer/deplacer
 
-<span class="c"># Suppression</span>
-<span class="nb">rm </span>fichier             <span class="c"># Supprimer fichier</span>
-<span class="nb">rm</span> <span class="nt">-r</span> dossier          <span class="c"># Supprimer répertoire récursivement</span>
-<span class="nb">rm</span> <span class="nt">-f</span> fichier          <span class="c"># Forcer suppression</span>
-<span class="nb">rmdir </span>dossier          <span class="c"># Supprimer répertoire vide</span>
-</code></pre></div></div>
+# Suppression
+rm fichier             # Supprimer fichier
+rm -r dossier          # Supprimer repertoire recursivement
+rm -f fichier          # Forcer suppression
+rmdir dossier          # Supprimer repertoire vide</code></pre>
 
-<p><strong>Visualisation de fichiers</strong>:</p>
+<p><strong>Visualisation de fichiers</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>fichier            <span class="c"># Afficher contenu complet</span>
-more fichier           <span class="c"># Afficher page par page</span>
-less fichier           <span class="c"># Naviguer dans le fichier</span>
-<span class="nb">head </span>fichier           <span class="c"># Afficher premières lignes</span>
-<span class="nb">head</span> <span class="nt">-n</span> 20 fichier     <span class="c"># Afficher 20 premières lignes</span>
-<span class="nb">tail </span>fichier           <span class="c"># Afficher dernières lignes</span>
-<span class="nb">tail</span> <span class="nt">-f</span> fichier        <span class="c"># Suivre ajouts en temps réel (logs)</span>
-</code></pre></div></div>
+<pre><code class="language-bash">cat fichier            # Afficher contenu complet
+more fichier           # Afficher page par page
+less fichier           # Naviguer dans le fichier
+head fichier           # Afficher premieres lignes
+head -n 20 fichier     # Afficher 20 premieres lignes
+tail fichier           # Afficher dernieres lignes
+tail -f fichier        # Suivre ajouts en temps reel (logs)</code></pre>
 
-<h4 id="3-permissions-et-droits-daccès">3. Permissions et droits d’accès</h4>
+<h4>3. Permissions et droits d'acces</h4>
 
-<p><strong>Système de permissions</strong>:</p>
+<p><strong>Systeme de permissions</strong> :</p>
 
-<p>Format: <code class="language-plaintext highlighter-rouge">drwxrwxrwx</code></p>
-
+<p>Format : <code>drwxrwxrwx</code></p>
 <ul>
-  <li>Premier caractère: type de fichier</li>
-  <li>3 caractères suivants: droits du propriétaire (user)</li>
-  <li>3 suivants: droits du groupe (group)</li>
-  <li>3 derniers: droits des autres (others)</li>
+  <li>Premier caractere : type de fichier</li>
+  <li>3 caracteres suivants : droits du proprietaire (user)</li>
+  <li>3 suivants : droits du groupe (group)</li>
+  <li>3 derniers : droits des autres (others)</li>
 </ul>
 
-<p><strong>Types de permissions</strong>:</p>
+<p><strong>Types de permissions</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Permission</th>
-      <th>Fichier</th>
-      <th>Répertoire</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>r (read)</td>
-      <td>Lire le contenu</td>
-      <td>Lister le contenu</td>
-    </tr>
-    <tr>
-      <td>w (write)</td>
-      <td>Modifier le fichier</td>
-      <td>Créer/supprimer fichiers</td>
-    </tr>
-    <tr>
-      <td>x (execute)</td>
-      <td>Exécuter le fichier</td>
-      <td>Accéder au répertoire</td>
-    </tr>
-  </tbody>
+  <tr><th>Permission</th><th>Fichier</th><th>Repertoire</th></tr>
+  <tr><td>r (read)</td><td>Lire le contenu</td><td>Lister le contenu</td></tr>
+  <tr><td>w (write)</td><td>Modifier le fichier</td><td>Creer/supprimer fichiers</td></tr>
+  <tr><td>x (execute)</td><td>Executer le fichier</td><td>Acceder au repertoire</td></tr>
 </table>
 
-<p><strong>Représentation numérique</strong>:</p>
+<p><strong>Representation numerique</strong> :</p>
 
-<p>Chaque permission a une valeur:</p>
+<p>Chaque permission a une valeur :</p>
 <ul>
   <li>r = 4</li>
   <li>w = 2</li>
   <li>x = 1</li>
 </ul>
 
-<p>Exemples:</p>
+<p>Exemples :</p>
 <ul>
-  <li>755 = rwxr-xr-x (propriétaire: tout, autres: lecture+exécution)</li>
-  <li>644 = rw-r–r– (propriétaire: lecture+écriture, autres: lecture seule)</li>
-  <li>700 = rwx—— (propriétaire seul a tous les droits)</li>
+  <li>755 = rwxr-xr-x (proprietaire : tout, autres : lecture+execution)</li>
+  <li>644 = rw-r--r-- (proprietaire : lecture+ecriture, autres : lecture seule)</li>
+  <li>700 = rwx------ (proprietaire seul a tous les droits)</li>
   <li>777 = rwxrwxrwx (tous les droits pour tout le monde)</li>
 </ul>
 
-<p><strong>Commandes de gestion</strong>:</p>
+<p><strong>Commandes de gestion</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Modifier permissions</span>
-<span class="nb">chmod </span>755 fichier              <span class="c"># Mode numérique</span>
-<span class="nb">chmod </span>u+x fichier              <span class="c"># Ajouter exécution pour user</span>
-<span class="nb">chmod </span>g-w fichier              <span class="c"># Retirer écriture pour group</span>
-<span class="nb">chmod </span>o+r fichier              <span class="c"># Ajouter lecture pour others</span>
-<span class="nb">chmod </span>a+x fichier              <span class="c"># Ajouter exécution pour all</span>
+<pre><code class="language-bash"># Modifier permissions
+chmod 755 fichier              # Mode numerique
+chmod u+x fichier              # Ajouter execution pour user
+chmod g-w fichier              # Retirer ecriture pour group
+chmod o+r fichier              # Ajouter lecture pour others
+chmod a+x fichier              # Ajouter execution pour all
 
-<span class="c"># Modifier propriétaire</span>
-<span class="nb">chown </span>utilisateur fichier      <span class="c"># Changer propriétaire</span>
-<span class="nb">chown </span>user:group fichier       <span class="c"># Changer user et group</span>
-<span class="nb">chgrp </span>groupe fichier           <span class="c"># Changer groupe uniquement</span>
-</code></pre></div></div>
+# Modifier proprietaire
+chown utilisateur fichier      # Changer proprietaire
+chown user:group fichier       # Changer user et group
+chgrp groupe fichier           # Changer groupe uniquement</code></pre>
 
-<p><strong>Permissions spéciales</strong>:</p>
+<p><strong>Permissions speciales</strong> :</p>
 
-<p><strong>SUID (Set User ID)</strong>: 4xxx ou u+s</p>
+<p><strong>SUID (Set User ID)</strong> : 4xxx ou u+s</p>
 <ul>
-  <li>Le fichier s’exécute avec les droits du propriétaire</li>
-  <li>Exemple: /usr/bin/passwd (permet aux users de changer leur mot de passe)</li>
+  <li>Le fichier s'execute avec les droits du proprietaire</li>
+  <li>Exemple : /usr/bin/passwd (permet aux users de changer leur mot de passe)</li>
 </ul>
 
-<p><strong>SGID (Set Group ID)</strong>: 2xxx ou g+s</p>
+<p><strong>SGID (Set Group ID)</strong> : 2xxx ou g+s</p>
 <ul>
-  <li>Le fichier s’exécute avec les droits du groupe</li>
-  <li>Sur un répertoire: fichiers créés héritent du groupe</li>
+  <li>Le fichier s'execute avec les droits du groupe</li>
+  <li>Sur un repertoire : fichiers crees heritent du groupe</li>
 </ul>
 
-<p><strong>Sticky bit</strong>: 1xxx ou +t</p>
+<p><strong>Sticky bit</strong> : 1xxx ou +t</p>
 <ul>
-  <li>Sur répertoire: seul le propriétaire peut supprimer ses fichiers</li>
-  <li>Exemple: /tmp (répertoire partagé mais fichiers protégés)</li>
+  <li>Sur repertoire : seul le proprietaire peut supprimer ses fichiers</li>
+  <li>Exemple : /tmp (repertoire partage mais fichiers proteges)</li>
 </ul>
 
-<p>Exemple de l’examen:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod </span>1777 /tmp/test3    <span class="c"># Sticky bit + tous droits</span>
-<span class="nb">chmod </span>750 /tmp/test1     <span class="c"># rwxr-x---</span>
-<span class="nb">chmod </span>640 fichier        <span class="c"># rw-r-----</span>
-</code></pre></div></div>
+<p>Exemple de l'examen :</p>
+<pre><code class="language-bash">chmod 1777 /tmp/test3    # Sticky bit + tous droits
+chmod 750 /tmp/test1     # rwxr-x---
+chmod 640 fichier        # rw-r-----</code></pre>
 
-<h4 id="4-gestion-des-processus">4. Gestion des processus</h4>
+<h4>4. Gestion des processus</h4>
 
-<p><strong>Concept de processus</strong>:</p>
+<p><strong>Concept de processus</strong> :</p>
 
-<p>Un processus est un programme en cours d’exécution.</p>
+<p>Un processus est un programme en cours d'execution.</p>
 
-<p>Attributs principaux:</p>
+<p>Attributs principaux :</p>
 <ul>
-  <li><strong>PID</strong> (Process ID): identifiant unique</li>
-  <li><strong>PPID</strong> (Parent Process ID): processus parent</li>
-  <li><strong>UID</strong>: utilisateur propriétaire</li>
-  <li>État: running, sleeping, stopped, zombie</li>
-  <li>Priorité: nice value</li>
+  <li><strong>PID</strong> (Process ID) : identifiant unique</li>
+  <li><strong>PPID</strong> (Parent Process ID) : processus parent</li>
+  <li><strong>UID</strong> : utilisateur proprietaire</li>
+  <li>Etat : running, sleeping, stopped, zombie</li>
+  <li>Priorite : nice value</li>
 </ul>
 
-<p><strong>Commandes de gestion</strong>:</p>
+<p><strong>Commandes de gestion</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Afficher processus</span>
-ps                    <span class="c"># Processus de l'utilisateur courant</span>
-ps aux                <span class="c"># Tous les processus détaillés</span>
-ps <span class="nt">-ef</span>                <span class="c"># Format long</span>
-top                   <span class="c"># Monitoring en temps réel</span>
-htop                  <span class="c"># Version améliorée de top</span>
+<pre><code class="language-bash"># Afficher processus
+ps                    # Processus de l'utilisateur courant
+ps aux                # Tous les processus detailles
+ps -ef                # Format long
+top                   # Monitoring en temps reel
+htop                  # Version amelioree de top
 
-<span class="c"># Contrôle des processus</span>
-<span class="nb">kill </span>PID              <span class="c"># Envoyer signal TERM (terminaison propre)</span>
-<span class="nb">kill</span> <span class="nt">-9</span> PID           <span class="c"># Signal KILL (terminaison forcée)</span>
-killall nom           <span class="c"># Tuer par nom de programme</span>
-pkill motif           <span class="c"># Tuer selon motif</span>
+# Controle des processus
+kill PID              # Envoyer signal TERM (terminaison propre)
+kill -9 PID           # Signal KILL (terminaison forcee)
+killall nom           # Tuer par nom de programme
+pkill motif           # Tuer selon motif
 
-<span class="c"># Arrière-plan</span>
-commande &amp;            <span class="c"># Lancer en arrière-plan</span>
-<span class="nb">jobs</span>                  <span class="c"># Lister jobs</span>
-<span class="nb">fg</span> %1                 <span class="c"># Ramener job 1 au premier plan</span>
-<span class="nb">bg</span> %1                 <span class="c"># Continuer job 1 en arrière-plan</span>
-Ctrl+Z                <span class="c"># Suspendre processus courant</span>
-</code></pre></div></div>
+# Arriere-plan
+commande &amp;            # Lancer en arriere-plan
+jobs                  # Lister jobs
+fg %1                 # Ramener job 1 au premier plan
+bg %1                 # Continuer job 1 en arriere-plan
+Ctrl+Z                # Suspendre processus courant</code></pre>
 
-<p><strong>Analyse de l’exemple de l’examen</strong>:</p>
+<p><strong>Analyse de l'exemple de l'examen</strong> :</p>
 
-<p>Commande: <code class="language-plaintext highlighter-rouge">ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID</code></p>
+<p>Commande : <code>ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID</code></p>
 
-<p>Décomposition:</p>
+<p>Decomposition :</p>
 <ol>
-  <li><code class="language-plaintext highlighter-rouge">ps -ef</code>: liste tous les processus</li>
-  <li><code class="language-plaintext highlighter-rouge">awk '{print $3}'</code>: extrait colonne PPID (parent)</li>
-  <li><code class="language-plaintext highlighter-rouge">sort</code>: trie les PPID</li>
-  <li><code class="language-plaintext highlighter-rouge">uniq -c</code>: compte occurrences de chaque PPID</li>
-  <li><code class="language-plaintext highlighter-rouge">awk '{print $2,$1}'</code>: inverse colonnes (PPID puis count)</li>
-  <li><code class="language-plaintext highlighter-rouge">grep -v PPID</code>: exclut l’en-tête</li>
+  <li><code>ps -ef</code> : liste tous les processus</li>
+  <li><code>awk '{print $3}'</code> : extrait colonne PPID (parent)</li>
+  <li><code>sort</code> : trie les PPID</li>
+  <li><code>uniq -c</code> : compte occurrences de chaque PPID</li>
+  <li><code>awk '{print $2,$1}'</code> : inverse colonnes (PPID puis count)</li>
+  <li><code>grep -v PPID</code> : exclut l'en-tete</li>
 </ol>
 
-<p>Résultat: liste des processus avec leur nombre d’enfants.</p>
+<p>Resultat : liste des processus avec leur nombre d'enfants.</p>
 
-<h4 id="5-programmation-shell-bash">5. Programmation Shell (Bash)</h4>
+<h4>5. Programmation Shell (Bash)</h4>
 
-<p><strong>Structure de base d’un script</strong>:</p>
+<p><strong>Structure de base d'un script</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-<span class="c"># Shebang: indique l'interpréteur à utiliser</span>
+<pre><code class="language-bash">#!/bin/bash
+# Shebang : indique l'interpreteur a utiliser
 
-<span class="c"># Ceci est un commentaire</span>
+# Ceci est un commentaire
 
-<span class="nb">echo</span> <span class="s2">"Premier script shell"</span>
-</code></pre></div></div>
+echo "Premier script shell"</code></pre>
 
-<p>Exécution:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x script.sh     <span class="c"># Rendre exécutable</span>
-./script.sh            <span class="c"># Exécuter</span>
-</code></pre></div></div>
+<p>Execution :</p>
+<pre><code class="language-bash">chmod +x script.sh     # Rendre executable
+./script.sh            # Executer</code></pre>
 
-<p><strong>Variables</strong>:</p>
+<p><strong>Variables</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Déclaration (pas d'espace autour du =)</span>
-<span class="nv">nom</span><span class="o">=</span><span class="s2">"Cedric"</span>
-<span class="nv">age</span><span class="o">=</span>25
-<span class="nv">i</span><span class="o">=</span>3
+<pre><code class="language-bash"># Declaration (pas d'espace autour du =)
+nom="Cedric"
+age=25
+i=3
 
-<span class="c"># Utilisation</span>
-<span class="nb">echo</span> <span class="s2">"Je m'appelle </span><span class="nv">$nom</span><span class="s2">"</span>
-<span class="nb">echo</span> <span class="s2">"J'ai </span><span class="k">${</span><span class="nv">age</span><span class="k">}</span><span class="s2"> ans"</span>
+# Utilisation
+echo "Je m'appelle $nom"
+echo "J'ai ${age} ans"
 
-<span class="c"># Variables d'environnement</span>
-<span class="nb">echo</span> <span class="nv">$HOME</span>             <span class="c"># Répertoire personnel</span>
-<span class="nb">echo</span> <span class="nv">$PATH</span>             <span class="c"># Chemins de recherche des commandes</span>
-<span class="nb">echo</span> <span class="nv">$USER</span>             <span class="c"># Nom utilisateur</span>
-</code></pre></div></div>
+# Variables d'environnement
+echo $HOME             # Repertoire personnel
+echo $PATH             # Chemins de recherche des commandes
+echo $USER             # Nom utilisateur</code></pre>
 
-<p><strong>Lecture d’entrée</strong>:</p>
+<p><strong>Lecture d'entree</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Entrez un nombre:"</span>
-<span class="nb">read </span>nombre
-<span class="nb">echo</span> <span class="s2">"Vous avez saisi: </span><span class="nv">$nombre</span><span class="s2">"</span>
+<pre><code class="language-bash">echo "Entrez un nombre:"
+read nombre
+echo "Vous avez saisi: $nombre"
 
-<span class="c"># Lecture dans variable spécifique</span>
-<span class="nb">read</span> <span class="nt">-p</span> <span class="s2">"Nom: "</span> nom
-</code></pre></div></div>
+# Lecture dans variable specifique
+read -p "Nom: " nom</code></pre>
 
-<p><strong>Structures conditionnelles</strong>:</p>
+<p><strong>Structures conditionnelles</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># if-then-else</span>
-<span class="k">if </span><span class="nb">test</span> <span class="nv">$i</span> <span class="nt">-eq</span> 3
-<span class="k">then
-  </span><span class="nb">echo</span> <span class="s2">"i vaut 3"</span>
-<span class="k">else
-  </span><span class="nb">echo</span> <span class="s2">"i ne vaut pas 3"</span>
-<span class="k">fi</span>
+<pre><code class="language-bash"># if-then-else
+if test $i -eq 3
+then
+  echo "i vaut 3"
+else
+  echo "i ne vaut pas 3"
+fi
 
-<span class="c"># Forme alternative avec crochets</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$i</span> <span class="nt">-eq</span> 3 <span class="o">]</span>
-<span class="k">then
-  </span><span class="nb">echo</span> <span class="s2">"i vaut 3"</span>
-<span class="k">fi</span>
+# Forme alternative avec crochets
+if [ $i -eq 3 ]
+then
+  echo "i vaut 3"
+fi
 
-<span class="c"># Opérateurs de comparaison numérique</span>
-<span class="c"># -eq (égal), -ne (différent), -lt (inférieur)</span>
-<span class="c"># -le (inférieur ou égal), -gt (supérieur), -ge (supérieur ou égal)</span>
+# Operateurs de comparaison numerique
+# -eq (egal), -ne (different), -lt (inferieur)
+# -le (inferieur ou egal), -gt (superieur), -ge (superieur ou egal)
 
-<span class="c"># Comparaisons de chaînes</span>
-<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$str1</span><span class="s2">"</span> <span class="o">=</span> <span class="s2">"</span><span class="nv">$str2</span><span class="s2">"</span> <span class="o">]</span>
-<span class="k">then
-  </span><span class="nb">echo</span> <span class="s2">"Chaînes identiques"</span>
-<span class="k">fi</span>
+# Comparaisons de chaines
+if [ "$str1" = "$str2" ]
+then
+  echo "Chaines identiques"
+fi
 
-<span class="c"># Tests de fichiers</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-f</span> fichier <span class="o">]</span>      <span class="c"># Fichier existe</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-d</span> dossier <span class="o">]</span>      <span class="c"># Répertoire existe</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-r</span> fichier <span class="o">]</span>      <span class="c"># Fichier lisible</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-w</span> fichier <span class="o">]</span>      <span class="c"># Fichier modifiable</span>
-<span class="k">if</span> <span class="o">[</span> <span class="nt">-x</span> fichier <span class="o">]</span>      <span class="c"># Fichier exécutable</span>
+# Tests de fichiers
+if [ -f fichier ]      # Fichier existe
+if [ -d dossier ]      # Repertoire existe
+if [ -r fichier ]      # Fichier lisible
+if [ -w fichier ]      # Fichier modifiable
+if [ -x fichier ]      # Fichier executable
 
-<span class="c"># Case</span>
-<span class="k">case</span> <span class="nv">$var</span> <span class="k">in
-  </span>1<span class="p">)</span> <span class="nb">echo</span> <span class="s2">"Un"</span> <span class="p">;;</span>
-  2<span class="p">)</span> <span class="nb">echo</span> <span class="s2">"Deux"</span> <span class="p">;;</span>
-  <span class="k">*</span><span class="p">)</span> <span class="nb">echo</span> <span class="s2">"Autre"</span> <span class="p">;;</span>
-<span class="k">esac</span>
-</code></pre></div></div>
+# Case
+case $var in
+  1) echo "Un" ;;
+  2) echo "Deux" ;;
+  *) echo "Autre" ;;
+esac</code></pre>
 
-<p><strong>Boucles</strong>:</p>
+<p><strong>Boucles</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Boucle for avec séquence</span>
-<span class="k">for </span>i <span class="k">in</span> <span class="si">$(</span><span class="nb">seq </span>1 100<span class="si">)</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$i</span>
-<span class="k">done</span>
+<pre><code class="language-bash"># Boucle for avec sequence
+for i in $(seq 1 100)
+do
+  echo $i
+done
 
-<span class="c"># Boucle for sur fichiers</span>
-<span class="k">for </span>fichier <span class="k">in</span> <span class="k">*</span>.txt
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="s2">"Traitement de </span><span class="nv">$fichier</span><span class="s2">"</span>
-<span class="k">done</span>
+# Boucle for sur fichiers
+for fichier in *.txt
+do
+  echo "Traitement de $fichier"
+done
 
-<span class="c"># Boucle for sur résultat de commande</span>
-<span class="k">for </span>fichier <span class="k">in</span> <span class="si">$(</span><span class="nb">ls</span> <span class="k">*</span><span class="si">)</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$fichier</span>
-<span class="k">done</span>
+# Boucle for sur resultat de commande
+for fichier in $(ls *)
+do
+  echo $fichier
+done
 
-<span class="c"># Boucle while</span>
-<span class="nv">compteur</span><span class="o">=</span>1
-<span class="k">while</span> <span class="o">[</span> <span class="nv">$compteur</span> <span class="nt">-le</span> 10 <span class="o">]</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$compteur</span>
-  <span class="nv">compteur</span><span class="o">=</span><span class="k">$((</span>compteur <span class="o">+</span> <span class="m">1</span><span class="k">))</span>
-<span class="k">done</span>
+# Boucle while
+compteur=1
+while [ $compteur -le 10 ]
+do
+  echo $compteur
+  compteur=$((compteur + 1))
+done
 
-<span class="c"># Boucle while avec lecture de fichier</span>
-<span class="k">while </span><span class="nb">read </span>ligne
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="s2">"Ligne: </span><span class="nv">$ligne</span><span class="s2">"</span>
-<span class="k">done</span> &lt; fichier.txt
+# Boucle while avec lecture de fichier
+while read ligne
+do
+  echo "Ligne: $ligne"
+done &lt; fichier.txt
 
-<span class="c"># Until (inverse de while)</span>
-<span class="k">until</span> <span class="o">[</span> <span class="nv">$compteur</span> <span class="nt">-gt</span> 10 <span class="o">]</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$compteur</span>
-  <span class="nv">compteur</span><span class="o">=</span><span class="k">$((</span>compteur <span class="o">+</span> <span class="m">1</span><span class="k">))</span>
-<span class="k">done</span>
-</code></pre></div></div>
+# Until (inverse de while)
+until [ $compteur -gt 10 ]
+do
+  echo $compteur
+  compteur=$((compteur + 1))
+done</code></pre>
 
-<p><strong>Tableaux</strong>:</p>
+<p><strong>Tableaux</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Déclaration</span>
-tab[0]<span class="o">=</span><span class="s2">"premier"</span>
-tab[1]<span class="o">=</span><span class="s2">"deuxième"</span>
+<pre><code class="language-bash"># Declaration
+tab[0]="premier"
+tab[1]="deuxieme"
 
-<span class="c"># Ou</span>
-<span class="nb">declare</span> <span class="nt">-a</span> tab
-<span class="nv">tab</span><span class="o">=(</span><span class="s2">"un"</span> <span class="s2">"deux"</span> <span class="s2">"trois"</span><span class="o">)</span>
+# Ou
+declare -a tab
+tab=("un" "deux" "trois")
 
-<span class="c"># Remplissage en boucle</span>
-<span class="nv">n</span><span class="o">=</span>4
-<span class="k">for </span>i <span class="k">in</span> <span class="si">$(</span><span class="nb">seq </span>1 <span class="nv">$n</span><span class="si">)</span>
-<span class="k">do
-  </span>tab[<span class="nv">$i</span><span class="o">]=</span><span class="s2">"element</span><span class="nv">$i</span><span class="s2">"</span>
-<span class="k">done</span>
+# Remplissage en boucle
+n=4
+for i in $(seq 1 $n)
+do
+  tab[$i]="element$i"
+done
 
-<span class="c"># Accès</span>
-<span class="nb">echo</span> <span class="k">${</span><span class="nv">tab</span><span class="p">[0]</span><span class="k">}</span>         <span class="c"># Premier élément</span>
-<span class="nb">echo</span> <span class="k">${</span><span class="nv">tab</span><span class="p">[*]</span><span class="k">}</span>         <span class="c"># Tous les éléments</span>
-<span class="nb">echo</span> <span class="k">${#</span><span class="nv">tab</span><span class="p">[*]</span><span class="k">}</span>        <span class="c"># Nombre d'éléments</span>
-</code></pre></div></div>
+# Acces
+echo ${tab[0]}         # Premier element
+echo ${tab[*]}         # Tous les elements
+echo ${#tab[*]}        # Nombre d'elements</code></pre>
 
-<p><strong>Fonctions</strong>:</p>
+<p><strong>Fonctions</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Définition</span>
-ma_fonction<span class="o">()</span> <span class="o">{</span>
-  <span class="nb">echo</span> <span class="s2">"Bonjour </span><span class="nv">$1</span><span class="s2">"</span>    <span class="c"># $1 = premier argument</span>
-  <span class="k">return </span>0             <span class="c"># Code de retour</span>
-<span class="o">}</span>
+<pre><code class="language-bash"># Definition
+ma_fonction() {
+  echo "Bonjour $1"    # $1 = premier argument
+  return 0             # Code de retour
+}
 
-<span class="c"># Appel</span>
-ma_fonction <span class="s2">"Cedric"</span>
-</code></pre></div></div>
+# Appel
+ma_fonction "Cedric"</code></pre>
 
-<p><strong>Erreurs courantes à éviter</strong>:</p>
+<p><strong>Erreurs courantes a eviter</strong> :</p>
 
-<p>D’après l’examen:</p>
+<p>D'apres l'examen :</p>
 <ol>
-  <li>Oublier le <code class="language-plaintext highlighter-rouge">!</code> dans le shebang: <code class="language-plaintext highlighter-rouge">#!/bin/bash</code></li>
-  <li>Espaces autour du <code class="language-plaintext highlighter-rouge">=</code>: utiliser <code class="language-plaintext highlighter-rouge">i=3</code> pas <code class="language-plaintext highlighter-rouge">i = 3</code></li>
-  <li>Mauvaise syntaxe de boucle: <code class="language-plaintext highlighter-rouge">for i in $(seq 1 100)</code> pas <code class="language-plaintext highlighter-rouge">for i in 1..100</code></li>
-  <li>Mauvais test: <code class="language-plaintext highlighter-rouge">if [ $i -eq 3 ]</code> pas <code class="language-plaintext highlighter-rouge">if test $i == 3 then</code></li>
-  <li>Fermer avec <code class="language-plaintext highlighter-rouge">fi</code> pas <code class="language-plaintext highlighter-rouge">end</code></li>
-  <li>Utiliser <code class="language-plaintext highlighter-rouge">$i</code> pour lire la variable, pas <code class="language-plaintext highlighter-rouge">$REPLY</code></li>
-  <li>Accès tableau: <code class="language-plaintext highlighter-rouge">${tab[*]}</code> pas <code class="language-plaintext highlighter-rouge">${tab}</code></li>
-  <li>Substitution de commande: <code class="language-plaintext highlighter-rouge">$(commande)</code> ou <code class="language-plaintext highlighter-rouge">`commande`</code></li>
+  <li>Oublier le <code>!</code> dans le shebang : <code>#!/bin/bash</code></li>
+  <li>Espaces autour du <code>=</code> : utiliser <code>i=3</code> pas <code>i = 3</code></li>
+  <li>Mauvaise syntaxe de boucle : <code>for i in $(seq 1 100)</code> pas <code>for i in 1..100</code></li>
+  <li>Mauvais test : <code>if [ $i -eq 3 ]</code> pas <code>if test $i == 3 then</code></li>
+  <li>Fermer avec <code>fi</code> pas <code>end</code></li>
+  <li>Utiliser <code>$i</code> pour lire la variable, pas <code>$REPLY</code></li>
+  <li>Acces tableau : <code>${tab[*]}</code> pas <code>${tab}</code></li>
+  <li>Substitution de commande : <code>$(commande)</code> ou <code>`commande`</code></li>
 </ol>
 
-<h4 id="6-traitement-de-texte">6. Traitement de texte</h4>
+<h4>6. Traitement de texte</h4>
 
-<p><strong>grep (recherche de motifs)</strong>:</p>
+<p><strong>grep (recherche de motifs)</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="s2">"motif"</span> fichier              <span class="c"># Rechercher motif</span>
-<span class="nb">grep</span> <span class="nt">-i</span> <span class="s2">"motif"</span> fichier           <span class="c"># Insensible à la casse</span>
-<span class="nb">grep</span> <span class="nt">-v</span> <span class="s2">"motif"</span> fichier           <span class="c"># Inverser (lignes sans motif)</span>
-<span class="nb">grep</span> <span class="nt">-r</span> <span class="s2">"motif"</span> repertoire/       <span class="c"># Récursif dans répertoire</span>
-<span class="nb">grep</span> <span class="nt">-n</span> <span class="s2">"motif"</span> fichier           <span class="c"># Afficher numéros de lignes</span>
-<span class="nb">grep</span> <span class="nt">-c</span> <span class="s2">"motif"</span> fichier           <span class="c"># Compter occurrences</span>
-<span class="nb">grep</span> <span class="nt">-E</span> <span class="s2">"regex"</span> fichier           <span class="c"># Expressions régulières étendues</span>
-</code></pre></div></div>
+<pre><code class="language-bash">grep "motif" fichier              # Rechercher motif
+grep -i "motif" fichier           # Insensible a la casse
+grep -v "motif" fichier           # Inverser (lignes sans motif)
+grep -r "motif" repertoire/       # Recursif dans repertoire
+grep -n "motif" fichier           # Afficher numeros de lignes
+grep -c "motif" fichier           # Compter occurrences
+grep -E "regex" fichier           # Expressions regulieres etendues</code></pre>
 
-<p><strong>sed (éditeur de flux)</strong>:</p>
+<p><strong>sed (editeur de flux)</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Substitution</span>
-<span class="nb">sed</span> <span class="s1">'s/ancien/nouveau/'</span> fichier         <span class="c"># Première occurrence par ligne</span>
-<span class="nb">sed</span> <span class="s1">'s/ancien/nouveau/g'</span> fichier        <span class="c"># Toutes occurrences</span>
-<span class="nb">sed</span> <span class="nt">-i</span> <span class="s1">'s/ancien/nouveau/g'</span> fichier     <span class="c"># Modifier fichier en place</span>
+<pre><code class="language-bash"># Substitution
+sed 's/ancien/nouveau/' fichier         # Premiere occurrence par ligne
+sed 's/ancien/nouveau/g' fichier        # Toutes occurrences
+sed -i 's/ancien/nouveau/g' fichier     # Modifier fichier en place
 
-<span class="c"># Suppression</span>
-<span class="nb">sed</span> <span class="s1">'/motif/d'</span> fichier                  <span class="c"># Supprimer lignes contenant motif</span>
-<span class="nb">sed</span> <span class="s1">'1d'</span> fichier                        <span class="c"># Supprimer première ligne</span>
-<span class="nb">sed</span> <span class="s1">'1,5d'</span> fichier                      <span class="c"># Supprimer lignes 1 à 5</span>
-</code></pre></div></div>
+# Suppression
+sed '/motif/d' fichier                  # Supprimer lignes contenant motif
+sed '1d' fichier                        # Supprimer premiere ligne
+sed '1,5d' fichier                      # Supprimer lignes 1 a 5</code></pre>
 
-<p><strong>awk (langage de traitement)</strong>:</p>
+<p><strong>awk (langage de traitement)</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Afficher colonnes</span>
-<span class="nb">awk</span> <span class="s1">'{print $1}'</span> fichier               <span class="c"># Première colonne</span>
-<span class="nb">awk</span> <span class="s1">'{print $1, $3}'</span> fichier           <span class="c"># Colonnes 1 et 3</span>
-<span class="nb">awk</span> <span class="s1">'{print $NF}'</span> fichier              <span class="c"># Dernière colonne</span>
+<pre><code class="language-bash"># Afficher colonnes
+awk '{print $1}' fichier               # Premiere colonne
+awk '{print $1, $3}' fichier           # Colonnes 1 et 3
+awk '{print $NF}' fichier              # Derniere colonne
 
-<span class="c"># Avec conditions</span>
-<span class="nb">awk</span> <span class="s1">'$3 &gt; 100 {print $1}'</span> fichier      <span class="c"># Si colonne 3 &gt; 100</span>
+# Avec conditions
+awk '$3 &gt; 100 {print $1}' fichier      # Si colonne 3 &gt; 100
 
-<span class="c"># Exemple de l'examen</span>
-ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{print $3}'</span>              <span class="c"># Extraire PPID</span>
-<span class="nb">echo</span> <span class="s2">"</span><span class="nv">$ligne</span><span class="s2">"</span> | <span class="nb">awk</span> <span class="s1">'{print $1}'</span>       <span class="c"># Extraire premier champ</span>
-</code></pre></div></div>
+# Exemple de l'examen
+ps -ef | awk '{print $3}'              # Extraire PPID
+echo "$ligne" | awk '{print $1}'       # Extraire premier champ</code></pre>
 
-<p><strong>Autres outils</strong>:</p>
+<p><strong>Autres outils</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sort </span>fichier                 <span class="c"># Trier lignes</span>
-<span class="nb">sort</span> <span class="nt">-n</span> fichier              <span class="c"># Tri numérique</span>
-<span class="nb">sort</span> <span class="nt">-r</span> fichier              <span class="c"># Tri inverse</span>
-<span class="nb">uniq </span>fichier                 <span class="c"># Supprimer doublons consécutifs</span>
-<span class="nb">uniq</span> <span class="nt">-c</span> fichier              <span class="c"># Compter occurrences</span>
-<span class="nb">wc </span>fichier                   <span class="c"># Compter lignes, mots, caractères</span>
-<span class="nb">wc</span> <span class="nt">-l</span> fichier                <span class="c"># Compter lignes seulement</span>
-<span class="nb">cut</span> <span class="nt">-d</span><span class="s1">':'</span> <span class="nt">-f1</span> fichier        <span class="c"># Extraire premier champ (délimiteur :)</span>
-</code></pre></div></div>
+<pre><code class="language-bash">sort fichier                 # Trier lignes
+sort -n fichier              # Tri numerique
+sort -r fichier              # Tri inverse
+uniq fichier                 # Supprimer doublons consecutifs
+uniq -c fichier              # Compter occurrences
+wc fichier                   # Compter lignes, mots, caracteres
+wc -l fichier                # Compter lignes seulement
+cut -d':' -f1 fichier        # Extraire premier champ (delimiteur :)</code></pre>
 
-<h4 id="7-redirections-et-pipes">7. Redirections et pipes</h4>
+<h4>7. Redirections et pipes</h4>
 
-<p><strong>Flux standard</strong>:</p>
-
+<p><strong>Flux standard</strong> :</p>
 <ul>
-  <li><strong>stdin</strong> (0): entrée standard (clavier)</li>
-  <li><strong>stdout</strong> (1): sortie standard (écran)</li>
-  <li><strong>stderr</strong> (2): sortie d’erreur (écran)</li>
+  <li><strong>stdin</strong> (0) : entree standard (clavier)</li>
+  <li><strong>stdout</strong> (1) : sortie standard (ecran)</li>
+  <li><strong>stderr</strong> (2) : sortie d'erreur (ecran)</li>
 </ul>
 
-<p><strong>Redirections</strong>:</p>
+<p><strong>Redirections</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Redirection de sortie</span>
-commande <span class="o">&gt;</span> fichier           <span class="c"># Écraser fichier</span>
-commande <span class="o">&gt;&gt;</span> fichier          <span class="c"># Ajouter à fichier</span>
-commande 2&gt; erreurs.txt      <span class="c"># Rediriger erreurs</span>
-commande 2&gt;&amp;1                <span class="c"># Erreurs vers sortie standard</span>
-commande &amp;&gt; fichier          <span class="c"># Sortie et erreurs vers fichier</span>
+<pre><code class="language-bash"># Redirection de sortie
+commande &gt; fichier           # Ecraser fichier
+commande &gt;&gt; fichier          # Ajouter a fichier
+commande 2&gt; erreurs.txt      # Rediriger erreurs
+commande 2&gt;&amp;1                # Erreurs vers sortie standard
+commande &amp;&gt; fichier          # Sortie et erreurs vers fichier
 
-<span class="c"># Redirection d'entrée</span>
-commande &lt; fichier           <span class="c"># Lire depuis fichier</span>
-<span class="k">while </span><span class="nb">read </span>ligne
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$ligne</span>
-<span class="k">done</span> &lt; fichier.txt
+# Redirection d'entree
+commande &lt; fichier           # Lire depuis fichier
+while read ligne
+do
+  echo $ligne
+done &lt; fichier.txt
 
-<span class="c"># Pipe (sortie d'une commande = entrée de la suivante)</span>
+# Pipe (sortie d'une commande = entree de la suivante)
 commande1 | commande2
-ps aux | <span class="nb">grep </span>firefox
-<span class="nb">cat </span>fichier | <span class="nb">sort</span> | <span class="nb">uniq</span>
-</code></pre></div></div>
+ps aux | grep firefox
+cat fichier | sort | uniq</code></pre>
 
-<p><strong>Exemple complexe de l’examen</strong>:</p>
+<p><strong>Exemple complexe de l'examen</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{print $3}'</span> | <span class="nb">sort</span> | <span class="nb">uniq</span> <span class="nt">-c</span> | <span class="nb">awk</span> <span class="s1">'{print $2,$1}'</span> | <span class="nb">grep</span> <span class="nt">-v</span> PPID <span class="o">&gt;</span> /tmp/f
-</code></pre></div></div>
+<pre><code class="language-bash">ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID &gt; /tmp/f</code></pre>
 
-<p>Chaîne de traitement avec 5 pipes combinant plusieurs outils.</p>
+<p>Chaine de traitement avec 5 pipes combinant plusieurs outils.</p>
 
-<h4 id="8-administration-système-de-base">8. Administration système de base</h4>
+<h4>8. Administration systeme de base</h4>
 
-<p><strong>Informations système</strong>:</p>
+<p><strong>Informations systeme</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">uname</span> <span class="nt">-a</span>                <span class="c"># Info complète système</span>
-<span class="nb">hostname</span>                <span class="c"># Nom de la machine</span>
-<span class="nb">whoami</span>                  <span class="c"># Utilisateur courant</span>
-<span class="nb">who</span>                     <span class="c"># Utilisateurs connectés</span>
-w                       <span class="c"># Utilisateurs et activité</span>
-<span class="nb">uptime</span>                  <span class="c"># Temps de fonctionnement et charge</span>
-<span class="nb">date</span>                    <span class="c"># Date et heure</span>
-</code></pre></div></div>
+<pre><code class="language-bash">uname -a                # Info complete systeme
+hostname                # Nom de la machine
+whoami                  # Utilisateur courant
+who                     # Utilisateurs connectes
+w                       # Utilisateurs et activite
+uptime                  # Temps de fonctionnement et charge
+date                    # Date et heure</code></pre>
 
-<p><strong>Gestion des disques</strong>:</p>
+<p><strong>Gestion des disques</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">df</span> <span class="nt">-h</span>                   <span class="c"># Espace disque (human-readable)</span>
-<span class="nb">du</span> <span class="nt">-sh</span> dossier          <span class="c"># Taille d'un répertoire</span>
-<span class="nb">du</span> <span class="nt">-sh</span> <span class="k">*</span>                <span class="c"># Taille de tous éléments</span>
-</code></pre></div></div>
+<pre><code class="language-bash">df -h                   # Espace disque (human-readable)
+du -sh dossier          # Taille d'un repertoire
+du -sh *                # Taille de tous elements</code></pre>
 
-<p><strong>Gestion des utilisateurs</strong>:</p>
+<p><strong>Gestion des utilisateurs</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>passwd                  <span class="c"># Changer son mot de passe</span>
-<span class="nb">sudo </span>commande           <span class="c"># Exécuter avec droits root</span>
-su                      <span class="c"># Devenir root</span>
-su - utilisateur        <span class="c"># Changer d'utilisateur</span>
-</code></pre></div></div>
+<pre><code class="language-bash">passwd                  # Changer son mot de passe
+sudo commande           # Executer avec droits root
+su                      # Devenir root
+su - utilisateur        # Changer d'utilisateur</code></pre>
 
-<p><strong>Recherche de fichiers</strong>:</p>
+<p><strong>Recherche de fichiers</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find /chemin <span class="nt">-name</span> <span class="s2">"*.txt"</span>           <span class="c"># Par nom</span>
-find /chemin <span class="nt">-type</span> f                 <span class="c"># Fichiers réguliers</span>
-find /chemin <span class="nt">-type</span> d                 <span class="c"># Répertoires</span>
-find /chemin <span class="nt">-mtime</span> <span class="nt">-7</span>               <span class="c"># Modifiés depuis 7 jours</span>
-find /chemin <span class="nt">-size</span> +100M             <span class="c"># Taille &gt; 100 Mo</span>
-locate fichier                       <span class="c"># Recherche rapide (base de données)</span>
-which commande                       <span class="c"># Localiser exécutable</span>
-</code></pre></div></div>
+<pre><code class="language-bash">find /chemin -name "*.txt"           # Par nom
+find /chemin -type f                 # Fichiers reguliers
+find /chemin -type d                 # Repertoires
+find /chemin -mtime -7               # Modifies depuis 7 jours
+find /chemin -size +100M             # Taille &gt; 100 Mo
+locate fichier                       # Recherche rapide (base de donnees)
+which commande                       # Localiser executable</code></pre>
 
-<p><strong>Archivage et compression</strong>:</p>
+<p><strong>Archivage et compression</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># tar (tape archive)</span>
-<span class="nb">tar</span> <span class="nt">-cvf</span> archive.tar fichiers/      <span class="c"># Créer archive</span>
-<span class="nb">tar</span> <span class="nt">-xvf</span> archive.tar                <span class="c"># Extraire archive</span>
-<span class="nb">tar</span> <span class="nt">-tvf</span> archive.tar                <span class="c"># Lister contenu</span>
+<pre><code class="language-bash"># tar (tape archive)
+tar -cvf archive.tar fichiers/      # Creer archive
+tar -xvf archive.tar                # Extraire archive
+tar -tvf archive.tar                # Lister contenu
 
-<span class="c"># Avec compression</span>
-<span class="nb">tar</span> <span class="nt">-czvf</span> archive.tar.gz fichiers/  <span class="c"># Créer + gzip</span>
-<span class="nb">tar</span> <span class="nt">-xzvf</span> archive.tar.gz            <span class="c"># Extraire gzip</span>
-<span class="nb">tar</span> <span class="nt">-cjvf</span> archive.tar.bz2 fichiers/ <span class="c"># Créer + bzip2</span>
+# Avec compression
+tar -czvf archive.tar.gz fichiers/  # Creer + gzip
+tar -xzvf archive.tar.gz            # Extraire gzip
+tar -cjvf archive.tar.bz2 fichiers/ # Creer + bzip2
 
-<span class="c"># zip/unzip</span>
-zip <span class="nt">-r</span> archive.zip dossier/
-unzip archive.zip
-</code></pre></div></div>
+# zip/unzip
+zip -r archive.zip dossier/
+unzip archive.zip</code></pre>
 
-<p><strong>Liens</strong>:</p>
+<p><strong>Liens</strong> :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Lien symbolique (raccourci)</span>
-<span class="nb">ln</span> <span class="nt">-s</span> /chemin/cible lien            <span class="c"># Créer lien symbolique</span>
+<pre><code class="language-bash"># Lien symbolique (raccourci)
+ln -s /chemin/cible lien            # Creer lien symbolique
 
-<span class="c"># Lien dur (même inode)</span>
-<span class="nb">ln </span>fichier_original lien_dur        <span class="c"># Créer lien dur</span>
-</code></pre></div></div>
+# Lien dur (meme inode)
+ln fichier_original lien_dur        # Creer lien dur</code></pre>
 
 <div style="text-align: center; margin: 30px 0;">
-  <img src="/assets/images/courses/S5/unix/reseau-config1.png" alt="Configuration réseau Unix" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
-  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Exemple de configuration réseau sous Unix/Linux - TP pratique</p>
+  <img src="/assets/images/courses/S5/unix/reseau-config1.png" alt="Configuration reseau Unix" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Exemple de configuration reseau sous Unix/Linux - TP pratique</p>
 </div>
 
 <hr />
 
-<h2 id="part-c-aspects-techniques">PART C: ASPECTS TECHNIQUES</h2>
+<h2>PART C : ASPECTS TECHNIQUES</h2>
 
-<h3 id="exercices-pratiques-des-examens">Exercices pratiques des examens</h3>
+<h3 class="section-title">Exercices pratiques des examens</h3>
 
-<p><strong>Exercice 1: Création d’arborescence avec permissions</strong></p>
+<p><strong>Exercice 1 : Creation d'arborescence avec permissions</strong></p>
 
-<p>Objectif: reproduire exactement une structure de fichiers avec les bonnes permissions.</p>
+<p>Objectif : reproduire exactement une structure de fichiers avec les bonnes permissions.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Création de l'arborescence</span>
-<span class="nb">mkdir</span> <span class="nt">-p</span> /tmp/test/test1 /tmp/test/test2 /tmp/test/test3
+<pre><code class="language-bash"># Creation de l'arborescence
+mkdir -p /tmp/test/test1 /tmp/test/test2 /tmp/test/test3
 
-<span class="c"># Création des fichiers</span>
-<span class="nb">touch</span> /tmp/test/test1/f1
-<span class="nb">touch</span> /tmp/test/test2/f2
-<span class="nb">touch</span> /tmp/test/test3/f3
+# Creation des fichiers
+touch /tmp/test/test1/f1
+touch /tmp/test/test2/f2
+touch /tmp/test/test3/f3
 
-<span class="c"># Attribution des permissions aux répertoires</span>
-<span class="nb">chmod </span>750 /tmp/test/test1    <span class="c"># rwxr-x---</span>
-<span class="nb">chmod </span>754 /tmp/test/test2    <span class="c"># rwxr-xr--</span>
-<span class="nb">chmod </span>1777 /tmp/test/test3   <span class="c"># rwxrwxrwt (avec sticky bit)</span>
+# Attribution des permissions aux repertoires
+chmod 750 /tmp/test/test1    # rwxr-x---
+chmod 754 /tmp/test/test2    # rwxr-xr--
+chmod 1777 /tmp/test/test3   # rwxrwxrwt (avec sticky bit)
 
-<span class="c"># Attribution des permissions aux fichiers</span>
-<span class="nb">chmod </span>640 /tmp/test/test1/f1 <span class="c"># rw-r-----</span>
-<span class="nb">chmod </span>444 /tmp/test/test2/f2 <span class="c"># r--r--r--</span>
-<span class="nb">chmod </span>700 /tmp/test/test3/f3 <span class="c"># rwx------</span>
-</code></pre></div></div>
+# Attribution des permissions aux fichiers
+chmod 640 /tmp/test/test1/f1 # rw-r-----
+chmod 444 /tmp/test/test2/f2 # r--r--r--
+chmod 700 /tmp/test/test3/f3 # rwx------</code></pre>
 
-<p><strong>Explications permissions spéciales</strong>:</p>
+<p><strong>Explications permissions speciales</strong> :</p>
 
-<p><code class="language-plaintext highlighter-rouge">chmod 1777</code>: le <code class="language-plaintext highlighter-rouge">1</code> devant correspond au sticky bit.</p>
+<p><code>chmod 1777</code> : le <code>1</code> devant correspond au sticky bit.</p>
 <ul>
-  <li>Permet à chacun de créer des fichiers dans le répertoire</li>
-  <li>Mais seul le propriétaire peut supprimer ses propres fichiers</li>
+  <li>Permet a chacun de creer des fichiers dans le repertoire</li>
+  <li>Mais seul le proprietaire peut supprimer ses propres fichiers</li>
   <li>Typique pour /tmp</li>
 </ul>
 
-<p><strong>Exercice 2: Correction de script shell</strong></p>
+<p><strong>Exercice 2 : Correction de script shell</strong></p>
 
-<p>Script avec erreurs:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#/bin/bash                          # ERREUR: manque !</span>
+<p>Script avec erreurs :</p>
+<pre><code class="language-bash">#/bin/bash                          # ERREUR: manque !
 
-<span class="k">for </span>i <span class="k">in </span>1..100                     <span class="c"># ERREUR: syntaxe incorrecte</span>
-<span class="k">do
- </span><span class="nb">echo</span> <span class="nv">$i</span>
-<span class="k">done
+for i in 1..100                     # ERREUR: syntaxe incorrecte
+do
+ echo $i
+done
 
-for </span>i <span class="k">in </span><span class="nb">ls</span> <span class="k">*</span>                       <span class="c"># ERREUR: manque $()</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$i</span>
-<span class="k">done
+for i in ls *                       # ERREUR: manque $()
+do
+  echo $i
+done
 
-</span>i <span class="o">=</span> 3                               <span class="c"># ERREUR: espaces autour de =</span>
+i = 3                               # ERREUR: espaces autour de =
 
-<span class="k">if </span><span class="nb">test</span> <span class="nv">$i</span> <span class="o">==</span> 3 <span class="k">then</span>                <span class="c"># ERREUR: -eq au lieu de ==, then mal placé</span>
-  <span class="nb">echo yes
-</span><span class="k">else
-  </span><span class="nb">echo </span>no
-end                                 <span class="c"># ERREUR: doit être fi</span>
+if test $i == 3 then                # ERREUR: -eq au lieu de ==, then mal place
+  echo yes
+else
+  echo no
+end                                 # ERREUR: doit etre fi
 
-<span class="nb">echo</span> <span class="s2">"un entier stp"</span>
-<span class="nb">read </span>i
-<span class="nb">echo </span>entier saisi : <span class="nv">$REPLY</span>          <span class="c"># ERREUR: doit être $i</span>
+echo "un entier stp"
+read i
+echo entier saisi : $REPLY          # ERREUR: doit etre $i
 
-<span class="nv">n</span><span class="o">=</span>4
-<span class="k">for </span>i <span class="k">in</span> <span class="sb">`</span><span class="nb">seq </span>1 <span class="nv">$n</span><span class="sb">`</span> 
-<span class="k">do
-  </span>tab[i]<span class="o">=</span><span class="s2">"toto"</span> 
-<span class="k">done
-</span><span class="nb">echo</span> <span class="k">${</span><span class="nv">tab</span><span class="k">}</span>                         <span class="c"># ERREUR: doit être ${tab[*]}</span>
-</code></pre></div></div>
+n=4
+for i in `seq 1 $n`
+do
+  tab[i]="toto"
+done
+echo ${tab}                         # ERREUR: doit etre ${tab[*]}</code></pre>
 
-<p>Version corrigée:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<p>Version corrigee :</p>
+<pre><code class="language-bash">#!/bin/bash
 
-<span class="k">for </span>i <span class="k">in</span> <span class="si">$(</span><span class="nb">seq </span>1 100<span class="si">)</span>
-<span class="k">do
- </span><span class="nb">echo</span> <span class="nv">$i</span>
-<span class="k">done
+for i in $(seq 1 100)
+do
+ echo $i
+done
 
-for </span>i <span class="k">in</span> <span class="si">$(</span><span class="nb">ls</span> <span class="k">*</span><span class="si">)</span>
-<span class="c"># ou plus simple: for i in *</span>
-<span class="k">do
-  </span><span class="nb">echo</span> <span class="nv">$i</span>
-<span class="k">done
+for i in $(ls *)
+# ou plus simple: for i in *
+do
+  echo $i
+done
 
-</span><span class="nv">i</span><span class="o">=</span>3
+i=3
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$i</span> <span class="nt">-eq</span> 3 <span class="o">]</span>
-<span class="k">then
-  </span><span class="nb">echo yes
-</span><span class="k">else
-  </span><span class="nb">echo </span>no
-<span class="k">fi
+if [ $i -eq 3 ]
+then
+  echo yes
+else
+  echo no
+fi
 
-</span><span class="nb">echo</span> <span class="s2">"un entier stp"</span>
-<span class="nb">read </span>i
-<span class="nb">echo </span>entier saisi : <span class="nv">$i</span>
+echo "un entier stp"
+read i
+echo entier saisi : $i
 
-<span class="nv">n</span><span class="o">=</span>4
-<span class="k">for </span>i <span class="k">in</span> <span class="si">$(</span><span class="nb">seq </span>1 <span class="nv">$n</span><span class="si">)</span>
-<span class="k">do
-  </span>tab[<span class="nv">$i</span><span class="o">]=</span><span class="s2">"toto"</span>
-<span class="k">done
-</span><span class="nb">echo</span> <span class="k">${</span><span class="nv">tab</span><span class="p">[*]</span><span class="k">}</span>
-</code></pre></div></div>
+n=4
+for i in $(seq 1 $n)
+do
+  tab[$i]="toto"
+done
+echo ${tab[*]}</code></pre>
 
-<p><strong>Exercice 3: Analyse de pipeline complexe</strong></p>
+<p><strong>Exercice 3 : Analyse de pipeline complexe</strong></p>
 
-<p>Script d’analyse des processus parents:</p>
+<p>Script d'analyse des processus parents :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<pre><code class="language-bash">#!/bin/bash
 
-<span class="c"># Pipeline complexe</span>
-ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{print $3}'</span> | <span class="nb">sort</span> | <span class="nb">uniq</span> <span class="nt">-c</span> | <span class="nb">awk</span> <span class="s1">'{print $2,$1}'</span> | <span class="nb">grep</span> <span class="nt">-v</span> PPID <span class="o">&gt;</span> /tmp/f
+# Pipeline complexe
+ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID &gt; /tmp/f
 
-<span class="c"># Boucle de traitement</span>
-<span class="k">while </span><span class="nb">read </span>v
-<span class="k">do
-  </span><span class="nv">a</span><span class="o">=</span><span class="si">$(</span><span class="nb">echo</span> <span class="nv">$v</span> | <span class="nb">awk</span> <span class="s1">'{print $1}'</span><span class="si">)</span>   <span class="c"># PID</span>
-  <span class="nv">b</span><span class="o">=</span><span class="si">$(</span><span class="nb">echo</span> <span class="nv">$v</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span><span class="si">)</span>   <span class="c"># Nombre d'enfants</span>
-  <span class="nb">echo </span>le processus <span class="nv">$a</span> a <span class="nv">$b</span> enfants 
-<span class="k">done</span> &lt; /tmp/f
-</code></pre></div></div>
+# Boucle de traitement
+while read v
+do
+  a=$(echo $v | awk '{print $1}')   # PID
+  b=$(echo $v | awk '{print $2}')   # Nombre d'enfants
+  echo le processus $a a $b enfants
+done &lt; /tmp/f</code></pre>
 
-<p><strong>Explication détaillée du pipeline</strong>:</p>
-
+<p><strong>Explication detaillee du pipeline</strong> :</p>
 <ol>
-  <li><code class="language-plaintext highlighter-rouge">ps -ef</code>: affiche tous les processus avec PID, PPID, etc.</li>
-  <li><code class="language-plaintext highlighter-rouge">awk '{print $3}'</code>: extrait la 3e colonne (PPID)</li>
-  <li><code class="language-plaintext highlighter-rouge">sort</code>: trie les PPID numériquement</li>
-  <li><code class="language-plaintext highlighter-rouge">uniq -c</code>: compte les occurrences de chaque PPID unique</li>
-  <li><code class="language-plaintext highlighter-rouge">awk '{print $2,$1}'</code>: inverse l’ordre (PPID puis compteur)</li>
-  <li><code class="language-plaintext highlighter-rouge">grep -v PPID</code>: exclut la ligne d’en-tête</li>
-  <li><code class="language-plaintext highlighter-rouge">&gt; /tmp/f</code>: sauvegarde dans fichier temporaire</li>
+  <li><code>ps -ef</code> : affiche tous les processus avec PID, PPID, etc.</li>
+  <li><code>awk '{print $3}'</code> : extrait la 3e colonne (PPID)</li>
+  <li><code>sort</code> : trie les PPID numeriquement</li>
+  <li><code>uniq -c</code> : compte les occurrences de chaque PPID unique</li>
+  <li><code>awk '{print $2,$1}'</code> : inverse l'ordre (PPID puis compteur)</li>
+  <li><code>grep -v PPID</code> : exclut la ligne d'en-tete</li>
+  <li><code>&gt; /tmp/f</code> : sauvegarde dans fichier temporaire</li>
 </ol>
 
-<p>Résultat dans /tmp/f: chaque ligne contient un PID et le nombre de fois qu’il apparaît comme parent (nombre d’enfants).</p>
+<p>Resultat dans /tmp/f : chaque ligne contient un PID et le nombre de fois qu'il apparait comme parent (nombre d'enfants).</p>
 
-<p><strong>La boucle while</strong>:</p>
+<p><strong>La boucle while</strong> :</p>
 
-<p>Lit chaque ligne du fichier /tmp/f et extrait:</p>
+<p>Lit chaque ligne du fichier /tmp/f et extrait :</p>
 <ul>
-  <li>Variable <code class="language-plaintext highlighter-rouge">a</code>: le PID du processus</li>
-  <li>Variable <code class="language-plaintext highlighter-rouge">b</code>: le nombre d’enfants de ce processus</li>
+  <li>Variable <code>a</code> : le PID du processus</li>
+  <li>Variable <code>b</code> : le nombre d'enfants de ce processus</li>
 </ul>
 
-<p>Affiche: “le processus XXX a YYY enfants”</p>
+<p>Affiche : "le processus XXX a YYY enfants"</p>
 
-<p><strong>Exercice 4: Permissions et sécurité</strong></p>
+<p><strong>Exercice 4 : Permissions et securite</strong></p>
 
-<p>Analyse des permissions d’un jeu:</p>
+<p>Analyse des permissions d'un jeu :</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>drwxr-xr-x 2 etudiant etudiants 4096 jeu/
-<span class="nt">-r-sr-xr-x</span> 1 etudiant etudiants 133792 le_binaire_du_jeu
-<span class="nt">-rw-------</span> 1 etudiant etudiants 39 le_fichier_des_scores
-</code></pre></div></div>
+<pre><code class="language-bash">drwxr-xr-x 2 etudiant etudiants 4096 jeu/
+-r-sr-xr-x 1 etudiant etudiants 133792 le_binaire_du_jeu
+-rw------- 1 etudiant etudiants 39 le_fichier_des_scores</code></pre>
 
-<p><strong>Analyse</strong>:</p>
+<p><strong>Analyse</strong> :</p>
 
-<p><strong>Le binaire (r-sr-xr-x)</strong>:</p>
+<p><strong>Le binaire (r-sr-xr-x)</strong> :</p>
 <ul>
-  <li>Bit SUID activé (s à la place de x pour user)</li>
-  <li>Tous peuvent l’exécuter (r-x pour group et others)</li>
-  <li>Le jeu s’exécute avec les droits de <code class="language-plaintext highlighter-rouge">etudiant</code></li>
-  <li>Permet d’accéder au fichier des scores</li>
+  <li>Bit SUID active (s a la place de x pour user)</li>
+  <li>Tous peuvent l'executer (r-x pour group et others)</li>
+  <li>Le jeu s'execute avec les droits de <code>etudiant</code></li>
+  <li>Permet d'acceder au fichier des scores</li>
 </ul>
 
-<p><strong>Le fichier des scores (rw——-)</strong>:</p>
+<p><strong>Le fichier des scores (rw-------)</strong> :</p>
 <ul>
-  <li>Accessible en lecture/écriture uniquement par <code class="language-plaintext highlighter-rouge">etudiant</code></li>
-  <li>Autres utilisateurs ne peuvent ni lire ni écrire</li>
+  <li>Accessible en lecture/ecriture uniquement par <code>etudiant</code></li>
+  <li>Autres utilisateurs ne peuvent ni lire ni ecrire</li>
   <li>Protection des scores contre la triche</li>
 </ul>
 
-<p><strong>Logique</strong>:</p>
+<p><strong>Logique</strong> :</p>
 <ul>
-  <li>Les joueurs exécutent le binaire avec SUID</li>
-  <li>Le programme s’exécute comme <code class="language-plaintext highlighter-rouge">etudiant</code></li>
+  <li>Les joueurs executent le binaire avec SUID</li>
+  <li>Le programme s'execute comme <code>etudiant</code></li>
   <li>Il peut donc modifier le fichier des scores</li>
   <li>Mais les joueurs ne peuvent pas modifier directement les scores</li>
-  <li>Empêche la triche tout en permettant le jeu</li>
+  <li>Empeche la triche tout en permettant le jeu</li>
 </ul>
 
-<h3 id="commandes-essentielles-à-maîtriser">Commandes essentielles à maîtriser</h3>
+<h3 class="section-title">Commandes essentielles a maitriser</h3>
 
-<p><strong>Navigation et fichiers</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">pwd</span>, <span class="nb">cd</span>, <span class="nb">ls</span>, <span class="nb">mkdir</span>, <span class="nb">rmdir</span>, <span class="nb">touch</span>, <span class="nb">cp</span>, <span class="nb">mv</span>, <span class="nb">rm</span>, <span class="nb">cat</span>, more, less, <span class="nb">head</span>, <span class="nb">tail</span>
-</code></pre></div></div>
+<p><strong>Navigation et fichiers</strong> :</p>
+<pre><code class="language-bash">pwd, cd, ls, mkdir, rmdir, touch, cp, mv, rm, cat, more, less, head, tail</code></pre>
 
-<p><strong>Permissions</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span>, <span class="nb">chown</span>, <span class="nb">chgrp</span>, <span class="nb">umask</span>
-</code></pre></div></div>
+<p><strong>Permissions</strong> :</p>
+<pre><code class="language-bash">chmod, chown, chgrp, umask</code></pre>
 
-<p><strong>Processus</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps, top, <span class="nb">kill</span>, killall, <span class="nb">bg</span>, <span class="nb">fg</span>, <span class="nb">jobs</span>
-</code></pre></div></div>
+<p><strong>Processus</strong> :</p>
+<pre><code class="language-bash">ps, top, kill, killall, bg, fg, jobs</code></pre>
 
-<p><strong>Recherche</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find, locate, which, whereis, <span class="nb">grep</span>
-</code></pre></div></div>
+<p><strong>Recherche</strong> :</p>
+<pre><code class="language-bash">find, locate, which, whereis, grep</code></pre>
 
-<p><strong>Traitement texte</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span>, <span class="nb">sed</span>, <span class="nb">awk</span>, <span class="nb">sort</span>, <span class="nb">uniq</span>, <span class="nb">wc</span>, <span class="nb">cut</span>, <span class="nb">tr</span>
-</code></pre></div></div>
+<p><strong>Traitement texte</strong> :</p>
+<pre><code class="language-bash">grep, sed, awk, sort, uniq, wc, cut, tr</code></pre>
 
-<p><strong>Système</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">uname</span>, <span class="nb">hostname</span>, <span class="nb">whoami</span>, <span class="nb">who</span>, w, <span class="nb">df</span>, <span class="nb">du</span>, free, <span class="nb">date</span>
-</code></pre></div></div>
+<p><strong>Systeme</strong> :</p>
+<pre><code class="language-bash">uname, hostname, whoami, who, w, df, du, free, date</code></pre>
 
-<p><strong>Archivage</strong>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar</span>, <span class="nb">gzip</span>, <span class="nb">gunzip</span>, zip, unzip
-</code></pre></div></div>
+<p><strong>Archivage</strong> :</p>
+<pre><code class="language-bash">tar, gzip, gunzip, zip, unzip</code></pre>
 
 <hr />
 
-<h2 id="part-d-analyse-et-réflexion">PART D: ANALYSE ET RÉFLEXION</h2>
+<h2>PART D : ANALYSE ET REFLEXION</h2>
 
-<h3 id="compétences-acquises">Compétences acquises</h3>
+<h3 class="section-title">Competences acquises</h3>
 
-<p><strong>Ligne de commande</strong>:</p>
+<p><strong>Ligne de commande</strong> :</p>
 <ul>
-  <li>Maîtrise des commandes essentielles Unix</li>
-  <li>Navigation efficace dans le système de fichiers</li>
-  <li>Gestion des fichiers et répertoires</li>
+  <li>Maitrise des commandes essentielles Unix</li>
+  <li>Navigation efficace dans le systeme de fichiers</li>
+  <li>Gestion des fichiers et repertoires</li>
   <li>Utilisation de la documentation (man)</li>
 </ul>
 
-<p><strong>Scripting</strong>:</p>
+<p><strong>Scripting</strong> :</p>
 <ul>
-  <li>Automatisation de tâches répétitives</li>
+  <li>Automatisation de taches repetitives</li>
   <li>Programmation shell avec bash</li>
-  <li>Structures de contrôle (boucles, conditions)</li>
+  <li>Structures de controle (boucles, conditions)</li>
   <li>Manipulation de variables et tableaux</li>
   <li>Traitement de fichiers texte</li>
 </ul>
 
-<p><strong>Administration système</strong>:</p>
+<p><strong>Administration systeme</strong> :</p>
 <ul>
-  <li>Gestion des permissions et sécurité</li>
+  <li>Gestion des permissions et securite</li>
   <li>Gestion des processus</li>
-  <li>Surveillance du système</li>
+  <li>Surveillance du systeme</li>
   <li>Archivage et sauvegarde</li>
 </ul>
 
-<p><strong>Outils avancés</strong>:</p>
+<p><strong>Outils avances</strong> :</p>
 <ul>
   <li>Pipes et redirections pour combiner commandes</li>
-  <li>Expressions régulières pour recherche</li>
+  <li>Expressions regulieres pour recherche</li>
   <li>Traitement de flux avec awk et sed</li>
   <li>Analyse de logs et fichiers</li>
 </ul>
 
-<h3 id="applications-pratiques">Applications pratiques</h3>
+<h3 class="section-title">Applications pratiques</h3>
 
-<p>Unix/Linux est omniprésent dans l’informatique moderne:</p>
+<p>Unix/Linux est omnipresent dans l'informatique moderne :</p>
 
-<p><strong>Développement logiciel</strong>:</p>
+<p><strong>Developpement logiciel</strong> :</p>
 <ul>
-  <li>Environnement de développement</li>
+  <li>Environnement de developpement</li>
   <li>Compilation et build</li>
   <li>Gestion de versions (Git)</li>
-  <li>Tests automatisés</li>
+  <li>Tests automatises</li>
 </ul>
 
-<p><strong>Systèmes embarqués</strong>:</p>
+<p><strong>Systemes embarques</strong> :</p>
 <ul>
-  <li>Linux embarqué sur Raspberry Pi, BeagleBone</li>
-  <li>Systèmes IoT</li>
-  <li>Routeurs et équipements réseau</li>
-  <li>Android (basé sur Linux)</li>
+  <li>Linux embarque sur Raspberry Pi, BeagleBone</li>
+  <li>Systemes IoT</li>
+  <li>Routeurs et equipements reseau</li>
+  <li>Android (base sur Linux)</li>
 </ul>
 
-<p><strong>Serveurs et Cloud</strong>:</p>
+<p><strong>Serveurs et Cloud</strong> :</p>
 <ul>
   <li>Serveurs web (Apache, Nginx)</li>
-  <li>Bases de données (MySQL, PostgreSQL)</li>
+  <li>Bases de donnees (MySQL, PostgreSQL)</li>
   <li>Services cloud (AWS, Azure, GCP)</li>
   <li>Conteneurs (Docker, Kubernetes)</li>
 </ul>
 
-<p><strong>Administration système</strong>:</p>
+<p><strong>Administration systeme</strong> :</p>
 <ul>
   <li>Gestion de serveurs</li>
   <li>Automatisation (scripts, cron)</li>
@@ -1062,261 +1014,1225 @@ ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{
   <li>Sauvegardes</li>
 </ul>
 
-<p><strong>DevOps</strong>:</p>
+<p><strong>DevOps</strong> :</p>
 <ul>
-  <li>Déploiement continu (CI/CD)</li>
-  <li>Automatisation d’infrastructure</li>
+  <li>Deploiement continu (CI/CD)</li>
+  <li>Automatisation d'infrastructure</li>
   <li>Configuration management (Ansible, Puppet)</li>
   <li>Orchestration de conteneurs</li>
 </ul>
 
-<h3 id="liens-avec-autres-cours">Liens avec autres cours</h3>
+<h3 class="section-title">Liens avec autres cours</h3>
 
 <table>
-  <thead>
-    <tr>
-      <th>Cours</th>
-      <th>Lien</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Langage C (S5)</td>
-      <td>Programmation système, appels système</td>
-    </tr>
-    <tr>
-      <td>Systèmes d’exploitation (S5)</td>
-      <td>Concepts de processus, mémoire</td>
-    </tr>
-    <tr>
-      <td>Réseau (S5)</td>
-      <td>Commandes réseau, sockets</td>
-    </tr>
-    <tr>
-      <td>Architecture Matérielle (S5)</td>
-      <td>Gestion périphériques, drivers</td>
-    </tr>
-    <tr>
-      <td>Temps Réel (S8)</td>
-      <td>Linux temps réel, ordonnancement</td>
-    </tr>
-    <tr>
-      <td>Cloud Computing (S9)</td>
-      <td>Serveurs Linux, administration</td>
-    </tr>
-  </tbody>
+  <tr><th>Cours</th><th>Lien</th></tr>
+  <tr><td>Langage C (S5)</td><td>Programmation systeme, appels systeme</td></tr>
+  <tr><td>Systemes d'exploitation (S5)</td><td>Concepts de processus, memoire</td></tr>
+  <tr><td>Reseau (S5)</td><td>Commandes reseau, sockets</td></tr>
+  <tr><td>Architecture Materielle (S5)</td><td>Gestion peripheriques, drivers</td></tr>
+  <tr><td>Temps Reel (S8)</td><td>Linux temps reel, ordonnancement</td></tr>
+  <tr><td>Cloud Computing (S9)</td><td>Serveurs Linux, administration</td></tr>
 </table>
 
-<h3 id="méthodologie-de-travail">Méthodologie de travail</h3>
+<h3 class="section-title">Methodologie de travail</h3>
 
-<p><strong>Apprentissage par la pratique</strong>:</p>
+<p><strong>Apprentissage par la pratique</strong> :</p>
 
-<p>La meilleure façon d’apprendre Unix est de pratiquer quotidiennement:</p>
+<p>La meilleure facon d'apprendre Unix est de pratiquer quotidiennement :</p>
 <ul>
-  <li>Utiliser le terminal au lieu de l’interface graphique</li>
-  <li>Écrire des scripts pour automatiser ses tâches</li>
+  <li>Utiliser le terminal au lieu de l'interface graphique</li>
+  <li>Ecrire des scripts pour automatiser ses taches</li>
   <li>Lire le man des commandes</li>
-  <li>Expérimenter dans une VM pour éviter les erreurs</li>
+  <li>Experimenter dans une VM pour eviter les erreurs</li>
 </ul>
 
-<p><strong>Ressources utiles</strong>:</p>
-
+<p><strong>Ressources utiles</strong> :</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">man commande</code>: documentation intégrée</li>
-  <li><code class="language-plaintext highlighter-rouge">commande --help</code>: aide rapide</li>
-  <li><code class="language-plaintext highlighter-rouge">/usr/share/doc</code>: documentation détaillée</li>
+  <li><code>man commande</code> : documentation integree</li>
+  <li><code>commande --help</code> : aide rapide</li>
+  <li><code>/usr/share/doc</code> : documentation detaillee</li>
   <li>StackOverflow et forums Linux</li>
-  <li>Livres: “The Linux Command Line”, “Unix and Linux System Administration Handbook”</li>
+  <li>Livres : "The Linux Command Line", "Unix and Linux System Administration Handbook"</li>
 </ul>
 
-<p><strong>Bonnes pratiques</strong>:</p>
+<p><strong>Bonnes pratiques</strong> :</p>
 
-<p>Scripts:</p>
+<p>Scripts :</p>
 <ul>
   <li>Toujours inclure le shebang</li>
   <li>Commenter son code</li>
-  <li>Gérer les erreurs</li>
-  <li>Tester avant déploiement</li>
+  <li>Gerer les erreurs</li>
+  <li>Tester avant deploiement</li>
 </ul>
 
-<p>Sécurité:</p>
+<p>Securite :</p>
 <ul>
-  <li>Principe du moindre privilège</li>
-  <li>Éviter d’exécuter en root</li>
-  <li>Vérifier les permissions</li>
+  <li>Principe du moindre privilege</li>
+  <li>Eviter d'executer en root</li>
+  <li>Verifier les permissions</li>
   <li>Sauvegarder avant modifications importantes</li>
 </ul>
 
-<h3 id="mon-opinion">Mon opinion</h3>
+<h3 class="section-title">Mon opinion</h3>
 
-<p>Ce cours est fondamental pour tout ingénieur informatique ou électronique.</p>
+<p>Ce cours est fondamental pour tout ingenieur informatique ou electronique.</p>
 
-<p><strong>Points forts</strong>:</p>
+<p><strong>Points forts</strong> :</p>
 <ul>
-  <li>Compétences immédiatement applicables</li>
-  <li>Universalité (Unix/Linux partout)</li>
-  <li>Efficacité de la ligne de commande</li>
+  <li>Competences immediatement applicables</li>
+  <li>Universalite (Unix/Linux partout)</li>
+  <li>Efficacite de la ligne de commande</li>
   <li>Automatisation puissante avec scripts</li>
 </ul>
 
-<p><strong>Importance professionnelle</strong>:</p>
+<p><strong>Importance professionnelle</strong> :</p>
 
-<p>Unix/Linux est incontournable pour:</p>
+<p>Unix/Linux est incontournable pour :</p>
 <ul>
-  <li>Développement sur systèmes embarqués</li>
+  <li>Developpement sur systemes embarques</li>
   <li>Administration de serveurs</li>
   <li>DevOps et Cloud</li>
-  <li>IoT et objets connectés</li>
+  <li>IoT et objets connectes</li>
   <li>Intelligence artificielle (environnements de calcul)</li>
 </ul>
 
-<p><strong>Productivité</strong>:</p>
+<p><strong>Productivite</strong> :</p>
 
-<p>Maîtriser la ligne de commande permet:</p>
+<p>Maitriser la ligne de commande permet :</p>
 <ul>
-  <li>Automatiser tâches répétitives (gain de temps)</li>
-  <li>Traiter volumes importants de données</li>
-  <li>Travailler sur systèmes distants (SSH)</li>
+  <li>Automatiser taches repetitives (gain de temps)</li>
+  <li>Traiter volumes importants de donnees</li>
+  <li>Travailler sur systemes distants (SSH)</li>
   <li>Scripter solutions sur mesure</li>
-  <li>Diagnostiquer problèmes efficacement</li>
+  <li>Diagnostiquer problemes efficacement</li>
 </ul>
 
-<p><strong>Complémentarité avec autres compétences</strong>:</p>
+<p><strong>Complementarite avec autres competences</strong> :</p>
 
-<p>Unix s’intègre parfaitement avec:</p>
+<p>Unix s'integre parfaitement avec :</p>
 <ul>
   <li>Programmation C/C++ (compilation, debugging)</li>
-  <li>Développement web (serveurs, déploiement)</li>
-  <li>Data science (traitement de données)</li>
-  <li>Cybersécurité (analyse de logs, forensics)</li>
+  <li>Developpement web (serveurs, deploiement)</li>
+  <li>Data science (traitement de donnees)</li>
+  <li>Cybersecurite (analyse de logs, forensics)</li>
 </ul>
 
-<h3 id="perspectives-dévolution">Perspectives d’évolution</h3>
+<h3 class="section-title">Perspectives d'evolution</h3>
 
-<p><strong>Technologies émergentes</strong>:</p>
+<p><strong>Technologies emergentes</strong> :</p>
 
-<p><strong>Conteneurs</strong>: Docker et Kubernetes utilisent intensivement Unix.</p>
+<p><strong>Conteneurs</strong> : Docker et Kubernetes utilisent intensivement Unix.</p>
+<p><strong>Edge Computing</strong> : Linux sur dispositifs embarques.</p>
+<p><strong>Automatisation</strong> : Infrastructure as Code (Terraform, Ansible).</p>
+<p><strong>Cloud natif</strong> : Microservices sur Linux.</p>
 
-<p><strong>Edge Computing</strong>: Linux sur dispositifs embarqués.</p>
+<h3 class="section-title">Conseils pratiques</h3>
 
-<p><strong>Automatisation</strong>: Infrastructure as Code (Terraform, Ansible).</p>
-
-<p><strong>Cloud natif</strong>: Microservices sur Linux.</p>
-
-<h3 id="conseils-pratiques">Conseils pratiques</h3>
-
-<p><strong>Pour progresser</strong>:</p>
-
+<p><strong>Pour progresser</strong> :</p>
 <ol>
-  <li>Utiliser Linux comme système principal (dual-boot ou VM)</li>
+  <li>Utiliser Linux comme systeme principal (dual-boot ou VM)</li>
   <li>Personnaliser son environnement (bashrc, aliases)</li>
-  <li>Contribuer à des projets open-source</li>
+  <li>Contribuer a des projets open-source</li>
   <li>Installer un serveur personnel (web, NAS)</li>
-  <li>Automatiser ses tâches quotidiennes avec scripts</li>
+  <li>Automatiser ses taches quotidiennes avec scripts</li>
 </ol>
 
-<p><strong>Erreurs à éviter</strong>:</p>
-
+<p><strong>Erreurs a eviter</strong> :</p>
 <ul>
-  <li>Ne jamais exécuter <code class="language-plaintext highlighter-rouge">rm -rf /</code> même par curiosité</li>
-  <li>Toujours vérifier avant <code class="language-plaintext highlighter-rouge">rm -rf</code></li>
-  <li>Sauvegarder avant modifications système</li>
+  <li>Ne jamais executer <code>rm -rf /</code> meme par curiosite</li>
+  <li>Toujours verifier avant <code>rm -rf</code></li>
+  <li>Sauvegarder avant modifications systeme</li>
   <li>Tester scripts dans un environnement de test</li>
   <li>Lire la documentation avant utilisation</li>
 </ul>
 
 <hr />
 
-<p><strong>Bilan personnel</strong>: Ce cours a fourni les bases essentielles pour travailler efficacement en environnement Unix/Linux. La maîtrise de la ligne de commande et des scripts shell est une compétence transversale précieuse pour toute carrière en informatique ou électronique. Ces connaissances sont quotidiennement utiles, que ce soit pour le développement, l’administration système, ou le déploiement d’applications. La philosophie Unix (outils simples et combinables) reste d’actualité et influence de nombreux systèmes modernes.</p>
+<p><strong>Bilan personnel</strong> : Ce cours a fourni les bases essentielles pour travailler efficacement en environnement Unix/Linux. La maitrise de la ligne de commande et des scripts shell est une competence transversale precieuse pour toute carriere en informatique ou electronique. Ces connaissances sont quotidiennement utiles, que ce soit pour le developpement, l'administration systeme, ou le deploiement d'applications. La philosophie Unix (outils simples et combinables) reste d'actualite et influence de nombreux systemes modernes.</p>
 
 <hr />
 
-<style>
-        body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
-                color: #333;
-                line-height: 1.6;
-        }
-        h2, h3, h4, h5 {
-                color: #2a7ae2;
-        }
-        p {
-                text-align: justify;
-        }
-        code {
-                background-color: #f5f5f5;
-                padding: 2px 6px;
-                border-radius: 3px;
-                font-family: 'Courier New', monospace;
-        }
-        pre {
-                background-color: #f5f5f5;
-                padding: 15px;
-                border-radius: 5px;
-                overflow-x: auto;
-        }
-        .pdf-container {
-                margin: 40px 0;
-                padding: 20px;
-                background-color: #f9f9f9;
-                border-radius: 8px;
-        }
-        .pdf-viewer {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                margin-top: 20px;
-        }
-        .pdf-item {
-                flex: 1;
-                min-width: 400px;
-                background: white;
-                padding: 15px;
-                border-radius: 5px;
-                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .pdf-item h4 {
-                margin-top: 0;
-                color: #2a7ae2;
-                border-bottom: 2px solid #2a7ae2;
-                padding-bottom: 10px;
-        }
-</style>
+<h2>Documents de Cours</h2>
 
-<hr />
-
-<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
-
-<p>Voici les supports de cours en PDF pour approfondir le système Unix :</p>
+<p>Voici les supports de cours en PDF pour approfondir le systeme Unix :</p>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Cours Unix Complet</h4>
-      <p>Guide complet du système Unix, commandes shell, scripts Bash, gestion de processus et administration système.</p>
+      <h4>Cours Unix Complet</h4>
+      <p>Guide complet du systeme Unix, commandes shell, scripts Bash, gestion de processus et administration systeme.</p>
       <embed src="/cours-pdf/S5/Unix/unix-cours.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/unix-cours.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          📥 Télécharger le PDF
+          Telecharger le PDF
         </a>
       </p>
     </div>
-    
     <div class="pdf-item">
-      <h4>📝 Mémo Commandes Unix</h4>
-      <p>Aide-mémoire pratique des commandes Unix/Linux les plus utilisées pour la ligne de commande et les scripts.</p>
+      <h4>Memo Commandes Unix</h4>
+      <p>Aide-memoire pratique des commandes Unix/Linux les plus utilisees pour la ligne de commande et les scripts.</p>
       <embed src="/cours-pdf/S5/Unix/memo.pdf" type="application/pdf" width="100%" height="800px" />
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/memo.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
-          📥 Télécharger le PDF
+          Telecharger le PDF
         </a>
       </p>
     </div>
   </div>
 </div>
 
+</div>
+
+<!-- ===================== ENGLISH VERSION ===================== -->
+<div class="lang-en">
+
+<h1>Unix Systems - S5</h1>
+
+<p><strong>Year</strong>: 2022-2023 (Semester 5)<br />
+<strong>Credits</strong>: 3 ECTS<br />
+<strong>Type</strong>: Operating Systems</p>
+
 <hr />
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3 class="section-title">Course Objectives</h3>
+
+<p>This course introduces Unix/Linux operating systems with a focus on practical use of the command line, shell programming, and basic system administration. The emphasis is on mastering essential tools for development and operation of embedded systems.</p>
+
+<h3 class="section-title">Target Skills</h3>
+
+<ul>
+  <li>Master the Unix/Linux command line</li>
+  <li>Write shell scripts for automation</li>
+  <li>Manage files, processes and permissions</li>
+  <li>Use text processing tools (grep, sed, awk)</li>
+  <li>Understand the file system architecture</li>
+  <li>Perform basic system administration tasks</li>
+  <li>Combine commands with pipes and redirections</li>
+  <li>Solve practical problems with Unix tools</li>
+</ul>
+
+<h3 class="section-title">Organization</h3>
+
+<ul>
+  <li><strong>Teaching hours</strong>: Lectures, tutorials and educational videos</li>
+  <li><strong>Assessment</strong>: Written exam + practical exercises</li>
+  <li><strong>Semester</strong>: 5 (2022-2023)</li>
+  <li><strong>Prerequisites</strong>: Basic computer science knowledge</li>
+</ul>
+
+<hr />
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3 class="section-title">Course Content</h3>
+
+<p>The course covers Unix fundamentals through a practical approach.</p>
+
+<h4>1. Unix Fundamentals</h4>
+
+<p><strong>Unix Philosophy</strong>:</p>
+
+<p>Design principles:</p>
+<ul>
+  <li>Everything is a file (devices, sockets, processes)</li>
+  <li>Simple programs that do one thing well</li>
+  <li>Tool combination with pipes</li>
+  <li>Text interfaces to facilitate automation</li>
+  <li>Multi-user and multi-tasking system</li>
+</ul>
+
+<p><strong>System Architecture</strong>:</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/unix/architecture-unix.svg" alt="Unix/Linux Architecture" style="max-width: 500px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Layered architecture of a Unix/Linux system</p>
+</div>
+
+<table>
+  <tr><th>Component</th><th>Function</th></tr>
+  <tr><td>Kernel</td><td>Hardware management, processes, memory</td></tr>
+  <tr><td>Shell</td><td>Command interpreter</td></tr>
+  <tr><td>System programs</td><td>Basic utilities</td></tr>
+  <tr><td>Applications</td><td>User software</td></tr>
+</table>
+
+<p><strong>Available shells</strong>:</p>
+<ul>
+  <li><strong>bash</strong> (Bourne Again Shell): most widespread</li>
+  <li>sh (Bourne Shell): historical shell</li>
+  <li>zsh (Z Shell): advanced shell with auto-completion</li>
+  <li>csh/tcsh (C Shell): C-like syntax</li>
+</ul>
+
+<h4>2. File System</h4>
+
+<p><strong>Standard directory tree</strong>:</p>
+
+<p>Hierarchical structure starting from root (/).</p>
+
+<table>
+  <tr><th>Directory</th><th>Contents</th></tr>
+  <tr><td>/bin</td><td>Essential commands (ls, cp, mv)</td></tr>
+  <tr><td>/etc</td><td>Configuration files</td></tr>
+  <tr><td>/home</td><td>User home directories</td></tr>
+  <tr><td>/usr</td><td>Applications and utilities</td></tr>
+  <tr><td>/var</td><td>Variable data (logs, caches)</td></tr>
+  <tr><td>/tmp</td><td>Temporary files</td></tr>
+  <tr><td>/dev</td><td>Device files</td></tr>
+  <tr><td>/proc</td><td>System and process information</td></tr>
+</table>
+
+<p><strong>File types</strong>:</p>
+<ul>
+  <li><strong>Regular file</strong> (-): normal file</li>
+  <li><strong>Directory</strong> (d): folder</li>
+  <li><strong>Symbolic link</strong> (l): shortcut to another file</li>
+  <li><strong>Block device</strong> (b): hard drive, USB</li>
+  <li><strong>Character device</strong> (c): terminal, printer</li>
+  <li><strong>Socket</strong> (s): inter-process communication</li>
+  <li><strong>Named pipe</strong> (p): communication channel</li>
+</ul>
+
+<p><strong>Navigation commands</strong>:</p>
+
+<pre><code class="language-bash">pwd                    # Display current directory
+cd /path/to/dir        # Change directory
+cd ..                  # Go up one level
+cd ~                   # Go to home
+cd -                   # Return to previous directory
+ls                     # List files
+ls -l                  # Detailed listing
+ls -a                  # Show hidden files
+ls -lh                 # Human-readable sizes (KB, MB)</code></pre>
+
+<p><strong>File manipulation</strong>:</p>
+
+<pre><code class="language-bash"># Creation
+touch file.txt         # Create empty file
+mkdir folder           # Create directory
+mkdir -p a/b/c         # Create directory tree
+
+# Copy and move
+cp source dest         # Copy file
+cp -r dir1 dir2        # Copy directory recursively
+mv old new             # Rename/move
+
+# Deletion
+rm file                # Delete file
+rm -r folder           # Delete directory recursively
+rm -f file             # Force deletion
+rmdir folder           # Delete empty directory</code></pre>
+
+<p><strong>File viewing</strong>:</p>
+
+<pre><code class="language-bash">cat file               # Display full content
+more file              # Display page by page
+less file              # Navigate through file
+head file              # Display first lines
+head -n 20 file        # Display first 20 lines
+tail file              # Display last lines
+tail -f file           # Follow additions in real time (logs)</code></pre>
+
+<h4>3. Permissions and Access Rights</h4>
+
+<p><strong>Permission system</strong>:</p>
+
+<p>Format: <code>drwxrwxrwx</code></p>
+<ul>
+  <li>First character: file type</li>
+  <li>Next 3 characters: owner (user) rights</li>
+  <li>Next 3: group rights</li>
+  <li>Last 3: others rights</li>
+</ul>
+
+<p><strong>Permission types</strong>:</p>
+
+<table>
+  <tr><th>Permission</th><th>File</th><th>Directory</th></tr>
+  <tr><td>r (read)</td><td>Read content</td><td>List content</td></tr>
+  <tr><td>w (write)</td><td>Modify file</td><td>Create/delete files</td></tr>
+  <tr><td>x (execute)</td><td>Execute file</td><td>Access directory</td></tr>
+</table>
+
+<p><strong>Numeric representation</strong>:</p>
+
+<p>Each permission has a value:</p>
+<ul>
+  <li>r = 4</li>
+  <li>w = 2</li>
+  <li>x = 1</li>
+</ul>
+
+<p>Examples:</p>
+<ul>
+  <li>755 = rwxr-xr-x (owner: all, others: read+execute)</li>
+  <li>644 = rw-r--r-- (owner: read+write, others: read only)</li>
+  <li>700 = rwx------ (owner only has all rights)</li>
+  <li>777 = rwxrwxrwx (all rights for everyone)</li>
+</ul>
+
+<p><strong>Management commands</strong>:</p>
+
+<pre><code class="language-bash"># Modify permissions
+chmod 755 file                 # Numeric mode
+chmod u+x file                 # Add execute for user
+chmod g-w file                 # Remove write for group
+chmod o+r file                 # Add read for others
+chmod a+x file                 # Add execute for all
+
+# Modify owner
+chown user file                # Change owner
+chown user:group file          # Change user and group
+chgrp group file               # Change group only</code></pre>
+
+<p><strong>Special permissions</strong>:</p>
+
+<p><strong>SUID (Set User ID)</strong>: 4xxx or u+s</p>
+<ul>
+  <li>The file executes with the owner's rights</li>
+  <li>Example: /usr/bin/passwd (allows users to change their password)</li>
+</ul>
+
+<p><strong>SGID (Set Group ID)</strong>: 2xxx or g+s</p>
+<ul>
+  <li>The file executes with the group's rights</li>
+  <li>On a directory: created files inherit the group</li>
+</ul>
+
+<p><strong>Sticky bit</strong>: 1xxx or +t</p>
+<ul>
+  <li>On directory: only the owner can delete their files</li>
+  <li>Example: /tmp (shared directory but protected files)</li>
+</ul>
+
+<p>Exam example:</p>
+<pre><code class="language-bash">chmod 1777 /tmp/test3    # Sticky bit + all rights
+chmod 750 /tmp/test1     # rwxr-x---
+chmod 640 file           # rw-r-----</code></pre>
+
+<h4>4. Process Management</h4>
+
+<p><strong>Process concept</strong>:</p>
+
+<p>A process is a running program.</p>
+
+<p>Main attributes:</p>
+<ul>
+  <li><strong>PID</strong> (Process ID): unique identifier</li>
+  <li><strong>PPID</strong> (Parent Process ID): parent process</li>
+  <li><strong>UID</strong>: owner user</li>
+  <li>State: running, sleeping, stopped, zombie</li>
+  <li>Priority: nice value</li>
+</ul>
+
+<p><strong>Management commands</strong>:</p>
+
+<pre><code class="language-bash"># Display processes
+ps                    # Current user's processes
+ps aux                # All processes detailed
+ps -ef                # Long format
+top                   # Real-time monitoring
+htop                  # Improved version of top
+
+# Process control
+kill PID              # Send TERM signal (graceful termination)
+kill -9 PID           # KILL signal (forced termination)
+killall name          # Kill by program name
+pkill pattern         # Kill by pattern
+
+# Background
+command &amp;             # Launch in background
+jobs                  # List jobs
+fg %1                 # Bring job 1 to foreground
+bg %1                 # Continue job 1 in background
+Ctrl+Z                # Suspend current process</code></pre>
+
+<p><strong>Exam example analysis</strong>:</p>
+
+<p>Command: <code>ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID</code></p>
+
+<p>Breakdown:</p>
+<ol>
+  <li><code>ps -ef</code>: list all processes</li>
+  <li><code>awk '{print $3}'</code>: extract PPID column (parent)</li>
+  <li><code>sort</code>: sort PPIDs</li>
+  <li><code>uniq -c</code>: count occurrences of each PPID</li>
+  <li><code>awk '{print $2,$1}'</code>: swap columns (PPID then count)</li>
+  <li><code>grep -v PPID</code>: exclude the header</li>
+</ol>
+
+<p>Result: list of processes with their number of children.</p>
+
+<h4>5. Shell Programming (Bash)</h4>
+
+<p><strong>Basic script structure</strong>:</p>
+
+<pre><code class="language-bash">#!/bin/bash
+# Shebang: specifies the interpreter to use
+
+# This is a comment
+
+echo "First shell script"</code></pre>
+
+<p>Execution:</p>
+<pre><code class="language-bash">chmod +x script.sh     # Make executable
+./script.sh            # Execute</code></pre>
+
+<p><strong>Variables</strong>:</p>
+
+<pre><code class="language-bash"># Declaration (no spaces around =)
+name="Cedric"
+age=25
+i=3
+
+# Usage
+echo "My name is $name"
+echo "I am ${age} years old"
+
+# Environment variables
+echo $HOME             # Home directory
+echo $PATH             # Command search paths
+echo $USER             # Username</code></pre>
+
+<p><strong>Reading input</strong>:</p>
+
+<pre><code class="language-bash">echo "Enter a number:"
+read number
+echo "You entered: $number"
+
+# Read into specific variable
+read -p "Name: " name</code></pre>
+
+<p><strong>Conditional structures</strong>:</p>
+
+<pre><code class="language-bash"># if-then-else
+if test $i -eq 3
+then
+  echo "i equals 3"
+else
+  echo "i does not equal 3"
+fi
+
+# Alternative form with brackets
+if [ $i -eq 3 ]
+then
+  echo "i equals 3"
+fi
+
+# Numeric comparison operators
+# -eq (equal), -ne (not equal), -lt (less than)
+# -le (less or equal), -gt (greater than), -ge (greater or equal)
+
+# String comparisons
+if [ "$str1" = "$str2" ]
+then
+  echo "Strings are identical"
+fi
+
+# File tests
+if [ -f file ]         # File exists
+if [ -d folder ]       # Directory exists
+if [ -r file ]         # File is readable
+if [ -w file ]         # File is writable
+if [ -x file ]         # File is executable
+
+# Case
+case $var in
+  1) echo "One" ;;
+  2) echo "Two" ;;
+  *) echo "Other" ;;
+esac</code></pre>
+
+<p><strong>Loops</strong>:</p>
+
+<pre><code class="language-bash"># For loop with sequence
+for i in $(seq 1 100)
+do
+  echo $i
+done
+
+# For loop on files
+for file in *.txt
+do
+  echo "Processing $file"
+done
+
+# For loop on command output
+for file in $(ls *)
+do
+  echo $file
+done
+
+# While loop
+counter=1
+while [ $counter -le 10 ]
+do
+  echo $counter
+  counter=$((counter + 1))
+done
+
+# While loop with file reading
+while read line
+do
+  echo "Line: $line"
+done &lt; file.txt
+
+# Until (opposite of while)
+until [ $counter -gt 10 ]
+do
+  echo $counter
+  counter=$((counter + 1))
+done</code></pre>
+
+<p><strong>Arrays</strong>:</p>
+
+<pre><code class="language-bash"># Declaration
+tab[0]="first"
+tab[1]="second"
+
+# Or
+declare -a tab
+tab=("one" "two" "three")
+
+# Filling in a loop
+n=4
+for i in $(seq 1 $n)
+do
+  tab[$i]="element$i"
+done
+
+# Access
+echo ${tab[0]}         # First element
+echo ${tab[*]}         # All elements
+echo ${#tab[*]}        # Number of elements</code></pre>
+
+<p><strong>Functions</strong>:</p>
+
+<pre><code class="language-bash"># Definition
+my_function() {
+  echo "Hello $1"      # $1 = first argument
+  return 0             # Return code
+}
+
+# Call
+my_function "Cedric"</code></pre>
+
+<p><strong>Common mistakes to avoid</strong>:</p>
+
+<p>From the exam:</p>
+<ol>
+  <li>Forgetting the <code>!</code> in the shebang: <code>#!/bin/bash</code></li>
+  <li>Spaces around <code>=</code>: use <code>i=3</code> not <code>i = 3</code></li>
+  <li>Wrong loop syntax: <code>for i in $(seq 1 100)</code> not <code>for i in 1..100</code></li>
+  <li>Wrong test: <code>if [ $i -eq 3 ]</code> not <code>if test $i == 3 then</code></li>
+  <li>Close with <code>fi</code> not <code>end</code></li>
+  <li>Use <code>$i</code> to read the variable, not <code>$REPLY</code></li>
+  <li>Array access: <code>${tab[*]}</code> not <code>${tab}</code></li>
+  <li>Command substitution: <code>$(command)</code> or <code>`command`</code></li>
+</ol>
+
+<h4>6. Text Processing</h4>
+
+<p><strong>grep (pattern search)</strong>:</p>
+
+<pre><code class="language-bash">grep "pattern" file              # Search for pattern
+grep -i "pattern" file           # Case insensitive
+grep -v "pattern" file           # Invert (lines without pattern)
+grep -r "pattern" directory/     # Recursive in directory
+grep -n "pattern" file           # Show line numbers
+grep -c "pattern" file           # Count occurrences
+grep -E "regex" file             # Extended regular expressions</code></pre>
+
+<p><strong>sed (stream editor)</strong>:</p>
+
+<pre><code class="language-bash"># Substitution
+sed 's/old/new/' file                  # First occurrence per line
+sed 's/old/new/g' file                 # All occurrences
+sed -i 's/old/new/g' file             # Modify file in place
+
+# Deletion
+sed '/pattern/d' file                  # Delete lines containing pattern
+sed '1d' file                          # Delete first line
+sed '1,5d' file                        # Delete lines 1 to 5</code></pre>
+
+<p><strong>awk (processing language)</strong>:</p>
+
+<pre><code class="language-bash"># Display columns
+awk '{print $1}' file                  # First column
+awk '{print $1, $3}' file             # Columns 1 and 3
+awk '{print $NF}' file                # Last column
+
+# With conditions
+awk '$3 &gt; 100 {print $1}' file        # If column 3 &gt; 100
+
+# Exam example
+ps -ef | awk '{print $3}'             # Extract PPID
+echo "$line" | awk '{print $1}'       # Extract first field</code></pre>
+
+<p><strong>Other tools</strong>:</p>
+
+<pre><code class="language-bash">sort file                    # Sort lines
+sort -n file                 # Numeric sort
+sort -r file                 # Reverse sort
+uniq file                    # Remove consecutive duplicates
+uniq -c file                 # Count occurrences
+wc file                      # Count lines, words, characters
+wc -l file                   # Count lines only
+cut -d':' -f1 file           # Extract first field (delimiter :)</code></pre>
+
+<h4>7. Redirections and Pipes</h4>
+
+<p><strong>Standard streams</strong>:</p>
+<ul>
+  <li><strong>stdin</strong> (0): standard input (keyboard)</li>
+  <li><strong>stdout</strong> (1): standard output (screen)</li>
+  <li><strong>stderr</strong> (2): error output (screen)</li>
+</ul>
+
+<p><strong>Redirections</strong>:</p>
+
+<pre><code class="language-bash"># Output redirection
+command &gt; file               # Overwrite file
+command &gt;&gt; file              # Append to file
+command 2&gt; errors.txt        # Redirect errors
+command 2&gt;&amp;1                 # Errors to standard output
+command &amp;&gt; file              # Output and errors to file
+
+# Input redirection
+command &lt; file               # Read from file
+while read line
+do
+  echo $line
+done &lt; file.txt
+
+# Pipe (output of one command = input of next)
+command1 | command2
+ps aux | grep firefox
+cat file | sort | uniq</code></pre>
+
+<p><strong>Complex exam example</strong>:</p>
+
+<pre><code class="language-bash">ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID &gt; /tmp/f</code></pre>
+
+<p>Processing chain with 5 pipes combining several tools.</p>
+
+<h4>8. Basic System Administration</h4>
+
+<p><strong>System information</strong>:</p>
+
+<pre><code class="language-bash">uname -a                # Full system info
+hostname                # Machine name
+whoami                  # Current user
+who                     # Connected users
+w                       # Users and activity
+uptime                  # Uptime and load
+date                    # Date and time</code></pre>
+
+<p><strong>Disk management</strong>:</p>
+
+<pre><code class="language-bash">df -h                   # Disk space (human-readable)
+du -sh folder           # Directory size
+du -sh *                # Size of all items</code></pre>
+
+<p><strong>User management</strong>:</p>
+
+<pre><code class="language-bash">passwd                  # Change password
+sudo command            # Execute with root rights
+su                      # Become root
+su - user               # Switch user</code></pre>
+
+<p><strong>File search</strong>:</p>
+
+<pre><code class="language-bash">find /path -name "*.txt"             # By name
+find /path -type f                   # Regular files
+find /path -type d                   # Directories
+find /path -mtime -7                 # Modified within 7 days
+find /path -size +100M               # Size &gt; 100 MB
+locate file                          # Fast search (database)
+which command                        # Locate executable</code></pre>
+
+<p><strong>Archiving and compression</strong>:</p>
+
+<pre><code class="language-bash"># tar (tape archive)
+tar -cvf archive.tar files/         # Create archive
+tar -xvf archive.tar                # Extract archive
+tar -tvf archive.tar                # List contents
+
+# With compression
+tar -czvf archive.tar.gz files/     # Create + gzip
+tar -xzvf archive.tar.gz            # Extract gzip
+tar -cjvf archive.tar.bz2 files/    # Create + bzip2
+
+# zip/unzip
+zip -r archive.zip folder/
+unzip archive.zip</code></pre>
+
+<p><strong>Links</strong>:</p>
+
+<pre><code class="language-bash"># Symbolic link (shortcut)
+ln -s /path/target link              # Create symbolic link
+
+# Hard link (same inode)
+ln original_file hard_link           # Create hard link</code></pre>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S5/unix/reseau-config1.png" alt="Unix Network Configuration" style="max-width: 600px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Example of network configuration under Unix/Linux - Practical lab</p>
+</div>
+
+<hr />
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3 class="section-title">Practical Exam Exercises</h3>
+
+<p><strong>Exercise 1: Creating a directory tree with permissions</strong></p>
+
+<p>Objective: reproduce a file structure exactly with the correct permissions.</p>
+
+<pre><code class="language-bash"># Create the directory tree
+mkdir -p /tmp/test/test1 /tmp/test/test2 /tmp/test/test3
+
+# Create files
+touch /tmp/test/test1/f1
+touch /tmp/test/test2/f2
+touch /tmp/test/test3/f3
+
+# Set directory permissions
+chmod 750 /tmp/test/test1    # rwxr-x---
+chmod 754 /tmp/test/test2    # rwxr-xr--
+chmod 1777 /tmp/test/test3   # rwxrwxrwt (with sticky bit)
+
+# Set file permissions
+chmod 640 /tmp/test/test1/f1 # rw-r-----
+chmod 444 /tmp/test/test2/f2 # r--r--r--
+chmod 700 /tmp/test/test3/f3 # rwx------</code></pre>
+
+<p><strong>Special permissions explanation</strong>:</p>
+
+<p><code>chmod 1777</code>: the leading <code>1</code> corresponds to the sticky bit.</p>
+<ul>
+  <li>Allows everyone to create files in the directory</li>
+  <li>But only the owner can delete their own files</li>
+  <li>Typical for /tmp</li>
+</ul>
+
+<p><strong>Exercise 2: Shell script correction</strong></p>
+
+<p>Script with errors:</p>
+<pre><code class="language-bash">#/bin/bash                          # ERROR: missing !
+
+for i in 1..100                     # ERROR: incorrect syntax
+do
+ echo $i
+done
+
+for i in ls *                       # ERROR: missing $()
+do
+  echo $i
+done
+
+i = 3                               # ERROR: spaces around =
+
+if test $i == 3 then                # ERROR: -eq instead of ==, then misplaced
+  echo yes
+else
+  echo no
+end                                 # ERROR: should be fi
+
+echo "an integer please"
+read i
+echo integer entered: $REPLY        # ERROR: should be $i
+
+n=4
+for i in `seq 1 $n`
+do
+  tab[i]="toto"
+done
+echo ${tab}                         # ERROR: should be ${tab[*]}</code></pre>
+
+<p>Corrected version:</p>
+<pre><code class="language-bash">#!/bin/bash
+
+for i in $(seq 1 100)
+do
+ echo $i
+done
+
+for i in $(ls *)
+# or simpler: for i in *
+do
+  echo $i
+done
+
+i=3
+
+if [ $i -eq 3 ]
+then
+  echo yes
+else
+  echo no
+fi
+
+echo "an integer please"
+read i
+echo integer entered: $i
+
+n=4
+for i in $(seq 1 $n)
+do
+  tab[$i]="toto"
+done
+echo ${tab[*]}</code></pre>
+
+<p><strong>Exercise 3: Complex pipeline analysis</strong></p>
+
+<p>Parent process analysis script:</p>
+
+<pre><code class="language-bash">#!/bin/bash
+
+# Complex pipeline
+ps -ef | awk '{print $3}' | sort | uniq -c | awk '{print $2,$1}' | grep -v PPID &gt; /tmp/f
+
+# Processing loop
+while read v
+do
+  a=$(echo $v | awk '{print $1}')   # PID
+  b=$(echo $v | awk '{print $2}')   # Number of children
+  echo process $a has $b children
+done &lt; /tmp/f</code></pre>
+
+<p><strong>Detailed pipeline explanation</strong>:</p>
+<ol>
+  <li><code>ps -ef</code>: displays all processes with PID, PPID, etc.</li>
+  <li><code>awk '{print $3}'</code>: extracts the 3rd column (PPID)</li>
+  <li><code>sort</code>: sorts PPIDs numerically</li>
+  <li><code>uniq -c</code>: counts occurrences of each unique PPID</li>
+  <li><code>awk '{print $2,$1}'</code>: reverses order (PPID then counter)</li>
+  <li><code>grep -v PPID</code>: excludes the header line</li>
+  <li><code>&gt; /tmp/f</code>: saves to a temporary file</li>
+</ol>
+
+<p>Result in /tmp/f: each line contains a PID and the number of times it appears as a parent (number of children).</p>
+
+<p><strong>The while loop</strong>:</p>
+
+<p>Reads each line from /tmp/f and extracts:</p>
+<ul>
+  <li>Variable <code>a</code>: the process PID</li>
+  <li>Variable <code>b</code>: the number of children of this process</li>
+</ul>
+
+<p>Outputs: "process XXX has YYY children"</p>
+
+<p><strong>Exercise 4: Permissions and security</strong></p>
+
+<p>Analysis of a game's permissions:</p>
+
+<pre><code class="language-bash">drwxr-xr-x 2 student students 4096 game/
+-r-sr-xr-x 1 student students 133792 the_game_binary
+-rw------- 1 student students 39 the_scores_file</code></pre>
+
+<p><strong>Analysis</strong>:</p>
+
+<p><strong>The binary (r-sr-xr-x)</strong>:</p>
+<ul>
+  <li>SUID bit enabled (s instead of x for user)</li>
+  <li>Everyone can execute it (r-x for group and others)</li>
+  <li>The game runs with <code>student</code>'s rights</li>
+  <li>Allows access to the scores file</li>
+</ul>
+
+<p><strong>The scores file (rw-------)</strong>:</p>
+<ul>
+  <li>Readable/writable only by <code>student</code></li>
+  <li>Other users cannot read or write</li>
+  <li>Protection of scores against cheating</li>
+</ul>
+
+<p><strong>Logic</strong>:</p>
+<ul>
+  <li>Players execute the binary with SUID</li>
+  <li>The program runs as <code>student</code></li>
+  <li>It can therefore modify the scores file</li>
+  <li>But players cannot modify scores directly</li>
+  <li>Prevents cheating while allowing the game to be played</li>
+</ul>
+
+<h3 class="section-title">Essential Commands to Master</h3>
+
+<p><strong>Navigation and files</strong>:</p>
+<pre><code class="language-bash">pwd, cd, ls, mkdir, rmdir, touch, cp, mv, rm, cat, more, less, head, tail</code></pre>
+
+<p><strong>Permissions</strong>:</p>
+<pre><code class="language-bash">chmod, chown, chgrp, umask</code></pre>
+
+<p><strong>Processes</strong>:</p>
+<pre><code class="language-bash">ps, top, kill, killall, bg, fg, jobs</code></pre>
+
+<p><strong>Search</strong>:</p>
+<pre><code class="language-bash">find, locate, which, whereis, grep</code></pre>
+
+<p><strong>Text processing</strong>:</p>
+<pre><code class="language-bash">grep, sed, awk, sort, uniq, wc, cut, tr</code></pre>
+
+<p><strong>System</strong>:</p>
+<pre><code class="language-bash">uname, hostname, whoami, who, w, df, du, free, date</code></pre>
+
+<p><strong>Archiving</strong>:</p>
+<pre><code class="language-bash">tar, gzip, gunzip, zip, unzip</code></pre>
+
+<hr />
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3 class="section-title">Skills Acquired</h3>
+
+<p><strong>Command line</strong>:</p>
+<ul>
+  <li>Mastery of essential Unix commands</li>
+  <li>Efficient navigation in the file system</li>
+  <li>File and directory management</li>
+  <li>Using documentation (man)</li>
+</ul>
+
+<p><strong>Scripting</strong>:</p>
+<ul>
+  <li>Automation of repetitive tasks</li>
+  <li>Shell programming with bash</li>
+  <li>Control structures (loops, conditions)</li>
+  <li>Variable and array manipulation</li>
+  <li>Text file processing</li>
+</ul>
+
+<p><strong>System administration</strong>:</p>
+<ul>
+  <li>Permission management and security</li>
+  <li>Process management</li>
+  <li>System monitoring</li>
+  <li>Archiving and backup</li>
+</ul>
+
+<p><strong>Advanced tools</strong>:</p>
+<ul>
+  <li>Pipes and redirections to combine commands</li>
+  <li>Regular expressions for searching</li>
+  <li>Stream processing with awk and sed</li>
+  <li>Log and file analysis</li>
+</ul>
+
+<h3 class="section-title">Practical Applications</h3>
+
+<p>Unix/Linux is ubiquitous in modern computing:</p>
+
+<p><strong>Software development</strong>:</p>
+<ul>
+  <li>Development environment</li>
+  <li>Compilation and build</li>
+  <li>Version control (Git)</li>
+  <li>Automated testing</li>
+</ul>
+
+<p><strong>Embedded systems</strong>:</p>
+<ul>
+  <li>Embedded Linux on Raspberry Pi, BeagleBone</li>
+  <li>IoT systems</li>
+  <li>Routers and network equipment</li>
+  <li>Android (based on Linux)</li>
+</ul>
+
+<p><strong>Servers and Cloud</strong>:</p>
+<ul>
+  <li>Web servers (Apache, Nginx)</li>
+  <li>Databases (MySQL, PostgreSQL)</li>
+  <li>Cloud services (AWS, Azure, GCP)</li>
+  <li>Containers (Docker, Kubernetes)</li>
+</ul>
+
+<p><strong>System administration</strong>:</p>
+<ul>
+  <li>Server management</li>
+  <li>Automation (scripts, cron)</li>
+  <li>Monitoring and logs</li>
+  <li>Backups</li>
+</ul>
+
+<p><strong>DevOps</strong>:</p>
+<ul>
+  <li>Continuous deployment (CI/CD)</li>
+  <li>Infrastructure automation</li>
+  <li>Configuration management (Ansible, Puppet)</li>
+  <li>Container orchestration</li>
+</ul>
+
+<h3 class="section-title">Links with Other Courses</h3>
+
+<table>
+  <tr><th>Course</th><th>Connection</th></tr>
+  <tr><td>C Language (S5)</td><td>System programming, system calls</td></tr>
+  <tr><td>Operating Systems (S5)</td><td>Process concepts, memory</td></tr>
+  <tr><td>Networking (S5)</td><td>Network commands, sockets</td></tr>
+  <tr><td>Hardware Architecture (S5)</td><td>Device management, drivers</td></tr>
+  <tr><td>Real-Time Systems (S8)</td><td>Real-time Linux, scheduling</td></tr>
+  <tr><td>Cloud Computing (S9)</td><td>Linux servers, administration</td></tr>
+</table>
+
+<h3 class="section-title">Working Methodology</h3>
+
+<p><strong>Learning by practice</strong>:</p>
+
+<p>The best way to learn Unix is to practice daily:</p>
+<ul>
+  <li>Use the terminal instead of the graphical interface</li>
+  <li>Write scripts to automate your tasks</li>
+  <li>Read the man pages of commands</li>
+  <li>Experiment in a VM to avoid mistakes</li>
+</ul>
+
+<p><strong>Useful resources</strong>:</p>
+<ul>
+  <li><code>man command</code>: built-in documentation</li>
+  <li><code>command --help</code>: quick help</li>
+  <li><code>/usr/share/doc</code>: detailed documentation</li>
+  <li>StackOverflow and Linux forums</li>
+  <li>Books: "The Linux Command Line", "Unix and Linux System Administration Handbook"</li>
+</ul>
+
+<p><strong>Best practices</strong>:</p>
+
+<p>Scripts:</p>
+<ul>
+  <li>Always include the shebang</li>
+  <li>Comment your code</li>
+  <li>Handle errors</li>
+  <li>Test before deployment</li>
+</ul>
+
+<p>Security:</p>
+<ul>
+  <li>Principle of least privilege</li>
+  <li>Avoid running as root</li>
+  <li>Check permissions</li>
+  <li>Back up before major changes</li>
+</ul>
+
+<h3 class="section-title">My Opinion</h3>
+
+<p>This course is fundamental for any computer science or electronics engineer.</p>
+
+<p><strong>Strengths</strong>:</p>
+<ul>
+  <li>Immediately applicable skills</li>
+  <li>Universality (Unix/Linux everywhere)</li>
+  <li>Command line efficiency</li>
+  <li>Powerful automation with scripts</li>
+</ul>
+
+<p><strong>Professional importance</strong>:</p>
+
+<p>Unix/Linux is essential for:</p>
+<ul>
+  <li>Embedded systems development</li>
+  <li>Server administration</li>
+  <li>DevOps and Cloud</li>
+  <li>IoT and connected objects</li>
+  <li>Artificial intelligence (computing environments)</li>
+</ul>
+
+<p><strong>Productivity</strong>:</p>
+
+<p>Mastering the command line allows you to:</p>
+<ul>
+  <li>Automate repetitive tasks (time savings)</li>
+  <li>Process large volumes of data</li>
+  <li>Work on remote systems (SSH)</li>
+  <li>Script custom solutions</li>
+  <li>Diagnose problems efficiently</li>
+</ul>
+
+<p><strong>Complementarity with other skills</strong>:</p>
+
+<p>Unix integrates perfectly with:</p>
+<ul>
+  <li>C/C++ programming (compilation, debugging)</li>
+  <li>Web development (servers, deployment)</li>
+  <li>Data science (data processing)</li>
+  <li>Cybersecurity (log analysis, forensics)</li>
+</ul>
+
+<h3 class="section-title">Future Perspectives</h3>
+
+<p><strong>Emerging technologies</strong>:</p>
+
+<p><strong>Containers</strong>: Docker and Kubernetes make intensive use of Unix.</p>
+<p><strong>Edge Computing</strong>: Linux on embedded devices.</p>
+<p><strong>Automation</strong>: Infrastructure as Code (Terraform, Ansible).</p>
+<p><strong>Cloud native</strong>: Microservices on Linux.</p>
+
+<h3 class="section-title">Practical Tips</h3>
+
+<p><strong>To improve</strong>:</p>
+<ol>
+  <li>Use Linux as your main system (dual-boot or VM)</li>
+  <li>Customize your environment (bashrc, aliases)</li>
+  <li>Contribute to open-source projects</li>
+  <li>Set up a personal server (web, NAS)</li>
+  <li>Automate your daily tasks with scripts</li>
+</ol>
+
+<p><strong>Mistakes to avoid</strong>:</p>
+<ul>
+  <li>Never run <code>rm -rf /</code> even out of curiosity</li>
+  <li>Always verify before <code>rm -rf</code></li>
+  <li>Back up before system changes</li>
+  <li>Test scripts in a test environment</li>
+  <li>Read the documentation before use</li>
+</ul>
+
+<hr />
+
+<p><strong>Personal assessment</strong>: This course provided the essential foundations for working effectively in a Unix/Linux environment. Mastery of the command line and shell scripts is a valuable cross-cutting skill for any career in computer science or electronics. This knowledge is useful daily, whether for development, system administration, or application deployment. The Unix philosophy (simple and combinable tools) remains relevant and influences many modern systems.</p>
+
+<hr />
+
+<h2>Course Documents</h2>
+
+<p>Here are the course materials in PDF to deepen your understanding of Unix systems:</p>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Complete Unix Course</h4>
+      <p>Comprehensive guide to Unix systems, shell commands, Bash scripts, process management and system administration.</p>
+      <embed src="/cours-pdf/S5/Unix/unix-cours.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Unix/unix-cours.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF
+        </a>
+      </p>
+    </div>
+    <div class="pdf-item">
+      <h4>Unix Command Cheat Sheet</h4>
+      <p>Practical cheat sheet of the most commonly used Unix/Linux commands for the command line and scripts.</p>
+      <embed src="/cours-pdf/S5/Unix/memo.pdf" type="application/pdf" width="100%" height="800px" />
+      <p style="text-align: center; margin-top: 10px;">
+        <a href="/cours-pdf/S5/Unix/memo.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="back-nav">
+  <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">&larr; Retour aux Cours 2022-2023</a>
+</div>
+
+<p><em class="lang-fr">Redige par Cedric Chanfreau</em><em class="lang-en">Written by Cedric Chanfreau</em></p>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -1347,6 +2263,117 @@ ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1365,8 +2392,8 @@ ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1388,6 +2415,7 @@ ps <span class="nt">-ef</span> | <span class="nb">awk</span> <span class="s1">'{
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1898,11 +2926,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -2102,14 +3128,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -2120,6 +3146,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

@@ -13,518 +13,1208 @@ categories: jekyll update
 </style>
 
 <div class="back-nav">
-  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+  <a href="./my-courses-2021-2022.html" data-i18n-html="back-courses-2021-2022">&larr; Retour a Mes Cours 2021-2022</a>
 </div>
 
-# Télécommunications - Semestre 3
+<div class="lang-fr">
 
-**Annee**: 2021-2022 | **Semestre**: 3 | **Type**: Technique
+<h1>Télécommunications - Semestre 3</h1>
 
----
+<p><strong>Annee</strong>: 2021-2022 | <strong>Semestre</strong>: 3 | <strong>Type</strong>: Technique</p>
 
-## PART A - Présentation Générale du Cours
+<hr>
 
-### Contexte et objectifs
+<h2>PART A - Présentation Générale du Cours</h2>
 
-Introduction aux systèmes de télécommunications numériques : codage, modulations, transmission sur canal bruité, détection et correction d'erreurs. Fondement pour Télécom Num S4 et Réseaux.
+<h3>Contexte et objectifs</h3>
 
-**Objectifs :**
-- Codage en ligne (NRZ, Manchester, etc.)
-- Modulations numériques de base (ASK, FSK, PSK)
-- Canal de transmission (bruit, atténuation)
-- Détection/correction d'erreurs (CRC, codes correcteurs)
-- Analyse performances (BER, SNR)
+<p>Introduction aux systèmes de télécommunications numériques : codage, modulations, transmission sur canal bruité, détection et correction d'erreurs. Fondement pour Télécom Num S4 et Réseaux.</p>
 
-### Prérequis
-- Signaux et systèmes (Fourier)
-- OL S3 (MATLAB, modulations)
+<p><strong>Objectifs :</strong></p>
+<ul>
+<li>Codage en ligne (NRZ, Manchester, etc.)</li>
+<li>Modulations numériques de base (ASK, FSK, PSK)</li>
+<li>Canal de transmission (bruit, atténuation)</li>
+<li>Détection/correction d'erreurs (CRC, codes correcteurs)</li>
+<li>Analyse performances (BER, SNR)</li>
+</ul>
 
----
+<h3>Prérequis</h3>
+<ul>
+<li>Signaux et systèmes (Fourier)</li>
+<li>OL S3 (MATLAB, modulations)</li>
+</ul>
 
-## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+<hr>
 
-### Module 1 : Codage en ligne
+<h2>PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
 
-**Principe :**
-Transformation bits (0/1) en signal électrique adapté à la transmission.
+<h3>Module 1 : Codage en ligne</h3>
 
-**Codes courants :**
-- **NRZ (Non-Return to Zero)** : 0→-V, 1→+V. Simple mais composante DC.
-- **RZ (Return to Zero)** : retour à 0 en milieu de bit. Synchronisation facilitée.
-- **Manchester (Biphase)** : 0→transition haut-bas, 1→bas-haut. Pas de DC, auto-synchronisant (Ethernet 10Base-T).
-- **Miller** : transition si 1, pas si 0 (sauf deux 0 consécutifs). Économie bande passante.
-- **AMI (Alternate Mark Inversion)** : 0→0V, 1→±V alternés. Pas de DC.
+<p><strong>Principe :</strong><br>
+Transformation bits (0/1) en signal électrique adapté à la transmission.</p>
 
-**Critères choix :**
-- Composante DC nulle (couplage AC)
-- Densité transitions (synchronisation)
-- Bande passante
-- Immunité bruit
+<p><strong>Codes courants :</strong></p>
+<ul>
+<li><strong>NRZ (Non-Return to Zero)</strong> : 0→-V, 1→+V. Simple mais composante DC.</li>
+<li><strong>RZ (Return to Zero)</strong> : retour à 0 en milieu de bit. Synchronisation facilitée.</li>
+<li><strong>Manchester (Biphase)</strong> : 0→transition haut-bas, 1→bas-haut. Pas de DC, auto-synchronisant (Ethernet 10Base-T).</li>
+<li><strong>Miller</strong> : transition si 1, pas si 0 (sauf deux 0 consécutifs). Économie bande passante.</li>
+<li><strong>AMI (Alternate Mark Inversion)</strong> : 0→0V, 1→±V alternés. Pas de DC.</li>
+</ul>
 
-### Module 2 : Modulations numériques
+<p><strong>Critères choix :</strong></p>
+<ul>
+<li>Composante DC nulle (couplage AC)</li>
+<li>Densité transitions (synchronisation)</li>
+<li>Bande passante</li>
+<li>Immunité bruit</li>
+</ul>
 
-**ASK (Amplitude Shift Keying) :**
-- Modulation amplitude porteuse
-- Sensible au bruit
-- Peu utilisée seule
+<h3>Module 2 : Modulations numériques</h3>
 
-**FSK (Frequency Shift Keying) :**
-- 0→f₁, 1→f₂
-- Robuste au bruit
-- Applications : modems bas débit, RFID, LoRa
+<p><strong>ASK (Amplitude Shift Keying) :</strong></p>
+<ul>
+<li>Modulation amplitude porteuse</li>
+<li>Sensible au bruit</li>
+<li>Peu utilisée seule</li>
+</ul>
 
-**PSK (Phase Shift Keying) :**
-- **BPSK** : 0→0°, 1→180° (2 symboles). Robuste.
-- **QPSK** : 4 phases (0°, 90°, 180°, 270°) → 2 bits/symbole. WiFi, satellite.
-- **8-PSK** : 8 phases → 3 bits/symbole.
+<p><strong>FSK (Frequency Shift Keying) :</strong></p>
+<ul>
+<li>0→f₁, 1→f₂</li>
+<li>Robuste au bruit</li>
+<li>Applications : modems bas débit, RFID, LoRa</li>
+</ul>
 
-**QAM (Quadrature Amplitude Modulation) :**
-- Modulation amplitude + phase
-- 16-QAM, 64-QAM, 256-QAM
-- Haute efficacité spectrale (bits/Hz)
-- Applications : 4G/5G, câble, WiFi
+<p><strong>PSK (Phase Shift Keying) :</strong></p>
+<ul>
+<li><strong>BPSK</strong> : 0→0°, 1→180° (2 symboles). Robuste.</li>
+<li><strong>QPSK</strong> : 4 phases (0°, 90°, 180°, 270°) → 2 bits/symbole. WiFi, satellite.</li>
+<li><strong>8-PSK</strong> : 8 phases → 3 bits/symbole.</li>
+</ul>
 
-**Constellation :**
-Représentation I/Q (en phase / quadrature) des symboles.
+<p><strong>QAM (Quadrature Amplitude Modulation) :</strong></p>
+<ul>
+<li>Modulation amplitude + phase</li>
+<li>16-QAM, 64-QAM, 256-QAM</li>
+<li>Haute efficacité spectrale (bits/Hz)</li>
+<li>Applications : 4G/5G, câble, WiFi</li>
+</ul>
 
-### Module 3 : Canal de transmission
+<p><strong>Constellation :</strong><br>
+Représentation I/Q (en phase / quadrature) des symboles.</p>
 
-**Modèle canal :**
-- Atténuation (pertes propagation)
-- Bruit AWGN (Additive White Gaussian Noise)
-- Interférences
-- Distorsion (multi-trajets, dispersion)
+<h3>Module 3 : Canal de transmission</h3>
 
-**SNR (Signal-to-Noise Ratio) :**
-$$SNR_{dB} = 10 \log_{10}\left(\frac{P_{signal}}{P_{bruit}}\right)$$
+<p><strong>Modèle canal :</strong></p>
+<ul>
+<li>Atténuation (pertes propagation)</li>
+<li>Bruit AWGN (Additive White Gaussian Noise)</li>
+<li>Interférences</li>
+<li>Distorsion (multi-trajets, dispersion)</li>
+</ul>
 
-**Capacité de Shannon :**
-$$C = B \log_2(1 + SNR) \quad \text{(bits/s)}$$
-Capacité maximale théorique du canal.
+<p><strong>SNR (Signal-to-Noise Ratio) :</strong><br>
+SNR(dB) = 10 log₁₀(P_signal / P_bruit)</p>
 
-**BER (Bit Error Rate) :**
-Taux d'erreur binaire. BER < 10⁻⁶ typique pour communications fiables.
+<p><strong>Capacité de Shannon :</strong><br>
+C = B log₂(1 + SNR) (bits/s)<br>
+Capacité maximale théorique du canal.</p>
 
-### Module 4 : Détection et correction d'erreurs
+<p><strong>BER (Bit Error Rate) :</strong><br>
+Taux d'erreur binaire. BER &lt; 10⁻⁶ typique pour communications fiables.</p>
 
-**Détection d'erreurs :**
-- **Bit de parité** : pair/impair. Détecte erreurs impaires.
-- **Checksum** : somme octets.
-- **CRC (Cyclic Redundancy Check)** : division polynomiale. Très efficace (Ethernet, USB). CRC-16, CRC-32.
+<h3>Module 4 : Détection et correction d'erreurs</h3>
 
-**Correction d'erreurs (FEC - Forward Error Correction) :**
-- **Code de Hamming** : corrige 1 erreur, détecte 2.
-- **Codes Reed-Solomon** : CD, DVD, QR codes. Correction paquets d'erreurs.
-- **Codes convolutifs** : mémoire, décodage Viterbi. Espace, 4G.
-- **Turbo codes, LDPC** : proches limite Shannon. 5G.
+<p><strong>Détection d'erreurs :</strong></p>
+<ul>
+<li><strong>Bit de parité</strong> : pair/impair. Détecte erreurs impaires.</li>
+<li><strong>Checksum</strong> : somme octets.</li>
+<li><strong>CRC (Cyclic Redundancy Check)</strong> : division polynomiale. Très efficace (Ethernet, USB). CRC-16, CRC-32.</li>
+</ul>
 
-**Principe :**
-Ajout redondance (bits supplémentaires) pour détecter/corriger erreurs sans retransmission.
+<p><strong>Correction d'erreurs (FEC - Forward Error Correction) :</strong></p>
+<ul>
+<li><strong>Code de Hamming</strong> : corrige 1 erreur, détecte 2.</li>
+<li><strong>Codes Reed-Solomon</strong> : CD, DVD, QR codes. Correction paquets d'erreurs.</li>
+<li><strong>Codes convolutifs</strong> : mémoire, décodage Viterbi. Espace, 4G.</li>
+<li><strong>Turbo codes, LDPC</strong> : proches limite Shannon. 5G.</li>
+</ul>
 
----
+<p><strong>Principe :</strong><br>
+Ajout redondance (bits supplémentaires) pour détecter/corriger erreurs sans retransmission.</p>
 
-## PART C: ASPECTS TECHNIQUES
+<hr>
 
-### TP MATLAB
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-**TP1 : Codages en ligne**
-- Génération séquence bits
-- Codage NRZ, Manchester, AMI
-- Analyse spectrale (DSP)
+<h3>TP MATLAB</h3>
 
-**TP2 : Modulation BPSK**
-- Génération porteuse, modulation
-- Canal AWGN (SNR variable)
-- Démodulation
-- Calcul BER vs SNR
+<p><strong>TP1 : Codages en ligne</strong></p>
+<ul>
+<li>Génération séquence bits</li>
+<li>Codage NRZ, Manchester, AMI</li>
+<li>Analyse spectrale (DSP)</li>
+</ul>
 
-**TP3 : QPSK et constellation**
-- Modulation QPSK
-- Diagramme constellation I/Q
-- Impact bruit sur constellation
+<p><strong>TP2 : Modulation BPSK</strong></p>
+<ul>
+<li>Génération porteuse, modulation</li>
+<li>Canal AWGN (SNR variable)</li>
+<li>Démodulation</li>
+<li>Calcul BER vs SNR</li>
+</ul>
 
-**TP4 : CRC**
-- Implémentation CRC-8, CRC-16
-- Test détection erreurs (1 bit, 2 bits, burst)
+<p><strong>TP3 : QPSK et constellation</strong></p>
+<ul>
+<li>Modulation QPSK</li>
+<li>Diagramme constellation I/Q</li>
+<li>Impact bruit sur constellation</li>
+</ul>
 
-### Projet simulation chaîne complète
+<p><strong>TP4 : CRC</strong></p>
+<ul>
+<li>Implémentation CRC-8, CRC-16</li>
+<li>Test détection erreurs (1 bit, 2 bits, burst)</li>
+</ul>
 
-**Architecture :**
-```
-[Source bits] → [Codeur canal] → [Modulateur] → [Canal AWGN]
+<h3>Projet simulation chaîne complète</h3>
+
+<p><strong>Architecture :</strong></p>
+<pre><code>[Source bits] → [Codeur canal] → [Modulateur] → [Canal AWGN]
                                                      ↓
-[Sink bits]  ← [Décodeur]     ← [Démodulateur]     ←
-```
+[Sink bits]  ← [Décodeur]     ← [Démodulateur]     ←</code></pre>
 
-**Paramètres :**
-- Modulation : QPSK
-- Code correcteur : Hamming (7,4)
-- SNR : 0 à 15 dB
-- Débit : 1 Mbps
+<p><strong>Paramètres :</strong></p>
+<ul>
+<li>Modulation : QPSK</li>
+<li>Code correcteur : Hamming (7,4)</li>
+<li>SNR : 0 à 15 dB</li>
+<li>Débit : 1 Mbps</li>
+</ul>
 
-**Résultats :**
-- Courbes BER vs SNR (avec/sans codage)
-- Gain de codage (≈3-5 dB)
+<p><strong>Résultats :</strong></p>
+<ul>
+<li>Courbes BER vs SNR (avec/sans codage)</li>
+<li>Gain de codage (≈3-5 dB)</li>
+</ul>
 
----
+<hr>
 
-## PART D: ANALYSE ET RÉFLEXION
+<h2>PART D: ANALYSE ET RÉFLEXION</h2>
 
-### Évaluation
-- TP MATLAB (40%)
-- Projet chaîne de transmission (30%)
-- Contrôles (15%)
-- Examen final (15%)
+<h3>Évaluation</h3>
+<ul>
+<li>TP MATLAB (40%)</li>
+<li>Projet chaîne de transmission (30%)</li>
+<li>Contrôles (15%)</li>
+<li>Examen final (15%)</li>
+</ul>
 
-### Compétences acquises
-- Compréhension systèmes télécommunications numériques
-- Simulation MATLAB (modulations, canal, BER)
-- Analyse performances (SNR, BER, capacité)
-- Codage détection/correction d'erreurs
-- Fondements pour 4G/5G, WiFi, satellite
+<h3>Compétences acquises</h3>
+<ul>
+<li>Compréhension systèmes télécommunications numériques</li>
+<li>Simulation MATLAB (modulations, canal, BER)</li>
+<li>Analyse performances (SNR, BER, capacité)</li>
+<li>Codage détection/correction d'erreurs</li>
+<li>Fondements pour 4G/5G, WiFi, satellite</li>
+</ul>
 
-### Applications professionnelles
-- Télécommunications (mobiles, satellite, fibre)
-- Réseaux sans fil (WiFi, LoRa, Bluetooth)
-- Ingénieur RF/télécom
-- IoT (protocoles bas débit)
-5. Canal de transmission
-6. Démodulateur
-7. Décodeur de canal
-8. Décodeur de source
-9. Destinataire
+<h3>Applications professionnelles</h3>
+<ul>
+<li>Télécommunications (mobiles, satellite, fibre)</li>
+<li>Réseaux sans fil (WiFi, LoRa, Bluetooth)</li>
+<li>Ingénieur RF/télécom</li>
+<li>IoT (protocoles bas débit)</li>
+</ul>
 
-#### Caractéristiques
-- Débit binaire (bits/s)
-- Bande passante (Hz)
-- Efficacité spectrale (bits/s/Hz)
-- Probabilité d'erreur (BER)
-- Rapport signal/bruit (SNR)
+<h2>Chaîne de communication numérique</h2>
 
-### Codage en ligne
+<h3>Caractéristiques</h3>
+<ul>
+<li>Débit binaire (bits/s)</li>
+<li>Bande passante (Hz)</li>
+<li>Efficacité spectrale (bits/s/Hz)</li>
+<li>Probabilité d'erreur (BER)</li>
+<li>Rapport signal/bruit (SNR)</li>
+</ul>
 
-#### Principe
-Représentation électrique des données binaires pour la transmission sur un canal.
+<h3>Codage en ligne</h3>
 
-#### Codes NRZ (Non Return to Zero)
+<h4>Principe</h4>
+<p>Représentation électrique des données binaires pour la transmission sur un canal.</p>
 
-**NRZ-L (Level) :**
-- 0 : niveau bas
-- 1 : niveau haut
-- Simple mais composante continue
-- Pas d'auto-synchronisation
+<h4>Codes NRZ (Non Return to Zero)</h4>
+<p><strong>NRZ-L (Level) :</strong></p>
+<ul>
+<li>0 : niveau bas</li>
+<li>1 : niveau haut</li>
+<li>Simple mais composante continue</li>
+<li>Pas d'auto-synchronisation</li>
+</ul>
 
-**NRZ-I (Inverted) :**
-- Transition sur les '1'
-- Pas de transition sur les '0'
-- Meilleure synchronisation
+<p><strong>NRZ-I (Inverted) :</strong></p>
+<ul>
+<li>Transition sur les '1'</li>
+<li>Pas de transition sur les '0'</li>
+<li>Meilleure synchronisation</li>
+</ul>
 
-#### Codes RZ (Return to Zero)
-- Retour à zéro au milieu du bit
-- Meilleure synchronisation
-- Bande passante doublée
+<h4>Codes RZ (Return to Zero)</h4>
+<ul>
+<li>Retour à zéro au milieu du bit</li>
+<li>Meilleure synchronisation</li>
+<li>Bande passante doublée</li>
+</ul>
 
-#### Code Manchester
-- Transition au milieu de chaque bit
-- 0 : haut → bas
-- 1 : bas → haut
-- Auto-synchronisation
-- Utilisé en Ethernet 10BASE-T
+<h4>Code Manchester</h4>
+<ul>
+<li>Transition au milieu de chaque bit</li>
+<li>0 : haut → bas</li>
+<li>1 : bas → haut</li>
+<li>Auto-synchronisation</li>
+<li>Utilisé en Ethernet 10BASE-T</li>
+</ul>
 
-#### Code Manchester différentiel
-- Transition en début de bit
-- Présence/absence de transition au milieu
+<h4>Code Manchester différentiel</h4>
+<ul>
+<li>Transition en début de bit</li>
+<li>Présence/absence de transition au milieu</li>
+</ul>
 
-#### Code Bipolaire (AMI)
-- 0 : niveau zéro
-- 1 : alternance +V et -V
-- Pas de composante continue
-- Détection d'erreurs
+<h4>Code Bipolaire (AMI)</h4>
+<ul>
+<li>0 : niveau zéro</li>
+<li>1 : alternance +V et -V</li>
+<li>Pas de composante continue</li>
+<li>Détection d'erreurs</li>
+</ul>
 
-#### Codes MLT-3, PAM-5
-- Multi-niveaux
-- Efficacité spectrale améliorée
-- Utilisés en Ethernet rapide
+<h4>Codes MLT-3, PAM-5</h4>
+<ul>
+<li>Multi-niveaux</li>
+<li>Efficacité spectrale améliorée</li>
+<li>Utilisés en Ethernet rapide</li>
+</ul>
 
-### Transmission en bande de base
+<h3>Transmission en bande de base</h3>
 
-#### Critère de Nyquist
-- Pas d'interférence entre symboles (ISI)
-- Filtre en cosinus surélevé (raised cosine)
-- Roll-off factor
-- Bande passante minimale
+<h4>Critère de Nyquist</h4>
+<ul>
+<li>Pas d'interférence entre symboles (ISI)</li>
+<li>Filtre en cosinus surélevé (raised cosine)</li>
+<li>Roll-off factor</li>
+<li>Bande passante minimale</li>
+</ul>
 
-#### Diagramme de l'œil
-- Outil d'évaluation qualité
-- Ouverture verticale (marge bruit)
-- Ouverture horizontale (timing)
-- Taux d'erreur binaire (BER)
+<h4>Diagramme de l'oeil</h4>
+<ul>
+<li>Outil d'évaluation qualité</li>
+<li>Ouverture verticale (marge bruit)</li>
+<li>Ouverture horizontale (timing)</li>
+<li>Taux d'erreur binaire (BER)</li>
+</ul>
 
-#### Égalisation
-- Compensation distorsions canal
-- Égaliseur linéaire
-- Égaliseur adaptatif (LMS)
-- Égaliseur à retour de décision (DFE)
+<h4>Égalisation</h4>
+<ul>
+<li>Compensation distorsions canal</li>
+<li>Égaliseur linéaire</li>
+<li>Égaliseur adaptatif (LMS)</li>
+<li>Égaliseur à retour de décision (DFE)</li>
+</ul>
 
-### Détection et correction d'erreurs
+<h3>Détection et correction d'erreurs</h3>
 
-#### Codes détecteurs
+<h4>Codes détecteurs</h4>
 
-**Parité simple :**
-- Bit de parité pair ou impair
-- Détecte erreur unique
-- Ne corrige pas
+<p><strong>Parité simple :</strong></p>
+<ul>
+<li>Bit de parité pair ou impair</li>
+<li>Détecte erreur unique</li>
+<li>Ne corrige pas</li>
+</ul>
 
-**Parité croisée (2D) :**
-- Parité lignes et colonnes
-- Détecte et corrige certaines erreurs
+<p><strong>Parité croisée (2D) :</strong></p>
+<ul>
+<li>Parité lignes et colonnes</li>
+<li>Détecte et corrige certaines erreurs</li>
+</ul>
 
-**CRC (Cyclic Redundancy Check) :**
-- Polynôme générateur
-- Reste de division polynomiale
-- CRC-8, CRC-16, CRC-32
-- Très efficace pour détection
+<p><strong>CRC (Cyclic Redundancy Check) :</strong></p>
+<ul>
+<li>Polynôme générateur</li>
+<li>Reste de division polynomiale</li>
+<li>CRC-8, CRC-16, CRC-32</li>
+<li>Très efficace pour détection</li>
+</ul>
 
-#### Codes correcteurs
+<h4>Codes correcteurs</h4>
 
-**Code de Hamming :**
-- Distance de Hamming
-- Correction 1 bit, détection 2 bits
-- Hamming(7,4), Hamming(15,11)
-- Bits de parité positionnés en 2^n
+<p><strong>Code de Hamming :</strong></p>
+<ul>
+<li>Distance de Hamming</li>
+<li>Correction 1 bit, détection 2 bits</li>
+<li>Hamming(7,4), Hamming(15,11)</li>
+<li>Bits de parité positionnés en 2^n</li>
+</ul>
 
-**Code de Reed-Solomon :**
-- Code cyclique non binaire
-- Correction de rafales d'erreurs
-- Utilisé en CD, DVD, QR codes
-- RS(255,223) typique
+<p><strong>Code de Reed-Solomon :</strong></p>
+<ul>
+<li>Code cyclique non binaire</li>
+<li>Correction de rafales d'erreurs</li>
+<li>Utilisé en CD, DVD, QR codes</li>
+<li>RS(255,223) typique</li>
+</ul>
 
-**Codes convolutifs :**
-- Encodage continu
-- Décodage Viterbi
-- Utilisés en téléphonie mobile
-- Rendement r = k/n
+<p><strong>Codes convolutifs :</strong></p>
+<ul>
+<li>Encodage continu</li>
+<li>Décodage Viterbi</li>
+<li>Utilisés en téléphonie mobile</li>
+<li>Rendement r = k/n</li>
+</ul>
 
-**Turbo codes et LDPC :**
-- Codes modernes haute performance
-- Proche limite de Shannon
-- 4G, 5G, satellites
+<p><strong>Turbo codes et LDPC :</strong></p>
+<ul>
+<li>Codes modernes haute performance</li>
+<li>Proche limite de Shannon</li>
+<li>4G, 5G, satellites</li>
+</ul>
 
-### Performances de transmission
+<h3>Performances de transmission</h3>
 
-#### Probabilité d'erreur binaire (BER)
-- BER = erreurs / bits transmis
-- Dépend du SNR
-- Objectifs : 10^-6 à 10^-12
+<h4>Probabilité d'erreur binaire (BER)</h4>
+<ul>
+<li>BER = erreurs / bits transmis</li>
+<li>Dépend du SNR</li>
+<li>Objectifs : 10^-6 à 10^-12</li>
+</ul>
 
-#### Rapport Eb/N0
-- Énergie par bit / Densité de bruit
-- Mesure de qualité
-- Courbes BER vs Eb/N0
+<h4>Rapport Eb/N0</h4>
+<ul>
+<li>Énergie par bit / Densité de bruit</li>
+<li>Mesure de qualité</li>
+<li>Courbes BER vs Eb/N0</li>
+</ul>
 
-#### Capacité de Shannon
-- $C = B \log_2(1 + SNR)$
-- Limite théorique
-- Débit maximal sans erreur
+<h4>Capacité de Shannon</h4>
+<ul>
+<li>C = B log₂(1 + SNR)</li>
+<li>Limite théorique</li>
+<li>Débit maximal sans erreur</li>
+</ul>
 
-## 🛠️ Travaux pratiques
+<h2>Travaux pratiques</h2>
 
-### TP Codage en ligne
-- Génération de codes (NRZ, Manchester, AMI)
-- Analyse spectrale
-- Simulation de transmission
-- Diagramme de l'œil
+<h3>TP Codage en ligne</h3>
+<ul>
+<li>Génération de codes (NRZ, Manchester, AMI)</li>
+<li>Analyse spectrale</li>
+<li>Simulation de transmission</li>
+<li>Diagramme de l'oeil</li>
+</ul>
 
-### TP CRC
-- Implémentation algorithme CRC
-- Test de détection d'erreurs
-- Comparaison CRC-8, CRC-16, CRC-32
-- Application sur microcontrôleur
+<h3>TP CRC</h3>
+<ul>
+<li>Implémentation algorithme CRC</li>
+<li>Test de détection d'erreurs</li>
+<li>Comparaison CRC-8, CRC-16, CRC-32</li>
+<li>Application sur microcontrôleur</li>
+</ul>
 
-### TP Code de Hamming
-- Encodage Hamming(7,4)
-- Décodage et correction
-- Insertion d'erreurs
-- Taux de correction
+<h3>TP Code de Hamming</h3>
+<ul>
+<li>Encodage Hamming(7,4)</li>
+<li>Décodage et correction</li>
+<li>Insertion d'erreurs</li>
+<li>Taux de correction</li>
+</ul>
 
-### Projet communication
-- Liaison série codée
-- Protection par CRC
-- Protocole applicatif
-- Tests de robustesse
+<h3>Projet communication</h3>
+<ul>
+<li>Liaison série codée</li>
+<li>Protection par CRC</li>
+<li>Protocole applicatif</li>
+<li>Tests de robustesse</li>
+</ul>
 
-## 💻 Outils utilisés
+<h2>Outils utilisés</h2>
 
-### Simulation
-- **MATLAB/Simulink** : Simulation systèmes
-- **Python** : Programmation algorithmes
-- **GNU Radio** : SDR et communications
-- **LabVIEW** : Acquisition et traitement
+<h3>Simulation</h3>
+<ul>
+<li><strong>MATLAB/Simulink</strong> : Simulation systèmes</li>
+<li><strong>Python</strong> : Programmation algorithmes</li>
+<li><strong>GNU Radio</strong> : SDR et communications</li>
+<li><strong>LabVIEW</strong> : Acquisition et traitement</li>
+</ul>
 
-### Développement
-- **STM32** : Implémentation embarquée
-- **Arduino** : Prototypage rapide
-- **UART, SPI, I2C** : Interfaces
+<h3>Développement</h3>
+<ul>
+<li><strong>STM32</strong> : Implémentation embarquée</li>
+<li><strong>Arduino</strong> : Prototypage rapide</li>
+<li><strong>UART, SPI, I2C</strong> : Interfaces</li>
+</ul>
 
-### Mesure
-- **Oscilloscope** : Signaux et diagramme œil
-- **Analyseur logique** : Décodage protocoles
-- **BERT (Bit Error Rate Tester)** : Mesure BER
+<h3>Mesure</h3>
+<ul>
+<li><strong>Oscilloscope</strong> : Signaux et diagramme oeil</li>
+<li><strong>Analyseur logique</strong> : Décodage protocoles</li>
+<li><strong>BERT (Bit Error Rate Tester)</strong> : Mesure BER</li>
+</ul>
 
-## 📊 Évaluation
+<h2>Évaluation</h2>
+<ul>
+<li>Travaux pratiques (40%)</li>
+<li>Projet de communication (30%)</li>
+<li>Contrôle continu (15%)</li>
+<li>Examen final (15%)</li>
+</ul>
 
-- Travaux pratiques (40%)
-- Projet de communication (30%)
-- Contrôle continu (15%)
-- Examen final (15%)
+<h2>Liens avec d'autres cours</h2>
+<ul>
+<li><strong>SE</strong> : Traitement du signal</li>
+<li><strong>OL</strong> : Modulation/démodulation</li>
+<li><strong>IE</strong> : Implémentation protocoles</li>
+<li><strong>Télécommunications Numériques (S4)</strong> : Approfondissement</li>
+<li><strong>Réseau</strong> : Couches protocolaires</li>
+</ul>
 
-## 🔗 Liens avec d'autres cours
+<h2>Exemples de calculs</h2>
 
-- **SE** : Traitement du signal
-- **OL** : Modulation/démodulation
-- **IE** : Implémentation protocoles
-- **Télécommunications Numériques (S4)** : Approfondissement
-- **Réseau** : Couches protocolaires
+<h3>Distance de Hamming</h3>
+<p>Nombre de bits différents entre deux mots :</p>
+<ul>
+<li>101101 vs 101111 → distance = 1</li>
+<li>101101 vs 010001 → distance = 3</li>
+</ul>
 
-## 📐 Exemples de calculs
-
-### Distance de Hamming
-Nombre de bits différents entre deux mots :
-- 1011**0**1 vs 1011**1**1 → distance = 1
-- **10**1**1**01 vs **01**1**0**01 → distance = 3
-
-### CRC-8
-Polynôme : $x^8 + x^2 + x + 1$ (0x107)
-```
-Message : 11010011101100
+<h3>CRC-8</h3>
+<p>Polynôme : x⁸ + x² + x + 1 (0x107)</p>
+<pre><code>Message : 11010011101100
 Reste   : 10101010
-Message transmis : 11010011101100 10101010
-```
+Message transmis : 11010011101100 10101010</code></pre>
 
-### Code de Hamming(7,4)
-4 bits données : d1 d2 d3 d4
-3 bits parité : p1 p2 p3
+<h3>Code de Hamming(7,4)</h3>
+<p>4 bits données : d1 d2 d3 d4<br>
+3 bits parité : p1 p2 p3</p>
+<p>Position : p1 p2 d1 p3 d2 d3 d4</p>
+<pre><code>p1 = d1 XOR d2 XOR d4
+p2 = d1 XOR d3 XOR d4
+p3 = d2 XOR d3 XOR d4</code></pre>
 
-Position : p1 p2 d1 p3 d2 d3 d4
-```
-p1 = d1 ⊕ d2 ⊕ d4
-p2 = d1 ⊕ d3 ⊕ d4
-p3 = d2 ⊕ d3 ⊕ d4
-```
+<h2>Applications pratiques</h2>
 
-## 💡 Applications pratiques
+<h3>Réseaux filaires</h3>
+<ul>
+<li>Ethernet (Manchester)</li>
+<li>USB (NRZI)</li>
+<li>RS-232/RS-485</li>
+</ul>
 
-### Réseaux filaires
-- Ethernet (Manchester)
-- USB (NRZI)
-- RS-232/RS-485
+<h3>Communications sans fil</h3>
+<ul>
+<li>WiFi (OFDM + codes)</li>
+<li>Bluetooth (FEC)</li>
+<li>Zigbee</li>
+</ul>
 
-### Communications sans fil
-- WiFi (OFDM + codes)
-- Bluetooth (FEC)
-- Zigbee
+<h3>Stockage</h3>
+<ul>
+<li>Disques durs (Reed-Solomon)</li>
+<li>Mémoires flash (BCH, LDPC)</li>
+<li>Codes QR</li>
+</ul>
 
-### Stockage
-- Disques durs (Reed-Solomon)
-- Mémoires flash (BCH, LDPC)
-- Codes QR
+<h3>Audiovisuel</h3>
+<ul>
+<li>DVB (télévision numérique)</li>
+<li>DAB (radio numérique)</li>
+<li>HDMI</li>
+</ul>
 
-### Audiovisuel
-- DVB (télévision numérique)
-- DAB (radio numérique)
-- HDMI
+<h2>Compétences développées</h2>
+<ul>
+<li>Codage et décodage de données</li>
+<li>Analyse de performances de transmission</li>
+<li>Implémentation d'algorithmes de protection</li>
+<li>Diagnostic de liaisons de communication</li>
+<li>Simulation de systèmes numériques</li>
+<li>Mesure et optimisation BER</li>
+</ul>
 
-## 📖 Compétences développées
+<h2>Protocoles étudiés</h2>
 
-- Codage et décodage de données
-- Analyse de performances de transmission
-- Implémentation d'algorithmes de protection
-- Diagnostic de liaisons de communication
-- Simulation de systèmes numériques
-- Mesure et optimisation BER
+<h3>Protocole de liaison de données</h3>
+<ul>
+<li>Tramage</li>
+<li>Synchronisation</li>
+<li>Détection d'erreurs (CRC)</li>
+<li>Acquittements (ACK/NACK)</li>
+<li>Retransmission (ARQ)</li>
+</ul>
 
-## 🎯 Protocoles étudiés
+<h3>Exemple : Protocole simple</h3>
+<pre><code>[Start] [Length] [Data] [CRC16] [Stop]
+  0x02     1B      nB      2B     0x03</code></pre>
 
-### Protocole de liaison de données
-- Tramage
-- Synchronisation
-- Détection d'erreurs (CRC)
-- Acquittements (ACK/NACK)
-- Retransmission (ARQ)
+<h2>Problèmes courants</h2>
 
-### Exemple : Protocole simple
-```
-[Start] [Length] [Data] [CRC16] [Stop]
-  0x02     1B      nB      2B     0x03
-```
+<h3>Transmission</h3>
+<ul>
+<li>Atténuation du signal</li>
+<li>Bruit (thermique, impulsionnel)</li>
+<li>Distorsion (ISI)</li>
+<li>Dérive d'horloge</li>
+<li>Réflexions (impédance)</li>
+</ul>
 
-## ⚠️ Problèmes courants
+<h3>Codage</h3>
+<ul>
+<li>Composante continue excessive</li>
+<li>Bande passante trop large</li>
+<li>Perte de synchronisation</li>
+<li>Détection d'erreurs insuffisante</li>
+</ul>
 
-### Transmission
-- Atténuation du signal
-- Bruit (thermique, impulsionnel)
-- Distorsion (ISI)
-- Dérive d'horloge
-- Réflexions (impédance)
+<h2>Implémentation embarquée</h2>
 
-### Codage
-- Composante continue excessive
-- Bande passante trop large
-- Perte de synchronisation
-- Détection d'erreurs insuffisante
-
-## 🔧 Implémentation embarquée
-
-### CRC sur microcontrôleur
-```c
-uint8_t crc8(uint8_t *data, uint8_t len) {
+<h3>CRC sur microcontrôleur</h3>
+<pre><code class="language-c">uint8_t crc8(uint8_t *data, uint8_t len) {
     uint8_t crc = 0;
-    for(uint8_t i=0; i<len; i++) {
+    for(uint8_t i=0; i&lt;len; i++) {
         crc ^= data[i];
-        for(uint8_t j=0; j<8; j++) {
-            if(crc & 0x80)
-                crc = (crc << 1) ^ 0x07;
+        for(uint8_t j=0; j&lt;8; j++) {
+            if(crc &amp; 0x80)
+                crc = (crc &lt;&lt; 1) ^ 0x07;
             else
-                crc <<= 1;
+                crc &lt;&lt;= 1;
         }
     }
     return crc;
-}
-```
+}</code></pre>
 
-### Code Manchester
-```c
-void manchester_encode(uint8_t data, uint16_t *output) {
-    for(int i=0; i<8; i++) {
-        if(data & (1<<(7-i)))
-            *output |= (0b01 << (14-i*2)); // 1 → 01
+<h3>Code Manchester</h3>
+<pre><code class="language-c">void manchester_encode(uint8_t data, uint16_t *output) {
+    for(int i=0; i&lt;8; i++) {
+        if(data &amp; (1&lt;&lt;(7-i)))
+            *output |= (0b01 &lt;&lt; (14-i*2)); // 1 → 01
         else
-            *output |= (0b10 << (14-i*2)); // 0 → 10
+            *output |= (0b10 &lt;&lt; (14-i*2)); // 0 → 10
     }
-}
-```
+}</code></pre>
 
----
+</div>
 
-## Illustrations
+<div class="lang-en">
 
-### Carte Nucleo STM32 L152RE
+<h1>Telecommunications - Semester 3</h1>
+
+<p><strong>Year</strong>: 2021-2022 | <strong>Semester</strong>: 3 | <strong>Type</strong>: Technical</p>
+
+<hr>
+
+<h2>PART A - General Course Overview</h2>
+
+<h3>Context and objectives</h3>
+
+<p>Introduction to digital telecommunications systems: coding, modulations, transmission over noisy channels, error detection and correction. Foundation for Digital Telecom S4 and Networks.</p>
+
+<p><strong>Objectives:</strong></p>
+<ul>
+<li>Line coding (NRZ, Manchester, etc.)</li>
+<li>Basic digital modulations (ASK, FSK, PSK)</li>
+<li>Transmission channel (noise, attenuation)</li>
+<li>Error detection/correction (CRC, error-correcting codes)</li>
+<li>Performance analysis (BER, SNR)</li>
+</ul>
+
+<h3>Prerequisites</h3>
+<ul>
+<li>Signals and systems (Fourier)</li>
+<li>OL S3 (MATLAB, modulations)</li>
+</ul>
+
+<hr>
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Module 1: Line Coding</h3>
+
+<p><strong>Principle:</strong><br>
+Transforming bits (0/1) into electrical signals suitable for transmission.</p>
+
+<p><strong>Common codes:</strong></p>
+<ul>
+<li><strong>NRZ (Non-Return to Zero)</strong>: 0→-V, 1→+V. Simple but has DC component.</li>
+<li><strong>RZ (Return to Zero)</strong>: return to 0 in mid-bit. Easier synchronization.</li>
+<li><strong>Manchester (Biphase)</strong>: 0→high-to-low transition, 1→low-to-high. No DC, self-clocking (Ethernet 10Base-T).</li>
+<li><strong>Miller</strong>: transition on 1, none on 0 (except two consecutive 0s). Bandwidth efficient.</li>
+<li><strong>AMI (Alternate Mark Inversion)</strong>: 0→0V, 1→alternating +/-V. No DC.</li>
+</ul>
+
+<p><strong>Selection criteria:</strong></p>
+<ul>
+<li>Zero DC component (AC coupling)</li>
+<li>Transition density (synchronization)</li>
+<li>Bandwidth</li>
+<li>Noise immunity</li>
+</ul>
+
+<h3>Module 2: Digital Modulations</h3>
+
+<p><strong>ASK (Amplitude Shift Keying):</strong></p>
+<ul>
+<li>Carrier amplitude modulation</li>
+<li>Noise sensitive</li>
+<li>Rarely used alone</li>
+</ul>
+
+<p><strong>FSK (Frequency Shift Keying):</strong></p>
+<ul>
+<li>0→f1, 1→f2</li>
+<li>Noise robust</li>
+<li>Applications: low-speed modems, RFID, LoRa</li>
+</ul>
+
+<p><strong>PSK (Phase Shift Keying):</strong></p>
+<ul>
+<li><strong>BPSK</strong>: 0→0 degrees, 1→180 degrees (2 symbols). Robust.</li>
+<li><strong>QPSK</strong>: 4 phases (0, 90, 180, 270 degrees) → 2 bits/symbol. WiFi, satellite.</li>
+<li><strong>8-PSK</strong>: 8 phases → 3 bits/symbol.</li>
+</ul>
+
+<p><strong>QAM (Quadrature Amplitude Modulation):</strong></p>
+<ul>
+<li>Amplitude + phase modulation</li>
+<li>16-QAM, 64-QAM, 256-QAM</li>
+<li>High spectral efficiency (bits/Hz)</li>
+<li>Applications: 4G/5G, cable, WiFi</li>
+</ul>
+
+<p><strong>Constellation:</strong><br>
+I/Q (in-phase / quadrature) representation of symbols.</p>
+
+<h3>Module 3: Transmission Channel</h3>
+
+<p><strong>Channel model:</strong></p>
+<ul>
+<li>Attenuation (propagation losses)</li>
+<li>AWGN noise (Additive White Gaussian Noise)</li>
+<li>Interference</li>
+<li>Distortion (multipath, dispersion)</li>
+</ul>
+
+<p><strong>SNR (Signal-to-Noise Ratio):</strong><br>
+SNR(dB) = 10 log10(P_signal / P_noise)</p>
+
+<p><strong>Shannon capacity:</strong><br>
+C = B log2(1 + SNR) (bits/s)<br>
+Theoretical maximum channel capacity.</p>
+
+<p><strong>BER (Bit Error Rate):</strong><br>
+Bit error rate. BER &lt; 10^-6 typical for reliable communications.</p>
+
+<h3>Module 4: Error Detection and Correction</h3>
+
+<p><strong>Error detection:</strong></p>
+<ul>
+<li><strong>Parity bit</strong>: even/odd. Detects odd errors.</li>
+<li><strong>Checksum</strong>: byte sum.</li>
+<li><strong>CRC (Cyclic Redundancy Check)</strong>: polynomial division. Very efficient (Ethernet, USB). CRC-16, CRC-32.</li>
+</ul>
+
+<p><strong>Error correction (FEC - Forward Error Correction):</strong></p>
+<ul>
+<li><strong>Hamming code</strong>: corrects 1 error, detects 2.</li>
+<li><strong>Reed-Solomon codes</strong>: CD, DVD, QR codes. Burst error correction.</li>
+<li><strong>Convolutional codes</strong>: memory, Viterbi decoding. Space, 4G.</li>
+<li><strong>Turbo codes, LDPC</strong>: near Shannon limit. 5G.</li>
+</ul>
+
+<p><strong>Principle:</strong><br>
+Adding redundancy (extra bits) to detect/correct errors without retransmission.</p>
+
+<hr>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>MATLAB Labs</h3>
+
+<p><strong>Lab 1: Line coding</strong></p>
+<ul>
+<li>Bit sequence generation</li>
+<li>NRZ, Manchester, AMI coding</li>
+<li>Spectral analysis (PSD)</li>
+</ul>
+
+<p><strong>Lab 2: BPSK modulation</strong></p>
+<ul>
+<li>Carrier generation, modulation</li>
+<li>AWGN channel (variable SNR)</li>
+<li>Demodulation</li>
+<li>BER vs SNR calculation</li>
+</ul>
+
+<p><strong>Lab 3: QPSK and constellation</strong></p>
+<ul>
+<li>QPSK modulation</li>
+<li>I/Q constellation diagram</li>
+<li>Noise impact on constellation</li>
+</ul>
+
+<p><strong>Lab 4: CRC</strong></p>
+<ul>
+<li>CRC-8, CRC-16 implementation</li>
+<li>Error detection testing (1 bit, 2 bits, burst)</li>
+</ul>
+
+<h3>Complete chain simulation project</h3>
+
+<p><strong>Architecture:</strong></p>
+<pre><code>[Bit source] → [Channel encoder] → [Modulator] → [AWGN Channel]
+                                                        ↓
+[Bit sink]   ← [Decoder]          ← [Demodulator]     ←</code></pre>
+
+<p><strong>Parameters:</strong></p>
+<ul>
+<li>Modulation: QPSK</li>
+<li>Error-correcting code: Hamming (7,4)</li>
+<li>SNR: 0 to 15 dB</li>
+<li>Bitrate: 1 Mbps</li>
+</ul>
+
+<p><strong>Results:</strong></p>
+<ul>
+<li>BER vs SNR curves (with/without coding)</li>
+<li>Coding gain (approximately 3-5 dB)</li>
+</ul>
+
+<hr>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Assessment</h3>
+<ul>
+<li>MATLAB labs (40%)</li>
+<li>Transmission chain project (30%)</li>
+<li>Tests (15%)</li>
+<li>Final exam (15%)</li>
+</ul>
+
+<h3>Skills acquired</h3>
+<ul>
+<li>Understanding digital telecommunications systems</li>
+<li>MATLAB simulation (modulations, channel, BER)</li>
+<li>Performance analysis (SNR, BER, capacity)</li>
+<li>Error detection/correction coding</li>
+<li>Foundations for 4G/5G, WiFi, satellite</li>
+</ul>
+
+<h3>Professional applications</h3>
+<ul>
+<li>Telecommunications (mobile, satellite, fiber)</li>
+<li>Wireless networks (WiFi, LoRa, Bluetooth)</li>
+<li>RF/telecom engineer</li>
+<li>IoT (low-bitrate protocols)</li>
+</ul>
+
+<h2>Digital communication chain</h2>
+
+<h3>Characteristics</h3>
+<ul>
+<li>Bit rate (bits/s)</li>
+<li>Bandwidth (Hz)</li>
+<li>Spectral efficiency (bits/s/Hz)</li>
+<li>Error probability (BER)</li>
+<li>Signal-to-noise ratio (SNR)</li>
+</ul>
+
+<h3>Line coding</h3>
+
+<h4>Principle</h4>
+<p>Electrical representation of binary data for transmission over a channel.</p>
+
+<h4>NRZ codes (Non Return to Zero)</h4>
+<p><strong>NRZ-L (Level):</strong></p>
+<ul>
+<li>0: low level</li>
+<li>1: high level</li>
+<li>Simple but has DC component</li>
+<li>No self-synchronization</li>
+</ul>
+
+<p><strong>NRZ-I (Inverted):</strong></p>
+<ul>
+<li>Transition on '1's</li>
+<li>No transition on '0's</li>
+<li>Better synchronization</li>
+</ul>
+
+<h4>RZ codes (Return to Zero)</h4>
+<ul>
+<li>Return to zero in mid-bit</li>
+<li>Better synchronization</li>
+<li>Doubled bandwidth</li>
+</ul>
+
+<h4>Manchester code</h4>
+<ul>
+<li>Transition in the middle of each bit</li>
+<li>0: high → low</li>
+<li>1: low → high</li>
+<li>Self-synchronization</li>
+<li>Used in Ethernet 10BASE-T</li>
+</ul>
+
+<h4>Differential Manchester code</h4>
+<ul>
+<li>Transition at bit start</li>
+<li>Presence/absence of mid-bit transition</li>
+</ul>
+
+<h4>Bipolar code (AMI)</h4>
+<ul>
+<li>0: zero level</li>
+<li>1: alternating +V and -V</li>
+<li>No DC component</li>
+<li>Error detection</li>
+</ul>
+
+<h4>MLT-3, PAM-5 codes</h4>
+<ul>
+<li>Multi-level</li>
+<li>Improved spectral efficiency</li>
+<li>Used in Fast Ethernet</li>
+</ul>
+
+<h3>Baseband transmission</h3>
+
+<h4>Nyquist criterion</h4>
+<ul>
+<li>No inter-symbol interference (ISI)</li>
+<li>Raised cosine filter</li>
+<li>Roll-off factor</li>
+<li>Minimum bandwidth</li>
+</ul>
+
+<h4>Eye diagram</h4>
+<ul>
+<li>Quality evaluation tool</li>
+<li>Vertical opening (noise margin)</li>
+<li>Horizontal opening (timing)</li>
+<li>Bit error rate (BER)</li>
+</ul>
+
+<h4>Equalization</h4>
+<ul>
+<li>Channel distortion compensation</li>
+<li>Linear equalizer</li>
+<li>Adaptive equalizer (LMS)</li>
+<li>Decision feedback equalizer (DFE)</li>
+</ul>
+
+<h3>Error detection and correction</h3>
+
+<h4>Detection codes</h4>
+
+<p><strong>Simple parity:</strong></p>
+<ul>
+<li>Even or odd parity bit</li>
+<li>Detects single error</li>
+<li>Does not correct</li>
+</ul>
+
+<p><strong>Cross parity (2D):</strong></p>
+<ul>
+<li>Row and column parity</li>
+<li>Detects and corrects some errors</li>
+</ul>
+
+<p><strong>CRC (Cyclic Redundancy Check):</strong></p>
+<ul>
+<li>Generator polynomial</li>
+<li>Polynomial division remainder</li>
+<li>CRC-8, CRC-16, CRC-32</li>
+<li>Very efficient for detection</li>
+</ul>
+
+<h4>Error-correcting codes</h4>
+
+<p><strong>Hamming code:</strong></p>
+<ul>
+<li>Hamming distance</li>
+<li>Corrects 1 bit, detects 2 bits</li>
+<li>Hamming(7,4), Hamming(15,11)</li>
+<li>Parity bits positioned at 2^n</li>
+</ul>
+
+<p><strong>Reed-Solomon code:</strong></p>
+<ul>
+<li>Non-binary cyclic code</li>
+<li>Burst error correction</li>
+<li>Used in CD, DVD, QR codes</li>
+<li>RS(255,223) typical</li>
+</ul>
+
+<p><strong>Convolutional codes:</strong></p>
+<ul>
+<li>Continuous encoding</li>
+<li>Viterbi decoding</li>
+<li>Used in mobile telephony</li>
+<li>Rate r = k/n</li>
+</ul>
+
+<p><strong>Turbo codes and LDPC:</strong></p>
+<ul>
+<li>Modern high-performance codes</li>
+<li>Near Shannon limit</li>
+<li>4G, 5G, satellites</li>
+</ul>
+
+<h3>Transmission performance</h3>
+
+<h4>Bit error probability (BER)</h4>
+<ul>
+<li>BER = errors / transmitted bits</li>
+<li>Depends on SNR</li>
+<li>Targets: 10^-6 to 10^-12</li>
+</ul>
+
+<h4>Eb/N0 ratio</h4>
+<ul>
+<li>Energy per bit / Noise density</li>
+<li>Quality measure</li>
+<li>BER vs Eb/N0 curves</li>
+</ul>
+
+<h4>Shannon capacity</h4>
+<ul>
+<li>C = B log2(1 + SNR)</li>
+<li>Theoretical limit</li>
+<li>Maximum error-free bitrate</li>
+</ul>
+
+<h2>Lab work</h2>
+
+<h3>Line coding lab</h3>
+<ul>
+<li>Code generation (NRZ, Manchester, AMI)</li>
+<li>Spectral analysis</li>
+<li>Transmission simulation</li>
+<li>Eye diagram</li>
+</ul>
+
+<h3>CRC lab</h3>
+<ul>
+<li>CRC algorithm implementation</li>
+<li>Error detection testing</li>
+<li>Comparison of CRC-8, CRC-16, CRC-32</li>
+<li>Microcontroller application</li>
+</ul>
+
+<h3>Hamming code lab</h3>
+<ul>
+<li>Hamming(7,4) encoding</li>
+<li>Decoding and correction</li>
+<li>Error insertion</li>
+<li>Correction rate</li>
+</ul>
+
+<h3>Communication project</h3>
+<ul>
+<li>Coded serial link</li>
+<li>CRC protection</li>
+<li>Application protocol</li>
+<li>Robustness testing</li>
+</ul>
+
+<h2>Tools used</h2>
+
+<h3>Simulation</h3>
+<ul>
+<li><strong>MATLAB/Simulink</strong>: System simulation</li>
+<li><strong>Python</strong>: Algorithm programming</li>
+<li><strong>GNU Radio</strong>: SDR and communications</li>
+<li><strong>LabVIEW</strong>: Acquisition and processing</li>
+</ul>
+
+<h3>Development</h3>
+<ul>
+<li><strong>STM32</strong>: Embedded implementation</li>
+<li><strong>Arduino</strong>: Rapid prototyping</li>
+<li><strong>UART, SPI, I2C</strong>: Interfaces</li>
+</ul>
+
+<h3>Measurement</h3>
+<ul>
+<li><strong>Oscilloscope</strong>: Signals and eye diagram</li>
+<li><strong>Logic analyzer</strong>: Protocol decoding</li>
+<li><strong>BERT (Bit Error Rate Tester)</strong>: BER measurement</li>
+</ul>
+
+<h2>Assessment</h2>
+<ul>
+<li>Lab work (40%)</li>
+<li>Communication project (30%)</li>
+<li>Continuous assessment (15%)</li>
+<li>Final exam (15%)</li>
+</ul>
+
+<h2>Links with other courses</h2>
+<ul>
+<li><strong>SE</strong>: Signal processing</li>
+<li><strong>OL</strong>: Modulation/demodulation</li>
+<li><strong>IE</strong>: Protocol implementation</li>
+<li><strong>Digital Telecommunications (S4)</strong>: Advanced topics</li>
+<li><strong>Network</strong>: Protocol layers</li>
+</ul>
+
+<h2>Calculation examples</h2>
+
+<h3>Hamming distance</h3>
+<p>Number of different bits between two words:</p>
+<ul>
+<li>101101 vs 101111 → distance = 1</li>
+<li>101101 vs 010001 → distance = 3</li>
+</ul>
+
+<h3>CRC-8</h3>
+<p>Polynomial: x^8 + x^2 + x + 1 (0x107)</p>
+<pre><code>Message : 11010011101100
+Remainder: 10101010
+Transmitted message: 11010011101100 10101010</code></pre>
+
+<h3>Hamming code (7,4)</h3>
+<p>4 data bits: d1 d2 d3 d4<br>
+3 parity bits: p1 p2 p3</p>
+<p>Position: p1 p2 d1 p3 d2 d3 d4</p>
+<pre><code>p1 = d1 XOR d2 XOR d4
+p2 = d1 XOR d3 XOR d4
+p3 = d2 XOR d3 XOR d4</code></pre>
+
+<h2>Practical applications</h2>
+
+<h3>Wired networks</h3>
+<ul>
+<li>Ethernet (Manchester)</li>
+<li>USB (NRZI)</li>
+<li>RS-232/RS-485</li>
+</ul>
+
+<h3>Wireless communications</h3>
+<ul>
+<li>WiFi (OFDM + codes)</li>
+<li>Bluetooth (FEC)</li>
+<li>Zigbee</li>
+</ul>
+
+<h3>Storage</h3>
+<ul>
+<li>Hard drives (Reed-Solomon)</li>
+<li>Flash memory (BCH, LDPC)</li>
+<li>QR codes</li>
+</ul>
+
+<h3>Audiovisual</h3>
+<ul>
+<li>DVB (digital television)</li>
+<li>DAB (digital radio)</li>
+<li>HDMI</li>
+</ul>
+
+<h2>Skills developed</h2>
+<ul>
+<li>Data encoding and decoding</li>
+<li>Transmission performance analysis</li>
+<li>Implementation of protection algorithms</li>
+<li>Communication link diagnostics</li>
+<li>Digital system simulation</li>
+<li>BER measurement and optimization</li>
+</ul>
+
+<h2>Protocols studied</h2>
+
+<h3>Data link protocol</h3>
+<ul>
+<li>Framing</li>
+<li>Synchronization</li>
+<li>Error detection (CRC)</li>
+<li>Acknowledgments (ACK/NACK)</li>
+<li>Retransmission (ARQ)</li>
+</ul>
+
+<h3>Example: Simple protocol</h3>
+<pre><code>[Start] [Length] [Data] [CRC16] [Stop]
+  0x02     1B      nB      2B     0x03</code></pre>
+
+<h2>Common issues</h2>
+
+<h3>Transmission</h3>
+<ul>
+<li>Signal attenuation</li>
+<li>Noise (thermal, impulsive)</li>
+<li>Distortion (ISI)</li>
+<li>Clock drift</li>
+<li>Reflections (impedance)</li>
+</ul>
+
+<h3>Coding</h3>
+<ul>
+<li>Excessive DC component</li>
+<li>Too wide bandwidth</li>
+<li>Loss of synchronization</li>
+<li>Insufficient error detection</li>
+</ul>
+
+<h2>Embedded implementation</h2>
+
+<h3>CRC on microcontroller</h3>
+<pre><code class="language-c">uint8_t crc8(uint8_t *data, uint8_t len) {
+    uint8_t crc = 0;
+    for(uint8_t i=0; i&lt;len; i++) {
+        crc ^= data[i];
+        for(uint8_t j=0; j&lt;8; j++) {
+            if(crc &amp; 0x80)
+                crc = (crc &lt;&lt; 1) ^ 0x07;
+            else
+                crc &lt;&lt;= 1;
+        }
+    }
+    return crc;
+}</code></pre>
+
+<h3>Manchester code</h3>
+<pre><code class="language-c">void manchester_encode(uint8_t data, uint16_t *output) {
+    for(int i=0; i&lt;8; i++) {
+        if(data &amp; (1&lt;&lt;(7-i)))
+            *output |= (0b01 &lt;&lt; (14-i*2)); // 1 → 01
+        else
+            *output |= (0b10 &lt;&lt; (14-i*2)); // 0 → 10
+    }
+}</code></pre>
+
+</div>
 
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="/assets/images/courses/S3/telecom/nucleo_l152re_2017_9_22_mor_left.png" alt="Nucleo L152RE - Vue gauche" style="max-width: 400px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
-    <p style="margin-top: 8px; font-style: italic; color: #666;">Carte Nucleo L152RE - Vue gauche</p>
+    <img src="/assets/images/courses/S3/telecom/nucleo_l152re_2017_9_22_mor_left.png" alt="Nucleo L152RE" style="max-width: 400px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    <p style="margin-top: 8px; font-style: italic; color: #666;">
+      <span class="lang-fr">Carte Nucleo L152RE - Vue gauche</span>
+      <span class="lang-en">Nucleo L152RE Board - Left view</span>
+    </p>
   </div>
   <div style="text-align: center;">
-    <img src="/assets/images/courses/S3/telecom/nucleo_l152re_2017_9_22_mor_right.png" alt="Nucleo L152RE - Vue droite" style="max-width: 400px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
-    <p style="margin-top: 8px; font-style: italic; color: #666;">Carte Nucleo L152RE - Vue droite</p>
+    <img src="/assets/images/courses/S3/telecom/nucleo_l152re_2017_9_22_mor_right.png" alt="Nucleo L152RE" style="max-width: 400px; width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+    <p style="margin-top: 8px; font-style: italic; color: #666;">
+      <span class="lang-fr">Carte Nucleo L152RE - Vue droite</span>
+      <span class="lang-en">Nucleo L152RE Board - Right view</span>
+    </p>
   </div>
 </div>
-
----
 
 <style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;line-height:1.6}h2,h3,h4,h5{color:#2a7ae2}p{text-align:justify}code{background-color:#f5f5f5;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}pre{background-color:#f5f5f5;padding:15px;border-radius:5px;overflow-x:auto}</style>
 
 <div class="back-nav">
-  <a href="./my-courses-2021-2022.html">&larr; Retour a Mes Cours 2021-2022</a>
+  <a href="./my-courses-2021-2022.html" data-i18n-html="back-courses-2021-2022">&larr; Retour a Mes Cours 2021-2022</a>
 </div>

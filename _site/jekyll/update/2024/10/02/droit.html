@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"⚖️ Droit - Semestre 8","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/droit.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/droit.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -80,1645 +91,1920 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
 </div>
 
-<h1 id="️-droit---semestre-8">⚖️ Droit - Semestre 8</h1>
+<div class="lang-fr">
 
-<p><strong>Année académique</strong> : 2023-2024<br />
+<h1>Droit - Semestre 8</h1>
+
+<p><strong>Annee academique</strong> : 2023-2024<br />
 <strong>ECTS</strong> : 2<br />
-<strong>Catégorie</strong> : Sciences Humaines et Sociales - Juridique</p>
+<strong>Categorie</strong> : Sciences Humaines et Sociales - Juridique</p>
 
 <hr />
 
-<h2 id="part-a---présentation-générale-du-module">PART A - Présentation Générale du Module</h2>
+<h2>PART A - Presentation Generale du Module</h2>
 
 <h3 class="section-title">Vue d'ensemble</h3>
 
-<p>Ce cours introduit les notions juridiques fondamentales pour l’ingénieur dans sa vie professionnelle. Il couvre le droit des contrats, le droit du travail, la propriété intellectuelle, et le droit des sociétés. L’objectif est de permettre aux futurs ingénieurs de comprendre l’environnement juridique, protéger leurs innovations, négocier des contrats, et connaître leurs droits et obligations.</p>
+<p>Ce cours introduit les notions juridiques fondamentales pour l'ingenieur dans sa vie professionnelle. Il couvre le droit des contrats, le droit du travail, la propriete intellectuelle, et le droit des societes. L'objectif est de permettre aux futurs ingenieurs de comprendre l'environnement juridique, proteger leurs innovations, negocier des contrats, et connaitre leurs droits et obligations.</p>
 
-<p><strong>Objectifs pédagogiques</strong> :</p>
+<p><strong>Objectifs pedagogiques</strong> :</p>
 <ul>
-  <li>Comprendre les principes du droit français et la hiérarchie des normes</li>
-  <li>Maîtriser les bases du droit des contrats</li>
-  <li>Connaître ses droits et obligations en droit du travail</li>
-  <li>Comprendre la propriété intellectuelle (brevets, droits d’auteur, marques)</li>
-  <li>Appréhender les structures juridiques d’entreprises</li>
-  <li>Identifier les responsabilités de l’ingénieur</li>
-  <li>Comprendre le RGPD et la protection des données</li>
+<li>Comprendre les principes du droit francais et la hierarchie des normes</li>
+<li>Maitriser les bases du droit des contrats</li>
+<li>Connaitre ses droits et obligations en droit du travail</li>
+<li>Comprendre la propriete intellectuelle (brevets, droits d'auteur, marques)</li>
+<li>Apprehender les structures juridiques d'entreprises</li>
+<li>Identifier les responsabilites de l'ingenieur</li>
+<li>Comprendre le RGPD et la protection des donnees</li>
 </ul>
 
 <h3 class="section-title">Position dans le cursus</h3>
 
-<p>Ce module apporte une dimension juridique complémentaire :</p>
+<p>Ce module apporte une dimension juridique complementaire :</p>
 <ul>
-  <li><strong>Gestion (S8)</strong> : stratégie d’entreprise, management</li>
-  <li><strong>Finance (S7)</strong> : valorisation, levée de fonds</li>
-  <li><strong>Entreprise (S5, S7)</strong> : fonctionnement des organisations</li>
+<li><strong>Gestion (S8)</strong> : strategie d'entreprise, management</li>
+<li><strong>Finance (S7)</strong> : valorisation, levee de fonds</li>
+<li><strong>Entreprise (S5, S7)</strong> : fonctionnement des organisations</li>
 </ul>
 
-<p>Il prépare à :</p>
+<p>Il prepare a :</p>
 <ul>
-  <li><strong>Entrepreneuriat</strong> : création d’entreprise, protection de l’innovation</li>
-  <li><strong>Carrière en entreprise</strong> : négociation de contrats, gestion de projets</li>
-  <li><strong>R&amp;D</strong> : protection de la propriété intellectuelle</li>
-  <li><strong>Management</strong> : gestion d’équipes dans le respect du droit du travail</li>
+<li><strong>Entrepreneuriat</strong> : creation d'entreprise, protection de l'innovation</li>
+<li><strong>Carriere en entreprise</strong> : negociation de contrats, gestion de projets</li>
+<li><strong>R&amp;D</strong> : protection de la propriete intellectuelle</li>
+<li><strong>Management</strong> : gestion d'equipes dans le respect du droit du travail</li>
 </ul>
 
 <hr />
 
-<h2 id="part-b---expérience-personnelle-et-contexte-dapprentissage">PART B - Expérience Personnelle et Contexte d’Apprentissage</h2>
+<h2>PART B - Experience Personnelle et Contexte d'Apprentissage</h2>
 
 <h3 class="section-title">Organisation et ressources</h3>
 
-<p>Le module était dispensé par des juristes et avocats praticiens :</p>
+<p>Le module etait dispense par des juristes et avocats praticiens :</p>
 
 <p><strong>Cours magistraux (18h)</strong> :</p>
 <ul>
-  <li>Hiérarchie des normes et sources du droit</li>
-  <li>Droit des contrats (formation, exécution, résolution)</li>
-  <li>Droit du travail (contrat, temps de travail, rupture)</li>
-  <li>Propriété intellectuelle (brevets, droits d’auteur, marques)</li>
-  <li>Droit des sociétés (SARL, SAS, SA)</li>
-  <li>Responsabilités de l’ingénieur</li>
-  <li>Protection des données (RGPD)</li>
+<li>Hierarchie des normes et sources du droit</li>
+<li>Droit des contrats (formation, execution, resolution)</li>
+<li>Droit du travail (contrat, temps de travail, rupture)</li>
+<li>Propriete intellectuelle (brevets, droits d'auteur, marques)</li>
+<li>Droit des societes (SARL, SAS, SA)</li>
+<li>Responsabilites de l'ingenieur</li>
+<li>Protection des donnees (RGPD)</li>
 </ul>
 
 <p><strong>Cas pratiques (9 cas)</strong> :</p>
 <ul>
-  <li>Thème 1 : Droit des contrats</li>
-  <li>Thème 2 : Vices du consentement</li>
-  <li>Thème 3 : Contrat de travail</li>
-  <li>Thème 4 : Rupture du contrat de travail</li>
-  <li>Thème 5 : Brevets d’invention</li>
-  <li>Thème 6 : Droits d’auteur</li>
-  <li>Thème 7 : Marques</li>
-  <li>Thème 8 : Droit des sociétés</li>
-  <li>Thème 9 : Responsabilités et RGPD</li>
+<li>Theme 1 : Droit des contrats</li>
+<li>Theme 2 : Vices du consentement</li>
+<li>Theme 3 : Contrat de travail</li>
+<li>Theme 4 : Rupture du contrat de travail</li>
+<li>Theme 5 : Brevets d'invention</li>
+<li>Theme 6 : Droits d'auteur</li>
+<li>Theme 7 : Marques</li>
+<li>Theme 8 : Droit des societes</li>
+<li>Theme 9 : Responsabilites et RGPD</li>
 </ul>
 
 <p><strong>Ressources</strong> :</p>
 <ul>
-  <li>Code Civil (articles pertinents fournis)</li>
-  <li>Code du Travail (extraits)</li>
-  <li>Code de la Propriété Intellectuelle</li>
-  <li>Annales : QCM et cas pratiques</li>
-  <li>Documentation INPI (Institut National de la Propriété Industrielle)</li>
+<li>Code Civil (articles pertinents fournis)</li>
+<li>Code du Travail (extraits)</li>
+<li>Code de la Propriete Intellectuelle</li>
+<li>Annales : QCM et cas pratiques</li>
+<li>Documentation INPI (Institut National de la Propriete Industrielle)</li>
 </ul>
 
-<h3 class="section-title">Méthodologie d'étude</h3>
+<h3 class="section-title">Methodologie d'etude</h3>
 
-<p><strong>Phase 1 : Assimiler les concepts généraux</strong> :
-Comprendre la logique du droit français, la hiérarchie des normes, les grands principes.</p>
+<p><strong>Phase 1 : Assimiler les concepts generaux</strong> :</p>
+<p>Comprendre la logique du droit francais, la hierarchie des normes, les grands principes.</p>
 
-<p><strong>Phase 2 : Étudier chaque domaine</strong> :
-Approfondir contrats, travail, propriété intellectuelle, sociétés avec leurs spécificités.</p>
+<p><strong>Phase 2 : Etudier chaque domaine</strong> :</p>
+<p>Approfondir contrats, travail, propriete intellectuelle, societes avec leurs specificites.</p>
 
-<p><strong>Phase 3 : Résoudre des cas pratiques</strong> :
-Appliquer les connaissances à des situations concrètes (les 9 cas pratiques).</p>
+<p><strong>Phase 3 : Resoudre des cas pratiques</strong> :</p>
+<p>Appliquer les connaissances a des situations concretes (les 9 cas pratiques).</p>
 
-<p><strong>Phase 4 : Mémoriser les articles clés</strong> :
-Quelques articles du Code Civil et du Code du Travail sont fondamentaux (ex : 1103, 1128, L1221-1).</p>
+<p><strong>Phase 4 : Memoriser les articles cles</strong> :</p>
+<p>Quelques articles du Code Civil et du Code du Travail sont fondamentaux (ex : 1103, 1128, L1221-1).</p>
 
-<p><strong>Phase 5 : Développer le réflexe juridique</strong> :
-Identifier dans toute situation professionnelle les enjeux juridiques et savoir quand consulter un expert.</p>
+<p><strong>Phase 5 : Developper le reflexe juridique</strong> :</p>
+<p>Identifier dans toute situation professionnelle les enjeux juridiques et savoir quand consulter un expert.</p>
 
-<h3 class="section-title">Difficultés rencontrées</h3>
+<h3 class="section-title">Difficultes rencontrees</h3>
 
-<p><strong>Vocabulaire technique</strong> :
-Le droit a son jargon (délictuel, subsidiaire, CMRR, INPI, etc.). Nécessite de se familiariser avec les termes.</p>
+<p><strong>Vocabulaire technique</strong> :</p>
+<p>Le droit a son jargon (delictuel, subsidiaire, CMRR, INPI, etc.). Necessite de se familiariser avec les termes.</p>
 
-<p><strong>Logique différente</strong> :
-Le raisonnement juridique diffère du raisonnement technique. Il faut s’adapter à la pensée juridique (qualification, subsomption).</p>
+<p><strong>Logique differente</strong> :</p>
+<p>Le raisonnement juridique differe du raisonnement technique. Il faut s'adapter a la pensee juridique (qualification, subsomption).</p>
 
-<p><strong>Complexité des textes</strong> :
-Les articles de loi sont denses et précis. Lecture attentive nécessaire.</p>
+<p><strong>Complexite des textes</strong> :</p>
+<p>Les articles de loi sont denses et precis. Lecture attentive necessaire.</p>
 
-<p><strong>Multitude de cas particuliers</strong> :
-Le droit prévoit de nombreuses exceptions et cas spécifiques. Difficile de tout retenir.</p>
+<p><strong>Multitude de cas particuliers</strong> :</p>
+<p>Le droit prevoit de nombreuses exceptions et cas specifiques. Difficile de tout retenir.</p>
 
 <hr />
 
-<h2 id="part-c---aspects-techniques-détaillés">PART C - Aspects Techniques Détaillés</h2>
+<h2>PART C - Aspects Techniques Detailles</h2>
 
-<h3 class="section-title">1. Hiérarchie des normes juridiques</h3>
+<h3 class="section-title">1. Hierarchie des normes juridiques</h3>
 
 <p><strong>Pyramide de Kelsen</strong> :</p>
 
-<p>Le droit français s’organise en hiérarchie. Une norme inférieure doit respecter les normes supérieures.</p>
+<p>Le droit francais s'organise en hierarchie. Une norme inferieure doit respecter les normes superieures.</p>
 
-<p><strong>Ordre hiérarchique</strong> :</p>
+<p><strong>Ordre hierarchique</strong> :</p>
 
 <ol>
-  <li><strong>Constitution</strong> (sommet) : loi fondamentale, droits et libertés fondamentaux</li>
-  <li><strong>Traités internationaux</strong> : conventions européennes, accords internationaux (supériorité aux lois)</li>
-  <li><strong>Lois</strong> : votées par le Parlement</li>
-  <li><strong>Règlements</strong> : décrets, arrêtés (pouvoir exécutif)</li>
-  <li><strong>Contrats</strong> : “la loi des parties” (mais ne peut contredire les normes supérieures)</li>
+<li><strong>Constitution</strong> (sommet) : loi fondamentale, droits et libertes fondamentaux</li>
+<li><strong>Traites internationaux</strong> : conventions europeennes, accords internationaux (superiorite aux lois)</li>
+<li><strong>Lois</strong> : votees par le Parlement</li>
+<li><strong>Reglements</strong> : decrets, arretes (pouvoir executif)</li>
+<li><strong>Contrats</strong> : "la loi des parties" (mais ne peut contredire les normes superieures)</li>
 </ol>
 
-<p><strong>Principe de légalité</strong> :</p>
+<p><strong>Principe de legalite</strong> :</p>
 
-<p>Toute norme inférieure doit être conforme aux normes supérieures. Une loi contraire à la Constitution peut être censurée par le Conseil Constitutionnel.</p>
+<p>Toute norme inferieure doit etre conforme aux normes superieures. Une loi contraire a la Constitution peut etre censuree par le Conseil Constitutionnel.</p>
 
 <h3 class="section-title">2. Droit des contrats</h3>
 
-<p><strong>Définition</strong> :</p>
+<p><strong>Definition</strong> :</p>
 
-<p>Un contrat est un accord de volontés créant des obligations juridiques entre les parties.</p>
+<p>Un contrat est un accord de volontes creant des obligations juridiques entre les parties.</p>
 
-<p><strong>Conditions de validité (article 1128 Code Civil)</strong> :</p>
+<p><strong>Conditions de validite (article 1128 Code Civil)</strong> :</p>
 
-<p>Pour qu’un contrat soit valide, il faut :</p>
+<p>Pour qu'un contrat soit valide, il faut :</p>
 <ol>
-  <li><strong>Consentement libre et éclairé</strong> des parties</li>
-  <li><strong>Capacité juridique</strong> de contracter (majeur, sain d’esprit)</li>
-  <li><strong>Contenu licite et certain</strong> (objet et cause légaux)</li>
+<li><strong>Consentement libre et eclaire</strong> des parties</li>
+<li><strong>Capacite juridique</strong> de contracter (majeur, sain d'esprit)</li>
+<li><strong>Contenu licite et certain</strong> (objet et cause legaux)</li>
 </ol>
 
 <p><strong>Formation du contrat</strong> :</p>
 
-<p><strong>Offre</strong> : proposition précise, ferme, et complète.</p>
+<p><strong>Offre</strong> : proposition precise, ferme, et complete.</p>
 
-<p><strong>Acceptation</strong> : accord pur et simple sans réserve.</p>
+<p><strong>Acceptation</strong> : accord pur et simple sans reserve.</p>
 
-<p><strong>Rencontre des volontés</strong> : dès que l’acceptation rencontre l’offre, le contrat est formé (consensualisme).</p>
+<p><strong>Rencontre des volontes</strong> : des que l'acceptation rencontre l'offre, le contrat est forme (consensualisme).</p>
 
 <p><strong>Force obligatoire (article 1103)</strong> :</p>
 
-<p>“Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits.”</p>
+<p>"Les contrats legalement formes tiennent lieu de loi a ceux qui les ont faits."</p>
 
-<p>Les parties doivent respecter leurs engagements. Le non-respect entraîne responsabilité contractuelle.</p>
+<p>Les parties doivent respecter leurs engagements. Le non-respect entraine responsabilite contractuelle.</p>
 
 <p><strong>Vices du consentement</strong> :</p>
 
-<p>Le consentement doit être libre et éclairé. S’il est vicié, le contrat peut être annulé.</p>
+<p>Le consentement doit etre libre et eclaire. S'il est vicie, le contrat peut etre annule.</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Vice</th>
-      <th>Description</th>
-      <th>Exemple</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Erreur</td>
-      <td>Croyance erronée sur élément essentiel</td>
-      <td>Acheter un faux tableau croyant qu’il est authentique</td>
-    </tr>
-    <tr>
-      <td>Dol</td>
-      <td>Manœuvres frauduleuses pour tromper</td>
-      <td>Masquer un défaut lors de vente</td>
-    </tr>
-    <tr>
-      <td>Violence</td>
-      <td>Contrainte physique ou morale</td>
-      <td>Signer sous menace</td>
-    </tr>
-  </tbody>
+<tr><th>Vice</th><th>Description</th><th>Exemple</th></tr>
+<tr><td>Erreur</td><td>Croyance erronee sur element essentiel</td><td>Acheter un faux tableau croyant qu'il est authentique</td></tr>
+<tr><td>Dol</td><td>Manoeuvres frauduleuses pour tromper</td><td>Masquer un defaut lors de vente</td></tr>
+<tr><td>Violence</td><td>Contrainte physique ou morale</td><td>Signer sous menace</td></tr>
 </table>
 
-<p><strong>Exécution du contrat</strong> :</p>
+<p><strong>Execution du contrat</strong> :</p>
 
-<p>Les obligations doivent être exécutées de bonne foi. En cas d’inexécution, sanctions possibles : exécution forcée, dommages-intérêts, résolution.</p>
+<p>Les obligations doivent etre executees de bonne foi. En cas d'inexecution, sanctions possibles : execution forcee, dommages-interets, resolution.</p>
 
 <p><strong>Fin du contrat</strong> :</p>
 
 <ul>
-  <li><strong>Exécution complète</strong> : obligations remplies</li>
-  <li><strong>Résolution</strong> : fin pour inexécution grave</li>
-  <li><strong>Résiliation</strong> : fin pour l’avenir (contrats à exécution successive)</li>
-  <li><strong>Accord mutuel</strong> : les parties décident ensemble de mettre fin</li>
+<li><strong>Execution complete</strong> : obligations remplies</li>
+<li><strong>Resolution</strong> : fin pour inexecution grave</li>
+<li><strong>Resiliation</strong> : fin pour l'avenir (contrats a execution successive)</li>
+<li><strong>Accord mutuel</strong> : les parties decident ensemble de mettre fin</li>
 </ul>
 
 <h3 class="section-title">3. Contrat de travail</h3>
 
-<p><strong>Définition</strong> :</p>
+<p><strong>Definition</strong> :</p>
 
-<p>Lien de subordination juridique contre rémunération. Le salarié travaille sous l’autorité de l’employeur.</p>
+<p>Lien de subordination juridique contre remuneration. Le salarie travaille sous l'autorite de l'employeur.</p>
 
-<p><strong>Critères du lien de subordination</strong> :</p>
+<p><strong>Criteres du lien de subordination</strong> :</p>
 <ul>
-  <li>Directives de l’employeur</li>
-  <li>Contrôle de l’exécution</li>
-  <li>Pouvoir de sanction</li>
+<li>Directives de l'employeur</li>
+<li>Controle de l'execution</li>
+<li>Pouvoir de sanction</li>
 </ul>
 
 <p><strong>Types de contrats</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Durée</th>
-      <th>Utilisation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>CDI</td>
-      <td>Indéterminée</td>
-      <td>Forme normale et générale</td>
-    </tr>
-    <tr>
-      <td>CDD</td>
-      <td>Déterminée</td>
-      <td>Cas limitatifs (remplacement, surcroît d’activité)</td>
-    </tr>
-    <tr>
-      <td>Intérim</td>
-      <td>Mission temporaire</td>
-      <td>Via agence d’intérim</td>
-    </tr>
-  </tbody>
+<tr><th>Type</th><th>Duree</th><th>Utilisation</th></tr>
+<tr><td>CDI</td><td>Indeterminee</td><td>Forme normale et generale</td></tr>
+<tr><td>CDD</td><td>Determinee</td><td>Cas limitatifs (remplacement, surcroit d'activite)</td></tr>
+<tr><td>Interim</td><td>Mission temporaire</td><td>Via agence d'interim</td></tr>
 </table>
 
-<p><strong>Contenu obligatoire d’un contrat de travail</strong> :</p>
+<p><strong>Contenu obligatoire d'un contrat de travail</strong> :</p>
 <ul>
-  <li>Identification des parties</li>
-  <li>Qualification (poste, statut)</li>
-  <li>Rémunération (salaire brut)</li>
-  <li>Durée et horaires de travail</li>
-  <li>Lieu de travail</li>
-  <li>Convention collective applicable</li>
+<li>Identification des parties</li>
+<li>Qualification (poste, statut)</li>
+<li>Remuneration (salaire brut)</li>
+<li>Duree et horaires de travail</li>
+<li>Lieu de travail</li>
+<li>Convention collective applicable</li>
 </ul>
 
-<p><strong>Période d’essai</strong> :</p>
+<p><strong>Periode d'essai</strong> :</p>
 
-<p>Période permettant à chaque partie d’évaluer l’autre et de rompre facilement.</p>
+<p>Periode permettant a chaque partie d'evaluer l'autre et de rompre facilement.</p>
 
-<p>Durée maximale selon statut :</p>
+<p>Duree maximale selon statut :</p>
 <ul>
-  <li>Ouvriers/employés : 2 mois</li>
-  <li>Agents de maîtrise/techniciens : 3 mois</li>
-  <li>Cadres : 4 mois</li>
+<li>Ouvriers/employes : 2 mois</li>
+<li>Agents de maitrise/techniciens : 3 mois</li>
+<li>Cadres : 4 mois</li>
 </ul>
 
-<p>Renouvellement possible si prévu par convention collective.</p>
+<p>Renouvellement possible si prevu par convention collective.</p>
 
 <p><strong>Modification du contrat</strong> :</p>
 
-<p>Les éléments essentiels (rémunération, qualification, lieu si précisé) nécessitent l’accord du salarié.</p>
+<p>Les elements essentiels (remuneration, qualification, lieu si precise) necessitent l'accord du salarie.</p>
 
-<p>Refus du salarié : employeur ne peut pas imposer, doit maintenir situation ou licencier (motif économique si applicable).</p>
+<p>Refus du salarie : employeur ne peut pas imposer, doit maintenir situation ou licencier (motif economique si applicable).</p>
 
 <p><strong>Rupture du CDI</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Initiative</th>
-      <th>Conditions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Démission</td>
-      <td>Salarié</td>
-      <td>Volonté claire et non équivoque</td>
-    </tr>
-    <tr>
-      <td>Licenciement</td>
-      <td>Employeur</td>
-      <td>Cause réelle et sérieuse (faute, insuffisance, économique)</td>
-    </tr>
-    <tr>
-      <td>Rupture conventionnelle</td>
-      <td>Mutuelle</td>
-      <td>Accord commun, homologation</td>
-    </tr>
-    <tr>
-      <td>Prise d’acte</td>
-      <td>Salarié</td>
-      <td>Manquements graves employeur (requalification en licenciement si justifié)</td>
-    </tr>
-  </tbody>
+<tr><th>Type</th><th>Initiative</th><th>Conditions</th></tr>
+<tr><td>Demission</td><td>Salarie</td><td>Volonte claire et non equivoque</td></tr>
+<tr><td>Licenciement</td><td>Employeur</td><td>Cause reelle et serieuse (faute, insuffisance, economique)</td></tr>
+<tr><td>Rupture conventionnelle</td><td>Mutuelle</td><td>Accord commun, homologation</td></tr>
+<tr><td>Prise d'acte</td><td>Salarie</td><td>Manquements graves employeur (requalification en licenciement si justifie)</td></tr>
 </table>
 
-<p><strong>Indemnités de licenciement</strong> :</p>
+<p><strong>Indemnites de licenciement</strong> :</p>
 
-<p>Si licenciement (hors faute grave/lourde) et ancienneté ≥ 8 mois : indemnité légale minimum (1/4 de mois par année d’ancienneté).</p>
+<p>Si licenciement (hors faute grave/lourde) et anciennete &ge; 8 mois : indemnite legale minimum (1/4 de mois par annee d'anciennete).</p>
 
-<h3 class="section-title">4. Temps de travail et rémunération</h3>
+<h3 class="section-title">4. Temps de travail et remuneration</h3>
 
-<p><strong>Durée légale</strong> :</p>
+<p><strong>Duree legale</strong> :</p>
 
 <p>35 heures par semaine (ou 151,67 heures par mois).</p>
 
-<p>Au-delà : heures supplémentaires majorées.</p>
+<p>Au-dela : heures supplementaires majorees.</p>
 
-<p><strong>Heures supplémentaires</strong> :</p>
+<p><strong>Heures supplementaires</strong> :</p>
 
 <p>Majoration :</p>
 <ul>
-  <li>25% pour les 8 premières heures (36e à 43e heure)</li>
-  <li>50% au-delà</li>
+<li>25% pour les 8 premieres heures (36e a 43e heure)</li>
+<li>50% au-dela</li>
 </ul>
 
-<p>Possibilité de repos compensateur équivalent.</p>
+<p>Possibilite de repos compensateur equivalent.</p>
 
 <p><strong>Forfait jours (cadres autonomes)</strong> :</p>
 
-<p>Pas de décompte horaire, mais nombre de jours travaillés par an (218 jours maximum).</p>
+<p>Pas de decompte horaire, mais nombre de jours travailles par an (218 jours maximum).</p>
 
 <p><strong>Repos obligatoires</strong> :</p>
 
 <ul>
-  <li><strong>Repos quotidien</strong> : 11 heures consécutives</li>
-  <li><strong>Repos hebdomadaire</strong> : 24 heures (généralement dimanche + 11h quotidiennes = 35h)</li>
-  <li><strong>Congés payés</strong> : 2,5 jours ouvrables par mois travaillé (30 jours par an)</li>
+<li><strong>Repos quotidien</strong> : 11 heures consecutives</li>
+<li><strong>Repos hebdomadaire</strong> : 24 heures (generalement dimanche + 11h quotidiennes = 35h)</li>
+<li><strong>Conges payes</strong> : 2,5 jours ouvrables par mois travaille (30 jours par an)</li>
 </ul>
 
 <p><strong>SMIC</strong> :</p>
 
-<p>Salaire Minimum Interprofessionnel de Croissance. Montant horaire fixé par décret, réévalué régulièrement.</p>
+<p>Salaire Minimum Interprofessionnel de Croissance. Montant horaire fixe par decret, reevalue regulierement.</p>
 
 <p><strong>Bulletin de paie</strong> :</p>
 
 <ul>
-  <li><strong>Salaire brut</strong> : avant déductions</li>
-  <li><strong>Cotisations sociales</strong> : salariales (retenues sur salaire) + patronales (payées par employeur)</li>
-  <li><strong>Salaire net</strong> : perçu par le salarié</li>
+<li><strong>Salaire brut</strong> : avant deductions</li>
+<li><strong>Cotisations sociales</strong> : salariales (retenues sur salaire) + patronales (payees par employeur)</li>
+<li><strong>Salaire net</strong> : percu par le salarie</li>
 </ul>
 
-<h3 class="section-title">5. Propriété intellectuelle - Vue d'ensemble</h3>
+<h3 class="section-title">5. Propriete intellectuelle - Vue d'ensemble</h3>
 
 <p><strong>Trois piliers</strong> :</p>
 
-<p><strong>1. Propriété industrielle</strong> :</p>
+<p><strong>1. Propriete industrielle</strong> :</p>
 <ul>
-  <li>Brevets d’invention</li>
-  <li>Marques</li>
-  <li>Dessins et modèles</li>
+<li>Brevets d'invention</li>
+<li>Marques</li>
+<li>Dessins et modeles</li>
 </ul>
 
-<p><strong>2. Propriété littéraire et artistique</strong> :</p>
+<p><strong>2. Propriete litteraire et artistique</strong> :</p>
 <ul>
-  <li>Droit d’auteur (œuvres de l’esprit)</li>
-  <li>Droits voisins (artistes-interprètes, producteurs)</li>
+<li>Droit d'auteur (oeuvres de l'esprit)</li>
+<li>Droits voisins (artistes-interpretes, producteurs)</li>
 </ul>
 
 <p><strong>3. Autres</strong> :</p>
 <ul>
-  <li>Obtentions végétales</li>
-  <li>Topographies de semi-conducteurs</li>
+<li>Obtentions vegetales</li>
+<li>Topographies de semi-conducteurs</li>
 </ul>
 
 <h3 class="section-title">6. Brevets d'invention</h3>
 
 <p><strong>Principe</strong> :</p>
 
-<p>Le brevet protège une invention technique en accordant un monopole d’exploitation pour une durée limitée.</p>
+<p>Le brevet protege une invention technique en accordant un monopole d'exploitation pour une duree limitee.</p>
 
-<p><strong>Conditions de brevetabilité</strong> :</p>
+<p><strong>Conditions de brevetabilite</strong> :</p>
 
-<p>Pour être brevetable, l’invention doit remplir trois critères :</p>
+<p>Pour etre brevetable, l'invention doit remplir trois criteres :</p>
 
 <ol>
-  <li><strong>Nouveauté</strong> : non divulguée publiquement avant le dépôt (pas de publication, pas de vente)</li>
-  <li><strong>Activité inventive</strong> : non évidente pour un homme du métier (apport créatif)</li>
-  <li><strong>Application industrielle</strong> : fabricable ou utilisable dans l’industrie</li>
+<li><strong>Nouveaute</strong> : non divulguee publiquement avant le depot (pas de publication, pas de vente)</li>
+<li><strong>Activite inventive</strong> : non evidente pour un homme du metier (apport creatif)</li>
+<li><strong>Application industrielle</strong> : fabricable ou utilisable dans l'industrie</li>
 </ol>
 
 <p><strong>Exclusions</strong> :</p>
 
 <p>Ne sont pas brevetables :</p>
 <ul>
-  <li>Découvertes scientifiques (lois de la nature)</li>
-  <li>Théories mathématiques</li>
-  <li>Créations esthétiques (protégées par droit d’auteur)</li>
-  <li>Logiciels “en tant que tels” (mais effets techniques brevetables)</li>
-  <li>Méthodes de traitement médical du corps humain</li>
+<li>Decouvertes scientifiques (lois de la nature)</li>
+<li>Theories mathematiques</li>
+<li>Creations esthetiques (protegees par droit d'auteur)</li>
+<li>Logiciels "en tant que tels" (mais effets techniques brevetables)</li>
+<li>Methodes de traitement medical du corps humain</li>
 </ul>
 
-<p><strong>Procédure de dépôt</strong> :</p>
+<p><strong>Procedure de depot</strong> :</p>
 
-<p><strong>En France</strong> : dépôt à l’INPI (Institut National de la Propriété Industrielle).</p>
+<p><strong>En France</strong> : depot a l'INPI (Institut National de la Propriete Industrielle).</p>
 
-<p><strong>En Europe</strong> : dépôt à l’OEB (Office Européen des Brevets) couvrant plusieurs pays.</p>
+<p><strong>En Europe</strong> : depot a l'OEB (Office Europeen des Brevets) couvrant plusieurs pays.</p>
 
-<p><strong>À l’international</strong> : dépôt PCT (Patent Cooperation Treaty) facilitant dépôts multiples.</p>
+<p><strong>A l'international</strong> : depot PCT (Patent Cooperation Treaty) facilitant depots multiples.</p>
 
-<p><strong>Coût</strong> : plusieurs milliers d’euros (dépôt + annuités + traductions pour Europe/international).</p>
+<p><strong>Cout</strong> : plusieurs milliers d'euros (depot + annuites + traductions pour Europe/international).</p>
 
-<p><strong>Durée de protection</strong> :</p>
+<p><strong>Duree de protection</strong> :</p>
 
-<p>20 ans à compter du dépôt, sous réserve de payer les annuités (taxes de maintien).</p>
+<p>20 ans a compter du depot, sous reserve de payer les annuites (taxes de maintien).</p>
 
-<p><strong>Droits conférés</strong> :</p>
+<p><strong>Droits conferes</strong> :</p>
 
-<p>Monopole d’exploitation : seul le titulaire peut fabriquer, utiliser, vendre, importer l’invention.</p>
+<p>Monopole d'exploitation : seul le titulaire peut fabriquer, utiliser, vendre, importer l'invention.</p>
 
-<p>Interdire à autrui d’exploiter sans licence.</p>
+<p>Interdire a autrui d'exploiter sans licence.</p>
 
 <p><strong>Obligations</strong> :</p>
 
 <ul>
-  <li><strong>Divulgation</strong> : description complète de l’invention (publication 18 mois après dépôt)</li>
-  <li><strong>Annuités</strong> : taxes annuelles pour maintenir le brevet en vigueur</li>
+<li><strong>Divulgation</strong> : description complete de l'invention (publication 18 mois apres depot)</li>
+<li><strong>Annuites</strong> : taxes annuelles pour maintenir le brevet en vigueur</li>
 </ul>
 
-<p><strong>Inventions de salariés</strong> :</p>
+<p><strong>Inventions de salaries</strong> :</p>
 
-<p>Trois catégories selon article L611-7 CPI :</p>
+<p>Trois categories selon article L611-7 CPI :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Définition</th>
-      <th>Propriété</th>
-      <th>Compensation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Mission</td>
-      <td>Dans cadre des fonctions, mission inventive explicite</td>
-      <td>Employeur</td>
-      <td>Prime raisonnable possible</td>
-    </tr>
-    <tr>
-      <td>Hors mission attribuable</td>
-      <td>Hors mission mais liée à activité entreprise ou moyens utilisés</td>
-      <td>Employeur (droit d’attribution)</td>
-      <td>Juste prix obligatoire</td>
-    </tr>
-    <tr>
-      <td>Hors mission non attribuable</td>
-      <td>Totalement hors activité et moyens entreprise</td>
-      <td>Salarié</td>
-      <td>-</td>
-    </tr>
-  </tbody>
+<tr><th>Type</th><th>Definition</th><th>Propriete</th><th>Compensation</th></tr>
+<tr><td>Mission</td><td>Dans cadre des fonctions, mission inventive explicite</td><td>Employeur</td><td>Prime raisonnable possible</td></tr>
+<tr><td>Hors mission attribuable</td><td>Hors mission mais liee a activite entreprise ou moyens utilises</td><td>Employeur (droit d'attribution)</td><td>Juste prix obligatoire</td></tr>
+<tr><td>Hors mission non attribuable</td><td>Totalement hors activite et moyens entreprise</td><td>Salarie</td><td>-</td></tr>
 </table>
 
 <h3 class="section-title">7. Droit d'auteur</h3>
 
 <p><strong>Principe</strong> :</p>
 
-<p>Le droit d’auteur protège les œuvres de l’esprit originales dès leur création, sans formalité.</p>
+<p>Le droit d'auteur protege les oeuvres de l'esprit originales des leur creation, sans formalite.</p>
 
-<p><strong>Objets protégés</strong> :</p>
+<p><strong>Objets proteges</strong> :</p>
 
-<p>Toute création intellectuelle originale :</p>
+<p>Toute creation intellectuelle originale :</p>
 <ul>
-  <li>Œuvres littéraires (livres, articles)</li>
-  <li>Œuvres musicales</li>
-  <li>Œuvres audiovisuelles</li>
-  <li>Logiciels</li>
-  <li>Bases de données</li>
-  <li>Arts visuels (peinture, photographie, sculpture)</li>
+<li>Oeuvres litteraires (livres, articles)</li>
+<li>Oeuvres musicales</li>
+<li>Oeuvres audiovisuelles</li>
+<li>Logiciels</li>
+<li>Bases de donnees</li>
+<li>Arts visuels (peinture, photographie, sculpture)</li>
 </ul>
 
 <p><strong>Conditions</strong> :</p>
 
 <ol>
-  <li><strong>Originalité</strong> : empreinte de la personnalité de l’auteur (choix créatifs)</li>
-  <li><strong>Mise en forme</strong> : l’idée seule n’est pas protégeable, seulement son expression</li>
+<li><strong>Originalite</strong> : empreinte de la personnalite de l'auteur (choix creatifs)</li>
+<li><strong>Mise en forme</strong> : l'idee seule n'est pas protegeable, seulement son expression</li>
 </ol>
 
-<p><strong>Aucune formalité</strong> :</p>
+<p><strong>Aucune formalite</strong> :</p>
 
-<p>Protection automatique dès création. Pas besoin d’enregistrement (contrairement au brevet).</p>
+<p>Protection automatique des creation. Pas besoin d'enregistrement (contrairement au brevet).</p>
 
-<p>Dépôt possible pour preuve d’antériorité (enveloppe Soleau à l’INPI, huissier, etc.).</p>
+<p>Depot possible pour preuve d'anteriorite (enveloppe Soleau a l'INPI, huissier, etc.).</p>
 
 <p><strong>Deux types de droits</strong> :</p>
 
-<p><strong>Droits moraux</strong> (perpétuels, inaliénables, imprescriptibles) :</p>
+<p><strong>Droits moraux</strong> (perpetuels, inalienables, imprescriptibles) :</p>
 <ul>
-  <li><strong>Droit de divulgation</strong> : décider si et comment publier</li>
-  <li><strong>Droit au respect de l’œuvre</strong> : s’opposer aux modifications</li>
-  <li><strong>Droit de paternité</strong> : être reconnu comme auteur</li>
-  <li><strong>Droit de retrait/repentir</strong> : retirer l’œuvre (rare, indemnisation)</li>
+<li><strong>Droit de divulgation</strong> : decider si et comment publier</li>
+<li><strong>Droit au respect de l'oeuvre</strong> : s'opposer aux modifications</li>
+<li><strong>Droit de paternite</strong> : etre reconnu comme auteur</li>
+<li><strong>Droit de retrait/repentir</strong> : retirer l'oeuvre (rare, indemnisation)</li>
 </ul>
 
-<p><strong>Droits patrimoniaux</strong> (cessibles, limités dans le temps) :</p>
+<p><strong>Droits patrimoniaux</strong> (cessibles, limites dans le temps) :</p>
 <ul>
-  <li><strong>Droit de reproduction</strong> : copie, impression, enregistrement</li>
-  <li><strong>Droit de représentation</strong> : diffusion publique, exécution</li>
-  <li><strong>Droit d’adaptation</strong> : traduction, transformation</li>
+<li><strong>Droit de reproduction</strong> : copie, impression, enregistrement</li>
+<li><strong>Droit de representation</strong> : diffusion publique, execution</li>
+<li><strong>Droit d'adaptation</strong> : traduction, transformation</li>
 </ul>
 
-<p><strong>Durée de protection</strong> :</p>
+<p><strong>Duree de protection</strong> :</p>
 
-<p>Vie de l’auteur + 70 ans.</p>
+<p>Vie de l'auteur + 70 ans.</p>
 
-<p>Après, l’œuvre tombe dans le domaine public (libre utilisation).</p>
+<p>Apres, l'oeuvre tombe dans le domaine public (libre utilisation).</p>
 
 <p><strong>Exceptions</strong> :</p>
 
-<p>Utilisations autorisées sans autorisation :</p>
+<p>Utilisations autorisees sans autorisation :</p>
 <ul>
-  <li>Citation courte (avec source)</li>
-  <li>Copie privée (usage personnel)</li>
-  <li>Parodie</li>
-  <li>Enseignement et recherche (limité)</li>
+<li>Citation courte (avec source)</li>
+<li>Copie privee (usage personnel)</li>
+<li>Parodie</li>
+<li>Enseignement et recherche (limite)</li>
 </ul>
 
 <p><strong>Logiciels</strong> :</p>
 
-<p>Protégés par le droit d’auteur (pas le brevet en principe, sauf effet technique).</p>
+<p>Proteges par le droit d'auteur (pas le brevet en principe, sauf effet technique).</p>
 
-<p>En entreprise, droits souvent cédés automatiquement à l’employeur (sauf disposition contraire).</p>
+<p>En entreprise, droits souvent cedes automatiquement a l'employeur (sauf disposition contraire).</p>
 
 <h3 class="section-title">8. Marques</h3>
 
-<p><strong>Définition</strong> :</p>
+<p><strong>Definition</strong> :</p>
 
-<p>Signe distinctif permettant d’identifier les produits ou services d’une entreprise.</p>
+<p>Signe distinctif permettant d'identifier les produits ou services d'une entreprise.</p>
 
 <p><strong>Types de marques</strong> :</p>
 
 <ul>
-  <li><strong>Nominale</strong> : mot, nom (ex : Coca-Cola)</li>
-  <li><strong>Figurative</strong> : logo, dessin</li>
-  <li><strong>Mixte</strong> : combinaison mot + logo</li>
-  <li><strong>Sonore</strong> : jingle (ex : SNCF)</li>
-  <li><strong>Tridimensionnelle</strong> : forme du produit (ex : bouteille Coca)</li>
+<li><strong>Nominale</strong> : mot, nom (ex : Coca-Cola)</li>
+<li><strong>Figurative</strong> : logo, dessin</li>
+<li><strong>Mixte</strong> : combinaison mot + logo</li>
+<li><strong>Sonore</strong> : jingle (ex : SNCF)</li>
+<li><strong>Tridimensionnelle</strong> : forme du produit (ex : bouteille Coca)</li>
 </ul>
 
-<p><strong>Conditions de validité</strong> :</p>
+<p><strong>Conditions de validite</strong> :</p>
 
 <ol>
-  <li><strong>Distinctive</strong> : pas générique ou descriptive (ex : “ordinateur” pour un ordinateur)</li>
-  <li><strong>Licite</strong> : pas contraire ordre public, pas trompeuse</li>
-  <li><strong>Disponible</strong> : pas de droits antérieurs (marques, noms commerciaux similaires)</li>
+<li><strong>Distinctive</strong> : pas generique ou descriptive (ex : "ordinateur" pour un ordinateur)</li>
+<li><strong>Licite</strong> : pas contraire ordre public, pas trompeuse</li>
+<li><strong>Disponible</strong> : pas de droits anterieurs (marques, noms commerciaux similaires)</li>
 </ol>
 
-<p><strong>Dépôt</strong> :</p>
+<p><strong>Depot</strong> :</p>
 
-<p>À l’INPI pour la France.</p>
+<p>A l'INPI pour la France.</p>
 
 <p>Choisir les classes de produits/services (classification de Nice, 45 classes).</p>
 
-<p><strong>Coût</strong> : quelques centaines d’euros selon nombre de classes.</p>
+<p><strong>Cout</strong> : quelques centaines d'euros selon nombre de classes.</p>
 
-<p><strong>Durée de protection</strong> :</p>
+<p><strong>Duree de protection</strong> :</p>
 
-<p>10 ans, renouvelable indéfiniment (tant que taxes payées).</p>
+<p>10 ans, renouvelable indefiniment (tant que taxes payees).</p>
 
-<p><strong>Déchéance pour non-usage</strong> : si non utilisée pendant 5 ans consécutifs.</p>
+<p><strong>Decheance pour non-usage</strong> : si non utilisee pendant 5 ans consecutifs.</p>
 
-<p><strong>Droits conférés</strong> :</p>
+<p><strong>Droits conferes</strong> :</p>
 
-<p>Monopole d’utilisation pour les produits/services enregistrés.</p>
+<p>Monopole d'utilisation pour les produits/services enregistres.</p>
 
-<p>Interdire aux tiers d’utiliser marque identique ou similaire créant confusion.</p>
+<p>Interdire aux tiers d'utiliser marque identique ou similaire creant confusion.</p>
 
-<p><strong>Contrefaçon</strong> :</p>
+<p><strong>Contrefacon</strong> :</p>
 
-<p>Utilisation non autorisée d’une marque protégée.</p>
+<p>Utilisation non autorisee d'une marque protegee.</p>
 
-<p>Sanctions civiles (dommages-intérêts, saisie contrefaçons) et pénales (amende, emprisonnement).</p>
+<p>Sanctions civiles (dommages-interets, saisie contrefacons) et penales (amende, emprisonnement).</p>
 
-<h3 class="section-title">9. Droit des sociétés</h3>
+<h3 class="section-title">9. Droit des societes</h3>
 
-<p><strong>Entreprise individuelle vs Société</strong> :</p>
+<p><strong>Entreprise individuelle vs Societe</strong> :</p>
 
 <p><strong>Entreprise individuelle</strong> :</p>
 <ul>
-  <li>Pas de personnalité morale distincte (entrepreneur = entreprise)</li>
-  <li>Responsabilité illimitée (patrimoine personnel engagé)</li>
-  <li>Simplicité administrative</li>
-  <li>Imposition sur revenus personnels</li>
+<li>Pas de personnalite morale distincte (entrepreneur = entreprise)</li>
+<li>Responsabilite illimitee (patrimoine personnel engage)</li>
+<li>Simplicite administrative</li>
+<li>Imposition sur revenus personnels</li>
 </ul>
 
-<p><strong>Société</strong> :</p>
+<p><strong>Societe</strong> :</p>
 <ul>
-  <li>Personnalité morale (entité juridique distincte)</li>
-  <li>Responsabilité limitée aux apports (généralement)</li>
-  <li>Formalités de création (statuts, immatriculation RCS)</li>
-  <li>Imposition société + éventuelle imposition associés</li>
+<li>Personnalite morale (entite juridique distincte)</li>
+<li>Responsabilite limitee aux apports (generalement)</li>
+<li>Formalites de creation (statuts, immatriculation RCS)</li>
+<li>Imposition societe + eventuelle imposition associes</li>
 </ul>
 
-<p><strong>Principales formes de sociétés</strong> :</p>
+<p><strong>Principales formes de societes</strong> :</p>
 
-<p><strong>SARL (Société à Responsabilité Limitée)</strong> :</p>
+<p><strong>SARL (Societe a Responsabilite Limitee)</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Caractéristique</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Associés</td>
-      <td>1 à 100 (EURL si seul)</td>
-    </tr>
-    <tr>
-      <td>Capital</td>
-      <td>Libre (1€ symbolique possible)</td>
-    </tr>
-    <tr>
-      <td>Responsabilité</td>
-      <td>Limitée aux apports</td>
-    </tr>
-    <tr>
-      <td>Direction</td>
-      <td>Gérant(s)</td>
-    </tr>
-    <tr>
-      <td>Décisions</td>
-      <td>Assemblées générales</td>
-    </tr>
-    <tr>
-      <td>Régime social gérant</td>
-      <td>Majoritaire : TNS, minoritaire : assimilé salarié</td>
-    </tr>
-  </tbody>
+<tr><th>Caracteristique</th><th>Description</th></tr>
+<tr><td>Associes</td><td>1 a 100 (EURL si seul)</td></tr>
+<tr><td>Capital</td><td>Libre (1&euro; symbolique possible)</td></tr>
+<tr><td>Responsabilite</td><td>Limitee aux apports</td></tr>
+<tr><td>Direction</td><td>Gerant(s)</td></tr>
+<tr><td>Decisions</td><td>Assemblees generales</td></tr>
+<tr><td>Regime social gerant</td><td>Majoritaire : TNS, minoritaire : assimile salarie</td></tr>
 </table>
 
-<p><strong>SAS (Société par Actions Simplifiée)</strong> :</p>
+<p><strong>SAS (Societe par Actions Simplifiee)</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Caractéristique</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Associés</td>
-      <td>Minimum 1 (SASU si seul)</td>
-    </tr>
-    <tr>
-      <td>Capital</td>
-      <td>Libre</td>
-    </tr>
-    <tr>
-      <td>Responsabilité</td>
-      <td>Limitée aux apports</td>
-    </tr>
-    <tr>
-      <td>Direction</td>
-      <td>Président (liberté statutaire pour autres organes)</td>
-    </tr>
-    <tr>
-      <td>Souplesse</td>
-      <td>Grande liberté d’organisation dans statuts</td>
-    </tr>
-    <tr>
-      <td>Régime social président</td>
-      <td>Assimilé salarié</td>
-    </tr>
-  </tbody>
+<tr><th>Caracteristique</th><th>Description</th></tr>
+<tr><td>Associes</td><td>Minimum 1 (SASU si seul)</td></tr>
+<tr><td>Capital</td><td>Libre</td></tr>
+<tr><td>Responsabilite</td><td>Limitee aux apports</td></tr>
+<tr><td>Direction</td><td>President (liberte statutaire pour autres organes)</td></tr>
+<tr><td>Souplesse</td><td>Grande liberte d'organisation dans statuts</td></tr>
+<tr><td>Regime social president</td><td>Assimile salarie</td></tr>
 </table>
 
-<p><strong>SA (Société Anonyme)</strong> :</p>
+<p><strong>SA (Societe Anonyme)</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Caractéristique</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Actionnaires</td>
-      <td>Minimum 2 (7 si cotée en bourse)</td>
-    </tr>
-    <tr>
-      <td>Capital</td>
-      <td>Minimum 37 000 €</td>
-    </tr>
-    <tr>
-      <td>Responsabilité</td>
-      <td>Limitée aux apports</td>
-    </tr>
-    <tr>
-      <td>Direction</td>
-      <td>Conseil d’administration + DG, ou Directoire + Conseil de surveillance</td>
-    </tr>
-    <tr>
-      <td>Formalisme</td>
-      <td>Important (adapté aux grandes structures)</td>
-    </tr>
-  </tbody>
+<tr><th>Caracteristique</th><th>Description</th></tr>
+<tr><td>Actionnaires</td><td>Minimum 2 (7 si cotee en bourse)</td></tr>
+<tr><td>Capital</td><td>Minimum 37 000 &euro;</td></tr>
+<tr><td>Responsabilite</td><td>Limitee aux apports</td></tr>
+<tr><td>Direction</td><td>Conseil d'administration + DG, ou Directoire + Conseil de surveillance</td></tr>
+<tr><td>Formalisme</td><td>Important (adapte aux grandes structures)</td></tr>
 </table>
 
 <p><strong>Choix de structure</strong> :</p>
 
-<p>Critères de décision :</p>
+<p>Criteres de decision :</p>
 <ul>
-  <li>Nombre d’associés</li>
-  <li>Montant des investissements</li>
-  <li>Fiscalité (IS ou IR)</li>
-  <li>Protection patrimoine personnel</li>
-  <li>Souplesse de gestion</li>
-  <li>Levée de fonds (SAS préférée par investisseurs)</li>
+<li>Nombre d'associes</li>
+<li>Montant des investissements</li>
+<li>Fiscalite (IS ou IR)</li>
+<li>Protection patrimoine personnel</li>
+<li>Souplesse de gestion</li>
+<li>Levee de fonds (SAS preferee par investisseurs)</li>
 </ul>
 
-<h3 class="section-title">10. Responsabilités de l'ingénieur</h3>
+<h3 class="section-title">10. Responsabilites de l'ingenieur</h3>
 
-<p><strong>Responsabilité contractuelle</strong> :</p>
+<p><strong>Responsabilite contractuelle</strong> :</p>
 
-<p>Vis-à-vis du client ou employeur.</p>
+<p>Vis-a-vis du client ou employeur.</p>
 
-<p>Inexécution ou mauvaise exécution des obligations contractuelles → dommages-intérêts.</p>
+<p>Inexecution ou mauvaise execution des obligations contractuelles &rarr; dommages-interets.</p>
 
-<p>Obligation de résultat (atteindre objectif) ou de moyens (mettre en œuvre moyens appropriés) selon contrat.</p>
+<p>Obligation de resultat (atteindre objectif) ou de moyens (mettre en oeuvre moyens appropries) selon contrat.</p>
 
-<p><strong>Responsabilité délictuelle (ou extracontractuelle)</strong> :</p>
+<p><strong>Responsabilite delictuelle (ou extracontractuelle)</strong> :</p>
 
-<p>Dommage causé à un tiers (hors contrat).</p>
+<p>Dommage cause a un tiers (hors contrat).</p>
 
 <p>Trois conditions :</p>
 <ol>
-  <li><strong>Faute</strong> : négligence, imprudence, manquement à obligation</li>
-  <li><strong>Préjudice</strong> : dommage subi par la victime</li>
-  <li><strong>Lien de causalité</strong> : la faute a causé le préjudice</li>
+<li><strong>Faute</strong> : negligence, imprudence, manquement a obligation</li>
+<li><strong>Prejudice</strong> : dommage subi par la victime</li>
+<li><strong>Lien de causalite</strong> : la faute a cause le prejudice</li>
 </ol>
 
-<p><strong>Responsabilité pénale</strong> :</p>
+<p><strong>Responsabilite penale</strong> :</p>
 
-<p>Infractions pouvant engager l’ingénieur :</p>
+<p>Infractions pouvant engager l'ingenieur :</p>
 <ul>
-  <li><strong>Mise en danger d’autrui</strong> : exposer autrui à risque immédiat de mort ou blessures graves</li>
-  <li><strong>Homicide ou blessures involontaires</strong> : par maladresse, imprudence, négligence</li>
-  <li><strong>Atteinte à l’environnement</strong> : pollution, déchets dangereux</li>
-  <li><strong>Non-respect normes de sécurité</strong></li>
+<li><strong>Mise en danger d'autrui</strong> : exposer autrui a risque immediat de mort ou blessures graves</li>
+<li><strong>Homicide ou blessures involontaires</strong> : par maladresse, imprudence, negligence</li>
+<li><strong>Atteinte a l'environnement</strong> : pollution, dechets dangereux</li>
+<li><strong>Non-respect normes de securite</strong></li>
 </ul>
 
-<p>Sanctions : amendes, emprisonnement, interdiction d’exercer.</p>
+<p>Sanctions : amendes, emprisonnement, interdiction d'exercer.</p>
 
-<p><strong>Responsabilité décennale (construction)</strong> :</p>
+<p><strong>Responsabilite decennale (construction)</strong> :</p>
 
-<p>Garantie de 10 ans sur solidité de l’ouvrage et éléments indissociables.</p>
+<p>Garantie de 10 ans sur solidite de l'ouvrage et elements indissociables.</p>
 
-<p>Concerne architectes, ingénieurs, entrepreneurs du bâtiment.</p>
+<p>Concerne architectes, ingenieurs, entrepreneurs du batiment.</p>
 
 <p>Assurance obligatoire.</p>
 
 <p><strong>Devoir de conseil</strong> :</p>
 
-<p>L’ingénieur, en tant qu’expert, doit alerter sur les risques et proposer des solutions adaptées.</p>
+<p>L'ingenieur, en tant qu'expert, doit alerter sur les risques et proposer des solutions adaptees.</p>
 
-<p>Défaut de conseil peut engager responsabilité.</p>
+<p>Defaut de conseil peut engager responsabilite.</p>
 
 <h3 class="section-title">11. Clauses contractuelles importantes</h3>
 
-<p><strong>Clause de confidentialité (NDA - Non-Disclosure Agreement)</strong> :</p>
+<p><strong>Clause de confidentialite (NDA - Non-Disclosure Agreement)</strong> :</p>
 
-<p>Protège les informations sensibles échangées entre parties.</p>
+<p>Protege les informations sensibles echangees entre parties.</p>
 
-<p>Préciser :</p>
+<p>Preciser :</p>
 <ul>
-  <li>Informations concernées</li>
-  <li>Durée de confidentialité</li>
-  <li>Exceptions (informations déjà publiques, obligation légale)</li>
-  <li>Sanctions en cas de violation</li>
+<li>Informations concernees</li>
+<li>Duree de confidentialite</li>
+<li>Exceptions (informations deja publiques, obligation legale)</li>
+<li>Sanctions en cas de violation</li>
 </ul>
 
 <p><strong>Clause de non-concurrence</strong> :</p>
 
-<p>Interdit au salarié d’exercer activité concurrente après fin du contrat.</p>
+<p>Interdit au salarie d'exercer activite concurrente apres fin du contrat.</p>
 
-<p><strong>Conditions de validité</strong> :</p>
+<p><strong>Conditions de validite</strong> :</p>
 <ul>
-  <li>Limitée dans le temps (généralement 1-2 ans)</li>
-  <li>Limitée géographiquement</li>
-  <li>Limitée à un secteur d’activité précis</li>
-  <li>Indemnité compensatrice (sinon nulle)</li>
-  <li>Nécessaire à protection intérêts légitimes de l’entreprise</li>
+<li>Limitee dans le temps (generalement 1-2 ans)</li>
+<li>Limitee geographiquement</li>
+<li>Limitee a un secteur d'activite precis</li>
+<li>Indemnite compensatrice (sinon nulle)</li>
+<li>Necessaire a protection interets legitimes de l'entreprise</li>
 </ul>
 
-<p><strong>Clause de propriété intellectuelle</strong> :</p>
+<p><strong>Clause de propriete intellectuelle</strong> :</p>
 
-<p>Définit qui détient les droits sur créations réalisées dans le cadre de la collaboration.</p>
+<p>Definit qui detient les droits sur creations realisees dans le cadre de la collaboration.</p>
 
-<p>Important de clarifier dès début : brevets, logiciels, designs, etc.</p>
+<p>Important de clarifier des debut : brevets, logiciels, designs, etc.</p>
 
-<p><strong>Clause pénale</strong> :</p>
+<p><strong>Clause penale</strong> :</p>
 
-<p>Fixe à l’avance montant des dommages-intérêts en cas d’inexécution.</p>
+<p>Fixe a l'avance montant des dommages-interets en cas d'inexecution.</p>
 
-<p>Évite contentieux sur évaluation du préjudice.</p>
+<p>Evite contentieux sur evaluation du prejudice.</p>
 
-<p>Peut être révisée par juge si manifestement excessive ou dérisoire.</p>
+<p>Peut etre revisee par juge si manifestement excessive ou derisoire.</p>
 
 <p><strong>Clause de juridiction</strong> :</p>
 
-<p>Désigne le tribunal compétent en cas de litige.</p>
+<p>Designe le tribunal competent en cas de litige.</p>
 
 <p><strong>Clause compromissoire</strong> :</p>
 
-<p>Soumet les litiges à arbitrage plutôt qu’aux tribunaux judiciaires.</p>
+<p>Soumet les litiges a arbitrage plutot qu'aux tribunaux judiciaires.</p>
 
-<p>Plus rapide et confidentiel, mais coûteux.</p>
+<p>Plus rapide et confidentiel, mais couteux.</p>
 
-<h3 class="section-title">12. Protection des données personnelles - RGPD</h3>
+<h3 class="section-title">12. Protection des donnees personnelles - RGPD</h3>
 
-<p><strong>Règlement Général sur la Protection des Données</strong> :</p>
+<p><strong>Reglement General sur la Protection des Donnees</strong> :</p>
 
-<p>Règlement européen applicable depuis mai 2018.</p>
+<p>Reglement europeen applicable depuis mai 2018.</p>
 
-<p>Vise à protéger les données personnelles des citoyens européens.</p>
+<p>Vise a proteger les donnees personnelles des citoyens europeens.</p>
 
-<p><strong>Donnée personnelle</strong> :</p>
+<p><strong>Donnee personnelle</strong> :</p>
 
-<p>Toute information relative à personne physique identifiée ou identifiable (nom, email, adresse IP, etc.).</p>
+<p>Toute information relative a personne physique identifiee ou identifiable (nom, email, adresse IP, etc.).</p>
 
 <p><strong>Principes fondamentaux</strong> :</p>
 
 <ul>
-  <li><strong>Licéité, loyauté, transparence</strong> : traitement légal et informé</li>
-  <li><strong>Limitation des finalités</strong> : collecte pour objectifs précis</li>
-  <li><strong>Minimisation</strong> : collecter seulement données nécessaires</li>
-  <li><strong>Exactitude</strong> : maintenir données à jour</li>
-  <li><strong>Limitation de conservation</strong> : ne pas garder indéfiniment</li>
-  <li><strong>Intégrité et confidentialité</strong> : sécuriser les données</li>
+<li><strong>Liceite, loyaute, transparence</strong> : traitement legal et informe</li>
+<li><strong>Limitation des finalites</strong> : collecte pour objectifs precis</li>
+<li><strong>Minimisation</strong> : collecter seulement donnees necessaires</li>
+<li><strong>Exactitude</strong> : maintenir donnees a jour</li>
+<li><strong>Limitation de conservation</strong> : ne pas garder indefiniment</li>
+<li><strong>Integrite et confidentialite</strong> : securiser les donnees</li>
 </ul>
 
 <p><strong>Droits des personnes</strong> :</p>
 
 <table>
-  <thead>
-    <tr>
-      <th>Droit</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Accès</td>
-      <td>Obtenir copie de ses données</td>
-    </tr>
-    <tr>
-      <td>Rectification</td>
-      <td>Corriger données inexactes</td>
-    </tr>
-    <tr>
-      <td>Effacement (“droit à l’oubli”)</td>
-      <td>Demander suppression</td>
-    </tr>
-    <tr>
-      <td>Portabilité</td>
-      <td>Récupérer données dans format réutilisable</td>
-    </tr>
-    <tr>
-      <td>Opposition</td>
-      <td>S’opposer au traitement</td>
-    </tr>
-    <tr>
-      <td>Limitation</td>
-      <td>Limiter le traitement</td>
-    </tr>
-  </tbody>
+<tr><th>Droit</th><th>Description</th></tr>
+<tr><td>Acces</td><td>Obtenir copie de ses donnees</td></tr>
+<tr><td>Rectification</td><td>Corriger donnees inexactes</td></tr>
+<tr><td>Effacement ("droit a l'oubli")</td><td>Demander suppression</td></tr>
+<tr><td>Portabilite</td><td>Recuperer donnees dans format reutilisable</td></tr>
+<tr><td>Opposition</td><td>S'opposer au traitement</td></tr>
+<tr><td>Limitation</td><td>Limiter le traitement</td></tr>
 </table>
 
 <p><strong>Obligations du responsable de traitement</strong> :</p>
 
 <ul>
-  <li>Tenir un registre des traitements</li>
-  <li>Réaliser analyse d’impact (si traitement à risque)</li>
-  <li>Désigner DPO (Data Protection Officer) si nécessaire</li>
-  <li>Notifier violations de données à CNIL (72h) et aux personnes concernées</li>
-  <li>Obtenir consentement clair (case à cocher, pas pré-cochée)</li>
+<li>Tenir un registre des traitements</li>
+<li>Realiser analyse d'impact (si traitement a risque)</li>
+<li>Designer DPO (Data Protection Officer) si necessaire</li>
+<li>Notifier violations de donnees a CNIL (72h) et aux personnes concernees</li>
+<li>Obtenir consentement clair (case a cocher, pas pre-cochee)</li>
 </ul>
 
 <p><strong>Sanctions</strong> :</p>
 
-<p>Amendes jusqu’à 20 millions d’euros ou 4% du chiffre d’affaires annuel mondial (le plus élevé).</p>
+<p>Amendes jusqu'a 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial (le plus eleve).</p>
 
-<p>Nombreuses sanctions déjà prononcées (Google, Amazon, etc.).</p>
+<p>Nombreuses sanctions deja prononcees (Google, Amazon, etc.).</p>
 
 <hr />
 
-<h2 id="part-d---analyse-réflexive-et-perspectives">PART D - Analyse Réflexive et Perspectives</h2>
+<h2>PART D - Analyse Reflexive et Perspectives</h2>
 
-<h3 class="section-title">Compétences acquises</h3>
+<h3 class="section-title">Competences acquises</h3>
 
-<p><strong>Culture juridique générale</strong> :
-Compréhension des principes du droit français, hiérarchie des normes, raisonnement juridique.</p>
+<p><strong>Culture juridique generale</strong> :</p>
+<p>Comprehension des principes du droit francais, hierarchie des normes, raisonnement juridique.</p>
 
-<p><strong>Lecture de contrats</strong> :
-Capacité à lire et analyser un contrat, identifier les clauses importantes et les risques.</p>
+<p><strong>Lecture de contrats</strong> :</p>
+<p>Capacite a lire et analyser un contrat, identifier les clauses importantes et les risques.</p>
 
-<p><strong>Connaissance droits et obligations</strong> :
-En tant que salarié : droits (rémunération, repos, protection) et obligations (loyauté, subordination).</p>
+<p><strong>Connaissance droits et obligations</strong> :</p>
+<p>En tant que salarie : droits (remuneration, repos, protection) et obligations (loyaute, subordination).</p>
 
-<p><strong>Protection de l’innovation</strong> :
-Comprendre comment protéger ses créations (brevets, droits d’auteur, marques) et éviter contrefaçon.</p>
+<p><strong>Protection de l'innovation</strong> :</p>
+<p>Comprendre comment proteger ses creations (brevets, droits d'auteur, marques) et eviter contrefacon.</p>
 
-<p><strong>Vision entrepreneuriale</strong> :
-Bases pour créer une entreprise (choix structure, statuts, propriété intellectuelle).</p>
+<p><strong>Vision entrepreneuriale</strong> :</p>
+<p>Bases pour creer une entreprise (choix structure, statuts, propriete intellectuelle).</p>
 
-<p><strong>Conscience des responsabilités</strong> :
-Identifier les situations engageant la responsabilité de l’ingénieur et agir en conséquence.</p>
+<p><strong>Conscience des responsabilites</strong> :</p>
+<p>Identifier les situations engageant la responsabilite de l'ingenieur et agir en consequence.</p>
 
-<h3 class="section-title">Points clés à retenir</h3>
+<h3 class="section-title">Points cles a retenir</h3>
 
-<p><strong>1. Le droit encadre toute activité professionnelle</strong> :
-Ignorer le droit par méconnaissance n’exonère pas de responsabilité. Se former est essentiel.</p>
+<p><strong>1. Le droit encadre toute activite professionnelle</strong> :</p>
+<p>Ignorer le droit par meconnaissance n'exonere pas de responsabilite. Se former est essentiel.</p>
 
-<p><strong>2. Tout contrat doit être lu attentivement</strong> :
-Un contrat engage juridiquement. Les clauses défavorables (non-concurrence abusive, cession tous droits IP) peuvent avoir conséquences lourdes.</p>
+<p><strong>2. Tout contrat doit etre lu attentivement</strong> :</p>
+<p>Un contrat engage juridiquement. Les clauses defavorables (non-concurrence abusive, cession tous droits IP) peuvent avoir consequences lourdes.</p>
 
-<p><strong>3. Protéger ses innovations rapidement</strong> :
-La nouveauté d’un brevet se perd dès divulgation publique. Déposer avant de publier ou présenter.</p>
+<p><strong>3. Proteger ses innovations rapidement</strong> :</p>
+<p>La nouveaute d'un brevet se perd des divulgation publique. Deposer avant de publier ou presenter.</p>
 
-<p><strong>4. Propriété intellectuelle ≠ automatiquement à l’employeur</strong> :
-Les inventions de mission appartiennent à l’employeur, mais hors mission attribuable : juste prix. Hors mission non attribuable : au salarié.</p>
+<p><strong>4. Propriete intellectuelle &ne; automatiquement a l'employeur</strong> :</p>
+<p>Les inventions de mission appartiennent a l'employeur, mais hors mission attribuable : juste prix. Hors mission non attribuable : au salarie.</p>
 
-<p><strong>5. RGPD incontournable</strong> :
-Tout traitement de données personnelles doit respecter RGPD. Sanctions très élevées. Intégrer la conformité dès conception.</p>
+<p><strong>5. RGPD incontournable</strong> :</p>
+<p>Tout traitement de donnees personnelles doit respecter RGPD. Sanctions tres elevees. Integrer la conformite des conception.</p>
 
-<h3 class="section-title">Retour d'expérience</h3>
+<h3 class="section-title">Retour d'experience</h3>
 
-<p><strong>Prise de conscience</strong> :
-Avant ce cours, le droit semblait abstrait. J’ai réalisé qu’il est omniprésent : signature d’un stage, utilisation d’un logiciel, création d’un site web (mentions légales, cookies).</p>
+<p><strong>Prise de conscience</strong> :</p>
+<p>Avant ce cours, le droit semblait abstrait. J'ai realise qu'il est omnipresent : signature d'un stage, utilisation d'un logiciel, creation d'un site web (mentions legales, cookies).</p>
 
-<p><strong>Complexité et nuances</strong> :
-Le droit est rarement binaire. Beaucoup de zones grises, d’interprétations, de jurisprudence. D’où l’importance de consulter des experts en cas de doute.</p>
+<p><strong>Complexite et nuances</strong> :</p>
+<p>Le droit est rarement binaire. Beaucoup de zones grises, d'interpretations, de jurisprudence. D'ou l'importance de consulter des experts en cas de doute.</p>
 
-<p><strong>Valorisation du conseil juridique</strong> :
-Un juriste n’est pas un coût mais un investissement. Il évite litiges coûteux, protège innovations, sécurise contrats.</p>
+<p><strong>Valorisation du conseil juridique</strong> :</p>
+<p>Un juriste n'est pas un cout mais un investissement. Il evite litiges couteux, protege innovations, securise contrats.</p>
 
-<p><strong>Aspect pratique</strong> :
-Les cas pratiques ont rendu le cours concret. Analyser des situations réelles (litige salarial, contrefaçon de marque) aide à ancrer les connaissances.</p>
+<p><strong>Aspect pratique</strong> :</p>
+<p>Les cas pratiques ont rendu le cours concret. Analyser des situations reelles (litige salarial, contrefacon de marque) aide a ancrer les connaissances.</p>
 
 <h3 class="section-title">Applications pratiques</h3>
 
-<p><strong>Pour ingénieur salarié</strong> :</p>
+<p><strong>Pour ingenieur salarie</strong> :</p>
 <ul>
-  <li>Négocier contrat de travail (clause IP, non-concurrence, rémunération)</li>
-  <li>Comprendre bulletin de paie</li>
-  <li>Connaître ses droits (congés, heures sup, protection licenciement)</li>
-  <li>Protéger ses inventions hors mission</li>
+<li>Negocier contrat de travail (clause IP, non-concurrence, remuneration)</li>
+<li>Comprendre bulletin de paie</li>
+<li>Connaitre ses droits (conges, heures sup, protection licenciement)</li>
+<li>Proteger ses inventions hors mission</li>
 </ul>
 
-<p><strong>Pour ingénieur en R&amp;D</strong> :</p>
+<p><strong>Pour ingenieur en R&amp;D</strong> :</p>
 <ul>
-  <li>Protéger innovations (brevets)</li>
-  <li>Vérifier liberté d’exploitation (freedom to operate)</li>
-  <li>Gérer confidentialité (NDA avec partenaires)</li>
-  <li>Respecter propriété intellectuelle de tiers</li>
+<li>Proteger innovations (brevets)</li>
+<li>Verifier liberte d'exploitation (freedom to operate)</li>
+<li>Gerer confidentialite (NDA avec partenaires)</li>
+<li>Respecter propriete intellectuelle de tiers</li>
 </ul>
 
 <p><strong>Pour entrepreneur</strong> :</p>
 <ul>
-  <li>Choisir structure juridique adaptée (SARL, SAS)</li>
-  <li>Rédiger statuts et pacte d’associés</li>
-  <li>Protéger marque et nom commercial</li>
-  <li>Rédiger contrats clients et fournisseurs</li>
-  <li>Conformité RGPD</li>
+<li>Choisir structure juridique adaptee (SARL, SAS)</li>
+<li>Rediger statuts et pacte d'associes</li>
+<li>Proteger marque et nom commercial</li>
+<li>Rediger contrats clients et fournisseurs</li>
+<li>Conformite RGPD</li>
 </ul>
 
 <p><strong>Pour manager</strong> :</p>
 <ul>
-  <li>Respecter droit du travail (horaires, repos, licenciement)</li>
-  <li>Gérer contrats de l’équipe</li>
-  <li>Former équipe sur confidentialité et RGPD</li>
+<li>Respecter droit du travail (horaires, repos, licenciement)</li>
+<li>Gerer contrats de l'equipe</li>
+<li>Former equipe sur confidentialite et RGPD</li>
 </ul>
 
 <h3 class="section-title">Limites et ouvertures</h3>
 
 <p><strong>Limites du module</strong> :</p>
 <ul>
-  <li>Survol nécessairement superficiel (droit très vaste)</li>
-  <li>Peu d’approfondissement sur droit international</li>
-  <li>Aspects fiscaux peu abordés</li>
-  <li>Peu de pratique rédactionnelle (rédiger contrat)</li>
+<li>Survol necessairement superficiel (droit tres vaste)</li>
+<li>Peu d'approfondissement sur droit international</li>
+<li>Aspects fiscaux peu abordes</li>
+<li>Peu de pratique redactionnelle (rediger contrat)</li>
 </ul>
 
 <p><strong>Ouvertures vers</strong> :</p>
 <ul>
-  <li><strong>Droit des affaires</strong> : fusions-acquisitions, levée de fonds</li>
-  <li><strong>Droit du numérique</strong> : e-commerce, protection données, cybercriminalité</li>
-  <li><strong>Droit de la concurrence</strong> : ententes, abus position dominante</li>
-  <li><strong>Droit européen et international</strong> : contrats internationaux, brevets mondiaux</li>
+<li><strong>Droit des affaires</strong> : fusions-acquisitions, levee de fonds</li>
+<li><strong>Droit du numerique</strong> : e-commerce, protection donnees, cybercriminalite</li>
+<li><strong>Droit de la concurrence</strong> : ententes, abus position dominante</li>
+<li><strong>Droit europeen et international</strong> : contrats internationaux, brevets mondiaux</li>
 </ul>
 
-<h3 class="section-title">Évolutions récentes</h3>
+<h3 class="section-title">Evolutions recentes</h3>
 
 <p><strong>RGPD (2018)</strong> :</p>
 
-<p>Impact majeur sur traitement données. Toutes entreprises concernées. Conformité obligatoire.</p>
+<p>Impact majeur sur traitement donnees. Toutes entreprises concernees. Conformite obligatoire.</p>
 
-<p><strong>Réglementation Intelligence Artificielle</strong> :</p>
+<p><strong>Reglementation Intelligence Artificielle</strong> :</p>
 
-<p>L’UE travaille sur réglementation IA (AI Act) : IA à risque, transparence, responsabilité.</p>
+<p>L'UE travaille sur reglementation IA (AI Act) : IA a risque, transparence, responsabilite.</p>
 
-<p><strong>Propriété intellectuelle du logiciel</strong> :</p>
+<p><strong>Propriete intellectuelle du logiciel</strong> :</p>
 
-<p>Débats sur brevetabilité des algorithmes, IA, blockchain.</p>
+<p>Debats sur brevetabilite des algorithmes, IA, blockchain.</p>
 
-<p><strong>Droit à la déconnexion</strong> :</p>
+<p><strong>Droit a la deconnexion</strong> :</p>
 
-<p>Respect vie privée salariés, limitation emails hors horaires (droit français depuis 2017).</p>
+<p>Respect vie privee salaries, limitation emails hors horaires (droit francais depuis 2017).</p>
 
-<p><strong>Télétravail</strong> :</p>
+<p><strong>Teletravail</strong> :</p>
 
-<p>Cadre juridique renforcé post-COVID (accord, équipement, assurance).</p>
+<p>Cadre juridique renforce post-COVID (accord, equipement, assurance).</p>
 
-<h3 class="section-title">Conseils pour réussir</h3>
+<h3 class="section-title">Conseils pour reussir</h3>
 
-<p><strong>1. Ne pas négliger le droit</strong> :
-Ce n’est pas qu’un cours théorique. C’est un outil pratique qui protège et structure l’activité professionnelle.</p>
+<p><strong>1. Ne pas negliger le droit</strong> :</p>
+<p>Ce n'est pas qu'un cours theorique. C'est un outil pratique qui protege et structure l'activite professionnelle.</p>
 
-<p><strong>2. Lire attentivement tout contrat</strong> :
-Stage, emploi, prestation. Identifier clauses importantes (IP, non-concurrence, confidentialité). Ne pas hésiter à négocier.</p>
+<p><strong>2. Lire attentivement tout contrat</strong> :</p>
+<p>Stage, emploi, prestation. Identifier clauses importantes (IP, non-concurrence, confidentialite). Ne pas hesiter a negocier.</p>
 
-<p><strong>3. Protéger ses créations</strong> :
-Si invention ou création originale, se renseigner sur protection (brevet, droit d’auteur, marque). Agir vite (nouveauté).</p>
+<p><strong>3. Proteger ses creations</strong> :</p>
+<p>Si invention ou creation originale, se renseigner sur protection (brevet, droit d'auteur, marque). Agir vite (nouveaute).</p>
 
-<p><strong>4. Consulter un expert en cas de doute</strong> :
-Avocat, juriste, conseil en PI. Investissement rentable pour éviter erreurs coûteuses.</p>
+<p><strong>4. Consulter un expert en cas de doute</strong> :</p>
+<p>Avocat, juriste, conseil en PI. Investissement rentable pour eviter erreurs couteuses.</p>
 
-<p><strong>5. Se tenir informé</strong> :
-Le droit évolue (RGPD, IA, télétravail). Suivre actualités juridiques pertinentes pour son secteur.</p>
+<p><strong>5. Se tenir informe</strong> :</p>
+<p>Le droit evolue (RGPD, IA, teletravail). Suivre actualites juridiques pertinentes pour son secteur.</p>
 
-<p><strong>6. Développer le réflexe juridique</strong> :
-Dans toute décision professionnelle, se poser question : quels sont enjeux juridiques, risques, protections nécessaires ?</p>
+<p><strong>6. Developper le reflexe juridique</strong> :</p>
+<p>Dans toute decision professionnelle, se poser question : quels sont enjeux juridiques, risques, protections necessaires ?</p>
 
 <h3 class="section-title">Conclusion</h3>
 
-<p>Ce module est essentiel pour tout ingénieur, qu’il soit salarié, chercheur, ou entrepreneur. Le droit n’est pas un obstacle mais un cadre protecteur et structurant.</p>
+<p>Ce module est essentiel pour tout ingenieur, qu'il soit salarie, chercheur, ou entrepreneur. Le droit n'est pas un obstacle mais un cadre protecteur et structurant.</p>
 
-<p><strong>Compétences transférables</strong> :</p>
+<p><strong>Competences transferables</strong> :</p>
 <ul>
-  <li>Lecture critique de documents juridiques</li>
-  <li>Identification des risques juridiques</li>
-  <li>Protection de l’innovation</li>
-  <li>Négociation éclairée de contrats</li>
-  <li>Vision globale entreprise (juridique, technique, financière)</li>
+<li>Lecture critique de documents juridiques</li>
+<li>Identification des risques juridiques</li>
+<li>Protection de l'innovation</li>
+<li>Negociation eclairee de contrats</li>
+<li>Vision globale entreprise (juridique, technique, financiere)</li>
 </ul>
 
-<p><strong>Pertinence professionnelle</strong> :
-Tout ingénieur sera confronté au droit : signature contrat travail, création produit (protection IP), gestion projet (contrats clients/fournisseurs), création startup (statuts, levée fonds).</p>
+<p><strong>Pertinence professionnelle</strong> :</p>
+<p>Tout ingenieur sera confronte au droit : signature contrat travail, creation produit (protection IP), gestion projet (contrats clients/fournisseurs), creation startup (statuts, levee fonds).</p>
 
-<p><strong>Message principal</strong> :
-Le droit n’est pas réservé aux juristes. Tout professionnel doit en maîtriser les bases pour protéger ses intérêts, respecter ses obligations, et évoluer sereinement.</p>
+<p><strong>Message principal</strong> :</p>
+<p>Le droit n'est pas reserve aux juristes. Tout professionnel doit en maitriser les bases pour proteger ses interets, respecter ses obligations, et evoluer sereinement.</p>
 
 <p><strong>Recommandations</strong> :</p>
 <ul>
-  <li>Approfondir domaines pertinents pour son secteur (brevets pour R&amp;D, RGPD pour IT, etc.)</li>
-  <li>Consulter ressources INPI, CNIL, Code du Travail en ligne</li>
-  <li>Participer à formations continues (propriété intellectuelle, RGPD)</li>
-  <li>Développer réseau avec juristes spécialisés</li>
-  <li>Lire blogs juridiques, newsletter (Dalloz Actualité, Village Justice)</li>
+<li>Approfondir domaines pertinents pour son secteur (brevets pour R&amp;D, RGPD pour IT, etc.)</li>
+<li>Consulter ressources INPI, CNIL, Code du Travail en ligne</li>
+<li>Participer a formations continues (propriete intellectuelle, RGPD)</li>
+<li>Developper reseau avec juristes specialises</li>
+<li>Lire blogs juridiques, newsletter (Dalloz Actualite, Village Justice)</li>
 </ul>
 
 <p><strong>Liens avec les autres cours</strong> :</p>
 <ul>
-  <li><a href="./gestion.html">Gestion - S8</a> : stratégie, management</li>
-  <li><a href="./finance.html">Finance - S7</a> : valorisation entreprise, levée fonds</li>
-  <li><a href="./entreprise.html">Entreprise - S5/S7</a> : fonctionnement organisations</li>
-  <li><a href="./ethique.html">Éthique - S9</a> : responsabilité sociale ingénieur</li>
+<li><a href="./gestion.html">Gestion - S8</a> : strategie, management</li>
+<li><a href="./finance.html">Finance - S7</a> : valorisation entreprise, levee fonds</li>
 </ul>
 
 <hr />
 
-<p><em>Cours suivi en 2023-2024 à l’INSA Toulouse, Département Génie Électrique et Informatique.</em></p>
-
-<div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
-</div>
-
-<h4 id="2-droit-des-contrats">2. Droit des Contrats</h4>
-
-<p><strong>Définition</strong>:
-Accord de volontés créant des obligations juridiques entre parties.</p>
-
-<p><strong>Conditions de validité</strong> (art. 1128 Code Civil):</p>
-<ol>
-  <li><strong>Consentement</strong> libre et éclairé des parties</li>
-  <li><strong>Capacité</strong> juridique de contracter</li>
-  <li><strong>Contenu licite</strong> et certain</li>
-</ol>
-
-<p><strong>Formation du contrat</strong>:</p>
-<ul>
-  <li><strong>Offre</strong>: proposition précise et ferme</li>
-  <li><strong>Acceptation</strong>: accord sans réserve</li>
-  <li><strong>Rencontre</strong> des volontés → contrat formé</li>
-</ul>
-
-<p><strong>Force obligatoire</strong> (art. 1103):
-“Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits.”</p>
-
-<p><strong>Vices du consentement</strong>:</p>
-<ul>
-  <li><strong>Erreur</strong>: sur substance, sur personne</li>
-  <li><strong>Dol</strong>: manœuvres frauduleuses</li>
-  <li><strong>Violence</strong>: contrainte physique ou morale</li>
-</ul>
-
-<p><strong>Exécution</strong>:</p>
-<ul>
-  <li>Obligations doivent être exécutées de bonne foi</li>
-  <li>Inexécution → responsabilité contractuelle</li>
-</ul>
-
-<p><strong>Résolution/Résiliation</strong>:
-Fin du contrat pour inexécution ou accord mutuel.</p>
-
-<h4 id="3-contrat-de-travail">3. Contrat de Travail</h4>
-
-<p><strong>Définition</strong>:
-Lien de subordination juridique contre rémunération.</p>
-
-<p><strong>Critères</strong>:</p>
-<ul>
-  <li>Lien de subordination (directives, contrôle, sanctions)</li>
-  <li>Rémunération</li>
-  <li>Prestation de travail</li>
-</ul>
-
-<p><strong>Types</strong>:</p>
-<ul>
-  <li><strong>CDI</strong> (Contrat à Durée Indéterminée): forme normale</li>
-  <li><strong>CDD</strong> (Durée Déterminée): cas limitatifs (remplacement, surcroît d’activité)</li>
-  <li><strong>Intérim</strong>: mission temporaire via agence</li>
-</ul>
-
-<p><strong>Contenu obligatoire</strong>:</p>
-<ul>
-  <li>Identification parties</li>
-  <li>Qualification (poste, statut)</li>
-  <li>Rémunération</li>
-  <li>Durée de travail</li>
-  <li>Lieu de travail</li>
-  <li>Convention collective applicable</li>
-</ul>
-
-<p><strong>Période d’essai</strong>:
-Permet à chaque partie de rompre facilement.
-Durée max selon statut (cadres: 4 mois).</p>
-
-<p><strong>Modification du contrat</strong>:
-Éléments essentiels nécessitent accord du salarié.</p>
-
-<p><strong>Rupture du CDI</strong>:</p>
-<ul>
-  <li><strong>Démission</strong>: initiative salarié</li>
-  <li><strong>Licenciement</strong>: initiative employeur (cause réelle et sérieuse)
-    <ul>
-      <li>Motif personnel (faute, insuffisance)</li>
-      <li>Motif économique</li>
-    </ul>
-  </li>
-  <li><strong>Rupture conventionnelle</strong>: accord mutuel</li>
-  <li><strong>Prise d’acte</strong> / <strong>Résiliation judiciaire</strong>: manquements graves</li>
-</ul>
-
-<p><strong>Indemnités</strong>:
-Selon ancienneté et type de rupture.</p>
-
-<h4 id="4-temps-de-travail-et-rémunération">4. Temps de Travail et Rémunération</h4>
-
-<p><strong>Durée légale</strong>:
-35h/semaine (ou 151.67h/mois).</p>
-
-<p><strong>Heures supplémentaires</strong>:
-Au-delà 35h, majorées (25% ou 50%).</p>
-
-<p><strong>Forfait jours</strong> (cadres):
-Nombre de jours/an (218 max), pas décompte horaire.</p>
-
-<p><strong>Repos</strong>:</p>
-<ul>
-  <li>Repos quotidien: 11h consécutives</li>
-  <li>Repos hebdomadaire: 24h (généralement dimanche)</li>
-  <li>Congés payés: 2.5 jours ouvrables/mois (30 jours/an)</li>
-</ul>
-
-<p><strong>SMIC</strong>:
-Salaire Minimum Interprofessionnel de Croissance.
-Montant horaire minimum légal.</p>
-
-<p><strong>Bulletin de paie</strong>:</p>
-<ul>
-  <li>Salaire brut</li>
-  <li>Cotisations sociales (part salarié + employeur)</li>
-  <li>Salaire net</li>
-</ul>
-
-<h4 id="5-propriété-intellectuelle">5. Propriété Intellectuelle</h4>
-
-<p><strong>Trois piliers</strong>:</p>
-
-<p><strong>1. Propriété industrielle</strong>:</p>
-<ul>
-  <li>Brevets d’invention</li>
-  <li>Marques</li>
-  <li>Dessins et modèles</li>
-</ul>
-
-<p><strong>2. Propriété littéraire et artistique</strong>:</p>
-<ul>
-  <li>Droit d’auteur (œuvres originales)</li>
-  <li>Droits voisins (interprètes, producteurs)</li>
-</ul>
-
-<p><strong>3. Obtentions végétales et topographies</strong>:
-Secteurs spécifiques.</p>
-
-<h4 id="6-brevets-dinvention">6. Brevets d’Invention</h4>
-
-<p><strong>Conditions de brevetabilité</strong>:</p>
-<ol>
-  <li><strong>Nouveauté</strong>: non divulgué publiquement avant dépôt</li>
-  <li><strong>Activité inventive</strong>: non évident pour l’homme du métier</li>
-  <li><strong>Application industrielle</strong>: fabricable ou utilisable</li>
-</ol>
-
-<p><strong>Exclusions</strong>:</p>
-<ul>
-  <li>Découvertes scientifiques (vs inventions)</li>
-  <li>Méthodes mathématiques</li>
-  <li>Logiciels “en tant que tels”</li>
-  <li>Méthodes thérapeutiques</li>
-</ul>
-
-<p><strong>Dépôt</strong>:</p>
-<ul>
-  <li><strong>INPI</strong> (France)</li>
-  <li><strong>OEB</strong> (Office Européen des Brevets)</li>
-  <li><strong>PCT</strong> (Patent Cooperation Treaty): international</li>
-</ul>
-
-<p><strong>Durée</strong>:
-20 ans à compter du dépôt.</p>
-
-<p><strong>Droits conférés</strong>:
-Monopole d’exploitation (fabrication, vente, importation).</p>
-
-<p><strong>Obligations</strong>:</p>
-<ul>
-  <li>Divulgation de l’invention (publication 18 mois après dépôt)</li>
-  <li>Annuités (maintien en vigueur)</li>
-</ul>
-
-<p><strong>Invention de salarié</strong>:</p>
-<ul>
-  <li><strong>Mission</strong>: appartient à l’employeur, prime possible</li>
-  <li><strong>Hors mission attribuable</strong>: négociation, juste prix</li>
-  <li><strong>Hors mission non attribuable</strong>: appartient au salarié</li>
-</ul>
-
-<h4 id="7-droit-dauteur">7. Droit d’Auteur</h4>
-
-<p><strong>Objet</strong>:
-Œuvres de l’esprit originales (littérature, musique, logiciels, etc.).</p>
-
-<p><strong>Conditions</strong>:</p>
-<ul>
-  <li><strong>Originalité</strong>: empreinte de la personnalité de l’auteur</li>
-  <li><strong>Mise en forme</strong>: idées non protégeables, seule l’expression l’est</li>
-</ul>
-
-<p><strong>Aucune formalité</strong>:
-Protection automatique dès création.</p>
-
-<p><strong>Droits moraux</strong> (inaliénables):</p>
-<ul>
-  <li>Droit de divulgation</li>
-  <li>Droit au respect de l’œuvre</li>
-  <li>Droit de retrait/repentir</li>
-  <li>Droit à la paternité (nom de l’auteur)</li>
-</ul>
-
-<p><strong>Droits patrimoniaux</strong> (cessibles):</p>
-<ul>
-  <li>Droit de reproduction</li>
-  <li>Droit de représentation</li>
-  <li>Droit d’adaptation</li>
-</ul>
-
-<p><strong>Durée</strong>:
-Vie de l’auteur + 70 ans.</p>
-
-<p><strong>Exceptions</strong>:</p>
-<ul>
-  <li>Citation courte</li>
-  <li>Copie privée</li>
-  <li>Parodie</li>
-</ul>
-
-<p><strong>Logiciels</strong>:
-Protégés par droit d’auteur (pas le brevet en principe).
-Droits souvent cédés à l’employeur.</p>
-
-<h4 id="8-marques">8. Marques</h4>
-
-<p><strong>Fonction</strong>:
-Signe distinctif identifiant produits/services.</p>
-
-<p><strong>Types</strong>:</p>
-<ul>
-  <li>Nominale (mot)</li>
-  <li>Figurative (logo)</li>
-  <li>Sonore</li>
-  <li>Tridimensionnelle</li>
-</ul>
-
-<p><strong>Conditions</strong>:</p>
-<ul>
-  <li><strong>Distinctive</strong>: pas générique ou descriptive</li>
-  <li><strong>Licite</strong>: pas trompeuse, contraire ordre public</li>
-  <li><strong>Disponible</strong>: pas antériorités</li>
-</ul>
-
-<p><strong>Dépôt INPI</strong>:
-Classes de produits/services (classification de Nice).</p>
-
-<p><strong>Durée</strong>:
-10 ans, renouvelable indéfiniment.</p>
-
-<p><strong>Contrefaçon</strong>:
-Utilisation non autorisée de marque protégée.
-Sanctions civiles et pénales.</p>
-
-<h4 id="9-droit-des-sociétés">9. Droit des Sociétés</h4>
-
-<p><strong>Société vs Entreprise individuelle</strong>:</p>
-
-<p><strong>Entreprise individuelle</strong>:</p>
-<ul>
-  <li>Pas de personnalité morale distincte</li>
-  <li>Responsabilité illimitée (patrimoine personnel engagé)</li>
-  <li>Simplicité administrative</li>
-</ul>
-
-<p><strong>Société</strong>:</p>
-<ul>
-  <li>Personnalité morale (personne juridique distincte)</li>
-  <li>Responsabilité limitée (généralement)</li>
-  <li>Formalités de création (statuts, immatriculation)</li>
-</ul>
-
-<p><strong>Principales formes</strong>:</p>
-
-<p><strong>SARL</strong> (Société à Responsabilité Limitée):</p>
-<ul>
-  <li>1 à 100 associés</li>
-  <li>Capital libre (1€ symbolique possible)</li>
-  <li>Responsabilité limitée aux apports</li>
-  <li>Gérant(s)</li>
-  <li>Assemblées générales</li>
-</ul>
-
-<p><strong>SAS</strong> (Société par Actions Simplifiée):</p>
-<ul>
-  <li>≥1 associé (SASU si seul)</li>
-  <li>Grande liberté statutaire</li>
-  <li>Président (+ autres organes si voulu)</li>
-  <li>Responsabilité limitée</li>
-</ul>
-
-<p><strong>SA</strong> (Société Anonyme)**:</p>
-<ul>
-  <li>≥2 actionnaires (7 si cotée)</li>
-  <li>Capital min 37k€</li>
-  <li>Conseil d’administration ou directoire+conseil de surveillance</li>
-  <li>Actionnaires</li>
-</ul>
-
-<p><strong>EURL/SASU</strong>:
-Versions unipersonnelles de SARL/SAS.</p>
-
-<p><strong>Choix de structure</strong>:
-Selon projet, nombre d’associés, besoins de financement, fiscalité.</p>
-
-<h4 id="10-responsabilités-de-lingénieur">10. Responsabilités de l’Ingénieur</h4>
-
-<p><strong>Responsabilité contractuelle</strong>:
-Vis-à-vis du client/employeur.
-Inexécution obligations → dommages-intérêts.</p>
-
-<p><strong>Responsabilité délictuelle</strong>:
-Dommage causé à un tiers.</p>
-<ul>
-  <li>Faute</li>
-  <li>Préjudice</li>
-  <li>Lien de causalité</li>
-</ul>
-
-<p><strong>Responsabilité pénale</strong>:
-Infractions:</p>
-<ul>
-  <li>Mise en danger d’autrui</li>
-  <li>Homicide/blessures involontaires (négligence, imprudence)</li>
-  <li>Atteinte environnement</li>
-</ul>
-
-<p><strong>Responsabilité décennale</strong> (construction):
-Garantie 10 ans sur solidité ouvrage.</p>
-
-<p><strong>Devoir de conseil</strong>:
-L’ingénieur doit alerter sur risques, proposer solutions.</p>
-
-<h4 id="11-clauses-contractuelles-importantes">11. Clauses Contractuelles Importantes</h4>
-
-<p><strong>Clause de confidentialité (NDA)</strong>:
-Protège informations sensibles échangées.
-Définir: informations concernées, durée, sanctions.</p>
-
-<p><strong>Clause de non-concurrence</strong>:
-Limite activité après fin contrat.
-Conditions de validité:</p>
-<ul>
-  <li>Limitée dans temps, espace, activité</li>
-  <li>Indemnité compensatrice</li>
-  <li>Nécessaire à protection intérêts légitimes</li>
-</ul>
-
-<p><strong>Clause de propriété intellectuelle</strong>:
-Définit titularité des créations (brevets, logiciels, etc.).
-Important: clarifier droits dès début de collaboration.</p>
-
-<p><strong>Clause pénale</strong>:
-Fixe à l’avance montant indemnités en cas d’inexécution.</p>
-
-<p><strong>Clause de résolution</strong>:
-Conditions de fin anticipée du contrat.</p>
-
-<p><strong>Clause de juridiction/compétence</strong>:
-Quel tribunal en cas de litige.</p>
-
-<p><strong>Clause compromissoire</strong>:
-Recours à arbitrage plutôt que tribunaux.</p>
-
-<h4 id="12-protection-des-données-personnelles-rgpd">12. Protection des Données Personnelles (RGPD)</h4>
-
-<p><strong>Règlement Général sur la Protection des Données</strong>:
-Applicable depuis 2018.</p>
-
-<p><strong>Principes</strong>:</p>
-<ul>
-  <li>Licéité, loyauté, transparence</li>
-  <li>Limitation des finalités</li>
-  <li>Minimisation des données</li>
-  <li>Exactitude</li>
-  <li>Limitation de conservation</li>
-  <li>Intégrité et confidentialité</li>
-</ul>
-
-<p><strong>Droits des personnes</strong>:</p>
-<ul>
-  <li>Droit d’accès</li>
-  <li>Droit de rectification</li>
-  <li>Droit à l’effacement</li>
-  <li>Droit à la portabilité</li>
-  <li>Droit d’opposition</li>
-</ul>
-
-<p><strong>Obligations responsable de traitement</strong>:</p>
-<ul>
-  <li>Registre des traitements</li>
-  <li>Analyse d’impact (si risque élevé)</li>
-  <li>Notification CNIL en cas de violation</li>
-  <li>DPO (Data Protection Officer) si nécessaire</li>
-</ul>
-
-<p><strong>Sanctions</strong>:
-Jusqu’à 20M€ ou 4% CA mondial.</p>
-
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
-
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
-
-<ul>
-  <li>Compréhension des bases du droit français</li>
-  <li>Lecture et analyse de contrats</li>
-  <li>Identification de clauses importantes et risques</li>
-  <li>Connaissance des droits et obligations en tant que salarié</li>
-  <li>Compréhension de la propriété intellectuelle (brevets, droit d’auteur, marques)</li>
-  <li>Bases du droit des sociétés</li>
-  <li>Identification des responsabilités de l’ingénieur</li>
-  <li>Conscience des enjeux juridiques dans l’innovation et l’entreprise</li>
-</ul>
-
-<h3 id="self-evaluation">Self Evaluation</h3>
-
-<p>Ce cours de droit, bien que dense, a été révélateur. En tant qu’ingénieur, j’avais tendance à me concentrer uniquement sur les aspects techniques, négligeant la dimension juridique. Pourtant, elle est omniprésente dans la vie professionnelle.</p>
-
-<p>Le droit des contrats est fondamental. Tout accord, écrit ou oral, a des implications juridiques. Savoir lire un contrat, identifier les clauses défavorables, et négocier est une compétence précieuse. J’ai réalisé qu’un contrat mal compris peut avoir des conséquences lourdes (non-concurrence abusive, cession de tous droits IP, etc.).</p>
-
-<p>La propriété intellectuelle est particulièrement importante pour l’ingénieur innovant. Comprendre la différence entre brevet et droit d’auteur, savoir quand et comment protéger une invention, est crucial. Le statut des inventions de salarié est complexe: toutes ne vont pas automatiquement à l’employeur.</p>
-
-<p>Le droit du travail m’a éclairé sur mes droits et obligations. La distinction entre modification du contrat (nécessite accord) et simple changement des conditions de travail (pouvoir de direction de l’employeur) est subtile mais importante.</p>
-
-<p>Le droit des sociétés, même abordé superficiellement, est utile pour comprendre les structures d’entreprise et envisager éventuellement l’entrepreneuriat. Le choix entre SARL, SAS, etc. a des implications fiscales, juridiques, et organisationnelles.</p>
-
-<p>Les responsabilités de l’ingénieur (contractuelle, délictuelle, pénale) sont lourdes. En tant qu’expert technique, on peut être tenu responsable de négligences ayant causé dommages ou mise en danger. Le devoir de conseil est une obligation forte.</p>
-
-<p>Le RGPD est incontournable à l’ère du numérique. Tout système traitant des données personnelles doit le respecter. Les sanctions peuvent être colossales.</p>
-
-<h3 id="my-opinion">My Opinion</h3>
-
-<p>Ce cours devrait être renforcé et mieux intégré au cursus. Le droit n’est pas qu’un “cours de culture générale” mais un outil pratique indispensable.</p>
-
-<p>Points forts:</p>
-<ul>
-  <li>Intervention de praticiens (juristes, avocats)</li>
-  <li>Cas concrets et études de cas réels</li>
-  <li>Couverture large des sujets pertinents pour ingénieurs</li>
-  <li>Prise de conscience des enjeux juridiques</li>
-</ul>
-
-<p>Points à améliorer:</p>
-<ul>
-  <li>Plus de temps sur propriété intellectuelle (crucial pour innovateurs)</li>
-  <li>Ateliers pratiques (rédaction contrat, analyse cas complexes)</li>
-  <li>Lien avec entrepreneuriat (création startup)</li>
-  <li>Aspects internationaux (contrats internationaux, brevets internationaux)</li>
-</ul>
-
-<p>Réflexions personnelles:</p>
-
-<p>Le droit est souvent perçu comme complexe et ennuyeux par les ingénieurs. Pourtant, il protège et structure nos activités. Ignorer le droit par méconnaissance peut coûter très cher: perte de droits sur ses créations, litiges, sanctions.</p>
-
-<p>Un ingénieur n’a pas besoin d’être juriste, mais il doit:</p>
-<ul>
-  <li>Savoir quand consulter un expert juridique</li>
-  <li>Comprendre les enjeux lors de signature de contrats</li>
-  <li>Protéger ses innovations</li>
-  <li>Connaître ses droits et respecter ses obligations</li>
-</ul>
-
-<p>L’entrepreneuriat technologique nécessite autant de compétences juridiques que techniques. Protéger son idée (brevet, secret), structurer son entreprise (statuts, pacte d’associés), lever des fonds (term sheet, dilution), recruter (contrats) sont des étapes clés.</p>
-
-<p>Le contexte juridique évolue rapidement, surtout dans le numérique: RGPD, régulation IA, responsabilité des algorithmes, cybersécurité. Se tenir informé est important.</p>
-
-<p>Dans ma carrière future:</p>
-
-<ul>
-  <li><strong>En entreprise</strong>: négocier contrat de travail, comprendre clauses IP, faire valoir mes droits</li>
-  <li><strong>En R&amp;D</strong>: protéger innovations (brevets), respecter propriété intellectuelle existante (freedom to operate)</li>
-  <li><strong>En entrepreneuriat</strong>: choisir structure juridique, rédiger contrats (clients, prestataires), protéger ma marque et mes créations</li>
-  <li><strong>Management</strong>: respecter droit du travail, gérer équipes en conformité</li>
-</ul>
-
-<p>Collaborer avec juristes sera fréquent. Parler un langage commun, comprendre leurs conseils, et poser les bonnes questions est un atout professionnel.</p>
-
-<p>En conclusion, ce cours m’a donné les fondamentaux pour naviguer dans l’environnement juridique de l’ingénieur. C’est un début; la formation continue et la consultation d’experts seront nécessaires. Mais au moins, je ne signerai plus un contrat sans le lire attentivement!</p>
-
-<hr />
-
-<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
-
-<style>
-    .pdf-container {
-        margin: 40px 0;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-    .pdf-viewer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .pdf-item {
-        flex: 1;
-        min-width: 400px;
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .pdf-item h4 {
-        color: #2a7ae2;
-        margin-top: 0;
-    }
-</style>
+<p><span class="lang-fr">Documents de Cours</span><span class="lang-en">Course Documents</span></p>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Thème 1 - Introduction au Droit</h4>
-      <p>Introduction générale : sources du droit, hiérarchie des normes, organisation judiciaire et principes fondamentaux.</p>
+      <h4><span class="lang-fr">Theme 1 - Introduction au Droit</span><span class="lang-en">Topic 1 - Introduction to Law</span></h4>
+      <p><span class="lang-fr">Introduction generale : sources du droit, hierarchie des normes, organisation judiciaire et principes fondamentaux.</span><span class="lang-en">General introduction: sources of law, hierarchy of norms, judicial organization and fundamental principles.</span></p>
       <embed src="/cours-pdf/S8/Droit/theme1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S8/Droit/theme1-introduction.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S8/Droit/theme1-introduction.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Thème 3 - L'Entreprise</h4>
-      <p>Droit de l'entreprise : formes juridiques (SA, SARL, SAS), création, gestion et dissolution de sociétés.</p>
+      <h4><span class="lang-fr">Theme 3 - L'Entreprise</span><span class="lang-en">Topic 3 - The Company</span></h4>
+      <p><span class="lang-fr">Droit de l'entreprise : formes juridiques (SA, SARL, SAS), creation, gestion et dissolution de societes.</span><span class="lang-en">Business law: legal forms (SA, SARL, SAS), creation, management and dissolution of companies.</span></p>
       <embed src="/cours-pdf/S8/Droit/theme3-entreprise.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S8/Droit/theme3-entreprise.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S8/Droit/theme3-entreprise.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Thème 6 - Responsabilité Civile</h4>
-      <p>Responsabilité civile personnelle : faute, dommage, lien de causalité, réparation et assurances.</p>
+      <h4><span class="lang-fr">Theme 6 - Responsabilite Civile</span><span class="lang-en">Topic 6 - Civil Liability</span></h4>
+      <p><span class="lang-fr">Responsabilite civile personnelle : faute, dommage, lien de causalite, reparation et assurances.</span><span class="lang-en">Personal civil liability: fault, damage, causal link, compensation and insurance.</span></p>
       <embed src="/cours-pdf/S8/Droit/theme6-responsabilite-civile.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S8/Droit/theme6-responsabilite-civile.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S8/Droit/theme6-responsabilite-civile.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
   </div>
+</div>
+
+<p><em><span class="lang-fr">Cours suivi en 2023-2024 a l'INSA Toulouse, Departement Genie Electrique et Informatique.</span><span class="lang-en">Course taken in 2023-2024 at INSA Toulouse, Department of Electrical Engineering and Computer Science.</span></em></p>
+
+</div>
+
+<div class="lang-en">
+
+<h1>Law - Semester 8</h1>
+
+<p><strong>Academic Year</strong>: 2023-2024<br />
+<strong>ECTS</strong>: 2<br />
+<strong>Category</strong>: Humanities and Social Sciences - Legal</p>
+
+<hr />
+
+<h2>PART A - General Module Presentation</h2>
+
+<h3 class="section-title">Overview</h3>
+
+<p>This course introduces the fundamental legal concepts for engineers in their professional life. It covers contract law, labor law, intellectual property, and corporate law. The objective is to enable future engineers to understand the legal environment, protect their innovations, negotiate contracts, and know their rights and obligations.</p>
+
+<p><strong>Learning objectives</strong>:</p>
+<ul>
+<li>Understand the principles of French law and the hierarchy of legal norms</li>
+<li>Master the basics of contract law</li>
+<li>Know one's rights and obligations under labor law</li>
+<li>Understand intellectual property (patents, copyright, trademarks)</li>
+<li>Grasp the legal structures of companies</li>
+<li>Identify the engineer's liabilities</li>
+<li>Understand GDPR and data protection</li>
+</ul>
+
+<h3 class="section-title">Position in the curriculum</h3>
+
+<p>This module provides a complementary legal dimension:</p>
+<ul>
+<li><strong>Management (S8)</strong>: business strategy, management</li>
+<li><strong>Finance (S7)</strong>: valuation, fundraising</li>
+<li><strong>Business (S5, S7)</strong>: how organizations work</li>
+</ul>
+
+<p>It prepares for:</p>
+<ul>
+<li><strong>Entrepreneurship</strong>: company creation, innovation protection</li>
+<li><strong>Corporate career</strong>: contract negotiation, project management</li>
+<li><strong>R&amp;D</strong>: intellectual property protection</li>
+<li><strong>Management</strong>: team management in compliance with labor law</li>
+</ul>
+
+<hr />
+
+<h2>PART B - Personal Experience and Learning Context</h2>
+
+<h3 class="section-title">Organization and resources</h3>
+
+<p>The module was taught by practicing lawyers and legal professionals:</p>
+
+<p><strong>Lectures (18h)</strong>:</p>
+<ul>
+<li>Hierarchy of norms and sources of law</li>
+<li>Contract law (formation, performance, termination)</li>
+<li>Labor law (employment contract, working hours, termination)</li>
+<li>Intellectual property (patents, copyright, trademarks)</li>
+<li>Corporate law (SARL, SAS, SA)</li>
+<li>Engineer's liabilities</li>
+<li>Data protection (GDPR)</li>
+</ul>
+
+<p><strong>Case studies (9 cases)</strong>:</p>
+<ul>
+<li>Topic 1: Contract law</li>
+<li>Topic 2: Defects of consent</li>
+<li>Topic 3: Employment contract</li>
+<li>Topic 4: Termination of employment contract</li>
+<li>Topic 5: Patents</li>
+<li>Topic 6: Copyright</li>
+<li>Topic 7: Trademarks</li>
+<li>Topic 8: Corporate law</li>
+<li>Topic 9: Liabilities and GDPR</li>
+</ul>
+
+<p><strong>Resources</strong>:</p>
+<ul>
+<li>Civil Code (relevant articles provided)</li>
+<li>Labor Code (excerpts)</li>
+<li>Intellectual Property Code</li>
+<li>Past exams: MCQ and case studies</li>
+<li>INPI documentation (National Institute of Industrial Property)</li>
+</ul>
+
+<h3 class="section-title">Study methodology</h3>
+
+<p><strong>Phase 1: Assimilate general concepts</strong>:</p>
+<p>Understand the logic of French law, the hierarchy of norms, and the main principles.</p>
+
+<p><strong>Phase 2: Study each area</strong>:</p>
+<p>Deepen knowledge of contracts, labor, intellectual property, and corporate law with their specificities.</p>
+
+<p><strong>Phase 3: Solve case studies</strong>:</p>
+<p>Apply knowledge to concrete situations (the 9 case studies).</p>
+
+<p><strong>Phase 4: Memorize key articles</strong>:</p>
+<p>Some articles of the Civil Code and Labor Code are fundamental (e.g.: 1103, 1128, L1221-1).</p>
+
+<p><strong>Phase 5: Develop the legal reflex</strong>:</p>
+<p>Identify the legal issues in any professional situation and know when to consult an expert.</p>
+
+<h3 class="section-title">Difficulties encountered</h3>
+
+<p><strong>Technical vocabulary</strong>:</p>
+<p>Law has its own jargon (tortious, subsidiary, CMRR, INPI, etc.). Requires familiarization with the terms.</p>
+
+<p><strong>Different logic</strong>:</p>
+<p>Legal reasoning differs from technical reasoning. One must adapt to legal thinking (qualification, subsumption).</p>
+
+<p><strong>Complexity of legal texts</strong>:</p>
+<p>Legal articles are dense and precise. Careful reading required.</p>
+
+<p><strong>Multitude of special cases</strong>:</p>
+<p>Law provides for many exceptions and specific cases. Difficult to remember everything.</p>
+
+<hr />
+
+<h2>PART C - Detailed Technical Aspects</h2>
+
+<h3 class="section-title">1. Hierarchy of legal norms</h3>
+
+<p><strong>Kelsen's Pyramid</strong>:</p>
+
+<p>French law is organized hierarchically. A lower norm must comply with higher norms.</p>
+
+<p><strong>Hierarchical order</strong>:</p>
+
+<ol>
+<li><strong>Constitution</strong> (top): fundamental law, fundamental rights and freedoms</li>
+<li><strong>International treaties</strong>: European conventions, international agreements (superior to laws)</li>
+<li><strong>Laws</strong>: voted by Parliament</li>
+<li><strong>Regulations</strong>: decrees, orders (executive power)</li>
+<li><strong>Contracts</strong>: "the law of the parties" (but cannot contradict higher norms)</li>
+</ol>
+
+<p><strong>Principle of legality</strong>:</p>
+
+<p>Any lower norm must comply with higher norms. A law contrary to the Constitution can be struck down by the Constitutional Council.</p>
+
+<h3 class="section-title">2. Contract law</h3>
+
+<p><strong>Definition</strong>:</p>
+
+<p>A contract is an agreement of wills creating legal obligations between the parties.</p>
+
+<p><strong>Conditions of validity (article 1128 Civil Code)</strong>:</p>
+
+<p>For a contract to be valid, it requires:</p>
+<ol>
+<li><strong>Free and informed consent</strong> of the parties</li>
+<li><strong>Legal capacity</strong> to contract (adult, of sound mind)</li>
+<li><strong>Lawful and certain content</strong> (legal object and cause)</li>
+</ol>
+
+<p><strong>Contract formation</strong>:</p>
+
+<p><strong>Offer</strong>: precise, firm, and complete proposal.</p>
+
+<p><strong>Acceptance</strong>: pure and simple agreement without reservation.</p>
+
+<p><strong>Meeting of wills</strong>: as soon as acceptance meets the offer, the contract is formed (consensualism).</p>
+
+<p><strong>Binding force (article 1103)</strong>:</p>
+
+<p>"Legally formed contracts serve as law for those who made them."</p>
+
+<p>The parties must fulfill their commitments. Non-compliance leads to contractual liability.</p>
+
+<p><strong>Defects of consent</strong>:</p>
+
+<p>Consent must be free and informed. If it is vitiated, the contract can be annulled.</p>
+
+<table>
+<tr><th>Defect</th><th>Description</th><th>Example</th></tr>
+<tr><td>Mistake</td><td>Erroneous belief about an essential element</td><td>Buying a fake painting believing it to be authentic</td></tr>
+<tr><td>Fraud (Dol)</td><td>Fraudulent maneuvers to deceive</td><td>Concealing a defect during a sale</td></tr>
+<tr><td>Duress</td><td>Physical or moral constraint</td><td>Signing under threat</td></tr>
+</table>
+
+<p><strong>Contract performance</strong>:</p>
+
+<p>Obligations must be performed in good faith. In case of non-performance, possible remedies: forced performance, damages, termination.</p>
+
+<p><strong>End of contract</strong>:</p>
+
+<ul>
+<li><strong>Complete performance</strong>: obligations fulfilled</li>
+<li><strong>Termination for breach</strong>: end due to serious non-performance</li>
+<li><strong>Termination for the future</strong>: end going forward (successive performance contracts)</li>
+<li><strong>Mutual agreement</strong>: parties decide together to end the contract</li>
+</ul>
+
+<h3 class="section-title">3. Employment contract</h3>
+
+<p><strong>Definition</strong>:</p>
+
+<p>Legal subordination relationship in exchange for remuneration. The employee works under the employer's authority.</p>
+
+<p><strong>Criteria of the subordination relationship</strong>:</p>
+<ul>
+<li>Employer's directives</li>
+<li>Monitoring of performance</li>
+<li>Power to impose sanctions</li>
+</ul>
+
+<p><strong>Types of contracts</strong>:</p>
+
+<table>
+<tr><th>Type</th><th>Duration</th><th>Use</th></tr>
+<tr><td>CDI (Permanent contract)</td><td>Indefinite</td><td>Standard and general form</td></tr>
+<tr><td>CDD (Fixed-term contract)</td><td>Fixed</td><td>Limited cases (replacement, increased workload)</td></tr>
+<tr><td>Temporary work</td><td>Temporary assignment</td><td>Via temporary agency</td></tr>
+</table>
+
+<p><strong>Mandatory content of an employment contract</strong>:</p>
+<ul>
+<li>Identification of the parties</li>
+<li>Job title (position, status)</li>
+<li>Remuneration (gross salary)</li>
+<li>Working hours and schedule</li>
+<li>Workplace</li>
+<li>Applicable collective agreement</li>
+</ul>
+
+<p><strong>Trial period</strong>:</p>
+
+<p>Period allowing each party to evaluate the other and easily terminate the contract.</p>
+
+<p>Maximum duration by status:</p>
+<ul>
+<li>Workers/employees: 2 months</li>
+<li>Supervisors/technicians: 3 months</li>
+<li>Executives: 4 months</li>
+</ul>
+
+<p>Renewal possible if provided for by collective agreement.</p>
+
+<p><strong>Contract modification</strong>:</p>
+
+<p>Essential elements (remuneration, job title, workplace if specified) require the employee's consent.</p>
+
+<p>Employee refusal: the employer cannot impose the change, must maintain the situation or dismiss (economic grounds if applicable).</p>
+
+<p><strong>Termination of a permanent contract (CDI)</strong>:</p>
+
+<table>
+<tr><th>Type</th><th>Initiative</th><th>Conditions</th></tr>
+<tr><td>Resignation</td><td>Employee</td><td>Clear and unambiguous will</td></tr>
+<tr><td>Dismissal</td><td>Employer</td><td>Real and serious cause (misconduct, inadequacy, economic)</td></tr>
+<tr><td>Mutual termination agreement</td><td>Mutual</td><td>Common agreement, official approval</td></tr>
+<tr><td>Constructive dismissal</td><td>Employee</td><td>Serious employer breaches (reclassified as dismissal if justified)</td></tr>
+</table>
+
+<p><strong>Severance pay</strong>:</p>
+
+<p>If dismissed (excluding gross/serious misconduct) and seniority &ge; 8 months: minimum statutory severance (1/4 month per year of service).</p>
+
+<h3 class="section-title">4. Working hours and remuneration</h3>
+
+<p><strong>Legal working hours</strong>:</p>
+
+<p>35 hours per week (or 151.67 hours per month).</p>
+
+<p>Beyond that: overtime with premium pay.</p>
+
+<p><strong>Overtime</strong>:</p>
+
+<p>Premium:</p>
+<ul>
+<li>25% for the first 8 hours (36th to 43rd hour)</li>
+<li>50% beyond</li>
+</ul>
+
+<p>Possibility of equivalent compensatory rest.</p>
+
+<p><strong>Fixed-day scheme (autonomous executives)</strong>:</p>
+
+<p>No hourly accounting, but a number of days worked per year (218 days maximum).</p>
+
+<p><strong>Mandatory rest periods</strong>:</p>
+
+<ul>
+<li><strong>Daily rest</strong>: 11 consecutive hours</li>
+<li><strong>Weekly rest</strong>: 24 hours (generally Sunday + 11h daily = 35h)</li>
+<li><strong>Paid leave</strong>: 2.5 working days per month worked (30 days per year)</li>
+</ul>
+
+<p><strong>SMIC (Minimum wage)</strong>:</p>
+
+<p>Interprofessional Growth Minimum Wage. Hourly rate set by decree, regularly revised.</p>
+
+<p><strong>Pay slip</strong>:</p>
+
+<ul>
+<li><strong>Gross salary</strong>: before deductions</li>
+<li><strong>Social contributions</strong>: employee (withheld from salary) + employer (paid by employer)</li>
+<li><strong>Net salary</strong>: received by the employee</li>
+</ul>
+
+<h3 class="section-title">5. Intellectual property - Overview</h3>
+
+<p><strong>Three pillars</strong>:</p>
+
+<p><strong>1. Industrial property</strong>:</p>
+<ul>
+<li>Patents</li>
+<li>Trademarks</li>
+<li>Designs and models</li>
+</ul>
+
+<p><strong>2. Literary and artistic property</strong>:</p>
+<ul>
+<li>Copyright (works of the mind)</li>
+<li>Related rights (performing artists, producers)</li>
+</ul>
+
+<p><strong>3. Other</strong>:</p>
+<ul>
+<li>Plant varieties</li>
+<li>Semiconductor topographies</li>
+</ul>
+
+<h3 class="section-title">6. Patents</h3>
+
+<p><strong>Principle</strong>:</p>
+
+<p>A patent protects a technical invention by granting a monopoly of exploitation for a limited period.</p>
+
+<p><strong>Patentability conditions</strong>:</p>
+
+<p>To be patentable, the invention must meet three criteria:</p>
+
+<ol>
+<li><strong>Novelty</strong>: not publicly disclosed before filing (no publication, no sale)</li>
+<li><strong>Inventive step</strong>: not obvious to a person skilled in the art (creative contribution)</li>
+<li><strong>Industrial application</strong>: capable of being manufactured or used in industry</li>
+</ol>
+
+<p><strong>Exclusions</strong>:</p>
+
+<p>Not patentable:</p>
+<ul>
+<li>Scientific discoveries (laws of nature)</li>
+<li>Mathematical theories</li>
+<li>Aesthetic creations (protected by copyright)</li>
+<li>Software "as such" (but technical effects are patentable)</li>
+<li>Methods of medical treatment of the human body</li>
+</ul>
+
+<p><strong>Filing procedure</strong>:</p>
+
+<p><strong>In France</strong>: filing at INPI (National Institute of Industrial Property).</p>
+
+<p><strong>In Europe</strong>: filing at the EPO (European Patent Office) covering multiple countries.</p>
+
+<p><strong>Internationally</strong>: PCT filing (Patent Cooperation Treaty) facilitating multiple filings.</p>
+
+<p><strong>Cost</strong>: several thousand euros (filing + annuities + translations for Europe/international).</p>
+
+<p><strong>Duration of protection</strong>:</p>
+
+<p>20 years from the filing date, subject to paying annuities (maintenance fees).</p>
+
+<p><strong>Rights granted</strong>:</p>
+
+<p>Exploitation monopoly: only the holder can manufacture, use, sell, and import the invention.</p>
+
+<p>Prohibit others from exploiting without a license.</p>
+
+<p><strong>Obligations</strong>:</p>
+
+<ul>
+<li><strong>Disclosure</strong>: complete description of the invention (published 18 months after filing)</li>
+<li><strong>Annuities</strong>: annual fees to keep the patent in force</li>
+</ul>
+
+<p><strong>Employee inventions</strong>:</p>
+
+<p>Three categories according to article L611-7 CPI:</p>
+
+<table>
+<tr><th>Type</th><th>Definition</th><th>Ownership</th><th>Compensation</th></tr>
+<tr><td>Mission invention</td><td>Within the scope of duties, explicit inventive mission</td><td>Employer</td><td>Reasonable bonus possible</td></tr>
+<tr><td>Attributable off-mission</td><td>Off-mission but related to company activity or resources used</td><td>Employer (right of attribution)</td><td>Fair price mandatory</td></tr>
+<tr><td>Non-attributable off-mission</td><td>Entirely outside company activity and resources</td><td>Employee</td><td>-</td></tr>
+</table>
+
+<h3 class="section-title">7. Copyright</h3>
+
+<p><strong>Principle</strong>:</p>
+
+<p>Copyright protects original works of the mind from their creation, without any formality.</p>
+
+<p><strong>Protected works</strong>:</p>
+
+<p>Any original intellectual creation:</p>
+<ul>
+<li>Literary works (books, articles)</li>
+<li>Musical works</li>
+<li>Audiovisual works</li>
+<li>Software</li>
+<li>Databases</li>
+<li>Visual arts (painting, photography, sculpture)</li>
+</ul>
+
+<p><strong>Conditions</strong>:</p>
+
+<ol>
+<li><strong>Originality</strong>: bearing the author's personal imprint (creative choices)</li>
+<li><strong>Expression</strong>: an idea alone is not protectable, only its expression</li>
+</ol>
+
+<p><strong>No formalities</strong>:</p>
+
+<p>Automatic protection from creation. No registration needed (unlike patents).</p>
+
+<p>Filing possible for proof of prior creation (Soleau envelope at INPI, bailiff, etc.).</p>
+
+<p><strong>Two types of rights</strong>:</p>
+
+<p><strong>Moral rights</strong> (perpetual, inalienable, imprescriptible):</p>
+<ul>
+<li><strong>Right of disclosure</strong>: decide whether and how to publish</li>
+<li><strong>Right of integrity</strong>: oppose modifications to the work</li>
+<li><strong>Right of attribution</strong>: be recognized as the author</li>
+<li><strong>Right of withdrawal</strong>: withdraw the work (rare, requires compensation)</li>
+</ul>
+
+<p><strong>Economic rights</strong> (transferable, limited in time):</p>
+<ul>
+<li><strong>Right of reproduction</strong>: copying, printing, recording</li>
+<li><strong>Right of public performance</strong>: public broadcast, performance</li>
+<li><strong>Right of adaptation</strong>: translation, transformation</li>
+</ul>
+
+<p><strong>Duration of protection</strong>:</p>
+
+<p>Author's lifetime + 70 years.</p>
+
+<p>After that, the work enters the public domain (free use).</p>
+
+<p><strong>Exceptions</strong>:</p>
+
+<p>Authorized uses without permission:</p>
+<ul>
+<li>Short quotation (with source)</li>
+<li>Private copy (personal use)</li>
+<li>Parody</li>
+<li>Teaching and research (limited)</li>
+</ul>
+
+<p><strong>Software</strong>:</p>
+
+<p>Protected by copyright (not patents in principle, unless technical effect).</p>
+
+<p>In companies, rights are often automatically transferred to the employer (unless otherwise stipulated).</p>
+
+<h3 class="section-title">8. Trademarks</h3>
+
+<p><strong>Definition</strong>:</p>
+
+<p>A distinctive sign enabling the identification of a company's products or services.</p>
+
+<p><strong>Types of trademarks</strong>:</p>
+
+<ul>
+<li><strong>Word mark</strong>: word, name (e.g.: Coca-Cola)</li>
+<li><strong>Figurative mark</strong>: logo, design</li>
+<li><strong>Mixed mark</strong>: combination of word + logo</li>
+<li><strong>Sound mark</strong>: jingle (e.g.: SNCF)</li>
+<li><strong>Three-dimensional mark</strong>: product shape (e.g.: Coca bottle)</li>
+</ul>
+
+<p><strong>Conditions of validity</strong>:</p>
+
+<ol>
+<li><strong>Distinctive</strong>: not generic or descriptive (e.g.: "computer" for a computer)</li>
+<li><strong>Lawful</strong>: not contrary to public order, not misleading</li>
+<li><strong>Available</strong>: no prior rights (similar trademarks, trade names)</li>
+</ol>
+
+<p><strong>Filing</strong>:</p>
+
+<p>At INPI for France.</p>
+
+<p>Choose the product/service classes (Nice Classification, 45 classes).</p>
+
+<p><strong>Cost</strong>: a few hundred euros depending on the number of classes.</p>
+
+<p><strong>Duration of protection</strong>:</p>
+
+<p>10 years, indefinitely renewable (as long as fees are paid).</p>
+
+<p><strong>Revocation for non-use</strong>: if not used for 5 consecutive years.</p>
+
+<p><strong>Rights granted</strong>:</p>
+
+<p>Monopoly of use for the registered products/services.</p>
+
+<p>Prohibit third parties from using an identical or similar mark creating confusion.</p>
+
+<p><strong>Counterfeiting</strong>:</p>
+
+<p>Unauthorized use of a protected trademark.</p>
+
+<p>Civil sanctions (damages, seizure of counterfeits) and criminal sanctions (fine, imprisonment).</p>
+
+<h3 class="section-title">9. Corporate law</h3>
+
+<p><strong>Sole proprietorship vs Company</strong>:</p>
+
+<p><strong>Sole proprietorship</strong>:</p>
+<ul>
+<li>No separate legal personality (entrepreneur = business)</li>
+<li>Unlimited liability (personal assets at risk)</li>
+<li>Administrative simplicity</li>
+<li>Taxation on personal income</li>
+</ul>
+
+<p><strong>Company</strong>:</p>
+<ul>
+<li>Legal personality (separate legal entity)</li>
+<li>Liability limited to contributions (generally)</li>
+<li>Creation formalities (articles of association, RCS registration)</li>
+<li>Corporate tax + potential taxation of shareholders</li>
+</ul>
+
+<p><strong>Main types of companies</strong>:</p>
+
+<p><strong>SARL (Limited Liability Company)</strong>:</p>
+
+<table>
+<tr><th>Characteristic</th><th>Description</th></tr>
+<tr><td>Partners</td><td>1 to 100 (EURL if sole partner)</td></tr>
+<tr><td>Capital</td><td>No minimum (symbolic 1&euro; possible)</td></tr>
+<tr><td>Liability</td><td>Limited to contributions</td></tr>
+<tr><td>Management</td><td>Manager(s)</td></tr>
+<tr><td>Decisions</td><td>General meetings</td></tr>
+<tr><td>Manager social status</td><td>Majority: self-employed, minority: employee-equivalent</td></tr>
+</table>
+
+<p><strong>SAS (Simplified Joint-Stock Company)</strong>:</p>
+
+<table>
+<tr><th>Characteristic</th><th>Description</th></tr>
+<tr><td>Partners</td><td>Minimum 1 (SASU if sole partner)</td></tr>
+<tr><td>Capital</td><td>No minimum</td></tr>
+<tr><td>Liability</td><td>Limited to contributions</td></tr>
+<tr><td>Management</td><td>President (statutory freedom for other bodies)</td></tr>
+<tr><td>Flexibility</td><td>Great freedom of organization in articles of association</td></tr>
+<tr><td>President social status</td><td>Employee-equivalent</td></tr>
+</table>
+
+<p><strong>SA (Public Limited Company)</strong>:</p>
+
+<table>
+<tr><th>Characteristic</th><th>Description</th></tr>
+<tr><td>Shareholders</td><td>Minimum 2 (7 if publicly listed)</td></tr>
+<tr><td>Capital</td><td>Minimum 37,000 &euro;</td></tr>
+<tr><td>Liability</td><td>Limited to contributions</td></tr>
+<tr><td>Management</td><td>Board of directors + CEO, or Executive board + Supervisory board</td></tr>
+<tr><td>Formalism</td><td>Significant (suited for large organizations)</td></tr>
+</table>
+
+<p><strong>Choice of structure</strong>:</p>
+
+<p>Decision criteria:</p>
+<ul>
+<li>Number of partners</li>
+<li>Investment amount</li>
+<li>Taxation (corporate tax or income tax)</li>
+<li>Personal asset protection</li>
+<li>Management flexibility</li>
+<li>Fundraising (SAS preferred by investors)</li>
+</ul>
+
+<h3 class="section-title">10. Engineer's liabilities</h3>
+
+<p><strong>Contractual liability</strong>:</p>
+
+<p>Toward the client or employer.</p>
+
+<p>Non-performance or poor performance of contractual obligations &rarr; damages.</p>
+
+<p>Obligation of result (achieving the objective) or obligation of means (implementing appropriate means) depending on the contract.</p>
+
+<p><strong>Tortious liability (or extra-contractual)</strong>:</p>
+
+<p>Damage caused to a third party (outside a contract).</p>
+
+<p>Three conditions:</p>
+<ol>
+<li><strong>Fault</strong>: negligence, carelessness, breach of duty</li>
+<li><strong>Harm</strong>: damage suffered by the victim</li>
+<li><strong>Causal link</strong>: the fault caused the harm</li>
+</ol>
+
+<p><strong>Criminal liability</strong>:</p>
+
+<p>Offenses that may involve the engineer:</p>
+<ul>
+<li><strong>Endangering others</strong>: exposing others to immediate risk of death or serious injury</li>
+<li><strong>Involuntary manslaughter or injury</strong>: through clumsiness, carelessness, negligence</li>
+<li><strong>Environmental damage</strong>: pollution, hazardous waste</li>
+<li><strong>Non-compliance with safety standards</strong></li>
+</ul>
+
+<p>Sanctions: fines, imprisonment, prohibition from practicing.</p>
+
+<p><strong>Ten-year liability (construction)</strong>:</p>
+
+<p>10-year guarantee on the solidity of the structure and inseparable elements.</p>
+
+<p>Applies to architects, engineers, and construction contractors.</p>
+
+<p>Mandatory insurance.</p>
+
+<p><strong>Duty to advise</strong>:</p>
+
+<p>The engineer, as an expert, must alert to risks and propose appropriate solutions.</p>
+
+<p>Failure to advise may incur liability.</p>
+
+<h3 class="section-title">11. Important contractual clauses</h3>
+
+<p><strong>Confidentiality clause (NDA - Non-Disclosure Agreement)</strong>:</p>
+
+<p>Protects sensitive information exchanged between parties.</p>
+
+<p>Specify:</p>
+<ul>
+<li>Information covered</li>
+<li>Duration of confidentiality</li>
+<li>Exceptions (already public information, legal obligation)</li>
+<li>Penalties for violation</li>
+</ul>
+
+<p><strong>Non-compete clause</strong>:</p>
+
+<p>Prohibits the employee from engaging in a competing activity after the end of the contract.</p>
+
+<p><strong>Conditions of validity</strong>:</p>
+<ul>
+<li>Limited in time (generally 1-2 years)</li>
+<li>Limited geographically</li>
+<li>Limited to a specific industry sector</li>
+<li>Compensatory allowance (otherwise void)</li>
+<li>Necessary for the protection of the company's legitimate interests</li>
+</ul>
+
+<p><strong>Intellectual property clause</strong>:</p>
+
+<p>Defines who holds the rights to creations made within the scope of the collaboration.</p>
+
+<p>Important to clarify from the start: patents, software, designs, etc.</p>
+
+<p><strong>Penalty clause</strong>:</p>
+
+<p>Sets in advance the amount of damages in case of non-performance.</p>
+
+<p>Avoids disputes over damage assessment.</p>
+
+<p>Can be revised by a judge if manifestly excessive or derisory.</p>
+
+<p><strong>Jurisdiction clause</strong>:</p>
+
+<p>Designates the competent court in case of dispute.</p>
+
+<p><strong>Arbitration clause</strong>:</p>
+
+<p>Submits disputes to arbitration rather than to the courts.</p>
+
+<p>Faster and confidential, but costly.</p>
+
+<h3 class="section-title">12. Personal data protection - GDPR</h3>
+
+<p><strong>General Data Protection Regulation</strong>:</p>
+
+<p>European regulation applicable since May 2018.</p>
+
+<p>Aims to protect the personal data of European citizens.</p>
+
+<p><strong>Personal data</strong>:</p>
+
+<p>Any information relating to an identified or identifiable natural person (name, email, IP address, etc.).</p>
+
+<p><strong>Fundamental principles</strong>:</p>
+
+<ul>
+<li><strong>Lawfulness, fairness, transparency</strong>: legal and informed processing</li>
+<li><strong>Purpose limitation</strong>: collection for specific objectives</li>
+<li><strong>Data minimization</strong>: collect only necessary data</li>
+<li><strong>Accuracy</strong>: keep data up to date</li>
+<li><strong>Storage limitation</strong>: do not keep data indefinitely</li>
+<li><strong>Integrity and confidentiality</strong>: secure the data</li>
+</ul>
+
+<p><strong>Rights of individuals</strong>:</p>
+
+<table>
+<tr><th>Right</th><th>Description</th></tr>
+<tr><td>Access</td><td>Obtain a copy of one's data</td></tr>
+<tr><td>Rectification</td><td>Correct inaccurate data</td></tr>
+<tr><td>Erasure ("right to be forgotten")</td><td>Request deletion</td></tr>
+<tr><td>Portability</td><td>Retrieve data in a reusable format</td></tr>
+<tr><td>Objection</td><td>Object to processing</td></tr>
+<tr><td>Restriction</td><td>Restrict processing</td></tr>
+</table>
+
+<p><strong>Obligations of the data controller</strong>:</p>
+
+<ul>
+<li>Maintain a record of processing activities</li>
+<li>Conduct impact assessments (if high-risk processing)</li>
+<li>Appoint a DPO (Data Protection Officer) if necessary</li>
+<li>Notify data breaches to CNIL (72h) and to affected individuals</li>
+<li>Obtain clear consent (checkbox, not pre-checked)</li>
+</ul>
+
+<p><strong>Sanctions</strong>:</p>
+
+<p>Fines up to 20 million euros or 4% of annual worldwide turnover (whichever is higher).</p>
+
+<p>Numerous sanctions already imposed (Google, Amazon, etc.).</p>
+
+<hr />
+
+<h2>PART D - Reflective Analysis and Perspectives</h2>
+
+<h3 class="section-title">Skills acquired</h3>
+
+<p><strong>General legal knowledge</strong>:</p>
+<p>Understanding of French law principles, hierarchy of norms, legal reasoning.</p>
+
+<p><strong>Contract reading</strong>:</p>
+<p>Ability to read and analyze a contract, identify important clauses and risks.</p>
+
+<p><strong>Knowledge of rights and obligations</strong>:</p>
+<p>As an employee: rights (remuneration, rest, protection) and obligations (loyalty, subordination).</p>
+
+<p><strong>Innovation protection</strong>:</p>
+<p>Understanding how to protect one's creations (patents, copyright, trademarks) and avoid counterfeiting.</p>
+
+<p><strong>Entrepreneurial vision</strong>:</p>
+<p>Foundations for creating a company (choice of structure, articles of association, intellectual property).</p>
+
+<p><strong>Awareness of liabilities</strong>:</p>
+<p>Identifying situations that engage the engineer's liability and acting accordingly.</p>
+
+<h3 class="section-title">Key takeaways</h3>
+
+<p><strong>1. Law governs all professional activity</strong>:</p>
+<p>Ignoring the law through lack of knowledge does not exempt from liability. Training is essential.</p>
+
+<p><strong>2. Every contract must be read carefully</strong>:</p>
+<p>A contract is legally binding. Unfavorable clauses (abusive non-compete, full IP rights transfer) can have serious consequences.</p>
+
+<p><strong>3. Protect your innovations quickly</strong>:</p>
+<p>A patent's novelty is lost upon public disclosure. File before publishing or presenting.</p>
+
+<p><strong>4. Intellectual property &ne; automatically belongs to the employer</strong>:</p>
+<p>Mission inventions belong to the employer, but attributable off-mission: fair price. Non-attributable off-mission: belongs to the employee.</p>
+
+<p><strong>5. GDPR is unavoidable</strong>:</p>
+<p>All personal data processing must comply with GDPR. Very high penalties. Integrate compliance from the design stage.</p>
+
+<h3 class="section-title">Feedback</h3>
+
+<p><strong>Awareness</strong>:</p>
+<p>Before this course, law seemed abstract. I realized it is omnipresent: signing an internship agreement, using software, creating a website (legal notices, cookies).</p>
+
+<p><strong>Complexity and nuances</strong>:</p>
+<p>Law is rarely binary. Many gray areas, interpretations, and case law. Hence the importance of consulting experts in case of doubt.</p>
+
+<p><strong>Value of legal counsel</strong>:</p>
+<p>A lawyer is not a cost but an investment. They prevent costly disputes, protect innovations, and secure contracts.</p>
+
+<p><strong>Practical aspect</strong>:</p>
+<p>The case studies made the course concrete. Analyzing real situations (salary dispute, trademark counterfeiting) helps anchor knowledge.</p>
+
+<h3 class="section-title">Practical applications</h3>
+
+<p><strong>For salaried engineers</strong>:</p>
+<ul>
+<li>Negotiate employment contract (IP clause, non-compete, remuneration)</li>
+<li>Understand the pay slip</li>
+<li>Know one's rights (leave, overtime, dismissal protection)</li>
+<li>Protect off-mission inventions</li>
+</ul>
+
+<p><strong>For R&amp;D engineers</strong>:</p>
+<ul>
+<li>Protect innovations (patents)</li>
+<li>Verify freedom to operate</li>
+<li>Manage confidentiality (NDA with partners)</li>
+<li>Respect third-party intellectual property</li>
+</ul>
+
+<p><strong>For entrepreneurs</strong>:</p>
+<ul>
+<li>Choose an appropriate legal structure (SARL, SAS)</li>
+<li>Draft articles of association and shareholder agreements</li>
+<li>Protect trademark and trade name</li>
+<li>Draft client and supplier contracts</li>
+<li>GDPR compliance</li>
+</ul>
+
+<p><strong>For managers</strong>:</p>
+<ul>
+<li>Comply with labor law (schedules, rest, dismissal)</li>
+<li>Manage team contracts</li>
+<li>Train team on confidentiality and GDPR</li>
+</ul>
+
+<h3 class="section-title">Limitations and perspectives</h3>
+
+<p><strong>Course limitations</strong>:</p>
+<ul>
+<li>Necessarily superficial overview (law is very vast)</li>
+<li>Little depth on international law</li>
+<li>Tax aspects barely covered</li>
+<li>Little drafting practice (writing a contract)</li>
+</ul>
+
+<p><strong>Opens toward</strong>:</p>
+<ul>
+<li><strong>Business law</strong>: mergers and acquisitions, fundraising</li>
+<li><strong>Digital law</strong>: e-commerce, data protection, cybercrime</li>
+<li><strong>Competition law</strong>: cartels, abuse of dominant position</li>
+<li><strong>European and international law</strong>: international contracts, global patents</li>
+</ul>
+
+<h3 class="section-title">Recent developments</h3>
+
+<p><strong>GDPR (2018)</strong>:</p>
+
+<p>Major impact on data processing. All companies affected. Compliance mandatory.</p>
+
+<p><strong>Artificial Intelligence regulation</strong>:</p>
+
+<p>The EU is working on AI regulation (AI Act): high-risk AI, transparency, liability.</p>
+
+<p><strong>Software intellectual property</strong>:</p>
+
+<p>Debates on the patentability of algorithms, AI, and blockchain.</p>
+
+<p><strong>Right to disconnect</strong>:</p>
+
+<p>Respect for employee privacy, limiting emails outside working hours (French law since 2017).</p>
+
+<p><strong>Remote work</strong>:</p>
+
+<p>Strengthened legal framework post-COVID (agreement, equipment, insurance).</p>
+
+<h3 class="section-title">Tips for success</h3>
+
+<p><strong>1. Do not neglect law</strong>:</p>
+<p>It is not just a theoretical course. It is a practical tool that protects and structures professional activity.</p>
+
+<p><strong>2. Read every contract carefully</strong>:</p>
+<p>Internship, employment, service contracts. Identify important clauses (IP, non-compete, confidentiality). Do not hesitate to negotiate.</p>
+
+<p><strong>3. Protect your creations</strong>:</p>
+<p>If you have an invention or original creation, learn about protection (patent, copyright, trademark). Act quickly (novelty).</p>
+
+<p><strong>4. Consult an expert in case of doubt</strong>:</p>
+<p>Lawyer, legal counsel, IP advisor. A worthwhile investment to avoid costly mistakes.</p>
+
+<p><strong>5. Stay informed</strong>:</p>
+<p>Law evolves (GDPR, AI, remote work). Follow relevant legal news for your sector.</p>
+
+<p><strong>6. Develop the legal reflex</strong>:</p>
+<p>In every professional decision, ask yourself: what are the legal issues, risks, and necessary protections?</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>This module is essential for every engineer, whether salaried, researcher, or entrepreneur. Law is not an obstacle but a protective and structuring framework.</p>
+
+<p><strong>Transferable skills</strong>:</p>
+<ul>
+<li>Critical reading of legal documents</li>
+<li>Identification of legal risks</li>
+<li>Innovation protection</li>
+<li>Informed contract negotiation</li>
+<li>Global business vision (legal, technical, financial)</li>
+</ul>
+
+<p><strong>Professional relevance</strong>:</p>
+<p>Every engineer will face law: signing an employment contract, creating a product (IP protection), project management (client/supplier contracts), starting a company (articles of association, fundraising).</p>
+
+<p><strong>Key message</strong>:</p>
+<p>Law is not reserved for lawyers. Every professional must master the basics to protect their interests, fulfill their obligations, and operate with confidence.</p>
+
+<p><strong>Recommendations</strong>:</p>
+<ul>
+<li>Deepen relevant areas for your sector (patents for R&amp;D, GDPR for IT, etc.)</li>
+<li>Consult INPI, CNIL, and Labor Code resources online</li>
+<li>Participate in continuing education (intellectual property, GDPR)</li>
+<li>Develop a network with specialized lawyers</li>
+<li>Read legal blogs and newsletters (Dalloz Actualite, Village Justice)</li>
+</ul>
+
+<p><strong>Links with other courses</strong>:</p>
+<ul>
+<li><a href="./gestion.html">Management - S8</a>: strategy, management</li>
+<li><a href="./finance.html">Finance - S7</a>: company valuation, fundraising</li>
+</ul>
+
+<hr />
+
+<h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Topic 1 - Introduction to Law</h4>
+      <p>General introduction: sources of law, hierarchy of norms, judicial organization and fundamental principles.</p>
+      <embed src="/cours-pdf/S8/Droit/theme1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Droit/theme1-introduction.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Topic 3 - The Company</h4>
+      <p>Business law: legal forms (SA, SARL, SAS), creation, management and dissolution of companies.</p>
+      <embed src="/cours-pdf/S8/Droit/theme3-entreprise.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Droit/theme3-entreprise.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Topic 6 - Civil Liability</h4>
+      <p>Personal civil liability: fault, damage, causal link, compensation and insurance.</p>
+      <embed src="/cours-pdf/S8/Droit/theme6-responsabilite-civile.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S8/Droit/theme6-responsabilite-civile.pdf" target="_blank">Download</a></p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<p><em>Course taken in 2023-2024 at INSA Toulouse, Department of Electrical Engineering and Computer Science.</em></p>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
 </div>
 
 <style>
@@ -1766,6 +2052,117 @@ Jusqu’à 20M€ ou 4% CA mondial.</p>
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -1784,8 +2181,8 @@ Jusqu’à 20M€ ou 4% CA mondial.</p>
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -1807,6 +2204,7 @@ Jusqu’à 20M€ ou 4% CA mondial.</p>
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -2317,11 +2715,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -2521,14 +2917,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -2539,6 +2935,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

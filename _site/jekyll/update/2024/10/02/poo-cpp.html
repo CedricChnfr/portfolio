@@ -18,7 +18,13 @@
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","headline":"Programmation Orientée Objets C++ - S7","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/poo-cpp.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/poo-cpp.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -30,7 +36,12 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -56,12 +67,14 @@
     <a href="./my-courses-2023-2024.html">&larr; Retour aux Cours 2023-2024</a>
 </div>
 
-<h1 id="programmation-orientée-objets-c">Programmation Orientée Objets C++</h1>
+<div class="lang-en">
 
-<h2 id="part-a-generalities">PART A: GENERALITIES</h2>
+<h1>Object-Oriented Programming C++</h1>
 
-<h3 id="presentation">Presentation</h3>
-<p>The “Programmation Orientée Objets C++” course provided a comprehensive introduction to object-oriented programming using C++. This course was essential for developing modern software applications with emphasis on code reusability, maintainability, and efficient memory management. C++ combines the power of low-level programming with high-level object-oriented features.</p>
+<h2>PART A: GENERALITIES</h2>
+
+<h3>Presentation</h3>
+<p>The "Object-Oriented Programming C++" course provided a comprehensive introduction to object-oriented programming using C++. This course was essential for developing modern software applications with emphasis on code reusability, maintainability, and efficient memory management. C++ combines the power of low-level programming with high-level object-oriented features.</p>
 
 <p><strong>Academic Year</strong>: 2023-2024<br />
 <strong>Semester</strong>: 7<br />
@@ -69,481 +82,457 @@
 
 <hr />
 
-<h2 id="part-b-descriptive-part">PART B: DESCRIPTIVE PART</h2>
+<h2>PART B: DESCRIPTIVE PART</h2>
 
-<p><strong>Supports de cours</strong>:</p>
+<p><strong>Course Materials</strong>:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_1.pdf">Partie 1</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_2.pdf">Partie 2</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_3.pdf">Partie 3</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_4.pdf">Partie 4</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_5.pdf">Partie 5</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_6.pdf">Partie 6</a> (PDF)</td>
-      <td><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_7.pdf">Partie 7</a> (PDF)</td>
-    </tr>
-  </tbody>
-</table>
+<p><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_1.pdf">Part 1</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_2.pdf">Part 2</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_3.pdf">Part 3</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_4.pdf">Part 4</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_5.pdf">Part 5</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_6.pdf">Part 6</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_7.pdf">Part 7</a> (PDF)</p>
 
-<h3 id="experience-details">Experience Details</h3>
+<h3>Experience Details</h3>
 
-<h4 id="environment-and-context">Environment and Context</h4>
+<h4>Environment and Context</h4>
 <p>The course covered both theoretical concepts and practical implementation of object-oriented programming in C++. We used modern C++ development environments and worked on progressively complex projects that demonstrated the power and flexibility of OOP principles in C++.</p>
 
-<h4 id="my-function">My Function</h4>
+<h4>My Function</h4>
 <p>In this course, I was responsible for:</p>
 <ul>
-  <li>Understanding core OOP concepts (encapsulation, inheritance, polymorphism)</li>
-  <li>Implementing classes and objects in C++</li>
-  <li>Managing memory allocation and deallocation</li>
-  <li>Using templates and the Standard Template Library (STL)</li>
-  <li>Applying design patterns in C++ applications</li>
-  <li>Debugging and optimizing C++ code</li>
+<li>Understanding core OOP concepts (encapsulation, inheritance, polymorphism)</li>
+<li>Implementing classes and objects in C++</li>
+<li>Managing memory allocation and deallocation</li>
+<li>Using templates and the Standard Template Library (STL)</li>
+<li>Applying design patterns in C++ applications</li>
+<li>Debugging and optimizing C++ code</li>
 </ul>
 
-<h2 id="part-c-technical-part">PART C: TECHNICAL PART</h2>
+<h2>PART C: TECHNICAL PART</h2>
 
 <p>This section explores the technical aspects of object-oriented programming in C++.</p>
 
-<h3 id="technical-concepts-learned">Technical Concepts Learned</h3>
+<h3>Technical Concepts Learned</h3>
 
-<h4 id="1-classes-and-objects">1. Classes and Objects</h4>
+<h4>1. Classes and Objects</h4>
 
 <p>The foundation of OOP in C++:</p>
 
 <p><strong>Class Definition</strong>:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Rectangle</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">double</span> <span class="n">width</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">height</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="c1">// Constructor</span>
-    <span class="n">Rectangle</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">)</span> <span class="o">:</span> <span class="n">width</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="n">height</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="c1">// Member functions</span>
-    <span class="kt">double</span> <span class="n">area</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="kt">double</span> <span class="nf">perimeter</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">width</span> <span class="o">+</span> <span class="n">height</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Getters and setters</span>
-    <span class="kt">void</span> <span class="nf">setWidth</span><span class="p">(</span><span class="kt">double</span> <span class="n">w</span><span class="p">)</span> <span class="p">{</span> <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="p">;</span> <span class="p">}</span>
-    <span class="kt">double</span> <span class="n">getWidth</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span> <span class="k">return</span> <span class="n">width</span><span class="p">;</span> <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+<pre><code class="language-cpp">class Rectangle {
+private:
+    double width;
+    double height;
+
+public:
+    // Constructor
+    Rectangle(double w, double h) : width(w), height(h) {}
+
+    // Member functions
+    double area() const {
+        return width * height;
+    }
+
+    double perimeter() const {
+        return 2 * (width + height);
+    }
+
+    // Getters and setters
+    void setWidth(double w) { width = w; }
+    double getWidth() const { return width; }
+};</code></pre>
 
 <p><strong>Key Concepts</strong>:</p>
 <ul>
-  <li><strong>Encapsulation</strong>: Data hiding using private/protected/public access specifiers</li>
-  <li><strong>Constructor/Destructor</strong>: Object initialization and cleanup</li>
-  <li><strong>Member Functions</strong>: Methods that operate on object data</li>
-  <li><strong>Const Correctness</strong>: Using const for read-only operations</li>
+<li><strong>Encapsulation</strong>: Data hiding using private/protected/public access specifiers</li>
+<li><strong>Constructor/Destructor</strong>: Object initialization and cleanup</li>
+<li><strong>Member Functions</strong>: Methods that operate on object data</li>
+<li><strong>Const Correctness</strong>: Using const for read-only operations</li>
 </ul>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/S7/cpp_class.png" style="width: 60%;" />
 </div>
-<p><br /></p>
+<br />
 
-<h4 id="2-constructors-and-destructors">2. Constructors and Destructors</h4>
+<h4>2. Constructors and Destructors</h4>
 
 <p>Special member functions for object lifecycle management:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">DynamicArray</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">data</span><span class="p">;</span>
-    <span class="kt">size_t</span> <span class="n">size</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="c1">// Default constructor</span>
-    <span class="n">DynamicArray</span><span class="p">()</span> <span class="o">:</span> <span class="n">data</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">),</span> <span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="c1">// Parameterized constructor</span>
-    <span class="n">DynamicArray</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">n</span><span class="p">)</span> <span class="o">:</span> <span class="n">size</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Copy constructor</span>
-    <span class="n">DynamicArray</span><span class="p">(</span><span class="k">const</span> <span class="n">DynamicArray</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="o">:</span> <span class="n">size</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">data</span><span class="p">,</span> <span class="n">other</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">size</span><span class="p">,</span> <span class="n">data</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Move constructor (C++11)</span>
-    <span class="n">DynamicArray</span><span class="p">(</span><span class="n">DynamicArray</span><span class="o">&amp;&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">noexcept</span> 
-        <span class="o">:</span> <span class="n">data</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">data</span><span class="p">),</span> <span class="n">size</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">other</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-        <span class="n">other</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Destructor</span>
-    <span class="o">~</span><span class="n">DynamicArray</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">delete</span><span class="p">[]</span> <span class="n">data</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Copy assignment operator</span>
-    <span class="n">DynamicArray</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">DynamicArray</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="k">this</span> <span class="o">!=</span> <span class="o">&amp;</span><span class="n">other</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">delete</span><span class="p">[]</span> <span class="n">data</span><span class="p">;</span>
-            <span class="n">size</span> <span class="o">=</span> <span class="n">other</span><span class="p">.</span><span class="n">size</span><span class="p">;</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
-            <span class="n">std</span><span class="o">::</span><span class="n">copy</span><span class="p">(</span><span class="n">other</span><span class="p">.</span><span class="n">data</span><span class="p">,</span> <span class="n">other</span><span class="p">.</span><span class="n">data</span> <span class="o">+</span> <span class="n">size</span><span class="p">,</span> <span class="n">data</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+<pre><code class="language-cpp">class DynamicArray {
+private:
+    int* data;
+    size_t size;
+
+public:
+    // Default constructor
+    DynamicArray() : data(nullptr), size(0) {}
+
+    // Parameterized constructor
+    DynamicArray(size_t n) : size(n) {
+        data = new int[size];
+    }
+
+    // Copy constructor
+    DynamicArray(const DynamicArray&amp; other) : size(other.size) {
+        data = new int[size];
+        std::copy(other.data, other.data + size, data);
+    }
+
+    // Move constructor (C++11)
+    DynamicArray(DynamicArray&amp;&amp; other) noexcept
+        : data(other.data), size(other.size) {
+        other.data = nullptr;
+        other.size = 0;
+    }
+
+    // Destructor
+    ~DynamicArray() {
+        delete[] data;
+    }
+
+    // Copy assignment operator
+    DynamicArray&amp; operator=(const DynamicArray&amp; other) {
+        if (this != &amp;other) {
+            delete[] data;
+            size = other.size;
+            data = new int[size];
+            std::copy(other.data, other.data + size, data);
+        }
+        return *this;
+    }
+};</code></pre>
 
 <p><strong>Rule of Three/Five</strong>: If you need to define a custom destructor, copy constructor, or copy assignment operator, you likely need all three (or five with move semantics).</p>
 
-<h4 id="3-inheritance">3. Inheritance</h4>
+<h4>3. Inheritance</h4>
 
 <div style="text-align: center; margin: 30px 0;">
-  <img src="/assets/images/courses/S7/poo-cpp/heritage-polymorphisme.svg" alt="Héritage et polymorphisme C++" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
-  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Héritage et polymorphisme en C++ - Classe de base Animal et classes dérivées</p>
+  <img src="/assets/images/courses/S7/poo-cpp/heritage-polymorphisme.svg" alt="Inheritance and polymorphism C++" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Inheritance and polymorphism in C++ - Animal base class and derived classes</p>
 </div>
 
 <p>Code reuse through class hierarchies:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Shape</span> <span class="p">{</span>
-<span class="nl">protected:</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">color</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="n">Shape</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">)</span> <span class="o">:</span> <span class="n">color</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="p">{}</span>
-    <span class="k">virtual</span> <span class="o">~</span><span class="n">Shape</span><span class="p">()</span> <span class="p">{}</span>  <span class="c1">// Virtual destructor</span>
-    
-    <span class="k">virtual</span> <span class="kt">double</span> <span class="n">area</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="c1">// Pure virtual function</span>
-    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">draw</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Drawing a "</span> <span class="o">&lt;&lt;</span> <span class="n">color</span> <span class="o">&lt;&lt;</span> <span class="s">" shape</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
+<pre><code class="language-cpp">class Shape {
+protected:
+    std::string color;
 
-<span class="k">class</span> <span class="nc">Circle</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Shape</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">double</span> <span class="n">radius</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="n">Circle</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">,</span> <span class="kt">double</span> <span class="n">r</span><span class="p">)</span> 
-        <span class="o">:</span> <span class="n">Shape</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="n">radius</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="kt">double</span> <span class="n">area</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">M_PI</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="kt">void</span> <span class="n">draw</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Drawing a "</span> <span class="o">&lt;&lt;</span> <span class="n">color</span> <span class="o">&lt;&lt;</span> <span class="s">" circle</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
+public:
+    Shape(const std::string&amp; c) : color(c) {}
+    virtual ~Shape() {}  // Virtual destructor
 
-<span class="k">class</span> <span class="nc">Rectangle</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Shape</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">double</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="n">Rectangle</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">,</span> <span class="kt">double</span> <span class="n">w</span><span class="p">,</span> <span class="kt">double</span> <span class="n">h</span><span class="p">)</span>
-        <span class="o">:</span> <span class="n">Shape</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="n">width</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="n">height</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="kt">double</span> <span class="n">area</span><span class="p">()</span> <span class="k">const</span> <span class="k">override</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+    virtual double area() const = 0;  // Pure virtual function
+    virtual void draw() const {
+        std::cout &lt;&lt; "Drawing a " &lt;&lt; color &lt;&lt; " shape\n";
+    }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    Circle(const std::string&amp; c, double r)
+        : Shape(c), radius(r) {}
+
+    double area() const override {
+        return M_PI * radius * radius;
+    }
+
+    void draw() const override {
+        std::cout &lt;&lt; "Drawing a " &lt;&lt; color &lt;&lt; " circle\n";
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    double width, height;
+
+public:
+    Rectangle(const std::string&amp; c, double w, double h)
+        : Shape(c), width(w), height(h) {}
+
+    double area() const override {
+        return width * height;
+    }
+};</code></pre>
 
 <p><strong>Inheritance Types</strong>:</p>
 <ul>
-  <li><strong>Public Inheritance</strong>: Is-a relationship</li>
-  <li><strong>Protected Inheritance</strong>: Implementation inheritance</li>
-  <li><strong>Private Inheritance</strong>: Not commonly used</li>
+<li><strong>Public Inheritance</strong>: Is-a relationship</li>
+<li><strong>Protected Inheritance</strong>: Implementation inheritance</li>
+<li><strong>Private Inheritance</strong>: Not commonly used</li>
 </ul>
 
-<h4 id="4-polymorphism">4. Polymorphism</h4>
+<h4>4. Polymorphism</h4>
 
 <p>Dynamic dispatch through virtual functions:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">void</span> <span class="nf">printArea</span><span class="p">(</span><span class="k">const</span> <span class="n">Shape</span><span class="o">&amp;</span> <span class="n">shape</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Area: "</span> <span class="o">&lt;&lt;</span> <span class="n">shape</span><span class="p">.</span><span class="n">area</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="n">shape</span><span class="p">.</span><span class="n">draw</span><span class="p">();</span>
-<span class="p">}</span>
+<pre><code class="language-cpp">void printArea(const Shape&amp; shape) {
+    std::cout &lt;&lt; "Area: " &lt;&lt; shape.area() &lt;&lt; std::endl;
+    shape.draw();
+}
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Circle</span> <span class="n">circle</span><span class="p">(</span><span class="s">"red"</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">);</span>
-    <span class="n">Rectangle</span> <span class="n">rect</span><span class="p">(</span><span class="s">"blue"</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
-    
-    <span class="n">printArea</span><span class="p">(</span><span class="n">circle</span><span class="p">);</span>     <span class="c1">// Calls Circle::area()</span>
-    <span class="n">printArea</span><span class="p">(</span><span class="n">rect</span><span class="p">);</span>       <span class="c1">// Calls Rectangle::area()</span>
-    
-    <span class="c1">// Polymorphic container</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Shape</span><span class="o">&gt;&gt;</span> <span class="n">shapes</span><span class="p">;</span>
-    <span class="n">shapes</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">Circle</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"green"</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">));</span>
-    <span class="n">shapes</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">Rectangle</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"yellow"</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">));</span>
-    
-    <span class="k">for</span> <span class="p">(</span><span class="k">const</span> <span class="k">auto</span><span class="o">&amp;</span> <span class="n">shape</span> <span class="o">:</span> <span class="n">shapes</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">shape</span><span class="o">-&gt;</span><span class="n">draw</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
+int main() {
+    Circle circle("red", 5.0);
+    Rectangle rect("blue", 4.0, 6.0);
+
+    printArea(circle);     // Calls Circle::area()
+    printArea(rect);       // Calls Rectangle::area()
+
+    // Polymorphic container
+    std::vector&lt;std::unique_ptr&lt;Shape&gt;&gt; shapes;
+    shapes.push_back(std::make_unique&lt;Circle&gt;("green", 3.0));
+    shapes.push_back(std::make_unique&lt;Rectangle&gt;("yellow", 2.0, 5.0));
+
+    for (const auto&amp; shape : shapes) {
+        shape-&gt;draw();
+    }
+}</code></pre>
 
 <p><strong>Key Concepts</strong>:</p>
 <ul>
-  <li><strong>Virtual Functions</strong>: Enable runtime polymorphism</li>
-  <li><strong>Virtual Destructor</strong>: Essential for base classes</li>
-  <li><strong>Pure Virtual Functions</strong>: Define abstract interfaces</li>
-  <li><strong>Override Keyword</strong>: Explicit override declaration (C++11)</li>
+<li><strong>Virtual Functions</strong>: Enable runtime polymorphism</li>
+<li><strong>Virtual Destructor</strong>: Essential for base classes</li>
+<li><strong>Pure Virtual Functions</strong>: Define abstract interfaces</li>
+<li><strong>Override Keyword</strong>: Explicit override declaration (C++11)</li>
 </ul>
 
-<h4 id="5-operator-overloading">5. Operator Overloading</h4>
+<h4>5. Operator Overloading</h4>
 
 <p>Defining custom behavior for operators:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Complex</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="kt">double</span> <span class="n">real</span><span class="p">,</span> <span class="n">imag</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="n">Complex</span><span class="p">(</span><span class="kt">double</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">:</span> <span class="n">real</span><span class="p">(</span><span class="n">r</span><span class="p">),</span> <span class="n">imag</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="c1">// Arithmetic operators</span>
-    <span class="n">Complex</span> <span class="k">operator</span><span class="o">+</span><span class="p">(</span><span class="k">const</span> <span class="n">Complex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">Complex</span><span class="p">(</span><span class="n">real</span> <span class="o">+</span> <span class="n">other</span><span class="p">.</span><span class="n">real</span><span class="p">,</span> <span class="n">imag</span> <span class="o">+</span> <span class="n">other</span><span class="p">.</span><span class="n">imag</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="n">Complex</span> <span class="k">operator</span><span class="o">*</span><span class="p">(</span><span class="k">const</span> <span class="n">Complex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">Complex</span><span class="p">(</span>
-            <span class="n">real</span> <span class="o">*</span> <span class="n">other</span><span class="p">.</span><span class="n">real</span> <span class="o">-</span> <span class="n">imag</span> <span class="o">*</span> <span class="n">other</span><span class="p">.</span><span class="n">imag</span><span class="p">,</span>
-            <span class="n">real</span> <span class="o">*</span> <span class="n">other</span><span class="p">.</span><span class="n">imag</span> <span class="o">+</span> <span class="n">imag</span> <span class="o">*</span> <span class="n">other</span><span class="p">.</span><span class="n">real</span>
-        <span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Comparison operator</span>
-    <span class="kt">bool</span> <span class="k">operator</span><span class="o">==</span><span class="p">(</span><span class="k">const</span> <span class="n">Complex</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">real</span> <span class="o">==</span> <span class="n">other</span><span class="p">.</span><span class="n">real</span> <span class="o">&amp;&amp;</span> <span class="n">imag</span> <span class="o">==</span> <span class="n">other</span><span class="p">.</span><span class="n">imag</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="c1">// Stream operators (as friend functions)</span>
-    <span class="k">friend</span> <span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">ostream</span><span class="o">&amp;</span> <span class="n">os</span><span class="p">,</span> <span class="k">const</span> <span class="n">Complex</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">os</span> <span class="o">&lt;&lt;</span> <span class="n">c</span><span class="p">.</span><span class="n">real</span> <span class="o">&lt;&lt;</span> <span class="s">" + "</span> <span class="o">&lt;&lt;</span> <span class="n">c</span><span class="p">.</span><span class="n">imag</span> <span class="o">&lt;&lt;</span> <span class="s">"i"</span><span class="p">;</span>
-        <span class="k">return</span> <span class="n">os</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="k">friend</span> <span class="n">std</span><span class="o">::</span><span class="n">istream</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">istream</span><span class="o">&amp;</span> <span class="n">is</span><span class="p">,</span> <span class="n">Complex</span><span class="o">&amp;</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">is</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">.</span><span class="n">real</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">.</span><span class="n">imag</span><span class="p">;</span>
-        <span class="k">return</span> <span class="n">is</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+<pre><code class="language-cpp">class Complex {
+private:
+    double real, imag;
 
-<h4 id="6-templates">6. Templates</h4>
+public:
+    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
+
+    // Arithmetic operators
+    Complex operator+(const Complex&amp; other) const {
+        return Complex(real + other.real, imag + other.imag);
+    }
+
+    Complex operator*(const Complex&amp; other) const {
+        return Complex(
+            real * other.real - imag * other.imag,
+            real * other.imag + imag * other.real
+        );
+    }
+
+    // Comparison operator
+    bool operator==(const Complex&amp; other) const {
+        return real == other.real &amp;&amp; imag == other.imag;
+    }
+
+    // Stream operators (as friend functions)
+    friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const Complex&amp; c) {
+        os &lt;&lt; c.real &lt;&lt; " + " &lt;&lt; c.imag &lt;&lt; "i";
+        return os;
+    }
+
+    friend std::istream&amp; operator&gt;&gt;(std::istream&amp; is, Complex&amp; c) {
+        is &gt;&gt; c.real &gt;&gt; c.imag;
+        return is;
+    }
+};</code></pre>
+
+<h4>6. Templates</h4>
 
 <p>Generic programming for code reusability:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Function template</span>
-<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
-<span class="n">T</span> <span class="nf">max</span><span class="p">(</span><span class="n">T</span> <span class="n">a</span><span class="p">,</span> <span class="n">T</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="o">?</span> <span class="n">a</span> <span class="o">:</span> <span class="n">b</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-cpp">// Function template
+template&lt;typename T&gt;
+T max(T a, T b) {
+    return (a &gt; b) ? a : b;
+}
 
-<span class="c1">// Class template</span>
-<span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="p">&gt;</span>
-<span class="k">class</span> <span class="nc">Stack</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">elements</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="kt">void</span> <span class="n">push</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">element</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">elements</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">element</span><span class="p">);</span>
-    <span class="p">}</span>
-    
-    <span class="n">T</span> <span class="nf">pop</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">elements</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
-            <span class="k">throw</span> <span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="p">(</span><span class="s">"Stack is empty"</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="n">T</span> <span class="n">value</span> <span class="o">=</span> <span class="n">elements</span><span class="p">.</span><span class="n">back</span><span class="p">();</span>
-        <span class="n">elements</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span>
-        <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="kt">bool</span> <span class="nf">empty</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">elements</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span>
-    <span class="p">}</span>
-    
-    <span class="kt">size_t</span> <span class="nf">size</span><span class="p">()</span> <span class="k">const</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">elements</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">};</span>
+// Class template
+template&lt;typename T&gt;
+class Stack {
+private:
+    std::vector&lt;T&gt; elements;
 
-<span class="c1">// Template specialization</span>
-<span class="k">template</span><span class="o">&lt;</span><span class="p">&gt;</span>
-<span class="k">class</span> <span class="nc">Stack</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="p">{</span>
-    <span class="c1">// Specialized implementation for bool</span>
-<span class="p">};</span>
-</code></pre></div></div>
+public:
+    void push(const T&amp; element) {
+        elements.push_back(element);
+    }
 
-<h4 id="7-standard-template-library-stl">7. Standard Template Library (STL)</h4>
+    T pop() {
+        if (elements.empty()) {
+            throw std::runtime_error("Stack is empty");
+        }
+        T value = elements.back();
+        elements.pop_back();
+        return value;
+    }
+
+    bool empty() const {
+        return elements.empty();
+    }
+
+    size_t size() const {
+        return elements.size();
+    }
+};
+
+// Template specialization
+template&lt;&gt;
+class Stack&lt;bool&gt; {
+    // Specialized implementation for bool
+};</code></pre>
+
+<h4>7. Standard Template Library (STL)</h4>
 
 <p>Powerful collection of generic containers and algorithms:</p>
 
 <p><strong>Containers</strong>:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Sequential containers</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">vec</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
-<span class="n">std</span><span class="o">::</span><span class="n">list</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">lst</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">deque</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">deq</span><span class="p">;</span>
+<pre><code class="language-cpp">// Sequential containers
+std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5};
+std::list&lt;std::string&gt; lst;
+std::deque&lt;double&gt; deq;
 
-<span class="c1">// Associative containers</span>
-<span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ages</span><span class="p">;</span>
-<span class="n">ages</span><span class="p">[</span><span class="s">"Alice"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
-<span class="n">ages</span><span class="p">[</span><span class="s">"Bob"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+// Associative containers
+std::map&lt;std::string, int&gt; ages;
+ages["Alice"] = 25;
+ages["Bob"] = 30;
 
-<span class="n">std</span><span class="o">::</span><span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">unique_numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">};</span>  <span class="c1">// {1, 2, 3, 4}</span>
+std::set&lt;int&gt; unique_numbers = {1, 2, 3, 3, 4};  // {1, 2, 3, 4}
 
-<span class="c1">// Container adapters</span>
-<span class="n">std</span><span class="o">::</span><span class="n">stack</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">stack</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">queue</span><span class="p">;</span>
-<span class="n">std</span><span class="o">::</span><span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">pq</span><span class="p">;</span>
-</code></pre></div></div>
+// Container adapters
+std::stack&lt;int&gt; stack;
+std::queue&lt;int&gt; queue;
+std::priority_queue&lt;int&gt; pq;</code></pre>
 
 <p><strong>Algorithms</strong>:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-</span>
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">};</span>
+<pre><code class="language-cpp">#include &lt;algorithm&gt;
 
-<span class="c1">// Sorting</span>
-<span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">numbers</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+std::vector&lt;int&gt; numbers = {5, 2, 8, 1, 9};
 
-<span class="c1">// Finding</span>
-<span class="k">auto</span> <span class="n">it</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">find</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">numbers</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">8</span><span class="p">);</span>
+// Sorting
+std::sort(numbers.begin(), numbers.end());
 
-<span class="c1">// Transforming</span>
-<span class="n">std</span><span class="o">::</span><span class="n">transform</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">numbers</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">numbers</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span>
-               <span class="p">[](</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span> <span class="p">});</span>
+// Finding
+auto it = std::find(numbers.begin(), numbers.end(), 8);
 
-<span class="c1">// Accumulating</span>
-<span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">accumulate</span><span class="p">(</span><span class="n">numbers</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">numbers</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="mi">0</span><span class="p">);</span>
-</code></pre></div></div>
+// Transforming
+std::transform(numbers.begin(), numbers.end(), numbers.begin(),
+               [](int n) { return n * 2; });
 
-<h4 id="8-smart-pointers-c11">8. Smart Pointers (C++11)</h4>
+// Accumulating
+int sum = std::accumulate(numbers.begin(), numbers.end(), 0);</code></pre>
+
+<h4>8. Smart Pointers (C++11)</h4>
 
 <p>Automatic memory management:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;memory&gt;</span><span class="cp">
-</span>
-<span class="c1">// Unique pointer (exclusive ownership)</span>
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">ptr1</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">42</span><span class="p">);</span>
+<pre><code class="language-cpp">#include &lt;memory&gt;
 
-<span class="c1">// Shared pointer (shared ownership)</span>
-<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">ptr2</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-<span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">ptr3</span> <span class="o">=</span> <span class="n">ptr2</span><span class="p">;</span>  <span class="c1">// Reference count = 2</span>
+// Unique pointer (exclusive ownership)
+std::unique_ptr&lt;int&gt; ptr1 = std::make_unique&lt;int&gt;(42);
 
-<span class="c1">// Weak pointer (non-owning reference)</span>
-<span class="n">std</span><span class="o">::</span><span class="n">weak_ptr</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">weak</span> <span class="o">=</span> <span class="n">ptr2</span><span class="p">;</span>
+// Shared pointer (shared ownership)
+std::shared_ptr&lt;int&gt; ptr2 = std::make_shared&lt;int&gt;(100);
+std::shared_ptr&lt;int&gt; ptr3 = ptr2;  // Reference count = 2
 
-<span class="c1">// Example with classes</span>
-<span class="k">class</span> <span class="nc">MyClass</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="n">MyClass</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Constructor</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="p">}</span>
-    <span class="o">~</span><span class="n">MyClass</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Destructor</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="p">}</span>
-    <span class="kt">void</span> <span class="nf">doSomething</span><span class="p">()</span> <span class="p">{</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Doing something</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span> <span class="p">}</span>
-<span class="p">};</span>
+// Weak pointer (non-owning reference)
+std::weak_ptr&lt;int&gt; weak = ptr2;
 
-<span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">MyClass</span><span class="o">&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">MyClass</span><span class="o">&gt;</span><span class="p">();</span>
-<span class="n">obj</span><span class="o">-&gt;</span><span class="n">doSomething</span><span class="p">();</span>
-<span class="c1">// Destructor called automatically when obj goes out of scope</span>
-</code></pre></div></div>
+// Example with classes
+class MyClass {
+public:
+    MyClass() { std::cout &lt;&lt; "Constructor\n"; }
+    ~MyClass() { std::cout &lt;&lt; "Destructor\n"; }
+    void doSomething() { std::cout &lt;&lt; "Doing something\n"; }
+};
 
-<h4 id="9-exception-handling">9. Exception Handling</h4>
+std::unique_ptr&lt;MyClass&gt; obj = std::make_unique&lt;MyClass&gt;();
+obj-&gt;doSomething();
+// Destructor called automatically when obj goes out of scope</code></pre>
+
+<h4>9. Exception Handling</h4>
 
 <p>Robust error management:</p>
 
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">FileNotFoundException</span> <span class="o">:</span> <span class="k">public</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">message</span><span class="p">;</span>
-    
-<span class="nl">public:</span>
-    <span class="n">FileNotFoundException</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span><span class="p">)</span>
-        <span class="o">:</span> <span class="n">message</span><span class="p">(</span><span class="s">"File not found: "</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span> <span class="p">{}</span>
-    
-    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="nf">what</span><span class="p">()</span> <span class="k">const</span> <span class="k">noexcept</span> <span class="k">override</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">message</span><span class="p">.</span><span class="n">c_str</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">};</span>
+<pre><code class="language-cpp">class FileNotFoundException : public std::exception {
+private:
+    std::string message;
 
-<span class="kt">void</span> <span class="nf">readFile</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">filename</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">try</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">ifstream</span> <span class="n">file</span><span class="p">(</span><span class="n">filename</span><span class="p">);</span>
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">file</span><span class="p">.</span><span class="n">is_open</span><span class="p">())</span> <span class="p">{</span>
-            <span class="k">throw</span> <span class="n">FileNotFoundException</span><span class="p">(</span><span class="n">filename</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="c1">// Read file...</span>
-    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">FileNotFoundException</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">"Error: "</span> <span class="o">&lt;&lt;</span> <span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-        <span class="k">throw</span><span class="p">;</span>  <span class="c1">// Re-throw</span>
-    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cerr</span> <span class="o">&lt;&lt;</span> <span class="s">"Unexpected error: "</span> <span class="o">&lt;&lt;</span> <span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
+public:
+    FileNotFoundException(const std::string&amp; filename)
+        : message("File not found: " + filename) {}
 
-<h4 id="10-design-patterns">10. Design Patterns</h4>
+    const char* what() const noexcept override {
+        return message.c_str();
+    }
+};
+
+void readFile(const std::string&amp; filename) {
+    try {
+        std::ifstream file(filename);
+        if (!file.is_open()) {
+            throw FileNotFoundException(filename);
+        }
+        // Read file...
+    } catch (const FileNotFoundException&amp; e) {
+        std::cerr &lt;&lt; "Error: " &lt;&lt; e.what() &lt;&lt; std::endl;
+        throw;  // Re-throw
+    } catch (const std::exception&amp; e) {
+        std::cerr &lt;&lt; "Unexpected error: " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+}</code></pre>
+
+<h4>10. Design Patterns</h4>
 
 <p>Common software design solutions:</p>
 
 <p><strong>Singleton Pattern</strong>:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Database</span> <span class="p">{</span>
-<span class="nl">private:</span>
-    <span class="k">static</span> <span class="n">Database</span><span class="o">*</span> <span class="n">instance</span><span class="p">;</span>
-    <span class="n">Database</span><span class="p">()</span> <span class="p">{}</span>  <span class="c1">// Private constructor</span>
-    
-<span class="k">public</span><span class="o">:</span>
-    <span class="k">static</span> <span class="n">Database</span><span class="o">*</span> <span class="nf">getInstance</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">instance</span> <span class="o">==</span> <span class="nb">nullptr</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">instance</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Database</span><span class="p">();</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="n">instance</span><span class="p">;</span>
-    <span class="p">}</span>
-    
-    <span class="kt">void</span> <span class="nf">connect</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Connecting to database...</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+<pre><code class="language-cpp">class Database {
+private:
+    static Database* instance;
+    Database() {}  // Private constructor
+
+public:
+    static Database* getInstance() {
+        if (instance == nullptr) {
+            instance = new Database();
+        }
+        return instance;
+    }
+
+    void connect() {
+        std::cout &lt;&lt; "Connecting to database...\n";
+    }
+};</code></pre>
 
 <p><strong>Factory Pattern</strong>:</p>
-<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ShapeFactory</span> <span class="p">{</span>
-<span class="nl">public:</span>
-    <span class="k">static</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">Shape</span><span class="o">&gt;</span> <span class="n">createShape</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s">"circle"</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">Circle</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"red"</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="s">"rectangle"</span><span class="p">)</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">Rectangle</span><span class="o">&gt;</span><span class="p">(</span><span class="s">"blue"</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="nb">nullptr</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div></div>
+<pre><code class="language-cpp">class ShapeFactory {
+public:
+    static std::unique_ptr&lt;Shape&gt; createShape(const std::string&amp; type) {
+        if (type == "circle") {
+            return std::make_unique&lt;Circle&gt;("red", 5.0);
+        } else if (type == "rectangle") {
+            return std::make_unique&lt;Rectangle&gt;("blue", 4.0, 6.0);
+        }
+        return nullptr;
+    }
+};</code></pre>
 
-<h2 id="part-d-analytical-part">PART D: ANALYTICAL PART</h2>
+<h2>PART D: ANALYTICAL PART</h2>
 
-<h3 id="knowledge-and-skills-mobilized">Knowledge and Skills Mobilized</h3>
+<h3>Knowledge and Skills Mobilized</h3>
 
 <ul>
-  <li>Understanding object-oriented programming principles</li>
-  <li>Implementing classes with proper encapsulation</li>
-  <li>Using inheritance and polymorphism effectively</li>
-  <li>Managing memory with RAII and smart pointers</li>
-  <li>Applying templates for generic programming</li>
-  <li>Utilizing STL containers and algorithms</li>
-  <li>Handling exceptions properly</li>
-  <li>Implementing design patterns</li>
-  <li>Debugging complex C++ programs</li>
+<li>Understanding object-oriented programming principles</li>
+<li>Implementing classes with proper encapsulation</li>
+<li>Using inheritance and polymorphism effectively</li>
+<li>Managing memory with RAII and smart pointers</li>
+<li>Applying templates for generic programming</li>
+<li>Utilizing STL containers and algorithms</li>
+<li>Handling exceptions properly</li>
+<li>Implementing design patterns</li>
+<li>Debugging complex C++ programs</li>
 </ul>
 
-<h3 id="self-evaluation">Self Evaluation</h3>
+<h3>Self Evaluation</h3>
 
 <p>This course was challenging but rewarding. Coming from C programming, the shift to object-oriented thinking required significant mental adjustment. The concept of classes and objects was initially abstract, but through practical projects, I gained solid understanding.</p>
 
@@ -553,26 +542,590 @@
 
 <p>I found polymorphism and virtual functions fascinating, especially how they enable flexible and extensible software design. Implementing design patterns helped me understand professional software architecture.</p>
 
-<h3 id="my-opinion">My Opinion</h3>
+<h3>My Opinion</h3>
 
 <p>C++ is a powerful but complex language. This course provided a solid foundation in OOP with C++, though mastering the language requires continuous practice. The course balanced theory with practical implementation well.</p>
 
-<p>I particularly appreciated learning about modern C++ features (C++11/14/17). These features make C++ more user-friendly while maintaining its performance advantages. Understanding the relationship between C and C++ helped me appreciate when to use C++’s features versus C-style programming.</p>
+<p>I particularly appreciated learning about modern C++ features (C++11/14/17). These features make C++ more user-friendly while maintaining its performance advantages. Understanding the relationship between C and C++ helped me appreciate when to use C++'s features versus C-style programming.</p>
 
 <p>Areas I would have liked to explore more:</p>
 <ul>
-  <li>Multithreading and concurrency in C++</li>
-  <li>Template metaprogramming</li>
-  <li>More complex design patterns</li>
-  <li>Performance optimization techniques</li>
-  <li>Build systems and project organization</li>
+<li>Multithreading and concurrency in C++</li>
+<li>Template metaprogramming</li>
+<li>More complex design patterns</li>
+<li>Performance optimization techniques</li>
+<li>Build systems and project organization</li>
 </ul>
 
 <p>The projects helped solidify concepts, though more real-world applications (like embedded systems programming or game development) would have been valuable. Overall, this course equipped me with essential skills for modern software development.</p>
 
 <hr />
 
-<h2 id="illustrations-du-projet-gamelle-connectee">Illustrations du Projet Gamelle Connectee</h2>
+<h2>Connected Bowl Project Illustrations</h2>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Class_Diag.png" alt="Class diagram of the Connected Bowl project" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: UML class diagram of the Connected Bowl project</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Gamelle.png" alt="Connected Bowl interface" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Connected Bowl application - client interface</p>
+</div>
+
+<div style="text-align: center; margin: 20px 0;">
+  <img src="/img/BE_Gamelle/Serveur.png" alt="Server architecture of the Connected Bowl project" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Server architecture of the Connected Bowl project</p>
+</div>
+
+<hr />
+
+<h2>Reports and Projects</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Connected Bowl Report</h4>
+      <p>Report on the C++ object-oriented programming project: design and implementation of a connected bowl with client-server architecture.</p>
+      <p style="text-align: center;">
+        <a href="/file/reports/S7/Rapport_Gamelle_Connectée.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
+          Download the PDF report
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Part 1 - C++ Basics</h4>
+      <p>Introduction to C++: differences with C, compilation, input/output, references and memory management.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Part 2 - Classes</h4>
+      <p>Classes in C++: constructors, destructors, encapsulation, private/public members and methods.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Part 3 - Inheritance</h4>
+      <p>Inheritance in C++: derived classes, cascading constructors/destructors, protected access.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Part 4 - Polymorphism</h4>
+      <p>Polymorphism in C++: virtual functions, abstract classes, dynamic binding and virtual.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" target="_blank">Download</a></p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="lang-fr">
+
+<h1>Programmation Orientee Objets C++</h1>
+
+<h2>PARTIE A : GENERALITES</h2>
+
+<h3>Presentation</h3>
+<p>Le cours de "Programmation Orientee Objets C++" a fourni une introduction complete a la programmation orientee objet en utilisant C++. Ce cours etait essentiel pour developper des applications logicielles modernes avec un accent sur la reutilisabilite du code, la maintenabilite et la gestion efficace de la memoire. Le C++ combine la puissance de la programmation bas niveau avec les fonctionnalites orientees objet de haut niveau.</p>
+
+<p><strong>Annee universitaire</strong> : 2023-2024<br />
+<strong>Semestre</strong> : 7<br />
+<strong>Categorie</strong> : Programmation</p>
+
+<hr />
+
+<h2>PARTIE B : PARTIE DESCRIPTIVE</h2>
+
+<p><strong>Supports de cours</strong> :</p>
+
+<p><a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_1.pdf">Partie 1</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_2.pdf">Partie 2</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_3.pdf">Partie 3</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_4.pdf">Partie 4</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_5.pdf">Partie 5</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_6.pdf">Partie 6</a> (PDF) | <a href="/cours-pdf/S7/Programmation-Orientée-Objets-C++/Partie_7.pdf">Partie 7</a> (PDF)</p>
+
+<h3>Details de l'experience</h3>
+
+<h4>Environnement et contexte</h4>
+<p>Le cours couvrait a la fois les concepts theoriques et l'implementation pratique de la programmation orientee objet en C++. Nous avons utilise des environnements de developpement C++ modernes et travaille sur des projets de complexite croissante qui demontraient la puissance et la flexibilite des principes de la POO en C++.</p>
+
+<h4>Ma fonction</h4>
+<p>Dans ce cours, j'etais responsable de :</p>
+<ul>
+<li>Comprendre les concepts fondamentaux de la POO (encapsulation, heritage, polymorphisme)</li>
+<li>Implementer des classes et des objets en C++</li>
+<li>Gerer l'allocation et la desallocation de memoire</li>
+<li>Utiliser les templates et la Standard Template Library (STL)</li>
+<li>Appliquer des patrons de conception dans des applications C++</li>
+<li>Deboguer et optimiser du code C++</li>
+</ul>
+
+<h2>PARTIE C : PARTIE TECHNIQUE</h2>
+
+<p>Cette section explore les aspects techniques de la programmation orientee objet en C++.</p>
+
+<h3>Concepts techniques appris</h3>
+
+<h4>1. Classes et objets</h4>
+
+<p>Le fondement de la POO en C++ :</p>
+
+<p><strong>Definition de classe</strong> :</p>
+<pre><code class="language-cpp">class Rectangle {
+private:
+    double width;
+    double height;
+
+public:
+    // Constructeur
+    Rectangle(double w, double h) : width(w), height(h) {}
+
+    // Fonctions membres
+    double area() const {
+        return width * height;
+    }
+
+    double perimeter() const {
+        return 2 * (width + height);
+    }
+
+    // Accesseurs et mutateurs
+    void setWidth(double w) { width = w; }
+    double getWidth() const { return width; }
+};</code></pre>
+
+<p><strong>Concepts cles</strong> :</p>
+<ul>
+<li><strong>Encapsulation</strong> : Masquage des donnees a l'aide des specificateurs d'acces private/protected/public</li>
+<li><strong>Constructeur/Destructeur</strong> : Initialisation et nettoyage des objets</li>
+<li><strong>Fonctions membres</strong> : Methodes qui operent sur les donnees de l'objet</li>
+<li><strong>Correction const</strong> : Utilisation de const pour les operations en lecture seule</li>
+</ul>
+
+<div style="text-align: center; display: flex; justify-content: center;">
+    <img src="/img/S7/cpp_class.png" style="width: 60%;" />
+</div>
+<br />
+
+<h4>2. Constructeurs et destructeurs</h4>
+
+<p>Fonctions membres speciales pour la gestion du cycle de vie des objets :</p>
+
+<pre><code class="language-cpp">class DynamicArray {
+private:
+    int* data;
+    size_t size;
+
+public:
+    // Constructeur par defaut
+    DynamicArray() : data(nullptr), size(0) {}
+
+    // Constructeur parametre
+    DynamicArray(size_t n) : size(n) {
+        data = new int[size];
+    }
+
+    // Constructeur de copie
+    DynamicArray(const DynamicArray&amp; other) : size(other.size) {
+        data = new int[size];
+        std::copy(other.data, other.data + size, data);
+    }
+
+    // Constructeur de deplacement (C++11)
+    DynamicArray(DynamicArray&amp;&amp; other) noexcept
+        : data(other.data), size(other.size) {
+        other.data = nullptr;
+        other.size = 0;
+    }
+
+    // Destructeur
+    ~DynamicArray() {
+        delete[] data;
+    }
+
+    // Operateur d'affectation par copie
+    DynamicArray&amp; operator=(const DynamicArray&amp; other) {
+        if (this != &amp;other) {
+            delete[] data;
+            size = other.size;
+            data = new int[size];
+            std::copy(other.data, other.data + size, data);
+        }
+        return *this;
+    }
+};</code></pre>
+
+<p><strong>Regle des trois/cinq</strong> : Si vous devez definir un destructeur personnalise, un constructeur de copie ou un operateur d'affectation par copie, vous aurez probablement besoin des trois (ou cinq avec la semantique de deplacement).</p>
+
+<h4>3. Heritage</h4>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/poo-cpp/heritage-polymorphisme.svg" alt="Heritage et polymorphisme C++" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Heritage et polymorphisme en C++ - Classe de base Animal et classes derivees</p>
+</div>
+
+<p>Reutilisation du code a travers les hierarchies de classes :</p>
+
+<pre><code class="language-cpp">class Shape {
+protected:
+    std::string color;
+
+public:
+    Shape(const std::string&amp; c) : color(c) {}
+    virtual ~Shape() {}  // Destructeur virtuel
+
+    virtual double area() const = 0;  // Fonction virtuelle pure
+    virtual void draw() const {
+        std::cout &lt;&lt; "Drawing a " &lt;&lt; color &lt;&lt; " shape\n";
+    }
+};
+
+class Circle : public Shape {
+private:
+    double radius;
+
+public:
+    Circle(const std::string&amp; c, double r)
+        : Shape(c), radius(r) {}
+
+    double area() const override {
+        return M_PI * radius * radius;
+    }
+
+    void draw() const override {
+        std::cout &lt;&lt; "Drawing a " &lt;&lt; color &lt;&lt; " circle\n";
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    double width, height;
+
+public:
+    Rectangle(const std::string&amp; c, double w, double h)
+        : Shape(c), width(w), height(h) {}
+
+    double area() const override {
+        return width * height;
+    }
+};</code></pre>
+
+<p><strong>Types d'heritage</strong> :</p>
+<ul>
+<li><strong>Heritage public</strong> : Relation est-un</li>
+<li><strong>Heritage protege</strong> : Heritage d'implementation</li>
+<li><strong>Heritage prive</strong> : Rarement utilise</li>
+</ul>
+
+<h4>4. Polymorphisme</h4>
+
+<p>Dispatch dynamique a travers les fonctions virtuelles :</p>
+
+<pre><code class="language-cpp">void printArea(const Shape&amp; shape) {
+    std::cout &lt;&lt; "Area: " &lt;&lt; shape.area() &lt;&lt; std::endl;
+    shape.draw();
+}
+
+int main() {
+    Circle circle("red", 5.0);
+    Rectangle rect("blue", 4.0, 6.0);
+
+    printArea(circle);     // Appelle Circle::area()
+    printArea(rect);       // Appelle Rectangle::area()
+
+    // Conteneur polymorphe
+    std::vector&lt;std::unique_ptr&lt;Shape&gt;&gt; shapes;
+    shapes.push_back(std::make_unique&lt;Circle&gt;("green", 3.0));
+    shapes.push_back(std::make_unique&lt;Rectangle&gt;("yellow", 2.0, 5.0));
+
+    for (const auto&amp; shape : shapes) {
+        shape-&gt;draw();
+    }
+}</code></pre>
+
+<p><strong>Concepts cles</strong> :</p>
+<ul>
+<li><strong>Fonctions virtuelles</strong> : Permettent le polymorphisme a l'execution</li>
+<li><strong>Destructeur virtuel</strong> : Essentiel pour les classes de base</li>
+<li><strong>Fonctions virtuelles pures</strong> : Definissent des interfaces abstraites</li>
+<li><strong>Mot-cle override</strong> : Declaration explicite de redefinition (C++11)</li>
+</ul>
+
+<h4>5. Surcharge d'operateurs</h4>
+
+<p>Definition de comportements personnalises pour les operateurs :</p>
+
+<pre><code class="language-cpp">class Complex {
+private:
+    double real, imag;
+
+public:
+    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
+
+    // Operateurs arithmetiques
+    Complex operator+(const Complex&amp; other) const {
+        return Complex(real + other.real, imag + other.imag);
+    }
+
+    Complex operator*(const Complex&amp; other) const {
+        return Complex(
+            real * other.real - imag * other.imag,
+            real * other.imag + imag * other.real
+        );
+    }
+
+    // Operateur de comparaison
+    bool operator==(const Complex&amp; other) const {
+        return real == other.real &amp;&amp; imag == other.imag;
+    }
+
+    // Operateurs de flux (comme fonctions amies)
+    friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, const Complex&amp; c) {
+        os &lt;&lt; c.real &lt;&lt; " + " &lt;&lt; c.imag &lt;&lt; "i";
+        return os;
+    }
+
+    friend std::istream&amp; operator&gt;&gt;(std::istream&amp; is, Complex&amp; c) {
+        is &gt;&gt; c.real &gt;&gt; c.imag;
+        return is;
+    }
+};</code></pre>
+
+<h4>6. Templates</h4>
+
+<p>Programmation generique pour la reutilisabilite du code :</p>
+
+<pre><code class="language-cpp">// Template de fonction
+template&lt;typename T&gt;
+T max(T a, T b) {
+    return (a &gt; b) ? a : b;
+}
+
+// Template de classe
+template&lt;typename T&gt;
+class Stack {
+private:
+    std::vector&lt;T&gt; elements;
+
+public:
+    void push(const T&amp; element) {
+        elements.push_back(element);
+    }
+
+    T pop() {
+        if (elements.empty()) {
+            throw std::runtime_error("Stack is empty");
+        }
+        T value = elements.back();
+        elements.pop_back();
+        return value;
+    }
+
+    bool empty() const {
+        return elements.empty();
+    }
+
+    size_t size() const {
+        return elements.size();
+    }
+};
+
+// Specialisation de template
+template&lt;&gt;
+class Stack&lt;bool&gt; {
+    // Implementation specialisee pour bool
+};</code></pre>
+
+<h4>7. Bibliotheque standard de templates (STL)</h4>
+
+<p>Collection puissante de conteneurs et algorithmes generiques :</p>
+
+<p><strong>Conteneurs</strong> :</p>
+<pre><code class="language-cpp">// Conteneurs sequentiels
+std::vector&lt;int&gt; vec = {1, 2, 3, 4, 5};
+std::list&lt;std::string&gt; lst;
+std::deque&lt;double&gt; deq;
+
+// Conteneurs associatifs
+std::map&lt;std::string, int&gt; ages;
+ages["Alice"] = 25;
+ages["Bob"] = 30;
+
+std::set&lt;int&gt; unique_numbers = {1, 2, 3, 3, 4};  // {1, 2, 3, 4}
+
+// Adaptateurs de conteneurs
+std::stack&lt;int&gt; stack;
+std::queue&lt;int&gt; queue;
+std::priority_queue&lt;int&gt; pq;</code></pre>
+
+<p><strong>Algorithmes</strong> :</p>
+<pre><code class="language-cpp">#include &lt;algorithm&gt;
+
+std::vector&lt;int&gt; numbers = {5, 2, 8, 1, 9};
+
+// Tri
+std::sort(numbers.begin(), numbers.end());
+
+// Recherche
+auto it = std::find(numbers.begin(), numbers.end(), 8);
+
+// Transformation
+std::transform(numbers.begin(), numbers.end(), numbers.begin(),
+               [](int n) { return n * 2; });
+
+// Accumulation
+int sum = std::accumulate(numbers.begin(), numbers.end(), 0);</code></pre>
+
+<h4>8. Pointeurs intelligents (C++11)</h4>
+
+<p>Gestion automatique de la memoire :</p>
+
+<pre><code class="language-cpp">#include &lt;memory&gt;
+
+// Pointeur unique (propriete exclusive)
+std::unique_ptr&lt;int&gt; ptr1 = std::make_unique&lt;int&gt;(42);
+
+// Pointeur partage (propriete partagee)
+std::shared_ptr&lt;int&gt; ptr2 = std::make_shared&lt;int&gt;(100);
+std::shared_ptr&lt;int&gt; ptr3 = ptr2;  // Compteur de references = 2
+
+// Pointeur faible (reference non proprietaire)
+std::weak_ptr&lt;int&gt; weak = ptr2;
+
+// Exemple avec des classes
+class MyClass {
+public:
+    MyClass() { std::cout &lt;&lt; "Constructeur\n"; }
+    ~MyClass() { std::cout &lt;&lt; "Destructeur\n"; }
+    void doSomething() { std::cout &lt;&lt; "Fait quelque chose\n"; }
+};
+
+std::unique_ptr&lt;MyClass&gt; obj = std::make_unique&lt;MyClass&gt;();
+obj-&gt;doSomething();
+// Destructeur appele automatiquement quand obj sort de la portee</code></pre>
+
+<h4>9. Gestion des exceptions</h4>
+
+<p>Gestion robuste des erreurs :</p>
+
+<pre><code class="language-cpp">class FileNotFoundException : public std::exception {
+private:
+    std::string message;
+
+public:
+    FileNotFoundException(const std::string&amp; filename)
+        : message("Fichier non trouve : " + filename) {}
+
+    const char* what() const noexcept override {
+        return message.c_str();
+    }
+};
+
+void readFile(const std::string&amp; filename) {
+    try {
+        std::ifstream file(filename);
+        if (!file.is_open()) {
+            throw FileNotFoundException(filename);
+        }
+        // Lire le fichier...
+    } catch (const FileNotFoundException&amp; e) {
+        std::cerr &lt;&lt; "Erreur : " &lt;&lt; e.what() &lt;&lt; std::endl;
+        throw;  // Re-lancer
+    } catch (const std::exception&amp; e) {
+        std::cerr &lt;&lt; "Erreur inattendue : " &lt;&lt; e.what() &lt;&lt; std::endl;
+    }
+}</code></pre>
+
+<h4>10. Patrons de conception</h4>
+
+<p>Solutions de conception logicielle courantes :</p>
+
+<p><strong>Patron Singleton</strong> :</p>
+<pre><code class="language-cpp">class Database {
+private:
+    static Database* instance;
+    Database() {}  // Constructeur prive
+
+public:
+    static Database* getInstance() {
+        if (instance == nullptr) {
+            instance = new Database();
+        }
+        return instance;
+    }
+
+    void connect() {
+        std::cout &lt;&lt; "Connexion a la base de donnees...\n";
+    }
+};</code></pre>
+
+<p><strong>Patron Fabrique</strong> :</p>
+<pre><code class="language-cpp">class ShapeFactory {
+public:
+    static std::unique_ptr&lt;Shape&gt; createShape(const std::string&amp; type) {
+        if (type == "circle") {
+            return std::make_unique&lt;Circle&gt;("red", 5.0);
+        } else if (type == "rectangle") {
+            return std::make_unique&lt;Rectangle&gt;("blue", 4.0, 6.0);
+        }
+        return nullptr;
+    }
+};</code></pre>
+
+<h2>PARTIE D : PARTIE ANALYTIQUE</h2>
+
+<h3>Connaissances et competences mobilisees</h3>
+
+<ul>
+<li>Comprehension des principes de la programmation orientee objet</li>
+<li>Implementation de classes avec une encapsulation correcte</li>
+<li>Utilisation efficace de l'heritage et du polymorphisme</li>
+<li>Gestion de la memoire avec RAII et les pointeurs intelligents</li>
+<li>Application des templates pour la programmation generique</li>
+<li>Utilisation des conteneurs et algorithmes de la STL</li>
+<li>Gestion correcte des exceptions</li>
+<li>Implementation de patrons de conception</li>
+<li>Debogage de programmes C++ complexes</li>
+</ul>
+
+<h3>Auto-evaluation</h3>
+
+<p>Ce cours etait exigeant mais enrichissant. Venant de la programmation en C, le passage a la pensee orientee objet a necessite un ajustement mental significatif. Le concept de classes et d'objets etait initialement abstrait, mais a travers des projets pratiques, j'ai acquis une comprehension solide.</p>
+
+<p>La gestion de la memoire en C++ (notamment avec les pointeurs et l'allocation dynamique) etait delicate. Cependant, l'apprentissage du RAII et des pointeurs intelligents a rendu la gestion memoire beaucoup plus facile et sure. L'introduction des fonctionnalites C++11 comme la semantique de deplacement et les fonctions lambda etait particulierement interessante.</p>
+
+<p>Les templates et la STL semblaient initialement ecrasants en raison de leur complexite, mais j'ai fini par apprecier leur puissance pour ecrire du code generique et reutilisable. Les messages d'erreur lies a la compilation des templates etaient souvent cryptiques et difficiles a deboguer.</p>
+
+<p>J'ai trouve le polymorphisme et les fonctions virtuelles fascinants, notamment la maniere dont ils permettent une conception logicielle flexible et extensible. L'implementation de patrons de conception m'a aide a comprendre l'architecture logicielle professionnelle.</p>
+
+<h3>Mon avis</h3>
+
+<p>Le C++ est un langage puissant mais complexe. Ce cours a fourni une base solide en POO avec C++, bien que la maitrise du langage necessite une pratique continue. Le cours equilibrait bien la theorie et l'implementation pratique.</p>
+
+<p>J'ai particulierement apprecie l'apprentissage des fonctionnalites modernes du C++ (C++11/14/17). Ces fonctionnalites rendent le C++ plus convivial tout en maintenant ses avantages en termes de performance. Comprendre la relation entre le C et le C++ m'a aide a apprecier quand utiliser les fonctionnalites du C++ par rapport a la programmation en style C.</p>
+
+<p>Domaines que j'aurais aime explorer davantage :</p>
+<ul>
+<li>Multithreading et concurrence en C++</li>
+<li>Metaprogrammation par templates</li>
+<li>Patrons de conception plus complexes</li>
+<li>Techniques d'optimisation de performance</li>
+<li>Systemes de build et organisation de projets</li>
+</ul>
+
+<p>Les projets ont aide a solidifier les concepts, bien que davantage d'applications du monde reel (comme la programmation de systemes embarques ou le developpement de jeux) auraient ete precieuses. Dans l'ensemble, ce cours m'a equipe de competences essentielles pour le developpement logiciel moderne.</p>
+
+<hr />
+
+<h2>Illustrations du Projet Gamelle Connectee</h2>
 
 <div style="text-align: center; margin: 20px 0;">
   <img src="/img/BE_Gamelle/Class_Diag.png" alt="Diagramme de classes du projet Gamelle Connectee" style="max-width: 700px; border: 1px solid #ddd; padding: 10px; border-radius: 8px;" />
@@ -591,7 +1144,7 @@
 
 <hr />
 
-<h2 id="rapports-et-projets">Rapports et Projets</h2>
+<h2>Rapports et Projets</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
@@ -609,7 +1162,38 @@
 
 <hr />
 
-<h2 id="-documents-de-cours">📚 Documents de Cours</h2>
+<h2>Documents de Cours</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Partie 1 - Bases C++</h4>
+      <p>Introduction au C++ : differences avec C, compilation, entrees/sorties, references et gestion memoire.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Partie 2 - Classes</h4>
+      <p>Classes en C++ : constructeurs, destructeurs, encapsulation, membres prives/publics et methodes.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Partie 3 - Heritage</h4>
+      <p>Heritage en C++ : classes derivees, constructeurs/destructeurs en cascade, acces protected.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" target="_blank">Telecharger</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Partie 4 - Polymorphisme</h4>
+      <p>Polymorphisme en C++ : fonctions virtuelles, classes abstraites, liaison dynamique et virtual.</p>
+      <embed src="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" target="_blank">Telecharger</a></p>
+    </div>
+  </div>
+</div>
+
+</div>
 
 <style>
     .pdf-container {
@@ -636,35 +1220,6 @@
         margin-top: 0;
     }
 </style>
-
-<div class="pdf-container">
-  <div class="pdf-viewer">
-    <div class="pdf-item">
-      <h4>📖 Partie 1 - Bases C++</h4>
-      <p>Introduction au C++ : différences avec C, compilation, entrées/sorties, références et gestion mémoire.</p>
-      <embed src="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/POO-CPP/partie1-bases.pdf" target="_blank">📥 Télécharger</a></p>
-    </div>
-    <div class="pdf-item">
-      <h4>📖 Partie 2 - Classes</h4>
-      <p>Classes en C++ : constructeurs, destructeurs, encapsulation, membres privés/publics et méthodes.</p>
-      <embed src="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/POO-CPP/partie2-classes.pdf" target="_blank">📥 Télécharger</a></p>
-    </div>
-    <div class="pdf-item">
-      <h4>📖 Partie 3 - Héritage</h4>
-      <p>Héritage en C++ : classes dérivées, constructeurs/destructeurs en cascade, accès protected.</p>
-      <embed src="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/POO-CPP/partie3-heritage.pdf" target="_blank">📥 Télécharger</a></p>
-    </div>
-    <div class="pdf-item">
-      <h4>📖 Partie 4 - Polymorphisme</h4>
-      <p>Polymorphisme en C++ : fonctions virtuelles, classes abstraites, liaison dynamique et virtual.</p>
-      <embed src="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/POO-CPP/partie4-polymorphisme.pdf" target="_blank">📥 Télécharger</a></p>
-    </div>
-  </div>
-</div>
 
 <style>
     body {
@@ -711,6 +1266,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -729,8 +1395,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -752,6 +1418,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -1262,11 +1929,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1466,14 +2131,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1484,6 +2149,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

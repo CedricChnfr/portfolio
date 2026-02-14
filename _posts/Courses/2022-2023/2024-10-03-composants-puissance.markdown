@@ -24,960 +24,2115 @@ categories: jekyll update
     margin-top: 30px;
     margin-bottom: 20px;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+h2, h3, h4, h5 {
+    color: #2a7ae2;
+}
+p {
+    text-align: justify;
+}
+code {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #2a7ae2;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2022-2023.html">← Retour à Mes Cours 2022-2023</a>
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">← Retour aux Cours 2022-2023</a>
 </div>
 
-# ⚡ Composants et Notions de Puissance - S5
+<!-- ========== FRENCH VERSION ========== -->
+<div class="lang-fr">
 
-**Année**: 2022-2023 (Semestre 5)  
-**Crédits**: 3 ECTS  
-**Type**: Électronique de Puissance
+<h1>⚡ Composants et Notions de Puissance - S5</h1>
 
----
+<p><strong>Année</strong>: 2022-2023 (Semestre 5)<br/>
+<strong>Crédits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Électronique de Puissance</p>
 
-## PART A: PRÉSENTATION GÉNÉRALE
+<hr/>
 
-### Objectifs du cours
+<h2>PART A: PRÉSENTATION GÉNÉRALE</h2>
 
-Le cours "Composants et Notions de Puissance" constitue une introduction fondamentale à l'électronique de puissance, domaine essentiel pour la conversion et la gestion de l'énergie électrique. Il couvre les composants semiconducteurs de puissance (diodes, transistors, thyristors), leurs caractéristiques, leurs limites, ainsi que les structures de conversion (redresseurs, hacheurs, onduleurs). Ce cours est indispensable pour comprendre les alimentations à découpage, les variateurs de vitesse, les systèmes d'énergie renouvelable, et les applications de l'électronique embarquée nécessitant une gestion efficace de l'énergie.
+<h3>Objectifs du cours</h3>
 
-### Compétences visées
+<p>Le cours "Composants et Notions de Puissance" constitue une introduction fondamentale à l'électronique de puissance, domaine essentiel pour la conversion et la gestion de l'énergie électrique. Il couvre les composants semiconducteurs de puissance (diodes, transistors, thyristors), leurs caractéristiques, leurs limites, ainsi que les structures de conversion (redresseurs, hacheurs, onduleurs). Ce cours est indispensable pour comprendre les alimentations à découpage, les variateurs de vitesse, les systèmes d'énergie renouvelable, et les applications de l'électronique embarquée nécessitant une gestion efficace de l'énergie.</p>
 
-- Maîtriser le fonctionnement des composants semiconducteurs de puissance
-- Analyser les circuits de conversion d'énergie (AC-DC, DC-DC, DC-AC)
-- Dimensionner les composants de puissance (courants, tensions, dissipation thermique)
-- Comprendre les pertes et calculer le rendement des convertisseurs
-- Concevoir des circuits de protection et de commande rapprochée
-- Analyser les contraintes thermiques et dimensionner les dissipateurs
-- Appliquer les règles de sécurité en électronique de puissance
+<h3>Compétences visées</h3>
 
-### Organisation
+<ul>
+<li>Maîtriser le fonctionnement des composants semiconducteurs de puissance</li>
+<li>Analyser les circuits de conversion d'énergie (AC-DC, DC-DC, DC-AC)</li>
+<li>Dimensionner les composants de puissance (courants, tensions, dissipation thermique)</li>
+<li>Comprendre les pertes et calculer le rendement des convertisseurs</li>
+<li>Concevoir des circuits de protection et de commande rapprochée</li>
+<li>Analyser les contraintes thermiques et dimensionner les dissipateurs</li>
+<li>Appliquer les règles de sécurité en électronique de puissance</li>
+</ul>
 
-- **Volume horaire**: 30h (CM: 16h, TD: 10h, TP: 4h)
-- **Évaluation**: 2 contrôles écrits (ACE 1: 40%, ACE 2: 40%) + TDs/TPs (20%)
-- **Semestre**: 5 (2022-2023)
-- **Prérequis**: Électronique fondamentale, circuits électriques, composants passifs
+<h3>Organisation</h3>
 
----
+<ul>
+<li><strong>Volume horaire</strong>: 30h (CM: 16h, TD: 10h, TP: 4h)</li>
+<li><strong>Évaluation</strong>: 2 contrôles écrits (ACE 1: 40%, ACE 2: 40%) + TDs/TPs (20%)</li>
+<li><strong>Semestre</strong>: 5 (2022-2023)</li>
+<li><strong>Prérequis</strong>: Électronique fondamentale, circuits électriques, composants passifs</li>
+</ul>
 
-## PART B: EXPÉRIENCE, CONTEXTE ET FONCTION
+<hr/>
 
-### Contenu pédagogique
+<h2>PART B: EXPÉRIENCE, CONTEXTE ET FONCTION</h2>
 
-Le cours s'articule autour de trois axes principaux: les composants, les structures de conversion, et les aspects thermiques/pratiques.
+<h3>Contenu pédagogique</h3>
 
-#### 1. Composants Semiconducteurs de Puissance
+<p>Le cours s'articule autour de trois axes principaux: les composants, les structures de conversion, et les aspects thermiques/pratiques.</p>
 
-##### A. Diodes de Puissance
+<h4>1. Composants Semiconducteurs de Puissance</h4>
 
-**Diode à jonction PN**:
+<h5>A. Diodes de Puissance</h5>
 
-La diode de puissance est le composant le plus simple de l'électronique de puissance. Elle se comporte comme un interrupteur unidirectionnel (commande naturelle).
+<p><strong>Diode à jonction PN</strong>:</p>
 
-**Caractéristiques principales**:
-- **Tension directe** (forward voltage): VF ≈ 0.7 - 1.5V selon le courant
-- **Courant moyen** IF(AV): courant continu maximal
-- **Courant de pointe** IFSM: courant de surcharge temporaire
-- **Tension inverse maximale** VRRM (Peak Repetitive Reverse Voltage)
-- **Temps de recouvrement inverse** trr: temps de commutation
+<p>La diode de puissance est le composant le plus simple de l'électronique de puissance. Elle se comporte comme un interrupteur unidirectionnel (commande naturelle).</p>
 
-**Modèle simplifié**:
-- **État passant** (ON): VD ≈ VF0 + RD × ID où VF0 est la tension de seuil (~0.7V) et RD la résistance dynamique
-- **État bloqué** (OFF): ID ≈ 0, diode supporte VR en inverse
+<p><strong>Caractéristiques principales</strong>:</p>
+<ul>
+<li><strong>Tension directe</strong> (forward voltage): V<sub>F</sub> ≈ 0.7 - 1.5V selon le courant</li>
+<li><strong>Courant moyen</strong> I<sub>F(AV)</sub>: courant continu maximal</li>
+<li><strong>Courant de pointe</strong> I<sub>FSM</sub>: courant de surcharge temporaire</li>
+<li><strong>Tension inverse maximale</strong> V<sub>RRM</sub> (Peak Repetitive Reverse Voltage)</li>
+<li><strong>Temps de recouvrement inverse</strong> t<sub>rr</sub>: temps de commutation</li>
+</ul>
 
-**Recouvrement inverse**:
+<p><strong>Modèle simplifié</strong>:</p>
+<ul>
+<li><strong>État passant</strong> (ON): V<sub>D</sub> ≈ V<sub>F0</sub> + R<sub>D</sub> × I<sub>D</sub> où V<sub>F0</sub> est la tension de seuil (~0.7V) et R<sub>D</sub> la résistance dynamique</li>
+<li><strong>État bloqué</strong> (OFF): I<sub>D</sub> ≈ 0, diode supporte V<sub>R</sub> en inverse</li>
+</ul>
 
-Lors du blocage, la diode ne se bloque pas instantanément. Il existe un temps trr pendant lequel un courant inverse IRR circule (évacuation des porteurs minoritaires).
+<p><strong>Recouvrement inverse</strong>:</p>
 
-Qrr = (1/2) × IRR × trr
+<p>Lors du blocage, la diode ne se bloque pas instantanément. Il existe un temps t<sub>rr</sub> pendant lequel un courant inverse I<sub>RR</sub> circule (évacuation des porteurs minoritaires).</p>
 
-où Qrr est la charge de recouvrement.
+<p>Q<sub>rr</sub> = (1/2) × I<sub>RR</sub> × t<sub>rr</sub></p>
 
-**Pertes dans la diode**:
-- **Pertes en conduction**: Pcond = VF × ID(AV) + RD × ID(RMS)²
-- **Pertes en commutation**: Psw = (1/2) × VR × IRR × trr × fsw
+<p>où Q<sub>rr</sub> est la charge de recouvrement.</p>
 
-**Diodes rapides (Fast Recovery)**:
-- trr < 500 ns (vs plusieurs µs pour diode standard)
-- Utilisées dans les convertisseurs à haute fréquence (>10 kHz)
-- Réduction des pertes de commutation
+<p><strong>Pertes dans la diode</strong>:</p>
+<ul>
+<li><strong>Pertes en conduction</strong>: P<sub>cond</sub> = V<sub>F</sub> × I<sub>D(AV)</sub> + R<sub>D</sub> × I<sub>D(RMS)</sub>²</li>
+<li><strong>Pertes en commutation</strong>: P<sub>sw</sub> = (1/2) × V<sub>R</sub> × I<sub>RR</sub> × t<sub>rr</sub> × f<sub>sw</sub></li>
+</ul>
 
-**Diodes Schottky**:
-- Jonction métal-semiconducteur (pas de recouvrement inverse)
-- VF plus faible (~0.3-0.5V) mais VRRM limité (<200V)
-- Utilisées en basse tension, haute fréquence
-- Applications: alimentations à découpage, redressement synchrone
+<p><strong>Diodes rapides (Fast Recovery)</strong>:</p>
+<ul>
+<li>t<sub>rr</sub> &lt; 500 ns (vs plusieurs µs pour diode standard)</li>
+<li>Utilisées dans les convertisseurs à haute fréquence (&gt;10 kHz)</li>
+<li>Réduction des pertes de commutation</li>
+</ul>
 
-##### B. Transistors de Puissance
+<p><strong>Diodes Schottky</strong>:</p>
+<ul>
+<li>Jonction métal-semiconducteur (pas de recouvrement inverse)</li>
+<li>V<sub>F</sub> plus faible (~0.3-0.5V) mais V<sub>RRM</sub> limité (&lt;200V)</li>
+<li>Utilisées en basse tension, haute fréquence</li>
+<li>Applications: alimentations à découpage, redressement synchrone</li>
+</ul>
 
-**Transistor Bipolaire de Puissance (BJT)**:
+<h5>B. Transistors de Puissance</h5>
 
-Le BJT de puissance est commandé en courant.
+<p><strong>Transistor Bipolaire de Puissance (BJT)</strong>:</p>
 
-**Caractéristiques**:
-- **Gain en courant** β: IC = β × IB (typiquement β = 10-50 en puissance)
-- **Tension de saturation** VCE(sat) ≈ 0.5 - 2V
-- **Zone de Sécurité** (SOA - Safe Operating Area): limite VCE vs IC
+<p>Le BJT de puissance est commandé en courant.</p>
 
-**Conditions de saturation**:
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Gain en courant</strong> β: I<sub>C</sub> = β × I<sub>B</sub> (typiquement β = 10-50 en puissance)</li>
+<li><strong>Tension de saturation</strong> V<sub>CE(sat)</sub> ≈ 0.5 - 2V</li>
+<li><strong>Zone de Sécurité</strong> (SOA - Safe Operating Area): limite V<sub>CE</sub> vs I<sub>C</sub></li>
+</ul>
+
+<p><strong>Conditions de saturation</strong>:</p>
 
-IB > IC / β
+<p>I<sub>B</sub> &gt; I<sub>C</sub> / β</p>
 
-En pratique, on utilise IB = IC / (5-10) pour garantir la saturation profonde.
+<p>En pratique, on utilise I<sub>B</sub> = I<sub>C</sub> / (5-10) pour garantir la saturation profonde.</p>
 
-**Pertes**:
-- **Conduction**: Pcond = VCE(sat) × IC
-- **Commutation**: Psw = (1/6) × VCE × IC × (ton + toff) × fsw
+<p><strong>Pertes</strong>:</p>
+<ul>
+<li><strong>Conduction</strong>: P<sub>cond</sub> = V<sub>CE(sat)</sub> × I<sub>C</sub></li>
+<li><strong>Commutation</strong>: P<sub>sw</sub> = (1/6) × V<sub>CE</sub> × I<sub>C</sub> × (t<sub>on</sub> + t<sub>off</sub>) × f<sub>sw</sub></li>
+</ul>
+
+<p><strong>Inconvénients du BJT</strong>:</p>
+<ul>
+<li>Commande en courant (puissance de commande élevée)</li>
+<li>Temps de commutation élevés (µs)</li>
+<li>Risque de destruction en zone linéaire (chauffage)</li>
+</ul>
+
+<p><strong>Transistor MOSFET de Puissance</strong>:</p>
+
+<p>Le MOSFET est commandé en tension (grille isolée).</p>
+
+<p><strong>Caractéristiques principales</strong>:</p>
+<ul>
+<li><strong>Résistance à l'état passant</strong> R<sub>DS(on)</sub>: augmente avec la tension nominale</li>
+<li><strong>Tension Drain-Source maximale</strong> V<sub>DSS</sub></li>
+<li><strong>Courant continu maximal</strong> I<sub>D</sub></li>
+<li><strong>Capacités parasites</strong>: C<sub>gs</sub>, C<sub>gd</sub> (Miller), C<sub>ds</sub></li>
+<li><strong>Charge de grille</strong> Q<sub>g</sub>: charge nécessaire pour commuter</li>
+</ul>
+
+<p><strong>Équation en saturation</strong>:</p>
+
+<p>I<sub>D</sub> = K × (V<sub>GS</sub> - V<sub>th</sub>)²</p>
+
+<p>où V<sub>th</sub> est la tension de seuil (typiquement 2-4V).</p>
+
+<p><strong>Pertes</strong>:</p>
+<ul>
+<li><strong>Conduction</strong>: P<sub>cond</sub> = R<sub>DS(on)</sub> × I<sub>D(RMS)</sub>²</li>
+<li><strong>Commutation</strong>: liées aux capacités parasites<br/>
+    P<sub>sw</sub> = (1/2) × C<sub>oss</sub> × V<sub>DS</sub>² × f<sub>sw</sub> + V<sub>DS</sub> × I<sub>D</sub> × (t<sub>r</sub> + t<sub>f</sub>) × f<sub>sw</sub></li>
+</ul>
+
+<p><strong>Avantages du MOSFET</strong>:</p>
+<ul>
+<li>Commande simple (tension, pas de courant permanent)</li>
+<li>Commutation rapide (ns)</li>
+<li>Pas de phénomène de stockage (comme le BJT)</li>
+<li>Résistance R<sub>DS(on)</sub> augmente avec la température → limitation naturelle du courant</li>
+</ul>
+
+<p><strong>Diode de roue libre interne</strong>:</p>
+<p>Le MOSFET possède une diode intrinsèque (body diode) entre drain et source, utilisable pour les applications inductives.</p>
+
+<p><strong>Transistor IGBT (Insulated Gate Bipolar Transistor)</strong>:</p>
 
-**Inconvénients du BJT**:
-- Commande en courant (puissance de commande élevée)
-- Temps de commutation élevés (µs)
-- Risque de destruction en zone linéaire (chauffage)
+<p>L'IGBT combine les avantages du MOSFET (commande en tension) et du BJT (faible chute de tension à fort courant).</p>
 
-**Transistor MOSFET de Puissance**:
+<p><strong>Structure</strong>: MOSFET + BJT en Darlington</p>
 
-Le MOSFET est commandé en tension (grille isolée).
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Tension de saturation</strong>: V<sub>CE(sat)</sub> ≈ 1.5 - 3V (indépendant du courant)</li>
+<li><strong>Commande en tension</strong> comme le MOSFET</li>
+<li><strong>Temps de commutation</strong>: intermédiaire (100-500 ns)</li>
+<li><strong>Tension maximale</strong>: jusqu'à plusieurs kV</li>
+</ul>
 
-**Caractéristiques principales**:
-- **Résistance à l'état passant** RDS(on): augmente avec la tension nominale
-- **Tension Drain-Source maximale** VDSS
-- **Courant continu maximal** ID
-- **Capacités parasites**: Cgs, Cgd (Miller), Cds
-- **Charge de grille** Qg: charge nécessaire pour commuter
+<p><strong>Équation</strong>:</p>
 
-**Équation en saturation**:
+<p>I<sub>C</sub> = g<sub>m</sub> × (V<sub>GE</sub> - V<sub>th</sub>)</p>
 
-ID = K × (VGS - Vth)²
+<p>où g<sub>m</sub> est la transconductance.</p>
 
-où Vth est la tension de seuil (typiquement 2-4V).
+<p><strong>Applications typiques</strong>:</p>
+<ul>
+<li>MOSFET: &lt;1kV, haute fréquence (&gt;100kHz), R<sub>DS(on)</sub> faible</li>
+<li>IGBT: &gt;600V, fréquence moyenne (1-50kHz), puissance élevée</li>
+<li>BJT: obsolète (remplacé par IGBT)</li>
+</ul>
 
-**Pertes**:
-- **Conduction**: Pcond = RDS(on) × ID(RMS)²
-- **Commutation**: liées aux capacités parasites
-    
-    Psw = (1/2) × Coss × VDS² × fsw + VDS × ID × (tr + tf) × fsw
+<p><strong>Comparaison MOSFET vs IGBT</strong>:</p>
 
-**Avantages du MOSFET**:
-- Commande simple (tension, pas de courant permanent)
-- Commutation rapide (ns)
-- Pas de phénomène de stockage (comme le BJT)
-- Résistance RDS(on) augmente avec la température → limitation naturelle du courant
+<table>
+<thead>
+<tr><th>Critère</th><th>MOSFET</th><th>IGBT</th></tr>
+</thead>
+<tbody>
+<tr><td>Commande</td><td>Tension</td><td>Tension</td></tr>
+<tr><td>V max</td><td>&lt;1000V</td><td>&gt;6500V</td></tr>
+<tr><td>I max</td><td>&lt;500A</td><td>&gt;3000A</td></tr>
+<tr><td>Fréquence</td><td>&gt;100kHz</td><td>&lt;50kHz</td></tr>
+<tr><td>P<sub>cond</sub></td><td>R<sub>DS(on)</sub> × I²</td><td>V<sub>CE(sat)</sub> × I</td></tr>
+<tr><td>Applications</td><td>Alim. découpage, DC-DC</td><td>Variateurs, traction, éolien</td></tr>
+</tbody>
+</table>
 
-**Diode de roue libre interne**:
-Le MOSFET possède une diode intrinsèque (body diode) entre drain et source, utilisable pour les applications inductives.
+<h5>C. Thyristors</h5>
 
-**Transistor IGBT (Insulated Gate Bipolar Transistor)**:
+<p><strong>Thyristor (SCR - Silicon Controlled Rectifier)</strong>:</p>
 
-L'IGBT combine les avantages du MOSFET (commande en tension) et du BJT (faible chute de tension à fort courant).
+<p>Le thyristor est un composant à 4 couches (PNPN) commandé à l'amorçage uniquement.</p>
 
-**Structure**: MOSFET + BJT en Darlington
+<p><strong>Principe</strong>:</p>
+<ul>
+<li><strong>Amorçage</strong> (ON): impulsion de courant sur la gâchette (gate) I<sub>G</sub> &gt; I<sub>GT</sub></li>
+<li><strong>Maintien</strong>: le thyristor reste passant tant que I<sub>AK</sub> &gt; I<sub>H</sub> (courant de maintien)</li>
+<li><strong>Blocage</strong> (OFF): uniquement par annulation du courant I<sub>AK</sub></li>
+</ul>
 
-**Caractéristiques**:
-- **Tension de saturation**: VCE(sat) ≈ 1.5 - 3V (indépendant du courant)
-- **Commande en tension** comme le MOSFET
-- **Temps de commutation**: intermédiaire (100-500 ns)
-- **Tension maximale**: jusqu'à plusieurs kV
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li><strong>Tension directe</strong>: V<sub>AK</sub> ≈ 1-2V à l'état passant</li>
+<li><strong>Courant de gâchette</strong>: I<sub>GT</sub> = 20-200 mA</li>
+<li><strong>Courant de maintien</strong>: I<sub>H</sub> ≈ 10-100 mA</li>
+<li><strong>dV/dt max</strong>: vitesse de montée en tension maximale (risque d'amorçage intempestif)</li>
+<li><strong>dI/dt max</strong>: vitesse de montée en courant à l'amorçage</li>
+</ul>
 
-**Équation**:
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Commande unidirectionnelle (amorçage seulement)</li>
+<li>Blocage naturel (nécessite annulation du courant)</li>
+<li>Utilisé principalement en AC (commutation naturelle)</li>
+</ul>
 
-IC = gm × (VGE - Vth)
+<p><strong>TRIAC (TRIode for Alternating Current)</strong>:</p>
 
-où gm est la transconductance.
+<p>Équivalent bidirectionnel du thyristor.</p>
 
-**Applications typiques**:
-- MOSFET: <1kV, haute fréquence (>100kHz), RDS(on) faible
-- IGBT: >600V, fréquence moyenne (1-50kHz), puissance élevée
-- BJT: obsolète (remplacé par IGBT)
+<p><strong>Structure</strong>: 2 thyristors tête-bêche</p>
 
-**Comparaison MOSFET vs IGBT**:
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>Gradateurs AC (variateurs de lumière)</li>
+<li>Commande de puissance en AC</li>
+<li>Limitation: faible fréquence (&lt;400Hz)</li>
+</ul>
 
-| Critère | MOSFET | IGBT |
-|---------|--------|------|
-| Commande | Tension | Tension |
-| V max | <1000V | >6500V |
-| I max | <500A | >3000A |
-| Fréquence | >100kHz | <50kHz |
-| Pcond | RDS(on) × I² | VCE(sat) × I |
-| Applications | Alim. découpage, DC-DC | Variateurs, traction, éolien |
+<p><strong>GTO (Gate Turn-Off Thyristor)</strong>:</p>
 
-##### C. Thyristors
+<p>Thyristor pouvant être bloqué par impulsion négative sur la gâchette.</p>
 
-**Thyristor (SCR - Silicon Controlled Rectifier)**:
+<p><strong>Caractéristiques</strong>:</p>
+<ul>
+<li>Blocage commandé: I<sub>G</sub> &lt; -I<sub>GQ</sub> (courant négatif élevé, ~20% de I<sub>AK</sub>)</li>
+<li>Tension élevée (&gt;4kV)</li>
+<li>Applications: traction, forte puissance</li>
+</ul>
 
-Le thyristor est un composant à 4 couches (PNPN) commandé à l'amorçage uniquement.
+<p>Aujourd'hui, les GTO sont remplacés par les IGBT.</p>
 
-**Principe**:
-- **Amorçage** (ON): impulsion de courant sur la gâchette (gate) IG > IGT
-- **Maintien**: le thyristor reste passant tant que IAK > IH (courant de maintien)
-- **Blocage** (OFF): uniquement par annulation du courant IAK
+<h4>2. Structures de Conversion d'Énergie</h4>
 
-**Caractéristiques**:
-- **Tension directe**: VAK ≈ 1-2V à l'état passant
-- **Courant de gâchette**: IGT = 20-200 mA
-- **Courant de maintien**: IH ≈ 10-100 mA
-- **dV/dt max**: vitesse de montée en tension maximale (risque d'amorçage intempestif)
-- **dI/dt max**: vitesse de montée en courant à l'amorçage
+<h5>A. Redresseurs (AC → DC)</h5>
 
-**Limitations**:
-- Commande unidirectionnelle (amorçage seulement)
-- Blocage naturel (nécessite annulation du courant)
-- Utilisé principalement en AC (commutation naturelle)
+<p><strong>Redressement non commandé</strong>:</p>
 
-**TRIAC (TRIode for Alternating Current)**:
-
-Équivalent bidirectionnel du thyristor.
-
-**Structure**: 2 thyristors tête-bêche
-
-**Applications**:
-- Gradateurs AC (variateurs de lumière)
-- Commande de puissance en AC
-- Limitation: faible fréquence (<400Hz)
-
-**GTO (Gate Turn-Off Thyristor)**:
-
-Thyristor pouvant être bloqué par impulsion négative sur la gâchette.
-
-**Caractéristiques**:
-- Blocage commandé: IG < -IGQ (courant négatif élevé, ~20% de IAK)
-- Tension élevée (>4kV)
-- Applications: traction, forte puissance
-
-Aujourd'hui, les GTO sont remplacés par les IGBT.
-
-#### 2. Structures de Conversion d'Énergie
-
-##### A. Redresseurs (AC → DC)
-
-**Redressement non commandé**:
-
-**Redresseur simple alternance**:
-```
-                D1
-VAC ------>|---+--- VDC
+<p><strong>Redresseur simple alternance</strong>:</p>
+<pre><code>                D1
+VAC ------&gt;|---+--- VDC
                              |
                             RL    C
                              |    ||
                             GND---+
-```
+</code></pre>
 
-**Valeur moyenne** (charge résistive):
+<p><strong>Valeur moyenne</strong> (charge résistive):</p>
 
-VDC = Vmax / π ≈ 0.318 × Vmax
+<p>V<sub>DC</sub> = V<sub>max</sub> / π ≈ 0.318 × V<sub>max</sub></p>
 
-**Valeur efficace**:
+<p><strong>Valeur efficace</strong>:</p>
 
-VRMS = Vmax / 2
+<p>V<sub>RMS</sub> = V<sub>max</sub> / 2</p>
 
-**Taux d'ondulation**: très élevé (100%)
+<p><strong>Taux d'ondulation</strong>: très élevé (100%)</p>
 
-**Redresseur double alternance (pont de Graetz)**:
-```
-             D1      D3
-     +---|>|--+--|>|--+
+<p><strong>Redresseur double alternance (pont de Graetz)</strong>:</p>
+<pre><code>             D1      D3
+     +---|&gt;|--+--|&gt;|--+
      |        |       |
 VAC ~       RL      + VDC
      |        |       |
-     +---|>|--+--|>|--+
+     +---|&gt;|--+--|&gt;|--+
              D2      D4
-```
+</code></pre>
 
-**Valeur moyenne**:
+<p><strong>Valeur moyenne</strong>:</p>
 
-VDC = (2 × Vmax) / π ≈ 0.637 × Vmax
+<p>V<sub>DC</sub> = (2 × V<sub>max</sub>) / π ≈ 0.637 × V<sub>max</sub></p>
 
-Pour VAC = 230V efficace:
+<p>Pour V<sub>AC</sub> = 230V efficace:</p>
 
-VDC = 0.637 × 230 × √2 ≈ 207V
+<p>V<sub>DC</sub> = 0.637 × 230 × √2 ≈ 207V</p>
 
-**Avec filtrage capacitif**:
+<p><strong>Avec filtrage capacitif</strong>:</p>
 
-VDC ≈ Vmax - Iload / (2 × f × C)
+<p>V<sub>DC</sub> ≈ V<sub>max</sub> - I<sub>load</sub> / (2 × f × C)</p>
 
-où f est la fréquence du réseau (50Hz en Europe).
+<p>où f est la fréquence du réseau (50Hz en Europe).</p>
 
-**Dimensionnement du condensateur**:
+<p><strong>Dimensionnement du condensateur</strong>:</p>
 
-Pour un taux d'ondulation δ (ripple):
+<p>Pour un taux d'ondulation δ (ripple):</p>
 
-C = Iload / (2 × f × δ × VDC)
+<p>C = I<sub>load</sub> / (2 × f × δ × V<sub>DC</sub>)</p>
 
-**Exemple**: Pour Iload = 2A, VDC = 200V, δ = 5%:
+<p><strong>Exemple</strong>: Pour I<sub>load</sub> = 2A, V<sub>DC</sub> = 200V, δ = 5%:</p>
 
-C = 2 / (2 × 50 × 0.05 × 200) = 200 µF
+<p>C = 2 / (2 × 50 × 0.05 × 200) = 200 µF</p>
 
-**Redressement commandé (thyristors)**:
+<p><strong>Redressement commandé (thyristors)</strong>:</p>
 
-Redresseur à thyristors avec angle de retard α.
+<p>Redresseur à thyristors avec angle de retard α.</p>
 
-**Valeur moyenne**:
+<p><strong>Valeur moyenne</strong>:</p>
 
-VDC = (2 × Vmax / π) × cos(α)
+<p>V<sub>DC</sub> = (2 × V<sub>max</sub> / π) × cos(α)</p>
 
-- α = 0°: VDC maximal (comme diodes)
-- α = 90°: VDC = 0
-- α > 90°: VDC < 0 (fonctionnement onduleur)
+<ul>
+<li>α = 0°: V<sub>DC</sub> maximal (comme diodes)</li>
+<li>α = 90°: V<sub>DC</sub> = 0</li>
+<li>α &gt; 90°: V<sub>DC</sub> &lt; 0 (fonctionnement onduleur)</li>
+</ul>
 
-**Applications**: variateurs de vitesse pour moteurs DC, charges de batteries avec contrôle.
+<p><strong>Applications</strong>: variateurs de vitesse pour moteurs DC, charges de batteries avec contrôle.</p>
 
-##### B. Hacheurs (DC → DC)
+<h5>B. Hacheurs (DC → DC)</h5>
 
-Les hacheurs (choppers) permettent de contrôler la tension continue par découpage à haute fréquence.
+<p>Les hacheurs (choppers) permettent de contrôler la tension continue par découpage à haute fréquence.</p>
 
-**Hacheur série (Buck / abaisseur)**:
+<p><strong>Hacheur série (Buck / abaisseur)</strong>:</p>
 
-```
-Vin --[MOSFET]--+--[L]--+-- Vout
+<pre><code>Vin --[MOSFET]--+--[L]--+-- Vout
                                 |       |
                              [D]     [C]  RL
                                 |       |
                              GND-----GND
-```
+</code></pre>
 
-**Principe**:
-- MOSFET ON pendant α × T: VL = Vin - Vout, L stocke énergie
-- MOSFET OFF pendant (1-α) × T: diode conduit, L restitue énergie
+<p><strong>Principe</strong>:</p>
+<ul>
+<li>MOSFET ON pendant α × T: V<sub>L</sub> = V<sub>in</sub> - V<sub>out</sub>, L stocke énergie</li>
+<li>MOSFET OFF pendant (1-α) × T: diode conduit, L restitue énergie</li>
+</ul>
 
-**Tension de sortie**:
+<p><strong>Tension de sortie</strong>:</p>
 
-Vout = α × Vin
+<p>V<sub>out</sub> = α × V<sub>in</sub></p>
 
-où α est le rapport cyclique (duty cycle), 0 < α < 1.
+<p>où α est le rapport cyclique (duty cycle), 0 &lt; α &lt; 1.</p>
 
-**Dimensionnement de l'inductance**:
+<p><strong>Dimensionnement de l'inductance</strong>:</p>
 
-Pour un fonctionnement en conduction continue:
+<p>Pour un fonctionnement en conduction continue:</p>
 
-L > ((1-α) × Vout) / (2 × fsw × ΔIL)
+<p>L &gt; ((1-α) × V<sub>out</sub>) / (2 × f<sub>sw</sub> × ΔI<sub>L</sub>)</p>
 
-où ΔIL est l'ondulation de courant admissible.
+<p>où ΔI<sub>L</sub> est l'ondulation de courant admissible.</p>
 
-**Exemple**: Vin = 12V, Vout = 5V, Iload = 2A, fsw = 100kHz, ΔIL = 0.4A
+<p><strong>Exemple</strong>: V<sub>in</sub> = 12V, V<sub>out</sub> = 5V, I<sub>load</sub> = 2A, f<sub>sw</sub> = 100kHz, ΔI<sub>L</sub> = 0.4A</p>
 
-α = 5/12 = 0.417
+<p>α = 5/12 = 0.417</p>
 
-L > ((1-0.417) × 5) / (2 × 100000 × 0.4) = 36.4 µH
+<p>L &gt; ((1-0.417) × 5) / (2 × 100000 × 0.4) = 36.4 µH</p>
 
-On choisit L = 47 µH (valeur normalisée).
+<p>On choisit L = 47 µH (valeur normalisée).</p>
 
-**Dimensionnement du condensateur**:
+<p><strong>Dimensionnement du condensateur</strong>:</p>
 
-C > ΔIL / (8 × fsw × ΔVout)
+<p>C &gt; ΔI<sub>L</sub> / (8 × f<sub>sw</sub> × ΔV<sub>out</sub>)</p>
 
-**Hacheur boost (élévateur)**:
+<p><strong>Hacheur boost (élévateur)</strong>:</p>
 
-```
-                [L]
+<pre><code>                [L]
 Vin ---[===]---+--[D]---+--- Vout
                              |        |
                      [MOSFET]    [C]  RL
                              |        |
                             GND------GND
-```
+</code></pre>
 
-**Tension de sortie**:
+<p><strong>Tension de sortie</strong>:</p>
 
-Vout = Vin / (1 - α)
+<p>V<sub>out</sub> = V<sub>in</sub> / (1 - α)</p>
 
-Pour α = 0.5: Vout = 2 × Vin
+<p>Pour α = 0.5: V<sub>out</sub> = 2 × V<sub>in</sub></p>
 
-**Limitation**: α ne peut pas atteindre 1 (théoriquement Vout → ∞)
+<p><strong>Limitation</strong>: α ne peut pas atteindre 1 (théoriquement V<sub>out</sub> → ∞)</p>
 
-**Applications**: PFC (Power Factor Correction), panneaux solaires, boost pour LED.
+<p><strong>Applications</strong>: PFC (Power Factor Correction), panneaux solaires, boost pour LED.</p>
 
-**Hacheur buck-boost (inverseur)**:
+<p><strong>Hacheur buck-boost (inverseur)</strong>:</p>
 
-Vout = -(α / (1-α)) × Vin
+<p>V<sub>out</sub> = -(α / (1-α)) × V<sub>in</sub></p>
 
-Permet d'obtenir une tension de sortie de polarité inverse.
+<p>Permet d'obtenir une tension de sortie de polarité inverse.</p>
 
-**Rendement des hacheurs**:
+<p><strong>Rendement des hacheurs</strong>:</p>
 
-η = Pout / Pin = (Vout × Iout) / (Vin × Iin)
+<p>η = P<sub>out</sub> / P<sub>in</sub> = (V<sub>out</sub> × I<sub>out</sub>) / (V<sub>in</sub> × I<sub>in</sub>)</p>
 
-Typiquement: η = 85-95% selon la conception.
+<p>Typiquement: η = 85-95% selon la conception.</p>
 
-**Pertes**:
-- Conduction: RDS(on) × I²
-- Commutation: proportionnelle à fsw
-- Inductance: résistance série (ESR)
-- Diode: VF × I
+<p><strong>Pertes</strong>:</p>
+<ul>
+<li>Conduction: R<sub>DS(on)</sub> × I²</li>
+<li>Commutation: proportionnelle à f<sub>sw</sub></li>
+<li>Inductance: résistance série (ESR)</li>
+<li>Diode: V<sub>F</sub> × I</li>
+</ul>
 
-##### C. Onduleurs (DC → AC)
+<h5>C. Onduleurs (DC → AC)</h5>
 
-**Onduleur monophasé en pont (H-bridge)**:
+<p><strong>Onduleur monophasé en pont (H-bridge)</strong>:</p>
 
-```
-                Q1        Q3
+<pre><code>                Q1        Q3
         +---|  |--+--|  |--+
         |         |       |
 VDC =        Load     ~VAC
         |         |       |
         +---|  |--+--|  |--+
                 Q2        Q4
-```
+</code></pre>
 
-**Commande complémentaire**:
-- Q1, Q4 ON → Vload = +VDC
-- Q2, Q3 ON → Vload = -VDC
+<p><strong>Commande complémentaire</strong>:</p>
+<ul>
+<li>Q1, Q4 ON → V<sub>load</sub> = +V<sub>DC</sub></li>
+<li>Q2, Q3 ON → V<sub>load</sub> = -V<sub>DC</sub></li>
+</ul>
 
-**MLI (Modulation de Largeur d'Impulsion) / PWM**:
+<p><strong>MLI (Modulation de Largeur d'Impulsion) / PWM</strong>:</p>
 
-Comparaison d'une sinusoïde de référence Vref avec une porteuse triangulaire à fréquence fsw élevée.
+<p>Comparaison d'une sinusoïde de référence V<sub>ref</sub> avec une porteuse triangulaire à fréquence f<sub>sw</sub> élevée.</p>
 
-**Indice de modulation**:
+<p><strong>Indice de modulation</strong>:</p>
 
-m = Vref(peak) / Vtri(peak)
+<p>m = V<sub>ref(peak)</sub> / V<sub>tri(peak)</sub></p>
 
-**Tension efficace fondamentale**:
+<p><strong>Tension efficace fondamentale</strong>:</p>
 
-VAC(RMS) = (m × VDC) / √2
+<p>V<sub>AC(RMS)</sub> = (m × V<sub>DC</sub>) / √2</p>
 
-Pour m = 1 (pleine modulation):
+<p>Pour m = 1 (pleine modulation):</p>
 
-VAC(RMS) = 0.707 × VDC
+<p>V<sub>AC(RMS)</sub> = 0.707 × V<sub>DC</sub></p>
 
-**Taux de distorsion harmonique (THD)**:
+<p><strong>Taux de distorsion harmonique (THD)</strong>:</p>
 
-THD = (√(somme des Vn² pour n≥2) / V1) × 100%
+<p>THD = (√(somme des V<sub>n</sub>² pour n≥2) / V<sub>1</sub>) × 100%</p>
 
-La MLI permet de réduire le THD (typiquement <5% avec MLI sinusoïdale).
+<p>La MLI permet de réduire le THD (typiquement &lt;5% avec MLI sinusoïdale).</p>
 
-**Onduleur triphasé**:
+<p><strong>Onduleur triphasé</strong>:</p>
 
-3 bras (6 transistors) pour générer un système triphasé équilibré.
+<p>3 bras (6 transistors) pour générer un système triphasé équilibré.</p>
 
-**Applications**:
-- Variateurs de vitesse pour moteurs AC
-- Onduleurs solaires (photovoltaïque)
-- ASI (Alimentation Sans Interruption / UPS)
-- Traction électrique (trains, voitures électriques)
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>Variateurs de vitesse pour moteurs AC</li>
+<li>Onduleurs solaires (photovoltaïque)</li>
+<li>ASI (Alimentation Sans Interruption / UPS)</li>
+<li>Traction électrique (trains, voitures électriques)</li>
+</ul>
 
-#### 3. Aspects Thermiques et Pratiques
+<h4>3. Aspects Thermiques et Pratiques</h4>
 
-##### A. Gestion Thermique
+<h5>A. Gestion Thermique</h5>
 
-**Modèle thermique**:
+<p><strong>Modèle thermique</strong>:</p>
 
-La thermique des semiconducteurs suit une analogie électrique:
-- **Flux thermique** P (W) ↔ Courant I
-- **Température** T (°C) ↔ Tension V
-- **Résistance thermique** Rth (°C/W) ↔ Résistance R
+<p>La thermique des semiconducteurs suit une analogie électrique:</p>
+<ul>
+<li><strong>Flux thermique</strong> P (W) ↔ Courant I</li>
+<li><strong>Température</strong> T (°C) ↔ Tension V</li>
+<li><strong>Résistance thermique</strong> R<sub>th</sub> (°C/W) ↔ Résistance R</li>
+</ul>
 
-**Loi d'Ohm thermique**:
+<p><strong>Loi d'Ohm thermique</strong>:</p>
 
-Tj - Ta = Rth(j-a) × Pd
+<p>T<sub>j</sub> - T<sub>a</sub> = R<sub>th(j-a)</sub> × P<sub>d</sub></p>
 
-où:
-- Tj: température de jonction (junction)
-- Ta: température ambiante (ambient)
-- Pd: puissance dissipée
-- Rth(j-a): résistance thermique jonction-ambiant
+<p>où:</p>
+<ul>
+<li>T<sub>j</sub>: température de jonction (junction)</li>
+<li>T<sub>a</sub>: température ambiante (ambient)</li>
+<li>P<sub>d</sub>: puissance dissipée</li>
+<li>R<sub>th(j-a)</sub>: résistance thermique jonction-ambiant</li>
+</ul>
 
-**Chaîne thermique complète**:
+<p><strong>Chaîne thermique complète</strong>:</p>
 
-Tj = Ta + (Rth(j-c) + Rth(c-h) + Rth(h-a)) × Pd
+<p>T<sub>j</sub> = T<sub>a</sub> + (R<sub>th(j-c)</sub> + R<sub>th(c-h)</sub> + R<sub>th(h-a)</sub>) × P<sub>d</sub></p>
 
-où:
-- Rth(j-c): jonction → boîtier (case), donnée dans la datasheet
-- Rth(c-h): boîtier → dissipateur (heatsink), dépend de l'interface (pâte thermique)
-- Rth(h-a): dissipateur → ambiant, à calculer/choisir
+<p>où:</p>
+<ul>
+<li>R<sub>th(j-c)</sub>: jonction → boîtier (case), donnée dans la datasheet</li>
+<li>R<sub>th(c-h)</sub>: boîtier → dissipateur (heatsink), dépend de l'interface (pâte thermique)</li>
+<li>R<sub>th(h-a)</sub>: dissipateur → ambiant, à calculer/choisir</li>
+</ul>
 
-**Température de jonction maximale**:
+<p><strong>Température de jonction maximale</strong>:</p>
 
-Typiquement: Tj(max) = 125-150°C pour les semiconducteurs de puissance.
+<p>Typiquement: T<sub>j(max)</sub> = 125-150°C pour les semiconducteurs de puissance.</p>
 
-**Calcul du dissipateur nécessaire**:
+<p><strong>Calcul du dissipateur nécessaire</strong>:</p>
 
-Rth(h-a) = (Tj(max) - Ta) / Pd - Rth(j-c) - Rth(c-h)
+<p>R<sub>th(h-a)</sub> = (T<sub>j(max)</sub> - T<sub>a</sub>) / P<sub>d</sub> - R<sub>th(j-c)</sub> - R<sub>th(c-h)</sub></p>
 
-**Exemple**: MOSFET dissipant Pd = 20W
-- Tj(max) = 150°C
-- Ta = 40°C (ambiant max)
-- Rth(j-c) = 1°C/W (datasheet)
-- Rth(c-h) = 0.5°C/W (interface avec pâte thermique)
+<p><strong>Exemple</strong>: MOSFET dissipant P<sub>d</sub> = 20W</p>
+<ul>
+<li>T<sub>j(max)</sub> = 150°C</li>
+<li>T<sub>a</sub> = 40°C (ambiant max)</li>
+<li>R<sub>th(j-c)</sub> = 1°C/W (datasheet)</li>
+<li>R<sub>th(c-h)</sub> = 0.5°C/W (interface avec pâte thermique)</li>
+</ul>
 
-Rth(h-a) = (150 - 40) / 20 - 1 - 0.5 = 5.5 - 1.5 = 4°C/W
+<p>R<sub>th(h-a)</sub> = (150 - 40) / 20 - 1 - 0.5 = 5.5 - 1.5 = 4°C/W</p>
 
-Il faut un dissipateur avec Rth(h-a) < 4°C/W (avec marge de sécurité: choisir 3°C/W).
+<p>Il faut un dissipateur avec R<sub>th(h-a)</sub> &lt; 4°C/W (avec marge de sécurité: choisir 3°C/W).</p>
 
-**Facteurs influençant Rth(h-a)**:
-- Surface du dissipateur
-- Forme (ailettes, profilé)
-- Matériau (aluminium: meilleur compromis coût/performance)
-- Ventilation forcée vs convection naturelle
+<p><strong>Facteurs influençant R<sub>th(h-a)</sub></strong>:</p>
+<ul>
+<li>Surface du dissipateur</li>
+<li>Forme (ailettes, profilé)</li>
+<li>Matériau (aluminium: meilleur compromis coût/performance)</li>
+<li>Ventilation forcée vs convection naturelle</li>
+</ul>
 
-**Avec ventilation forcée**:
+<p><strong>Avec ventilation forcée</strong>:</p>
 
-Rth(h-a) = Rth(natural) / k
+<p>R<sub>th(h-a)</sub> = R<sub>th(natural)</sub> / k</p>
 
-où k = 3-10 selon le débit d'air.
+<p>où k = 3-10 selon le débit d'air.</p>
 
-##### B. Protections
+<h5>B. Protections</h5>
 
-**Protection en surintensité**:
+<p><strong>Protection en surintensité</strong>:</p>
 
-- **Fusibles ultra-rapides** (aR): protection contre les courts-circuits
-    - Caractéristique I²t: énergie de fusion
-    - Coordination avec les semiconducteurs
-    
-- **Limitation par composant**:
-    - MOSFET: RDS(on) augmente avec T → limitation naturelle
-    - BJT/IGBT: nécessitent protection externe
+<ul>
+<li><strong>Fusibles ultra-rapides</strong> (aR): protection contre les courts-circuits
+    <ul>
+    <li>Caractéristique I²t: énergie de fusion</li>
+    <li>Coordination avec les semiconducteurs</li>
+    </ul>
+</li>
+<li><strong>Limitation par composant</strong>:
+    <ul>
+    <li>MOSFET: R<sub>DS(on)</sub> augmente avec T → limitation naturelle</li>
+    <li>BJT/IGBT: nécessitent protection externe</li>
+    </ul>
+</li>
+</ul>
 
-**Protection en surtension**:
+<p><strong>Protection en surtension</strong>:</p>
 
-- **Diodes transil (TVS)**: écrêtage des surtensions
-- **Varistances (VDR)**: protection réseau AC
-- **Snubbers**: circuits RC ou RCD pour limiter les dV/dt
+<ul>
+<li><strong>Diodes transil (TVS)</strong>: écrêtage des surtensions</li>
+<li><strong>Varistances (VDR)</strong>: protection réseau AC</li>
+<li><strong>Snubbers</strong>: circuits RC ou RCD pour limiter les dV/dt</li>
+</ul>
 
-**Circuit snubber RC**:
-```
-             R (10-100Ω)
+<p><strong>Circuit snubber RC</strong>:</p>
+<pre><code>             R (10-100Ω)
      +---/\/\/---+
      |           |
 Component     ===  C (10-100nF)
      |           |
      +-----------+
-```
+</code></pre>
 
-Rôle: absorber l'énergie inductive lors des commutations, protéger des surtensions.
+<p>Rôle: absorber l'énergie inductive lors des commutations, protéger des surtensions.</p>
 
-**Dimensionnement**:
+<p><strong>Dimensionnement</strong>:</p>
 
-C = (L × Imax²) / Vspike²
+<p>C = (L × I<sub>max</sub>²) / V<sub>spike</sub>²</p>
 
-où Vspike est la surtension admissible.
+<p>où V<sub>spike</sub> est la surtension admissible.</p>
 
-**Protection thermique**:
+<p><strong>Protection thermique</strong>:</p>
 
-- **Thermostat** sur dissipateur: coupure si T > Tmax
-- **Capteur intégré**: certains IGBT ont protection thermique interne
+<ul>
+<li><strong>Thermostat</strong> sur dissipateur: coupure si T &gt; T<sub>max</sub></li>
+<li><strong>Capteur intégré</strong>: certains IGBT ont protection thermique interne</li>
+</ul>
 
-##### C. Commande Rapprochée (Gate Drive)
+<h5>C. Commande Rapprochée (Gate Drive)</h5>
 
-**Driver de MOSFET/IGBT**:
+<p><strong>Driver de MOSFET/IGBT</strong>:</p>
 
-**Caractéristiques nécessaires**:
-- Tension de grille: typiquement VGS = 10-15V pour MOSFET, VGE = 15V pour IGBT
-- Courant de grille: IG = Qg / trise (plusieurs ampères pendant les transitoires)
-- Isolation galvanique: nécessaire pour les bras de pont (high-side)
+<p><strong>Caractéristiques nécessaires</strong>:</p>
+<ul>
+<li>Tension de grille: typiquement V<sub>GS</sub> = 10-15V pour MOSFET, V<sub>GE</sub> = 15V pour IGBT</li>
+<li>Courant de grille: I<sub>G</sub> = Q<sub>g</sub> / t<sub>rise</sub> (plusieurs ampères pendant les transitoires)</li>
+<li>Isolation galvanique: nécessaire pour les bras de pont (high-side)</li>
+</ul>
 
-**Circuit de commande**:
+<p><strong>Circuit de commande</strong>:</p>
 
-```
-Signal PWM → [Optocoupleur] → [Driver IC] → Gate MOSFET
+<pre><code>Signal PWM → [Optocoupleur] → [Driver IC] → Gate MOSFET
                                                                      ↑
                                                                 Alim isolée
-```
+</code></pre>
 
-**Drivers IC populaires**:
-- IR2110, IR2184 (International Rectifier): half-bridge, bootstrap
-- TLP250: optocoupleur + driver pour IGBT
-- UCC27321: driver bas coût pour MOSFET
+<p><strong>Drivers IC populaires</strong>:</p>
+<ul>
+<li>IR2110, IR2184 (International Rectifier): half-bridge, bootstrap</li>
+<li>TLP250: optocoupleur + driver pour IGBT</li>
+<li>UCC27321: driver bas coût pour MOSFET</li>
+</ul>
 
-**Bootstrap**:
+<p><strong>Bootstrap</strong>:</p>
 
-Technique pour alimenter le driver high-side avec une simple diode et condensateur:
+<p>Technique pour alimenter le driver high-side avec une simple diode et condensateur:</p>
 
-```
-                Vcc
+<pre><code>                Vcc
                  |
                 [D]
                  |
         [Cboot]---[Driver]---Gate High-Side
                  |                    |
         Midpoint----------------Source
-```
+</code></pre>
 
-Lors de la phase low-side ON, le condensateur Cboot se charge. Il alimente ensuite le driver high-side.
+<p>Lors de la phase low-side ON, le condensateur C<sub>boot</sub> se charge. Il alimente ensuite le driver high-side.</p>
 
-**Dimensionnement**:
+<p><strong>Dimensionnement</strong>:</p>
 
-Cboot > (Qg × (1 + fmax/fmin)) / (Vboot(min) - VGS)
+<p>C<sub>boot</sub> &gt; (Q<sub>g</sub> × (1 + f<sub>max</sub>/f<sub>min</sub>)) / (V<sub>boot(min)</sub> - V<sub>GS</sub>)</p>
 
-**Résistance de grille**:
+<p><strong>Résistance de grille</strong>:</p>
 
-Rg = (Vdriver - VGS(th)) / IG(peak)
+<p>R<sub>g</sub> = (V<sub>driver</sub> - V<sub>GS(th)</sub>) / I<sub>G(peak)</sub></p>
 
-Compromis:
-- Rg faible: commutation rapide, mais surtensions (dV/dt, dI/dt élevés), oscillations
-- Rg élevée: commutation lente, pertes accrues
+<p>Compromis:</p>
+<ul>
+<li>R<sub>g</sub> faible: commutation rapide, mais surtensions (dV/dt, dI/dt élevés), oscillations</li>
+<li>R<sub>g</sub> élevée: commutation lente, pertes accrues</li>
+</ul>
 
-Typiquement: Rg = 10-100Ω
+<p>Typiquement: R<sub>g</sub> = 10-100Ω</p>
 
-##### D. CEM et Filtrage
+<h5>D. CEM et Filtrage</h5>
 
-**Perturbations en électronique de puissance**:
+<p><strong>Perturbations en électronique de puissance</strong>:</p>
 
-- **Conduites**: par les câbles d'alimentation
-- **Rayonnées**: par les boucles de courant à haute fréquence
+<ul>
+<li><strong>Conduites</strong>: par les câbles d'alimentation</li>
+<li><strong>Rayonnées</strong>: par les boucles de courant à haute fréquence</li>
+</ul>
 
-**Normes**:
-- EN 55022 (CISPR 22): équipements IT
-- EN 61000-6-3: environnement résidentiel
-- Limites en dBµV pour différentes bandes de fréquence
+<p><strong>Normes</strong>:</p>
+<ul>
+<li>EN 55022 (CISPR 22): équipements IT</li>
+<li>EN 61000-6-3: environnement résidentiel</li>
+<li>Limites en dBµV pour différentes bandes de fréquence</li>
+</ul>
 
-**Filtrage CEM**:
+<p><strong>Filtrage CEM</strong>:</p>
 
-**Filtre d'entrée AC**:
-```
-Phase ----[Cx]----[Lcm]----+---- Vers redresseur
+<p><strong>Filtre d'entrée AC</strong>:</p>
+<pre><code>Phase ----[Cx]----[Lcm]----+---- Vers redresseur
                                     [Lcm]    |
 Neutre ---[Cx]-------------+
                                                         |
 Terre --------[Cy]----[Cy]--+
-```
+</code></pre>
 
-- **Cx**: condensateurs X (entre phase et neutre) - mode différentiel
-- **Cy**: condensateurs Y (vers terre) - mode commun
-- **Lcm**: inductances de mode commun (sur tore)
+<ul>
+<li><strong>Cx</strong>: condensateurs X (entre phase et neutre) - mode différentiel</li>
+<li><strong>Cy</strong>: condensateurs Y (vers terre) - mode commun</li>
+<li><strong>Lcm</strong>: inductances de mode commun (sur tore)</li>
+</ul>
 
-**Fréquence de coupure**:
+<p><strong>Fréquence de coupure</strong>:</p>
 
-fc = 1 / (2π × √(L × C))
+<p>f<sub>c</sub> = 1 / (2π × √(L × C))</p>
 
-Typiquement: fc = 10-50kHz pour un filtre d'entrée réseau.
+<p>Typiquement: f<sub>c</sub> = 10-50kHz pour un filtre d'entrée réseau.</p>
 
----
+<hr/>
 
-## PART C: ASPECTS TECHNIQUES
+<h2>PART C: ASPECTS TECHNIQUES</h2>
 
-### Exercices de TD
+<h3>Exercices de TD</h3>
 
-#### TD1: Dimensionnement de composants
+<h4>TD1: Dimensionnement de composants</h4>
 
-**Exercice type**: Dimensionner les composants d'un redresseur double alternance pour une alimentation 5V/10A.
+<p><strong>Exercice type</strong>: Dimensionner les composants d'un redresseur double alternance pour une alimentation 5V/10A.</p>
 
-**Données**:
-- Réseau: 230V AC, 50Hz
-- Sortie: 5V DC, 10A
-- Ondulation admissible: 5%
+<p><strong>Données</strong>:</p>
+<ul>
+<li>Réseau: 230V AC, 50Hz</li>
+<li>Sortie: 5V DC, 10A</li>
+<li>Ondulation admissible: 5%</li>
+</ul>
 
-**1. Transformateur**:
+<p><strong>1. Transformateur</strong>:</p>
 
-Rapport de transformation pour obtenir ~5V en sortie après redressement:
+<p>Rapport de transformation pour obtenir ~5V en sortie après redressement:</p>
 
-V2(RMS) = Vout / 0.637 = 5 / 0.637 ≈ 7.85V
+<p>V<sub>2(RMS)</sub> = V<sub>out</sub> / 0.637 = 5 / 0.637 ≈ 7.85V</p>
 
-Avec marge et pertes: V2(RMS) = 9V
+<p>Avec marge et pertes: V<sub>2(RMS)</sub> = 9V</p>
 
-Courant secondaire: I2 = 10A (nominal) + marge 20% = 12A
+<p>Courant secondaire: I<sub>2</sub> = 10A (nominal) + marge 20% = 12A</p>
 
-**Puissance apparente**:
+<p><strong>Puissance apparente</strong>:</p>
 
-S = V2 × I2 = 9 × 12 = 108 VA
+<p>S = V<sub>2</sub> × I<sub>2</sub> = 9 × 12 = 108 VA</p>
 
-**2. Diodes**:
+<p><strong>2. Diodes</strong>:</p>
 
-Courant moyen par diode (pont complet):
+<p>Courant moyen par diode (pont complet):</p>
 
-IF(AV) = Iload / 2 = 10 / 2 = 5A
+<p>I<sub>F(AV)</sub> = I<sub>load</sub> / 2 = 10 / 2 = 5A</p>
 
-Courant efficace:
+<p>Courant efficace:</p>
 
-IF(RMS) = Iload / √2 = 7.07A
+<p>I<sub>F(RMS)</sub> = I<sub>load</sub> / √2 = 7.07A</p>
 
-Tension inverse maximale:
+<p>Tension inverse maximale:</p>
 
-VRRM > √2 × V2 = 1.414 × 9 = 12.7V
+<p>V<sub>RRM</sub> &gt; √2 × V<sub>2</sub> = 1.414 × 9 = 12.7V</p>
 
-**Choix**: diode 1N5402 (3A, 200V) en parallèle ou diode Schottky MBR20100 (20A, 100V)
+<p><strong>Choix</strong>: diode 1N5402 (3A, 200V) en parallèle ou diode Schottky MBR20100 (20A, 100V)</p>
 
-**3. Condensateur de filtrage**:
+<p><strong>3. Condensateur de filtrage</strong>:</p>
 
-C = Iload / (2 × f × δ × Vout) = 10 / (2 × 50 × 0.05 × 5) = 4000 µF
+<p>C = I<sub>load</sub> / (2 × f × δ × V<sub>out</sub>) = 10 / (2 × 50 × 0.05 × 5) = 4000 µF</p>
 
-**Choix**: condensateur électrolytique 4700µF / 16V (valeur standard supérieure)
+<p><strong>Choix</strong>: condensateur électrolytique 4700µF / 16V (valeur standard supérieure)</p>
 
-**Tension efficace sur le condensateur** (ripple):
+<p><strong>Tension efficace sur le condensateur</strong> (ripple):</p>
 
-Vripple(RMS) = δ × Vout = 0.05 × 5 = 0.25V
+<p>V<sub>ripple(RMS)</sub> = δ × V<sub>out</sub> = 0.05 × 5 = 0.25V</p>
 
-**Courant efficace**:
+<p><strong>Courant efficace</strong>:</p>
 
-IC(RMS) = Iload × √(π²/3 - 2) ≈ 0.5 × Iload = 5A
+<p>I<sub>C(RMS)</sub> = I<sub>load</sub> × √(π²/3 - 2) ≈ 0.5 × I<sub>load</sub> = 5A</p>
 
-Vérifier que le condensateur supporte ce courant (ESR suffisamment faible).
+<p>Vérifier que le condensateur supporte ce courant (ESR suffisamment faible).</p>
 
-#### TD2: Hacheur Buck
+<h4>TD2: Hacheur Buck</h4>
 
-**Exercice**: Concevoir un hacheur Buck Vin = 24V → Vout = 12V, Iload = 5A, fsw = 50kHz
+<p><strong>Exercice</strong>: Concevoir un hacheur Buck V<sub>in</sub> = 24V → V<sub>out</sub> = 12V, I<sub>load</sub> = 5A, f<sub>sw</sub> = 50kHz</p>
 
-**1. Rapport cyclique**:
+<p><strong>1. Rapport cyclique</strong>:</p>
 
-α = Vout / Vin = 12 / 24 = 0.5
+<p>α = V<sub>out</sub> / V<sub>in</sub> = 12 / 24 = 0.5</p>
 
-**2. Inductance**:
+<p><strong>2. Inductance</strong>:</p>
 
-Pour ΔIL = 20% de Iload: ΔIL = 1A
+<p>Pour ΔI<sub>L</sub> = 20% de I<sub>load</sub>: ΔI<sub>L</sub> = 1A</p>
 
-L = ((Vin - Vout) × α) / (fsw × ΔIL) = ((24-12) × 0.5) / (50000 × 1) = 120 µH
+<p>L = ((V<sub>in</sub> - V<sub>out</sub>) × α) / (f<sub>sw</sub> × ΔI<sub>L</sub>) = ((24-12) × 0.5) / (50000 × 1) = 120 µH</p>
 
-**Choix**: L = 150 µH, courant de saturation Isat > 6A
+<p><strong>Choix</strong>: L = 150 µH, courant de saturation I<sub>sat</sub> &gt; 6A</p>
 
-**3. Condensateur de sortie**:
+<p><strong>3. Condensateur de sortie</strong>:</p>
 
-C = ΔIL / (8 × fsw × ΔVout)
+<p>C = ΔI<sub>L</sub> / (8 × f<sub>sw</sub> × ΔV<sub>out</sub>)</p>
 
-Pour ΔVout = 1% de 12V = 0.12V:
+<p>Pour ΔV<sub>out</sub> = 1% de 12V = 0.12V:</p>
 
-C = 1 / (8 × 50000 × 0.12) = 208 µF
+<p>C = 1 / (8 × 50000 × 0.12) = 208 µF</p>
 
-**Choix**: C = 220 µF / 25V (céramique) ou 330µF / 25V (électrolytique faible ESR)
+<p><strong>Choix</strong>: C = 220 µF / 25V (céramique) ou 330µF / 25V (électrolytique faible ESR)</p>
 
-**4. MOSFET**:
+<p><strong>4. MOSFET</strong>:</p>
 
-Courant: ID > Iload + ΔIL/2 = 5.5A → **choisir 10A** (facteur 2)
+<p>Courant: I<sub>D</sub> &gt; I<sub>load</sub> + ΔI<sub>L</sub>/2 = 5.5A → <strong>choisir 10A</strong> (facteur 2)</p>
 
-Tension: VDS > Vin → **choisir 40-60V**
+<p>Tension: V<sub>DS</sub> &gt; V<sub>in</sub> → <strong>choisir 40-60V</strong></p>
 
-Exemple: IRFZ44N (55V, 49A, RDS(on) = 17.5mΩ)
+<p>Exemple: IRFZ44N (55V, 49A, R<sub>DS(on)</sub> = 17.5mΩ)</p>
 
-**Pertes en conduction**:
+<p><strong>Pertes en conduction</strong>:</p>
 
-Pcond = RDS(on) × ID(RMS)² = 0.0175 × 5² = 0.44W
+<p>P<sub>cond</sub> = R<sub>DS(on)</sub> × I<sub>D(RMS)</sub>² = 0.0175 × 5² = 0.44W</p>
 
-**Pertes en commutation** (estimation):
+<p><strong>Pertes en commutation</strong> (estimation):</p>
 
-Psw ≈ (Vin × ID × (tr + tf) × fsw) / 6
+<p>P<sub>sw</sub> ≈ (V<sub>in</sub> × I<sub>D</sub> × (t<sub>r</sub> + t<sub>f</sub>) × f<sub>sw</sub>) / 6</p>
 
-Pour tr + tf ≈ 100ns:
+<p>Pour t<sub>r</sub> + t<sub>f</sub> ≈ 100ns:</p>
 
-Psw = (24 × 5 × 100 × 10⁻⁹ × 50000) / 6 ≈ 1W
+<p>P<sub>sw</sub> = (24 × 5 × 100 × 10⁻⁹ × 50000) / 6 ≈ 1W</p>
 
-**Puissance totale dissipée**: Pd = 0.44 + 1 = 1.44W
+<p><strong>Puissance totale dissipée</strong>: P<sub>d</sub> = 0.44 + 1 = 1.44W</p>
 
-**5. Diode de roue libre**:
+<p><strong>5. Diode de roue libre</strong>:</p>
 
-Courant moyen: IF(AV) = (1-α) × Iload = 0.5 × 5 = 2.5A
+<p>Courant moyen: I<sub>F(AV)</sub> = (1-α) × I<sub>load</sub> = 0.5 × 5 = 2.5A</p>
 
-Tension inverse: VRRM > Vin = 24V → **choisir 40-60V**
+<p>Tension inverse: V<sub>RRM</sub> &gt; V<sub>in</sub> = 24V → <strong>choisir 40-60V</strong></p>
 
-Diode Schottky: MBR2045 (20A, 45V, VF = 0.5V)
+<p>Diode Schottky: MBR2045 (20A, 45V, V<sub>F</sub> = 0.5V)</p>
 
-**Pertes dans la diode**:
+<p><strong>Pertes dans la diode</strong>:</p>
 
-Pdiode = VF × IF(AV) = 0.5 × 2.5 = 1.25W
+<p>P<sub>diode</sub> = V<sub>F</sub> × I<sub>F(AV)</sub> = 0.5 × 2.5 = 1.25W</p>
 
-**6. Rendement**:
+<p><strong>6. Rendement</strong>:</p>
 
-Pout = Vout × Iload = 12 × 5 = 60W
+<p>P<sub>out</sub> = V<sub>out</sub> × I<sub>load</sub> = 12 × 5 = 60W</p>
 
-Plosses = PMOSFET + Pdiode + PL = 1.44 + 1.25 + 0.5 = 3.19W
+<p>P<sub>losses</sub> = P<sub>MOSFET</sub> + P<sub>diode</sub> + P<sub>L</sub> = 1.44 + 1.25 + 0.5 = 3.19W</p>
 
-η = Pout / (Pout + Plosses) = 60 / 63.19 = 95%
+<p>η = P<sub>out</sub> / (P<sub>out</sub> + P<sub>losses</sub>) = 60 / 63.19 = 95%</p>
 
-#### TD3: Dimensionnement thermique
+<h4>TD3: Dimensionnement thermique</h4>
 
-**Exercice**: Un IGBT dissipe 50W dans un environnement à Ta = 50°C.
+<p><strong>Exercice</strong>: Un IGBT dissipe 50W dans un environnement à T<sub>a</sub> = 50°C.</p>
 
-**Données**:
-- Tj(max) = 150°C
-- Rth(j-c) = 0.5°C/W
-- Rth(c-h) = 0.2°C/W (interface thermique)
+<p><strong>Données</strong>:</p>
+<ul>
+<li>T<sub>j(max)</sub> = 150°C</li>
+<li>R<sub>th(j-c)</sub> = 0.5°C/W</li>
+<li>R<sub>th(c-h)</sub> = 0.2°C/W (interface thermique)</li>
+</ul>
 
-**Calculer le dissipateur nécessaire avec une marge de sécurité de 20°C**.
+<p><strong>Calculer le dissipateur nécessaire avec une marge de sécurité de 20°C</strong>.</p>
 
-**Solution**:
+<p><strong>Solution</strong>:</p>
 
-Température de jonction cible:
+<p>Température de jonction cible:</p>
 
-Tj = Tj(max) - marge = 150 - 20 = 130°C
+<p>T<sub>j</sub> = T<sub>j(max)</sub> - marge = 150 - 20 = 130°C</p>
 
-Résistance thermique totale admissible:
+<p>Résistance thermique totale admissible:</p>
 
-Rth(j-a) = (Tj - Ta) / Pd = (130 - 50) / 50 = 1.6°C/W
+<p>R<sub>th(j-a)</sub> = (T<sub>j</sub> - T<sub>a</sub>) / P<sub>d</sub> = (130 - 50) / 50 = 1.6°C/W</p>
 
-Résistance thermique du dissipateur:
+<p>Résistance thermique du dissipateur:</p>
 
-Rth(h-a) = Rth(j-a) - Rth(j-c) - Rth(c-h) = 1.6 - 0.5 - 0.2 = 0.9°C/W
+<p>R<sub>th(h-a)</sub> = R<sub>th(j-a)</sub> - R<sub>th(j-c)</sub> - R<sub>th(c-h)</sub> = 1.6 - 0.5 - 0.2 = 0.9°C/W</p>
 
-**Interprétation**:
+<p><strong>Interprétation</strong>:</p>
 
-Rth(h-a) = 0.9°C/W est très faible:
-- Convection naturelle: dissipateurs avec Rth > 2°C/W généralement
-- **Nécessite ventilation forcée** ou dissipateur très volumineux
+<p>R<sub>th(h-a)</sub> = 0.9°C/W est très faible:</p>
+<ul>
+<li>Convection naturelle: dissipateurs avec R<sub>th</sub> &gt; 2°C/W généralement</li>
+<li><strong>Nécessite ventilation forcée</strong> ou dissipateur très volumineux</li>
+</ul>
 
-**Avec ventilateur** (débit 30 CFM):
+<p><strong>Avec ventilateur</strong> (débit 30 CFM):</p>
 
-Rth(h-a, forced) = Rth(natural) / 5 = 0.9 × 5 = 4.5°C/W
+<p>R<sub>th(h-a, forced)</sub> = R<sub>th(natural)</sub> / 5 = 0.9 × 5 = 4.5°C/W</p>
 
-Un dissipateur standard avec Rth = 4°C/W en convection naturelle devient suffisant avec ventilateur.
+<p>Un dissipateur standard avec R<sub>th</sub> = 4°C/W en convection naturelle devient suffisant avec ventilateur.</p>
 
-### Applications Pratiques
+<h3>Applications Pratiques</h3>
 
-**Alimentation à découpage (SMPS)**:
-- Buck pour abaissement de tension (chargeurs, régulateurs embarqués)
-- Flyback pour isolation galvanique (alimentations PC, LED drivers)
-- Forward pour puissances moyennes (télécoms)
+<p><strong>Alimentation à découpage (SMPS)</strong>:</p>
+<ul>
+<li>Buck pour abaissement de tension (chargeurs, régulateurs embarqués)</li>
+<li>Flyback pour isolation galvanique (alimentations PC, LED drivers)</li>
+<li>Forward pour puissances moyennes (télécoms)</li>
+</ul>
 
-**Variateurs de vitesse**:
-- Onduleur triphasé + MLI pour moteurs asynchrones
-- Contrôle vectoriel (FOC - Field Oriented Control)
-- Applications: pompes, ventilateurs, ascenseurs, traction
+<p><strong>Variateurs de vitesse</strong>:</p>
+<ul>
+<li>Onduleur triphasé + MLI pour moteurs asynchrones</li>
+<li>Contrôle vectoriel (FOC - Field Oriented Control)</li>
+<li>Applications: pompes, ventilateurs, ascenseurs, traction</li>
+</ul>
 
-**Énergie renouvelable**:
-- Onduleurs photovoltaïques (MPPT + injection réseau)
-- Hacheurs pour éoliennes
-- Convertisseurs bidirectionnels pour batteries
+<p><strong>Énergie renouvelable</strong>:</p>
+<ul>
+<li>Onduleurs photovoltaïques (MPPT + injection réseau)</li>
+<li>Hacheurs pour éoliennes</li>
+<li>Convertisseurs bidirectionnels pour batteries</li>
+</ul>
 
-**Automobile**:
-- Convertisseurs DC-DC (12V ↔ 48V, batterie haute tension)
-- Onduleurs pour moteurs électriques (VE)
-- Chargeurs embarqués (OBC - On-Board Charger)
+<p><strong>Automobile</strong>:</p>
+<ul>
+<li>Convertisseurs DC-DC (12V ↔ 48V, batterie haute tension)</li>
+<li>Onduleurs pour moteurs électriques (VE)</li>
+<li>Chargeurs embarqués (OBC - On-Board Charger)</li>
+</ul>
 
----
+<hr/>
 
-## PART D: ANALYSE ET RÉFLEXION
+<h2>PART D: ANALYSE ET RÉFLEXION</h2>
 
-### Connaissances et compétences mobilisées
+<h3>Connaissances et compétences mobilisées</h3>
 
-- **Semiconducteurs de puissance**: compréhension des caractéristiques et limitations des composants
-- **Conversion d'énergie**: maîtrise des topologies de base (redresseurs, hacheurs, onduleurs)
-- **Dimensionnement**: calculs de composants (inductances, condensateurs, dissipateurs)
-- **Thermique**: gestion de la dissipation thermique et calcul de résistances thermiques
-- **Protections**: conception de circuits de protection (snubbers, fusibles)
-- **Commande**: drivers de grille, isolation galvanique, PWM
+<ul>
+<li><strong>Semiconducteurs de puissance</strong>: compréhension des caractéristiques et limitations des composants</li>
+<li><strong>Conversion d'énergie</strong>: maîtrise des topologies de base (redresseurs, hacheurs, onduleurs)</li>
+<li><strong>Dimensionnement</strong>: calculs de composants (inductances, condensateurs, dissipateurs)</li>
+<li><strong>Thermique</strong>: gestion de la dissipation thermique et calcul de résistances thermiques</li>
+<li><strong>Protections</strong>: conception de circuits de protection (snubbers, fusibles)</li>
+<li><strong>Commande</strong>: drivers de grille, isolation galvanique, PWM</li>
+</ul>
 
-### Auto-évaluation
+<h3>Auto-évaluation</h3>
 
-Ce cours a été essentiel pour comprendre la gestion de l'énergie dans les systèmes électroniques.
+<p>Ce cours a été essentiel pour comprendre la gestion de l'énergie dans les systèmes électroniques.</p>
 
-**Points forts**:
-- **Vision globale**: des composants aux systèmes complets de conversion
-- **Approche pratique**: dimensionnement concret avec calculs d'application
-- **Thermique**: compréhension des limites réelles des composants
-- **Multidisciplinarité**: électronique + thermique + commande
+<p><strong>Points forts</strong>:</p>
+<ul>
+<li><strong>Vision globale</strong>: des composants aux systèmes complets de conversion</li>
+<li><strong>Approche pratique</strong>: dimensionnement concret avec calculs d'application</li>
+<li><strong>Thermique</strong>: compréhension des limites réelles des composants</li>
+<li><strong>Multidisciplinarité</strong>: électronique + thermique + commande</li>
+</ul>
 
-**Difficultés rencontrées**:
-- **Choix des composants**: nombreux critères (tension, courant, fréquence, thermique, coût)
-- **Compromis performances/pertes**: optimisation non triviale
-- **Aspects CEM**: parasites et perturbations difficiles à prévoir/simuler
+<p><strong>Difficultés rencontrées</strong>:</p>
+<ul>
+<li><strong>Choix des composants</strong>: nombreux critères (tension, courant, fréquence, thermique, coût)</li>
+<li><strong>Compromis performances/pertes</strong>: optimisation non triviale</li>
+<li><strong>Aspects CEM</strong>: parasites et perturbations difficiles à prévoir/simuler</li>
+</ul>
 
-**Applications pratiques**:
-- Dimensionnement d'alimentations à découpage
-- Compréhension des datasheets de semiconducteurs
-- Évaluation thermique de cartes électroniques
+<p><strong>Applications pratiques</strong>:</p>
+<ul>
+<li>Dimensionnement d'alimentations à découpage</li>
+<li>Compréhension des datasheets de semiconducteurs</li>
+<li>Évaluation thermique de cartes électroniques</li>
+</ul>
 
-### Mon opinion
+<h3>Mon opinion</h3>
 
-Ce cours est fondamental pour tout ingénieur en systèmes embarqués ou électronique de puissance.
+<p>Ce cours est fondamental pour tout ingénieur en systèmes embarqués ou électronique de puissance.</p>
 
-**Pourquoi ce cours est essentiel**:
+<p><strong>Pourquoi ce cours est essentiel</strong>:</p>
 
-1. **Efficacité énergétique**: enjeu majeur (IoT, véhicules électriques, data centers)
-2. **Omniprésence**: tous les systèmes ont besoin de conversion d'énergie
-3. **Compétence différenciante**: moins de compétitions sur ces sujets "durs" vs programmation
-4. **Complémentarité**: lie électronique analogique, numérique, et automatique
+<ol>
+<li><strong>Efficacité énergétique</strong>: enjeu majeur (IoT, véhicules électriques, data centers)</li>
+<li><strong>Omniprésence</strong>: tous les systèmes ont besoin de conversion d'énergie</li>
+<li><strong>Compétence différenciante</strong>: moins de compétitions sur ces sujets "durs" vs programmation</li>
+<li><strong>Complémentarité</strong>: lie électronique analogique, numérique, et automatique</li>
+</ol>
 
-**Connexions avec autres cours**:
-- **Électronique Analogique** (S5): bases sur les semiconducteurs (diodes, transistors)
-- **Architectures Analogiques** (S7): amplification et conditionnement de puissance
-- **Commande Numérique** (S8): MLI, contrôle de convertisseurs, MPPT
-- **Temps Réel** (S8): contraintes temporelles pour les boucles de régulation
+<p><strong>Connexions avec autres cours</strong>:</p>
+<ul>
+<li><strong>Électronique Analogique</strong> (S5): bases sur les semiconducteurs (diodes, transistors)</li>
+<li><strong>Architectures Analogiques</strong> (S7): amplification et conditionnement de puissance</li>
+<li><strong>Commande Numérique</strong> (S8): MLI, contrôle de convertisseurs, MPPT</li>
+<li><strong>Temps Réel</strong> (S8): contraintes temporelles pour les boucles de régulation</li>
+</ul>
 
-**Évolution technologique**:
+<p><strong>Évolution technologique</strong>:</p>
 
-Les défis actuels:
-- **GaN et SiC**: nouveaux semiconducteurs (> 600V, > 200kHz, < pertes)
-    - GaN: très haute fréquence (MHz), faible Qg, faible RDS(on)
-    - SiC: haute tension (>1200V), haute température (>175°C)
-- **Intégration**: modules de puissance complets (MOSFET + driver + protections)
-- **Contrôle numérique**: DSP/FPGA pour MLI avancée, contrôle adaptatif
-- **Bidirectionnalité**: V2G (Vehicle-to-Grid), stockage d'énergie
+<p>Les défis actuels:</p>
+<ul>
+<li><strong>GaN et SiC</strong>: nouveaux semiconducteurs (&gt; 600V, &gt; 200kHz, &lt; pertes)
+    <ul>
+    <li>GaN: très haute fréquence (MHz), faible Q<sub>g</sub>, faible R<sub>DS(on)</sub></li>
+    <li>SiC: haute tension (&gt;1200V), haute température (&gt;175°C)</li>
+    </ul>
+</li>
+<li><strong>Intégration</strong>: modules de puissance complets (MOSFET + driver + protections)</li>
+<li><strong>Contrôle numérique</strong>: DSP/FPGA pour MLI avancée, contrôle adaptatif</li>
+<li><strong>Bidirectionnalité</strong>: V2G (Vehicle-to-Grid), stockage d'énergie</li>
+</ul>
 
-**Applications émergentes**:
-- **Véhicules électriques**: OBC 11-22kW, onduleurs 100-300kW, DC-DC pour auxiliaires
-- **Chargeurs rapides**: 50-350kW (Supercharger Tesla, Ionity)
-- **Data centers**: alimentations redondantes, efficacité >95%
-- **Énergies renouvelables**: onduleurs PV résidentiels (3-10kW) et centrales (MW)
+<p><strong>Applications émergentes</strong>:</p>
+<ul>
+<li><strong>Véhicules électriques</strong>: OBC 11-22kW, onduleurs 100-300kW, DC-DC pour auxiliaires</li>
+<li><strong>Chargeurs rapides</strong>: 50-350kW (Supercharger Tesla, Ionity)</li>
+<li><strong>Data centers</strong>: alimentations redondantes, efficacité &gt;95%</li>
+<li><strong>Énergies renouvelables</strong>: onduleurs PV résidentiels (3-10kW) et centrales (MW)</li>
+</ul>
 
-**Tendances**:
+<p><strong>Tendances</strong>:</p>
 
-- **Miniaturisation**: augmentation des fréquences de découpage (GaN → MHz)
-- **Fiabilité**: électronique automobile (AEC-Q100), aéronautique (DO-254)
-- **Modularité**: convertisseurs parallèles, redondance
-- **Smart Grid**: onduleurs communicants, gestion de l'énergie
+<ul>
+<li><strong>Miniaturisation</strong>: augmentation des fréquences de découpage (GaN → MHz)</li>
+<li><strong>Fiabilité</strong>: électronique automobile (AEC-Q100), aéronautique (DO-254)</li>
+<li><strong>Modularité</strong>: convertisseurs parallèles, redondance</li>
+<li><strong>Smart Grid</strong>: onduleurs communicants, gestion de l'énergie</li>
+</ul>
 
-**Recommandations pour réussir**:
+<p><strong>Recommandations pour réussir</strong>:</p>
 
-1. **Comprendre les limitations**: chaque composant a des contraintes (SOA, thermique)
-2. **Toujours vérifier la thermique**: cause n°1 de défaillance
-3. **Utiliser les datasheets**: source d'information indispensable
-4. **Simuler**: LTspice, PSIM pour valider avant prototypage
-5. **Layout PCB critique**: boucles de courant courtes, découplage, masse
+<ol>
+<li><strong>Comprendre les limitations</strong>: chaque composant a des contraintes (SOA, thermique)</li>
+<li><strong>Toujours vérifier la thermique</strong>: cause n°1 de défaillance</li>
+<li><strong>Utiliser les datasheets</strong>: source d'information indispensable</li>
+<li><strong>Simuler</strong>: LTspice, PSIM pour valider avant prototypage</li>
+<li><strong>Layout PCB critique</strong>: boucles de courant courtes, découplage, masse</li>
+</ol>
 
-**Applications professionnelles**:
+<p><strong>Applications professionnelles</strong>:</p>
 
-Ces compétences sont recherchées dans:
-- **Automobile**: systèmes de traction, chargeurs, convertisseurs DC-DC
-- **Aéronautique/spatial**: alimentations haute fiabilité, convertisseurs 270V DC
-- **Énergie**: onduleurs solaires/éoliens, HVDC, smart grids
-- **Télécoms**: alimentations pour stations de base, PoE (Power over Ethernet)
-- **Industriel**: variateurs de vitesse, onduleurs de soudage, alimentations process
-- **Médical**: alimentations isolées, sécurité renforcée (IEC 60601)
+<p>Ces compétences sont recherchées dans:</p>
+<ul>
+<li><strong>Automobile</strong>: systèmes de traction, chargeurs, convertisseurs DC-DC</li>
+<li><strong>Aéronautique/spatial</strong>: alimentations haute fiabilité, convertisseurs 270V DC</li>
+<li><strong>Énergie</strong>: onduleurs solaires/éoliens, HVDC, smart grids</li>
+<li><strong>Télécoms</strong>: alimentations pour stations de base, PoE (Power over Ethernet)</li>
+<li><strong>Industriel</strong>: variateurs de vitesse, onduleurs de soudage, alimentations process</li>
+<li><strong>Médical</strong>: alimentations isolées, sécurité renforcée (IEC 60601)</li>
+</ul>
 
-**Aspects pratiques importants**:
+<p><strong>Aspects pratiques importants</strong>:</p>
 
-- **Sécurité**: isolation galvanique, respect des distances de fuite/ligne
-- **Normes**: CE (EN 60950, EN 62368), UL, CCC selon les marchés
-- **Tests**: essais de tenue en tension (hipot), courant de fuite, CEM
-- **Coût**: optimisation du BOM (Bill of Materials), composants standards vs custom
+<ul>
+<li><strong>Sécurité</strong>: isolation galvanique, respect des distances de fuite/ligne</li>
+<li><strong>Normes</strong>: CE (EN 60950, EN 62368), UL, CCC selon les marchés</li>
+<li><strong>Tests</strong>: essais de tenue en tension (hipot), courant de fuite, CEM</li>
+<li><strong>Coût</strong>: optimisation du BOM (Bill of Materials), composants standards vs custom</li>
+</ul>
 
-**Certification et normes**:
-- IPC-2221: design de PCB
-- IEC 61000: compatibilité électromagnétique
-- EN 60950 / EN 62368: sécurité des équipements IT
+<p><strong>Certification et normes</strong>:</p>
+<ul>
+<li>IPC-2221: design de PCB</li>
+<li>IEC 61000: compatibilité électromagnétique</li>
+<li>EN 60950 / EN 62368: sécurité des équipements IT</li>
+</ul>
 
-En conclusion, ce cours fournit les bases indispensables pour concevoir des systèmes de conversion d'énergie efficaces et fiables. La maîtrise des composants de puissance, des topologies de conversion, et de la gestion thermique est essentielle dans un contexte de transition énergétique et d'électrification croissante des systèmes.
+<p>En conclusion, ce cours fournit les bases indispensables pour concevoir des systèmes de conversion d'énergie efficaces et fiables. La maîtrise des composants de puissance, des topologies de conversion, et de la gestion thermique est essentielle dans un contexte de transition énergétique et d'électrification croissante des systèmes.</p>
 
----
+</div>
 
-<style>
-        body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
-                color: #333;
-                line-height: 1.6;
-        }
-        h2, h3, h4, h5 {
-                color: #2a7ae2;
-        }
-        p {
-                text-align: justify;
-        }
-        code {
-                background-color: #f5f5f5;
-                padding: 2px 6px;
-                border-radius: 3px;
-                font-family: 'Courier New', monospace;
-        }
-        pre {
-                background-color: #f5f5f5;
-                padding: 15px;
-                border-radius: 5px;
-                overflow-x: auto;
-        }
-        table {
-                border-collapse: collapse;
-                width: 100%;
-                margin: 20px 0;
-        }
-        th, td {
-                border: 1px solid #ddd;
-                padding: 12px;
-                text-align: left;
-        }
-        th {
-                background-color: #2a7ae2;
-                color: white;
-        }
-        tr:nth-child(even) {
-                background-color: #f9f9f9;
-        }
-</style>
+<!-- ========== ENGLISH VERSION ========== -->
+<div class="lang-en">
 
+<h1>⚡ Components and Power Electronics Fundamentals - S5</h1>
+
+<p><strong>Year</strong>: 2022-2023 (Semester 5)<br/>
+<strong>Credits</strong>: 3 ECTS<br/>
+<strong>Type</strong>: Power Electronics</p>
+
+<hr/>
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3>Course Objectives</h3>
+
+<p>The course "Components and Power Electronics Fundamentals" provides a foundational introduction to power electronics, a field essential for the conversion and management of electrical energy. It covers power semiconductor components (diodes, transistors, thyristors), their characteristics, their limitations, as well as conversion structures (rectifiers, choppers, inverters). This course is essential for understanding switched-mode power supplies, variable speed drives, renewable energy systems, and embedded electronics applications requiring efficient energy management.</p>
+
+<h3>Target Skills</h3>
+
+<ul>
+<li>Master the operation of power semiconductor components</li>
+<li>Analyze energy conversion circuits (AC-DC, DC-DC, DC-AC)</li>
+<li>Size power components (currents, voltages, thermal dissipation)</li>
+<li>Understand losses and calculate converter efficiency</li>
+<li>Design protection circuits and gate drive circuits</li>
+<li>Analyze thermal constraints and size heatsinks</li>
+<li>Apply safety rules in power electronics</li>
+</ul>
+
+<h3>Organization</h3>
+
+<ul>
+<li><strong>Contact hours</strong>: 30h (Lectures: 16h, Tutorials: 10h, Labs: 4h)</li>
+<li><strong>Assessment</strong>: 2 written exams (ACE 1: 40%, ACE 2: 40%) + Tutorials/Labs (20%)</li>
+<li><strong>Semester</strong>: 5 (2022-2023)</li>
+<li><strong>Prerequisites</strong>: Fundamental electronics, electrical circuits, passive components</li>
+</ul>
+
+<hr/>
+
+<h2>PART B: EXPERIENCE, CONTEXT AND FUNCTION</h2>
+
+<h3>Course Content</h3>
+
+<p>The course is structured around three main axes: components, conversion structures, and thermal/practical aspects.</p>
+
+<h4>1. Power Semiconductor Components</h4>
+
+<h5>A. Power Diodes</h5>
+
+<p><strong>PN Junction Diode</strong>:</p>
+
+<p>The power diode is the simplest component in power electronics. It behaves as a unidirectional switch (naturally commutated).</p>
+
+<p><strong>Main Characteristics</strong>:</p>
+<ul>
+<li><strong>Forward voltage</strong>: V<sub>F</sub> ≈ 0.7 - 1.5V depending on current</li>
+<li><strong>Average current</strong> I<sub>F(AV)</sub>: maximum continuous current</li>
+<li><strong>Surge current</strong> I<sub>FSM</sub>: temporary overload current</li>
+<li><strong>Maximum reverse voltage</strong> V<sub>RRM</sub> (Peak Repetitive Reverse Voltage)</li>
+<li><strong>Reverse recovery time</strong> t<sub>rr</sub>: switching time</li>
+</ul>
+
+<p><strong>Simplified Model</strong>:</p>
+<ul>
+<li><strong>On-state</strong> (ON): V<sub>D</sub> ≈ V<sub>F0</sub> + R<sub>D</sub> × I<sub>D</sub> where V<sub>F0</sub> is the threshold voltage (~0.7V) and R<sub>D</sub> the dynamic resistance</li>
+<li><strong>Off-state</strong> (OFF): I<sub>D</sub> ≈ 0, diode withstands V<sub>R</sub> in reverse</li>
+</ul>
+
+<p><strong>Reverse Recovery</strong>:</p>
+
+<p>During turn-off, the diode does not block instantaneously. There is a time t<sub>rr</sub> during which a reverse current I<sub>RR</sub> flows (evacuation of minority carriers).</p>
+
+<p>Q<sub>rr</sub> = (1/2) × I<sub>RR</sub> × t<sub>rr</sub></p>
+
+<p>where Q<sub>rr</sub> is the recovery charge.</p>
+
+<p><strong>Diode Losses</strong>:</p>
+<ul>
+<li><strong>Conduction losses</strong>: P<sub>cond</sub> = V<sub>F</sub> × I<sub>D(AV)</sub> + R<sub>D</sub> × I<sub>D(RMS)</sub>²</li>
+<li><strong>Switching losses</strong>: P<sub>sw</sub> = (1/2) × V<sub>R</sub> × I<sub>RR</sub> × t<sub>rr</sub> × f<sub>sw</sub></li>
+</ul>
+
+<p><strong>Fast Recovery Diodes</strong>:</p>
+<ul>
+<li>t<sub>rr</sub> &lt; 500 ns (vs several µs for standard diodes)</li>
+<li>Used in high-frequency converters (&gt;10 kHz)</li>
+<li>Reduced switching losses</li>
+</ul>
+
+<p><strong>Schottky Diodes</strong>:</p>
+<ul>
+<li>Metal-semiconductor junction (no reverse recovery)</li>
+<li>Lower V<sub>F</sub> (~0.3-0.5V) but limited V<sub>RRM</sub> (&lt;200V)</li>
+<li>Used in low voltage, high frequency</li>
+<li>Applications: switched-mode power supplies, synchronous rectification</li>
+</ul>
+
+<h5>B. Power Transistors</h5>
+
+<p><strong>Power Bipolar Junction Transistor (BJT)</strong>:</p>
+
+<p>The power BJT is current-driven.</p>
+
+<p><strong>Characteristics</strong>:</p>
+<ul>
+<li><strong>Current gain</strong> β: I<sub>C</sub> = β × I<sub>B</sub> (typically β = 10-50 in power applications)</li>
+<li><strong>Saturation voltage</strong> V<sub>CE(sat)</sub> ≈ 0.5 - 2V</li>
+<li><strong>Safe Operating Area</strong> (SOA): V<sub>CE</sub> vs I<sub>C</sub> limit</li>
+</ul>
+
+<p><strong>Saturation Conditions</strong>:</p>
+
+<p>I<sub>B</sub> &gt; I<sub>C</sub> / β</p>
+
+<p>In practice, I<sub>B</sub> = I<sub>C</sub> / (5-10) is used to ensure deep saturation.</p>
+
+<p><strong>Losses</strong>:</p>
+<ul>
+<li><strong>Conduction</strong>: P<sub>cond</sub> = V<sub>CE(sat)</sub> × I<sub>C</sub></li>
+<li><strong>Switching</strong>: P<sub>sw</sub> = (1/6) × V<sub>CE</sub> × I<sub>C</sub> × (t<sub>on</sub> + t<sub>off</sub>) × f<sub>sw</sub></li>
+</ul>
+
+<p><strong>BJT Disadvantages</strong>:</p>
+<ul>
+<li>Current-driven (high drive power required)</li>
+<li>Long switching times (µs)</li>
+<li>Risk of destruction in linear region (overheating)</li>
+</ul>
+
+<p><strong>Power MOSFET Transistor</strong>:</p>
+
+<p>The MOSFET is voltage-driven (insulated gate).</p>
+
+<p><strong>Main Characteristics</strong>:</p>
+<ul>
+<li><strong>On-state resistance</strong> R<sub>DS(on)</sub>: increases with rated voltage</li>
+<li><strong>Maximum Drain-Source voltage</strong> V<sub>DSS</sub></li>
+<li><strong>Maximum continuous current</strong> I<sub>D</sub></li>
+<li><strong>Parasitic capacitances</strong>: C<sub>gs</sub>, C<sub>gd</sub> (Miller), C<sub>ds</sub></li>
+<li><strong>Gate charge</strong> Q<sub>g</sub>: charge needed to switch</li>
+</ul>
+
+<p><strong>Saturation Equation</strong>:</p>
+
+<p>I<sub>D</sub> = K × (V<sub>GS</sub> - V<sub>th</sub>)²</p>
+
+<p>where V<sub>th</sub> is the threshold voltage (typically 2-4V).</p>
+
+<p><strong>Losses</strong>:</p>
+<ul>
+<li><strong>Conduction</strong>: P<sub>cond</sub> = R<sub>DS(on)</sub> × I<sub>D(RMS)</sub>²</li>
+<li><strong>Switching</strong>: related to parasitic capacitances<br/>
+    P<sub>sw</sub> = (1/2) × C<sub>oss</sub> × V<sub>DS</sub>² × f<sub>sw</sub> + V<sub>DS</sub> × I<sub>D</sub> × (t<sub>r</sub> + t<sub>f</sub>) × f<sub>sw</sub></li>
+</ul>
+
+<p><strong>MOSFET Advantages</strong>:</p>
+<ul>
+<li>Simple drive (voltage, no permanent current)</li>
+<li>Fast switching (ns)</li>
+<li>No charge storage phenomenon (unlike BJT)</li>
+<li>R<sub>DS(on)</sub> increases with temperature → natural current limiting</li>
+</ul>
+
+<p><strong>Internal Body Diode</strong>:</p>
+<p>The MOSFET has an intrinsic diode (body diode) between drain and source, usable for inductive applications.</p>
+
+<p><strong>IGBT Transistor (Insulated Gate Bipolar Transistor)</strong>:</p>
+
+<p>The IGBT combines the advantages of the MOSFET (voltage-driven) and the BJT (low voltage drop at high current).</p>
+
+<p><strong>Structure</strong>: MOSFET + BJT in Darlington configuration</p>
+
+<p><strong>Characteristics</strong>:</p>
+<ul>
+<li><strong>Saturation voltage</strong>: V<sub>CE(sat)</sub> ≈ 1.5 - 3V (independent of current)</li>
+<li><strong>Voltage-driven</strong> like the MOSFET</li>
+<li><strong>Switching time</strong>: intermediate (100-500 ns)</li>
+<li><strong>Maximum voltage</strong>: up to several kV</li>
+</ul>
+
+<p><strong>Equation</strong>:</p>
+
+<p>I<sub>C</sub> = g<sub>m</sub> × (V<sub>GE</sub> - V<sub>th</sub>)</p>
+
+<p>where g<sub>m</sub> is the transconductance.</p>
+
+<p><strong>Typical Applications</strong>:</p>
+<ul>
+<li>MOSFET: &lt;1kV, high frequency (&gt;100kHz), low R<sub>DS(on)</sub></li>
+<li>IGBT: &gt;600V, medium frequency (1-50kHz), high power</li>
+<li>BJT: obsolete (replaced by IGBT)</li>
+</ul>
+
+<p><strong>MOSFET vs IGBT Comparison</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Criterion</th><th>MOSFET</th><th>IGBT</th></tr>
+</thead>
+<tbody>
+<tr><td>Drive</td><td>Voltage</td><td>Voltage</td></tr>
+<tr><td>V max</td><td>&lt;1000V</td><td>&gt;6500V</td></tr>
+<tr><td>I max</td><td>&lt;500A</td><td>&gt;3000A</td></tr>
+<tr><td>Frequency</td><td>&gt;100kHz</td><td>&lt;50kHz</td></tr>
+<tr><td>P<sub>cond</sub></td><td>R<sub>DS(on)</sub> × I²</td><td>V<sub>CE(sat)</sub> × I</td></tr>
+<tr><td>Applications</td><td>SMPS, DC-DC</td><td>Drives, traction, wind</td></tr>
+</tbody>
+</table>
+
+<h5>C. Thyristors</h5>
+
+<p><strong>Thyristor (SCR - Silicon Controlled Rectifier)</strong>:</p>
+
+<p>The thyristor is a 4-layer component (PNPN) controlled at turn-on only.</p>
+
+<p><strong>Principle</strong>:</p>
+<ul>
+<li><strong>Turn-on</strong> (ON): current pulse on the gate I<sub>G</sub> &gt; I<sub>GT</sub></li>
+<li><strong>Latching</strong>: the thyristor remains on as long as I<sub>AK</sub> &gt; I<sub>H</sub> (holding current)</li>
+<li><strong>Turn-off</strong> (OFF): only by zeroing the current I<sub>AK</sub></li>
+</ul>
+
+<p><strong>Characteristics</strong>:</p>
+<ul>
+<li><strong>Forward voltage</strong>: V<sub>AK</sub> ≈ 1-2V in the on-state</li>
+<li><strong>Gate current</strong>: I<sub>GT</sub> = 20-200 mA</li>
+<li><strong>Holding current</strong>: I<sub>H</sub> ≈ 10-100 mA</li>
+<li><strong>dV/dt max</strong>: maximum voltage rise rate (risk of spurious triggering)</li>
+<li><strong>dI/dt max</strong>: maximum current rise rate at turn-on</li>
+</ul>
+
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Unidirectional control (turn-on only)</li>
+<li>Natural turn-off (requires current zeroing)</li>
+<li>Used mainly in AC (natural commutation)</li>
+</ul>
+
+<p><strong>TRIAC (TRIode for Alternating Current)</strong>:</p>
+
+<p>Bidirectional equivalent of the thyristor.</p>
+
+<p><strong>Structure</strong>: 2 anti-parallel thyristors</p>
+
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>AC dimmers (light dimmers)</li>
+<li>AC power control</li>
+<li>Limitation: low frequency (&lt;400Hz)</li>
+</ul>
+
+<p><strong>GTO (Gate Turn-Off Thyristor)</strong>:</p>
+
+<p>A thyristor that can be turned off by a negative gate pulse.</p>
+
+<p><strong>Characteristics</strong>:</p>
+<ul>
+<li>Controlled turn-off: I<sub>G</sub> &lt; -I<sub>GQ</sub> (high negative current, ~20% of I<sub>AK</sub>)</li>
+<li>High voltage (&gt;4kV)</li>
+<li>Applications: traction, high power</li>
+</ul>
+
+<p>Today, GTOs are replaced by IGBTs.</p>
+
+<h4>2. Energy Conversion Structures</h4>
+
+<h5>A. Rectifiers (AC → DC)</h5>
+
+<p><strong>Uncontrolled Rectification</strong>:</p>
+
+<p><strong>Half-wave rectifier</strong>:</p>
+<pre><code>                D1
+VAC ------&gt;|---+--- VDC
+                             |
+                            RL    C
+                             |    ||
+                            GND---+
+</code></pre>
+
+<p><strong>Average value</strong> (resistive load):</p>
+
+<p>V<sub>DC</sub> = V<sub>max</sub> / π ≈ 0.318 × V<sub>max</sub></p>
+
+<p><strong>RMS value</strong>:</p>
+
+<p>V<sub>RMS</sub> = V<sub>max</sub> / 2</p>
+
+<p><strong>Ripple factor</strong>: very high (100%)</p>
+
+<p><strong>Full-wave rectifier (Graetz bridge)</strong>:</p>
+<pre><code>             D1      D3
+     +---|&gt;|--+--|&gt;|--+
+     |        |       |
+VAC ~       RL      + VDC
+     |        |       |
+     +---|&gt;|--+--|&gt;|--+
+             D2      D4
+</code></pre>
+
+<p><strong>Average value</strong>:</p>
+
+<p>V<sub>DC</sub> = (2 × V<sub>max</sub>) / π ≈ 0.637 × V<sub>max</sub></p>
+
+<p>For V<sub>AC</sub> = 230V RMS:</p>
+
+<p>V<sub>DC</sub> = 0.637 × 230 × √2 ≈ 207V</p>
+
+<p><strong>With capacitive filtering</strong>:</p>
+
+<p>V<sub>DC</sub> ≈ V<sub>max</sub> - I<sub>load</sub> / (2 × f × C)</p>
+
+<p>where f is the mains frequency (50Hz in Europe).</p>
+
+<p><strong>Capacitor sizing</strong>:</p>
+
+<p>For a ripple factor δ:</p>
+
+<p>C = I<sub>load</sub> / (2 × f × δ × V<sub>DC</sub>)</p>
+
+<p><strong>Example</strong>: For I<sub>load</sub> = 2A, V<sub>DC</sub> = 200V, δ = 5%:</p>
+
+<p>C = 2 / (2 × 50 × 0.05 × 200) = 200 µF</p>
+
+<p><strong>Controlled Rectification (thyristors)</strong>:</p>
+
+<p>Thyristor rectifier with firing angle α.</p>
+
+<p><strong>Average value</strong>:</p>
+
+<p>V<sub>DC</sub> = (2 × V<sub>max</sub> / π) × cos(α)</p>
+
+<ul>
+<li>α = 0°: maximum V<sub>DC</sub> (same as diodes)</li>
+<li>α = 90°: V<sub>DC</sub> = 0</li>
+<li>α &gt; 90°: V<sub>DC</sub> &lt; 0 (inverter mode)</li>
+</ul>
+
+<p><strong>Applications</strong>: variable speed drives for DC motors, battery charging with control.</p>
+
+<h5>B. Choppers (DC → DC)</h5>
+
+<p>Choppers allow controlling DC voltage through high-frequency switching.</p>
+
+<p><strong>Buck Chopper (step-down)</strong>:</p>
+
+<pre><code>Vin --[MOSFET]--+--[L]--+-- Vout
+                                |       |
+                             [D]     [C]  RL
+                                |       |
+                             GND-----GND
+</code></pre>
+
+<p><strong>Principle</strong>:</p>
+<ul>
+<li>MOSFET ON during α × T: V<sub>L</sub> = V<sub>in</sub> - V<sub>out</sub>, L stores energy</li>
+<li>MOSFET OFF during (1-α) × T: diode conducts, L releases energy</li>
+</ul>
+
+<p><strong>Output voltage</strong>:</p>
+
+<p>V<sub>out</sub> = α × V<sub>in</sub></p>
+
+<p>where α is the duty cycle, 0 &lt; α &lt; 1.</p>
+
+<p><strong>Inductor sizing</strong>:</p>
+
+<p>For continuous conduction mode:</p>
+
+<p>L &gt; ((1-α) × V<sub>out</sub>) / (2 × f<sub>sw</sub> × ΔI<sub>L</sub>)</p>
+
+<p>where ΔI<sub>L</sub> is the allowable current ripple.</p>
+
+<p><strong>Example</strong>: V<sub>in</sub> = 12V, V<sub>out</sub> = 5V, I<sub>load</sub> = 2A, f<sub>sw</sub> = 100kHz, ΔI<sub>L</sub> = 0.4A</p>
+
+<p>α = 5/12 = 0.417</p>
+
+<p>L &gt; ((1-0.417) × 5) / (2 × 100000 × 0.4) = 36.4 µH</p>
+
+<p>We choose L = 47 µH (standard value).</p>
+
+<p><strong>Capacitor sizing</strong>:</p>
+
+<p>C &gt; ΔI<sub>L</sub> / (8 × f<sub>sw</sub> × ΔV<sub>out</sub>)</p>
+
+<p><strong>Boost Chopper (step-up)</strong>:</p>
+
+<pre><code>                [L]
+Vin ---[===]---+--[D]---+--- Vout
+                             |        |
+                     [MOSFET]    [C]  RL
+                             |        |
+                            GND------GND
+</code></pre>
+
+<p><strong>Output voltage</strong>:</p>
+
+<p>V<sub>out</sub> = V<sub>in</sub> / (1 - α)</p>
+
+<p>For α = 0.5: V<sub>out</sub> = 2 × V<sub>in</sub></p>
+
+<p><strong>Limitation</strong>: α cannot reach 1 (theoretically V<sub>out</sub> → ∞)</p>
+
+<p><strong>Applications</strong>: PFC (Power Factor Correction), solar panels, LED boost.</p>
+
+<p><strong>Buck-boost Chopper (inverting)</strong>:</p>
+
+<p>V<sub>out</sub> = -(α / (1-α)) × V<sub>in</sub></p>
+
+<p>Provides an output voltage with inverted polarity.</p>
+
+<p><strong>Chopper Efficiency</strong>:</p>
+
+<p>η = P<sub>out</sub> / P<sub>in</sub> = (V<sub>out</sub> × I<sub>out</sub>) / (V<sub>in</sub> × I<sub>in</sub>)</p>
+
+<p>Typically: η = 85-95% depending on design.</p>
+
+<p><strong>Losses</strong>:</p>
+<ul>
+<li>Conduction: R<sub>DS(on)</sub> × I²</li>
+<li>Switching: proportional to f<sub>sw</sub></li>
+<li>Inductor: series resistance (ESR)</li>
+<li>Diode: V<sub>F</sub> × I</li>
+</ul>
+
+<h5>C. Inverters (DC → AC)</h5>
+
+<p><strong>Single-phase full-bridge inverter (H-bridge)</strong>:</p>
+
+<pre><code>                Q1        Q3
+        +---|  |--+--|  |--+
+        |         |       |
+VDC =        Load     ~VAC
+        |         |       |
+        +---|  |--+--|  |--+
+                Q2        Q4
+</code></pre>
+
+<p><strong>Complementary control</strong>:</p>
+<ul>
+<li>Q1, Q4 ON → V<sub>load</sub> = +V<sub>DC</sub></li>
+<li>Q2, Q3 ON → V<sub>load</sub> = -V<sub>DC</sub></li>
+</ul>
+
+<p><strong>PWM (Pulse Width Modulation)</strong>:</p>
+
+<p>Comparison of a reference sinusoidal signal V<sub>ref</sub> with a high-frequency triangular carrier at frequency f<sub>sw</sub>.</p>
+
+<p><strong>Modulation index</strong>:</p>
+
+<p>m = V<sub>ref(peak)</sub> / V<sub>tri(peak)</sub></p>
+
+<p><strong>Fundamental RMS voltage</strong>:</p>
+
+<p>V<sub>AC(RMS)</sub> = (m × V<sub>DC</sub>) / √2</p>
+
+<p>For m = 1 (full modulation):</p>
+
+<p>V<sub>AC(RMS)</sub> = 0.707 × V<sub>DC</sub></p>
+
+<p><strong>Total Harmonic Distortion (THD)</strong>:</p>
+
+<p>THD = (√(sum of V<sub>n</sub>² for n≥2) / V<sub>1</sub>) × 100%</p>
+
+<p>PWM reduces THD (typically &lt;5% with sinusoidal PWM).</p>
+
+<p><strong>Three-phase inverter</strong>:</p>
+
+<p>3 legs (6 transistors) to generate a balanced three-phase system.</p>
+
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>Variable speed drives for AC motors</li>
+<li>Solar inverters (photovoltaic)</li>
+<li>UPS (Uninterruptible Power Supply)</li>
+<li>Electric traction (trains, electric vehicles)</li>
+</ul>
+
+<h4>3. Thermal and Practical Aspects</h4>
+
+<h5>A. Thermal Management</h5>
+
+<p><strong>Thermal Model</strong>:</p>
+
+<p>Semiconductor thermal behavior follows an electrical analogy:</p>
+<ul>
+<li><strong>Heat flow</strong> P (W) ↔ Current I</li>
+<li><strong>Temperature</strong> T (°C) ↔ Voltage V</li>
+<li><strong>Thermal resistance</strong> R<sub>th</sub> (°C/W) ↔ Resistance R</li>
+</ul>
+
+<p><strong>Thermal Ohm's Law</strong>:</p>
+
+<p>T<sub>j</sub> - T<sub>a</sub> = R<sub>th(j-a)</sub> × P<sub>d</sub></p>
+
+<p>where:</p>
+<ul>
+<li>T<sub>j</sub>: junction temperature</li>
+<li>T<sub>a</sub>: ambient temperature</li>
+<li>P<sub>d</sub>: dissipated power</li>
+<li>R<sub>th(j-a)</sub>: junction-to-ambient thermal resistance</li>
+</ul>
+
+<p><strong>Complete Thermal Chain</strong>:</p>
+
+<p>T<sub>j</sub> = T<sub>a</sub> + (R<sub>th(j-c)</sub> + R<sub>th(c-h)</sub> + R<sub>th(h-a)</sub>) × P<sub>d</sub></p>
+
+<p>where:</p>
+<ul>
+<li>R<sub>th(j-c)</sub>: junction → case, given in the datasheet</li>
+<li>R<sub>th(c-h)</sub>: case → heatsink, depends on the interface (thermal paste)</li>
+<li>R<sub>th(h-a)</sub>: heatsink → ambient, to be calculated/selected</li>
+</ul>
+
+<p><strong>Maximum Junction Temperature</strong>:</p>
+
+<p>Typically: T<sub>j(max)</sub> = 125-150°C for power semiconductors.</p>
+
+<p><strong>Required Heatsink Calculation</strong>:</p>
+
+<p>R<sub>th(h-a)</sub> = (T<sub>j(max)</sub> - T<sub>a</sub>) / P<sub>d</sub> - R<sub>th(j-c)</sub> - R<sub>th(c-h)</sub></p>
+
+<p><strong>Example</strong>: MOSFET dissipating P<sub>d</sub> = 20W</p>
+<ul>
+<li>T<sub>j(max)</sub> = 150°C</li>
+<li>T<sub>a</sub> = 40°C (max ambient)</li>
+<li>R<sub>th(j-c)</sub> = 1°C/W (datasheet)</li>
+<li>R<sub>th(c-h)</sub> = 0.5°C/W (thermal paste interface)</li>
+</ul>
+
+<p>R<sub>th(h-a)</sub> = (150 - 40) / 20 - 1 - 0.5 = 5.5 - 1.5 = 4°C/W</p>
+
+<p>A heatsink with R<sub>th(h-a)</sub> &lt; 4°C/W is required (with safety margin: choose 3°C/W).</p>
+
+<p><strong>Factors Influencing R<sub>th(h-a)</sub></strong>:</p>
+<ul>
+<li>Heatsink surface area</li>
+<li>Shape (fins, profile)</li>
+<li>Material (aluminum: best cost/performance trade-off)</li>
+<li>Forced ventilation vs natural convection</li>
+</ul>
+
+<p><strong>With Forced Ventilation</strong>:</p>
+
+<p>R<sub>th(h-a)</sub> = R<sub>th(natural)</sub> / k</p>
+
+<p>where k = 3-10 depending on airflow.</p>
+
+<h5>B. Protections</h5>
+
+<p><strong>Overcurrent Protection</strong>:</p>
+
+<ul>
+<li><strong>Ultra-fast fuses</strong> (aR): short-circuit protection
+    <ul>
+    <li>I²t characteristic: melting energy</li>
+    <li>Coordination with semiconductors</li>
+    </ul>
+</li>
+<li><strong>Component-level limiting</strong>:
+    <ul>
+    <li>MOSFET: R<sub>DS(on)</sub> increases with T → natural limiting</li>
+    <li>BJT/IGBT: require external protection</li>
+    </ul>
+</li>
+</ul>
+
+<p><strong>Overvoltage Protection</strong>:</p>
+
+<ul>
+<li><strong>TVS diodes</strong>: overvoltage clamping</li>
+<li><strong>Varistors (VDR)</strong>: AC mains protection</li>
+<li><strong>Snubbers</strong>: RC or RCD circuits to limit dV/dt</li>
+</ul>
+
+<p><strong>RC Snubber Circuit</strong>:</p>
+<pre><code>             R (10-100Ω)
+     +---/\/\/---+
+     |           |
+Component     ===  C (10-100nF)
+     |           |
+     +-----------+
+</code></pre>
+
+<p>Purpose: absorb inductive energy during switching, protect against overvoltage.</p>
+
+<p><strong>Sizing</strong>:</p>
+
+<p>C = (L × I<sub>max</sub>²) / V<sub>spike</sub>²</p>
+
+<p>where V<sub>spike</sub> is the allowable overvoltage.</p>
+
+<p><strong>Thermal Protection</strong>:</p>
+
+<ul>
+<li><strong>Thermostat</strong> on heatsink: shut-off if T &gt; T<sub>max</sub></li>
+<li><strong>Integrated sensor</strong>: some IGBTs have built-in thermal protection</li>
+</ul>
+
+<h5>C. Gate Drive</h5>
+
+<p><strong>MOSFET/IGBT Driver</strong>:</p>
+
+<p><strong>Required Characteristics</strong>:</p>
+<ul>
+<li>Gate voltage: typically V<sub>GS</sub> = 10-15V for MOSFET, V<sub>GE</sub> = 15V for IGBT</li>
+<li>Gate current: I<sub>G</sub> = Q<sub>g</sub> / t<sub>rise</sub> (several amperes during transients)</li>
+<li>Galvanic isolation: required for bridge legs (high-side)</li>
+</ul>
+
+<p><strong>Drive Circuit</strong>:</p>
+
+<pre><code>PWM Signal → [Optocoupler] → [Driver IC] → MOSFET Gate
+                                                                     ↑
+                                                              Isolated supply
+</code></pre>
+
+<p><strong>Popular Driver ICs</strong>:</p>
+<ul>
+<li>IR2110, IR2184 (International Rectifier): half-bridge, bootstrap</li>
+<li>TLP250: optocoupler + driver for IGBT</li>
+<li>UCC27321: low-cost MOSFET driver</li>
+</ul>
+
+<p><strong>Bootstrap</strong>:</p>
+
+<p>Technique to supply the high-side driver using a simple diode and capacitor:</p>
+
+<pre><code>                Vcc
+                 |
+                [D]
+                 |
+        [Cboot]---[Driver]---Gate High-Side
+                 |                    |
+        Midpoint----------------Source
+</code></pre>
+
+<p>During the low-side ON phase, the C<sub>boot</sub> capacitor charges. It then powers the high-side driver.</p>
+
+<p><strong>Sizing</strong>:</p>
+
+<p>C<sub>boot</sub> &gt; (Q<sub>g</sub> × (1 + f<sub>max</sub>/f<sub>min</sub>)) / (V<sub>boot(min)</sub> - V<sub>GS</sub>)</p>
+
+<p><strong>Gate Resistance</strong>:</p>
+
+<p>R<sub>g</sub> = (V<sub>driver</sub> - V<sub>GS(th)</sub>) / I<sub>G(peak)</sub></p>
+
+<p>Trade-off:</p>
+<ul>
+<li>Low R<sub>g</sub>: fast switching, but overvoltages (high dV/dt, dI/dt), oscillations</li>
+<li>High R<sub>g</sub>: slow switching, increased losses</li>
+</ul>
+
+<p>Typically: R<sub>g</sub> = 10-100Ω</p>
+
+<h5>D. EMC and Filtering</h5>
+
+<p><strong>Disturbances in Power Electronics</strong>:</p>
+
+<ul>
+<li><strong>Conducted</strong>: through power cables</li>
+<li><strong>Radiated</strong>: through high-frequency current loops</li>
+</ul>
+
+<p><strong>Standards</strong>:</p>
+<ul>
+<li>EN 55022 (CISPR 22): IT equipment</li>
+<li>EN 61000-6-3: residential environment</li>
+<li>Limits in dBµV for different frequency bands</li>
+</ul>
+
+<p><strong>EMC Filtering</strong>:</p>
+
+<p><strong>AC Input Filter</strong>:</p>
+<pre><code>Phase ----[Cx]----[Lcm]----+---- To rectifier
+                                    [Lcm]    |
+Neutral ---[Cx]-------------+
+                                                        |
+Ground --------[Cy]----[Cy]--+
+</code></pre>
+
+<ul>
+<li><strong>Cx</strong>: X capacitors (between phase and neutral) - differential mode</li>
+<li><strong>Cy</strong>: Y capacitors (to ground) - common mode</li>
+<li><strong>Lcm</strong>: common-mode inductors (on toroid)</li>
+</ul>
+
+<p><strong>Cutoff Frequency</strong>:</p>
+
+<p>f<sub>c</sub> = 1 / (2π × √(L × C))</p>
+
+<p>Typically: f<sub>c</sub> = 10-50kHz for a mains input filter.</p>
+
+<hr/>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<h3>Tutorial Exercises</h3>
+
+<h4>TD1: Component Sizing</h4>
+
+<p><strong>Typical exercise</strong>: Size the components of a full-wave rectifier for a 5V/10A power supply.</p>
+
+<p><strong>Given data</strong>:</p>
+<ul>
+<li>Mains: 230V AC, 50Hz</li>
+<li>Output: 5V DC, 10A</li>
+<li>Allowable ripple: 5%</li>
+</ul>
+
+<p><strong>1. Transformer</strong>:</p>
+
+<p>Turns ratio to obtain ~5V at the output after rectification:</p>
+
+<p>V<sub>2(RMS)</sub> = V<sub>out</sub> / 0.637 = 5 / 0.637 ≈ 7.85V</p>
+
+<p>With margin and losses: V<sub>2(RMS)</sub> = 9V</p>
+
+<p>Secondary current: I<sub>2</sub> = 10A (nominal) + 20% margin = 12A</p>
+
+<p><strong>Apparent power</strong>:</p>
+
+<p>S = V<sub>2</sub> × I<sub>2</sub> = 9 × 12 = 108 VA</p>
+
+<p><strong>2. Diodes</strong>:</p>
+
+<p>Average current per diode (full bridge):</p>
+
+<p>I<sub>F(AV)</sub> = I<sub>load</sub> / 2 = 10 / 2 = 5A</p>
+
+<p>RMS current:</p>
+
+<p>I<sub>F(RMS)</sub> = I<sub>load</sub> / √2 = 7.07A</p>
+
+<p>Maximum reverse voltage:</p>
+
+<p>V<sub>RRM</sub> &gt; √2 × V<sub>2</sub> = 1.414 × 9 = 12.7V</p>
+
+<p><strong>Selection</strong>: 1N5402 diode (3A, 200V) in parallel or Schottky diode MBR20100 (20A, 100V)</p>
+
+<p><strong>3. Filter Capacitor</strong>:</p>
+
+<p>C = I<sub>load</sub> / (2 × f × δ × V<sub>out</sub>) = 10 / (2 × 50 × 0.05 × 5) = 4000 µF</p>
+
+<p><strong>Selection</strong>: electrolytic capacitor 4700µF / 16V (next standard value)</p>
+
+<p><strong>RMS voltage across capacitor</strong> (ripple):</p>
+
+<p>V<sub>ripple(RMS)</sub> = δ × V<sub>out</sub> = 0.05 × 5 = 0.25V</p>
+
+<p><strong>RMS current</strong>:</p>
+
+<p>I<sub>C(RMS)</sub> = I<sub>load</sub> × √(π²/3 - 2) ≈ 0.5 × I<sub>load</sub> = 5A</p>
+
+<p>Verify the capacitor can handle this current (sufficiently low ESR).</p>
+
+<h4>TD2: Buck Chopper</h4>
+
+<p><strong>Exercise</strong>: Design a Buck chopper V<sub>in</sub> = 24V → V<sub>out</sub> = 12V, I<sub>load</sub> = 5A, f<sub>sw</sub> = 50kHz</p>
+
+<p><strong>1. Duty cycle</strong>:</p>
+
+<p>α = V<sub>out</sub> / V<sub>in</sub> = 12 / 24 = 0.5</p>
+
+<p><strong>2. Inductance</strong>:</p>
+
+<p>For ΔI<sub>L</sub> = 20% of I<sub>load</sub>: ΔI<sub>L</sub> = 1A</p>
+
+<p>L = ((V<sub>in</sub> - V<sub>out</sub>) × α) / (f<sub>sw</sub> × ΔI<sub>L</sub>) = ((24-12) × 0.5) / (50000 × 1) = 120 µH</p>
+
+<p><strong>Selection</strong>: L = 150 µH, saturation current I<sub>sat</sub> &gt; 6A</p>
+
+<p><strong>3. Output Capacitor</strong>:</p>
+
+<p>C = ΔI<sub>L</sub> / (8 × f<sub>sw</sub> × ΔV<sub>out</sub>)</p>
+
+<p>For ΔV<sub>out</sub> = 1% of 12V = 0.12V:</p>
+
+<p>C = 1 / (8 × 50000 × 0.12) = 208 µF</p>
+
+<p><strong>Selection</strong>: C = 220 µF / 25V (ceramic) or 330µF / 25V (low-ESR electrolytic)</p>
+
+<p><strong>4. MOSFET</strong>:</p>
+
+<p>Current: I<sub>D</sub> &gt; I<sub>load</sub> + ΔI<sub>L</sub>/2 = 5.5A → <strong>choose 10A</strong> (factor of 2)</p>
+
+<p>Voltage: V<sub>DS</sub> &gt; V<sub>in</sub> → <strong>choose 40-60V</strong></p>
+
+<p>Example: IRFZ44N (55V, 49A, R<sub>DS(on)</sub> = 17.5mΩ)</p>
+
+<p><strong>Conduction losses</strong>:</p>
+
+<p>P<sub>cond</sub> = R<sub>DS(on)</sub> × I<sub>D(RMS)</sub>² = 0.0175 × 5² = 0.44W</p>
+
+<p><strong>Switching losses</strong> (estimate):</p>
+
+<p>P<sub>sw</sub> ≈ (V<sub>in</sub> × I<sub>D</sub> × (t<sub>r</sub> + t<sub>f</sub>) × f<sub>sw</sub>) / 6</p>
+
+<p>For t<sub>r</sub> + t<sub>f</sub> ≈ 100ns:</p>
+
+<p>P<sub>sw</sub> = (24 × 5 × 100 × 10⁻⁹ × 50000) / 6 ≈ 1W</p>
+
+<p><strong>Total dissipated power</strong>: P<sub>d</sub> = 0.44 + 1 = 1.44W</p>
+
+<p><strong>5. Freewheeling Diode</strong>:</p>
+
+<p>Average current: I<sub>F(AV)</sub> = (1-α) × I<sub>load</sub> = 0.5 × 5 = 2.5A</p>
+
+<p>Reverse voltage: V<sub>RRM</sub> &gt; V<sub>in</sub> = 24V → <strong>choose 40-60V</strong></p>
+
+<p>Schottky diode: MBR2045 (20A, 45V, V<sub>F</sub> = 0.5V)</p>
+
+<p><strong>Diode losses</strong>:</p>
+
+<p>P<sub>diode</sub> = V<sub>F</sub> × I<sub>F(AV)</sub> = 0.5 × 2.5 = 1.25W</p>
+
+<p><strong>6. Efficiency</strong>:</p>
+
+<p>P<sub>out</sub> = V<sub>out</sub> × I<sub>load</sub> = 12 × 5 = 60W</p>
+
+<p>P<sub>losses</sub> = P<sub>MOSFET</sub> + P<sub>diode</sub> + P<sub>L</sub> = 1.44 + 1.25 + 0.5 = 3.19W</p>
+
+<p>η = P<sub>out</sub> / (P<sub>out</sub> + P<sub>losses</sub>) = 60 / 63.19 = 95%</p>
+
+<h4>TD3: Thermal Sizing</h4>
+
+<p><strong>Exercise</strong>: An IGBT dissipates 50W in an environment at T<sub>a</sub> = 50°C.</p>
+
+<p><strong>Given data</strong>:</p>
+<ul>
+<li>T<sub>j(max)</sub> = 150°C</li>
+<li>R<sub>th(j-c)</sub> = 0.5°C/W</li>
+<li>R<sub>th(c-h)</sub> = 0.2°C/W (thermal interface)</li>
+</ul>
+
+<p><strong>Calculate the required heatsink with a 20°C safety margin</strong>.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>Target junction temperature:</p>
+
+<p>T<sub>j</sub> = T<sub>j(max)</sub> - margin = 150 - 20 = 130°C</p>
+
+<p>Allowable total thermal resistance:</p>
+
+<p>R<sub>th(j-a)</sub> = (T<sub>j</sub> - T<sub>a</sub>) / P<sub>d</sub> = (130 - 50) / 50 = 1.6°C/W</p>
+
+<p>Heatsink thermal resistance:</p>
+
+<p>R<sub>th(h-a)</sub> = R<sub>th(j-a)</sub> - R<sub>th(j-c)</sub> - R<sub>th(c-h)</sub> = 1.6 - 0.5 - 0.2 = 0.9°C/W</p>
+
+<p><strong>Interpretation</strong>:</p>
+
+<p>R<sub>th(h-a)</sub> = 0.9°C/W is very low:</p>
+<ul>
+<li>Natural convection: heatsinks typically have R<sub>th</sub> &gt; 2°C/W</li>
+<li><strong>Forced ventilation required</strong> or very large heatsink</li>
+</ul>
+
+<p><strong>With fan</strong> (30 CFM airflow):</p>
+
+<p>R<sub>th(h-a, forced)</sub> = R<sub>th(natural)</sub> / 5 = 0.9 × 5 = 4.5°C/W</p>
+
+<p>A standard heatsink with R<sub>th</sub> = 4°C/W in natural convection becomes sufficient with a fan.</p>
+
+<h3>Practical Applications</h3>
+
+<p><strong>Switched-Mode Power Supply (SMPS)</strong>:</p>
+<ul>
+<li>Buck for voltage step-down (chargers, embedded regulators)</li>
+<li>Flyback for galvanic isolation (PC power supplies, LED drivers)</li>
+<li>Forward for medium power (telecom)</li>
+</ul>
+
+<p><strong>Variable Speed Drives</strong>:</p>
+<ul>
+<li>Three-phase inverter + PWM for asynchronous motors</li>
+<li>Vector control (FOC - Field Oriented Control)</li>
+<li>Applications: pumps, fans, elevators, traction</li>
+</ul>
+
+<p><strong>Renewable Energy</strong>:</p>
+<ul>
+<li>Photovoltaic inverters (MPPT + grid injection)</li>
+<li>Choppers for wind turbines</li>
+<li>Bidirectional converters for batteries</li>
+</ul>
+
+<p><strong>Automotive</strong>:</p>
+<ul>
+<li>DC-DC converters (12V ↔ 48V, high-voltage battery)</li>
+<li>Inverters for electric motors (EV)</li>
+<li>On-Board Chargers (OBC)</li>
+</ul>
+
+<hr/>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3>Knowledge and Skills Mobilized</h3>
+
+<ul>
+<li><strong>Power semiconductors</strong>: understanding component characteristics and limitations</li>
+<li><strong>Energy conversion</strong>: mastery of basic topologies (rectifiers, choppers, inverters)</li>
+<li><strong>Sizing</strong>: component calculations (inductors, capacitors, heatsinks)</li>
+<li><strong>Thermal management</strong>: heat dissipation management and thermal resistance calculation</li>
+<li><strong>Protections</strong>: protection circuit design (snubbers, fuses)</li>
+<li><strong>Control</strong>: gate drivers, galvanic isolation, PWM</li>
+</ul>
+
+<h3>Self-Assessment</h3>
+
+<p>This course was essential for understanding energy management in electronic systems.</p>
+
+<p><strong>Strengths</strong>:</p>
+<ul>
+<li><strong>Global vision</strong>: from components to complete conversion systems</li>
+<li><strong>Practical approach</strong>: concrete sizing with application calculations</li>
+<li><strong>Thermal aspects</strong>: understanding the real limitations of components</li>
+<li><strong>Multidisciplinary</strong>: electronics + thermal + control</li>
+</ul>
+
+<p><strong>Difficulties Encountered</strong>:</p>
+<ul>
+<li><strong>Component selection</strong>: many criteria (voltage, current, frequency, thermal, cost)</li>
+<li><strong>Performance/loss trade-offs</strong>: non-trivial optimization</li>
+<li><strong>EMC aspects</strong>: parasitic effects and disturbances difficult to predict/simulate</li>
+</ul>
+
+<p><strong>Practical Applications</strong>:</p>
+<ul>
+<li>Switched-mode power supply sizing</li>
+<li>Understanding semiconductor datasheets</li>
+<li>Thermal evaluation of electronic boards</li>
+</ul>
+
+<h3>My Opinion</h3>
+
+<p>This course is fundamental for any engineer in embedded systems or power electronics.</p>
+
+<p><strong>Why This Course is Essential</strong>:</p>
+
+<ol>
+<li><strong>Energy efficiency</strong>: a major challenge (IoT, electric vehicles, data centers)</li>
+<li><strong>Ubiquity</strong>: all systems need energy conversion</li>
+<li><strong>Differentiating skill</strong>: less competition on these "hard" topics vs software</li>
+<li><strong>Complementarity</strong>: bridges analog electronics, digital electronics, and control theory</li>
+</ol>
+
+<p><strong>Connections with Other Courses</strong>:</p>
+<ul>
+<li><strong>Analog Electronics</strong> (S5): fundamentals on semiconductors (diodes, transistors)</li>
+<li><strong>Analog Architectures</strong> (S7): power amplification and conditioning</li>
+<li><strong>Digital Control</strong> (S8): PWM, converter control, MPPT</li>
+<li><strong>Real-Time Systems</strong> (S8): timing constraints for regulation loops</li>
+</ul>
+
+<p><strong>Technological Evolution</strong>:</p>
+
+<p>Current challenges:</p>
+<ul>
+<li><strong>GaN and SiC</strong>: new semiconductors (&gt; 600V, &gt; 200kHz, &lt; losses)
+    <ul>
+    <li>GaN: very high frequency (MHz), low Q<sub>g</sub>, low R<sub>DS(on)</sub></li>
+    <li>SiC: high voltage (&gt;1200V), high temperature (&gt;175°C)</li>
+    </ul>
+</li>
+<li><strong>Integration</strong>: complete power modules (MOSFET + driver + protections)</li>
+<li><strong>Digital control</strong>: DSP/FPGA for advanced PWM, adaptive control</li>
+<li><strong>Bidirectionality</strong>: V2G (Vehicle-to-Grid), energy storage</li>
+</ul>
+
+<p><strong>Emerging Applications</strong>:</p>
+<ul>
+<li><strong>Electric vehicles</strong>: OBC 11-22kW, inverters 100-300kW, DC-DC for auxiliaries</li>
+<li><strong>Fast chargers</strong>: 50-350kW (Tesla Supercharger, Ionity)</li>
+<li><strong>Data centers</strong>: redundant power supplies, efficiency &gt;95%</li>
+<li><strong>Renewable energy</strong>: residential PV inverters (3-10kW) and utility-scale (MW)</li>
+</ul>
+
+<p><strong>Trends</strong>:</p>
+
+<ul>
+<li><strong>Miniaturization</strong>: increasing switching frequencies (GaN → MHz)</li>
+<li><strong>Reliability</strong>: automotive electronics (AEC-Q100), aerospace (DO-254)</li>
+<li><strong>Modularity</strong>: parallel converters, redundancy</li>
+<li><strong>Smart Grid</strong>: communicating inverters, energy management</li>
+</ul>
+
+<p><strong>Recommendations for Success</strong>:</p>
+
+<ol>
+<li><strong>Understand the limitations</strong>: every component has constraints (SOA, thermal)</li>
+<li><strong>Always verify thermal design</strong>: #1 cause of failure</li>
+<li><strong>Use datasheets</strong>: indispensable source of information</li>
+<li><strong>Simulate</strong>: LTspice, PSIM to validate before prototyping</li>
+<li><strong>Critical PCB layout</strong>: short current loops, decoupling, grounding</li>
+</ol>
+
+<p><strong>Professional Applications</strong>:</p>
+
+<p>These skills are sought after in:</p>
+<ul>
+<li><strong>Automotive</strong>: traction systems, chargers, DC-DC converters</li>
+<li><strong>Aerospace/Space</strong>: high-reliability power supplies, 270V DC converters</li>
+<li><strong>Energy</strong>: solar/wind inverters, HVDC, smart grids</li>
+<li><strong>Telecom</strong>: base station power supplies, PoE (Power over Ethernet)</li>
+<li><strong>Industrial</strong>: variable speed drives, welding inverters, process power supplies</li>
+<li><strong>Medical</strong>: isolated power supplies, reinforced safety (IEC 60601)</li>
+</ul>
+
+<p><strong>Important Practical Aspects</strong>:</p>
+
+<ul>
+<li><strong>Safety</strong>: galvanic isolation, creepage/clearance distances</li>
+<li><strong>Standards</strong>: CE (EN 60950, EN 62368), UL, CCC depending on markets</li>
+<li><strong>Testing</strong>: dielectric withstand tests (hipot), leakage current, EMC</li>
+<li><strong>Cost</strong>: BOM (Bill of Materials) optimization, standard vs custom components</li>
+</ul>
+
+<p><strong>Certification and Standards</strong>:</p>
+<ul>
+<li>IPC-2221: PCB design</li>
+<li>IEC 61000: electromagnetic compatibility</li>
+<li>EN 60950 / EN 62368: IT equipment safety</li>
+</ul>
+
+<p>In conclusion, this course provides the essential foundations for designing efficient and reliable energy conversion systems. Mastery of power components, conversion topologies, and thermal management is essential in a context of energy transition and increasing electrification of systems.</p>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2022-2023.html" data-i18n-html="back-courses-2022-2023">← Retour aux Cours 2022-2023</a>
+</div>

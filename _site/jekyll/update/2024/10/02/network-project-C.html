@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="C and Network Project" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="← Back to Academic Project Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 -p: Specifies the sink mode. -u: Uses the UDP protocol. -t 10: Sets the application buffer size to 10 bytes. 9025: port number created to listen (&gt;9000) On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 -s: Specifies the source mode. -n 20: Number of messages to send. insa-20661: Destination machine identifier. 9025: port number where we send (&gt;9000) Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived. Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Omitting -u defaults to TCP. On Terminal 2, we sent 20 messages to the server: tsock -s -n 20 insa-20661 9025 Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error. This confirms that TCP requires an active listener to establish a connection. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender’s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic: Connected to a monitoring machine using: ssh tcpdump@insa-20673 Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address: First 6 bytes. Source MAC Address: Next 6 bytes. EtherType: Following 2 bytes indicating the protocol (e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): Indicates the transport layer protocol: 06 for TCP. 17 for UDP. Source and Destination IP Addresses: Each 4 bytes in length. Source Port Number: 2 bytes. Utility Commands: Used ifconfig to determine the machine’s IP address for analysis. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments." />
-<meta property="og:description" content="← Back to Academic Project Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 -p: Specifies the sink mode. -u: Uses the UDP protocol. -t 10: Sets the application buffer size to 10 bytes. 9025: port number created to listen (&gt;9000) On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 -s: Specifies the source mode. -n 20: Number of messages to send. insa-20661: Destination machine identifier. 9025: port number where we send (&gt;9000) Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived. Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Omitting -u defaults to TCP. On Terminal 2, we sent 20 messages to the server: tsock -s -n 20 insa-20661 9025 Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error. This confirms that TCP requires an active listener to establish a connection. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender’s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic: Connected to a monitoring machine using: ssh tcpdump@insa-20673 Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address: First 6 bytes. Source MAC Address: Next 6 bytes. EtherType: Following 2 bytes indicating the protocol (e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): Indicates the transport layer protocol: 06 for TCP. 17 for UDP. Source and Destination IP Addresses: Each 4 bytes in length. Source Port Number: 2 bytes. Utility Commands: Used ifconfig to determine the machine’s IP address for analysis. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments." />
+<meta name="description" content="&larr; Retour aux Projets Introduction Ce projet consiste a developper une application reseau simple en C utilisant l&#39;API socket pour explorer les fonctionnalites des protocoles UDP et TCP. L&#39;objectif est de comprendre comment ces protocoles gerent la transmission de messages dans un environnement reseau, en se concentrant sur les differences en termes de fiabilite, de livraison des messages et de gestion des connexions. Dans ce TP, nous avons explore les differences fondamentales entre les protocoles UDP et TCP en utilisant l&#39;application tsock dans un environnement Linux. L&#39;objectif etait d&#39;observer comment chaque protocole gere la transmission de donnees, la fiabilite et l&#39;etablissement de connexion. Partie 1 : Comparaison UDP et TCP Transmission UDP : Configuration : Sur le Terminal 1 (agissant comme serveur ou recepteur), nous avons demarre un socket UDP ecoutant sur le port 9025 avec une taille de tampon de 10 octets en utilisant la commande : tsock -p -u -t 10 9025 Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 Sur le Terminal 2 (agissant comme client ou source), nous avons envoye 20 messages au serveur en utilisant : tsock -s -u -n 20 insa-20661 9025 Observation : Sur 20 messages envoyes, seuls 13 ont ete recus. Le tampon d&#39;application cote recepteur est devenu sature car il traitait les messages plus lentement qu&#39;ils n&#39;arrivaient. On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver&#39;s side became saturated because it processed messages slower than they arrived. Conclusion : UDP est un protocole sans connexion, sans mecanismes de controle de flux ou de correction d&#39;erreurs. Des pertes de paquets sont survenues en raison d&#39;un debordement de tampon au niveau de l&#39;application. UDP ne garantit ni la livraison des messages, ni l&#39;ordre, ni l&#39;integrite. Transmission TCP : Configuration : Sur le Terminal 1, nous avons demarre un socket TCP ecoutant sur le port 9025 avec une taille de tampon de 20 octets : tsock -p -t 20 9025 Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Observation : Les 20 messages ont ete transmis et recus avec succes. Aucune perte de paquets n&#39;est survenue et les messages sont arrives dans l&#39;ordre. Conclusion : TCP est un protocole oriente connexion qui etablit une connexion avant le transfert de donnees. Il fournit la fiabilite grace aux acquittements, retransmissions et controle de flux. TCP assure l&#39;integrite des donnees et la livraison ordonnee. Partie 2 : Test du comportement des protocoles sans ports ouverts Refus de connexion TCP : La tentative d&#39;envoi de messages a un port TCP sans socket en ecoute a resulte en une erreur &quot;connexion refusee&quot;. Cela confirme que TCP necessite un recepteur actif pour etablir une connexion. Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a &quot;connection refused&quot; error. This confirms that TCP requires an active listener to establish a connection. Gestion des messages UDP : L&#39;envoi de messages a un port UDP ferme n&#39;a pas produit d&#39;erreurs cote emetteur. Les messages ont ete envoyes sur le reseau, mais le recepteur ne les a pas traites. UDP ne verifie pas la presence de recepteurs actifs avant d&#39;envoyer des donnees. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender&#39;s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Partie 3 : Capture et analyse du trafic reseau Utilisation de tcpdump pour surveiller le trafic. Connexion a une machine de surveillance en utilisant : ssh tcpdump@insa-20673. Demarrage de la capture de paquets sur le port 9025 : sudo tcpdump 9025 Observations avec UDP : Les messages etaient visibles dans la capture, montrant les adresses IP et ports source et destination. Aucune phase d&#39;etablissement de connexion n&#39;a ete observee. Les paquets contenaient les donnees utiles mais manquaient de mecanismes de fiabilite. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic. Connected to a monitoring machine using: ssh tcpdump@insa-20673. Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations avec TCP : Poignee de main a trois voies : Paquet SYN envoye du client au serveur pour initier la connexion. Paquet SYN-ACK envoye du serveur au client pour acquitter le SYN. Paquet ACK envoye du client au serveur pour completer la poignee de main. Transfert de donnees : Les paquets de donnees ont ete envoyes avec des paquets d&#39;acquittement confirmant la reception. Des drapeaux tels que [P.], [FP.] et [F.] indiquaient differentes etapes du transfert de donnees et de la terminaison de connexion. Terminaison de connexion : Arret gracieux observe avec des ACK finaux echanges entre client et serveur. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Partie 4 : Capture et analyse du trafic reseau Capture de trames Ethernet brutes en utilisant : sudo tcpdump -xx 9025 Structure de la trame : Adresse MAC destination (6 premiers octets), Adresse MAC source (6 octets suivants), EtherType (2 octets suivants indiquant le protocole, ex : IPv4). Details du paquet IP : Champ protocole (9e octet) : 06 pour TCP, 17 pour UDP. Adresses IP source et destination : 4 octets chacune. Numero de port source : 2 octets. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address (first 6 bytes), Source MAC Address (next 6 bytes), EtherType (following 2 bytes indicating the protocol, e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): 06 for TCP, 17 for UDP. Source and Destination IP Addresses: each 4 bytes in length. Source Port Number: 2 bytes. Partie 5 : Exploration du trafic de diffusion Capture de messages de diffusion avec : tcpdump -xx broadcast Observation : L&#39;adresse IP de destination etait 169.254.255.255, representant l&#39;adresse de diffusion. Les messages envoyes a cette adresse sont recus par toutes les machines du reseau local. Conclusion : La diffusion permet une communication avec tous les noeuds simultanement. Utile pour des services comme la decouverte de reseau et les annonces. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion Ce projet a explore les differences fondamentales entre les protocoles UDP et TCP, en pratiquant la creation de sockets et la gestion de la communication machine a machine en C. Nous avons observe les avantages et inconvenients de chaque protocole, notamment la vitesse d&#39;UDP mais l&#39;absence de garanties de livraison, contre la fiabilite de TCP et sa gestion des erreurs. De plus, l&#39;utilisation de tcpdump nous a permis d&#39;analyser le trafic reseau et de mieux comprendre les mecanismes de transmission, tels que la poignee de main TCP et la structure des trames Ethernet. Ce projet a fourni une base solide pour comprendre les defis de la communication reseau dans les environnements distribues. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP&#39;s speed but lack of delivery guarantees, versus TCP&#39;s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments." />
+<meta property="og:description" content="&larr; Retour aux Projets Introduction Ce projet consiste a developper une application reseau simple en C utilisant l&#39;API socket pour explorer les fonctionnalites des protocoles UDP et TCP. L&#39;objectif est de comprendre comment ces protocoles gerent la transmission de messages dans un environnement reseau, en se concentrant sur les differences en termes de fiabilite, de livraison des messages et de gestion des connexions. Dans ce TP, nous avons explore les differences fondamentales entre les protocoles UDP et TCP en utilisant l&#39;application tsock dans un environnement Linux. L&#39;objectif etait d&#39;observer comment chaque protocole gere la transmission de donnees, la fiabilite et l&#39;etablissement de connexion. Partie 1 : Comparaison UDP et TCP Transmission UDP : Configuration : Sur le Terminal 1 (agissant comme serveur ou recepteur), nous avons demarre un socket UDP ecoutant sur le port 9025 avec une taille de tampon de 10 octets en utilisant la commande : tsock -p -u -t 10 9025 Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 Sur le Terminal 2 (agissant comme client ou source), nous avons envoye 20 messages au serveur en utilisant : tsock -s -u -n 20 insa-20661 9025 Observation : Sur 20 messages envoyes, seuls 13 ont ete recus. Le tampon d&#39;application cote recepteur est devenu sature car il traitait les messages plus lentement qu&#39;ils n&#39;arrivaient. On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver&#39;s side became saturated because it processed messages slower than they arrived. Conclusion : UDP est un protocole sans connexion, sans mecanismes de controle de flux ou de correction d&#39;erreurs. Des pertes de paquets sont survenues en raison d&#39;un debordement de tampon au niveau de l&#39;application. UDP ne garantit ni la livraison des messages, ni l&#39;ordre, ni l&#39;integrite. Transmission TCP : Configuration : Sur le Terminal 1, nous avons demarre un socket TCP ecoutant sur le port 9025 avec une taille de tampon de 20 octets : tsock -p -t 20 9025 Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Observation : Les 20 messages ont ete transmis et recus avec succes. Aucune perte de paquets n&#39;est survenue et les messages sont arrives dans l&#39;ordre. Conclusion : TCP est un protocole oriente connexion qui etablit une connexion avant le transfert de donnees. Il fournit la fiabilite grace aux acquittements, retransmissions et controle de flux. TCP assure l&#39;integrite des donnees et la livraison ordonnee. Partie 2 : Test du comportement des protocoles sans ports ouverts Refus de connexion TCP : La tentative d&#39;envoi de messages a un port TCP sans socket en ecoute a resulte en une erreur &quot;connexion refusee&quot;. Cela confirme que TCP necessite un recepteur actif pour etablir une connexion. Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a &quot;connection refused&quot; error. This confirms that TCP requires an active listener to establish a connection. Gestion des messages UDP : L&#39;envoi de messages a un port UDP ferme n&#39;a pas produit d&#39;erreurs cote emetteur. Les messages ont ete envoyes sur le reseau, mais le recepteur ne les a pas traites. UDP ne verifie pas la presence de recepteurs actifs avant d&#39;envoyer des donnees. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender&#39;s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Partie 3 : Capture et analyse du trafic reseau Utilisation de tcpdump pour surveiller le trafic. Connexion a une machine de surveillance en utilisant : ssh tcpdump@insa-20673. Demarrage de la capture de paquets sur le port 9025 : sudo tcpdump 9025 Observations avec UDP : Les messages etaient visibles dans la capture, montrant les adresses IP et ports source et destination. Aucune phase d&#39;etablissement de connexion n&#39;a ete observee. Les paquets contenaient les donnees utiles mais manquaient de mecanismes de fiabilite. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic. Connected to a monitoring machine using: ssh tcpdump@insa-20673. Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations avec TCP : Poignee de main a trois voies : Paquet SYN envoye du client au serveur pour initier la connexion. Paquet SYN-ACK envoye du serveur au client pour acquitter le SYN. Paquet ACK envoye du client au serveur pour completer la poignee de main. Transfert de donnees : Les paquets de donnees ont ete envoyes avec des paquets d&#39;acquittement confirmant la reception. Des drapeaux tels que [P.], [FP.] et [F.] indiquaient differentes etapes du transfert de donnees et de la terminaison de connexion. Terminaison de connexion : Arret gracieux observe avec des ACK finaux echanges entre client et serveur. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Partie 4 : Capture et analyse du trafic reseau Capture de trames Ethernet brutes en utilisant : sudo tcpdump -xx 9025 Structure de la trame : Adresse MAC destination (6 premiers octets), Adresse MAC source (6 octets suivants), EtherType (2 octets suivants indiquant le protocole, ex : IPv4). Details du paquet IP : Champ protocole (9e octet) : 06 pour TCP, 17 pour UDP. Adresses IP source et destination : 4 octets chacune. Numero de port source : 2 octets. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address (first 6 bytes), Source MAC Address (next 6 bytes), EtherType (following 2 bytes indicating the protocol, e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): 06 for TCP, 17 for UDP. Source and Destination IP Addresses: each 4 bytes in length. Source Port Number: 2 bytes. Partie 5 : Exploration du trafic de diffusion Capture de messages de diffusion avec : tcpdump -xx broadcast Observation : L&#39;adresse IP de destination etait 169.254.255.255, representant l&#39;adresse de diffusion. Les messages envoyes a cette adresse sont recus par toutes les machines du reseau local. Conclusion : La diffusion permet une communication avec tous les noeuds simultanement. Utile pour des services comme la decouverte de reseau et les annonces. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion Ce projet a explore les differences fondamentales entre les protocoles UDP et TCP, en pratiquant la creation de sockets et la gestion de la communication machine a machine en C. Nous avons observe les avantages et inconvenients de chaque protocole, notamment la vitesse d&#39;UDP mais l&#39;absence de garanties de livraison, contre la fiabilite de TCP et sa gestion des erreurs. De plus, l&#39;utilisation de tcpdump nous a permis d&#39;analyser le trafic reseau et de mieux comprendre les mecanismes de transmission, tels que la poignee de main TCP et la structure des trames Ethernet. Ce projet a fourni une base solide pour comprendre les defis de la communication reseau dans les environnements distribues. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP&#39;s speed but lack of delivery guarantees, versus TCP&#39;s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments." />
 <link rel="canonical" href="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html" />
 <meta property="og:url" content="http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html" />
 <meta property="og:site_name" content="Cédric Chanfreau - Portfolio" />
@@ -17,10 +17,16 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="C and Network Project" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"← Back to Academic Project Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 -p: Specifies the sink mode. -u: Uses the UDP protocol. -t 10: Sets the application buffer size to 10 bytes. 9025: port number created to listen (&gt;9000) On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 -s: Specifies the source mode. -n 20: Number of messages to send. insa-20661: Destination machine identifier. 9025: port number where we send (&gt;9000) Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived. Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Omitting -u defaults to TCP. On Terminal 2, we sent 20 messages to the server: tsock -s -n 20 insa-20661 9025 Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error. This confirms that TCP requires an active listener to establish a connection. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender’s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic: Connected to a monitoring machine using: ssh tcpdump@insa-20673 Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address: First 6 bytes. Source MAC Address: Next 6 bytes. EtherType: Following 2 bytes indicating the protocol (e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): Indicates the transport layer protocol: 06 for TCP. 17 for UDP. Source and Destination IP Addresses: Each 4 bytes in length. Source Port Number: 2 bytes. Utility Commands: Used ifconfig to determine the machine’s IP address for analysis. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.","headline":"C and Network Project","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-10-02T08:56:03+00:00","datePublished":"2024-10-02T08:56:03+00:00","description":"&larr; Retour aux Projets Introduction Ce projet consiste a developper une application reseau simple en C utilisant l&#39;API socket pour explorer les fonctionnalites des protocoles UDP et TCP. L&#39;objectif est de comprendre comment ces protocoles gerent la transmission de messages dans un environnement reseau, en se concentrant sur les differences en termes de fiabilite, de livraison des messages et de gestion des connexions. Dans ce TP, nous avons explore les differences fondamentales entre les protocoles UDP et TCP en utilisant l&#39;application tsock dans un environnement Linux. L&#39;objectif etait d&#39;observer comment chaque protocole gere la transmission de donnees, la fiabilite et l&#39;etablissement de connexion. Partie 1 : Comparaison UDP et TCP Transmission UDP : Configuration : Sur le Terminal 1 (agissant comme serveur ou recepteur), nous avons demarre un socket UDP ecoutant sur le port 9025 avec une taille de tampon de 10 octets en utilisant la commande : tsock -p -u -t 10 9025 Introduction This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling. In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment. Part 1: Comparing UDP and TCP UDP Transmission: Setup: On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: tsock -p -u -t 10 9025 Sur le Terminal 2 (agissant comme client ou source), nous avons envoye 20 messages au serveur en utilisant : tsock -s -u -n 20 insa-20661 9025 Observation : Sur 20 messages envoyes, seuls 13 ont ete recus. Le tampon d&#39;application cote recepteur est devenu sature car il traitait les messages plus lentement qu&#39;ils n&#39;arrivaient. On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: tsock -s -u -n 20 insa-20661 9025 Observation: Out of 20 messages sent, only 13 were received. The application buffer on the receiver&#39;s side became saturated because it processed messages slower than they arrived. Conclusion : UDP est un protocole sans connexion, sans mecanismes de controle de flux ou de correction d&#39;erreurs. Des pertes de paquets sont survenues en raison d&#39;un debordement de tampon au niveau de l&#39;application. UDP ne garantit ni la livraison des messages, ni l&#39;ordre, ni l&#39;integrite. Transmission TCP : Configuration : Sur le Terminal 1, nous avons demarre un socket TCP ecoutant sur le port 9025 avec une taille de tampon de 20 octets : tsock -p -t 20 9025 Conclusion: UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity. TCP Transmission: Setup: On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: tsock -p -t 20 9025 Observation : Les 20 messages ont ete transmis et recus avec succes. Aucune perte de paquets n&#39;est survenue et les messages sont arrives dans l&#39;ordre. Conclusion : TCP est un protocole oriente connexion qui etablit une connexion avant le transfert de donnees. Il fournit la fiabilite grace aux acquittements, retransmissions et controle de flux. TCP assure l&#39;integrite des donnees et la livraison ordonnee. Partie 2 : Test du comportement des protocoles sans ports ouverts Refus de connexion TCP : La tentative d&#39;envoi de messages a un port TCP sans socket en ecoute a resulte en une erreur &quot;connexion refusee&quot;. Cela confirme que TCP necessite un recepteur actif pour etablir une connexion. Observation: All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order. Conclusion: TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery. Part 2: Testing Protocol Behavior Without Open Ports TCP Connection Refusal: Attempting to send messages to a TCP port without a listening socket resulted in a &quot;connection refused&quot; error. This confirms that TCP requires an active listener to establish a connection. Gestion des messages UDP : L&#39;envoi de messages a un port UDP ferme n&#39;a pas produit d&#39;erreurs cote emetteur. Les messages ont ete envoyes sur le reseau, mais le recepteur ne les a pas traites. UDP ne verifie pas la presence de recepteurs actifs avant d&#39;envoyer des donnees. UDP Message Handling: Sending messages to a closed UDP port did not produce errors on the sender&#39;s side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data. Partie 3 : Capture et analyse du trafic reseau Utilisation de tcpdump pour surveiller le trafic. Connexion a une machine de surveillance en utilisant : ssh tcpdump@insa-20673. Demarrage de la capture de paquets sur le port 9025 : sudo tcpdump 9025 Observations avec UDP : Les messages etaient visibles dans la capture, montrant les adresses IP et ports source et destination. Aucune phase d&#39;etablissement de connexion n&#39;a ete observee. Les paquets contenaient les donnees utiles mais manquaient de mecanismes de fiabilite. Part 3: Capturing and Analyzing Network Traffic Using tcpdump to Monitor Traffic. Connected to a monitoring machine using: ssh tcpdump@insa-20673. Started packet capture on port 9025: sudo tcpdump 9025 Observations with UDP: Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms. Observations avec TCP : Poignee de main a trois voies : Paquet SYN envoye du client au serveur pour initier la connexion. Paquet SYN-ACK envoye du serveur au client pour acquitter le SYN. Paquet ACK envoye du client au serveur pour completer la poignee de main. Transfert de donnees : Les paquets de donnees ont ete envoyes avec des paquets d&#39;acquittement confirmant la reception. Des drapeaux tels que [P.], [FP.] et [F.] indiquaient differentes etapes du transfert de donnees et de la terminaison de connexion. Terminaison de connexion : Arret gracieux observe avec des ACK finaux echanges entre client et serveur. Observations with TCP: Three-Way Handshake: SYN packet sent from client to server initiating the connection. SYN-ACK packet sent from server to client acknowledging the SYN. ACK packet sent from client to server completing the handshake. Data Transfer: Data packets were sent with acknowledgment packets confirming receipt. Flags such as [P.], [FP.], and [F.] indicated different stages of data transfer and connection termination. Connection Termination: Graceful shutdown observed with final ACKs exchanged between client and server. Partie 4 : Capture et analyse du trafic reseau Capture de trames Ethernet brutes en utilisant : sudo tcpdump -xx 9025 Structure de la trame : Adresse MAC destination (6 premiers octets), Adresse MAC source (6 octets suivants), EtherType (2 octets suivants indiquant le protocole, ex : IPv4). Details du paquet IP : Champ protocole (9e octet) : 06 pour TCP, 17 pour UDP. Adresses IP source et destination : 4 octets chacune. Numero de port source : 2 octets. Part 4: Capturing and Analyzing Network Traffic Captured raw Ethernet frames using: sudo tcpdump -xx 9025 Frame Structure: Destination MAC Address (first 6 bytes), Source MAC Address (next 6 bytes), EtherType (following 2 bytes indicating the protocol, e.g., IPv4). IP Packet Details: Protocol Field (9th Byte): 06 for TCP, 17 for UDP. Source and Destination IP Addresses: each 4 bytes in length. Source Port Number: 2 bytes. Partie 5 : Exploration du trafic de diffusion Capture de messages de diffusion avec : tcpdump -xx broadcast Observation : L&#39;adresse IP de destination etait 169.254.255.255, representant l&#39;adresse de diffusion. Les messages envoyes a cette adresse sont recus par toutes les machines du reseau local. Conclusion : La diffusion permet une communication avec tous les noeuds simultanement. Utile pour des services comme la decouverte de reseau et les annonces. Part 5: Exploring Broadcast Traffic Captured broadcast messages with: tcpdump -xx broadcast Observation: Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network. Conclusion: Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements. Conclusion Ce projet a explore les differences fondamentales entre les protocoles UDP et TCP, en pratiquant la creation de sockets et la gestion de la communication machine a machine en C. Nous avons observe les avantages et inconvenients de chaque protocole, notamment la vitesse d&#39;UDP mais l&#39;absence de garanties de livraison, contre la fiabilite de TCP et sa gestion des erreurs. De plus, l&#39;utilisation de tcpdump nous a permis d&#39;analyser le trafic reseau et de mieux comprendre les mecanismes de transmission, tels que la poignee de main TCP et la structure des trames Ethernet. Ce projet a fourni une base solide pour comprendre les defis de la communication reseau dans les environnements distribues. Conclusion This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP&#39;s speed but lack of delivery guarantees, versus TCP&#39;s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.","headline":"C and Network Project","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"},"url":"http://localhost:4000/jekyll/update/2024/10/02/network-project-C.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Cédric Chanfreau - Portfolio" /></head>
-<body><header class="site-header" role="banner">
+<body><script>
+  (function(){
+    var lang = localStorage.getItem('portfolio-lang') || 'fr';
+    document.documentElement.lang = lang;
+  })();
+</script>
+<header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Cédric Chanfreau - Portfolio</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -32,181 +38,119 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/about/" data-i18n="nav-about">About</a><button id="lang-toggle" class="lang-toggle" aria-label="Switch language">
+            <span id="lang-fr" class="lang-option lang-active">FR</span>
+            <span class="lang-separator">|</span>
+            <span id="lang-en" class="lang-option">EN</span>
+          </button>
+        </div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <p><a href="./my-projects.html">← Back to Academic Project</a></p>
+        <style>
+p {
+  text-align: justify;
+}
+</style>
 
-<h1 id="introduction">Introduction</h1>
+<div class="back-nav">
+    <a href="./my-projects.html" data-i18n-html="back-projects">&larr; Retour aux Projets</a>
+</div>
+
+<div class="lang-fr">
+<h1>Introduction</h1>
+<p>Ce projet consiste a developper une application reseau simple en C utilisant l'API socket pour explorer les fonctionnalites des protocoles UDP et TCP. L'objectif est de comprendre comment ces protocoles gerent la transmission de messages dans un environnement reseau, en se concentrant sur les differences en termes de fiabilite, de livraison des messages et de gestion des connexions.</p>
+<p>Dans ce TP, nous avons explore les differences fondamentales entre les protocoles UDP et TCP en utilisant l'application tsock dans un environnement Linux. L'objectif etait d'observer comment chaque protocole gere la transmission de donnees, la fiabilite et l'etablissement de connexion.</p>
+
+<h2>Partie 1 : Comparaison UDP et TCP</h2>
+<h3>Transmission UDP :</h3>
+<p><strong>Configuration :</strong></p>
+<p>Sur le Terminal 1 (agissant comme serveur ou recepteur), nous avons demarre un socket UDP ecoutant sur le port 9025 avec une taille de tampon de 10 octets en utilisant la commande : <code>tsock -p -u -t 10 9025</code></p>
+</div>
+
+<div class="lang-en">
+<h1>Introduction</h1>
 <p>This project involves developing a simple network application in C using the socket API to explore the functionalities of UDP and TCP protocols. The goal is to understand how these protocols handle message transmission in a networked environment, with focus on the differences in reliability, message delivery, and connection handling.</p>
-
 <p>In this lab, we explored the fundamental differences between the UDP and TCP protocols using the tsock application in a Linux environment. The objective was to observe how each protocol handles data transmission, reliability, and connection establishment.</p>
 
-<h2 id="part-1-comparing-udp-and-tcp"><strong>Part 1: Comparing UDP and TCP</strong></h2>
+<h2>Part 1: Comparing UDP and TCP</h2>
+<h3>UDP Transmission:</h3>
+<p><strong>Setup:</strong></p>
+<p>On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command: <code>tsock -p -u -t 10 9025</code></p>
+</div>
 
-<h3 id="udp-transmission">UDP Transmission:</h3>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_cmd.png" style="width: 90%;" />
+</div>
 
-<ul>
-  <li>
-    <p>Setup:</p>
+<div class="lang-fr">
+<p>Sur le Terminal 2 (agissant comme client ou source), nous avons envoye 20 messages au serveur en utilisant : <code>tsock -s -u -n 20 insa-20661 9025</code></p>
+<p><strong>Observation :</strong> Sur 20 messages envoyes, seuls 13 ont ete recus. Le tampon d'application cote recepteur est devenu sature car il traitait les messages plus lentement qu'ils n'arrivaient.</p>
+</div>
 
-    <ul>
-      <li>
-        <p>On Terminal 1 (acting as the server or sink), we started a UDP socket listening on port 9025 with a buffer size of 10 bytes using the command:</p>
+<div class="lang-en">
+<p>On Terminal 2 (acting as the client or source), we sent 20 messages to the server using: <code>tsock -s -u -n 20 insa-20661 9025</code></p>
+<p><strong>Observation:</strong> Out of 20 messages sent, only 13 were received. The application buffer on the receiver's side became saturated because it processed messages slower than they arrived.</p>
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">tsock -p -u -t 10 9025</code></p>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/UDP_send.png" style="width: 90%;" />
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">-p</code>: Specifies the sink mode.</p>
+<div class="lang-fr">
+<p><strong>Conclusion :</strong> UDP est un protocole sans connexion, sans mecanismes de controle de flux ou de correction d'erreurs. Des pertes de paquets sont survenues en raison d'un debordement de tampon au niveau de l'application. UDP ne garantit ni la livraison des messages, ni l'ordre, ni l'integrite.</p>
 
-        <p><code class="language-plaintext highlighter-rouge">-u</code>: Uses the UDP protocol.</p>
+<h3>Transmission TCP :</h3>
+<p><strong>Configuration :</strong> Sur le Terminal 1, nous avons demarre un socket TCP ecoutant sur le port 9025 avec une taille de tampon de 20 octets : <code>tsock -p -t 20 9025</code></p>
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">-t</code> 10: Sets the application buffer size to 10 bytes.</p>
+<div class="lang-en">
+<p><strong>Conclusion:</strong> UDP is a connectionless protocol without mechanisms for flow control or error correction. Packet loss occurred due to buffer overflow at the application level. UDP does not guarantee message delivery, order, or integrity.</p>
 
-        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number created to listen (&gt;9000)</p>
+<h3>TCP Transmission:</h3>
+<p><strong>Setup:</strong> On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes: <code>tsock -p -t 20 9025</code></p>
+</div>
 
-        <div style="text-align: center;">
-      <img src="/img/BE_Reseau/UDP_cmd.png" style="width: 90%;" />
-  </div>
-      </li>
-      <li>
-        <p>On Terminal 2 (acting as the client or source), we sent 20 messages to the server using:</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_cmd.png" style="width: 90%;" />
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">tsock -s -u -n 20 insa-20661 9025</code></p>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_send.png" style="width: 90%;" />
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">-s</code>: Specifies the source mode.</p>
+<div class="lang-fr">
+<p><strong>Observation :</strong> Les 20 messages ont ete transmis et recus avec succes. Aucune perte de paquets n'est survenue et les messages sont arrives dans l'ordre.</p>
+<p><strong>Conclusion :</strong> TCP est un protocole oriente connexion qui etablit une connexion avant le transfert de donnees. Il fournit la fiabilite grace aux acquittements, retransmissions et controle de flux. TCP assure l'integrite des donnees et la livraison ordonnee.</p>
 
-        <p><code class="language-plaintext highlighter-rouge">-n 20</code>: Number of messages to send.</p>
+<h2>Partie 2 : Test du comportement des protocoles sans ports ouverts</h2>
+<h3>Refus de connexion TCP :</h3>
+<p>La tentative d'envoi de messages a un port TCP sans socket en ecoute a resulte en une erreur "connexion refusee". Cela confirme que TCP necessite un recepteur actif pour etablir une connexion.</p>
+</div>
 
-        <p><code class="language-plaintext highlighter-rouge">insa-20661</code>: Destination machine identifier.</p>
+<div class="lang-en">
+<p><strong>Observation:</strong> All 20 messages were successfully transmitted and received. No packet loss occurred, and messages arrived in order.</p>
+<p><strong>Conclusion:</strong> TCP is a connection-oriented protocol that establishes a connection before data transfer. It provides reliability through acknowledgments, retransmissions, and flow control. TCP ensures data integrity and ordered delivery.</p>
 
-        <p><code class="language-plaintext highlighter-rouge">9025</code>: port number where we send (&gt;9000)</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Observation:</p>
-
-    <ul>
-      <li>
-        <p>Out of 20 messages sent, only 13 were received.</p>
-      </li>
-      <li>
-        <p>The application buffer on the receiver’s side became saturated because it processed messages slower than they arrived.</p>
-      </li>
-    </ul>
-
-    <div style="text-align: center;">
-          <img src="/img/BE_Reseau/UDP_send.png" style="width: 90%;" />
-  </div>
-  </li>
-  <li>
-    <p>Conclusion:</p>
-    <ul>
-      <li>
-        <p>UDP is a connectionless protocol without mechanisms for flow control or error correction.</p>
-      </li>
-      <li>
-        <p>Packet loss occurred due to buffer overflow at the application level.</p>
-      </li>
-      <li>
-        <p>UDP does not guarantee message delivery, order, or integrity.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="tcp-transmission">TCP Transmission:</h3>
-
-<ul>
-  <li>
-    <p>Setup:</p>
-
-    <ul>
-      <li>
-        <p>On Terminal 1, we started a TCP socket listening on port 9025 with a buffer size of 20 bytes:</p>
-
-        <p><code class="language-plaintext highlighter-rouge">tsock -p -t 20 9025</code></p>
-
-        <ul>
-          <li>Omitting <code class="language-plaintext highlighter-rouge">-u</code> defaults to TCP.</li>
-        </ul>
-
-        <div style="text-align: center;">
-          <img src="/img/BE_Reseau/TCP_cmd.png" style="width: 90%;" />
-  </div>
-      </li>
-      <li>
-        <p>On Terminal 2, we sent 20 messages to the server:</p>
-
-        <p><code class="language-plaintext highlighter-rouge">tsock -s -n 20 insa-20661 9025</code></p>
-
-        <div style="text-align: center;">
-          <img src="/img/BE_Reseau/TCP_send.png" style="width: 90%;" />
-  </div>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Observation:</p>
-
-    <ul>
-      <li>
-        <p>All 20 messages were successfully transmitted and received.</p>
-      </li>
-      <li>
-        <p>No packet loss occurred, and messages arrived in order.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Conclusion:</p>
-
-    <ul>
-      <li>
-        <p>TCP is a connection-oriented protocol that establishes a connection before data transfer.</p>
-      </li>
-      <li>
-        <p>It provides reliability through acknowledgments, retransmissions, and flow control.</p>
-      </li>
-      <li>
-        <p>TCP ensures data integrity and ordered delivery.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="part-2-testing-protocol-behavior-without-open-ports"><strong>Part 2: Testing Protocol Behavior Without Open Ports</strong></h2>
-
-<h3 id="tcp-connection-refusal">TCP Connection Refusal:</h3>
-
-<ul>
-  <li>
-    <p>Attempting to send messages to a TCP port without a listening socket resulted in a “connection refused” error.</p>
-  </li>
-  <li>
-    <p>This confirms that TCP requires an active listener to establish a connection.</p>
-  </li>
-</ul>
+<h2>Part 2: Testing Protocol Behavior Without Open Ports</h2>
+<h3>TCP Connection Refusal:</h3>
+<p>Attempting to send messages to a TCP port without a listening socket resulted in a "connection refused" error. This confirms that TCP requires an active listener to establish a connection.</p>
+</div>
 
 <div style="text-align: center;">
     <img src="/img/BE_Reseau/TCP_beh.png" style="width: 90%;" />
 </div>
 
-<h3 id="udp-message-handling">UDP Message Handling:</h3>
+<div class="lang-fr">
+<h3>Gestion des messages UDP :</h3>
+<p>L'envoi de messages a un port UDP ferme n'a pas produit d'erreurs cote emetteur. Les messages ont ete envoyes sur le reseau, mais le recepteur ne les a pas traites. UDP ne verifie pas la presence de recepteurs actifs avant d'envoyer des donnees.</p>
+</div>
 
-<ul>
-  <li>
-    <p>Sending messages to a closed UDP port did not produce errors on the sender’s side.</p>
-  </li>
-  <li>
-    <p>The messages were sent into the network, but the receiver did not process them.</p>
-  </li>
-  <li>
-    <p>UDP does not check for active listeners before sending data.</p>
-  </li>
-</ul>
+<div class="lang-en">
+<h3>UDP Message Handling:</h3>
+<p>Sending messages to a closed UDP port did not produce errors on the sender's side. The messages were sent into the network, but the receiver did not process them. UDP does not check for active listeners before sending data.</p>
+</div>
 
 <div style="text-align: center;">
     <img src="/img/BE_Reseau/UDP_beh.png" style="width: 90%;" />
@@ -214,193 +158,114 @@
 
 <p><br /></p>
 
-<h2 id="part-3-capturing-and-analyzing-network-traffic"><strong>Part 3: Capturing and Analyzing Network Traffic</strong></h2>
+<div class="lang-fr">
+<h2>Partie 3 : Capture et analyse du trafic reseau</h2>
+<p>Utilisation de <code>tcpdump</code> pour surveiller le trafic. Connexion a une machine de surveillance en utilisant : <code>ssh tcpdump@insa-20673</code>. Demarrage de la capture de paquets sur le port 9025 : <code>sudo tcpdump 9025</code></p>
 
-<p>Using <code class="language-plaintext highlighter-rouge">tcpdump</code> to Monitor Traffic:</p>
+<h3>Observations avec UDP :</h3>
+<p>Les messages etaient visibles dans la capture, montrant les adresses IP et ports source et destination. Aucune phase d'etablissement de connexion n'a ete observee. Les paquets contenaient les donnees utiles mais manquaient de mecanismes de fiabilite.</p>
+</div>
 
-<ul>
-  <li>Connected to a monitoring machine using:</li>
-</ul>
+<div class="lang-en">
+<h2>Part 3: Capturing and Analyzing Network Traffic</h2>
+<p>Using <code>tcpdump</code> to Monitor Traffic. Connected to a monitoring machine using: <code>ssh tcpdump@insa-20673</code>. Started packet capture on port 9025: <code>sudo tcpdump 9025</code></p>
 
-<p><code class="language-plaintext highlighter-rouge">ssh tcpdump@insa-20673</code></p>
-
-<ul>
-  <li>Started packet capture on port 9025:</li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">sudo tcpdump 9025</code></p>
-
-<h3 id="observations-with-udp">Observations with UDP:</h3>
+<h3>Observations with UDP:</h3>
+<p>Messages were visible in the capture, showing source and destination IP addresses and ports. No connection establishment phase was observed. Packets contained the data payload but lacked reliability mechanisms.</p>
+</div>
 
 <div style="text-align: center;">
     <img src="/img/BE_Reseau/UDP_dump.png" style="width: 90%;" />
 </div>
 <p><br /></p>
-<ul>
-  <li>
-    <p>Messages were visible in the capture, showing source and destination IP addresses and ports.</p>
-  </li>
-  <li>
-    <p>No connection establishment phase was observed.</p>
-  </li>
-  <li>
-    <p>Packets contained the data payload but lacked reliability mechanisms.</p>
-  </li>
-</ul>
-
 <div style="text-align: center;">
     <img src="/img/BE_Reseau/UDP_dump2.png" style="width: 90%;" />
 </div>
 
-<h3 id="observations-with-tcp">Observations with TCP:</h3>
-
+<div class="lang-fr">
+<h3>Observations avec TCP :</h3>
+<p><strong>Poignee de main a trois voies :</strong></p>
 <ul>
-  <li>
-    <p>Three-Way Handshake:</p>
-
-    <ul>
-      <li>
-        <p><strong>SYN</strong> packet sent from client to server initiating the connection.</p>
-      </li>
-      <li>
-        <p><strong>SYN-ACK</strong> packet sent from server to client acknowledging the SYN.</p>
-      </li>
-      <li>
-        <p><strong>ACK</strong> packet sent from client to server completing the handshake.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Data Transfer:</p>
-
-    <div style="text-align: center;">
-      <img src="/img/BE_Reseau/TCP_dump.png" style="width: 90%;" />
-  </div>
-
-    <ul>
-      <li>
-        <p>Data packets were sent with acknowledgment packets confirming receipt.</p>
-      </li>
-      <li>
-        <p>Flags such as <code class="language-plaintext highlighter-rouge">[P.]</code>, <code class="language-plaintext highlighter-rouge">[FP.]</code>, and <code class="language-plaintext highlighter-rouge">[F.]</code> indicated different stages of data transfer and connection termination.</p>
-      </li>
-    </ul>
-
-    <div style="text-align: center;">
-      <img src="/img/BE_Reseau/TCP_dump2.png" style="width: 90%;" />
-  </div>
-  </li>
-  <li>
-    <p>Connection Termination:</p>
-
-    <ul>
-      <li>Graceful shutdown observed with final ACKs exchanged between client and server.</li>
-    </ul>
-  </li>
+<li>Paquet <strong>SYN</strong> envoye du client au serveur pour initier la connexion.</li>
+<li>Paquet <strong>SYN-ACK</strong> envoye du serveur au client pour acquitter le SYN.</li>
+<li>Paquet <strong>ACK</strong> envoye du client au serveur pour completer la poignee de main.</li>
 </ul>
+<p><strong>Transfert de donnees :</strong> Les paquets de donnees ont ete envoyes avec des paquets d'acquittement confirmant la reception. Des drapeaux tels que <code>[P.]</code>, <code>[FP.]</code> et <code>[F.]</code> indiquaient differentes etapes du transfert de donnees et de la terminaison de connexion.</p>
+<p><strong>Terminaison de connexion :</strong> Arret gracieux observe avec des ACK finaux echanges entre client et serveur.</p>
+</div>
+
+<div class="lang-en">
+<h3>Observations with TCP:</h3>
+<p><strong>Three-Way Handshake:</strong></p>
+<ul>
+<li><strong>SYN</strong> packet sent from client to server initiating the connection.</li>
+<li><strong>SYN-ACK</strong> packet sent from server to client acknowledging the SYN.</li>
+<li><strong>ACK</strong> packet sent from client to server completing the handshake.</li>
+</ul>
+<p><strong>Data Transfer:</strong> Data packets were sent with acknowledgment packets confirming receipt. Flags such as <code>[P.]</code>, <code>[FP.]</code>, and <code>[F.]</code> indicated different stages of data transfer and connection termination.</p>
+<p><strong>Connection Termination:</strong> Graceful shutdown observed with final ACKs exchanged between client and server.</p>
+</div>
+
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_dump.png" style="width: 90%;" />
+</div>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/TCP_dump2.png" style="width: 90%;" />
+</div>
 
 <p><br /></p>
 
-<h2 id="part-4-capturing-and-analyzing-network-traffic"><strong>Part 4: Capturing and Analyzing Network Traffic</strong></h2>
+<div class="lang-fr">
+<h2>Partie 4 : Capture et analyse du trafic reseau</h2>
+<p>Capture de trames Ethernet brutes en utilisant : <code>sudo tcpdump -xx 9025</code></p>
+<p><strong>Structure de la trame :</strong> Adresse MAC destination (6 premiers octets), Adresse MAC source (6 octets suivants), EtherType (2 octets suivants indiquant le protocole, ex : IPv4).</p>
+<p><strong>Details du paquet IP :</strong> Champ protocole (9e octet) : <code>06</code> pour TCP, <code>17</code> pour UDP. Adresses IP source et destination : 4 octets chacune. Numero de port source : 2 octets.</p>
+</div>
 
-<p>Captured raw Ethernet frames using: <code class="language-plaintext highlighter-rouge">sudo tcpdump -xx 9025</code></p>
-
-<ul>
-  <li>
-    <p>Frame Structure:</p>
-
-    <ul>
-      <li>
-        <p>Destination MAC Address: First 6 bytes.</p>
-      </li>
-      <li>
-        <p>Source MAC Address: Next 6 bytes.</p>
-      </li>
-      <li>
-        <p>EtherType: Following 2 bytes indicating the protocol (e.g., IPv4).</p>
-      </li>
-    </ul>
-  </li>
-  <li>IP Packet Details:
-    <ul>
-      <li>
-        <p>Protocol Field (9th Byte): Indicates the transport layer protocol:</p>
-      </li>
-      <li>
-        <p><code class="language-plaintext highlighter-rouge">06</code> for TCP.</p>
-      </li>
-      <li>
-        <p><code class="language-plaintext highlighter-rouge">17</code> for UDP.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>Source and Destination IP Addresses: Each 4 bytes in length.</p>
-
-    <ul>
-      <li>Source Port Number: 2 bytes.</li>
-    </ul>
-  </li>
-</ul>
+<div class="lang-en">
+<h2>Part 4: Capturing and Analyzing Network Traffic</h2>
+<p>Captured raw Ethernet frames using: <code>sudo tcpdump -xx 9025</code></p>
+<p><strong>Frame Structure:</strong> Destination MAC Address (first 6 bytes), Source MAC Address (next 6 bytes), EtherType (following 2 bytes indicating the protocol, e.g., IPv4).</p>
+<p><strong>IP Packet Details:</strong> Protocol Field (9th Byte): <code>06</code> for TCP, <code>17</code> for UDP. Source and Destination IP Addresses: each 4 bytes in length. Source Port Number: 2 bytes.</p>
+</div>
 
 <div style="text-align: center;">
     <img src="/img/BE_Reseau/eth_trafic.png" style="width: 90%;" />
 </div>
 
-<ul>
-  <li>
-    <p>Utility Commands:</p>
-
-    <ul>
-      <li>Used <code class="language-plaintext highlighter-rouge">ifconfig</code> to determine the machine’s IP address for analysis.</li>
-    </ul>
-
-    <div style="text-align: center;">
-      <img src="/img/BE_Reseau/ifconfig.png" style="width: 70%;" />
-  </div>
-  </li>
-</ul>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/ifconfig.png" style="width: 70%;" />
+</div>
 
 <p><br /></p>
 
-<h2 id="part-5-exploring-broadcast-traffic"><strong>Part 5: Exploring Broadcast Traffic</strong></h2>
+<div class="lang-fr">
+<h2>Partie 5 : Exploration du trafic de diffusion</h2>
+<p>Capture de messages de diffusion avec : <code>tcpdump -xx broadcast</code></p>
+<p><strong>Observation :</strong> L'adresse IP de destination etait 169.254.255.255, representant l'adresse de diffusion. Les messages envoyes a cette adresse sont recus par toutes les machines du reseau local.</p>
+<p><strong>Conclusion :</strong> La diffusion permet une communication avec tous les noeuds simultanement. Utile pour des services comme la decouverte de reseau et les annonces.</p>
+</div>
 
-<p>Captured broadcast messages with: <code class="language-plaintext highlighter-rouge">tcpdump -xx broadcast</code></p>
+<div class="lang-en">
+<h2>Part 5: Exploring Broadcast Traffic</h2>
+<p>Captured broadcast messages with: <code>tcpdump -xx broadcast</code></p>
+<p><strong>Observation:</strong> Destination IP address was 169.254.255.255, representing the broadcast address. Messages sent to this address are received by all machines on the local network.</p>
+<p><strong>Conclusion:</strong> Broadcast allows communication with all nodes simultaneously. Useful for services like network discovery and announcements.</p>
+</div>
 
-<ul>
-  <li>
-    <p>Observation:</p>
+<div style="text-align: center;">
+    <img src="/img/BE_Reseau/broadcast.png" style="width: 70%;" />
+</div>
 
-    <ul>
-      <li>
-        <p>Destination IP address was 169.254.255.255, representing the broadcast address.</p>
-      </li>
-      <li>
-        <p>Messages sent to this address are received by all machines on the local network.</p>
-      </li>
-    </ul>
+<div class="lang-fr">
+<h1>Conclusion</h1>
+<p>Ce projet a explore les differences fondamentales entre les protocoles UDP et TCP, en pratiquant la creation de sockets et la gestion de la communication machine a machine en C. Nous avons observe les avantages et inconvenients de chaque protocole, notamment la vitesse d'UDP mais l'absence de garanties de livraison, contre la fiabilite de TCP et sa gestion des erreurs. De plus, l'utilisation de tcpdump nous a permis d'analyser le trafic reseau et de mieux comprendre les mecanismes de transmission, tels que la poignee de main TCP et la structure des trames Ethernet. Ce projet a fourni une base solide pour comprendre les defis de la communication reseau dans les environnements distribues.</p>
+</div>
 
-    <div style="text-align: center;">
-      <img src="/img/BE_Reseau/broadcast.png" style="width: 70%;" />
-  </div>
-  </li>
-  <li>
-    <p>Conclusion:</p>
-
-    <ul>
-      <li>
-        <p>Broadcast allows communication with all nodes simultaneously.</p>
-      </li>
-      <li>
-        <p>Useful for services like network discovery and announcements.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP’s speed but lack of delivery guarantees, versus TCP’s reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.</p>
+<div class="lang-en">
+<h1>Conclusion</h1>
+<p>This project explored the fundamental differences between UDP and TCP protocols, practicing socket creation and machine-to-machine communication management using C. We observed the advantages and disadvantages of each protocol, including UDP's speed but lack of delivery guarantees, versus TCP's reliability and error handling. In addition, using tcpdump allowed us to analyze network traffic and better understand transmission mechanisms, such as TCP handshake and Ethernet frame structure. This project provided a solid foundation for understanding the challenges of network communication in distributed environments.</p>
+</div>
 
       </div>
     </main><footer class="site-footer h-card">
@@ -431,6 +296,117 @@
   </div>
 </footer>
 
+<!-- Fichier de traductions i18n -->
+<script src="/assets/js/translations.js"></script>
+
+<!-- Moteur de traduction i18n --><script>
+(function() {
+  var translations = window.TRANSLATIONS || {};
+
+  var currentLang = localStorage.getItem('portfolio-lang') || 'fr';
+
+  function applyTranslations() {
+    // Translate textContent
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (translations[key] && translations[key][currentLang]) {
+        el.textContent = translations[key][currentLang];
+      }
+    });
+
+    // Translate innerHTML
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (translations[key] && translations[key][currentLang]) {
+        el.innerHTML = translations[key][currentLang];
+      }
+    });
+
+    // Translate placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key] && translations[key][currentLang]) {
+        el.placeholder = translations[key][currentLang];
+      }
+    });
+
+    // Update toggle button active state
+    var frSpan = document.getElementById('lang-fr');
+    var enSpan = document.getElementById('lang-en');
+    if (frSpan && enSpan) {
+      if (currentLang === 'fr') {
+        frSpan.classList.add('lang-active');
+        enSpan.classList.remove('lang-active');
+      } else {
+        frSpan.classList.remove('lang-active');
+        enSpan.classList.add('lang-active');
+      }
+    }
+  }
+
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+    document.documentElement.lang = lang;
+    applyTranslations();
+    applyPageTitle();
+    document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: lang } }));
+  }
+
+  function getCurrentLang() {
+    return currentLang;
+  }
+
+  function t(key) {
+    if (translations[key] && translations[key][currentLang]) {
+      return translations[key][currentLang];
+    }
+    return key;
+  }
+
+  // Expose globally
+  window.i18n = {
+    setLang: setLang,
+    getCurrentLang: getCurrentLang,
+    t: t,
+    applyTranslations: applyTranslations
+  };
+
+  // Translate page title based on URL path
+  function applyPageTitle() {
+    var pageTitles = translations['page-titles'];
+    if (!pageTitles) return;
+    var path = window.location.pathname;
+    if (pageTitles[path] && pageTitles[path][currentLang]) {
+      var h1 = document.querySelector('.post-title, h1');
+      if (h1) h1.textContent = pageTitles[path][currentLang];
+      var parts = document.title.split('|');
+      var siteName = parts.length > 1 ? parts.pop().trim() : document.title;
+      document.title = pageTitles[path][currentLang] + ' | ' + siteName;
+    }
+  }
+
+  // Init on DOM ready
+  function init() {
+    document.documentElement.lang = currentLang;
+    applyTranslations();
+    applyPageTitle();
+
+    var toggleBtn = document.getElementById('lang-toggle');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        setLang(currentLang === 'fr' ? 'en' : 'fr');
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 <!-- Inclure le widget chatbot IA --><!-- Widget Chatbot IA pour Portfolio -->
 <div id="ai-chatbot-widget">
     <!-- Bouton flottant en bas à droite -->
@@ -449,8 +425,8 @@
             <div class="chatbot-header-info">
                 <div class="chatbot-avatar">🤖</div>
                 <div>
-                    <h3 class="chatbot-title">Assistant IA</h3>
-                    <p class="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
+                    <h3 class="chatbot-title" data-i18n="chatbot-title">Assistant IA</h3>
+                    <p class="chatbot-subtitle" data-i18n="chatbot-subtitle">Posez-moi des questions sur Cédric</p>
                 </div>
             </div>
             <button id="chatbot-close" class="chatbot-close-btn" aria-label="Fermer">
@@ -472,6 +448,7 @@
                 id="chatbot-input" 
                 class="chatbot-input"
                 placeholder="Posez votre question sur mon profil..."
+                data-i18n-placeholder="chatbot-placeholder"
                 autocomplete="off"
             />
             <button id="chatbot-send" class="chatbot-send-btn" aria-label="Envoyer">
@@ -982,11 +959,9 @@ Question du recruteur :`;
     
     // Initialisation
     function init() {
-        // Message de bienvenue
-        addMessage(
-            "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-            'ai'
-        );
+        // Message de bienvenue (language-aware)
+        var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : "Bonjour ! 👋 Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !";
+        addMessage(welcomeMsg, 'ai');
         
         // Event listeners
         toggleBtn.addEventListener('click', openChat);
@@ -1186,14 +1161,14 @@ Question du recruteur :`;
                     conversationHistory = conversationHistory.slice(-5);
                 }
             } else {
-                addMessage("Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
+                addMessage(window.i18n ? window.i18n.t('chatbot-error-no-response') : "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.", 'ai');
             }
             
         } catch (error) {
             console.error('Erreur:', error);
             removeLoading();
             addMessage(
-                "⚠️ Erreur de connexion avec Ollama. Assurez-vous qu'Ollama est bien installé et lancé sur le serveur (ollama serve).",
+                window.i18n ? window.i18n.t('chatbot-error-connection') : "⚠️ Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
                 'ai'
             );
         } finally {
@@ -1204,6 +1179,16 @@ Question du recruteur :`;
         }
     }
     
+    // Re-display welcome message when language changes
+    document.addEventListener('langChanged', function() {
+        // Update the first message (welcome message) if it exists
+        var firstMsg = messagesContainer.querySelector('.chatbot-message.ai .chatbot-message-content');
+        if (firstMsg && conversationHistory.length === 0) {
+            var welcomeMsg = (window.i18n && window.i18n.t) ? window.i18n.t('chatbot-welcome') : firstMsg.textContent;
+            firstMsg.innerHTML = formatMarkdown(welcomeMsg);
+        }
+    });
+
     // Démarrer quand le DOM est prêt
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);

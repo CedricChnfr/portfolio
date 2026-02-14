@@ -49,856 +49,1952 @@ tr:nth-child(even) {
     margin: 15px 0;
     font-family: 'Courier New', monospace;
 }
+
+.pdf-container {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+.pdf-viewer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pdf-item {
+    flex: 1;
+    min-width: 400px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.pdf-item h4 {
+    color: #2a7ae2;
+    margin-top: 0;
+}
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
 </div>
 
-# 🔊 Filtrage Actif et Modélisation Sources Bruit - Semestre 7
+<div class="lang-fr">
 
-**Année Universitaire** : 2023-2024  
-**Semestre** : 7  
-**Crédits** : 2.5 ECTS  
-**Spécialité** : Électronique Analogique et Traitement du Signal
+<h1>Filtrage Actif et Modelisation Sources Bruit - Semestre 7</h1>
 
----
+<p><strong>Annee Universitaire</strong> : 2023-2024<br/>
+<strong>Semestre</strong> : 7<br/>
+<strong>Credits</strong> : 2.5 ECTS<br/>
+<strong>Specialite</strong> : Electronique Analogique et Traitement du Signal</p>
 
-## PART A - Présentation Générale du Module
+<hr/>
+
+<h2>PART A - Presentation Generale du Module</h2>
 
 <h3 class="section-title">Vue d'ensemble</h3>
 
-Ce cours traite deux aspects fondamentaux de l'électronique analogique : la conception de filtres actifs avec amplificateurs opérationnels (AOP) et amplificateurs à transconductance opérationnels (OTA), et l'analyse du bruit dans les circuits électroniques. Ces compétences sont essentielles pour concevoir des chaînes d'acquisition de signaux haute performance.
+<p>Ce cours traite deux aspects fondamentaux de l'electronique analogique : la conception de filtres actifs avec amplificateurs operationnels (AOP) et amplificateurs a transconductance operationnels (OTA), et l'analyse du bruit dans les circuits electroniques. Ces competences sont essentielles pour concevoir des chaines d'acquisition de signaux haute performance.</p>
 
-**Objectifs pédagogiques** :
-- Concevoir et synthétiser des filtres actifs d'ordre élevé
-- Maîtriser les topologies Sallen-Key, Rauch, et capacités commutées
-- Comprendre les sources physiques de bruit électronique
-- Modéliser et calculer le bruit dans les circuits
-- Optimiser le rapport signal sur bruit (SNR)
-- Analyser les performances de chaînes d'acquisition
+<p><strong>Objectifs pedagogiques</strong> :</p>
+<ul>
+<li>Concevoir et synthetiser des filtres actifs d'ordre eleve</li>
+<li>Maitriser les topologies Sallen-Key, Rauch, et capacites commutees</li>
+<li>Comprendre les sources physiques de bruit electronique</li>
+<li>Modeliser et calculer le bruit dans les circuits</li>
+<li>Optimiser le rapport signal sur bruit (SNR)</li>
+<li>Analyser les performances de chaines d'acquisition</li>
+</ul>
 
 <h3 class="section-title">Position dans le cursus</h3>
 
-Ce module s'appuie sur :
-- **Circuits et Filtres analogiques (S5)** : filtres passifs, fonction de transfert
-- **Filtrage numérique (S6)** : théorie du filtrage, approximations
-- **Étude et Modélisation Composants Actifs (S7)** : amplificateurs opérationnels
+<p>Ce module s'appuie sur :</p>
+<ul>
+<li><strong>Circuits et Filtres analogiques (S5)</strong> : filtres passifs, fonction de transfert</li>
+<li><strong>Filtrage numerique (S6)</strong> : theorie du filtrage, approximations</li>
+<li><strong>Etude et Modelisation Composants Actifs (S7)</strong> : amplificateurs operationnels</li>
+</ul>
 
-Il prépare à :
-- **Chaînes électroniques acquisition (S8)** : conditionnement de capteurs
-- **Processus stochastiques et files d'attente (S8)** : modélisation probabiliste
-- **Traitement du signal avancé** : filtrage optimal, détection
-- **Conception de systèmes d'instrumentation** : mesures de précision
+<p>Il prepare a :</p>
+<ul>
+<li><strong>Chaines electroniques acquisition (S8)</strong> : conditionnement de capteurs</li>
+<li><strong>Processus stochastiques et files d'attente (S8)</strong> : modelisation probabiliste</li>
+<li><strong>Traitement du signal avance</strong> : filtrage optimal, detection</li>
+<li><strong>Conception de systemes d'instrumentation</strong> : mesures de precision</li>
+</ul>
 
----
+<hr/>
 
-## PART B - Expérience Personnelle et Contexte d'Apprentissage
+<h2>PART B - Experience Personnelle et Contexte d'Apprentissage</h2>
 
 <h3 class="section-title">Organisation et ressources</h3>
 
-Le module était divisé en plusieurs volets thématiques :
+<p>Le module etait divise en plusieurs volets thematiques :</p>
 
-**Cours magistraux (20h)** :
-Organisés en 4 grandes parties :
-- Partie 1 : Amplificateurs opérationnels et OTA (dossier 1_AO_OTA)
-  - Bruit interne des AOP
-  - OTA CA3080 (amplificateur à transconductance)
-- Partie 2 : Architecture électronique et filtres actifs (dossier 3_Archi_Elec_Filtre_Actif)
-  - Gabarits et synthèse de filtres
-  - Topologies Sallen-Key et Rauch
-  - Association de cellules d'ordre 2
-- Partie 3 : Capacités commutées (dossier 4_Capa_Commute)
-  - Principe et applications
-- Partie 4 : Document de synthèse (4AESE-filtrage4AE_2020-2021.pdf)
+<p><strong>Cours magistraux (20h)</strong> :</p>
+<p>Organises en 4 grandes parties :</p>
+<ul>
+<li>Partie 1 : Amplificateurs operationnels et OTA (dossier 1_AO_OTA)
+<ul>
+<li>Bruit interne des AOP</li>
+<li>OTA CA3080 (amplificateur a transconductance)</li>
+</ul>
+</li>
+<li>Partie 2 : Architecture electronique et filtres actifs (dossier 3_Archi_Elec_Filtre_Actif)
+<ul>
+<li>Gabarits et synthese de filtres</li>
+<li>Topologies Sallen-Key et Rauch</li>
+<li>Association de cellules d'ordre 2</li>
+</ul>
+</li>
+<li>Partie 3 : Capacites commutees (dossier 4_Capa_Commute)
+<ul>
+<li>Principe et applications</li>
+</ul>
+</li>
+<li>Partie 4 : Document de synthese (4AESE-filtrage4AE_2020-2021.pdf)</li>
+</ul>
 
-**Travaux dirigés (12h)** :
-- TD1 à TD6 avec corrections disponibles
-- Exercices de synthèse de filtres
-- Calculs de bruit dans circuits
-- Dimensionnement de chaînes d'acquisition
+<p><strong>Travaux diriges (12h)</strong> :</p>
+<ul>
+<li>TD1 a TD6 avec corrections disponibles</li>
+<li>Exercices de synthese de filtres</li>
+<li>Calculs de bruit dans circuits</li>
+<li>Dimensionnement de chaines d'acquisition</li>
+</ul>
 
-**Évaluations** :
-- Annales disponibles (2016-2022) avec corrections
-- Examen portant sur filtrage ET bruit
-- Projet de conception de filtre
+<p><strong>Evaluations</strong> :</p>
+<ul>
+<li>Annales disponibles (2016-2022) avec corrections</li>
+<li>Examen portant sur filtrage ET bruit</li>
+<li>Projet de conception de filtre</li>
+</ul>
 
-**Outils utilisés** :
-- SPICE (simulation circuits, analyse bruit)
-- MATLAB/Octave (synthèse de filtres, calculs)
-- Analyseur de spectre (mesure bruit)
-- Oscilloscope numérique
+<p><strong>Outils utilises</strong> :</p>
+<ul>
+<li>SPICE (simulation circuits, analyse bruit)</li>
+<li>MATLAB/Octave (synthese de filtres, calculs)</li>
+<li>Analyseur de spectre (mesure bruit)</li>
+<li>Oscilloscope numerique</li>
+</ul>
 
-<h3 class="section-title">Méthodologie d'étude</h3>
+<h3 class="section-title">Methodologie d'etude</h3>
 
-**Phase 1 : Spécifications du filtre** :
-Définir le gabarit (fréquences de coupure, ondulation, atténuation en bande coupée) selon l'application.
+<p><strong>Phase 1 : Specifications du filtre</strong> :</p>
+<p>Definir le gabarit (frequences de coupure, ondulation, attenuation en bande coupee) selon l'application.</p>
 
-**Phase 2 : Choix de l'approximation** :
-Sélectionner Butterworth, Chebyshev, Bessel, ou Elliptique selon le compromis sélectivité/phase/temps.
+<p><strong>Phase 2 : Choix de l'approximation</strong> :</p>
+<p>Selectionner Butterworth, Chebyshev, Bessel, ou Elliptique selon le compromis selectivite/phase/temps.</p>
 
-**Phase 3 : Synthèse de la fonction de transfert** :
-Utiliser tables ou logiciels pour obtenir les pôles et zéros. Décomposer en cellules d'ordre 2.
+<p><strong>Phase 3 : Synthese de la fonction de transfert</strong> :</p>
+<p>Utiliser tables ou logiciels pour obtenir les poles et zeros. Decomposer en cellules d'ordre 2.</p>
 
-**Phase 4 : Implémentation électronique** :
-Choisir la topologie (Sallen-Key, Rauch) et calculer les composants (R, C) pour chaque cellule.
+<p><strong>Phase 4 : Implementation electronique</strong> :</p>
+<p>Choisir la topologie (Sallen-Key, Rauch) et calculer les composants (R, C) pour chaque cellule.</p>
 
-**Phase 5 : Analyse du bruit** :
-Calculer les contributions de bruit de chaque composant et AOP, puis le bruit total ramené en entrée.
+<p><strong>Phase 5 : Analyse du bruit</strong> :</p>
+<p>Calculer les contributions de bruit de chaque composant et AOP, puis le bruit total ramene en entree.</p>
 
 <div style="text-align: center; margin: 30px 0;">
-  <img src="/assets/images/courses/S7/filtrage-actif/capacites-commutees.svg" alt="Filtre à capacités commutées" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
-  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe des filtres à capacités commutées - Émulation de résistance par commutation</p>
+  <img src="/assets/images/courses/S7/filtrage-actif/capacites-commutees.svg" alt="Filtre a capacites commutees" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure : Principe des filtres a capacites commutees - Emulation de resistance par commutation</p>
 </div>
 
-**Phase 6 : Simulation et validation** :
-Vérifier la réponse fréquentielle, le bruit, et les limitations pratiques (saturation, slew-rate).
+<p><strong>Phase 6 : Simulation et validation</strong> :</p>
+<p>Verifier la reponse frequentielle, le bruit, et les limitations pratiques (saturation, slew-rate).</p>
 
-<h3 class="section-title">Difficultés rencontrées</h3>
+<h3 class="section-title">Difficultes rencontrees</h3>
 
-**Synthèse de filtres d'ordre élevé** :
-Cascader plusieurs cellules du 2e ordre nécessite de gérer les interactions, l'ordre des sections, et les niveaux de signaux inter-étages.
+<p><strong>Synthese de filtres d'ordre eleve</strong> :</p>
+<p>Cascader plusieurs cellules du 2e ordre necessite de gerer les interactions, l'ordre des sections, et les niveaux de signaux inter-etages.</p>
 
-**Valeurs de composants** :
-Les calculs théoriques donnent souvent des valeurs non standard (résistances, capacités). Il faut ajuster avec les séries E12/E24/E96.
+<p><strong>Valeurs de composants</strong> :</p>
+<p>Les calculs theoriques donnent souvent des valeurs non standard (resistances, capacites). Il faut ajuster avec les series E12/E24/E96.</p>
 
-**Analyse du bruit** :
-Identifier toutes les sources de bruit (résistances, AOP, alimentations), calculer leur contribution ramené en entrée, puis intégrer sur la bande passante demande rigueur.
+<p><strong>Analyse du bruit</strong> :</p>
+<p>Identifier toutes les sources de bruit (resistances, AOP, alimentations), calculer leur contribution ramenee en entree, puis integrer sur la bande passante demande rigueur.</p>
 
-**Bruit en 1/f** :
-La densité spectrale n'est pas constante, ce qui complique les calculs d'intégration. Nécessite de connaître la fréquence de coin.
+<p><strong>Bruit en 1/f</strong> :</p>
+<p>La densite spectrale n'est pas constante, ce qui complique les calculs d'integration. Necessite de connaitre la frequence de coin.</p>
 
----
+<hr/>
 
-## PART C - Aspects Techniques Détaillés
+<h2>PART C - Aspects Techniques Detailles</h2>
 
-<h3 class="section-title">1. Amplificateurs opérationnels et bruit interne</h3>
+<h3 class="section-title">1. Amplificateurs operationnels et bruit interne</h3>
 
-**Modèle de bruit d'un AOP** :
+<p><strong>Modele de bruit d'un AOP</strong> :</p>
 
-Trois sources de bruit équivalentes en entrée :
-- **en** : tension de bruit en entrée (nV/racine(Hz))
-- **in+** : courant de bruit entrée non-inverseuse (pA/racine(Hz))
-- **in-** : courant de bruit entrée inverseuse (pA/racine(Hz))
+<p>Trois sources de bruit equivalentes en entree :</p>
+<ul>
+<li><strong>en</strong> : tension de bruit en entree (nV/racine(Hz))</li>
+<li><strong>in+</strong> : courant de bruit entree non-inverseuse (pA/racine(Hz))</li>
+<li><strong>in-</strong> : courant de bruit entree inverseuse (pA/racine(Hz))</li>
+</ul>
 
-**Densité spectrale de bruit en tension** :
+<p><strong>Densite spectrale de bruit en tension</strong> :</p>
 
-Typiquement :
-- AOP bipolaire : en = 1-10 nV/racine(Hz)
-- AOP JFET : en = 5-20 nV/racine(Hz)
-- AOP précision : en < 5 nV/racine(Hz)
+<p>Typiquement :</p>
+<ul>
+<li>AOP bipolaire : en = 1-10 nV/racine(Hz)</li>
+<li>AOP JFET : en = 5-20 nV/racine(Hz)</li>
+<li>AOP precision : en &lt; 5 nV/racine(Hz)</li>
+</ul>
 
-**Densité spectrale de bruit en courant** :
+<p><strong>Densite spectrale de bruit en courant</strong> :</p>
 
-Typiquement :
-- AOP bipolaire : in = 1-10 pA/racine(Hz)
-- AOP JFET : in = 0.01-1 pA/racine(Hz) (très faible)
+<p>Typiquement :</p>
+<ul>
+<li>AOP bipolaire : in = 1-10 pA/racine(Hz)</li>
+<li>AOP JFET : in = 0.01-1 pA/racine(Hz) (tres faible)</li>
+</ul>
 
-**Bruit en 1/f** :
+<p><strong>Bruit en 1/f</strong> :</p>
 
-Fréquence de coin fc (transition entre bruit en 1/f et bruit blanc) :
-- AOP bipolaire : fc = 10-100 Hz
-- AOP JFET : fc = 100-1000 Hz
+<p>Frequence de coin fc (transition entre bruit en 1/f et bruit blanc) :</p>
+<ul>
+<li>AOP bipolaire : fc = 10-100 Hz</li>
+<li>AOP JFET : fc = 100-1000 Hz</li>
+</ul>
 
-**OTA (Operational Transconductance Amplifier)** :
+<p><strong>OTA (Operational Transconductance Amplifier)</strong> :</p>
 
-Exemple : CA3080
-- Sortie en courant (transconductance gm réglable)
-- Applications : VCA, VCF, multiplieurs
-- Bruit typiquement plus élevé que AOP classiques
+<p>Exemple : CA3080</p>
+<ul>
+<li>Sortie en courant (transconductance gm reglable)</li>
+<li>Applications : VCA, VCF, multiplieurs</li>
+<li>Bruit typiquement plus eleve que AOP classiques</li>
+</ul>
 
 <h3 class="section-title">2. Sources fondamentales de bruit</h3>
 
-**Bruit thermique (Johnson-Nyquist)** :
+<p><strong>Bruit thermique (Johnson-Nyquist)</strong> :</p>
 
-Origine : agitation thermique des porteurs de charge dans les résistances.
+<p>Origine : agitation thermique des porteurs de charge dans les resistances.</p>
 
-Tension de bruit RMS :
-Vn = racine(4 × k × T × R × Δf)
+<p>Tension de bruit RMS :</p>
+<p>Vn = racine(4 x k x T x R x Df)</p>
 
-avec :
-- k = 1.38 × 10^-23 J/K (constante de Boltzmann)
-- T : température absolue (Kelvin)
-- R : résistance (Ohms)
-- Δf : bande passante (Hz)
+<p>avec :</p>
+<ul>
+<li>k = 1.38 x 10^-23 J/K (constante de Boltzmann)</li>
+<li>T : temperature absolue (Kelvin)</li>
+<li>R : resistance (Ohms)</li>
+<li>Df : bande passante (Hz)</li>
+</ul>
 
-Densité spectrale (spectre blanc) :
-Sn(f) = 4 × k × T × R (V²/Hz)
+<p>Densite spectrale (spectre blanc) :</p>
+<p>Sn(f) = 4 x k x T x R (V^2/Hz)</p>
 
-**Exemples à 25°C (T=298K)** :
+<p><strong>Exemples a 25 deg C (T=298K)</strong> :</p>
 
-| Résistance | Bruit (nV/racine(Hz)) |
-|------------|----------------------|
-| 1 kΩ | 4.1 |
-| 10 kΩ | 13 |
-| 100 kΩ | 41 |
-| 1 MΩ | 130 |
+<table>
+<tr><th>Resistance</th><th>Bruit (nV/racine(Hz))</th></tr>
+<tr><td>1 kOhm</td><td>4.1</td></tr>
+<tr><td>10 kOhm</td><td>13</td></tr>
+<tr><td>100 kOhm</td><td>41</td></tr>
+<tr><td>1 MOhm</td><td>130</td></tr>
+</table>
 
-**Bruit de grenaille (shot noise)** :
+<p><strong>Bruit de grenaille (shot noise)</strong> :</p>
 
-Origine : nature discrète du courant électrique (quantification des électrons).
+<p>Origine : nature discrete du courant electrique (quantification des electrons).</p>
 
-Courant de bruit RMS :
-In = racine(2 × q × I × Δf)
+<p>Courant de bruit RMS :</p>
+<p>In = racine(2 x q x I x Df)</p>
 
-avec :
-- q = 1.6 × 10^-19 C (charge électron)
-- I : courant moyen (A)
+<p>avec :</p>
+<ul>
+<li>q = 1.6 x 10^-19 C (charge electron)</li>
+<li>I : courant moyen (A)</li>
+</ul>
 
-Observé dans jonctions PN (diodes, transistors), tubes, photodétecteurs.
+<p>Observe dans jonctions PN (diodes, transistors), tubes, photodetecteurs.</p>
 
-**Bruit en 1/f (flicker noise)** :
+<p><strong>Bruit en 1/f (flicker noise)</strong> :</p>
 
-Origine : défauts cristallins, recombinaisons de surface.
+<p>Origine : defauts cristallins, recombinaisons de surface.</p>
 
-Densité spectrale :
-Sn(f) = K / f
+<p>Densite spectrale :</p>
+<p>Sn(f) = K / f</p>
 
-Dominant à basse fréquence (< 1 kHz typiquement).
+<p>Dominant a basse frequence (&lt; 1 kHz typiquement).</p>
 
-Fréquence de coin fc : transition vers bruit blanc.
+<p>Frequence de coin fc : transition vers bruit blanc.</p>
 
-**Comparaison des bruits** :
+<p><strong>Comparaison des bruits</strong> :</p>
 
-| Type | Spectre | Amplitude | Dominant |
-|------|---------|-----------|----------|
-| Thermique | Blanc | 4kTR | Toutes fréquences |
-| Grenaille | Blanc | 2qI | Jonctions actives |
-| 1/f | Rose (1/f) | Variable | Basses fréquences |
+<table>
+<tr><th>Type</th><th>Spectre</th><th>Amplitude</th><th>Dominant</th></tr>
+<tr><td>Thermique</td><td>Blanc</td><td>4kTR</td><td>Toutes frequences</td></tr>
+<tr><td>Grenaille</td><td>Blanc</td><td>2qI</td><td>Jonctions actives</td></tr>
+<tr><td>1/f</td><td>Rose (1/f)</td><td>Variable</td><td>Basses frequences</td></tr>
+</table>
 
 <h3 class="section-title">3. Topologies de filtres actifs</h3>
 
-**Filtre Sallen-Key (VCVS)** :
+<p><strong>Filtre Sallen-Key (VCVS)</strong> :</p>
 
-Configuration non-inverseuse avec gain K.
+<p>Configuration non-inverseuse avec gain K.</p>
 
-**Passe-bas du 2e ordre** :
+<p><strong>Passe-bas du 2e ordre</strong> :</p>
 
-Composants : R1, R2, C1, C2, AOP en suiveur ou amplificateur.
+<p>Composants : R1, R2, C1, C2, AOP en suiveur ou amplificateur.</p>
 
-Fonction de transfert générale :
-H(s) = K × ω0² / (s² + (ω0/Q) × s + ω0²)
+<p>Fonction de transfert generale :</p>
+<p>H(s) = K x w0^2 / (s^2 + (w0/Q) x s + w0^2)</p>
 
-avec :
-- ω0 : pulsation propre (fréquence de coupure)
-- Q : facteur de qualité (inverse de l'amortissement)
-- K : gain en bande passante
+<p>avec :</p>
+<ul>
+<li>w0 : pulsation propre (frequence de coupure)</li>
+<li>Q : facteur de qualite (inverse de l'amortissement)</li>
+<li>K : gain en bande passante</li>
+</ul>
 
-**Avantages** :
-- Simple (peu de composants)
-- Gain possible en bande passante
-- Haute impédance d'entrée
+<p><strong>Avantages</strong> :</p>
+<ul>
+<li>Simple (peu de composants)</li>
+<li>Gain possible en bande passante</li>
+<li>Haute impedance d'entree</li>
+</ul>
 
-**Inconvénients** :
-- Sensibilité aux composants pour Q élevé
-- Stabilité limitée si Q > 10
+<p><strong>Inconvenients</strong> :</p>
+<ul>
+<li>Sensibilite aux composants pour Q eleve</li>
+<li>Stabilite limitee si Q &gt; 10</li>
+</ul>
 
-**Filtre Rauch (structure inverseuse)** :
+<p><strong>Filtre Rauch (structure inverseuse)</strong> :</p>
 
-Configuration inverseuse avec gain négatif en bande passante.
+<p>Configuration inverseuse avec gain negatif en bande passante.</p>
 
-**Avantages** :
-- Meilleure stabilité pour Q élevé
-- Moins sensible aux variations de composants
+<p><strong>Avantages</strong> :</p>
+<ul>
+<li>Meilleure stabilite pour Q eleve</li>
+<li>Moins sensible aux variations de composants</li>
+</ul>
 
-**Inconvénients** :
-- Impédance d'entrée plus faible
-- Gain négatif (peut nécessiter un étage inverseur additionnel)
+<p><strong>Inconvenients</strong> :</p>
+<ul>
+<li>Impedance d'entree plus faible</li>
+<li>Gain negatif (peut necessiter un etage inverseur additionnel)</li>
+</ul>
 
-**Comparaison** :
+<p><strong>Comparaison</strong> :</p>
 
-| Critère | Sallen-Key | Rauch |
-|---------|------------|-------|
-| Nombre composants | 4 passifs + AOP | 5 passifs + AOP |
-| Impédance entrée | Haute | Moyenne/Faible |
-| Gain bande passante | Positif | Négatif |
-| Stabilité Q élevé | Limitée | Meilleure |
-| Usage | Polyvalent | Q > 5 |
+<table>
+<tr><th>Critere</th><th>Sallen-Key</th><th>Rauch</th></tr>
+<tr><td>Nombre composants</td><td>4 passifs + AOP</td><td>5 passifs + AOP</td></tr>
+<tr><td>Impedance entree</td><td>Haute</td><td>Moyenne/Faible</td></tr>
+<tr><td>Gain bande passante</td><td>Positif</td><td>Negatif</td></tr>
+<tr><td>Stabilite Q eleve</td><td>Limitee</td><td>Meilleure</td></tr>
+<tr><td>Usage</td><td>Polyvalent</td><td>Q &gt; 5</td></tr>
+</table>
 
 <h3 class="section-title">4. Approximations de filtres</h3>
 
-**Butterworth (Maximally Flat)** :
+<p><strong>Butterworth (Maximally Flat)</strong> :</p>
 
-Caractéristiques :
-- Réponse en amplitude la plus plate possible en bande passante
-- Pas d'ondulation
-- Atténuation : 20 × n dB/décade (n = ordre du filtre)
-- Réponse en phase non-linéaire
+<p>Caracteristiques :</p>
+<ul>
+<li>Reponse en amplitude la plus plate possible en bande passante</li>
+<li>Pas d'ondulation</li>
+<li>Attenuation : 20 x n dB/decade (n = ordre du filtre)</li>
+<li>Reponse en phase non-lineaire</li>
+</ul>
 
-Applications : usage général, audio (réponse douce).
+<p>Applications : usage general, audio (reponse douce).</p>
 
-**Chebyshev Type I** :
+<p><strong>Chebyshev Type I</strong> :</p>
 
-Caractéristiques :
-- Ondulation en bande passante (ripple contrôlé, ex : 0.5 dB, 1 dB, 3 dB)
-- Pente plus raide que Butterworth à ordre égal
-- Transition rapide
+<p>Caracteristiques :</p>
+<ul>
+<li>Ondulation en bande passante (ripple controle, ex : 0.5 dB, 1 dB, 3 dB)</li>
+<li>Pente plus raide que Butterworth a ordre egal</li>
+<li>Transition rapide</li>
+</ul>
 
-Applications : anti-aliasing, filtres sélectifs.
+<p>Applications : anti-aliasing, filtres selectifs.</p>
 
-**Chebyshev Type II (Inverse)** :
+<p><strong>Chebyshev Type II (Inverse)</strong> :</p>
 
-Caractéristiques :
-- Ondulation en bande atténuée
-- Bande passante plate
-- Zéros de transmission (atténuation finie)
+<p>Caracteristiques :</p>
+<ul>
+<li>Ondulation en bande attenuee</li>
+<li>Bande passante plate</li>
+<li>Zeros de transmission (attenuation finie)</li>
+</ul>
 
-Applications : moins courant, compromis.
+<p>Applications : moins courant, compromis.</p>
 
-**Bessel (Thomson)** :
+<p><strong>Bessel (Thomson)</strong> :</p>
 
-Caractéristiques :
-- Réponse en phase linéaire
-- Délai de groupe constant (pas de distorsion de phase)
-- Atténuation douce (pente faible)
+<p>Caracteristiques :</p>
+<ul>
+<li>Reponse en phase lineaire</li>
+<li>Delai de groupe constant (pas de distorsion de phase)</li>
+<li>Attenuation douce (pente faible)</li>
+</ul>
 
-Applications : vidéo, impulsions (préservation de forme temporelle).
+<p>Applications : video, impulsions (preservation de forme temporelle).</p>
 
-**Elliptique (Cauer)** :
+<p><strong>Elliptique (Cauer)</strong> :</p>
 
-Caractéristiques :
-- Ondulation en bande passante ET en bande atténuée
-- Pente la plus raide pour un ordre donné
-- Complexité de conception (zéros de transmission)
+<p>Caracteristiques :</p>
+<ul>
+<li>Ondulation en bande passante ET en bande attenuee</li>
+<li>Pente la plus raide pour un ordre donne</li>
+<li>Complexite de conception (zeros de transmission)</li>
+</ul>
 
-Applications : télécommunications (sélectivité maximale).
+<p>Applications : telecommunications (selectivite maximale).</p>
 
-**Tableau récapitulatif** :
+<p><strong>Tableau recapitulatif</strong> :</p>
 
-| Type | Bande passante | Pente | Phase | Application |
-|------|----------------|-------|-------|-------------|
-| Butterworth | Plate | Moyenne | Non-linéaire | Usage général |
-| Chebyshev I | Ondulation | Raide | Fortement non-linéaire | Anti-aliasing |
-| Chebyshev II | Plate | Raide | Non-linéaire | Compromis |
-| Bessel | Plate | Douce | Linéaire | Vidéo, impulsions |
-| Elliptique | Ondulation | Très raide | Fortement non-linéaire | Télécom |
+<table>
+<tr><th>Type</th><th>Bande passante</th><th>Pente</th><th>Phase</th><th>Application</th></tr>
+<tr><td>Butterworth</td><td>Plate</td><td>Moyenne</td><td>Non-lineaire</td><td>Usage general</td></tr>
+<tr><td>Chebyshev I</td><td>Ondulation</td><td>Raide</td><td>Fortement non-lineaire</td><td>Anti-aliasing</td></tr>
+<tr><td>Chebyshev II</td><td>Plate</td><td>Raide</td><td>Non-lineaire</td><td>Compromis</td></tr>
+<tr><td>Bessel</td><td>Plate</td><td>Douce</td><td>Lineaire</td><td>Video, impulsions</td></tr>
+<tr><td>Elliptique</td><td>Ondulation</td><td>Tres raide</td><td>Fortement non-lineaire</td><td>Telecom</td></tr>
+</table>
 
-<h3 class="section-title">5. Synthèse de filtres d'ordre élevé</h3>
+<h3 class="section-title">5. Synthese de filtres d'ordre eleve</h3>
 
-**Décomposition en cascade** :
+<p><strong>Decomposition en cascade</strong> :</p>
 
-Un filtre d'ordre n est réalisé par cascade de cellules :
-- Ordre pair : n/2 cellules du 2e ordre
-- Ordre impair : (n-1)/2 cellules du 2e ordre + 1 cellule du 1er ordre
+<p>Un filtre d'ordre n est realise par cascade de cellules :</p>
+<ul>
+<li>Ordre pair : n/2 cellules du 2e ordre</li>
+<li>Ordre impair : (n-1)/2 cellules du 2e ordre + 1 cellule du 1er ordre</li>
+</ul>
 
-Fonction de transfert totale :
-H(s) = H1(s) × H2(s) × ... × Hk(s)
+<p>Fonction de transfert totale :</p>
+<p>H(s) = H1(s) x H2(s) x ... x Hk(s)</p>
 
-**Paramètres de chaque cellule** :
+<p><strong>Parametres de chaque cellule</strong> :</p>
 
-Chaque cellule du 2e ordre a ses propres :
-- Fréquence propre ω0i
-- Facteur de qualité Qi
-- Gain Ki
+<p>Chaque cellule du 2e ordre a ses propres :</p>
+<ul>
+<li>Frequence propre w0i</li>
+<li>Facteur de qualite Qi</li>
+<li>Gain Ki</li>
+</ul>
 
-**Exemple : Butterworth ordre 5** :
+<p><strong>Exemple : Butterworth ordre 5</strong> :</p>
 
-Décomposition : 2 cellules du 2e ordre + 1 cellule du 1er ordre
+<p>Decomposition : 2 cellules du 2e ordre + 1 cellule du 1er ordre</p>
 
-Cellule 1 : Q1 = 0.618, ω01 = ωc
-Cellule 2 : Q2 = 1.618, ω02 = ωc
-Cellule 3 : pôle réel à -ωc
+<p>Cellule 1 : Q1 = 0.618, w01 = wc<br/>
+Cellule 2 : Q2 = 1.618, w02 = wc<br/>
+Cellule 3 : pole reel a -wc</p>
 
-**Ordre des sections** :
+<p><strong>Ordre des sections</strong> :</p>
 
-Principe général :
-1. Placer les sections à Q élevé en fin de cascade (après atténuation)
-2. Éviter la saturation des premiers étages
-3. Minimiser l'accumulation de bruit
+<p>Principe general :</p>
+<ol>
+<li>Placer les sections a Q eleve en fin de cascade (apres attenuation)</li>
+<li>Eviter la saturation des premiers etages</li>
+<li>Minimiser l'accumulation de bruit</li>
+</ol>
 
-**Normalisation et dénormalisation** :
+<p><strong>Normalisation et denormalisation</strong> :</p>
 
-Étapes :
-1. Synthèse normalisée (ωc = 1 rad/s, R = 1 Ω)
-2. Tables de coefficients pour approximations standard
-3. Dénormalisation : mise à l'échelle en fréquence et impédance
+<p>Etapes :</p>
+<ol>
+<li>Synthese normalisee (wc = 1 rad/s, R = 1 Ohm)</li>
+<li>Tables de coefficients pour approximations standard</li>
+<li>Denormalisation : mise a l'echelle en frequence et impedance</li>
+</ol>
 
-Formules de dénormalisation :
-- Résistance : R_réel = R_normalisé × Z0
-- Capacité : C_réel = C_normalisé / (Z0 × ωc)
+<p>Formules de denormalisation :</p>
+<ul>
+<li>Resistance : R_reel = R_normalise x Z0</li>
+<li>Capacite : C_reel = C_normalise / (Z0 x wc)</li>
+</ul>
 
-<h3 class="section-title">6. Filtres à capacités commutées</h3>
+<h3 class="section-title">6. Filtres a capacites commutees</h3>
 
-**Principe** :
+<p><strong>Principe</strong> :</p>
 
-Une résistance est simulée par commutation périodique d'une capacité.
+<p>Une resistance est simulee par commutation periodique d'une capacite.</p>
 
-Résistance équivalente :
-Req = T / C = 1 / (f × C)
+<p>Resistance equivalente :</p>
+<p>Req = T / C = 1 / (f x C)</p>
 
-avec :
-- T : période d'horloge
-- f : fréquence d'horloge
-- C : capacité commutée
+<p>avec :</p>
+<ul>
+<li>T : periode d'horloge</li>
+<li>f : frequence d'horloge</li>
+<li>C : capacite commutee</li>
+</ul>
 
-**Avantages** :
+<p><strong>Avantages</strong> :</p>
+<ul>
+<li>Precision determinee par rapports de capacites (excellente en CI)</li>
+<li>Pas de resistances (gain de surface en integration)</li>
+<li>Accordabilite via frequence d'horloge</li>
+<li>Faible sensibilite aux variations process</li>
+</ul>
 
-- Précision déterminée par rapports de capacités (excellente en CI)
-- Pas de résistances (gain de surface en intégration)
-- Accordabilité via fréquence d'horloge
-- Faible sensibilité aux variations process
+<p><strong>Limitations</strong> :</p>
+<ul>
+<li>Necessite horloge (bruit d'horloge)</li>
+<li>Theoreme d'echantillonnage : f_horloge &gt;&gt; 2 x f_signal</li>
+<li>Typiquement : f_horloge = 50 a 100 x f_coupure</li>
+</ul>
 
-**Limitations** :
+<p><strong>Applications</strong> :</p>
+<ul>
+<li>Filtres anti-aliasing dans ADC</li>
+<li>Filtres de reconstruction dans DAC</li>
+<li>Egaliseurs audio programmables</li>
+<li>Circuits integres mixtes (analog/digital)</li>
+</ul>
 
-- Nécessite horloge (bruit d'horloge)
-- Théorème d'échantillonnage : f_horloge >> 2 × f_signal
-- Typiquement : f_horloge = 50 à 100 × f_coupure
+<p><strong>Exemple commercial</strong> :</p>
 
-**Applications** :
-
-- Filtres anti-aliasing dans ADC
-- Filtres de reconstruction dans DAC
-- Égaliseurs audio programmables
-- Circuits intégrés mixtes (analog/digital)
-
-**Exemple commercial** :
-
-MAX7400 (Maxim) : filtre passe-bas 8e ordre Butterworth à capacités commutées, fréquence de coupure programmable par horloge.
+<p>MAX7400 (Maxim) : filtre passe-bas 8e ordre Butterworth a capacites commutees, frequence de coupure programmable par horloge.</p>
 
 <h3 class="section-title">7. Analyse du bruit dans un amplificateur</h3>
 
-**Amplificateur non-inverseur** :
+<p><strong>Amplificateur non-inverseur</strong> :</p>
 
-Configuration :
-- Gain Av = 1 + (R2 / R1)
-- Entrée : source de signal Vs avec impédance Rs
+<p>Configuration :</p>
+<ul>
+<li>Gain Av = 1 + (R2 / R1)</li>
+<li>Entree : source de signal Vs avec impedance Rs</li>
+</ul>
 
-**Sources de bruit** :
+<p><strong>Sources de bruit</strong> :</p>
 
-1. Bruit de la source : Vn_source = racine(4kTRs)
-2. Bruit thermique R1 : Vn_R1 = racine(4kTR1)
-3. Bruit thermique R2 : Vn_R2 = racine(4kTR2)
-4. Bruit en tension AOP : en
-5. Bruit en courant AOP × impédances : in × (Rs // (R1+R2))
+<ol>
+<li>Bruit de la source : Vn_source = racine(4kTRs)</li>
+<li>Bruit thermique R1 : Vn_R1 = racine(4kTR1)</li>
+<li>Bruit thermique R2 : Vn_R2 = racine(4kTR2)</li>
+<li>Bruit en tension AOP : en</li>
+<li>Bruit en courant AOP x impedances : in x (Rs // (R1+R2))</li>
+</ol>
 
-**Bruit total ramené en entrée (RTI)** :
+<p><strong>Bruit total ramene en entree (RTI)</strong> :</p>
 
-Vn_total² = Vn_source² + en² + (in × Rs)² + (Vn_R1 / Av)² + (Vn_R2 / Av)²
+<p>Vn_total^2 = Vn_source^2 + en^2 + (in x Rs)^2 + (Vn_R1 / Av)^2 + (Vn_R2 / Av)^2</p>
 
-**Bruit de sortie** :
+<p><strong>Bruit de sortie</strong> :</p>
 
-Vn_out = Vn_total × Av
+<p>Vn_out = Vn_total x Av</p>
 
-**Optimisation** :
-
-- Minimiser Rs (résistance de source faible)
-- Choisir R1, R2 raisonnables (compromis bruit/consommation)
-- Sélectionner AOP avec en et in faibles
-- Technologies : bipolaire (faible en), JFET (faible in)
+<p><strong>Optimisation</strong> :</p>
+<ul>
+<li>Minimiser Rs (resistance de source faible)</li>
+<li>Choisir R1, R2 raisonnables (compromis bruit/consommation)</li>
+<li>Selectionner AOP avec en et in faibles</li>
+<li>Technologies : bipolaire (faible en), JFET (faible in)</li>
+</ul>
 
 <h3 class="section-title">8. Facteur de bruit et SNR</h3>
 
-**Rapport Signal sur Bruit (SNR)** :
+<p><strong>Rapport Signal sur Bruit (SNR)</strong> :</p>
 
-SNR = Puissance_signal / Puissance_bruit
+<p>SNR = Puissance_signal / Puissance_bruit</p>
 
-En dB :
-SNR_dB = 10 × log10(Psignal / Pbruit)
+<p>En dB :</p>
+<p>SNR_dB = 10 x log10(Psignal / Pbruit)</p>
 
-ou en tensions RMS :
-SNR_dB = 20 × log10(Vsignal_RMS / Vbruit_RMS)
+<p>ou en tensions RMS :</p>
+<p>SNR_dB = 20 x log10(Vsignal_RMS / Vbruit_RMS)</p>
 
-**Facteur de bruit (F)** :
+<p><strong>Facteur de bruit (F)</strong> :</p>
 
-Dégradation du SNR par un système :
+<p>Degradation du SNR par un systeme :</p>
 
-F = SNR_entrée / SNR_sortie
+<p>F = SNR_entree / SNR_sortie</p>
 
-**Figure de bruit (NF)** :
+<p><strong>Figure de bruit (NF)</strong> :</p>
 
-NF_dB = 10 × log10(F)
+<p>NF_dB = 10 x log10(F)</p>
 
-Un système idéal (sans bruit ajouté) a F = 1, NF = 0 dB.
+<p>Un systeme ideal (sans bruit ajoute) a F = 1, NF = 0 dB.</p>
 
-**Température de bruit équivalente** :
+<p><strong>Temperature de bruit equivalente</strong> :</p>
 
-Te = T0 × (F - 1)
+<p>Te = T0 x (F - 1)</p>
 
-avec T0 = 290 K (température de référence).
+<p>avec T0 = 290 K (temperature de reference).</p>
 
-**Formule de Friis (cascade de systèmes)** :
+<p><strong>Formule de Friis (cascade de systemes)</strong> :</p>
 
-Pour n étages en cascade :
+<p>Pour n etages en cascade :</p>
 
-F_total = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1×G2) + ... + (Fn - 1)/(G1×G2×...×Gn-1)
+<p>F_total = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1xG2) + ... + (Fn - 1)/(G1xG2x...xGn-1)</p>
 
-avec Fi : facteur de bruit de l'étage i, Gi : gain en puissance de l'étage i.
+<p>avec Fi : facteur de bruit de l'etage i, Gi : gain en puissance de l'etage i.</p>
 
-**Implications pratiques** :
+<p><strong>Implications pratiques</strong> :</p>
+<ul>
+<li>Le premier etage domine le bruit total</li>
+<li>Un gain eleve du premier etage reduit l'impact des suivants</li>
+<li>Preamplificateur faible bruit (LNA) crucial en tete de chaine</li>
+<li>Applications : recepteurs radio, instrumentation</li>
+</ul>
 
-- Le premier étage domine le bruit total
-- Un gain élevé du premier étage réduit l'impact des suivants
-- Préamplificateur faible bruit (LNA) crucial en tête de chaîne
-- Applications : récepteurs radio, instrumentation
+<h3 class="section-title">9. Techniques de reduction du bruit</h3>
 
-<h3 class="section-title">9. Techniques de réduction du bruit</h3>
+<p><strong>Au niveau conception circuit</strong> :</p>
 
-**Au niveau conception circuit** :
+<p><strong>Minimiser les impedances</strong> :</p>
+<p>Les resistances generent du bruit thermique. Utiliser des valeurs raisonnables (1-100 kOhm typiquement).</p>
 
-**Minimiser les impédances** :
-Les résistances génèrent du bruit thermique. Utiliser des valeurs raisonnables (1-100 kΩ typiquement).
+<p><strong>Choisir le bon AOP</strong> :</p>
+<ul>
+<li>Application basse impedance de source : minimiser en</li>
+<li>Application haute impedance de source : minimiser in</li>
+<li>Compromis vitesse/bruit (AOP rapides souvent plus bruyants)</li>
+</ul>
 
-**Choisir le bon AOP** :
-- Application basse impédance de source : minimiser en
-- Application haute impédance de source : minimiser in
-- Compromis vitesse/bruit (AOP rapides souvent plus bruyants)
+<p><strong>Filtrage adapte</strong> :</p>
+<p>Limiter la bande passante au strict necessaire reduit le bruit integre.</p>
 
-**Filtrage adapté** :
-Limiter la bande passante au strict nécessaire réduit le bruit intégré.
+<p><strong>Blindage et garde</strong> :</p>
+<p>Reduire les interferences electromagnetiques externes.</p>
 
-**Blindage et garde** :
-Réduire les interférences électromagnétiques externes.
+<p><strong>Alimentation propre</strong> :</p>
+<p>Decouplage soigne, regulateurs faible bruit, filtrage secteur.</p>
 
-**Alimentation propre** :
-Découplage soigné, régulateurs faible bruit, filtrage secteur.
+<p><strong>Au niveau systeme</strong> :</p>
 
-**Au niveau système** :
+<p><strong>Filtrage optimal</strong> :</p>
+<p>Filtre adapte (matched filter) maximise le SNR pour un signal connu dans du bruit blanc.</p>
 
-**Filtrage optimal** :
-Filtre adapté (matched filter) maximise le SNR pour un signal connu dans du bruit blanc.
+<p><strong>Moyennage</strong> :</p>
+<p>N mesures moyennees ameliorent le SNR de racine(N).</p>
 
-**Moyennage** :
-N mesures moyennées améliorent le SNR de racine(N).
+<p><strong>Detection synchrone (lock-in)</strong> :</p>
+<p>Modulation du signal, demodulation synchrone, filtrage passe-bas etroit.</p>
 
-**Détection synchrone (lock-in)** :
-Modulation du signal, démodulation synchrone, filtrage passe-bas étroit.
+<p><strong>Techniques numeriques</strong> :</p>
+<p>Apres conversion A/N : filtrage numerique, FFT, correlation, detection de seuil adaptative.</p>
 
-**Techniques numériques** :
-Après conversion A/N : filtrage numérique, FFT, corrélation, détection de seuil adaptative.
+<p><strong>Au niveau application</strong> :</p>
 
-**Au niveau application** :
+<p><strong>Refroidissement</strong> :</p>
+<p>Reduire T diminue le bruit thermique (cryogenie pour applications extremes).</p>
 
-**Refroidissement** :
-Réduire T diminue le bruit thermique (cryogénie pour applications extrêmes).
-
-**Choix de fréquence de travail** :
-Éviter la zone de bruit en 1/f si possible (modulation à fréquence plus haute).
+<p><strong>Choix de frequence de travail</strong> :</p>
+<p>Eviter la zone de bruit en 1/f si possible (modulation a frequence plus haute).</p>
 
 <h3 class="section-title">10. Mesure du bruit</h3>
 
-**Analyseur de spectre** :
+<p><strong>Analyseur de spectre</strong> :</p>
 
-Mesure de la densité spectrale de puissance (PSD).
+<p>Mesure de la densite spectrale de puissance (PSD).</p>
 
-Permet d'identifier :
-- Bruit blanc (niveau constant)
-- Bruit en 1/f (pente en -10 dB/décade)
-- Raies parasites (50/60 Hz secteur, harmoniques)
+<p>Permet d'identifier :</p>
+<ul>
+<li>Bruit blanc (niveau constant)</li>
+<li>Bruit en 1/f (pente en -10 dB/decade)</li>
+<li>Raies parasites (50/60 Hz secteur, harmoniques)</li>
+</ul>
 
-**Oscilloscope numérique** :
+<p><strong>Oscilloscope numerique</strong> :</p>
 
-Méthodes :
-- Histogramme d'amplitude (distribution du bruit)
-- Mesure RMS du signal avec/sans entrée
-- FFT pour analyse spectrale
+<p>Methodes :</p>
+<ul>
+<li>Histogramme d'amplitude (distribution du bruit)</li>
+<li>Mesure RMS du signal avec/sans entree</li>
+<li>FFT pour analyse spectrale</li>
+</ul>
 
-**Multimètre True RMS** :
+<p><strong>Multimetre True RMS</strong> :</p>
 
-Mesure directe de la tension RMS de bruit dans une bande passante donnée.
+<p>Mesure directe de la tension RMS de bruit dans une bande passante donnee.</p>
 
-**Méthode pratique** :
+<p><strong>Methode pratique</strong> :</p>
 
-1. Court-circuiter l'entrée
-2. Mesurer Vout sans signal
-3. Ramener en entrée : Vn_RTI = Vout / Gain
-4. Comparer avec calculs théoriques
+<ol>
+<li>Court-circuiter l'entree</li>
+<li>Mesurer Vout sans signal</li>
+<li>Ramener en entree : Vn_RTI = Vout / Gain</li>
+<li>Comparer avec calculs theoriques</li>
+</ol>
 
-**Précautions** :
-
-- Échauffement (attendre stabilisation thermique)
-- Blindage (cage de Faraday si nécessaire)
-- Masse unique (éviter boucles de masse)
-- Câbles courts et de qualité
+<p><strong>Precautions</strong> :</p>
+<ul>
+<li>Echauffement (attendre stabilisation thermique)</li>
+<li>Blindage (cage de Faraday si necessaire)</li>
+<li>Masse unique (eviter boucles de masse)</li>
+<li>Cables courts et de qualite</li>
+</ul>
 
 <h3 class="section-title">11. Applications pratiques</h3>
 
-**Chaîne d'acquisition biomédicale** :
+<p><strong>Chaine d'acquisition biomedicale</strong> :</p>
 
-**ECG (électrocardiogramme)** :
-- Signal : 0.5-5 mV
-- Bruit acceptable : < 10 µVRMS
-- Bande passante : 0.05-150 Hz
-- Filtrage : passe-bande + notch 50/60 Hz (réjection secteur)
-- Amplification différentielle (CMRR > 100 dB)
+<p><strong>ECG (electrocardiogramme)</strong> :</p>
+<ul>
+<li>Signal : 0.5-5 mV</li>
+<li>Bruit acceptable : &lt; 10 uVRMS</li>
+<li>Bande passante : 0.05-150 Hz</li>
+<li>Filtrage : passe-bande + notch 50/60 Hz (rejection secteur)</li>
+<li>Amplification differentielle (CMRR &gt; 100 dB)</li>
+</ul>
 
-**EEG (électroencéphalogramme)** :
-- Signal : 10-100 µV
-- Bruit : < 1 µVRMS
-- Bande : 0.5-70 Hz
-- Préampli ultra-faible bruit obligatoire
+<p><strong>EEG (electroencephalogramme)</strong> :</p>
+<ul>
+<li>Signal : 10-100 uV</li>
+<li>Bruit : &lt; 1 uVRMS</li>
+<li>Bande : 0.5-70 Hz</li>
+<li>Preampli ultra-faible bruit obligatoire</li>
+</ul>
 
-**Instrumentation scientifique** :
+<p><strong>Instrumentation scientifique</strong> :</p>
 
-**Amplificateur de charge (piézoélectrique)** :
-- Capteur haute impédance
-- Intégrateur de courant
-- Bruit en courant critique (JFET ou MOSFET)
+<p><strong>Amplificateur de charge (piezoelectrique)</strong> :</p>
+<ul>
+<li>Capteur haute impedance</li>
+<li>Integrateur de courant</li>
+<li>Bruit en courant critique (JFET ou MOSFET)</li>
+</ul>
 
-**Lock-in amplifier** :
-- Détection de signaux enfouis dans le bruit
-- Modulation + démodulation synchrone
-- Filtrage passe-bas très étroit (mHz)
-- Applications : spectroscopie, mesures de faibles signaux
+<p><strong>Lock-in amplifier</strong> :</p>
+<ul>
+<li>Detection de signaux enfouis dans le bruit</li>
+<li>Modulation + demodulation synchrone</li>
+<li>Filtrage passe-bas tres etroit (mHz)</li>
+<li>Applications : spectroscopie, mesures de faibles signaux</li>
+</ul>
 
-**Audio haute-fidélité** :
+<p><strong>Audio haute-fidelite</strong> :</p>
 
-Spécifications :
-- SNR > 90 dB (CD quality : 96 dB)
-- Distorsion harmonique < 0.01%
-- Filtrage anti-aliasing avant ADC 44.1/48 kHz
-- Filtrage de reconstruction après DAC
+<p>Specifications :</p>
+<ul>
+<li>SNR &gt; 90 dB (CD quality : 96 dB)</li>
+<li>Distorsion harmonique &lt; 0.01%</li>
+<li>Filtrage anti-aliasing avant ADC 44.1/48 kHz</li>
+<li>Filtrage de reconstruction apres DAC</li>
+</ul>
 
-Filtres de pondération :
-- Courbe A (simulation oreille humaine)
-- Courbe C (mesures niveau élevé)
+<p>Filtres de ponderation :</p>
+<ul>
+<li>Courbe A (simulation oreille humaine)</li>
+<li>Courbe C (mesures niveau eleve)</li>
+</ul>
 
-**Télécommunications** :
+<p><strong>Telecommunications</strong> :</p>
 
-**Récepteur radio** :
-- LNA (Low Noise Amplifier) en tête
-- Figure de bruit NF < 2 dB typiquement
-- Filtres SAW (Surface Acoustic Wave) pour sélectivité
-- Cascade : antenne → LNA → filtre → mélangeur → IF
+<p><strong>Recepteur radio</strong> :</p>
+<ul>
+<li>LNA (Low Noise Amplifier) en tete</li>
+<li>Figure de bruit NF &lt; 2 dB typiquement</li>
+<li>Filtres SAW (Surface Acoustic Wave) pour selectivite</li>
+<li>Cascade : antenne &rarr; LNA &rarr; filtre &rarr; melangeur &rarr; IF</li>
+</ul>
 
-**Conversion A/N haute résolution** :
+<p><strong>Conversion A/N haute resolution</strong> :</p>
 
-Filtre anti-aliasing :
-- Atténuation > 80 dB à f_Nyquist
-- Phase linéaire (Bessel) ou atténuation raide (Chebyshev)
-- Transition entre f_utile et f_Nyquist
+<p>Filtre anti-aliasing :</p>
+<ul>
+<li>Attenuation &gt; 80 dB a f_Nyquist</li>
+<li>Phase lineaire (Bessel) ou attenuation raide (Chebyshev)</li>
+<li>Transition entre f_utile et f_Nyquist</li>
+</ul>
 
----
+<hr/>
 
-## PART D - Analyse Réflexive et Perspectives
+<h2>PART D - Analyse Reflexive et Perspectives</h2>
 
-<h3 class="section-title">Compétences acquises</h3>
+<h3 class="section-title">Competences acquises</h3>
 
-**Conception de filtres actifs** :
-Capacité à synthétiser un filtre depuis les spécifications système (gabarit) jusqu'à l'implémentation électronique avec composants réels.
+<p><strong>Conception de filtres actifs</strong> :</p>
+<p>Capacite a synthetiser un filtre depuis les specifications systeme (gabarit) jusqu'a l'implementation electronique avec composants reels.</p>
 
-**Maîtrise du bruit** :
-Compréhension physique des sources de bruit, modélisation mathématique, calcul de propagation, et techniques d'optimisation.
+<p><strong>Maitrise du bruit</strong> :</p>
+<p>Comprehension physique des sources de bruit, modelisation mathematique, calcul de propagation, et techniques d'optimisation.</p>
 
-**Analyse système** :
-Vision globale d'une chaîne d'acquisition : conditionnement analogique, filtrage, conversion A/N, traitement numérique.
+<p><strong>Analyse systeme</strong> :</p>
+<p>Vision globale d'une chaine d'acquisition : conditionnement analogique, filtrage, conversion A/N, traitement numerique.</p>
 
-**Utilisation d'outils** :
-Simulation SPICE pour validation, MATLAB pour synthèse, analyseur de spectre pour mesures.
+<p><strong>Utilisation d'outils</strong> :</p>
+<p>Simulation SPICE pour validation, MATLAB pour synthese, analyseur de spectre pour mesures.</p>
 
-**Compromis ingénierie** :
-Équilibrer sélectivité, phase, bruit, coût, complexité selon l'application.
+<p><strong>Compromis ingenierie</strong> :</p>
+<p>Equilibrer selectivite, phase, bruit, cout, complexite selon l'application.</p>
 
-<h3 class="section-title">Points clés à retenir</h3>
+<h3 class="section-title">Points cles a retenir</h3>
 
-**1. Choix de l'approximation de filtre** :
-Pas d'approximation universellement meilleure. Le choix dépend de l'application :
-- Audio : Butterworth ou Bessel (réponse douce)
-- Anti-aliasing : Chebyshev (transition rapide)
-- Télécom : Elliptique (sélectivité maximale)
+<p><strong>1. Choix de l'approximation de filtre</strong> :</p>
+<p>Pas d'approximation universellement meilleure. Le choix depend de l'application :</p>
+<ul>
+<li>Audio : Butterworth ou Bessel (reponse douce)</li>
+<li>Anti-aliasing : Chebyshev (transition rapide)</li>
+<li>Telecom : Elliptique (selectivite maximale)</li>
+</ul>
 
-**2. Bruit = limite fondamentale** :
-Le bruit impose une limite physique au plus petit signal détectable. Aucun traitement ne peut retrouver un signal entièrement noyé dans le bruit.
+<p><strong>2. Bruit = limite fondamentale</strong> :</p>
+<p>Le bruit impose une limite physique au plus petit signal detectable. Aucun traitement ne peut retrouver un signal entierement noye dans le bruit.</p>
 
-**3. Premier étage critique** :
-Le bruit et le gain du premier étage dominent les performances de toute la chaîne (formule de Friis).
+<p><strong>3. Premier etage critique</strong> :</p>
+<p>Le bruit et le gain du premier etage dominent les performances de toute la chaine (formule de Friis).</p>
 
-**4. Bande passante minimale** :
-Limiter la bande passante au strict nécessaire réduit le bruit intégré (proportionnel à racine(Δf)).
+<p><strong>4. Bande passante minimale</strong> :</p>
+<p>Limiter la bande passante au strict necessaire reduit le bruit integre (proportionnel a racine(Df)).</p>
 
-**5. Simulation ≠ réalité** :
-Les mesures de bruit montrent souvent des contributions parasites non modélisées (alimentation, couplages, CEM).
+<p><strong>5. Simulation != realite</strong> :</p>
+<p>Les mesures de bruit montrent souvent des contributions parasites non modelisees (alimentation, couplages, CEM).</p>
 
-<h3 class="section-title">Retour d'expérience</h3>
+<h3 class="section-title">Retour d'experience</h3>
 
-**Richesse du cours** :
-Ce module couvre deux domaines vastes et interconnectés. Le filtrage et le bruit sont omniprésents en électronique analogique.
+<p><strong>Richesse du cours</strong> :</p>
+<p>Ce module couvre deux domaines vastes et interconnectes. Le filtrage et le bruit sont omnipresents en electronique analogique.</p>
 
-**Importance des TD** :
-Les 6 séries de TD avec corrections sont essentielles pour maîtriser les calculs de synthèse de filtres et d'analyse de bruit.
+<p><strong>Importance des TD</strong> :</p>
+<p>Les 6 series de TD avec corrections sont essentielles pour maitriser les calculs de synthese de filtres et d'analyse de bruit.</p>
 
-**Annales précieuses** :
-Les examens (2016-2022 avec corrections) permettent de comprendre les attendus : synthèse complète de filtre, calcul de bruit multi-sources, optimisation.
+<p><strong>Annales precieuses</strong> :</p>
+<p>Les examens (2016-2022 avec corrections) permettent de comprendre les attendus : synthese complete de filtre, calcul de bruit multi-sources, optimisation.</p>
 
-**Lien théorie/pratique** :
-Les TP ont montré que les filtres réels diffèrent légèrement de la théorie (composants non idéaux, parasites). Le bruit mesuré inclut des contributions non modélisées.
+<p><strong>Lien theorie/pratique</strong> :</p>
+<p>Les TP ont montre que les filtres reels different legerement de la theorie (composants non ideaux, parasites). Le bruit mesure inclut des contributions non modelisees.</p>
 
 <h3 class="section-title">Applications pratiques</h3>
 
-**Instrumentation de mesure** :
-- Oscilloscopes (amplificateurs d'entrée, filtres anti-aliasing)
-- Multimètres de précision (filtrage, réjection bruit secteur)
-- Analyseurs de spectre (filtres IF, réduction du bruit)
+<p><strong>Instrumentation de mesure</strong> :</p>
+<ul>
+<li>Oscilloscopes (amplificateurs d'entree, filtres anti-aliasing)</li>
+<li>Multimetres de precision (filtrage, rejection bruit secteur)</li>
+<li>Analyseurs de spectre (filtres IF, reduction du bruit)</li>
+</ul>
 
-**Biomédical** :
-- Moniteurs ECG/EEG (amplification différentielle, filtrage bruit secteur)
-- Échographes (traitement signaux ultrasonores)
-- Capteurs implantables (ultra-faible bruit et consommation)
+<p><strong>Biomedical</strong> :</p>
+<ul>
+<li>Moniteurs ECG/EEG (amplification differentielle, filtrage bruit secteur)</li>
+<li>Echographes (traitement signaux ultrasonores)</li>
+<li>Capteurs implantables (ultra-faible bruit et consommation)</li>
+</ul>
 
-**Audio professionnel** :
-- Consoles de mixage (égaliseurs actifs, crossovers)
-- Systèmes Hi-Fi (filtres de pondération, anti-aliasing)
-- Effets audio (filtres accordables, VCF)
+<p><strong>Audio professionnel</strong> :</p>
+<ul>
+<li>Consoles de mixage (egaliseurs actifs, crossovers)</li>
+<li>Systemes Hi-Fi (filtres de ponderation, anti-aliasing)</li>
+<li>Effets audio (filtres accordables, VCF)</li>
+</ul>
 
-**Télécom et RF** :
-- Récepteurs (LNA, filtres IF)
-- Émetteurs (filtres passe-bande, réjection harmoniques)
-- IoT (filtres faible consommation)
+<p><strong>Telecom et RF</strong> :</p>
+<ul>
+<li>Recepteurs (LNA, filtres IF)</li>
+<li>Emetteurs (filtres passe-bande, rejection harmoniques)</li>
+<li>IoT (filtres faible consommation)</li>
+</ul>
 
-**Aéronautique et défense** :
-- Radars (filtrage doppler, traitement signal)
-- Avionique (instrumentation embarquée haute fiabilité)
-- Systèmes critiques (spécifications bruit strictes)
+<p><strong>Aeronautique et defense</strong> :</p>
+<ul>
+<li>Radars (filtrage doppler, traitement signal)</li>
+<li>Avionique (instrumentation embarquee haute fiabilite)</li>
+<li>Systemes critiques (specifications bruit strictes)</li>
+</ul>
 
 <h3 class="section-title">Limites et ouvertures</h3>
 
-**Limites du module** :
-- Peu d'approfondissement sur filtres adaptatifs
-- Filtres numériques (DSP) non traités (autre cours)
-- Aspects EMC (compatibilité électromagnétique) superficiels
+<p><strong>Limites du module</strong> :</p>
+<ul>
+<li>Peu d'approfondissement sur filtres adaptatifs</li>
+<li>Filtres numeriques (DSP) non traites (autre cours)</li>
+<li>Aspects EMC (compatibilite electromagnetique) superficiels</li>
+</ul>
 
-**Ouvertures vers** :
-- **Traitement du signal avancé** : filtrage optimal (Wiener, Kalman), détection statistique
-- **Circuits intégrés RF** : conception LNA, VCO, mélangeurs
-- **Systèmes mixtes** : interfaces analog-digital, ADC/DAC haute résolution
-- **Électronique quantique** : limites ultimes du bruit (bruit quantique)
+<p><strong>Ouvertures vers</strong> :</p>
+<ul>
+<li><strong>Traitement du signal avance</strong> : filtrage optimal (Wiener, Kalman), detection statistique</li>
+<li><strong>Circuits integres RF</strong> : conception LNA, VCO, melangeurs</li>
+<li><strong>Systemes mixtes</strong> : interfaces analog-digital, ADC/DAC haute resolution</li>
+<li><strong>Electronique quantique</strong> : limites ultimes du bruit (bruit quantique)</li>
+</ul>
 
-<h3 class="section-title">Évolutions technologiques</h3>
+<h3 class="section-title">Evolutions technologiques</h3>
 
-**Filtres programmables** :
+<p><strong>Filtres programmables</strong> :</p>
 
-Circuits intégrés modernes permettent de configurer filtres par logiciel :
-- Fréquence de coupure ajustable
-- Type de filtre sélectionnable (Butterworth, Chebyshev...)
-- Gain programmable
+<p>Circuits integres modernes permettent de configurer filtres par logiciel :</p>
+<ul>
+<li>Frequence de coupure ajustable</li>
+<li>Type de filtre selectionnable (Butterworth, Chebyshev...)</li>
+<li>Gain programmable</li>
+</ul>
 
-Exemples : MAX7400 (Maxim), LTC1563 (Linear Technology).
+<p>Exemples : MAX7400 (Maxim), LTC1563 (Linear Technology).</p>
 
-**Filtrage hybride** :
+<p><strong>Filtrage hybride</strong> :</p>
 
-Combinaison analog/digital :
-- Filtrage analogique grossier (anti-aliasing)
-- Sur-échantillonnage ADC
-- Filtrage numérique précis (FIR, IIR)
+<p>Combinaison analog/digital :</p>
+<ul>
+<li>Filtrage analogique grossier (anti-aliasing)</li>
+<li>Sur-echantillonnage ADC</li>
+<li>Filtrage numerique precis (FIR, IIR)</li>
+</ul>
 
-**Composants faible bruit nouvelle génération** :
+<p><strong>Composants faible bruit nouvelle generation</strong> :</p>
+<ul>
+<li>AOP ultra-faible bruit : &lt; 1 nV/racine(Hz)</li>
+<li>Technologies BiCMOS, SiGe pour RF</li>
+<li>MEMS et capteurs intelligents avec preampli integre</li>
+</ul>
 
-- AOP ultra-faible bruit : < 1 nV/racine(Hz)
-- Technologies BiCMOS, SiGe pour RF
-- MEMS et capteurs intelligents avec préampli intégré
+<p><strong>Intelligence artificielle</strong> :</p>
 
-**Intelligence artificielle** :
+<p>Filtrage adaptatif par reseaux de neurones :</p>
+<ul>
+<li>Apprentissage du signal utile vs bruit</li>
+<li>Suppression de bruit en temps reel</li>
+<li>Applications : audio (reduction bruit actif), radar (clutter rejection)</li>
+</ul>
 
-Filtrage adaptatif par réseaux de neurones :
-- Apprentissage du signal utile vs bruit
-- Suppression de bruit en temps réel
-- Applications : audio (réduction bruit actif), radar (clutter rejection)
+<h3 class="section-title">Conseils pour reussir</h3>
 
-<h3 class="section-title">Conseils pour réussir</h3>
+<p><strong>1. Maitriser les bases theoriques</strong> :</p>
+<p>Fonctions de transfert, poles/zeros, diagrammes de Bode sont fondamentaux. Sans eux, impossible de concevoir des filtres.</p>
 
-**1. Maîtriser les bases théoriques** :
-Fonctions de transfert, pôles/zéros, diagrammes de Bode sont fondamentaux. Sans eux, impossible de concevoir des filtres.
+<p><strong>2. Pratiquer les syntheses</strong> :</p>
+<p>Refaire les TD de synthese jusqu'a maitriser la demarche complete (specifications &rarr; approximation &rarr; cellules &rarr; composants).</p>
 
-**2. Pratiquer les synthèses** :
-Refaire les TD de synthèse jusqu'à maîtriser la démarche complète (spécifications → approximation → cellules → composants).
+<p><strong>3. Comprendre le bruit physiquement</strong> :</p>
+<p>Savoir d'ou vient chaque type de bruit (thermique, grenaille, 1/f) aide a le modeliser et le reduire.</p>
 
-**3. Comprendre le bruit physiquement** :
-Savoir d'où vient chaque type de bruit (thermique, grenaille, 1/f) aide à le modéliser et le réduire.
+<p><strong>4. Utiliser les annales</strong> :</p>
+<p>Les examens 2016-2022 sont representatifs. S'entrainer sur ces sujets avec corrections.</p>
 
-**4. Utiliser les annales** :
-Les examens 2016-2022 sont représentatifs. S'entraîner sur ces sujets avec corrections.
+<p><strong>5. Simuler systematiquement</strong> :</p>
+<p>SPICE permet de verifier les calculs, d'explorer les sensibilites, et de visualiser le bruit.</p>
 
-**5. Simuler systématiquement** :
-SPICE permet de vérifier les calculs, d'explorer les sensibilités, et de visualiser le bruit.
-
-**6. Ordre de grandeur** :
-Mémoriser quelques valeurs typiques (bruit d'une résistance de 10 kΩ ≈ 13 nV/racine(Hz), AOP bipolaire en ≈ 5 nV/racine(Hz)) pour détecter les erreurs.
+<p><strong>6. Ordre de grandeur</strong> :</p>
+<p>Memoriser quelques valeurs typiques (bruit d'une resistance de 10 kOhm = 13 nV/racine(Hz), AOP bipolaire en = 5 nV/racine(Hz)) pour detecter les erreurs.</p>
 
 <h3 class="section-title">Conclusion</h3>
 
-Ce module est essentiel pour tout ingénieur travaillant sur des systèmes d'acquisition de signaux. Le filtrage et le bruit déterminent la qualité finale et les limites de performance d'un système.
+<p>Ce module est essentiel pour tout ingenieur travaillant sur des systemes d'acquisition de signaux. Le filtrage et le bruit determinent la qualite finale et les limites de performance d'un systeme.</p>
 
-**Compétences transférables** :
-- Conception rigoureuse depuis spécifications système
-- Modélisation de phénomènes physiques (bruit)
-- Optimisation multi-critères (sélectivité, phase, bruit, coût)
-- Vision système (chaîne complète d'acquisition)
+<p><strong>Competences transferables</strong> :</p>
+<ul>
+<li>Conception rigoureuse depuis specifications systeme</li>
+<li>Modelisation de phenomenes physiques (bruit)</li>
+<li>Optimisation multi-criteres (selectivite, phase, bruit, cout)</li>
+<li>Vision systeme (chaine complete d'acquisition)</li>
+</ul>
 
-**Pertinence professionnelle** :
-Ces compétences sont recherchées dans de nombreux domaines : instrumentation, biomédical, audio, télécommunications, aéronautique, automobile (capteurs).
+<p><strong>Pertinence professionnelle</strong> :</p>
+<p>Ces competences sont recherchees dans de nombreux domaines : instrumentation, biomedical, audio, telecommunications, aeronautique, automobile (capteurs).</p>
 
-**Message principal** :
-Le filtrage analogique reste indispensable malgré l'essor du numérique (conditionnement avant ADC, applications RF). Le bruit est une limite fondamentale qui ne peut être ignorée. Concevoir des systèmes performants nécessite de maîtriser ces deux aspects.
+<p><strong>Message principal</strong> :</p>
+<p>Le filtrage analogique reste indispensable malgre l'essor du numerique (conditionnement avant ADC, applications RF). Le bruit est une limite fondamentale qui ne peut etre ignoree. Concevoir des systemes performants necessite de maitriser ces deux aspects.</p>
 
-**Recommandations** :
-- Approfondir par projets pratiques (conception et test de filtres, mesures de bruit)
-- Explorer les outils professionnels (FilterPro de TI, ADIsimPE d'Analog Devices)
-- Étudier des designs commerciaux (datasheets de MAX7400, LTC1563, AD8429)
-- Se former au traitement numérique du signal (complément indispensable)
-- Suivre les évolutions en circuits intégrés (technologies BiCMOS, SiGe, GaN)
+<p><strong>Recommandations</strong> :</p>
+<ul>
+<li>Approfondir par projets pratiques (conception et test de filtres, mesures de bruit)</li>
+<li>Explorer les outils professionnels (FilterPro de TI, ADIsimPE d'Analog Devices)</li>
+<li>Etudier des designs commerciaux (datasheets de MAX7400, LTC1563, AD8429)</li>
+<li>Se former au traitement numerique du signal (complement indispensable)</li>
+<li>Suivre les evolutions en circuits integres (technologies BiCMOS, SiGe, GaN)</li>
+</ul>
 
-**Liens avec les autres cours** :
-- [Circuits et Filtres analogiques - S5](./circuits-filtres-analogiques.html) : fondements
-- [Filtrage numérique - S6](./filtrage-numerique.html) : complémentarité analog/digital
-- [Chaînes électroniques acquisition - S8](./chaines-acquisition.html) : intégration système
-- [Signaux aléatoires - S6](./signaux-aleatoires.html) : modélisation probabiliste du bruit
+<p><strong>Liens avec les autres cours</strong> :</p>
+<ul>
+<li><a href="./circuits-filtres-analogiques.html">Circuits et Filtres analogiques - S5</a> : fondements</li>
+<li><a href="./filtrage-numerique.html">Filtrage numerique - S6</a> : complementarite analog/digital</li>
+<li><a href="./chaines-acquisition.html">Chaines electroniques acquisition - S8</a> : integration systeme</li>
+<li><a href="./signaux-aleatoires.html">Signaux aleatoires - S6</a> : modelisation probabiliste du bruit</li>
+</ul>
 
----
+<hr/>
 
-## 📚 Documents de Cours
-
-<style>
-    .pdf-container {
-        margin: 40px 0;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-    }
-    .pdf-viewer {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .pdf-item {
-        flex: 1;
-        min-width: 400px;
-        background: white;
-        padding: 15px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .pdf-item h4 {
-        color: #2a7ae2;
-        margin-top: 0;
-    }
-</style>
+<h2>Documents de Cours</h2>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
-      <h4>📖 Cours Filtrage Actif</h4>
-      <p>Cours complet sur le filtrage actif : structures Sallen-Key, Rauch, topologies d'ordre supérieur et synthèse de filtres.</p>
+      <h4>Cours Filtrage Actif</h4>
+      <p>Cours complet sur le filtrage actif : structures Sallen-Key, Rauch, topologies d'ordre superieur et synthese de filtres.</p>
       <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Bruit dans les AOP</h4>
-      <p>Modélisation des sources de bruit dans les amplificateurs opérationnels : bruit thermique, flicker, calcul du bruit total.</p>
+      <h4>Bruit dans les AOP</h4>
+      <p>Modelisation des sources de bruit dans les amplificateurs operationnels : bruit thermique, flicker, calcul du bruit total.</p>
       <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
-      <h4>📖 Structure Sallen-Key</h4>
-      <p>Cours sur la topologie Sallen-Key : principe, conception, sensibilité aux composants et réalisation pratique.</p>
+      <h4>Structure Sallen-Key</h4>
+      <p>Cours sur la topologie Sallen-Key : principe, conception, sensibilite aux composants et realisation pratique.</p>
       <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" type="application/pdf" width="100%" height="800px" />
-      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">📥 Télécharger</a></p>
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
 </div>
 
----
+<hr/>
 
-*Cours suivi en 2023-2024 à l'INSA Toulouse, Département Génie Électrique et Informatique.*
+<p><em>Cours suivi en 2023-2024 a l'INSA Toulouse, Departement Genie Electrique et Informatique.</em></p>
+
+</div>
+
+<div class="lang-en">
+
+<h1>Active Filtering and Noise Source Modeling - Semester 7</h1>
+
+<p><strong>Academic Year</strong>: 2023-2024<br/>
+<strong>Semester</strong>: 7<br/>
+<strong>Credits</strong>: 2.5 ECTS<br/>
+<strong>Specialization</strong>: Analog Electronics and Signal Processing</p>
+
+<hr/>
+
+<h2>PART A - General Module Presentation</h2>
+
+<h3 class="section-title">Overview</h3>
+
+<p>This course covers two fundamental aspects of analog electronics: the design of active filters using operational amplifiers (op-amps) and operational transconductance amplifiers (OTA), and the analysis of noise in electronic circuits. These skills are essential for designing high-performance signal acquisition chains.</p>
+
+<p><strong>Learning Objectives</strong>:</p>
+<ul>
+<li>Design and synthesize high-order active filters</li>
+<li>Master Sallen-Key, Rauch, and switched-capacitor topologies</li>
+<li>Understand the physical sources of electronic noise</li>
+<li>Model and calculate noise in circuits</li>
+<li>Optimize the signal-to-noise ratio (SNR)</li>
+<li>Analyze the performance of acquisition chains</li>
+</ul>
+
+<h3 class="section-title">Position in the Curriculum</h3>
+
+<p>This module builds upon:</p>
+<ul>
+<li><strong>Analog Circuits and Filters (S5)</strong>: passive filters, transfer functions</li>
+<li><strong>Digital Filtering (S6)</strong>: filtering theory, approximations</li>
+<li><strong>Active Component Study and Modeling (S7)</strong>: operational amplifiers</li>
+</ul>
+
+<p>It prepares for:</p>
+<ul>
+<li><strong>Electronic Acquisition Chains (S8)</strong>: sensor conditioning</li>
+<li><strong>Stochastic Processes and Queuing Theory (S8)</strong>: probabilistic modeling</li>
+<li><strong>Advanced Signal Processing</strong>: optimal filtering, detection</li>
+<li><strong>Instrumentation System Design</strong>: precision measurements</li>
+</ul>
+
+<hr/>
+
+<h2>PART B - Personal Experience and Learning Context</h2>
+
+<h3 class="section-title">Organization and Resources</h3>
+
+<p>The module was divided into several thematic sections:</p>
+
+<p><strong>Lectures (20h)</strong>:</p>
+<p>Organized into 4 main parts:</p>
+<ul>
+<li>Part 1: Operational amplifiers and OTA (folder 1_AO_OTA)
+<ul>
+<li>Internal noise of op-amps</li>
+<li>OTA CA3080 (transconductance amplifier)</li>
+</ul>
+</li>
+<li>Part 2: Electronic architecture and active filters (folder 3_Archi_Elec_Filtre_Actif)
+<ul>
+<li>Filter templates and synthesis</li>
+<li>Sallen-Key and Rauch topologies</li>
+<li>Cascading second-order cells</li>
+</ul>
+</li>
+<li>Part 3: Switched capacitors (folder 4_Capa_Commute)
+<ul>
+<li>Principle and applications</li>
+</ul>
+</li>
+<li>Part 4: Summary document (4AESE-filtrage4AE_2020-2021.pdf)</li>
+</ul>
+
+<p><strong>Tutorials (12h)</strong>:</p>
+<ul>
+<li>TD1 to TD6 with solutions available</li>
+<li>Filter synthesis exercises</li>
+<li>Noise calculations in circuits</li>
+<li>Acquisition chain sizing</li>
+</ul>
+
+<p><strong>Assessments</strong>:</p>
+<ul>
+<li>Past exams available (2016-2022) with solutions</li>
+<li>Exam covering both filtering AND noise</li>
+<li>Filter design project</li>
+</ul>
+
+<p><strong>Tools used</strong>:</p>
+<ul>
+<li>SPICE (circuit simulation, noise analysis)</li>
+<li>MATLAB/Octave (filter synthesis, calculations)</li>
+<li>Spectrum analyzer (noise measurement)</li>
+<li>Digital oscilloscope</li>
+</ul>
+
+<h3 class="section-title">Study Methodology</h3>
+
+<p><strong>Phase 1: Filter Specifications</strong>:</p>
+<p>Define the template (cutoff frequencies, ripple, stopband attenuation) according to the application.</p>
+
+<p><strong>Phase 2: Choosing the Approximation</strong>:</p>
+<p>Select Butterworth, Chebyshev, Bessel, or Elliptic according to the selectivity/phase/time trade-off.</p>
+
+<p><strong>Phase 3: Transfer Function Synthesis</strong>:</p>
+<p>Use tables or software to obtain poles and zeros. Decompose into second-order cells.</p>
+
+<p><strong>Phase 4: Electronic Implementation</strong>:</p>
+<p>Choose the topology (Sallen-Key, Rauch) and calculate the components (R, C) for each cell.</p>
+
+<p><strong>Phase 5: Noise Analysis</strong>:</p>
+<p>Calculate the noise contributions of each component and op-amp, then the total input-referred noise.</p>
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/images/courses/S7/filtrage-actif/capacites-commutees.svg" alt="Switched-capacitor filter" style="max-width: 550px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: white;" />
+  <p style="font-style: italic; color: #666; margin-top: 10px;">Figure: Switched-capacitor filter principle - Resistance emulation through switching</p>
+</div>
+
+<p><strong>Phase 6: Simulation and Validation</strong>:</p>
+<p>Verify the frequency response, noise, and practical limitations (saturation, slew-rate).</p>
+
+<h3 class="section-title">Difficulties Encountered</h3>
+
+<p><strong>High-order filter synthesis</strong>:</p>
+<p>Cascading multiple second-order cells requires managing interactions, section ordering, and inter-stage signal levels.</p>
+
+<p><strong>Component values</strong>:</p>
+<p>Theoretical calculations often yield non-standard values (resistors, capacitors). They must be adjusted using E12/E24/E96 series.</p>
+
+<p><strong>Noise analysis</strong>:</p>
+<p>Identifying all noise sources (resistors, op-amps, power supplies), calculating their input-referred contribution, then integrating over the bandwidth requires rigor.</p>
+
+<p><strong>1/f noise</strong>:</p>
+<p>The spectral density is not constant, which complicates integration calculations. Requires knowledge of the corner frequency.</p>
+
+<hr/>
+
+<h2>PART C - Detailed Technical Aspects</h2>
+
+<h3 class="section-title">1. Operational Amplifiers and Internal Noise</h3>
+
+<p><strong>Op-amp noise model</strong>:</p>
+
+<p>Three equivalent input noise sources:</p>
+<ul>
+<li><strong>en</strong>: input voltage noise (nV/sqrt(Hz))</li>
+<li><strong>in+</strong>: non-inverting input current noise (pA/sqrt(Hz))</li>
+<li><strong>in-</strong>: inverting input current noise (pA/sqrt(Hz))</li>
+</ul>
+
+<p><strong>Voltage noise spectral density</strong>:</p>
+
+<p>Typically:</p>
+<ul>
+<li>Bipolar op-amp: en = 1-10 nV/sqrt(Hz)</li>
+<li>JFET op-amp: en = 5-20 nV/sqrt(Hz)</li>
+<li>Precision op-amp: en &lt; 5 nV/sqrt(Hz)</li>
+</ul>
+
+<p><strong>Current noise spectral density</strong>:</p>
+
+<p>Typically:</p>
+<ul>
+<li>Bipolar op-amp: in = 1-10 pA/sqrt(Hz)</li>
+<li>JFET op-amp: in = 0.01-1 pA/sqrt(Hz) (very low)</li>
+</ul>
+
+<p><strong>1/f noise</strong>:</p>
+
+<p>Corner frequency fc (transition between 1/f noise and white noise):</p>
+<ul>
+<li>Bipolar op-amp: fc = 10-100 Hz</li>
+<li>JFET op-amp: fc = 100-1000 Hz</li>
+</ul>
+
+<p><strong>OTA (Operational Transconductance Amplifier)</strong>:</p>
+
+<p>Example: CA3080</p>
+<ul>
+<li>Current output (adjustable transconductance gm)</li>
+<li>Applications: VCA, VCF, multipliers</li>
+<li>Noise typically higher than conventional op-amps</li>
+</ul>
+
+<h3 class="section-title">2. Fundamental Noise Sources</h3>
+
+<p><strong>Thermal noise (Johnson-Nyquist)</strong>:</p>
+
+<p>Origin: thermal agitation of charge carriers in resistors.</p>
+
+<p>RMS noise voltage:</p>
+<p>Vn = sqrt(4 x k x T x R x Df)</p>
+
+<p>where:</p>
+<ul>
+<li>k = 1.38 x 10^-23 J/K (Boltzmann constant)</li>
+<li>T: absolute temperature (Kelvin)</li>
+<li>R: resistance (Ohms)</li>
+<li>Df: bandwidth (Hz)</li>
+</ul>
+
+<p>Spectral density (white spectrum):</p>
+<p>Sn(f) = 4 x k x T x R (V^2/Hz)</p>
+
+<p><strong>Examples at 25 deg C (T=298K)</strong>:</p>
+
+<table>
+<tr><th>Resistance</th><th>Noise (nV/sqrt(Hz))</th></tr>
+<tr><td>1 kOhm</td><td>4.1</td></tr>
+<tr><td>10 kOhm</td><td>13</td></tr>
+<tr><td>100 kOhm</td><td>41</td></tr>
+<tr><td>1 MOhm</td><td>130</td></tr>
+</table>
+
+<p><strong>Shot noise</strong>:</p>
+
+<p>Origin: discrete nature of electric current (electron quantization).</p>
+
+<p>RMS noise current:</p>
+<p>In = sqrt(2 x q x I x Df)</p>
+
+<p>where:</p>
+<ul>
+<li>q = 1.6 x 10^-19 C (electron charge)</li>
+<li>I: average current (A)</li>
+</ul>
+
+<p>Observed in PN junctions (diodes, transistors), vacuum tubes, photodetectors.</p>
+
+<p><strong>1/f noise (flicker noise)</strong>:</p>
+
+<p>Origin: crystal defects, surface recombinations.</p>
+
+<p>Spectral density:</p>
+<p>Sn(f) = K / f</p>
+
+<p>Dominant at low frequency (&lt; 1 kHz typically).</p>
+
+<p>Corner frequency fc: transition to white noise.</p>
+
+<p><strong>Noise comparison</strong>:</p>
+
+<table>
+<tr><th>Type</th><th>Spectrum</th><th>Amplitude</th><th>Dominant</th></tr>
+<tr><td>Thermal</td><td>White</td><td>4kTR</td><td>All frequencies</td></tr>
+<tr><td>Shot</td><td>White</td><td>2qI</td><td>Active junctions</td></tr>
+<tr><td>1/f</td><td>Pink (1/f)</td><td>Variable</td><td>Low frequencies</td></tr>
+</table>
+
+<h3 class="section-title">3. Active Filter Topologies</h3>
+
+<p><strong>Sallen-Key filter (VCVS)</strong>:</p>
+
+<p>Non-inverting configuration with gain K.</p>
+
+<p><strong>Second-order low-pass</strong>:</p>
+
+<p>Components: R1, R2, C1, C2, op-amp as follower or amplifier.</p>
+
+<p>General transfer function:</p>
+<p>H(s) = K x w0^2 / (s^2 + (w0/Q) x s + w0^2)</p>
+
+<p>where:</p>
+<ul>
+<li>w0: natural frequency (cutoff frequency)</li>
+<li>Q: quality factor (inverse of damping)</li>
+<li>K: passband gain</li>
+</ul>
+
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Simple (few components)</li>
+<li>Possible passband gain</li>
+<li>High input impedance</li>
+</ul>
+
+<p><strong>Disadvantages</strong>:</p>
+<ul>
+<li>Sensitivity to components for high Q</li>
+<li>Limited stability if Q &gt; 10</li>
+</ul>
+
+<p><strong>Rauch filter (inverting structure)</strong>:</p>
+
+<p>Inverting configuration with negative passband gain.</p>
+
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Better stability for high Q</li>
+<li>Less sensitive to component variations</li>
+</ul>
+
+<p><strong>Disadvantages</strong>:</p>
+<ul>
+<li>Lower input impedance</li>
+<li>Negative gain (may require an additional inverting stage)</li>
+</ul>
+
+<p><strong>Comparison</strong>:</p>
+
+<table>
+<tr><th>Criterion</th><th>Sallen-Key</th><th>Rauch</th></tr>
+<tr><td>Number of components</td><td>4 passive + op-amp</td><td>5 passive + op-amp</td></tr>
+<tr><td>Input impedance</td><td>High</td><td>Medium/Low</td></tr>
+<tr><td>Passband gain</td><td>Positive</td><td>Negative</td></tr>
+<tr><td>Stability high Q</td><td>Limited</td><td>Better</td></tr>
+<tr><td>Usage</td><td>Versatile</td><td>Q &gt; 5</td></tr>
+</table>
+
+<h3 class="section-title">4. Filter Approximations</h3>
+
+<p><strong>Butterworth (Maximally Flat)</strong>:</p>
+
+<p>Characteristics:</p>
+<ul>
+<li>Flattest possible amplitude response in the passband</li>
+<li>No ripple</li>
+<li>Attenuation: 20 x n dB/decade (n = filter order)</li>
+<li>Non-linear phase response</li>
+</ul>
+
+<p>Applications: general purpose, audio (smooth response).</p>
+
+<p><strong>Chebyshev Type I</strong>:</p>
+
+<p>Characteristics:</p>
+<ul>
+<li>Passband ripple (controlled ripple, e.g.: 0.5 dB, 1 dB, 3 dB)</li>
+<li>Steeper slope than Butterworth for the same order</li>
+<li>Fast transition</li>
+</ul>
+
+<p>Applications: anti-aliasing, selective filters.</p>
+
+<p><strong>Chebyshev Type II (Inverse)</strong>:</p>
+
+<p>Characteristics:</p>
+<ul>
+<li>Stopband ripple</li>
+<li>Flat passband</li>
+<li>Transmission zeros (finite attenuation)</li>
+</ul>
+
+<p>Applications: less common, compromise.</p>
+
+<p><strong>Bessel (Thomson)</strong>:</p>
+
+<p>Characteristics:</p>
+<ul>
+<li>Linear phase response</li>
+<li>Constant group delay (no phase distortion)</li>
+<li>Gentle attenuation (low slope)</li>
+</ul>
+
+<p>Applications: video, pulses (preservation of time-domain waveform).</p>
+
+<p><strong>Elliptic (Cauer)</strong>:</p>
+
+<p>Characteristics:</p>
+<ul>
+<li>Ripple in both passband AND stopband</li>
+<li>Steepest slope for a given order</li>
+<li>Design complexity (transmission zeros)</li>
+</ul>
+
+<p>Applications: telecommunications (maximum selectivity).</p>
+
+<p><strong>Summary table</strong>:</p>
+
+<table>
+<tr><th>Type</th><th>Passband</th><th>Slope</th><th>Phase</th><th>Application</th></tr>
+<tr><td>Butterworth</td><td>Flat</td><td>Medium</td><td>Non-linear</td><td>General purpose</td></tr>
+<tr><td>Chebyshev I</td><td>Ripple</td><td>Steep</td><td>Strongly non-linear</td><td>Anti-aliasing</td></tr>
+<tr><td>Chebyshev II</td><td>Flat</td><td>Steep</td><td>Non-linear</td><td>Compromise</td></tr>
+<tr><td>Bessel</td><td>Flat</td><td>Gentle</td><td>Linear</td><td>Video, pulses</td></tr>
+<tr><td>Elliptic</td><td>Ripple</td><td>Very steep</td><td>Strongly non-linear</td><td>Telecom</td></tr>
+</table>
+
+<h3 class="section-title">5. High-Order Filter Synthesis</h3>
+
+<p><strong>Cascade decomposition</strong>:</p>
+
+<p>An nth-order filter is realized by cascading cells:</p>
+<ul>
+<li>Even order: n/2 second-order cells</li>
+<li>Odd order: (n-1)/2 second-order cells + 1 first-order cell</li>
+</ul>
+
+<p>Total transfer function:</p>
+<p>H(s) = H1(s) x H2(s) x ... x Hk(s)</p>
+
+<p><strong>Parameters for each cell</strong>:</p>
+
+<p>Each second-order cell has its own:</p>
+<ul>
+<li>Natural frequency w0i</li>
+<li>Quality factor Qi</li>
+<li>Gain Ki</li>
+</ul>
+
+<p><strong>Example: 5th-order Butterworth</strong>:</p>
+
+<p>Decomposition: 2 second-order cells + 1 first-order cell</p>
+
+<p>Cell 1: Q1 = 0.618, w01 = wc<br/>
+Cell 2: Q2 = 1.618, w02 = wc<br/>
+Cell 3: real pole at -wc</p>
+
+<p><strong>Section ordering</strong>:</p>
+
+<p>General principle:</p>
+<ol>
+<li>Place high-Q sections at the end of the cascade (after attenuation)</li>
+<li>Avoid saturation of the first stages</li>
+<li>Minimize noise accumulation</li>
+</ol>
+
+<p><strong>Normalization and denormalization</strong>:</p>
+
+<p>Steps:</p>
+<ol>
+<li>Normalized synthesis (wc = 1 rad/s, R = 1 Ohm)</li>
+<li>Coefficient tables for standard approximations</li>
+<li>Denormalization: frequency and impedance scaling</li>
+</ol>
+
+<p>Denormalization formulas:</p>
+<ul>
+<li>Resistance: R_actual = R_normalized x Z0</li>
+<li>Capacitance: C_actual = C_normalized / (Z0 x wc)</li>
+</ul>
+
+<h3 class="section-title">6. Switched-Capacitor Filters</h3>
+
+<p><strong>Principle</strong>:</p>
+
+<p>A resistor is emulated by periodically switching a capacitor.</p>
+
+<p>Equivalent resistance:</p>
+<p>Req = T / C = 1 / (f x C)</p>
+
+<p>where:</p>
+<ul>
+<li>T: clock period</li>
+<li>f: clock frequency</li>
+<li>C: switched capacitor</li>
+</ul>
+
+<p><strong>Advantages</strong>:</p>
+<ul>
+<li>Accuracy determined by capacitor ratios (excellent in ICs)</li>
+<li>No resistors (area savings in integration)</li>
+<li>Tunability via clock frequency</li>
+<li>Low sensitivity to process variations</li>
+</ul>
+
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Requires a clock (clock noise)</li>
+<li>Sampling theorem: f_clock &gt;&gt; 2 x f_signal</li>
+<li>Typically: f_clock = 50 to 100 x f_cutoff</li>
+</ul>
+
+<p><strong>Applications</strong>:</p>
+<ul>
+<li>Anti-aliasing filters in ADCs</li>
+<li>Reconstruction filters in DACs</li>
+<li>Programmable audio equalizers</li>
+<li>Mixed-signal integrated circuits (analog/digital)</li>
+</ul>
+
+<p><strong>Commercial example</strong>:</p>
+
+<p>MAX7400 (Maxim): 8th-order Butterworth switched-capacitor low-pass filter, clock-programmable cutoff frequency.</p>
+
+<h3 class="section-title">7. Noise Analysis in an Amplifier</h3>
+
+<p><strong>Non-inverting amplifier</strong>:</p>
+
+<p>Configuration:</p>
+<ul>
+<li>Gain Av = 1 + (R2 / R1)</li>
+<li>Input: signal source Vs with impedance Rs</li>
+</ul>
+
+<p><strong>Noise sources</strong>:</p>
+
+<ol>
+<li>Source noise: Vn_source = sqrt(4kTRs)</li>
+<li>R1 thermal noise: Vn_R1 = sqrt(4kTR1)</li>
+<li>R2 thermal noise: Vn_R2 = sqrt(4kTR2)</li>
+<li>Op-amp voltage noise: en</li>
+<li>Op-amp current noise x impedances: in x (Rs // (R1+R2))</li>
+</ol>
+
+<p><strong>Total input-referred noise (RTI)</strong>:</p>
+
+<p>Vn_total^2 = Vn_source^2 + en^2 + (in x Rs)^2 + (Vn_R1 / Av)^2 + (Vn_R2 / Av)^2</p>
+
+<p><strong>Output noise</strong>:</p>
+
+<p>Vn_out = Vn_total x Av</p>
+
+<p><strong>Optimization</strong>:</p>
+<ul>
+<li>Minimize Rs (low source impedance)</li>
+<li>Choose reasonable R1, R2 (noise/power trade-off)</li>
+<li>Select op-amp with low en and in</li>
+<li>Technologies: bipolar (low en), JFET (low in)</li>
+</ul>
+
+<h3 class="section-title">8. Noise Figure and SNR</h3>
+
+<p><strong>Signal-to-Noise Ratio (SNR)</strong>:</p>
+
+<p>SNR = Signal_power / Noise_power</p>
+
+<p>In dB:</p>
+<p>SNR_dB = 10 x log10(Psignal / Pnoise)</p>
+
+<p>or in RMS voltages:</p>
+<p>SNR_dB = 20 x log10(Vsignal_RMS / Vnoise_RMS)</p>
+
+<p><strong>Noise Factor (F)</strong>:</p>
+
+<p>SNR degradation by a system:</p>
+
+<p>F = SNR_input / SNR_output</p>
+
+<p><strong>Noise Figure (NF)</strong>:</p>
+
+<p>NF_dB = 10 x log10(F)</p>
+
+<p>An ideal system (no added noise) has F = 1, NF = 0 dB.</p>
+
+<p><strong>Equivalent noise temperature</strong>:</p>
+
+<p>Te = T0 x (F - 1)</p>
+
+<p>where T0 = 290 K (reference temperature).</p>
+
+<p><strong>Friis formula (cascaded systems)</strong>:</p>
+
+<p>For n cascaded stages:</p>
+
+<p>F_total = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1xG2) + ... + (Fn - 1)/(G1xG2x...xGn-1)</p>
+
+<p>where Fi: noise factor of stage i, Gi: power gain of stage i.</p>
+
+<p><strong>Practical implications</strong>:</p>
+<ul>
+<li>The first stage dominates the total noise</li>
+<li>A high gain in the first stage reduces the impact of subsequent stages</li>
+<li>Low-noise preamplifier (LNA) crucial at the front of the chain</li>
+<li>Applications: radio receivers, instrumentation</li>
+</ul>
+
+<h3 class="section-title">9. Noise Reduction Techniques</h3>
+
+<p><strong>At the circuit design level</strong>:</p>
+
+<p><strong>Minimize impedances</strong>:</p>
+<p>Resistors generate thermal noise. Use reasonable values (typically 1-100 kOhm).</p>
+
+<p><strong>Choose the right op-amp</strong>:</p>
+<ul>
+<li>Low source impedance application: minimize en</li>
+<li>High source impedance application: minimize in</li>
+<li>Speed/noise trade-off (fast op-amps are often noisier)</li>
+</ul>
+
+<p><strong>Matched filtering</strong>:</p>
+<p>Limiting the bandwidth to the strict minimum reduces integrated noise.</p>
+
+<p><strong>Shielding and guarding</strong>:</p>
+<p>Reduce external electromagnetic interference.</p>
+
+<p><strong>Clean power supply</strong>:</p>
+<p>Careful decoupling, low-noise regulators, mains filtering.</p>
+
+<p><strong>At the system level</strong>:</p>
+
+<p><strong>Optimal filtering</strong>:</p>
+<p>Matched filter maximizes SNR for a known signal in white noise.</p>
+
+<p><strong>Averaging</strong>:</p>
+<p>N averaged measurements improve the SNR by sqrt(N).</p>
+
+<p><strong>Synchronous detection (lock-in)</strong>:</p>
+<p>Signal modulation, synchronous demodulation, narrow low-pass filtering.</p>
+
+<p><strong>Digital techniques</strong>:</p>
+<p>After A/D conversion: digital filtering, FFT, correlation, adaptive threshold detection.</p>
+
+<p><strong>At the application level</strong>:</p>
+
+<p><strong>Cooling</strong>:</p>
+<p>Reducing T decreases thermal noise (cryogenics for extreme applications).</p>
+
+<p><strong>Operating frequency selection</strong>:</p>
+<p>Avoid the 1/f noise region if possible (modulate at a higher frequency).</p>
+
+<h3 class="section-title">10. Noise Measurement</h3>
+
+<p><strong>Spectrum analyzer</strong>:</p>
+
+<p>Power spectral density (PSD) measurement.</p>
+
+<p>Allows identification of:</p>
+<ul>
+<li>White noise (constant level)</li>
+<li>1/f noise (-10 dB/decade slope)</li>
+<li>Spurious lines (50/60 Hz mains, harmonics)</li>
+</ul>
+
+<p><strong>Digital oscilloscope</strong>:</p>
+
+<p>Methods:</p>
+<ul>
+<li>Amplitude histogram (noise distribution)</li>
+<li>RMS measurement of signal with/without input</li>
+<li>FFT for spectral analysis</li>
+</ul>
+
+<p><strong>True RMS multimeter</strong>:</p>
+
+<p>Direct measurement of RMS noise voltage within a given bandwidth.</p>
+
+<p><strong>Practical method</strong>:</p>
+
+<ol>
+<li>Short-circuit the input</li>
+<li>Measure Vout without signal</li>
+<li>Refer to input: Vn_RTI = Vout / Gain</li>
+<li>Compare with theoretical calculations</li>
+</ol>
+
+<p><strong>Precautions</strong>:</p>
+<ul>
+<li>Warm-up (wait for thermal stabilization)</li>
+<li>Shielding (Faraday cage if necessary)</li>
+<li>Single ground point (avoid ground loops)</li>
+<li>Short, high-quality cables</li>
+</ul>
+
+<h3 class="section-title">11. Practical Applications</h3>
+
+<p><strong>Biomedical acquisition chain</strong>:</p>
+
+<p><strong>ECG (electrocardiogram)</strong>:</p>
+<ul>
+<li>Signal: 0.5-5 mV</li>
+<li>Acceptable noise: &lt; 10 uVRMS</li>
+<li>Bandwidth: 0.05-150 Hz</li>
+<li>Filtering: band-pass + notch 50/60 Hz (mains rejection)</li>
+<li>Differential amplification (CMRR &gt; 100 dB)</li>
+</ul>
+
+<p><strong>EEG (electroencephalogram)</strong>:</p>
+<ul>
+<li>Signal: 10-100 uV</li>
+<li>Noise: &lt; 1 uVRMS</li>
+<li>Bandwidth: 0.5-70 Hz</li>
+<li>Ultra-low-noise preamplifier mandatory</li>
+</ul>
+
+<p><strong>Scientific instrumentation</strong>:</p>
+
+<p><strong>Charge amplifier (piezoelectric)</strong>:</p>
+<ul>
+<li>High impedance sensor</li>
+<li>Current integrator</li>
+<li>Critical current noise (JFET or MOSFET)</li>
+</ul>
+
+<p><strong>Lock-in amplifier</strong>:</p>
+<ul>
+<li>Detection of signals buried in noise</li>
+<li>Modulation + synchronous demodulation</li>
+<li>Very narrow low-pass filtering (mHz)</li>
+<li>Applications: spectroscopy, weak signal measurements</li>
+</ul>
+
+<p><strong>High-fidelity audio</strong>:</p>
+
+<p>Specifications:</p>
+<ul>
+<li>SNR &gt; 90 dB (CD quality: 96 dB)</li>
+<li>Harmonic distortion &lt; 0.01%</li>
+<li>Anti-aliasing filtering before 44.1/48 kHz ADC</li>
+<li>Reconstruction filtering after DAC</li>
+</ul>
+
+<p>Weighting filters:</p>
+<ul>
+<li>A-weighting curve (human ear simulation)</li>
+<li>C-weighting curve (high-level measurements)</li>
+</ul>
+
+<p><strong>Telecommunications</strong>:</p>
+
+<p><strong>Radio receiver</strong>:</p>
+<ul>
+<li>LNA (Low Noise Amplifier) at the front</li>
+<li>Noise figure NF &lt; 2 dB typically</li>
+<li>SAW (Surface Acoustic Wave) filters for selectivity</li>
+<li>Cascade: antenna &rarr; LNA &rarr; filter &rarr; mixer &rarr; IF</li>
+</ul>
+
+<p><strong>High-resolution A/D conversion</strong>:</p>
+
+<p>Anti-aliasing filter:</p>
+<ul>
+<li>Attenuation &gt; 80 dB at f_Nyquist</li>
+<li>Linear phase (Bessel) or steep attenuation (Chebyshev)</li>
+<li>Transition between f_useful and f_Nyquist</li>
+</ul>
+
+<hr/>
+
+<h2>PART D - Reflective Analysis and Perspectives</h2>
+
+<h3 class="section-title">Skills Acquired</h3>
+
+<p><strong>Active filter design</strong>:</p>
+<p>Ability to synthesize a filter from system specifications (template) through to electronic implementation with real components.</p>
+
+<p><strong>Noise mastery</strong>:</p>
+<p>Physical understanding of noise sources, mathematical modeling, propagation calculation, and optimization techniques.</p>
+
+<p><strong>System analysis</strong>:</p>
+<p>Overall view of an acquisition chain: analog conditioning, filtering, A/D conversion, digital processing.</p>
+
+<p><strong>Tool usage</strong>:</p>
+<p>SPICE simulation for validation, MATLAB for synthesis, spectrum analyzer for measurements.</p>
+
+<p><strong>Engineering trade-offs</strong>:</p>
+<p>Balancing selectivity, phase, noise, cost, and complexity according to the application.</p>
+
+<h3 class="section-title">Key Takeaways</h3>
+
+<p><strong>1. Choosing the filter approximation</strong>:</p>
+<p>No universally best approximation. The choice depends on the application:</p>
+<ul>
+<li>Audio: Butterworth or Bessel (smooth response)</li>
+<li>Anti-aliasing: Chebyshev (fast transition)</li>
+<li>Telecom: Elliptic (maximum selectivity)</li>
+</ul>
+
+<p><strong>2. Noise = fundamental limit</strong>:</p>
+<p>Noise imposes a physical limit on the smallest detectable signal. No processing can recover a signal completely buried in noise.</p>
+
+<p><strong>3. Critical first stage</strong>:</p>
+<p>The noise and gain of the first stage dominate the performance of the entire chain (Friis formula).</p>
+
+<p><strong>4. Minimum bandwidth</strong>:</p>
+<p>Limiting the bandwidth to the strict minimum reduces integrated noise (proportional to sqrt(Df)).</p>
+
+<p><strong>5. Simulation != reality</strong>:</p>
+<p>Noise measurements often show parasitic contributions not accounted for in models (power supply, coupling, EMC).</p>
+
+<h3 class="section-title">Feedback</h3>
+
+<p><strong>Course richness</strong>:</p>
+<p>This module covers two vast and interconnected domains. Filtering and noise are omnipresent in analog electronics.</p>
+
+<p><strong>Importance of tutorials</strong>:</p>
+<p>The 6 tutorial series with solutions are essential for mastering filter synthesis and noise analysis calculations.</p>
+
+<p><strong>Valuable past exams</strong>:</p>
+<p>The exams (2016-2022 with solutions) help understand expectations: complete filter synthesis, multi-source noise calculation, optimization.</p>
+
+<p><strong>Theory/practice link</strong>:</p>
+<p>Lab work showed that real filters differ slightly from theory (non-ideal components, parasitic effects). Measured noise includes unmodeled contributions.</p>
+
+<h3 class="section-title">Practical Applications</h3>
+
+<p><strong>Measurement instrumentation</strong>:</p>
+<ul>
+<li>Oscilloscopes (input amplifiers, anti-aliasing filters)</li>
+<li>Precision multimeters (filtering, mains noise rejection)</li>
+<li>Spectrum analyzers (IF filters, noise reduction)</li>
+</ul>
+
+<p><strong>Biomedical</strong>:</p>
+<ul>
+<li>ECG/EEG monitors (differential amplification, mains noise filtering)</li>
+<li>Ultrasound scanners (ultrasonic signal processing)</li>
+<li>Implantable sensors (ultra-low noise and power consumption)</li>
+</ul>
+
+<p><strong>Professional audio</strong>:</p>
+<ul>
+<li>Mixing consoles (active equalizers, crossovers)</li>
+<li>Hi-Fi systems (weighting filters, anti-aliasing)</li>
+<li>Audio effects (tunable filters, VCF)</li>
+</ul>
+
+<p><strong>Telecom and RF</strong>:</p>
+<ul>
+<li>Receivers (LNA, IF filters)</li>
+<li>Transmitters (band-pass filters, harmonic rejection)</li>
+<li>IoT (low-power filters)</li>
+</ul>
+
+<p><strong>Aerospace and defense</strong>:</p>
+<ul>
+<li>Radars (Doppler filtering, signal processing)</li>
+<li>Avionics (high-reliability embedded instrumentation)</li>
+<li>Critical systems (strict noise specifications)</li>
+</ul>
+
+<h3 class="section-title">Limitations and Outlook</h3>
+
+<p><strong>Module limitations</strong>:</p>
+<ul>
+<li>Little depth on adaptive filters</li>
+<li>Digital filters (DSP) not covered (separate course)</li>
+<li>EMC (electromagnetic compatibility) aspects only superficial</li>
+</ul>
+
+<p><strong>Outlook towards</strong>:</p>
+<ul>
+<li><strong>Advanced signal processing</strong>: optimal filtering (Wiener, Kalman), statistical detection</li>
+<li><strong>RF integrated circuits</strong>: LNA, VCO, mixer design</li>
+<li><strong>Mixed-signal systems</strong>: analog-digital interfaces, high-resolution ADC/DAC</li>
+<li><strong>Quantum electronics</strong>: ultimate noise limits (quantum noise)</li>
+</ul>
+
+<h3 class="section-title">Technological Developments</h3>
+
+<p><strong>Programmable filters</strong>:</p>
+
+<p>Modern integrated circuits allow software-configurable filters:</p>
+<ul>
+<li>Adjustable cutoff frequency</li>
+<li>Selectable filter type (Butterworth, Chebyshev...)</li>
+<li>Programmable gain</li>
+</ul>
+
+<p>Examples: MAX7400 (Maxim), LTC1563 (Linear Technology).</p>
+
+<p><strong>Hybrid filtering</strong>:</p>
+
+<p>Analog/digital combination:</p>
+<ul>
+<li>Coarse analog filtering (anti-aliasing)</li>
+<li>ADC oversampling</li>
+<li>Precise digital filtering (FIR, IIR)</li>
+</ul>
+
+<p><strong>Next-generation low-noise components</strong>:</p>
+<ul>
+<li>Ultra-low-noise op-amps: &lt; 1 nV/sqrt(Hz)</li>
+<li>BiCMOS, SiGe technologies for RF</li>
+<li>MEMS and smart sensors with integrated preamplifier</li>
+</ul>
+
+<p><strong>Artificial intelligence</strong>:</p>
+
+<p>Adaptive filtering with neural networks:</p>
+<ul>
+<li>Learning useful signal vs noise</li>
+<li>Real-time noise suppression</li>
+<li>Applications: audio (active noise reduction), radar (clutter rejection)</li>
+</ul>
+
+<h3 class="section-title">Tips for Success</h3>
+
+<p><strong>1. Master the theoretical foundations</strong>:</p>
+<p>Transfer functions, poles/zeros, Bode plots are fundamental. Without them, filter design is impossible.</p>
+
+<p><strong>2. Practice synthesis exercises</strong>:</p>
+<p>Redo the synthesis tutorials until mastering the complete workflow (specifications &rarr; approximation &rarr; cells &rarr; components).</p>
+
+<p><strong>3. Understand noise physically</strong>:</p>
+<p>Knowing where each type of noise comes from (thermal, shot, 1/f) helps model and reduce it.</p>
+
+<p><strong>4. Use past exams</strong>:</p>
+<p>The 2016-2022 exams are representative. Practice with these papers and their solutions.</p>
+
+<p><strong>5. Simulate systematically</strong>:</p>
+<p>SPICE allows verifying calculations, exploring sensitivities, and visualizing noise.</p>
+
+<p><strong>6. Orders of magnitude</strong>:</p>
+<p>Memorize a few typical values (noise of a 10 kOhm resistor = 13 nV/sqrt(Hz), bipolar op-amp en = 5 nV/sqrt(Hz)) to detect errors.</p>
+
+<h3 class="section-title">Conclusion</h3>
+
+<p>This module is essential for any engineer working on signal acquisition systems. Filtering and noise determine the final quality and performance limits of a system.</p>
+
+<p><strong>Transferable skills</strong>:</p>
+<ul>
+<li>Rigorous design from system specifications</li>
+<li>Modeling of physical phenomena (noise)</li>
+<li>Multi-criteria optimization (selectivity, phase, noise, cost)</li>
+<li>System-level perspective (complete acquisition chain)</li>
+</ul>
+
+<p><strong>Professional relevance</strong>:</p>
+<p>These skills are sought after in many fields: instrumentation, biomedical, audio, telecommunications, aerospace, automotive (sensors).</p>
+
+<p><strong>Main message</strong>:</p>
+<p>Analog filtering remains indispensable despite the rise of digital (conditioning before ADC, RF applications). Noise is a fundamental limit that cannot be ignored. Designing high-performance systems requires mastering both aspects.</p>
+
+<p><strong>Recommendations</strong>:</p>
+<ul>
+<li>Deepen knowledge through practical projects (filter design and testing, noise measurements)</li>
+<li>Explore professional tools (TI FilterPro, Analog Devices ADIsimPE)</li>
+<li>Study commercial designs (datasheets for MAX7400, LTC1563, AD8429)</li>
+<li>Train in digital signal processing (essential complement)</li>
+<li>Follow developments in integrated circuits (BiCMOS, SiGe, GaN technologies)</li>
+</ul>
+
+<p><strong>Links to other courses</strong>:</p>
+<ul>
+<li><a href="./circuits-filtres-analogiques.html">Analog Circuits and Filters - S5</a>: foundations</li>
+<li><a href="./filtrage-numerique.html">Digital Filtering - S6</a>: analog/digital complementarity</li>
+<li><a href="./chaines-acquisition.html">Electronic Acquisition Chains - S8</a>: system integration</li>
+<li><a href="./signaux-aleatoires.html">Random Signals - S6</a>: probabilistic noise modeling</li>
+</ul>
+
+<hr/>
+
+<h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>Active Filtering Course</h4>
+      <p>Complete course on active filtering: Sallen-Key and Rauch structures, higher-order topologies and filter synthesis.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Noise in Op-Amps</h4>
+      <p>Noise source modeling in operational amplifiers: thermal noise, flicker noise, total noise calculation.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">Download</a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>Sallen-Key Structure</h4>
+      <p>Course on Sallen-Key topology: principle, design, component sensitivity and practical implementation.</p>
+      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">Download</a></p>
+    </div>
+  </div>
+</div>
+
+<hr/>
+
+<p><em>Course taken in 2023-2024 at INSA Toulouse, Department of Electrical Engineering and Computer Science.</em></p>
+
+</div>
 
 <div class="back-nav">
-    <a href="./my-courses-2023-2024.html">← Retour aux Cours 2023-2024</a>
+    <a href="./my-courses-2023-2024.html" data-i18n-html="back-courses-2023-2024">&larr; Retour aux Cours 2023-2024</a>
 </div>

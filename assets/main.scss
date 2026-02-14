@@ -583,6 +583,71 @@ ul li {
     }
 }
 
+// Bouton de changement de langue FR/EN
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    background-clip: padding-box;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85em;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    vertical-align: middle;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, $primary-color, $secondary-color);
+        z-index: -1;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+}
+
+.lang-option {
+    padding: 2px 6px;
+    border-radius: 12px;
+    color: #718096;
+    transition: all 0.3s ease;
+}
+
+.lang-option.lang-active {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+    color: white;
+}
+
+.lang-separator {
+    color: #cbd5e0;
+    font-weight: 400;
+    user-select: none;
+}
+
+// Mobile: position the lang toggle next to hamburger
+@media (max-width: 600px) {
+    .lang-toggle {
+        position: absolute;
+        right: 56px;
+        top: 9px;
+        margin-left: 0;
+    }
+}
+
 .animate-pulse {
     animation: pulse 2s ease-in-out infinite;
 }
@@ -590,3 +655,21 @@ ul li {
 .animate-slide-in {
     animation: slideIn 0.6s ease-out;
 }
+
+// i18n: Dual-language content show/hide
+.lang-fr { display: block; }
+.lang-en { display: none; }
+html[lang="en"] .lang-fr { display: none !important; }
+html[lang="en"] .lang-en { display: block !important; }
+
+// Variantes inline (span, a, strong, em, li)
+span.lang-fr, a.lang-fr, strong.lang-fr, em.lang-fr,
+li.lang-fr { display: inline; }
+span.lang-en, a.lang-en, strong.lang-en, em.lang-en,
+li.lang-en { display: none; }
+html[lang="en"] span.lang-fr, html[lang="en"] a.lang-fr,
+html[lang="en"] strong.lang-fr, html[lang="en"] em.lang-fr,
+html[lang="en"] li.lang-fr { display: none !important; }
+html[lang="en"] span.lang-en, html[lang="en"] a.lang-en,
+html[lang="en"] strong.lang-en, html[lang="en"] em.lang-en,
+html[lang="en"] li.lang-en { display: inline !important; }

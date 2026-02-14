@@ -77,314 +77,727 @@ p {
 </style>
 
 <div class="back-nav">
-    <a href="./my-courses-2024-2025.html">&larr; Retour aux Cours 2024-2025</a>
+    <a href="./my-courses-2024-2025.html" data-i18n-html="back-courses-2024-2025">&larr; Retour aux Cours 2024-2025</a>
 </div>
 
-# AIME - Atelier Interuniversitaire de Micro-nano Electronique
+<div class="lang-fr">
 
-**Annee academique** : 2024-2025
-**Semestre** : S9
-**Categorie** : Micro-nano Electronique / Fabrication de capteurs
+<h1>AIME - Atelier Interuniversitaire de Micro-nano Electronique</h1>
 
----
+<p><strong>Annee academique</strong> : 2024-2025<br/>
+<strong>Semestre</strong> : S9<br/>
+<strong>Categorie</strong> : Micro-nano Electronique / Fabrication de capteurs</p>
 
-## PART A : PRESENTATION GENERALE
+<hr/>
+
+<h2>PART A : PRESENTATION GENERALE</h2>
 
 <h3 class="section-title">Objectifs du module</h3>
 
-Le cours AIME (Atelier Interuniversitaire de Micro-nano Electronique) est un module pratique intensif d'une semaine au sein de la plateforme de salle blanche de l'AIME, situee sur le campus de l'INSA Toulouse. L'objectif principal est de permettre aux etudiants de realiser, de bout en bout, la fabrication d'un capteur de gaz a l'echelle micro/nanometrique, en partant d'un wafer de silicium partiellement prepare.
+<p>Le cours AIME (Atelier Interuniversitaire de Micro-nano Electronique) est un module pratique intensif d'une semaine au sein de la plateforme de salle blanche de l'AIME, situee sur le campus de l'INSA Toulouse. L'objectif principal est de permettre aux etudiants de realiser, de bout en bout, la fabrication d'un capteur de gaz a l'echelle micro/nanometrique, en partant d'un wafer de silicium partiellement prepare.</p>
 
-**Objectifs pedagogiques** :
-- Comprendre le flux complet de fabrication en salle blanche (cleanroom)
-- Maitriser les etapes fondamentales de la micro-fabrication : oxydation, depot, dopage, photolithographie, gravure, recuit
-- Realiser un capteur de gaz fonctionnel a base de nanoparticules
-- Acquerir des competences en caracterisation electrique de dispositifs micro/nano
-- Comprendre les contraintes et protocoles d'un environnement de salle blanche
+<p><strong>Objectifs pedagogiques</strong> :</p>
+<ul>
+<li>Comprendre le flux complet de fabrication en salle blanche (cleanroom)</li>
+<li>Maitriser les etapes fondamentales de la micro-fabrication : oxydation, depot, dopage, photolithographie, gravure, recuit</li>
+<li>Realiser un capteur de gaz fonctionnel a base de nanoparticules</li>
+<li>Acquerir des competences en caracterisation electrique de dispositifs micro/nano</li>
+<li>Comprendre les contraintes et protocoles d'un environnement de salle blanche</li>
+</ul>
 
 <h3 class="section-title">Competences visees</h3>
 
-| Competence | Description |
-|---|---|
-| Fabrication en salle blanche | Maitriser les protocoles d'habillage, de manipulation des wafers et de securite en environnement classe |
-| Procedes technologiques | Realiser les etapes d'oxydation, depot CVD/PVD, dopage, photolithographie et gravure |
-| Conception de capteurs | Comprendre l'architecture d'un capteur de gaz a l'echelle micro/nanometrique |
-| Caracterisation | Mesurer et analyser les proprietes electriques des dispositifs fabriques |
-| Travail en equipe | Collaborer efficacement dans un environnement de production microelectronique |
+<table>
+<tr><th>Competence</th><th>Description</th></tr>
+<tr><td>Fabrication en salle blanche</td><td>Maitriser les protocoles d'habillage, de manipulation des wafers et de securite en environnement classe</td></tr>
+<tr><td>Procedes technologiques</td><td>Realiser les etapes d'oxydation, depot CVD/PVD, dopage, photolithographie et gravure</td></tr>
+<tr><td>Conception de capteurs</td><td>Comprendre l'architecture d'un capteur de gaz a l'echelle micro/nanometrique</td></tr>
+<tr><td>Caracterisation</td><td>Mesurer et analyser les proprietes electriques des dispositifs fabriques</td></tr>
+<tr><td>Travail en equipe</td><td>Collaborer efficacement dans un environnement de production microelectronique</td></tr>
+</table>
 
 <h3 class="section-title">Organisation</h3>
 
-Le module est organise sur une semaine intensive comprenant :
-- **Cours introductifs** : rappels sur les procedes de micro-fabrication et presentation du capteur a realiser
-- **Travaux pratiques en salle blanche** : fabrication complete du capteur de gaz sur la plateforme AIME
-- **Synthese de nanoparticules** : preparation chimique des nanoparticules sensibles au gaz
-- **Assemblage et test** : mise en boitier du capteur et mesures sous atmosphere controlee
-- **Analyse des resultats** : exploitation des donnees et redaction du compte-rendu
+<p>Le module est organise sur une semaine intensive comprenant :</p>
+<ul>
+<li><strong>Cours introductifs</strong> : rappels sur les procedes de micro-fabrication et presentation du capteur a realiser</li>
+<li><strong>Travaux pratiques en salle blanche</strong> : fabrication complete du capteur de gaz sur la plateforme AIME</li>
+<li><strong>Synthese de nanoparticules</strong> : preparation chimique des nanoparticules sensibles au gaz</li>
+<li><strong>Assemblage et test</strong> : mise en boitier du capteur et mesures sous atmosphere controlee</li>
+<li><strong>Analyse des resultats</strong> : exploitation des donnees et redaction du compte-rendu</li>
+</ul>
 
----
+<hr/>
 
-## PART B : EXPERIENCE ET CONTEXTE
+<h2>PART B : EXPERIENCE ET CONTEXTE</h2>
 
 <h3 class="section-title">L'environnement de salle blanche</h3>
 
-La plateforme AIME est une salle blanche de classe ISO 5 a 7 selon les zones, equipee de tous les equipements necessaires a la fabrication de dispositifs microelectroniques. Travailler dans cet environnement implique le respect strict de protocoles d'habillage (combinaison, gants, charlotte, sur-chaussures) et de manipulation pour eviter toute contamination particulaire des wafers.
+<p>La plateforme AIME est une salle blanche de classe ISO 5 a 7 selon les zones, equipee de tous les equipements necessaires a la fabrication de dispositifs microelectroniques. Travailler dans cet environnement implique le respect strict de protocoles d'habillage (combinaison, gants, charlotte, sur-chaussures) et de manipulation pour eviter toute contamination particulaire des wafers.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/atmosphere.jpg" alt="Environnement de salle blanche AIME" style="width: 40%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Environnement de travail en salle blanche - Plateforme AIME, INSA Toulouse</p>
+<p class="img-caption">
+    <span class="lang-fr">Environnement de travail en salle blanche - Plateforme AIME, INSA Toulouse</span>
+    <span class="lang-en">Cleanroom working environment - AIME Platform, INSA Toulouse</span>
+</p>
 
-L'experience en salle blanche est unique car elle permet de confronter la theorie apprise en cours a la realite de la fabrication. Chaque etape doit etre realisee avec une grande precision : une erreur de quelques secondes sur un temps de gravure ou une temperature de four inexacte peut compromettre l'ensemble du dispositif. Cette rigueur est representative du milieu industriel de la microelectronique.
+<div class="lang-fr">
+
+<p>L'experience en salle blanche est unique car elle permet de confronter la theorie apprise en cours a la realite de la fabrication. Chaque etape doit etre realisee avec une grande precision : une erreur de quelques secondes sur un temps de gravure ou une temperature de four inexacte peut compromettre l'ensemble du dispositif. Cette rigueur est representative du milieu industriel de la microelectronique.</p>
 
 <h3 class="section-title">La plateforme AIME</h3>
 
-L'AIME est une plateforme pedagogique interuniversitaire qui accueille chaque annee des etudiants de plusieurs etablissements (INSA, Universite Paul Sabatier, ENSEEIHT, etc.). Elle dispose d'equipements de pointe pour la photolithographie, les depots en phase vapeur (CVD, PVD), l'implantation ionique, la gravure seche et humide, les fours d'oxydation et de recuit, ainsi que des outils de caracterisation (profilometre, microscope optique, testeur sous pointes).
+<p>L'AIME est une plateforme pedagogique interuniversitaire qui accueille chaque annee des etudiants de plusieurs etablissements (INSA, Universite Paul Sabatier, ENSEEIHT, etc.). Elle dispose d'equipements de pointe pour la photolithographie, les depots en phase vapeur (CVD, PVD), l'implantation ionique, la gravure seche et humide, les fours d'oxydation et de recuit, ainsi que des outils de caracterisation (profilometre, microscope optique, testeur sous pointes).</p>
 
 <h3 class="section-title">Mon role</h3>
 
-Durant ce module, j'ai participe activement a chaque etape de la fabrication du capteur de gaz :
-- Realisation des etapes de photolithographie (enduction, insolation, developpement)
-- Chargement et dechargement des wafers dans les fours d'oxydation et de depot
-- Participation a la synthese chimique des nanoparticules
-- Application de la solution de nanoparticules sur le capteur par dielectrophorese
-- Assemblage final du capteur et tests electriques sous atmosphere controlee
+<p>Durant ce module, j'ai participe activement a chaque etape de la fabrication du capteur de gaz :</p>
+<ul>
+<li>Realisation des etapes de photolithographie (enduction, insolation, developpement)</li>
+<li>Chargement et dechargement des wafers dans les fours d'oxydation et de depot</li>
+<li>Participation a la synthese chimique des nanoparticules</li>
+<li>Application de la solution de nanoparticules sur le capteur par dielectrophorese</li>
+<li>Assemblage final du capteur et tests electriques sous atmosphere controlee</li>
+</ul>
 
----
+<hr/>
 
-## PART C : ASPECTS TECHNIQUES
+<h2>PART C : ASPECTS TECHNIQUES</h2>
 
-Cette section detaille les differentes etapes du flux de fabrication du capteur de gaz, en s'appuyant sur les procedes fondamentaux de la microelectronique.
+<p>Cette section detaille les differentes etapes du flux de fabrication du capteur de gaz, en s'appuyant sur les procedes fondamentaux de la microelectronique.</p>
 
 <h3 class="section-title">1. Le substrat de silicium (wafer)</h3>
 
-Le point de depart de toute fabrication microelectronique est le wafer de silicium monocristallin. Dans notre cas, nous avons travaille sur des wafers de silicium de type P (dope au bore), d'un diametre de 100 mm (4 pouces) et d'une epaisseur d'environ 525 um. Le silicium monocristallin est obtenu par le procede Czochralski et presente une orientation cristalline (100).
+<p>Le point de depart de toute fabrication microelectronique est le wafer de silicium monocristallin. Dans notre cas, nous avons travaille sur des wafers de silicium de type P (dope au bore), d'un diametre de 100 mm (4 pouces) et d'une epaisseur d'environ 525 um. Le silicium monocristallin est obtenu par le procede Czochralski et presente une orientation cristalline (100).</p>
 
-Le choix du substrat est fondamental car il conditionne les proprietes electriques et mecaniques du dispositif final. La purete du silicium utilise en microelectronique atteint 99,9999999% (9N), ce qui est essentiel pour garantir le bon fonctionnement des composants.
+<p>Le choix du substrat est fondamental car il conditionne les proprietes electriques et mecaniques du dispositif final. La purete du silicium utilise en microelectronique atteint 99,9999999% (9N), ce qui est essentiel pour garantir le bon fonctionnement des composants.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/silicon.jpg" alt="Wafer de silicium" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Wafer de silicium apres metallisation - observation des motifs des capteurs</p>
+<p class="img-caption">
+    <span class="lang-fr">Wafer de silicium apres metallisation - observation des motifs des capteurs</span>
+    <span class="lang-en">Silicon wafer after metallization - observation of sensor patterns</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">2. Oxydation thermique</h3>
 
-La premiere etape technologique majeure est l'oxydation du silicium. Elle consiste a faire croitre une couche de dioxyde de silicium (SiO2) a la surface du wafer. Cette couche d'oxyde sert de masque de protection, d'isolant electrique ou de couche sacrificielle selon les etapes du procede.
+<p>La premiere etape technologique majeure est l'oxydation du silicium. Elle consiste a faire croitre une couche de dioxyde de silicium (SiO2) a la surface du wafer. Cette couche d'oxyde sert de masque de protection, d'isolant electrique ou de couche sacrificielle selon les etapes du procede.</p>
 
-**Oxydation chimique de surface** : H2SO4 + H2O2 (melange piranha) - cette etape initiale nettoie la surface du wafer et forme une fine couche d'oxyde natif.
+<p><strong>Oxydation chimique de surface</strong> : H2SO4 + H2O2 (melange piranha) - cette etape initiale nettoie la surface du wafer et forme une fine couche d'oxyde natif.</p>
 
-**Oxydation seche** : realisee dans un four a haute temperature (900-1100 degC) sous flux d'oxygene sec (O2). La reaction est : Si + O2 -> SiO2. L'oxydation seche produit un oxyde de meilleure qualite (plus dense, moins de defauts) mais avec une vitesse de croissance plus lente.
+<p><strong>Oxydation seche</strong> : realisee dans un four a haute temperature (900-1100 degC) sous flux d'oxygene sec (O2). La reaction est : Si + O2 -&gt; SiO2. L'oxydation seche produit un oxyde de meilleure qualite (plus dense, moins de defauts) mais avec une vitesse de croissance plus lente.</p>
 
-**Oxydation humide** : realisee sous flux de vapeur d'eau (H2O). La reaction est : Si + 2H2O -> SiO2 + 2H2. La vitesse de croissance est plus rapide mais la qualite de l'oxyde est inferieure.
+<p><strong>Oxydation humide</strong> : realisee sous flux de vapeur d'eau (H2O). La reaction est : Si + 2H2O -&gt; SiO2 + 2H2. La vitesse de croissance est plus rapide mais la qualite de l'oxyde est inferieure.</p>
 
-La cinetique de croissance de l'oxyde suit le modele de Deal-Grove, avec un regime lineaire pour les faibles epaisseurs et un regime parabolique pour les fortes epaisseurs (la diffusion de l'oxydant a travers l'oxyde deja forme devient le facteur limitant).
+<p>La cinetique de croissance de l'oxyde suit le modele de Deal-Grove, avec un regime lineaire pour les faibles epaisseurs et un regime parabolique pour les fortes epaisseurs (la diffusion de l'oxydant a travers l'oxyde deja forme devient le facteur limitant).</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/oxidation.jpg" alt="Etape d'oxydation" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Four d'oxydation thermique - croissance de SiO2 sur le wafer de silicium</p>
+<p class="img-caption">
+    <span class="lang-fr">Four d'oxydation thermique - croissance de SiO2 sur le wafer de silicium</span>
+    <span class="lang-en">Thermal oxidation furnace - SiO2 growth on the silicon wafer</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">3. Depot de couches minces (PVD / CVD)</h3>
 
-Le depot de couches minces est une etape essentielle pour construire les differentes couches fonctionnelles du dispositif. Deux grandes familles de techniques sont utilisees :
+<p>Le depot de couches minces est une etape essentielle pour construire les differentes couches fonctionnelles du dispositif. Deux grandes familles de techniques sont utilisees :</p>
 
-**Depot chimique en phase vapeur (CVD - Chemical Vapor Deposition)** :
-- **LPCVD (Low Pressure CVD)** : utilise dans notre procede pour deposer le polysilicium. Le depot se fait a basse pression (0.1-1 Torr) et a temperature elevee (580-650 degC). Le gaz precurseur (silane SiH4) se decompose thermiquement a la surface du wafer : SiH4 -> Si + 2H2. La basse pression assure une excellente uniformite du depot sur l'ensemble du wafer.
-- **PECVD (Plasma Enhanced CVD)** : permet de realiser des depots a plus basse temperature grace a l'assistance d'un plasma. Utilise notamment pour deposer du SiO2 ou du Si3N4.
+<p><strong>Depot chimique en phase vapeur (CVD - Chemical Vapor Deposition)</strong> :</p>
+<ul>
+<li><strong>LPCVD (Low Pressure CVD)</strong> : utilise dans notre procede pour deposer le polysilicium. Le depot se fait a basse pression (0.1-1 Torr) et a temperature elevee (580-650 degC). Le gaz precurseur (silane SiH4) se decompose thermiquement a la surface du wafer : SiH4 -&gt; Si + 2H2. La basse pression assure une excellente uniformite du depot sur l'ensemble du wafer.</li>
+<li><strong>PECVD (Plasma Enhanced CVD)</strong> : permet de realiser des depots a plus basse temperature grace a l'assistance d'un plasma. Utilise notamment pour deposer du SiO2 ou du Si3N4.</li>
+</ul>
 
-**Depot physique en phase vapeur (PVD - Physical Vapor Deposition)** :
-- **Evaporation** : le materiau a deposer est chauffe jusqu'a evaporation dans une enceinte sous vide. Les atomes se condensent sur le wafer.
-- **Pulverisation cathodique (sputtering)** : un plasma d'argon bombarde une cible du materiau a deposer, ejectant des atomes qui viennent se deposer sur le wafer. Utilisee pour la metallisation (depot d'aluminium).
+<p><strong>Depot physique en phase vapeur (PVD - Physical Vapor Deposition)</strong> :</p>
+<ul>
+<li><strong>Evaporation</strong> : le materiau a deposer est chauffe jusqu'a evaporation dans une enceinte sous vide. Les atomes se condensent sur le wafer.</li>
+<li><strong>Pulverisation cathodique (sputtering)</strong> : un plasma d'argon bombarde une cible du materiau a deposer, ejectant des atomes qui viennent se deposer sur le wafer. Utilisee pour la metallisation (depot d'aluminium).</li>
+</ul>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/deposit.jpg" alt="Etape de depot" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Four LPCVD pour le depot de polysilicium sur le wafer</p>
+<p class="img-caption">
+    <span class="lang-fr">Four LPCVD pour le depot de polysilicium sur le wafer</span>
+    <span class="lang-en">LPCVD furnace for polysilicon deposition on the wafer</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">4. Dopage et implantation ionique</h3>
 
-Le dopage consiste a introduire des impuretes controlees dans le silicium pour modifier ses proprietes electriques. Dans notre procede, nous avons realise un dopage de type N du polysilicium par diffusion de phosphore.
+<p>Le dopage consiste a introduire des impuretes controlees dans le silicium pour modifier ses proprietes electriques. Dans notre procede, nous avons realise un dopage de type N du polysilicium par diffusion de phosphore.</p>
 
-**Diffusion thermique** : le wafer est place dans un four a haute temperature (900-1100 degC) en presence d'une source de dopant (POCl3 pour le phosphore). Les atomes de phosphore diffusent dans le polysilicium selon les lois de Fick. Le profil de concentration resultant depend de la temperature et du temps de diffusion.
+<p><strong>Diffusion thermique</strong> : le wafer est place dans un four a haute temperature (900-1100 degC) en presence d'une source de dopant (POCl3 pour le phosphore). Les atomes de phosphore diffusent dans le polysilicium selon les lois de Fick. Le profil de concentration resultant depend de la temperature et du temps de diffusion.</p>
 
-**Implantation ionique** (technique complementaire) : les ions du dopant sont acceleres a haute energie (10-200 keV) et implantes directement dans le substrat. Cette technique offre un meilleur controle de la dose et de la profondeur de jonction, mais necessite un recuit ulterieur pour activer les dopants et reparer les dommages cristallins.
+<p><strong>Implantation ionique</strong> (technique complementaire) : les ions du dopant sont acceleres a haute energie (10-200 keV) et implantes directement dans le substrat. Cette technique offre un meilleur controle de la dose et de la profondeur de jonction, mais necessite un recuit ulterieur pour activer les dopants et reparer les dommages cristallins.</p>
 
-Le dopage de type N (phosphore, arsenic) apporte des electrons supplementaires, tandis que le dopage de type P (bore) apporte des trous. C'est le principe fondamental du fonctionnement des transistors MOS et des jonctions PN.
+<p>Le dopage de type N (phosphore, arsenic) apporte des electrons supplementaires, tandis que le dopage de type P (bore) apporte des trous. C'est le principe fondamental du fonctionnement des transistors MOS et des jonctions PN.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/doping.jpg" alt="Etape de dopage" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Four de diffusion pour le dopage au phosphore du polysilicium</p>
+<p class="img-caption">
+    <span class="lang-fr">Four de diffusion pour le dopage au phosphore du polysilicium</span>
+    <span class="lang-en">Diffusion furnace for phosphorus doping of polysilicon</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">5. Photolithographie</h3>
 
-La photolithographie est le procede central de la micro-fabrication. Elle permet de transferer les motifs d'un masque sur le wafer. Trois niveaux de photolithographie ont ete realises dans notre procede :
+<p>La photolithographie est le procede central de la micro-fabrication. Elle permet de transferer les motifs d'un masque sur le wafer. Trois niveaux de photolithographie ont ete realises dans notre procede :</p>
 
-**Etapes du procede de photolithographie** :
-1. **Enduction** : depot d'une couche uniforme de resine photosensible par centrifugation (spin-coating) a 3000-5000 tr/min
-2. **Recuit doux (soft bake)** : evaporation partielle du solvant a 90-100 degC
-3. **Alignement et insolation** : exposition de la resine aux UV (lambda = 365 nm) a travers le masque. Les zones exposees subissent une modification chimique
-4. **Developpement** : dissolution selective de la resine exposee (resine positive) ou non exposee (resine negative) dans un bain developpeur
-5. **Recuit dur (hard bake)** : durcissement de la resine restante pour ameliorer sa resistance a la gravure
+<p><strong>Etapes du procede de photolithographie</strong> :</p>
+<ol>
+<li><strong>Enduction</strong> : depot d'une couche uniforme de resine photosensible par centrifugation (spin-coating) a 3000-5000 tr/min</li>
+<li><strong>Recuit doux (soft bake)</strong> : evaporation partielle du solvant a 90-100 degC</li>
+<li><strong>Alignement et insolation</strong> : exposition de la resine aux UV (lambda = 365 nm) a travers le masque. Les zones exposees subissent une modification chimique</li>
+<li><strong>Developpement</strong> : dissolution selective de la resine exposee (resine positive) ou non exposee (resine negative) dans un bain developpeur</li>
+<li><strong>Recuit dur (hard bake)</strong> : durcissement de la resine restante pour ameliorer sa resistance a la gravure</li>
+</ol>
 
-**Photolithographie n1 - Gravure du polysilicium** : definition des motifs des resistances chauffantes en polysilicium du capteur.
+<p><strong>Photolithographie n1 - Gravure du polysilicium</strong> : definition des motifs des resistances chauffantes en polysilicium du capteur.</p>
 
-**Photolithographie n2 - Ouverture des contacts** : creation des ouvertures dans la couche d'oxyde pour permettre les connexions electriques.
+<p><strong>Photolithographie n2 - Ouverture des contacts</strong> : creation des ouvertures dans la couche d'oxyde pour permettre les connexions electriques.</p>
 
-**Photolithographie n3 - Gravure du metal** : definition des pistes metalliques et des plots de contact.
+<p><strong>Photolithographie n3 - Gravure du metal</strong> : definition des pistes metalliques et des plots de contact.</p>
 
 <h3 class="section-title">6. Gravure (seche et humide)</h3>
 
-La gravure permet de retirer selectivement les materiaux non proteges par la resine photosensible.
+<p>La gravure permet de retirer selectivement les materiaux non proteges par la resine photosensible.</p>
 
-**Gravure humide (wet etching)** :
-- Isotrope (grave dans toutes les directions)
-- Utilise des solutions chimiques specifiques : HF pour le SiO2, KOH pour le Si, acides pour les metaux
-- Simple et economique mais moins precise pour les petites dimensions
+<p><strong>Gravure humide (wet etching)</strong> :</p>
+<ul>
+<li>Isotrope (grave dans toutes les directions)</li>
+<li>Utilise des solutions chimiques specifiques : HF pour le SiO2, KOH pour le Si, acides pour les metaux</li>
+<li>Simple et economique mais moins precise pour les petites dimensions</li>
+</ul>
 
-**Gravure seche (dry etching)** :
-- **RIE (Reactive Ion Etching)** : combine une attaque chimique (radicaux reactifs) et physique (bombardement ionique). Permet une gravure anisotrope (directionnelle) essentielle pour les motifs de petite dimension
-- **DRIE (Deep Reactive Ion Etching)** : variante permettant de graver des structures profondes avec des flancs verticaux (procede Bosch)
+<p><strong>Gravure seche (dry etching)</strong> :</p>
+<ul>
+<li><strong>RIE (Reactive Ion Etching)</strong> : combine une attaque chimique (radicaux reactifs) et physique (bombardement ionique). Permet une gravure anisotrope (directionnelle) essentielle pour les motifs de petite dimension</li>
+<li><strong>DRIE (Deep Reactive Ion Etching)</strong> : variante permettant de graver des structures profondes avec des flancs verticaux (procede Bosch)</li>
+</ul>
 
-Dans notre procede, la gravure du polysilicium et du metal a ete realisee pour definir les geometries des elements du capteur.
+<p>Dans notre procede, la gravure du polysilicium et du metal a ete realisee pour definir les geometries des elements du capteur.</p>
 
 <h3 class="section-title">7. Decontamination organique et inspection</h3>
 
-Entre les etapes critiques, des phases de nettoyage et d'inspection sont necessaires pour garantir la qualite du procede :
+<p>Entre les etapes critiques, des phases de nettoyage et d'inspection sont necessaires pour garantir la qualite du procede :</p>
 
-- **Decontamination organique** : elimination des residus de resine et des contaminants organiques par plasma O2 ou par voie chimique (acetone, isopropanol, melange piranha)
-- **Inspection optique** : verification au microscope des motifs apres chaque etape de photolithographie pour s'assurer de la conformite dimensionnelle et de l'absence de defauts
+<ul>
+<li><strong>Decontamination organique</strong> : elimination des residus de resine et des contaminants organiques par plasma O2 ou par voie chimique (acetone, isopropanol, melange piranha)</li>
+<li><strong>Inspection optique</strong> : verification au microscope des motifs apres chaque etape de photolithographie pour s'assurer de la conformite dimensionnelle et de l'absence de defauts</li>
+</ul>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/look.jpg" alt="Inspection au microscope" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Inspection des motifs au microscope optique apres photolithographie</p>
+<p class="img-caption">
+    <span class="lang-fr">Inspection des motifs au microscope optique apres photolithographie</span>
+    <span class="lang-en">Pattern inspection under optical microscope after photolithography</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">8. Metallisation</h3>
 
-La metallisation consiste a deposer une couche d'aluminium (environ 300-500 nm) sur l'ensemble du wafer par PVD (evaporation ou pulverisation cathodique). Cette couche metallique formera les pistes de connexion electrique et les plots de contact du capteur.
+<p>La metallisation consiste a deposer une couche d'aluminium (environ 300-500 nm) sur l'ensemble du wafer par PVD (evaporation ou pulverisation cathodique). Cette couche metallique formera les pistes de connexion electrique et les plots de contact du capteur.</p>
 
-L'aluminium est le metal de choix en microelectronique pour ses proprietes :
-- Bonne conductivite electrique
-- Excellente adherence sur SiO2
-- Facilite de gravure
-- Formation de contacts ohmiques avec le silicium dope
+<p>L'aluminium est le metal de choix en microelectronique pour ses proprietes :</p>
+<ul>
+<li>Bonne conductivite electrique</li>
+<li>Excellente adherence sur SiO2</li>
+<li>Facilite de gravure</li>
+<li>Formation de contacts ohmiques avec le silicium dope</li>
+</ul>
 
-Apres depot, la photolithographie n3 et la gravure definissent les motifs metalliques finaux.
+<p>Apres depot, la photolithographie n3 et la gravure definissent les motifs metalliques finaux.</p>
 
 <h3 class="section-title">9. Recuit metallique (annealing)</h3>
 
-Le recuit metallique est une etape thermique realisee apres la metallisation, typiquement a 400-450 degC sous atmosphere formante (N2/H2). Ses objectifs sont multiples :
+<p>Le recuit metallique est une etape thermique realisee apres la metallisation, typiquement a 400-450 degC sous atmosphere formante (N2/H2). Ses objectifs sont multiples :</p>
 
-- **Ameliorer le contact metal/semiconducteur** : former une interface de bonne qualite entre l'aluminium et le silicium dope pour obtenir des contacts ohmiques a faible resistance
-- **Reduire les contraintes mecaniques** : relacher les contraintes internes dans les couches deposees
-- **Passiver les defauts d'interface** : l'hydrogene de l'atmosphere formante passive les liaisons pendantes a l'interface Si/SiO2, ameliorant les proprietes electriques
+<ul>
+<li><strong>Ameliorer le contact metal/semiconducteur</strong> : former une interface de bonne qualite entre l'aluminium et le silicium dope pour obtenir des contacts ohmiques a faible resistance</li>
+<li><strong>Reduire les contraintes mecaniques</strong> : relacher les contraintes internes dans les couches deposees</li>
+<li><strong>Passiver les defauts d'interface</strong> : l'hydrogene de l'atmosphere formante passive les liaisons pendantes a l'interface Si/SiO2, ameliorant les proprietes electriques</li>
+</ul>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/annealing.jpg" alt="Etape de recuit" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Four de recuit metallique - amelioration des contacts electriques</p>
+<p class="img-caption">
+    <span class="lang-fr">Four de recuit metallique - amelioration des contacts electriques</span>
+    <span class="lang-en">Metal annealing furnace - improving electrical contacts</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">10. Fabrication MEMS/NEMS et conception du capteur</h3>
 
-Le capteur de gaz que nous avons fabrique est un exemple de dispositif MEMS (Micro-Electro-Mechanical Systems). Il integre :
+<p>Le capteur de gaz que nous avons fabrique est un exemple de dispositif MEMS (Micro-Electro-Mechanical Systems). Il integre :</p>
 
-- **Une resistance chauffante en polysilicium** : permet de chauffer la zone sensible du capteur a la temperature optimale de fonctionnement (100-400 degC selon le gaz cible)
-- **Des electrodes interdigitees** : paire d'electrodes metalliques en forme de peigne entre lesquelles sont deposees les nanoparticules sensibles
-- **Des plots de contact** : permettent la connexion electrique du capteur au circuit de mesure
+<ul>
+<li><strong>Une resistance chauffante en polysilicium</strong> : permet de chauffer la zone sensible du capteur a la temperature optimale de fonctionnement (100-400 degC selon le gaz cible)</li>
+<li><strong>Des electrodes interdigitees</strong> : paire d'electrodes metalliques en forme de peigne entre lesquelles sont deposees les nanoparticules sensibles</li>
+<li><strong>Des plots de contact</strong> : permettent la connexion electrique du capteur au circuit de mesure</li>
+</ul>
 
-L'architecture du capteur exploite la variation de resistance des nanoparticules en presence du gaz cible. Lorsque les molecules de gaz s'adsorbent a la surface des nanoparticules, elles modifient la densite de porteurs de charge, ce qui se traduit par une variation mesurable de la resistance electrique entre les electrodes.
+<p>L'architecture du capteur exploite la variation de resistance des nanoparticules en presence du gaz cible. Lorsque les molecules de gaz s'adsorbent a la surface des nanoparticules, elles modifient la densite de porteurs de charge, ce qui se traduit par une variation mesurable de la resistance electrique entre les electrodes.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/sensor_micro.jpg" alt="Capteur au microscope" style="width: 40%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Vue au microscope du capteur de gaz fabrique - electrodes interdigitees et resistance chauffante</p>
+<p class="img-caption">
+    <span class="lang-fr">Vue au microscope du capteur de gaz fabrique - electrodes interdigitees et resistance chauffante</span>
+    <span class="lang-en">Microscope view of the fabricated gas sensor - interdigitated electrodes and heating resistor</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">11. Assemblage et test du capteur</h3>
 
-L'etape finale de fabrication consiste a assembler le capteur :
-- **Decoupe du wafer** : separation des puces individuelles par clivage ou sciage
-- **Report sur boitier (packaging)** : collage de la puce sur un support TO et connexion par wire-bonding (micro-soudure par fil d'or ou d'aluminium)
-- **Depot des nanoparticules** : application de la solution collodale de nanoparticules par dielectrophorese (application d'un champ electrique alternatif pour aligner les nanoparticules entre les electrodes)
+<p>L'etape finale de fabrication consiste a assembler le capteur :</p>
+<ul>
+<li><strong>Decoupe du wafer</strong> : separation des puces individuelles par clivage ou sciage</li>
+<li><strong>Report sur boitier (packaging)</strong> : collage de la puce sur un support TO et connexion par wire-bonding (micro-soudure par fil d'or ou d'aluminium)</li>
+<li><strong>Depot des nanoparticules</strong> : application de la solution collodale de nanoparticules par dielectrophorese (application d'un champ electrique alternatif pour aligner les nanoparticules entre les electrodes)</li>
+</ul>
 
-Les tests electriques sont realises sous pointes pour verifier :
-- La continuite des pistes metalliques
-- La valeur des resistances chauffantes
-- L'isolation electrique entre les differents niveaux
+<p>Les tests electriques sont realises sous pointes pour verifier :</p>
+<ul>
+<li>La continuite des pistes metalliques</li>
+<li>La valeur des resistances chauffantes</li>
+<li>L'isolation electrique entre les differents niveaux</li>
+</ul>
 
-Des informations complementaires sur l'integration hardware sont disponibles dans la section [Microcontroleur Hardware](./microcontroleur_hardware.html).
+<p>Des informations complementaires sur l'integration hardware sont disponibles dans la section <a href="./microcontroleur_hardware.html">Microcontroleur Hardware</a>.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/test.jpg" alt="Test du capteur" style="width: 35%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Test electrique du capteur assemble - verification des connexions et des resistances</p>
+<p class="img-caption">
+    <span class="lang-fr">Test electrique du capteur assemble - verification des connexions et des resistances</span>
+    <span class="lang-en">Electrical testing of the assembled sensor - verifying connections and resistances</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">12. Mesures sous atmosphere controlee</h3>
 
-La caracterisation finale du capteur a ete realisee dans une enceinte sous atmosphere controlee. Nous avons expose le capteur a deux gaz cibles :
+<p>La caracterisation finale du capteur a ete realisee dans une enceinte sous atmosphere controlee. Nous avons expose le capteur a deux gaz cibles :</p>
 
-- **Ammoniac (NH3)** : a une concentration de 0,1% dans l'air sec
-- **Ethanol (C2H6O)** : a une concentration de 0,1% dans l'air sec
+<ul>
+<li><strong>Ammoniac (NH3)</strong> : a une concentration de 0,1% dans l'air sec</li>
+<li><strong>Ethanol (C2H6O)</strong> : a une concentration de 0,1% dans l'air sec</li>
+</ul>
 
-Le protocole de mesure consistait a :
-1. Etablir une ligne de base sous air sec pur
-2. Introduire le gaz cible a concentration connue
-3. Observer la variation de resistance du capteur
-4. Purger l'enceinte et observer le retour a la ligne de base
+<p>Le protocole de mesure consistait a :</p>
+<ol>
+<li>Etablir une ligne de base sous air sec pur</li>
+<li>Introduire le gaz cible a concentration connue</li>
+<li>Observer la variation de resistance du capteur</li>
+<li>Purger l'enceinte et observer le retour a la ligne de base</li>
+</ol>
 
-La tension de polarisation appliquee etait de 20V. L'acquisition des donnees a ete realisee via LabVIEW, permettant d'enregistrer en temps reel la variation de resistance du capteur. Les parametres evalues sont la sensibilite (amplitude de la variation de resistance), le temps de reponse, le temps de recouvrement et la selectivite entre les differents gaz.
+<p>La tension de polarisation appliquee etait de 20V. L'acquisition des donnees a ete realisee via LabVIEW, permettant d'enregistrer en temps reel la variation de resistance du capteur. Les parametres evalues sont la sensibilite (amplitude de la variation de resistance), le temps de reponse, le temps de recouvrement et la selectivite entre les differents gaz.</p>
+
+</div>
 
 <div style="text-align: center; display: flex; justify-content: center;">
     <img src="/img/BE_AIME/atmosphere.jpg" alt="Mesures sous atmosphere controlee" style="width: 40%; border-radius: 8px;"/>
 </div>
-<p class="img-caption">Banc de mesure sous atmosphere controlee - caracterisation de la reponse du capteur aux gaz</p>
+<p class="img-caption">
+    <span class="lang-fr">Banc de mesure sous atmosphere controlee - caracterisation de la reponse du capteur aux gaz</span>
+    <span class="lang-en">Controlled atmosphere measurement bench - characterizing the sensor's response to gases</span>
+</p>
+
+<div class="lang-fr">
 
 <h3 class="section-title">Flux complet de fabrication</h3>
 
-En resume, le flux de fabrication du capteur de gaz suit les etapes suivantes :
+<p>En resume, le flux de fabrication du capteur de gaz suit les etapes suivantes :</p>
 
-| Etape | Procede | Objectif |
-|---|---|---|
-| 1. Oxydation de masquage | Oxydation chimique (H2SO4 + H2O2) | Creer une couche protectrice sur le wafer |
-| 2. Depot de polysilicium | LPCVD | Deposer la couche de polysilicium pour les resistances |
-| 3. Dopage du polysilicium | Diffusion de phosphore (type N) | Rendre le polysilicium conducteur |
-| 4. Photolithographie n1 | Gravure du polysilicium | Definir les motifs des resistances chauffantes |
-| 5. Decontamination | Nettoyage organique | Eliminer les residus de resine |
-| 6. Oxydation seche | Four d'oxydation | Creer la couche d'isolation |
-| 7. Photolithographie n2 | Ouverture des contacts | Creer les acces electriques a travers l'oxyde |
-| 8. Metallisation | PVD (aluminium) | Deposer les interconnexions metalliques |
-| 9. Photolithographie n3 | Gravure du metal | Definir les pistes et plots de contact |
-| 10. Recuit metallique | Four sous atmosphere formante | Ameliorer les contacts electriques |
-| 11. Assemblage | Decoupe, wire-bonding, dielectrophorese | Mise en boitier et depot des nanoparticules |
-| 12. Test | Mesure sous atmosphere controlee | Valider le fonctionnement du capteur |
+<table>
+<tr><th>Etape</th><th>Procede</th><th>Objectif</th></tr>
+<tr><td>1. Oxydation de masquage</td><td>Oxydation chimique (H2SO4 + H2O2)</td><td>Creer une couche protectrice sur le wafer</td></tr>
+<tr><td>2. Depot de polysilicium</td><td>LPCVD</td><td>Deposer la couche de polysilicium pour les resistances</td></tr>
+<tr><td>3. Dopage du polysilicium</td><td>Diffusion de phosphore (type N)</td><td>Rendre le polysilicium conducteur</td></tr>
+<tr><td>4. Photolithographie n1</td><td>Gravure du polysilicium</td><td>Definir les motifs des resistances chauffantes</td></tr>
+<tr><td>5. Decontamination</td><td>Nettoyage organique</td><td>Eliminer les residus de resine</td></tr>
+<tr><td>6. Oxydation seche</td><td>Four d'oxydation</td><td>Creer la couche d'isolation</td></tr>
+<tr><td>7. Photolithographie n2</td><td>Ouverture des contacts</td><td>Creer les acces electriques a travers l'oxyde</td></tr>
+<tr><td>8. Metallisation</td><td>PVD (aluminium)</td><td>Deposer les interconnexions metalliques</td></tr>
+<tr><td>9. Photolithographie n3</td><td>Gravure du metal</td><td>Definir les pistes et plots de contact</td></tr>
+<tr><td>10. Recuit metallique</td><td>Four sous atmosphere formante</td><td>Ameliorer les contacts electriques</td></tr>
+<tr><td>11. Assemblage</td><td>Decoupe, wire-bonding, dielectrophorese</td><td>Mise en boitier et depot des nanoparticules</td></tr>
+<tr><td>12. Test</td><td>Mesure sous atmosphere controlee</td><td>Valider le fonctionnement du capteur</td></tr>
+</table>
 
----
+<hr/>
 
-## PART D : ANALYSE ET REFLEXION
+<h2>PART D : ANALYSE ET REFLEXION</h2>
 
 <h3 class="section-title">Connaissances et competences acquises</h3>
 
-- **Procedes de micro-fabrication** : maitrise des etapes fondamentales (oxydation, depot CVD/PVD, dopage, photolithographie, gravure, recuit) et comprehension de leurs principes physico-chimiques
-- **Environnement de salle blanche** : respect des protocoles stricts d'habillage et de manipulation, conscience des enjeux de contamination particulaire
-- **Conception de capteurs** : comprehension de l'architecture d'un capteur de gaz resistif a base de nanoparticules et de son principe de fonctionnement
-- **Synthese chimique** : participation a la synthese de nanoparticules et a leur depot par dielectrophorese
-- **Caracterisation electrique** : mesure et analyse des performances du capteur sous atmosphere controlee
-- **Enregistrement et analyse de donnees** : utilisation de LabVIEW pour l'acquisition en temps reel et traitement des resultats
+<ul>
+<li><strong>Procedes de micro-fabrication</strong> : maitrise des etapes fondamentales (oxydation, depot CVD/PVD, dopage, photolithographie, gravure, recuit) et comprehension de leurs principes physico-chimiques</li>
+<li><strong>Environnement de salle blanche</strong> : respect des protocoles stricts d'habillage et de manipulation, conscience des enjeux de contamination particulaire</li>
+<li><strong>Conception de capteurs</strong> : comprehension de l'architecture d'un capteur de gaz resistif a base de nanoparticules et de son principe de fonctionnement</li>
+<li><strong>Synthese chimique</strong> : participation a la synthese de nanoparticules et a leur depot par dielectrophorese</li>
+<li><strong>Caracterisation electrique</strong> : mesure et analyse des performances du capteur sous atmosphere controlee</li>
+<li><strong>Enregistrement et analyse de donnees</strong> : utilisation de LabVIEW pour l'acquisition en temps reel et traitement des resultats</li>
+</ul>
 
 <h3 class="section-title">Auto-evaluation</h3>
 
-Ce cours a ete une veritable decouverte pour moi car je n'avais aucune competence prealable dans le domaine de la micro-fabrication. La comprehension des concepts chimiques et physiques a ete grandement facilitee par les enseignants, qui ont explique et guide chaque etape de maniere approfondie. J'ai ete suffisamment attentif pour assimiler et pratiquer l'ensemble des manipulations, ce qui m'a permis de ne rencontrer aucune difficulte majeure.
+<p>Ce cours a ete une veritable decouverte pour moi car je n'avais aucune competence prealable dans le domaine de la micro-fabrication. La comprehension des concepts chimiques et physiques a ete grandement facilitee par les enseignants, qui ont explique et guide chaque etape de maniere approfondie. J'ai ete suffisamment attentif pour assimiler et pratiquer l'ensemble des manipulations, ce qui m'a permis de ne rencontrer aucune difficulte majeure.</p>
 
-L'experience en salle blanche m'a permis de mesurer la complexite et la precision requises pour fabriquer des dispositifs microelectroniques. Chaque parametre (temperature, duree, pression, concentration) doit etre rigoureusement controle, ce qui demande une grande discipline et une attention constante.
+<p>L'experience en salle blanche m'a permis de mesurer la complexite et la precision requises pour fabriquer des dispositifs microelectroniques. Chaque parametre (temperature, duree, pression, concentration) doit etre rigoureusement controle, ce qui demande une grande discipline et une attention constante.</p>
 
-J'ai egalement pris conscience de l'importance du travail en equipe dans un environnement de production : la coordination entre les membres du groupe est essentielle pour respecter le planning de fabrication et eviter les erreurs couteuses.
+<p>J'ai egalement pris conscience de l'importance du travail en equipe dans un environnement de production : la coordination entre les membres du groupe est essentielle pour respecter le planning de fabrication et eviter les erreurs couteuses.</p>
 
 <h3 class="section-title">Mon avis</h3>
 
-Avant ce cours, je ne savais pas exactement comment les capteurs etaient fabriques. Grace a ce module, j'ai vecu une premiere experience tres enrichissante qui m'a apporte de nouvelles competences. Meme si la micro-fabrication n'est pas exactement mon domaine de predilection, comprendre comment sont fabriques les capteurs que nous utilisons au quotidien est un atout precieux pour un ingenieur en electronique.
+<p>Avant ce cours, je ne savais pas exactement comment les capteurs etaient fabriques. Grace a ce module, j'ai vecu une premiere experience tres enrichissante qui m'a apporte de nouvelles competences. Meme si la micro-fabrication n'est pas exactement mon domaine de predilection, comprendre comment sont fabriques les capteurs que nous utilisons au quotidien est un atout precieux pour un ingenieur en electronique.</p>
 
-Nous avons commence les travaux pratiques avec un wafer de silicium deja partiellement prepare. Il aurait ete egalement interessant de partir d'un wafer vierge et de realiser la totalite du procede, y compris la gravure initiale des motifs sur silicium. Neanmoins, cette semaine intensive a ete extremement formatrice et m'a donne une vision concrete des enjeux de l'industrie microelectronique.
+<p>Nous avons commence les travaux pratiques avec un wafer de silicium deja partiellement prepare. Il aurait ete egalement interessant de partir d'un wafer vierge et de realiser la totalite du procede, y compris la gravure initiale des motifs sur silicium. Neanmoins, cette semaine intensive a ete extremement formatrice et m'a donne une vision concrete des enjeux de l'industrie microelectronique.</p>
 
-La combinaison de la fabrication en salle blanche, de la synthese chimique des nanoparticules et de la caracterisation electrique sous atmosphere controlee fait de ce module une experience pedagogique unique et tres complete. C'est un cours que je recommanderais a tout etudiant souhaitant comprendre les fondements de la microelectronique et de la fabrication de capteurs.
+<p>La combinaison de la fabrication en salle blanche, de la synthese chimique des nanoparticules et de la caracterisation electrique sous atmosphere controlee fait de ce module une experience pedagogique unique et tres complete. C'est un cours que je recommanderais a tout etudiant souhaitant comprendre les fondements de la microelectronique et de la fabrication de capteurs.</p>
 
 <h3 class="section-title">Lien vers le projet</h3>
 
-Le projet complet du capteur de gaz, incluant la partie integration microcontroleur et l'interface de mesure, est disponible sur [GitHub - Capteur de Gaz](https://github.com/Cyril-vsr/Capteur_Gaz).
+<p>Le projet complet du capteur de gaz, incluant la partie integration microcontroleur et l'interface de mesure, est disponible sur <a href="https://github.com/Cyril-vsr/Capteur_Gaz">GitHub - Capteur de Gaz</a>.</p>
+
+</div>
+
+<div class="lang-en">
+
+<h1>AIME - Inter-University Micro-Nano Electronics Workshop</h1>
+
+<p><strong>Academic year</strong>: 2024-2025<br/>
+<strong>Semester</strong>: S9<br/>
+<strong>Category</strong>: Micro-Nano Electronics / Sensor Fabrication</p>
+
+<hr/>
+
+<h2>PART A: GENERAL OVERVIEW</h2>
+
+<h3 class="section-title">Module Objectives</h3>
+
+<p>The AIME course (Atelier Interuniversitaire de Micro-nano Electronique) is an intensive one-week practical module within the AIME cleanroom platform, located on the INSA Toulouse campus. The main objective is to allow students to carry out, from start to finish, the fabrication of a micro/nanoscale gas sensor, starting from a partially prepared silicon wafer.</p>
+
+<p><strong>Learning objectives</strong>:</p>
+<ul>
+<li>Understand the complete cleanroom fabrication flow</li>
+<li>Master the fundamental micro-fabrication steps: oxidation, deposition, doping, photolithography, etching, annealing</li>
+<li>Fabricate a functional nanoparticle-based gas sensor</li>
+<li>Acquire skills in electrical characterization of micro/nano devices</li>
+<li>Understand the constraints and protocols of a cleanroom environment</li>
+</ul>
+
+<h3 class="section-title">Target Skills</h3>
+
+<table>
+<tr><th>Skill</th><th>Description</th></tr>
+<tr><td>Cleanroom fabrication</td><td>Master gowning protocols, wafer handling, and safety in a classified environment</td></tr>
+<tr><td>Technological processes</td><td>Perform oxidation, CVD/PVD deposition, doping, photolithography, and etching steps</td></tr>
+<tr><td>Sensor design</td><td>Understand the architecture of a micro/nanoscale gas sensor</td></tr>
+<tr><td>Characterization</td><td>Measure and analyze electrical properties of fabricated devices</td></tr>
+<tr><td>Teamwork</td><td>Collaborate effectively in a microelectronic production environment</td></tr>
+</table>
+
+<h3 class="section-title">Organization</h3>
+
+<p>The module is organized over an intensive week comprising:</p>
+<ul>
+<li><strong>Introductory lectures</strong>: review of micro-fabrication processes and presentation of the sensor to be fabricated</li>
+<li><strong>Cleanroom practical work</strong>: complete fabrication of the gas sensor on the AIME platform</li>
+<li><strong>Nanoparticle synthesis</strong>: chemical preparation of gas-sensitive nanoparticles</li>
+<li><strong>Assembly and testing</strong>: sensor packaging and measurements under controlled atmosphere</li>
+<li><strong>Results analysis</strong>: data processing and report writing</li>
+</ul>
+
+<hr/>
+
+<h2>PART B: EXPERIENCE AND CONTEXT</h2>
+
+<h3 class="section-title">The Cleanroom Environment</h3>
+
+<p>The AIME platform is a cleanroom classified ISO 5 to 7 depending on the zones, equipped with all the equipment needed for microelectronic device fabrication. Working in this environment requires strict adherence to gowning protocols (cleanroom suit, gloves, cap, shoe covers) and handling procedures to prevent any particulate contamination of the wafers.</p>
+
+<p>The cleanroom experience is unique as it allows confronting theory learned in class with the reality of fabrication. Each step must be performed with great precision: an error of a few seconds on an etching time or an incorrect furnace temperature can compromise the entire device. This rigor is representative of the microelectronics industry.</p>
+
+<h3 class="section-title">The AIME Platform</h3>
+
+<p>AIME is an inter-university educational platform that welcomes students from several institutions each year (INSA, Universite Paul Sabatier, ENSEEIHT, etc.). It has state-of-the-art equipment for photolithography, vapor phase deposition (CVD, PVD), ion implantation, dry and wet etching, oxidation and annealing furnaces, as well as characterization tools (profilometer, optical microscope, probe station).</p>
+
+<h3 class="section-title">My Role</h3>
+
+<p>During this module, I actively participated in each step of the gas sensor fabrication:</p>
+<ul>
+<li>Performing photolithography steps (coating, exposure, development)</li>
+<li>Loading and unloading wafers in oxidation and deposition furnaces</li>
+<li>Participating in the chemical synthesis of nanoparticles</li>
+<li>Applying the nanoparticle solution onto the sensor by dielectrophoresis</li>
+<li>Final assembly of the sensor and electrical testing under controlled atmosphere</li>
+</ul>
+
+<hr/>
+
+<h2>PART C: TECHNICAL ASPECTS</h2>
+
+<p>This section details the different steps of the gas sensor fabrication flow, based on fundamental microelectronics processes.</p>
+
+<h3 class="section-title">1. The Silicon Substrate (Wafer)</h3>
+
+<p>The starting point of any microelectronic fabrication is the monocrystalline silicon wafer. In our case, we worked on P-type silicon wafers (boron-doped), with a diameter of 100 mm (4 inches) and a thickness of about 525 um. The monocrystalline silicon is obtained by the Czochralski process and has a (100) crystal orientation.</p>
+
+<p>The choice of substrate is fundamental as it determines the electrical and mechanical properties of the final device. The purity of silicon used in microelectronics reaches 99.9999999% (9N), which is essential to ensure proper component operation.</p>
+
+<h3 class="section-title">2. Thermal Oxidation</h3>
+
+<p>The first major technological step is silicon oxidation. It consists of growing a layer of silicon dioxide (SiO2) on the wafer surface. This oxide layer serves as a protective mask, electrical insulator, or sacrificial layer depending on the process steps.</p>
+
+<p><strong>Chemical surface oxidation</strong>: H2SO4 + H2O2 (piranha mixture) - this initial step cleans the wafer surface and forms a thin native oxide layer.</p>
+
+<p><strong>Dry oxidation</strong>: performed in a high-temperature furnace (900-1100 degC) under dry oxygen flow (O2). The reaction is: Si + O2 -&gt; SiO2. Dry oxidation produces higher quality oxide (denser, fewer defects) but with slower growth rate.</p>
+
+<p><strong>Wet oxidation</strong>: performed under water vapor flow (H2O). The reaction is: Si + 2H2O -&gt; SiO2 + 2H2. The growth rate is faster but the oxide quality is lower.</p>
+
+<p>The oxide growth kinetics follow the Deal-Grove model, with a linear regime for thin layers and a parabolic regime for thick layers (diffusion of the oxidant through the already formed oxide becomes the limiting factor).</p>
+
+<h3 class="section-title">3. Thin Film Deposition (PVD / CVD)</h3>
+
+<p>Thin film deposition is an essential step for building the different functional layers of the device. Two main families of techniques are used:</p>
+
+<p><strong>Chemical Vapor Deposition (CVD)</strong>:</p>
+<ul>
+<li><strong>LPCVD (Low Pressure CVD)</strong>: used in our process to deposit polysilicon. Deposition is performed at low pressure (0.1-1 Torr) and high temperature (580-650 degC). The precursor gas (silane SiH4) thermally decomposes on the wafer surface: SiH4 -&gt; Si + 2H2. The low pressure ensures excellent deposition uniformity across the entire wafer.</li>
+<li><strong>PECVD (Plasma Enhanced CVD)</strong>: enables deposition at lower temperatures thanks to plasma assistance. Used notably for depositing SiO2 or Si3N4.</li>
+</ul>
+
+<p><strong>Physical Vapor Deposition (PVD)</strong>:</p>
+<ul>
+<li><strong>Evaporation</strong>: the material to be deposited is heated until evaporation in a vacuum chamber. The atoms condense on the wafer.</li>
+<li><strong>Sputtering</strong>: an argon plasma bombards a target of the material to be deposited, ejecting atoms that deposit on the wafer. Used for metallization (aluminum deposition).</li>
+</ul>
+
+<h3 class="section-title">4. Doping and Ion Implantation</h3>
+
+<p>Doping consists of introducing controlled impurities into silicon to modify its electrical properties. In our process, we performed N-type doping of polysilicon by phosphorus diffusion.</p>
+
+<p><strong>Thermal diffusion</strong>: the wafer is placed in a high-temperature furnace (900-1100 degC) in the presence of a dopant source (POCl3 for phosphorus). Phosphorus atoms diffuse into the polysilicon according to Fick's laws. The resulting concentration profile depends on temperature and diffusion time.</p>
+
+<p><strong>Ion implantation</strong> (complementary technique): dopant ions are accelerated to high energy (10-200 keV) and implanted directly into the substrate. This technique offers better control of dose and junction depth, but requires subsequent annealing to activate the dopants and repair crystal damage.</p>
+
+<p>N-type doping (phosphorus, arsenic) provides additional electrons, while P-type doping (boron) provides holes. This is the fundamental principle behind MOS transistors and PN junctions.</p>
+
+<h3 class="section-title">5. Photolithography</h3>
+
+<p>Photolithography is the central process of micro-fabrication. It allows transferring patterns from a mask onto the wafer. Three photolithography levels were performed in our process:</p>
+
+<p><strong>Photolithography process steps</strong>:</p>
+<ol>
+<li><strong>Coating</strong>: deposition of a uniform layer of photosensitive resist by spin-coating at 3000-5000 rpm</li>
+<li><strong>Soft bake</strong>: partial evaporation of the solvent at 90-100 degC</li>
+<li><strong>Alignment and exposure</strong>: exposing the resist to UV light (lambda = 365 nm) through the mask. The exposed areas undergo a chemical modification</li>
+<li><strong>Development</strong>: selective dissolution of the exposed resist (positive resist) or unexposed resist (negative resist) in a developer bath</li>
+<li><strong>Hard bake</strong>: hardening of the remaining resist to improve its etch resistance</li>
+</ol>
+
+<p><strong>Photolithography #1 - Polysilicon etching</strong>: defining the patterns of the sensor's polysilicon heating resistors.</p>
+
+<p><strong>Photolithography #2 - Contact opening</strong>: creating openings in the oxide layer to allow electrical connections.</p>
+
+<p><strong>Photolithography #3 - Metal etching</strong>: defining the metal traces and contact pads.</p>
+
+<h3 class="section-title">6. Etching (Dry and Wet)</h3>
+
+<p>Etching allows selectively removing materials not protected by the photosensitive resist.</p>
+
+<p><strong>Wet etching</strong>:</p>
+<ul>
+<li>Isotropic (etches in all directions)</li>
+<li>Uses specific chemical solutions: HF for SiO2, KOH for Si, acids for metals</li>
+<li>Simple and economical but less precise for small dimensions</li>
+</ul>
+
+<p><strong>Dry etching</strong>:</p>
+<ul>
+<li><strong>RIE (Reactive Ion Etching)</strong>: combines chemical attack (reactive radicals) and physical attack (ion bombardment). Enables anisotropic (directional) etching essential for small-dimension patterns</li>
+<li><strong>DRIE (Deep Reactive Ion Etching)</strong>: variant enabling etching of deep structures with vertical sidewalls (Bosch process)</li>
+</ul>
+
+<p>In our process, polysilicon and metal etching were performed to define the geometries of the sensor elements.</p>
+
+<h3 class="section-title">7. Organic Decontamination and Inspection</h3>
+
+<p>Between critical steps, cleaning and inspection phases are necessary to ensure process quality:</p>
+
+<ul>
+<li><strong>Organic decontamination</strong>: removal of resist residues and organic contaminants by O2 plasma or chemical means (acetone, isopropanol, piranha mixture)</li>
+<li><strong>Optical inspection</strong>: microscope verification of patterns after each photolithography step to ensure dimensional conformity and absence of defects</li>
+</ul>
+
+<h3 class="section-title">8. Metallization</h3>
+
+<p>Metallization consists of depositing an aluminum layer (approximately 300-500 nm) over the entire wafer by PVD (evaporation or sputtering). This metal layer will form the electrical connection traces and contact pads of the sensor.</p>
+
+<p>Aluminum is the metal of choice in microelectronics for its properties:</p>
+<ul>
+<li>Good electrical conductivity</li>
+<li>Excellent adhesion on SiO2</li>
+<li>Ease of etching</li>
+<li>Formation of ohmic contacts with doped silicon</li>
+</ul>
+
+<p>After deposition, photolithography #3 and etching define the final metal patterns.</p>
+
+<h3 class="section-title">9. Metal Annealing</h3>
+
+<p>Metal annealing is a thermal step performed after metallization, typically at 400-450 degC under forming gas atmosphere (N2/H2). Its objectives are multiple:</p>
+
+<ul>
+<li><strong>Improve the metal/semiconductor contact</strong>: form a high-quality interface between aluminum and doped silicon to obtain low-resistance ohmic contacts</li>
+<li><strong>Reduce mechanical stress</strong>: relieve internal stresses in deposited layers</li>
+<li><strong>Passivate interface defects</strong>: hydrogen from the forming gas passivates dangling bonds at the Si/SiO2 interface, improving electrical properties</li>
+</ul>
+
+<h3 class="section-title">10. MEMS/NEMS Fabrication and Sensor Design</h3>
+
+<p>The gas sensor we fabricated is an example of a MEMS (Micro-Electro-Mechanical Systems) device. It integrates:</p>
+
+<ul>
+<li><strong>A polysilicon heating resistor</strong>: heats the sensor's sensitive area to the optimal operating temperature (100-400 degC depending on the target gas)</li>
+<li><strong>Interdigitated electrodes</strong>: a pair of comb-shaped metal electrodes between which the sensitive nanoparticles are deposited</li>
+<li><strong>Contact pads</strong>: allow electrical connection of the sensor to the measurement circuit</li>
+</ul>
+
+<p>The sensor architecture exploits the resistance variation of nanoparticles in the presence of the target gas. When gas molecules adsorb on the nanoparticle surface, they modify the charge carrier density, resulting in a measurable variation of electrical resistance between the electrodes.</p>
+
+<h3 class="section-title">11. Sensor Assembly and Testing</h3>
+
+<p>The final fabrication step consists of assembling the sensor:</p>
+<ul>
+<li><strong>Wafer dicing</strong>: separation of individual chips by cleaving or sawing</li>
+<li><strong>Packaging</strong>: bonding the chip onto a TO package and connection by wire-bonding (micro-welding with gold or aluminum wire)</li>
+<li><strong>Nanoparticle deposition</strong>: application of the colloidal nanoparticle solution by dielectrophoresis (application of an alternating electric field to align nanoparticles between electrodes)</li>
+</ul>
+
+<p>Electrical tests are performed under probes to verify:</p>
+<ul>
+<li>Metal trace continuity</li>
+<li>Heating resistor values</li>
+<li>Electrical isolation between different levels</li>
+</ul>
+
+<p>Additional information on hardware integration is available in the <a href="./microcontroleur_hardware.html">Microcontroller Hardware</a> section.</p>
+
+<h3 class="section-title">12. Measurements Under Controlled Atmosphere</h3>
+
+<p>The final characterization of the sensor was performed in a controlled atmosphere chamber. We exposed the sensor to two target gases:</p>
+
+<ul>
+<li><strong>Ammonia (NH3)</strong>: at a concentration of 0.1% in dry air</li>
+<li><strong>Ethanol (C2H6O)</strong>: at a concentration of 0.1% in dry air</li>
+</ul>
+
+<p>The measurement protocol consisted of:</p>
+<ol>
+<li>Establishing a baseline under pure dry air</li>
+<li>Introducing the target gas at a known concentration</li>
+<li>Observing the sensor's resistance variation</li>
+<li>Purging the chamber and observing the return to baseline</li>
+</ol>
+
+<p>The applied bias voltage was 20V. Data acquisition was performed via LabVIEW, allowing real-time recording of the sensor's resistance variation. The evaluated parameters are sensitivity (amplitude of resistance variation), response time, recovery time, and selectivity between different gases.</p>
+
+<h3 class="section-title">Complete Fabrication Flow</h3>
+
+<p>In summary, the gas sensor fabrication flow follows these steps:</p>
+
+<table>
+<tr><th>Step</th><th>Process</th><th>Objective</th></tr>
+<tr><td>1. Masking oxidation</td><td>Chemical oxidation (H2SO4 + H2O2)</td><td>Create a protective layer on the wafer</td></tr>
+<tr><td>2. Polysilicon deposition</td><td>LPCVD</td><td>Deposit the polysilicon layer for resistors</td></tr>
+<tr><td>3. Polysilicon doping</td><td>Phosphorus diffusion (N-type)</td><td>Make the polysilicon conductive</td></tr>
+<tr><td>4. Photolithography #1</td><td>Polysilicon etching</td><td>Define heating resistor patterns</td></tr>
+<tr><td>5. Decontamination</td><td>Organic cleaning</td><td>Remove resist residues</td></tr>
+<tr><td>6. Dry oxidation</td><td>Oxidation furnace</td><td>Create the isolation layer</td></tr>
+<tr><td>7. Photolithography #2</td><td>Contact opening</td><td>Create electrical access through the oxide</td></tr>
+<tr><td>8. Metallization</td><td>PVD (aluminum)</td><td>Deposit metal interconnections</td></tr>
+<tr><td>9. Photolithography #3</td><td>Metal etching</td><td>Define traces and contact pads</td></tr>
+<tr><td>10. Metal annealing</td><td>Furnace under forming gas</td><td>Improve electrical contacts</td></tr>
+<tr><td>11. Assembly</td><td>Dicing, wire-bonding, dielectrophoresis</td><td>Packaging and nanoparticle deposition</td></tr>
+<tr><td>12. Testing</td><td>Controlled atmosphere measurement</td><td>Validate sensor operation</td></tr>
+</table>
+
+<hr/>
+
+<h2>PART D: ANALYSIS AND REFLECTION</h2>
+
+<h3 class="section-title">Knowledge and Skills Acquired</h3>
+
+<ul>
+<li><strong>Micro-fabrication processes</strong>: mastery of fundamental steps (oxidation, CVD/PVD deposition, doping, photolithography, etching, annealing) and understanding of their physicochemical principles</li>
+<li><strong>Cleanroom environment</strong>: adherence to strict gowning and handling protocols, awareness of particulate contamination issues</li>
+<li><strong>Sensor design</strong>: understanding the architecture of a nanoparticle-based resistive gas sensor and its operating principle</li>
+<li><strong>Chemical synthesis</strong>: participation in nanoparticle synthesis and their deposition by dielectrophoresis</li>
+<li><strong>Electrical characterization</strong>: measurement and analysis of sensor performance under controlled atmosphere</li>
+<li><strong>Data recording and analysis</strong>: use of LabVIEW for real-time acquisition and results processing</li>
+</ul>
+
+<h3 class="section-title">Self-assessment</h3>
+
+<p>This course was a true discovery for me as I had no prior skills in micro-fabrication. Understanding the chemical and physical concepts was greatly facilitated by the instructors, who explained and guided each step thoroughly. I was attentive enough to assimilate and practice all the manipulations, which allowed me to encounter no major difficulties.</p>
+
+<p>The cleanroom experience allowed me to appreciate the complexity and precision required to fabricate microelectronic devices. Every parameter (temperature, duration, pressure, concentration) must be rigorously controlled, requiring great discipline and constant attention.</p>
+
+<p>I also became aware of the importance of teamwork in a production environment: coordination between group members is essential to meet the fabrication schedule and avoid costly mistakes.</p>
+
+<h3 class="section-title">My Opinion</h3>
+
+<p>Before this course, I did not know exactly how sensors were manufactured. Thanks to this module, I had a very enriching first experience that brought me new skills. Even though micro-fabrication is not exactly my preferred field, understanding how the sensors we use daily are made is a valuable asset for an electronics engineer.</p>
+
+<p>We started the practical work with a silicon wafer already partially prepared. It would also have been interesting to start from a blank wafer and carry out the entire process, including the initial pattern etching on silicon. Nevertheless, this intensive week was extremely formative and gave me a concrete vision of the challenges in the microelectronics industry.</p>
+
+<p>The combination of cleanroom fabrication, chemical synthesis of nanoparticles, and electrical characterization under controlled atmosphere makes this module a unique and very comprehensive educational experience. It is a course I would recommend to any student wishing to understand the fundamentals of microelectronics and sensor fabrication.</p>
+
+<h3 class="section-title">Project Link</h3>
+
+<p>The complete gas sensor project, including the microcontroller integration and measurement interface, is available on <a href="https://github.com/Cyril-vsr/Capteur_Gaz">GitHub - Gas Sensor</a>.</p>
+
+</div>
+
+<div class="back-nav">
+    <a href="./my-courses-2024-2025.html" data-i18n-html="back-courses-2024-2025">&larr; Retour aux Cours 2024-2025</a>
+</div>
