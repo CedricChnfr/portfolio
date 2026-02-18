@@ -830,8 +830,6 @@ La tendance est a l'integration transparente de toutes les couches (edge, fog, c
 
 <h2>Documents de Cours</h2>
 
-</div>
-
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
@@ -852,13 +850,9 @@ La tendance est a l'integration transparente de toutes les couches (edge, fog, c
   </div>
 </div>
 
-<div class="lang-fr">
-
 <hr>
 
 <h2>Rapports et Projets</h2>
-
-</div>
 
 <div style="text-align: center;">
     <h3>
@@ -884,9 +878,9 @@ La tendance est a l'integration transparente de toutes les couches (edge, fog, c
     </a>
 </p>
 
-<div class="lang-fr">
 <hr>
 <p><em>Cours suivi en 2024-2025 a l'INSA Toulouse, Departement Genie Electrique et Informatique, specialite ISS.</em></p>
+
 </div>
 
 <div class="lang-en">
@@ -1593,9 +1587,53 @@ The trend is toward seamless integration of all layers (edge, fog, cloud) with u
 
 <h2>Course Documents</h2>
 
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Cours Complet Cloud & Edge Computing</span>
+        <span class="lang-en">Full Cloud & Edge Computing Course</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours complet sur le Cloud & Edge Computing : virtualisation, modeles de service, OpenStack, Edge Computing, Fog Computing, MEC, continuum cloud-edge.</span>
+        <span class="lang-en">Complete course on Cloud & Edge Computing: virtualization, service models, OpenStack, Edge Computing, Fog Computing, MEC, cloud-edge continuum.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le cours</span>
+        <span class="lang-en">Download the course</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <h2>Reports and Projects</h2>
+
+<div style="text-align: center;">
+    <h3>
+        <span class="lang-fr">Rapport de Projet Cloud Computing</span>
+        <span class="lang-en">Cloud Computing Project Report</span>
+    </h3>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/file/reports/S9/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/file/reports/S9/Boukouiss_Chanfreau_Cloud_Computing_Rapport.pdf" target="_blank">
+        <span class="lang-fr">Ouvrir le rapport complet</span>
+        <span class="lang-en">Open the full report</span>
+    </a>
+</p>
+<p style="text-align: center;">
+    <a href="/img/BE_Cloud_Computing/Lab_Subject_cloud.pdf" target="_blank">
+        <span class="lang-fr">Ouvrir le sujet de TP</span>
+        <span class="lang-en">Open the lab subject</span>
+    </a>
+</p>
 
 <hr>
 

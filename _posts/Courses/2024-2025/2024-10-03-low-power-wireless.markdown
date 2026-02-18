@@ -724,8 +724,6 @@ Capacite a comparer et selectionner les technologies sans fil adaptees a un cas 
 
 <h2>Documents de Cours</h2>
 
-</div>
-
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
@@ -761,13 +759,9 @@ Capacite a comparer et selectionner les technologies sans fil adaptees a un cas 
   </div>
 </div>
 
-<div class="lang-fr">
-
 <hr>
 
 <h2>Rapports et Projets</h2>
-
-</div>
 
 <div style="text-align: center;">
     <h3>
@@ -794,9 +788,9 @@ Capacite a comparer et selectionner les technologies sans fil adaptees a un cas 
     </a>
 </p>
 
-<div class="lang-fr">
 <hr>
 <p><em>Cours suivi en 2024-2025 a l'INSA Toulouse, Departement Genie Electrique et Informatique.</em></p>
+
 </div>
 
 <div class="lang-en">
@@ -1396,13 +1390,69 @@ Ability to compare and select wireless technologies suited to a given use case (
 
 <h2>Course Documents</h2>
 
-<!-- PDF sections are shared above between lang-fr and lang-en -->
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Chapitre 0 : Wireless Network Survey for IoT</span>
+        <span class="lang-en">Chapter 0: Wireless Network Survey for IoT</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Panorama des technologies sans fil pour l'IoT : classification, comparaison des protocoles, criteres de selection.</span>
+        <span class="lang-en">Overview of wireless technologies for IoT: classification, protocol comparison, selection criteria.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Chapitre 2 : 6LoWPAN - Network Architecture</span>
+        <span class="lang-en">Chapter 2: 6LoWPAN - Network Architecture</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Architecture 6LoWPAN : compression d'en-tetes, fragmentation, adressage mesh, integration IPv6.</span>
+        <span class="lang-en">6LoWPAN architecture: header compression, fragmentation, mesh addressing, IPv6 integration.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+  </div>
+</div>
 
 <hr>
 
 <h2>Reports and Projects</h2>
 
-<!-- Report/PDF sections are shared above between lang-fr and lang-en -->
+<div style="text-align: center;">
+    <h3>
+        <span class="lang-fr">Rapport de TP : LP-WPAN IPv6</span>
+        <span class="lang-en">Lab Report: LP-WPAN IPv6</span>
+    </h3>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed src="/file/reports/S9/IPV6_Report.pdf" width="100%" height="800px" type="application/pdf">
+</div>
+
+<p style="text-align: center;">
+    <a href="/file/reports/S9/IPV6_Report.pdf" target="_blank">
+        <span class="lang-fr">Ouvrir le rapport complet</span>
+        <span class="lang-en">Open the full report</span>
+    </a>
+</p>
+
+<p style="text-align: center;">
+    <a href="/img/BE_WPAN/Lab_Subject_wpan.pdf" target="_blank">
+        <span class="lang-fr">Ouvrir le sujet de TP</span>
+        <span class="lang-en">Open the lab subject</span>
+    </a>
+</p>
 
 <hr>
 

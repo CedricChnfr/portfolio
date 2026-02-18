@@ -662,8 +662,6 @@ Connaissance de l'architecture de virtualisation des fonctions reseau, du cycle 
 
 <h2>Documents de Cours</h2>
 
-</div>
-
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
@@ -714,13 +712,9 @@ Connaissance de l'architecture de virtualisation des fonctions reseau, du cycle 
   </div>
 </div>
 
-<div class="lang-fr">
-
 <hr>
 
 <h2>Rapports et Projets</h2>
-
-</div>
 
 <div style="text-align: center;">
     <h3>
@@ -765,9 +759,9 @@ Connaissance de l'architecture de virtualisation des fonctions reseau, du cycle 
   </div>
 </div>
 
-<div class="lang-fr">
 <hr>
 <p><em>Cours suivi en 2024-2025 a l'INSA Toulouse, Departement Genie Electrique et Informatique.</em></p>
+
 </div>
 
 <div class="lang-en">
@@ -1334,9 +1328,102 @@ Knowledge of the network function virtualization architecture, VNF lifecycle and
 
 <h2>Course Documents</h2>
 
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Chapitre 1 - Introduction aux reseaux emergents</span>
+        <span class="lang-en">Chapter 1 - Introduction to emerging networks</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours introductif : problematiques des reseaux traditionnels, evolution vers SDN et NFV, enjeux de la programmabilite reseau.</span>
+        <span class="lang-en">Introductory lecture: traditional network issues, evolution toward SDN and NFV, network programmability challenges.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Reseau-Emergent/2023.ch1.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Reseau-Emergent/2023.ch1.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le chapitre 1</span>
+        <span class="lang-en">Download chapter 1</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Chapitre 2 - Software-Defined Networking (SDN)</span>
+        <span class="lang-en">Chapter 2 - Software-Defined Networking (SDN)</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours approfondi sur le SDN : architecture, protocole OpenFlow, controleurs, programmation reactive et proactive.</span>
+        <span class="lang-en">In-depth lecture on SDN: architecture, OpenFlow protocol, controllers, reactive and proactive programming.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Reseau-Emergent/2023Ch2SDNenglish.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Reseau-Emergent/2023Ch2SDNenglish.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le chapitre 2 - SDN</span>
+        <span class="lang-en">Download chapter 2 - SDN</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Chapitre 3 - Introduction a LISP</span>
+        <span class="lang-en">Chapter 3 - Introduction to LISP</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours sur le protocole LISP : separation identifiant/localisateur, architecture ITR/ETR, systeme de mapping EID-RLOC.</span>
+        <span class="lang-en">Lecture on the LISP protocol: identifier/locator separation, ITR/ETR architecture, EID-RLOC mapping system.</span>
+      </p>
+      <embed src="/cours-pdf/S9/Reseau-Emergent/Ch3-Intro-LISP.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/Reseau-Emergent/Ch3-Intro-LISP.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le chapitre 3 - LISP</span>
+        <span class="lang-en">Download chapter 3 - LISP</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
 <hr>
 
 <h2>Reports and Projects</h2>
+
+<div style="text-align: center;">
+    <h3>
+        <span class="lang-fr">Rapport SDN &amp; NFV</span>
+        <span class="lang-en">SDN &amp; NFV Report</span>
+    </h3>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-item" style="min-width: 100%;">
+    <h4>
+      <span class="lang-fr">Rapport de projet - SDN et NFV</span>
+      <span class="lang-en">Project report - SDN and NFV</span>
+    </h4>
+    <p>
+      <span class="lang-fr">Rapport technique detaillant les travaux pratiques sur le Software-Defined Networking et la Network Functions Virtualization.</span>
+      <span class="lang-en">Technical report detailing the lab work on Software-Defined Networking and Network Functions Virtualization.</span>
+    </p>
+    <embed src="/file/reports/S9/Chanfreau_SDN_NFV_Report.pdf" type="application/pdf" width="100%" height="800px" />
+    <p><a href="/file/reports/S9/Chanfreau_SDN_NFV_Report.pdf" target="_blank">
+      <span class="lang-fr">Ouvrir le rapport complet</span>
+      <span class="lang-en">Open the full report</span>
+    </a></p>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-item" style="min-width: 100%;">
+    <h4>
+      <span class="lang-fr">Sujet de TP - Emerging Network</span>
+      <span class="lang-en">Lab Subject - Emerging Network</span>
+    </h4>
+    <p>
+      <span class="lang-fr">Sujet du TP couvrant la configuration OVS, les regles OpenFlow, l'attachement du controleur Ryu et le deploiement de topologies maillees.</span>
+      <span class="lang-en">Lab subject covering OVS configuration, OpenFlow rules, Ryu controller attachment and mesh topology deployment.</span>
+    </p>
+    <embed src="/img/BE_Emerging_Network/Lab_Subject_emerging.pdf" type="application/pdf" width="100%" height="800px" />
+    <p><a href="/img/BE_Emerging_Network/Lab_Subject_emerging.pdf" target="_blank">
+      <span class="lang-fr">Ouvrir le sujet de TP</span>
+      <span class="lang-en">Open the lab subject</span>
+    </a></p>
+  </div>
+</div>
 
 <hr>
 

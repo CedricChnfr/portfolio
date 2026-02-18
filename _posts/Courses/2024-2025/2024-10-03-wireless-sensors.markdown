@@ -784,8 +784,6 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
 
 <h2>Rapports et Projets</h2>
 
-</div>
-
 <div class="pdf-container">
   <div class="pdf-viewer">
     <div class="pdf-item">
@@ -866,13 +864,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
   </div>
 </div>
 
-<div class="lang-fr">
-
 <hr>
 
 <h2>Documents de Cours</h2>
-
-</div>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
@@ -979,9 +973,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
   </div>
 </div>
 
-<div class="lang-fr">
 <hr>
 <p><em>Cours suivi en 2024-2025 a l'INSA Toulouse, Departement Genie Electrique et Informatique - Specialisation ISS (Innovative Smart Systems).</em></p>
+
 </div>
 
 <div class="lang-en">
@@ -1641,7 +1635,194 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
 
 <h2>Reports and Projects</h2>
 
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Analyse de la couche MAC pour WSN</span>
+        <span class="lang-en">MAC Layer Analysis for WSN</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Rapport detaille sur l'analyse comparative des protocoles MAC (S-MAC, T-MAC, B-MAC, L-MAC, Z-MAC) pour les reseaux de capteurs sans fil.</span>
+        <span class="lang-en">Detailed report on the comparative analysis of MAC protocols (S-MAC, T-MAC, B-MAC, L-MAC, Z-MAC) for wireless sensor networks.</span>
+      </p>
+      <iframe src="/file/reports/S9/Chanfreau_MAC_Layer.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
+      <p><a href="/file/reports/S9/Chanfreau_MAC_Layer.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le rapport MAC Layer</span>
+        <span class="lang-en">Download the MAC Layer report</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Etude du protocole Sigfox et LPWAN</span>
+        <span class="lang-en">Sigfox Protocol and LPWAN Study</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Rapport sur le protocole Sigfox, les technologies LPWAN et leurs applications dans l'IoT.</span>
+        <span class="lang-en">Report on the Sigfox protocol, LPWAN technologies and their applications in IoT.</span>
+      </p>
+      <iframe src="/file/reports/S9/Rapport_Sigfox.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
+      <p><a href="/file/reports/S9/Rapport_Sigfox.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le rapport Sigfox</span>
+        <span class="lang-en">Download the Sigfox report</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">TP WSN - Smart Subway</span>
+        <span class="lang-en">WSN Lab - Smart Subway</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Rapport de travaux pratiques sur la mise en oeuvre d'un reseau de capteurs sans fil pour une application Smart Subway.</span>
+        <span class="lang-en">Lab report on the implementation of a wireless sensor network for a Smart Subway application.</span>
+      </p>
+      <iframe src="/file/reports/S9/TP_WSN_REPORT.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
+      <p><a href="/file/reports/S9/TP_WSN_REPORT.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le rapport TP WSN</span>
+        <span class="lang-en">Download the WSN lab report</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">M2M sur 4G LTE et 5G</span>
+        <span class="lang-en">M2M on 4G LTE and 5G</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Rapport sur les communications Machine-to-Machine sur les reseaux cellulaires 4G LTE et 5G, architectures et standards.</span>
+        <span class="lang-en">Report on Machine-to-Machine communications over 4G LTE and 5G cellular networks, architectures and standards.</span>
+      </p>
+      <iframe src="/file/reports/S9/REPORT_M2M_on_4G_LTE_n_5G.pdf" width="100%" height="600px" style="overflow: auto;" frameborder="0"></iframe>
+      <p><a href="/file/reports/S9/REPORT_M2M_on_4G_LTE_n_5G.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le rapport M2M</span>
+        <span class="lang-en">Download the M2M report</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
 <h2>Course Documents</h2>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Polycopie WSN 2020</span>
+        <span class="lang-en">WSN Course Booklet 2020</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours complet sur les reseaux de capteurs sans fil : architecture, protocoles MAC, routage, localisation.</span>
+        <span class="lang-en">Complete course on wireless sensor networks: architecture, MAC protocols, routing, localization.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Modulations et MAC</span>
+        <span class="lang-en">Modulations and MAC</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Cours sur les techniques de modulation pour les communications a faible puissance et les protocoles MAC pour WSN.</span>
+        <span class="lang-en">Course on modulation techniques for low-power communications and MAC protocols for WSN.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">SDR - Software Defined Radio (Sujet)</span>
+        <span class="lang-en">SDR - Software Defined Radio (Subject)</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Sujet de TP sur le SDR : implementation d'un emetteur-recepteur numerique avec GNU Radio.</span>
+        <span class="lang-en">Lab subject on SDR: implementation of a digital transceiver with GNU Radio.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">BE M2M - Presentation</span>
+        <span class="lang-en">M2M Lab - Presentation</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Presentation du bureau d'etude M2M : communications machine-to-machine sur reseaux cellulaires.</span>
+        <span class="lang-en">M2M lab study presentation: machine-to-machine communications over cellular networks.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">BE M2M - Sujet</span>
+        <span class="lang-en">M2M Lab - Subject</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Sujet du bureau d'etude M2M sur 4G LTE et 5G.</span>
+        <span class="lang-en">M2M lab study subject on 4G LTE and 5G.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">FPGA pour systemes de communication</span>
+        <span class="lang-en">FPGA for Communication Systems</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Article IEEE sur l'implementation FPGA pour les systemes de communication dans les WSN.</span>
+        <span class="lang-en">IEEE article on FPGA implementation for communication systems in WSN.</span>
+      </p>
+      <embed src="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" target="_blank">
+        <span class="lang-fr">Telecharger</span>
+        <span class="lang-en">Download</span>
+      </a></p>
+    </div>
+  </div>
+</div>
 
 <hr>
 

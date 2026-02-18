@@ -580,8 +580,6 @@ p {
 
 <h2>Rapports et Projets</h2>
 
-</div>
-
 <div style="text-align: center;">
     <h3>
         <span class="lang-fr">Rapport de projet</span>
@@ -589,13 +587,7 @@ p {
     </h3>
 </div>
 
-<div class="lang-fr">
 <p>Le code source complet du projet est disponible sur l'organisation GitHub : <a href="https://github.com/what-a-leak">What-A-Leak</a></p>
-</div>
-
-<div class="lang-en">
-<p style="text-align: justify;">The complete source code of the project is available on the GitHub organization: <a href="https://github.com/what-a-leak">What-A-Leak</a></p>
-</div>
 
 <div class="pdf-container">
   <div class="pdf-viewer">
@@ -644,9 +636,9 @@ p {
   </div>
 </div>
 
-<div class="lang-fr">
 <hr>
 <p><em>Projet realise en 2024-2025 a l'INSA Toulouse, Departement ISS (Innovative Smart Systems).</em></p>
+
 </div>
 
 <div class="lang-en">
@@ -1101,6 +1093,62 @@ p {
 <hr>
 
 <h2>Reports and Projects</h2>
+
+<div style="text-align: center;">
+    <h3>
+        <span class="lang-fr">Rapport de projet</span>
+        <span class="lang-en">Project Report</span>
+    </h3>
+</div>
+
+<p style="text-align: justify;">The complete source code of the project is available on the GitHub organization: <a href="https://github.com/what-a-leak">What-A-Leak</a></p>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Rapport du Projet Innovant ISS</span>
+        <span class="lang-en">ISS Innovative Project Report</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Rapport complet du projet "What-A-Leak" detaillant la conception, l'implementation et les resultats du systeme de detection de fuites d'eau.</span>
+        <span class="lang-en">Complete report of the "What-A-Leak" project detailing the design, implementation and results of the water leak detection system.</span>
+      </p>
+      <embed src="/file/reports/S9/Rapport_Projet_ISS.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/file/reports/S9/Rapport_Projet_ISS.pdf" target="_blank">
+        <span class="lang-fr">Telecharger le rapport</span>
+        <span class="lang-en">Download the report</span>
+      </a></p>
+    </div>
+  </div>
+</div>
+
+<div style="text-align: center;">
+    <h3>
+        <span class="lang-fr">Presentation finale</span>
+        <span class="lang-en">Final Presentation</span>
+    </h3>
+</div>
+
+<div class="pdf-container">
+  <div class="pdf-viewer">
+    <div class="pdf-item">
+      <h4>
+        <span class="lang-fr">Presentation finale du projet</span>
+        <span class="lang-en">Final Project Presentation</span>
+      </h4>
+      <p>
+        <span class="lang-fr">Support de presentation utilise lors de la soutenance finale du projet devant le jury.</span>
+        <span class="lang-en">Presentation slides used during the final project defense before the jury.</span>
+      </p>
+      <embed src="/img/BE_Innovative_Project/Prez_final.pdf" type="application/pdf" width="100%" height="800px" />
+      <p><a href="/img/BE_Innovative_Project/Prez_final.pdf" target="_blank">
+        <span class="lang-fr">Telecharger la presentation</span>
+        <span class="lang-en">Download the presentation</span>
+      </a></p>
+    </div>
+  </div>
+</div>
 
 <hr>
 
