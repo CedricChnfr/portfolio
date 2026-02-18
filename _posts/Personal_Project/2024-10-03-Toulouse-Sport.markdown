@@ -2,7 +2,6 @@
 layout: default
 title:  "Toulouse Sport Mobile App"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 [← Back to Personal Project](./my-perso-projects.html)

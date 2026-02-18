@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "My Projects"
+description: "Projets académiques de Cédric Chanfreau - Robot autonome, systèmes embarqués, IoT et plus."
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <h1 data-i18n="projects-title">My Projects</h1>

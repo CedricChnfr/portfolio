@@ -2,7 +2,6 @@
 layout: default
 title:  "Portfolio"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <style>
@@ -130,7 +129,6 @@ categories: jekyll update
 layout: default
 title: "Portfolio"
 date: 2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---</code></pre>
 
 <p>Le contenu est ensuite redige en <strong>Markdown</strong> (syntaxe Kramdown), ce qui facilite la redaction et la maintenance du contenu sans avoir a manipuler directement du HTML.</p>
@@ -318,7 +316,6 @@ categories: jekyll update
 layout: default
 title: "Portfolio"
 date: 2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---</code></pre>
 
 <p>The content is then written in <strong>Markdown</strong> (Kramdown syntax), which makes it easy to write and maintain content without having to directly manipulate HTML.</p>

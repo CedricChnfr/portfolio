@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "My Personal Projects"
+description: "Projets personnels de Cédric Chanfreau - Portfolio IA, trottinette connectée, applications mobiles."
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <h1 data-i18n="perso-projects-title">Personal Projects</h1>

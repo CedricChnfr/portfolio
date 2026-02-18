@@ -2,7 +2,6 @@
 layout: default
 title: "Électronique Fonctions Numériques - S6"
 date: 2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <style>

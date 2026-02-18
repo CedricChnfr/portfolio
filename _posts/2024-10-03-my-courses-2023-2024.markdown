@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "My Courses 2023-2024"
+description: "Cours 2023-2024 de Cédric Chanfreau - 4ème année INSA Toulouse Automatique & Électronique."
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <style>

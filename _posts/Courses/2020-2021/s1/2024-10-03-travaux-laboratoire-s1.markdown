@@ -2,7 +2,6 @@
 layout: default
 title: "Travaux de Laboratoire (TL) - S1"
 date: 2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 # Travaux de Laboratoire (TL) - Semestre 1

@@ -1168,7 +1168,7 @@ document.addEventListener('keydown', function(e) {
 </div>
 
 <div class="navigation-cards">
-    <a href="./jekyll/update/2024/10/02/my-courses-2024-2025.html" class="nav-card courses-card">
+    <a href="./my-courses-2024-2025.html" class="nav-card courses-card">
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">📚</div>
@@ -1178,7 +1178,7 @@ document.addEventListener('keydown', function(e) {
         </div>
     </a>
     
-    <a href="./jekyll/update/2024/10/02/my-projects.html" class="nav-card projects-card">
+    <a href="./my-projects.html" class="nav-card projects-card">
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">🎓</div>
@@ -1188,7 +1188,7 @@ document.addEventListener('keydown', function(e) {
         </div>
     </a>
     
-    <a href="./jekyll/update/2024/10/02/my-perso-projects.html" class="nav-card perso-card">
+    <a href="./my-perso-projects.html" class="nav-card perso-card">
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">💡</div>
@@ -1198,7 +1198,7 @@ document.addEventListener('keydown', function(e) {
         </div>
     </a>
     
-    <a href="./jekyll/update/2024/10/02/my-cv.html" class="nav-card cv-card">
+    <a href="./my-cv.html" class="nav-card cv-card">
         <div class="card-background"></div>
         <div class="card-content">
             <div class="card-icon">📄</div>

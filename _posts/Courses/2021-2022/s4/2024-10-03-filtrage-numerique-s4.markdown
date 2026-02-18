@@ -2,7 +2,6 @@
 layout: default
 title: "Filtrage Numérique - S4"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 # Filtrage Numérique - Semestre 4

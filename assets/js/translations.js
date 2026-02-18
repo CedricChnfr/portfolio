@@ -342,533 +342,533 @@ window.TRANSLATIONS = {
   // ============================================================
   "page-titles": {
     // ---- 2020-2021 S1 ----
-    "/jekyll/update/2024/10/02/anglais-s1.html": {
+    "/anglais-s1.html": {
       fr: "Anglais - Semestre 1",
       en: "English - Semester 1"
     },
-    "/jekyll/update/2024/10/02/cec-s1.html": {
+    "/cec-s1.html": {
       fr: "Culture, Expression, Communication (CEC) - Semestre 1",
       en: "Culture, Expression, Communication (CEC) - Semester 1"
     },
-    "/jekyll/update/2024/10/02/electronique-realisation-s1.html": {
+    "/electronique-realisation-s1.html": {
       fr: "Électronique et Réalisation (ER) - Semestre 1",
       en: "Electronics and Implementation (ER) - Semester 1"
     },
-    "/jekyll/update/2024/10/02/energie-s1.html": {
+    "/energie-s1.html": {
       fr: "Énergie - Semestre 1",
       en: "Energy - Semester 1"
     },
-    "/jekyll/update/2024/10/02/mathematiques-s1.html": {
+    "/mathematiques-s1.html": {
       fr: "Mathématiques - Semestre 1",
       en: "Mathematics - Semester 1"
     },
-    "/jekyll/update/2024/10/02/outils-logiciels-s1.html": {
+    "/outils-logiciels-s1.html": {
       fr: "Outils Logiciels (OL) - Semestre 1",
       en: "Software Tools (OL) - Semester 1"
     },
-    "/jekyll/update/2024/10/02/programmation-s1.html": {
+    "/programmation-s1.html": {
       fr: "Programmation - Semestre 1",
       en: "Programming - Semester 1"
     },
-    "/jekyll/update/2024/10/02/systemes-exploitation-s1.html": {
+    "/systemes-exploitation-s1.html": {
       fr: "Systèmes d'Exploitation (SE) - Semestre 1",
       en: "Operating Systems (SE) - Semester 1"
     },
-    "/jekyll/update/2024/10/02/systemes-numeriques-s1.html": {
+    "/systemes-numeriques-s1.html": {
       fr: "Systèmes Numériques (SIN) - Semestre 1",
       en: "Digital Systems (SIN) - Semester 1"
     },
-    "/jekyll/update/2024/10/02/travaux-laboratoire-s1.html": {
+    "/travaux-laboratoire-s1.html": {
       fr: "Travaux de Laboratoire (TL) - Semestre 1",
       en: "Laboratory Work (TL) - Semester 1"
     },
 
     // ---- 2020-2021 S2 ----
-    "/jekyll/update/2024/10/02/cec-s2.html": {
+    "/cec-s2.html": {
       fr: "Culture, Expression, Communication (CEC) - Semestre 2",
       en: "Culture, Expression, Communication (CEC) - Semester 2"
     },
-    "/jekyll/update/2024/10/02/energie-s2.html": {
+    "/energie-s2.html": {
       fr: "Énergie - Semestre 2",
       en: "Energy - Semester 2"
     },
-    "/jekyll/update/2024/10/02/etude-realisation-s2.html": {
+    "/etude-realisation-s2.html": {
       fr: "Étude et Réalisation (ER) - Semestre 2",
       en: "Study and Implementation (ER) - Semester 2"
     },
-    "/jekyll/update/2024/10/02/informatique-embarquee-s2.html": {
+    "/informatique-embarquee-s2.html": {
       fr: "Informatique Embarquée (IE) - Semestre 2",
       en: "Embedded Computing (IE) - Semester 2"
     },
-    "/jekyll/update/2024/10/02/mathematiques-s2.html": {
+    "/mathematiques-s2.html": {
       fr: "Mathématiques - Semestre 2",
       en: "Mathematics - Semester 2"
     },
-    "/jekyll/update/2024/10/02/outils-logiciels-s2.html": {
+    "/outils-logiciels-s2.html": {
       fr: "Outils Logiciels (OL) - Semestre 2",
       en: "Software Tools (OL) - Semester 2"
     },
-    "/jekyll/update/2024/10/02/physique-s2.html": {
+    "/physique-s2.html": {
       fr: "Physique : Thermique, Capteurs, Mécanique - Semestre 2",
       en: "Physics: Thermics, Sensors, Mechanics - Semester 2"
     },
-    "/jekyll/update/2024/10/02/programmation-s2.html": {
+    "/programmation-s2.html": {
       fr: "Programmation - Semestre 2",
       en: "Programming - Semester 2"
     },
-    "/jekyll/update/2024/10/02/systemes-electroniques-s2.html": {
+    "/systemes-electroniques-s2.html": {
       fr: "Systèmes Électroniques (SE) - Semestre 2",
       en: "Electronic Systems (SE) - Semester 2"
     },
-    "/jekyll/update/2024/10/02/travaux-laboratoire-s2.html": {
+    "/travaux-laboratoire-s2.html": {
       fr: "Travaux de Laboratoire (TL) - Semestre 2",
       en: "Laboratory Work (TL) - Semester 2"
     },
 
     // ---- 2021-2022 S3 ----
-    "/jekyll/update/2024/10/02/automatique-s3.html": {
+    "/automatique-s3.html": {
       fr: "Automatique - Semestre 3",
       en: "Control Systems - Semester 3"
     },
-    "/jekyll/update/2024/10/02/automatisme-s3.html": {
+    "/automatisme-s3.html": {
       fr: "Automatisme - Semestre 3",
       en: "Automation - Semester 3"
     },
-    "/jekyll/update/2024/10/02/cec-3pe-s3.html": {
+    "/cec-3pe-s3.html": {
       fr: "CEC et 3PE - Semestre 3",
       en: "CEC and 3PE - Semester 3"
     },
-    "/jekyll/update/2024/10/02/circuits-hyperfrequences-s3.html": {
+    "/circuits-hyperfrequences-s3.html": {
       fr: "Circuits Hyperfréquences - Semestre 3",
       en: "Microwave Circuits - Semester 3"
     },
-    "/jekyll/update/2024/10/02/electronique-numerique-conception-s3.html": {
+    "/electronique-numerique-conception-s3.html": {
       fr: "Électronique Numérique et Conception (ENC) - Semestre 3",
       en: "Digital Electronics and Design (ENC) - Semester 3"
     },
-    "/jekyll/update/2024/10/02/energie-s3.html": {
+    "/energie-s3.html": {
       fr: "Énergie - Semestre 3",
       en: "Energy - Semester 3"
     },
-    "/jekyll/update/2024/10/02/etude-realisation-s3.html": {
+    "/etude-realisation-s3.html": {
       fr: "Étude et Réalisation (ER) - Semestre 3",
       en: "Study and Implementation (ER) - Semester 3"
     },
-    "/jekyll/update/2024/10/02/informatique-embarquee-s3.html": {
+    "/informatique-embarquee-s3.html": {
       fr: "Informatique Embarquée (IE) - Semestre 3",
       en: "Embedded Computing (IE) - Semester 3"
     },
-    "/jekyll/update/2024/10/02/outils-logiciels-s3.html": {
+    "/outils-logiciels-s3.html": {
       fr: "Outils Logiciels (OL) - Semestre 3",
       en: "Software Tools (OL) - Semester 3"
     },
-    "/jekyll/update/2024/10/02/propagation-hyperfrequences-s3.html": {
+    "/propagation-hyperfrequences-s3.html": {
       fr: "Propagation et Hyperfréquences - Semestre 3",
       en: "Propagation and Microwaves - Semester 3"
     },
-    "/jekyll/update/2024/10/02/systemes-electroniques-s3.html": {
+    "/systemes-electroniques-s3.html": {
       fr: "Systèmes Électroniques (SE) - Semestre 3",
       en: "Electronic Systems (SE) - Semester 3"
     },
-    "/jekyll/update/2024/10/02/telecommunications-s3.html": {
+    "/telecommunications-s3.html": {
       fr: "Télécommunications - Semestre 3",
       en: "Telecommunications - Semester 3"
     },
 
     // ---- 2021-2022 S4 ----
-    "/jekyll/update/2024/10/02/antennes-propagation-s4.html": {
+    "/antennes-propagation-s4.html": {
       fr: "Antennes et Propagation - Semestre 4",
       en: "Antennas and Propagation - Semester 4"
     },
-    "/jekyll/update/2024/10/02/filtrage-numerique-s4.html": {
+    "/filtrage-numerique-s4.html": {
       fr: "Filtrage Numérique - Semestre 4",
       en: "Digital Filtering - Semester 4"
     },
-    "/jekyll/update/2024/10/02/mathematiques-s4.html": {
+    "/mathematiques-s4.html": {
       fr: "Mathématiques - Semestre 4",
       en: "Mathematics - Semester 4"
     },
-    "/jekyll/update/2024/10/02/outils-logiciels-s4.html": {
+    "/outils-logiciels-s4.html": {
       fr: "Outils Logiciels (OL) - Semestre 4",
       en: "Software Tools (OL) - Semester 4"
     },
-    "/jekyll/update/2024/10/02/reseau-telecommunications-s4.html": {
+    "/reseau-telecommunications-s4.html": {
       fr: "Réseau et Télécommunications - Semestre 4",
       en: "Networks and Telecommunications - Semester 4"
     },
-    "/jekyll/update/2024/10/02/telecommunications-numeriques-s4.html": {
+    "/telecommunications-numeriques-s4.html": {
       fr: "Télécommunications Numériques - Modulation - Semestre 4",
       en: "Digital Telecommunications - Modulation - Semester 4"
     },
 
     // ---- 2022-2023 S5 ----
-    "/jekyll/update/2024/10/02/architecture-informatique-materielle.html": {
+    "/architecture-informatique-materielle.html": {
       fr: "Architecture Informatique Matérielle",
       en: "Computer Hardware Architecture"
     },
-    "/jekyll/update/2024/10/02/circuits-filtres-analogiques.html": {
+    "/circuits-filtres-analogiques.html": {
       fr: "Circuits et Filtres Analogiques",
       en: "Analog Circuits and Filters"
     },
-    "/jekyll/update/2024/10/02/composants-puissance.html": {
+    "/composants-puissance.html": {
       fr: "Composants et Notions de Puissance",
       en: "Components and Power Concepts"
     },
-    "/jekyll/update/2024/10/02/fondements-electronique-numerique.html": {
+    "/fondements-electronique-numerique.html": {
       fr: "Fondements de l'Électronique Numérique",
       en: "Digital Electronics Fundamentals"
     },
-    "/jekyll/update/2024/10/02/langage-c.html": {
+    "/langage-c.html": {
       fr: "Langage C",
       en: "C Language"
     },
-    "/jekyll/update/2024/10/02/logique-sequentielle.html": {
+    "/logique-sequentielle.html": {
       fr: "Logique Séquentielle",
       en: "Sequential Logic"
     },
-    "/jekyll/update/2024/10/02/modelisation-systemes-lineaires.html": {
+    "/modelisation-systemes-lineaires.html": {
       fr: "Modélisation et Analyse des Systèmes Linéaires",
       en: "Linear Systems Modeling and Analysis"
     },
-    "/jekyll/update/2024/10/02/systemes-evenements-discrets.html": {
+    "/systemes-evenements-discrets.html": {
       fr: "Modélisation et Commande des Systèmes à Événements Discrets",
       en: "Discrete Event Systems Modeling and Control"
     },
-    "/jekyll/update/2024/10/02/systemes-lineaires-continus.html": {
+    "/systemes-lineaires-continus.html": {
       fr: "Modélisation et Commande des Systèmes Linéaires Continus",
       en: "Continuous Linear Systems Modeling and Control"
     },
-    "/jekyll/update/2024/10/02/reseau-s5.html": {
+    "/reseau-s5.html": {
       fr: "Réseau",
       en: "Networks"
     },
-    "/jekyll/update/2024/10/02/signal.html": {
+    "/signal.html": {
       fr: "Signal",
       en: "Signal Processing"
     },
-    "/jekyll/update/2024/10/02/systeme-unix.html": {
+    "/systeme-unix.html": {
       fr: "Système Unix",
       en: "Unix System"
     },
-    "/jekyll/update/2024/10/02/systemes-boucles.html": {
+    "/systemes-boucles.html": {
       fr: "Systèmes Bouclés",
       en: "Feedback Systems"
     },
-    "/jekyll/update/2024/10/02/systemes-exploitation.html": {
+    "/systemes-exploitation.html": {
       fr: "Systèmes d'Exploitation",
       en: "Operating Systems"
     },
 
     // ---- 2022-2023 S6 ----
-    "/jekyll/update/2024/10/02/architecture-materielle.html": {
+    "/architecture-materielle.html": {
       fr: "Architecture Matérielle",
       en: "Hardware Architecture"
     },
-    "/jekyll/update/2024/10/02/electronique-fonctions-analogiques.html": {
+    "/electronique-fonctions-analogiques.html": {
       fr: "Électronique Fonctions Analogiques",
       en: "Analog Electronic Functions"
     },
-    "/jekyll/update/2024/10/02/electronique-fonctions-numeriques.html": {
+    "/electronique-fonctions-numeriques.html": {
       fr: "Électronique Fonctions Numériques",
       en: "Digital Electronic Functions"
     },
-    "/jekyll/update/2024/10/02/filtrage-numerique.html": {
+    "/filtrage-numerique.html": {
       fr: "Filtrage Numérique",
       en: "Digital Filtering"
     },
-    "/jekyll/update/2024/10/02/gestion.html": {
+    "/gestion.html": {
       fr: "Gestion",
       en: "Management"
     },
-    "/jekyll/update/2024/10/02/assemblage-arm-cortex.html": {
+    "/assemblage-arm-cortex.html": {
       fr: "Langage d'Assemblage ARM CORTEX",
       en: "ARM CORTEX Assembly Language"
     },
-    "/jekyll/update/2024/10/02/microcontroleur.html": {
+    "/microcontroleur.html": {
       fr: "Microcontrôleur",
       en: "Microcontroller"
     },
-    "/jekyll/update/2024/10/02/qualite-securite-environnement.html": {
+    "/qualite-securite-environnement.html": {
       fr: "Qualité Sécurité Environnement",
       en: "Quality, Safety and Environment"
     },
-    "/jekyll/update/2024/10/02/signaux-aleatoires.html": {
+    "/signaux-aleatoires.html": {
       fr: "Signaux Aléatoires",
       en: "Random Signals"
     },
 
     // ---- 2023-2024 S7 ----
-    "/jekyll/update/2024/10/02/analyse-systemes-non-lineaires.html": {
+    "/analyse-systemes-non-lineaires.html": {
       fr: "Analyse des Systèmes Non Linéaires",
       en: "Non-Linear Systems Analysis"
     },
-    "/jekyll/update/2024/10/02/architectures-analogiques-embarques.html": {
+    "/architectures-analogiques-embarques.html": {
       fr: "Architectures Analogiques Systèmes Embarqués",
       en: "Analog Architectures for Embedded Systems"
     },
-    "/jekyll/update/2024/10/02/architectures-analogiques-transmission.html": {
+    "/architectures-analogiques-transmission.html": {
       fr: "Architectures Analogiques Transmission Information",
       en: "Analog Architectures for Information Transmission"
     },
-    "/jekyll/update/2024/10/02/architectures-numeriques-vhdl.html": {
+    "/architectures-numeriques-vhdl.html": {
       fr: "Architectures Numériques Avancées VHDL",
       en: "Advanced Digital Architectures VHDL"
     },
-    "/jekyll/update/2024/10/02/conception-uml.html": {
+    "/conception-uml.html": {
       fr: "Conception Orientée Objet UML",
       en: "Object-Oriented Design UML"
     },
-    "/jekyll/update/2024/10/02/etude-composants-actifs.html": {
+    "/etude-composants-actifs.html": {
       fr: "Étude et Modélisation des Composants Actifs",
       en: "Active Components Study and Modeling"
     },
-    "/jekyll/update/2024/10/02/filtrage-actif-bruit.html": {
+    "/filtrage-actif-bruit.html": {
       fr: "Filtrage Actif et Modélisation Sources Bruit",
       en: "Active Filtering and Noise Source Modeling"
     },
-    "/jekyll/update/2024/10/02/finance.html": {
+    "/finance.html": {
       fr: "Finance",
       en: "Finance"
     },
-    "/jekyll/update/2024/10/02/poo-cpp.html": {
+    "/poo-cpp.html": {
       fr: "Programmation Orientée Objets C++",
       en: "Object-Oriented Programming C++"
     },
-    "/jekyll/update/2024/10/02/poo-java.html": {
+    "/poo-java.html": {
       fr: "Programmation Orientée Objets Java",
       en: "Object-Oriented Programming Java"
     },
-    "/jekyll/update/2024/10/02/securite-materielle.html": {
+    "/securite-materielle.html": {
       fr: "Sécurité Matérielle",
       en: "Hardware Security"
     },
-    "/jekyll/update/2024/10/02/systemes-multivariables.html": {
+    "/systemes-multivariables.html": {
       fr: "Systèmes Multivariables",
       en: "Multivariable Systems"
     },
-    "/jekyll/update/2024/10/02/stage-etranger.html": {
+    "/stage-etranger.html": {
       fr: "Stage à l'Étranger",
       en: "International Internship"
     },
 
     // ---- 2023-2024 S8 ----
-    "/jekyll/update/2024/10/02/chaines-acquisition.html": {
+    "/chaines-acquisition.html": {
       fr: "Chaînes Électroniques d'Acquisition de l'Information",
       en: "Electronic Information Acquisition Chains"
     },
-    "/jekyll/update/2024/10/02/commande-numerique.html": {
+    "/commande-numerique.html": {
       fr: "Commande Numérique",
       en: "Digital Control"
     },
-    "/jekyll/update/2024/10/02/droit.html": {
+    "/droit.html": {
       fr: "Droit",
       en: "Law"
     },
-    "/jekyll/update/2024/10/02/graphes-programmation-lineaire.html": {
+    "/graphes-programmation-lineaire.html": {
       fr: "Graphes et Programmation Linéaire",
       en: "Graphs and Linear Programming"
     },
-    "/jekyll/update/2024/10/02/interconnexion-reseau.html": {
+    "/interconnexion-reseau.html": {
       fr: "Interconnexion Réseau",
       en: "Network Interconnection"
     },
-    "/jekyll/update/2024/10/02/machine-learning-s8.html": {
+    "/machine-learning-s8.html": {
       fr: "Machine Learning",
       en: "Machine Learning"
     },
-    "/jekyll/update/2024/10/02/processus-stochastiques.html": {
+    "/processus-stochastiques.html": {
       fr: "Processus Stochastiques et Files d'Attentes",
       en: "Stochastic Processes and Queuing Theory"
     },
-    "/jekyll/update/2024/10/02/reseaux-petri.html": {
+    "/reseaux-petri.html": {
       fr: "Réseaux de Pétri",
       en: "Petri Nets"
     },
-    "/jekyll/update/2024/10/02/temps-reel.html": {
+    "/temps-reel.html": {
       fr: "Temps Réel",
       en: "Real-Time Systems"
     },
 
     // ---- 2024-2025 (Master / ISS) ----
-    "/jekyll/update/2024/10/02/5G-Technologies.html": {
+    "/5G-Technologies.html": {
       fr: "Technologies 5G",
       en: "5G Technologies"
     },
-    "/jekyll/update/2024/10/02/aime.html": {
+    "/aime.html": {
       fr: "AIME - Capteurs",
       en: "AIME - Sensors"
     },
-    "/jekyll/update/2024/10/02/cloud-edge.html": {
+    "/cloud-edge.html": {
       fr: "Cloud et Edge Computing",
       en: "Cloud Edge Computing"
     },
-    "/jekyll/update/2024/10/02/embedded-ia-iot.html": {
+    "/embedded-ia-iot.html": {
       fr: "IA Embarquée pour l'IoT",
       en: "Embedded AI for IoT"
     },
-    "/jekyll/update/2024/10/02/emerging-network.html": {
+    "/emerging-network.html": {
       fr: "Technologies Réseau Émergentes",
       en: "Emerging Network Technologies"
     },
-    "/jekyll/update/2024/10/02/energy-connected-object.html": {
+    "/energy-connected-object.html": {
       fr: "Énergie pour Objets Connectés",
       en: "Energy for Connected Objects"
     },
-    "/jekyll/update/2024/10/02/english.html": {
+    "/english.html": {
       fr: "Anglais",
       en: "English"
     },
-    "/jekyll/update/2024/10/02/innovative-project.html": {
+    "/innovative-project.html": {
       fr: "Projet Innovant : Détection de Fuites d'Eau",
       en: "Innovative Project: Water Leak Detection"
     },
-    "/jekyll/update/2024/10/02/low-power-wireless.html": {
+    "/low-power-wireless.html": {
       fr: "Réseau Personnel Sans Fil Basse Consommation (LP-WPAN)",
       en: "Low Power Wireless Personal Area Network (LP-WPAN)"
     },
-    "/jekyll/update/2024/10/02/master-reoc.html": {
+    "/master-reoc.html": {
       fr: "Master REOC",
       en: "Master REOC"
     },
-    "/jekyll/update/2024/10/02/microcontroleur_hardware.html": {
+    "/microcontroleur_hardware.html": {
       fr: "Microcontrôleur Open Source Hardware et Capteurs",
       en: "Microcontroller Open Source Hardware and Sensors"
     },
-    "/jekyll/update/2024/10/02/middleware-iot.html": {
+    "/middleware-iot.html": {
       fr: "Middleware pour l'IoT",
       en: "Middleware for IoT"
     },
-    "/jekyll/update/2024/10/02/portfolio.html": {
+    "/portfolio.html": {
       fr: "Portfolio",
       en: "Portfolio"
     },
-    "/jekyll/update/2024/10/02/security-object.html": {
+    "/security-object.html": {
       fr: "Sécurité des Objets Connectés",
       en: "Security for Connected Objects"
     },
-    "/jekyll/update/2024/10/02/service-oriented-architecture.html": {
+    "/service-oriented-architecture.html": {
       fr: "Architecture Orientée Services",
       en: "Service Oriented Architecture"
     },
-    "/jekyll/update/2024/10/02/wireless-sensors.html": {
+    "/wireless-sensors.html": {
       fr: "Réseaux de Capteurs Sans Fil et Localisation (WSNL)",
       en: "Wireless Sensor Networks and Localization (WSNL)"
     },
 
     // ---- Personal Projects ----
-    "/jekyll/update/2024/10/02/3D-modeling.html": {
+    "/3D-modeling.html": {
       fr: "Modélisation 3D",
       en: "3D Modeling"
     },
-    "/jekyll/update/2024/10/02/Arduino-Projects.html": {
+    "/Arduino-Projects.html": {
       fr: "Projets Robotique Arduino",
       en: "Arduino Robotics Projects"
     },
-    "/jekyll/update/2024/10/02/IA-Automation.html": {
+    "/IA-Automation.html": {
       fr: "Automatisation IA",
       en: "AI Automation"
     },
-    "/jekyll/update/2024/10/02/Toulouse-Sport.html": {
+    "/Toulouse-Sport.html": {
       fr: "Application Mobile Toulouse Sport",
       en: "Toulouse Sport Mobile App"
     },
-    "/jekyll/update/2024/10/02/Website.html": {
+    "/Website.html": {
       fr: "Site Web",
       en: "Website"
     },
 
     // ---- Academic Projects ----
-    "/jekyll/update/2024/10/02/be-projet-robot.html": {
+    "/be-projet-robot.html": {
       fr: "BE Robot INSA",
       en: "Robot Project INSA"
     },
-    "/jekyll/update/2024/10/02/be-trotinette.html": {
+    "/be-trotinette.html": {
       fr: "BE Trottinette Électrique",
       en: "Electric Scooter Project"
     },
-    "/jekyll/update/2024/10/02/connected-bowl.html": {
+    "/connected-bowl.html": {
       fr: "Gamelle Connectée",
       en: "Connected Bowl"
     },
-    "/jekyll/update/2024/10/02/control-system-project.html": {
+    "/control-system-project.html": {
       fr: "Projet Systèmes de Contrôle",
       en: "Control Systems Project"
     },
-    "/jekyll/update/2024/10/02/led-insa-60-ans.html": {
+    "/led-insa-60-ans.html": {
       fr: "LED 60 ans INSA",
       en: "LED INSA 60 Years"
     },
-    "/jekyll/update/2024/10/02/network-project-C.html": {
+    "/network-project-C.html": {
       fr: "Projet Réseau en C",
       en: "C and Network Project"
     },
-    "/jekyll/update/2024/10/02/object-oriented-programming.html": {
+    "/object-oriented-programming.html": {
       fr: "Programmation Orientée Objet",
       en: "Object-Oriented Programming"
     },
-    "/jekyll/update/2024/10/02/projet-antenne-oc.html": {
+    "/projet-antenne-oc.html": {
       fr: "Conception d'Antenne pour Objets Connectés",
       en: "Antenna Design for Connected Objects"
     },
-    "/jekyll/update/2024/10/02/projet-electronique-connectee.html": {
+    "/projet-electronique-connectee.html": {
       fr: "Système Électronique Connecté (Communication RF)",
       en: "Connected Electronics System (RF Communication)"
     },
-    "/jekyll/update/2024/10/02/projet-electronique-er.html": {
+    "/projet-electronique-er.html": {
       fr: "Conception Avancée de Systèmes Électroniques",
       en: "Advanced Electronics System Design"
     },
-    "/jekyll/update/2024/10/02/projet-energie-en.html": {
+    "/projet-energie-en.html": {
       fr: "Système Autonome de Gestion d'Énergie",
       en: "Autonomous Energy Management System"
     },
-    "/jekyll/update/2024/10/02/projet-pcb.html": {
+    "/projet-pcb.html": {
       fr: "Projet PCB",
       en: "PCB Project"
     },
-    "/jekyll/update/2024/10/02/projet-quadracopter.html": {
+    "/projet-quadracopter.html": {
       fr: "Conception et Développement d'un Quadricoptère",
       en: "Quadcopter Design and Development"
     },
-    "/jekyll/update/2024/10/02/vhdl-risc-pipeline.html": {
+    "/vhdl-risc-pipeline.html": {
       fr: "Conception d'un Microprocesseur de type RISC",
       en: "Design of a RISC Type Microprocessor"
     },
 
     // ---- Main pages ----
-    "/jekyll/update/2024/10/02/my-cv.html": {
+    "/my-cv.html": {
       fr: "Mon CV",
       en: "My CV"
     },
-    "/jekyll/update/2024/10/02/my-profile.html": {
+    "/my-profile.html": {
       fr: "Mon Profil",
       en: "My Profile"
     },
-    "/jekyll/update/2024/10/02/my-projects.html": {
+    "/my-projects.html": {
       fr: "Mes Projets",
       en: "My Projects"
     },
-    "/jekyll/update/2024/10/02/my-perso-projects.html": {
+    "/my-perso-projects.html": {
       fr: "Mes Projets Personnels",
       en: "My Personal Projects"
     },
-    "/jekyll/update/2024/10/02/my-courses-2024-2025.html": {
+    "/my-courses-2024-2025.html": {
       fr: "Mes Cours - 2024-2025",
       en: "My Courses - 2024-2025"
     },
-    "/jekyll/update/2024/10/02/my-courses-2023-2024.html": {
+    "/my-courses-2023-2024.html": {
       fr: "Mes Cours - 2023-2024",
       en: "My Courses - 2023-2024"
     },
-    "/jekyll/update/2024/10/02/my-courses-2022-2023.html": {
+    "/my-courses-2022-2023.html": {
       fr: "Mes Cours - 2022-2023",
       en: "My Courses - 2022-2023"
     },
-    "/jekyll/update/2024/10/02/my-courses-2021-2022.html": {
+    "/my-courses-2021-2022.html": {
       fr: "Mes Cours - 2021-2022",
       en: "My Courses - 2021-2022"
     },
-    "/jekyll/update/2024/10/02/my-courses-2020-2021.html": {
+    "/my-courses-2020-2021.html": {
       fr: "Mes Cours - 2020-2021",
       en: "My Courses - 2020-2021"
     }

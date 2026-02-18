@@ -2,7 +2,6 @@
 layout: default
 title:  "Low Power Wireless Personal Area Network (LP-WPAN)"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <style>

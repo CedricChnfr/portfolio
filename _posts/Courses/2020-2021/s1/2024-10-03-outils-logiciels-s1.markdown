@@ -2,7 +2,6 @@
 layout: default
 title: "Outils Logiciels (OL) - S1"
 date: 2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 # Outils Logiciels (OL) - Semestre 1

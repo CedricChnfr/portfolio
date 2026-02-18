@@ -2,7 +2,6 @@
 layout: default
 title:  "Architectures Analogiques Systèmes Embarqués - S7"
 date:   2024-10-02 09:02:00 +0200
-categories: jekyll update
 ---
 
 <style>

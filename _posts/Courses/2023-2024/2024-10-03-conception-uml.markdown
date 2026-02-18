@@ -2,7 +2,6 @@
 layout: default
 title:  "Conception Orientée Objet UML"
 date:   2024-10-02 09:03:00 +0200
-categories: jekyll update
 ---
 
 <style>

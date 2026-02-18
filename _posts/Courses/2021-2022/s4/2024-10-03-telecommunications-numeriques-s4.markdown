@@ -2,7 +2,6 @@
 layout: default
 title: "Télécommunications Numériques - Modulation - S4"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 # Télécommunications Numériques - Modulation - Semestre 4

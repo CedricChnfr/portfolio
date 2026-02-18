@@ -2,7 +2,6 @@
 layout: default
 title:  "Microcontroller Open Source Hardware and Sensors"
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 <style>

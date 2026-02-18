@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "My CV"
+description: "CV de Cédric Chanfreau - Ingénieur systèmes embarqués, cybersécurité et IoT. INSA Toulouse & ENSEEIHT."
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 
 # Cédric Chanfreau [![LinkedIn](https://img.icons8.com/?size=32&id=13930&format=png)](https://www.linkedin.com/in/cedricchanfreau)

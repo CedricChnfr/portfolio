@@ -19,17 +19,26 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Cédric Chanfreau - Portfolio
+description: "Portfolio de Cédric Chanfreau, ingénieur INSA Toulouse spécialisé en systèmes embarqués, cybersécurité et IoT. Projets, CV et parcours académique."
 email: cedric.chanfreau@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cedric.littlenuage.com" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: cedricchanfreau
 github_username: CedricChnfr
+author:
+  name: "Cédric Chanfreau"
+  email: "cedric.chanfreau@gmail.com"
+lang: "fr"
+permalink: /:title.html
 
 # Build settings
 theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+header_pages: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.

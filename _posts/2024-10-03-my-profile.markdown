@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "My Profile"
+description: "Profil de Cédric Chanfreau - Ingénieur diplômé INSA Toulouse, spécialisé en embarqué et cybersécurité."
 date:   2024-10-02 10:56:03 +0200
-categories: jekyll update
 ---
 <h2 data-i18n="profile-about-title">About Me</h2>
 
