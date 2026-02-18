@@ -152,30 +152,6 @@ window.TRANSLATIONS = {
     en: "No results found for"
   },
 
-  // ============================================================
-  // CHATBOT
-  // ============================================================
-  "chatbot-title": { fr: "Assistant IA", en: "AI Assistant" },
-  "chatbot-subtitle": {
-    fr: "Posez-moi des questions sur Cédric",
-    en: "Ask me questions about Cédric"
-  },
-  "chatbot-placeholder": {
-    fr: "Posez votre question sur mon profil...",
-    en: "Ask your question about my profile..."
-  },
-  "chatbot-welcome": {
-    fr: "Bonjour ! \ud83d\udc4b Je suis l'assistant IA de Cédric. Je peux répondre à vos questions sur son parcours, ses compétences, ses projets et son expérience. N'hésitez pas à me poser des questions !",
-    en: "Hello! \ud83d\udc4b I'm Cédric's AI assistant. I can answer your questions about his background, skills, projects and experience. Feel free to ask me anything!"
-  },
-  "chatbot-error-no-response": {
-    fr: "Désolé, je n'ai pas pu générer de réponse. Veuillez réessayer.",
-    en: "Sorry, I couldn't generate a response. Please try again."
-  },
-  "chatbot-error-connection": {
-    fr: "\u26a0\ufe0f Erreur de connexion avec le serveur IA. Veuillez réessayer plus tard.",
-    en: "\u26a0\ufe0f Connection error with the AI server. Please try again later."
-  },
 
   // ============================================================
   // ABOUT PAGE
