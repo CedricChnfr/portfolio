@@ -23,6 +23,7 @@ Thumbs.db
 
 # Backups
 *.backup
+*.bak
 *.old
 *~
 
@@ -30,3 +31,6 @@ Thumbs.db
 *.swp
 *.swo
 *.log
+
+# Bundle
+.bundle/
