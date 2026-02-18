@@ -470,9 +470,10 @@
 
 <script>
 (function() {
-    // Configuration - Appel direct à Ollama
-    // Utilise l'URL du domaine pour fonctionner depuis mobile/desktop
-    const OLLAMA_URL = 'https://cedric.littlenuage.com:11434/api/generate';
+    // Configuration - Proxy Ollama via nginx
+    // Nginx config requise :
+    //   location /ollama/ { proxy_pass http://127.0.0.1:11434/; proxy_read_timeout 60s; }
+    const OLLAMA_URL = '/ollama/api/generate';
     const MODEL = 'llama3.2:3b'; // Modèle plus précis et factuel
     
     // Prompt système simplifié et optimisé
