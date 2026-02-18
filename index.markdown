@@ -999,8 +999,8 @@ layout: default
 <script>
 let searchData = [];
 
-// Load search data
-fetch('{{ "/search.json" | relative_url }}')
+// Load search data (cache-bust to avoid stale URLs)
+fetch('{{ "/search.json" | relative_url }}?v={{ site.time | date: "%s" }}')
     .then(response => {
         if (!response.ok) {
             throw new Error('Search data not found');
