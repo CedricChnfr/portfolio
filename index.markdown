@@ -324,6 +324,46 @@ layout: default
     transform: translateX(15px);
 }
 
+.stacked-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-card-small {
+    min-height: 120px;
+    flex: 1;
+}
+
+.nav-card-small .card-content {
+    padding: 20px 22px;
+    gap: 8px;
+}
+
+.nav-card-small .card-icon {
+    font-size: 1.8em;
+}
+
+.nav-card-small h3 {
+    font-size: 1.1em;
+}
+
+.nav-card-small p {
+    font-size: 0.8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.pro-card .card-background {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.pro-card:hover .card-arrow {
+    color: white;
+}
+
 /* Experience Section */
 .experience-section {
     max-width: 1200px;
@@ -941,6 +981,10 @@ layout: default
         padding: 60px 20px;
         margin: 60px 20px;
     }
+
+    .stacked-cards {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1178,15 +1222,26 @@ document.addEventListener('keydown', function(e) {
         </div>
     </a>
     
-    <a href="./my-projects.html" class="nav-card projects-card">
-        <div class="card-background"></div>
-        <div class="card-content">
-            <div class="card-icon">🎓</div>
-            <h3 data-i18n="nav-projects-title">Projets Académiques</h3>
-            <p data-i18n="nav-projects-desc">Explorez mes réalisations techniques et projets d'études</p>
-            <span class="card-arrow">→</span>
-        </div>
-    </a>
+    <div class="stacked-cards">
+        <a href="./my-projects.html" class="nav-card projects-card nav-card-small">
+            <div class="card-background"></div>
+            <div class="card-content">
+                <div class="card-icon">🎓</div>
+                <h3 data-i18n="nav-projects-title">Projets Académiques</h3>
+                <p data-i18n="nav-projects-desc">Explorez mes réalisations techniques et projets d'études</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+        <a href="./my-pro-projects.html" class="nav-card pro-card nav-card-small">
+            <div class="card-background"></div>
+            <div class="card-content">
+                <div class="card-icon">💼</div>
+                <h3 data-i18n="nav-pro-projects-title">Projets Professionnels</h3>
+                <p data-i18n="nav-pro-projects-desc">Mini-projets réalisés lors de mes alternances en entreprise</p>
+                <span class="card-arrow">→</span>
+            </div>
+        </a>
+    </div>
     
     <a href="./my-perso-projects.html" class="nav-card perso-card">
         <div class="card-background"></div>

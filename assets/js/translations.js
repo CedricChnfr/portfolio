@@ -847,6 +847,97 @@ window.TRANSLATIONS = {
     "/my-courses-2020-2021.html": {
       fr: "Mes Cours - 2020-2021",
       en: "My Courses - 2020-2021"
+    },
+
+    // ---- Pro Projects ----
+    "/my-pro-projects.html": {
+      fr: "Projets Professionnels",
+      en: "Professional Projects"
     }
+  },
+
+  // ============================================================
+  // PRO PROJECTS PAGE
+  // ============================================================
+  "nav-pro-projects-title": { fr: "Projets Professionnels", en: "Professional Projects" },
+  "nav-pro-projects-desc": {
+    fr: "Mini-projets réalisés lors de mes alternances en entreprise",
+    en: "Mini-projects carried out during my work-study placements"
+  },
+
+  "pp-hero-badge": { fr: "💼 Alternance & Stage", en: "💼 Work-Study & Internship" },
+  "pp-hero-title": { fr: "Projets Professionnels", en: "Professional Projects" },
+  "pp-hero-subtitle": {
+    fr: "Mini-projets techniques réalisés au cours de mes 3 ans d'alternance et de mon stage d'ingénieur, dans le secteur de l'automobile embarqué.",
+    en: "Technical mini-projects carried out over my 3 years of work-study and engineering internship, in the embedded automotive sector."
+  },
+  "pp-back": { fr: "← Retour à l'accueil", en: "← Back to home" },
+
+  "pp-tools-title": { fr: "Outils & Technologies", en: "Tools & Technologies" },
+  "pp-skills-title": { fr: "Compétences développées", en: "Skills Developed" },
+  "pp-challenge-title": { fr: "Défis techniques", en: "Technical Challenges" },
+
+  // ---- Project 1 — SecESM (Schaeffler, PFE S9) ----
+  "pp-1-title": { fr: "SecESM – Secure Event Storage Manager", en: "SecESM – Secure Event Storage Manager" },
+  "pp-1-company": { fr: "Schaeffler · Oct. 2024 – Sept. 2025 · PFE", en: "Schaeffler · Oct. 2024 – Sept. 2025 · Final Year Project" },
+  "pp-1-summary": {
+    fr: "Développement d'un composant logiciel embarqué C pour la gestion sécurisée des événements de sécurité dans les ECUs automobiles, au sein de l'équipe EAP (ECU Access Protection), conformément aux standards AUTOSAR Classic et ISO 21434.",
+    en: "Development of an embedded C software component for secure management of security events in automotive ECUs, within the EAP (ECU Access Protection) team, in compliance with AUTOSAR Classic and ISO 21434 standards."
+  },
+  "pp-1-skills": {
+    fr: "<li>Conception du composant SecESM en C sur plateforme AUTOSAR Classic\u00a0: gestion de la pile d\u2019événements de sécurité, persistance NvM, interfaces RTE</li><li>Intégration des services cryptographiques CryIf/CSM\u00a0: AES, CMAC, SHA-256 pour la signature et la vérification des événements stockés</li><li>Communication H2H (Host\u2194HSM) pour déléguer les opérations cryptographiques au Hardware Security Module</li><li>Interaction avec l'IDSM (Intrusion Detection System Manager) pour la remontée d'événements de sécurité</li><li>Configuration ECU avec Tresos/Cessar, revue de code sur Collaborator, suivi qualité sur Polarion et analyse statique Axivion</li><li>Travail en équipe EAP (ECU Access Protection) en méthodologie Agile (sprints)</li>",
+    en: "<li>Design of the SecESM component in C on AUTOSAR Classic platform: security event stack management, NvM persistence, RTE interfaces</li><li>Integration of CryIf/CSM cryptographic services: AES, CMAC, SHA-256 for signing and verification of stored events</li><li>H2H (Host\u2194HSM) communication to delegate cryptographic operations to the Hardware Security Module</li><li>Interaction with the IDSM (Intrusion Detection System Manager) for security event reporting</li><li>ECU configuration with Tresos/Cessar, code review on Collaborator, quality tracking on Polarion and Axivion static analysis</li><li>Work within the EAP (ECU Access Protection) team using Agile methodology (sprints)</li>"
+  },
+  "pp-1-challenge": {
+    fr: "Concevoir un composant embarqué générique en C sur AUTOSAR Classic garantissant l\u2019<strong>intégrité cryptographique</strong> de chaque événement de sécurité stocké, tout en respectant les contraintes temps réel et mémoire d\u2019un ECU automobile. La délégation des opérations au <strong>HSM</strong> via le canal H2H impliquait une gestion fine des latences et des erreurs de communication.",
+    en: "Designing a generic embedded C component on AUTOSAR Classic ensuring <strong>cryptographic integrity</strong> of every stored security event, while meeting the real-time and memory constraints of an automotive ECU. Delegating operations to the <strong>HSM</strong> via the H2H channel required careful management of latencies and communication errors."
+  },
+
+  // ---- Project 2 — Automatisation Tests ECU (Vitesco, S7/S8) ----
+  "pp-2-title": { fr: "Automatisation des Tests ECU", en: "ECU Test Automation" },
+  "pp-2-company": { fr: "Vitesco Technologies · Sept. 2022 – Sept. 2024 · Alternance", en: "Vitesco Technologies · Sept. 2022 – Sept. 2024 · Apprenticeship" },
+  "pp-2-summary": {
+    fr: "Développement de 56 scripts Python automatisant les tests ECRP et OTAM pour la reprogrammation des ECUs, ainsi que la correction de violations MISRA-C/CERT-C via l'outil Axivion, dans un contexte d'alternance de 2 ans.",
+    en: "Development of 56 Python scripts automating ECRP and OTAM tests for ECU reprogramming, along with correction of MISRA-C/CERT-C violations using the Axivion tool, during a 2-year work-study placement."
+  },
+  "pp-2-skills": {
+    fr: "<li>Développement de 56 scripts Python automatisant les tests de reprogrammation ECU (ECRP) et de mise à jour OTA (OTAM), intégrés à Jenkins pour exécution nocturne</li><li>Utilisation du framework interne Contest et de l'outil TestExecutor pour piloter et valider les séquences de test</li><li>Débogage bas niveau avec CMM/Lauterbach PRACTICE et Trace32\u00a0: inspection mémoire, points d'arrêt, traçage d'exécution</li><li>Correction de violations MISRA-C:2012 et CERT-C identifiées par Axivion\u00a0: analyse statique, revue et correction du code embarqué C</li><li>Suivi qualité et traçabilité des exigences sur Polarion, travail en équipe internationale (France, Allemagne, Inde)</li>",
+    en: "<li>Development of 56 Python scripts automating ECU reprogramming tests (ECRP) and OTA update tests (OTAM), integrated into Jenkins for nightly execution</li><li>Use of the internal Contest framework and TestExecutor tool to drive and validate test sequences</li><li>Low-level debugging with CMM/Lauterbach PRACTICE and Trace32: memory inspection, breakpoints, execution tracing</li><li>Correction of MISRA-C:2012 and CERT-C violations identified by Axivion: static analysis, review and correction of embedded C code</li><li>Quality tracking and requirements traceability on Polarion, working in an international team (France, Germany, India)</li>"
+  },
+  "pp-2-challenge": {
+    fr: "Rendre les 56 scripts de test <strong>robustes et maintenables</strong> face à la diversité des configurations ECU (ECRP vs OTAM), tout en intégrant les résultats dans un pipeline Jenkins fiable. La correction systématique des violations <strong>MISRA-C/CERT-C</strong> avec Axivion nécessitait une compréhension approfondie des règles de codage sans dégrader les fonctionnalités existantes.",
+    en: "Making the 56 test scripts <strong>robust and maintainable</strong> across the diversity of ECU configurations (ECRP vs OTAM), while integrating results into a reliable Jenkins pipeline. The systematic correction of <strong>MISRA-C/CERT-C</strong> violations with Axivion required an in-depth understanding of coding rules without degrading existing functionality."
+  },
+
+  // ---- Project 3 — Validation MCU Renesas RH850/U2B (Vitesco Iasi, S8) ----
+  "pp-3-title": { fr: "Validation MCU Renesas RH850/U2B", en: "Renesas RH850/U2B MCU Validation" },
+  "pp-3-company": { fr: "Vitesco Technologies · Juil. – Sept. 2024 · Mission Iasi, Roumanie", en: "Vitesco Technologies · Jul. – Sept. 2024 · Iasi, Romania Assignment" },
+  "pp-3-summary": {
+    fr: "Portage et validation des scripts de gestion mémoire Flash (Code Flash + Data Flash) sur le nouveau MCU Renesas RH850/U2B, dans le cadre d'un projet de réduction de dépendance fournisseur (remplacement de l'Infineon TC39), avec un rôle d'intermédiaire entre les équipes France et Roumanie.",
+    en: "Porting and validation of Flash memory management scripts (Code Flash + Data Flash) on the new Renesas RH850/U2B MCU, as part of a supplier dependency reduction project (replacing the existing Infineon TC39), acting as an intermediary between French and Romanian teams."
+  },
+  "pp-3-skills": {
+    fr: "<li>Analyse du datasheet Renesas RH850/U2B pour comprendre les registres de contrôle Flash, les timings et les modes d'accès</li><li>Développement et adaptation des scripts CMM pour la gestion de la Data Flash et de la Code Flash sur le nouveau MCU</li><li>Validation fonctionnelle complète\u00a0: tests de lecture, écriture et effacement sur les deux types de mémoire Flash</li><li>Rôle d'intermédiaire technique entre l'équipe de Toulouse (France) et l'équipe locale de Iasi (Roumanie)\u00a0: coordination, traduction des exigences et remontée des résultats</li><li>Débogage avec Lauterbach TRACE32\u00a0: inspection mémoire et vérification des séquences d'initialisation</li>",
+    en: "<li>Analysis of the Renesas RH850/U2B datasheet to understand Flash control registers, timings and access modes</li><li>Development and adaptation of CMM scripts for Data Flash and Code Flash management on the new MCU</li><li>Full functional validation: read, write and erase tests on both Flash memory types</li><li>Technical intermediary role between the Toulouse team (France) and the local Iasi team (Romania): coordination, requirements translation and results reporting</li><li>Debugging with Lauterbach TRACE32: memory inspection and initialization sequence verification</li>"
+  },
+  "pp-3-challenge": {
+    fr: "S'approprier rapidement le datasheet du <strong>Renesas RH850/U2B</strong> \u2014 un MCU inconnu jusque-là \u2014 pour adapter les scripts CMM existants sans documentation interne préalable. Le rôle d'<strong>intermédiaire bilingue</strong> entre Toulouse et Iasi impliquait de centraliser les décisions techniques et d'assurer la cohérence des exigences dans les deux sens, dans un délai de mission court.",
+    en: "Quickly mastering the <strong>Renesas RH850/U2B</strong> datasheet \u2014 a previously unknown MCU \u2014 to adapt existing CMM scripts without prior internal documentation. The <strong>bilingual intermediary</strong> role between Toulouse and Iasi involved centralizing technical decisions and ensuring requirements consistency in both directions, within a short mission timeframe."
+  },
+
+  // ---- Project 4 — Banc de Tests VAL208NG (Siemens, stage) ----
+  "pp-4-title": { fr: "Banc de Tests Électroniques VAL208NG", en: "VAL208NG Electronic Test Bench" },
+  "pp-4-company": { fr: "Siemens · Avr. – Juil. 2022 · Stage ingénieur", en: "Siemens · Apr. – Jul. 2022 · Engineering Internship" },
+  "pp-4-summary": {
+    fr: "Analyse du système de rack frein ferroviaire VAL208NG et développement d'un banc de tests complet pour la carte entrées-sorties. Rédaction des procédures et validation fonctionnelle des cartes électroniques.",
+    en: "Analysis of the VAL208NG railway brake rack system and development of a complete test bench for the I/O board. Writing of test procedures and functional validation of electronic boards."
+  },
+  "pp-4-skills": {
+    fr: "<li>Lecture et analyse schématique de la carte IO du rack frein VAL208NG\u00a0: alimentation, signaux TOR (Tout-Ou-Rien), entrées analogiques 4-20\u00a0mA</li><li>Conception du câblage du banc de test et sélection des équipements de mesure adaptés aux niveaux de tension ferroviaires</li><li>Développement d'une interface LabVIEW pour piloter le banc et enregistrer automatiquement les mesures</li><li>Rédaction des procédures de test et fiches de validation selon les normes qualité Siemens</li><li>Tests fonctionnels complets\u00a0: validation des entrées/sorties TOR, linéarité des voies analogiques, immunité aux perturbations</li>",
+    en: "<li>Reading and schematic analysis of the VAL208NG brake rack IO board: power supply, digital I/O signals (TOR), 4-20\u00a0mA analog inputs</li><li>Test bench wiring design and selection of measuring equipment adapted to railway voltage levels</li><li>Development of a LabVIEW interface to control the bench and automatically record measurements</li><li>Writing of test procedures and validation sheets in accordance with Siemens quality standards</li><li>Complete functional tests: validation of digital I/O (TOR), linearity of analog channels, immunity to interference</li>"
+  },
+  "pp-4-challenge": {
+    fr: "Comprendre rapidement l'architecture complexe d'un système ferroviaire critique (rack frein VAL208NG) en tant que stagiaire, et concevoir un banc de test <strong>fiable et reproductible</strong> respectant les contraintes de sécurité ferroviaire. La principale difficulté était de couvrir l'ensemble des cas de test en un minimum de temps tout en documentant chaque résultat avec le niveau de rigueur requis.",
+    en: "Quickly understanding the complex architecture of a critical railway system (VAL208NG brake rack) as an intern, and designing a <strong>reliable and reproducible</strong> test bench meeting railway safety constraints. The main challenge was to cover all test cases in minimal time while documenting each result with the required level of rigor."
   }
 };
