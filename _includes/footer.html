@@ -37,6 +37,40 @@
   </div>
 </footer>
 
+<!-- Notification de visite ntfy.sh -->
+<script>
+  (function() {
+    var page = document.title || window.location.pathname;
+    var referrer = document.referrer ? document.referrer : 'accès direct';
+    var lang = navigator.language || 'inconnu';
+    var device = /Mobi|Android/i.test(navigator.userAgent) ? 'Mobile' : 'Desktop';
+    var screen_res = screen.width + 'x' + screen.height;
+    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'inconnu';
+    var connection = (navigator.connection && navigator.connection.effectiveType) ? navigator.connection.effectiveType : 'inconnu';
+
+    fetch('https://ipapi.co/json/')
+      .then(function(r) { return r.json(); })
+      .then(function(geo) {
+        var body = '📄 ' + page
+          + '\n↩ ' + referrer
+          + '\n📍 ' + (geo.city || '?') + ', ' + (geo.country_name || '?')
+          + '\n🏢 ' + (geo.org || '?')
+          + '\n🌐 ' + (geo.ip || '?')
+          + '\n🕐 ' + timezone
+          + '\n💻 ' + device + ' · ' + screen_res + ' · ' + lang + ' · ' + connection;
+        fetch('https://ntfy.sh/cedric-chanfreau-portfolio-2026', {
+          method: 'POST',
+          body: body,
+          headers: {
+            'Title': 'Visite portfolio',
+            'Priority': 'low',
+            'Tags': 'eyes'
+          }
+        });
+      });
+  })();
+</script>
+
 <!-- Fichier de traductions i18n -->
 <script src="{{ '/assets/js/translations.js' | relative_url }}"></script>
 
