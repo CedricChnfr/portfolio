@@ -11,6 +11,7 @@ date:   2024-10-02 10:56:03 +0200
 <h2>2025</h2>
 <ul>
 <li><h3><a href="./IA-Automation.html">🤖 Automatisation par IA</a></h3></li>
+<li><h3><a href="./Network-Sysadmin-Training.html">🌐 Formation Administrateur Systemes &amp; Reseaux</a></h3></li>
 </ul>
 <h2>2024</h2>
 <ul>
@@ -30,6 +31,7 @@ date:   2024-10-02 10:56:03 +0200
 <h2>2025</h2>
 <ul>
 <li><h3><a href="./IA-Automation.html">🤖 AI Automation</a></h3></li>
+<li><h3><a href="./Network-Sysadmin-Training.html">🌐 Network &amp; Sysadmin Training</a></h3></li>
 </ul>
 <h2>2024</h2>
 <ul>
