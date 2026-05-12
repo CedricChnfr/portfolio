@@ -1275,7 +1275,7 @@ document.addEventListener('keydown', function(e) {
                     <h4><a href="https://www.schaeffler.fr/fr/" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Schaeffler</a> • Oct. 2024 - Sept. 2025</h4>
                     <p data-i18n="exp1-desc">Développement du Secure Logger, un composant logiciel embarqué générique pour l'enregistrement et la gestion des événements de sécurité dans les calculateurs automobiles (ECUs). Revue de code et développement de logiciels critiques.</p>
                     <div class="experience-tags">
-                        <span class="tag">Cybersécurité</span>
+                        <span class="tag"><span class="lang-fr">Cybersécurité</span><span class="lang-en">Cybersecurity</span></span>
                         <span class="tag">C/C++</span>
                         <span class="tag">ECU</span>
                         <span class="tag">Automotive</span>
@@ -1287,10 +1287,10 @@ document.addEventListener('keydown', function(e) {
                 <div class="experience-icon">🌍</div>
                 <div class="experience-content">
                     <h3 data-i18n="exp2-title">Stage Mobilité Internationale Ingénierie</h3>
-                    <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • Juil. - Sept. 2024 • Iasi, Roumanie</h4>
+                    <h4><a href="https://www.vitesco-technologies.com/fr-fr" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Vitesco Technologies</a> • <span class="lang-fr">Juil.</span><span class="lang-en">Jul.</span> - Sept. 2024 • <span class="lang-fr">Iasi, Roumanie</span><span class="lang-en">Iași, Romania</span></h4>
                     <p data-i18n="exp2-desc">Étude et implémentation de solutions pour la gestion de la mémoire Flash sur un nouveau microcontrôleur. Test et validation des fonctionnalités pour garantir la fiabilité et la performance de la nouvelle plateforme.</p>
                     <div class="experience-tags">
-                        <span class="tag">Microcontrôleurs</span>
+                        <span class="tag"><span class="lang-fr">Microcontrôleurs</span><span class="lang-en">Microcontrollers</span></span>
                         <span class="tag">Flash Memory</span>
                         <span class="tag">Jenkins</span>
                         <span class="tag">Testing</span>
@@ -1317,12 +1317,12 @@ document.addEventListener('keydown', function(e) {
                 <div class="experience-icon">⚙️</div>
                 <div class="experience-content">
                     <h3 data-i18n="exp4-title">Technicien Méthodes Électroniques</h3>
-                    <h4><a href="https://www.siemens.com/fr/fr.html" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Siemens</a> • Avr. - Juil. 2022 • Stage</h4>
+                    <h4><a href="https://www.siemens.com/fr/fr.html" target="_blank" style="color: #667eea; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='#764ba2'" onmouseout="this.style.color='#667eea'">Siemens</a> • <span class="lang-fr">Avr.</span><span class="lang-en">Apr.</span> - <span class="lang-fr">Juil.</span><span class="lang-en">Jul.</span> 2022 • <span class="lang-fr">Stage</span><span class="lang-en">Internship</span></h4>
                     <p data-i18n="exp4-desc">Analyse complète du système de rack frein VAL208NG. Réalisation de tests fonctionnels sur les cartes électroniques pour garantir des performances optimales. Développement d'un banc de tests pour la carte entrées-sorties, assurant des évaluations complètes.</p>
                     <div class="experience-tags">
-                        <span class="tag">Tests Électroniques</span>
-                        <span class="tag">Cartes PCB</span>
-                        <span class="tag">Banc de Tests</span>
+                        <span class="tag"><span class="lang-fr">Tests Électroniques</span><span class="lang-en">Electronic Tests</span></span>
+                        <span class="tag"><span class="lang-fr">Cartes PCB</span><span class="lang-en">PCB Boards</span></span>
+                        <span class="tag"><span class="lang-fr">Banc de Tests</span><span class="lang-en">Test Bench</span></span>
                         <span class="tag">VAL208NG</span>
                     </div>
                 </div>
@@ -1347,7 +1347,7 @@ document.addEventListener('keydown', function(e) {
                     <div class="formation-tags">
                         <span class="tag">IoT</span>
                         <span class="tag">QoS</span>
-                        <span class="tag">Réseaux Embarqués</span>
+                        <span class="tag"><span class="lang-fr">Réseaux Embarqués</span><span class="lang-en">Embedded Networks</span></span>
                         <span class="tag">Communication</span>
                     </div>
                 </div>
@@ -1360,8 +1360,8 @@ document.addEventListener('keydown', function(e) {
                     <h4>INSA Toulouse • Sept. 2022 - Sept. 2025</h4>
                     <p data-i18n="formation2-desc">Formation d'ingénieur experts en technologies intelligentes pour les systèmes connectés. Compétences en conception de dispositifs intelligents (microcontrôleurs, IA embarquée, capteurs), sécurité des systèmes, réseaux de capteurs sans fil, 5G, architectures middleware et cloud/edge computing.</p>
                     <div class="formation-tags">
-                        <span class="tag">Systèmes Embarqués</span>
-                        <span class="tag">IA Embarquée</span>
+                        <span class="tag"><span class="lang-fr">Systèmes Embarqués</span><span class="lang-en">Embedded Systems</span></span>
+                        <span class="tag"><span class="lang-fr">IA Embarquée</span><span class="lang-en">Embedded AI</span></span>
                         <span class="tag">5G</span>
                         <span class="tag">Edge Computing</span>
                         <span class="tag">SOA</span>
@@ -1376,10 +1376,10 @@ document.addEventListener('keydown', function(e) {
                     <h4>IUT Paul Sabatier - Toulouse, Auch, Castres • 2020 - 2022</h4>
                     <p data-i18n="formation3-desc">Formation technique approfondie en génie électrique et électronique. Acquisition de compétences pratiques en électronique, automatisme, informatique industrielle et systèmes embarqués. Projets concrets en électronique de puissance, traitement du signal et automatique.</p>
                     <div class="formation-tags">
-                        <span class="tag">Électronique</span>
-                        <span class="tag">Automatisme</span>
-                        <span class="tag">Informatique Industrielle</span>
-                        <span class="tag">Électrotechnique</span>
+                        <span class="tag"><span class="lang-fr">Électronique</span><span class="lang-en">Electronics</span></span>
+                        <span class="tag"><span class="lang-fr">Automatisme</span><span class="lang-en">Automation</span></span>
+                        <span class="tag"><span class="lang-fr">Informatique Industrielle</span><span class="lang-en">Industrial Computing</span></span>
+                        <span class="tag"><span class="lang-fr">Électrotechnique</span><span class="lang-en">Electrical Engineering</span></span>
                     </div>
                 </div>
             </div>
@@ -1417,7 +1417,7 @@ document.addEventListener('keydown', function(e) {
         <div class="skill-card" style="--delay: 0.2s">
             <div class="skill-icon">🌐</div>
             <h4 data-i18n="skill-iot">IoT & Edge Computing</h4>
-            <p>5G, LoRa, MQTT, Cloud Computing, Architectures distribuées</p>
+            <p data-i18n="skill-iot-list">5G, LoRa, MQTT, Cloud Computing, Architectures distribuées</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 88%"></div>
             </div>
@@ -1425,7 +1425,7 @@ document.addEventListener('keydown', function(e) {
         <div class="skill-card" style="--delay: 0.3s">
             <div class="skill-icon">🔧</div>
             <h4 data-i18n="skill-embedded">Systèmes Embarqués</h4>
-            <p>STM32, Arduino, VHDL, PCB Design, Temps Réel</p>
+            <p data-i18n="skill-embedded-list">STM32, Arduino, VHDL, PCB Design, Temps Réel</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 87%"></div>
             </div>
@@ -1433,7 +1433,7 @@ document.addEventListener('keydown', function(e) {
         <div class="skill-card" style="--delay: 0.4s">
             <div class="skill-icon">🔐</div>
             <h4 data-i18n="skill-cyber">Cybersécurité Embarquée</h4>
-            <p>Sécurité ECU, AUTOSAR, Secure Logger, Standards ISO 21434</p>
+            <p data-i18n="skill-cyber-list">Sécurité ECU, AUTOSAR, Secure Logger, Standards ISO 21434</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 82%"></div>
             </div>
@@ -1441,7 +1441,7 @@ document.addEventListener('keydown', function(e) {
         <div class="skill-card" style="--delay: 0.5s">
             <div class="skill-icon">⚡</div>
             <h4 data-i18n="skill-control">Automatique & Contrôle</h4>
-            <p>Systèmes linéaires/non-linéaires, Robotique, Modélisation</p>
+            <p data-i18n="skill-control-list">Systèmes linéaires/non-linéaires, Robotique, Modélisation</p>
             <div class="skill-bar">
                 <div class="skill-progress" style="width: 90%"></div>
             </div>

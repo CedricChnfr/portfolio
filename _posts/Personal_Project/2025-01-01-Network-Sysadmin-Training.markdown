@@ -561,7 +561,7 @@ du -sh *                        # Espace par dossier
 # Processus
 top / htop                      # Processus en temps reel
 ps aux                          # Snapshot statique des processus
-kill -9 <PID>                   # Tuer un processus
+kill -9 &lt;PID&gt;                   # Tuer un processus
 
 # Services (systemd)
 systemctl status nginx          # Etat d'un service

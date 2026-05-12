@@ -309,7 +309,7 @@ date: 2024-10-03 10:56:03 +0200
             <div class="pro-project-tags">
                 <span class="tag">C</span>
                 <span class="tag">AUTOSAR Classic</span>
-                <span class="tag">Cybersécurité</span>
+                <span class="tag"><span class="lang-fr">Cybersécurité</span><span class="lang-en">Cybersecurity</span></span>
                 <span class="tag">ISO 21434</span>
                 <span class="tag">HSM</span>
             </div>

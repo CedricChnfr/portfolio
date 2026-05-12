@@ -440,21 +440,21 @@ permalink: /about/
                 <div class="ab-id-fact">
                     <span class="ab-id-fact-icon">🎓</span>
                     <div class="ab-id-fact-info">
-                        <span class="ab-id-fact-label">Formation</span>
+                        <span class="ab-id-fact-label" data-i18n="about-label-education">Formation</span>
                         <span class="ab-id-fact-value">INSA Toulouse · ENSEEIHT</span>
                     </div>
                 </div>
                 <div class="ab-id-fact">
                     <span class="ab-id-fact-icon">🗣️</span>
                     <div class="ab-id-fact-info">
-                        <span class="ab-id-fact-label">Langues</span>
+                        <span class="ab-id-fact-label" data-i18n="about-label-languages">Langues</span>
                         <span class="ab-id-fact-value">Français · English · Español</span>
                     </div>
                 </div>
                 <div class="ab-id-fact">
                     <span class="ab-id-fact-icon">🏭</span>
                     <div class="ab-id-fact-info">
-                        <span class="ab-id-fact-label">Expérience</span>
+                        <span class="ab-id-fact-label" data-i18n="about-label-experience">Expérience</span>
                         <span class="ab-id-fact-value">3 ans · Automotive Industry</span>
                     </div>
                 </div>
@@ -477,7 +477,7 @@ permalink: /about/
     <!-- Motivations -->
     <div class="ab-motiv">
         <span class="ab-label">// MY MOTIVATIONS</span>
-        <h2 class="ab-section-title">Pourquoi ces choix</h2>
+        <h2 class="ab-section-title" data-i18n="about-motiv-title">Pourquoi ces choix</h2>
         <div class="ab-motiv-grid">
 
             <div class="ab-motiv-card ab-motiv-card-a">
@@ -486,7 +486,7 @@ permalink: /about/
                 <div class="ab-motiv-card-inner">
                     <span class="ab-motiv-icon">🏛️</span>
                     <h3 data-i18n="about-insa-title">Pourquoi l'INSA Toulouse</h3>
-                    <h4>Ingénieur · Automatique & Électronique</h4>
+                    <h4 data-i18n="about-insa-subtitle">Ingénieur · Automatique & Électronique</h4>
                     <p>The school's reputation and hands-on approach convinced me. The apprenticeship program perfectly aligns with my learning style — gaining real professional experience alongside theoretical knowledge, an invaluable asset for an engineering career.</p>
                 </div>
             </div>
@@ -511,13 +511,13 @@ permalink: /about/
         <div class="ab-cta-blob ab-cta-blob-2"></div>
         <div class="ab-cta-inner">
             <h2 data-i18n="about-after-title">Et maintenant ?</h2>
-            <p>
+            <p data-i18n="about-cta-text">
                 Diplômé en 2025, je suis activement à la recherche d'un poste d'Ingénieur Logiciel Embarqué.
                 Ouvert aux opportunités en France et à l'international.
             </p>
             <div class="ab-cta-btns">
-                <a href="/my-cv.html" class="ab-btn-p">Voir mon CV</a>
-                <a href="/my-projects.html" class="ab-btn-s">Mes Projets</a>
+                <a href="/my-cv.html" class="ab-btn-p" data-i18n="about-cta-btn-cv">Voir mon CV</a>
+                <a href="/my-projects.html" class="ab-btn-s" data-i18n="about-cta-btn-projects">Mes Projets</a>
             </div>
         </div>
     </div>

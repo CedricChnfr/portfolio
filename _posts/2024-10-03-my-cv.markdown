@@ -346,7 +346,7 @@ date:   2024-10-02 10:56:03 +0200
         <div class="cv-hero-left">
             <span class="cv-hero-tag">// CURRICULUM VITAE</span>
             <h1 class="cv-hero-name">Cédric Chanfreau</h1>
-            <p class="cv-hero-role">Ingénieur Logiciel Embarqué · Cybersécurité · IoT</p>
+            <p class="cv-hero-role" data-i18n="cv-hero-role">Ingénieur Logiciel Embarqué · Cybersécurité · IoT</p>
             <div class="cv-hero-contacts">
                 <span class="cv-hero-contact">📍 Toulouse, France</span>
                 <span class="cv-hero-contact">📧 cedric.chanfreau@gmail.com</span>
@@ -390,7 +390,7 @@ date:   2024-10-02 10:56:03 +0200
         <h2 class="cv-section-title" data-i18n="cv-skills-title">Technical Skills</h2>
         <div class="cv-skills-grid">
             <div class="cv-skill-group">
-                <h4>Programmation & Embarqué</h4>
+                <h4 data-i18n="cv-skill-prog">Programmation & Embarqué</h4>
                 <div class="cv-skill-tags">
                     <span class="cv-skill-tag">C</span>
                     <span class="cv-skill-tag">C++</span>
@@ -401,7 +401,7 @@ date:   2024-10-02 10:56:03 +0200
                 </div>
             </div>
             <div class="cv-skill-group">
-                <h4>Outils & DevOps</h4>
+                <h4 data-i18n="cv-skill-tools">Outils & DevOps</h4>
                 <div class="cv-skill-tags">
                     <span class="cv-skill-tag">Git</span>
                     <span class="cv-skill-tag">Jenkins</span>
@@ -423,7 +423,7 @@ date:   2024-10-02 10:56:03 +0200
                 </div>
             </div>
             <div class="cv-skill-group">
-                <h4>Frontend & Visu</h4>
+                <h4 data-i18n="cv-skill-frontend">Frontend & Visu</h4>
                 <div class="cv-skill-tags">
                     <span class="cv-skill-tag">HTML/CSS</span>
                     <span class="cv-skill-tag">JavaScript</span>
@@ -432,7 +432,7 @@ date:   2024-10-02 10:56:03 +0200
                 </div>
             </div>
             <div class="cv-skill-group">
-                <h4>Langues</h4>
+                <h4 data-i18n="cv-skill-languages">Langues</h4>
                 <div class="cv-skill-tags">
                     <span class="cv-skill-tag">Français (natif)</span>
                     <span class="cv-skill-tag">English (C1)</span>
@@ -450,8 +450,8 @@ date:   2024-10-02 10:56:03 +0200
 
             <div class="cv-tl-item">
                 <div class="cv-tl-period"><span class="cv-tl-period-line"></span>Oct 2024 — Sep 2025</div>
-                <h3>Ingénieur Logiciel Embarqué — Cybersécurité</h3>
-                <h4>Schaeffler · Alternance · France</h4>
+                <h3 data-i18n="cv-exp1-title">Ingénieur Logiciel Embarqué — Cybersécurité</h3>
+                <h4 data-i18n="cv-exp1-company">Schaeffler · Alternance · France</h4>
                 <div class="lang-fr"><ul>
                     <li>Développement du <strong>Secure Logger</strong> — composant embarqué générique pour la gestion des événements de sécurité dans les ECUs automobiles.</li>
                     <li>Revue de code critique et contribution aux pratiques de développement logiciel sécurisé.</li>
@@ -461,7 +461,7 @@ date:   2024-10-02 10:56:03 +0200
                     <li>Performed critical code review and contributed to secure software development practices.</li>
                 </ul></div>
                 <div class="cv-tl-tags">
-                    <span class="cv-tl-tag">Cybersécurité</span>
+                    <span class="cv-tl-tag"><span class="lang-fr">Cybersécurité</span><span class="lang-en">Cybersecurity</span></span>
                     <span class="cv-tl-tag">C/C++</span>
                     <span class="cv-tl-tag">AUTOSAR</span>
                     <span class="cv-tl-tag">ISO 21434</span>
@@ -470,9 +470,9 @@ date:   2024-10-02 10:56:03 +0200
             </div>
 
             <div class="cv-tl-item">
-                <div class="cv-tl-period"><span class="cv-tl-period-line"></span>Juil — Sep 2024</div>
-                <h3>Stage Mobilité Internationale</h3>
-                <h4>Vitesco Technologies · Iași, Roumanie</h4>
+                <div class="cv-tl-period"><span class="cv-tl-period-line"></span><span class="lang-fr">Juil</span><span class="lang-en">Jul</span> — Sep 2024</div>
+                <h3 data-i18n="cv-exp2-title">Stage Mobilité Internationale</h3>
+                <h4 data-i18n="cv-exp2-company">Vitesco Technologies · Iași, Roumanie</h4>
                 <div class="lang-fr"><ul>
                     <li>Étude et implémentation de solutions de gestion mémoire Flash sur nouveaux microcontrôleurs.</li>
                     <li>Création d'environnements d'automatisation des tests avec Python et scripts CMM.</li>
@@ -482,7 +482,7 @@ date:   2024-10-02 10:56:03 +0200
                     <li>Built test automation environments using Python and CMM scripts.</li>
                 </ul></div>
                 <div class="cv-tl-tags">
-                    <span class="cv-tl-tag">Microcontrôleurs</span>
+                    <span class="cv-tl-tag"><span class="lang-fr">Microcontrôleurs</span><span class="lang-en">Microcontrollers</span></span>
                     <span class="cv-tl-tag">Flash Memory</span>
                     <span class="cv-tl-tag">Python</span>
                     <span class="cv-tl-tag">Jenkins</span>
@@ -491,8 +491,8 @@ date:   2024-10-02 10:56:03 +0200
 
             <div class="cv-tl-item">
                 <div class="cv-tl-period"><span class="cv-tl-period-line"></span>Sep 2022 — Sep 2024</div>
-                <h3>Apprenti Ingénieur Logiciel Embarqué</h3>
-                <h4>Vitesco Technologies · Alternance · France</h4>
+                <h3 data-i18n="cv-exp3-title">Apprenti Ingénieur Logiciel Embarqué</h3>
+                <h4 data-i18n="cv-exp3-company">Vitesco Technologies · Alternance · France</h4>
                 <div class="lang-fr"><ul>
                     <li>Développement de solutions embarquées pour la reprogrammation d'ECUs et assurance qualité (MISRA, CERT).</li>
                     <li>Tests, débogage et présentation régulière de revues de projet à l'équipe en anglais.</li>
@@ -520,7 +520,7 @@ date:   2024-10-02 10:56:03 +0200
 
             <div class="cv-tl-item">
                 <div class="cv-tl-period"><span class="cv-tl-period-line"></span>2024 — 2025</div>
-                <h3>Master 2 REOC — Réseaux Embarqués et Objets Connectés</h3>
+                <h3 data-i18n="cv-edu1-title">Master 2 REOC — Réseaux Embarqués et Objets Connectés</h3>
                 <h4>ENSEEIHT · Toulouse</h4>
                 <div class="lang-fr"><ul>
                     <li>Spécialisation en systèmes IoT : communication, traitement de données, sécurité réseau.</li>
@@ -540,7 +540,7 @@ date:   2024-10-02 10:56:03 +0200
 
             <div class="cv-tl-item">
                 <div class="cv-tl-period"><span class="cv-tl-period-line"></span>2022 — 2025</div>
-                <h3>Diplôme d'Ingénieur — Automatique & Électronique (ISS)</h3>
+                <h3 data-i18n="cv-edu2-title">Diplôme d'Ingénieur — Automatique & Électronique (ISS)</h3>
                 <h4>INSA Toulouse</h4>
                 <div class="lang-fr"><ul>
                     <li>Domaines : Systèmes Embarqués, Machine Learning, Sécurité, Conception de Circuits.</li>
@@ -551,7 +551,7 @@ date:   2024-10-02 10:56:03 +0200
                     <li>Innovative project: connected gas sensor (PCB, mobile app, MQTT, Node-RED, datasheet).</li>
                 </ul></div>
                 <div class="cv-tl-tags">
-                    <span class="cv-tl-tag">Systèmes Embarqués</span>
+                    <span class="cv-tl-tag"><span class="lang-fr">Systèmes Embarqués</span><span class="lang-en">Embedded Systems</span></span>
                     <span class="cv-tl-tag">ML</span>
                     <span class="cv-tl-tag">Edge AI</span>
                     <span class="cv-tl-tag">PCB</span>
@@ -574,13 +574,13 @@ date:   2024-10-02 10:56:03 +0200
             </div>
             <div class="cv-extra-card">
                 <span class="cv-extra-icon">🗳️</span>
-                <h4>Bénévolat</h4>
+                <h4 data-i18n="cv-extra-benevolat">Bénévolat</h4>
                 <div class="lang-fr"><p>Assesseur de bureau de vote pour les élections régionales et départementales.</p></div>
                 <div class="lang-en"><p>Polling station assessor for regional and departmental elections.</p></div>
             </div>
             <div class="cv-extra-card">
                 <span class="cv-extra-icon">✈️</span>
-                <h4>Voyages Indépendants</h4>
+                <h4 data-i18n="cv-extra-travel">Voyages Indépendants</h4>
                 <div class="lang-fr"><p>Exploration de l'Europe et au-delà — Italie, Angleterre, Espagne, Roumanie...</p></div>
                 <div class="lang-en"><p>Explored Europe and beyond — Italy, England, Spain, Romania...</p></div>
             </div>
