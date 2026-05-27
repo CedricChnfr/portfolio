@@ -5,10 +5,104 @@ date:   2024-10-02 10:56:03 +0200
 ---
 
 <style>
-p {
-  text-align: justify;
+p { text-align: justify; }
+
+.stl-gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.stl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.stl-viewer {
+  width: 220px;
+  height: 200px;
+  background: #0f1117;
+  border-radius: 10px;
+  border: 1px solid #1e2a3a;
+  overflow: hidden;
+  cursor: grab;
+}
+.stl-viewer:active { cursor: grabbing; }
+.stl-viewer canvas { display: block; }
+.stl-label {
+  font-size: 0.78em;
+  color: #888;
 }
 </style>
+
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+import { STLLoader } from 'https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/loaders/STLLoader.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/controls/OrbitControls.js';
+
+const W = 220, H = 200;
+const initialized = new WeakSet();
+
+function initViewer(el) {
+  if (initialized.has(el)) return;
+  initialized.add(el);
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(W, H);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setClearColor(0x0f1117);
+  el.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(45, W / H, 0.01, 1000);
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+  const sun = new THREE.DirectionalLight(0xffffff, 1.2);
+  sun.position.set(5, 8, 5);
+  scene.add(sun);
+  const fill = new THREE.DirectionalLight(0x4488cc, 0.4);
+  fill.position.set(-5, -3, -5);
+  scene.add(fill);
+
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.08;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 1.8;
+  controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+  new STLLoader().load(el.dataset.stl, geo => {
+    geo.center();
+    const box = new THREE.Box3().setFromBufferAttribute(geo.attributes.position);
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z);
+
+    const mat = new THREE.MeshPhongMaterial({ color: 0x5ba3e0, specular: 0x1a3a5c, shininess: 60 });
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.scale.setScalar(2.8 / maxDim);
+    mesh.rotation.x = -Math.PI / 2;
+    scene.add(mesh);
+
+    camera.position.set(0, 2.5, 4);
+    camera.lookAt(0, 0, 0);
+    controls.update();
+  });
+
+  (function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
+  })();
+}
+
+// Init on first intersection (handles display:none lang containers)
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) initViewer(e.target); });
+}, { threshold: 0.01 });
+
+document.querySelectorAll('.stl-viewer').forEach(el => observer.observe(el));
+</script>
 
 <div class="back-nav">
     <a href="./my-perso-projects.html" data-i18n-html="back-perso-projects">&larr; Retour aux Projets Personnels</a>
@@ -31,14 +125,14 @@ p {
 
 <h2>Portfolio de projets</h2>
 
-<h3>1. Support de Katana (Support Katana)</h3>
+<h3>1. Support de Katana</h3>
 
-<p><strong>Objectif</strong> : Support d'exposition sur mesure pour sabres japonais katana avec embleme decoratif Jolly Roger de One Piece.</p>
+<p><strong>Objectif</strong> : Support d'exposition sur mesure pour sabres japonais katana, conçu en plusieurs composants modulaires pour une impression et un assemblage faciles.</p>
 
 <p><strong>Details techniques</strong> :</p>
 <ul>
-<li><strong>Composants</strong> : Supports gauche et droit, support central de katana, plaque decorative Jolly Roger, fichier d'assemblage complet</li>
-<li><strong>Caracteristiques de conception</strong> : Base stable avec distribution equilibree du poids, zones de protection pour la lame, conception modulaire pour une impression et un assemblage faciles, integration esthetique de decoration inspiree de l'anime</li>
+<li><strong>Composants</strong> : Support gauche, support droit, support central, plaque decorative, fichier d'assemblage complet</li>
+<li><strong>Caracteristiques de conception</strong> : Base stable avec distribution equilibree du poids, zones de protection pour la lame, conception modulaire, integration d'une plaque decorative gravee</li>
 </ul>
 
 <p><strong>Ameliorations de la Version 2</strong> :</p>
@@ -48,6 +142,21 @@ p {
 <li>Divise en sections superieure et inferieure pour faciliter la fabrication</li>
 <li>Plusieurs variantes de largeur pour differentes tailles de lames</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-support-gauche.stl"></div>
+    <span class="stl-label">Support gauche (V1)</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-support-droit.stl"></div>
+    <span class="stl-label">Support droit (V1)</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-v2.stl"></div>
+    <span class="stl-label">Assemblage V2</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -67,6 +176,21 @@ p {
 <li><strong>V2</strong> : Ergonomie et texture de prise ameliorees</li>
 <li><strong>V3</strong> : Esthetique raffinee et optimisation de fabrication</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v1.stl"></div>
+    <span class="stl-label">V1</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v2.stl"></div>
+    <span class="stl-label">V2</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v3.stl"></div>
+    <span class="stl-label">V3</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -88,6 +212,17 @@ p {
 <li>Conception finale prete pour la production (V10)</li>
 </ul>
 
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/rack-v5.stl"></div>
+    <span class="stl-label">V5 — renforcement structurel</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/rack-v10.stl"></div>
+    <span class="stl-label">V10 — version finale</span>
+  </div>
+</div>
+
 <hr/>
 
 <h3>4. Porte-badge CEC (Piece Badge CEC)</h3>
@@ -100,6 +235,17 @@ p {
 <li><strong>Caracteristiques</strong> : Mecanisme de retention securisee de la carte, points de fixation pour cordons ou clips, bords protecteurs, profil compact</li>
 </ul>
 
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/badge-cec-dev.stl"></div>
+    <span class="stl-label">Version dev</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/badge-cec-der.stl"></div>
+    <span class="stl-label">Version finale</span>
+  </div>
+</div>
+
 <hr/>
 
 <h3>5. Piece Industrielle EDF (Piece-EDF)</h3>
@@ -111,6 +257,17 @@ p {
 <li><strong>Iterations</strong> : 3 versions montrant un raffinement professionnel</li>
 <li><strong>Considerations d'ingenierie</strong> : Analyse de charge et tests de contraintes, resistance environnementale (temperature, humidite), accessibilite pour l'installation et la maintenance, exigences de durabilite a long terme</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/edf-v2.stl"></div>
+    <span class="stl-label">V2</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/edf-pince.stl"></div>
+    <span class="stl-label">Pince</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -125,6 +282,53 @@ p {
 <li>Considerations de materiaux compatibles alimentaires</li>
 <li>Compatibilite de temperature (-20 C a +50 C)</li>
 </ul>
+
+<hr/>
+
+<h3>7. Simply3D — Site e-commerce pour pieces imprimees en 3D</h3>
+
+<p><strong>Objectif</strong> : Transformer les pieces de remplacement concues en CAO en produits vendables en ligne, via un site e-commerce moderne construit from scratch avec un stack technique full-stack.</p>
+
+<p><strong>Contexte</strong> : Les pieces modelisees sous SolidWorks (notamment la poignee frigo et le bouchon selectif) ont ete le point de depart d'une plateforme commerciale complete, demontrant la chaine complete : <strong>conception CAO → impression 3D → vente en ligne</strong>.</p>
+
+<p><strong>Stack technique</strong> :</p>
+<ul>
+<li><strong>Framework</strong> : Next.js 16 (App Router, TypeScript, SSG/SSR)</li>
+<li><strong>Styling</strong> : Tailwind CSS + CSS custom (design Glassmorphism)</li>
+<li><strong>Paiement</strong> : Stripe Checkout Sessions (API REST)</li>
+<li><strong>Animations</strong> : Framer Motion</li>
+<li><strong>Etat global</strong> : Zustand (panier persistant via localStorage)</li>
+<li><strong>Icones</strong> : Lucide React (SVG accessibles)</li>
+</ul>
+
+<p><strong>Fonctionnalites implementees</strong> :</p>
+<ul>
+<li>Catalogue produits statique avec pages generees statiquement (<code>generateStaticParams</code>)</li>
+<li>Panier d'achat persistant entre les pages et sessions</li>
+<li>Paiement securise via Stripe Checkout (redirection hebergee)</li>
+<li>Design Glassmorphism : cartes avec <code>backdrop-filter: blur</code>, degrades animes, effets glow</li>
+<li>Animations d'entree, hover et interactions (Framer Motion)</li>
+<li>SEO complet : metadata + OpenGraph par page produit</li>
+<li>Toasts de notification accessibles (<code>aria-live</code>)</li>
+<li>Loading skeletons pour les routes dynamiques</li>
+<li>Accessibilite : <code>focus-visible</code>, <code>role="alert"</code>, touch targets 44px, <code>prefers-reduced-motion</code></li>
+<li>Pages legales : politique de confidentialite, remboursements</li>
+</ul>
+
+<p><strong>Methodologie UI/UX</strong> :</p>
+<ul>
+<li>Audit realise avec le skill <strong>UI/UX Pro Max</strong> (161 regles industry-specific)</li>
+<li>Pattern de page d'accueil : Hero → Probleme → Solution → Produits → Temoignages → CTA</li>
+<li>Anti-patterns corriges : emojis remplaces par SVG Lucide, tap delay supprime, erreurs accessibles aux lecteurs d'ecran</li>
+</ul>
+
+<p><strong>Produits vendus</strong> :</p>
+<ul>
+<li><strong>Bouchon Selectif</strong> (4,99 €) — modelise en 3 versions sous SolidWorks, imprime en PLA</li>
+<li><strong>Poignee Frigo</strong> (7,99 €) — piece de remplacement en PETG haute resistance</li>
+</ul>
+
+<p><strong>Lien</strong> : <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a></p>
 
 <hr/>
 
@@ -210,11 +414,12 @@ p {
 
 <h2>Statistiques du projet</h2>
 <ul>
-<li><strong>Nombre total de projets</strong> : 6 applications distinctes</li>
-<li><strong>Nombre total d'iterations</strong> : Plus de 30 versions sur tous les projets</li>
+<li><strong>Nombre total de projets</strong> : 7 applications (6 pieces CAO + 1 site e-commerce)</li>
+<li><strong>Nombre total d'iterations</strong> : Plus de 30 versions sur tous les projets CAO</li>
 <li><strong>Formats de fichiers</strong> : SLDPRT (natif), SLDASM (assemblage), STEP, IGES (export)</li>
-<li><strong>Maitrise logicielle</strong> : SolidWorks (CAO), Cura/PrusaSlicer (impression 3D)</li>
+<li><strong>Maitrise logicielle</strong> : SolidWorks (CAO), Cura/PrusaSlicer (impression 3D), Next.js/TypeScript (web)</li>
 <li><strong>Methodes de fabrication</strong> : Impression 3D FDM, impression SLA, usinage CNC</li>
+<li><strong>Chaine complete</strong> : Conception CAO → Impression 3D → Vente en ligne (Stripe)</li>
 </ul>
 
 <hr/>
@@ -290,11 +495,11 @@ p {
 
 <h2>Conclusion</h2>
 
-<p>Cette collection de projets de modelisation 3D demontre l'application pratique des competences CAO pour resoudre des problemes du monde reel. Des supports decoratifs d'exposition aux composants industriels, chaque projet a necessite une consideration attentive de la fonctionnalite, de la fabricabilite et de l'esthetique.</p>
+<p>Cette collection de projets demontre l'application pratique des competences CAO pour resoudre des problemes du monde reel — et, avec Simply3D, la capacite de porter ces solutions jusqu'au marche. Des supports decoratifs d'exposition aux composants industriels, en passant par un site e-commerce complet, chaque projet a necessite une consideration attentive de la fonctionnalite, de la fabricabilite et de l'experience utilisateur.</p>
 
-<p>Le processus de conception iteratif visible a travers les multiples versions de chaque piece temoigne d'un engagement envers l'amelioration et le raffinement continus. En continuant a developper mes competences en conception mecanique et en fabrication, j'ai hate de relever des projets plus complexes et de m'etendre dans des domaines comme la conception generative, la simulation et les assemblages multi-materiaux.</p>
+<p>Le projet Simply3D illustre une demarche rare : maitriser la chaine complete de la conception 3D (SolidWorks) a la mise en vente en ligne (Next.js + Stripe), en passant par l'impression physique des pieces. Cette vision bout-en-bout — ingenierie mecanique, fabrication additive et developpement web full-stack — reflete un profil transversal oriente solutions concretes.</p>
 
-<p><strong>Point cle</strong> : Une bonne conception est un processus iteratif qui equilibre forme, fonction et fabricabilite tout en gardant toujours a l'esprit les besoins de l'utilisateur final.</p>
+<p><strong>Point cle</strong> : Une bonne conception ne s'arrete pas au fichier CAO. Elle se prolonge jusqu'a l'utilisateur final — qu'il recoive une piece imprimee ou passe commande sur un site web.</p>
 </div>
 
 <div class="lang-en">
@@ -314,14 +519,14 @@ p {
 
 <h2>Project Portfolio</h2>
 
-<h3>1. Katana Display Stand (Support Katana)</h3>
+<h3>1. Katana Display Stand</h3>
 
-<p><strong>Purpose</strong>: Custom display stand for Japanese katana swords with decorative One Piece Jolly Roger emblem.</p>
+<p><strong>Purpose</strong>: Custom display stand for Japanese katana swords, designed as modular components for easy 3D printing and assembly.</p>
 
 <p><strong>Technical Details</strong>:</p>
 <ul>
-<li><strong>Components</strong>: Left and right support brackets, central katana holder, decorative Jolly Roger plate, assembly file with all components</li>
-<li><strong>Design Features</strong>: Stable base with balanced weight distribution, protective padding areas for blade, modular design for easy printing and assembly, aesthetic integration of anime-themed decoration</li>
+<li><strong>Components</strong>: Left support, right support, central holder, decorative engraved plate, full assembly file</li>
+<li><strong>Design Features</strong>: Stable base with balanced weight distribution, protective areas for the blade, modular design, decorative plate integration</li>
 </ul>
 
 <p><strong>Version 2 Improvements</strong>:</p>
@@ -331,6 +536,21 @@ p {
 <li>Split into upper and lower sections for easier manufacturing</li>
 <li>Multiple width variants to accommodate different blade sizes</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-support-gauche.stl"></div>
+    <span class="stl-label">Left support (V1)</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-support-droit.stl"></div>
+    <span class="stl-label">Right support (V1)</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/katana-v2.stl"></div>
+    <span class="stl-label">Assembly V2</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -350,6 +570,21 @@ p {
 <li><strong>V2</strong>: Enhanced ergonomics and grip texture</li>
 <li><strong>V3</strong>: Refined aesthetics and manufacturing optimization</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v1.stl"></div>
+    <span class="stl-label">V1</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v2.stl"></div>
+    <span class="stl-label">V2</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/bouchon-v3.stl"></div>
+    <span class="stl-label">V3</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -371,6 +606,17 @@ p {
 <li>Final production-ready design (V10)</li>
 </ul>
 
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/rack-v5.stl"></div>
+    <span class="stl-label">V5 — structural reinforcement</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/rack-v10.stl"></div>
+    <span class="stl-label">V10 — final version</span>
+  </div>
+</div>
+
 <hr/>
 
 <h3>4. CEC Badge Holder (Piece Badge CEC)</h3>
@@ -383,6 +629,17 @@ p {
 <li><strong>Design Features</strong>: Secure card retention mechanism, attachment points for lanyards or clips, protective edges to prevent card damage, compact profile for everyday carry</li>
 </ul>
 
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/badge-cec-dev.stl"></div>
+    <span class="stl-label">Dev version</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/badge-cec-der.stl"></div>
+    <span class="stl-label">Final version</span>
+  </div>
+</div>
+
 <hr/>
 
 <h3>5. EDF Industrial Part (Piece-EDF)</h3>
@@ -394,6 +651,17 @@ p {
 <li><strong>Iterations</strong>: 3 versions showing professional refinement</li>
 <li><strong>Engineering Considerations</strong>: Load analysis and stress testing, environmental resistance (temperature, humidity), installation and maintenance accessibility, long-term durability requirements</li>
 </ul>
+
+<div class="stl-gallery">
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/edf-v2.stl"></div>
+    <span class="stl-label">V2</span>
+  </div>
+  <div class="stl-card">
+    <div class="stl-viewer" data-stl="/assets/stl/edf-pince.stl"></div>
+    <span class="stl-label">Clamp variant</span>
+  </div>
+</div>
 
 <hr/>
 
@@ -408,6 +676,53 @@ p {
 <li>Material considerations for food-safe environment</li>
 <li>Temperature range compatibility (-20 C to +50 C)</li>
 </ul>
+
+<hr/>
+
+<h3>7. Simply3D — E-commerce Website for 3D Printed Parts</h3>
+
+<p><strong>Purpose</strong>: Turn CAD-designed replacement parts into sellable products online, through a modern full-stack e-commerce website built from scratch.</p>
+
+<p><strong>Context</strong>: The parts modeled in SolidWorks (refrigerator handle and selective cap) became the foundation of a complete commercial platform, demonstrating the full chain: <strong>CAD design → 3D printing → online sales</strong>.</p>
+
+<p><strong>Tech Stack</strong>:</p>
+<ul>
+<li><strong>Framework</strong>: Next.js 16 (App Router, TypeScript, SSG/SSR)</li>
+<li><strong>Styling</strong>: Tailwind CSS + custom CSS (Glassmorphism design)</li>
+<li><strong>Payments</strong>: Stripe Checkout Sessions (REST API)</li>
+<li><strong>Animations</strong>: Framer Motion</li>
+<li><strong>State Management</strong>: Zustand (persistent cart via localStorage)</li>
+<li><strong>Icons</strong>: Lucide React (accessible SVGs)</li>
+</ul>
+
+<p><strong>Features Implemented</strong>:</p>
+<ul>
+<li>Static product catalog with statically generated pages (<code>generateStaticParams</code>)</li>
+<li>Persistent shopping cart across pages and sessions</li>
+<li>Secure payments via Stripe Checkout (hosted redirect)</li>
+<li>Glassmorphism design: cards with <code>backdrop-filter: blur</code>, animated gradients, glow effects</li>
+<li>Entry animations, hover and interaction effects (Framer Motion)</li>
+<li>Full SEO: metadata + OpenGraph per product page</li>
+<li>Accessible toast notifications (<code>aria-live</code>)</li>
+<li>Loading skeletons for dynamic routes</li>
+<li>Accessibility: <code>focus-visible</code>, <code>role="alert"</code>, 44px touch targets, <code>prefers-reduced-motion</code></li>
+<li>Legal pages: privacy policy, refund policy</li>
+</ul>
+
+<p><strong>UI/UX Methodology</strong>:</p>
+<ul>
+<li>Audit performed with the <strong>UI/UX Pro Max</strong> skill (161 industry-specific rules)</li>
+<li>Homepage pattern: Hero → Problem → Solution → Products → Testimonials → CTA</li>
+<li>Anti-patterns fixed: emojis replaced with Lucide SVGs, tap delay removed, errors accessible to screen readers</li>
+</ul>
+
+<p><strong>Products Sold</strong>:</p>
+<ul>
+<li><strong>Selective Cap</strong> (€4.99) — modeled in 3 versions in SolidWorks, printed in PLA</li>
+<li><strong>Fridge Handle</strong> (€7.99) — replacement part in high-resistance PETG</li>
+</ul>
+
+<p><strong>Link</strong>: <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a></p>
 
 <hr/>
 
@@ -493,11 +808,12 @@ p {
 
 <h2>Project Statistics</h2>
 <ul>
-<li><strong>Total Projects</strong>: 6 distinct applications</li>
-<li><strong>Total Design Iterations</strong>: 30+ versions across all projects</li>
+<li><strong>Total Projects</strong>: 7 applications (6 CAD parts + 1 e-commerce website)</li>
+<li><strong>Total Design Iterations</strong>: 30+ versions across all CAD projects</li>
 <li><strong>File Formats</strong>: SLDPRT (native), SLDASM (assembly), STEP, IGES (export)</li>
-<li><strong>Software Proficiency</strong>: SolidWorks (CAD), Cura/PrusaSlicer (3D printing)</li>
+<li><strong>Software Proficiency</strong>: SolidWorks (CAD), Cura/PrusaSlicer (3D printing), Next.js/TypeScript (web)</li>
 <li><strong>Manufacturing Methods</strong>: FDM 3D printing, SLA printing, CNC machining</li>
+<li><strong>Full Chain</strong>: CAD design → 3D printing → Online sales (Stripe)</li>
 </ul>
 
 <hr/>
@@ -573,9 +889,9 @@ p {
 
 <h2>Conclusion</h2>
 
-<p>This collection of 3D modeling projects demonstrates practical application of CAD skills to solve real-world problems. From decorative display stands to industrial components, each project required careful consideration of functionality, manufacturability, and aesthetics.</p>
+<p>This collection of projects demonstrates the practical application of CAD skills to solve real-world problems — and, with Simply3D, the ability to bring those solutions all the way to market. From decorative display stands to industrial components, and through a complete e-commerce website, each project required careful consideration of functionality, manufacturability, and user experience.</p>
 
-<p>The iterative design process visible across multiple versions of each part shows a commitment to continuous improvement and refinement. As I continue developing my skills in mechanical design and manufacturing, I look forward to tackling more complex projects and expanding into areas like generative design, simulation, and multi-material assemblies.</p>
+<p>The Simply3D project illustrates an uncommon end-to-end approach: mastering the full chain from 3D design (SolidWorks) to online sales (Next.js + Stripe), including the physical printing of parts. This full-stack vision — mechanical engineering, additive manufacturing, and web development — reflects a cross-disciplinary profile focused on delivering real solutions.</p>
 
-<p><strong>Key Takeaway</strong>: Good design is an iterative process that balances form, function, and manufacturability while always keeping the end user's needs in focus.</p>
+<p><strong>Key Takeaway</strong>: Good design doesn't stop at the CAD file. It extends all the way to the end user — whether they receive a printed part or place an order on a website.</p>
 </div>

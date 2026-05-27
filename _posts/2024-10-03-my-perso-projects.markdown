@@ -7,6 +7,7 @@ date:   2024-10-02 10:56:03 +0200
 
 <h1 data-i18n="perso-projects-title">Personal Projects</h1>
 
+<div class="projects-list-page">
 <div class="lang-fr">
 <h2>2025</h2>
 <ul>
@@ -46,4 +47,5 @@ date:   2024-10-02 10:56:03 +0200
 <ul>
 <li><h3><a href="./Arduino-Projects.html">🔌 Arduino Projects</a></h3></li>
 </ul>
+</div>
 </div>

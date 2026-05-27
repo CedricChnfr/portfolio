@@ -197,7 +197,7 @@ date: 2024-10-02 10:56:03 +0200
 
 ---
 
-<div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+<div style="text-align: center; margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); border-radius: 15px; color: white;">
   <h3 style="color: white; margin-bottom: 15px;">🎓 Diplôme obtenu</h3>
   <p style="font-size: 1.2em; line-height: 1.8; margin-bottom: 20px;">
     <strong>DUT Génie Électrique et Informatique Industrielle</strong><br>

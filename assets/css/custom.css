@@ -1,16 +1,15 @@
 /* =============================================
    Design System: UI UX Pro Max
-   Pattern: Portfolio Grid | Style: Dark Mode / Professional Blue
+   Pattern: Portfolio Grid | Style: Deep Indigo / Violet
    Fonts: Archivo (headings) + Space Grotesk (body)
-   Accent: #2563eb | Secondary: #1d4ed8
+   Accent: #667eea | Secondary: #764ba2
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --color-accent: #2563eb;
-    --color-accent-dark: #1d4ed8;
-    --color-accent-light: #60a5fa;
+    --color-accent: #667eea;
+    --color-accent-dark: #764ba2;
+    --color-accent-light: #f093fb;
     --font-heading: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -28,27 +27,20 @@ h1, h2, h3, h4, h5, h6,
     font-family: var(--font-heading) !important;
 }
 
-/* =============================================
-   Hero — Dark professional gradient
-   (replaces generic purple/pink AI gradient)
-   ============================================= */
-.hero-section {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #0f172a 100%) !important;
-}
 
 /* =============================================
    Navigation Cards
    ============================================= */
 .card-background {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
 }
 
 .nav-card::before {
-    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb) !important;
 }
 
 .nav-card:hover {
-    box-shadow: 0 25px 60px rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 25px 60px rgba(102, 126, 234, 0.3) !important;
 }
 
 .card-arrow {
@@ -59,26 +51,26 @@ h1, h2, h3, h4, h5, h6,
    Show More Button
    ============================================= */
 .show-more-btn {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3) !important;
 }
 
 .show-more-btn:hover {
-    background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
-    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4) !important;
+    background: linear-gradient(135deg, #764ba2, #667eea) !important;
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4) !important;
 }
 
 /* =============================================
    Experience Section
    ============================================= */
 .experience-icon {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3) !important;
 }
 
 .experience-item:hover {
-    border-left-color: #2563eb !important;
-    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15) !important;
+    border-left-color: #667eea !important;
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15) !important;
 }
 
 .experience-content h4,
@@ -98,13 +90,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .formation-icon {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3) !important;
 }
 
 .formation-item:hover {
-    border-left-color: #2563eb !important;
-    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15) !important;
+    border-left-color: #667eea !important;
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.15) !important;
 }
 
 .formation-content h4 {
@@ -116,13 +108,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .formation-tags .tag {
-    background: rgba(37, 99, 235, 0.08) !important;
+    background: rgba(102, 126, 234, 0.08) !important;
     color: var(--color-accent) !important;
-    border-color: rgba(37, 99, 235, 0.2) !important;
+    border-color: rgba(102, 126, 234, 0.2) !important;
 }
 
 .formation-tags .tag:hover {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
     color: white !important;
 }
 
@@ -130,14 +122,14 @@ h1, h2, h3, h4, h5, h6,
    Tags (global)
    ============================================= */
 .tag {
-    background: rgba(37, 99, 235, 0.08) !important;
+    background: rgba(102, 126, 234, 0.08) !important;
     color: var(--color-accent) !important;
-    border-color: rgba(37, 99, 235, 0.2) !important;
+    border-color: rgba(102, 126, 234, 0.2) !important;
 }
 
 .tag:hover {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
     color: white !important;
 }
 
@@ -145,35 +137,35 @@ h1, h2, h3, h4, h5, h6,
    Section Titles
    ============================================= */
 .section-title::after {
-    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+    background: linear-gradient(90deg, #667eea, #764ba2) !important;
 }
 
 /* =============================================
    Skills Progress Bars
    ============================================= */
 .skill-progress {
-    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+    background: linear-gradient(90deg, #667eea, #764ba2) !important;
 }
 
 /* =============================================
    Search
    ============================================= */
 .search-button {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4) !important;
+    background: linear-gradient(135deg, #667eea, #764ba2) !important;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4) !important;
 }
 
 .search-button:hover {
-    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.6) !important;
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6) !important;
 }
 
 .search-input:focus {
-    border-color: #2563eb !important;
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1) !important;
+    border-color: #667eea !important;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
 }
 
 .search-result-item:hover {
-    background: rgba(37, 99, 235, 0.06) !important;
+    background: rgba(102, 126, 234, 0.06) !important;
     transform: translateX(5px);
 }
 
@@ -232,7 +224,7 @@ h1, h2, h3, h4, h5, h6,
    ============================================= */
 a:focus-visible,
 button:focus-visible {
-    outline: 2px solid #2563eb;
+    outline: 2px solid #667eea;
     outline-offset: 2px;
     border-radius: 3px;
 }
@@ -243,4 +235,175 @@ button:focus-visible {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
+}
+
+/* =============================================
+   Hero overrides — About & CV pages
+   ============================================= */
+.ab-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+}
+
+.cv-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+}
+
+/* =============================================
+   Projects list pages — card grid
+   ============================================= */
+.projects-list-page ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 0;
+    margin: 20px 0 40px 0;
+}
+
+.projects-list-page ul li {
+    background: white;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: all 0.2s ease;
+}
+
+.projects-list-page ul li::before {
+    display: none !important;
+}
+
+.projects-list-page ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102,126,234,0.15);
+}
+
+.projects-list-page ul li h3 {
+    margin: 0;
+}
+
+.projects-list-page ul li h3 a {
+    display: block;
+    padding: 18px 20px;
+    color: #1e293b !important;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.projects-list-page ul li h3 a:hover {
+    color: #667eea !important;
+}
+
+.projects-list-page h2 {
+    font-size: 1.3em;
+    color: #64748b;
+    font-weight: 600;
+    border: none;
+    display: block;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e2e8f0;
+    margin: 40px 0 16px 0;
+}
+
+.projects-list-page h2::after {
+    display: none !important;
+}
+
+.projects-list-page hr {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .projects-list-page ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =============================================
+   Inner content pages — improved typography
+   ============================================= */
+.post-content h1 {
+    font-size: 2em;
+    color: #0f172a;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+}
+
+.post-content h2 {
+    font-size: 1.5em;
+    color: #1e293b;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+
+.post-content h3 {
+    font-size: 1.2em;
+    color: #667eea;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.post-content code {
+    background: #f1f5f9;
+    color: #1e293b;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.9em;
+    border: 1px solid #e2e8f0;
+}
+
+.post-content pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.post-content pre code {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.post-content table th {
+    background: #1e293b;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.post-content table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.post-content table tr:last-child td {
+    border-bottom: none;
+}
+
+.post-content table tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.post-content ul li::before {
+    color: #667eea;
 }
