@@ -10,8 +10,10 @@ p { text-align: justify; }
 .stl-gallery {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   margin: 20px 0;
+  padding-bottom: 6px;
 }
 .stl-card {
   display: flex;
@@ -20,11 +22,11 @@ p { text-align: justify; }
   gap: 6px;
 }
 .stl-viewer {
-  width: 220px;
-  height: 200px;
-  background: #0f1117;
+  width: 200px;
+  height: 182px;
+  background: #ffffff;
   border-radius: 10px;
-  border: 1px solid #1e2a3a;
+  border: 1px solid #e0e0e0;
   overflow: hidden;
   cursor: grab;
 }
@@ -37,31 +39,29 @@ p { text-align: justify; }
 </style>
 
 <script type="module">
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
-import { STLLoader } from 'https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/loaders/STLLoader.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/controls/OrbitControls.js';
+import * as THREE from 'three';
+import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
-const W = 220, H = 200;
-const initialized = new WeakSet();
+const W = 200, H = 182;
+const loader = new STLLoader();
 
 function initViewer(el) {
-  if (initialized.has(el)) return;
-  initialized.add(el);
-
-  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setSize(W, H);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-  renderer.setClearColor(0x0f1117);
+  renderer.setClearColor(0xffffff, 1);
   el.appendChild(renderer.domElement);
 
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(45, W / H, 0.01, 1000);
+  const camera = new THREE.PerspectiveCamera(45, W / H, 0.01, 2000);
+  camera.position.set(0, 2.5, 4);
 
-  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.6));
   const sun = new THREE.DirectionalLight(0xffffff, 1.2);
   sun.position.set(5, 8, 5);
   scene.add(sun);
-  const fill = new THREE.DirectionalLight(0x4488cc, 0.4);
+  const fill = new THREE.DirectionalLight(0x4488cc, 0.3);
   fill.position.set(-5, -3, -5);
   scene.add(fill);
 
@@ -72,22 +72,16 @@ function initViewer(el) {
   controls.autoRotateSpeed = 1.8;
   controls.addEventListener('start', () => { controls.autoRotate = false; });
 
-  new STLLoader().load(el.dataset.stl, geo => {
+  loader.load(el.dataset.stl, geo => {
     geo.center();
-    const box = new THREE.Box3().setFromBufferAttribute(geo.attributes.position);
-    const size = box.getSize(new THREE.Vector3());
-    const maxDim = Math.max(size.x, size.y, size.z);
-
+    const size = new THREE.Box3().setFromBufferAttribute(geo.attributes.position).getSize(new THREE.Vector3());
     const mat = new THREE.MeshPhongMaterial({ color: 0x5ba3e0, specular: 0x1a3a5c, shininess: 60 });
     const mesh = new THREE.Mesh(geo, mat);
-    mesh.scale.setScalar(2.8 / maxDim);
+    mesh.scale.setScalar(2.8 / Math.max(size.x, size.y, size.z));
     mesh.rotation.x = -Math.PI / 2;
     scene.add(mesh);
-
-    camera.position.set(0, 2.5, 4);
-    camera.lookAt(0, 0, 0);
     controls.update();
-  });
+  }, undefined, err => console.error('STL load error', el.dataset.stl, err));
 
   (function animate() {
     requestAnimationFrame(animate);
@@ -96,12 +90,24 @@ function initViewer(el) {
   })();
 }
 
-// Init on first intersection (handles display:none lang containers)
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) initViewer(e.target); });
-}, { threshold: 0.01 });
+const initialized = new WeakSet();
 
-document.querySelectorAll('.stl-viewer').forEach(el => observer.observe(el));
+function initVisible() {
+  document.querySelectorAll('.stl-viewer').forEach(el => {
+    if (initialized.has(el)) return;
+    // Skip if inside a display:none container
+    if (el.offsetParent === null) return;
+    initialized.add(el);
+    initViewer(el);
+  });
+}
+
+window.addEventListener('load', initVisible);
+
+// Re-run when lang attribute changes (FR <-> EN switch)
+new MutationObserver(initVisible).observe(document.documentElement, {
+  attributes: true, attributeFilter: ['lang']
+});
 </script>
 
 <div class="back-nav">
