@@ -1,6 +1,189 @@
-/* Fix pour les icônes sociales (GitHub, LinkedIn) rognées */
+/* =============================================
+   Design System: UI UX Pro Max
+   Pattern: Portfolio Grid | Style: Dark Mode / Professional Blue
+   Fonts: Archivo (headings) + Space Grotesk (body)
+   Accent: #2563eb | Secondary: #1d4ed8
+   ============================================= */
 
-/* Correction des icônes sociales dans le footer */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-accent: #2563eb;
+    --color-accent-dark: #1d4ed8;
+    --color-accent-light: #60a5fa;
+    --font-heading: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* =============================================
+   Typography
+   ============================================= */
+body, p, a, span, li, td, th, input, button, label {
+    font-family: var(--font-body) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-title, .section-title, .nav-card h3,
+.site-title {
+    font-family: var(--font-heading) !important;
+}
+
+/* =============================================
+   Hero — Dark professional gradient
+   (replaces generic purple/pink AI gradient)
+   ============================================= */
+.hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #0f172a 100%) !important;
+}
+
+/* =============================================
+   Navigation Cards
+   ============================================= */
+.card-background {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+}
+
+.nav-card::before {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+}
+
+.nav-card:hover {
+    box-shadow: 0 25px 60px rgba(37, 99, 235, 0.3) !important;
+}
+
+.card-arrow {
+    color: var(--color-accent) !important;
+}
+
+/* =============================================
+   Show More Button
+   ============================================= */
+.show-more-btn {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+}
+
+.show-more-btn:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb) !important;
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4) !important;
+}
+
+/* =============================================
+   Experience Section
+   ============================================= */
+.experience-icon {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+}
+
+.experience-item:hover {
+    border-left-color: #2563eb !important;
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15) !important;
+}
+
+.experience-content h4,
+.experience-content h4 a {
+    color: var(--color-accent) !important;
+}
+
+.experience-content a {
+    color: var(--color-accent) !important;
+}
+
+/* =============================================
+   Formation Section
+   ============================================= */
+.formation-section {
+    background: #ffffff !important;
+}
+
+.formation-icon {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3) !important;
+}
+
+.formation-item:hover {
+    border-left-color: #2563eb !important;
+    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15) !important;
+}
+
+.formation-content h4 {
+    color: var(--color-accent) !important;
+}
+
+.formation-content h3 a {
+    color: #2d3748 !important;
+}
+
+.formation-tags .tag {
+    background: rgba(37, 99, 235, 0.08) !important;
+    color: var(--color-accent) !important;
+    border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.formation-tags .tag:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: white !important;
+}
+
+/* =============================================
+   Tags (global)
+   ============================================= */
+.tag {
+    background: rgba(37, 99, 235, 0.08) !important;
+    color: var(--color-accent) !important;
+    border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+.tag:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3) !important;
+    color: white !important;
+}
+
+/* =============================================
+   Section Titles
+   ============================================= */
+.section-title::after {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+}
+
+/* =============================================
+   Skills Progress Bars
+   ============================================= */
+.skill-progress {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8) !important;
+}
+
+/* =============================================
+   Search
+   ============================================= */
+.search-button {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4) !important;
+}
+
+.search-button:hover {
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.6) !important;
+}
+
+.search-input:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1) !important;
+}
+
+.search-result-item:hover {
+    background: rgba(37, 99, 235, 0.06) !important;
+    transform: translateX(5px);
+}
+
+.search-close:hover {
+    color: var(--color-accent) !important;
+}
+
+/* =============================================
+   Social Icons (existing fix)
+   ============================================= */
 .social-media-list .svg-icon {
     width: 20px !important;
     height: 20px !important;
@@ -9,7 +192,6 @@
     vertical-align: middle !important;
 }
 
-/* Correction des liens sociaux */
 .social-media-list li {
     display: inline-flex !important;
     align-items: center !important;
@@ -22,20 +204,17 @@
     text-decoration: none !important;
 }
 
-/* S'assurer que les SVG ne débordent pas */
 .social-media-list svg {
     overflow: visible !important;
     max-width: 20px !important;
     max-height: 20px !important;
 }
 
-/* Correction du header si les icônes y sont aussi */
 .site-header .social-media-list .svg-icon {
     width: 18px !important;
     height: 18px !important;
 }
 
-/* Correction pour le wrapper du footer */
 .footer-col-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -46,4 +225,22 @@
     align-items: center;
     list-style: none;
     margin-left: 0;
+}
+
+/* =============================================
+   Accessibility
+   ============================================= */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
