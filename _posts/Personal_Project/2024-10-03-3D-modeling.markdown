@@ -334,7 +334,10 @@ new MutationObserver(initVisible).observe(document.documentElement, {
 <li><strong>Poignee Frigo</strong> (7,99 €) — piece de remplacement en PETG haute resistance</li>
 </ul>
 
-<p><strong>Lien</strong> : <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a></p>
+<p>
+  <strong>Site en ligne</strong> : <a href="https://simply3d.littlenuage.com/" target="_blank">simply3d.littlenuage.com</a><br/>
+  <strong>Code source</strong> : <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a>
+</p>
 
 <hr/>
 
@@ -728,7 +731,10 @@ new MutationObserver(initVisible).observe(document.documentElement, {
 <li><strong>Fridge Handle</strong> (€7.99) — replacement part in high-resistance PETG</li>
 </ul>
 
-<p><strong>Link</strong>: <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a></p>
+<p>
+  <strong>Live website</strong>: <a href="https://simply3d.littlenuage.com/" target="_blank">simply3d.littlenuage.com</a><br/>
+  <strong>Source code</strong>: <a href="https://github.com/CedricChnfr/Simply3D" target="_blank">github.com/CedricChnfr/Simply3D</a>
+</p>
 
 <hr/>
 
