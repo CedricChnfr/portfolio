@@ -824,25 +824,33 @@ L'al&eacute;atoire n'est pas l'ennemi de l'ing&eacute;nieur. Avec les bons outil
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapitre I - Probabilit&eacute;s</h4>
       <p>Introduction aux probabilit&eacute;s : esp&eacute;rances math&eacute;matiques, axiomes, probabilit&eacute;s conditionnelles et th&eacute;or&egrave;me de Bayes.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapitre II - Variables Al&eacute;atoires</h4>
       <p>Variables al&eacute;atoires discr&egrave;tes et continues : lois de probabilit&eacute;, moments, fonction caract&eacute;ristique et esp&eacute;rance.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapitre III - Processus Stochastiques</h4>
       <p>Processus al&eacute;atoires : stationnarit&eacute;, ergodicit&eacute;, autocorr&eacute;lation et propri&eacute;t&eacute;s des processus stationnaires.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapitre IV - Analyse Spectrale</h4>
       <p>Densit&eacute; spectrale de puissance (DSP), th&eacute;or&egrave;me de Wiener-Khintchine et filtrage lin&eacute;aire des processus al&eacute;atoires.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">&#x1F4E5; T&eacute;l&eacute;charger</a></p>
     </div>
   </div>
@@ -1596,25 +1604,33 @@ Randomness is not the enemy of the engineer. With the right tools (probability, 
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapter I - Probability</h4>
       <p>Introduction to probability: mathematical expectations, axioms, conditional probabilities, and Bayes' theorem.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre1-probabilites.pdf" target="_blank">&#x1F4E5; Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapter II - Random Variables</h4>
       <p>Discrete and continuous random variables: probability distributions, moments, characteristic function, and expectation.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre2-variables-aleatoires.pdf" target="_blank">&#x1F4E5; Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapter III - Stochastic Processes</h4>
       <p>Random processes: stationarity, ergodicity, autocorrelation, and properties of stationary processes.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre3-processus-stochastiques.pdf" target="_blank">&#x1F4E5; Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>&#x1F4D6; Chapter IV - Spectral Analysis</h4>
       <p>Power spectral density (PSD), Wiener-Khinchin theorem, and linear filtering of random processes.</p>
-      <embed src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Signaux-Aleatoires/chapitre4-analyse-spectrale.pdf" target="_blank">&#x1F4E5; Download</a></p>
     </div>
   </div>

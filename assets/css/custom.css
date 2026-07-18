@@ -219,6 +219,49 @@ h1, h2, h3, h4, h5, h6,
     margin-left: 0;
 }
 
+.pdf-lazy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(102, 126, 234, 0.06);
+    border: 1px dashed rgba(102, 126, 234, 0.35);
+    border-radius: 8px;
+}
+
+.pdf-lazy-btn {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--color-accent, #667eea);
+    border: none;
+    border-radius: 6px;
+    padding: 0.7em 1.4em;
+    cursor: pointer;
+}
+
+.pdf-lazy-btn:hover {
+    opacity: 0.9;
+}
+
+.footer-legal {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-legal a {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.footer-legal a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 /* =============================================
    Accessibility
    ============================================= */

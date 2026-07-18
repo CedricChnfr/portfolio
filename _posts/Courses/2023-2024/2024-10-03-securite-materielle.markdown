@@ -817,19 +817,25 @@ disassemble      # desassembler une fonction</code></pre>
     <div class="pdf-item">
       <h4>Cours Complet</h4>
       <p>Cours complet de securite materielle : attaques par canaux caches, buffer overflow, vulnerabilites Spectre/Meltdown.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Buffer Overflow</h4>
       <p>Cours sur les attaques par depassement de tampon : exploitation, stack smashing, protections et contre-mesures.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>TP Cache Side-Channel Attack</h4>
       <p>Sujet de TP sur les attaques par canaux caches via cache : timing attacks, Flush+Reload et experimentations.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1579,19 +1585,25 @@ disassemble      # disassemble a function</code></pre>
     <div class="pdf-item">
       <h4>Complete Course</h4>
       <p>Complete hardware security course: side-channel attacks, buffer overflow, Spectre/Meltdown vulnerabilities.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/cours-complet.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Buffer Overflow</h4>
       <p>Course on buffer overflow attacks: exploitation, stack smashing, protections and countermeasures.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/buffer-overflow.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Lab: Cache Side-Channel Attack</h4>
       <p>Lab subject on cache side-channel attacks: timing attacks, Flush+Reload and experiments.</p>
-      <embed src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Securite-Materielle/tp-cache-sca.pdf" target="_blank">Download</a></p>
     </div>
   </div>

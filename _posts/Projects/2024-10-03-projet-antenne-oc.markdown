@@ -345,7 +345,7 @@ p {
 <div style="display: flex; gap: 15px; margin: 40px 0; overflow-x: auto; padding-bottom: 20px;">
   <div style="flex: 1; min-width: 400px;">
     <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 1</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-1.pdf"
+    <embed src="/projets-pdf/antenne/Antenne-phase-1.pdf"
            type="application/pdf"
            width="100%"
            height="800px"
@@ -354,7 +354,7 @@ p {
 
   <div style="flex: 1; min-width: 400px;">
     <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 2</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-2.pdf"
+    <embed src="/projets-pdf/antenne/Antenne-phase-2.pdf"
            type="application/pdf"
            width="100%"
            height="800px"
@@ -363,7 +363,7 @@ p {
 
   <div style="flex: 1; min-width: 400px;">
     <h3 style="color: #667eea; text-align: center; margin-bottom: 10px;">Phase 3</h3>
-    <embed src="/cours-pdf/projet/antenne/Antenne-phase-3.pdf"
+    <embed src="/projets-pdf/antenne/Antenne-phase-3.pdf"
            type="application/pdf"
            width="100%"
            height="800px"

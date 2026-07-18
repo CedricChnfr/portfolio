@@ -665,7 +665,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>🎯 Les Pointeurs</h4>
       <p>Cours complet sur les pointeurs, l'arithmétique des pointeurs, et la manipulation de la mémoire en C.</p>
-      <embed src="/cours-pdf/S5/Langage-C/pointeurs.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/pointeurs.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/pointeurs.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -676,7 +678,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>🏗️ Structures et Types Composés</h4>
       <p>Définition et utilisation des structures, unions, énumérations et types définis par l'utilisateur.</p>
-      <embed src="/cours-pdf/S5/Langage-C/structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/structures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -687,7 +691,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>💾 Gestion de la Mémoire</h4>
       <p>Allocation dynamique, gestion du heap, détection de fuites mémoire et bonnes pratiques.</p>
-      <embed src="/cours-pdf/S5/Langage-C/memorisation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/memorisation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/memorisation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -698,7 +704,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>⚙️ Compilation et Linking</h4>
       <p>Processus de compilation, préprocesseur, linkage, bibliothèques statiques et dynamiques.</p>
-      <embed src="/cours-pdf/S5/Langage-C/compilation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/compilation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/compilation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -709,7 +717,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>📁 Entrées/Sorties et Fichiers</h4>
       <p>Manipulation de fichiers en C, flux standard, fonctions de lecture/écriture et gestion d'erreurs.</p>
-      <embed src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/io_fichiers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -720,7 +730,9 @@ str = NULL;  // Évite double free
     <div class="pdf-item">
       <h4>🏃 TP: Gestion de Coureurs</h4>
       <p>Travail pratique complet sur les listes chaînées avec gestion dynamique de structures de coureurs.</p>
-      <embed src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/tp_coureur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -1339,7 +1351,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>🎯 Pointers</h4>
       <p>Complete course on pointers, pointer arithmetic, and memory manipulation in C.</p>
-      <embed src="/cours-pdf/S5/Langage-C/pointeurs.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/pointeurs.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/pointeurs.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1350,7 +1364,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>🏗️ Structures and Composite Types</h4>
       <p>Definition and use of structures, unions, enumerations and user-defined types.</p>
-      <embed src="/cours-pdf/S5/Langage-C/structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/structures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1361,7 +1377,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>💾 Memory Management</h4>
       <p>Dynamic allocation, heap management, memory leak detection and best practices.</p>
-      <embed src="/cours-pdf/S5/Langage-C/memorisation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/memorisation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/memorisation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1372,7 +1390,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>⚙️ Compilation and Linking</h4>
       <p>Compilation process, preprocessor, linking, static and dynamic libraries.</p>
-      <embed src="/cours-pdf/S5/Langage-C/compilation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/compilation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/compilation.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1383,7 +1403,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>📁 Input/Output and Files</h4>
       <p>File manipulation in C, standard streams, read/write functions and error handling.</p>
-      <embed src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/io_fichiers.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/io_fichiers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1394,7 +1416,9 @@ str = NULL;  // Prevents double free
     <div class="pdf-item">
       <h4>🏃 Lab: Runner Management</h4>
       <p>Complete lab on linked lists with dynamic management of runner structures.</p>
-      <embed src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Langage-C/tp_coureur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Langage-C/tp_coureur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF

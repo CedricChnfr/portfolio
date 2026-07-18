@@ -913,7 +913,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Introduction a l'Automatique</h4>
       <p>Presentation generale du cours d'automatique : definitions, vocabulaire et objectifs.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_00_Introduction_(1).pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_00_Introduction_(1).pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_00_Introduction_(1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -922,7 +924,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Systemes et Reponses</h4>
       <p>Etude des systemes lineaires et de leurs reponses temporelles et frequentielles.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_01_Système_et_Réponses.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_01_Système_et_Réponses.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_01_Système_et_Réponses.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -931,7 +935,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Formes Canoniques et Systeme Asservi</h4>
       <p>Formes canoniques des systemes, schemas-blocs et principe de l'asservissement.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_02_Formes_canoniques_et_Système_asservi.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_02_Formes_canoniques_et_Système_asservi.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_02_Formes_canoniques_et_Système_asservi.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -940,7 +946,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Poles et Stabilite</h4>
       <p>Analyse de stabilite par les poles, criteres de Routh-Hurwitz et marges de stabilite.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_03_Pôles_et_Stabilité.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_03_Pôles_et_Stabilité.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_03_Pôles_et_Stabilité.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -949,7 +957,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Precision des Systemes Asservis</h4>
       <p>Etude de la precision en regime permanent, erreur statique et classe des systemes.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_04_Précision.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_04_Précision.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_04_Précision.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -958,7 +968,9 @@ L'automatique constitue un pilier fondamental de l'ingénierie des systèmes, pe
     <div class="pdf-item">
       <h4>Introduction a la Correction</h4>
       <p>Correcteurs P, PI, PID : principes, reglage et methodes de Ziegler-Nichols.</p>
-      <embed src="/cours-pdf/S3/Automatique/C_05_Introduction_à_la_correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatique/C_05_Introduction_à_la_correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatique/C_05_Introduction_à_la_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

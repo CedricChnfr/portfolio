@@ -1231,7 +1231,9 @@ Distance = (c × Δt) / 2, where c ≈ 340 m/s</p>
       <h4 class="lang-en">OPA2350 - Operational Amplifier</h4>
       <p class="lang-fr">Datasheet de l'amplificateur operationnel OPA2350 utilise dans le projet telemetre ultrasonique.</p>
       <p class="lang-en">Datasheet for the OPA2350 operational amplifier used in the ultrasonic rangefinder project.</p>
-      <embed src="/cours-pdf/S3/ER/opa2350.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/ER/opa2350.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/ER/opa2350.pdf" target="_blank" class="lang-fr" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/ER/opa2350.pdf" target="_blank" class="lang-en" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
@@ -1243,7 +1245,9 @@ Distance = (c × Δt) / 2, where c ≈ 340 m/s</p>
       <h4 class="lang-en">MAX941/MAX944 - Comparators</h4>
       <p class="lang-fr">Datasheet des comparateurs rapides MAX941-MAX944 pour la detection de seuil.</p>
       <p class="lang-en">Datasheet for the MAX941-MAX944 fast comparators for threshold detection.</p>
-      <embed src="/cours-pdf/S3/ER/MAX941-MAX944.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/ER/MAX941-MAX944.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/ER/MAX941-MAX944.pdf" target="_blank" class="lang-fr" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/ER/MAX941-MAX944.pdf" target="_blank" class="lang-en" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
@@ -1255,7 +1259,9 @@ Distance = (c × Δt) / 2, where c ≈ 340 m/s</p>
       <h4 class="lang-en">Si9986 - H-Bridge Driver</h4>
       <p class="lang-fr">Datasheet du driver de pont en H Si9986 pour la commande de l'emetteur ultrasonique.</p>
       <p class="lang-en">Datasheet for the Si9986 H-bridge driver for ultrasonic transmitter control.</p>
-      <embed src="/cours-pdf/S3/ER/si9986.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/ER/si9986.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/ER/si9986.pdf" target="_blank" class="lang-fr" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/ER/si9986.pdf" target="_blank" class="lang-en" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
@@ -1267,7 +1273,9 @@ Distance = (c × Δt) / 2, where c ≈ 340 m/s</p>
       <h4 class="lang-en">MCP41xx - SPI Digital Potentiometer</h4>
       <p class="lang-fr">Datasheet du potentiometre numerique MCP41xx commande par bus SPI.</p>
       <p class="lang-en">Datasheet for the MCP41xx digital potentiometer controlled via SPI bus.</p>
-      <embed src="/cours-pdf/S3/ER/mcp41xx.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/ER/mcp41xx.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/ER/mcp41xx.pdf" target="_blank" class="lang-fr" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/ER/mcp41xx.pdf" target="_blank" class="lang-en" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>

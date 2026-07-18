@@ -878,7 +878,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Cours complet sur les reseaux de capteurs sans fil : architecture, protocoles MAC, routage, localisation.</span>
         <span class="lang-en">Complete course on wireless sensor networks: architecture, MAC protocols, routing, localization.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -893,7 +895,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Cours sur les techniques de modulation pour les communications a faible puissance et les protocoles MAC pour WSN.</span>
         <span class="lang-en">Course on modulation techniques for low-power communications and MAC protocols for WSN.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -913,7 +917,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Sujet de TP sur le SDR : implementation d'un emetteur-recepteur numerique avec GNU Radio.</span>
         <span class="lang-en">Lab subject on SDR: implementation of a digital transceiver with GNU Radio.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -928,7 +934,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Presentation du bureau d'etude M2M : communications machine-to-machine sur reseaux cellulaires.</span>
         <span class="lang-en">M2M lab study presentation: machine-to-machine communications over cellular networks.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -948,7 +956,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Sujet du bureau d'etude M2M sur 4G LTE et 5G.</span>
         <span class="lang-en">M2M lab study subject on 4G LTE and 5G.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -963,7 +973,9 @@ Bien que le SDR ait ete aborde en cours avec GNU Radio, je n'ai pas eu de sessio
         <span class="lang-fr">Article IEEE sur l'implementation FPGA pour les systemes de communication dans les WSN.</span>
         <span class="lang-en">IEEE article on FPGA implementation for communication systems in WSN.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1729,7 +1741,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Cours complet sur les reseaux de capteurs sans fil : architecture, protocoles MAC, routage, localisation.</span>
         <span class="lang-en">Complete course on wireless sensor networks: architecture, MAC protocols, routing, localization.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/PolyWSN_2020.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1744,7 +1758,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Cours sur les techniques de modulation pour les communications a faible puissance et les protocoles MAC pour WSN.</span>
         <span class="lang-en">Course on modulation techniques for low-power communications and MAC protocols for WSN.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/Modulations_et_MAC.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1764,7 +1780,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Sujet de TP sur le SDR : implementation d'un emetteur-recepteur numerique avec GNU Radio.</span>
         <span class="lang-en">Lab subject on SDR: implementation of a digital transceiver with GNU Radio.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/2020-2021_5ISS_SDR_Sujet.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1779,7 +1797,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Presentation du bureau d'etude M2M : communications machine-to-machine sur reseaux cellulaires.</span>
         <span class="lang-en">M2M lab study presentation: machine-to-machine communications over cellular networks.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/5ISS_BE_M2M_Presentation.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1799,7 +1819,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Sujet du bureau d'etude M2M sur 4G LTE et 5G.</span>
         <span class="lang-en">M2M lab study subject on 4G LTE and 5G.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/2023_2024_5ISS_BE_M2M_Sujet.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1814,7 +1836,9 @@ Although SDR was covered in lectures with GNU Radio, I did not have dedicated se
         <span class="lang-fr">Article IEEE sur l'implementation FPGA pour les systemes de communication dans les WSN.</span>
         <span class="lang-en">IEEE article on FPGA implementation for communication systems in WSN.</span>
       </p>
-      <embed src="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/WSNL/ieee_circuitsandsystems_2021_FPGA.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

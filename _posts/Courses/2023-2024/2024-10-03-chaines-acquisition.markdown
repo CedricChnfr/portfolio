@@ -819,19 +819,25 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4><span class="lang-fr">Conditionneur de Signaux</span><span class="lang-en">Signal Conditioning</span></h4>
       <p><span class="lang-fr">Cours sur le conditionnement de signaux : amplification, filtrage, adaptation d'impedance et preparation pour conversion.</span><span class="lang-en">Course on signal conditioning: amplification, filtering, impedance matching and preparation for conversion.</span></p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Convertisseurs Analogique-Numerique</span><span class="lang-en">Analog-to-Digital Converters</span></h4>
       <p><span class="lang-fr">Cours sur les CAN : architectures (flash, SAR, sigma-delta), performances (resolution, vitesse, SNR) et choix.</span><span class="lang-en">Course on ADCs: architectures (flash, SAR, sigma-delta), performance (resolution, speed, SNR) and selection.</span></p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Capteurs Numeriques</span><span class="lang-en">Digital Sensors</span></h4>
       <p><span class="lang-fr">Mise en oeuvre de capteurs numeriques : protocoles I2C/SPI, configuration, calibration et exploitation des donnees.</span><span class="lang-en">Implementation of digital sensors: I2C/SPI protocols, configuration, calibration and data exploitation.</span></p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
   </div>
@@ -1603,19 +1609,25 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4>Signal Conditioning</h4>
       <p>Course on signal conditioning: amplification, filtering, impedance matching and preparation for conversion.</p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/conditionneur.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Analog-to-Digital Converters</h4>
       <p>Course on ADCs: architectures (flash, SAR, sigma-delta), performance (resolution, speed, SNR) and selection.</p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/convertisseurs-can.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Digital Sensors</h4>
       <p>Implementation of digital sensors: I2C/SPI protocols, configuration, calibration and data exploitation.</p>
-      <embed src="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Chaines-Acquisition/capteurs-numeriques.pdf" target="_blank">Download</a></p>
     </div>
   </div>

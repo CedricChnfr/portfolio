@@ -752,19 +752,25 @@ Chacun est acteur de la qualite, de la securite et de la protection de l'environ
     <div class="pdf-item">
       <h4>Ergonomie du Poste de Travail</h4>
       <p>Guide sur l'ergonomie au bureau : posture, eclairage, amenagement et prevention des TMS.</p>
-      <embed src="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Accidents Electriques</h4>
       <p>Prevention des risques electriques : accidents, habilitations, procedures de securite et premiers secours.</p>
-      <embed src="/cours-pdf/S6/QSE/accidents-electrique.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/accidents-electrique.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/accidents-electrique.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Dangers de l'Electricite</h4>
       <p>Cours sur les risques electriques : contact direct/indirect, arc electrique, mesures de protection et normes.</p>
-      <embed src="/cours-pdf/S6/QSE/danger-electricite.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/danger-electricite.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/danger-electricite.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1450,19 +1456,25 @@ Everyone is a stakeholder in quality, safety, and environmental protection. Smal
     <div class="pdf-item">
       <h4>Workstation Ergonomics</h4>
       <p>Guide on office ergonomics: posture, lighting, layout, and MSD prevention.</p>
-      <embed src="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/ergonomie-poste-travail.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Electrical Accidents</h4>
       <p>Electrical risk prevention: accidents, certifications, safety procedures, and first aid.</p>
-      <embed src="/cours-pdf/S6/QSE/accidents-electrique.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/accidents-electrique.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/accidents-electrique.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Electrical Hazards</h4>
       <p>Course on electrical risks: direct/indirect contact, electric arc, protection measures, and standards.</p>
-      <embed src="/cours-pdf/S6/QSE/danger-electricite.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/QSE/danger-electricite.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/QSE/danger-electricite.pdf" target="_blank">Download</a></p>
     </div>
   </div>

@@ -566,7 +566,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 1 : Quadripoles</h4>
   <p>Polycopie de cours sur les quadripoles : matrices impedance, admittance, hybride et chaine. Mise en cascade de quadripoles et applications aux circuits electroniques.</p>
-  <embed src="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -575,7 +577,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 3 : Circuits du premier ordre - Passe-bas et Passe-haut</h4>
   <p>Etude des circuits RC et RL du premier ordre : reponse temporelle, constante de temps, fonctions de transfert et diagrammes de Bode des filtres passe-bas et passe-haut.</p>
-  <embed src="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -584,7 +588,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 4 : Filtres passifs et reponse frequentielle</h4>
   <p>Approfondissement des filtres passifs : filtres du second ordre RLC, facteur de qualite, frequence de resonance, bande passante et selectivite.</p>
-  <embed src="/cours-pdf/S2/SE/CHAP4_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/CHAP4_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/CHAP4_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -593,7 +599,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 5 : Amplificateur Operationnel - Applications avancees</h4>
   <p>Applications de l'AOP : amplificateur differentiel, amplificateur d'instrumentation, montages non-lineaires et applications en conditionnement de signal.</p>
-  <embed src="/cours-pdf/S2/SE/Chap5_SE.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap5_SE.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap5_SE.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -602,7 +610,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 6 : Representation temporelle et frequentielle</h4>
   <p>Liens entre les domaines temporel et frequentiel : reponse indicielle, reponse impulsionnelle, transformee de Fourier et analyse spectrale des systemes.</p>
-  <embed src="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -611,7 +621,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapitre 7 : Modulation d'amplitude (AM)</h4>
   <p>Principes de la modulation AM : signal module, spectre, indice de modulation, puissance, demodulation par detection d'enveloppe. Applications en radiocommunication.</p>
-  <embed src="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -622,7 +634,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD1 : Exercices sur les quadripoles et circuits de base</h4>
   <p>Premier fascicule de travaux diriges : exercices sur les quadripoles, calculs de matrices, et circuits du premier ordre.</p>
-  <embed src="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -631,7 +645,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD2 : Exercices sur les filtres et la reponse frequentielle</h4>
   <p>Deuxieme fascicule de TD : exercices sur les filtres passe-bas, passe-haut, diagrammes de Bode et fonctions de transfert.</p>
-  <embed src="/cours-pdf/S2/SE/TD2.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/TD2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/TD2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -640,7 +656,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Fascicule TD complet (M. Bourennane)</h4>
   <p>Fascicule complet de travaux diriges couvrant l'ensemble du programme de SE S2, avec exercices corriges et applications.</p>
-  <embed src="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -649,7 +667,9 @@ Rendement : eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD8 a TD10 : Exercices avances</h4>
   <p>Fascicule de TD avances portant sur la modulation AM, les amplificateurs d'instrumentation et les applications de synthese.</p>
-  <embed src="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -1208,7 +1228,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 1: Two-Port Networks</h4>
   <p>Lecture notes on two-port networks: impedance, admittance, hybrid, and chain matrices. Cascading of two-port networks and applications to electronic circuits.</p>
-  <embed src="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap1_Polycopie_cours_quadripoles.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1217,7 +1239,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 3: First-Order Circuits - Low-Pass and High-Pass</h4>
   <p>Study of first-order RC and RL circuits: time-domain response, time constant, transfer functions, and Bode diagrams for low-pass and high-pass filters.</p>
-  <embed src="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/chap3_circuits_premier_ordre_passe_bas_passe_haut.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1226,7 +1250,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 4: Passive Filters and Frequency Response</h4>
   <p>In-depth study of passive filters: second-order RLC filters, quality factor, resonant frequency, bandwidth, and selectivity.</p>
-  <embed src="/cours-pdf/S2/SE/CHAP4_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/CHAP4_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/CHAP4_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1235,7 +1261,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 5: Operational Amplifier - Advanced Applications</h4>
   <p>Op-amp applications: differential amplifier, instrumentation amplifier, nonlinear configurations, and signal conditioning applications.</p>
-  <embed src="/cours-pdf/S2/SE/Chap5_SE.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap5_SE.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap5_SE.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1244,7 +1272,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 6: Time-Domain and Frequency-Domain Representation</h4>
   <p>Links between time and frequency domains: step response, impulse response, Fourier transform, and spectral analysis of systems.</p>
-  <embed src="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap6_Representation-temporelle-frequentielle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1253,7 +1283,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Chapter 7: Amplitude Modulation (AM)</h4>
   <p>AM modulation principles: modulated signal, spectrum, modulation index, power, envelope detection demodulation. Radio communication applications.</p>
-  <embed src="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Chap7_modulation_AM.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1264,7 +1296,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD1: Exercises on two-port networks and basic circuits</h4>
   <p>First tutorial booklet: exercises on two-port networks, matrix calculations, and first-order circuits.</p>
-  <embed src="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/TD1_(en_2_seances).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1273,7 +1307,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD2: Exercises on filters and frequency response</h4>
   <p>Second tutorial booklet: exercises on low-pass filters, high-pass filters, Bode diagrams, and transfer functions.</p>
-  <embed src="/cours-pdf/S2/SE/TD2.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/TD2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/TD2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1282,7 +1318,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>Complete TD Booklet (M. Bourennane)</h4>
   <p>Complete tutorial booklet covering the entire SE S2 curriculum, with corrected exercises and applications.</p>
-  <embed src="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/Fascicule_TD_BOURENNANE_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1291,7 +1329,9 @@ Efficiency:    eta = m^2 / (2 + m^2)
 <div class="pdf-item">
   <h4>TD8 to TD10: Advanced Exercises</h4>
   <p>Advanced tutorial booklet covering AM modulation, instrumentation amplifiers, and synthesis applications.</p>
-  <embed src="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/SE/fascicule_TD8_a_TD10_SE_S2_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>

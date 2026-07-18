@@ -613,25 +613,33 @@ Conception de systemes d'acquisition de donnees multi-capteurs avec communicatio
     <div class="pdf-item">
       <h4>Protocole I2C</h4>
       <p>Cours complet sur le bus I2C : principe de fonctionnement, adressage, trame de communication et implementation.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Protocole SPI</h4>
       <p>Cours sur le bus SPI : principe maitre-esclave, selection de peripherique, modes d'horloge et communication full-duplex.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Low Power Design</h4>
       <p>Techniques d'optimisation de la consommation : modes de veille, clock gating, gestion d'energie dans les microcontroleurs.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microcontroleur, Horloge et DMA</h4>
       <p>Architecture des microcontroleurs : gestion des horloges systeme et acces direct memoire (DMA) pour performances optimales.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1176,25 +1184,33 @@ Designing multi-sensor data acquisition systems with serial communication to a P
     <div class="pdf-item">
       <h4>I2C Protocol</h4>
       <p>Complete course on the I2C bus: operating principle, addressing, communication frame and implementation.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/i2c.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>SPI Protocol</h4>
       <p>Course on the SPI bus: master-slave principle, peripheral selection, clock modes and full-duplex communication.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/spi.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Low Power Design</h4>
       <p>Power consumption optimization techniques: sleep modes, clock gating, energy management in microcontrollers.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/low-power.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microcontroller, Clock and DMA</h4>
       <p>Microcontroller architecture: system clock management and direct memory access (DMA) for optimal performance.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Numeriques/microcontroleur-horloge-dma.pdf" target="_blank">Download</a></p>
     </div>
   </div>

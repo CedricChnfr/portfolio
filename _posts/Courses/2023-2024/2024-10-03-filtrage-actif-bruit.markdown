@@ -1012,19 +1012,25 @@ Cellule 3 : pole reel a -wc</p>
     <div class="pdf-item">
       <h4>Cours Filtrage Actif</h4>
       <p>Cours complet sur le filtrage actif : structures Sallen-Key, Rauch, topologies d'ordre superieur et synthese de filtres.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Bruit dans les AOP</h4>
       <p>Modelisation des sources de bruit dans les amplificateurs operationnels : bruit thermique, flicker, calcul du bruit total.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Structure Sallen-Key</h4>
       <p>Cours sur la topologie Sallen-Key : principe, conception, sensibilite aux composants et realisation pratique.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1970,19 +1976,25 @@ Cell 3: real pole at -wc</p>
     <div class="pdf-item">
       <h4>Active Filtering Course</h4>
       <p>Complete course on active filtering: Sallen-Key and Rauch structures, higher-order topologies and filter synthesis.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/cours-filtrage.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Noise in Op-Amps</h4>
       <p>Noise source modeling in operational amplifiers: thermal noise, flicker noise, total noise calculation.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/bruit-ao.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Sallen-Key Structure</h4>
       <p>Course on Sallen-Key topology: principle, design, component sensitivity and practical implementation.</p>
-      <embed src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Filtrage-Actif-Bruit/sallen-key.pdf" target="_blank">Download</a></p>
     </div>
   </div>

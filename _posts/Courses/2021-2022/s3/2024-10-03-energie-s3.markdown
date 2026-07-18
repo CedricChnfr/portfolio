@@ -903,7 +903,9 @@ date:   2024-10-02 10:56:03 +0200
       <h4 class="lang-en">Energy S3 Course Booklet</h4>
       <p class="lang-fr">Support de cours complet : conversion d'energie, machines electriques, electronique de puissance et energies renouvelables.</p>
       <p class="lang-en">Complete course material: energy conversion, electrical machines, power electronics and renewable energies.</p>
-      <embed src="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-fr">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/Energie/Poly_Cours_S3_2020_-_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-en">Download PDF</a>

@@ -1999,7 +1999,9 @@ The Internet works thanks to robust protocols and competent engineers. Understan
         <span class="lang-fr">Cours complet sur les architectures reseaux : routage, protocoles (RIP, OSPF, BGP), VLAN, qualite de service.</span>
         <span class="lang-en">Complete course on network architectures: routing, protocols (RIP, OSPF, BGP), VLAN, quality of service.</span>
       </p>
-      <embed src="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p>
         <span class="lang-fr"><a href="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" target="_blank">Telecharger</a></span>
         <span class="lang-en"><a href="/cours-pdf/S8/Interconnexion-Reseau/cours-complet.pdf" target="_blank">Download</a></span>
@@ -2014,7 +2016,9 @@ The Internet works thanks to robust protocols and competent engineers. Understan
         <span class="lang-fr">TD : exercices de configuration routeurs, analyse de trames, deploiement VLAN et depannage reseau.</span>
         <span class="lang-en">Tutorials: router configuration exercises, frame analysis, VLAN deployment, and network troubleshooting.</span>
       </p>
-      <embed src="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p>
         <span class="lang-fr"><a href="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" target="_blank">Telecharger</a></span>
         <span class="lang-en"><a href="/cours-pdf/S8/Interconnexion-Reseau/td.pdf" target="_blank">Download</a></span>

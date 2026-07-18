@@ -582,7 +582,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Polynomes</h4>
       <p>Support de cours sur les polynomes : definitions, operations, racines, factorisation et theoreme fondamental de l'algebre. Ce document couvre egalement la division euclidienne et les applications aux fonctions de transfert.</p>
-      <embed src="/cours-pdf/S2/MATHS/cours_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/cours_polynômes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/cours_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -591,7 +593,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Exercices Polynomes</h4>
       <p>Fascicule d'exercices sur les polynomes : factorisation, recherche de racines, division euclidienne et applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -600,7 +604,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Fractions Rationnelles</h4>
       <p>Support de cours sur les fractions rationnelles : decomposition en elements simples, poles simples et multiples, poles complexes conjugues. Methodes de calcul et applications aux transformees inverses.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -609,7 +615,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Calcul Integral</h4>
       <p>Support de cours sur le calcul integral : primitives, techniques d'integration (par parties, changement de variable, fonctions rationnelles) et applications au calcul de valeurs moyennes et efficaces.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -618,7 +626,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Exercices Calcul Integral</h4>
       <p>Fascicule d'exercices sur le calcul integral : calculs de primitives par differentes methodes, integrales definies et applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -627,7 +637,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Correction Exercices Calcul Integral</h4>
       <p>Corriges detailles des exercices de calcul integral : methodes de resolution pas a pas et verification des resultats.</p>
-      <embed src="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -636,7 +648,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Equations Differentielles du 1er Ordre</h4>
       <p>Support de cours sur les equations differentielles du premier ordre : forme generale, solution homogene, methode de variation de la constante, constante de temps et applications aux circuits RC et RL.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -645,7 +659,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Equations Differentielles d'Ordre 2</h4>
       <p>Support de cours sur les equations differentielles du second ordre : equation caracteristique, les trois regimes (aperiodique, critique, pseudo-periodique), solutions avec second membre et applications aux circuits RLC.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -654,7 +670,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Exercices EDO du 1er Ordre</h4>
       <p>Fascicule d'exercices sur les equations differentielles du premier ordre : resolution, conditions initiales et applications aux circuits du premier ordre.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -663,7 +681,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Exercices EDO du 2nd Ordre</h4>
       <p>Fascicule d'exercices sur les equations differentielles du second ordre : determination du regime, resolution complete avec conditions initiales et applications aux circuits RLC.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -672,7 +692,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Annale Mathematiques GEII 2018-2019</h4>
       <p>Sujet d'examen de l'annee 2018-2019 couvrant l'ensemble du programme : polynomes, integrales, equations differentielles. Utile pour la preparation aux examens.</p>
-      <embed src="/cours-pdf/S2/MATHS/annale_1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/annale_1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/annale_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1250,7 +1272,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Polynomials Course</h4>
       <p>Course material on polynomials: definitions, operations, roots, factorization, and the fundamental theorem of algebra. This document also covers Euclidean division and applications to transfer functions.</p>
-      <embed src="/cours-pdf/S2/MATHS/cours_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/cours_polynômes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/cours_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1259,7 +1283,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Polynomials Exercises</h4>
       <p>Exercise booklet on polynomials: factorization, root finding, Euclidean division, and applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_polynômes.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1268,7 +1294,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Rational Fractions Course</h4>
       <p>Course material on rational fractions: partial fraction decomposition, simple and multiple poles, complex conjugate poles. Calculation methods and applications to inverse transforms.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_fractions_rationnels.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1277,7 +1305,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Integral Calculus Course</h4>
       <p>Course material on integral calculus: antiderivatives, integration techniques (by parts, substitution, rational functions), and applications to computing average and RMS values.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1286,7 +1316,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Integral Calculus Exercises</h4>
       <p>Exercise booklet on integral calculus: computing antiderivatives using various methods, definite integrals, and applications.</p>
-      <embed src="/cours-pdf/S2/MATHS/exercice_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/exercice_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/exercice_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1295,7 +1327,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Integral Calculus Exercises - Solutions</h4>
       <p>Detailed solutions for integral calculus exercises: step-by-step solution methods and result verification.</p>
-      <embed src="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Correction_calcul_intégral.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1304,7 +1338,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>First-Order Differential Equations Course</h4>
       <p>Course material on first-order differential equations: general form, homogeneous solution, variation of constants method, time constant, and applications to RC and RL circuits.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_équation_différentiel_du_1er_ordre.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1313,7 +1349,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Second-Order Differential Equations Course</h4>
       <p>Course material on second-order differential equations: characteristic equation, the three regimes (overdamped, critically damped, underdamped), solutions with right-hand side, and applications to RLC circuits.</p>
-      <embed src="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Cours_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1322,7 +1360,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>First-Order ODE Exercises</h4>
       <p>Exercise booklet on first-order differential equations: solving, initial conditions, and applications to first-order circuits.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1331,7 +1371,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Second-Order ODE Exercises</h4>
       <p>Exercise booklet on second-order differential equations: regime identification, complete solving with initial conditions, and applications to RLC circuits.</p>
-      <embed src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/Exercices_équations_différentielles_d'ordre_2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1340,7 +1382,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>GEII Mathematics Past Exam 2018-2019</h4>
       <p>Exam paper from the 2018-2019 academic year covering the entire syllabus: polynomials, integrals, differential equations. Useful for exam preparation.</p>
-      <embed src="/cours-pdf/S2/MATHS/annale_1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/MATHS/annale_1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/MATHS/annale_1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>

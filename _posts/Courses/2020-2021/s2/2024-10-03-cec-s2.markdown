@@ -367,7 +367,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Organisation du Travail pour le Projet SF</h4>
       <p>Document definissant le planning, les objectifs et les modalites du projet Science-Fiction : themes a traiter, lectures a faire et productions attendues.</p>
-      <embed src="/cours-pdf/S2/CEC/Organisation_du_travail_pour_SF_2021_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/Organisation_du_travail_pour_SF_2021_sb.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/Organisation_du_travail_pour_SF_2021_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -376,7 +378,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Auto-evaluation SF</h4>
       <p>Grille d'auto-evaluation pour le projet Science-Fiction : competences evaluees, criteres et bilan personnel.</p>
-      <embed src="/cours-pdf/S2/CEC/SF_autoeval.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/SF_autoeval.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/SF_autoeval.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -385,7 +389,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Rapport PTUT Programmation (Final)</h4>
       <p>Rapport final du Projet Tuteure de Programmation : simulation de fourmis. Comprend le cahier des charges, l'architecture logicielle, les algorithmes, les resultats et le bilan du travail d'equipe. Redige par l'equipe Gibert-Chanfreau.</p>
-      <embed src="/cours-pdf/S2/CEC/RAPPORT_PTUT_PROG_FINALLL.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/RAPPORT_PTUT_PROG_FINALLL.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/RAPPORT_PTUT_PROG_FINALLL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -394,7 +400,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Presentation PTUT Programmation</h4>
       <p>Support de la soutenance orale du PTUT Programmation : presentation du projet, demonstration et bilan. Presentation Gibert-Chanfreau.</p>
-      <embed src="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -403,7 +411,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>CV Coloration</h4>
       <p>CV redige pour le dossier de candidature a la coloration ENOC : formation, competences techniques, projets et centres d'interet.</p>
-      <embed src="/cours-pdf/S2/CEC/CV_coloration.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/CV_coloration.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/CV_coloration.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -412,7 +422,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Lettre de Motivation Coloration</h4>
       <p>Lettre de motivation pour la candidature a la coloration ENOC : argumentation du choix, projet professionnel et motivation.</p>
-      <embed src="/cours-pdf/S2/CEC/Lettre_de_motivation_coloration_vc_sb.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/Lettre_de_motivation_coloration_vc_sb.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/Lettre_de_motivation_coloration_vc_sb.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -421,7 +433,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Comment creer un sommaire automatique Word</h4>
       <p>Guide pratique pour la creation d'un sommaire automatique dans Word : styles de titres, niveaux, mise a jour automatique. Utile pour la redaction du rapport PTUT.</p>
-      <embed src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_automatique_Word.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_automatique_Word.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_automatique_Word.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -430,7 +444,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Comment creer un sommaire avec des tabulations</h4>
       <p>Guide complementaire sur la creation de sommaires avec tabulations et points de suite dans Word.</p>
-      <embed src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_avec_des_tabulations.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_avec_des_tabulations.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/Comment_créer_un_sommaire_avec_des_tabulations.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -439,7 +455,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Presenter un document long</h4>
       <p>Guide de mise en page pour les documents longs : en-tetes, pieds de page, numerotation, sauts de section, pages de garde et annexes.</p>
-      <embed src="/cours-pdf/S2/CEC/PRESENTER_UN_DOCUMENT_LONG_Vok.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/PRESENTER_UN_DOCUMENT_LONG_Vok.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/CEC/PRESENTER_UN_DOCUMENT_LONG_Vok.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -448,7 +466,9 @@ Le CEC du S2 est un module charniere : il conclut la premiere annee de GEII et p
     <div class="pdf-item">
       <h4>Rapport PTUT Programmation (copie dans reports/)</h4>
       <p>Copie du rapport PTUT final egalement disponible dans le repertoire des rapports du portfolio.</p>
-      <embed src="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

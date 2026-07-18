@@ -1361,7 +1361,9 @@ date:   2024-10-02 10:56:03 +0200
       <h4 class="lang-en">Microwave Circuits and Functions</h4>
       <p class="lang-fr">Support de cours complet sur les circuits hyperfrequences : lignes de transmission, adaptation d'impedance, filtres HF et composants passifs distribues.</p>
       <p class="lang-en">Complete course material on microwave circuits: transmission lines, impedance matching, HF filters and distributed passive components.</p>
-      <embed src="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-fr">Telecharger le PDF</a>
         <a href="/cours-pdf/S3/Circuits-HF/Circuits_et_Fonction_HF_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;" class="lang-en">Download PDF</a>

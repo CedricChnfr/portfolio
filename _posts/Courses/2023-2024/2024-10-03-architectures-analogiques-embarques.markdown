@@ -750,7 +750,9 @@ tr:nth-child(even) {
         <span class="lang-fr">Sujet complet du BE : conception d'un modulateur et filtre commandes en tension avec TINA et Altium Designer.</span>
         <span class="lang-en">Complete lab study subject: design of a voltage-controlled modulator and filter using TINA and Altium Designer.</span>
       </p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Embarques/sujet-be.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Embarques/sujet-be.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Embarques/sujet-be.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -765,7 +767,9 @@ tr:nth-child(even) {
         <span class="lang-fr">TD sur la conception d'amplificateurs a gain variable commande en tension (VCA) avec OTA et circuits integres.</span>
         <span class="lang-en">Tutorial on the design of voltage-controlled variable gain amplifiers (VCA) with OTA and integrated circuits.</span>
       </p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Embarques/td1-gain-commande.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Embarques/td1-gain-commande.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Embarques/td1-gain-commande.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

@@ -599,7 +599,9 @@ p {
         <span class="lang-fr">Rapport complet du projet "What-A-Leak" detaillant la conception, l'implementation et les resultats du systeme de detection de fuites d'eau.</span>
         <span class="lang-en">Complete report of the "What-A-Leak" project detailing the design, implementation and results of the water leak detection system.</span>
       </p>
-      <embed src="/file/reports/S9/Rapport_Projet_ISS.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Rapport_Projet_ISS.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Rapport_Projet_ISS.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport</span>
         <span class="lang-en">Download the report</span>
@@ -626,7 +628,9 @@ p {
         <span class="lang-fr">Support de presentation utilise lors de la soutenance finale du projet devant le jury.</span>
         <span class="lang-en">Presentation slides used during the final project defense before the jury.</span>
       </p>
-      <embed src="/img/BE_Innovative_Project/Prez_final.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/img/BE_Innovative_Project/Prez_final.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/img/BE_Innovative_Project/Prez_final.pdf" target="_blank">
         <span class="lang-fr">Telecharger la presentation</span>
         <span class="lang-en">Download the presentation</span>
@@ -1113,7 +1117,9 @@ p {
         <span class="lang-fr">Rapport complet du projet "What-A-Leak" detaillant la conception, l'implementation et les resultats du systeme de detection de fuites d'eau.</span>
         <span class="lang-en">Complete report of the "What-A-Leak" project detailing the design, implementation and results of the water leak detection system.</span>
       </p>
-      <embed src="/file/reports/S9/Rapport_Projet_ISS.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Rapport_Projet_ISS.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Rapport_Projet_ISS.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport</span>
         <span class="lang-en">Download the report</span>
@@ -1140,7 +1146,9 @@ p {
         <span class="lang-fr">Support de presentation utilise lors de la soutenance finale du projet devant le jury.</span>
         <span class="lang-en">Presentation slides used during the final project defense before the jury.</span>
       </p>
-      <embed src="/img/BE_Innovative_Project/Prez_final.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/img/BE_Innovative_Project/Prez_final.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/img/BE_Innovative_Project/Prez_final.pdf" target="_blank">
         <span class="lang-fr">Telecharger la presentation</span>
         <span class="lang-en">Download the presentation</span>

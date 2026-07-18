@@ -1274,7 +1274,9 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
     <div class="pdf-item">
       <h4>📖 Technologie des Circuits Logiques</h4>
       <p>Document détaillant les technologies TTL et CMOS, leurs caractéristiques électriques, et les méthodes d'interfaçage.</p>
-      <embed src="/cours-pdf/S5/Elec-Num/Technologie-circuits-logiques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Elec-Num/Technologie-circuits-logiques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Elec-Num/Technologie-circuits-logiques.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -1285,7 +1287,9 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
     <div class="pdf-item">
       <h4>⏱️ Chronogrammes et Compteurs</h4>
       <p>Analyse des chronogrammes de compteurs synchrones et asynchrones avec exemples pratiques de conception.</p>
-      <embed src="/cours-pdf/S5/Elec-Num/chronogrammes-compteur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Elec-Num/chronogrammes-compteur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Elec-Num/chronogrammes-compteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -1296,7 +1300,9 @@ Voici les supports de cours en PDF pour approfondir les différents aspects de l
     <div class="pdf-item">
       <h4>🔄 TD Convertisseurs ADC/DAC</h4>
       <p>Travaux dirigés sur les convertisseurs analogique-numérique et numérique-analogique avec exercices d'application.</p>
-      <embed src="/cours-pdf/S5/Elec-Num/TD-IMACS-NUM-CAN.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Elec-Num/TD-IMACS-NUM-CAN.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Elec-Num/TD-IMACS-NUM-CAN.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF

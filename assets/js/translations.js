@@ -969,5 +969,42 @@ window.TRANSLATIONS = {
   "pp-4-challenge": {
     fr: "Comprendre rapidement l'architecture complexe d'un système ferroviaire critique (rack frein VAL208NG) en tant que stagiaire, et concevoir un banc de test <strong>fiable et reproductible</strong> respectant les contraintes de sécurité ferroviaire. La principale difficulté était de couvrir l'ensemble des cas de test en un minimum de temps tout en documentant chaque résultat avec le niveau de rigueur requis.",
     en: "Quickly understanding the complex architecture of a critical railway system (VAL208NG brake rack) as an intern, and designing a <strong>reliable and reproducible</strong> test bench meeting railway safety constraints. The main challenge was to cover all test cases in minimal time while documenting each result with the required level of rigor."
+  },
+
+  // ============================================================
+  // FOOTER
+  // ============================================================
+  "footer-privacy-link": { fr: "Confidentialité", en: "Privacy" },
+  "pdf-lazy-btn": { fr: "📄 Afficher le PDF", en: "📄 Show PDF" },
+
+  // ============================================================
+  // PRIVACY PAGE
+  // ============================================================
+  "privacy-title": { fr: "Vie privée & statistiques de visite", en: "Privacy & Visit Analytics" },
+  "privacy-intro": {
+    fr: "Ce site collecte automatiquement quelques informations techniques à chaque visite, uniquement à des fins de suivi de fréquentation par l'auteur du site. Aucune de ces informations n'est utilisée pour vous identifier personnellement, établir un profil ou vous cibler publicitairement.",
+    en: "This site automatically collects a few technical details on each visit, solely so the site's author can get a sense of traffic. None of this information is used to personally identify you, build a profile, or target you with advertising."
+  },
+  "privacy-what-title": { fr: "Quelles données sont collectées ?", en: "What data is collected?" },
+  "privacy-what-li-1": { fr: "La page visitée et la page d'où vous venez (référent)", en: "The page you visited and the page you came from (referrer)" },
+  "privacy-what-li-2": { fr: "Une estimation de votre localisation (ville, pays) déduite de votre adresse IP", en: "An estimate of your location (city, country) derived from your IP address" },
+  "privacy-what-li-3": { fr: "Le nom de votre fournisseur d'accès ou opérateur réseau", en: "The name of your internet service provider or network operator" },
+  "privacy-what-li-4": { fr: "Votre adresse IP", en: "Your IP address" },
+  "privacy-what-li-5": { fr: "Votre fuseau horaire et la langue de votre navigateur", en: "Your timezone and browser language" },
+  "privacy-what-li-6": { fr: "Le type d'appareil (mobile / ordinateur), la résolution d'écran et le type de connexion", en: "Your device type (mobile / desktop), screen resolution, and connection type" },
+  "privacy-how-title": { fr: "Comment ces données sont-elles utilisées ?", en: "How is this data used?" },
+  "privacy-how-text": {
+    fr: "À chaque chargement de page, un script interroge le service tiers <strong>ipapi.co</strong> pour estimer votre localisation à partir de votre adresse IP, puis envoie une notification via le service <strong>ntfy.sh</strong> à l'auteur du site pour l'informer de la visite. Aucun cookie ni identifiant persistant n'est déposé dans votre navigateur, et ces données ne sont pas utilisées pour vous reconnaître d'une visite à l'autre.",
+    en: "On each page load, a script queries the third-party service <strong>ipapi.co</strong> to estimate your location from your IP address, then sends a notification via the <strong>ntfy.sh</strong> service to let the site's author know a visit occurred. No cookie or persistent identifier is stored in your browser, and this data is not used to recognize you across visits."
+  },
+  "privacy-never-title": { fr: "Ce qui n'est jamais collecté", en: "What is never collected" },
+  "privacy-never-text": {
+    fr: "Votre nom, prénom, adresse e-mail, ou toute autre information permettant de vous identifier personnellement — sauf si vous nous la transmettez vous-même, par exemple en écrivant par e-mail.",
+    en: "Your name, email address, or any other personally identifying information — unless you provide it yourself, for example by writing an email."
+  },
+  "privacy-rights-title": { fr: "Vos droits", en: "Your rights" },
+  "privacy-rights-text": {
+    fr: "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et d'opposition concernant les données vous concernant. Vous pouvez exercer ce droit en écrivant à",
+    en: "In accordance with the GDPR, you have the right to access, rectify, and object to data concerning you. You can exercise this right by writing to"
   }
 };

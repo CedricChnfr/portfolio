@@ -462,7 +462,9 @@ $$\lambda = \frac{c}{f\sqrt{\varepsilon_r}}$$
     <div class="pdf-item">
       <h4>Cours Propagation - Chapitre 1</h4>
       <p>Fondements de la propagation electromagnetique : lignes de transmission, impedance caracteristique, coefficient de reflexion et TOS.</p>
-      <embed src="/cours-pdf/S3/Propagation/C1-Propagation_2020-21VF2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Propagation/C1-Propagation_2020-21VF2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Propagation/C1-Propagation_2020-21VF2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -471,7 +473,9 @@ $$\lambda = \frac{c}{f\sqrt{\varepsilon_r}}$$
     <div class="pdf-item">
       <h4>Cours Propagation - Chapitre 2</h4>
       <p>Approfondissement : abaque de Smith, parametres S, adaptation d'impedance et circuits hyperfrequences.</p>
-      <embed src="/cours-pdf/S3/Propagation/C2-Propagation_2021-22VFF.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Propagation/C2-Propagation_2021-22VFF.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Propagation/C2-Propagation_2021-22VFF.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

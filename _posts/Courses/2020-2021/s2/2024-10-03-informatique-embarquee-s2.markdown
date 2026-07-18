@@ -605,7 +605,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 0-1 : Representation des nombres binaires</h4>
   <p>Entiers signes et non signes, complement a deux, representation hexadecimale, virgule fixe et flottante (IEEE 754).</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation_nombres_binaires_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation_nombres_binaires_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP0_1_representation_nombres_binaires_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -614,7 +616,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 2-3-4 : Memoire, architecture et rappels C</h4>
   <p>Organisation memoire du C167, architecture du processeur, rappels de programmation C pour l'embarque.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_memoire_architecture_rappel1_C_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_memoire_architecture_rappel1_C_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP2-3-4_memoire_architecture_rappel1_C_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -623,7 +627,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 5 : Langage C applique au C167</h4>
   <p>Types de donnees, operateurs, structures de controle, fonctions, pointeurs et manipulation de registres en C embarque.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -632,7 +638,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 5 (suite) : Langage C - Approfondissement</h4>
   <p>Complement sur les tableaux, les chaines de caracteres, les structures, les unions et les pointeurs de fonctions.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021_suite.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021_suite.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP5_Langage_C_2020_2021_suite.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -641,7 +649,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 6 : Entrees/sorties numeriques</h4>
   <p>Configuration des ports GPIO du C167, registres de direction, lecture d'entrees, commande de sorties.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP6_entree_sortie_numérique_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP6_entree_sortie_numérique_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP6_entree_sortie_numérique_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -650,7 +660,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 7 : Timers</h4>
   <p>Architecture des timers du C167, prescaler, modes compteur/decompteur, sortie toggle, generation de frequence, PWM.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP7_Tmers.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP7_Tmers.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP7_Tmers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -659,7 +671,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 8 : CNA et CAN</h4>
   <p>Convertisseurs numerique-analogique et analogique-numerique, resolution, temps de conversion, ADC 10 bits du C167.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP8_CNA-CAN_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP8_CNA-CAN_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP8_CNA-CAN_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -668,7 +682,9 @@ Ce cours a constitue le point de depart de ma specialisation en systemes embarqu
 <div class="pdf-item">
   <h4>Chapitre 9 : Interruptions</h4>
   <p>Mecanisme d'interruption, vecteurs, priorites, registres de controle, routines d'interruption (ISR), imbrication.</p>
-  <embed src="/cours-pdf/S2/Informatique-embarque/CHAP9_Interruptions_2020_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Informatique-embarque/CHAP9_Interruptions_2020_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Informatique-embarque/CHAP9_Interruptions_2020_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>

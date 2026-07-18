@@ -784,7 +784,9 @@ fprintf('Marge de gain: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📖 Chapitre 1 - Fondamentaux</h4>
       <p>Introduction aux systèmes bouclés, concepts de base de l'automatique et premières notions de commande.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -795,7 +797,9 @@ fprintf('Marge de gain: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📊 Chapitre 2 - Analyse et Synthèse</h4>
       <p>Analyse fréquentielle, stabilité, marges de gain et de phase, méthodes de synthèse de correcteurs.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -806,7 +810,9 @@ fprintf('Marge de gain: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📈 Chapitre 3 - Diagrammes de Bode</h4>
       <p>Tracé et analyse des diagrammes de Bode, identification de systèmes et réglage de correcteurs.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Télécharger le PDF
@@ -1556,7 +1562,9 @@ fprintf('Gain margin: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📖 Chapter 1 - Fundamentals</h4>
       <p>Introduction to closed-loop systems, basic control concepts and first notions of feedback control.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1567,7 +1575,9 @@ fprintf('Gain margin: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📊 Chapter 2 - Analysis and Synthesis</h4>
       <p>Frequency analysis, stability, gain and phase margins, controller synthesis methods.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF
@@ -1578,7 +1588,9 @@ fprintf('Gain margin: %.1f dB\n', 20*log10(Gm));</code></pre>
     <div class="pdf-item">
       <h4>📈 Chapter 3 - Bode Diagrams</h4>
       <p>Bode diagram plotting and analysis, system identification and controller tuning.</p>
-      <embed src="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Systemes-Boucles/chapitre3.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           📥 Download PDF

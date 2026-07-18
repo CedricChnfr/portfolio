@@ -478,19 +478,25 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Cours Complet Reseaux de Petri</h4>
       <p>Cours complet : modelisation, proprietes structurelles et comportementales, analyse de vivacite et blocage.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Examen 2023</h4>
       <p>Sujet d'examen 2023 : construction de reseaux, calcul d'invariants, analyse de blocage et synthese.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Correction 2023</h4>
       <p>Correction complete de l'examen 2023 avec methodes d'analyse et explications detaillees.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -930,19 +936,25 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Complete Petri Nets Course</h4>
       <p>Complete course: modeling, structural and behavioral properties, liveness and deadlock analysis.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/cours-complet.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>2023 Exam</h4>
       <p>2023 exam paper: network construction, invariant computation, deadlock analysis and synthesis.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/exam-2023.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>2023 Solutions</h4>
       <p>Complete solutions for the 2023 exam with analysis methods and detailed explanations.</p>
-      <embed src="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Reseaux-Petri/correction-2023.pdf" target="_blank">Download</a></p>
     </div>
   </div>

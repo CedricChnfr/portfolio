@@ -490,13 +490,17 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4>TD Correction</h4>
       <p>Correction des travaux diriges sur les amplificateurs operationnels et les filtres actifs avec methodes detaillees.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>TP1 - Mesure Defauts AOP</h4>
       <p>Sujet du TP sur la mesure des defauts reels des amplificateurs operationnels : offset, bande passante, slew-rate.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -988,13 +992,17 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4>Tutorial Correction</h4>
       <p>Correction of tutorials on operational amplifiers and active filters with detailed methods.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/td-correction.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Lab 1 - Op-Amp Defect Measurement</h4>
       <p>Lab assignment on measuring real operational amplifier defects: offset, bandwidth, slew rate.</p>
-      <embed src="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Elec-Fonctions-Analogiques/tp1-defauts-aop.pdf" target="_blank">Download</a></p>
     </div>
   </div>

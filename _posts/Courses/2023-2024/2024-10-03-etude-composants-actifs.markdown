@@ -826,19 +826,25 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4>Cours Complet EMCA 2023-2024</h4>
       <p>Cours complet d'etude et modelisation des composants actifs : diodes, BJT, MOSFET et amplificateurs.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Chapitre 1 - Diodes</h4>
       <p>Modelisation physique et electrique des diodes : jonction PN, caracteristique I-V, modeles petits signaux.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Chapitre 2 - Transistors Bipolaires</h4>
       <p>Etude des transistors BJT : principe de fonctionnement, modeles Ebers-Moll et hybride-&pi;, polarisation.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1598,19 +1604,25 @@ tr:nth-child(even) {
     <div class="pdf-item">
       <h4>Complete EMCA Course 2023-2024</h4>
       <p>Complete course on study and modeling of active components: diodes, BJT, MOSFET and amplifiers.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/cours-complet.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Chapter 1 - Diodes</h4>
       <p>Physical and electrical modeling of diodes: PN junction, I-V characteristic, small-signal models.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre1-diodes.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Chapter 2 - Bipolar Transistors</h4>
       <p>Study of BJT transistors: operating principle, Ebers-Moll and hybrid-pi models, biasing.</p>
-      <embed src="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Composants-Actifs/chapitre2-bjt.pdf" target="_blank">Download</a></p>
     </div>
   </div>

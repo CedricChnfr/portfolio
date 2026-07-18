@@ -840,7 +840,9 @@ La tendance est a l'integration transparente de toutes les couches (edge, fog, c
         <span class="lang-fr">Cours complet sur le Cloud & Edge Computing : virtualisation, modeles de service, OpenStack, Edge Computing, Fog Computing, MEC, continuum cloud-edge.</span>
         <span class="lang-en">Complete course on Cloud & Edge Computing: virtualization, service models, OpenStack, Edge Computing, Fog Computing, MEC, cloud-edge continuum.</span>
       </p>
-      <embed src="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" target="_blank">
         <span class="lang-fr">Telecharger le cours</span>
         <span class="lang-en">Download the course</span>
@@ -1597,7 +1599,9 @@ The trend is toward seamless integration of all layers (edge, fog, cloud) with u
         <span class="lang-fr">Cours complet sur le Cloud & Edge Computing : virtualisation, modeles de service, OpenStack, Edge Computing, Fog Computing, MEC, continuum cloud-edge.</span>
         <span class="lang-en">Complete course on Cloud & Edge Computing: virtualization, service models, OpenStack, Edge Computing, Fog Computing, MEC, cloud-edge continuum.</span>
       </p>
-      <embed src="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Cloud/Cours_5ISS_CloudEdgeComputing.pdf" target="_blank">
         <span class="lang-fr">Telecharger le cours</span>
         <span class="lang-en">Download the course</span>

@@ -734,7 +734,9 @@ Capacite a comparer et selectionner les technologies sans fil adaptees a un cas 
         <span class="lang-fr">Panorama des technologies sans fil pour l'IoT : classification, comparaison des protocoles, criteres de selection.</span>
         <span class="lang-en">Overview of wireless technologies for IoT: classification, protocol comparison, selection criteria.</span>
       </p>
-      <embed src="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -749,7 +751,9 @@ Capacite a comparer et selectionner les technologies sans fil adaptees a un cas 
         <span class="lang-fr">Architecture 6LoWPAN : compression d'en-tetes, fragmentation, adressage mesh, integration IPv6.</span>
         <span class="lang-en">6LoWPAN architecture: header compression, fragmentation, mesh addressing, IPv6 integration.</span>
       </p>
-      <embed src="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1400,7 +1404,9 @@ Ability to compare and select wireless technologies suited to a given use case (
         <span class="lang-fr">Panorama des technologies sans fil pour l'IoT : classification, comparaison des protocoles, criteres de selection.</span>
         <span class="lang-en">Overview of wireless technologies for IoT: classification, protocol comparison, selection criteria.</span>
       </p>
-      <embed src="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Wireless/2024Ch0WirelessNetsurvey4IoT.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1415,7 +1421,9 @@ Ability to compare and select wireless technologies suited to a given use case (
         <span class="lang-fr">Architecture 6LoWPAN : compression d'en-tetes, fragmentation, adressage mesh, integration IPv6.</span>
         <span class="lang-en">6LoWPAN architecture: header compression, fragmentation, mesh addressing, IPv6 integration.</span>
       </p>
-      <embed src="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Wireless/2024Ch26LowPANNetworkArchitecture.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

@@ -716,13 +716,17 @@ Les competences en filtrage numerique ont ete appliquees dans plusieurs contexte
     <div class="pdf-item">
       <h4>Sujet Examen 2023</h4>
       <p>Enonce de l'examen de Filtrage Numerique 2023 avec exercices sur FIR/IIR, transformee en Z et conception de filtres.</p>
-      <embed src="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" target="_blank">Telecharger le sujet</a></p>
     </div>
     <div class="pdf-item">
       <h4>Correction Examen 2023</h4>
       <p>Correction detaillee de l'examen avec les solutions completes et explications des methodes de conception.</p>
-      <embed src="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" target="_blank">Telecharger la correction</a></p>
     </div>
   </div>
@@ -1368,13 +1372,17 @@ Digital filtering skills were applied in several contexts:</p>
     <div class="pdf-item">
       <h4>2023 Exam Paper</h4>
       <p>2023 Digital Filtering exam paper with exercises on FIR/IIR, Z-transform, and filter design.</p>
-      <embed src="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Filtrage-Numerique/sujet-examen-2023.pdf" target="_blank">Download the exam paper</a></p>
     </div>
     <div class="pdf-item">
       <h4>2023 Exam Solutions</h4>
       <p>Detailed exam solutions with complete answers and explanations of design methods.</p>
-      <embed src="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Filtrage-Numerique/correction-examen-2023.pdf" target="_blank">Download the solutions</a></p>
     </div>
   </div>

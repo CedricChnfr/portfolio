@@ -494,19 +494,25 @@ P_blocage = 1 / (K+1)  si rho = 1</code></pre>
     <div class="pdf-item">
       <h4><span class="lang-fr">Polycopie Processus Stochastiques</span></h4>
       <p><span class="lang-fr">Cours complet : chaines de Markov, processus de Poisson, files d'attente et analyse de performance.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" target="_blank"><span class="lang-fr">Telecharger</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Chaines de Markov a Temps Discret</span></h4>
       <p><span class="lang-fr">DTMC : matrices de transition, probabilites stationnaires, classification d'etats et ergodicite.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" target="_blank"><span class="lang-fr">Telecharger</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Theorie des Files d'Attente</span></h4>
       <p><span class="lang-fr">Modeles M/M/1, M/M/c, formules de Little, temps d'attente, taux d'occupation et optimisation.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" target="_blank"><span class="lang-fr">Telecharger</span></a></p>
     </div>
   </div>
@@ -962,19 +968,25 @@ P_blocking = 1 / (K+1)  if rho = 1</code></pre>
     <div class="pdf-item">
       <h4><span class="lang-en">Stochastic Processes Lecture Notes</span></h4>
       <p><span class="lang-en">Complete course: Markov chains, Poisson processes, queueing theory and performance analysis.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/polycopie.pdf" target="_blank"><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-en">Discrete-Time Markov Chains</span></h4>
       <p><span class="lang-en">DTMC: transition matrices, stationary probabilities, state classification and ergodicity.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/chaines-markov-discretes.pdf" target="_blank"><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-en">Queueing Theory</span></h4>
       <p><span class="lang-en">M/M/1, M/M/c models, Little's formulas, waiting times, utilization rates and optimization.</span></p>
-      <embed src="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Processus-Stochastiques/files-attente.pdf" target="_blank"><span class="lang-en">Download</span></a></p>
     </div>
   </div>

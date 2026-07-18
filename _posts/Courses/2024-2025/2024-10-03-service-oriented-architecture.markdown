@@ -618,61 +618,81 @@ public void testGetAllOrders() {
     <div class="pdf-item">
       <h4>Introduction a la SOA</h4>
       <p>Cours d'introduction aux principes fondamentaux de l'Architecture Orientee Services : couplage lache, contrats de service, abstraction et reutilisabilite.</p>
-      <embed src="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Standards WSDL (Partie 1)</h4>
       <p>Web Services Description Language : structure du WSDL, types, messages, portType et binding.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Standards WSDL (Partie 2)</h4>
       <p>Approfondissement du WSDL : binding SOAP, exemples avancees et generation de code.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Standards SOAP</h4>
       <p>Protocole SOAP : structure des messages (Envelope, Header, Body), encodage et transport HTTP.</p>
-      <embed src="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Introduction a REST</h4>
       <p>Architecture RESTful : principes, methodes HTTP, ressources et representations.</p>
-      <embed src="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>REST - Formats de Donnees</h4>
       <p>Formats de serialisation pour les API REST : JSON, XML, YAML et leurs cas d'usage.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>REST - Richardson Maturity Model</h4>
       <p>Modele de maturite de Richardson : les 4 niveaux de maturite REST, de RPC sur HTTP a HATEOAS.</p>
-      <embed src="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Introduction</h4>
       <p>Introduction aux microservices : definition, comparaison avec monolithique, avantages et defis.</p>
-      <embed src="/cours-pdf/S9/SOA/4-1-Microservices.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-1-Microservices.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-1-Microservices.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Proprietes</h4>
       <p>Proprietes des microservices : independance, scalabilite, resilience et deploiement continu.</p>
-      <embed src="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Architecture</h4>
       <p>Patterns architecturaux des microservices : API Gateway, service discovery, decomposition et communication.</p>
-      <embed src="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1244,61 +1264,81 @@ public void testGetAllOrders() {
     <div class="pdf-item">
       <h4>Introduction to SOA</h4>
       <p>Introductory course on the fundamental principles of Service Oriented Architecture: loose coupling, service contracts, abstraction and reusability.</p>
-      <embed src="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-1-Intro-SOA.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>WSDL Standards (Part 1)</h4>
       <p>Web Services Description Language: WSDL structure, types, messages, portType and binding.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-1_.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>WSDL Standards (Part 2)</h4>
       <p>Advanced WSDL: SOAP binding, advanced examples and code generation.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Standards-WSDL-2BIS.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>SOAP Standards</h4>
       <p>SOAP protocol: message structure (Envelope, Header, Body), encoding and HTTP transport.</p>
-      <embed src="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-3-StandardsSOAP.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Introduction to REST</h4>
       <p>RESTful architecture: principles, HTTP methods, resources and representations.</p>
-      <embed src="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-1-Intro-Rest.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>REST - Data Formats</h4>
       <p>Serialization formats for REST APIs: JSON, XML, YAML and their use cases.</p>
-      <embed src="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-2-Rest-Data-Format.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>REST - Richardson Maturity Model</h4>
       <p>Richardson Maturity Model: the 4 REST maturity levels, from RPC over HTTP to HATEOAS.</p>
-      <embed src="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/2-3-Rest-RMM.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Introduction</h4>
       <p>Introduction to microservices: definition, comparison with monolithic, advantages and challenges.</p>
-      <embed src="/cours-pdf/S9/SOA/4-1-Microservices.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-1-Microservices.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-1-Microservices.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Properties</h4>
       <p>Microservices properties: independence, scalability, resilience and continuous deployment.</p>
-      <embed src="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-2-Microservices-Properties.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Microservices - Architecture</h4>
       <p>Microservices architectural patterns: API Gateway, service discovery, decomposition and communication.</p>
-      <embed src="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/SOA/4-3-Microservices-Archi.pdf" target="_blank">Download</a></p>
     </div>
   </div>

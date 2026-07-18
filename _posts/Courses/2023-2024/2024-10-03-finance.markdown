@@ -864,7 +864,9 @@ Valorisation = 15 &times; 5M = 75M&euro;</p>
     <div class="pdf-item">
       <h4>Cours de Finance</h4>
       <p>Cours complet de finance d'entreprise : marches financiers, valorisation d'actifs, MEDAF, options et gestion de portefeuille.</p>
-      <embed src="/cours-pdf/S7/Finance/cours-finance.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Finance/cours-finance.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1662,7 +1664,9 @@ Valuation = 15 &times; 5M = &euro;75M</p>
     <div class="pdf-item">
       <h4>Finance Course</h4>
       <p>Complete corporate finance course: financial markets, asset valuation, CAPM, options and portfolio management.</p>
-      <embed src="/cours-pdf/S7/Finance/cours-finance.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Finance/cours-finance.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Finance/cours-finance.pdf" target="_blank">Download</a></p>
     </div>
   </div>

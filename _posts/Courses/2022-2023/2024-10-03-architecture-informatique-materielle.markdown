@@ -662,7 +662,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Introduction aux Architectures</h4>
       <p>Vue d'ensemble des architectures informatiques, evolution historique et concepts fondamentaux.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/introduction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/introduction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -673,7 +675,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Memoire Physique</h4>
       <p>Organisation de la memoire physique, types de memoires (RAM, ROM, Flash) et hierarchie memoire.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -684,7 +688,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Memoire Virtuelle</h4>
       <p>Gestion de la memoire virtuelle, pagination, segmentation et traduction d'adresses.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -695,7 +701,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Memoires Caches</h4>
       <p>Fonctionnement des caches, politiques de remplacement, coherence des caches et optimisation des performances.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/caches.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/caches.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/caches.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -706,7 +714,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Processeur</h4>
       <p>Architecture du processeur, pipeline, parallelisme d'instructions et optimisations materielles.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/processeur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/processeur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/processeur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -1351,7 +1361,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Introduction to Architectures</h4>
       <p>Overview of computer architectures, historical evolution and fundamental concepts.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/introduction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/introduction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1362,7 +1374,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Physical Memory</h4>
       <p>Physical memory organization, memory types (RAM, ROM, Flash) and memory hierarchy.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/memoire-physique.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1373,7 +1387,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Virtual Memory</h4>
       <p>Virtual memory management, paging, segmentation and address translation.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/memoire-virtuelle.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1384,7 +1400,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Cache Memory</h4>
       <p>How caches work, replacement policies, cache coherence and performance optimization.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/caches.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/caches.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/caches.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1395,7 +1413,9 @@ for (int ii = 0; ii &lt; N; ii += BLOCK_SIZE)
     <div class="pdf-item">
       <h4>Processor</h4>
       <p>Processor architecture, pipeline, instruction-level parallelism and hardware optimizations.</p>
-      <embed src="/cours-pdf/S5/Architecture-Info/processeur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Architecture-Info/processeur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Architecture-Info/processeur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF

@@ -401,7 +401,9 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
     <div class="pdf-item">
       <h4>Cours DDS (Direct Digital Synthesis)</h4>
       <p>Synthese numerique directe : principes, architecture DDS, generation de signaux et applications.</p>
-      <embed src="/cours-pdf/S3/SE/Cours_DDS_2020_Etudiant.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/SE/Cours_DDS_2020_Etudiant.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/SE/Cours_DDS_2020_Etudiant.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -410,7 +412,9 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
     <div class="pdf-item">
       <h4>Cours Filtrage - Systemes Electroniques</h4>
       <p>Theorie et conception de filtres analogiques et numeriques : Butterworth, Chebyshev, FIR, IIR.</p>
-      <embed src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -419,7 +423,9 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
     <div class="pdf-item">
       <h4>Cours Filtrage - Version Complete</h4>
       <p>Version complete du cours de filtrage avec corrections et exemples supplementaires.</p>
-      <embed src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020_prof.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020_prof.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/SE/Cours_Filtrage_Etudiant_SE_2020_prof.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -428,7 +434,9 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
     <div class="pdf-item">
       <h4>Cours Oscillateurs Sinusoidaux</h4>
       <p>Etude des oscillateurs sinusoidaux : conditions d'oscillation, oscillateurs Wien, Colpitts, a quartz.</p>
-      <embed src="/cours-pdf/S3/SE/Cours_Oscillateurs_sinusoïdaux_Etudiant_2021sans_trous.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/SE/Cours_Oscillateurs_sinusoïdaux_Etudiant_2021sans_trous.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/SE/Cours_Oscillateurs_sinusoïdaux_Etudiant_2021sans_trous.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -437,7 +445,9 @@ $$X[k] = \sum_{n=0}^{N-1} x[n] e^{-j2\pi kn/N}, \quad k=0,1,...,N-1$$
     <div class="pdf-item">
       <h4>Cours PLL (Phase-Locked Loop)</h4>
       <p>Boucle a verrouillage de phase : principe, composants, applications en synthese de frequence et demodulation.</p>
-      <embed src="/cours-pdf/S3/SE/Cours_PLL_2021_sans_TROUS.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/SE/Cours_PLL_2021_sans_TROUS.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/SE/Cours_PLL_2021_sans_TROUS.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

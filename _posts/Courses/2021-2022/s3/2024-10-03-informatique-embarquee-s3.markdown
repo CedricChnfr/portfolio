@@ -446,7 +446,9 @@ Projet STM32
     <div class="pdf-item">
       <h4>Guide de Demarrage VSCode pour STM32</h4>
       <p>Guide pratique pour configurer l'environnement de developpement VSCode pour la programmation de microcontroleurs STM32.</p>
-      <embed src="/cours-pdf/S3/IE/guide_démarrage_vscode.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/IE/guide_démarrage_vscode.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/IE/guide_démarrage_vscode.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

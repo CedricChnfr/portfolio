@@ -552,7 +552,9 @@ Ce cours couvre ML "classique". Le Deep Learning (reseaux neurones profonds) a r
         <span class="lang-fr">Cours complet : apprentissage supervise/non-supervise, reseaux de neurones, arbres de decision, SVM et metriques.</span>
         <span class="lang-en">Complete course: supervised/unsupervised learning, neural networks, decision trees, SVM and metrics.</span>
       </p>
-      <embed src="/cours-pdf/S8/Machine-Learning/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Machine-Learning/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Machine-Learning/cours-complet.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -567,7 +569,9 @@ Ce cours couvre ML "classique". Le Deep Learning (reseaux neurones profonds) a r
         <span class="lang-fr">Slides sur le perceptron : modele lineaire, fonction d'activation, regle d'apprentissage et limitations.</span>
         <span class="lang-en">Slides on the perceptron: linear model, activation function, learning rule and limitations.</span>
       </p>
-      <embed src="/cours-pdf/S8/Machine-Learning/perceptron.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Machine-Learning/perceptron.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Machine-Learning/perceptron.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -582,7 +586,9 @@ Ce cours couvre ML "classique". Le Deep Learning (reseaux neurones profonds) a r
         <span class="lang-fr">Architectures multicouches, retropropagation, fonctions d'activation avancees et techniques d'optimisation.</span>
         <span class="lang-en">Multi-layer architectures, backpropagation, advanced activation functions and optimization techniques.</span>
       </p>
-      <embed src="/cours-pdf/S8/Machine-Learning/neural-networks.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Machine-Learning/neural-networks.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Machine-Learning/neural-networks.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

@@ -642,7 +642,9 @@ Valider tous scenarios, conditions limites.</p>
         <span class="lang-fr">Guide complet sur Xenomai : installation, APIs temps reel, taches periodiques, synchronisation et debogage.</span>
         <span class="lang-en">Complete guide on Xenomai: installation, real-time APIs, periodic tasks, synchronization and debugging.</span>
       </p>
-      <embed src="/cours-pdf/S8/Temps-Reel/polycopie-xenomai.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Temps-Reel/polycopie-xenomai.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Temps-Reel/polycopie-xenomai.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

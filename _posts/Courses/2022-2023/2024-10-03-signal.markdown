@@ -726,7 +726,9 @@ pwelch(signal, [], [], [], Fe);         % Densite spectrale</code></pre>
     <div class="pdf-item">
       <h4>Introduction aux Systemes LTI</h4>
       <p>Systemes lineaires invariants dans le temps, convolution, reponse impulsionnelle et proprietes fondamentales.</p>
-      <embed src="/cours-pdf/S5/Signal/intro-LTI.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/intro-LTI.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/intro-LTI.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -737,7 +739,9 @@ pwelch(signal, [], [], [], Fe);         % Densite spectrale</code></pre>
     <div class="pdf-item">
       <h4>Transformee de Laplace</h4>
       <p>Definition, proprietes, transformees usuelles, resolution d'equations differentielles et applications.</p>
-      <embed src="/cours-pdf/S5/Signal/laplace.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/laplace.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/laplace.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -748,7 +752,9 @@ pwelch(signal, [], [], [], Fe);         % Densite spectrale</code></pre>
     <div class="pdf-item">
       <h4>Series de Fourier</h4>
       <p>Decomposition en series de Fourier, coefficients, spectres discrets et analyse harmonique des signaux periodiques.</p>
-      <embed src="/cours-pdf/S5/Signal/serie-fourier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/serie-fourier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/serie-fourier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -759,7 +765,9 @@ pwelch(signal, [], [], [], Fe);         % Densite spectrale</code></pre>
     <div class="pdf-item">
       <h4>Transformee de Fourier</h4>
       <p>Transformee de Fourier continue, proprietes, spectres, densite spectrale et applications au filtrage.</p>
-      <embed src="/cours-pdf/S5/Signal/transfo-fourier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/transfo-fourier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/transfo-fourier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -1401,7 +1409,9 @@ pwelch(signal, [], [], [], Fs);         % Power spectral density</code></pre>
     <div class="pdf-item">
       <h4>Introduction to LTI Systems</h4>
       <p>Linear time-invariant systems, convolution, impulse response, and fundamental properties.</p>
-      <embed src="/cours-pdf/S5/Signal/intro-LTI.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/intro-LTI.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/intro-LTI.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1412,7 +1422,9 @@ pwelch(signal, [], [], [], Fs);         % Power spectral density</code></pre>
     <div class="pdf-item">
       <h4>Laplace Transform</h4>
       <p>Definition, properties, common transforms, differential equation solving, and applications.</p>
-      <embed src="/cours-pdf/S5/Signal/laplace.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/laplace.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/laplace.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1423,7 +1435,9 @@ pwelch(signal, [], [], [], Fs);         % Power spectral density</code></pre>
     <div class="pdf-item">
       <h4>Fourier Series</h4>
       <p>Fourier series decomposition, coefficients, discrete spectra, and harmonic analysis of periodic signals.</p>
-      <embed src="/cours-pdf/S5/Signal/serie-fourier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/serie-fourier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/serie-fourier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1434,7 +1448,9 @@ pwelch(signal, [], [], [], Fs);         % Power spectral density</code></pre>
     <div class="pdf-item">
       <h4>Fourier Transform</h4>
       <p>Continuous Fourier Transform, properties, spectra, spectral density, and filtering applications.</p>
-      <embed src="/cours-pdf/S5/Signal/transfo-fourier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Signal/transfo-fourier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Signal/transfo-fourier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF

@@ -1119,7 +1119,9 @@ done &lt; /tmp/f</code></pre>
     <div class="pdf-item">
       <h4>Cours Unix Complet</h4>
       <p>Guide complet du systeme Unix, commandes shell, scripts Bash, gestion de processus et administration systeme.</p>
-      <embed src="/cours-pdf/S5/Unix/unix-cours.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Unix/unix-cours.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/unix-cours.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -1129,7 +1131,9 @@ done &lt; /tmp/f</code></pre>
     <div class="pdf-item">
       <h4>Memo Commandes Unix</h4>
       <p>Aide-memoire pratique des commandes Unix/Linux les plus utilisees pour la ligne de commande et les scripts.</p>
-      <embed src="/cours-pdf/S5/Unix/memo.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Unix/memo.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/memo.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -2164,7 +2168,9 @@ done &lt; /tmp/f</code></pre>
     <div class="pdf-item">
       <h4>Complete Unix Course</h4>
       <p>Comprehensive guide to Unix systems, shell commands, Bash scripts, process management and system administration.</p>
-      <embed src="/cours-pdf/S5/Unix/unix-cours.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Unix/unix-cours.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/unix-cours.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -2174,7 +2180,9 @@ done &lt; /tmp/f</code></pre>
     <div class="pdf-item">
       <h4>Unix Command Cheat Sheet</h4>
       <p>Practical cheat sheet of the most commonly used Unix/Linux commands for the command line and scripts.</p>
-      <embed src="/cours-pdf/S5/Unix/memo.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S5/Unix/memo.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S5/Unix/memo.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF

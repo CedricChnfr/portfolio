@@ -973,25 +973,33 @@ cmovg eax, ebx  ; Conditional move</code></pre>
     <div class="pdf-item">
       <h4>Introduction a l'Assembleur</h4>
       <p>Cours complet sur les langages assembleurs, leur role et leur utilisation dans l'architecture des processeurs.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Comparaison ARM vs x86</h4>
       <p>Etude comparative des architectures ARM et x86/x64 : instructions, registres, conventions d'appel et performances.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Introduction aux Attaques Materielles</h4>
       <p>Presentation des vulnerabilites materielles et des attaques par canaux caches (Spectre, Meltdown, timing attacks).</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Attaques par Consommation Energetique</h4>
       <p>Analyse detaillee des attaques SPA et DPA sur circuits cryptographiques via l'analyse de consommation electrique.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1926,25 +1934,33 @@ cmovg eax, ebx  ; Conditional move</code></pre>
     <div class="pdf-item">
       <h4>Introduction to Assembly</h4>
       <p>Complete course on assembly languages, their role and their use in processor architecture.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/assembleur.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>ARM vs x86 Comparison</h4>
       <p>Comparative study of ARM and x86/x64 architectures: instructions, registers, calling conventions and performance.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/arm-x86.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Introduction to Hardware Attacks</h4>
       <p>Overview of hardware vulnerabilities and side-channel attacks (Spectre, Meltdown, timing attacks).</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/intro-attaques.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Power Consumption Attacks</h4>
       <p>Detailed analysis of SPA and DPA attacks on cryptographic circuits via electrical power consumption analysis.</p>
-      <embed src="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/Architecture-Materielle/attaque-consommation.pdf" target="_blank">Download</a></p>
     </div>
   </div>

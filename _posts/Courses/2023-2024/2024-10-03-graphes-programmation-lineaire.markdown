@@ -511,19 +511,25 @@ Variables binaires (decisions oui/non).</p>
     <div class="pdf-item">
       <h4>Annales 2018</h4>
       <p>Sujet d'examen 2018 : algorithmes de graphes (Dijkstra, Bellman-Ford), flots et programmation lineaire.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Correction Examen 2024</h4>
       <p>Correction complete de l'examen 2024 avec explications detaillees des algorithmes et methodes de resolution.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>TP Algorithme de Dijkstra</h4>
       <p>Travaux pratiques : implementation de Dijkstra pour recherche de plus court chemin dans differents graphes.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1000,19 +1006,25 @@ Binary variables (yes/no decisions).</p>
     <div class="pdf-item">
       <h4>2018 Past Exam</h4>
       <p>2018 exam paper: graph algorithms (Dijkstra, Bellman-Ford), flows and linear programming.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/annales-2018.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>2024 Exam Correction</h4>
       <p>Complete correction of the 2024 exam with detailed explanations of algorithms and solution methods.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/correction-exam-2024.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Dijkstra Algorithm Lab</h4>
       <p>Lab work: implementation of Dijkstra for shortest path search in various graphs.</p>
-      <embed src="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Graphes-Programmation-Lineaire/tp-dijkstra.pdf" target="_blank">Download</a></p>
     </div>
   </div>

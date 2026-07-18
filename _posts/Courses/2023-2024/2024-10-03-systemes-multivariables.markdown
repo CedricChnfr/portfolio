@@ -502,19 +502,25 @@ ou x&#770; est estime par filtre de Kalman
     <div class="pdf-item">
       <h4>Polycopie Cours</h4>
       <p>Cours complet sur les systemes multivariables : representation d'etat, commandabilite, observabilite et synthese de correcteurs.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Annales 2022</h4>
       <p>Sujet d'examen 2022 avec exercices sur representation d'etat, stabilite et commande multivariable.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Correction Annales 2022</h4>
       <p>Correction detaillee de l'examen 2022 avec explications completes des methodes et resultats.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -978,19 +984,25 @@ where x&#770; is estimated by the Kalman filter
     <div class="pdf-item">
       <h4>Course Handout</h4>
       <p>Complete course on multivariable systems: state-space representation, controllability, observability, and controller synthesis.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/polycopie.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>2022 Past Exam</h4>
       <p>2022 exam paper with exercises on state-space representation, stability, and multivariable control.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/annales-2022.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>2022 Past Exam Solutions</h4>
       <p>Detailed solutions for the 2022 exam with full explanations of methods and results.</p>
-      <embed src="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Systemes-Multivariables/correction-2022.pdf" target="_blank">Download</a></p>
     </div>
   </div>

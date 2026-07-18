@@ -744,7 +744,9 @@ void main(void) {
 <div class="pdf-item">
   <h4>ER FPGA S2 2020-2021</h4>
   <p>Support complet du sous-module ER FPGA : introduction aux FPGA Cyclone II, langage VHDL, prediviseurs, compteurs, generateurs PWM, frequencemetre. Inclut les sujets de TP.</p>
-  <embed src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -753,7 +755,9 @@ void main(void) {
 <div class="pdf-item">
   <h4>COURS interface S2</h4>
   <p>Cours sur la conception de cartes d'interface : schemathique, composants, regles de conception, connectique entre microcontroleur et peripheriques.</p>
-  <embed src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/COURS_interface_S2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -762,7 +766,9 @@ void main(void) {
 <div class="pdf-item">
   <h4>Cours Interfacage 2021 - Correction</h4>
   <p>Cours d'interfacage avec corrections des exercices : buffers, drivers, conditionnement de signaux, protection des ports.</p>
-  <embed src="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -771,7 +777,9 @@ void main(void) {
 <div class="pdf-item">
   <h4>Polycopie Carte Interface 2021</h4>
   <p>Documentation complete de la platine d'interface : schema electrique, nomenclature des composants, procedure d'assemblage et de test.</p>
-  <embed src="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -1129,7 +1137,9 @@ HE10 connector (2x5)        : footprint HE10_2x5 (2.54 mm pitch)
 <div class="pdf-item">
   <h4>ER FPGA S2 2020-2021</h4>
   <p>Complete ER FPGA sub-module materials: introduction to Cyclone II FPGAs, VHDL language, prescalers, counters, PWM generators, frequency meter. Includes lab assignments.</p>
-  <embed src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/ER_FPGA_S2_2020-2021_-_etu.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1138,7 +1148,9 @@ HE10 connector (2x5)        : footprint HE10_2x5 (2.54 mm pitch)
 <div class="pdf-item">
   <h4>Interface Course S2</h4>
   <p>Course on interface board design: schematics, components, design rules, connectivity between microcontroller and peripherals.</p>
-  <embed src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/COURS_interface_S2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/COURS_interface_S2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1147,7 +1159,9 @@ HE10 connector (2x5)        : footprint HE10_2x5 (2.54 mm pitch)
 <div class="pdf-item">
   <h4>Interfacing Course 2021 - Solutions</h4>
   <p>Interfacing course with exercise solutions: buffers, drivers, signal conditioning, port protection.</p>
-  <embed src="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/Cours_interfacage_2021_etudiant_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>
@@ -1156,7 +1170,9 @@ HE10 connector (2x5)        : footprint HE10_2x5 (2.54 mm pitch)
 <div class="pdf-item">
   <h4>Interface Board Handout 2021</h4>
   <p>Complete interface board documentation: electrical schematic, bill of materials, assembly and testing procedures.</p>
-  <embed src="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/ER/poly_carte_interface_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
   </p>

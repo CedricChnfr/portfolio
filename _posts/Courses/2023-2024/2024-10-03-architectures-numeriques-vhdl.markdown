@@ -990,13 +990,17 @@ set_property IOSTANDARD LVCMOS33 [get_ports led[0]]</code></pre>
     <div class="pdf-item">
       <h4><span class="lang-fr">Cours VHDL Complet</span><span class="lang-en">Complete VHDL Course</span></h4>
       <p><span class="lang-fr">Cours complet de VHDL : syntaxe, processus, machines a etats, simulation et synthese pour FPGA.</span><span class="lang-en">Complete VHDL course: syntax, processes, state machines, simulation and synthesis for FPGA.</span></p>
-      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Projet Processeur RISC</span><span class="lang-en">RISC Processor Project</span></h4>
       <p><span class="lang-fr">Sujet du projet BE : conception d'un microprocesseur RISC en VHDL avec ALU, banc de registres et memoire.</span><span class="lang-en">Design study project brief: RISC microprocessor design in VHDL with ALU, register file and memory.</span></p>
-      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
   </div>
@@ -1918,13 +1922,17 @@ set_property IOSTANDARD LVCMOS33 [get_ports led[0]]</code></pre>
     <div class="pdf-item">
       <h4>Complete VHDL Course</h4>
       <p>Complete VHDL course: syntax, processes, state machines, simulation and synthesis for FPGA.</p>
-      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/cours-vhdl.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>RISC Processor Project</h4>
       <p>Design study project brief: RISC microprocessor design in VHDL with ALU, register file and memory.</p>
-      <embed src="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Numeriques-VHDL/projet-risc.pdf" target="_blank">Download</a></p>
     </div>
   </div>

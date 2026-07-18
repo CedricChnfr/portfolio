@@ -957,13 +957,17 @@ class GestionnaireEmprunt
     <div class="pdf-item">
       <h4><span class="lang-fr">Cours Conception et Architectures</span><span class="lang-en">Design and Architecture Course</span></h4>
       <p><span class="lang-fr">Cours complet UML : diagrammes de classes, sequences, cas d'utilisation, patterns de conception et principes SOLID.</span><span class="lang-en">Complete UML course: class diagrams, sequence diagrams, use cases, design patterns and SOLID principles.</span></p>
-      <embed src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Conception-UML/cours-conception.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Sujet TD</span><span class="lang-en">Tutorial Subject</span></h4>
       <p><span class="lang-fr">Travaux diriges sur la conception orientee objet : modelisation de systemes embarques et architectures logicielles.</span><span class="lang-en">Tutorials on object-oriented design: modeling of embedded systems and software architectures.</span></p>
-      <embed src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Conception-UML/td-sujet.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
   </div>
@@ -1852,13 +1856,17 @@ class LoanManager
     <div class="pdf-item">
       <h4>Design and Architecture Course</h4>
       <p>Complete UML course: class diagrams, sequence diagrams, use cases, design patterns and SOLID principles.</p>
-      <embed src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Conception-UML/cours-conception.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Conception-UML/cours-conception.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Tutorial Subject</h4>
       <p>Tutorials on object-oriented design: modeling of embedded systems and software architectures.</p>
-      <embed src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Conception-UML/td-sujet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Conception-UML/td-sujet.pdf" target="_blank">Download</a></p>
     </div>
   </div>

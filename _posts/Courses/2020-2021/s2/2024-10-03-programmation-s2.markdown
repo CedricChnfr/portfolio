@@ -994,7 +994,9 @@ Ce rapport presente le travail realise dans le cadre du projet tuteure de progra
 <div class="pdf-item">
   <h4>Rapport PTUT Programmation - Simulation de Fourmis Fourrageuses</h4>
   <p>Rapport complet du projet tuteure de programmation : conception de la simulation, architecture du code, resultats obtenus et ameliorations possibles.</p>
-  <embed src="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/file/reports/RAPPORT_PTUT_PROG_FINALLL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -1005,7 +1007,9 @@ Ce rapport presente le travail realise dans le cadre du projet tuteure de progra
 <div class="pdf-item">
   <h4>Presentation PTUT Programmation S1 - GIBERT CHANFREAU</h4>
   <p>Support de presentation utilise lors de la soutenance du projet tuteure de programmation.</p>
-  <embed src="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/CEC/PRESENTATION_GIBERT_CHANFREAU_PTUT_PROGRAMMATION_S1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>

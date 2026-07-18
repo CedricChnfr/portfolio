@@ -570,7 +570,9 @@ y_hat[k] = C*x_hat[k]</code></pre>
         <span class="lang-fr">Cours complet : transformee en Z, echantillonnage, synthese de correcteurs numeriques et implementation discrete.</span>
         <span class="lang-en">Complete course: Z-transform, sampling, digital controller synthesis and discrete implementation.</span>
       </p>
-      <embed src="/cours-pdf/S8/Commande-Numerique/polycopie.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Commande-Numerique/polycopie.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Commande-Numerique/polycopie.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -585,7 +587,9 @@ y_hat[k] = C*x_hat[k]</code></pre>
         <span class="lang-fr">Sujet d'examen 2019 avec exercices sur transformee en Z, stabilite et synthese de correcteurs PID numeriques.</span>
         <span class="lang-en">2019 exam paper with exercises on Z-transform, stability and digital PID controller synthesis.</span>
       </p>
-      <embed src="/cours-pdf/S8/Commande-Numerique/annales-2019.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Commande-Numerique/annales-2019.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Commande-Numerique/annales-2019.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -600,7 +604,9 @@ y_hat[k] = C*x_hat[k]</code></pre>
         <span class="lang-fr">Correction detaillee de l'examen 2019 avec methodes de resolution et explications completes.</span>
         <span class="lang-en">Detailed solutions for the 2019 exam with solving methods and complete explanations.</span>
       </p>
-      <embed src="/cours-pdf/S8/Commande-Numerique/correction-2019.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S8/Commande-Numerique/correction-2019.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S8/Commande-Numerique/correction-2019.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>

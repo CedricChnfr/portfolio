@@ -556,7 +556,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_2 - TP Triphase (Distanciel)</h4>
       <p>Sujet du TP sur les mesures en triphase, adapte au format distanciel. Mesures de tensions, courants et puissances en systeme triphase equilibre.</p>
-      <embed src="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -565,7 +567,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_2 - Feuille de Mesures Triphase</h4>
       <p>Feuille de mesures a completer pour le TP triphase : releve des tensions, courants, puissances et facteurs de puissance.</p>
-      <embed src="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -574,7 +578,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_4 - AOP Reel (Distanciel)</h4>
       <p>Sujet du TP sur les limitations de l'AOP reel : tension d'offset, courants de polarisation, slew rate, bande passante et saturation.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -583,7 +589,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_4 - Feuille de Mesures AOP Reel</h4>
       <p>Feuille de mesures pour le TP AOP reel : releve des tensions d'offset, gains, bande passante et slew rate.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -592,7 +600,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Notes TL S2 - Serie 1</h4>
       <p>Bareme de notation de la Serie 1 des TPs : criteres d'evaluation pour les TPs triphase, AOP sinusoidal, filtre rejecteur et AOP reel.</p>
-      <embed src="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -601,7 +611,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Temporel (Distanciel)</h4>
       <p>Sujet du TP sur l'analyse temporelle d'un filtre du second ordre : reponse a un echelon, identification des regimes, mesure du depassement et de la pseudo-periode.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -610,7 +622,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Temporel - Documentation Moodle</h4>
       <p>Documentation complementaire Moodle pour le TP 2eme ordre temporel : donnees experimentales et consignes pour le travail distanciel.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -619,7 +633,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Frequentiel (Distanciel)</h4>
       <p>Sujet du TP sur l'analyse frequentielle d'un filtre du second ordre : trace du diagramme de Bode, resonance, bande passante et facteur de qualite.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -628,7 +644,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre du 2eme Ordre Frequentiel - Documentation Moodle</h4>
       <p>Documentation complementaire Moodle pour le TP 2eme ordre frequentiel : captures d'oscilloscope et donnees de mesure.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -637,7 +655,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre Rejecteur Passif (Distanciel)</h4>
       <p>Sujet du TP sur le filtre passif rejecteur (coupe-bande) : realisation, trace de la reponse frequentielle et mesure du facteur de qualite.</p>
-      <embed src="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -646,7 +666,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre Actif du 1er Ordre (Distanciel)</h4>
       <p>Sujet du TP sur le filtre actif du premier ordre : montage avec AOP, trace du diagramme de Bode et comparaison avec le filtre passif.</p>
-      <embed src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -655,7 +677,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Filtre Actif 1er Ordre - Feuille de Mesures</h4>
       <p>Feuille de mesures pour le TP filtre actif du premier ordre.</p>
-      <embed src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -664,7 +688,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - Modulation AM DBAP</h4>
       <p>Sujet du TP sur la modulation d'amplitude a double bande avec porteuse : realisation du modulateur, mesure de l'indice de modulation et demodulation.</p>
-      <embed src="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -673,7 +699,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - Amplificateur d'Instrumentation INA126</h4>
       <p>Sujet du TP sur l'amplificateur d'instrumentation INA126 : mesure du gain, CMRR, bande passante et comparaison avec un montage discret.</p>
-      <embed src="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -682,7 +710,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - Pont de Wheatstone</h4>
       <p>Sujet du TP sur le pont de Wheatstone avec jauges de contrainte : equilibrage du pont, mesure de force, linearite et sensibilite.</p>
-      <embed src="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -691,7 +721,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - TL082 (AOP JFET)</h4>
       <p>Fiche technique du TL082 : amplificateur operationnel a entrees JFET utilise dans la plupart des TPs. Caracteristiques : GBW = 4 MHz, SR = 13 V/us, V_os = 5 mV max.</p>
-      <embed src="/cours-pdf/S2/TL/TL082.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL082.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL082.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -700,7 +732,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - INA126 (Amplificateur d'Instrumentation)</h4>
       <p>Fiche technique de l'INA126 : amplificateur d'instrumentation Texas Instruments. Gain ajustable par R_G, CMRR eleve, alimentation simple ou double.</p>
-      <embed src="/cours-pdf/S2/TL/MCP6N16.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/MCP6N16.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/MCP6N16.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -709,7 +743,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - FSR 406 (Capteur de Force)</h4>
       <p>Fiche technique du capteur de force FSR 406 : capteur a resistance variable, caracteristique force-resistance, plage de mesure et integration dans un pont de Wheatstone.</p>
-      <embed src="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1261,7 +1297,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_2 - Three-Phase Lab (Remote)</h4>
       <p>Lab assignment on three-phase measurements, adapted for remote format. Voltage, current, and power measurements in a balanced three-phase system.</p>
-      <embed src="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL1_2_Triphase_Distanciel_Texte.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1270,7 +1308,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_2 - Three-Phase Measurement Sheet</h4>
       <p>Measurement sheet to complete for the three-phase lab: voltage, current, power, and power factor readings.</p>
-      <embed src="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL_s2_1_2_Triphase_Distanciel_Mesures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1279,7 +1319,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_4 - Real Op-Amp (Remote)</h4>
       <p>Lab assignment on real op-amp limitations: offset voltage, bias currents, slew rate, bandwidth, and saturation.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TL1_4_AOP_Réel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1288,7 +1330,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL1_4 - Real Op-Amp Measurement Sheet</h4>
       <p>Measurement sheet for the real op-amp lab: offset voltage, gain, bandwidth, and slew rate readings.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TL1_4_AOP_reel_feuille_mesures_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1297,7 +1341,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL S2 Grades - Series 1</h4>
       <p>Grading criteria for Series 1 labs: evaluation criteria for three-phase, sinusoidal op-amp, notch filter, and real op-amp labs.</p>
-      <embed src="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/Notes_TL_S2_serie1.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1306,7 +1352,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 2nd Order Filter Time-Domain (Remote)</h4>
       <p>Lab assignment on time-domain analysis of a second-order filter: step response, regime identification, overshoot and pseudo-period measurement.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1315,7 +1363,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 2nd Order Filter Time-Domain - Moodle Documentation</h4>
       <p>Supplementary Moodle documentation for the 2nd order time-domain lab: experimental data and instructions for remote work.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_4_2eme_ordre_temporel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1324,7 +1374,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 2nd Order Filter Frequency-Domain (Remote)</h4>
       <p>Lab assignment on frequency-domain analysis of a second-order filter: Bode diagram plotting, resonance, bandwidth, and quality factor.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1333,7 +1385,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 2nd Order Filter Frequency-Domain - Moodle Documentation</h4>
       <p>Supplementary Moodle documentation for the 2nd order frequency-domain lab: oscilloscope captures and measurement data.</p>
-      <embed src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2_TP_2_2_2°ordre_frequentiel_doc_moodle_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1342,7 +1396,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - Passive Notch Filter (Remote)</h4>
       <p>Lab assignment on the passive notch filter (band-reject): construction, frequency response plotting, and quality factor measurement.</p>
-      <embed src="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/S2-TP2-6-filtre-rejecteur_passif_2021_distanciel.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1351,7 +1407,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 1st Order Active Filter (Remote)</h4>
       <p>Lab assignment on the first-order active filter: op-amp circuit, Bode diagram plotting, and comparison with passive filter.</p>
-      <embed src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Texte.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1360,7 +1418,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL2 - 1st Order Active Filter - Measurement Sheet</h4>
       <p>Measurement sheet for the first-order active filter lab.</p>
-      <embed src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL2_6_PremierOrdreActif_Distanciel_Feuille_Mesure.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1369,7 +1429,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - AM DSB-FC Modulation</h4>
       <p>Lab assignment on double-sideband amplitude modulation with carrier: modulator construction, modulation index measurement, and demodulation.</p>
-      <embed src="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TP3_4_modulation_AMDBAP.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1378,7 +1440,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - INA126 Instrumentation Amplifier</h4>
       <p>Lab assignment on the INA126 instrumentation amplifier: gain measurement, CMRR, bandwidth, and comparison with a discrete circuit.</p>
-      <embed src="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL3-2-Caracterisation_Ampli_Instrum_INA126_distanciel_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1387,7 +1451,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>TL3 - Wheatstone Bridge</h4>
       <p>Lab assignment on the Wheatstone bridge with strain gauges: bridge balancing, force measurement, linearity, and sensitivity.</p>
-      <embed src="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TP3_3Pont_Wheatstone_2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1396,7 +1462,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - TL082 (JFET Op-Amp)</h4>
       <p>TL082 datasheet: JFET-input operational amplifier used in most labs. Specifications: GBW = 4 MHz, SR = 13 V/us, V_os = 5 mV max.</p>
-      <embed src="/cours-pdf/S2/TL/TL082.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/TL082.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/TL082.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1405,7 +1473,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - INA126 (Instrumentation Amplifier)</h4>
       <p>INA126 datasheet: Texas Instruments instrumentation amplifier. Adjustable gain via R_G, high CMRR, single or dual supply.</p>
-      <embed src="/cours-pdf/S2/TL/MCP6N16.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/MCP6N16.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/MCP6N16.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>
@@ -1414,7 +1484,9 @@ date: 2024-10-02 10:56:03 +0200
     <div class="pdf-item">
       <h4>Datasheet - FSR 406 (Force Sensor)</h4>
       <p>FSR 406 force sensor datasheet: variable resistance sensor, force-resistance characteristic, measurement range, and integration into a Wheatstone bridge.</p>
-      <embed src="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/TL/fiche_technique_FSR_406.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Download PDF</a>
       </p>

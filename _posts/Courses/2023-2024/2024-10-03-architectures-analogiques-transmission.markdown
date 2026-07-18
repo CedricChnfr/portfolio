@@ -718,19 +718,25 @@ V2 = B cos(&omega;2 t)</p>
     <div class="pdf-item">
       <h4>Cours Complet</h4>
       <p>Cours complet sur les architectures RF : oscillateurs, PLL, melangeurs, modulation/demodulation AM et FM.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Modulation et Demodulation FM</h4>
       <p>Cours detaille sur la modulation de frequence : VCO, discriminateurs, detecteurs de phase et applications.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" target="_blank">Telecharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>Recueil TDs</h4>
       <p>Ensemble des travaux diriges avec exercices sur oscillateurs, PLL, melangeurs et chaines RF completes.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" target="_blank">Telecharger</a></p>
     </div>
   </div>
@@ -1406,19 +1412,25 @@ V2 = B cos(&omega;2 t)</p>
     <div class="pdf-item">
       <h4>Complete Course</h4>
       <p>Complete course on RF architectures: oscillators, PLL, mixers, AM and FM modulation/demodulation.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/cours-complet.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>FM Modulation and Demodulation</h4>
       <p>Detailed course on frequency modulation: VCO, discriminators, phase detectors and applications.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/modulation-fm.pdf" target="_blank">Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>Tutorial Collection</h4>
       <p>Complete set of tutorials with exercises on oscillators, PLL, mixers and complete RF chains.</p>
-      <embed src="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Archi-Analogiques-Transmission/tds.pdf" target="_blank">Download</a></p>
     </div>
   </div>

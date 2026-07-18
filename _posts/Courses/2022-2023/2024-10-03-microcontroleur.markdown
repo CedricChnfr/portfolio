@@ -825,7 +825,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>STM32 - Structures et Registres</h4>
       <p>Guide complet des structures C pour l'acces aux registres du STM32, configuration et utilisation des peripheriques.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -836,7 +838,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>GPIO - Entrees/Sorties</h4>
       <p>Configuration des GPIO, modes d'entree/sortie, pull-up/pull-down et manipulation des broches avec pointeurs.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/gpio.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/gpio.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/gpio.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -847,7 +851,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>Interruptions</h4>
       <p>Gestion des interruptions, NVIC, priorites, handlers et bonnes pratiques de programmation temps reel.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/interruptions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/interruptions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/interruptions.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -858,7 +864,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>Timers</h4>
       <p>Configuration et utilisation des timers pour generation de delais, comptage d'evenements et mesures temporelles.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/timers.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/timers.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/timers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -869,7 +877,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>PWM - Modulation de Largeur d'Impulsion</h4>
       <p>Generation de signaux PWM pour commande de moteurs, LEDs et variation d'intensite avec les timers.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/pwm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/pwm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/pwm.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -880,7 +890,9 @@ De la simple LED clignotante au voilier autonome, le parcours montre la progress
     <div class="pdf-item">
       <h4>ADC - Convertisseur Analogique-Numerique</h4>
       <p>Configuration de l'ADC, acquisition de signaux analogiques, modes de declenchement et utilisation avec DMA.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/adc.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/adc.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/adc.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Telecharger le PDF
@@ -1640,7 +1652,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>STM32 - Structures and Registers</h4>
       <p>Complete guide to C structures for STM32 register access, peripheral configuration and usage.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/stm32-structures.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1651,7 +1665,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>GPIO - Inputs/Outputs</h4>
       <p>GPIO configuration, input/output modes, pull-up/pull-down and pin manipulation with pointers.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/gpio.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/gpio.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/gpio.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1662,7 +1678,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>Interrupts</h4>
       <p>Interrupt management, NVIC, priorities, handlers and real-time programming best practices.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/interruptions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/interruptions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/interruptions.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1673,7 +1691,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>Timers</h4>
       <p>Timer configuration and usage for delay generation, event counting and time measurements.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/timers.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/timers.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/timers.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1684,7 +1704,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>PWM - Pulse Width Modulation</h4>
       <p>PWM signal generation for motor control, LEDs and intensity variation using timers.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/pwm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/pwm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/pwm.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF
@@ -1695,7 +1717,9 @@ From a simple blinking LED to an autonomous sailboat, the journey shows the prog
     <div class="pdf-item">
       <h4>ADC - Analog-to-Digital Converter</h4>
       <p>ADC configuration, analog signal acquisition, trigger modes and usage with DMA.</p>
-      <embed src="/cours-pdf/S6/Microcontroleur/adc.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/Microcontroleur/adc.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S6/Microcontroleur/adc.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">
           Download PDF

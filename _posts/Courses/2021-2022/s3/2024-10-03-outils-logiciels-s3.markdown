@@ -474,7 +474,9 @@ end
     <div class="pdf-item">
       <h4>Polycopie de Cours OL S3</h4>
       <p>Support de cours complet : calcul matriciel, convolution, transformee de Fourier, modulations et outils MATLAB/Python.</p>
-      <embed src="/cours-pdf/S3/OL/poly_S3_2021_2022.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/OL/poly_S3_2021_2022.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/OL/poly_S3_2021_2022.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -483,7 +485,9 @@ end
     <div class="pdf-item">
       <h4>Transformation en Z et Resolution d'Equations de Recurrence</h4>
       <p>Cours sur la transformee en Z, ses proprietes et la resolution d'equations aux differences.</p>
-      <embed src="/cours-pdf/S3/OL/Transformation_en_z-resolution_equa_recuurence.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/OL/Transformation_en_z-resolution_equa_recuurence.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/OL/Transformation_en_z-resolution_equa_recuurence.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

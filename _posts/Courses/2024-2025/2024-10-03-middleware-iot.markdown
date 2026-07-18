@@ -818,7 +818,9 @@ L'authentification, le chiffrement (TLS/DTLS) et le controle d'acces doivent etr
         <span class="lang-fr">Planning et contenu du MOOC oneM2M suivi en autonomie : introduction au standard, architecture, types de ressources.</span>
         <span class="lang-en">Planning and content of the self-paced oneM2M MOOC: introduction to the standard, architecture, resource types.</span>
       </p>
-      <embed src="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" type="application/pdf" width="100%" height="600px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" style="width:100%;height:600px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -842,7 +844,9 @@ L'authentification, le chiffrement (TLS/DTLS) et le controle d'acces doivent etr
         <span class="lang-fr">Rapport complet du bureau d'etudes : architecture IoT deployee, integration MQTT, oneM2M et Node-RED, resultats experimentaux.</span>
         <span class="lang-en">Complete design project report: deployed IoT architecture, MQTT integration, oneM2M and Node-RED, experimental results.</span>
       </p>
-      <embed src="/file/reports/S9/Report_Middleware_For_IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Report_Middleware_For_IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Report_Middleware_For_IoT.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport BE</span>
         <span class="lang-en">Download the design project report</span>
@@ -857,7 +861,9 @@ L'authentification, le chiffrement (TLS/DTLS) et le controle d'acces doivent etr
         <span class="lang-fr">Rapport des travaux pratiques 1 et 2 : installation Mosquitto, communication publish/subscribe, programmation ESP8266.</span>
         <span class="lang-en">Lab sessions 1 and 2 report: Mosquitto installation, publish/subscribe communication, ESP8266 programming.</span>
       </p>
-      <embed src="/file/reports/S9/Report_Middleware_TP1-2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Report_Middleware_TP1-2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Report_Middleware_TP1-2.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport TP1-2</span>
         <span class="lang-en">Download the Lab 1-2 report</span>
@@ -1599,7 +1605,9 @@ Authentication, encryption (TLS/DTLS) and access control must be integrated from
         <span class="lang-fr">Planning et contenu du MOOC oneM2M suivi en autonomie : introduction au standard, architecture, types de ressources.</span>
         <span class="lang-en">Planning and content of the self-paced oneM2M MOOC: introduction to the standard, architecture, resource types.</span>
       </p>
-      <embed src="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" type="application/pdf" width="100%" height="600px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" style="width:100%;height:600px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Middleware/MOOC_oneM2M_planning.pdf" target="_blank">
         <span class="lang-fr">Telecharger</span>
         <span class="lang-en">Download</span>
@@ -1623,7 +1631,9 @@ Authentication, encryption (TLS/DTLS) and access control must be integrated from
         <span class="lang-fr">Rapport complet du bureau d'etudes : architecture IoT deployee, integration MQTT, oneM2M et Node-RED, resultats experimentaux.</span>
         <span class="lang-en">Complete design project report: deployed IoT architecture, MQTT integration, oneM2M and Node-RED, experimental results.</span>
       </p>
-      <embed src="/file/reports/S9/Report_Middleware_For_IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Report_Middleware_For_IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Report_Middleware_For_IoT.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport BE</span>
         <span class="lang-en">Download the design project report</span>
@@ -1638,7 +1648,9 @@ Authentication, encryption (TLS/DTLS) and access control must be integrated from
         <span class="lang-fr">Rapport des travaux pratiques 1 et 2 : installation Mosquitto, communication publish/subscribe, programmation ESP8266.</span>
         <span class="lang-en">Lab sessions 1 and 2 report: Mosquitto installation, publish/subscribe communication, ESP8266 programming.</span>
       </p>
-      <embed src="/file/reports/S9/Report_Middleware_TP1-2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/file/reports/S9/Report_Middleware_TP1-2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/file/reports/S9/Report_Middleware_TP1-2.pdf" target="_blank">
         <span class="lang-fr">Telecharger le rapport TP1-2</span>
         <span class="lang-en">Download the Lab 1-2 report</span>

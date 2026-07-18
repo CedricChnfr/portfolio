@@ -827,25 +827,33 @@ Débugger en assembleur est plus difficile qu'en C. Pas de printf facile. Utilis
     <div class="pdf-item">
       <h4>📖 Séquence 1 - Introduction ARM</h4>
       <p>Introduction à l'architecture ARM Cortex-M, registres, jeu d'instructions de base et organisation mémoire.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" target="_blank">📥 Télécharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Séquence 2 - Instructions ARM</h4>
       <p>Jeu d'instructions ARM complet : arithmétique, logique, branchements, et modes d'adressage.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" target="_blank">📥 Télécharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Séquence 3 - Fonctions et Pile</h4>
       <p>Convention d'appel AAPCS, gestion de la pile, prologue/épilogue de fonctions et passage de paramètres.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" target="_blank">📥 Télécharger</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Référence Jeu d'Instructions</h4>
       <p>Tableau synthétique complet du jeu d'instructions ARM Cortex-M avec syntaxe et exemples.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" target="_blank">📥 Télécharger</a></p>
     </div>
   </div>
@@ -1606,25 +1614,33 @@ Debugging in assembly is harder than in C. No easy printf. Intensive use of the 
     <div class="pdf-item">
       <h4>📖 Sequence 1 - ARM Introduction</h4>
       <p>Introduction to ARM Cortex-M architecture, registers, basic instruction set and memory organization.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence1-introduction.pdf" target="_blank">📥 Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Sequence 2 - ARM Instructions</h4>
       <p>Complete ARM instruction set: arithmetic, logic, branches, and addressing modes.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence2-instructions.pdf" target="_blank">📥 Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Sequence 3 - Functions and Stack</h4>
       <p>AAPCS calling convention, stack management, function prologue/epilogue and parameter passing.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/sequence3-fonctions.pdf" target="_blank">📥 Download</a></p>
     </div>
     <div class="pdf-item">
       <h4>📖 Instruction Set Reference</h4>
       <p>Complete summary table of the ARM Cortex-M instruction set with syntax and examples.</p>
-      <embed src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S6/ARM-Cortex/jeu-instructions-arm.pdf" target="_blank">📥 Download</a></p>
     </div>
   </div>

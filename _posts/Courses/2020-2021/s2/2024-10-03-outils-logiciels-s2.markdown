@@ -463,7 +463,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Polycopie de Cours - Series de Fourier</h4>
       <p>Document de reference du cours sur les series de Fourier : decomposition trigonometrique, coefficients, proprietes de symetrie, theoreme de Parseval et spectres.</p>
-      <embed src="/cours-pdf/S2/OL/poly1_S2_OL.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/poly1_S2_OL.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/poly1_S2_OL.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -472,7 +474,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Cours - Series de Fourier</h4>
       <p>Support de cours complementaire sur les series de Fourier avec exemples detailles et applications.</p>
-      <embed src="/cours-pdf/S2/OL/Fourier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/Fourier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/Fourier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -481,7 +485,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Annale - Series de Fourier</h4>
       <p>Sujet d'examen sur les series de Fourier : exercices de calcul de coefficients, spectres et applications.</p>
-      <embed src="/cours-pdf/S2/OL/Annale_Série_de_fourrier.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/Annale_Série_de_fourrier.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/Annale_Série_de_fourrier.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -490,7 +496,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Cours - Transformee de Laplace : Signaux</h4>
       <p>Support de cours sur la transformee de Laplace appliquee aux signaux : definition, transformees usuelles et exemples de calcul.</p>
-      <embed src="/cours-pdf/S2/OL/Cours_transformation_Laplace_signauxv2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/Cours_transformation_Laplace_signauxv2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/Cours_transformation_Laplace_signauxv2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -499,7 +507,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Cours - Proprietes de la Transformee de Laplace</h4>
       <p>Document detaillant les proprietes fondamentales de la transformee de Laplace : linearite, derivation, integration, decalages temporel et frequentiel, theoremes de la valeur initiale et finale.</p>
-      <embed src="/cours-pdf/S2/OL/transformation_Laplace_propriétés.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/transformation_Laplace_propriétés.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/transformation_Laplace_propriétés.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -508,7 +518,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>Cours - Transformee de Laplace Inverse</h4>
       <p>Support sur la methode de la transformee inverse de Laplace par decomposition en elements simples : poles simples, multiples et complexes conjugues.</p>
-      <embed src="/cours-pdf/S2/OL/Transformation_de_Laplace_inverse.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/Transformation_de_Laplace_inverse.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/Transformation_de_Laplace_inverse.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -517,7 +529,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>TP1 - Transformee de Laplace et Signaux</h4>
       <p>Travail pratique sur la transformee de Laplace appliquee a l'analyse de signaux : calculs directs et inverses avec verification.</p>
-      <embed src="/cours-pdf/S2/OL/02_Laplace_signaux_TP1_S2_V-2021.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/02_Laplace_signaux_TP1_S2_V-2021.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/02_Laplace_signaux_TP1_S2_V-2021.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -526,7 +540,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>TD1 - Correction Laplace</h4>
       <p>Corrige detaille du premier TD de Laplace : decompositions en elements simples, transformees inverses et resolution d'equations differentielles.</p>
-      <embed src="/cours-pdf/S2/OL/TD1_correction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/TD1_correction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/TD1_correction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -535,7 +551,9 @@ Ce cours marque le passage d'une vision purement temporelle des signaux et circu
     <div class="pdf-item">
       <h4>ED1 - Resolution Analytique d'Equations Differentielles</h4>
       <p>Premier fascicule de resolution analytique d'equations differentielles lineaires a coefficients constants par la methode classique et par Laplace.</p>
-      <embed src="/cours-pdf/S2/OL/Résolution_des_équations_différentielles_linéaires_à_coefficients_constantsV2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S2/OL/Résolution_des_équations_différentielles_linéaires_à_coefficients_constantsV2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S2/OL/Résolution_des_équations_différentielles_linéaires_à_coefficients_constantsV2.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>

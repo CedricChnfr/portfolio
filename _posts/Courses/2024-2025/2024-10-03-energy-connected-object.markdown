@@ -607,7 +607,9 @@ Competence pour realiser des mesures de transfert d'energie sans fil, interprete
     <div class="pdf-item">
       <h4>Cours - Energy for IoT</h4>
       <p>Cours complet : sources d'energie ambiante, recuperation d'energie, transfert sans fil, gestion d'energie et budget energetique pour les objets connectes.</p>
-      <embed src="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" target="_blank">Telecharger le cours</a></p>
     </div>
   </div>
@@ -1156,7 +1158,9 @@ Competence in performing wireless power transfer measurements, interpreting resu
     <div class="pdf-item">
       <h4>Course - Energy for IoT</h4>
       <p>Complete course: ambient energy sources, energy harvesting, wireless power transfer, power management and energy budget for connected objects.</p>
-      <embed src="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S9/Energy/5ISS_Energy_for_IoT.pdf" target="_blank">Download the course</a></p>
     </div>
   </div>

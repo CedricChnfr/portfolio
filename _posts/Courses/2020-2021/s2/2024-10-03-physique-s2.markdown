@@ -619,7 +619,9 @@ Ce module a ete enrichissant par sa dimension tres concrete : chaque concept the
 <div class="pdf-item">
   <h4>Chapitre 1 : Definitions et Caracteristiques Generales des Capteurs</h4>
   <p>Introduction aux capteurs : definitions (capteur, transducteur, transmetteur), caracteristiques metrologiques (sensibilite, linearite, precision, etendue de mesure, repetabilite, hysteresis), classification des capteurs.</p>
-  <embed src="/cours-pdf/S2/Physique/1_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Physique/1_Capteur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Physique/1_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -628,7 +630,9 @@ Ce module a ete enrichissant par sa dimension tres concrete : chaque concept the
 <div class="pdf-item">
   <h4>Chapitre 2 : Capteurs de Temperature et de Position</h4>
   <p>Etude detaillee des capteurs de temperature (thermocouples, RTD/PT100, thermistances CTN/CTP) et des capteurs de position (potentiometres, LVDT, codeurs incrementaux et absolus). Principes physiques, formules, avantages et limitations de chaque technologie.</p>
-  <embed src="/cours-pdf/S2/Physique/2_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Physique/2_Capteur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Physique/2_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>
@@ -637,7 +641,9 @@ Ce module a ete enrichissant par sa dimension tres concrete : chaque concept the
 <div class="pdf-item">
   <h4>Chapitre 3 : Capteurs de Force, de Pression et Accelerometres</h4>
   <p>Capteurs de force (jauges de contrainte, facteur de jauge), pont de Wheatstone (quart, demi et pont complet), capteurs de pression (piezoelectriques, piezoresistifs), accelerometres MEMS. Applications industrielles et dimensionnement.</p>
-  <embed src="/cours-pdf/S2/Physique/3_Capteur.pdf" type="application/pdf" width="100%" height="800px" />
+  <div class="pdf-lazy" data-src="/cours-pdf/S2/Physique/3_Capteur.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
   <p style="text-align: center; margin-top: 10px;">
     <a href="/cours-pdf/S2/Physique/3_Capteur.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
   </p>

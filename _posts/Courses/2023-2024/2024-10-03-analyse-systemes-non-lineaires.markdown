@@ -1483,25 +1483,33 @@ Nonlinear systems are not complicated versions of linear systems. They have thei
     <div class="pdf-item">
       <h4><span class="lang-fr">Chapitre 1 - Introduction</span><span class="lang-en">Chapter 1 - Introduction</span></h4>
       <p><span class="lang-fr">Introduction aux systemes non lineaires : exemples, limites des approches lineaires et presentation des outils d'analyse.</span><span class="lang-en">Introduction to nonlinear systems: examples, limitations of linear approaches, and overview of analysis tools.</span></p>
-      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre1.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre1.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre1.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Chapitre 2 - Plans de Phase</span><span class="lang-en">Chapter 2 - Phase Planes</span></h4>
       <p><span class="lang-fr">Methode du plan de phase : points d'equilibre, trajectoires, portrait de phase et analyse geometrique de la stabilite.</span><span class="lang-en">Phase plane method: equilibrium points, trajectories, phase portrait, and geometric stability analysis.</span></p>
-      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre2.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre2.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre2.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Chapitre 3 - Methode de Lyapunov</span><span class="lang-en">Chapter 3 - Lyapunov Method</span></h4>
       <p><span class="lang-fr">Theorie de Lyapunov : fonctions de Lyapunov, criteres de stabilite et methode directe pour l'analyse de stabilite.</span><span class="lang-en">Lyapunov theory: Lyapunov functions, stability criteria, and the direct method for stability analysis.</span></p>
-      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre3.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre3.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/chapitre3.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
     <div class="pdf-item">
       <h4><span class="lang-fr">Annales 2023</span><span class="lang-en">2023 Past Exam</span></h4>
       <p><span class="lang-fr">Sujet d'examen 2023 avec exercices sur la stabilite, methode de Lyapunov et cycles limites.</span><span class="lang-en">2023 exam paper with exercises on stability, Lyapunov method, and limit cycles.</span></p>
-      <embed src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/annales-2023.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/annales-2023.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p><a href="/cours-pdf/S7/Analyse-Systemes-Non-Lineaires/annales-2023.pdf" target="_blank"><span class="lang-fr">Telecharger</span><span class="lang-en">Download</span></a></p>
     </div>
   </div>

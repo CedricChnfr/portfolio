@@ -1260,7 +1260,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Introduction a l'Automatisme</h4>
       <p>Presentation generale du cours : contexte industriel, objectifs et organisation.</p>
-      <embed src="/cours-pdf/S3/Automatisme/A_-_1_-_Introduction.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/A_-_1_-_Introduction.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/A_-_1_-_Introduction.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1269,7 +1271,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Machines a Etats</h4>
       <p>Modelisation par machines a etats finis : etats, transitions, sorties.</p>
-      <embed src="/cours-pdf/S3/Automatisme/B_-_4_-_Machines_à_états.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/B_-_4_-_Machines_à_états.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/B_-_4_-_Machines_à_états.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1278,7 +1282,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Grafcet</h4>
       <p>Modelisation par Grafcet : etapes, transitions, divergences et convergences.</p>
-      <embed src="/cours-pdf/S3/Automatisme/B_-_5_-_Grafcet.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/B_-_5_-_Grafcet.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/B_-_5_-_Grafcet.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1287,7 +1293,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Automates Programmables Industriels (API)</h4>
       <p>Architecture et fonctionnement des API : entrees/sorties, cycle automate, programmation.</p>
-      <embed src="/cours-pdf/S3/Automatisme/D_-_7_-_API_(1).pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/D_-_7_-_API_(1).pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/D_-_7_-_API_(1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1296,7 +1304,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Norme CEI 61131</h4>
       <p>La norme internationale de programmation des automates : langages normalises et bonnes pratiques.</p>
-      <embed src="/cours-pdf/S3/Automatisme/D_-_8_-_La_norme_CEI_61131_(1).pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/D_-_8_-_La_norme_CEI_61131_(1).pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/D_-_8_-_La_norme_CEI_61131_(1).pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
@@ -1305,7 +1315,9 @@ Les compétences acquises sont directement valorisables en industrie, l'automati
     <div class="pdf-item">
       <h4>Le Langage Ladder Diagrams</h4>
       <p>Programmation en langage Ladder : contacts, bobines, temporisateurs et compteurs.</p>
-      <embed src="/cours-pdf/S3/Automatisme/D_-_9_-_Le_langage_Ladder_Diagrams.pdf" type="application/pdf" width="100%" height="800px" />
+      <div class="pdf-lazy" data-src="/cours-pdf/S3/Automatisme/D_-_9_-_Le_langage_Ladder_Diagrams.pdf" style="width:100%;height:800px;">
+        <button type="button" class="pdf-lazy-btn" data-i18n="pdf-lazy-btn">📄 Afficher le PDF</button>
+      </div>
       <p style="text-align: center; margin-top: 10px;">
         <a href="/cours-pdf/S3/Automatisme/D_-_9_-_Le_langage_Ladder_Diagrams.pdf" target="_blank" style="color: #2a7ae2; text-decoration: none; font-weight: 600;">Telecharger le PDF</a>
       </p>
