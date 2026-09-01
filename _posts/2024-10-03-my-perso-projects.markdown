@@ -16,7 +16,9 @@ date:   2024-10-02 10:56:03 +0200
 </ul>
 <h2>2024</h2>
 <ul>
+<li><h3><a href="./CitySport.html">🏙️ CitySport (Toulouse &amp; New York)</a></h3></li>
 <li><h3><a href="./Toulouse-Sport.html">🏉 Toulouse Sport</a></h3></li>
+<li><h3><a href="./NYSport.html">🗽 NY Sport</a></h3></li>
 <li><h3><a href="./Website.html">🌐 Site Web</a></h3></li>
 </ul>
 <h2>2023</h2>
@@ -36,7 +38,9 @@ date:   2024-10-02 10:56:03 +0200
 </ul>
 <h2>2024</h2>
 <ul>
+<li><h3><a href="./CitySport.html">🏙️ CitySport (Toulouse &amp; New York)</a></h3></li>
 <li><h3><a href="./Toulouse-Sport.html">🏉 Toulouse Sport</a></h3></li>
+<li><h3><a href="./NYSport.html">🗽 NY Sport</a></h3></li>
 <li><h3><a href="./Website.html">🌐 Website</a></h3></li>
 </ul>
 <h2>2023</h2>

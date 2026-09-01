@@ -1,0 +1,656 @@
+---
+layout: default
+title:  "NY Sport"
+description: "NY Sport - application communautaire sportive pour New York + dashboard analytique pour la ville. Édition CitySport prête pour un pilote."
+date:   2026-09-01 10:00:00 +0200
+---
+
+<style>
+p { text-align: justify; }
+
+.ny-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #7c2d12 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.ny-hero h1 { color: white; margin-bottom: 0.5rem; font-size: 2rem; }
+.ny-hero p  { color: #fed7aa; text-align: center; font-size: 1.05rem; margin: 0; }
+.ny-hero .tagline { font-size: 1.2rem; color: #fdba74; margin-bottom: 1rem; }
+
+.ny-badges {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  justify-content: center; margin-top: 1.2rem;
+}
+.ny-badge {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  color: white;
+}
+.ny-badge-status {
+  background: #fb923c;
+  border: 1px solid #fb923c;
+  color: #431407;
+  font-weight: 700;
+}
+
+.ny-value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.ny-value-card {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+.ny-value-card .icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.ny-value-card strong { display: block; margin-bottom: 0.4rem; color: #9a3412; }
+
+.ny-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.ny-kpi {
+  text-align: center;
+  background: #fff7ed;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.ny-kpi .number { font-size: 2rem; font-weight: 700; color: #ea580c; }
+.ny-kpi .label  { font-size: 0.8rem; color: #64748b; margin-top: 0.2rem; }
+
+.ny-cta-bar {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  justify-content: center; margin: 2rem 0;
+}
+.ny-btn {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+.ny-btn:hover { opacity: 0.85; text-decoration: none; }
+.ny-btn-primary { background: #ea580c; color: white; }
+.ny-btn-secondary { background: #f1f5f9; color: #1e3a5f; border: 1px solid #cbd5e1; }
+
+.ny-step { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start; }
+.ny-step-num {
+  background: #ea580c; color: white; border-radius: 50%;
+  width: 28px; height: 28px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; margin-top: 2px;
+}
+
+.ny-section-label {
+  text-transform: uppercase; letter-spacing: 0.1em;
+  font-size: 0.75rem; color: #ea580c; font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.highlight-box-ny {
+  border-left: 4px solid #ea580c;
+  background: #fff7ed;
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.2rem 0;
+}
+
+/* Screen preview grid — feature cards, not fake screenshots */
+.ny-screen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.ny-screen-card {
+  background: linear-gradient(160deg, #0f172a 0%, #7c2d12 100%);
+  border-radius: 12px;
+  padding: 1.4rem 1.2rem;
+  color: white;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ny-screen-card .icon { font-size: 1.7rem; margin-bottom: 0.6rem; }
+.ny-screen-card strong { display: block; font-size: 0.95rem; margin-bottom: 0.4rem; }
+.ny-screen-card span { font-size: 0.8rem; color: #fed7aa; line-height: 1.4; }
+
+.ny-placeholder-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #9a3412;
+  background: #fff7ed;
+  border: 1px dashed #fdba74;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.8rem 0 1.5rem;
+}
+
+.ny-dash-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  margin: 1.5rem 0;
+}
+.ny-dash-banner .icon { font-size: 2.2rem; margin-bottom: 0.6rem; }
+</style>
+
+<div class="back-nav">
+    <a href="./CitySport.html">&larr; <span class="lang-fr">Retour à CitySport</span><span class="lang-en">Back to CitySport</span></a>
+</div>
+
+<!-- ═══════════════════════════════════════════════ HERO ═══ -->
+
+<div class="ny-hero">
+  <div class="lang-en">
+    <h1>NY Sport</h1>
+    <p class="tagline">The app that connects New Yorkers through sport</p>
+    <p>Free mobile app (iOS &amp; Android) + real-time analytics dashboard for city agents — the CitySport platform, built for New York City</p>
+  </div>
+  <div class="lang-fr">
+    <h1>NY Sport</h1>
+    <p class="tagline">L'application qui connecte les New-Yorkais par le sport</p>
+    <p>Application mobile gratuite (iOS &amp; Android) + dashboard analytique temps réel pour les agents de la ville — la plateforme CitySport, adaptée à New York</p>
+  </div>
+  <div class="ny-badges">
+    <span class="ny-badge ny-badge-status lang-en">🚧 Pilot-ready</span>
+    <span class="ny-badge ny-badge-status lang-fr">🚧 Prête pour un pilote</span>
+    <span class="ny-badge">React Native</span>
+    <span class="ny-badge">Next.js 15</span>
+    <span class="ny-badge">Supabase</span>
+    <span class="ny-badge">TypeScript</span>
+    <span class="ny-badge">iOS &amp; Android</span>
+  </div>
+</div>
+
+<div class="ny-cta-bar">
+  <a href="/my-cv.html" class="ny-btn ny-btn-primary"><span class="lang-en">👤 View my profile</span><span class="lang-fr">👤 Voir mon profil</span></a>
+  <a href="./CitySport.html" class="ny-btn ny-btn-secondary"><span class="lang-en">← Toulouse edition</span><span class="lang-fr">← Édition Toulouse</span></a>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ PROBLÈME ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">The Problem</div>
+<h2>Playing sport in New York City: an invisible barrier</h2>
+
+<p>New Yorkers want to play sports but struggle to find partners at their level, near where they live. Meanwhile, public courts, fields and tracks across the five boroughs sit under-used — for lack of a simple tool to connect residents who want to use them spontaneously.</p>
+
+<div class="ny-value-grid">
+  <div class="ny-value-card">
+    <div class="icon">🏟️</div>
+    <strong>Under-used public facilities</strong>
+    Courts, fields, tracks and parks are often empty outside organized leagues, for lack of coordination between residents.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🔍</div>
+    <strong>Partners nowhere to be found</strong>
+    No simple tool to find someone at your level to play basketball, run, or join a pickup game nearby.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">📊</div>
+    <strong>No fine-grained usage data</strong>
+    Despite significant public investment in parks and recreation, little data exists on citizens' spontaneous, informal sports activity.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🏙️</div>
+    <strong>Social isolation across boroughs</strong>
+    Newcomers, students and residents new to a neighborhood struggle to integrate into existing sports circles.
+  </div>
+</div>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">Le problème</div>
+<h2>Faire du sport à New York : un frein invisible</h2>
+
+<p>Les New-Yorkais veulent faire du sport mais peinent à trouver des partenaires de leur niveau, près de chez eux. Pendant ce temps, les terrains et équipements publics des cinq arrondissements sont sous-occupés — faute d'un outil simple pour mettre en relation les habitants qui veulent les utiliser spontanément.</p>
+
+<div class="ny-value-grid">
+  <div class="ny-value-card">
+    <div class="icon">🏟️</div>
+    <strong>Équipements publics sous-utilisés</strong>
+    Terrains, pistes et parcs sont souvent vides en dehors des ligues organisées, faute de coordination entre habitants.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🔍</div>
+    <strong>Partenaires introuvables</strong>
+    Aucun outil simple pour trouver quelqu'un de son niveau pour jouer au basket, courir ou rejoindre un match improvisé.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">📊</div>
+    <strong>Aucune donnée fine sur les usages</strong>
+    Malgré l'investissement public dans les parcs et loisirs, peu de données existent sur la pratique sportive spontanée des habitants.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🏙️</div>
+    <strong>Isolement social entre arrondissements</strong>
+    Nouveaux arrivants, étudiants et habitants d'un nouveau quartier peinent à s'intégrer dans des cercles sportifs existants.
+  </div>
+</div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ SOLUTION ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">The Solution</div>
+<h2>NY Sport — A community sports platform, built for the five boroughs</h2>
+
+<p>NY Sport is a <strong>free mobile app</strong> (iOS &amp; Android) that lets any New Yorker create or join a sports activity in under two minutes, find partners at their level nearby, and discover facilities on an interactive map. It runs on the same technology already proven in production for <a href="./Toulouse-Sport.html">Toulouse Sport</a> — adapted for New York's boroughs, language and scale.</p>
+
+<div class="highlight-box-ny">
+  A resident creates an activity: <em>"Pickup basketball at Prospect Park, Saturday 10am, all levels, 8 spots"</em> — others join, a chat opens, the game happens. Simple, free, immediate.
+</div>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">La solution</div>
+<h2>NY Sport — Une plateforme communautaire sportive, pensée pour les cinq arrondissements</h2>
+
+<p>NY Sport est une <strong>application mobile gratuite</strong> (iOS &amp; Android) qui permet à tout New-Yorkais de créer ou rejoindre une activité sportive en moins de deux minutes, de trouver des partenaires de son niveau à proximité, et de découvrir les équipements sur une carte interactive. Elle repose sur la même technologie déjà éprouvée en production pour <a href="./Toulouse-Sport.html">Toulouse Sport</a> — adaptée aux arrondissements, à la langue et à l'échelle de New York.</p>
+
+<div class="highlight-box-ny">
+  Un habitant crée une activité : <em>"Basket improvisé à Prospect Park, samedi 10h, tous niveaux, 8 places"</em> — d'autres rejoignent, un chat s'ouvre, la partie a lieu. Simple, gratuit, immédiat.
+</div>
+</div>
+
+<div class="ny-kpi-grid">
+  <div class="ny-kpi"><div class="number">30+</div><div class="label lang-en">Sports (basketball, running, tennis, yoga, soccer...)</div><div class="label lang-fr">Sports (basketball, course, tennis, yoga, foot...)</div></div>
+  <div class="ny-kpi"><div class="number">5</div><div class="label lang-en">Boroughs targeted for coverage</div><div class="label lang-fr">Arrondissements ciblés pour la couverture</div></div>
+  <div class="ny-kpi"><div class="number">3</div><div class="label lang-en">Skill levels</div><div class="label lang-fr">Niveaux de pratique</div></div>
+  <div class="ny-kpi"><div class="number">100%</div><div class="label lang-en">Free for end users</div><div class="label lang-fr">Gratuit pour les utilisateurs</div></div>
+  <div class="ny-kpi"><div class="number">iOS + Android</div><div class="label lang-en">Native application</div><div class="label lang-fr">Application native</div></div>
+  <div class="ny-kpi"><div class="number">0</div><div class="label lang-en">City-side maintenance required</div><div class="label lang-fr">Maintenance requise côté ville</div></div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ APP PREVIEW ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">The mobile app</div>
+<h2>Discover, join, create — in a few taps</h2>
+</div>
+<div class="lang-fr">
+<div class="ny-section-label">L'application mobile</div>
+<h2>Découvrir, rejoindre, créer — en quelques taps</h2>
+</div>
+
+<div class="ny-placeholder-note">
+  <span class="lang-en">📸 Concept mockups of the NYC edition, reproducing the exact interface already running in production for Toulouse Sport. Real NYC screenshots (with local venues and activities) will replace these once the pilot's content is seeded.</span>
+  <span class="lang-fr">📸 Maquettes de l'édition NYC, reproduisant fidèlement l'interface déjà en production pour Toulouse Sport. De vraies captures NYC (avec lieux et activités locaux) remplaceront ces visuels une fois le contenu du pilote alimenté.</span>
+</div>
+
+<img src="/img/ny-sport/screens/home.png" alt="Home screen" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
+<img src="/img/ny-sport/screens/map.png" alt="Interactive NYC map" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
+<img src="/img/ny-sport/screens/activity-detail.png" alt="Activity detail and chat" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
+<img src="/img/ny-sport/screens/profile.png" alt="Profile and stats" style="width:24%; display:inline-block; border-radius:12px;"/>
+
+<p style="text-align:center; color:#64748b; font-size:0.85rem; margin-top:0.5rem;">
+  <span class="lang-en">Home feed with calendar · Interactive NYC map · Activity detail with real-time chat · Profile with personal stats</span>
+  <span class="lang-fr">Fil d'accueil avec calendrier · Carte interactive de NYC · Détail activité avec chat temps réel · Profil avec statistiques personnelles</span>
+</p>
+
+<div class="ny-screen-grid">
+  <div class="ny-screen-card">
+    <div class="icon">➕</div>
+    <strong class="lang-en">Create an activity</strong>
+    <strong class="lang-fr">Créer une activité</strong>
+    <span class="lang-en">Sport, venue, time, level and spots — published in under 2 minutes.</span>
+    <span class="lang-fr">Sport, lieu, horaire, niveau et places — publiée en moins de 2 minutes.</span>
+  </div>
+  <div class="ny-screen-card">
+    <div class="icon">👥</div>
+    <strong class="lang-en">Friends network</strong>
+    <strong class="lang-fr">Réseau d'amis</strong>
+    <span class="lang-en">Find friends, invite them directly to an activity.</span>
+    <span class="lang-fr">Trouver des amis, les inviter directement sur une activité.</span>
+  </div>
+  <div class="ny-screen-card">
+    <div class="icon">🔔</div>
+    <strong class="lang-en">Push notifications</strong>
+    <strong class="lang-fr">Notifications push</strong>
+    <span class="lang-en">Reminders, new messages, waiting list promotions.</span>
+    <span class="lang-fr">Rappels, nouveaux messages, promotions de liste d'attente.</span>
+  </div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ PARCOURS ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">User Journey</div>
+<h2>From sign-up to activity in 6 steps</h2>
+
+<div class="ny-step"><div class="ny-step-num">1</div><div><strong>Sign-up &amp; personalization</strong> — profile, borough, favorite sports, skill level. The app adapts immediately.</div></div>
+<div class="ny-step"><div class="ny-step-num">2</div><div><strong>Find an activity</strong> — filtered activity feed, 14-day calendar view, interactive map with every NYC venue.</div></div>
+<div class="ny-step"><div class="ny-step-num">3</div><div><strong>Join with one tap</strong> — if spots are available. Waiting list with automatic promotion if a spot opens up.</div></div>
+<div class="ny-step"><div class="ny-step-num">4</div><div><strong>Real-time chat</strong> — per-activity messaging, accessible to participants only. Push notifications for messages and reminders.</div></div>
+<div class="ny-step"><div class="ny-step-num">5</div><div><strong>Invite friends</strong> — integrated friend system: search by username, send an invitation, invite directly from an activity.</div></div>
+<div class="ny-step"><div class="ny-step-num">6</div><div><strong>Track progress</strong> — personal stats (activities created, joined, people met, sports played, weekly streak).</div></div>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">Parcours utilisateur</div>
+<h2>De l'inscription à l'activité en 6 étapes</h2>
+
+<div class="ny-step"><div class="ny-step-num">1</div><div><strong>Inscription &amp; personnalisation</strong> — profil, arrondissement, sports favoris, niveau. L'application s'adapte immédiatement.</div></div>
+<div class="ny-step"><div class="ny-step-num">2</div><div><strong>Trouver une activité</strong> — fil d'actualité filtré, vue calendrier sur 14 jours, carte interactive avec tous les lieux de NYC.</div></div>
+<div class="ny-step"><div class="ny-step-num">3</div><div><strong>Rejoindre en un tap</strong> — si des places sont disponibles. Liste d'attente avec promotion automatique si une place se libère.</div></div>
+<div class="ny-step"><div class="ny-step-num">4</div><div><strong>Chat temps réel</strong> — messagerie intégrée par activité, accessible aux participants uniquement. Notifications push pour messages et rappels.</div></div>
+<div class="ny-step"><div class="ny-step-num">5</div><div><strong>Inviter ses amis</strong> — système d'amis intégré : recherche par pseudo, envoi d'invitation, invitation directe depuis une activité.</div></div>
+<div class="ny-step"><div class="ny-step-num">6</div><div><strong>Suivre ses progrès</strong> — statistiques personnelles (activités créées, rejointes, personnes rencontrées, sports pratiqués, série hebdomadaire).</div></div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ DASHBOARD ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">For the City</div>
+<h2>Analytics dashboard — for NYC Parks &amp; Recreation agents</h2>
+
+<p>Alongside the mobile app, a <strong>web analytics dashboard</strong> gives city agents <strong>real-time territorial sports intelligence</strong>, otherwise hard to obtain. Which sports, which boroughs, which time slots, which facilities are actually being used by residents — this data becomes available for the first time.</p>
+
+<div class="highlight-box-ny">
+  <strong>Secured access</strong>: named logins, agent / admin roles, 100% anonymized and aggregated data — no personal data transmitted to the city.
+</div>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">Pour la ville</div>
+<h2>Dashboard analytique — pour les agents des parcs &amp; loisirs de NYC</h2>
+
+<p>En parallèle de l'application mobile, un <strong>dashboard web analytique</strong> donne aux agents de la ville une <strong>intelligence territoriale sport en temps réel</strong>, autrement difficile à obtenir. Quels sports, quels arrondissements, quels horaires, quels équipements sont réellement utilisés par les habitants — cette donnée devient disponible pour la première fois.</p>
+
+<div class="highlight-box-ny">
+  <strong>Accès sécurisé</strong> : connexion nominative, rôles agent / admin, données 100% anonymisées et agrégées — aucune donnée personnelle transmise à la ville.
+</div>
+</div>
+
+<div class="lang-en">
+<h3>Overview — 10 KPIs + 14 charts</h3>
+<p>Filterable by period (7d, 30d, 3 months, 1 year, custom dates), sport, borough, and skill level:</p>
+<ul>
+<li><strong>10 KPI cards</strong>: registered users, active organizers, new signups, sessions organized, participations, engagement rate, fill rate, avg participants, repeat rate, cancellations</li>
+<li><strong>Engagement funnel</strong>: registered → active → participants conversion</li>
+<li><strong>Trends</strong>: global curve, 12-month evolution, per-sport trend (top 4)</li>
+<li><strong>Day × time slot heatmap</strong>: activity density by time of day</li>
+<li><strong>Sport breakdown</strong> (pie chart) and <strong>sports by borough</strong> (stacked bar)</li>
+<li><strong>Priority zones</strong>: neighborhoods needing special attention</li>
+<li><strong>Top facilities ranking</strong>: most-used venues</li>
+<li><strong>Auto-insights panel</strong>: alerts and trends generated from the KPIs</li>
+<li><strong>PDF export</strong>: full report, one click, ready for a City Council briefing</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<h3>Vue d'ensemble — 10 KPIs + 14 graphiques</h3>
+<p>Filtrable par période (7j, 30j, 3 mois, 1 an, dates libres), sport, arrondissement et niveau de pratique :</p>
+<ul>
+<li><strong>10 KPI cards</strong> : utilisateurs inscrits, organisateurs actifs, nouveaux inscrits, séances organisées, inscriptions, taux d'engagement, taux de remplissage, moyenne participants, récurrence, annulations</li>
+<li><strong>Funnel d'engagement</strong> : conversion inscrits → actifs → participants</li>
+<li><strong>Tendances</strong> : courbe globale, évolution 12 mois, tendance par sport (top 4)</li>
+<li><strong>Heatmap jour × créneau</strong> : densité des activités par moment de la journée</li>
+<li><strong>Répartition par sport</strong> (pie chart) et <strong>sports par arrondissement</strong> (stacked bar)</li>
+<li><strong>Zones prioritaires</strong> : quartiers nécessitant une attention particulière</li>
+<li><strong>Classement des équipements</strong> les plus utilisés</li>
+<li><strong>Panel d'insights automatiques</strong> : alertes et tendances générées depuis les KPIs</li>
+<li><strong>Export PDF</strong> : rapport complet en un clic, prêt pour un conseil municipal</li>
+</ul>
+</div>
+
+<div class="ny-dash-banner">
+  <div class="icon">🖥️</div>
+  <div class="lang-en"><strong>Live dashboard demo available on request.</strong><br/>The same dashboard shown above is already running in production for Toulouse Sport and can be walked through live.</div>
+  <div class="lang-fr"><strong>Démo live du dashboard disponible sur demande.</strong><br/>Le même dashboard illustré ci-dessus tourne déjà en production pour Toulouse Sport et peut être présenté en direct.</div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ VALEUR VILLE ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">Value for the City</div>
+<h2>5 direct benefits for the City of New York</h2>
+<div class="ny-value-grid">
+  <div class="ny-value-card">
+    <div class="icon">📈</div>
+    <strong>Real-time usage data</strong>
+    For the first time: which sports, which boroughs, which time slots, which facilities are actually being used — territorial intelligence otherwise hard to obtain.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🏟️</div>
+    <strong>Public facilities put to work</strong>
+    Courts, fields, tracks and parks made visible and activated by the community — zero operational burden for the city.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">❤️</div>
+    <strong>Public health lever</strong>
+    Regular physical activity encouraged through gamification, aligned with the city's health &amp; wellness priorities.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🤝</div>
+    <strong>Social cohesion across boroughs</strong>
+    Facilitates connections between neighborhoods and communities, supporting the city's inclusion goals.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">⚙️</div>
+    <strong>Zero operational burden</strong>
+    The app self-manages sign-ups, moderation and notifications. No city staff required to run it. Turnkey solution.
+  </div>
+</div>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">Valeur pour la ville</div>
+<h2>5 bénéfices directs pour la Ville de New York</h2>
+<div class="ny-value-grid">
+  <div class="ny-value-card">
+    <div class="icon">📈</div>
+    <strong>Données d'usage en temps réel</strong>
+    Pour la première fois : quels sports, quels arrondissements, quels horaires, quels équipements sont réellement utilisés — une intelligence territoriale autrement difficile à obtenir.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🏟️</div>
+    <strong>Équipements publics activés</strong>
+    Terrains, pistes et parcs mis en visibilité et activés par la communauté — zéro charge opérationnelle pour la ville.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">❤️</div>
+    <strong>Levier de santé publique</strong>
+    La pratique régulière encouragée par la gamification, en ligne avec les priorités de santé de la ville.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">🤝</div>
+    <strong>Cohésion sociale entre arrondissements</strong>
+    Facilite les connexions entre quartiers et communautés, en soutien aux objectifs d'inclusion de la ville.
+  </div>
+  <div class="ny-value-card">
+    <div class="icon">⚙️</div>
+    <strong>Zéro charge opérationnelle</strong>
+    L'application gère elle-même les inscriptions, la modération et les notifications. Aucun agent municipal requis. Solution clé en main.
+  </div>
+</div>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ SÉCURITÉ / TECH ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">Technology &amp; Compliance</div>
+<h2>A secure infrastructure, ready for a U.S. deployment</h2>
+</div>
+<div class="lang-fr">
+<div class="ny-section-label">Technologie &amp; conformité</div>
+<h2>Une infrastructure sécurisée, prête pour un déploiement aux États-Unis</h2>
+</div>
+
+<table>
+<tr><th>Élément / Element</th><th>Détail / Detail</th><th>Statut / Status</th></tr>
+<tr><td>Hébergement</td><td>AWS — région US (us-east-1) recommandée pour la latence</td><td>📋 À provisionner pour NYC</td></tr>
+<tr><td>Chiffrement transit</td><td>HTTPS / TLS 1.3 obligatoire</td><td>✅ Actif</td></tr>
+<tr><td>Chiffrement au repos</td><td>AES-256 (chiffrement disque)</td><td>✅ Actif</td></tr>
+<tr><td>Contrôle d'accès</td><td>Row Level Security PostgreSQL sur toutes les tables</td><td>✅ Actif</td></tr>
+<tr><td>Authentification</td><td>JWT signés + bcrypt, expiration 1h + refresh token</td><td>✅ Actif</td></tr>
+<tr><td>Données ville</td><td>100% agrégées et anonymisées — aucune donnée personnelle transmise</td><td>✅ Garanti</td></tr>
+<tr><td>Sauvegardes</td><td>Automatiques quotidiennes, rétention 30 jours</td><td>✅ Actif</td></tr>
+<tr><td>Intégration SI requise</td><td>Aucune en phase pilote — accès dashboard via navigateur uniquement</td><td>✅ Clé en main</td></tr>
+</table>
+
+<div class="lang-en">
+<p><strong>What the city does NOT have to do:</strong> no installation on their servers, no infrastructure maintenance, no update management, no user moderation.</p>
+</div>
+<div class="lang-fr">
+<p><strong>Ce que la ville n'a PAS à faire :</strong> aucune installation sur ses serveurs, aucune maintenance d'infrastructure, aucune gestion des mises à jour, aucune modération des utilisateurs.</p>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ STACK ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">Technical Architecture</div>
+<h2>Full Stack</h2>
+</div>
+<div class="lang-fr">
+<div class="ny-section-label">Architecture technique</div>
+<h2>Stack complet</h2>
+</div>
+
+<table>
+<tr><th>Composant / Component</th><th>Technologies</th></tr>
+<tr><td><strong>Mobile app</strong></td><td>React Native 0.81, Expo 54, TypeScript 5.9, React 19</td></tr>
+<tr><td><strong>City web dashboard</strong></td><td>Next.js 15, React 19, TailwindCSS, Recharts, Lucide Icons</td></tr>
+<tr><td><strong>Mobile navigation</strong></td><td>React Navigation 6 (Stack + Bottom Tabs + Deep Linking)</td></tr>
+<tr><td><strong>Backend</strong></td><td>Supabase (PostgreSQL 15, Auth, Storage, Realtime WebSockets)</td></tr>
+<tr><td><strong>Authentication</strong></td><td>Supabase Auth — email/password, Google &amp; Apple OAuth (PKCE)</td></tr>
+<tr><td><strong>Real-time</strong></td><td>Supabase Realtime (WebSockets) — activity chat, notifications</td></tr>
+<tr><td><strong>Push notifications</strong></td><td>Expo Notifications + Supabase Edge Functions</td></tr>
+<tr><td><strong>Interactive map</strong></td><td>React Native Maps (mobile) + map components (dashboard)</td></tr>
+<tr><td><strong>Database</strong></td><td>PostgreSQL 15, versioned migrations, RLS enabled</td></tr>
+<tr><td><strong>Internationalization</strong></td><td>i18next (EN / FR / ES) + localized date formatting</td></tr>
+<tr><td><strong>Theme</strong></td><td>Context API (light / dark mode)</td></tr>
+<tr><td><strong>Upload &amp; storage</strong></td><td>Expo Image Picker + Supabase Storage (S3-compatible)</td></tr>
+</table>
+
+---
+
+<!-- ═══════════════════════════════════════════════ ROADMAP ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">Roadmap</div>
+<h2>Vision &amp; Next Steps</h2>
+
+<p><strong>Short term (0–6 months)</strong></p>
+<ul>
+<li>✅ Mobile app functional iOS &amp; Android (shared CitySport codebase)</li>
+<li>✅ Analytics dashboard ready for city agents</li>
+<li>📋 Populate the NYC venue database (parks, courts, fields) with the city's help</li>
+<li>📋 Public pilot launch in one or two boroughs, with City communication</li>
+<li>📋 Onboard borough-based community leaders and early users</li>
+</ul>
+
+<p><strong>Medium term (6–18 months)</strong></p>
+<ul>
+<li>📋 Partner API for sports leagues and community associations</li>
+<li>📋 Direct messaging between friends, groups for recurring teams</li>
+<li>📋 iOS/Android calendar integration</li>
+<li>📋 Personalized activity recommendations</li>
+</ul>
+
+<p><strong>Long term (18 months+)</strong></p>
+<ul>
+<li>📋 Expansion to all five boroughs</li>
+<li>📋 White-label deployment for other U.S. cities</li>
+<li>📋 Rewards program in partnership with the City</li>
+<li>📋 Fitness tracker sync (Strava, Garmin, Apple Health)</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">Roadmap</div>
+<h2>Vision &amp; prochaines étapes</h2>
+
+<p><strong>Court terme (0–6 mois)</strong></p>
+<ul>
+<li>✅ Application mobile fonctionnelle iOS &amp; Android (base CitySport partagée)</li>
+<li>✅ Dashboard analytique prêt pour les agents de la ville</li>
+<li>📋 Alimentation de la base des équipements NYC (parcs, terrains) avec l'aide de la ville</li>
+<li>📋 Lancement pilote public sur un ou deux arrondissements, avec communication de la ville</li>
+<li>📋 Recrutement de relais communautaires par arrondissement</li>
+</ul>
+
+<p><strong>Moyen terme (6–18 mois)</strong></p>
+<ul>
+<li>📋 API partenaire pour ligues sportives et associations communautaires</li>
+<li>📋 Messagerie directe entre amis, groupes pour équipes récurrentes</li>
+<li>📋 Intégration calendrier iOS/Android</li>
+<li>📋 Recommandations d'activités personnalisées</li>
+</ul>
+
+<p><strong>Long terme (18 mois+)</strong></p>
+<ul>
+<li>📋 Extension aux cinq arrondissements</li>
+<li>📋 Déploiement en marque blanche pour d'autres villes américaines</li>
+<li>📋 Programme de récompenses en partenariat avec la ville</li>
+<li>📋 Synchronisation trackers fitness (Strava, Garmin, Apple Health)</li>
+</ul>
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════ CTA FINAL ═══ -->
+
+<div class="lang-en">
+<div class="ny-section-label">In summary</div>
+<h2>NY Sport: proven technology, ready for a New York pilot</h2>
+<ul>
+<li>✅ Built on <strong>CitySport</strong>, the same platform already live for Toulouse Sport</li>
+<li>✅ <strong>Free</strong> for residents, no intrusive advertising</li>
+<li>✅ <strong>Already functional</strong> — React Native, Supabase, real-time</li>
+<li>✅ <strong>30+ sports</strong>, designed to cover <strong>all 5 boroughs</strong></li>
+<li>✅ <strong>Analytics dashboard</strong> exclusive to city agents</li>
+<li>✅ Secure infrastructure, ready to be provisioned in the U.S.</li>
+</ul>
+</div>
+
+<div class="lang-fr">
+<div class="ny-section-label">En résumé</div>
+<h2>NY Sport : une technologie éprouvée, prête pour un pilote à New York</h2>
+<ul>
+<li>✅ Construite sur <strong>CitySport</strong>, la même plateforme déjà en ligne pour Toulouse Sport</li>
+<li>✅ <strong>Gratuite</strong> pour les habitants, sans publicité intrusive</li>
+<li>✅ <strong>Déjà fonctionnelle</strong> — React Native, Supabase, temps réel</li>
+<li>✅ <strong>30+ sports</strong>, pensée pour couvrir <strong>les 5 arrondissements</strong></li>
+<li>✅ <strong>Dashboard analytique</strong> exclusif pour les agents de la ville</li>
+<li>✅ Infrastructure sécurisée, prête à être provisionnée aux États-Unis</li>
+</ul>
+</div>
+
+<div class="ny-cta-bar">
+  <a href="mailto:cedric.chanfreau@gmail.com?subject=NY%20Sport%20-%20Pilot%20discussion" class="ny-btn ny-btn-primary"><span class="lang-en">✉️ Request a pilot discussion</span><span class="lang-fr">✉️ Demander un échange pilote</span></a>
+  <a href="./CitySport.html" class="ny-btn ny-btn-secondary"><span class="lang-en">← Toulouse edition</span><span class="lang-fr">← Édition Toulouse</span></a>
+</div>
