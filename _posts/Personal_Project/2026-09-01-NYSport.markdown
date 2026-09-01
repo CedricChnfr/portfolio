@@ -129,17 +129,6 @@ p { text-align: justify; }
 .ny-screen-card strong { display: block; font-size: 0.95rem; margin-bottom: 0.4rem; }
 .ny-screen-card span { font-size: 0.8rem; color: #fed7aa; line-height: 1.4; }
 
-.ny-placeholder-note {
-  text-align: center;
-  font-size: 0.82rem;
-  color: #9a3412;
-  background: #fff7ed;
-  border: 1px dashed #fdba74;
-  border-radius: 8px;
-  padding: 0.6rem 1rem;
-  margin: 0.8rem 0 1.5rem;
-}
-
 .ny-dash-banner {
   background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
   border-radius: 12px;
@@ -296,19 +285,12 @@ p { text-align: justify; }
 <h2>Découvrir, rejoindre, créer — en quelques taps</h2>
 </div>
 
-<div class="ny-placeholder-note">
-  <span class="lang-en">📸 Concept mockups of the NYC edition, reproducing the exact interface already running in production for Toulouse Sport. Real NYC screenshots (with local venues and activities) will replace these once the pilot's content is seeded.</span>
-  <span class="lang-fr">📸 Maquettes de l'édition NYC, reproduisant fidèlement l'interface déjà en production pour Toulouse Sport. De vraies captures NYC (avec lieux et activités locaux) remplaceront ces visuels une fois le contenu du pilote alimenté.</span>
-</div>
-
-<img src="/img/ny-sport/screens/home.png" alt="Home screen" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
-<img src="/img/ny-sport/screens/map.png" alt="Interactive NYC map" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
-<img src="/img/ny-sport/screens/activity-detail.png" alt="Activity detail and chat" style="width:24%; display:inline-block; margin-right:1%; border-radius:12px;"/>
-<img src="/img/ny-sport/screens/profile.png" alt="Profile and stats" style="width:24%; display:inline-block; border-radius:12px;"/>
+<img src="/img/ny-sport/screens/home.png" alt="Home screen — New York" style="width:49%; display:inline-block; margin-right:1%; border-radius:12px;"/>
+<img src="/img/ny-sport/screens/map.png" alt="Interactive NYC map" style="width:49%; display:inline-block; border-radius:12px;"/>
 
 <p style="text-align:center; color:#64748b; font-size:0.85rem; margin-top:0.5rem;">
-  <span class="lang-en">Home feed with calendar · Interactive NYC map · Activity detail with real-time chat · Profile with personal stats</span>
-  <span class="lang-fr">Fil d'accueil avec calendrier · Carte interactive de NYC · Détail activité avec chat temps réel · Profil avec statistiques personnelles</span>
+  <span class="lang-en">Home feed with calendar, live NYC activities (Bronx, Randall's Island, Manhattan...) · Interactive map centered on New York</span>
+  <span class="lang-fr">Fil d'accueil avec calendrier, activités NYC en direct (Bronx, Randall's Island, Manhattan...) · Carte interactive centrée sur New York</span>
 </p>
 
 <div class="ny-screen-grid">
